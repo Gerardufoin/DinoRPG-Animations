@@ -109,7 +109,13 @@ export class sdino extends Container {
 			}
 		}
 		if (this._dinoInfos.shadow) {
-			var shadow = PartManager.getSubPart(this._dinoInfos.shadow, dParts, this._palette, '/sDino/', this._scale);
+			var shadow = PartManager.getSubPart(
+				this._dinoInfos.shadow,
+				dParts,
+				this._palette,
+				`${this._assetPath}/sDino/`,
+				this._scale
+			);
 			if (shadow) this._animator.addChildAt(shadow, 0);
 		}
 		if (this._dinoInfos.transform) {
