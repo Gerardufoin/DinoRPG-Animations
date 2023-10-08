@@ -152,6 +152,7 @@ export class sdino extends Container {
 			//Test special
 			//dParts[15] = 1;
 			this.initPalette(dParts);
+			console.log(dParts[7]);
 			this.apply(dParts);
 			this._animator.playAnim(this._dinoInfos.animations.stand);
 			this._animator.playing = pflag;

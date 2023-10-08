@@ -44,13 +44,18 @@ function addDinoz(data, showOrigin = false) {
 	document.body.appendChild(app.view);
 }
 
-addDinoz('09T1Yt9wqq4Rx000', false);
-addDinoz('09w7y7qqpdhld000');
+addDinoz('09T1Yt9wqq4Rx000');
+/*addDinoz('09w7y7qqpdhld000');
 addDinoz('09adQBgO8T065000');
 addDinoz('09vGg4LW1S9fn000');
 addDinoz('0A8uYQDU0FywV000'); // Krapassa
 addDinoz('0AcokGzWsf6WP000'); // Shamak
-addDinoz('0An2HcXN9sl3m000'); // Krazablue
+addDinoz('0An2HcXN9sl3m000'); // Krazablue*/
+addDinoz('19hot0hFbItLS000');
+addDinoz('199zX1Jn1zGXG000');
+addDinoz('191okqcRZdgVi000');
+addDinoz('19VSfUdpIPb0a000');
+addDinoz('1AADFvpotbA6y000');
 
 /*const app = new Application({
 	background: '#E7B577',

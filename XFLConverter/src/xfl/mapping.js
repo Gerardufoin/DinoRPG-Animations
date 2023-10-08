@@ -24,5 +24,12 @@ export let mapping = {
 	'Symbol 156-1': 'fx_dust_2',
 	'Symbol 156-2': 'fx_dust_3',
 	'Symbol 160': 'left_hand',
-	'Symbol 160-1': 'right_hand'
+	'Symbol 160-1': 'right_hand',
+	// 230
+	'Symbol 173_p6a': 'front_left_leg',
+	'Symbol 173_p6b': 'front_right_leg',
+	'Symbol 178_p5': 'tail',
+	'Symbol 184': 'body',
+	'Symbol 214_p7': 'head',
+	'Symbol 220_p6c': 'back_left_leg'
 };

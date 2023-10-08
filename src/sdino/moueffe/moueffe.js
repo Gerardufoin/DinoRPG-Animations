@@ -96,8 +96,8 @@ export let moueffe = {
 		ref: 'fx_shadow.svg',
 		offset: { x: 14.25, y: 8.95 },
 		transform: {
-			tx: 16,
-			ty: 32,
+			tx: -0.8 + 16.8,
+			ty: 11.1 + 20.9,
 			a: 1.351,
 			d: 1.129
 		},

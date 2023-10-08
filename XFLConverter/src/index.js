@@ -4,6 +4,7 @@ import { SVGAdapter } from './svg/SVGAdapter.js';
 
 const parser = new XFLParser();
 //parser.parse('./resources/sdino/LIBRARY/Symbol 162.xml', '_anim'); // moueffe
+parser.parse('./resources/sdino/LIBRARY/Symbol 230.xml', '_anim'); // pigmou
 //parser.parse('./resources/sdino/LIBRARY/Symbol 156.xml', '_sub'); // fx_dust
 
 const adapter = new SVGAdapter();

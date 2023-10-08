@@ -98,7 +98,7 @@ export class XFLParser {
 	 */
 	parse(file, fileType) {
 		const xflContent = fs.readFileSync(file);
-		this.validate(xflContent.toString());
+		this.validate(file, xflContent.toString());
 		const data = this._parser.parse(xflContent);
 		const result = {
 			name: ''
@@ -436,15 +436,16 @@ export class XFLParser {
 
 	/**
 	 * Validate the XFL content against the known XSD schema.
+	 * @param {string} filename Name of the file trying to be validated.
 	 * @param {string} xflContent XFL document in string format.
 	 * @throws The validation errors in case the document does not match the known schema.
 	 */
-	validate(xflContent) {
+	validate(filename, xflContent) {
 		const schemaContent = fs.readFileSync('./src/xfl/xfl-schema.xsd');
 		const xflDoc = libxmljs.parseXml(xflContent);
 		const xflSchema = libxmljs.parseXml(schemaContent.toString());
 		if (!xflDoc.validate(xflSchema)) {
-			throw new Error(`${xflDoc.validationErrors}`);
+			throw new Error(`${filename}: ${xflDoc.validationErrors}`);
 		}
 	}
 }
