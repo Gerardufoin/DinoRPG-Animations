@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://ns.adobe.com/xfl/2008/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="DOMSymbolItem">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="timeline">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DOMTimeline">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="layers">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="DOMLayer" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="frames">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="DOMFrame" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element minOccurs="0" name="Actionscript">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element name="script" type="xs:string"/>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="elements">
+																							<xs:complexType>
+																								<xs:sequence minOccurs="0">
+																									<xs:element minOccurs="0" name="DOMShape">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="fills">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element minOccurs="0" maxOccurs="unbounded" name="FillStyle">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="SolidColor">
+																																			<xs:complexType>
+																																				<xs:attribute name="color" type="xs:string" use="required"/>
+																																				<xs:attribute name="alpha" type="xs:decimal" use="optional"/>
+																																			</xs:complexType>
+																																		</xs:element>
+																																	</xs:sequence>
+																																	<xs:attribute name="index" type="xs:unsignedByte" use="required"/>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																												<xs:element name="strokes">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element minOccurs="0" maxOccurs="unbounded" name="StrokeStyle">
+																																<xs:complexType>
+																																	<xs:sequence>
+																																		<xs:element name="SolidStroke">
+																																			<xs:complexType>
+																																				<xs:sequence>
+																																					<xs:element name="fill">
+																																						<xs:complexType>
+																																							<xs:sequence>
+																																								<xs:element name="SolidColor">
+																																									<xs:complexType>
+																																										<xs:attribute name="color" type="xs:string" use="required"/>
+																																										<xs:attribute name="alpha" type="xs:decimal" use="optional"/>
+																																									</xs:complexType>
+																																								</xs:element>
+																																							</xs:sequence>
+																																						</xs:complexType>
+																																					</xs:element>
+																																				</xs:sequence>
+																																				<xs:attribute name="scaleMode" type="xs:string" use="required"/>
+																																				<xs:attribute name="weight" type="xs:decimal" use="required"/>
+																																			</xs:complexType>
+																																		</xs:element>
+																																	</xs:sequence>
+																																	<xs:attribute name="index" type="xs:unsignedByte" use="required"/>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																												<xs:element name="edges">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element maxOccurs="unbounded" name="Edge">
+																																<xs:complexType>
+																																	<xs:attribute name="strokeStyle" type="xs:unsignedByte" use="optional"/>
+																																	<xs:attribute name="fillStyle0" type="xs:unsignedByte" use="optional"/>
+																																	<xs:attribute name="fillStyle1" type="xs:unsignedByte" use="optional"/>
+																																	<xs:attribute name="edges" type="xs:string" use="required"/>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																											</xs:sequence>
+																											<xs:attribute name="isFloating" type="xs:boolean" use="required"/>
+																										</xs:complexType>
+																									</xs:element>
+																									<xs:element minOccurs="0" name="DOMSymbolInstance">
+																										<xs:complexType>
+																											<xs:sequence>
+																												<xs:element name="matrix">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="Matrix">
+																																<xs:complexType>
+																																	<xs:attribute name="tx" type="xs:float" use="required"/>
+																																	<xs:attribute name="ty" type="xs:float" use="required"/>
+																																	<xs:attribute name="a" type="xs:float" use="optional"/>
+																																	<xs:attribute name="b" type="xs:float" use="optional"/>
+																																	<xs:attribute name="c" type="xs:float" use="optional"/>
+																																	<xs:attribute name="d" type="xs:float" use="optional"/>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																												<xs:element name="transformationPoint">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="Point"/>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																												<xs:element minOccurs="0" name="color">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="Color">
+																																<xs:complexType>
+																																	<xs:attribute name="redOffset" type="xs:byte" use="optional"/>
+																																	<xs:attribute name="greenOffset" type="xs:byte" use="optional"/>
+																																	<xs:attribute name="blueOffset" type="xs:byte" use="optional"/>
+																																	<xs:attribute name="alphaMultiplier" type="xs:decimal" use="optional"/>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
+																											</xs:sequence>
+																											<xs:attribute name="libraryItemName" type="xs:string" use="required"/>
+																											<xs:attribute name="name" type="xs:string" use="optional"/>
+																											<xs:attribute name="blendMode" type="xs:string" use="optional" />
+																											<xs:attribute name="loop" type="xs:string" use="optional" />
+																											<xs:attribute name="symbolType" type="xs:string" use="optional" />
+																											<xs:attribute name="centerPoint3DX" type="xs:decimal" use="optional"/>
+																											<xs:attribute name="centerPoint3DY" type="xs:decimal" use="optional"/>
+																										</xs:complexType>
+																									</xs:element>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																					</xs:sequence>
+																					<xs:attribute name="index" type="xs:unsignedByte" use="required"/>
+																					<xs:attribute name="keyMode" type="xs:unsignedShort" use="required"/>
+																					<xs:attribute name="name" type="xs:string" use="optional"/>
+																					<xs:attribute name="labelType" type="xs:string" use="optional"/>
+																					<xs:attribute name="duration" type="xs:unsignedByte" use="optional"/>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name="name" type="xs:string" use="required"/>
+															<xs:attribute name="color" type="xs:string" use="required"/>
+															<xs:attribute name="current" type="xs:boolean" use="optional"/>
+															<xs:attribute name="isSelected" type="xs:boolean" use="optional"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="name" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+			<xs:attribute name="lastModified" type="xs:unsignedInt" use="required"/>
+			<xs:attribute name="linkageIdentifier" type="xs:string" use="optional"/>
+			<xs:attribute name="linkageExportForAS" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

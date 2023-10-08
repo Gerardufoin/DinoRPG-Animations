@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:xlink="http://www.w3.org/1999/xlink" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.w3.org/2000/svg" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="xlink-schema.xsd" namespace="http://www.w3.org/1999/xlink" />
+  <xs:element name="svg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="g">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="use">
+                <xs:complexType>
+                  <xs:attribute name="data-characterId" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="height" type="xs:decimal" use="required" />
+                  <xs:attribute name="transform" type="xs:string" use="required" />
+                  <xs:attribute name="width" type="xs:decimal" use="required" />
+                  <xs:attribute ref="xlink:href" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="transform" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="defs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="g">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="path">
+                      <xs:complexType>
+                        <xs:attribute name="d" type="xs:string" use="required" />
+                        <xs:attribute name="fill" type="xs:string" use="optional" />
+                        <xs:attribute name="fill-rule" type="xs:string" use="optional" />
+                        <xs:attribute name="fill-opacity" type="xs:decimal" use="optional" />
+                        <xs:attribute name="stroke" type="xs:string" use="optional" />
+                        <xs:attribute name="stroke-linecap" type="xs:string" use="optional" />
+                        <xs:attribute name="stroke-linejoin" type="xs:string" use="optional" />
+                        <xs:attribute name="stroke-opacity" type="xs:decimal" use="optional" />
+                        <xs:attribute name="stroke-width" type="xs:decimal" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:string" use="required" />
+                  <xs:attribute name="transform" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="height" type="xs:string" use="required" />
+      <xs:attribute name="width" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -128,3 +128,13 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# DinoRPG Animations
+public/*.svg
+*.zip
+*.7z
+
+# XFLConverter
+XFLConverter/results
+XFLConverter/resources
+!XFLConverter/resources/*.swf
