@@ -32,10 +32,6 @@ export class sdino extends Container {
 	 * Plays the animations and contain the body and its parts.
 	 */
 	_animator = new Animator();
-	/**
-	 * Root path for the assets. Empty by default.
-	 */
-	_assetPath = '';
 
 	/**
 	 * Create a dino based on the data parameter.
@@ -45,7 +41,6 @@ export class sdino extends Container {
 	 */
 	constructor(data, app = undefined) {
 		super();
-		this._assetPath = data.path ?? '';
 		this.init(data.data, data.damage, data.pflag, 1);
 		this.addChild(this._animator);
 		if (data.flip) {
@@ -101,7 +96,7 @@ export class sdino extends Container {
 				this._dinoInfos.parts[pName],
 				dParts,
 				this._palette,
-				`${this._assetPath}/sDino/${this._dinoInfos.name}/`,
+				`sDino/${this._dinoInfos.name}/`,
 				this._scale
 			);
 			if (part) {
@@ -109,13 +104,7 @@ export class sdino extends Container {
 			}
 		}
 		if (this._dinoInfos.shadow) {
-			var shadow = PartManager.getSubPart(
-				this._dinoInfos.shadow,
-				dParts,
-				this._palette,
-				`${this._assetPath}/sDino/`,
-				this._scale
-			);
+			var shadow = PartManager.getSubPart(this._dinoInfos.shadow, dParts, this._palette, 'sDino/', this._scale);
 			if (shadow) this._animator.addChildAt(shadow, 0);
 		}
 		if (this._dinoInfos.transform) {

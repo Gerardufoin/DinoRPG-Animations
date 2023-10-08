@@ -27,8 +27,7 @@ function updateDinoz(data) {
 	currentPortrait = new DinoAnim.sdino(
 		{
 			data: data,
-			flip: 1,
-			path: 'DinoRPG-Animations/public'
+			flip: 1
 		},
 		appPortrait
 	);
@@ -37,8 +36,7 @@ function updateDinoz(data) {
 		{
 			data: data,
 			flip: 1,
-			pflag: true,
-			path: 'DinoRPG-Animations/public'
+			pflag: true
 		},
 		appAnimation
 	);
