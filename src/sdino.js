@@ -96,7 +96,7 @@ export class sdino extends Container {
 				this._dinoInfos.parts[pName],
 				dParts,
 				this._palette,
-				`sDino/${this._dinoInfos.name}/`,
+				`sdino/${this._dinoInfos.name}/`,
 				this._scale
 			);
 			if (part) {
@@ -104,7 +104,7 @@ export class sdino extends Container {
 			}
 		}
 		if (this._dinoInfos.shadow) {
-			var shadow = PartManager.getSubPart(this._dinoInfos.shadow, dParts, this._palette, 'sDino/', this._scale);
+			var shadow = PartManager.getSubPart(this._dinoInfos.shadow, dParts, this._palette, 'sdino/', this._scale);
 			if (shadow) this._animator.addChildAt(shadow, 0);
 		}
 		if (this._dinoInfos.transform) {
