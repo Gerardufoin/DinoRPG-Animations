@@ -28,7 +28,7 @@ function updateDinoz(data) {
 		{
 			data: data,
 			flip: 1,
-			path: '/public'
+			path: 'public'
 		},
 		appPortrait
 	);
@@ -38,7 +38,7 @@ function updateDinoz(data) {
 			data: data,
 			flip: 1,
 			pflag: true,
-			path: '/public'
+			path: 'public'
 		},
 		appAnimation
 	);
