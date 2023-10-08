@@ -142,13 +142,13 @@ export class sdino extends Container {
 				let part = this.decode62(data.charCodeAt(i));
 				dParts.push(part);
 			}
-			dParts.splice(2, 0, damage ?? 0);
 			this._dinoInfos = dinoz[dParts[0]];
-			if (!this._dinoInfos) {
+			if (!this._dinoInfos || dParts.length < 10) {
 				this._dinoInfos = error;
 				this.apply(dParts);
 				return false;
 			}
+			dParts.splice(2, 0, damage ?? 0);
 			//Test special
 			//dParts[15] = 1;
 			this.initPalette(dParts);

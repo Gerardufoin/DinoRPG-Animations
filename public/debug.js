@@ -44,7 +44,7 @@ function addDinoz(data, showOrigin = false) {
 	document.body.appendChild(app.view);
 }
 
-addDinoz('99T1Yt9wqq4Rx000', false);
+addDinoz('09T1Yt9wqq4Rx000', false);
 addDinoz('09w7y7qqpdhld000');
 addDinoz('09adQBgO8T065000');
 addDinoz('09vGg4LW1S9fn000');
