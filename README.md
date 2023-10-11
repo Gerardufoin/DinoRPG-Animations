@@ -21,7 +21,7 @@ The file is comprised of the following entities:
 
 -   bad (done)
 -   moueffe (done)
--   pigmou (in progress)
+-   pigmou (done)
 -   winks
 -   planaile
 -   castivore
