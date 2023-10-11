@@ -44,7 +44,7 @@ export class sdino extends Container {
 		this.init(data.data, data.damage, data.pflag, 1);
 		this.addChild(this._animator);
 		if (data.flip) {
-			this._animator.flip(this._dinoInfos.center);
+			this._animator.scale.x = -1;
 		}
 		app?.stage?.addChild(this);
 	}
@@ -107,8 +107,8 @@ export class sdino extends Container {
 			var shadow = PartManager.getSubPart(this._dinoInfos.shadow, dParts, this._palette, 'sdino/', this._scale);
 			if (shadow) this._animator.addChildAt(shadow, 0);
 		}
-		if (this._dinoInfos.transform) {
-			this._animator.setBodyTransform(this._dinoInfos.transform);
+		if (this._dinoInfos.transforms) {
+			this._animator.setBodyTransforms(this._dinoInfos.transforms, dParts);
 		}
 		if (this._dinoInfos.glow) {
 			this._animator.setBodyGlow(this._dinoInfos.glow);
@@ -152,7 +152,6 @@ export class sdino extends Container {
 			//Test special
 			//dParts[15] = 1;
 			this.initPalette(dParts);
-			console.log(dParts[7]);
 			this.apply(dParts);
 			this._animator.playAnim(this._dinoInfos.animations.stand);
 			this._animator.playing = pflag;
@@ -168,6 +167,8 @@ export class sdino extends Container {
 	playAnim(anim) {
 		if (this._dinoInfos && this._dinoInfos.animations && this._dinoInfos.animations[anim]) {
 			this._animator.playAnim(this._dinoInfos.animations[anim]);
+		} else if (this._dinoInfos && this._dinoInfos.animations && this._dinoInfos.animations['stand']) {
+			this._animator.playAnim(this._dinoInfos.animations['stand']);
 		}
 	}
 }

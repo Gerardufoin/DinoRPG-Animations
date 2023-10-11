@@ -12,13 +12,104 @@ import { release } from './animations/release.js';
 
 export let moueffe = {
 	name: 'moueffe',
-	center: 20,
-	transform: {
-		tx: 0.0,
-		ty: 0.85,
-		a: 0.915,
-		d: 0.915
-	},
+	transforms: [
+		// 163
+		{
+			partIdx: 1,
+			transforms: [
+				{
+					tx: -0.65,
+					ty: 2.05,
+					a: 0.797,
+					d: 0.797,
+					brightness: 10,
+					contrast: 5
+				},
+				{
+					tx: -0.6,
+					ty: 1.8,
+					a: 0.819,
+					d: 0.819,
+					brightness: 9,
+					contrast: 5
+				},
+				{
+					tx: -0.55,
+					ty: 1.55,
+					a: 0.842,
+					d: 0.842,
+					brightness: 8,
+					contrast: 3
+				},
+				{
+					tx: -0.45,
+					ty: 1.3,
+					a: 0.865,
+					d: 0.865,
+					brightness: 7,
+					contrast: 3
+				},
+				{
+					tx: -0.4,
+					ty: 1.1,
+					a: 0.887,
+					d: 0.887,
+					brightness: 6,
+					contrast: 2
+				},
+				{
+					tx: -0.35,
+					ty: 0.85,
+					a: 0.91,
+					d: 0.91,
+					brightness: 4,
+					contrast: 2
+				},
+				{
+					tx: -0.3,
+					ty: 0.6,
+					a: 0.932,
+					d: 0.932,
+					brightness: 3,
+					contrast: 1
+				},
+				{
+					tx: -0.25,
+					ty: 0.35,
+					a: 0.955,
+					d: 0.955,
+					brightness: 2,
+					contrast: 1
+				},
+				{
+					tx: -0.15,
+					ty: 0.1,
+					a: 0.977,
+					d: 0.977,
+					brightness: 1
+				},
+				{
+					tx: 0,
+					ty: 0
+				},
+				{
+					tx: -0.05,
+					ty: -1.1,
+					a: 1.069,
+					d: 1.069,
+					brightness: -34,
+					contrast: 11
+				}
+			]
+		},
+		// 1642
+		{
+			tx: 0.0,
+			ty: 0.85,
+			a: 0.915,
+			d: 0.915
+		}
+	],
 	glow: {
 		distance: 1.3,
 		color: 0x330000,
@@ -93,11 +184,11 @@ export let moueffe = {
 		]
 	],
 	shadow: {
-		ref: 'fx_shadow.svg',
+		ref: 'fx/shadow.svg',
 		offset: { x: 14.25, y: 8.95 },
 		transform: {
-			tx: -0.8 + 16.8,
-			ty: 11.1 + 20.9,
+			tx: -0.8,
+			ty: 11.1,
 			a: 1.351,
 			d: 1.129
 		},
@@ -523,35 +614,35 @@ export let moueffe = {
 		// 146
 		fx_impact_1: [
 			{
-				ref: 'fx_impact_1.svg',
+				ref: '../fx/impact_1.svg',
 				offset: { x: 9.75, y: 20.35 }
 			}
 		],
 		// 147
 		fx_impact_2: [
 			{
-				ref: 'fx_impact_2.svg',
+				ref: '../fx/impact_2.svg',
 				offset: { x: 14.05, y: 26.05 }
 			}
 		],
 		// 148
 		fx_impact_3: [
 			{
-				ref: 'fx_impact_3.svg',
+				ref: '../fx/impact_3.svg',
 				offset: { x: 17.7, y: 32.75 }
 			}
 		],
 		// 149
 		fx_impact_4: [
 			{
-				ref: 'fx_impact_4.svg',
+				ref: '../fx/impact_4.svg',
 				offset: { x: 19.85, y: 36.6 }
 			}
 		],
 		// 150
 		fx_impact_5: [
 			{
-				ref: 'fx_impact_5.svg',
+				ref: '../fx/impact_5.svg',
 				offset: { x: 21.0, y: 38.8 }
 			}
 		],
@@ -578,8 +669,8 @@ export let moueffe = {
 		]
 	},
 	animations: {
-		// 140 (but same as 141)
-		cast: stand,
+		// cast(140), sleep are same as stand
+		// missing fly, ill
 		// 141
 		stand: stand,
 		// 142
@@ -596,8 +687,6 @@ export let moueffe = {
 		land: land,
 		// 157
 		dead: dead,
-		// 141
-		sleep: stand,
 		// 161
 		release: release
 	}

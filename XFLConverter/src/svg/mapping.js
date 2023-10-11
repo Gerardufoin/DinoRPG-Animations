@@ -4,7 +4,7 @@
  * Mapping between the extracted symbol and their name in the project
  */
 export let mapping = {
-	77: 'fx_shadow',
+	77: 'fx/shadow',
 	78: 'moueffe/back_bones',
 	81: 'moueffe/right_arm',
 	84: 'moueffe/foot',
@@ -33,16 +33,16 @@ export let mapping = {
 	134: 'moueffe/left_arm',
 	136: 'moueffe/left_arm_sigil',
 	138: 'moueffe/left_arm_bone',
-	146: 'moueffe/fx_impact_1',
-	147: 'moueffe/fx_impact_2',
-	148: 'moueffe/fx_impact_3',
-	149: 'moueffe/fx_impact_4',
-	150: 'moueffe/fx_impact_5',
+	146: 'fx/impact_1',
+	147: 'fx/impact_2',
+	148: 'fx/impact_3',
+	149: 'fx/impact_4',
+	150: 'fx/impact_5',
 	154: 'moueffe/fx_dust',
 	159: 'moueffe/hand',
 	167: 'pigmou/front_leg',
 	169: 'pigmou/front_leg_special',
-	172: 'pigmou/front_leg_acc_1',
+	172: 'pigmou/leg_fur',
 	175: 'pigmou/tail_fur',
 	177: 'pigmou/tail',
 	180: 'pigmou/body',
@@ -64,5 +64,7 @@ export let mapping = {
 	212: 'pigmou/head_acc_12',
 	213: 'pigmou/head_acc_14',
 	210: 'pigmou/head_acc_3',
+	216: 'pigmou/back_leg',
+	218: 'pigmou/back_leg_special',
 	1640: 'bad'
 };

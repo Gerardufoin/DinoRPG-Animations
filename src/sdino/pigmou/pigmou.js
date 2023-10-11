@@ -2,15 +2,113 @@
 
 import { BLEND_MODES } from 'pixi.js';
 import { stand } from './animations/stand';
+import { walk } from './animations/walk';
+import { run } from './animations/run';
+import { hit } from './animations/hit';
+import { jump } from './animations/jump';
+import { attack } from './animations/attack';
+import { land } from './animations/land';
+import { dead } from './animations/dead';
 
 export let pigmou = {
 	name: 'pigmou',
-	center: 20,
+	transforms: [
+		// 231
+		{
+			partIdx: 1,
+			transforms: [
+				{
+					tx: 0.0,
+					ty: 1.2,
+					a: 0.885,
+					d: 0.885,
+					brightness: 10,
+					contrast: 5
+				},
+				{
+					tx: 0.0,
+					ty: 1.05,
+					a: 0.898,
+					d: 0.898,
+					brightness: 9,
+					contrast: 5
+				},
+				{
+					tx: 0.0,
+					ty: 0.95,
+					a: 0.911,
+					d: 0.911,
+					brightness: 8,
+					contrast: 3
+				},
+				{
+					tx: 0.0,
+					ty: 0.8,
+					a: 0.923,
+					d: 0.923,
+					brightness: 7,
+					contrast: 3
+				},
+				{
+					tx: 0.0,
+					ty: 0.65,
+					a: 0.936,
+					d: 0.936,
+					brightness: 6,
+					contrast: 2
+				},
+				{
+					tx: 0.0,
+					ty: 0.55,
+					a: 0.949,
+					d: 0.949,
+					brightness: 4,
+					contrast: 2
+				},
+				{
+					tx: 0.0,
+					ty: 0.4,
+					a: 0.962,
+					d: 0.962,
+					brightness: 3,
+					contrast: 1
+				},
+				{
+					tx: 0.0,
+					ty: 0.25,
+					a: 0.974,
+					d: 0.974,
+					brightness: 2,
+					contrast: 1
+				},
+				{
+					tx: 0.0,
+					ty: 0.15,
+					a: 0.987,
+					d: 0.987,
+					brightness: 1
+				},
+				{
+					tx: 0,
+					ty: 0
+				},
+				{
+					tx: 0.0,
+					ty: -0.9,
+					a: 1.16,
+					d: 1.16,
+					brightness: -34,
+					contrast: 11
+				}
+			]
+		}
+		// 1642 No transform, set to tx: 0 and ty: 0
+	],
 	glow: {
-		distance: 1.3,
+		distance: 1,
 		color: 0x330000,
 		quality: 1,
-		strength: 0.3
+		strength: 0.2
 	},
 	palette: [
 		[
@@ -80,11 +178,11 @@ export let pigmou = {
 		]
 	],
 	shadow: {
-		ref: 'fx_shadow.svg',
+		ref: 'fx/shadow.svg',
 		offset: { x: 14.25, y: 8.95 },
 		transform: {
-			tx: 0.3 + 16.8,
-			ty: 8.55 + 20.9,
+			tx: 0.3,
+			ty: 8.55,
 			a: 0.917,
 			d: 0.917
 		},
@@ -110,7 +208,7 @@ export let pigmou = {
 					// 172
 					{
 						colorIdx: 1,
-						ref: 'front_leg_acc_1.svg',
+						ref: 'leg_fur.svg',
 						offset: { x: 4.1, y: 3.35 },
 						transform: {
 							tx: 2.15,
@@ -125,8 +223,8 @@ export let pigmou = {
 			},
 			// 170 - There was some "stop" callbacks which were ignored, to see later if they are really needed.
 			{
-				partIdx: 6,
-				frames: [0, -1],
+				partIdx: 15,
+				frames: [-1, 0],
 				parts: [
 					// 169
 					{
@@ -266,7 +364,7 @@ export let pigmou = {
 					// 172
 					{
 						colorIdx: 1,
-						ref: 'front_leg_acc_1.svg',
+						ref: 'leg_fur.svg',
 						offset: { x: 4.1, y: 3.35 },
 						transform: {
 							tx: 2.15,
@@ -281,8 +379,8 @@ export let pigmou = {
 			},
 			// 170 - There was some "stop" callbacks which were ignored, to see later if they are really needed.
 			{
-				partIdx: 6,
-				frames: [0, -1],
+				partIdx: 15,
+				frames: [-1, 0],
 				parts: [
 					// 169
 					{
@@ -419,10 +517,10 @@ export let pigmou = {
 							d: 0.845
 						},
 						glow: {
-							distance: 1,
+							distance: 5,
 							color: '#FF9900',
 							quality: 1,
-							strengh: 1
+							strength: 1
 						}
 					},
 					// 198
@@ -434,6 +532,7 @@ export let pigmou = {
 							{
 								ref: 'head_acc_8.svg',
 								offset: { x: 6, y: 5.6 },
+								alpha: 0.4, // There is a difference in stroke opacity between opacity of Flash and PixiJS SVG
 								transform: {
 									tx: 1,
 									ty: -2.55
@@ -443,6 +542,7 @@ export let pigmou = {
 							{
 								ref: 'head_acc_9.svg',
 								offset: { x: 7.45, y: 7.75 },
+								alpha: 0.4, // There is a difference in stroke opacity between opacity of Flash and PixiJS SVG
 								transform: {
 									tx: 1,
 									ty: -2.55
@@ -565,6 +665,7 @@ export let pigmou = {
 							{
 								ref: 'head_acc_8.svg',
 								offset: { x: 6, y: 5.6 },
+								alpha: 0.4, // There is a difference in stroke opacity between opacity of Flash and PixiJS SVG
 								transform: {
 									tx: 1,
 									ty: -2.55
@@ -574,6 +675,7 @@ export let pigmou = {
 							{
 								ref: 'head_acc_9.svg',
 								offset: { x: 7.45, y: 7.75 },
+								alpha: 0.4, // There is a difference in stroke opacity between opacity of Flash and PixiJS SVG
 								transform: {
 									tx: 1,
 									ty: -2.55
@@ -601,19 +703,111 @@ export let pigmou = {
 			}
 		],
 		// 220
-		back_left_leg: []
+		back_left_leg: [
+			// 216
+			{
+				colorIdx: 0,
+				ref: 'back_leg.svg',
+				offset: { x: 4.15, y: 5.85 },
+				transform: {
+					tx: 0.05
+				}
+			},
+			{
+				partIdx: 6,
+				frames: [-1, 0],
+				parts: [
+					// 172
+					{
+						colorIdx: 1,
+						ref: 'leg_fur.svg',
+						offset: { x: 4.1, y: 3.35 },
+						transform: {
+							tx: 0.1,
+							ty: -2.45
+						}
+					}
+				]
+			},
+			// 219 - There was some "stop" callbacks which were ignored, to see later if they are really needed.
+			{
+				partIdx: 15,
+				frames: [-1, 0],
+				parts: [
+					// 218
+					{
+						special: true,
+						ref: 'back_leg_special.svg',
+						blend: [BLEND_MODES.MULTIPLY],
+						colorIdx: 0,
+						offset: { x: 1, y: 1 },
+						transform: {
+							tx: -2.85,
+							ty: -2.85
+						}
+					}
+				]
+			}
+		],
+		// 146
+		fx_impact_1: [
+			{
+				ref: '../fx/impact_1.svg',
+				offset: { x: 9.75, y: 20.35 }
+			}
+		],
+		// 147
+		fx_impact_2: [
+			{
+				ref: '../fx/impact_2.svg',
+				offset: { x: 14.05, y: 26.05 }
+			}
+		],
+		// 148
+		fx_impact_3: [
+			{
+				ref: '../fx/impact_3.svg',
+				offset: { x: 17.7, y: 32.75 }
+			}
+		],
+		// 149
+		fx_impact_4: [
+			{
+				ref: '../fx/impact_4.svg',
+				offset: { x: 19.85, y: 36.6 }
+			}
+		],
+		// 150
+		fx_impact_5: [
+			{
+				ref: '../fx/impact_5.svg',
+				offset: { x: 21.0, y: 38.8 }
+			}
+		]
 	},
 	animations: {
-		cast: stand,
+		// missing cast, release
+		// 221
 		stand: stand,
-		walk: undefined,
-		run: undefined,
-		hit: undefined,
-		jump: undefined,
-		attack: undefined,
-		land: undefined,
-		dead: undefined,
-		sleep: undefined,
-		release: undefined
+		// 222
+		walk: walk,
+		// 223
+		run: run,
+		// 224
+		hit: hit,
+		// 226
+		jump: jump,
+		// 227
+		attack: attack,
+		// 228
+		land: land,
+		// 229
+		dead: dead,
+		// 229 idx 5
+		sleep: { offset: 5, anim: dead },
+		// 229 idx 10
+		ill: { offset: 10, anim: dead },
+		// 226
+		fly: jump
 	}
 };

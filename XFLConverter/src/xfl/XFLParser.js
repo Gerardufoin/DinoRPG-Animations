@@ -75,9 +75,10 @@ export class XFLParser {
 	 * Write the parsed object into a JSON file.
 	 * @param {object} result Resulting object of the XFL parsing process.
 	 * @param {string} fileType Type of file which was parsed (_part, _sub, _anim, etc)
+	 * @param {string | undefined} parentName Name added by the parent container, if any.
 	 * @returns {void}
 	 */
-	saveResult(result, fileType) {
+	saveResult(result, fileType, parentName = undefined) {
 		if (!fs.existsSync(this.RESULTS_FOLDER)) {
 			fs.mkdirSync(this.RESULTS_FOLDER);
 		}
@@ -86,7 +87,7 @@ export class XFLParser {
 			return;
 		}
 		fs.writeFileSync(
-			path.join(this.RESULTS_FOLDER, result.name + fileType + '.json'),
+			path.join(this.RESULTS_FOLDER, result.name + fileType + (parentName ? `_${parentName}` : '') + '.json'),
 			this.applyMapping(JSON.stringify(result, null, '\t'))
 		);
 	}
@@ -95,8 +96,9 @@ export class XFLParser {
 	 * Entry point of the parsing process.
 	 * @param {string} file Path to the root XFL file to parse.
 	 * @param {string} fileType Type of tile being parsed, based on MotionTwin naming.
+	 * @param {object | undefined} parentData Data of the parent container, if any.
 	 */
-	parse(file, fileType) {
+	parse(file, fileType, parentData = undefined) {
 		const xflContent = fs.readFileSync(file);
 		this.validate(file, xflContent.toString());
 		const data = this._parser.parse(xflContent);
@@ -104,8 +106,8 @@ export class XFLParser {
 			name: ''
 		};
 		result.name = data.DOMSymbolItem.name;
-		this.parseLayers(data.DOMSymbolItem.timeline.DOMTimeline.layers, result, fileType);
-		this.saveResult(result, fileType);
+		this.parseLayers(data.DOMSymbolItem.timeline.DOMTimeline.layers, result, fileType, parentData?.transform);
+		this.saveResult(result, fileType, parentData?.name);
 	}
 
 	/**
@@ -113,14 +115,15 @@ export class XFLParser {
 	 * @param {*} layers The DOMTimeline.layers of the XFL document.
 	 * @param {object} result Object containing the result of the parsing.
 	 * @param {string} fileType Type of file being parsed (_part, _sub, _anim)
+	 * @param {object | undefined} parentTransform Transform of the parent container, if any.
 	 */
-	parseLayers(layers, result, fileType) {
+	parseLayers(layers, result, fileType, parentTransform = undefined) {
 		switch (fileType) {
 			case '_anim':
 				this.parseAnim(layers, result);
 				break;
 			case '_sub':
-				this.parseSub(layers, result);
+				this.parseSub(layers, result, parentTransform);
 				break;
 			case '_part':
 				this.parsePart(layers, result);
@@ -207,7 +210,10 @@ export class XFLParser {
 				}
 				result.anims[anim.name] = anim.data;
 				console.log(anim.data?.item);
-				this.parse(path.join('./resources/sdino/LIBRARY/', anim.data?.item + '.xml'), anim.data?.itemType);
+				this.parse(path.join('./resources/sdino/LIBRARY/', anim.data?.item + '.xml'), anim.data?.itemType, {
+					name: anim.name,
+					transform: anim.data?.transform
+				});
 			}
 		}
 	}
@@ -221,7 +227,7 @@ export class XFLParser {
 	 * @param {*} t2 Third element of the second matrix or 0 if undefined.
 	 * @returns {Number | undefined} The resulting number of the operation rounded to 3 places, or undefined if no element is defined.
 	 */
-	multiplyMatrix(x1, x2, y1, y2, t2) {
+	multiplyMatrixStep(x1, x2, y1, y2, t2) {
 		if (x1 || x2 || y1 || y2 || t2) {
 			return this.roundToPlace((x1 ?? 0) * (x2 ?? 0) + (y1 ?? 0) * (y2 ?? 0) + (t2 ?? 0), 3);
 		}
@@ -235,7 +241,33 @@ export class XFLParser {
 	 * @returns {Number | undefined} The multiplication of the two colors, or undefined if no color is defined.
 	 */
 	multiplyColors(c1, c2) {
-		return c1 === undefined || c2 === undefined ? (c1 ?? 1) * (c2 ?? 1) : undefined;
+		return c1 === undefined && c2 === undefined ? undefined : (c1 ?? 1) * (c2 ?? 1);
+	}
+
+	/**
+	 * Multiply two matrixes together.
+	 * @param {object} m1 First matrix.
+	 * @param {object} m2 Second matrix.
+	 * @returns {object} The resulting matrix following the multiplication.
+	 */
+	multiplyMatrix(m1, m2) {
+		const matrix = {
+			tx: this.multiplyMatrixStep(m1.tx, m2.a ?? 1, m1.ty, m2.c, m2.tx),
+			ty: this.multiplyMatrixStep(m1.tx, m2.b, m1.ty, m2.d ?? 1, m2.ty),
+			a: this.multiplyMatrixStep(m1.a ?? 1, m2.a ?? 1, m1.b, m2.c, 0),
+			b: this.multiplyMatrixStep(m1.a ?? 1, m2.b, m1.b, m2.d ?? 1, 0),
+			c: this.multiplyMatrixStep(m1.c, m2.a ?? 1, m1.d ?? 1, m2.c, 0),
+			d: this.multiplyMatrixStep(m1.c, m2.b, m1.d ?? 1, m2.d ?? 1, 0),
+			alpha: this.multiplyColors(m2.alpha, m1.alpha),
+			red: this.multiplyColors(m2.red, m1.red),
+			green: this.multiplyColors(m2.green, m1.green),
+			blue: this.multiplyColors(m2.blue, m1.blue)
+		};
+		matrix.a = matrix.a === 1 ? undefined : matrix.a;
+		matrix.b = matrix.b === 0 ? undefined : matrix.b;
+		matrix.c = matrix.c === 0 ? undefined : matrix.c;
+		matrix.d = matrix.d === 1 ? undefined : matrix.d;
+		return matrix;
 	}
 
 	/**
@@ -248,26 +280,16 @@ export class XFLParser {
 	 */
 	applySubAnimation(frameData, frameIdx, elementNb) {
 		const subFrame = subAnimations[elementNb][frameIdx % subAnimations[elementNb].length];
-		return {
-			tx: this.multiplyMatrix(subFrame.tx, frameData.a, subFrame.ty, frameData.c, frameData.tx),
-			ty: this.multiplyMatrix(subFrame.tx, frameData.b, subFrame.ty, frameData.d, frameData.ty),
-			a: this.multiplyMatrix(subFrame.a, frameData.a, subFrame.b, frameData.c, 0),
-			b: this.multiplyMatrix(subFrame.a, frameData.b, subFrame.b, frameData.d, 0),
-			c: this.multiplyMatrix(subFrame.c, frameData.a, subFrame.d, frameData.c, 0),
-			d: this.multiplyMatrix(subFrame.c, frameData.b, subFrame.d, frameData.d, 0),
-			alpha: this.multiplyColors(frameData.alpha, subFrame.alpha),
-			red: this.multiplyColors(frameData.red, subFrame.red),
-			green: this.multiplyColors(frameData.green, subFrame.green),
-			blue: this.multiplyColors(frameData.blue, subFrame.blue)
-		};
+		return this.multiplyMatrix(subFrame, frameData);
 	}
 
 	/**
 	 * Parse the DOMTimeline.layers for the type "_sub"
 	 * @param {*} layers The DOMTimeline.layers to parse.
 	 * @param {object} result Object containing the result of the parsing.
+	 * @param {object | undefined} parentTransform Transform of the parent container, if any. Applied to each frame.
 	 */
-	parseSub(layers, result) {
+	parseSub(layers, result, parentTransform = undefined) {
 		result.elementsCheck = [];
 		result.elements = {};
 		result.callbacks = {};
@@ -288,6 +310,10 @@ export class XFLParser {
 					const symbolInstance = f.elements.DOMSymbolInstance;
 					const element = symbolInstance.libraryItemName + (symbolInstance.name ?? '');
 					const elementNb = symbolInstance.libraryItemName.match(/Symbol (\d+)/)[1];
+					// Elements to ignore. Seems like a mistake from MT
+					if (['225'].includes(elementNb)) {
+						continue;
+					}
 					if (!result.elements[element]) {
 						result.elements[element] = {
 							name: symbolInstance.name,
@@ -325,6 +351,12 @@ export class XFLParser {
 						result.frames[idx + i][elemName] = subAnimations[elementNb]
 							? this.applySubAnimation(frameData, idx + 1, elementNb)
 							: frameData;
+						if (parentTransform && result.frames[idx + i][elemName]) {
+							result.frames[idx + i][elemName] = this.multiplyMatrix(
+								result.frames[idx + i][elemName],
+								parentTransform
+							);
+						}
 					}
 				}
 			}

@@ -1,5 +1,19 @@
-const actions = ['stand', 'walk', 'run', 'attack', 'hit', 'jump', 'land', 'sleep', 'cast', 'release', 'dead'];
-
+/* eslint-disable */
+const actions = [
+	'stand',
+	'walk',
+	'run',
+	'attack',
+	'hit',
+	'fly',
+	'jump',
+	'land',
+	'sleep',
+	'ill',
+	'cast',
+	'release',
+	'dead'
+];
 let currentPortrait = undefined;
 let currentAnim = undefined;
 
@@ -31,6 +45,8 @@ function updateDinoz(data) {
 		},
 		appPortrait
 	);
+	currentPortrait.x = 20;
+	currentPortrait.y = 20;
 
 	currentAnim = new DinoAnim.sdino(
 		{
@@ -40,8 +56,8 @@ function updateDinoz(data) {
 		},
 		appAnimation
 	);
-	currentAnim.x = 30;
-	currentAnim.y = 30;
+	currentAnim.x = 50;
+	currentAnim.y = 50;
 }
 
 document.getElementById('update').addEventListener('click', () => {

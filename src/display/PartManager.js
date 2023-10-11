@@ -1,5 +1,6 @@
 // @ts-check
 import { Sprite, Container, Matrix, BlurFilter } from 'pixi.js';
+import { GlowFilter } from '@pixi/filter-glow';
 import { TextureManager } from './TextureManager.js';
 
 /**
@@ -61,6 +62,7 @@ export class PartManager {
 			}
 			const texture = TextureManager.getTexture(assetPath + part.ref, scale);
 			const sprite = Sprite.from(texture);
+			const filters = [];
 			sprite.scale.set(1 / TextureManager.RESOLUTION);
 			// TODO: Remove later if texture loading is not required
 			/*sprite.visible = false;
@@ -85,8 +87,20 @@ export class PartManager {
 				const blurFilter = new BlurFilter();
 				blurFilter.blurX = part.blur.x ?? 0;
 				blurFilter.blurY = part.blur.y ?? 0;
-				sprite.filters = [blurFilter];
+				filters.push(blurFilter);
 			}
+			if (part.glow) {
+				filters.push(
+					new GlowFilter({
+						distance: part.glow.distance ?? 1,
+						color: part.glow.color,
+						quality: part.glow.quality ?? 1,
+						innerStrength: 0,
+						outerStrength: part.glow.strength ?? 1
+					})
+				);
+			}
+			sprite.filters = filters;
 			// Transformation are not directly applied to the sprite so it can be scaled for resolution purposes
 			const localTransform = new Container();
 			localTransform.addChild(sprite);

@@ -56,6 +56,11 @@ export class Animator extends Container {
 	 */
 	_currentIdx = 0;
 	/**
+	 * Animation offset. Frames before the offset will never be played.
+	 * @type {number}
+	 */
+	_offsetIdx = 0;
+	/**
 	 * Time elasped since last animation key.
 	 * Will reset once reaching the _tickRate value.
 	 * @type {number}
@@ -85,6 +90,14 @@ export class Animator extends Container {
 	}
 
 	/**
+	 * Get the animation current index.
+	 * @returns {number} Return the current frame index of the animation.
+	 */
+	getCurrentIdx() {
+		return this._currentIdx + this._offsetIdx;
+	}
+
+	/**
 	 * Register a new callback for the Animator.
 	 * The callback will be triggered if a frame has registered a callback of the same name.
 	 * @param {string} name Name of the callback to register.
@@ -98,23 +111,13 @@ export class Animator extends Container {
 	 * Execute all the callbacks for the current frame, if any.
 	 */
 	executeCallbacks() {
-		if (this._animation?.callbacks && this._animation.callbacks[this._currentIdx]) {
-			for (const f of this._animation.callbacks[this._currentIdx]) {
+		if (this._animation?.callbacks && this._animation.callbacks[this.getCurrentIdx()]) {
+			for (const f of this._animation.callbacks[this.getCurrentIdx()]) {
 				if (this._callbacks[f[0]]) {
 					this._callbacks[f[0]](f.slice(1));
 				}
 			}
 		}
-	}
-
-	/**
-	 * Flip the animator container around an X pivot.
-	 * @param {number} pivot The X coordinate of the pivot point.
-	 */
-	flip(pivot) {
-		this.pivot.set(pivot, 0);
-		this.x = pivot;
-		this.scale.x = -1;
 	}
 
 	/**
@@ -134,11 +137,21 @@ export class Animator extends Container {
 	}
 
 	/**
-	 * Set the transform Matrix of the body of the Animator.
-	 * @param {*} transform An object containing the tx ty a b c d element of a Matrix in order to set the transform.
+	 * Set the transform Matrix of the body of the Animator based on the transforms of the dino.
+	 * @param {Array} transforms An array comprised of objects containing the tx ty a b c d element of a Matrix in order to set the transform.
+	 * @param {Array} dParts The configuration array of the dino.
 	 */
-	setBodyTransform(transform) {
-		this._body.transform.setFromMatrix(this.matrixFromObject(transform));
+	setBodyTransforms(transforms, dParts) {
+		// TODO: Add brighness and contrast
+		const bodyMatrix = this._body.transform.localTransform;
+		for (const t of transforms) {
+			if (t.partIdx) {
+				bodyMatrix.append(this.matrixFromObject(t.transforms[dParts[t.partIdx] % t.transforms.length]));
+			} else {
+				bodyMatrix.append(this.matrixFromObject(t));
+			}
+		}
+		this._body.transform.setFromMatrix(bodyMatrix);
 	}
 
 	/**
@@ -173,7 +186,7 @@ export class Animator extends Container {
 	 * If a part does not have a definition for the current keyframe, it will be hidden.
 	 */
 	moveParts() {
-		const frame = this._animation?.frames ? this._animation.frames[this._currentIdx] : undefined;
+		const frame = this._animation?.frames ? this._animation.frames[this.getCurrentIdx()] : undefined;
 		for (let p in this._parts) {
 			if (frame && frame[p]) {
 				this._parts[p].visible = true;
@@ -200,7 +213,9 @@ export class Animator extends Container {
 	 * @param {any} animation The animation object to be played. Should contain at least a "frames" attribute.
 	 */
 	playAnim(animation) {
-		this._animation = animation;
+		const anim = animation.anim ?? animation;
+		this._offsetIdx = (animation.offset ?? 0) % (anim?.frames.length ?? 1);
+		this._animation = anim;
 		this._currentIdx = 0;
 		this.playing = true;
 		this.moveParts();
@@ -218,7 +233,8 @@ export class Animator extends Container {
 		this._time += Ticker.shared.elapsedMS;
 		if (this._time >= this._tickRate) {
 			this._currentIdx =
-				(this._currentIdx + Math.floor(this._time / this._tickRate)) % this._animation?.frames.length;
+				(this._currentIdx + Math.floor(this._time / this._tickRate)) %
+				(this._animation?.frames.length - this._offsetIdx);
 			this._time = this._time % this._tickRate;
 			this.moveParts();
 			this.executeCallbacks();
