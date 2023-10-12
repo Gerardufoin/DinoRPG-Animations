@@ -31,5 +31,14 @@ export let mapping = {
 	'Symbol 178_p5': 'tail',
 	'Symbol 184': 'body',
 	'Symbol 214_p7': 'head',
-	'Symbol 220_p6c': 'back_left_leg'
+	'Symbol 220_p6c': 'back_left_leg',
+	// 284
+	'Symbol 234_p5f': 'right_leg_3',
+	'Symbol 235_p5e': 'right_leg_2',
+	'Symbol 247_p5d': 'right_leg_1',
+	'Symbol 268_p3': 'body',
+	'Symbol 271_special': 'special',
+	'Symbol 273_p5a': 'left_leg_1',
+	'Symbol 274_p5c': 'left_leg_3',
+	'Symbol 275_p5b': 'left_leg_2'
 };

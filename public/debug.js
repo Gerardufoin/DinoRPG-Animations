@@ -52,13 +52,14 @@ function addDinoz(data, showOrigin = false) {
 	if (showOrigin) {
 		const origin = new DinoAnim.Graphics();
 		origin.beginFill(0xff0000);
-		origin.drawCircle(5, 5, 1);
+		origin.drawCircle(20, 20, 1);
 		origin.endFill();
 		app.stage.addChild(origin);
 	}
 	document.body.appendChild(app.view);
 }
 
+// Moueffe
 addDinoz('09T1Yt9wqq4Rx000', true);
 /*addDinoz('09w7y7qqpdhld000');
 addDinoz('09adQBgO8T065000');
@@ -66,11 +67,21 @@ addDinoz('09vGg4LW1S9fn000');
 addDinoz('0A8uYQDU0FywV000'); // Krapassa
 addDinoz('0AcokGzWsf6WP000'); // Shamak
 addDinoz('0An2HcXN9sl3m000'); // Krazablue*/
+// Pigmou
 addDinoz('19hot0hFbItLS000');
-addDinoz('199zX1Jn1zGXG000');
+/*addDinoz('199zX1Jn1zGXG000');
 addDinoz('191okqcRZdgVi000');
 addDinoz('19VSfUdpIPb0a000');
-addDinoz('1AADFvpotbA6y000');
+addDinoz('1AADFvpotbA6y000');*/
+// Winks
+addDinoz('29yp89zwHWlmC000', true);
+addDinoz('29VRA00KtkGM1000');
+addDinoz('292lB2TF3D1Cz000');
+addDinoz('29jH6Z7YjJdw5110');
+addDinoz('293DclwhG64Vd000');
+addDinoz('2ADTmPjGH4lLO000');
+addDinoz('2AIhcx2YC9ksv000');
+addDinoz('2AGVenN21FGJk000');
 
 /*const app = new Application({
 	background: '#E7B577',

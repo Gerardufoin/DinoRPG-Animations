@@ -108,7 +108,7 @@ export let pigmou = {
 		distance: 1,
 		color: 0x330000,
 		quality: 1,
-		strength: 0.2
+		strength: 0.3
 	},
 	palette: [
 		[

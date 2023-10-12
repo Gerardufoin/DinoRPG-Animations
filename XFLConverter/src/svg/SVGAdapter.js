@@ -91,6 +91,8 @@ export class SVGAdapter {
 							}
 						}
 						this.saveAdaptedSVG(resultFolder, symbol, this._builder.build(data));
+					} else {
+						//console.log(`${symbol}: ${svgDoc.validationErrors}`);
 					}
 				}
 			}
@@ -209,5 +211,51 @@ export class SVGAdapter {
 	 */
 	roundToPlace(number, place) {
 		return Math.round(number * Math.pow(10, place)) / Math.pow(10, place);
+	}
+
+	/**
+	 * Convert a hex color to its RGB components.
+	 * https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
+	 * @param {string} hex The hexadecimal color code
+	 * @returns {object} An object comprised of the r g b parameters
+	 */
+	hexToRgb(hex) {
+		var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+		return result
+			? {
+					r: parseInt(result[1], 16),
+					g: parseInt(result[2], 16),
+					b: parseInt(result[3], 16)
+			  }
+			: null;
+	}
+
+	/**
+	 * Convert an RGB color to its hexadecimal representation.
+	 * https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
+	 * @param {number} r Red component.
+	 * @param {number} g Green component.
+	 * @param {number} b Blue component.
+	 * @returns {string} The string hexadecimal representation of the color.
+	 */
+	rgbToHex(r, g, b) {
+		return '#' + ((1 << 24) | (r << 16) | (g << 8) | b).toString(16).slice(1);
+	}
+
+	/**
+	 * Find the needed to go from color A to color B and print its RGB value
+	 * @param {string} colorA Starting color
+	 * @param {string} colorB End color
+	 */
+	findTintFromTo(colorA, colorB) {
+		const colA = this.hexToRgb(colorA);
+		const colB = this.hexToRgb(colorB);
+		console.log(
+			this.rgbToHex(
+				(colB.r / 255.0 / (colA.r / 255.0)) * 255.0,
+				(colB.g / 255.0 / (colA.g / 255.0)) * 255.0,
+				(colB.b / 255.0 / (colA.b / 255.0)) * 255.0
+			)
+		);
 	}
 }
