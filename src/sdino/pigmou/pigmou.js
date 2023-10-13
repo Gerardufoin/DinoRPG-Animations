@@ -9,6 +9,7 @@ import { jump } from './animations/jump';
 import { attack } from './animations/attack';
 import { land } from './animations/land';
 import { dead } from './animations/dead';
+import { ref } from '../references';
 
 export let pigmou = {
 	name: 'pigmou',
@@ -178,8 +179,7 @@ export let pigmou = {
 		]
 	],
 	shadow: {
-		ref: 'fx/shadow.svg',
-		offset: { x: 14.25, y: 8.95 },
+		ref: ref.fx.shadow,
 		transform: {
 			tx: 0.3,
 			ty: 8.55,
@@ -195,8 +195,7 @@ export let pigmou = {
 			// 167
 			{
 				colorIdx: 0,
-				ref: 'front_leg.svg',
-				offset: { x: 7.25, y: 5.4 },
+				ref: ref.pigmou.front_leg,
 				transform: {
 					ty: -0.5
 				}
@@ -208,8 +207,7 @@ export let pigmou = {
 					// 172
 					{
 						colorIdx: 1,
-						ref: 'leg_fur.svg',
-						offset: { x: 4.1, y: 3.35 },
+						ref: ref.pigmou.leg_fur,
 						transform: {
 							tx: 2.15,
 							ty: -2.6,
@@ -229,10 +227,9 @@ export let pigmou = {
 					// 169
 					{
 						special: true,
-						ref: 'front_leg_special.svg',
-						blend: [BLEND_MODES.MULTIPLY],
 						colorIdx: 0,
-						offset: { x: 1, y: 1 },
+						ref: ref.pigmou.front_leg_special,
+						blend: [BLEND_MODES.MULTIPLY],
 						transform: {
 							tx: -4.85,
 							ty: -3.2
@@ -249,9 +246,8 @@ export let pigmou = {
 				frames: [0, 1, 2, 3],
 				parts: [
 					{
-						ref: 'tail_fur.svg',
-						offset: { x: 3.65, y: 3.2 },
 						colorIdx: 1,
+						ref: ref.pigmou.tail_fur,
 						transform: {
 							tx: -0.05,
 							ty: -0.1,
@@ -262,9 +258,8 @@ export let pigmou = {
 						}
 					},
 					{
-						ref: 'tail_fur.svg',
-						offset: { x: 3.65, y: 3.2 },
 						colorIdx: 1,
+						ref: ref.pigmou.tail_fur,
 						transform: {
 							tx: 4.45,
 							ty: -3.0,
@@ -275,9 +270,8 @@ export let pigmou = {
 						}
 					},
 					{
-						ref: 'tail_fur.svg',
-						offset: { x: 3.65, y: 3.2 },
 						colorIdx: 1,
+						ref: ref.pigmou.tail_fur,
 						transform: {
 							tx: -0.75,
 							ty: -0.25,
@@ -288,9 +282,8 @@ export let pigmou = {
 						}
 					},
 					{
-						ref: 'tail_fur.svg',
-						offset: { x: 3.65, y: 3.2 },
 						colorIdx: 1,
+						ref: ref.pigmou.tail_fur,
 						transform: {
 							tx: -0.5,
 							ty: -1.55,
@@ -309,8 +302,7 @@ export let pigmou = {
 				parts: [
 					{
 						colorIdx: 0,
-						ref: 'tail.svg',
-						offset: { x: 4, y: 4.9 },
+						ref: ref.pigmou.tail,
 						transform: {
 							tx: 0.2,
 							ty: -1.8
@@ -324,8 +316,7 @@ export let pigmou = {
 			// 180
 			{
 				colorIdx: 0,
-				ref: 'body.svg',
-				offset: { x: 6.35, y: 5.35 }
+				ref: ref.pigmou.body
 			},
 			// 183
 			{
@@ -335,9 +326,8 @@ export let pigmou = {
 					// 182
 					{
 						colorIdx: 0,
-						ref: 'body_special.svg',
+						ref: ref.pigmou.body_special,
 						blend: [BLEND_MODES.MULTIPLY],
-						offset: { x: 1, y: 1 },
 						transform: {
 							tx: -4,
 							ty: -4.4
@@ -351,8 +341,7 @@ export let pigmou = {
 			// 167
 			{
 				colorIdx: 0,
-				ref: 'front_leg.svg',
-				offset: { x: 7.25, y: 5.4 },
+				ref: ref.pigmou.front_leg,
 				transform: {
 					ty: -0.5
 				}
@@ -364,8 +353,7 @@ export let pigmou = {
 					// 172
 					{
 						colorIdx: 1,
-						ref: 'leg_fur.svg',
-						offset: { x: 4.1, y: 3.35 },
+						ref: ref.pigmou.leg_fur,
 						transform: {
 							tx: 2.15,
 							ty: -2.6,
@@ -385,10 +373,9 @@ export let pigmou = {
 					// 169
 					{
 						special: true,
-						ref: 'front_leg_special.svg',
-						blend: [BLEND_MODES.MULTIPLY],
 						colorIdx: 0,
-						offset: { x: 1, y: 1 },
+						ref: ref.pigmou.front_leg_special,
+						blend: [BLEND_MODES.MULTIPLY],
 						transform: {
 							tx: -4.85,
 							ty: -3.2
@@ -406,8 +393,7 @@ export let pigmou = {
 					// 200
 					{
 						colorIdx: 0,
-						ref: 'head_acc_1.svg',
-						offset: { x: 4.7, y: 4.8 },
+						ref: ref.pigmou.head_acc_1,
 						transform: {
 							tx: -3.25,
 							ty: -4.05,
@@ -420,8 +406,7 @@ export let pigmou = {
 					// 206
 					{
 						colorIdx: 1,
-						ref: 'head_acc_2.svg',
-						offset: { x: 3.65, y: 3.75 },
+						ref: ref.pigmou.head_acc_2,
 						transform: {
 							tx: -4.65,
 							ty: 1.0,
@@ -432,8 +417,7 @@ export let pigmou = {
 					// 210
 					{
 						colorIdx: 1,
-						ref: 'head_acc_3.svg',
-						offset: { x: 2.1, y: 9.8 },
+						ref: ref.pigmou.head_acc_3,
 						transform: {
 							tx: -4.65,
 							ty: 1.0,
@@ -446,8 +430,7 @@ export let pigmou = {
 			// 186
 			{
 				colorIdx: 0,
-				ref: 'head.svg',
-				offset: { x: 8, y: 8.8 },
+				ref: ref.pigmou.head,
 				transform: {
 					tx: -0.1,
 					ty: 0
@@ -461,10 +444,9 @@ export let pigmou = {
 					// 188
 					{
 						special: true,
-						ref: 'head_special.svg',
-						blend: [BLEND_MODES.MULTIPLY],
 						colorIdx: 0,
-						offset: { x: 1, y: 1 },
+						ref: ref.pigmou.head_special,
+						blend: [BLEND_MODES.MULTIPLY],
 						transform: {
 							tx: -6.65,
 							ty: -7.8
@@ -478,8 +460,7 @@ export let pigmou = {
 				parts: [
 					// 190
 					{
-						ref: 'head_acc_4.svg',
-						offset: { x: 3, y: 6.45 }
+						ref: ref.pigmou.head_acc_4
 					},
 					// 193
 					{
@@ -488,8 +469,7 @@ export let pigmou = {
 						parts: [
 							// 191
 							{
-								ref: 'head_acc_5.svg',
-								offset: { x: 4.15, y: 3.85 },
+								ref: ref.pigmou.head_acc_5,
 								transform: {
 									tx: -0.75,
 									ty: -2.04
@@ -497,8 +477,7 @@ export let pigmou = {
 							},
 							// 192
 							{
-								ref: 'head_acc_6.svg',
-								offset: { x: 4.15, y: 9.55 },
+								ref: ref.pigmou.head_acc_6,
 								transform: {
 									tx: -0.75,
 									ty: -2.04
@@ -508,8 +487,7 @@ export let pigmou = {
 					},
 					// 195
 					{
-						ref: 'head_acc_7.svg',
-						offset: { x: 3.9, y: 13.85 },
+						ref: ref.pigmou.head_acc_7,
 						transform: {
 							tx: -2.85,
 							ty: -3.85,
@@ -530,8 +508,7 @@ export let pigmou = {
 						parts: [
 							// 196
 							{
-								ref: 'head_acc_8.svg',
-								offset: { x: 6, y: 5.6 },
+								ref: ref.pigmou.head_acc_8,
 								alpha: 0.4, // There is a difference in stroke opacity between opacity of Flash and PixiJS SVG
 								transform: {
 									tx: 1,
@@ -540,8 +517,7 @@ export let pigmou = {
 							},
 							// 197
 							{
-								ref: 'head_acc_9.svg',
-								offset: { x: 7.45, y: 7.75 },
+								ref: ref.pigmou.head_acc_9,
 								alpha: 0.4, // There is a difference in stroke opacity between opacity of Flash and PixiJS SVG
 								transform: {
 									tx: 1,
@@ -553,8 +529,7 @@ export let pigmou = {
 					// 200
 					{
 						colorIdx: 0,
-						ref: 'head_acc_1.svg',
-						offset: { x: 4.7, y: 4.8 },
+						ref: ref.pigmou.head_acc_1,
 						transform: {
 							tx: 5.3,
 							ty: 2.35
@@ -563,9 +538,8 @@ export let pigmou = {
 					// 203
 					{
 						colorIdx: 2,
+						ref: ref.pigmou.head_acc_10,
 						blend: [BLEND_MODES.MULTIPLY],
-						part: 'head_acc_10.svg',
-						offset: { x: 5.15, y: 5.4 },
 						transform: {
 							tx: 1.9,
 							ty: -3.05
@@ -574,8 +548,7 @@ export let pigmou = {
 					// 206
 					{
 						colorIdx: 1,
-						ref: 'head_acc_2.svg',
-						offset: { x: 3.65, y: 3.75 },
+						ref: ref.pigmou.head_acc_2,
 						transform: {
 							tx: 3.8,
 							ty: 6.4
@@ -584,8 +557,7 @@ export let pigmou = {
 					// 208
 					{
 						colorIdx: 0,
-						ref: 'head_acc_11.svg',
-						offset: { x: 6.9, y: 6.1 },
+						ref: ref.pigmou.head_acc_11,
 						transform: {
 							tx: 3.05,
 							ty: -4.65
@@ -594,8 +566,7 @@ export let pigmou = {
 					// 212
 					{
 						colorIdx: 1,
-						ref: 'head_acc_12.svg',
-						offset: { x: 3.2, y: 4.85 },
+						ref: ref.pigmou.head_acc_12,
 						transform: {
 							tx: 3.8,
 							ty: 6.4
@@ -609,8 +580,7 @@ export let pigmou = {
 				parts: [
 					// 195
 					{
-						ref: 'head_acc_7.svg',
-						offset: { x: 3.9, y: 13.85 },
+						ref: ref.pigmou.head_acc_7,
 						transform: {
 							tx: 0.95,
 							ty: -0.8,
@@ -628,8 +598,7 @@ export let pigmou = {
 					},
 					// 201
 					{
-						ref: 'head_acc_13.svg',
-						offset: { x: 3, y: 6.45 }
+						ref: ref.pigmou.head_acc_13
 					},
 					// 193
 					{
@@ -638,8 +607,7 @@ export let pigmou = {
 						parts: [
 							// 191
 							{
-								ref: 'head_acc_5.svg',
-								offset: { x: 4.15, y: 3.85 },
+								ref: ref.pigmou.head_acc_5,
 								transform: {
 									tx: -0.75,
 									ty: -2.05
@@ -647,8 +615,7 @@ export let pigmou = {
 							},
 							// 192
 							{
-								ref: 'head_acc_6.svg',
-								offset: { x: 4.15, y: 9.55 },
+								ref: ref.pigmou.head_acc_6,
 								transform: {
 									tx: -0.75,
 									ty: -2.05
@@ -663,8 +630,7 @@ export let pigmou = {
 						parts: [
 							// 196
 							{
-								ref: 'head_acc_8.svg',
-								offset: { x: 6, y: 5.6 },
+								ref: ref.pigmou.head_acc_8,
 								alpha: 0.4, // There is a difference in stroke opacity between opacity of Flash and PixiJS SVG
 								transform: {
 									tx: 1,
@@ -673,8 +639,7 @@ export let pigmou = {
 							},
 							// 197
 							{
-								ref: 'head_acc_9.svg',
-								offset: { x: 7.45, y: 7.75 },
+								ref: ref.pigmou.head_acc_9,
 								alpha: 0.4, // There is a difference in stroke opacity between opacity of Flash and PixiJS SVG
 								transform: {
 									tx: 1,
@@ -685,8 +650,7 @@ export let pigmou = {
 					},
 					// 213
 					{
-						ref: 'head_acc_14.svg',
-						offset: { x: 3, y: 6.45 }
+						ref: ref.pigmou.head_acc_14
 					}
 				]
 			},
@@ -696,8 +660,7 @@ export let pigmou = {
 				parts: [
 					// 204
 					{
-						ref: 'head_acc_15.svg',
-						offset: { x: 3, y: 6.45 }
+						ref: ref.pigmou.head_acc_15
 					}
 				]
 			}
@@ -707,8 +670,7 @@ export let pigmou = {
 			// 216
 			{
 				colorIdx: 0,
-				ref: 'back_leg.svg',
-				offset: { x: 4.15, y: 5.85 },
+				ref: ref.pigmou.back_leg,
 				transform: {
 					tx: 0.05
 				}
@@ -720,8 +682,7 @@ export let pigmou = {
 					// 172
 					{
 						colorIdx: 1,
-						ref: 'leg_fur.svg',
-						offset: { x: 4.1, y: 3.35 },
+						ref: ref.pigmou.leg_fur,
 						transform: {
 							tx: 0.1,
 							ty: -2.45
@@ -737,10 +698,9 @@ export let pigmou = {
 					// 218
 					{
 						special: true,
-						ref: 'back_leg_special.svg',
-						blend: [BLEND_MODES.MULTIPLY],
 						colorIdx: 0,
-						offset: { x: 1, y: 1 },
+						ref: ref.pigmou.back_leg_special,
+						blend: [BLEND_MODES.MULTIPLY],
 						transform: {
 							tx: -2.85,
 							ty: -2.85
@@ -752,36 +712,31 @@ export let pigmou = {
 		// 146
 		fx_impact_1: [
 			{
-				ref: '../fx/impact_1.svg',
-				offset: { x: 9.75, y: 20.35 }
+				ref: ref.fx.impact_1
 			}
 		],
 		// 147
 		fx_impact_2: [
 			{
-				ref: '../fx/impact_2.svg',
-				offset: { x: 14.05, y: 26.05 }
+				ref: ref.fx.impact_2
 			}
 		],
 		// 148
 		fx_impact_3: [
 			{
-				ref: '../fx/impact_3.svg',
-				offset: { x: 17.7, y: 32.75 }
+				ref: ref.fx.impact_3
 			}
 		],
 		// 149
 		fx_impact_4: [
 			{
-				ref: '../fx/impact_4.svg',
-				offset: { x: 19.85, y: 36.6 }
+				ref: ref.fx.impact_4
 			}
 		],
 		// 150
 		fx_impact_5: [
 			{
-				ref: '../fx/impact_5.svg',
-				offset: { x: 21.0, y: 38.8 }
+				ref: ref.fx.impact_5
 			}
 		]
 	},

@@ -9,6 +9,7 @@ import { land } from './animations/land.js';
 import { attack } from './animations/attack.js';
 import { dead } from './animations/dead.js';
 import { release } from './animations/release.js';
+import { ref } from '../references.js';
 
 export let moueffe = {
 	name: 'moueffe',
@@ -184,8 +185,7 @@ export let moueffe = {
 		]
 	],
 	shadow: {
-		ref: 'fx/shadow.svg',
-		offset: { x: 14.25, y: 8.95 },
+		ref: ref.fx.shadow,
 		transform: {
 			tx: -0.8,
 			ty: 11.1,
@@ -201,8 +201,7 @@ export let moueffe = {
 			// 81
 			{
 				colorIdx: 0,
-				ref: 'right_arm.svg',
-				offset: { x: 3.2, y: 6.9 },
+				ref: ref.moueffe.right_arm,
 				transform: {
 					tx: 11.95,
 					ty: 8.2,
@@ -218,8 +217,7 @@ export let moueffe = {
 			// 84
 			{
 				colorIdx: 0,
-				ref: 'foot.svg',
-				offset: { x: 1, y: 1 },
+				ref: ref.moueffe.foot,
 				transform: {
 					tx: -5.15,
 					ty: -3.55
@@ -227,14 +225,12 @@ export let moueffe = {
 			},
 			// 85
 			{
-				ref: 'right_foot_claws.svg',
-				offset: { x: 7.5, y: 2.3 }
+				ref: ref.moueffe.right_foot_claws
 			},
 			// 87
 			{
 				special: true,
-				ref: 'right_foot_special.svg',
-				offset: { x: 1, y: 1 },
+				ref: ref.moueffe.right_foot_special,
 				transform: {
 					tx: -9.15,
 					ty: -4.1
@@ -246,8 +242,7 @@ export let moueffe = {
 			// 90
 			{
 				colorIdx: 0,
-				ref: 'connector.svg',
-				offset: { x: 4.35, y: 2.85 }
+				ref: ref.moueffe.connector
 			}
 		],
 		// 98
@@ -255,8 +250,7 @@ export let moueffe = {
 			// 94
 			{
 				colorIdx: 0,
-				ref: 'right_leg.svg',
-				offset: { x: 5.75, y: 7.55 },
+				ref: ref.moueffe.right_leg,
 				transform: {
 					tx: 3.75,
 					ty: 2.0
@@ -265,8 +259,7 @@ export let moueffe = {
 			// 96
 			{
 				special: true,
-				ref: 'right_leg_special.svg',
-				offset: { x: 1, y: 1 },
+				ref: ref.moueffe.right_leg_special,
 				transform: {
 					tx: -2,
 					ty: -1.3
@@ -278,8 +271,7 @@ export let moueffe = {
 				parts: [
 					// 97
 					{
-						ref: 'leg_bone.svg',
-						offset: { x: -0.6, y: 3.45 },
+						ref: ref.moueffe.leg_bone,
 						transform: {
 							tx: 1.85,
 							ty: -2.05
@@ -293,8 +285,7 @@ export let moueffe = {
 			// 90
 			{
 				colorIdx: 0,
-				ref: 'connector.svg',
-				offset: { x: 4.35, y: 2.85 }
+				ref: ref.moueffe.connector
 			}
 		],
 		// 79
@@ -305,8 +296,7 @@ export let moueffe = {
 				parts: [
 					// 78
 					{
-						ref: 'back_bones.svg',
-						offset: { x: 1, y: 1 }
+						ref: ref.moueffe.back_bones
 					}
 				]
 			}
@@ -316,8 +306,7 @@ export let moueffe = {
 			// 100
 			{
 				colorIdx: 0,
-				ref: 'body_tail.svg',
-				offset: { x: 1.65, y: 0.9 },
+				ref: ref.moueffe.body_tail,
 				transform: {
 					tx: -4.15,
 					ty: 4.25,
@@ -330,16 +319,14 @@ export let moueffe = {
 			// 103
 			{
 				colorIdx: 0,
-				ref: 'body.svg',
-				offset: { x: 9.0, y: 9.5 }
+				ref: ref.moueffe.body
 			},
 			// 105
 			{
 				colorIdx: 0,
-				ref: 'body_belly.svg',
+				ref: ref.moueffe.body_belly,
 				blend: [BLEND_MODES.ADD],
-				alpha: 0.23828125,
-				offset: { x: 9.0, y: 9.3 }
+				alpha: 0.23828125
 			},
 			{
 				partIdx: 7,
@@ -352,8 +339,7 @@ export let moueffe = {
 						parts: [
 							// 106
 							{
-								ref: 'body_acc_1.svg',
-								offset: { x: 5.85, y: 6.05 },
+								ref: ref.moueffe.body_acc_1,
 								transform: {
 									tx: -3.85,
 									ty: 1.7
@@ -366,8 +352,7 @@ export let moueffe = {
 			// 109
 			{
 				special: true,
-				ref: 'body_special.svg',
-				offset: { x: 1, y: 1 },
+				ref: ref.moueffe.body_special,
 				transform: {
 					tx: -8.6,
 					ty: -8.95
@@ -379,8 +364,7 @@ export let moueffe = {
 			// 112
 			{
 				colorIdx: 0,
-				ref: 'head.svg',
-				offset: { x: 13.7, y: 5.8 },
+				ref: ref.moueffe.head,
 				transform: {
 					tx: 8.85,
 					ty: -8.35
@@ -393,8 +377,7 @@ export let moueffe = {
 					// 114
 					{
 						colorIdx: 1,
-						ref: 'head_acc_1.svg',
-						offset: { x: 1.4, y: 1.75 },
+						ref: ref.moueffe.head_acc_1,
 						transform: {
 							tx: 6.15,
 							ty: -14
@@ -403,8 +386,7 @@ export let moueffe = {
 					// 114 (scaled)
 					{
 						colorIdx: 1,
-						ref: 'head_acc_1.svg',
-						offset: { x: 1.4, y: 1.75 },
+						ref: ref.moueffe.head_acc_1,
 						transform: {
 							tx: 5.45,
 							ty: -14.45,
@@ -415,8 +397,7 @@ export let moueffe = {
 					// 116
 					{
 						colorIdx: 0,
-						ref: 'head_acc_2.svg',
-						offset: { x: 1, y: 1 },
+						ref: ref.moueffe.head_acc_2,
 						transform: {
 							tx: 7.7,
 							ty: -15.3
@@ -425,8 +406,7 @@ export let moueffe = {
 					// 118
 					{
 						colorIdx: 1,
-						ref: 'head_acc_3.svg',
-						offset: { x: 1.9, y: 2.05 },
+						ref: ref.moueffe.head_acc_3,
 						transform: {
 							tx: 6.5,
 							ty: -15.85
@@ -434,19 +414,16 @@ export let moueffe = {
 					},
 					// 119
 					{
-						ref: 'head_acc_4.svg',
-						offset: { x: -6.4, y: 15.85 }
+						ref: ref.moueffe.head_acc_4
 					},
 					// 120
 					{
-						ref: 'head_acc_5.svg',
-						offset: { x: -5.65, y: 18.65 }
+						ref: ref.moueffe.head_acc_5
 					},
 					// 122
 					{
 						colorIdx: 0,
-						ref: 'head_acc_6.svg',
-						offset: { x: 1.5, y: 1.4 },
+						ref: ref.moueffe.head_acc_6,
 						transform: {
 							tx: 6.5,
 							ty: -15.85
@@ -460,8 +437,7 @@ export let moueffe = {
 			// 90
 			{
 				colorIdx: 0,
-				ref: 'connector.svg',
-				offset: { x: 4.35, y: 2.85 }
+				ref: ref.moueffe.connector
 			}
 		],
 		// 91
@@ -469,8 +445,7 @@ export let moueffe = {
 			// 90
 			{
 				colorIdx: 0,
-				ref: 'connector.svg',
-				offset: { x: 4.35, y: 2.85 },
+				ref: ref.moueffe.connector,
 				transform: {
 					tx: 3.35,
 					ty: 1.85
@@ -482,8 +457,7 @@ export let moueffe = {
 			// 84
 			{
 				colorIdx: 0,
-				ref: 'foot.svg',
-				offset: { x: 1, y: 1 },
+				ref: ref.moueffe.foot,
 				transform: {
 					tx: -5.15,
 					ty: -3.55
@@ -491,14 +465,12 @@ export let moueffe = {
 			},
 			// 124
 			{
-				ref: 'left_foot_claws.svg',
-				offset: { x: 4.25, y: -0.35 }
+				ref: ref.moueffe.left_foot_claws
 			},
 			// 126
 			{
 				special: true,
-				ref: 'left_foot_special.svg',
-				offset: { x: 1, y: 1 },
+				ref: ref.moueffe.left_foot_special,
 				transform: {
 					tx: -5.85,
 					ty: -3.85
@@ -510,8 +482,7 @@ export let moueffe = {
 			// 129
 			{
 				colorIdx: 0,
-				ref: 'left_leg.svg',
-				offset: { x: 5.75, y: 7.55 },
+				ref: ref.moueffe.left_leg,
 				transform: {
 					tx: 3.75,
 					ty: 2.0
@@ -523,16 +494,14 @@ export let moueffe = {
 				parts: [
 					// 97
 					{
-						ref: 'leg_bone.svg',
-						offset: { x: -0.6, y: 3.45 }
+						ref: ref.moueffe.leg_bone
 					}
 				]
 			},
 			// 131
 			{
 				special: true,
-				ref: 'left_leg_special.svg',
-				offset: { x: 1, y: 1 },
+				ref: ref.moueffe.left_leg_special,
 				transform: {
 					tx: -1.7,
 					ty: -0.9
@@ -544,8 +513,7 @@ export let moueffe = {
 			{
 				// 159
 				colorIdx: 0,
-				ref: 'hand.svg',
-				offset: { x: 7.6, y: 8.35 },
+				ref: ref.moueffe.hand,
 				transform: {
 					tx: -2.75,
 					ty: -2.15
@@ -557,8 +525,7 @@ export let moueffe = {
 			// 134
 			{
 				colorIdx: 0,
-				ref: 'left_arm.svg',
-				offset: { x: 3.2, y: 6.9 },
+				ref: ref.moueffe.left_arm,
 				transform: {
 					tx: 3.6,
 					ty: 7.9,
@@ -581,8 +548,7 @@ export let moueffe = {
 							{
 								colorIdx: 2,
 								blend: BLEND_MODES.HARD_LIGHT,
-								ref: 'left_arm_sigil.svg',
-								offset: { x: 1, y: 1 },
+								ref: ref.moueffe.left_arm_sigil,
 								transform: {
 									tx: 5.75,
 									ty: 4.15
@@ -592,8 +558,7 @@ export let moueffe = {
 					},
 					// 138
 					{
-						ref: 'left_arm_bone.svg',
-						offset: { x: -8.2, y: -8.25 }
+						ref: ref.moueffe.left_arm_bone
 					}
 				]
 			}
@@ -603,8 +568,7 @@ export let moueffe = {
 			{
 				// 159
 				colorIdx: 0,
-				ref: 'hand.svg',
-				offset: { x: 7.6, y: 8.35 },
+				ref: ref.moueffe.hand,
 				transform: {
 					tx: -2.75,
 					ty: -2.15
@@ -614,57 +578,49 @@ export let moueffe = {
 		// 146
 		fx_impact_1: [
 			{
-				ref: '../fx/impact_1.svg',
-				offset: { x: 9.75, y: 20.35 }
+				ref: ref.fx.impact_1
 			}
 		],
 		// 147
 		fx_impact_2: [
 			{
-				ref: '../fx/impact_2.svg',
-				offset: { x: 14.05, y: 26.05 }
+				ref: ref.fx.impact_2
 			}
 		],
 		// 148
 		fx_impact_3: [
 			{
-				ref: '../fx/impact_3.svg',
-				offset: { x: 17.7, y: 32.75 }
+				ref: ref.fx.impact_3
 			}
 		],
 		// 149
 		fx_impact_4: [
 			{
-				ref: '../fx/impact_4.svg',
-				offset: { x: 19.85, y: 36.6 }
+				ref: ref.fx.impact_4
 			}
 		],
 		// 150
 		fx_impact_5: [
 			{
-				ref: '../fx/impact_5.svg',
-				offset: { x: 21.0, y: 38.8 }
+				ref: ref.fx.impact_5
 			}
 		],
 		// 154
 		fx_dust_1: [
 			{
-				ref: 'fx_dust.svg',
-				offset: { x: 9.9, y: 10.65 }
+				ref: ref.fx.dust_brown
 			}
 		],
 		// 154
 		fx_dust_2: [
 			{
-				ref: 'fx_dust.svg',
-				offset: { x: 9.9, y: 10.65 }
+				ref: ref.fx.dust_brown
 			}
 		],
 		// 154
 		fx_dust_3: [
 			{
-				ref: 'fx_dust.svg',
-				offset: { x: 9.9, y: 10.65 }
+				ref: ref.fx.dust_brown
 			}
 		]
 	},

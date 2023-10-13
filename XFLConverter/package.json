@@ -17,6 +17,7 @@
 	},
 	"dependencies": {
 		"fast-xml-parser": "^4.2.7",
-		"libxmljs2": "^0.32.0"
+		"libxmljs2": "^0.32.0",
+		"lz-string": "^1.5.0"
 	}
 }

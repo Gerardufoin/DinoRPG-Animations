@@ -38,7 +38,7 @@ export let mapping = {
 	148: 'fx/impact_3',
 	149: 'fx/impact_4',
 	150: 'fx/impact_5',
-	154: 'moueffe/fx_dust',
+	154: 'fx/dust',
 	159: 'moueffe/hand',
 	167: 'pigmou/front_leg',
 	169: 'pigmou/front_leg_special',

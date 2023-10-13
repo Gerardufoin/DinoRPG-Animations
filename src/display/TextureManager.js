@@ -1,6 +1,6 @@
 // @ts-check
 import { Texture } from 'pixi.js';
-
+import LZString from 'lz-string';
 /**
  * Static class managing the textures.
  * Will only load a specific file once and then store the reference to the texture.
@@ -29,5 +29,18 @@ export class TextureManager {
 			});
 		}
 		return TextureManager.textures[texturePath + scl];
+	}
+
+	/**
+	 * Returns a PixiJS Texture of the SVG data passed as parameter.
+	 * @param {string} data Raw SVG data compressed to base64 with LZ-String.
+	 * @param {number} scale The scale of the texture, needed at load time for SVG textures.
+	 * @returns {Texture} The PixiJS texture based on the SVG data and scale.
+	 */
+	static getTextureFromCompressedReference(data, scale = 1) {
+		let scl = (scale ?? 0) <= 0 ? 1 : scale;
+		return Texture.from(LZString.decompressFromBase64(data), {
+			resourceOptions: { scale: scl * TextureManager.RESOLUTION }
+		});
 	}
 }

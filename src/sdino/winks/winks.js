@@ -2,6 +2,7 @@
 
 import { BLEND_MODES } from 'pixi.js';
 import { stand } from './animations/stand.js';
+import { ref } from '../references.js';
 
 export let winks = {
 	name: 'winks',
@@ -177,8 +178,7 @@ export let winks = {
 		]
 	],
 	shadow: {
-		ref: 'fx/shadow.svg',
-		offset: { x: 14.25, y: 8.95 },
+		ref: ref.fx.shadow,
 		transform: {
 			tx: 0.3,
 			ty: 8.55,
@@ -198,8 +198,7 @@ export let winks = {
 					// 233
 					{
 						colorIdx: 0,
-						ref: 'leg.svg',
-						offset: { x: 5.5, y: 7.9 },
+						ref: ref.winks.leg,
 						transform: {
 							tx: 18.15,
 							ty: 8.1,
@@ -212,8 +211,7 @@ export let winks = {
 					// 233
 					{
 						colorIdx: 1,
-						ref: 'leg.svg',
-						offset: { x: 5.5, y: 7.9 },
+						ref: ref.winks.leg,
 						transform: {
 							tx: 18.15,
 							ty: 8.1,
@@ -226,8 +224,7 @@ export let winks = {
 					// 233
 					{
 						colorIdx: 1,
-						ref: 'leg.svg',
-						offset: { x: 5.5, y: 7.9 },
+						ref: ref.winks.leg,
 						transform: {
 							tx: 19.35,
 							ty: 7.85,
@@ -249,8 +246,7 @@ export let winks = {
 					// 233
 					{
 						colorIdx: 0,
-						ref: 'leg.svg',
-						offset: { x: 5.5, y: 7.9 },
+						ref: ref.winks.leg,
 						transform: {
 							tx: 12.95,
 							ty: 12.1,
@@ -263,8 +259,7 @@ export let winks = {
 					// 233
 					{
 						colorIdx: 1,
-						ref: 'leg.svg',
-						offset: { x: 5.5, y: 7.9 },
+						ref: ref.winks.leg,
 						transform: {
 							tx: 12.95,
 							ty: 12.1,
@@ -277,8 +272,7 @@ export let winks = {
 					// 233
 					{
 						colorIdx: 1,
-						ref: 'leg.svg',
-						offset: { x: 5.5, y: 7.9 },
+						ref: ref.winks.leg,
 						transform: {
 							tx: 15.05,
 							ty: 12.3,
@@ -300,8 +294,7 @@ export let winks = {
 					// 233
 					{
 						colorIdx: 0,
-						ref: 'leg.svg',
-						offset: { x: 5.5, y: 7.9 },
+						ref: ref.winks.leg,
 						transform: {
 							tx: 6.5,
 							ty: 15.5,
@@ -314,8 +307,7 @@ export let winks = {
 					// 233
 					{
 						colorIdx: 1,
-						ref: 'leg.svg',
-						offset: { x: 5.5, y: 7.9 },
+						ref: ref.winks.leg,
 						transform: {
 							tx: 6.5,
 							ty: 15.5,
@@ -328,8 +320,7 @@ export let winks = {
 					// 233
 					{
 						colorIdx: 1,
-						ref: 'leg.svg',
-						offset: { x: 5.5, y: 7.9 },
+						ref: ref.winks.leg,
 						transform: {
 							tx: 9.1,
 							ty: 15.1,
@@ -342,8 +333,7 @@ export let winks = {
 					// 237
 					{
 						colorIdx: 0,
-						ref: 'pincer.svg',
-						offset: { x: 9.45, y: 10.8 },
+						ref: ref.winks.pincer,
 						transform: {
 							tx: 9.204,
 							ty: 12.827,
@@ -365,8 +355,7 @@ export let winks = {
 					// 249
 					{
 						colorIdx: 0,
-						ref: 'body.svg',
-						offset: { x: 1, y: 1 },
+						ref: ref.winks.body,
 						transform: {
 							tx: -8.85,
 							ty: -7.35
@@ -380,14 +369,12 @@ export let winks = {
 				parts: [
 					// 250
 					{
-						ref: 'body_shine.svg',
-						offset: { x: 8.45, y: 7.25 }
+						ref: ref.winks.body_shine
 					},
 					// 252
 					{
 						colorIdx: 0,
-						ref: 'body_big_fold.svg',
-						offset: { x: 1, y: 1 },
+						ref: ref.winks.body_big_fold,
 						transform: {
 							tx: -5.6,
 							ty: -7.55
@@ -396,8 +383,7 @@ export let winks = {
 					// 255
 					{
 						colorIdx: 0,
-						ref: 'body_small_fold.svg',
-						offset: { x: 0.95, y: 1 },
+						ref: ref.winks.body_small_fold,
 						transform: {
 							tx: -4.45,
 							ty: -8.6
@@ -405,8 +391,7 @@ export let winks = {
 					},
 					// 258
 					{
-						ref: 'body_spike_brown.svg',
-						offset: { x: 1.05, y: 1 },
+						ref: ref.winks.body_spike_brown,
 						transform: {
 							tx: -5.0,
 							ty: -8.4,
@@ -417,8 +402,7 @@ export let winks = {
 					// 258
 					{
 						colorIdx: 0,
-						ref: 'body_spike.svg',
-						offset: { x: 1.05, y: 1 },
+						ref: ref.winks.body_spike,
 						transform: {
 							tx: -3.8,
 							ty: -9.45,
@@ -429,8 +413,7 @@ export let winks = {
 					// 262
 					{
 						colorIdx: 0,
-						ref: 'body_blob.svg',
-						offset: { x: 1.05, y: 1 },
+						ref: ref.winks.body_blob,
 						transform: {
 							tx: -9.6,
 							ty: -8.25
@@ -439,8 +422,7 @@ export let winks = {
 					// 262
 					{
 						colorIdx: 0,
-						ref: 'body_blob.svg',
-						offset: { x: 1.05, y: 1 },
+						ref: ref.winks.body_blob,
 						transform: {
 							tx: -9.6,
 							ty: -6.15,
@@ -456,24 +438,20 @@ export let winks = {
 				parts: [
 					// 253
 					{
-						ref: 'body_big_fold_shine.svg',
-						offset: { x: 8.45, y: 6.4 }
+						ref: ref.winks.body_big_fold_shine
 					},
 					// 256
 					{
-						ref: 'body_small_fold_shine.svg',
-						offset: { x: 8.7, y: 8.15 }
+						ref: ref.winks.body_small_fold_shine
 					},
 					// 259
 					{
-						ref: 'body_mono_spike_shine.svg',
-						offset: { x: 8.55, y: 8.15 }
+						ref: ref.winks.body_mono_spike_shine
 					},
 					// 258
 					{
 						colorIdx: 0,
-						ref: 'body_spike.svg',
-						offset: { x: 1.05, y: 1 },
+						ref: ref.winks.body_spike,
 						transform: {
 							tx: -6.6,
 							ty: -3.4,
@@ -484,8 +462,7 @@ export let winks = {
 					// 265
 					{
 						colorIdx: 2,
-						ref: 'body_dots.svg',
-						offset: { x: 38.9, y: 15.55 },
+						ref: ref.winks.body_dots,
 						blend: [BLEND_MODES.MULTIPLY],
 						transform: {
 							tx: -0.65,
@@ -498,13 +475,11 @@ export let winks = {
 					},
 					// 266
 					{
-						ref: 'body_speks.svg',
-						offset: { x: 10.5, y: 9.25 }
+						ref: ref.winks.body_speks
 					},
 					// 267
 					{
-						ref: 'body_small_spikes.svg',
-						offset: { x: 8.5, y: 7.05 }
+						ref: ref.winks.body_small_spikes
 					}
 				]
 			},
@@ -514,13 +489,11 @@ export let winks = {
 				parts: [
 					// 260
 					{
-						ref: 'body_dual_spikes_shine.svg',
-						offset: { x: 9, y: 8.95 }
+						ref: ref.winks.body_dual_spikes_shine
 					},
 					// 263
 					{
-						ref: 'body_blob_shine.svg',
-						offset: { x: 9.15, y: 7.5 }
+						ref: ref.winks.body_blob_shine
 					}
 				]
 			}

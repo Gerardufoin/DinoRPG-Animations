@@ -1,5 +1,7 @@
 // @ts-check
 
+import { ref } from './references';
+
 export let bad = {
 	name: 'bad',
 	center: 20,
@@ -19,8 +21,7 @@ export let bad = {
 		// 1640
 		bad: [
 			{
-				ref: 'bad.svg',
-				offset: { x: 30.95, y: 22.9 }
+				ref: ref.bad
 			}
 		]
 	}

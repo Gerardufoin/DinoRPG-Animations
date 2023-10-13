@@ -60,7 +60,8 @@ export class PartManager {
 			if (part.special && (partsDetail.length <= 15 || partsDetail[15] <= 0)) {
 				return null;
 			}
-			const texture = TextureManager.getTexture(assetPath + part.ref, scale);
+			let texture = undefined;
+			texture = TextureManager.getTextureFromCompressedReference(part.ref.svg, scale);
 			const sprite = Sprite.from(texture);
 			const filters = [];
 			sprite.scale.set(1 / TextureManager.RESOLUTION);
@@ -111,12 +112,12 @@ export class PartManager {
 					part.transform?.b ?? 0,
 					part.transform?.c ?? 0,
 					part.transform?.d ?? 1,
-					((part.transform?.a ?? 1) * -(part.offset?.x ?? 0) +
-						(part.transform?.c ?? 0) * -(part.offset?.y ?? 0) +
+					((part.transform?.a ?? 1) * -(part.ref?.offset?.x ?? 0) +
+						(part.transform?.c ?? 0) * -(part.ref?.offset?.y ?? 0) +
 						(part.transform?.tx ?? 0)) *
 						scale,
-					((part.transform?.b ?? 0) * -(part.offset?.x ?? 0) +
-						(part.transform?.d ?? 1) * -(part.offset?.y ?? 0) +
+					((part.transform?.b ?? 0) * -(part.ref?.offset?.x ?? 0) +
+						(part.transform?.d ?? 1) * -(part.ref?.offset?.y ?? 0) +
 						(part.transform?.ty ?? 0)) *
 						scale
 				)
