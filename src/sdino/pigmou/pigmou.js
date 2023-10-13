@@ -221,21 +221,14 @@ export let pigmou = {
 			},
 			// 170 - There was some "stop" callbacks which were ignored, to see later if they are really needed.
 			{
-				partIdx: 15,
-				frames: [-1, 0],
-				parts: [
-					// 169
-					{
-						special: true,
-						colorIdx: 0,
-						ref: ref.pigmou.front_leg_special,
-						blend: [BLEND_MODES.MULTIPLY],
-						transform: {
-							tx: -4.85,
-							ty: -3.2
-						}
-					}
-				]
+				special: true,
+				colorIdx: 0,
+				ref: ref.pigmou.front_leg_special,
+				blend: [BLEND_MODES.MULTIPLY],
+				transform: {
+					tx: -4.85,
+					ty: -3.2
+				}
 			}
 		],
 		// 178
@@ -367,21 +360,14 @@ export let pigmou = {
 			},
 			// 170 - There was some "stop" callbacks which were ignored, to see later if they are really needed.
 			{
-				partIdx: 15,
-				frames: [-1, 0],
-				parts: [
-					// 169
-					{
-						special: true,
-						colorIdx: 0,
-						ref: ref.pigmou.front_leg_special,
-						blend: [BLEND_MODES.MULTIPLY],
-						transform: {
-							tx: -4.85,
-							ty: -3.2
-						}
-					}
-				]
+				special: true,
+				colorIdx: 0,
+				ref: ref.pigmou.front_leg_special,
+				blend: [BLEND_MODES.MULTIPLY],
+				transform: {
+					tx: -4.85,
+					ty: -3.2
+				}
 			}
 		],
 		// 214
@@ -438,21 +424,14 @@ export let pigmou = {
 			},
 			// 189
 			{
-				partIdx: 15,
-				frames: [-1, 0],
-				parts: [
-					// 188
-					{
-						special: true,
-						colorIdx: 0,
-						ref: ref.pigmou.head_special,
-						blend: [BLEND_MODES.MULTIPLY],
-						transform: {
-							tx: -6.65,
-							ty: -7.8
-						}
-					}
-				]
+				special: true,
+				colorIdx: 0,
+				ref: ref.pigmou.head_special,
+				blend: [BLEND_MODES.MULTIPLY],
+				transform: {
+					tx: -6.65,
+					ty: -7.8
+				}
 			},
 			{
 				partIdx: 7,
@@ -692,21 +671,14 @@ export let pigmou = {
 			},
 			// 219 - There was some "stop" callbacks which were ignored, to see later if they are really needed.
 			{
-				partIdx: 15,
-				frames: [-1, 0],
-				parts: [
-					// 218
-					{
-						special: true,
-						colorIdx: 0,
-						ref: ref.pigmou.back_leg_special,
-						blend: [BLEND_MODES.MULTIPLY],
-						transform: {
-							tx: -2.85,
-							ty: -2.85
-						}
-					}
-				]
+				special: true,
+				colorIdx: 0,
+				ref: ref.pigmou.back_leg_special,
+				blend: [BLEND_MODES.MULTIPLY],
+				transform: {
+					tx: -2.85,
+					ty: -2.85
+				}
 			}
 		],
 		// 146

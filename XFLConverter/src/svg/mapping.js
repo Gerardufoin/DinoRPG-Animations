@@ -82,5 +82,6 @@ export let mapping = {
 	265: 'winks/body_dots',
 	266: 'winks/body_speks',
 	267: 'winks/body_small_spikes',
+	270: 'winks/special',
 	1640: 'bad'
 };

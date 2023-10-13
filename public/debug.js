@@ -74,7 +74,7 @@ addDinoz('191okqcRZdgVi000');
 addDinoz('19VSfUdpIPb0a000');
 addDinoz('1AADFvpotbA6y000');*/
 // Winks
-addDinoz('29yp89zwHWlmC000', true);
+addDinoz('29yp89zwHWlmC000');
 addDinoz('29VRA00KtkGM1000');
 addDinoz('292lB2TF3D1Cz000');
 addDinoz('29jH6Z7YjJdw5110');

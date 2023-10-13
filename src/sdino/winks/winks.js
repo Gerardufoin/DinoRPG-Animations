@@ -3,6 +3,13 @@
 import { BLEND_MODES } from 'pixi.js';
 import { stand } from './animations/stand.js';
 import { ref } from '../references.js';
+import { walk } from './animations/walk.js';
+import { run } from './animations/run.js';
+import { hit } from './animations/hit.js';
+import { jump } from './animations/jump.js';
+import { attack } from './animations/attack.js';
+import { land } from './animations/land.js';
+import { dead } from './animations/dead.js';
 
 export let winks = {
 	name: 'winks',
@@ -497,10 +504,229 @@ export let winks = {
 					}
 				]
 			}
+		],
+		// 271 - There was some "stop" callbacks which were ignored, to see later if they are really needed.
+		special: [
+			{
+				special: true,
+				colorIdx: 0,
+				ref: ref.winks.special,
+				transform: {
+					tx: -0.2
+				}
+			}
+		],
+		// 273 -- Same as 247
+		left_leg_1: [
+			{
+				partIdx: 5,
+				frames: [0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 3],
+				parts: [
+					// 233
+					{
+						colorIdx: 0,
+						ref: ref.winks.leg,
+						transform: {
+							tx: 6.5,
+							ty: 15.5,
+							a: 0.944,
+							d: 0.944,
+							b: 0.327,
+							c: -0.327
+						}
+					},
+					// 233
+					{
+						colorIdx: 1,
+						ref: ref.winks.leg,
+						transform: {
+							tx: 6.5,
+							ty: 15.5,
+							a: 0.944,
+							d: 0.944,
+							b: 0.327,
+							c: -0.327
+						}
+					},
+					// 233
+					{
+						colorIdx: 1,
+						ref: ref.winks.leg,
+						transform: {
+							tx: 9.1,
+							ty: 15.1,
+							a: 0.55,
+							d: 0.55,
+							b: -0.106,
+							c: 0.106
+						}
+					},
+					// 237
+					{
+						colorIdx: 0,
+						ref: ref.winks.pincer,
+						transform: {
+							tx: 9.204,
+							ty: 12.827,
+							a: 0.902,
+							d: 0.902,
+							b: 0.312,
+							c: -0.312
+						}
+					}
+				]
+			}
+		],
+		// 234 -- Almost same as 274, only last transform changes
+		left_leg_3: [
+			{
+				partIdx: 5,
+				frames: [0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 2],
+				parts: [
+					// 233
+					{
+						colorIdx: 0,
+						ref: ref.winks.leg,
+						transform: {
+							tx: 18.15,
+							ty: 8.1,
+							a: 0.925,
+							d: 0.925,
+							b: -0.379,
+							c: 0.379
+						}
+					},
+					// 233
+					{
+						colorIdx: 1,
+						ref: ref.winks.leg,
+						transform: {
+							tx: 18.15,
+							ty: 8.1,
+							a: 0.925,
+							d: 0.925,
+							b: -0.379,
+							c: 0.379
+						}
+					},
+					// 233
+					{
+						colorIdx: 1,
+						ref: ref.winks.leg,
+						transform: {
+							tx: 19.45,
+							ty: 9.2,
+							a: 0.468,
+							d: 0.468,
+							b: -0.356,
+							c: 0.356
+						}
+					}
+				]
+			}
+		],
+		// 235 -- Almost same as 275, only last transform changes
+		left_leg_2: [
+			{
+				partIdx: 5,
+				frames: [0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 2],
+				parts: [
+					// 233
+					{
+						colorIdx: 0,
+						ref: ref.winks.leg,
+						transform: {
+							tx: 12.95,
+							ty: 12.1,
+							a: 0.992,
+							d: 0.992,
+							b: -0.126,
+							c: 0.126
+						}
+					},
+					// 233
+					{
+						colorIdx: 1,
+						ref: ref.winks.leg,
+						transform: {
+							tx: 12.95,
+							ty: 12.1,
+							a: 0.992,
+							d: 0.992,
+							b: -0.126,
+							c: 0.126
+						}
+					},
+					// 233
+					{
+						colorIdx: 1,
+						ref: ref.winks.leg,
+						transform: {
+							tx: 15.95,
+							ty: 12.25,
+							a: 0.462,
+							d: 0.462,
+							b: -0.352,
+							c: 0.352
+						}
+					}
+				]
+			}
+		],
+		// 146
+		fx_impact_1: [
+			{
+				ref: ref.fx.impact_1
+			}
+		],
+		// 147
+		fx_impact_2: [
+			{
+				ref: ref.fx.impact_2
+			}
+		],
+		// 148
+		fx_impact_3: [
+			{
+				ref: ref.fx.impact_3
+			}
+		],
+		// 149
+		fx_impact_4: [
+			{
+				ref: ref.fx.impact_4
+			}
+		],
+		// 150
+		fx_impact_5: [
+			{
+				ref: ref.fx.impact_5
+			}
 		]
 	},
 	animations: {
+		// missing cast, release
 		// 276
-		stand: stand
+		stand: stand,
+		// 277
+		walk: walk,
+		// 278
+		run: run,
+		// 279
+		hit: hit,
+		// 280
+		jump: jump,
+		// 281
+		attack: attack,
+		// 282
+		land: land,
+		// 283
+		dead: dead,
+		// 283 idx 5
+		sleep: { offset: 5, anim: dead },
+		// 283 idx 10
+		ill: { offset: 10, anim: dead },
+		// 280
+		fly: jump
 	}
 };

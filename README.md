@@ -22,7 +22,7 @@ The file is comprised of the following entities:
 -   bad (done)
 -   moueffe (done)
 -   pigmou (done)
--   winks (in progress)
+-   winks (done)
 -   planaile
 -   castivore
 -   rocky
