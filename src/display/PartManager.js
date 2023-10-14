@@ -60,8 +60,7 @@ export class PartManager {
 			if (part.special && (partsDetail.length <= 15 || partsDetail[15] <= 0)) {
 				return null;
 			}
-			let texture = undefined;
-			texture = TextureManager.getTextureFromCompressedReference(part.ref.svg, scale);
+			let texture = TextureManager.getTextureFromCompressedReference(part.ref.svg, scale);
 			const sprite = Sprite.from(texture);
 			const filters = [];
 			sprite.scale.set(1 / TextureManager.RESOLUTION);

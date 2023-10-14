@@ -1,8 +1,9 @@
 // @ts-check
-import { Application, Container } from 'pixi.js';
+import { Container } from 'pixi.js';
 import { dinoz, error } from './sdino/dinoz.js';
 import { Animator } from './display/Animator.js';
 import { PartManager } from './display/PartManager.js';
+import { ImageExtractor } from './display/ImageExtractor.js';
 
 /**
  * Conversion of the sdino.swf file of the web game "Dino RPG".
@@ -35,18 +36,15 @@ export class sdino extends Container {
 
 	/**
 	 * Create a dino based on the data parameter.
-	 * If a PixiJS Application is passed, add the created dino as a child of the application.
 	 * @param {*} data Object containing the data describing a dino.
-	 * @param {undefined | Application} app A PixiJS application.
 	 */
-	constructor(data, app = undefined) {
+	constructor(data) {
 		super();
 		this.init(data.data, data.damage, data.pflag, 1);
 		this.addChild(this._animator);
 		if (data.flip) {
 			this._animator.scale.x = -1;
 		}
-		app?.stage?.addChild(this);
 	}
 
 	/**
@@ -170,6 +168,29 @@ export class sdino extends Container {
 		} else if (this._dinoInfos && this._dinoInfos.animations && this._dinoInfos.animations['stand']) {
 			this._animator.playAnim(this._dinoInfos.animations['stand']);
 		}
+	}
+
+	/**
+	 * Extract the visual data from the container into an image.
+	 * Useful to display the dino without having to instanciate a WebGL context every time.
+	 * @param {any} callback A callback receiving the resulting image as parameter.
+	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
+	 * @param {number | undefined} height The height of the image. Needs width to be defined.
+	 */
+	toImage(callback, width = undefined, height = undefined) {
+		ImageExtractor.convertToImage(this._animator, callback, width, height);
+	}
+
+	/**
+	 * Extract the visual data from the container into an animation.
+	 * The animation is a div tag of class 'DinoRPG-Animation' comprised of multiple img tags.
+	 * A timeout then goes through the classes DinoRPG-Animation and set the appropriate image.
+	 * @param {any} callback A callback receiving the resulting image as parameter.
+	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
+	 * @param {number | undefined} height The height of the image. Needs width to be defined.
+	 */
+	toAnimation(callback, width = undefined, height = undefined) {
+		ImageExtractor.convertToAnimation(this._animator, callback, width, height);
 	}
 }
 

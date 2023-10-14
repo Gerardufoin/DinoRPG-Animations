@@ -216,9 +216,8 @@ export class Animator extends Container {
 		const anim = animation.anim ?? animation;
 		this._offsetIdx = (animation.offset ?? 0) % (anim?.frames.length ?? 1);
 		this._animation = anim;
-		this._currentIdx = 0;
 		this.playing = true;
-		this.moveParts();
+		this.setFrame(0);
 	}
 
 	/**
@@ -239,5 +238,28 @@ export class Animator extends Container {
 			this.moveParts();
 			this.executeCallbacks();
 		}
+	}
+
+	/**
+	 * Return the number of frames of the current animation playing.
+	 * @returns {number} The length of the animation or 0 if no animation.
+	 */
+	getAnimationLength() {
+		return this._animation?.frames.length ?? 0;
+	}
+
+	/**
+	 * Set the animation at a specific frame and reset the timer.
+	 * @param {number} idx The frame index number. Will be moduloed by the animation length.
+	 */
+	setFrame(idx) {
+		const length = this.getAnimationLength();
+		if (!length) {
+			this._currentIdx = 0;
+			return;
+		}
+		this._currentIdx = idx % length;
+		this._time = 0;
+		this.moveParts();
 	}
 }

@@ -27,24 +27,27 @@ function addDinoz(data, showOrigin = false) {
 		width: 130,
 		height: 55
 	});
-	let dinozP = new DinoAnim.sdino(
-		{
-			data: data,
-			flip: 1
+	let dinozP = new DinoAnim.sdino({
+		data: data,
+		flip: 1
+	});
+	dinozP.toAnimation(
+		(img) => {
+			document.body.appendChild(img);
 		},
-		app
+		40,
+		40
 	);
-	dinozP.x = 20;
-	dinozP.y = 20;
+	app.stage.addChild(dinozP);
+	//dinozP.x = 20;
+	//dinozP.y = 20;
 
-	let dinoz = new DinoAnim.sdino(
-		{
-			data: data,
-			flip: 1,
-			pflag: true
-		},
-		app
-	);
+	let dinoz = new DinoAnim.sdino({
+		data: data,
+		flip: 1,
+		pflag: true
+	});
+	app.stage.addChild(dinoz);
 	dinoz.x = 75;
 	dinoz.y = 25;
 	allDinoz.push(dinoz);

@@ -38,24 +38,20 @@ function updateDinoz(data) {
 	if (currentAnim) {
 		appAnimation.stage.removeChild(currentAnim);
 	}
-	currentPortrait = new DinoAnim.sdino(
-		{
-			data: data,
-			flip: 1
-		},
-		appPortrait
-	);
+	currentPortrait = new DinoAnim.sdino({
+		data: data,
+		flip: 1
+	});
+	appPortrait.stage.addChild(currentPortrait);
 	currentPortrait.x = 20;
 	currentPortrait.y = 20;
 
-	currentAnim = new DinoAnim.sdino(
-		{
-			data: data,
-			flip: 1,
-			pflag: true
-		},
-		appAnimation
-	);
+	currentAnim = new DinoAnim.sdino({
+		data: data,
+		flip: 1,
+		pflag: true
+	});
+	appAnimation.stage.addChild(currentAnim);
 	currentAnim.x = 50;
 	currentAnim.y = 50;
 }
