@@ -145,6 +145,20 @@
 																														</xs:sequence>
 																													</xs:complexType>
 																												</xs:element>
+																												<xs:element minOccurs="0" name="filters">
+																													<xs:complexType>
+																														<xs:sequence>
+																															<xs:element name="AdjustColorFilter">
+																																<xs:complexType>
+																																	<xs:attribute name="brightness" type="xs:byte" use="optional"/>
+																																	<xs:attribute name="contrast" type="xs:byte" use="optional"/>
+																																	<xs:attribute name="saturation" type="xs:byte" use="optional"/>
+																																	<xs:attribute name="hue" type="xs:byte" use="optional"/>
+																																</xs:complexType>
+																															</xs:element>
+																														</xs:sequence>
+																													</xs:complexType>
+																												</xs:element>
 																											</xs:sequence>
 																											<xs:attribute name="libraryItemName" type="xs:string" use="required"/>
 																											<xs:attribute name="name" type="xs:string" use="optional"/>

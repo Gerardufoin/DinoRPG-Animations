@@ -31,16 +31,9 @@ function addDinoz(data, showOrigin = false) {
 		data: data,
 		flip: 1
 	});
-	dinozP.toAnimation(
-		(img) => {
-			document.body.appendChild(img);
-		},
-		40,
-		40
-	);
 	app.stage.addChild(dinozP);
-	//dinozP.x = 20;
-	//dinozP.y = 20;
+	dinozP.x = 20;
+	dinozP.y = 20;
 
 	let dinoz = new DinoAnim.sdino({
 		data: data,
@@ -77,14 +70,23 @@ addDinoz('191okqcRZdgVi000');
 addDinoz('19VSfUdpIPb0a000');
 addDinoz('1AADFvpotbA6y000');*/
 // Winks
-addDinoz('29yp89zwHWlmC000');
+/*addDinoz('29yp89zwHWlmC000');
 addDinoz('29VRA00KtkGM1000');
 addDinoz('292lB2TF3D1Cz000');
 addDinoz('29jH6Z7YjJdw5110');
 addDinoz('293DclwhG64Vd000');
 addDinoz('2ADTmPjGH4lLO000');
 addDinoz('2AIhcx2YC9ksv000');
-addDinoz('2AGVenN21FGJk000');
+addDinoz('2AGVenN21FGJk000');*/
+// Planaile
+addDinoz('393YRrXntzpn0000', true);
+addDinoz('39aT8YQ12Sl3w000');
+addDinoz('39EEr8m1HSfK8000');
+addDinoz('39ANSxwXXTvUr000');
+addDinoz('39N9HVcY4gLiQ000');
+addDinoz('39SOHSjXu8FZM000');
+addDinoz('39uuvDuEYohCG000');
+addDinoz('3ArpIB2f2t2Ww000');
 
 /*const app = new Application({
 	background: '#E7B577',

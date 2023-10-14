@@ -23,7 +23,7 @@ The file is comprised of the following entities:
 -   moueffe (done)
 -   pigmou (done)
 -   winks (done)
--   planaile
+-   planaile (done)
 -   castivore
 -   rocky
 -   pteroz

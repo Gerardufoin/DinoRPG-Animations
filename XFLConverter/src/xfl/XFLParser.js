@@ -128,6 +128,9 @@ export class XFLParser {
 			case '_part':
 				this.parsePart(layers, result);
 				break;
+			case '_p1':
+				this.parseMain(layers, result);
+				break;
 		}
 	}
 
@@ -145,14 +148,52 @@ export class XFLParser {
 	 * Parse a string into a float with 3 decimal points.
 	 * Returns undefined if the string is undefined.
 	 * @param {string | undefined} value A string representing a float or an undefined object.
+	 * @param {boolean} undefinedIfZero If the result would be 0, return undefined instead.
 	 * @returns {Number | undefined} The string converted into float or undefined.
 	 */
-	parseFloat(value) {
+	parseFloat(value, undefinedIfZero = false) {
 		if (!value) {
 			return undefined;
 		}
 		let nb = Number.parseFloat(value);
-		return this.roundToPlace(nb, 3);
+		return undefinedIfZero && !nb ? undefined : this.roundToPlace(nb, 3);
+	}
+
+	/**
+	 * Parse the DOMTimeline.layers for the type "_p1"
+	 * @param {*} layers The DOMTimeline.layers to parse.
+	 * @param {object} result Object containing the result of the parsing.
+	 */
+	parseMain(layers, result) {
+		let animFile = undefined;
+		result.transforms = [];
+		for (const l of this.toArray(layers.DOMLayer)) {
+			if (l.name === 'Layer 1') {
+				for (const f of l.frames.DOMFrame) {
+					const symbolInstance = f.elements.DOMSymbolInstance;
+					if (!animFile && symbolInstance.libraryItemName) {
+						animFile = symbolInstance.libraryItemName;
+					}
+					result.transforms.push({
+						tx: this.parseFloat(symbolInstance.matrix.Matrix.tx),
+						ty: this.parseFloat(symbolInstance.matrix.Matrix.ty),
+						a: this.parseFloat(symbolInstance.matrix.Matrix.a),
+						b: this.parseFloat(symbolInstance.matrix.Matrix.b),
+						c: this.parseFloat(symbolInstance.matrix.Matrix.c),
+						d: this.parseFloat(symbolInstance.matrix.Matrix.d),
+						brightness: this.parseFloat(symbolInstance.filters?.AdjustColorFilter?.brightness, true),
+						contrast: this.parseFloat(symbolInstance.filters?.AdjustColorFilter?.contrast, true),
+						saturation: this.parseFloat(symbolInstance.filters?.AdjustColorFilter?.saturation, true),
+						hue: this.parseFloat(symbolInstance.filters?.AdjustColorFilter?.hue, true)
+					});
+				}
+			} else {
+				throw new Error('Unexpected layer found in _p1 file. Time to panic.');
+			}
+		}
+		if (animFile) {
+			this.parse(path.join('./resources/sdino/LIBRARY/', animFile + '.xml'), '_anim');
+		}
 	}
 
 	/**

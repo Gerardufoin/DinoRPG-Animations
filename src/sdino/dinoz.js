@@ -3,6 +3,7 @@ import { bad } from './bad.js';
 import { moueffe } from './moueffe/moueffe.js';
 import { pigmou } from './pigmou/pigmou.js';
 import { winks } from './winks/winks.js';
+import { planaile } from './planaile/planaile.js';
 
-export let dinoz = [moueffe, pigmou, winks];
+export let dinoz = [moueffe, pigmou, winks, planaile];
 export let error = bad;

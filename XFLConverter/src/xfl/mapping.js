@@ -40,5 +40,17 @@ export let mapping = {
 	'Symbol 271_special': 'special',
 	'Symbol 273_p5a': 'left_leg_1',
 	'Symbol 274_p5c': 'left_leg_3',
-	'Symbol 275_p5b': 'left_leg_2'
+	'Symbol 275_p5b': 'left_leg_2',
+	// 335
+	'Symbol 288_p7b': 'right_arm',
+	'Symbol 294_p9': 'body',
+	'Symbol 297_p4b': 'head',
+	'Symbol 305_p4': 'ears',
+	'Symbol 308_p8': 'left_leg',
+	'Symbol 310': 'left_foot',
+	'Symbol 312': 'left_hand',
+	'Symbol 315_p7': 'left_arm',
+	'Symbol 317': 'right_hand',
+	'Symbol 323_p8c': 'right_eye',
+	'Symbol 326_p1': 'left_eye'
 };
