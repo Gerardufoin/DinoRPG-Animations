@@ -332,11 +332,21 @@ export let planaile = {
 				parts: [
 					// 321
 					{
-						ref: ref.planaile.nose_brown
+						ref: ref.planaile.nose,
+						colorOffset: {
+							r: -108,
+							g: -148,
+							b: -153
+						}
 					},
 					// 321
 					{
-						ref: ref.planaile.nose_blue
+						ref: ref.planaile.nose,
+						colorOffset: {
+							r: -133,
+							g: -87,
+							b: 20
+						}
 					}
 				]
 			},

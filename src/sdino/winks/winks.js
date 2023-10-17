@@ -398,12 +398,17 @@ export let winks = {
 					},
 					// 258
 					{
-						ref: ref.winks.body_spike_brown,
+						ref: ref.winks.body_spike,
 						transform: {
 							tx: -5.0,
 							ty: -8.4,
 							a: 0.807,
 							d: 0.807
+						},
+						colorOffset: {
+							r: -123,
+							g: -143,
+							b: -215
 						}
 					},
 					// 258

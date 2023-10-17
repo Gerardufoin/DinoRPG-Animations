@@ -1,7 +1,8 @@
 // @ts-check
-import { Sprite, Container, Matrix, BlurFilter } from 'pixi.js';
+import { Sprite, Container, Matrix, BlurFilter, Filter } from 'pixi.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { TextureManager } from './TextureManager.js';
+import { offsetShader } from './shaders/ColorOffsetShader.js';
 
 /**
  * Static class used to instantiate a part of a dino.
@@ -88,6 +89,13 @@ export class PartManager {
 				blurFilter.blurX = part.blur.x ?? 0;
 				blurFilter.blurY = part.blur.y ?? 0;
 				filters.push(blurFilter);
+			}
+			if (part.colorOffset) {
+				filters.push(
+					new Filter(undefined, offsetShader, {
+						offset: new Float32Array([part.colorOffset.r, part.colorOffset.g, part.colorOffset.b])
+					})
+				);
 			}
 			if (part.glow) {
 				filters.push(

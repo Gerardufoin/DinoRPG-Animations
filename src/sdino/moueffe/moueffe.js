@@ -608,19 +608,34 @@ export let moueffe = {
 		// 154
 		fx_dust_1: [
 			{
-				ref: ref.fx.dust_brown
+				ref: ref.fx.dust,
+				colorOffset: {
+					r: -11,
+					g: -51,
+					b: -92
+				}
 			}
 		],
 		// 154
 		fx_dust_2: [
 			{
-				ref: ref.fx.dust_brown
+				ref: ref.fx.dust,
+				colorOffset: {
+					r: -11,
+					g: -51,
+					b: -92
+				}
 			}
 		],
 		// 154
 		fx_dust_3: [
 			{
-				ref: ref.fx.dust_brown
+				ref: ref.fx.dust,
+				colorOffset: {
+					r: -11,
+					g: -51,
+					b: -92
+				}
 			}
 		]
 	},
