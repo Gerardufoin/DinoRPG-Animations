@@ -79,14 +79,22 @@ addDinoz('2ADTmPjGH4lLO000');
 addDinoz('2AIhcx2YC9ksv000');
 addDinoz('2AGVenN21FGJk000');*/
 // Planaile
-addDinoz('393YRrXntzpn0000', true);
-addDinoz('39aT8YQ12Sl3w000');
+addDinoz('393YRrXntzpn0000');
+/*addDinoz('39aT8YQ12Sl3w000');
 addDinoz('39EEr8m1HSfK8000');
 addDinoz('39ANSxwXXTvUr000');
 addDinoz('39N9HVcY4gLiQ000');
 addDinoz('39SOHSjXu8FZM000');
 addDinoz('39uuvDuEYohCG000');
-addDinoz('3ArpIB2f2t2Ww000');
+addDinoz('3ArpIB2f2t2Ww000');*/
+// Castivore
+addDinoz('49hwJCDfbel16000', true);
+addDinoz('49BsLby0mZF6k000');
+addDinoz('49uvrkF8dPrOS000');
+addDinoz('49SES7eSLrk1C000');
+addDinoz('494IHPBxwdn74000');
+addDinoz('498sSm4OIB4l7000');
+addDinoz('491KW4XcQQOnC000');
 
 /*const app = new Application({
 	background: '#E7B577',

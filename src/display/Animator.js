@@ -87,6 +87,9 @@ export class Animator extends Container {
 		this.registerCallback('stop', () => {
 			this.playing = false;
 		});
+		this.registerCallback('gotoAndPlay', (idx) => {
+			this._currentIdx = idx - 1;
+		});
 	}
 
 	/**

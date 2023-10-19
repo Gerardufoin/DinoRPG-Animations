@@ -24,7 +24,7 @@ The file is comprised of the following entities:
 -   pigmou (done)
 -   winks (done)
 -   planaile (done)
--   castivore
+-   castivore (done)
 -   rocky
 -   pteroz
 -   nuagoz

@@ -6,7 +6,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/sdino/LIBRARY/Symbol 162.xml', '_anim'); // moueffe
 //parser.parse('./resources/sdino/LIBRARY/Symbol 230.xml', '_anim'); // pigmou
 //parser.parse('./resources/sdino/LIBRARY/Symbol 284.xml', '_anim'); // winks
-parser.parse('./resources/sdino/LIBRARY/Symbol 336.xml', '_p1'); // planaile
+//parser.parse('./resources/sdino/LIBRARY/Symbol 336.xml', '_p1'); // planaile
+parser.parse('./resources/sdino/LIBRARY/Symbol 397.xml', '_p1'); // castivore
 //parser.parse('./resources/sdino/LIBRARY/Symbol 156.xml', '_sub'); // fx_dust
 
 const adapter = new SVGAdapter();
