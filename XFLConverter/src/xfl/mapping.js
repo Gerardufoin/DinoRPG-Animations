@@ -63,5 +63,13 @@ export let mapping = {
 	'Symbol 367_p6': 'hair',
 	'Symbol 370': 'left_ear',
 	'Symbol 383_p4': 'mouth',
-	'Symbol 387_special': 'special'
+	'Symbol 387_special': 'special',
+	// 467
+	'Symbol 404_p8b': 'right_hand',
+	'Symbol 420_p4': 'body',
+	'Symbol 459': 'body',
+	'Symbol 437_p6': 'mouth',
+	'Symbol 447_p5': 'eyes',
+	'Symbol 450_p4b': 'top',
+	'Symbol 457_p8a': 'left_hand'
 };

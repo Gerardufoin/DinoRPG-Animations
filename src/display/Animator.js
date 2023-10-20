@@ -1,6 +1,7 @@
 // @ts-check
 import { Container, Ticker, Matrix } from 'pixi.js';
 import { GlowFilter } from '@pixi/filter-glow';
+import { PixiHelper } from './PixiHelper';
 
 /**
  * The Animator class will contain the dino's body and control its animations.
@@ -124,22 +125,6 @@ export class Animator extends Container {
 	}
 
 	/**
-	 * Return a PixiJS Matrix using the parameters of the given object and the scale of the Animator.
-	 * @param {object} obj Object containing the necessary parameters of a transform Matrix.
-	 * @returns {Matrix} A PixiJS Matrix instantiated using the input and the Animator scale.
-	 */
-	matrixFromObject(obj) {
-		return new Matrix(
-			obj.a ?? 1,
-			obj.b ?? 0,
-			obj.c ?? 0,
-			obj.d ?? 1,
-			(obj.tx ?? 0) * this._scale,
-			(obj.ty ?? 0) * this._scale
-		);
-	}
-
-	/**
 	 * Set the transform Matrix of the body of the Animator based on the transforms of the dino.
 	 * @param {Array} transforms An array comprised of objects containing the tx ty a b c d element of a Matrix in order to set the transform.
 	 * @param {Array} dParts The configuration array of the dino.
@@ -149,9 +134,11 @@ export class Animator extends Container {
 		const bodyMatrix = this._body.transform.localTransform;
 		for (const t of transforms) {
 			if (t.partIdx) {
-				bodyMatrix.append(this.matrixFromObject(t.transforms[dParts[t.partIdx] % t.transforms.length]));
+				bodyMatrix.append(
+					PixiHelper.matrixFromObject(t.transforms[dParts[t.partIdx] % t.transforms.length], this._scale)
+				);
 			} else {
-				bodyMatrix.append(this.matrixFromObject(t));
+				bodyMatrix.append(PixiHelper.matrixFromObject(t, this._scale));
 			}
 		}
 		this._body.transform.setFromMatrix(bodyMatrix);

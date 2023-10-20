@@ -25,7 +25,7 @@ The file is comprised of the following entities:
 -   winks (done)
 -   planaile (done)
 -   castivore (done)
--   rocky
+-   rocky (done)
 -   pteroz
 -   nuagoz
 -   sirain

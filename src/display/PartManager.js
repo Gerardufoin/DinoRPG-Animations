@@ -133,7 +133,19 @@ export class PartManager {
 		} else if (part.partIdx !== undefined && part.frames !== undefined) {
 			let idx = part.frames[partsDetail[part.partIdx] % part.frames.length];
 			if (idx >= 0 && part.parts[idx]) {
-				return PartManager.getSubPart(part.parts[idx], partsDetail, palette, assetPath, scale);
+				// Check if part is comprised of multiple layers or not
+				if (!Array.isArray(part.parts[idx])) {
+					return PartManager.getSubPart(part.parts[idx], partsDetail, palette, assetPath, scale);
+				} else {
+					const cont = new Container();
+					for (const p of part.parts[idx]) {
+						const newPart = PartManager.getSubPart(p, partsDetail, palette, assetPath, scale);
+						if (newPart) {
+							cont.addChild(newPart);
+						}
+					}
+					return cont;
+				}
 			}
 		}
 		return null;
