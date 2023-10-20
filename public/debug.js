@@ -95,7 +95,7 @@ addDinoz('49SES7eSLrk1C000');
 addDinoz('494IHPBxwdn74000');
 addDinoz('498sSm4OIB4l7000');
 addDinoz('491KW4XcQQOnC000');*/
-// Rokky
+// Rocky
 addDinoz('59QdaJ5j1dEaK000', true);
 addDinoz('590iaiFtHCgfq000');
 addDinoz('59z6ZP4PDDZA6000');

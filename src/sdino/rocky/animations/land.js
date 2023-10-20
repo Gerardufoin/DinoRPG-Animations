@@ -1,6 +1,6 @@
 // @ts-check
 
-// TODO fx_impacts should be below the rokky, not above.
+// TODO fx_impacts should be below the rocky, not above.
 export let land = {
 	callbacks: {
 		1: [

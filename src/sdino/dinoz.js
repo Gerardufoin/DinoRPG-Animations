@@ -5,7 +5,7 @@ import { pigmou } from './pigmou/pigmou.js';
 import { winks } from './winks/winks.js';
 import { planaile } from './planaile/planaile.js';
 import { castivore } from './castivore/castivore.js';
-import { rokky } from './rokky/rokky.js';
+import { rocky } from './rocky/rocky.js';
 
-export let dinoz = [moueffe, pigmou, winks, planaile, castivore, rokky];
+export let dinoz = [moueffe, pigmou, winks, planaile, castivore, rocky];
 export let error = bad;

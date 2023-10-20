@@ -2,15 +2,15 @@
 import { ref } from '../references.js';
 import { stand } from './animations/stand.js';
 import { run } from './animations/run.js';
-import { walk } from './animations/walk';
-import { jump } from './animations/jump';
-import { hit } from './animations/hit';
-import { attack } from './animations/attack';
-import { land } from './animations/land';
-import { dead } from './animations/dead';
+import { walk } from './animations/walk.js';
+import { jump } from './animations/jump.js';
+import { hit } from './animations/hit.js';
+import { attack } from './animations/attack.js';
+import { land } from './animations/land.js';
+import { dead } from './animations/dead.js';
 
-export let rokky = {
-	name: 'rokky',
+export let rocky = {
+	name: 'rocky',
 	transforms: [
 		// 397
 		{
@@ -188,7 +188,7 @@ export let rokky = {
 					// 399
 					{
 						colorIdx: 0,
-						ref: ref.rokky.right_hand,
+						ref: ref.rocky.right_hand,
 						transform: {
 							tx: 1.95,
 							ty: 19.25
@@ -197,7 +197,7 @@ export let rokky = {
 					// 401
 					{
 						colorIdx: 0,
-						ref: ref.rokky.right_hand_column,
+						ref: ref.rocky.right_hand_column,
 						transform: {
 							tx: 1.35,
 							ty: 13.0
@@ -206,7 +206,7 @@ export let rokky = {
 					// 403
 					{
 						colorIdx: 0,
-						ref: ref.rokky.right_hand_sun,
+						ref: ref.rocky.right_hand_sun,
 						transform: {
 							tx: 3.1,
 							ty: 13.4
@@ -224,12 +224,12 @@ export let rokky = {
 					// 406 + 413
 					{
 						colorIdx: 0,
-						ref: ref.rokky.body_block_slim
+						ref: ref.rocky.body_block_slim
 					},
 					// 408
 					{
 						colorIdx: 0,
-						ref: ref.rokky.body_block,
+						ref: ref.rocky.body_block,
 						transform: {
 							tx: 1.55,
 							ty: -0.45
@@ -238,7 +238,7 @@ export let rokky = {
 					// 410
 					{
 						colorIdx: 0,
-						ref: ref.rokky.body_tomb,
+						ref: ref.rocky.body_tomb,
 						transform: {
 							tx: -0.65,
 							ty: 0.85
@@ -247,7 +247,7 @@ export let rokky = {
 					// 412
 					{
 						colorIdx: 0,
-						ref: ref.rokky.body_pointy,
+						ref: ref.rocky.body_pointy,
 						transform: {
 							tx: -0.9,
 							ty: -0.3
@@ -256,12 +256,12 @@ export let rokky = {
 					// 415
 					{
 						colorIdx: 0,
-						ref: ref.rokky.body_hole
+						ref: ref.rocky.body_hole
 					},
 					// 417 + 419
 					{
 						colorIdx: 0,
-						ref: ref.rokky.body_column,
+						ref: ref.rocky.body_column,
 						transform: {
 							tx: 1.55,
 							ty: 0.0
@@ -284,7 +284,7 @@ export let rokky = {
 							// 421
 							{
 								colorIdx: 0,
-								ref: ref.rokky.mouth_lower_lip,
+								ref: ref.rocky.mouth_lower_lip,
 								transform: {
 									tx: -0.25,
 									ty: 3.2
@@ -300,7 +300,7 @@ export let rokky = {
 							// 424
 							{
 								colorIdx: 0,
-								ref: ref.rokky.mouth_block,
+								ref: ref.rocky.mouth_block,
 								transform: {
 									tx: -0.75,
 									ty: 2.95
@@ -309,7 +309,7 @@ export let rokky = {
 							// 426
 							{
 								colorIdx: 0,
-								ref: ref.rokky.mouth_hole,
+								ref: ref.rocky.mouth_hole,
 								transform: {
 									tx: -0.35,
 									ty: -1.2,
@@ -327,7 +327,7 @@ export let rokky = {
 							// 421
 							{
 								colorIdx: 0,
-								ref: ref.rokky.mouth_lower_lip,
+								ref: ref.rocky.mouth_lower_lip,
 								transform: {
 									tx: -0.4,
 									ty: 4.234,
@@ -345,7 +345,7 @@ export let rokky = {
 							// 428 + 430
 							{
 								colorIdx: 0,
-								ref: ref.rokky.mouth_basin,
+								ref: ref.rocky.mouth_basin,
 								transform: {
 									tx: -0.8,
 									ty: 3.3
@@ -354,7 +354,7 @@ export let rokky = {
 							// 429
 							{
 								colorIdx: 0,
-								ref: ref.rokky.mouth_slit,
+								ref: ref.rocky.mouth_slit,
 								transform: {
 									tx: -0.8,
 									ty: 3.3
@@ -368,7 +368,7 @@ export let rokky = {
 									// 421
 									{
 										colorIdx: 0,
-										ref: ref.rokky.mouth_lower_lip,
+										ref: ref.rocky.mouth_lower_lip,
 										transform: {
 											tx: -0.8,
 											ty: 3.3
@@ -382,7 +382,7 @@ export let rokky = {
 						// 433
 						{
 							colorIdx: 2,
-							ref: ref.rokky.mouth_beard,
+							ref: ref.rocky.mouth_beard,
 							transform: {
 								tx: -1.6,
 								ty: 6.45
@@ -395,7 +395,7 @@ export let rokky = {
 							parts: [
 								{
 									colorIdx: 0,
-									ref: ref.rokky.mouth_lower_lip,
+									ref: ref.rocky.mouth_lower_lip,
 									transform: {
 										tx: -0.25,
 										ty: 3.2
@@ -413,7 +413,7 @@ export let rokky = {
 								// 424
 								{
 									colorIdx: 0,
-									ref: ref.rokky.mouth_block,
+									ref: ref.rocky.mouth_block,
 									transform: {
 										tx: -0.75,
 										ty: 2.95
@@ -422,7 +422,7 @@ export let rokky = {
 								// 435
 								{
 									colorIdx: 2,
-									ref: ref.rokky.mouth_moustache,
+									ref: ref.rocky.mouth_moustache,
 									transform: {
 										tx: 0.0,
 										ty: -1.65
@@ -432,7 +432,7 @@ export let rokky = {
 							// 426
 							{
 								colorIdx: 0,
-								ref: ref.rokky.mouth_hole,
+								ref: ref.rocky.mouth_hole,
 								transform: {
 									tx: -0.35,
 									ty: -1.2,
@@ -454,27 +454,27 @@ export let rokky = {
 					[
 						// 438
 						{
-							ref: ref.rokky.eyes
+							ref: ref.rocky.eyes
 						},
 						// 440
 						{
 							colorIdx: 0,
-							ref: ref.rokky.eyebrow
+							ref: ref.rocky.eyebrow
 						}
 					],
 					// 443
 					{
-						ref: ref.rokky.eyes_cyclop
+						ref: ref.rocky.eyes_cyclop
 					},
 					[
 						// 444
 						{
-							ref: ref.rokky.eyes_round
+							ref: ref.rocky.eyes_round
 						},
 						// 446
 						{
 							colorIdx: 0,
-							ref: ref.rokky.nose,
+							ref: ref.rocky.nose,
 							transform: {
 								tx: -1.6,
 								ty: 4.6
@@ -490,7 +490,7 @@ export let rokky = {
 					// 442
 					{
 						colorIdx: 2,
-						ref: ref.rokky.eyes_moss,
+						ref: ref.rocky.eyes_moss,
 						transform: {
 							tx: 4.8,
 							ty: -1.1
@@ -508,7 +508,7 @@ export let rokky = {
 				parts: [
 					{
 						colorIdx: 0,
-						ref: ref.rokky.top_column,
+						ref: ref.rocky.top_column,
 						transform: {
 							tx: -1.25,
 							ty: 0.2,
@@ -528,7 +528,7 @@ export let rokky = {
 					// 452
 					{
 						colorIdx: 0,
-						ref: ref.rokky.left_hand,
+						ref: ref.rocky.left_hand,
 						transform: {
 							tx: -8.05,
 							ty: 16.85,
@@ -541,7 +541,7 @@ export let rokky = {
 					// 454
 					{
 						colorIdx: 0,
-						ref: ref.rokky.left_hand_column,
+						ref: ref.rocky.left_hand_column,
 						transform: {
 							tx: -5.8,
 							ty: 11.7
@@ -550,7 +550,7 @@ export let rokky = {
 					// 456
 					{
 						colorIdx: 0,
-						ref: ref.rokky.left_hand_sun,
+						ref: ref.rocky.left_hand_sun,
 						transform: {
 							tx: -1.45,
 							ty: 9.75
