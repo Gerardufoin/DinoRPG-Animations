@@ -191,6 +191,10 @@ export class Animator extends Container {
 						(frame[p].ty ?? 0) * this._scale
 					)
 				);
+				// Ordering of the parts display
+				if (frame[p].l !== undefined) {
+					this._body.swapChildren(this._parts[p], this._body.getChildAt(frame[p].l));
+				}
 			} else {
 				this._parts[p].visible = false;
 			}

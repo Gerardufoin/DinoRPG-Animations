@@ -12,7 +12,8 @@ export let jump = {
 				a: 0.707,
 				b: 0.707,
 				c: -0.707,
-				d: 0.707
+				d: 0.707,
+				l: 12
 			},
 			left_leg: {
 				tx: 3.2,
@@ -20,7 +21,8 @@ export let jump = {
 				a: 0.965,
 				b: -0.259,
 				c: 0.199,
-				d: 0.742
+				d: 0.742,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.5,
@@ -28,7 +30,8 @@ export let jump = {
 				a: 0.952,
 				b: 0.176,
 				c: 0.024,
-				d: 1.529
+				d: 1.529,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 5.05,
@@ -36,7 +39,8 @@ export let jump = {
 				a: 0.218,
 				b: 0.378,
 				c: -0.933,
-				d: 0.539
+				d: 0.539,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 2.7,
@@ -44,7 +48,8 @@ export let jump = {
 				a: 0,
 				b: 1.249,
 				c: -1.249,
-				d: 0
+				d: 0,
+				l: 8
 			},
 			head: {
 				tx: -2.65,
@@ -52,7 +57,8 @@ export let jump = {
 				a: 0.771,
 				b: -0.829,
 				c: 0.829,
-				d: 0.771
+				d: 0.771,
+				l: 7
 			},
 			body: {
 				tx: 1.65,
@@ -60,7 +66,8 @@ export let jump = {
 				a: 0.863,
 				b: -0.498,
 				c: 0.498,
-				d: 0.863
+				d: 0.863,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -5.45,
@@ -68,7 +75,8 @@ export let jump = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 5
 			},
 			right_leg: {
 				tx: -3.85,
@@ -76,7 +84,8 @@ export let jump = {
 				a: -0.767,
 				b: -0.047,
 				c: -0.047,
-				d: 0.767
+				d: 0.767,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -4.6,
@@ -84,7 +93,8 @@ export let jump = {
 				a: 1.004,
 				b: 0.744,
 				c: -0.516,
-				d: 0.697
+				d: 0.697,
+				l: 3
 			},
 			right_foot: {
 				tx: -9.25,
@@ -92,15 +102,18 @@ export let jump = {
 				a: 0.963,
 				b: -0.162,
 				c: 0.25,
-				d: 0.933
+				d: 0.933,
+				l: 2
 			},
 			right_arm: {
 				tx: -19.75,
-				ty: -15.7
+				ty: -15.7,
+				l: 1
 			},
 			back_bones: {
 				tx: -3.7,
-				ty: -15.8
+				ty: -15.8,
+				l: 0
 			}
 		},
 		{
@@ -110,7 +123,8 @@ export let jump = {
 				a: 0.707,
 				b: 0.704,
 				c: -0.704,
-				d: 0.707
+				d: 0.707,
+				l: 12
 			},
 			left_leg: {
 				tx: -2.8,
@@ -118,7 +132,8 @@ export let jump = {
 				a: 0.963,
 				b: -0.259,
 				c: 0.229,
-				d: 0.852
+				d: 0.852,
+				l: 11
 			},
 			left_foot: {
 				tx: 1.4,
@@ -126,7 +141,8 @@ export let jump = {
 				a: 0.648,
 				b: 0.717,
 				c: -0.904,
-				d: 1.228
+				d: 1.228,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 2.85,
@@ -134,7 +150,8 @@ export let jump = {
 				a: -0.225,
 				b: 0.852,
 				c: -1.04,
-				d: -0.275
+				d: -0.275,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 6.05,
@@ -142,7 +159,8 @@ export let jump = {
 				a: 0.868,
 				b: 1.127,
 				c: -0.988,
-				d: 0.761
+				d: 0.761,
+				l: 8
 			},
 			head: {
 				tx: -1.45,
@@ -150,7 +168,8 @@ export let jump = {
 				a: 0.87,
 				b: -0.721,
 				c: 0.721,
-				d: 0.87
+				d: 0.87,
+				l: 7
 			},
 			body: {
 				tx: 1.4,
@@ -158,7 +177,8 @@ export let jump = {
 				a: 0.919,
 				b: -0.382,
 				c: 0.382,
-				d: 0.919
+				d: 0.919,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -5.95,
@@ -166,7 +186,8 @@ export let jump = {
 				a: -1.318,
 				b: -0.168,
 				c: -0.115,
-				d: 0.902
+				d: 0.902,
+				l: 5
 			},
 			right_leg: {
 				tx: -5.6,
@@ -174,7 +195,8 @@ export let jump = {
 				a: -0.686,
 				b: 0.343,
 				c: 0.343,
-				d: 0.686
+				d: 0.686,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -3.4,
@@ -182,7 +204,8 @@ export let jump = {
 				a: 1.131,
 				b: 0.522,
 				c: -0.363,
-				d: 0.785
+				d: 0.785,
+				l: 3
 			},
 			right_foot: {
 				tx: -5.7,
@@ -190,7 +213,8 @@ export let jump = {
 				a: 0.216,
 				b: -0.951,
 				c: 0.957,
-				d: 0.122
+				d: 0.122,
+				l: 2
 			},
 			right_arm: {
 				tx: -19.75,
@@ -198,11 +222,13 @@ export let jump = {
 				a: 0.825,
 				b: -0.559,
 				c: 0.559,
-				d: 0.825
+				d: 0.825,
+				l: 1
 			},
 			back_bones: {
 				tx: -2.8,
-				ty: -20.15
+				ty: -20.15,
+				l: 0
 			}
 		},
 		{
@@ -212,7 +238,8 @@ export let jump = {
 				a: 0.709,
 				b: 0.703,
 				c: -0.703,
-				d: 0.709
+				d: 0.709,
+				l: 12
 			},
 			left_leg: {
 				tx: -8.75,
@@ -220,7 +247,8 @@ export let jump = {
 				a: 0.962,
 				b: -0.263,
 				c: 0.263,
-				d: 0.962
+				d: 0.962,
+				l: 11
 			},
 			left_foot: {
 				tx: -6.6,
@@ -228,7 +256,8 @@ export let jump = {
 				a: 0.081,
 				b: 0.963,
 				c: -1.466,
-				d: 0.425
+				d: 0.425,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 1.3,
@@ -236,7 +265,8 @@ export let jump = {
 				a: -1.147,
 				b: 0.669,
 				c: -0.542,
-				d: -0.929
+				d: -0.929,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 9.25,
@@ -244,7 +274,8 @@ export let jump = {
 				a: 1.549,
 				b: 0.407,
 				c: -0.317,
-				d: 1.206
+				d: 1.206,
+				l: 8
 			},
 			head: {
 				tx: -0.25,
@@ -252,7 +283,8 @@ export let jump = {
 				a: 0.956,
 				b: -0.605,
 				c: 0.605,
-				d: 0.956
+				d: 0.956,
+				l: 7
 			},
 			body: {
 				tx: 1,
@@ -260,7 +292,8 @@ export let jump = {
 				a: 0.96,
 				b: -0.262,
 				c: 0.262,
-				d: 0.96
+				d: 0.96,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -6.4,
@@ -268,7 +301,8 @@ export let jump = {
 				a: -1.328,
 				b: 0.006,
 				c: 0.004,
-				d: 0.909
+				d: 0.909,
+				l: 5
 			},
 			right_leg: {
 				tx: -7.45,
@@ -276,7 +310,8 @@ export let jump = {
 				a: -0.42,
 				b: 0.642,
 				c: 0.642,
-				d: 0.42
+				d: 0.42,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -2.1,
@@ -284,7 +319,8 @@ export let jump = {
 				a: 1.213,
 				b: 0.282,
 				c: -0.196,
-				d: 0.842
+				d: 0.842,
+				l: 3
 			},
 			right_foot: {
 				tx: -1.55,
@@ -292,7 +328,8 @@ export let jump = {
 				a: -0.796,
 				b: -0.562,
 				c: 0.478,
-				d: -0.837
+				d: -0.837,
+				l: 2
 			},
 			right_arm: {
 				tx: -15.7,
@@ -300,11 +337,13 @@ export let jump = {
 				a: 0.366,
 				b: -0.927,
 				c: 0.927,
-				d: 0.366
+				d: 0.366,
+				l: 1
 			},
 			back_bones: {
 				tx: -1.9,
-				ty: -24.55
+				ty: -24.55,
+				l: 0
 			}
 		},
 		{
@@ -314,7 +353,8 @@ export let jump = {
 				a: 0.966,
 				b: 0.251,
 				c: -0.251,
-				d: 0.966
+				d: 0.966,
+				l: 12
 			},
 			left_leg: {
 				tx: -6.75,
@@ -322,7 +362,8 @@ export let jump = {
 				a: 0.99,
 				b: 0.123,
 				c: -0.123,
-				d: 0.99
+				d: 0.99,
+				l: 11
 			},
 			left_foot: {
 				tx: -6.6,
@@ -330,7 +371,8 @@ export let jump = {
 				a: 0.08,
 				b: 0.963,
 				c: -1.466,
-				d: 0.422
+				d: 0.422,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 2.7,
@@ -338,7 +380,8 @@ export let jump = {
 				a: -0.8,
 				b: 1.057,
 				c: -0.856,
-				d: -0.648
+				d: -0.648,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 9.1,
@@ -346,7 +389,8 @@ export let jump = {
 				a: 1.543,
 				b: -0.421,
 				c: 0.328,
-				d: 1.202
+				d: 1.202,
+				l: 8
 			},
 			head: {
 				tx: 0.5,
@@ -354,7 +398,8 @@ export let jump = {
 				a: 0.954,
 				b: -0.604,
 				c: 0.604,
-				d: 0.954
+				d: 0.954,
+				l: 7
 			},
 			body: {
 				tx: 1.05,
@@ -362,7 +407,8 @@ export let jump = {
 				a: 0.959,
 				b: -0.262,
 				c: 0.262,
-				d: 0.959
+				d: 0.959,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -5.6,
@@ -370,7 +416,8 @@ export let jump = {
 				a: -1.328,
 				b: 0.006,
 				c: 0.004,
-				d: 0.909
+				d: 0.909,
+				l: 5
 			},
 			right_leg: {
 				tx: -6.7,
@@ -378,7 +425,8 @@ export let jump = {
 				a: -0.418,
 				b: 0.642,
 				c: 0.642,
-				d: 0.418
+				d: 0.418,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -2.5,
@@ -386,7 +434,8 @@ export let jump = {
 				a: 0.958,
 				b: 0.793,
 				c: -0.551,
-				d: 0.665
+				d: 0.665,
+				l: 3
 			},
 			right_foot: {
 				tx: -0.75,
@@ -394,7 +443,8 @@ export let jump = {
 				a: -0.796,
 				b: -0.56,
 				c: 0.476,
-				d: -0.837
+				d: -0.837,
+				l: 2
 			},
 			right_arm: {
 				tx: -18.35,
@@ -402,7 +452,8 @@ export let jump = {
 				a: 0.742,
 				b: -0.665,
 				c: 0.665,
-				d: 0.742
+				d: 0.742,
+				l: 1
 			},
 			back_bones: {
 				tx: -0.75,
@@ -410,7 +461,8 @@ export let jump = {
 				a: 0.991,
 				b: 0.127,
 				c: -0.127,
-				d: 0.991
+				d: 0.991,
+				l: 0
 			}
 		},
 		{
@@ -420,7 +472,8 @@ export let jump = {
 				a: 0.963,
 				b: -0.263,
 				c: 0.263,
-				d: 0.963
+				d: 0.963,
+				l: 12
 			},
 			left_leg: {
 				tx: -4.3,
@@ -428,7 +481,8 @@ export let jump = {
 				a: 0.866,
 				b: 0.495,
 				c: -0.495,
-				d: 0.866
+				d: 0.866,
+				l: 11
 			},
 			left_foot: {
 				tx: -6.6,
@@ -436,7 +490,8 @@ export let jump = {
 				a: 0.081,
 				b: 0.963,
 				c: -1.466,
-				d: 0.425
+				d: 0.425,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 4.1,
@@ -444,7 +499,8 @@ export let jump = {
 				a: -0.338,
 				b: 1.284,
 				c: -1.041,
-				d: -0.274
+				d: -0.274,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.9,
@@ -452,7 +508,8 @@ export let jump = {
 				a: 1.127,
 				b: -1.138,
 				c: 0.886,
-				d: 0.878
+				d: 0.878,
+				l: 8
 			},
 			head: {
 				tx: 1.15,
@@ -460,7 +517,8 @@ export let jump = {
 				a: 0.956,
 				b: -0.605,
 				c: 0.605,
-				d: 0.956
+				d: 0.956,
+				l: 7
 			},
 			body: {
 				tx: 1,
@@ -468,7 +526,8 @@ export let jump = {
 				a: 0.96,
 				b: -0.262,
 				c: 0.262,
-				d: 0.96
+				d: 0.96,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -4.9,
@@ -476,7 +535,8 @@ export let jump = {
 				a: -1.328,
 				b: 0.006,
 				c: 0.004,
-				d: 0.909
+				d: 0.909,
+				l: 5
 			},
 			right_leg: {
 				tx: -5.95,
@@ -484,7 +544,8 @@ export let jump = {
 				a: -0.42,
 				b: 0.642,
 				c: 0.642,
-				d: 0.42
+				d: 0.42,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -3,
@@ -492,7 +553,8 @@ export let jump = {
 				a: 0.502,
 				b: 1.142,
 				c: -0.793,
-				d: 0.349
+				d: 0.349,
+				l: 3
 			},
 			right_foot: {
 				tx: -0.05,
@@ -500,7 +562,8 @@ export let jump = {
 				a: -0.796,
 				b: -0.562,
 				c: 0.478,
-				d: -0.837
+				d: -0.837,
+				l: 2
 			},
 			right_arm: {
 				tx: -18.3,
@@ -508,7 +571,8 @@ export let jump = {
 				a: 0.963,
 				b: -0.263,
 				c: 0.263,
-				d: 0.963
+				d: 0.963,
+				l: 1
 			},
 			back_bones: {
 				tx: 0.55,
@@ -516,7 +580,8 @@ export let jump = {
 				a: 0.966,
 				b: 0.259,
 				c: -0.259,
-				d: 0.966
+				d: 0.966,
+				l: 0
 			}
 		}
 	]

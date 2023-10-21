@@ -5,7 +5,8 @@ export let walk = {
 		{
 			left_arm: {
 				tx: 5.3,
-				ty: -16.05
+				ty: -16.05,
+				l: 12
 			},
 			left_leg: {
 				tx: 2.45,
@@ -13,7 +14,8 @@ export let walk = {
 				a: 0.989,
 				b: -0.135,
 				c: 0.135,
-				d: 0.989
+				d: 0.989,
+				l: 11
 			},
 			left_foot: {
 				tx: 7.9,
@@ -21,7 +23,8 @@ export let walk = {
 				a: 0.967,
 				b: 0.045,
 				c: 0.231,
-				d: 1.511
+				d: 1.511,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 1.15,
@@ -29,7 +32,8 @@ export let walk = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.25,
@@ -37,7 +41,8 @@ export let walk = {
 				a: 1.207,
 				b: 0.323,
 				c: -0.323,
-				d: 1.207
+				d: 1.207,
+				l: 8
 			},
 			head: {
 				tx: -7.25,
@@ -45,13 +50,15 @@ export let walk = {
 				a: 1.083,
 				b: -0.333,
 				c: 0.333,
-				d: 1.083
+				d: 1.083,
+				l: 7
 			},
 			body: {
 				tx: 0.05,
 				ty: -7.65,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -5.45,
@@ -59,7 +66,8 @@ export let walk = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 5
 			},
 			right_leg: {
 				tx: -6.8,
@@ -67,7 +75,8 @@ export let walk = {
 				a: -0.765,
 				b: 0.071,
 				c: 0.071,
-				d: 0.765
+				d: 0.765,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -4.6,
@@ -75,7 +84,8 @@ export let walk = {
 				a: 1.004,
 				b: 0.744,
 				c: -0.516,
-				d: 0.697
+				d: 0.697,
+				l: 3
 			},
 			right_foot: {
 				tx: -11.15,
@@ -83,21 +93,25 @@ export let walk = {
 				a: 0.926,
 				b: -0.307,
 				c: 0.389,
-				d: 0.883
+				d: 0.883,
+				l: 2
 			},
 			right_arm: {
 				tx: -19.75,
-				ty: -23.25
+				ty: -23.25,
+				l: 1
 			},
 			back_bones: {
 				tx: -2.3,
-				ty: -23.35
+				ty: -23.35,
+				l: 0
 			}
 		},
 		{
 			left_arm: {
 				tx: 5.3,
-				ty: -15.7
+				ty: -15.7,
+				l: 12
 			},
 			left_leg: {
 				tx: 2.5,
@@ -105,7 +119,8 @@ export let walk = {
 				a: 0.989,
 				b: -0.135,
 				c: 0.135,
-				d: 0.989
+				d: 0.989,
+				l: 11
 			},
 			left_foot: {
 				tx: 7.9,
@@ -113,7 +128,8 @@ export let walk = {
 				a: 0.967,
 				b: 0.043,
 				c: 0.227,
-				d: 1.51
+				d: 1.51,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 1,
@@ -121,7 +137,8 @@ export let walk = {
 				a: 1.152,
 				b: 0.661,
 				c: -0.536,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.25,
@@ -129,7 +146,8 @@ export let walk = {
 				a: 1.206,
 				b: 0.323,
 				c: -0.323,
-				d: 1.206
+				d: 1.206,
+				l: 8
 			},
 			head: {
 				tx: -7,
@@ -137,13 +155,15 @@ export let walk = {
 				a: 1.082,
 				b: -0.332,
 				c: 0.332,
-				d: 1.082
+				d: 1.082,
+				l: 7
 			},
 			body: {
 				tx: 0.05,
 				ty: -7.65,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -5.45,
@@ -151,7 +171,8 @@ export let walk = {
 				a: -1.284,
 				b: -0.344,
 				c: -0.233,
-				d: 0.879
+				d: 0.879,
+				l: 5
 			},
 			right_leg: {
 				tx: -6.8,
@@ -159,7 +180,8 @@ export let walk = {
 				a: -0.765,
 				b: 0.07,
 				c: 0.07,
-				d: 0.765
+				d: 0.765,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -4.65,
@@ -167,7 +189,8 @@ export let walk = {
 				a: 1.001,
 				b: 0.743,
 				c: -0.516,
-				d: 0.695
+				d: 0.695,
+				l: 3
 			},
 			right_foot: {
 				tx: -11.05,
@@ -175,22 +198,26 @@ export let walk = {
 				a: 0.926,
 				b: -0.306,
 				c: 0.389,
-				d: 0.882
+				d: 0.882,
+				l: 2
 			},
 			right_arm: {
 				tx: -19.75,
-				ty: -23.6
+				ty: -23.6,
+				l: 1
 			},
 			back_bones: {
 				tx: -2.3,
 				ty: -23.35,
-				b: 0.022
+				b: 0.022,
+				l: 0
 			}
 		},
 		{
 			left_arm: {
 				tx: 5.3,
-				ty: -15.3
+				ty: -15.3,
+				l: 12
 			},
 			left_leg: {
 				tx: 2.5,
@@ -198,7 +225,8 @@ export let walk = {
 				a: 0.989,
 				b: -0.135,
 				c: 0.135,
-				d: 0.989
+				d: 0.989,
+				l: 11
 			},
 			left_foot: {
 				tx: 7.9,
@@ -206,7 +234,8 @@ export let walk = {
 				a: 0.967,
 				b: 0.043,
 				c: 0.227,
-				d: 1.51
+				d: 1.51,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 0.85,
@@ -214,7 +243,8 @@ export let walk = {
 				a: 1.152,
 				b: 0.661,
 				c: -0.536,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.25,
@@ -222,7 +252,8 @@ export let walk = {
 				a: 1.206,
 				b: 0.323,
 				c: -0.323,
-				d: 1.206
+				d: 1.206,
+				l: 8
 			},
 			head: {
 				tx: -6.85,
@@ -230,13 +261,15 @@ export let walk = {
 				a: 1.082,
 				b: -0.332,
 				c: 0.332,
-				d: 1.082
+				d: 1.082,
+				l: 7
 			},
 			body: {
 				tx: 0.05,
 				ty: -7.65,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -5.45,
@@ -244,7 +277,8 @@ export let walk = {
 				a: -1.284,
 				b: -0.344,
 				c: -0.233,
-				d: 0.879
+				d: 0.879,
+				l: 5
 			},
 			right_leg: {
 				tx: -6.8,
@@ -252,7 +286,8 @@ export let walk = {
 				a: -0.765,
 				b: 0.07,
 				c: 0.07,
-				d: 0.765
+				d: 0.765,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -4.65,
@@ -260,7 +295,8 @@ export let walk = {
 				a: 1.001,
 				b: 0.743,
 				c: -0.516,
-				d: 0.695
+				d: 0.695,
+				l: 3
 			},
 			right_foot: {
 				tx: -11,
@@ -268,22 +304,26 @@ export let walk = {
 				a: 0.926,
 				b: -0.306,
 				c: 0.389,
-				d: 0.882
+				d: 0.882,
+				l: 2
 			},
 			right_arm: {
 				tx: -19.75,
-				ty: -24
+				ty: -24,
+				l: 1
 			},
 			back_bones: {
 				tx: -2.3,
 				ty: -23.35,
-				b: 0.044
+				b: 0.044,
+				l: 0
 			}
 		},
 		{
 			left_arm: {
 				tx: 5.3,
-				ty: -14.95
+				ty: -14.95,
+				l: 12
 			},
 			left_leg: {
 				tx: 2.45,
@@ -291,7 +331,8 @@ export let walk = {
 				a: 0.989,
 				b: -0.135,
 				c: 0.135,
-				d: 0.989
+				d: 0.989,
+				l: 11
 			},
 			left_foot: {
 				tx: 7.9,
@@ -299,7 +340,8 @@ export let walk = {
 				a: 0.967,
 				b: 0.045,
 				c: 0.231,
-				d: 1.511
+				d: 1.511,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 1.15,
@@ -307,7 +349,8 @@ export let walk = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.25,
@@ -315,7 +358,8 @@ export let walk = {
 				a: 1.207,
 				b: 0.323,
 				c: -0.323,
-				d: 1.207
+				d: 1.207,
+				l: 8
 			},
 			head: {
 				tx: -6.7,
@@ -323,13 +367,15 @@ export let walk = {
 				a: 1.083,
 				b: -0.333,
 				c: 0.333,
-				d: 1.083
+				d: 1.083,
+				l: 7
 			},
 			body: {
 				tx: 0.05,
 				ty: -7.65,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -5.45,
@@ -337,7 +383,8 @@ export let walk = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 5
 			},
 			right_leg: {
 				tx: -6.8,
@@ -345,7 +392,8 @@ export let walk = {
 				a: -0.765,
 				b: 0.071,
 				c: 0.071,
-				d: 0.765
+				d: 0.765,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -4.6,
@@ -353,7 +401,8 @@ export let walk = {
 				a: 1.004,
 				b: 0.744,
 				c: -0.516,
-				d: 0.697
+				d: 0.697,
+				l: 3
 			},
 			right_foot: {
 				tx: -11.15,
@@ -361,16 +410,19 @@ export let walk = {
 				a: 0.926,
 				b: -0.307,
 				c: 0.389,
-				d: 0.883
+				d: 0.883,
+				l: 2
 			},
 			right_arm: {
 				tx: -19.75,
-				ty: -24.35
+				ty: -24.35,
+				l: 1
 			},
 			back_bones: {
 				tx: -2.3,
 				ty: -23.35,
-				b: 0.066
+				b: 0.066,
+				l: 0
 			}
 		},
 		{
@@ -380,7 +432,8 @@ export let walk = {
 				a: 0.993,
 				b: -0.114,
 				c: 0.114,
-				d: 0.993
+				d: 0.993,
+				l: 12
 			},
 			left_leg: {
 				tx: 2.8,
@@ -388,7 +441,8 @@ export let walk = {
 				a: 0.979,
 				b: -0.191,
 				c: 0.191,
-				d: 0.979
+				d: 0.979,
+				l: 11
 			},
 			left_foot: {
 				tx: 8.55,
@@ -396,7 +450,8 @@ export let walk = {
 				a: 0.965,
 				b: 0.073,
 				c: 0.181,
-				d: 1.516
+				d: 1.516,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 0.9,
@@ -404,7 +459,8 @@ export let walk = {
 				a: 1.172,
 				b: 0.625,
 				c: -0.506,
-				d: 0.95
+				d: 0.95,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.1,
@@ -412,7 +468,8 @@ export let walk = {
 				a: 1.236,
 				b: 0.18,
 				c: -0.18,
-				d: 1.236
+				d: 1.236,
+				l: 8
 			},
 			head: {
 				tx: -6.9,
@@ -420,13 +477,15 @@ export let walk = {
 				a: 1.082,
 				b: -0.332,
 				c: 0.332,
-				d: 1.082
+				d: 1.082,
+				l: 7
 			},
 			body: {
 				tx: 0.05,
 				ty: -6.85,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -5.45,
@@ -434,7 +493,8 @@ export let walk = {
 				a: -1.284,
 				b: -0.344,
 				c: -0.233,
-				d: 0.879
+				d: 0.879,
+				l: 5
 			},
 			right_leg: {
 				tx: -7.05,
@@ -442,7 +502,8 @@ export let walk = {
 				a: -0.768,
 				b: 0.004,
 				c: 0.004,
-				d: 0.768
+				d: 0.768,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -4.55,
@@ -450,7 +511,8 @@ export let walk = {
 				a: 0.933,
 				b: 0.828,
 				c: -0.575,
-				d: 0.648
+				d: 0.648,
+				l: 3
 			},
 			right_foot: {
 				tx: -12.1,
@@ -458,7 +520,8 @@ export let walk = {
 				a: 0.949,
 				b: -0.225,
 				c: 0.311,
-				d: 0.913
+				d: 0.913,
+				l: 2
 			},
 			right_arm: {
 				tx: -18.95,
@@ -466,13 +529,15 @@ export let walk = {
 				a: 0.996,
 				b: 0.084,
 				c: -0.084,
-				d: 0.996
+				d: 0.996,
+				l: 1
 			},
 			back_bones: {
 				tx: -2.55,
 				ty: -22.5,
 				a: 1.001,
-				b: 0.031
+				b: 0.031,
+				l: 0
 			}
 		},
 		{
@@ -482,7 +547,8 @@ export let walk = {
 				a: 0.973,
 				b: -0.226,
 				c: 0.226,
-				d: 0.973
+				d: 0.973,
+				l: 12
 			},
 			left_leg: {
 				tx: 3.15,
@@ -490,7 +556,8 @@ export let walk = {
 				a: 0.967,
 				b: -0.246,
 				c: 0.246,
-				d: 0.967
+				d: 0.967,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.3,
@@ -498,7 +565,8 @@ export let walk = {
 				a: 0.962,
 				b: 0.102,
 				c: 0.134,
-				d: 1.521
+				d: 1.521,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 0.55,
@@ -506,7 +574,8 @@ export let walk = {
 				a: 1.193,
 				b: 0.584,
 				c: -0.473,
-				d: 0.966
+				d: 0.966,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 7.8,
@@ -514,7 +583,8 @@ export let walk = {
 				a: 1.248,
 				b: 0.038,
 				c: -0.038,
-				d: 1.248
+				d: 1.248,
+				l: 8
 			},
 			head: {
 				tx: -7.15,
@@ -522,13 +592,15 @@ export let walk = {
 				a: 1.082,
 				b: -0.332,
 				c: 0.332,
-				d: 1.082
+				d: 1.082,
+				l: 7
 			},
 			body: {
 				tx: 0.05,
 				ty: -6.05,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -5.45,
@@ -536,7 +608,8 @@ export let walk = {
 				a: -1.284,
 				b: -0.344,
 				c: -0.233,
-				d: 0.879
+				d: 0.879,
+				l: 5
 			},
 			right_leg: {
 				tx: -7.35,
@@ -544,7 +617,8 @@ export let walk = {
 				a: -0.766,
 				b: -0.057,
 				c: -0.057,
-				d: 0.766
+				d: 0.766,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -4.45,
@@ -552,7 +626,8 @@ export let walk = {
 				a: 0.857,
 				b: 0.906,
 				c: -0.629,
-				d: 0.595
+				d: 0.595,
+				l: 3
 			},
 			right_foot: {
 				tx: -12.95,
@@ -560,7 +635,8 @@ export let walk = {
 				a: 0.964,
 				b: -0.145,
 				c: 0.234,
-				d: 0.936
+				d: 0.936,
+				l: 2
 			},
 			right_arm: {
 				tx: -18.2,
@@ -568,13 +644,15 @@ export let walk = {
 				a: 0.985,
 				b: 0.17,
 				c: -0.17,
-				d: 0.985
+				d: 0.985,
+				l: 1
 			},
 			back_bones: {
 				tx: -2.7,
 				ty: -21.75,
 				a: 1.001,
-				b: -0.001
+				b: -0.001,
+				l: 0
 			}
 		},
 		{
@@ -584,7 +662,8 @@ export let walk = {
 				a: 0.941,
 				b: -0.339,
 				c: 0.339,
-				d: 0.941
+				d: 0.941,
+				l: 12
 			},
 			left_leg: {
 				tx: 3.25,
@@ -592,7 +671,8 @@ export let walk = {
 				a: 0.952,
 				b: -0.3,
 				c: 0.3,
-				d: 0.952
+				d: 0.952,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.9,
@@ -600,7 +680,8 @@ export let walk = {
 				a: 0.958,
 				b: 0.134,
 				c: 0.091,
-				d: 1.524
+				d: 1.524,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 0.35,
@@ -608,7 +689,8 @@ export let walk = {
 				a: 1.212,
 				b: 0.546,
 				c: -0.442,
-				d: 0.982
+				d: 0.982,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 7.65,
@@ -616,7 +698,8 @@ export let walk = {
 				a: 1.245,
 				b: -0.104,
 				c: 0.104,
-				d: 1.245
+				d: 1.245,
+				l: 8
 			},
 			head: {
 				tx: -7.45,
@@ -624,13 +707,15 @@ export let walk = {
 				a: 1.083,
 				b: -0.333,
 				c: 0.333,
-				d: 1.083
+				d: 1.083,
+				l: 7
 			},
 			body: {
 				tx: 0.05,
 				ty: -5.25,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -5.45,
@@ -638,7 +723,8 @@ export let walk = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 5
 			},
 			right_leg: {
 				tx: -7.55,
@@ -646,7 +732,8 @@ export let walk = {
 				a: -0.758,
 				b: -0.123,
 				c: -0.123,
-				d: 0.758
+				d: 0.758,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -4.45,
@@ -654,7 +741,8 @@ export let walk = {
 				a: 0.777,
 				b: 0.978,
 				c: -0.679,
-				d: 0.54
+				d: 0.54,
+				l: 3
 			},
 			right_foot: {
 				tx: -13.55,
@@ -662,7 +750,8 @@ export let walk = {
 				a: 0.973,
 				b: -0.065,
 				c: 0.156,
-				d: 0.952
+				d: 0.952,
+				l: 2
 			},
 			right_arm: {
 				tx: -17.1,
@@ -670,12 +759,14 @@ export let walk = {
 				a: 0.966,
 				b: 0.259,
 				c: -0.259,
-				d: 0.966
+				d: 0.966,
+				l: 1
 			},
 			back_bones: {
 				tx: -2.85,
 				ty: -20.9,
-				b: -0.038
+				b: -0.038,
+				l: 0
 			}
 		},
 		{
@@ -685,7 +776,8 @@ export let walk = {
 				a: 0.973,
 				b: -0.226,
 				c: 0.226,
-				d: 0.973
+				d: 0.973,
+				l: 12
 			},
 			left_leg: {
 				tx: 3,
@@ -693,7 +785,8 @@ export let walk = {
 				a: 0.967,
 				b: -0.246,
 				c: 0.246,
-				d: 0.967
+				d: 0.967,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.3,
@@ -701,7 +794,8 @@ export let walk = {
 				a: 0.962,
 				b: 0.102,
 				c: 0.134,
-				d: 1.521
+				d: 1.521,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 0.75,
@@ -709,7 +803,8 @@ export let walk = {
 				a: 1.193,
 				b: 0.584,
 				c: -0.473,
-				d: 0.966
+				d: 0.966,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 7.85,
@@ -717,7 +812,8 @@ export let walk = {
 				a: 1.248,
 				b: 0.038,
 				c: -0.038,
-				d: 1.248
+				d: 1.248,
+				l: 8
 			},
 			head: {
 				tx: -7.35,
@@ -725,13 +821,15 @@ export let walk = {
 				a: 1.082,
 				b: -0.332,
 				c: 0.332,
-				d: 1.082
+				d: 1.082,
+				l: 7
 			},
 			body: {
 				tx: 0.05,
 				ty: -6.05,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -5.45,
@@ -739,7 +837,8 @@ export let walk = {
 				a: -1.284,
 				b: -0.344,
 				c: -0.233,
-				d: 0.879
+				d: 0.879,
+				l: 5
 			},
 			right_leg: {
 				tx: -7.35,
@@ -747,7 +846,8 @@ export let walk = {
 				a: -0.766,
 				b: -0.057,
 				c: -0.057,
-				d: 0.766
+				d: 0.766,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -4.5,
@@ -755,7 +855,8 @@ export let walk = {
 				a: 0.857,
 				b: 0.906,
 				c: -0.629,
-				d: 0.595
+				d: 0.595,
+				l: 3
 			},
 			right_foot: {
 				tx: -12.75,
@@ -763,7 +864,8 @@ export let walk = {
 				a: 0.964,
 				b: -0.145,
 				c: 0.234,
-				d: 0.936
+				d: 0.936,
+				l: 2
 			},
 			right_arm: {
 				tx: -18.1,
@@ -771,12 +873,14 @@ export let walk = {
 				a: 0.985,
 				b: 0.17,
 				c: -0.17,
-				d: 0.985
+				d: 0.985,
+				l: 1
 			},
 			back_bones: {
 				tx: -2.65,
 				ty: -21.75,
-				b: -0.023
+				b: -0.023,
+				l: 0
 			}
 		},
 		{
@@ -786,7 +890,8 @@ export let walk = {
 				a: 0.993,
 				b: -0.114,
 				c: 0.114,
-				d: 0.993
+				d: 0.993,
+				l: 12
 			},
 			left_leg: {
 				tx: 2.55,
@@ -794,7 +899,8 @@ export let walk = {
 				a: 0.979,
 				b: -0.191,
 				c: 0.191,
-				d: 0.979
+				d: 0.979,
+				l: 11
 			},
 			left_foot: {
 				tx: 8.6,
@@ -802,7 +908,8 @@ export let walk = {
 				a: 0.965,
 				b: 0.073,
 				c: 0.181,
-				d: 1.516
+				d: 1.516,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 1.2,
@@ -810,7 +917,8 @@ export let walk = {
 				a: 1.172,
 				b: 0.625,
 				c: -0.506,
-				d: 0.95
+				d: 0.95,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.1,
@@ -818,7 +926,8 @@ export let walk = {
 				a: 1.236,
 				b: 0.18,
 				c: -0.18,
-				d: 1.236
+				d: 1.236,
+				l: 8
 			},
 			head: {
 				tx: -7.25,
@@ -826,13 +935,15 @@ export let walk = {
 				a: 1.082,
 				b: -0.332,
 				c: 0.332,
-				d: 1.082
+				d: 1.082,
+				l: 7
 			},
 			body: {
 				tx: 0.05,
 				ty: -6.85,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -5.45,
@@ -840,7 +951,8 @@ export let walk = {
 				a: -1.284,
 				b: -0.344,
 				c: -0.233,
-				d: 0.879
+				d: 0.879,
+				l: 5
 			},
 			right_leg: {
 				tx: -7.05,
@@ -848,7 +960,8 @@ export let walk = {
 				a: -0.768,
 				b: 0.004,
 				c: 0.004,
-				d: 0.768
+				d: 0.768,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -4.5,
@@ -856,7 +969,8 @@ export let walk = {
 				a: 0.933,
 				b: 0.828,
 				c: -0.575,
-				d: 0.648
+				d: 0.648,
+				l: 3
 			},
 			right_foot: {
 				tx: -11.9,
@@ -864,7 +978,8 @@ export let walk = {
 				a: 0.949,
 				b: -0.225,
 				c: 0.311,
-				d: 0.913
+				d: 0.913,
+				l: 2
 			},
 			right_arm: {
 				tx: -18.95,
@@ -872,18 +987,21 @@ export let walk = {
 				a: 0.996,
 				b: 0.084,
 				c: -0.084,
-				d: 0.996
+				d: 0.996,
+				l: 1
 			},
 			back_bones: {
 				tx: -2.5,
 				ty: -22.6,
-				b: -0.01
+				b: -0.01,
+				l: 0
 			}
 		},
 		{
 			left_arm: {
 				tx: 5.3,
-				ty: -16.05
+				ty: -16.05,
+				l: 12
 			},
 			left_leg: {
 				tx: 2.45,
@@ -891,7 +1009,8 @@ export let walk = {
 				a: 0.989,
 				b: -0.135,
 				c: 0.135,
-				d: 0.989
+				d: 0.989,
+				l: 11
 			},
 			left_foot: {
 				tx: 7.9,
@@ -899,7 +1018,8 @@ export let walk = {
 				a: 0.967,
 				b: 0.045,
 				c: 0.231,
-				d: 1.511
+				d: 1.511,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 1.15,
@@ -907,7 +1027,8 @@ export let walk = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.25,
@@ -915,7 +1036,8 @@ export let walk = {
 				a: 1.207,
 				b: 0.323,
 				c: -0.323,
-				d: 1.207
+				d: 1.207,
+				l: 8
 			},
 			head: {
 				tx: -7.25,
@@ -923,13 +1045,15 @@ export let walk = {
 				a: 1.083,
 				b: -0.333,
 				c: 0.333,
-				d: 1.083
+				d: 1.083,
+				l: 7
 			},
 			body: {
 				tx: 0.05,
 				ty: -7.65,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			right_leg_connector: {
 				tx: -5.45,
@@ -937,7 +1061,8 @@ export let walk = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 5
 			},
 			right_leg: {
 				tx: -6.8,
@@ -945,7 +1070,8 @@ export let walk = {
 				a: -0.765,
 				b: 0.071,
 				c: 0.071,
-				d: 0.765
+				d: 0.765,
+				l: 4
 			},
 			right_arm_connector: {
 				tx: -4.6,
@@ -953,7 +1079,8 @@ export let walk = {
 				a: 1.004,
 				b: 0.744,
 				c: -0.516,
-				d: 0.697
+				d: 0.697,
+				l: 3
 			},
 			right_foot: {
 				tx: -11.15,
@@ -961,15 +1088,18 @@ export let walk = {
 				a: 0.926,
 				b: -0.307,
 				c: 0.389,
-				d: 0.883
+				d: 0.883,
+				l: 2
 			},
 			right_arm: {
 				tx: -19.75,
-				ty: -23.25
+				ty: -23.25,
+				l: 1
 			},
 			back_bones: {
 				tx: -2.3,
-				ty: -23.35
+				ty: -23.35,
+				l: 0
 			}
 		}
 	]

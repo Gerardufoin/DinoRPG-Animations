@@ -302,7 +302,8 @@ export class XFLParser {
 			alpha: this.multiplyColors(m2.alpha, m1.alpha),
 			red: this.multiplyColors(m2.red, m1.red),
 			green: this.multiplyColors(m2.green, m1.green),
-			blue: this.multiplyColors(m2.blue, m1.blue)
+			blue: this.multiplyColors(m2.blue, m1.blue),
+			l: m1.l ?? m2.l
 		};
 		matrix.a = matrix.a === 1 ? undefined : matrix.a;
 		matrix.b = matrix.b === 0 ? undefined : matrix.b;
@@ -335,6 +336,7 @@ export class XFLParser {
 		result.elements = {};
 		result.callbacks = {};
 		result.frames = [];
+		let layer = 0;
 		for (const l of this.toArray(layers.DOMLayer)) {
 			for (const f of this.toArray(l.frames.DOMFrame)) {
 				const idx = Number.parseInt(f.index);
@@ -371,7 +373,8 @@ export class XFLParser {
 						alpha: this.parseFloat(symbolInstance.color?.Color?.alphaMultiplier),
 						red: this.parseFloat(symbolInstance.color?.Color?.redOffset),
 						green: this.parseFloat(symbolInstance.color?.Color?.greenOffset),
-						blue: this.parseFloat(symbolInstance.color?.Color?.blueOffset)
+						blue: this.parseFloat(symbolInstance.color?.Color?.blueOffset),
+						l: layer
 					};
 					if (FLAG_NO_RGB) {
 						frameData.red = frameData.green = frameData.blue = undefined;
@@ -399,6 +402,29 @@ export class XFLParser {
 							);
 						}
 					}
+				}
+			}
+			++layer;
+		}
+		// Clean up layers so element on the higher layer number becomes 0
+		// Trying to get as many edge cases as possible (missing layers, multiple item on same layer or other)
+		for (const f of result.frames) {
+			/**
+			 * @type {String[][]}
+			 */
+			let order = [];
+			for (const k in f) {
+				if (!order[f[k].l]) {
+					order[f[k].l] = [];
+				}
+				order[f[k].l].push(k);
+			}
+			order = order.filter(function (e) {
+				return e !== undefined;
+			});
+			for (let i = 0; i < order.length; ++i) {
+				for (const k of order[i]) {
+					f[k].l = order.length - 1 - i;
 				}
 			}
 		}

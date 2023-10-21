@@ -9,7 +9,8 @@ export let attack = {
 		{
 			left_arm: {
 				tx: 5.3,
-				ty: -14.9
+				ty: -14.9,
+				l: 12
 			},
 			left_leg: {
 				tx: 2.8,
@@ -17,7 +18,8 @@ export let attack = {
 				a: 0.972,
 				b: -0.229,
 				c: 0.229,
-				d: 0.972
+				d: 0.972,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.05,
@@ -25,7 +27,8 @@ export let attack = {
 				a: 0.967,
 				b: -0.048,
 				c: 0.374,
-				d: 1.481
+				d: 1.481,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 1.15,
@@ -33,7 +36,8 @@ export let attack = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.25,
@@ -41,7 +45,8 @@ export let attack = {
 				a: 1.207,
 				b: 0.323,
 				c: -0.323,
-				d: 1.207
+				d: 1.207,
+				l: 8
 			},
 			head: {
 				tx: -7.25,
@@ -49,17 +54,20 @@ export let attack = {
 				a: 1.083,
 				b: -0.333,
 				c: 0.333,
-				d: 1.083
+				d: 1.083,
+				l: 7
 			},
 			body: {
 				tx: 0.05,
 				ty: -7.05,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			back_bones: {
 				tx: -2.15,
-				ty: -22.6
+				ty: -22.6,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -5.45,
@@ -67,7 +75,8 @@ export let attack = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 4
 			},
 			right_leg: {
 				tx: -7.55,
@@ -75,7 +84,8 @@ export let attack = {
 				a: -0.767,
 				b: -0.034,
 				c: -0.034,
-				d: 0.767
+				d: 0.767,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: -4.6,
@@ -83,7 +93,8 @@ export let attack = {
 				a: 1.004,
 				b: 0.744,
 				c: -0.516,
-				d: 0.697
+				d: 0.697,
+				l: 2
 			},
 			right_foot: {
 				tx: -12.9,
@@ -91,11 +102,13 @@ export let attack = {
 				a: 0.959,
 				b: -0.178,
 				c: 0.266,
-				d: 0.927
+				d: 0.927,
+				l: 1
 			},
 			right_arm: {
 				tx: -19.75,
-				ty: -23.2
+				ty: -23.2,
+				l: 0
 			}
 		},
 		{
@@ -105,7 +118,8 @@ export let attack = {
 				a: 0.955,
 				b: -0.288,
 				c: 0.217,
-				d: 0.919
+				d: 0.919,
+				l: 12
 			},
 			left_leg: {
 				tx: 3.4,
@@ -113,7 +127,8 @@ export let attack = {
 				a: 0.945,
 				b: -0.317,
 				c: 0.317,
-				d: 0.945
+				d: 0.945,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.8,
@@ -121,7 +136,8 @@ export let attack = {
 				a: 0.962,
 				b: 0.102,
 				c: 0.134,
-				d: 1.521
+				d: 1.521,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 3.1,
@@ -129,7 +145,8 @@ export let attack = {
 				a: 0.877,
 				b: 0.997,
 				c: -0.808,
-				d: 0.711
+				d: 0.711,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.2,
@@ -137,7 +154,8 @@ export let attack = {
 				a: 1.228,
 				b: 0.4,
 				c: -0.387,
-				d: 1.186
+				d: 1.186,
+				l: 8
 			},
 			head: {
 				tx: -2.9,
@@ -145,13 +163,15 @@ export let attack = {
 				a: 1.082,
 				b: -0.331,
 				c: 0.331,
-				d: 1.082
+				d: 1.082,
+				l: 7
 			},
 			body: {
 				tx: 2.55,
 				ty: -7.05,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			back_bones: {
 				tx: 1.85,
@@ -159,7 +179,8 @@ export let attack = {
 				a: 0.987,
 				b: 0.157,
 				c: -0.157,
-				d: 0.987
+				d: 0.987,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -3.25,
@@ -167,7 +188,8 @@ export let attack = {
 				a: -1.263,
 				b: -0.411,
 				c: -0.281,
-				d: 0.864
+				d: 0.864,
+				l: 4
 			},
 			right_leg: {
 				tx: -5.85,
@@ -175,7 +197,8 @@ export let attack = {
 				a: -0.714,
 				b: -0.279,
 				c: -0.279,
-				d: 0.714
+				d: 0.714,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 1.25,
@@ -183,7 +206,8 @@ export let attack = {
 				a: 0.592,
 				b: 1.097,
 				c: -0.762,
-				d: 0.411
+				d: 0.411,
+				l: 2
 			},
 			right_foot: {
 				tx: -11.45,
@@ -191,7 +215,8 @@ export let attack = {
 				a: 0.971,
 				b: 0.09,
 				c: 0.001,
-				d: 0.965
+				d: 0.965,
+				l: 1
 			},
 			right_arm: {
 				tx: -15.5,
@@ -199,7 +224,8 @@ export let attack = {
 				a: 0.827,
 				b: -0.598,
 				c: 0.601,
-				d: 0.825
+				d: 0.825,
+				l: 0
 			}
 		},
 		{
@@ -209,7 +235,8 @@ export let attack = {
 				a: 0.83,
 				b: -0.551,
 				c: 0.397,
-				d: 0.795
+				d: 0.795,
+				l: 12
 			},
 			left_leg: {
 				tx: 4.1,
@@ -217,7 +244,8 @@ export let attack = {
 				a: 0.91,
 				b: -0.406,
 				c: 0.406,
-				d: 0.91
+				d: 0.91,
+				l: 11
 			},
 			left_foot: {
 				tx: 10.6,
@@ -225,7 +253,8 @@ export let attack = {
 				a: 0.933,
 				b: 0.251,
 				c: -0.1,
-				d: 1.524
+				d: 1.524,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 5.1,
@@ -233,7 +262,8 @@ export let attack = {
 				a: 0.509,
 				b: 1.226,
 				c: -0.994,
-				d: 0.413
+				d: 0.413,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.2,
@@ -241,7 +271,8 @@ export let attack = {
 				a: 1.243,
 				b: 0.484,
 				c: -0.453,
-				d: 1.162
+				d: 1.162,
+				l: 8
 			},
 			head: {
 				tx: 1.35,
@@ -249,13 +280,15 @@ export let attack = {
 				a: 1.082,
 				b: -0.331,
 				c: 0.331,
-				d: 1.082
+				d: 1.082,
+				l: 7
 			},
 			body: {
 				tx: 5.05,
 				ty: -7.05,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			back_bones: {
 				tx: 5.95,
@@ -263,7 +296,8 @@ export let attack = {
 				a: 0.948,
 				b: 0.314,
 				c: -0.314,
-				d: 0.948
+				d: 0.948,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -0.9,
@@ -271,7 +305,8 @@ export let attack = {
 				a: -1.239,
 				b: -0.477,
 				c: -0.327,
-				d: 0.848
+				d: 0.848,
+				l: 4
 			},
 			right_leg: {
 				tx: -4.2,
@@ -279,7 +314,8 @@ export let attack = {
 				a: -0.584,
 				b: -0.497,
 				c: -0.497,
-				d: 0.584
+				d: 0.584,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 7,
@@ -287,7 +323,8 @@ export let attack = {
 				a: 0.072,
 				b: 1.246,
 				c: -0.865,
-				d: 0.05
+				d: 0.05,
+				l: 2
 			},
 			right_foot: {
 				tx: -9.95,
@@ -295,7 +332,8 @@ export let attack = {
 				a: 0.909,
 				b: 0.35,
 				c: -0.258,
-				d: 0.928
+				d: 0.928,
+				l: 1
 			},
 			right_arm: {
 				tx: -6.65,
@@ -303,7 +341,8 @@ export let attack = {
 				a: 0.323,
 				b: -0.991,
 				c: 0.993,
-				d: 0.319
+				d: 0.319,
+				l: 0
 			}
 		},
 		{
@@ -313,7 +352,8 @@ export let attack = {
 				a: 0.634,
 				b: -0.766,
 				c: 0.534,
-				d: 0.64
+				d: 0.64,
+				l: 12
 			},
 			left_leg: {
 				tx: 4.8,
@@ -321,7 +361,8 @@ export let attack = {
 				a: 0.868,
 				b: -0.488,
 				c: 0.488,
-				d: 0.868
+				d: 0.868,
+				l: 11
 			},
 			left_foot: {
 				tx: 11.3,
@@ -329,7 +370,8 @@ export let attack = {
 				a: 0.882,
 				b: 0.394,
 				c: -0.337,
-				d: 1.488
+				d: 1.488,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 7.25,
@@ -337,7 +379,8 @@ export let attack = {
 				a: 0.088,
 				b: 1.326,
 				c: -1.074,
-				d: 0.071
+				d: 0.071,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.2,
@@ -345,7 +388,8 @@ export let attack = {
 				a: 1.254,
 				b: 0.567,
 				c: -0.513,
-				d: 1.136
+				d: 1.136,
+				l: 8
 			},
 			head: {
 				tx: 5.6,
@@ -353,13 +397,15 @@ export let attack = {
 				a: 1.081,
 				b: -0.331,
 				c: 0.331,
-				d: 1.081
+				d: 1.081,
+				l: 7
 			},
 			body: {
 				tx: 7.55,
 				ty: -7.05,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			back_bones: {
 				tx: 10.15,
@@ -367,7 +413,8 @@ export let attack = {
 				a: 0.885,
 				b: 0.463,
 				c: -0.463,
-				d: 0.885
+				d: 0.885,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: 1.4,
@@ -375,7 +422,8 @@ export let attack = {
 				a: -1.21,
 				b: -0.546,
 				c: -0.373,
-				d: 0.828
+				d: 0.828,
+				l: 4
 			},
 			right_leg: {
 				tx: -2.45,
@@ -383,7 +431,8 @@ export let attack = {
 				a: -0.39,
 				b: -0.66,
 				c: -0.66,
-				d: 0.39
+				d: 0.39,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 12.8,
@@ -391,7 +440,8 @@ export let attack = {
 				a: -0.458,
 				b: 1.159,
 				c: -0.805,
-				d: -0.318
+				d: -0.318,
+				l: 2
 			},
 			right_foot: {
 				tx: -8.55,
@@ -399,7 +449,8 @@ export let attack = {
 				a: 0.776,
 				b: 0.587,
 				c: -0.504,
-				d: 0.82
+				d: 0.82,
+				l: 1
 			},
 			right_arm: {
 				tx: 6.65,
@@ -407,7 +458,8 @@ export let attack = {
 				a: -0.325,
 				b: -1.013,
 				c: 1.012,
-				d: -0.33
+				d: -0.33,
+				l: 0
 			}
 		},
 		{
@@ -417,7 +469,8 @@ export let attack = {
 				a: 0.386,
 				b: -0.917,
 				c: 0.624,
-				d: 0.467
+				d: 0.467,
+				l: 12
 			},
 			left_leg: {
 				tx: 5.4,
@@ -425,7 +478,8 @@ export let attack = {
 				a: 0.818,
 				b: -0.569,
 				c: 0.569,
-				d: 0.818
+				d: 0.818,
+				l: 11
 			},
 			left_foot: {
 				tx: 12,
@@ -433,7 +487,8 @@ export let attack = {
 				a: 0.81,
 				b: 0.528,
 				c: -0.567,
-				d: 1.418
+				d: 1.418,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 9.35,
@@ -441,7 +496,8 @@ export let attack = {
 				a: -0.34,
 				b: 1.285,
 				c: -1.041,
-				d: -0.275
+				d: -0.275,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.1,
@@ -449,7 +505,8 @@ export let attack = {
 				a: 1.26,
 				b: 0.657,
 				c: -0.577,
-				d: 1.106
+				d: 1.106,
+				l: 8
 			},
 			head: {
 				tx: 9.85,
@@ -457,13 +514,15 @@ export let attack = {
 				a: 1.082,
 				b: -0.332,
 				c: 0.332,
-				d: 1.082
+				d: 1.082,
+				l: 7
 			},
 			body: {
 				tx: 10.05,
 				ty: -7.05,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			back_bones: {
 				tx: 14.2,
@@ -471,7 +530,8 @@ export let attack = {
 				a: 0.799,
 				b: 0.601,
 				c: -0.601,
-				d: 0.799
+				d: 0.799,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: 3.7,
@@ -479,7 +539,8 @@ export let attack = {
 				a: -1.18,
 				b: -0.61,
 				c: -0.418,
-				d: 0.807
+				d: 0.807,
+				l: 4
 			},
 			right_leg: {
 				tx: -0.85,
@@ -487,7 +548,8 @@ export let attack = {
 				a: -0.154,
 				b: -0.752,
 				c: -0.752,
-				d: 0.154
+				d: 0.154,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 18.6,
@@ -495,7 +557,8 @@ export let attack = {
 				a: -0.906,
 				b: 0.857,
 				c: -0.595,
-				d: -0.629
+				d: -0.629,
+				l: 2
 			},
 			right_foot: {
 				tx: -7.15,
@@ -503,7 +566,8 @@ export let attack = {
 				a: 0.588,
 				b: 0.777,
 				c: -0.709,
-				d: 0.653
+				d: 0.653,
+				l: 1
 			},
 			right_arm: {
 				tx: 22.65,
@@ -511,7 +575,8 @@ export let attack = {
 				a: -0.878,
 				b: -0.641,
 				c: 0.637,
-				d: -0.881
+				d: -0.881,
+				l: 0
 			}
 		},
 		{
@@ -521,7 +586,8 @@ export let attack = {
 				a: 0.312,
 				b: -0.944,
 				c: 0.638,
-				d: 0.42
+				d: 0.42,
+				l: 12
 			},
 			left_leg: {
 				tx: 5.5,
@@ -529,7 +595,8 @@ export let attack = {
 				a: 0.802,
 				b: -0.59,
 				c: 0.59,
-				d: 0.802
+				d: 0.802,
+				l: 11
 			},
 			left_foot: {
 				tx: 12.15,
@@ -537,7 +604,8 @@ export let attack = {
 				a: 0.786,
 				b: 0.562,
 				c: -0.623,
-				d: 1.393
+				d: 1.393,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 9.85,
@@ -545,7 +613,8 @@ export let attack = {
 				a: -0.45,
 				b: 1.249,
 				c: -1.012,
-				d: -0.365
+				d: -0.365,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.1,
@@ -553,7 +622,8 @@ export let attack = {
 				a: 1.26,
 				b: 0.679,
 				c: -0.591,
-				d: 1.097
+				d: 1.097,
+				l: 8
 			},
 			head: {
 				tx: 11,
@@ -561,13 +631,15 @@ export let attack = {
 				a: 1.081,
 				b: -0.331,
 				c: 0.331,
-				d: 1.081
+				d: 1.081,
+				l: 7
 			},
 			body: {
 				tx: 10.7,
 				ty: -7.05,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			back_bones: {
 				tx: 14.6,
@@ -575,7 +647,8 @@ export let attack = {
 				a: 0.799,
 				b: 0.599,
 				c: -0.599,
-				d: 0.799
+				d: 0.799,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: 4.3,
@@ -583,7 +656,8 @@ export let attack = {
 				a: -1.171,
 				b: -0.625,
 				c: -0.428,
-				d: 0.801
+				d: 0.801,
+				l: 4
 			},
 			right_leg: {
 				tx: -0.35,
@@ -591,7 +665,8 @@ export let attack = {
 				a: -0.087,
 				b: -0.763,
 				c: -0.763,
-				d: 0.087
+				d: 0.087,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 20.15,
@@ -599,7 +674,8 @@ export let attack = {
 				a: -1,
 				b: 0.743,
 				c: -0.516,
-				d: -0.694
+				d: -0.694,
+				l: 2
 			},
 			right_foot: {
 				tx: -6.75,
@@ -607,7 +683,8 @@ export let attack = {
 				a: 0.528,
 				b: 0.818,
 				c: -0.755,
-				d: 0.598
+				d: 0.598,
+				l: 1
 			},
 			right_arm: {
 				tx: 27,
@@ -615,7 +692,8 @@ export let attack = {
 				a: -0.977,
 				b: -0.488,
 				c: 0.484,
-				d: -0.979
+				d: -0.979,
+				l: 0
 			}
 		},
 		{
@@ -625,7 +703,8 @@ export let attack = {
 				a: 0.237,
 				b: -0.966,
 				c: 0.651,
-				d: 0.373
+				d: 0.373,
+				l: 12
 			},
 			left_leg: {
 				tx: 5.75,
@@ -633,7 +712,8 @@ export let attack = {
 				a: 0.787,
 				b: -0.611,
 				c: 0.611,
-				d: 0.787
+				d: 0.787,
+				l: 11
 			},
 			left_foot: {
 				tx: 12.3,
@@ -641,7 +721,8 @@ export let attack = {
 				a: 0.761,
 				b: 0.596,
 				c: -0.683,
-				d: 1.365
+				d: 1.365,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 10.4,
@@ -649,7 +730,8 @@ export let attack = {
 				a: -0.558,
 				b: 1.205,
 				c: -0.976,
-				d: -0.452
+				d: -0.452,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.1,
@@ -657,7 +739,8 @@ export let attack = {
 				a: 1.261,
 				b: 0.702,
 				c: -0.606,
-				d: 1.09
+				d: 1.09,
+				l: 8
 			},
 			head: {
 				tx: 12.1,
@@ -665,13 +748,15 @@ export let attack = {
 				a: 1.082,
 				b: -0.331,
 				c: 0.331,
-				d: 1.082
+				d: 1.082,
+				l: 7
 			},
 			body: {
 				tx: 11.4,
 				ty: -7.05,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			back_bones: {
 				tx: 15,
@@ -679,7 +764,8 @@ export let attack = {
 				a: 0.799,
 				b: 0.599,
 				c: -0.599,
-				d: 0.799
+				d: 0.799,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: 4.95,
@@ -687,7 +773,8 @@ export let attack = {
 				a: -1.16,
 				b: -0.645,
 				c: -0.441,
-				d: 0.794
+				d: 0.794,
+				l: 4
 			},
 			right_leg: {
 				tx: 0,
@@ -695,7 +782,8 @@ export let attack = {
 				a: -0.02,
 				b: -0.768,
 				c: -0.768,
-				d: 0.02
+				d: 0.02,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 21.75,
@@ -703,7 +791,8 @@ export let attack = {
 				a: -1.079,
 				b: 0.625,
 				c: -0.434,
-				d: -0.749
+				d: -0.749,
+				l: 2
 			},
 			right_foot: {
 				tx: -6.4,
@@ -711,7 +800,8 @@ export let attack = {
 				a: 0.466,
 				b: 0.855,
 				c: -0.798,
-				d: 0.54
+				d: 0.54,
+				l: 1
 			},
 			right_arm: {
 				tx: 31.3,
@@ -719,7 +809,8 @@ export let attack = {
 				a: -1.051,
 				b: -0.322,
 				c: 0.313,
-				d: -1.053
+				d: -1.053,
+				l: 0
 			}
 		},
 		{
@@ -729,7 +820,8 @@ export let attack = {
 				a: 0.165,
 				b: -0.982,
 				c: 0.661,
-				d: 0.325
+				d: 0.325,
+				l: 12
 			},
 			left_leg: {
 				tx: 5.9,
@@ -737,7 +829,8 @@ export let attack = {
 				a: 0.773,
 				b: -0.631,
 				c: 0.631,
-				d: 0.773
+				d: 0.773,
+				l: 11
 			},
 			left_foot: {
 				tx: 12.55,
@@ -745,7 +838,8 @@ export let attack = {
 				a: 0.737,
 				b: 0.628,
 				c: -0.744,
-				d: 1.336
+				d: 1.336,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 10.65,
@@ -753,7 +847,8 @@ export let attack = {
 				a: -0.665,
 				b: 1.152,
 				c: -0.933,
-				d: -0.539
+				d: -0.539,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: 8.05,
@@ -761,7 +856,8 @@ export let attack = {
 				a: 1.262,
 				b: 0.729,
 				c: -0.625,
-				d: 1.082
+				d: 1.082,
+				l: 8
 			},
 			head: {
 				tx: 13.2,
@@ -769,13 +865,15 @@ export let attack = {
 				a: 1.083,
 				b: -0.333,
 				c: 0.333,
-				d: 1.083
+				d: 1.083,
+				l: 7
 			},
 			body: {
 				tx: 12.05,
 				ty: -7.05,
 				a: 0.997,
-				d: 0.997
+				d: 0.997,
+				l: 6
 			},
 			back_bones: {
 				tx: 15.5,
@@ -783,7 +881,8 @@ export let attack = {
 				a: 0.799,
 				b: 0.601,
 				c: -0.601,
-				d: 0.799
+				d: 0.799,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: 5.55,
@@ -791,7 +890,8 @@ export let attack = {
 				a: -1.152,
 				b: -0.665,
 				c: -0.455,
-				d: 0.788
+				d: 0.788,
+				l: 4
 			},
 			right_leg: {
 				tx: 0.5,
@@ -799,7 +899,8 @@ export let attack = {
 				a: 0.047,
 				b: -0.767,
 				c: -0.767,
-				d: -0.047
+				d: -0.047,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 23.3,
@@ -807,7 +908,8 @@ export let attack = {
 				a: -1.146,
 				b: 0.497,
 				c: -0.345,
-				d: -0.796
+				d: -0.796,
+				l: 2
 			},
 			right_foot: {
 				tx: -5.95,
@@ -815,7 +917,8 @@ export let attack = {
 				a: 0.405,
 				b: 0.888,
 				c: -0.836,
-				d: 0.483
+				d: 0.483,
+				l: 1
 			},
 			right_arm: {
 				tx: 35.35,
@@ -823,7 +926,8 @@ export let attack = {
 				a: -1.097,
 				b: -0.144,
 				c: 0.137,
-				d: -1.098
+				d: -1.098,
+				l: 0
 			}
 		},
 		{
@@ -833,7 +937,8 @@ export let attack = {
 				a: -0.23,
 				b: -1.174,
 				c: 0.005,
-				d: 1.09
+				d: 1.09,
+				l: 12
 			},
 			left_leg: {
 				tx: 3,
@@ -841,7 +946,8 @@ export let attack = {
 				a: 0.949,
 				b: -0.469,
 				c: 0.559,
-				d: 0.788
+				d: 0.788,
+				l: 11
 			},
 			left_foot: {
 				tx: 10.55,
@@ -849,7 +955,8 @@ export let attack = {
 				a: 0.897,
 				b: 0.478,
 				c: -0.477,
-				d: 1.464
+				d: 1.464,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: 3.65,
@@ -857,7 +964,8 @@ export let attack = {
 				a: 0.365,
 				b: 1.362,
 				c: -1.038,
-				d: 0.105
+				d: 0.105,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: -4.05,
@@ -865,7 +973,8 @@ export let attack = {
 				a: -0.285,
 				b: 1.659,
 				c: -1.316,
-				d: -0.099
+				d: -0.099,
+				l: 8
 			},
 			head: {
 				tx: -1.4,
@@ -873,7 +982,8 @@ export let attack = {
 				a: 1.066,
 				b: -0.471,
 				c: 0.64,
-				d: 0.937
+				d: 0.937,
+				l: 7
 			},
 			body: {
 				tx: 2.65,
@@ -881,7 +991,8 @@ export let attack = {
 				a: 1.069,
 				b: -0.136,
 				c: 0.418,
-				d: 0.972
+				d: 0.972,
+				l: 6
 			},
 			back_bones: {
 				tx: 1.1,
@@ -889,7 +1000,8 @@ export let attack = {
 				a: 0.968,
 				b: 0.247,
 				c: -0.247,
-				d: 0.968
+				d: 0.968,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -3.55,
@@ -897,7 +1009,8 @@ export let attack = {
 				a: -1.362,
 				b: -0.498,
 				c: -0.365,
-				d: 0.763
+				d: 0.763,
+				l: 4
 			},
 			right_leg: {
 				tx: -7.05,
@@ -905,7 +1018,8 @@ export let attack = {
 				a: -0.653,
 				b: -0.498,
 				c: -0.355,
-				d: 0.645
+				d: 0.645,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 11.9,
@@ -913,7 +1027,8 @@ export let attack = {
 				a: -0.597,
 				b: -1.13,
 				c: 0.686,
-				d: -0.542
+				d: -0.542,
+				l: 2
 			},
 			right_foot: {
 				tx: -10.8,
@@ -921,7 +1036,8 @@ export let attack = {
 				a: 0.933,
 				b: 0.525,
 				c: -0.297,
-				d: 0.847
+				d: 0.847,
+				l: 1
 			},
 			right_arm: {
 				tx: 36,
@@ -929,7 +1045,8 @@ export let attack = {
 				a: -1.136,
 				b: -0.16,
 				c: -0.955,
-				d: -0.213
+				d: -0.213,
+				l: 0
 			}
 		},
 		{
@@ -937,7 +1054,8 @@ export let attack = {
 				tx: -35.95,
 				ty: -8.65,
 				a: 0.754,
-				d: 0.754
+				d: 0.754,
+				l: 13
 			},
 			left_arm: {
 				tx: -13.05,
@@ -945,7 +1063,8 @@ export let attack = {
 				a: -0.742,
 				b: -1.186,
 				c: -1.288,
-				d: 0.651
+				d: 0.651,
+				l: 12
 			},
 			left_leg: {
 				tx: 0,
@@ -953,7 +1072,8 @@ export let attack = {
 				a: 1.091,
 				b: -0.26,
 				c: 0.492,
-				d: 0.798
+				d: 0.798,
+				l: 11
 			},
 			left_foot: {
 				tx: 8.35,
@@ -961,7 +1081,8 @@ export let attack = {
 				a: 1.027,
 				b: 0.286,
 				c: -0.189,
-				d: 1.542
+				d: 1.542,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: -3.25,
@@ -969,7 +1090,8 @@ export let attack = {
 				a: 1.293,
 				b: 0.746,
 				c: -0.754,
-				d: 0.673
+				d: 0.673,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: -16.2,
@@ -977,7 +1099,8 @@ export let attack = {
 				a: -1.879,
 				b: 0.347,
 				c: -0.503,
-				d: -1.295
+				d: -1.295,
+				l: 8
 			},
 			head: {
 				tx: -11.6,
@@ -985,7 +1108,8 @@ export let attack = {
 				a: 1.03,
 				b: -0.615,
 				c: 0.892,
-				d: 0.71
+				d: 0.71,
+				l: 7
 			},
 			body: {
 				tx: -6.75,
@@ -993,7 +1117,8 @@ export let attack = {
 				a: 1.122,
 				b: -0.294,
 				c: 0.814,
-				d: 0.772
+				d: 0.772,
+				l: 6
 			},
 			back_bones: {
 				tx: -12.7,
@@ -1001,7 +1126,8 @@ export let attack = {
 				a: 0.99,
 				b: -0.14,
 				c: 0.14,
-				d: 0.99
+				d: 0.99,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -12.7,
@@ -1009,7 +1135,8 @@ export let attack = {
 				a: -1.548,
 				b: -0.286,
 				c: -0.284,
-				d: 0.73
+				d: 0.73,
+				l: 4
 			},
 			right_leg: {
 				tx: -14.65,
@@ -1017,7 +1144,8 @@ export let attack = {
 				a: -0.829,
 				b: 0.285,
 				c: 0.413,
-				d: 0.571
+				d: 0.571,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 0.6,
@@ -1025,7 +1153,8 @@ export let attack = {
 				a: 1.106,
 				b: -0.703,
 				c: 0.708,
-				d: 0.529
+				d: 0.529,
+				l: 2
 			},
 			right_foot: {
 				tx: -15.7,
@@ -1033,7 +1162,8 @@ export let attack = {
 				a: 1.16,
 				b: -0.134,
 				c: 0.301,
-				d: 0.775
+				d: 0.775,
+				l: 1
 			},
 			right_arm: {
 				tx: 21.05,
@@ -1041,7 +1171,8 @@ export let attack = {
 				a: -1.174,
 				b: -0.183,
 				c: -0.265,
-				d: 0.809
+				d: 0.809,
+				l: 0
 			}
 		},
 		{
@@ -1049,7 +1180,8 @@ export let attack = {
 				tx: -35.95,
 				ty: -8.65,
 				a: 0.754,
-				d: 0.754
+				d: 0.754,
+				l: 13
 			},
 			left_arm: {
 				tx: -13,
@@ -1057,7 +1189,8 @@ export let attack = {
 				a: -0.586,
 				b: -1.122,
 				c: -1.267,
-				d: 0.592
+				d: 0.592,
+				l: 12
 			},
 			left_leg: {
 				tx: 1.05,
@@ -1065,7 +1198,8 @@ export let attack = {
 				a: 0.985,
 				b: -0.39,
 				c: 0.495,
-				d: 0.83
+				d: 0.83,
+				l: 11
 			},
 			left_foot: {
 				tx: 8.95,
@@ -1073,7 +1207,8 @@ export let attack = {
 				a: 0.99,
 				b: 0.229,
 				c: -0.081,
-				d: 1.539
+				d: 1.539,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: -2.4,
@@ -1081,7 +1216,8 @@ export let attack = {
 				a: 1.223,
 				b: 0.702,
 				c: -0.658,
-				d: 0.809
+				d: 0.809,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: -14.1,
@@ -1089,7 +1225,8 @@ export let attack = {
 				a: -1.766,
 				b: 0.312,
 				c: -0.379,
-				d: -1.382
+				d: -1.382,
+				l: 8
 			},
 			head: {
 				tx: -9.75,
@@ -1097,7 +1234,8 @@ export let attack = {
 				a: 0.943,
 				b: -0.681,
 				c: 0.818,
-				d: 0.785
+				d: 0.785,
+				l: 7
 			},
 			body: {
 				tx: -5.1,
@@ -1105,7 +1243,8 @@ export let attack = {
 				a: 1.026,
 				b: -0.325,
 				c: 0.748,
-				d: 0.851
+				d: 0.851,
+				l: 6
 			},
 			back_bones: {
 				tx: -11.2,
@@ -1113,7 +1252,8 @@ export let attack = {
 				a: 0.99,
 				b: -0.139,
 				c: 0.139,
-				d: 0.99
+				d: 0.99,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -10.5,
@@ -1121,7 +1261,8 @@ export let attack = {
 				a: -1.416,
 				b: -0.316,
 				c: -0.262,
-				d: 0.804
+				d: 0.804,
+				l: 4
 			},
 			right_leg: {
 				tx: -12.25,
@@ -1129,7 +1270,8 @@ export let attack = {
 				a: -0.758,
 				b: 0.315,
 				c: 0.38,
-				d: 0.63
+				d: 0.63,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 1.7,
@@ -1137,7 +1279,8 @@ export let attack = {
 				a: 1.012,
 				b: -0.779,
 				c: 0.649,
-				d: 0.586
+				d: 0.586,
+				l: 2
 			},
 			right_foot: {
 				tx: -13.2,
@@ -1145,7 +1288,8 @@ export let attack = {
 				a: 1.061,
 				b: -0.15,
 				c: 0.278,
-				d: 0.853
+				d: 0.853,
+				l: 1
 			},
 			right_arm: {
 				tx: 20.3,
@@ -1153,7 +1297,8 @@ export let attack = {
 				a: -1.074,
 				b: -0.204,
 				c: -0.244,
-				d: 0.892
+				d: 0.892,
+				l: 0
 			}
 		},
 		{
@@ -1161,7 +1306,8 @@ export let attack = {
 				tx: -35.95,
 				ty: -8.65,
 				a: 0.754,
-				d: 0.754
+				d: 0.754,
+				l: 13
 			},
 			left_arm: {
 				tx: -11.5,
@@ -1169,7 +1315,8 @@ export let attack = {
 				a: -0.449,
 				b: -1.043,
 				c: -1.248,
-				d: 0.538
+				d: 0.538,
+				l: 12
 			},
 			left_leg: {
 				tx: 1.85,
@@ -1177,7 +1324,8 @@ export let attack = {
 				a: 0.865,
 				b: -0.5,
 				c: 0.5,
-				d: 0.865
+				d: 0.865,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.8,
@@ -1185,7 +1333,8 @@ export let attack = {
 				a: 0.952,
 				b: 0.176,
 				c: 0.024,
-				d: 1.529
+				d: 1.529,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: -1.7,
@@ -1193,7 +1342,8 @@ export let attack = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: -12.1,
@@ -1201,7 +1351,8 @@ export let attack = {
 				a: -1.654,
 				b: 0.283,
 				c: -0.249,
-				d: -1.458
+				d: -1.458,
+				l: 8
 			},
 			head: {
 				tx: -7.4,
@@ -1209,7 +1360,8 @@ export let attack = {
 				a: 0.855,
 				b: -0.74,
 				c: 0.74,
-				d: 0.855
+				d: 0.855,
+				l: 7
 			},
 			body: {
 				tx: -3.35,
@@ -1217,7 +1369,8 @@ export let attack = {
 				a: 0.931,
 				b: -0.354,
 				c: 0.675,
-				d: 0.929
+				d: 0.929,
+				l: 6
 			},
 			back_bones: {
 				tx: -9.9,
@@ -1225,7 +1378,8 @@ export let attack = {
 				a: 0.99,
 				b: -0.14,
 				c: 0.14,
-				d: 0.99
+				d: 0.99,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -8.3,
@@ -1233,7 +1387,8 @@ export let attack = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 4
 			},
 			right_leg: {
 				tx: -9.9,
@@ -1241,7 +1396,8 @@ export let attack = {
 				a: -0.688,
 				b: 0.343,
 				c: 0.343,
-				d: 0.688
+				d: 0.688,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 2.75,
@@ -1249,7 +1405,8 @@ export let attack = {
 				a: 0.918,
 				b: -0.846,
 				c: 0.588,
-				d: 0.637
+				d: 0.637,
+				l: 2
 			},
 			right_foot: {
 				tx: -10.8,
@@ -1257,7 +1414,8 @@ export let attack = {
 				a: 0.963,
 				b: -0.162,
 				c: 0.25,
-				d: 0.933
+				d: 0.933,
+				l: 1
 			},
 			right_arm: {
 				tx: 19.7,
@@ -1265,7 +1423,8 @@ export let attack = {
 				a: -0.974,
 				b: -0.22,
 				c: -0.22,
-				d: 0.974
+				d: 0.974,
+				l: 0
 			}
 		},
 		{
@@ -1273,7 +1432,8 @@ export let attack = {
 				tx: -35.95,
 				ty: -8.65,
 				a: 0.754,
-				d: 0.754
+				d: 0.754,
+				l: 13
 			},
 			left_arm: {
 				tx: -11.5,
@@ -1281,7 +1441,8 @@ export let attack = {
 				a: -0.449,
 				b: -1.043,
 				c: -1.248,
-				d: 0.538
+				d: 0.538,
+				l: 12
 			},
 			left_leg: {
 				tx: 1.85,
@@ -1289,7 +1450,8 @@ export let attack = {
 				a: 0.865,
 				b: -0.5,
 				c: 0.5,
-				d: 0.865
+				d: 0.865,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.8,
@@ -1297,7 +1459,8 @@ export let attack = {
 				a: 0.952,
 				b: 0.176,
 				c: 0.024,
-				d: 1.529
+				d: 1.529,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: -1.7,
@@ -1305,7 +1468,8 @@ export let attack = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: -12.1,
@@ -1313,7 +1477,8 @@ export let attack = {
 				a: -1.654,
 				b: 0.283,
 				c: -0.249,
-				d: -1.458
+				d: -1.458,
+				l: 8
 			},
 			head: {
 				tx: -7.4,
@@ -1321,7 +1486,8 @@ export let attack = {
 				a: 0.855,
 				b: -0.74,
 				c: 0.74,
-				d: 0.855
+				d: 0.855,
+				l: 7
 			},
 			body: {
 				tx: -3.35,
@@ -1329,7 +1495,8 @@ export let attack = {
 				a: 0.931,
 				b: -0.354,
 				c: 0.675,
-				d: 0.929
+				d: 0.929,
+				l: 6
 			},
 			back_bones: {
 				tx: -9.9,
@@ -1337,7 +1504,8 @@ export let attack = {
 				a: 0.99,
 				b: -0.14,
 				c: 0.14,
-				d: 0.99
+				d: 0.99,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -8.3,
@@ -1345,7 +1513,8 @@ export let attack = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 4
 			},
 			right_leg: {
 				tx: -9.9,
@@ -1353,7 +1522,8 @@ export let attack = {
 				a: -0.688,
 				b: 0.343,
 				c: 0.343,
-				d: 0.688
+				d: 0.688,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 2.75,
@@ -1361,7 +1531,8 @@ export let attack = {
 				a: 0.918,
 				b: -0.846,
 				c: 0.588,
-				d: 0.637
+				d: 0.637,
+				l: 2
 			},
 			right_foot: {
 				tx: -10.8,
@@ -1369,7 +1540,8 @@ export let attack = {
 				a: 0.963,
 				b: -0.162,
 				c: 0.25,
-				d: 0.933
+				d: 0.933,
+				l: 1
 			},
 			right_arm: {
 				tx: 19.7,
@@ -1377,7 +1549,8 @@ export let attack = {
 				a: -0.974,
 				b: -0.22,
 				c: -0.22,
-				d: 0.974
+				d: 0.974,
+				l: 0
 			}
 		},
 		{
@@ -1385,7 +1558,8 @@ export let attack = {
 				tx: -35.95,
 				ty: -8.65,
 				a: 0.754,
-				d: 0.754
+				d: 0.754,
+				l: 13
 			},
 			left_arm: {
 				tx: -11.5,
@@ -1393,7 +1567,8 @@ export let attack = {
 				a: -0.449,
 				b: -1.043,
 				c: -1.248,
-				d: 0.538
+				d: 0.538,
+				l: 12
 			},
 			left_leg: {
 				tx: 1.85,
@@ -1401,7 +1576,8 @@ export let attack = {
 				a: 0.865,
 				b: -0.5,
 				c: 0.5,
-				d: 0.865
+				d: 0.865,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.8,
@@ -1409,7 +1585,8 @@ export let attack = {
 				a: 0.952,
 				b: 0.176,
 				c: 0.024,
-				d: 1.529
+				d: 1.529,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: -1.7,
@@ -1417,7 +1594,8 @@ export let attack = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: -12.1,
@@ -1425,7 +1603,8 @@ export let attack = {
 				a: -1.654,
 				b: 0.283,
 				c: -0.249,
-				d: -1.458
+				d: -1.458,
+				l: 8
 			},
 			head: {
 				tx: -7.4,
@@ -1433,7 +1612,8 @@ export let attack = {
 				a: 0.855,
 				b: -0.74,
 				c: 0.74,
-				d: 0.855
+				d: 0.855,
+				l: 7
 			},
 			body: {
 				tx: -3.35,
@@ -1441,7 +1621,8 @@ export let attack = {
 				a: 0.931,
 				b: -0.354,
 				c: 0.675,
-				d: 0.929
+				d: 0.929,
+				l: 6
 			},
 			back_bones: {
 				tx: -9.9,
@@ -1449,7 +1630,8 @@ export let attack = {
 				a: 0.99,
 				b: -0.14,
 				c: 0.14,
-				d: 0.99
+				d: 0.99,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -8.3,
@@ -1457,7 +1639,8 @@ export let attack = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 4
 			},
 			right_leg: {
 				tx: -9.9,
@@ -1465,7 +1648,8 @@ export let attack = {
 				a: -0.688,
 				b: 0.343,
 				c: 0.343,
-				d: 0.688
+				d: 0.688,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 2.75,
@@ -1473,7 +1657,8 @@ export let attack = {
 				a: 0.918,
 				b: -0.846,
 				c: 0.588,
-				d: 0.637
+				d: 0.637,
+				l: 2
 			},
 			right_foot: {
 				tx: -10.8,
@@ -1481,7 +1666,8 @@ export let attack = {
 				a: 0.963,
 				b: -0.162,
 				c: 0.25,
-				d: 0.933
+				d: 0.933,
+				l: 1
 			},
 			right_arm: {
 				tx: 19.7,
@@ -1489,7 +1675,8 @@ export let attack = {
 				a: -0.974,
 				b: -0.22,
 				c: -0.22,
-				d: 0.974
+				d: 0.974,
+				l: 0
 			}
 		},
 		{
@@ -1499,7 +1686,8 @@ export let attack = {
 				a: -0.449,
 				b: -1.043,
 				c: -1.248,
-				d: 0.538
+				d: 0.538,
+				l: 12
 			},
 			left_leg: {
 				tx: 1.85,
@@ -1507,7 +1695,8 @@ export let attack = {
 				a: 0.865,
 				b: -0.5,
 				c: 0.5,
-				d: 0.865
+				d: 0.865,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.8,
@@ -1515,7 +1704,8 @@ export let attack = {
 				a: 0.952,
 				b: 0.176,
 				c: 0.024,
-				d: 1.529
+				d: 1.529,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: -1.7,
@@ -1523,7 +1713,8 @@ export let attack = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: -12.1,
@@ -1531,7 +1722,8 @@ export let attack = {
 				a: -1.654,
 				b: 0.283,
 				c: -0.249,
-				d: -1.458
+				d: -1.458,
+				l: 8
 			},
 			head: {
 				tx: -7.4,
@@ -1539,7 +1731,8 @@ export let attack = {
 				a: 0.855,
 				b: -0.74,
 				c: 0.74,
-				d: 0.855
+				d: 0.855,
+				l: 7
 			},
 			body: {
 				tx: -3.35,
@@ -1547,7 +1740,8 @@ export let attack = {
 				a: 0.931,
 				b: -0.354,
 				c: 0.675,
-				d: 0.929
+				d: 0.929,
+				l: 6
 			},
 			back_bones: {
 				tx: -9.9,
@@ -1555,7 +1749,8 @@ export let attack = {
 				a: 0.99,
 				b: -0.14,
 				c: 0.14,
-				d: 0.99
+				d: 0.99,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -8.3,
@@ -1563,7 +1758,8 @@ export let attack = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 4
 			},
 			right_leg: {
 				tx: -9.9,
@@ -1571,7 +1767,8 @@ export let attack = {
 				a: -0.688,
 				b: 0.343,
 				c: 0.343,
-				d: 0.688
+				d: 0.688,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 2.75,
@@ -1579,7 +1776,8 @@ export let attack = {
 				a: 0.918,
 				b: -0.846,
 				c: 0.588,
-				d: 0.637
+				d: 0.637,
+				l: 2
 			},
 			right_foot: {
 				tx: -10.8,
@@ -1587,7 +1785,8 @@ export let attack = {
 				a: 0.963,
 				b: -0.162,
 				c: 0.25,
-				d: 0.933
+				d: 0.933,
+				l: 1
 			},
 			right_arm: {
 				tx: 19.7,
@@ -1595,7 +1794,8 @@ export let attack = {
 				a: -0.974,
 				b: -0.22,
 				c: -0.22,
-				d: 0.974
+				d: 0.974,
+				l: 0
 			}
 		},
 		{
@@ -1605,7 +1805,8 @@ export let attack = {
 				a: -0.449,
 				b: -1.043,
 				c: -1.248,
-				d: 0.538
+				d: 0.538,
+				l: 12
 			},
 			left_leg: {
 				tx: 1.85,
@@ -1613,7 +1814,8 @@ export let attack = {
 				a: 0.865,
 				b: -0.5,
 				c: 0.5,
-				d: 0.865
+				d: 0.865,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.8,
@@ -1621,7 +1823,8 @@ export let attack = {
 				a: 0.952,
 				b: 0.176,
 				c: 0.024,
-				d: 1.529
+				d: 1.529,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: -1.7,
@@ -1629,7 +1832,8 @@ export let attack = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: -12.1,
@@ -1637,7 +1841,8 @@ export let attack = {
 				a: -1.654,
 				b: 0.283,
 				c: -0.249,
-				d: -1.458
+				d: -1.458,
+				l: 8
 			},
 			head: {
 				tx: -7.4,
@@ -1645,7 +1850,8 @@ export let attack = {
 				a: 0.855,
 				b: -0.74,
 				c: 0.74,
-				d: 0.855
+				d: 0.855,
+				l: 7
 			},
 			body: {
 				tx: -3.35,
@@ -1653,7 +1859,8 @@ export let attack = {
 				a: 0.931,
 				b: -0.354,
 				c: 0.675,
-				d: 0.929
+				d: 0.929,
+				l: 6
 			},
 			back_bones: {
 				tx: -9.9,
@@ -1661,7 +1868,8 @@ export let attack = {
 				a: 0.99,
 				b: -0.14,
 				c: 0.14,
-				d: 0.99
+				d: 0.99,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -8.3,
@@ -1669,7 +1877,8 @@ export let attack = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 4
 			},
 			right_leg: {
 				tx: -9.9,
@@ -1677,7 +1886,8 @@ export let attack = {
 				a: -0.688,
 				b: 0.343,
 				c: 0.343,
-				d: 0.688
+				d: 0.688,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 2.75,
@@ -1685,7 +1895,8 @@ export let attack = {
 				a: 0.918,
 				b: -0.846,
 				c: 0.588,
-				d: 0.637
+				d: 0.637,
+				l: 2
 			},
 			right_foot: {
 				tx: -10.8,
@@ -1693,7 +1904,8 @@ export let attack = {
 				a: 0.963,
 				b: -0.162,
 				c: 0.25,
-				d: 0.933
+				d: 0.933,
+				l: 1
 			},
 			right_arm: {
 				tx: 19.7,
@@ -1701,7 +1913,8 @@ export let attack = {
 				a: -0.974,
 				b: -0.22,
 				c: -0.22,
-				d: 0.974
+				d: 0.974,
+				l: 0
 			}
 		},
 		{
@@ -1711,7 +1924,8 @@ export let attack = {
 				a: -0.449,
 				b: -1.043,
 				c: -1.248,
-				d: 0.538
+				d: 0.538,
+				l: 12
 			},
 			left_leg: {
 				tx: 1.85,
@@ -1719,7 +1933,8 @@ export let attack = {
 				a: 0.865,
 				b: -0.5,
 				c: 0.5,
-				d: 0.865
+				d: 0.865,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.8,
@@ -1727,7 +1942,8 @@ export let attack = {
 				a: 0.952,
 				b: 0.176,
 				c: 0.024,
-				d: 1.529
+				d: 1.529,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: -1.7,
@@ -1735,7 +1951,8 @@ export let attack = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: -12.1,
@@ -1743,7 +1960,8 @@ export let attack = {
 				a: -1.654,
 				b: 0.283,
 				c: -0.249,
-				d: -1.458
+				d: -1.458,
+				l: 8
 			},
 			head: {
 				tx: -7.4,
@@ -1751,7 +1969,8 @@ export let attack = {
 				a: 0.855,
 				b: -0.74,
 				c: 0.74,
-				d: 0.855
+				d: 0.855,
+				l: 7
 			},
 			body: {
 				tx: -3.35,
@@ -1759,7 +1978,8 @@ export let attack = {
 				a: 0.931,
 				b: -0.354,
 				c: 0.675,
-				d: 0.929
+				d: 0.929,
+				l: 6
 			},
 			back_bones: {
 				tx: -9.9,
@@ -1767,7 +1987,8 @@ export let attack = {
 				a: 0.99,
 				b: -0.14,
 				c: 0.14,
-				d: 0.99
+				d: 0.99,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -8.3,
@@ -1775,7 +1996,8 @@ export let attack = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 4
 			},
 			right_leg: {
 				tx: -9.9,
@@ -1783,7 +2005,8 @@ export let attack = {
 				a: -0.688,
 				b: 0.343,
 				c: 0.343,
-				d: 0.688
+				d: 0.688,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 2.75,
@@ -1791,7 +2014,8 @@ export let attack = {
 				a: 0.918,
 				b: -0.846,
 				c: 0.588,
-				d: 0.637
+				d: 0.637,
+				l: 2
 			},
 			right_foot: {
 				tx: -10.8,
@@ -1799,7 +2023,8 @@ export let attack = {
 				a: 0.963,
 				b: -0.162,
 				c: 0.25,
-				d: 0.933
+				d: 0.933,
+				l: 1
 			},
 			right_arm: {
 				tx: 19.7,
@@ -1807,7 +2032,8 @@ export let attack = {
 				a: -0.974,
 				b: -0.22,
 				c: -0.22,
-				d: 0.974
+				d: 0.974,
+				l: 0
 			}
 		},
 		{
@@ -1817,7 +2043,8 @@ export let attack = {
 				a: -0.449,
 				b: -1.043,
 				c: -1.248,
-				d: 0.538
+				d: 0.538,
+				l: 12
 			},
 			left_leg: {
 				tx: 1.85,
@@ -1825,7 +2052,8 @@ export let attack = {
 				a: 0.865,
 				b: -0.5,
 				c: 0.5,
-				d: 0.865
+				d: 0.865,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.8,
@@ -1833,7 +2061,8 @@ export let attack = {
 				a: 0.952,
 				b: 0.176,
 				c: 0.024,
-				d: 1.529
+				d: 1.529,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: -1.7,
@@ -1841,7 +2070,8 @@ export let attack = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: -12.1,
@@ -1849,7 +2079,8 @@ export let attack = {
 				a: -1.654,
 				b: 0.283,
 				c: -0.249,
-				d: -1.458
+				d: -1.458,
+				l: 8
 			},
 			head: {
 				tx: -7.4,
@@ -1857,7 +2088,8 @@ export let attack = {
 				a: 0.855,
 				b: -0.74,
 				c: 0.74,
-				d: 0.855
+				d: 0.855,
+				l: 7
 			},
 			body: {
 				tx: -3.35,
@@ -1865,7 +2097,8 @@ export let attack = {
 				a: 0.931,
 				b: -0.354,
 				c: 0.675,
-				d: 0.929
+				d: 0.929,
+				l: 6
 			},
 			back_bones: {
 				tx: -9.9,
@@ -1873,7 +2106,8 @@ export let attack = {
 				a: 0.99,
 				b: -0.14,
 				c: 0.14,
-				d: 0.99
+				d: 0.99,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -8.3,
@@ -1881,7 +2115,8 @@ export let attack = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 4
 			},
 			right_leg: {
 				tx: -9.9,
@@ -1889,7 +2124,8 @@ export let attack = {
 				a: -0.688,
 				b: 0.343,
 				c: 0.343,
-				d: 0.688
+				d: 0.688,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 2.75,
@@ -1897,7 +2133,8 @@ export let attack = {
 				a: 0.918,
 				b: -0.846,
 				c: 0.588,
-				d: 0.637
+				d: 0.637,
+				l: 2
 			},
 			right_foot: {
 				tx: -10.8,
@@ -1905,7 +2142,8 @@ export let attack = {
 				a: 0.963,
 				b: -0.162,
 				c: 0.25,
-				d: 0.933
+				d: 0.933,
+				l: 1
 			},
 			right_arm: {
 				tx: 19.7,
@@ -1913,7 +2151,8 @@ export let attack = {
 				a: -0.974,
 				b: -0.22,
 				c: -0.22,
-				d: 0.974
+				d: 0.974,
+				l: 0
 			}
 		},
 		{
@@ -1923,7 +2162,8 @@ export let attack = {
 				a: -0.449,
 				b: -1.043,
 				c: -1.248,
-				d: 0.538
+				d: 0.538,
+				l: 12
 			},
 			left_leg: {
 				tx: 1.85,
@@ -1931,7 +2171,8 @@ export let attack = {
 				a: 0.865,
 				b: -0.5,
 				c: 0.5,
-				d: 0.865
+				d: 0.865,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.8,
@@ -1939,7 +2180,8 @@ export let attack = {
 				a: 0.952,
 				b: 0.176,
 				c: 0.024,
-				d: 1.529
+				d: 1.529,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: -1.7,
@@ -1947,7 +2189,8 @@ export let attack = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: -12.1,
@@ -1955,7 +2198,8 @@ export let attack = {
 				a: -1.654,
 				b: 0.283,
 				c: -0.249,
-				d: -1.458
+				d: -1.458,
+				l: 8
 			},
 			head: {
 				tx: -7.4,
@@ -1963,7 +2207,8 @@ export let attack = {
 				a: 0.855,
 				b: -0.74,
 				c: 0.74,
-				d: 0.855
+				d: 0.855,
+				l: 7
 			},
 			body: {
 				tx: -3.35,
@@ -1971,7 +2216,8 @@ export let attack = {
 				a: 0.931,
 				b: -0.354,
 				c: 0.675,
-				d: 0.929
+				d: 0.929,
+				l: 6
 			},
 			back_bones: {
 				tx: -9.9,
@@ -1979,7 +2225,8 @@ export let attack = {
 				a: 0.99,
 				b: -0.14,
 				c: 0.14,
-				d: 0.99
+				d: 0.99,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -8.3,
@@ -1987,7 +2234,8 @@ export let attack = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 4
 			},
 			right_leg: {
 				tx: -9.9,
@@ -1995,7 +2243,8 @@ export let attack = {
 				a: -0.688,
 				b: 0.343,
 				c: 0.343,
-				d: 0.688
+				d: 0.688,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 2.75,
@@ -2003,7 +2252,8 @@ export let attack = {
 				a: 0.918,
 				b: -0.846,
 				c: 0.588,
-				d: 0.637
+				d: 0.637,
+				l: 2
 			},
 			right_foot: {
 				tx: -10.8,
@@ -2011,7 +2261,8 @@ export let attack = {
 				a: 0.963,
 				b: -0.162,
 				c: 0.25,
-				d: 0.933
+				d: 0.933,
+				l: 1
 			},
 			right_arm: {
 				tx: 19.7,
@@ -2019,7 +2270,8 @@ export let attack = {
 				a: -0.974,
 				b: -0.22,
 				c: -0.22,
-				d: 0.974
+				d: 0.974,
+				l: 0
 			}
 		},
 		{
@@ -2029,7 +2281,8 @@ export let attack = {
 				a: -0.449,
 				b: -1.043,
 				c: -1.248,
-				d: 0.538
+				d: 0.538,
+				l: 12
 			},
 			left_leg: {
 				tx: 1.85,
@@ -2037,7 +2290,8 @@ export let attack = {
 				a: 0.865,
 				b: -0.5,
 				c: 0.5,
-				d: 0.865
+				d: 0.865,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.8,
@@ -2045,7 +2299,8 @@ export let attack = {
 				a: 0.952,
 				b: 0.176,
 				c: 0.024,
-				d: 1.529
+				d: 1.529,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: -1.7,
@@ -2053,7 +2308,8 @@ export let attack = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: -12.1,
@@ -2061,7 +2317,8 @@ export let attack = {
 				a: -1.654,
 				b: 0.283,
 				c: -0.249,
-				d: -1.458
+				d: -1.458,
+				l: 8
 			},
 			head: {
 				tx: -7.4,
@@ -2069,7 +2326,8 @@ export let attack = {
 				a: 0.855,
 				b: -0.74,
 				c: 0.74,
-				d: 0.855
+				d: 0.855,
+				l: 7
 			},
 			body: {
 				tx: -3.35,
@@ -2077,7 +2335,8 @@ export let attack = {
 				a: 0.931,
 				b: -0.354,
 				c: 0.675,
-				d: 0.929
+				d: 0.929,
+				l: 6
 			},
 			back_bones: {
 				tx: -9.9,
@@ -2085,7 +2344,8 @@ export let attack = {
 				a: 0.99,
 				b: -0.14,
 				c: 0.14,
-				d: 0.99
+				d: 0.99,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -8.3,
@@ -2093,7 +2353,8 @@ export let attack = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 4
 			},
 			right_leg: {
 				tx: -9.9,
@@ -2101,7 +2362,8 @@ export let attack = {
 				a: -0.688,
 				b: 0.343,
 				c: 0.343,
-				d: 0.688
+				d: 0.688,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 2.75,
@@ -2109,7 +2371,8 @@ export let attack = {
 				a: 0.918,
 				b: -0.846,
 				c: 0.588,
-				d: 0.637
+				d: 0.637,
+				l: 2
 			},
 			right_foot: {
 				tx: -10.8,
@@ -2117,7 +2380,8 @@ export let attack = {
 				a: 0.963,
 				b: -0.162,
 				c: 0.25,
-				d: 0.933
+				d: 0.933,
+				l: 1
 			},
 			right_arm: {
 				tx: 19.7,
@@ -2125,7 +2389,8 @@ export let attack = {
 				a: -0.974,
 				b: -0.22,
 				c: -0.22,
-				d: 0.974
+				d: 0.974,
+				l: 0
 			}
 		},
 		{
@@ -2135,7 +2400,8 @@ export let attack = {
 				a: -0.449,
 				b: -1.043,
 				c: -1.248,
-				d: 0.538
+				d: 0.538,
+				l: 12
 			},
 			left_leg: {
 				tx: 1.85,
@@ -2143,7 +2409,8 @@ export let attack = {
 				a: 0.865,
 				b: -0.5,
 				c: 0.5,
-				d: 0.865
+				d: 0.865,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.8,
@@ -2151,7 +2418,8 @@ export let attack = {
 				a: 0.952,
 				b: 0.176,
 				c: 0.024,
-				d: 1.529
+				d: 1.529,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: -1.7,
@@ -2159,7 +2427,8 @@ export let attack = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: -12.1,
@@ -2167,7 +2436,8 @@ export let attack = {
 				a: -1.654,
 				b: 0.283,
 				c: -0.249,
-				d: -1.458
+				d: -1.458,
+				l: 8
 			},
 			head: {
 				tx: -7.4,
@@ -2175,7 +2445,8 @@ export let attack = {
 				a: 0.855,
 				b: -0.74,
 				c: 0.74,
-				d: 0.855
+				d: 0.855,
+				l: 7
 			},
 			body: {
 				tx: -3.35,
@@ -2183,7 +2454,8 @@ export let attack = {
 				a: 0.931,
 				b: -0.354,
 				c: 0.675,
-				d: 0.929
+				d: 0.929,
+				l: 6
 			},
 			back_bones: {
 				tx: -9.9,
@@ -2191,7 +2463,8 @@ export let attack = {
 				a: 0.99,
 				b: -0.14,
 				c: 0.14,
-				d: 0.99
+				d: 0.99,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -8.3,
@@ -2199,7 +2472,8 @@ export let attack = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 4
 			},
 			right_leg: {
 				tx: -9.9,
@@ -2207,7 +2481,8 @@ export let attack = {
 				a: -0.688,
 				b: 0.343,
 				c: 0.343,
-				d: 0.688
+				d: 0.688,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 2.75,
@@ -2215,7 +2490,8 @@ export let attack = {
 				a: 0.918,
 				b: -0.846,
 				c: 0.588,
-				d: 0.637
+				d: 0.637,
+				l: 2
 			},
 			right_foot: {
 				tx: -10.8,
@@ -2223,7 +2499,8 @@ export let attack = {
 				a: 0.963,
 				b: -0.162,
 				c: 0.25,
-				d: 0.933
+				d: 0.933,
+				l: 1
 			},
 			right_arm: {
 				tx: 19.7,
@@ -2231,7 +2508,8 @@ export let attack = {
 				a: -0.974,
 				b: -0.22,
 				c: -0.22,
-				d: 0.974
+				d: 0.974,
+				l: 0
 			}
 		},
 		{
@@ -2241,7 +2519,8 @@ export let attack = {
 				a: -0.449,
 				b: -1.043,
 				c: -1.248,
-				d: 0.538
+				d: 0.538,
+				l: 12
 			},
 			left_leg: {
 				tx: 1.85,
@@ -2249,7 +2528,8 @@ export let attack = {
 				a: 0.865,
 				b: -0.5,
 				c: 0.5,
-				d: 0.865
+				d: 0.865,
+				l: 11
 			},
 			left_foot: {
 				tx: 9.8,
@@ -2257,7 +2537,8 @@ export let attack = {
 				a: 0.952,
 				b: 0.176,
 				c: 0.024,
-				d: 1.529
+				d: 1.529,
+				l: 10
 			},
 			left_leg_connector: {
 				tx: -1.7,
@@ -2265,7 +2546,8 @@ export let attack = {
 				a: 1.152,
 				b: 0.665,
 				c: -0.539,
-				d: 0.933
+				d: 0.933,
+				l: 9
 			},
 			left_arm_connector: {
 				tx: -12.1,
@@ -2273,7 +2555,8 @@ export let attack = {
 				a: -1.654,
 				b: 0.283,
 				c: -0.249,
-				d: -1.458
+				d: -1.458,
+				l: 8
 			},
 			head: {
 				tx: -7.4,
@@ -2281,7 +2564,8 @@ export let attack = {
 				a: 0.855,
 				b: -0.74,
 				c: 0.74,
-				d: 0.855
+				d: 0.855,
+				l: 7
 			},
 			body: {
 				tx: -3.35,
@@ -2289,7 +2573,8 @@ export let attack = {
 				a: 0.931,
 				b: -0.354,
 				c: 0.675,
-				d: 0.929
+				d: 0.929,
+				l: 6
 			},
 			back_bones: {
 				tx: -9.9,
@@ -2297,7 +2582,8 @@ export let attack = {
 				a: 0.99,
 				b: -0.14,
 				c: 0.14,
-				d: 0.99
+				d: 0.99,
+				l: 5
 			},
 			right_leg_connector: {
 				tx: -8.3,
@@ -2305,7 +2591,8 @@ export let attack = {
 				a: -1.285,
 				b: -0.344,
 				c: -0.236,
-				d: 0.879
+				d: 0.879,
+				l: 4
 			},
 			right_leg: {
 				tx: -9.9,
@@ -2313,7 +2600,8 @@ export let attack = {
 				a: -0.688,
 				b: 0.343,
 				c: 0.343,
-				d: 0.688
+				d: 0.688,
+				l: 3
 			},
 			right_arm_connector: {
 				tx: 2.75,
@@ -2321,7 +2609,8 @@ export let attack = {
 				a: 0.918,
 				b: -0.846,
 				c: 0.588,
-				d: 0.637
+				d: 0.637,
+				l: 2
 			},
 			right_foot: {
 				tx: -10.8,
@@ -2329,7 +2618,8 @@ export let attack = {
 				a: 0.963,
 				b: -0.162,
 				c: 0.25,
-				d: 0.933
+				d: 0.933,
+				l: 1
 			},
 			right_arm: {
 				tx: 19.7,
@@ -2337,7 +2627,8 @@ export let attack = {
 				a: -0.974,
 				b: -0.22,
 				c: -0.22,
-				d: 0.974
+				d: 0.974,
+				l: 0
 			}
 		}
 	]
