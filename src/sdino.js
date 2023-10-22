@@ -31,8 +31,14 @@ export class sdino extends Container {
 	/**
 	 * Animator of the dino.
 	 * Plays the animations and contain the body and its parts.
+	 * @type {Animator}
 	 */
 	_animator = new Animator();
+	/**
+	 * Raw code data received at init time.
+	 * @type {string}
+	 */
+	_code = '';
 
 	/**
 	 * Create a dino based on the data parameter.
@@ -133,29 +139,26 @@ export class sdino extends Container {
 		//_p0._box._visible = false;
 		this._animator._scale = scale;
 		this._scale = scale;
-		let spData = data?.split(';');
 		let dParts = [];
-		if (!data || spData.length == 1) {
-			for (let i = 0; i < data?.length ?? 0; ++i) {
-				let part = this.decode62(data.charCodeAt(i));
-				dParts.push(part);
-			}
-			this._dinoInfos = dinoz[dParts[0]];
-			if (!this._dinoInfos || dParts.length < 10) {
-				this._dinoInfos = error;
-				this.apply(dParts);
-				return false;
-			}
-			dParts.splice(2, 0, damage ?? 0);
-			//Test special
-			//dParts[15] = 1;
-			this.initPalette(dParts);
-			this.apply(dParts);
-			this._animator.playAnim(this._dinoInfos.animations.stand);
-			this._animator.playing = pflag;
-			return true;
+		this._code = data;
+		for (let i = 0; i < data?.length ?? 0; ++i) {
+			let part = this.decode62(data.charCodeAt(i));
+			dParts.push(part);
 		}
-		return false;
+		this._dinoInfos = dinoz[dParts[0]];
+		if (!this._dinoInfos || dParts.length < 10) {
+			this._dinoInfos = error;
+			this.apply(dParts);
+			return false;
+		}
+		dParts.splice(2, 0, damage ?? 0);
+		//Test special
+		//dParts[15] = 1;
+		this.initPalette(dParts);
+		this.apply(dParts);
+		this._animator.playAnim(this._dinoInfos.animations.stand);
+		this._animator.playing = pflag;
+		return true;
 	}
 
 	/**
@@ -191,6 +194,21 @@ export class sdino extends Container {
 	 */
 	toAnimation(callback, width = undefined, height = undefined) {
 		ImageExtractor.convertToAnimation(this._animator, callback, width, height);
+	}
+
+	/**
+	 * Recreate the chk code needed to validate the parameters in Motion-Twin sdino.swf file.
+	 * @returns {number} The chk code based on the initialization code of the dino.
+	 */
+	getChkCode() {
+		let chk = 0;
+		for (let i = 0; i < (this._code?.length ?? 0); ++i) {
+			let tmp = this.decode62(this._code.charCodeAt(i));
+			tmp = tmp ^ ((tmp >> 3) & 11795912);
+			tmp = (tmp << 2) + tmp + (tmp & 255);
+			chk = ((chk * 5) ^ tmp) & 268435455;
+		}
+		return chk;
 	}
 }
 

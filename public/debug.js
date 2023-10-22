@@ -15,6 +15,35 @@ const actions = [
 	'release',
 	'dead'
 ];
+let flashPreviewIdx = 0;
+let rufflePlayerLimit = 4;
+
+/**
+ * Add a new embed flash player with the data of the dino, for comparison purposes.
+ * @param {string} data Customization data of the dino to display.
+ * @param {number} chk Validation number for the swf file.
+ * @param {HTMLElement} parent Parent html element to append the child to. Append to body if undefined-
+ */
+function addFlashPreview(data, chk, parent) {
+	if (rufflePlayerLimit-- > 0) {
+		const swdId = `swf_sino${flashPreviewIdx++}`;
+		const container = document.createElement('div');
+		container.id = swdId;
+		container.className = 'flash_display';
+		container.style = 'display:inline-block;vertical-align:top;margin:5px;';
+		(parent ?? document.body).appendChild(container);
+
+		// Parameters from original website
+		var so = new SWFObject('sdino/sdino.swf', swdId, 40, 40, 8, '#FBDAA0');
+		so.addParam('AllowScriptAccess', 'always');
+		so.addParam('FlashVars', `data=${data}&amp;chk=${chk}&amp;damages=1&amp;status=congel&amp;flip=1`);
+		so.addParam('menu', 'false');
+		so.addParam('scale', 'noscale');
+		//so.addParam('wmode', 'transparent');
+		so.write(swdId);
+		// End of parameters
+	}
+}
 
 /**
  * Create a new canvas comprised of a still version of the dino as well as its animated version side by side.
@@ -22,8 +51,9 @@ const actions = [
  * @param {boolean} showOrigin Show a red dot where the origin of the container is at.
  */
 function addDinoz(data, showOrigin = false) {
+	const container = document.createElement('div');
 	const app = new DinoAnim.Application({
-		background: '#E7B577',
+		background: '#FBDAA0',
 		width: 130,
 		height: 55
 	});
@@ -52,7 +82,10 @@ function addDinoz(data, showOrigin = false) {
 		origin.endFill();
 		app.stage.addChild(origin);
 	}
-	document.body.appendChild(app.view);
+	container.appendChild(app.view);
+	document.body.appendChild(container);
+
+	addFlashPreview(data, dinozP.getChkCode(), container);
 }
 
 // Moueffe

@@ -133,6 +133,7 @@ dist
 public/*.svg
 *.zip
 *.7z
+examples
 
 # XFLConverter
 XFLConverter/results
