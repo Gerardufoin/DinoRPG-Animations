@@ -129,14 +129,22 @@ addDinoz('494IHPBxwdn74000');
 addDinoz('498sSm4OIB4l7000');
 addDinoz('491KW4XcQQOnC000');*/
 // Rocky
-addDinoz('59QdaJ5j1dEaK000', true);
+/*addDinoz('59QdaJ5j1dEaK000', true);
 addDinoz('590iaiFtHCgfq000');
 addDinoz('59z6ZP4PDDZA6000');
 addDinoz('59e9OSz9v7KnK000');
 addDinoz('59rbY7eDF0UZE000');
 addDinoz('59MG98iyxUhaA000');
 addDinoz('59WkrzINzZ5p9000');
-addDinoz('59DCTDZxittpQ000');
+addDinoz('59DCTDZxittpQ000');*/
+// Pteroz
+addDinoz('69pCCyHibiPFK000', true);
+addDinoz('69ShBRsiPCfiw000');
+addDinoz('69spSHxJqAuyc000');
+addDinoz('69SEXtatVVj3j000');
+addDinoz('69CCNfds4I0OC000');
+addDinoz('69LhH8GuujsLD000');
+addDinoz('69uOBQV7rJEEr000');
 
 /*const app = new Application({
 	background: '#E7B577',

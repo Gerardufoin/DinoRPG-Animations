@@ -12,7 +12,7 @@ import { dead } from './animations/dead.js';
 export let rocky = {
 	name: 'rocky',
 	transforms: [
-		// 397
+		// 468
 		{
 			partIdx: 1,
 			transforms: [

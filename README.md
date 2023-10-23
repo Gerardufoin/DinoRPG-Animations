@@ -26,7 +26,7 @@ The file is comprised of the following entities:
 -   planaile (done)
 -   castivore (done)
 -   rocky (done)
--   pteroz
+-   pteroz (done)
 -   nuagoz
 -   sirain
 -   hippoclamp

@@ -71,5 +71,16 @@ export let mapping = {
 	'Symbol 437_p6': 'mouth',
 	'Symbol 447_p5': 'eyes',
 	'Symbol 450_p4b': 'top',
-	'Symbol 457_p8a': 'left_hand'
+	'Symbol 457_p8a': 'left_hand',
+	// 517
+	'Symbol 473_p6d': 'right_wing',
+	'Symbol 479_p6a': 'left_hand',
+	'Symbol 479_p6c': 'right_hand',
+	'Symbol 482_p5col0': 'fin',
+	'Symbol 482_p5': 'fin',
+	'Symbol 485': 'body',
+	'Symbol 494_p3': 'beak',
+	'Symbol 496': 'left_leg',
+	'Symbol 503_p4': 'eyes',
+	'Symbol 508_p6b': 'left_wing'
 };
