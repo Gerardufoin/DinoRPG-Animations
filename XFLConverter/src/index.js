@@ -9,7 +9,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/sdino/LIBRARY/Symbol 336.xml', '_p1'); // planaile
 //parser.parse('./resources/sdino/LIBRARY/Symbol 397.xml', '_p1'); // castivore
 //parser.parse('./resources/sdino/LIBRARY/Symbol 468.xml', '_p1'); // rocky
-parser.parse('./resources/sdino/LIBRARY/Symbol 517.xml', '_p1'); // pteroz
+//parser.parse('./resources/sdino/LIBRARY/Symbol 517.xml', '_p1'); // pteroz
+//parser.parse('./resources/sdino/LIBRARY/Symbol 547.xml', '_p1'); // nuagoz
 //parser.parse('./resources/sdino/LIBRARY/Symbol 156.xml', '_sub'); // fx_dust
 
 const adapter = new SVGAdapter();

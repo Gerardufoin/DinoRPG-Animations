@@ -82,5 +82,11 @@ export let mapping = {
 	'Symbol 494_p3': 'beak',
 	'Symbol 496': 'left_leg',
 	'Symbol 503_p4': 'eyes',
-	'Symbol 508_p6b': 'left_wing'
+	'Symbol 508_p6b': 'left_wing',
+	// 547
+	'Symbol 534_sub': 'body',
+	'Symbol 538': 'cloud_1',
+	'Symbol 538-1': 'cloud_2',
+	'Symbol 538-2': 'cloud_3',
+	'Symbol 538-3': 'cloud_4'
 };

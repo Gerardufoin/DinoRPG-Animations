@@ -7,6 +7,7 @@ import { planaile } from './planaile/planaile.js';
 import { castivore } from './castivore/castivore.js';
 import { rocky } from './rocky/rocky.js';
 import { pteroz } from './pteroz/pteroz.js';
+import { nuagoz } from './nuagoz/nuagoz.js';
 
-export let dinoz = [moueffe, pigmou, winks, planaile, castivore, rocky, pteroz];
+export let dinoz = [moueffe, pigmou, winks, planaile, castivore, rocky, pteroz, nuagoz];
 export let error = bad;

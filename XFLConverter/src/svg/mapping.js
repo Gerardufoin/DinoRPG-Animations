@@ -168,5 +168,14 @@ export let mapping = {
 	502: 'pteroz/eyes_many',
 	505: 'pteroz/left_wing',
 	507: 'pteroz/left_wing_bone',
+	519: 'nuagoz/small_cloud',
+	522: 'nuagoz/body',
+	523: 'nuagoz/body_shine',
+	525: 'nuagoz/eyes',
+	527: 'nuagoz/mouth',
+	529: 'nuagoz/body_long',
+	531: 'nuagoz/body_round',
+	532: 'nuagoz/body_round_shine',
+	537: 'nuagoz/cloud',
 	1640: 'bad'
 };

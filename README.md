@@ -27,7 +27,7 @@ The file is comprised of the following entities:
 -   castivore (done)
 -   rocky (done)
 -   pteroz (done)
--   nuagoz
+-   nuagoz (done)
 -   sirain
 -   hippoclamp
 -   gorilloz
