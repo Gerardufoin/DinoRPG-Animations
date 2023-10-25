@@ -646,7 +646,7 @@ export let sirain = {
 		// 598
 		dead: dead,
 		// 591 idx 5
-		ill: { offset: 5, anim: dead },
+		ill: { offset: 5, anim: stand },
 		// 595
 		fly: jump
 	}
