@@ -28,7 +28,7 @@ The file is comprised of the following entities:
 -   rocky (done)
 -   pteroz (done)
 -   nuagoz (done)
--   sirain
+-   sirain (done)
 -   hippoclamp
 -   gorilloz
 -   wanwan

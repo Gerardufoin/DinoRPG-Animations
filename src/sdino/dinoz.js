@@ -8,6 +8,7 @@ import { castivore } from './castivore/castivore.js';
 import { rocky } from './rocky/rocky.js';
 import { pteroz } from './pteroz/pteroz.js';
 import { nuagoz } from './nuagoz/nuagoz.js';
+import { sirain } from './sirain/sirain.js';
 
-export let dinoz = [moueffe, pigmou, winks, planaile, castivore, rocky, pteroz, nuagoz];
+export let dinoz = [moueffe, pigmou, winks, planaile, castivore, rocky, pteroz, nuagoz, sirain];
 export let error = bad;

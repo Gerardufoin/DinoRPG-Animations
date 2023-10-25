@@ -88,5 +88,14 @@ export let mapping = {
 	'Symbol 538': 'cloud_1',
 	'Symbol 538-1': 'cloud_2',
 	'Symbol 538-2': 'cloud_3',
-	'Symbol 538-3': 'cloud_4'
+	'Symbol 538-3': 'cloud_4',
+	// 600
+	'Symbol 559_p8': 'tail',
+	'Symbol 565_p7a': 'left_leg',
+	'Symbol 565_p7b': 'right_leg',
+	'Symbol 571_p6': 'body',
+	'Symbol 578_p5a': 'left_ear',
+	'Symbol 578_p5b': 'right_ear',
+	'Symbol 585_p3': 'head',
+	'Symbol 589_p4a': 'eye'
 };
