@@ -344,7 +344,11 @@ export let sirain = {
 			{
 				special: true,
 				colorIdx: 0,
-				ref: ref.sirain.leg_special
+				ref: ref.sirain.leg_special,
+				transform: {
+					tx: -2.85,
+					ty: -2.5
+				}
 			}
 		],
 		// 571
@@ -563,7 +567,11 @@ export let sirain = {
 			{
 				special: true,
 				colorIdx: 0,
-				ref: ref.sirain.leg_special
+				ref: ref.sirain.leg_special,
+				transform: {
+					tx: -2.85,
+					ty: -2.5
+				}
 			}
 		],
 		// 589
