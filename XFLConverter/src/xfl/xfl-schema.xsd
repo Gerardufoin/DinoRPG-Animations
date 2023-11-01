@@ -136,9 +136,12 @@
 																														<xs:sequence>
 																															<xs:element name="Color">
 																																<xs:complexType>
-																																	<xs:attribute name="redOffset" type="xs:byte" use="optional"/>
-																																	<xs:attribute name="greenOffset" type="xs:byte" use="optional"/>
-																																	<xs:attribute name="blueOffset" type="xs:byte" use="optional"/>
+																																	<xs:attribute name="redOffset" type="xs:short" use="optional"/>
+																																	<xs:attribute name="greenOffset" type="xs:short" use="optional"/>
+																																	<xs:attribute name="blueOffset" type="xs:short" use="optional"/>
+																																	<xs:attribute name="redMultiplier" type="xs:decimal" use="optional"/>
+																																	<xs:attribute name="greenMultiplier" type="xs:decimal" use="optional"/>
+																																	<xs:attribute name="blueMultiplier" type="xs:decimal" use="optional"/>
 																																	<xs:attribute name="alphaMultiplier" type="xs:decimal" use="optional"/>
 																																</xs:complexType>
 																															</xs:element>

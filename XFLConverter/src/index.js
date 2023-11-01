@@ -12,6 +12,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/sdino/LIBRARY/Symbol 517.xml', '_p1'); // pteroz
 //parser.parse('./resources/sdino/LIBRARY/Symbol 547.xml', '_p1'); // nuagoz
 //parser.parse('./resources/sdino/LIBRARY/Symbol 600.xml', '_p1'); // sirain
+//parser.parse('./resources/sdino/LIBRARY/Symbol 666.xml', '_p1'); // hippoclamp
 //parser.parse('./resources/sdino/LIBRARY/Symbol 156.xml', '_sub'); // fx_dust
 
 const adapter = new SVGAdapter();

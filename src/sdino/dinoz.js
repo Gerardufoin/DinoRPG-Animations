@@ -9,6 +9,7 @@ import { rocky } from './rocky/rocky.js';
 import { pteroz } from './pteroz/pteroz.js';
 import { nuagoz } from './nuagoz/nuagoz.js';
 import { sirain } from './sirain/sirain.js';
+import { hippoclamp } from './hippoclamp/hippoclamp.js';
 
-export let dinoz = [moueffe, pigmou, winks, planaile, castivore, rocky, pteroz, nuagoz, sirain];
+export let dinoz = [moueffe, pigmou, winks, planaile, castivore, rocky, pteroz, nuagoz, sirain, hippoclamp];
 export let error = bad;

@@ -97,5 +97,15 @@ export let mapping = {
 	'Symbol 578_p5a': 'left_ear',
 	'Symbol 578_p5b': 'right_ear',
 	'Symbol 585_p3': 'head',
-	'Symbol 589_p4a': 'eye'
+	'Symbol 589_p4a': 'eye',
+	// 666
+	'Symbol 607_p6c': 'right_front_fin',
+	'Symbol 611_p7a': 'body',
+	'Symbol 616_p7b': 'back',
+	'Symbol 619_p8': 'neck',
+	'Symbol 626_p4a': 'left_eye',
+	'Symbol 626_p4b': 'right_eye',
+	'Symbol 639_p3': 'head',
+	'Symbol 648_p6a': 'left_front_fin',
+	'Symbol 648_p6b': 'left_back_fin'
 };
