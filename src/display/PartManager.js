@@ -3,6 +3,7 @@ import { Sprite, Container, Matrix, BlurFilter, Filter } from 'pixi.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { TextureManager } from './TextureManager.js';
 import { offsetShader } from './shaders/ColorOffsetShader.js';
+import { Animation } from './Animation.js';
 
 /**
  * Static class used to instantiate a part of a dino.
@@ -23,17 +24,28 @@ export class PartManager {
 	 * @param {Array} palette Color palette comprised of 4 arrays (col0-3).
 	 * @param {string} assetPath Path to the assets of the current part.
 	 * @param {number} scale Scale of the dino to instantiate. Needed to instantiate the SVG.
-	 * @returns {Container} A PixiJS container representing the part and all its sub-parts.
+	 * @returns {Animation} A part of the dino containing all its sub-parts and possible sub-animations.
 	 */
 	static createPart(partsList, partsDetail, palette, assetPath, scale = 1) {
-		let container = new Container();
-		for (let part of partsList) {
-			let sprite = PartManager.getSubPart(part, partsDetail, palette, assetPath, scale);
-			if (sprite) {
-				container.addChild(sprite);
+		let part = new Animation();
+		// If the partsList is an animation, set the animation and get its parts for instantiation
+		if (partsList.animation && partsList.parts) {
+			part.setAnimation(partsList.animation);
+			for (const pName in partsList.parts) {
+				const element = PartManager.createPart(partsList.parts[pName], partsDetail, palette, assetPath, scale);
+				if (element) {
+					part.addPart(pName, element);
+				}
+			}
+		} else {
+			for (let element of partsList) {
+				let sprite = PartManager.getSubPart(element, partsDetail, palette, assetPath, scale);
+				if (sprite) {
+					part.addChild(sprite);
+				}
 			}
 		}
-		return container;
+		return part;
 	}
 
 	// Remove this whole things later if proven that we don't need to deal with size manupulation post texture loading.
@@ -90,10 +102,19 @@ export class PartManager {
 				blurFilter.blurY = part.blur.y ?? 0;
 				filters.push(blurFilter);
 			}
-			if (part.colorOffset) {
+			if (part.colorOffset || part.colorMultiplier) {
 				filters.push(
 					new Filter(undefined, offsetShader, {
-						offset: new Float32Array([part.colorOffset.r, part.colorOffset.g, part.colorOffset.b])
+						offset: new Float32Array([
+							part.colorOffset?.r ?? 0,
+							part.colorOffset?.g ?? 0,
+							part.colorOffset?.b ?? 0
+						]),
+						mult: new Float32Array([
+							part.colorMultiplier?.r ?? 1,
+							part.colorMultiplier?.g ?? 1,
+							part.colorMultiplier?.b ?? 1
+						])
 					})
 				);
 			}

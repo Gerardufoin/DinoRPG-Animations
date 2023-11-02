@@ -5,9 +5,8 @@ import path from 'path';
 import fs from 'fs';
 
 import { mapping } from './mapping.js';
-import { subAnimations } from './subanimations.js';
 
-const FLAG_NO_RGB = true;
+const FLAG_NO_RGB = false;
 
 /**
  * Parse XFL files and return the raw data ready for conversion.
@@ -300,9 +299,12 @@ export class XFLParser {
 			c: this.multiplyMatrixStep(m1.c, m2.a ?? 1, m1.d ?? 1, m2.c, 0),
 			d: this.multiplyMatrixStep(m1.c, m2.b, m1.d ?? 1, m2.d ?? 1, 0),
 			alpha: this.multiplyColors(m2.alpha, m1.alpha),
-			red: this.multiplyColors(m2.red, m1.red),
-			green: this.multiplyColors(m2.green, m1.green),
-			blue: this.multiplyColors(m2.blue, m1.blue),
+			or: this.multiplyColors(m2.or, m1.or),
+			og: this.multiplyColors(m2.og, m1.og),
+			ob: this.multiplyColors(m2.ob, m1.ob),
+			mr: this.multiplyColors(m2.mr, m1.mr),
+			mg: this.multiplyColors(m2.mg, m1.mg),
+			mb: this.multiplyColors(m2.mb, m1.mb),
 			l: m1.l ?? m2.l
 		};
 		matrix.a = matrix.a === 1 ? undefined : matrix.a;
@@ -310,19 +312,6 @@ export class XFLParser {
 		matrix.c = matrix.c === 0 ? undefined : matrix.c;
 		matrix.d = matrix.d === 1 ? undefined : matrix.d;
 		return matrix;
-	}
-
-	/**
-	 * Apply a subanimation to a keyframe.
-	 * Will be removed soon, the subanimation should be included as is in the project and combined at runtime.
-	 * @param {object} frameData Current frame data of the main animation.
-	 * @param {object} frameIdx Current frame index of the main animation.
-	 * @param {Number} elementNb Symbol of the subanimation.
-	 * @returns {object} The combined information of the frameData and the given symbol animation.
-	 */
-	applySubAnimation(frameData, frameIdx, elementNb) {
-		const subFrame = subAnimations[elementNb][frameIdx % subAnimations[elementNb].length];
-		return this.multiplyMatrix(subFrame, frameData);
 	}
 
 	/**
@@ -371,13 +360,17 @@ export class XFLParser {
 						c: this.parseFloat(symbolInstance.matrix.Matrix.c),
 						d: this.parseFloat(symbolInstance.matrix.Matrix.d),
 						alpha: this.parseFloat(symbolInstance.color?.Color?.alphaMultiplier),
-						red: this.parseFloat(symbolInstance.color?.Color?.redOffset),
-						green: this.parseFloat(symbolInstance.color?.Color?.greenOffset),
-						blue: this.parseFloat(symbolInstance.color?.Color?.blueOffset),
+						or: this.parseFloat(symbolInstance.color?.Color?.redOffset),
+						og: this.parseFloat(symbolInstance.color?.Color?.greenOffset),
+						ob: this.parseFloat(symbolInstance.color?.Color?.blueOffset),
+						mr: this.parseFloat(symbolInstance.color?.Color?.redMultiplier),
+						mg: this.parseFloat(symbolInstance.color?.Color?.greenMultiplier),
+						mb: this.parseFloat(symbolInstance.color?.Color?.blueMultiplier),
 						l: layer
 					};
 					if (FLAG_NO_RGB) {
-						frameData.red = frameData.green = frameData.blue = undefined;
+						frameData.or = frameData.og = frameData.ob = undefined;
+						frameData.mr = frameData.mg = frameData.mb = undefined;
 					}
 					for (let i = 0; i < duration; ++i) {
 						if (!result.frames[idx + i]) {
@@ -392,9 +385,7 @@ export class XFLParser {
 						if (!result.elementsCheck.includes(elemName)) {
 							result.elementsCheck.push(elemName);
 						}
-						result.frames[idx + i][elemName] = subAnimations[elementNb]
-							? this.applySubAnimation(frameData, idx + 1, elementNb)
-							: frameData;
+						result.frames[idx + i][elemName] = frameData;
 						if (parentTransform && result.frames[idx + i][elemName]) {
 							result.frames[idx + i][elemName] = this.multiplyMatrix(
 								result.frames[idx + i][elemName],

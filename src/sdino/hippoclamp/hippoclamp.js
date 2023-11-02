@@ -2,8 +2,9 @@
 import { BLEND_MODES } from 'pixi.js';
 import { ref } from '../references.js';
 import { stand } from './animations/stand.js';
-/*import { run } from './animations/run.js';
-import { walk } from './animations/walk.js';
+import { fx_dash } from '../fx/dash.js';
+import { run } from './animations/run.js';
+/*import { walk } from './animations/walk.js';
 import { jump } from './animations/jump.js';
 import { hit } from './animations/hit.js';
 import { attack } from './animations/attack.js';
@@ -501,19 +502,23 @@ export let hippoclamp = {
 			}
 		],
 		// 626 p4a
-		left_eye: []
+		left_eye: [],
+		// 658
+		fx_dash_1: fx_dash,
+		// 658
+		fx_dash_2: fx_dash
 	},
 	animations: {
 		// missing cast, release
 		// sleep same as stand
 		// 650
-		stand: stand
-		/*// 651
-		walk: walk,
+		stand: stand,
+		// 651
+		//walk: walk,
 		// 659
-		run: run,
+		run: run
 		// 660
-		hit: hit,
+		/*hit: hit,
 		// 661
 		jump: jump,
 		// 662

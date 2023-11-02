@@ -107,5 +107,7 @@ export let mapping = {
 	'Symbol 626_p4b': 'right_eye',
 	'Symbol 639_p3': 'head',
 	'Symbol 648_p6a': 'left_front_fin',
-	'Symbol 648_p6b': 'left_back_fin'
+	'Symbol 648_p6b': 'left_back_fin',
+	'Symbol 658': 'fx_dash_1',
+	'Symbol 658-1': 'fx_dash_2'
 };

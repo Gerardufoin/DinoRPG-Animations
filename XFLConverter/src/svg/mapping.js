@@ -215,5 +215,11 @@ export let mapping = {
 	643: 'hippoclamp/left_fin',
 	645: 'hippoclamp/left_fin_stump',
 	647: 'hippoclamp/left_fin_curve',
+	652: 'fx/fx_dash_1',
+	653: 'fx/fx_dash_2',
+	654: 'fx/fx_dash_3',
+	655: 'fx/fx_dash_4',
+	656: 'fx/fx_dash_5',
+	657: 'fx/fx_dash_6',
 	1640: 'bad'
 };

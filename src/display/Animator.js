@@ -1,7 +1,8 @@
 // @ts-check
-import { Container, Ticker, Matrix } from 'pixi.js';
+import { Container, Ticker } from 'pixi.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { PixiHelper } from './PixiHelper';
+import { Animation } from './Animation';
 
 /**
  * The Animator class will contain the dino's body and control its animations.
@@ -22,22 +23,9 @@ export class Animator extends Container {
 	/**
 	 * Body of the dino.
 	 * Will contain all the parts making up the dino.
-	 * @type {Container}
+	 * @type {Animation}
 	 */
-	_body = new Container();
-	/**
-	 * List of all the parts of the dino.
-	 * Each member of the object is the name of the dino's part.
-	 * This will be used during the animation to move the part and hide the part which are not displayed for the current frame.
-	 * @type {object}
-	 */
-	_parts = {};
-	/**
-	 * Scale of the dino.
-	 * Parts of the dino will need to have their position adapted depending on the scale.
-	 * @type {number}
-	 */
-	_scale = 1;
+	_body = new Animation();
 
 	/**
 	 * Controls if the animation is playing or not.
@@ -45,22 +33,6 @@ export class Animator extends Container {
 	 * @type {boolean}
 	 */
 	playing = true;
-	/**
-	 * Current animation being played by the animator.
-	 * Contains all the keyframes.
-	 * @type {any}
-	 */
-	_animation = null;
-	/**
-	 * Current index of the animation being played.
-	 * @type {number}
-	 */
-	_currentIdx = 0;
-	/**
-	 * Animation offset. Frames before the offset will never be played.
-	 * @type {number}
-	 */
-	_offsetIdx = 0;
 	/**
 	 * Time elasped since last animation key.
 	 * Will reset once reaching the _tickRate value.
@@ -89,16 +61,8 @@ export class Animator extends Container {
 			this.playing = false;
 		});
 		this.registerCallback('gotoAndPlay', (idx) => {
-			this._currentIdx = idx - 1;
+			this._body.setCurrentIdx(idx - 1);
 		});
-	}
-
-	/**
-	 * Get the animation current index.
-	 * @returns {number} Return the current frame index of the animation.
-	 */
-	getCurrentIdx() {
-		return this._currentIdx + this._offsetIdx;
 	}
 
 	/**
@@ -115,11 +79,9 @@ export class Animator extends Container {
 	 * Execute all the callbacks for the current frame, if any.
 	 */
 	executeCallbacks() {
-		if (this._animation?.callbacks && this._animation.callbacks[this.getCurrentIdx()]) {
-			for (const f of this._animation.callbacks[this.getCurrentIdx()]) {
-				if (this._callbacks[f[0]]) {
-					this._callbacks[f[0]](f.slice(1));
-				}
+		for (const f of this._body.getCallbacks()) {
+			if (this._callbacks[f[0]]) {
+				this._callbacks[f[0]](f.slice(1));
 			}
 		}
 	}
@@ -135,10 +97,13 @@ export class Animator extends Container {
 		for (const t of transforms) {
 			if (t.partIdx) {
 				bodyMatrix.append(
-					PixiHelper.matrixFromObject(t.transforms[dParts[t.partIdx] % t.transforms.length], this._scale)
+					PixiHelper.matrixFromObject(
+						t.transforms[dParts[t.partIdx] % t.transforms.length],
+						this._body.getScale()
+					)
 				);
 			} else {
-				bodyMatrix.append(PixiHelper.matrixFromObject(t, this._scale));
+				bodyMatrix.append(PixiHelper.matrixFromObject(t, this._body.getScale()));
 			}
 		}
 		this._body.transform.setFromMatrix(bodyMatrix);
@@ -161,44 +126,12 @@ export class Animator extends Container {
 	}
 
 	/**
-	 * Add a part to the animation.
-	 * A part is a PixiJS container comprised of multiple sprites moving together during animations.
+	 * Add a new part to the body.
 	 * @param {string} partName Name of the part to add. Has to be the same name as one part in the animation.
-	 * @param {Container} part PixiJS container containing multiple sprites representing a part.
+	 * @param {Animation} part A dino part containing multiple sprites and possibly a sub-animation.
 	 */
 	addPart(partName, part) {
-		this._body.addChild(part);
-		this._parts[partName] = part;
-	}
-
-	/**
-	 * Moves and displays all the body parts of the dino to fit the current animation keyframe.
-	 * If a part does not have a definition for the current keyframe, it will be hidden.
-	 */
-	moveParts() {
-		const frame = this._animation?.frames ? this._animation.frames[this.getCurrentIdx()] : undefined;
-		for (let p in this._parts) {
-			if (frame && frame[p]) {
-				this._parts[p].visible = true;
-				this._parts[p].alpha = frame[p].alpha ?? 1;
-				this._parts[p].transform.setFromMatrix(
-					new Matrix(
-						frame[p].a ?? 1,
-						frame[p].b ?? 0,
-						frame[p].c ?? 0,
-						frame[p].d ?? 1,
-						(frame[p].tx ?? 0) * this._scale,
-						(frame[p].ty ?? 0) * this._scale
-					)
-				);
-				// Ordering of the parts display
-				if (frame[p].l !== undefined) {
-					this._body.swapChildren(this._parts[p], this._body.getChildAt(frame[p].l));
-				}
-			} else {
-				this._parts[p].visible = false;
-			}
-		}
+		this._body.addPart(partName, part);
 	}
 
 	/**
@@ -207,9 +140,8 @@ export class Animator extends Container {
 	 * @param {any} animation The animation object to be played. Should contain at least a "frames" attribute.
 	 */
 	playAnim(animation) {
-		const anim = animation.anim ?? animation;
-		this._offsetIdx = (animation.offset ?? 0) % (anim?.frames.length ?? 1);
-		this._animation = anim;
+		this._body.setAnimation(animation.anim ?? animation);
+		this._body.setOffsetIdx(animation.offset ?? 0);
 		this.playing = true;
 		this.setFrame(0);
 	}
@@ -220,40 +152,28 @@ export class Animator extends Container {
 	 * @returns {void}
 	 */
 	update() {
-		if (!this.playing || !this._animation) {
+		if (!this.playing || this._body.getAnimationLength() == 0) {
 			return;
 		}
 		this._time += Ticker.shared.elapsedMS;
 		if (this._time >= this._tickRate) {
-			this._currentIdx =
-				(this._currentIdx + Math.floor(this._time / this._tickRate)) %
-				(this._animation?.frames.length - this._offsetIdx);
+			this._body.increaseCurrentIdx(Math.floor(this._time / this._tickRate));
 			this._time = this._time % this._tickRate;
-			this.moveParts();
+			this._body.updateAnimation();
 			this.executeCallbacks();
 		}
 	}
 
 	/**
-	 * Return the number of frames of the current animation playing.
-	 * @returns {number} The length of the animation or 0 if no animation.
-	 */
-	getAnimationLength() {
-		return this._animation?.frames.length ?? 0;
-	}
-
-	/**
 	 * Set the animation at a specific frame and reset the timer.
 	 * @param {number} idx The frame index number. Will be moduloed by the animation length.
+	 * @param {boolean} resetTimer If true, reset the timer. True by default.
 	 */
-	setFrame(idx) {
-		const length = this.getAnimationLength();
-		if (!length) {
-			this._currentIdx = 0;
-			return;
+	setFrame(idx, resetTimer = true) {
+		this._body.setCurrentIdx(idx);
+		if (resetTimer) {
+			this._time = 0;
 		}
-		this._currentIdx = idx % length;
-		this._time = 0;
-		this.moveParts();
+		this._body.updateAnimation();
 	}
 }

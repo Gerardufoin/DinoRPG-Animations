@@ -137,7 +137,7 @@ export class sdino extends Container {
 	 */
 	init(data, damage, pflag = false, scale = 1) {
 		//_p0._box._visible = false;
-		this._animator._scale = scale;
+		this._animator._body._scale = scale;
 		this._scale = scale;
 		let dParts = [];
 		this._code = data;
