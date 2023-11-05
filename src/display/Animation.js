@@ -69,7 +69,7 @@ export class Animation extends Container {
 	 * If a part does not have a definition for the current keyframe, it will be hidden.
 	 */
 	updateAnimation() {
-		const frame = this._animation?.frames ? this._animation.frames[this._currentIdx] : undefined;
+		const frame = this._animation?.frames ? this._animation.frames[this.getCurrentIdx()] : undefined;
 		for (const p in this._parts) {
 			if (frame && frame[p]) {
 				this._parts[p].visible = true;
