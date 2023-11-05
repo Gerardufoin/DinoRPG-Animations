@@ -61,7 +61,7 @@ export class Animator extends Container {
 			this.playing = false;
 		});
 		this.registerCallback('gotoAndPlay', (idx) => {
-			this._body.setCurrentIdx(idx - 1);
+			this.setFrame(idx, false);
 		});
 	}
 

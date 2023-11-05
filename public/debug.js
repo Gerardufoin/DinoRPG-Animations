@@ -163,9 +163,9 @@ addDinoz('89NgwzWWsktiC000');
 addDinoz('89P0ZGkRSwlfm000');*/
 // Hippoclamp
 addDinoz('991wF8kEU0A0u000', true);
-addDinoz('995FFpvfZ4W7E000');
-addDinoz('99gLuBRdyrrk0000');
 addDinoz('99X4YC3gRdbiA000');
+addDinoz('99gLuBRdyrrk0000');
+addDinoz('995FFpvfZ4W7E000');
 addDinoz('99Lh9VynQ3nnr000');
 addDinoz('99DUB6MqLdiAm000');
 addDinoz('98jwN04PyJ2Qs000');

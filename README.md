@@ -29,7 +29,7 @@ The file is comprised of the following entities:
 -   pteroz (done)
 -   nuagoz (done)
 -   sirain (done)
--   hippoclamp (in progress)
+-   hippoclamp (done)
 -   gorilloz
 -   wanwan
 -   santaz

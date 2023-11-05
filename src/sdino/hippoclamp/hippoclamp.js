@@ -4,17 +4,17 @@ import { ref } from '../references.js';
 import { stand } from './animations/stand.js';
 import { fx_dash } from '../fx/dash.js';
 import { run } from './animations/run.js';
-/*import { walk } from './animations/walk.js';
+import { walk } from './animations/walk.js';
 import { jump } from './animations/jump.js';
 import { hit } from './animations/hit.js';
 import { attack } from './animations/attack.js';
 import { land } from './animations/land.js';
-import { dead } from './animations/dead.js';*/
+import { dead } from './animations/dead.js';
 
 export let hippoclamp = {
 	name: 'hippoclamp',
 	transforms: [
-		// 666
+		// 666 - Hippoclamp confirmed to be satan
 		{
 			partIdx: 1,
 			transforms: [
@@ -251,10 +251,11 @@ export let hippoclamp = {
 							colorIdx: 1,
 							ref: ref.hippoclamp.back_fin
 						},
-						// 615
+						// 615 - PixiJS add mode does not work similarly to Flash, adding an alpha to approximate result
 						{
 							ref: ref.hippoclamp.back_shine,
 							blend: [BLEND_MODES.ADD],
+							alpha: 0.18,
 							transform: {
 								tx: 0.15,
 								ty: -0.45,
@@ -263,7 +264,7 @@ export let hippoclamp = {
 							}
 						}
 					]
-					// 615 - PixiJS add mode does not work similarly to Flash if there is nothing underneath
+					// 615
 					// Note: Honestly, this part without the fin underneath really feels more like a bug on MT part than anything, removing it for now
 					/*{
 						ref: ref.hippoclamp.back_shine,
@@ -287,7 +288,56 @@ export let hippoclamp = {
 			}
 		],
 		// 626 p4b
-		right_eye: [],
+		right_eye: [
+			{
+				partIdx: 4,
+				frames: [0, 1, 2, 3, 4],
+				parts: [
+					[
+						// 620
+						{
+							ref: ref.hippoclamp.eye_empty
+						},
+						// 621
+						{
+							ref: ref.hippoclamp.pupil_big
+						}
+					],
+					[
+						// 620
+						{
+							ref: ref.hippoclamp.eye_empty
+						},
+						// 622
+						{
+							ref: ref.hippoclamp.pupil_white
+						}
+					],
+					[
+						// 620
+						{
+							ref: ref.hippoclamp.eye_empty
+						},
+						// 623
+						{
+							ref: ref.hippoclamp.pupil
+						}
+					],
+					[
+						// 624
+						{
+							ref: ref.hippoclamp.eye_full
+						}
+					],
+					[
+						//625
+						{
+							ref: ref.hippoclamp.eye
+						}
+					]
+				]
+			}
+		],
 		// 639 p3
 		head: [
 			{
@@ -502,7 +552,56 @@ export let hippoclamp = {
 			}
 		],
 		// 626 p4a
-		left_eye: [],
+		left_eye: [
+			{
+				partIdx: 4,
+				frames: [0, 1, 2, 3, 4],
+				parts: [
+					[
+						// 620
+						{
+							ref: ref.hippoclamp.eye_empty
+						},
+						// 621
+						{
+							ref: ref.hippoclamp.pupil_big
+						}
+					],
+					[
+						// 620
+						{
+							ref: ref.hippoclamp.eye_empty
+						},
+						// 622
+						{
+							ref: ref.hippoclamp.pupil_white
+						}
+					],
+					[
+						// 620
+						{
+							ref: ref.hippoclamp.eye_empty
+						},
+						// 623
+						{
+							ref: ref.hippoclamp.pupil
+						}
+					],
+					[
+						// 624
+						{
+							ref: ref.hippoclamp.eye_full
+						}
+					],
+					[
+						//625
+						{
+							ref: ref.hippoclamp.eye
+						}
+					]
+				]
+			}
+		],
 		// 658
 		fx_dash_1: fx_dash,
 		// 658
@@ -514,11 +613,11 @@ export let hippoclamp = {
 		// 650
 		stand: stand,
 		// 651
-		//walk: walk,
+		walk: walk,
 		// 659
-		run: run
+		run: run,
 		// 660
-		/*hit: hit,
+		hit: hit,
 		// 661
 		jump: jump,
 		// 662
@@ -530,6 +629,6 @@ export let hippoclamp = {
 		// 650 idx 5
 		ill: { offset: 5, anim: stand },
 		// 661
-		fly: jump*/
+		fly: jump
 	}
 };
