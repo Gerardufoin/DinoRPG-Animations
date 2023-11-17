@@ -176,4 +176,12 @@ export class Animator extends Container {
 		}
 		this._body.updateAnimation();
 	}
+
+	/**
+	 * Return the length of the current animation playing.
+	 * @returns {number} The number of frames of the current animation.
+	 */
+	getCurrentAnimationLength() {
+		return this._body.getAnimationLength();
+	}
 }

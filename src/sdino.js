@@ -181,7 +181,19 @@ export class sdino extends Container {
 	 * @param {number | undefined} height The height of the image. Needs width to be defined.
 	 */
 	toImage(callback, width = undefined, height = undefined) {
-		ImageExtractor.convertToImage(this._animator, callback, width, height);
+		ImageExtractor.convertToImage(this._animator, callback, width, height, true);
+	}
+
+	/**
+	 * Extract the visual data from the container into raw image data.
+	 * Useful to display the dino without having to instanciate a WebGL context every time.
+	 * @param {any} callback A callback receiving the resulting image as parameter.
+	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
+	 * @param {number | undefined} height The height of the image. Needs width to be defined.
+	 * @param {string} format Format of the output. 'image/png' by default.
+	 */
+	toRawImage(callback, width = undefined, height = undefined, format = 'image/png') {
+		ImageExtractor.convertToImage(this._animator, callback, width, height, false, format);
 	}
 
 	/**
@@ -193,7 +205,19 @@ export class sdino extends Container {
 	 * @param {number | undefined} height The height of the image. Needs width to be defined.
 	 */
 	toAnimation(callback, width = undefined, height = undefined) {
-		ImageExtractor.convertToAnimation(this._animator, callback, width, height);
+		ImageExtractor.convertToAnimation(this._animator, callback, width, height, true);
+	}
+
+	/**
+	 * Extract the visual data from the container into an animation.
+	 * The animation is an array comprised of multiple raw image data (one per frame, in order).
+	 * @param {any} callback A callback receiving the resulting image as parameter.
+	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
+	 * @param {number | undefined} height The height of the image. Needs width to be defined.
+	 * @param {string} format Format of the output. 'image/png' by default.
+	 */
+	toRawAnimation(callback, width = undefined, height = undefined, format = 'image/png') {
+		ImageExtractor.convertToAnimation(this._animator, callback, width, height, false, format);
 	}
 
 	/**

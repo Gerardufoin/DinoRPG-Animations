@@ -5,9 +5,18 @@ let test_dinoz = [
 	'0An2HcXN9sl3m000',
 	'19hot0hFbItLS000',
 	'19VSfUdpIPb0a000',
-	'1AADFvpotbA6y000'
+	'1AADFvpotbA6y000',
+	'79TMjJApT93Mx000',
+	'79vKIt6DlGsCt000',
+	'89KlMhswn7mQ4000',
+	'89xsFY1bzYhjG000',
+	'99gLuBRdyrrk0000',
+	'991wF8kEU0A0u000'
 ];
 
+/**
+ * Get dinoz as a still image tag
+ */
 function randomDinoPortrait() {
 	new DinoAnim.sdino({
 		data: test_dinoz[Math.floor(Math.random() * test_dinoz.length)],
@@ -21,6 +30,9 @@ function randomDinoPortrait() {
 	);
 }
 
+/**
+ * Get dinoz as a div containing all animations as child image tags.
+ */
 function randomDinoAnimated() {
 	new DinoAnim.sdino({
 		data: test_dinoz[Math.floor(Math.random() * test_dinoz.length)],
@@ -33,6 +45,36 @@ function randomDinoAnimated() {
 		45
 	);
 }
+
+/**
+ * Get dinoz as a still raw image.
+ * To use if you want to create your own display of the dinoz.
+ */
+new DinoAnim.sdino({
+	data: test_dinoz[Math.floor(Math.random() * test_dinoz.length)],
+	flip: 1
+}).toRawImage(
+	(imgData) => {
+		console.log(imgData);
+	},
+	45,
+	45
+);
+
+/**
+ * Get dinoz as an array containing each frame of the animation as image data.
+ * To use to create your own rendering of the extraction.
+ */
+new DinoAnim.sdino({
+	data: test_dinoz[Math.floor(Math.random() * test_dinoz.length)],
+	flip: 1
+}).toRawAnimation(
+	(arr) => {
+		console.log(arr);
+	},
+	45,
+	45
+);
 
 for (let i = 0; i < 10; ++i) {
 	randomDinoPortrait();
