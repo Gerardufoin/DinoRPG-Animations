@@ -1,7 +1,7 @@
 // @ts-check
 
 import { Rectangle, Renderer } from 'pixi.js';
-import { Animator } from './Animator';
+import { Animator } from './Animator.js';
 
 /**
  * Allow the transformation from an Animator into an image which can then be displayed in an <img> tag.

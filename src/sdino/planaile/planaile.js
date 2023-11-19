@@ -1,13 +1,13 @@
 // @ts-check
 
-import { ref } from '../references';
-import { stand } from './animations/stand';
-import { walk } from './animations/walk';
-import { fly } from './animations/fly';
-import { hit } from './animations/hit';
-import { attack } from './animations/attack';
-import { land } from './animations/land';
-import { dead } from './animations/dead';
+import { ref } from '../references.js';
+import { stand } from './animations/stand.js';
+import { walk } from './animations/walk.js';
+import { fly } from './animations/fly.js';
+import { hit } from './animations/hit.js';
+import { attack } from './animations/attack.js';
+import { land } from './animations/land.js';
+import { dead } from './animations/dead.js';
 
 export let planaile = {
 	name: 'planaile',

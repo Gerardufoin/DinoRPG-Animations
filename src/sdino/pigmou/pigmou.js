@@ -1,15 +1,15 @@
 // @ts-check
 
 import { BLEND_MODES } from 'pixi.js';
-import { stand } from './animations/stand';
-import { walk } from './animations/walk';
-import { run } from './animations/run';
-import { hit } from './animations/hit';
-import { jump } from './animations/jump';
-import { attack } from './animations/attack';
-import { land } from './animations/land';
-import { dead } from './animations/dead';
-import { ref } from '../references';
+import { stand } from './animations/stand.js';
+import { walk } from './animations/walk.js';
+import { run } from './animations/run.js';
+import { hit } from './animations/hit.js';
+import { jump } from './animations/jump.js';
+import { attack } from './animations/attack.js';
+import { land } from './animations/land.js';
+import { dead } from './animations/dead.js';
+import { ref } from '../references.js';
 
 export let pigmou = {
 	name: 'pigmou',
