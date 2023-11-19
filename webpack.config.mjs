@@ -18,7 +18,7 @@ const standalone_config = {
 	...config,
 	output: {
 		filename: 'dinorpg-animations-test.min.js',
-		path: path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'dist'),
+		path: path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'public'),
 		library: {
 			name: 'DinoAnim',
 			type: 'umd'
