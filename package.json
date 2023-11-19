@@ -2,10 +2,14 @@
 	"name": "dinorpg_animations",
 	"version": "1.0.0",
 	"description": "Recreate DinoRPG multiple flash players using PixiJS",
-	"main": "index.js",
+	"type": "module",
+	"exports": {
+		".": "./src/index.js"
+	},
 	"scripts": {
 		"build": "webpack",
-		"start": "webpack serve"
+		"start": "webpack serve",
+		"types": "tsc"
 	},
 	"author": "Gerardufoin",
 	"license": "ISC",
@@ -14,6 +18,7 @@
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-jsdoc": "^46.5.1",
 		"prettier": "^3.0.3",
+		"typescript": "^5.2.2",
 		"webpack": "^5.88.2",
 		"webpack-cli": "^5.1.4",
 		"webpack-dev-server": "^4.15.1"
@@ -21,6 +26,7 @@
 	"dependencies": {
 		"@pixi/filter-glow": "^5.2.1",
 		"lz-string": "^1.5.0",
-		"pixi.js": "^7.3.0"
+		"pixi.js": "^7.3.0",
+		"url": "^0.11.3"
 	}
 }

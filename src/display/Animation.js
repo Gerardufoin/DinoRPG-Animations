@@ -1,6 +1,6 @@
 // @ts-check
 import { Container, Filter, Matrix } from 'pixi.js';
-import { offsetShader } from './shaders/ColorOffsetShader';
+import { offsetShader } from './shaders/ColorOffsetShader.js';
 
 /**
  * The Animation class is a PixiJS Container which contains a cluster of dispay objects and control their animations.

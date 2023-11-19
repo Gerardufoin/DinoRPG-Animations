@@ -1,6 +1,6 @@
 // @ts-check
 
-import { ref } from './references';
+import { ref } from './references.js';
 
 export let bad = {
 	name: 'bad',

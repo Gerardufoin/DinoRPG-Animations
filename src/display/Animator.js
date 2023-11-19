@@ -1,8 +1,8 @@
 // @ts-check
 import { Container, Ticker } from 'pixi.js';
 import { GlowFilter } from '@pixi/filter-glow';
-import { PixiHelper } from './PixiHelper';
-import { Animation } from './Animation';
+import { PixiHelper } from './PixiHelper.js';
+import { Animation } from './Animation.js';
 
 /**
  * The Animator class will contain the dino's body and control its animations.

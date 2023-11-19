@@ -1,6 +1,6 @@
 // @ts-check
 import { Texture } from 'pixi.js';
-import LZString from 'lz-string';
+import { decompressFromBase64 } from 'lz-string';
 /**
  * Static class managing the textures.
  * Will only load a specific file once and then store the reference to the texture.
@@ -39,7 +39,7 @@ export class TextureManager {
 	 */
 	static getTextureFromCompressedReference(data, scale = 1) {
 		let scl = (scale ?? 0) <= 0 ? 1 : scale;
-		return Texture.from(LZString.decompressFromBase64(data), {
+		return Texture.from(decompressFromBase64(data), {
 			resourceOptions: { scale: scl * TextureManager.RESOLUTION }
 		});
 	}
