@@ -162,13 +162,21 @@ addDinoz('89lPun9nNPh7o000');
 addDinoz('89NgwzWWsktiC000');
 addDinoz('89P0ZGkRSwlfm000');*/
 // Hippoclamp
-addDinoz('991wF8kEU0A0u000', true);
+/*addDinoz('991wF8kEU0A0u000', true);
 addDinoz('99X4YC3gRdbiA000');
 addDinoz('99gLuBRdyrrk0000');
 addDinoz('995FFpvfZ4W7E000');
 addDinoz('99Lh9VynQ3nnr000');
 addDinoz('99DUB6MqLdiAm000');
-addDinoz('98jwN04PyJ2Qs000');
+addDinoz('98jwN04PyJ2Qs000');*/
+// Gorilloz
+addDinoz('A9ldMErr30hTq000', true);
+addDinoz('A9viVftvErDyE110');
+addDinoz('A3RmxwZWWRtec000');
+addDinoz('A97tfssT3l3hV000');
+addDinoz('A5vm6ZNJCFyn5000');
+addDinoz('AArPCd4p8zOO6000');
+addDinoz('AAF5ECnNvanRc000');
 
 /*const app = new Application({
 	background: '#E7B577',

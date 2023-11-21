@@ -109,5 +109,16 @@ export let mapping = {
 	'Symbol 648_p6a': 'left_front_fin',
 	'Symbol 648_p6b': 'left_back_fin',
 	'Symbol 658': 'fx_dash_1',
-	'Symbol 658-1': 'fx_dash_2'
+	'Symbol 658-1': 'fx_dash_2',
+	// 710
+	'Symbol 669': 'left_hand',
+	'Symbol 669-1': 'right_hand',
+	'Symbol 669-2': 'left_foot',
+	'Symbol 669-3': 'right_foot',
+	'Symbol 674_p8a': 'left_arm',
+	'Symbol 674_p8b': 'right_arm',
+	'Symbol 677': 'body',
+	'Symbol 690_p7a': 'head',
+	'Symbol 693_p3': 'face',
+	'Symbol 698_p5a': 'left_ear'
 };

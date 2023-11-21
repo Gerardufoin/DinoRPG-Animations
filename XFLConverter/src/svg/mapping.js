@@ -227,5 +227,18 @@ export let mapping = {
 	655: 'fx/fx_dash_4',
 	656: 'fx/fx_dash_5',
 	657: 'fx/fx_dash_6',
+	668: 'gorilloz/hand',
+	671: 'gorilloz/arm',
+	673: 'gorilloz/arm_fur',
+	676: 'gorilloz/body',
+	679: 'gorilloz/head',
+	681: 'gorilloz/hair_banana',
+	682: 'gorilloz/special',
+	685: 'gorilloz/hair',
+	687: 'gorilloz/head_pointy',
+	689: 'gorilloz/hair_fur',
+	692: 'gorilloz/face',
+	695: 'gorilloz/ear_pointy',
+	697: 'gorilloz/ear',
 	1640: 'bad'
 };

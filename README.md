@@ -30,7 +30,7 @@ The file is comprised of the following entities:
 -   nuagoz (done)
 -   sirain (done)
 -   hippoclamp (done)
--   gorilloz
+-   gorilloz (in progress)
 -   wanwan
 -   santaz
 -   feross
