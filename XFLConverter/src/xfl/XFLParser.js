@@ -7,6 +7,7 @@ import fs from 'fs';
 import { mapping } from './mapping.js';
 
 const FLAG_NO_RGB = false;
+const ELEM_IGNORE_RGB = ['156'];
 
 /**
  * Parse XFL files and return the raw data ready for conversion.
@@ -368,7 +369,7 @@ export class XFLParser {
 						mb: this.parseFloat(symbolInstance.color?.Color?.blueMultiplier),
 						l: layer
 					};
-					if (FLAG_NO_RGB) {
+					if (FLAG_NO_RGB || ELEM_IGNORE_RGB.includes(elementNb)) {
 						frameData.or = frameData.og = frameData.ob = undefined;
 						frameData.mr = frameData.mg = frameData.mb = undefined;
 					}

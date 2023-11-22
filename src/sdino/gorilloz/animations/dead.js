@@ -1170,9 +1170,6 @@ export let dead = {
 				b: 0.7,
 				c: -0.765,
 				d: 0.673,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -1180,9 +1177,6 @@ export let dead = {
 				ty: 5.4,
 				a: 2.747,
 				d: 0.779,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -1274,9 +1268,6 @@ export let dead = {
 				c: -1.813,
 				d: 0.951,
 				alpha: 0.91,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -1285,9 +1276,6 @@ export let dead = {
 				a: 3.559,
 				d: 1.577,
 				alpha: 0.871,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -1379,9 +1367,6 @@ export let dead = {
 				c: -3.068,
 				d: 0.989,
 				alpha: 0.828,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -1390,9 +1375,6 @@ export let dead = {
 				a: 4.315,
 				d: 2.32,
 				alpha: 0.75,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -1484,9 +1466,6 @@ export let dead = {
 				c: -4.345,
 				d: 0.785,
 				alpha: 0.746,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 11
 			},
 			fx_dust_2: {
@@ -1496,9 +1475,6 @@ export let dead = {
 				b: 0.7,
 				c: -0.766,
 				d: -0.673,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_3: {
@@ -1507,9 +1483,6 @@ export let dead = {
 				a: 5.015,
 				d: 3.008,
 				alpha: 0.641,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -1601,9 +1574,6 @@ export let dead = {
 				c: -5.497,
 				d: 0.358,
 				alpha: 0.668,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 11
 			},
 			fx_dust_2: {
@@ -1614,9 +1584,6 @@ export let dead = {
 				c: -1.298,
 				d: -1.428,
 				alpha: 0.871,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_3: {
@@ -1625,9 +1592,6 @@ export let dead = {
 				a: 5.659,
 				d: 3.641,
 				alpha: 0.539,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -1719,9 +1683,6 @@ export let dead = {
 				c: -6.405,
 				d: -0.23,
 				alpha: 0.598,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 11
 			},
 			fx_dust_2: {
@@ -1732,9 +1693,6 @@ export let dead = {
 				c: -1.561,
 				d: -2.175,
 				alpha: 0.75,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_3: {
@@ -1743,9 +1701,6 @@ export let dead = {
 				a: 6.247,
 				d: 4.218,
 				alpha: 0.445,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -1837,9 +1792,6 @@ export let dead = {
 				c: -7.004,
 				d: -0.943,
 				alpha: 0.527,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 11
 			},
 			fx_dust_2: {
@@ -1850,9 +1802,6 @@ export let dead = {
 				c: -1.604,
 				d: -2.89,
 				alpha: 0.641,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_3: {
@@ -1861,9 +1810,6 @@ export let dead = {
 				a: 6.779,
 				d: 4.741,
 				alpha: 0.359,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -1955,9 +1901,6 @@ export let dead = {
 				c: -7.264,
 				d: -1.73,
 				alpha: 0.465,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 11
 			},
 			fx_dust_2: {
@@ -1968,9 +1911,6 @@ export let dead = {
 				c: -1.455,
 				d: -3.559,
 				alpha: 0.539,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_3: {
@@ -1979,9 +1919,6 @@ export let dead = {
 				a: 7.255,
 				d: 5.209,
 				alpha: 0.285,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -2073,9 +2010,6 @@ export let dead = {
 				c: -7.197,
 				d: -2.529,
 				alpha: 0.406,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 11
 			},
 			fx_dust_2: {
@@ -2086,9 +2020,6 @@ export let dead = {
 				c: -1.155,
 				d: -4.172,
 				alpha: 0.445,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_3: {
@@ -2097,9 +2028,6 @@ export let dead = {
 				a: 7.675,
 				d: 5.621,
 				alpha: 0.219,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -2191,9 +2119,6 @@ export let dead = {
 				c: -6.822,
 				d: -3.308,
 				alpha: 0.348,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 11
 			},
 			fx_dust_2: {
@@ -2204,9 +2129,6 @@ export let dead = {
 				c: -0.739,
 				d: -4.722,
 				alpha: 0.359,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_3: {
@@ -2215,9 +2137,6 @@ export let dead = {
 				a: 8.04,
 				d: 5.979,
 				alpha: 0.16,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -2309,9 +2228,6 @@ export let dead = {
 				c: -6.23,
 				d: -4.014,
 				alpha: 0.297,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 11
 			},
 			fx_dust_2: {
@@ -2322,9 +2238,6 @@ export let dead = {
 				c: -0.278,
 				d: -5.203,
 				alpha: 0.285,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_3: {
@@ -2333,9 +2246,6 @@ export let dead = {
 				a: 8.347,
 				d: 6.282,
 				alpha: 0.109,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -2427,9 +2337,6 @@ export let dead = {
 				c: -5.409,
 				d: -4.657,
 				alpha: 0.25,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 11
 			},
 			fx_dust_2: {
@@ -2440,9 +2347,6 @@ export let dead = {
 				c: 0.151,
 				d: -5.617,
 				alpha: 0.219,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_3: {
@@ -2451,9 +2355,6 @@ export let dead = {
 				a: 8.599,
 				d: 6.529,
 				alpha: 0.07,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -2545,9 +2446,6 @@ export let dead = {
 				c: -4.501,
 				d: -5.198,
 				alpha: 0.207,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 11
 			},
 			fx_dust_2: {
@@ -2558,9 +2456,6 @@ export let dead = {
 				c: 0.624,
 				d: -5.966,
 				alpha: 0.16,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_3: {
@@ -2569,9 +2464,6 @@ export let dead = {
 				a: 8.796,
 				d: 6.722,
 				alpha: 0.039,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -2663,9 +2555,6 @@ export let dead = {
 				c: -3.506,
 				d: -5.649,
 				alpha: 0.168,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 11
 			},
 			fx_dust_2: {
@@ -2676,9 +2565,6 @@ export let dead = {
 				c: 1.081,
 				d: -6.252,
 				alpha: 0.109,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_3: {
@@ -2687,9 +2573,6 @@ export let dead = {
 				a: 8.935,
 				d: 6.86,
 				alpha: 0.02,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -2781,9 +2664,6 @@ export let dead = {
 				c: -2.51,
 				d: -6.009,
 				alpha: 0.133,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 11
 			},
 			fx_dust_2: {
@@ -2794,9 +2674,6 @@ export let dead = {
 				c: 1.462,
 				d: -6.481,
 				alpha: 0.07,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_3: {
@@ -2805,9 +2682,6 @@ export let dead = {
 				a: 9.02,
 				d: 6.942,
 				alpha: 0.004,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -2899,9 +2773,6 @@ export let dead = {
 				c: -1.521,
 				d: -6.289,
 				alpha: 0.102,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 11
 			},
 			fx_dust_2: {
@@ -2912,9 +2783,6 @@ export let dead = {
 				c: 1.79,
 				d: -6.653,
 				alpha: 0.039,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_3: {
@@ -2923,9 +2791,6 @@ export let dead = {
 				a: 9.048,
 				d: 6.97,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -3017,9 +2882,6 @@ export let dead = {
 				c: -0.616,
 				d: -6.497,
 				alpha: 0.074,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -3030,9 +2892,6 @@ export let dead = {
 				c: 2.051,
 				d: -6.772,
 				alpha: 0.02,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -3124,9 +2983,6 @@ export let dead = {
 				c: 0.174,
 				d: -6.645,
 				alpha: 0.051,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -3137,9 +2993,6 @@ export let dead = {
 				c: 2.195,
 				d: -6.844,
 				alpha: 0.004,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {
@@ -3231,9 +3084,6 @@ export let dead = {
 				c: 0.869,
 				d: -6.745,
 				alpha: 0.031,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -3244,9 +3094,6 @@ export let dead = {
 				c: 2.262,
 				d: -6.87,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			left_arm: {

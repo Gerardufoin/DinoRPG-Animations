@@ -23,8 +23,8 @@ export let mapping = {
 	'Symbol 156': 'fx_dust_1',
 	'Symbol 156-1': 'fx_dust_2',
 	'Symbol 156-2': 'fx_dust_3',
-	'Symbol 160': 'left_hand',
-	'Symbol 160-1': 'right_hand',
+	'Symbol 160': 'open_left_hand',
+	'Symbol 160-1': 'open_right_hand',
 	// 230
 	'Symbol 173_p6a': 'front_left_leg',
 	'Symbol 173_p6b': 'front_right_leg',

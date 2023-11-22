@@ -8,9 +8,10 @@ import { jump } from './animations/jump.js';
 import { attack } from './animations/attack.js';
 import { land } from './animations/land.js';
 import { dead } from './animations/dead.js';
-import { ref } from '../references.js';
-import { parts } from './parts.js';
 import { fx_dust } from '../fx/dust.js';
+import { release } from './animations/release.js';
+import { parts } from './parts.js';
+import { ref } from '../references.js';
 
 export let gorilloz = {
 	name: 'gorilloz',
@@ -181,6 +182,10 @@ export let gorilloz = {
 		left_hand: parts.hand,
 		// 674 p8a
 		left_arm: parts.arm,
+		// 160
+		open_left_hand: parts.open_hand,
+		// 160
+		open_right_hand: parts.open_hand,
 		// 146
 		fx_impact_1: [
 			{
@@ -240,8 +245,8 @@ export let gorilloz = {
 		// 700 idx 5
 		ill: { offset: 5, anim: stand },
 		// 704
-		fly: jump
+		fly: jump,
 		// 705
-		//release: release
+		release: release
 	}
 };

@@ -9,6 +9,7 @@ import { land } from './animations/land.js';
 import { attack } from './animations/attack.js';
 import { dead } from './animations/dead.js';
 import { release } from './animations/release.js';
+import { fx_dust } from '../fx/dust.js';
 import { ref } from '../references.js';
 
 export let moueffe = {
@@ -513,7 +514,7 @@ export let moueffe = {
 			{
 				// 159
 				colorIdx: 0,
-				ref: ref.moueffe.hand,
+				ref: ref.shared.hand,
 				transform: {
 					tx: -2.75,
 					ty: -2.15
@@ -568,7 +569,7 @@ export let moueffe = {
 			{
 				// 159
 				colorIdx: 0,
-				ref: ref.moueffe.hand,
+				ref: ref.shared.hand,
 				transform: {
 					tx: -2.75,
 					ty: -2.15
@@ -606,38 +607,11 @@ export let moueffe = {
 			}
 		],
 		// 154
-		fx_dust_1: [
-			{
-				ref: ref.fx.dust,
-				colorOffset: {
-					r: -11,
-					g: -51,
-					b: -92
-				}
-			}
-		],
+		fx_dust_1: fx_dust,
 		// 154
-		fx_dust_2: [
-			{
-				ref: ref.fx.dust,
-				colorOffset: {
-					r: -11,
-					g: -51,
-					b: -92
-				}
-			}
-		],
+		fx_dust_2: fx_dust,
 		// 154
-		fx_dust_3: [
-			{
-				ref: ref.fx.dust,
-				colorOffset: {
-					r: -11,
-					g: -51,
-					b: -92
-				}
-			}
-		]
+		fx_dust_3: fx_dust
 	},
 	animations: {
 		// cast(140), sleep are same as stand

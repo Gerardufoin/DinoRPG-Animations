@@ -229,5 +229,17 @@ export let parts = {
 				}
 			]
 		}
+	],
+	// 160
+	open_hand: [
+		{
+			// 159
+			colorIdx: 0,
+			ref: ref.shared.hand,
+			transform: {
+				tx: -2.75,
+				ty: -2.15
+			}
+		}
 	]
 };
