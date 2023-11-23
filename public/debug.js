@@ -170,13 +170,21 @@ addDinoz('99Lh9VynQ3nnr000');
 addDinoz('99DUB6MqLdiAm000');
 addDinoz('98jwN04PyJ2Qs000');*/
 // Gorilloz
-addDinoz('A9ldMErr30hTq000', true);
+/*addDinoz('A9ldMErr30hTq000', true);
 addDinoz('A9viVftvErDyE110');
 addDinoz('A3RmxwZWWRtec000');
 addDinoz('A97tfssT3l3hV000');
 addDinoz('A5vm6ZNJCFyn5000');
 addDinoz('AArPCd4p8zOO6000');
-addDinoz('AAF5ECnNvanRc000');
+addDinoz('AAF5ECnNvanRc000');*/
+// Wanwan
+addDinoz('B9s415NH45d7A000', true);
+addDinoz('B9PSsKZ8D4JP6000');
+addDinoz('B9ovGzEZvQT3H210');
+addDinoz('B9enDihLVvE3D000');
+addDinoz('B7slIovDMmyWd000');
+addDinoz('BAleFPXaxTma6000');
+addDinoz('BAx5zblke9cgx000');
 
 /*const app = new Application({
 	background: '#E7B577',

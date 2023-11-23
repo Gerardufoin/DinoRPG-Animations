@@ -11,6 +11,20 @@ import { nuagoz } from './nuagoz/nuagoz.js';
 import { sirain } from './sirain/sirain.js';
 import { hippoclamp } from './hippoclamp/hippoclamp.js';
 import { gorilloz } from './gorilloz/gorilloz.js';
+import { wanwan } from './wanwan/wanwan.js';
 
-export let dinoz = [moueffe, pigmou, winks, planaile, castivore, rocky, pteroz, nuagoz, sirain, hippoclamp, gorilloz];
+export let dinoz = [
+	moueffe,
+	pigmou,
+	winks,
+	planaile,
+	castivore,
+	rocky,
+	pteroz,
+	nuagoz,
+	sirain,
+	hippoclamp,
+	gorilloz,
+	wanwan
+];
 export let error = bad;

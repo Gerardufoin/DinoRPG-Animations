@@ -31,7 +31,7 @@ The file is comprised of the following entities:
 -   sirain (done)
 -   hippoclamp (done)
 -   gorilloz (done)
--   wanwan
+-   wanwan (done)
 -   santaz
 -   feross
 -   kabuki

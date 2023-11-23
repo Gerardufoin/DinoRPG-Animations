@@ -120,5 +120,20 @@ export let mapping = {
 	'Symbol 677': 'body',
 	'Symbol 690_p7a': 'head',
 	'Symbol 693_p3': 'face',
-	'Symbol 698_p5a': 'left_ear'
+	'Symbol 698_p5a': 'left_ear',
+	// 775
+	'Symbol 721_p7': 'tail',
+	'Symbol 730_p6a': 'left_ear',
+	'Symbol 730_p6b': 'right_ear',
+	'Symbol 735_p8a': 'left_front_leg',
+	'Symbol 735_p8b': 'right_front_leg',
+	'Symbol 735_p8c': 'left_back_leg',
+	'Symbol 735_p8d': 'right_back_leg',
+	'Symbol 738': 'lower_body',
+	'Symbol 741': 'upper_body',
+	'Symbol 744': 'head',
+	'Symbol 753_p3a': 'left_eye',
+	'Symbol 753_p3b': 'right_eye',
+	'Symbol 762_p9': 'hair',
+	'Symbol 764_col1': 'nose'
 };
