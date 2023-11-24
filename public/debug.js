@@ -178,13 +178,21 @@ addDinoz('A5vm6ZNJCFyn5000');
 addDinoz('AArPCd4p8zOO6000');
 addDinoz('AAF5ECnNvanRc000');*/
 // Wanwan
-addDinoz('B9s415NH45d7A000', true);
+/*addDinoz('B9s415NH45d7A000', true);
 addDinoz('B9PSsKZ8D4JP6000');
 addDinoz('B9ovGzEZvQT3H210');
 addDinoz('B9enDihLVvE3D000');
 addDinoz('B7slIovDMmyWd000');
 addDinoz('BAleFPXaxTma6000');
-addDinoz('BAx5zblke9cgx000');
+addDinoz('BAx5zblke9cgx000');*/
+// Santaz
+addDinoz('C9ZnsZXkwu7bB000', true);
+addDinoz('C7zx3On8Hw1Ji000');
+addDinoz('C9QcPELfYOd1i110');
+addDinoz('C9X4Kmyof9pjf000');
+addDinoz('C97DH3ppWCHdw000');
+addDinoz('C0XqRr24FdQzB000');
+addDinoz('C3ZnbdXjLMtDV000');
 
 /*const app = new Application({
 	background: '#E7B577',

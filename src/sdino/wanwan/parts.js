@@ -232,9 +232,10 @@ export let parts = {
 			]
 		}
 	],
-	// 764 p1
+	// 764 col1
 	nose: [
 		{
+			colorIdx: 1,
 			ref: ref.wanwan.nose
 		}
 	]

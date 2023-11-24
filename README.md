@@ -32,7 +32,7 @@ The file is comprised of the following entities:
 -   hippoclamp (done)
 -   gorilloz (done)
 -   wanwan (done)
--   santaz
+-   santaz (done)
 -   feross
 -   kabuki
 -   mahamuti

@@ -12,6 +12,7 @@ import { sirain } from './sirain/sirain.js';
 import { hippoclamp } from './hippoclamp/hippoclamp.js';
 import { gorilloz } from './gorilloz/gorilloz.js';
 import { wanwan } from './wanwan/wanwan.js';
+import { santaz } from './santaz/santaz.js';
 
 export let dinoz = [
 	moueffe,
@@ -25,6 +26,7 @@ export let dinoz = [
 	sirain,
 	hippoclamp,
 	gorilloz,
-	wanwan
+	wanwan,
+	santaz
 ];
 export let error = bad;
