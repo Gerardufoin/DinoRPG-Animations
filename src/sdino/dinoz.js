@@ -13,6 +13,7 @@ import { hippoclamp } from './hippoclamp/hippoclamp.js';
 import { gorilloz } from './gorilloz/gorilloz.js';
 import { wanwan } from './wanwan/wanwan.js';
 import { santaz } from './santaz/santaz.js';
+import { feross } from './feross/feross.js';
 
 export let dinoz = [
 	moueffe,
@@ -27,6 +28,7 @@ export let dinoz = [
 	hippoclamp,
 	gorilloz,
 	wanwan,
-	santaz
+	santaz,
+	feross
 ];
 export let error = bad;

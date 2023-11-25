@@ -151,5 +151,18 @@ export let mapping = {
 	'Symbol 820': 'head',
 	'Symbol 823': 'left_ear',
 	'Symbol 831_p4': 'nose',
-	'Symbol 844_p9': 'hair'
+	'Symbol 844_p9': 'hair',
+	// 913
+	'Symbol 858_p6a': 'left_ear',
+	'Symbol 858_p6b': 'right_ear',
+	'Symbol 861': 'butt',
+	'Symbol 867_p4b': 'left_front_leg',
+	'Symbol 867_p4c': 'left_back_leg',
+	'Symbol 867_p4d': 'right_front_leg',
+	'Symbol 878_p7': 'body',
+	'Symbol 881_p8': 'head',
+	'Symbol 887_p3': 'left_eye',
+	'Symbol 892_special': 'special',
+	'Symbol 898_p5': 'horn',
+	'Symbol 901_p4': 'left_nostril'
 };

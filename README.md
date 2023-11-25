@@ -33,7 +33,7 @@ The file is comprised of the following entities:
 -   gorilloz (done)
 -   wanwan (done)
 -   santaz (done)
--   feross
+-   feross (done)
 -   kabuki
 -   mahamuti
 -   soufflet
