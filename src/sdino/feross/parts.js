@@ -1,41 +1,6 @@
 // @ts-check
 import { ref } from '../references.js';
 
-// 877 p9
-const markings = {
-	partIdx: 9,
-	frames: [0, 1, 2],
-	parts: [
-		// 874
-		{
-			colorIdx: 3,
-			ref: ref.feross.marking_dots,
-			transform: {
-				tx: -0.5,
-				ty: -2.95
-			}
-		},
-		// 875
-		{
-			colorIdx: 3,
-			ref: ref.feross.marking_snakes,
-			transform: {
-				tx: -0.5,
-				ty: -2.95
-			}
-		},
-		// 876
-		{
-			colorIdx: 3,
-			ref: ref.feross.marking_waves,
-			transform: {
-				tx: -0.5,
-				ty: -2.95
-			}
-		}
-	]
-};
-
 export let parts = {
 	// 858 p6
 	ear: [
@@ -105,7 +70,40 @@ export let parts = {
 						colorIdx: 1,
 						ref: ref.feross.body
 					},
-					markings
+					// 877 p9
+					{
+						partIdx: 9,
+						frames: [0, 1, 2],
+						parts: [
+							// 874
+							{
+								colorIdx: 3,
+								ref: ref.feross.marking_dots,
+								transform: {
+									tx: -0.5,
+									ty: -2.95
+								}
+							},
+							// 875
+							{
+								colorIdx: 3,
+								ref: ref.feross.marking_snakes,
+								transform: {
+									tx: -0.5,
+									ty: -2.95
+								}
+							},
+							// 876
+							{
+								colorIdx: 3,
+								ref: ref.feross.marking_waves,
+								transform: {
+									tx: -0.5,
+									ty: -2.95
+								}
+							}
+						]
+					}
 				]
 			]
 		}
