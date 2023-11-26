@@ -34,7 +34,7 @@ The file is comprised of the following entities:
 -   wanwan (done)
 -   santaz (done)
 -   feross (done)
--   kabuki
+-   kabuki (done)
 -   mahamuti
 -   soufflet
 -   toufufu

@@ -14,6 +14,7 @@ import { gorilloz } from './gorilloz/gorilloz.js';
 import { wanwan } from './wanwan/wanwan.js';
 import { santaz } from './santaz/santaz.js';
 import { feross } from './feross/feross.js';
+import { kabuki } from './kabuki/kabuki.js';
 
 export let dinoz = [
 	moueffe,
@@ -29,6 +30,7 @@ export let dinoz = [
 	gorilloz,
 	wanwan,
 	santaz,
-	feross
+	feross,
+	kabuki
 ];
 export let error = bad;

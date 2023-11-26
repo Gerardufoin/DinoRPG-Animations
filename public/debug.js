@@ -194,13 +194,21 @@ addDinoz('C97DH3ppWCHdw000');
 addDinoz('C0XqRr24FdQzB000');
 addDinoz('C3ZnbdXjLMtDV000');*/
 // Feross
-addDinoz('D9hNs2GNNh4uK000', true);
+/*addDinoz('D9hNs2GNNh4uK000', true);
 addDinoz('D9PMnhzFbVAl9220');
 addDinoz('D95lCJKCifGXe110');
 addDinoz('D9PWhklw1HxDB000');
 addDinoz('D92i3ZvNKfXea000');
 addDinoz('D8yFAfhjVIGPk000');
-addDinoz('D06fMERxnBfnZ000');
+addDinoz('D06fMERxnBfnZ000');*/
+// Kabuki
+addDinoz('E95H6h925l3Sm000', true);
+addDinoz('E9lgeLcaVbVUm000');
+addDinoz('E9gcKDuoo1YUZ000');
+addDinoz('E9dIEvM5ddKY6110');
+addDinoz('E2vsXhu5OGIJx000');
+addDinoz('EAWY3u1UXSrnn000');
+addDinoz('EAspgFwmUFOep000');
 
 /*const app = new Application({
 	background: '#E7B577',
