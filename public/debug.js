@@ -202,13 +202,21 @@ addDinoz('D92i3ZvNKfXea000');
 addDinoz('D8yFAfhjVIGPk000');
 addDinoz('D06fMERxnBfnZ000');*/
 // Kabuki
-addDinoz('E95H6h925l3Sm000', true);
+/*addDinoz('E95H6h925l3Sm000', true);
 addDinoz('E9lgeLcaVbVUm000');
 addDinoz('E9gcKDuoo1YUZ000');
 addDinoz('E9dIEvM5ddKY6110');
 addDinoz('E2vsXhu5OGIJx000');
 addDinoz('EAWY3u1UXSrnn000');
-addDinoz('EAspgFwmUFOep000');
+addDinoz('EAspgFwmUFOep000');*/
+// Mahamuti
+addDinoz('F9W8Nf7jnHNMO000', true);
+addDinoz('F5C9e0EUScT18000');
+addDinoz('F9RS7w0L7t7c7110');
+addDinoz('F9kLjnUdl0utp000');
+addDinoz('F9VcG8Gz0Mgcy000');
+addDinoz('F9Uhqbn8t9Ta3000');
+addDinoz('F9uQtkcMeyOfI110');
 
 /*const app = new Application({
 	background: '#E7B577',

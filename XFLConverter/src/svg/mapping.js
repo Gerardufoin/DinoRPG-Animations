@@ -264,8 +264,8 @@ export let mapping = {
 	759: 'wanwan/hair_flow',
 	761: 'wanwan/hair_back',
 	763: 'wanwan/nose',
-	776: 'santaz/hoof',
-	777: 'santaz/leg',
+	776: 'shared/hoof',
+	777: 'shared/leg',
 	780: 'santaz/body',
 	784: 'santaz/back',
 	786: 'santaz/back_bristly',
@@ -336,5 +336,11 @@ export let mapping = {
 	947: 'kabuki/eyes_red',
 	950: 'kabuki/hair',
 	953: 'kabuki/special',
+	970: 'mahamuti/ear',
+	972: 'mahamuti/earring',
+	975: 'mahamuti/ear_big',
+	977: 'mahamuti/ear_long',
+	979: 'mahamuti/ear_slant',
+	981: 'mahamuti/ear_small',
 	1640: 'bad'
 };

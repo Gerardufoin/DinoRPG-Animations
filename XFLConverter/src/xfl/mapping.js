@@ -183,5 +183,27 @@ export let mapping = {
 	'Symbol 945': 'head',
 	'Symbol 948_p1': 'eyes',
 	'Symbol 951': 'hair',
-	'Symbol 953_special': 'special'
+	'Symbol 953_special': 'special',
+	// 1044
+	'Symbol 1002': 'head',
+	'Symbol 1005_special': 'special',
+	'Symbol 1017': 'hair',
+	'Symbol 1021': 'trunk_bottom',
+	'Symbol 1021-1': 'trunk_mid',
+	'Symbol 1021-2': 'trunk_top',
+	'Symbol 1024': 'trunk_end',
+	'Symbol 1031': 'left_tusk',
+	'Symbol 968': 'left_front_leg',
+	'Symbol 968-1': 'left_back_leg',
+	'Symbol 968-2': 'right_front_leg',
+	'Symbol 968-3': 'right_back_leg',
+	'Symbol 983': 'left_ear',
+	'Symbol 983-1': 'right_ear',
+	'Symbol 984': 'body',
+	'Symbol 985_p6': 'back',
+	'Symbol 992': 'right_tusk',
+	'Symbol 995': 'left_tusk_fur',
+	'Symbol 995-1': 'right_tusk_fur',
+	'Symbol 999_p3a': 'left_eye',
+	'Symbol 999_p3b': 'right_eye'
 };

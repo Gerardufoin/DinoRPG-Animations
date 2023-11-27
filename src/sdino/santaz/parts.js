@@ -7,7 +7,7 @@ export let parts = {
 	leg: [
 		// 776
 		{
-			ref: ref.santaz.hoof,
+			ref: ref.shared.hoof,
 			transform: {
 				ty: 0.6
 			}
@@ -15,7 +15,7 @@ export let parts = {
 		// 778
 		{
 			colorIdx: 1,
-			ref: ref.santaz.leg,
+			ref: ref.shared.leg,
 			transform: {
 				ty: -0.5
 			}
