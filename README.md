@@ -35,7 +35,7 @@ The file is comprised of the following entities:
 -   santaz (done)
 -   feross (done)
 -   kabuki (done)
--   mahamuti (in progress)
+-   mahamuti (done)
 -   soufflet
 -   toufufu
 -   quetzu

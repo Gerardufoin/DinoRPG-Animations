@@ -204,25 +204,219 @@ export let parts = {
 		}
 	],
 	// 984
-	body: [],
+	body: [
+		// 781
+		{
+			colorIdx: 1,
+			ref: ref.shared.body,
+			transform: {
+				tx: 0.05
+			}
+		}
+	],
 	// 985 _p6
-	back: [],
+	back: [
+		// 784
+		{
+			colorIdx: 2,
+			ref: ref.shared.back
+		}
+	],
 	// 992
-	right_tusk: [],
+	tusk_side: [
+		// 991 p7
+		{
+			partIdx: 7,
+			frames: [
+				0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+				2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+				4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+			],
+			parts: [
+				// 986
+				{
+					ref: ref.mahamuti.r_tusk_gold
+				},
+				// 987
+				{
+					ref: ref.mahamuti.r_tusk
+				},
+				// 988
+				{
+					ref: ref.mahamuti.r_tusk_long
+				},
+				// 989
+				{
+					ref: ref.mahamuti.r_tusk_bent
+				},
+				// 990
+				{
+					ref: ref.mahamuti.r_tusk_bent_white
+				}
+			]
+		}
+	],
 	// 995
-	tusk_fur: [],
+	tusk_fur: [
+		// 994
+		{
+			colorIdx: 1,
+			ref: ref.mahamuti.tusk_fur
+		}
+	],
 	// 999 p3
-	eye: [],
+	eye: [
+		// 997
+		{
+			colorIdx: 1,
+			ref: ref.mahamuti.eye,
+			transform: {
+				tx: -0.35,
+				ty: -0.5
+			}
+		},
+		// 998
+		{
+			ref: ref.mahamuti.eye_pupil
+		}
+	],
 	// 1002
-	head: [],
+	head: [
+		// 1001
+		{
+			colorIdx: 1,
+			ref: ref.mahamuti.head,
+			transform: {
+				tx: -0.2,
+				ty: 0.8
+			}
+		}
+	],
 	// 1005 special
-	special: [],
+	special: [
+		// 1004
+		{
+			special: true,
+			colorIdx: 1,
+			ref: ref.mahamuti.special
+		}
+	],
 	// 1017
-	hair: [],
+	hair: [
+		// 1016 p3
+		{
+			partIdx: 3,
+			frames: [0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4],
+			parts: [
+				// 1007
+				{
+					colorIdx: 2,
+					ref: ref.mahamuti.hair_poop,
+					transform: {
+						a: 1.226,
+						d: 1.226,
+						b: 0.201,
+						c: -0.201
+					}
+				},
+				// 1009
+				{
+					colorIdx: 2,
+					ref: ref.mahamuti.hair,
+					transform: {
+						a: 1.226,
+						d: 1.226,
+						b: 0.201,
+						c: -0.201
+					}
+				},
+				// 1011
+				{
+					colorIdx: 2,
+					ref: ref.mahamuti.hair_strands,
+					transform: {
+						a: 1.226,
+						d: 1.226,
+						b: 0.201,
+						c: -0.201
+					}
+				},
+				// 1013
+				{
+					colorIdx: 2,
+					ref: ref.mahamuti.hair_split,
+					transform: {
+						a: 1.226,
+						d: 1.226,
+						b: 0.201,
+						c: -0.201
+					}
+				},
+				// 1015
+				{
+					colorIdx: 2,
+					ref: ref.mahamuti.hair_flat,
+					transform: {
+						a: 1.226,
+						d: 1.226,
+						b: 0.201,
+						c: -0.201
+					}
+				}
+			]
+		}
+	],
 	// 1021
-	trunk: [],
+	trunk: [
+		// 1020
+		{
+			colorIdx: 1,
+			ref: ref.mahamuti.trunk
+		}
+	],
 	// 1024
-	trunk_end: [],
+	trunk_end: [
+		// 1023
+		{
+			colorIdx: 1,
+			ref: ref.mahamuti.trunk_end,
+			transform: {
+				ty: -0.15
+			}
+		}
+	],
 	// 1031
-	left_tusk: []
+	tusk_front: [
+		// 1030 p7
+		{
+			partIdx: 7,
+			frames: [
+				0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+				2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+				4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+			],
+			parts: [
+				// 1025
+				{
+					ref: ref.mahamuti.l_tusk_gold
+				},
+				// 1026
+				{
+					ref: ref.mahamuti.l_tusk
+				},
+				// 1027
+				{
+					ref: ref.mahamuti.l_tusk_long
+				},
+				// 1028
+				{
+					ref: ref.mahamuti.l_tusk_bent
+				},
+				// 1029
+				{
+					ref: ref.mahamuti.l_tusk_bent_white
+				}
+			]
+		}
+	]
 };

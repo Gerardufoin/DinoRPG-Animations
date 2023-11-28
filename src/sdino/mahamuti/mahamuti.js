@@ -1,7 +1,7 @@
 // @ts-check
 
 import { stand } from './animations/stand.js';
-/*import { walk } from './animations/walk.js';
+import { walk } from './animations/walk.js';
 import { run } from './animations/run.js';
 import { hit } from './animations/hit.js';
 import { jump } from './animations/jump.js';
@@ -9,7 +9,6 @@ import { attack } from './animations/attack.js';
 import { land } from './animations/land.js';
 import { dead } from './animations/dead.js';
 import { release } from './animations/release.js';
-import { fx_dust } from '../fx/dust.js';*/
 import { parts } from './parts.js';
 import { ref } from '../references.js';
 
@@ -204,7 +203,7 @@ export let mahamuti = {
 		// 985 _p6
 		back: parts.back,
 		// 992
-		right_tusk: parts.right_tusk,
+		right_tusk: parts.tusk_side,
 		// 995
 		right_tusk_fur: parts.tusk_fur,
 		// 999 _p3b
@@ -228,17 +227,19 @@ export let mahamuti = {
 		// 1024
 		trunk_end: parts.trunk_end,
 		// 1031
-		left_tusk: parts.left_tusk,
+		left_tusk: parts.tusk_front,
 		// 995
-		left_tusk_fur: parts.tusk_fur
+		left_tusk_fur: parts.tusk_fur,
+		// 991
+		left_tusk_anim: parts.tusk_side
 	},
 	animations: {
 		// missing cast
 		// sleep, fly same as stand
 		// 1034
-		stand: stand
+		stand: stand,
 		// 1035
-		/*walk: walk,
+		walk: walk,
 		// 1036
 		run: run,
 		// 1037
@@ -256,6 +257,6 @@ export let mahamuti = {
 		// 1038
 		fly: jump,
 		// 1042
-		release: release*/
+		release: release
 	}
 };

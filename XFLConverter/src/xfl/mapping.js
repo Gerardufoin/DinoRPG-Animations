@@ -202,6 +202,7 @@ export let mapping = {
 	'Symbol 984': 'body',
 	'Symbol 985_p6': 'back',
 	'Symbol 992': 'right_tusk',
+	'Symbol 992-1': 'left_tusk_anim',
 	'Symbol 995': 'left_tusk_fur',
 	'Symbol 995-1': 'right_tusk_fur',
 	'Symbol 999_p3a': 'left_eye',

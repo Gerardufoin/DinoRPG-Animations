@@ -26,7 +26,7 @@ export let parts = {
 		// 781
 		{
 			colorIdx: 1,
-			ref: ref.santaz.body,
+			ref: ref.shared.body,
 			transform: {
 				tx: 0.05
 			}
@@ -41,12 +41,12 @@ export let parts = {
 				// 784
 				{
 					colorIdx: 2,
-					ref: ref.santaz.back
+					ref: ref.shared.back
 				},
 				// 784
 				{
 					colorIdx: 2,
-					ref: ref.santaz.back,
+					ref: ref.shared.back,
 					transform: {
 						tx: 0.0,
 						ty: 0.3,
@@ -68,7 +68,7 @@ export let parts = {
 				// 784
 				{
 					colorIdx: 2,
-					ref: ref.santaz.back,
+					ref: ref.shared.back,
 					transform: {
 						tx: 0.0,
 						ty: 1.3,

@@ -210,11 +210,11 @@ addDinoz('E2vsXhu5OGIJx000');
 addDinoz('EAWY3u1UXSrnn000');
 addDinoz('EAspgFwmUFOep000');*/
 // Mahamuti
-addDinoz('F9W8Nf7jnHNMO000', true);
+addDinoz('F98p9qNEOvDiW000', true);
 addDinoz('F5C9e0EUScT18000');
 addDinoz('F9RS7w0L7t7c7110');
-addDinoz('F9kLjnUdl0utp000');
-addDinoz('F9VcG8Gz0Mgcy000');
+addDinoz('F9YOJgyccyvS4000');
+addDinoz('F9ck4MOItJ39n000');
 addDinoz('F9Uhqbn8t9Ta3000');
 addDinoz('F9uQtkcMeyOfI110');
 
