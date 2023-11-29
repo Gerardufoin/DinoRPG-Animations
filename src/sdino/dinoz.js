@@ -16,6 +16,7 @@ import { santaz } from './santaz/santaz.js';
 import { feross } from './feross/feross.js';
 import { kabuki } from './kabuki/kabuki.js';
 import { mahamuti } from './mahamuti/mahamuti.js';
+import { soufflet } from './soufflet/soufflet.js';
 
 export let dinoz = [
 	moueffe,
@@ -33,6 +34,7 @@ export let dinoz = [
 	santaz,
 	feross,
 	kabuki,
-	mahamuti
+	mahamuti,
+	soufflet
 ];
 export let error = bad;

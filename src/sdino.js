@@ -145,7 +145,11 @@ export class sdino extends Container {
 			let part = this.decode62(data.charCodeAt(i));
 			dParts.push(part);
 		}
-		this._dinoInfos = dinoz[dParts[0]];
+		const infos = dinoz[dParts[0]];
+		this._dinoInfos =
+			infos && infos.partIdx !== undefined
+				? infos.parts[infos.frames[dParts[infos.partIdx] % infos.frames.length]]
+				: infos;
 		if (!this._dinoInfos || dParts.length < 10) {
 			this._dinoInfos = error;
 			this.apply(dParts);

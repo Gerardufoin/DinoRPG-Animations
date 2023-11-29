@@ -206,5 +206,14 @@ export let mapping = {
 	'Symbol 995': 'left_tusk_fur',
 	'Symbol 995-1': 'right_tusk_fur',
 	'Symbol 999_p3a': 'left_eye',
-	'Symbol 999_p3b': 'right_eye'
+	'Symbol 999_p3b': 'right_eye',
+	// 1133
+	'Symbol 1071': 'head',
+	'Symbol 1092': 'butt',
+	'Symbol 1093': 'eyes',
+	'Symbol 1094': 'left_antennae',
+	'Symbol 1095': 'right_antennae',
+	'Symbol 1119': 'left_arm',
+	'Symbol 1119-1': 'right_arm',
+	'Symbol 1122': 'body'
 };
