@@ -36,7 +36,7 @@ The file is comprised of the following entities:
 -   feross (done)
 -   kabuki (done)
 -   mahamuti (done)
--   soufflet (in progress)
+-   soufflet (done)
 -   toufufu
 -   quetzu
 -   smog

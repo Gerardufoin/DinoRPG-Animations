@@ -3,12 +3,12 @@
 export let stand = {
 	frames: [
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.5,
 				ty: -7.6,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.75,
 				ty: -7.55,
 				l: 6
@@ -55,12 +55,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.5,
 				ty: -7.7,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.75,
 				ty: -7.65,
 				l: 6
@@ -107,12 +107,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.45,
 				ty: -7.9,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.7,
 				ty: -7.85,
 				l: 6
@@ -159,12 +159,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.45,
 				ty: -8.2,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.7,
 				ty: -8.15,
 				l: 6
@@ -211,12 +211,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.4,
 				ty: -8.6,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.65,
 				ty: -8.55,
 				l: 6
@@ -263,12 +263,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.4,
 				ty: -8.95,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.65,
 				ty: -8.9,
 				l: 6
@@ -315,12 +315,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.35,
 				ty: -9.35,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.6,
 				ty: -9.3,
 				l: 6
@@ -367,12 +367,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.35,
 				ty: -9.65,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.6,
 				ty: -9.6,
 				l: 6
@@ -419,12 +419,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.3,
 				ty: -9.9,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.55,
 				ty: -9.85,
 				l: 6
@@ -471,12 +471,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.3,
 				ty: -10,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.55,
 				ty: -9.95,
 				l: 6
@@ -523,12 +523,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.3,
 				ty: -9.9,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.55,
 				ty: -9.85,
 				l: 6
@@ -575,12 +575,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.35,
 				ty: -9.7,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.6,
 				ty: -9.65,
 				l: 6
@@ -627,12 +627,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.35,
 				ty: -9.4,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.6,
 				ty: -9.35,
 				l: 6
@@ -679,12 +679,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.4,
 				ty: -9.05,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.65,
 				ty: -9,
 				l: 6
@@ -731,12 +731,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.4,
 				ty: -8.65,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.65,
 				ty: -8.6,
 				l: 6
@@ -783,12 +783,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.45,
 				ty: -8.3,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.7,
 				ty: -8.25,
 				l: 6
@@ -835,12 +835,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.45,
 				ty: -7.95,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.7,
 				ty: -7.9,
 				l: 6
@@ -887,12 +887,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.5,
 				ty: -7.7,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.75,
 				ty: -7.65,
 				l: 6
@@ -939,12 +939,12 @@ export let stand = {
 			}
 		},
 		{
-			right_antennae: {
+			left_antennae: {
 				tx: -6.5,
 				ty: -7.6,
 				l: 7
 			},
-			left_antennae: {
+			right_antennae: {
 				tx: -10.75,
 				ty: -7.55,
 				l: 6

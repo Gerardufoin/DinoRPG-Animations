@@ -19,8 +19,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/sdino/LIBRARY/Symbol 913.xml', '_p1'); // feross
 //parser.parse('./resources/sdino/LIBRARY/Symbol 965.xml', '_p1'); // kabuki
 //parser.parse('./resources/sdino/LIBRARY/Symbol 1044.xml', '_p1'); // mahamuti
-parser.parse('./resources/sdino/LIBRARY/Symbol 1133.xml', '_p1'); // soufflet
-parser.parse('./resources/sdino/LIBRARY/Symbol 1132.xml', '_anim'); // soufflet
+//parser.parse('./resources/sdino/LIBRARY/Symbol 1133.xml', '_p1'); // soufflet
+//parser.parse('./resources/sdino/LIBRARY/Symbol 1132.xml', '_anim'); // soufflet
 //parser.parse('./resources/sdino/LIBRARY/Symbol 156.xml', '_sub'); // fx_dust
 
 const adapter = new SVGAdapter();

@@ -1,13 +1,13 @@
 // @ts-check
 
 import { stand } from './animations/stand_larvae.js';
-/*import { walk } from './animations/walk.js';
-import { run } from './animations/run.js';
-import { hit } from './animations/hit.js';
-import { jump } from './animations/jump.js';
-import { attack } from './animations/attack.js';
-import { land } from './animations/land.js';
-import { dead } from './animations/dead.js';*/
+import { walk } from './animations/walk_larvae.js';
+import { run } from './animations/run_larvae.js';
+import { hit } from './animations/hit_larvae.js';
+import { jump } from './animations/jump_larvae.js';
+import { attack } from './animations/attack_larvae.js';
+import { land } from './animations/land_larvae.js';
+import { dead } from './animations/dead_larvae.js';
 import { parts, transforms, palette } from './parts.js';
 import { ref } from '../references.js';
 
@@ -40,9 +40,9 @@ export let soufflet_larvae = {
 		// 1093
 		eyes: parts.eyes,
 		// 1094
-		left_antennae: parts.left_antennae,
+		right_antennae: parts.right_antennae,
 		// 1095
-		right_antennae: parts.right_antennae
+		left_antennae: parts.left_antennae
 	},
 	animations: {
 		// missing cast, release, fly
@@ -50,7 +50,7 @@ export let soufflet_larvae = {
 		// 1096
 		stand: stand,
 		// 1097
-		/*walk: walk,
+		walk: walk,
 		// 1098
 		run: run,
 		// 1099
@@ -62,7 +62,7 @@ export let soufflet_larvae = {
 		// 1102
 		land: land,
 		// 1103
-		dead: dead,*/
+		dead: dead,
 		// 1096 idx 5
 		ill: { offset: 5, anim: stand }
 	}
