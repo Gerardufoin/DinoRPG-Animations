@@ -306,6 +306,9 @@ export class XFLParser {
 			mr: this.multiplyColors(m2.mr, m1.mr),
 			mg: this.multiplyColors(m2.mg, m1.mg),
 			mb: this.multiplyColors(m2.mb, m1.mb),
+			blx: this.multiplyColors(m2.blx, m1.blx),
+			bly: this.multiplyColors(m2.bly, m1.bly),
+			blq: this.multiplyColors(m2.blq, m1.blq),
 			l: m1.l ?? m2.l
 		};
 		matrix.a = matrix.a === 1 ? undefined : matrix.a;
@@ -367,8 +370,14 @@ export class XFLParser {
 						mr: this.parseFloat(symbolInstance.color?.Color?.redMultiplier),
 						mg: this.parseFloat(symbolInstance.color?.Color?.greenMultiplier),
 						mb: this.parseFloat(symbolInstance.color?.Color?.blueMultiplier),
+						blx: this.parseFloat(symbolInstance.filters?.BlurFilter?.blurX),
+						bly: this.parseFloat(symbolInstance.filters?.BlurFilter?.blurY),
+						blq: this.parseFloat(symbolInstance.filters?.BlurFilter?.quality),
 						l: layer
 					};
+					if (symbolInstance.filters?.AdjustColorFilter) {
+						console.log('AdjustColorFilter found in animation but not handled.');
+					}
 					if (FLAG_NO_RGB || ELEM_IGNORE_RGB.includes(elementNb)) {
 						frameData.or = frameData.og = frameData.ob = undefined;
 						frameData.mr = frameData.mg = frameData.mb = undefined;

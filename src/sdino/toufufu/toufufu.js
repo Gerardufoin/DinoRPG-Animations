@@ -1,0 +1,200 @@
+// @ts-check
+
+import { stand } from './animations/stand.js';
+/*import { walk } from './animations/walk.js';
+import { run } from './animations/run.js';
+import { hit } from './animations/hit.js';
+import { jump } from './animations/jump.js';
+import { attack } from './animations/attack.js';
+import { land } from './animations/land.js';
+import { dead } from './animations/dead.js';
+import { release } from './animations/release.js';
+import { fx_dust } from '../fx/dust.js';*/
+import { parts } from './parts.js';
+import { ref } from '../references.js';
+
+export let toufufu = {
+	name: 'toufufu',
+	transforms: [
+		// 1290
+		{
+			partIdx: 1,
+			transforms: [
+				{
+					tx: 0,
+					ty: 0,
+					brightness: 10,
+					contrast: 5
+				},
+				{
+					tx: 0,
+					ty: -0.8,
+					a: 1.018,
+					d: 1.028,
+					brightness: 10,
+					contrast: 5
+				},
+				{
+					tx: 0,
+					ty: -1.6,
+					a: 1.037,
+					d: 1.057,
+					brightness: 10,
+					contrast: 5
+				},
+				{
+					tx: 0,
+					ty: -2.4,
+					a: 1.055,
+					d: 1.085,
+					brightness: 10,
+					contrast: 5
+				},
+				{
+					tx: 0,
+					ty: -3.2,
+					a: 1.073,
+					d: 1.114,
+					brightness: 10,
+					contrast: 5
+				},
+				{
+					tx: -0.05,
+					ty: -4,
+					a: 1.092,
+					d: 1.142,
+					brightness: 10,
+					contrast: 5
+				},
+				{
+					tx: -0.05,
+					ty: -4.8,
+					a: 1.11,
+					d: 1.171,
+					brightness: 10,
+					contrast: 5
+				},
+				{
+					tx: 0,
+					ty: -5.6,
+					a: 1.128,
+					d: 1.199,
+					brightness: 10,
+					contrast: 5
+				},
+				{
+					tx: 0,
+					ty: -6.4,
+					a: 1.147,
+					d: 1.228,
+					brightness: 10,
+					contrast: 5
+				},
+				{
+					tx: 0,
+					ty: -7.2,
+					a: 1.165,
+					d: 1.256,
+					brightness: 10,
+					contrast: 5
+				}
+			]
+		},
+		// 1642
+		{
+			tx: -16.9,
+			ty: -12.8
+		}
+	],
+	glow: {
+		distance: 1,
+		color: 0x330000,
+		quality: 1,
+		strength: 0.3
+	},
+	palette: [
+		[
+			// col0
+			['#C69D52', '#B4B376', '#D9AA63', '#BF9D75', '#D0B098', '#D2B377', '#ECC1A9'],
+			// col1
+			['#BB1D1D', '#DF7E37', '#C48181', '#B5D3F0', '#FFF9AE', '#F0DC99', '#FCE647', '#838383'],
+			// col2
+			['#A13F3F', '#B85F1D', '#B14949', '#D5EAFF', '#FFF9AE', '#F0DC99', '#FFFF5E', '#A1A1A1'],
+			// col3
+			['#8E98FF', '#94F587', '#DD85FF', '#60E5E1', '#FF5151', '#5176E2', '#FFFF5E', '#A1A1A1']
+		]
+	],
+	shadow: {
+		ref: ref.fx.shadow,
+		transform: {
+			tx: -2.15,
+			ty: 10.4,
+			a: 0.968,
+			d: 0.709
+		},
+		alpha: 0.602,
+		blur: { x: 1, y: 1 }
+	},
+	parts: {
+		// 1162
+		tail: parts.tail,
+		// 1137
+		right_foot: parts.right_foot,
+		// 1140
+		right_upper_leg: parts.upper_leg,
+		// 1156
+		right_lower_leg: parts.lower_leg,
+		// 1159
+		right_upper_arm: parts.upper_arm,
+		// 1177
+		right_lower_arm: parts.lower_arm,
+		// 1174
+		right_hand: parts.hand,
+		// 1171
+		body: parts.body,
+		// 1260
+		head: parts.head,
+		// 1159
+		left_upper_arm: parts.upper_arm,
+		// 1177
+		left_lower_arm: parts.lower_arm,
+		// 1174
+		left_hand: parts.hand,
+		// 1180
+		left_foot: parts.left_foot,
+		// 1140
+		left_upper_leg: parts.upper_leg,
+		// 1156
+		left_lower_leg: parts.lower_leg
+	},
+	animations: {
+		// missing cast
+		// sleep, fly same as stand
+		// 1262
+		stand: stand
+		// 1263
+		/*walk: walk,
+		// 1264
+		run: run,
+		// 1265
+		hit: hit,
+		// 1266
+		jump: jump,
+		// 1277
+		attack: attack,
+		// 1278
+		land: land,
+		// 1279
+		dead: dead,
+		// 1280
+		sleep: sleep,
+		// 1280 idx 5
+		ill: { offset: 5, anim: sleep },
+		// 1283
+		big: big,
+		// 1284
+		release: release,
+		// 1288
+		special: special*/
+	}
+};

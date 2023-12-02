@@ -37,7 +37,7 @@ The file is comprised of the following entities:
 -   kabuki (done)
 -   mahamuti (done)
 -   soufflet (done)
--   toufufu
+-   toufufu (in progress)
 -   quetzu
 -   smog
 -   triceragnon

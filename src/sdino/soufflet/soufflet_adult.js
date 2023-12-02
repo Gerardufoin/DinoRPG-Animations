@@ -50,7 +50,7 @@ export let soufflet_adult = {
 	},
 	animations: {
 		// missing cast, release, fly
-		// walk (1125), run (1126), jump (1128) are the same animation than stand
+		// walk (1125), run (1126), jump (1128) are the same animation as stand
 		// 1124
 		stand: stand,
 		// 1127

@@ -215,5 +215,21 @@ export let mapping = {
 	'Symbol 1095': 'left_antennae',
 	'Symbol 1119': 'left_arm',
 	'Symbol 1119-1': 'right_arm',
-	'Symbol 1122': 'body'
+	'Symbol 1122': 'body',
+	// 1290
+	'Symbol 1137': 'right_foot',
+	'Symbol 1140': 'left_upper_leg',
+	'Symbol 1140-1': 'right_upper_leg',
+	'Symbol 1156': 'left_lower_leg',
+	'Symbol 1156-1': 'right_lower_leg',
+	'Symbol 1159': 'left_upper_arm',
+	'Symbol 1159-1': 'right_upper_arm',
+	'Symbol 1162': 'tail',
+	'Symbol 1171': 'body',
+	'Symbol 1174': 'left_hand',
+	'Symbol 1174-1': 'right_hand',
+	'Symbol 1177': 'left_lower_arm',
+	'Symbol 1177-1': 'right_lower_arm',
+	'Symbol 1180': 'left_foot',
+	'Symbol 1260': 'head'
 };
