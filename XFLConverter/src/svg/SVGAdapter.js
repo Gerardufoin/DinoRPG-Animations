@@ -62,9 +62,7 @@ export class SVGAdapter {
 	/**
 	 * Format the SVG contained in the "sprites" folder of ffdoc extraction.
 	 *
-	 * The "sprites" folder is comprised of multiple sub-folders. We go through all of them and only parse the SVG which:
-	 * 1. Are the only element of a folder
-	 * 2. Fit the given XSD format
+	 * The "sprites" folder is comprised of multiple sub-folders. We go through all of them and only parse the SVG which fit the given XSD format
 	 *
 	 * Formatted SVG will have their default g node removed, the content of the defs node will be move up to the root svg node.
 	 * The size of the SVG will be increased by 2px in both direction, the translate of the transform will be moved up by 1 and the stroke-width will be set to 1.
@@ -79,8 +77,8 @@ export class SVGAdapter {
 			if (matchSymb) {
 				const symbol = matchSymb[1];
 				const files = fs.readdirSync(path.join(folder, symbFolder));
-				if (files.length === 1) {
-					const svgContent = fs.readFileSync(path.join(folder, symbFolder, files[0]));
+				for (let i = 0; i < files.length; ++i) {
+					const svgContent = fs.readFileSync(path.join(folder, symbFolder, files[i]));
 					const svgDoc = libxmljs.parseXml(svgContent.toString());
 					if (svgDoc.validate(schema)) {
 						const data = this._parser.parse(svgContent);
@@ -105,10 +103,11 @@ export class SVGAdapter {
 								}
 							}
 						}
-						this.saveAdaptedSVG(resultFolder, symbol, this._builder.build(data));
-						this.addToReferences(symbol, this._referencesBuilder.build(data), references, offset);
-					} else {
-						//console.log(`${symbol}: ${svgDoc.validationErrors}`);
+						const name = symbol + (files.length > 1 ? `_${i + 1}` : '');
+						this.saveAdaptedSVG(resultFolder, name, this._builder.build(data));
+						this.addToReferences(name, this._referencesBuilder.build(data), references, offset);
+					} else if (symbol == '1208') {
+						console.log(`${symbol}: ${svgDoc.validationErrors}`);
 					}
 				}
 			}
@@ -176,7 +175,7 @@ export class SVGAdapter {
 	}
 
 	/**
-	 * The the created SVG to the result folder.
+	 * Save the created SVG to the result folder.
 	 * Will check if the SVG has to be renamed based on the mapping file.
 	 * @param {string} folder Path to the folder where the results have to be saved.
 	 * @param {string} fileName Symbol name of the file.
@@ -202,9 +201,11 @@ export class SVGAdapter {
 	 * @param {object} offset Offset of the SVG matrix.
 	 */
 	addToReferences(symbol, content, references, offset) {
-		const ref = mapping[symbol];
+		const names = symbol.split('_');
+		let ref = mapping[names[0]];
 		let node = references;
 		if (ref) {
+			ref += names[1] ?? '';
 			for (const p of ref.split('/')) {
 				if (!node[p]) {
 					node[p] = {};

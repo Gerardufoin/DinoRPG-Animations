@@ -8,7 +8,7 @@
         <xs:element name="g">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="use">
+              <xs:element name="use" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:attribute name="data-characterId" type="xs:unsignedShort" use="required" />
                   <xs:attribute name="height" type="xs:decimal" use="required" />
@@ -24,7 +24,7 @@
         <xs:element name="defs">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="g">
+              <xs:element name="g" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element maxOccurs="unbounded" name="path">

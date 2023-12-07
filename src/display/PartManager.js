@@ -1,5 +1,5 @@
 // @ts-check
-import { Sprite, Container, Matrix, BlurFilter, Filter } from 'pixi.js';
+import { Sprite, Matrix, BlurFilter, Filter } from 'pixi.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { TextureManager } from './TextureManager.js';
 import { offsetShader } from './shaders/ColorOffsetShader.js';
@@ -20,7 +20,7 @@ export class PartManager {
 
 	/**
 	 * Create a part of a dino given its setting, customization array and color palette.
-	 * @param {*} partsList Details of the part of the dino, comprised of multiple sub-parts.
+	 * @param {Array} partsList Details of the part of the dino, comprised of multiple sub-parts.
 	 * @param {Array} partsDetail Customization array comprised of multiple integer deciding which sub-part of the dino will be used.
 	 * @param {Array} palette Color palette comprised of 4 arrays (col0-3).
 	 * @param {string} assetPath Path to the assets of the current part.
@@ -29,21 +29,10 @@ export class PartManager {
 	 */
 	static createPart(partsList, partsDetail, palette, assetPath, scale = 1) {
 		let part = new Animation();
-		// If the partsList is an animation, set the animation and get its parts for instantiation
-		if (partsList.animation && partsList.parts) {
-			part.setAnimation(partsList.animation);
-			for (const pName in partsList.parts) {
-				const element = PartManager.createPart(partsList.parts[pName], partsDetail, palette, assetPath, scale);
-				if (element) {
-					part.addPart(pName, element);
-				}
-			}
-		} else {
-			for (let element of partsList) {
-				let sprite = PartManager.getSubPart(element, partsDetail, palette, assetPath, scale);
-				if (sprite) {
-					part.addChild(sprite);
-				}
+		for (const element of partsList) {
+			let sprite = PartManager.getSubPart(element, partsDetail, palette, assetPath, scale);
+			if (sprite) {
+				part.addAnim(sprite);
 			}
 		}
 		return part;
@@ -69,13 +58,15 @@ export class PartManager {
 	 * @param {number} scale The scale of the part, needed to instantiate the SVG.
 	 * @param {Matrix | undefined} parentTransform Transform of the parent, if any. Will be multiplied with the child transform and applied to the container.
 	 * The object will be modified, send a clone if you don't want your object to change.
-	 * @returns {Container | null} A PixiJS container representing the sub-part, or null if the sub-part is not valid for this customization.
+	 * @returns {Animation | null} A PixiJS container representing the sub-part, or null if the sub-part is not valid for this customization.
 	 */
 	static getSubPart(part, partsDetail, palette, assetPath, scale, parentTransform = undefined) {
 		parentTransform = parentTransform ?? PixiHelper.matrixFromObject({}, scale);
 		if (part.ref) {
+			// If the part has a reference, it is final and the element can be instantiated
 			return PartManager.getElement(part, partsDetail, palette, assetPath, scale, parentTransform);
 		} else if (part.partIdx !== undefined && part.frames !== undefined) {
+			// If the part has a partIdx, get the correct sub-part to instantiate
 			let idx = part.frames[partsDetail[part.partIdx] % part.frames.length];
 			// We add the current part transform to the parentTransform
 			const currentTransform = parentTransform.clone();
@@ -94,7 +85,7 @@ export class PartManager {
 						currentTransform.clone()
 					);
 				} else {
-					const cont = new Container();
+					const cont = new Animation();
 					for (const p of part.parts[idx]) {
 						const newPart = PartManager.getSubPart(
 							p,
@@ -105,12 +96,23 @@ export class PartManager {
 							currentTransform.clone()
 						);
 						if (newPart) {
-							cont.addChild(newPart);
+							cont.addAnim(newPart);
 						}
 					}
 					return cont;
 				}
 			}
+		} else if (part.animation && part.parts) {
+			// If the part is an animation, set the animation and get its parts for instantiation
+			let anim = new Animation();
+			anim.setAnimation(part.animation);
+			for (const pName in part.parts) {
+				const element = PartManager.createPart(part.parts[pName], partsDetail, palette, assetPath, scale);
+				if (element) {
+					anim.addPart(pName, element);
+				}
+			}
+			return anim;
 		}
 		return null;
 	}
@@ -124,7 +126,7 @@ export class PartManager {
 	 * @param {string} assetPath The path to the part assets.
 	 * @param {number} scale The scale of the part, needed to instantiate the SVG.
 	 * @param {Matrix | undefined} parentTransform Transform of the parent, if any. Will be multiplied with the child transform and applied to the container.
-	 * @returns {Container | null} A PixiJS container representing the element.
+	 * @returns {Animation | null} A PixiJS container representing the element.
 	 */
 	static getElement(part, partsDetail, palette, assetPath, scale, parentTransform = undefined) {
 		if (part.special && (partsDetail.length <= 15 || partsDetail[15] <= 0)) {
@@ -188,7 +190,7 @@ export class PartManager {
 		}
 		sprite.filters = filters;
 		// Transformation are not directly applied to the sprite so it can be scaled for resolution purposes
-		const localTransform = new Container();
+		const localTransform = new Animation();
 		localTransform.addChild(sprite);
 		localTransform.transform.setFromMatrix(
 			parentTransform.append(

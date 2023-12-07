@@ -27,11 +27,11 @@ export class Animation extends Container {
 	 */
 	_animation = null;
 	/**
-	 * An array containing all the parts having a sub-animation.
+	 * An array containing all the parts having an animation in their children.
 	 * Those parts will be updated when a frame change is triggered.
 	 * @type {Animation[]}
 	 */
-	_subanimations = [];
+	_childAnimations = [];
 
 	/**
 	 * Current index of the animation being played.
@@ -51,17 +51,26 @@ export class Animation extends Container {
 	_colorTransform;
 
 	/**
+	 * Add a child animation to the object.
+	 * The child animation may or may not have an actual playing animation.
+	 * @param {Animation} anim A PixiJS Container containing multiple sprites and possibly an animation in its children.
+	 */
+	addAnim(anim) {
+		this.addChild(anim);
+		if (anim.getAnimationLength() > 0 || anim.hasChildAnimation()) {
+			this._childAnimations.push(anim);
+		}
+	}
+
+	/**
 	 * Add a part to the animation.
-	 * A part is another Animation.
+	 * A part is another Animation which is referenced via a name.
 	 * @param {string} partName Name of the part to add. Has to be the same name as one part in the animation.
-	 * @param {Animation} part A PixiJS Container containing multiple sprites and possibly a sub-animation.
+	 * @param {Animation} part A PixiJS Container containing multiple sprites and possibly some animations in its children.
 	 */
 	addPart(partName, part) {
-		this.addChild(part);
+		this.addAnim(part);
 		this._parts[partName] = part;
-		if (part.getAnimationLength() > 0) {
-			this._subanimations.push(part);
-		}
 	}
 
 	/**
@@ -100,7 +109,7 @@ export class Animation extends Container {
 				this._parts[p].visible = false;
 			}
 		}
-		for (const a of this._subanimations) {
+		for (const a of this._childAnimations) {
 			a.updateAnimation();
 		}
 	}
@@ -136,12 +145,12 @@ export class Animation extends Container {
 	/**
 	 * Increase the current animation index by the given number.
 	 * Animation length and offset are computed to get the new current index.
-	 * This will be propagated to all sub-animations.
+	 * This will be propagated to all children animations.
 	 * @param {number} idx The new animation index.
 	 */
 	increaseCurrentIdx(idx) {
 		this.setCurrentIdx(this._currentIdx + idx);
-		for (const a of this._subanimations) {
+		for (const a of this._childAnimations) {
 			a.increaseCurrentIdx(idx);
 		}
 	}
@@ -149,7 +158,7 @@ export class Animation extends Container {
 	/**
 	 * Set the current animation index.
 	 * Will be impacted by animation length and offset.
-	 * Sub animations are not impacted.
+	 * Child animations are not impacted.
 	 * @param {number} idx The desired current index.
 	 */
 	setCurrentIdx(idx) {
@@ -179,6 +188,14 @@ export class Animation extends Container {
 	 */
 	getAnimationLength() {
 		return this._animation?.frames.length ?? 0;
+	}
+
+	/**
+	 * Indicates if the animation has children animations registered.
+	 * @returns {boolean} True if at least a child animation has been registered, false otherwise.
+	 */
+	hasChildAnimation() {
+		return this._childAnimations.length > 0;
 	}
 
 	/**

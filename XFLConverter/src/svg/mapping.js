@@ -421,5 +421,7 @@ export let mapping = {
 	1188: 'toufufu/sideburn_corner',
 	1190: 'toufufu/sideburn_small',
 	1192: 'toufufu/sideburn_forward',
+	1195: 'toufufu/head',
+	1208: 'toufufu/head_special',
 	1640: 'bad'
 };

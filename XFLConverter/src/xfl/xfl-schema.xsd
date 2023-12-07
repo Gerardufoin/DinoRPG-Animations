@@ -161,9 +161,9 @@
 																															</xs:element>
 																															<xs:element minOccurs="0" name="BlurFilter">
 																																<xs:complexType>
-																																	<xs:attribute name="blurX" type="xs:byte" use="optional"/>
-																																	<xs:attribute name="blurY" type="xs:byte" use="optional"/>
-																																	<xs:attribute name="quality" type="xs:byte" use="optional"/>
+																																	<xs:attribute name="blurX" type="xs:decimal" use="optional"/>
+																																	<xs:attribute name="blurY" type="xs:decimal" use="optional"/>
+																																	<xs:attribute name="quality" type="xs:decimal" use="optional"/>
 																																</xs:complexType>
 																															</xs:element>
 																														</xs:sequence>
