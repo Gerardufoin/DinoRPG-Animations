@@ -1,5 +1,6 @@
 // @ts-check
 import { ref } from '../references.js';
+import { head_special } from './animations/head_special.js';
 
 // 1154
 const fur = {
@@ -270,6 +271,24 @@ export let parts = {
 					}
 				}
 			]
+		},
+		// 1210 -> 1195
+		{
+			colorIdx: 0,
+			ref: ref.toufufu.head,
+			transform: {
+				ty: 0.65
+			}
+		},
+		// 1210 -> 1209
+		{
+			partIdx: 15,
+			frames: [-1, 0],
+			transform: {
+				tx: -0.1,
+				ty: -1.9
+			},
+			parts: [head_special]
 		}
 	]
 };
