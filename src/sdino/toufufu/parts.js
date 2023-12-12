@@ -289,6 +289,272 @@ export let parts = {
 				ty: -1.9
 			},
 			parts: [head_special]
+		},
+		// 1235 p8
+		{
+			partIdx: 8,
+			frames: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+			transform: {
+				tx: 0.5,
+				ty: 6.55,
+				a: 1.365,
+				d: 1.365
+			},
+			parts: [
+				// 1212
+				{
+					colorIdx: 0,
+					ref: ref.toufufu.face_smile
+				},
+				[
+					// 1213
+					{
+						ref: ref.toufufu.face_chin_teeth
+					},
+					// 1215
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.face_chin,
+						transform: {
+							tx: -0.9,
+							ty: 0.6
+						}
+					}
+				],
+				[
+					// 1216
+					{
+						ref: ref.toufufu.face_open_mouth_teeth
+					},
+					// 1218
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.face_open_mouth,
+						transform: {
+							tx: -0.05,
+							ty: 0.25
+						}
+					}
+				],
+				[
+					// 1219
+					{
+						ref: ref.toufufu.face_smile_tongue
+					},
+					// 1221
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.face_smile_alpha,
+						transform: {
+							tx: -0.45,
+							ty: -0.05
+						}
+					}
+				],
+				[
+					// 1222
+					{
+						ref: ref.toufufu.mouth_smile_tooth
+					},
+					// 1224
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.mouth_smile,
+						transform: {
+							tx: 0.65,
+							ty: 0.55
+						}
+					}
+				],
+				[
+					// 1226
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.mouth_pout,
+						tx: 0.6,
+						ty: 0.7
+					},
+					// 1228
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.head_beard,
+						transform: {
+							tx: -0.25,
+							ty: -1.2
+						}
+					}
+				],
+				// 1230
+				{
+					colorIdx: 1,
+					ref: ref.toufufu.head_small_beard,
+					transform: {
+						tx: 0.1,
+						ty: -0.3
+					}
+				},
+				[
+					// 1232
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.head_sideburns,
+						transform: {
+							tx: 0.05,
+							ty: -0.05
+						}
+					},
+					// 1226
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.mouth_pout,
+						transform: {
+							tx: 0.85,
+							ty: 0.35
+						}
+					}
+				],
+				[
+					// 1226
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.mouth_pout,
+						transform: {
+							tx: 0.65,
+							ty: 0.35
+						}
+					},
+					// 1232
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.head_whiskers,
+						transform: {
+							tx: -1.1,
+							ty: 0.15
+						}
+					}
+				]
+			]
+		},
+		// 1259 p7a
+		{
+			partIdx: 7,
+			frames: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+			transform: {
+				tx: -6.9,
+				ty: -3.25,
+				a: 1.084,
+				d: 1.084
+			},
+			parts: [
+				// 1237
+				{
+					colorIdx: 1,
+					ref: ref.toufufu.hair,
+					transform: {
+						tx: 1.75
+					}
+				},
+				// 1239
+				{
+					colorIdx: 1,
+					ref: ref.toufufu.hair_casu,
+					transform: {
+						tx: 3.05,
+						ty: 0.1
+					}
+				},
+				// 1241
+				{
+					colorIdx: 1,
+					ref: ref.toufufu.hair_master,
+					transform: {
+						tx: 6.35,
+						ty: -1.75
+					}
+				},
+				// 1243
+				{
+					colorIdx: 1,
+					ref: ref.toufufu.hair_wolverine,
+					transform: {
+						tx: 6.1,
+						ty: 0.85
+					}
+				},
+				// 1245
+				{
+					colorIdx: 1,
+					ref: ref.toufufu.hair_fang,
+					transform: {
+						tx: 5.25,
+						ty: -1.35
+					}
+				},
+				// 1247
+				{
+					colorIdx: 1,
+					ref: ref.toufufu.hair_anime,
+					transform: {
+						tx: 5.65,
+						ty: -2.5
+					}
+				},
+				// 1249
+				{
+					colorIdx: 1,
+					ref: ref.toufufu.hair_forward,
+					transform: {
+						tx: 4.1,
+						ty: -0.15,
+						a: 0.99,
+						d: 0.99,
+						b: -0.143,
+						c: 0.143
+					}
+				},
+				[
+					// 1250
+					{
+						ref: ref.toufufu.hair_hat
+					},
+					// 1252
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.hair_spike,
+						transform: {
+							tx: 3.8,
+							ty: -1.9
+						}
+					}
+				],
+				// 1254
+				{
+					colorIdx: 1,
+					ref: ref.toufufu.hair_side,
+					transform: {
+						tx: 6.8,
+						ty: -1.65
+					}
+				},
+				// 1256
+				{
+					colorIdx: 1,
+					ref: ref.toufufu.hair_flat,
+					transform: {
+						tx: 2.75,
+						ty: 0.05
+					}
+				},
+				// 1258
+				{
+					colorIdx: 1,
+					ref: ref.toufufu.hair_elvis,
+					transform: {
+						tx: 5.75,
+						ty: 1.45
+					}
+				}
+			]
 		}
 	]
 };

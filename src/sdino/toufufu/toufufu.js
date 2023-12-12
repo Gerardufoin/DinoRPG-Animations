@@ -1,15 +1,16 @@
 // @ts-check
 
 import { stand } from './animations/stand.js';
-/*import { walk } from './animations/walk.js';
+import { walk } from './animations/walk.js';
 import { run } from './animations/run.js';
 import { hit } from './animations/hit.js';
 import { jump } from './animations/jump.js';
 import { attack } from './animations/attack.js';
 import { land } from './animations/land.js';
 import { dead } from './animations/dead.js';
+import { sleep } from './animations/sleep.js';
 import { release } from './animations/release.js';
-import { fx_dust } from '../fx/dust.js';*/
+import { fx_dust } from '../fx/dust.js';
 import { parts } from './parts.js';
 import { ref } from '../references.js';
 
@@ -162,18 +163,71 @@ export let toufufu = {
 		left_hand: parts.hand,
 		// 1180
 		left_foot: parts.left_foot,
+		// 1137-1
+		left_foot_run: parts.right_foot,
 		// 1140
 		left_upper_leg: parts.upper_leg,
 		// 1156
-		left_lower_leg: parts.lower_leg
+		left_lower_leg: parts.lower_leg,
+		// 1269
+		trail: [
+			{
+				ref: ref.toufufu.attack_trail
+			}
+		],
+		// 1270
+		fx_shock_1: [
+			{
+				ref: ref.fx.shock_1
+			}
+		],
+		// 1271
+		fx_shock_2: [
+			{
+				ref: ref.fx.shock_2
+			}
+		],
+		// 1272
+		fx_shock_3: [
+			{
+				ref: ref.fx.shock_3
+			}
+		],
+		// 1273
+		fx_shock_4: [
+			{
+				ref: ref.fx.shock_4
+			}
+		],
+		// 1274
+		fx_shock_5: [
+			{
+				ref: ref.fx.shock_5
+			}
+		],
+		// 1275
+		fx_shock_6: [
+			{
+				ref: ref.fx.shock_6
+			}
+		],
+		// 1276
+		fx_shock_7: [
+			{
+				ref: ref.fx.shock_7
+			}
+		],
+		fx_dust_1: fx_dust,
+		fx_dust_2: fx_dust,
+		fx_dust_3: fx_dust
 	},
 	animations: {
 		// missing cast
 		// sleep, fly same as stand
 		// 1262
-		stand: stand
+		stand: stand,
 		// 1263
-		/*walk: walk,
+		walk: walk,
 		// 1264
 		run: run,
 		// 1265
@@ -191,10 +245,10 @@ export let toufufu = {
 		// 1280 idx 5
 		ill: { offset: 5, anim: sleep },
 		// 1283
-		big: big,
+		//big: big,
 		// 1284
-		release: release,
+		release: release
 		// 1288
-		special: special*/
+		//special: special
 	}
 };

@@ -115,14 +115,20 @@ export class Animation extends Container {
 	}
 
 	/**
-	 * Returns the callbacks contained at the current frame of the animation.
-	 * @returns {Array} An array containing all the callbacks of the current frame, or an empty array if there are no callbacks.
+	 * Executes all the callbacks at the current frame using the functions registered as parameters.
+	 * @param {object} callbacksFunc Object containing the references to the callbacks functions.
 	 */
-	getCallbacks() {
+	executeCallbacks(callbacksFunc) {
 		if (this._animation?.callbacks) {
-			return this._animation.callbacks[this.getCurrentIdx()] ?? [];
+			for (const f of this._animation.callbacks[this.getCurrentIdx()] ?? []) {
+				if (callbacksFunc[f[0]]) {
+					callbacksFunc[f[0]](this, f.slice(1));
+				}
+			}
 		}
-		return [];
+		for (const c of this._childAnimations) {
+			c.executeCallbacks(callbacksFunc);
+		}
 	}
 
 	/**

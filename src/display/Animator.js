@@ -60,8 +60,9 @@ export class Animator extends Container {
 		this.registerCallback('stop', () => {
 			this.playing = false;
 		});
-		this.registerCallback('gotoAndPlay', (idx) => {
-			this.setFrame(idx, false);
+		this.registerCallback('gotoAndPlay', (animation, idx) => {
+			animation.setCurrentIdx(idx);
+			animation.updateAnimation();
 		});
 	}
 
@@ -69,21 +70,11 @@ export class Animator extends Container {
 	 * Register a new callback for the Animator.
 	 * The callback will be triggered if a frame has registered a callback of the same name.
 	 * @param {string} name Name of the callback to register.
-	 * @param {*} callback Function called when the callback is triggered. Will receive an array as parameter if any arguments are passed along.
+	 * @param {*} callback Function called when the callback is triggered. Will receive the animation triggering the callback
+	 * as well as an array as parameter if any arguments are passed along.
 	 */
 	registerCallback(name, callback) {
 		this._callbacks[name] = callback;
-	}
-
-	/**
-	 * Execute all the callbacks for the current frame, if any.
-	 */
-	executeCallbacks() {
-		for (const f of this._body.getCallbacks()) {
-			if (this._callbacks[f[0]]) {
-				this._callbacks[f[0]](f.slice(1));
-			}
-		}
 	}
 
 	/**
@@ -160,7 +151,7 @@ export class Animator extends Container {
 			this._body.increaseCurrentIdx(Math.floor(this._time / this._tickRate));
 			this._time = this._time % this._tickRate;
 			this._body.updateAnimation();
-			this.executeCallbacks();
+			this._body.executeCallbacks(this._callbacks);
 		}
 	}
 
