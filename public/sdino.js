@@ -12,7 +12,9 @@ const actions = [
 	'ill',
 	'cast',
 	'release',
-	'dead'
+	'dead',
+	'big',
+	'special'
 ];
 let currentPortrait = undefined;
 let currentAnim = undefined;

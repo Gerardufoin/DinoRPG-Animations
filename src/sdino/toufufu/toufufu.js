@@ -10,6 +10,8 @@ import { land } from './animations/land.js';
 import { dead } from './animations/dead.js';
 import { sleep } from './animations/sleep.js';
 import { release } from './animations/release.js';
+import { big } from './animations/big.js';
+import { special } from './animations/special.js';
 import { fx_dust } from '../fx/dust.js';
 import { parts } from './parts.js';
 import { ref } from '../references.js';
@@ -217,9 +219,25 @@ export let toufufu = {
 				ref: ref.fx.shock_7
 			}
 		],
+		// 1174
+		hand_atk_1: parts.hand,
+		// 1174
+		hand_atk_2: parts.hand,
+		// 1174
+		hand_atk_3: parts.hand,
+		// 1174
+		hand_atk_4: parts.hand,
 		fx_dust_1: fx_dust,
 		fx_dust_2: fx_dust,
-		fx_dust_3: fx_dust
+		fx_dust_3: fx_dust,
+		// 1287
+		fx_dodge: [
+			// 1286
+			{
+				colorIdx: 2,
+				ref: ref.fx.dodge
+			}
+		]
 	},
 	animations: {
 		// missing cast
@@ -245,10 +263,10 @@ export let toufufu = {
 		// 1280 idx 5
 		ill: { offset: 5, anim: sleep },
 		// 1283
-		//big: big,
+		big: big,
 		// 1284
-		release: release
+		release: release,
 		// 1288
-		//special: special
+		special: special
 	}
 };

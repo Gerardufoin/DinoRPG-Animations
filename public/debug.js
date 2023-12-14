@@ -13,7 +13,9 @@ const actions = [
 	'ill',
 	'cast',
 	'release',
-	'dead'
+	'dead',
+	'big',
+	'special'
 ];
 let flashPreviewIdx = 0;
 let rufflePlayerLimit = 4;

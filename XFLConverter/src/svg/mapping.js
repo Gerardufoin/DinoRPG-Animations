@@ -457,5 +457,6 @@ export let mapping = {
 	1274: 'fx/shock_5',
 	1275: 'fx/shock_6',
 	1276: 'fx/shock_7',
+	1286: 'fx/dodge',
 	1640: 'bad'
 };

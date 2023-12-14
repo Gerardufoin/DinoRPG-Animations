@@ -249,5 +249,6 @@ export let mapping = {
 	'Symbol 1276-1': 'fx_shock_7_1',
 	'Symbol 1276-2': 'fx_shock_7_2',
 	'Symbol 1276-3': 'fx_shock_7_3',
-	'Symbol 1276-4': 'fx_shock_7_4'
+	'Symbol 1276-4': 'fx_shock_7_4',
+	'Symbol 1287': 'fx_dodge'
 };
