@@ -28,8 +28,8 @@ export class Animator extends Container {
 	_body = new Animation();
 
 	/**
-	 * Controls if the animation is playing or not.
-	 * Setting it to false will freeze the animation on its current frame.
+	 * Controls if the animator is running or not.
+	 * Setting it to false will freeze the animation and all its subanimation on its current frame.
 	 * @type {boolean}
 	 */
 	playing = true;
@@ -57,8 +57,8 @@ export class Animator extends Container {
 		this.addChild(this._body);
 		const ticker = Ticker.shared;
 		ticker.add(() => this.update());
-		this.registerCallback('stop', () => {
-			this.playing = false;
+		this.registerCallback('stop', (animation) => {
+			animation.stop();
 		});
 		this.registerCallback('gotoAndPlay', (animation, idx) => {
 			animation.setCurrentIdx(idx);
@@ -133,7 +133,7 @@ export class Animator extends Container {
 	playAnim(animation) {
 		this._body.setAnimation(animation.anim ?? animation);
 		this._body.setOffsetIdx(animation.offset ?? 0);
-		this.playing = true;
+		this._body.play();
 		this.setFrame(0);
 	}
 

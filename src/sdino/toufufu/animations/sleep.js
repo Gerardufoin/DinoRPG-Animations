@@ -224,8 +224,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.25,
-				ty: 23.9,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.251,
 				b: -0.1,
 				c: 0.093,
@@ -348,8 +348,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.25,
-				ty: 24,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.252,
 				b: -0.1,
 				c: 0.083,
@@ -472,8 +472,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.3,
-				ty: 24.15,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.252,
 				b: -0.1,
 				c: 0.077,
@@ -596,8 +596,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.3,
-				ty: 24.3,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.253,
 				b: -0.1,
 				c: 0.071,
@@ -720,8 +720,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.35,
-				ty: 24.45,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.254,
 				b: -0.1,
 				c: 0.061,
@@ -845,8 +845,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.45,
-				ty: 24.55,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.254,
 				b: -0.1,
 				c: 0.056,
@@ -969,8 +969,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.45,
-				ty: 24.65,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.255,
 				b: -0.1,
 				c: 0.05,
@@ -1093,8 +1093,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.5,
-				ty: 24.75,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.255,
 				b: -0.1,
 				c: 0.045,
@@ -1217,8 +1217,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.55,
-				ty: 24.8,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.255,
 				b: -0.1,
 				c: 0.04,
@@ -1341,8 +1341,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.55,
-				ty: 24.9,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.256,
 				b: -0.1,
 				c: 0.038,
@@ -1465,8 +1465,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.55,
-				ty: 25,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.256,
 				b: -0.1,
 				c: 0.033,
@@ -1589,8 +1589,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.65,
-				ty: 25.05,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.256,
 				b: -0.1,
 				c: 0.028,
@@ -1713,8 +1713,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.6,
-				ty: 25.1,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.257,
 				b: -0.1,
 				c: 0.028,
@@ -1837,8 +1837,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.65,
-				ty: 25.15,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.257,
 				b: -0.1,
 				c: 0.023,
@@ -1961,8 +1961,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.65,
-				ty: 25.2,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.257,
 				b: -0.1,
 				c: 0.022,
@@ -2085,8 +2085,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.65,
-				ty: 25.2,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.257,
 				b: -0.1,
 				c: 0.022,
@@ -2209,8 +2209,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.7,
-				ty: 25.25,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.257,
 				b: -0.1,
 				c: 0.018,
@@ -2333,8 +2333,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.65,
-				ty: 25.25,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.257,
 				b: -0.1,
 				c: 0.017,
@@ -2457,8 +2457,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.65,
-				ty: 25.25,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.257,
 				b: -0.1,
 				c: 0.017,
@@ -2581,8 +2581,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.7,
-				ty: 25.25,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.257,
 				b: -0.1,
 				c: 0.018,
@@ -2705,8 +2705,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.65,
-				ty: 25.2,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.257,
 				b: -0.1,
 				c: 0.022,
@@ -2829,8 +2829,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.65,
-				ty: 25.2,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.257,
 				b: -0.1,
 				c: 0.022,
@@ -2953,8 +2953,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.65,
-				ty: 25.15,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.257,
 				b: -0.1,
 				c: 0.023,
@@ -3077,8 +3077,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.6,
-				ty: 25.1,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.257,
 				b: -0.1,
 				c: 0.028,
@@ -3201,8 +3201,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.65,
-				ty: 25.05,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.256,
 				b: -0.1,
 				c: 0.028,
@@ -3325,8 +3325,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.55,
-				ty: 25,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.256,
 				b: -0.1,
 				c: 0.033,
@@ -3449,8 +3449,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.55,
-				ty: 24.9,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.256,
 				b: -0.1,
 				c: 0.038,
@@ -3573,8 +3573,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.55,
-				ty: 24.8,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.255,
 				b: -0.1,
 				c: 0.04,
@@ -3697,8 +3697,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.5,
-				ty: 24.75,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.255,
 				b: -0.1,
 				c: 0.045,
@@ -3821,8 +3821,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.45,
-				ty: 24.65,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.255,
 				b: -0.1,
 				c: 0.05,
@@ -3945,8 +3945,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.45,
-				ty: 24.55,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.254,
 				b: -0.1,
 				c: 0.056,
@@ -4069,8 +4069,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.35,
-				ty: 24.45,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.254,
 				b: -0.1,
 				c: 0.061,
@@ -4193,8 +4193,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.3,
-				ty: 24.3,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.253,
 				b: -0.1,
 				c: 0.071,
@@ -4317,8 +4317,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.3,
-				ty: 24.15,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.252,
 				b: -0.1,
 				c: 0.077,
@@ -4441,8 +4441,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.25,
-				ty: 24,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.252,
 				b: -0.1,
 				c: 0.083,
@@ -4555,8 +4555,8 @@ export let sleep = {
 				l: 2
 			},
 			right_foot: {
-				tx: 5.25,
-				ty: 23.9,
+				tx: 5.15,
+				ty: 23.75,
 				a: 1.251,
 				b: -0.1,
 				c: 0.093,

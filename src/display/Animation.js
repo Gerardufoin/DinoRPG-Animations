@@ -1,5 +1,5 @@
 // @ts-check
-import { Container, Filter, Matrix } from 'pixi.js';
+import { BlurFilter, Container, Filter, Matrix } from 'pixi.js';
 import { offsetShader } from './shaders/ColorOffsetShader.js';
 
 /**
@@ -32,6 +32,12 @@ export class Animation extends Container {
 	 * @type {Animation[]}
 	 */
 	_childAnimations = [];
+	/**
+	 * Controls if the animation is running or not.
+	 * Setting it to false will freeze the animation on its current frame but the sub animation will still run.
+	 * @type {boolean}
+	 */
+	_playing = true;
 
 	/**
 	 * Current index of the animation being played.
@@ -49,6 +55,11 @@ export class Animation extends Container {
 	 * @type {Filter}
 	 */
 	_colorTransform;
+	/**
+	 * Blur filter of the animation.
+	 * @type {BlurFilter}
+	 */
+	_blurFilter;
 
 	/**
 	 * Add a child animation to the object.
@@ -78,35 +89,38 @@ export class Animation extends Container {
 	 * If a part does not have a definition for the current keyframe, it will be hidden.
 	 */
 	updateAnimation() {
-		const frame = this._animation?.frames ? this._animation.frames[this.getCurrentIdx()] : undefined;
-		for (const p in this._parts) {
-			if (frame && frame[p]) {
-				this._parts[p].visible = true;
-				this._parts[p].alpha = frame[p].alpha ?? 1;
-				this._parts[p].transform.setFromMatrix(
-					new Matrix(
-						frame[p].a ?? 1,
-						frame[p].b ?? 0,
-						frame[p].c ?? 0,
-						frame[p].d ?? 1,
-						(frame[p].tx ?? 0) * this._scale,
-						(frame[p].ty ?? 0) * this._scale
-					)
-				);
-				this._parts[p].setColorTransform(
-					frame[p].or,
-					frame[p].og,
-					frame[p].ob,
-					frame[p].mr,
-					frame[p].mg,
-					frame[p].mb
-				);
-				// Ordering of the parts display
-				if (frame[p].l !== undefined) {
-					this.swapChildren(this._parts[p], this.getChildAt(frame[p].l));
+		if (this._playing) {
+			const frame = this._animation?.frames ? this._animation.frames[this.getCurrentIdx()] : undefined;
+			for (const p in this._parts) {
+				if (frame && frame[p]) {
+					this._parts[p].visible = true;
+					this._parts[p].alpha = frame[p].alpha ?? 1;
+					this._parts[p].transform.setFromMatrix(
+						new Matrix(
+							frame[p].a ?? 1,
+							frame[p].b ?? 0,
+							frame[p].c ?? 0,
+							frame[p].d ?? 1,
+							(frame[p].tx ?? 0) * this._scale,
+							(frame[p].ty ?? 0) * this._scale
+						)
+					);
+					this._parts[p].setColorTransform(
+						frame[p].or,
+						frame[p].og,
+						frame[p].ob,
+						frame[p].mr,
+						frame[p].mg,
+						frame[p].mb
+					);
+					this._parts[p].setBlurFilter(frame[p].blx, frame[p].bly, frame[p].blq);
+					// Ordering of the parts display
+					if (frame[p].l !== undefined) {
+						this.swapChildren(this._parts[p], this.getChildAt(frame[p].l));
+					}
+				} else {
+					this._parts[p].visible = false;
 				}
-			} else {
-				this._parts[p].visible = false;
 			}
 		}
 		for (const a of this._childAnimations) {
@@ -119,7 +133,7 @@ export class Animation extends Container {
 	 * @param {object} callbacksFunc Object containing the references to the callbacks functions.
 	 */
 	executeCallbacks(callbacksFunc) {
-		if (this._animation?.callbacks) {
+		if (this._playing && this._animation?.callbacks) {
 			for (const f of this._animation.callbacks[this.getCurrentIdx()] ?? []) {
 				if (callbacksFunc[f[0]]) {
 					callbacksFunc[f[0]](this, f.slice(1));
@@ -205,6 +219,20 @@ export class Animation extends Container {
 	}
 
 	/**
+	 * Stop the current animation from updating and using callbacks.
+	 */
+	stop() {
+		this._playing = false;
+	}
+
+	/**
+	 * Start an animation which is stopped.
+	 */
+	play() {
+		this._playing = true;
+	}
+
+	/**
 	 * Set the color transformation for the animation. If none exist, a new one will be created.
 	 * @param {number} offsetRed The red color offset. 0 if undefined.
 	 * @param {number} offsetGreen The green color offset. 0 if undefined.
@@ -220,7 +248,10 @@ export class Animation extends Container {
 					offset: new Float32Array(),
 					mult: new Float32Array()
 				});
-				this.filters = [this._colorTransform];
+				if (!this.filters) {
+					this.filters = [];
+				}
+				this.filters.push(this._colorTransform);
 			}
 			this._colorTransform.uniforms.offset = new Float32Array([
 				offsetRed ?? 0,
@@ -228,6 +259,27 @@ export class Animation extends Container {
 				offsetBlue ?? 0
 			]);
 			this._colorTransform.uniforms.mult = new Float32Array([multRed ?? 1, multGreen ?? 1, multBlue ?? 1]);
+		}
+	}
+
+	/**
+	 * Set the blur filter for the animation. If none exist, a new one will be created.
+	 * @param {number} blurX The x distanc of the blur. 0 if undefined.
+	 * @param {number} blurY The y distance of the blur. 0 if undefined.
+	 * @param {number} blurQuality The quality of the blur. 0 if undefined.
+	 */
+	setBlurFilter(blurX, blurY, blurQuality) {
+		if (this._blurFilter || blurX || blurY || blurQuality) {
+			if (!this._blurFilter) {
+				this._blurFilter = new BlurFilter();
+				if (!this.filters) {
+					this.filters = [];
+				}
+				this.filters.push(this._blurFilter);
+			}
+			this._blurFilter.blurX = blurX ?? 0;
+			this._blurFilter.blurY = blurY ?? 0;
+			this._blurFilter.quality = blurQuality ?? 1;
 		}
 	}
 }
