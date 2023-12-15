@@ -250,5 +250,16 @@ export let mapping = {
 	'Symbol 1276-2': 'fx_shock_7_2',
 	'Symbol 1276-3': 'fx_shock_7_3',
 	'Symbol 1276-4': 'fx_shock_7_4',
-	'Symbol 1287': 'fx_dodge'
+	'Symbol 1287': 'fx_dodge',
+	// 1462
+	'Symbol 1304_p5a': 'left_back',
+	'Symbol 1304_p5b': 'right_back',
+	'Symbol 1310': 'right_arm_top',
+	'Symbol 1335_p4b': 'right_arm_bottom',
+	'Symbol 1348_p6': 'tail_end',
+	'Symbol 1351': 'tail',
+	'Symbol 1368_p3': 'body',
+	'Symbol 1371': 'left_arm_top',
+	'Symbol 1396_p4a': 'left_arm_bottom',
+	'Symbol 1441_p7': 'head'
 };

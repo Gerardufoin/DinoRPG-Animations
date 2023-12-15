@@ -228,13 +228,21 @@ addDinoz('G9oZE6zNodSCp000');
 addDinoz('G6ZeHfhg0RVFt000');
 addDinoz('G9g5afRzJe3UR000');*/
 // Toufufu
-addDinoz('H9PvKeVlrD4Eb000', true);
+/*addDinoz('H9PvKeVlrD4Eb000', true);
 addDinoz('H9G93qPXqoqcO010');
 addDinoz('H7ArSwksrdVdH000');
 addDinoz('H9J0mhkvemnkF000');
 addDinoz('H93ogJKVIeU9z000');
 addDinoz('H9b3K84pMdxf4000');
-addDinoz('H9l6f61tJNPRf000');
+addDinoz('H9l6f61tJNPRf000');*/
+// Quetzu
+addDinoz('I9MdK4mbU215r000', true);
+addDinoz('I96Q1ZDV6sKKF110');
+addDinoz('I9nARxWpqISin000');
+addDinoz('I99yZRYX2S4aB000');
+addDinoz('I9va7JcxyW3gZ000');
+addDinoz('I9rw3CdJGDiLy000');
+addDinoz('I9kry1w0kSCBI000');
 
 /*const app = new Application({
 	background: '#E7B577',

@@ -45,6 +45,25 @@
                   <xs:attribute name="transform" type="xs:string" use="required" />
                 </xs:complexType>
               </xs:element>
+              <xs:element name="linearGradient" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="stop">
+                      <xs:complexType>
+                        <xs:attribute name="offset" type="xs:decimal" use="required" />
+                        <xs:attribute name="stop-color" type="xs:string" use="required" />
+                        <xs:attribute name="stop-opacity" type="xs:decimal" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="gradientTransform" type="xs:string" use="required" />
+                  <xs:attribute name="gradientUnits" type="xs:string" use="required" />
+                  <xs:attribute name="id" type="xs:string" use="required" />
+                  <xs:attribute name="spreadMethod" type="xs:string" use="required" />
+                  <xs:attribute name="x1" type="xs:decimal" use="required" />
+                  <xs:attribute name="x2" type="xs:decimal" use="required" />
+                </xs:complexType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

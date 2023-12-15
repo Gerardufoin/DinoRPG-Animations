@@ -458,5 +458,11 @@ export let mapping = {
 	1275: 'fx/shock_6',
 	1276: 'fx/shock_7',
 	1286: 'fx/dodge',
+	1292: 'quetzu/back_spike',
+	1294: 'quetzu/back_fur',
+	1296: 'quetzu/back_small_wing',
+	1298: 'quetzu/back_wing',
+	1300: 'quetzu/back_stump',
+	1302: 'quetzu/back_flame',
 	1640: 'bad'
 };

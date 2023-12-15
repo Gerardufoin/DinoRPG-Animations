@@ -108,8 +108,8 @@ export class SVGAdapter {
 						const name = symbol + (files.length > 1 ? `_${i + 1}` : '');
 						this.saveAdaptedSVG(resultFolder, name, this._builder.build(data));
 						this.addToReferences(name, this._referencesBuilder.build(data), references, offset);
-					} else {
-						//console.log(`${symbol}: ${svgDoc.validationErrors}`);
+					} else if (symbol == '1292') {
+						console.log(`${symbol}: ${svgDoc.validationErrors}`);
 					}
 				}
 			}

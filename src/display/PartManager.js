@@ -159,6 +159,7 @@ export class PartManager {
 			const blurFilter = new BlurFilter();
 			blurFilter.blurX = part.blur.x ?? 0;
 			blurFilter.blurY = part.blur.y ?? 0;
+			blurFilter.quality = part.blur.quality ?? 1;
 			filters.push(blurFilter);
 		}
 		if (part.colorOffset || part.colorMultiplier) {
