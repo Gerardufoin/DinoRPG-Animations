@@ -40,4 +40,4 @@ const esm_config = {
 	}
 };
 
-export default [standalone_config, esm_config];
+export default [standalone_config];

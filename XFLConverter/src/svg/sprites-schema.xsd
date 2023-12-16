@@ -45,7 +45,7 @@
                   <xs:attribute name="transform" type="xs:string" use="required" />
                 </xs:complexType>
               </xs:element>
-              <xs:element name="linearGradient" minOccurs="0">
+              <xs:element name="linearGradient" minOccurs="0" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element maxOccurs="unbounded" name="stop">
