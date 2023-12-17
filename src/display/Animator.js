@@ -57,6 +57,9 @@ export class Animator extends Container {
 		this.addChild(this._body);
 		const ticker = Ticker.shared;
 		ticker.add(() => this.update());
+		this.registerCallback('resetChildAnimations', (animation) => {
+			animation.resetChildAnimations();
+		});
 		this.registerCallback('stop', (animation) => {
 			animation.stop();
 		});

@@ -261,5 +261,10 @@ export let mapping = {
 	'Symbol 1368_p3': 'body',
 	'Symbol 1371': 'left_arm_top',
 	'Symbol 1396_p4a': 'left_arm_bottom',
-	'Symbol 1441_p7': 'head'
+	'Symbol 1441_p7': 'head',
+	'Symbol 1449': 'arm_trail',
+	'Symbol 1454': 'fx_slash_1',
+	'Symbol 1454-1': 'fx_slash_2',
+	'Symbol 1454-2': 'fx_slash_3',
+	'Symbol 1455': 'claw_trail'
 };

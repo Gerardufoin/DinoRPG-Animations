@@ -185,14 +185,20 @@ export class SVGAdapter {
 	 */
 	saveAdaptedSVG(folder, fileName, content) {
 		const names = path.parse(fileName).name.split('_');
-		const mappedName = (mapping[names[0]] ?? names[0]) + (names[1] ? `_${names[1]}` : '') + '.svg';
-		const fullPath = path.join(folder, mappedName);
-		const directory = path.dirname(fullPath);
-		if (!fs.existsSync(directory)) {
-			fs.mkdirSync(directory, { recursive: true });
+		let outputs = [names[0]];
+		if (mapping[names[0]]) {
+			outputs = Array.isArray(mapping[names[0]]) ? mapping[names[0]] : [mapping[names[0]]];
 		}
-		// path nodes are always empty, remove the unneeded closing node.
-		fs.writeFileSync(fullPath, content.replaceAll('></path>', '/>'));
+		for (const output of outputs) {
+			const mappedName = output + (names[1] ? `_${names[1]}` : '') + '.svg';
+			const fullPath = path.join(folder, mappedName);
+			const directory = path.dirname(fullPath);
+			if (!fs.existsSync(directory)) {
+				fs.mkdirSync(directory, { recursive: true });
+			}
+			// path nodes are always empty, remove the unneeded closing node.
+			fs.writeFileSync(fullPath, content.replaceAll('></path>', '/>'));
+		}
 	}
 
 	/**
@@ -204,9 +210,10 @@ export class SVGAdapter {
 	 */
 	addToReferences(symbol, content, references, offset) {
 		const names = symbol.split('_');
-		let ref = mapping[names[0]];
-		let node = references;
-		if (ref) {
+		if (!mapping[names[0]]) return;
+		let refs = Array.isArray(mapping[names[0]]) ? mapping[names[0]] : [mapping[names[0]]];
+		for (let ref of refs) {
+			let node = references;
 			ref += names[1] ? `_${names[1]}` : '';
 			for (const p of ref.split('/')) {
 				if (!node[p]) {

@@ -1,17 +1,18 @@
 // @ts-check
 
 import { stand } from './animations/stand.js';
-/*import { walk } from './animations/walk.js';
+import { walk } from './animations/walk.js';
 import { run } from './animations/run.js';
 import { hit } from './animations/hit.js';
 import { jump } from './animations/jump.js';
 import { attack } from './animations/attack.js';
 import { land } from './animations/land.js';
 import { dead } from './animations/dead.js';
+import { sleep } from './animations/sleep.js';
 import { release } from './animations/release.js';
-import { fx_dust } from '../fx/dust.js';*/
 import { parts } from './parts.js';
 import { ref } from '../references.js';
+import { fx_slash } from '../fx/slash.js';
 
 export let quetzu = {
 	name: 'quetzu',
@@ -204,14 +205,34 @@ export let quetzu = {
 		// 1396 _p4a
 		left_arm_bottom: parts.left_arm_bottom,
 		// 1441 _p7
-		head: parts.head
+		head: parts.head,
+		// 1449
+		arm_trail: [
+			// 1448
+			{
+				colorIdx: 0,
+				ref: ref.quetzu.arm_trail
+			}
+		],
+		// 1454
+		fx_slash_1: fx_slash,
+		// 1454
+		fx_slash_2: fx_slash,
+		// 1454
+		fx_slash_3: fx_slash,
+		// 1455
+		claw_trail: [
+			{
+				ref: ref.quetzu.claw_trail
+			}
+		]
 	},
 	animations: {
 		// missing cast, ill, fly
 		// 1442
-		stand: stand
+		stand: stand,
 		// 1443
-		/*walk: walk,
+		walk: walk,
 		// 1444
 		run: run,
 		// 1445
@@ -227,6 +248,6 @@ export let quetzu = {
 		// 1459
 		sleep: sleep,
 		// 1460
-		release: release*/
+		release: release
 	}
 };

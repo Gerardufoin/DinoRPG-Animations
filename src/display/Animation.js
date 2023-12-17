@@ -146,6 +146,16 @@ export class Animation extends Container {
 	}
 
 	/**
+	 * Set all children animations at frame 0.
+	 */
+	resetChildAnimations() {
+		for (const c of this._childAnimations) {
+			c.setCurrentIdx(0);
+			c.resetChildAnimations();
+		}
+	}
+
+	/**
 	 * Get the animation current index.
 	 * @returns {number} Return the current frame index of the animation.
 	 */
