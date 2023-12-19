@@ -19,6 +19,7 @@ import { mahamuti } from './mahamuti/mahamuti.js';
 import { soufflet } from './soufflet/soufflet.js';
 import { toufufu } from './toufufu/toufufu.js';
 import { quetzu } from './quetzu/quetzu.js';
+import { smog } from './smog/smog.js';
 
 export let dinoz = [
 	moueffe,
@@ -39,6 +40,7 @@ export let dinoz = [
 	mahamuti,
 	soufflet,
 	toufufu,
-	quetzu
+	quetzu,
+	smog
 ];
 export let error = bad;

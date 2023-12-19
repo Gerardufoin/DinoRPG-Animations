@@ -369,7 +369,8 @@ export let nuagoz = {
 								d: 0.435,
 								b: 0.0657,
 								c: -0.0325
-							}
+							},
+							resolution: 0.5
 						}
 					],
 					[

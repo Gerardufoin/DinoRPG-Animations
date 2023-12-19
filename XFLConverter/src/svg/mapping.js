@@ -530,5 +530,15 @@ export let mapping = {
 	1452: 'fx/slash_4',
 	1453: 'fx/slash_5',
 	1455: 'quetzu/claw_trail',
+	1464: 'smog/tail',
+	1466: 'smog/tail_curl',
+	1468: 'smog/tail_bend',
+	1470: 'smog/tail_pig',
+	1472: 'smog/tail_curve',
+	1475: 'smog/foot',
+	1476: 'smog/foot_special',
+	1482: 'smog/leg',
+	1485: 'smog/foreleg',
+	1488: 'smog/arm',
 	1640: 'bad'
 };

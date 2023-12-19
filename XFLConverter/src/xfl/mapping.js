@@ -266,5 +266,20 @@ export let mapping = {
 	'Symbol 1454': 'fx_slash_1',
 	'Symbol 1454-1': 'fx_slash_2',
 	'Symbol 1454-2': 'fx_slash_3',
-	'Symbol 1455': 'claw_trail'
+	'Symbol 1455': 'claw_trail',
+	// 1562
+	'Symbol 1473_p8': 'tail',
+	'Symbol 1480': 'left_foot',
+	'Symbol 1480-1': 'right_foot',
+	'Symbol 1483': 'left_leg',
+	'Symbol 1483-1': 'right_leg',
+	'Symbol 1486': 'left_foreleg',
+	'Symbol 1486-1': 'right_foreleg',
+	'Symbol 1489': 'left_arm',
+	'Symbol 1489-1': 'right_arm',
+	'Symbol 1502_p7': 'body',
+	'Symbol 1511': 'neck',
+	'Symbol 1514': 'jaw',
+	'Symbol 1539_p4': 'head',
+	'Symbol 1548_p3': 'eyes'
 };

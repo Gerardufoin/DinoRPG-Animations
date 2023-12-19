@@ -39,7 +39,7 @@ The file is comprised of the following entities:
 -   soufflet (done)
 -   toufufu (done)
 -   quetzu (done)
--   smog
+-   smog (in progress)
 -   triceragnon
 
 You can see a (messy) test version for sdino.swf if you have a dino code to test [here](https://gerardufoin.github.io/DinoRPG-Animations/public/sdino.html).

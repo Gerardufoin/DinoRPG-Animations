@@ -22,7 +22,7 @@ export class TextureManager {
 	 */
 	static getTextureFromCompressedReference(data, scale = 1) {
 		let scl = (scale ?? 0) <= 0 ? 1 : scale;
-		return Texture.from(decompressFromBase64(data), {
+		return Texture.from(decompressFromBase64(data) + `<!--${scl}-->`, {
 			resourceOptions: { scale: scl }
 		});
 	}

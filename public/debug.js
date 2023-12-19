@@ -236,13 +236,21 @@ addDinoz('H93ogJKVIeU9z000');
 addDinoz('H9b3K84pMdxf4000');
 addDinoz('H9l6f61tJNPRf000');*/
 // Quetzu
-addDinoz('I9MdK4mbU215r000', true);
+/*addDinoz('I9MdK4mbU215r000', true);
 addDinoz('I9rw3CdJGDiLy000');
 addDinoz('I96Q1ZDV6sKKF110');
 addDinoz('I99yZRYX2S4aB000');
 addDinoz('I9nARxWpqISin000');
 addDinoz('I9va7JcxyW3gZ000');
-addDinoz('I9kry1w0kSCBI000');
+addDinoz('I9kry1w0kSCBI000');*/
+// Smog
+addDinoz('J9UcHO7iWWtK7000', true);
+addDinoz('J9TjRKj21pRTb110');
+addDinoz('J9RcpKdaIoaYp020');
+addDinoz('J94Eo4Awkpudv000');
+addDinoz('J9bs4pEZMwUTj130');
+addDinoz('J9ZWi50KhhgW4200');
+addDinoz('J9aOkvDj21xBA000');
 
 /*const app = new Application({
 	background: '#E7B577',

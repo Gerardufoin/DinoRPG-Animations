@@ -24,6 +24,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/sdino/LIBRARY/Symbol 1261.xml', '_sub'); // toufufu - Still
 //parser.parse('./resources/sdino/LIBRARY/Symbol 1290.xml', '_p1'); // toufufu
 //parser.parse('./resources/sdino/LIBRARY/Symbol 1462.xml', '_p1'); // quetzu
+parser.parse('./resources/sdino/LIBRARY/Symbol 1562.xml', '_p1'); // smog
 //parser.parse('./resources/sdino/LIBRARY/Symbol 156.xml', '_sub'); // fx_dust
 
 const adapter = new SVGAdapter();
