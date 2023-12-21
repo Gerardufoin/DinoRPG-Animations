@@ -281,5 +281,7 @@ export let mapping = {
 	'Symbol 1511': 'neck',
 	'Symbol 1514': 'jaw',
 	'Symbol 1539_p4': 'head',
-	'Symbol 1548_p3': 'eyes'
+	'Symbol 1548_p3': 'eyes',
+	'Symbol 1554': 'fx_bite_1',
+	'Symbol 1555': 'fx_bite_2'
 };

@@ -38,15 +38,6 @@ export class PartManager {
 		return part;
 	}
 
-	// Remove this whole things later if proven that we don't need to deal with size manupulation post texture loading.
-	/**
-	 * Called once the SVG has finished loading.
-	 * @param {Sprite} sprite Sprite using the SVG which just loaded.
-	 */
-	static setSpriteTransform(sprite) {
-		sprite.visible = true;
-	}
-
 	/**
 	 * Generate a sub-part for a part of the dino.
 	 * Sub-part will for example be accessories, hairs, specials, etc.
@@ -137,15 +128,7 @@ export class PartManager {
 		const sprite = Sprite.from(texture);
 		const filters = [];
 		sprite.scale.set(1 / resolution);
-		// TODO: Remove later if texture loading is not required
-		/*sprite.visible = false;
-		if (texture.valid) {
-			PartManager.setSpriteTransform(sprite);
-		} else {
-			texture.on('update', () => {
-				PartManager.setSpriteTransform(sprite);
-			});
-		}*/
+
 		if (part.colorIdx !== undefined) {
 			let pal = palette[part.colorIdx];
 			sprite.tint = pal[partsDetail[PartManager.pMax + part.colorIdx] % pal.length];

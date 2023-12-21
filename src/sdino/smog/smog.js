@@ -1,7 +1,7 @@
 // @ts-check
 
 import { stand } from './animations/stand.js';
-/*import { walk } from './animations/walk.js';
+import { walk } from './animations/walk.js';
 import { run } from './animations/run.js';
 import { hit } from './animations/hit.js';
 import { jump } from './animations/jump.js';
@@ -9,7 +9,7 @@ import { attack } from './animations/attack.js';
 import { land } from './animations/land.js';
 import { dead } from './animations/dead.js';
 import { sleep } from './animations/sleep.js';
-import { release } from './animations/release.js';*/
+import { release } from './animations/release.js';
 import { parts } from './parts.js';
 import { ref } from '../references.js';
 
@@ -189,8 +189,8 @@ export let smog = {
 	shadow: {
 		ref: ref.fx.shadow,
 		transform: {
-			tx: -2.15,
-			ty: 10.4,
+			tx: -3.5,
+			ty: 6,
 			a: 0.968,
 			d: 0.709
 		},
@@ -225,14 +225,26 @@ export let smog = {
 		// 1539 _p4
 		head: parts.head,
 		// 1548 _p3
-		eyes: parts.eyes
+		eyes: parts.eyes,
+		// 1554
+		fx_bite_1: [
+			{
+				ref: ref.fx.bite_1
+			}
+		],
+		// 1555
+		fx_bite_2: [
+			{
+				ref: ref.fx.bite_2
+			}
+		]
 	},
 	animations: {
 		// missing cast, ill, fly
 		// 1549
-		stand: stand
+		stand: stand,
 		// 1550
-		/*walk: walk,
+		walk: walk,
 		// 1551
 		run: run,
 		// 1552
@@ -248,6 +260,6 @@ export let smog = {
 		// 1559
 		sleep: sleep,
 		// 1560
-		release: release*/
+		release: release
 	}
 };
