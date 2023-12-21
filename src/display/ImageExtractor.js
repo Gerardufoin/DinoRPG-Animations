@@ -2,26 +2,26 @@
 
 import { Rectangle, Renderer } from 'pixi.js';
 import { Animator } from './Animator.js';
+import { TextureManager } from './TextureManager.js';
 
 /**
  * Allow the transformation from an Animator into an image which can then be displayed in an <img> tag.
  */
 export class ImageExtractor {
 	/**
+	 * Number of rendering contexts to instantiate.
+	 */
+	static RENDERING_CNTX_COUNT = 3;
+	/**
 	 * Entity queue to extract.
 	 * @type {{entity: Animator, callback: any, animation?: boolean, frame?: Rectangle, format: string, html:boolean}[]}}
 	 */
 	static _queue = [];
 	/**
-	 * Rendering context.
-	 * @type {Renderer}
+	 * Rendering contexts.
+	 * @type {{instance: Renderer, busy: boolean}[]}
 	 */
-	static _renderer;
-	/**
-	 * Is the converting process currently ongoing.
-	 * @type {boolean}
-	 */
-	static _converting = false;
+	static _renderers = [];
 
 	/**
 	 * Start the conversion by emptying the conversion queue.
@@ -32,81 +32,126 @@ export class ImageExtractor {
 	 * Should not be called outside of ImageExtractor.
 	 */
 	static async _convert() {
-		if (ImageExtractor._converting) {
+		if (ImageExtractor._queue.length == 0) return;
+		while (ImageExtractor._renderers.length < ImageExtractor.RENDERING_CNTX_COUNT) {
+			ImageExtractor._renderers.push({
+				instance: new Renderer({
+					backgroundAlpha: 0,
+					width: 100,
+					height: 100
+				}),
+				busy: false
+			});
+		}
+		if (!TextureManager.haveAllTexturesLoaded()) {
+			TextureManager.registerCallback(ImageExtractor._convert);
 			return;
 		}
-		ImageExtractor._converting = true;
-		if (!ImageExtractor._renderer) {
-			ImageExtractor._renderer = new Renderer({
-				backgroundAlpha: 0,
-				width: 100,
-				height: 100
-			});
-			// If rendered at the first frame, image sometimes comes out empty. Dirty hack to prevent it.
-			await new Promise((r) => setTimeout(r, 1));
+		for (const r of ImageExtractor._renderers) {
+			if (ImageExtractor._queue.length > 0 && !r.busy) {
+				ImageExtractor.dispatch(r, ImageExtractor._queue.shift());
+			}
 		}
-		while (ImageExtractor._queue.length) {
-			const elem = ImageExtractor._queue.shift();
-			if (elem && elem.entity && elem.callback) {
-				elem.entity.playing = false;
-				if (elem.animation) {
-					elem.callback(
-						await (elem.html
-							? ImageExtractor._renderToAnimation(elem.entity, elem.frame, elem.format)
-							: ImageExtractor._renderAnimationAsRawImages(elem.entity, elem.frame, elem.format))
+	}
+
+	/**
+	 * Dispatch an element to render to a free renderer. Call _convert once done.
+	 * @param {{instance: Renderer, busy: boolean}} renderer The renderer to use for the process.
+	 * @param {object} element The element to render.
+	 */
+	static async dispatch(renderer, element) {
+		if (element && element.entity && element.callback) {
+			element.entity.playing = false;
+			renderer.busy = true;
+			if (element.animation) {
+				if (element.html) {
+					element.callback(
+						await ImageExtractor._renderToAnimation(
+							renderer.instance,
+							element.entity,
+							element.frame,
+							element.format
+						)
 					);
 				} else {
-					elem.callback(
-						await (elem.html
-							? ImageExtractor._renderToImage(elem.entity, elem.frame, elem.format)
-							: ImageExtractor._renderAsRawImage(elem.entity, elem.frame, elem.format))
+					element.callback(
+						await ImageExtractor._renderAnimationAsRawImages(
+							renderer.instance,
+							element.entity,
+							element.frame,
+							element.format
+						)
+					);
+				}
+			} else {
+				if (element.html) {
+					element.callback(
+						await ImageExtractor._renderToImage(
+							renderer.instance,
+							element.entity,
+							element.frame,
+							element.format
+						)
+					);
+				} else {
+					element.callback(
+						await ImageExtractor._renderAsRawImage(
+							renderer.instance,
+							element.entity,
+							element.frame,
+							element.format
+						)
 					);
 				}
 			}
+			renderer.busy = false;
 		}
-		ImageExtractor._converting = false;
+		ImageExtractor._convert();
 	}
 
 	/**
 	 * Render the Animator to an img tag.
+	 * @param {Renderer} renderer The renderer to use.
 	 * @param {Animator} entity The Animator to render.
 	 * @param {Rectangle | undefined} frame The size of the output if any.
 	 * @param {string} format Format of the output.
 	 * @returns {Promise<HTMLImageElement>} The new div containing the animation.
 	 */
-	static async _renderToImage(entity, frame, format) {
-		ImageExtractor._renderer.render(entity);
-		return ImageExtractor._renderer.extract.image(entity, format, undefined, frame);
+	static async _renderToImage(renderer, entity, frame, format) {
+		renderer.render(entity);
+		return renderer.extract.image(entity, format, undefined, frame);
 	}
 
 	/**
 	 * Render the Animator as a raw image.
+	 * @param {Renderer} renderer The renderer to use.
 	 * @param {Animator} entity The Animator to render.
 	 * @param {Rectangle | undefined} frame The size of the output if any.
 	 * @param {string} format Format of the output.
 	 * @returns {Promise<string>} The new div containing the animation.
 	 */
-	static async _renderAsRawImage(entity, frame, format) {
-		const img = await ImageExtractor._renderToImage(entity, frame, format);
+	static async _renderAsRawImage(renderer, entity, frame, format) {
+		const img = await ImageExtractor._renderToImage(renderer, entity, frame, format);
 		return img.getAttribute('src') ?? '';
 	}
 
 	/**
 	 * Render the Animator as an animation.
 	 * The animation is a div tag with a 'DinoRPG-Animation' class comprised of multiple img tags.
+	 * @param {Renderer} renderer The renderer to use.
 	 * @param {Animator} entity The Animator to render.
 	 * @param {Rectangle | undefined} frame The size of the output if any.
 	 * @param {string} format Format of the output.
 	 * @returns {Promise<HTMLDivElement>} The new div containing the animation.
 	 */
-	static async _renderToAnimation(entity, frame, format) {
+	static async _renderToAnimation(renderer, entity, frame, format) {
 		let ret = document.createElement('div');
 		ret.className = 'DinoRPG-Animation';
 		ret.setAttribute('data-length', entity.getCurrentAnimationLength().toString());
 		ret.setAttribute('data-idx', '0');
 		for (let i = 0; i < entity.getCurrentAnimationLength(); ++i) {
 			entity.setFrame(i);
-			const img = await ImageExtractor._renderToImage(entity, frame, format);
+			const img = await ImageExtractor._renderToImage(renderer, entity, frame, format);
 			img.hidden = i != 0;
 			ret.appendChild(img);
 		}
@@ -116,16 +161,17 @@ export class ImageExtractor {
 	/**
 	 * Render the Animator as an animation.
 	 * The animation is an array containing all the raw image of the animation in order.
+	 * @param {Renderer} renderer The renderer to use.
 	 * @param {Animator} entity The Animator to render.
 	 * @param {Rectangle | undefined} frame The size of the output if any.
 	 * @param {string} format Format of the output.
 	 * @returns {Promise<string[]>} The array containing the animation.
 	 */
-	static async _renderAnimationAsRawImages(entity, frame, format) {
+	static async _renderAnimationAsRawImages(renderer, entity, frame, format) {
 		const ret = [];
 		for (let i = 0; i < entity.getCurrentAnimationLength(); ++i) {
 			entity.setFrame(i);
-			ret.push(await ImageExtractor._renderAsRawImage(entity, frame, format));
+			ret.push(await ImageExtractor._renderAsRawImage(renderer, entity, frame, format));
 		}
 		return ret;
 	}

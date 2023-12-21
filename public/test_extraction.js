@@ -55,7 +55,7 @@ new DinoAnim.sdino({
 	flip: 1
 }).toRawImage(
 	(imgData) => {
-		console.log(imgData);
+		//console.log(imgData);
 	},
 	45,
 	45
@@ -70,7 +70,7 @@ new DinoAnim.sdino({
 	flip: 1
 }).toRawAnimation(
 	(arr) => {
-		console.log(arr);
+		//console.log(arr);
 	},
 	45,
 	45

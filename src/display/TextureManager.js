@@ -15,6 +15,44 @@ export class TextureManager {
 	static DEFAULT_RESOLUTION = 2;
 
 	/**
+	 * Number of textures currently loading.
+	 * @type {number}
+	 */
+	static _pendingTextures = 0;
+
+	/**
+	 * Registered callbacks to be fired once all the textures have loaded.
+	 * Will be emptied afterward.
+	 */
+	static _callbacks = [];
+
+	/**
+	 * Indicates if all the required textures have been loaded yet.
+	 * @returns {boolean} True if all textures have loaded, false otherwise.
+	 */
+	static haveAllTexturesLoaded() {
+		return TextureManager._pendingTextures == 0;
+	}
+
+	/**
+	 * Add a callback to be fired once all textures have loaded.
+	 * @param {Function} callback The callback to register.
+	 */
+	static registerCallback(callback) {
+		this._callbacks.push(callback);
+	}
+
+	/**
+	 * Execute all the registered callbacks and remove them.
+	 */
+	static executeCallbacks() {
+		for (const f of TextureManager._callbacks) {
+			f();
+		}
+		TextureManager._callbacks = [];
+	}
+
+	/**
 	 * Returns a PixiJS Texture of the SVG data passed as parameter.
 	 * @param {string} data Raw SVG data compressed to base64 with LZ-String.
 	 * @param {number} scale The scale of the texture, needed at load time for SVG textures.
@@ -22,8 +60,18 @@ export class TextureManager {
 	 */
 	static getTextureFromCompressedReference(data, scale = 1) {
 		let scl = (scale ?? 0) <= 0 ? 1 : scale;
-		return Texture.from(decompressFromBase64(data) + `<!--${scl}-->`, {
+		const texture = Texture.from(decompressFromBase64(data) + `<!--${scl}-->`, {
 			resourceOptions: { scale: scl }
 		});
+		if (!texture.valid) {
+			TextureManager._pendingTextures++;
+			texture.baseTexture.on('loaded', () => {
+				TextureManager._pendingTextures--;
+				if (TextureManager._pendingTextures == 0) {
+					TextureManager.executeCallbacks();
+				}
+			});
+		}
+		return texture;
 	}
 }
