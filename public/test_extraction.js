@@ -96,4 +96,4 @@ setInterval(() => {
 			e.setAttribute('data-idx', idx);
 		}
 	}
-}, 1000 / 24.0);
+}, 1000 / 40.0);

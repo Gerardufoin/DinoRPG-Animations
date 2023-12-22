@@ -20,6 +20,7 @@ import { soufflet } from './soufflet/soufflet.js';
 import { toufufu } from './toufufu/toufufu.js';
 import { quetzu } from './quetzu/quetzu.js';
 import { smog } from './smog/smog.js';
+import { triceragon } from './triceragon/triceragon.js';
 
 export let dinoz = [
 	moueffe,
@@ -41,6 +42,7 @@ export let dinoz = [
 	soufflet,
 	toufufu,
 	quetzu,
-	smog
+	smog,
+	triceragon
 ];
 export let error = bad;

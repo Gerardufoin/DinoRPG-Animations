@@ -14,7 +14,7 @@ export class Animator extends Container {
 	 * Frame rate of the animation.
 	 * @type {number}
 	 */
-	_fps = 24;
+	_fps = 40;
 	/**
 	 * Number of milliseconds needed to reach the next frame.
 	 * @type {number}

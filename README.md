@@ -15,34 +15,11 @@ Each steps of the project should ideally be able to be instantiated as standalon
 
 ## Current status
 
-The project is still in its infancy, on the conversion of the sdino.swf file.
-
-The file is comprised of the following entities:
-
--   bad (done)
--   moueffe (done)
--   pigmou (done)
--   winks (done)
--   planaile (done)
--   castivore (done)
--   rocky (done)
--   pteroz (done)
--   nuagoz (done)
--   sirain (done)
--   hippoclamp (done)
--   gorilloz (done)
--   wanwan (done)
--   santaz (done)
--   feross (done)
--   kabuki (done)
--   mahamuti (done)
--   soufflet (done)
--   toufufu (done)
--   quetzu (done)
--   smog (done)
--   triceragnon
+The project is underway, with the conversion of the sdino.swf file mostly done.
 
 You can see a (messy) test version for sdino.swf if you have a dino code to test [here](https://gerardufoin.github.io/DinoRPG-Animations/public/sdino.html).
+
+The next step is to start fight.swf and then start adding monsters and attacks over time.
 
 ## License
 
