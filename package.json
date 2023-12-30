@@ -9,7 +9,8 @@
 	"scripts": {
 		"build": "webpack",
 		"start": "webpack serve",
-		"types": "tsc"
+		"types": "tsc",
+		"pack": "node ./assets/packer.cjs"
 	},
 	"author": "Gerardufoin",
 	"license": "ISC",

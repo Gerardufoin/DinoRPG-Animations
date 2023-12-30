@@ -42,7 +42,7 @@ export class sdino extends Container {
 
 	/**
 	 * Create a dino based on the data parameter.
-	 * @param {*} data Object containing the data describing a dino.
+	 * @param {object} data Object containing the data describing a dino.
 	 */
 	constructor(data) {
 		super();
@@ -156,8 +156,6 @@ export class sdino extends Container {
 			return false;
 		}
 		dParts.splice(2, 0, damage ?? 0);
-		//Test special
-		//dParts[15] = 1;
 		this.initPalette(dParts);
 		this.apply(dParts);
 		this._animator.playAnim(this._dinoInfos.animations.stand);

@@ -5,9 +5,6 @@ import path from 'path';
 import fs from 'fs';
 import LZString from 'lz-string';
 
-import { mapping } from './mapping.js';
-import { references_addons } from './references_addons.js';
-
 /**
  * Adapt the SVG output of ffdec to fit for DinoRPG.
  * Remove uneeded nodes, increase the dimension and the stroke size.
@@ -30,32 +27,30 @@ export class SVGAdapter {
 	/**
 	 * Entry point of the parsing process.
 	 * @param {string} folder Path to the folder where ffdoc was extracted.
+	 * @param {object} mapping Object containing the mapping to rename symbols for the current process.
+	 * @param {string} destFolder Destination folder of the parsing process.
 	 */
-	parse(folder) {
-		const references = {};
-		const resultFolder = path.join(folder, 'adapted');
-		if (fs.existsSync(resultFolder)) {
-			fs.rmSync(resultFolder, { recursive: true, force: true });
+	parse(folder, mapping, destFolder) {
+		if (!fs.existsSync(destFolder)) {
+			fs.mkdirSync(destFolder, { recursive: true });
 		}
-		fs.mkdirSync(resultFolder, { recursive: true });
-		this.parseShapes(folder, resultFolder, references);
-		this.parseSprites(folder, resultFolder, references);
-		this.appendReferencesAddons(references);
-		fs.writeFileSync(path.join(resultFolder, 'references.json'), JSON.stringify(references));
+		this.parseShapes(folder, destFolder, mapping);
+		this.parseSprites(folder, destFolder, mapping);
+		this.packImages(folder, destFolder, mapping);
 	}
 
 	/**
 	 * Parse the SVG stored in the resulting "sprites" folder of ffdoc extraction.
 	 * @param {string} folder Path to the extraction folder.
 	 * @param {string} resultFolder Path to the folder where the results are to be saved.
-	 * @param {object} references Object containing the compressed references to the images.
+	 * @param {object} mapping Object containing the mapping to rename symbols for the current process.
 	 */
-	parseSprites(folder, resultFolder, references) {
+	parseSprites(folder, resultFolder, mapping) {
 		const spritesFolder = path.join(folder, 'sprites');
 		if (fs.existsSync(spritesFolder)) {
 			const schemaContent = fs.readFileSync('./src/svg/sprites-schema.xsd');
 			const schema = libxmljs.parseXml(schemaContent.toString(), { baseUrl: './src/svg/' });
-			this.formatSprites(spritesFolder, schema, resultFolder, references);
+			this.formatSprites(spritesFolder, schema, resultFolder, mapping);
 		}
 	}
 
@@ -69,9 +64,9 @@ export class SVGAdapter {
 	 * @param {string} folder Path to the "sprites" folder
 	 * @param {libxmljs.Document} schema libxmljs XSD object used to validate the SVG format.
 	 * @param {string} resultFolder Folder where the result of the formatting has to be saved.
-	 * @param {object} references Object containing the compressed references to the images.
+	 * @param {object} mapping Object containing the mapping to rename symbols for the current process.
 	 */
-	formatSprites(folder, schema, resultFolder, references) {
+	formatSprites(folder, schema, resultFolder, mapping) {
 		for (const symbFolder of fs.readdirSync(folder)) {
 			const matchSymb = symbFolder.match(/\w+_(\d+)/);
 			if (matchSymb) {
@@ -106,8 +101,7 @@ export class SVGAdapter {
 							}
 						}
 						const name = symbol + (files.length > 1 ? `_${i + 1}` : '');
-						this.saveAdaptedSVG(resultFolder, name, this._builder.build(data));
-						this.addToReferences(name, this._referencesBuilder.build(data), references, offset);
+						this.saveAdaptedSVG(resultFolder, name, this._builder.build(data), mapping);
 					} else if (symbol == '1350') {
 						console.log(`${symbol}: ${svgDoc.validationErrors}`);
 					}
@@ -120,14 +114,14 @@ export class SVGAdapter {
 	 * Parse the SVG stored in the resulting "shapes" folder of ffdoc extraction.
 	 * @param {string} folder Path to the extraction folder.
 	 * @param {string} resultFolder Path to the folder where the results are to be saved.
-	 * @param {object} references Object containing the compressed references to the images.
+	 * @param {object} mapping Object containing the mapping to rename symbols for the current process.
 	 */
-	parseShapes(folder, resultFolder, references) {
+	parseShapes(folder, resultFolder, mapping) {
 		const shapesFolder = path.join(folder, 'shapes');
 		if (fs.existsSync(shapesFolder)) {
 			const schemaContent = fs.readFileSync('./src/svg/shapes-schema.xsd');
 			const schema = libxmljs.parseXml(schemaContent.toString());
-			this.formatShapes(shapesFolder, schema, resultFolder, references);
+			this.formatShapes(shapesFolder, schema, resultFolder, mapping);
 		}
 	}
 
@@ -140,9 +134,9 @@ export class SVGAdapter {
 	 * @param {string} folder Path to the "shapes" folder
 	 * @param {libxmljs.Document} schema libxmljs XSD object used to validate the SVG format.
 	 * @param {string} resultFolder Folder where the result of the formatting has to be saved.
-	 * @param {object} references Object containing the compressed references to the images.
+	 * @param {object} mapping Object containing the mapping to rename symbols for the current process.
 	 */
-	formatShapes(folder, schema, resultFolder, references) {
+	formatShapes(folder, schema, resultFolder, mapping) {
 		for (const f of fs.readdirSync(folder)) {
 			const svgContent = fs.readFileSync(path.join(folder, f));
 			const svgDoc = libxmljs.parseXml(svgContent.toString());
@@ -168,8 +162,7 @@ export class SVGAdapter {
 						}
 					}
 				}
-				this.saveAdaptedSVG(resultFolder, f, this._builder.build(data));
-				this.addToReferences(path.parse(f).name, this._referencesBuilder.build(data), references, offset);
+				this.saveAdaptedSVG(resultFolder, f, this._builder.build(data), mapping);
 			} else {
 				console.log(`${f} does not fit the schema`);
 			}
@@ -177,73 +170,63 @@ export class SVGAdapter {
 	}
 
 	/**
-	 * Save the created SVG to the result folder.
-	 * Will check if the SVG has to be renamed based on the mapping file.
+	 * Save the created SVG to the result folder based on the mapping provided.
 	 * @param {string} folder Path to the folder where the results have to be saved.
 	 * @param {string} fileName Symbol name of the file.
-	 * @param {any} content Formatted SVG content to save.
+	 * @param {object} content Formatted SVG content to save.
+	 * @param {object} mapping Object allowing the renaming of symbols.
 	 */
-	saveAdaptedSVG(folder, fileName, content) {
+	saveAdaptedSVG(folder, fileName, content, mapping) {
 		const names = path.parse(fileName).name.split('_');
-		let outputs = [names[0]];
 		if (mapping[names[0]]) {
-			outputs = Array.isArray(mapping[names[0]]) ? mapping[names[0]] : [mapping[names[0]]];
-		}
-		for (const output of outputs) {
-			const mappedName = output + (names[1] ? `_${names[1]}` : '') + '.svg';
-			const fullPath = path.join(folder, mappedName);
-			const directory = path.dirname(fullPath);
-			if (!fs.existsSync(directory)) {
-				fs.mkdirSync(directory, { recursive: true });
+			const outputs = Array.isArray(mapping[names[0]]) ? mapping[names[0]] : [mapping[names[0]]];
+			for (const output of outputs) {
+				const mappedName = output + (names[1] ? `_${names[1]}` : '') + '.svg';
+				const fullPath = path.join(folder, mappedName);
+				const directory = path.dirname(fullPath);
+				if (!fs.existsSync(directory)) {
+					fs.mkdirSync(directory, { recursive: true });
+				}
+				// path nodes are always empty, remove the unneeded closing node.
+				fs.writeFileSync(fullPath, content.replaceAll('></path>', '/>'));
 			}
-			// path nodes are always empty, remove the unneeded closing node.
-			fs.writeFileSync(fullPath, content.replaceAll('></path>', '/>'));
 		}
 	}
 
 	/**
-	 * If the symbol is known in the mapping, compress the SVG and add it to the references.
-	 * @param {string} symbol Symbol name of the file.
-	 * @param {any} content Raw SVG content.
-	 * @param {object} references Object containing the compressed references to the images.
-	 * @param {object} offset Offset of the SVG matrix.
+	 * Save an image to the result folder based on the mapping provided.
+	 * @param {string} folder Path to the folder where the results have to be saved.
+	 * @param {string} file Path to the image.
+	 * @param {object} mapping Object allowing the renaming of symbols.
 	 */
-	addToReferences(symbol, content, references, offset) {
-		const names = symbol.split('_');
-		if (!mapping[names[0]]) return;
-		let refs = Array.isArray(mapping[names[0]]) ? mapping[names[0]] : [mapping[names[0]]];
-		for (let ref of refs) {
-			let node = references;
-			ref += names[1] ? `_${names[1]}` : '';
-			for (const p of ref.split('/')) {
-				if (!node[p]) {
-					node[p] = {};
+	saveImage(folder, file, mapping) {
+		const names = path.parse(file).name.split('_');
+		if (mapping[names[0]]) {
+			const outputs = Array.isArray(mapping[names[0]]) ? mapping[names[0]] : [mapping[names[0]]];
+			for (const output of outputs) {
+				const mappedName = output + (names[1] ? `_${names[1]}` : '') + path.parse(file).ext;
+				const fullPath = path.join(folder, mappedName);
+				const directory = path.dirname(fullPath);
+				if (!fs.existsSync(directory)) {
+					fs.mkdirSync(directory, { recursive: true });
 				}
-				node = node[p];
+				fs.copyFileSync(file, fullPath);
 			}
-			const result = content.replaceAll('></path>', '/>');
-			node.svg = LZString.compressToBase64(result);
-			node.offset = offset;
 		}
 	}
 
 	/**
-	 * Add the references_addons into the references object.
-	 * Addons are SVG files manually modified to fit a certain purpose.
-	 * @param {object} references The object containing the references to the SVG datas.
+	 * Pack the images stored in the resulting "images" folder of ffdoc extraction.
+	 * @param {string} folder Path to the extraction folder.
+	 * @param {string} resultFolder Path to the folder where the results are to be saved.
+	 * @param {object} mapping Object containing the mapping to rename symbols for the current process.
 	 */
-	appendReferencesAddons(references) {
-		for (const key of Object.keys(references_addons)) {
-			let node = references;
-			for (const p of key.split('/')) {
-				if (!node[p]) {
-					node[p] = {};
-				}
-				node = node[p];
+	packImages(folder, resultFolder, mapping) {
+		const imagesFolder = path.join(folder, 'images');
+		if (fs.existsSync(imagesFolder)) {
+			for (const f of fs.readdirSync(imagesFolder)) {
+				this.saveImage(resultFolder, path.join(imagesFolder, f), mapping);
 			}
-			const svgData = fs.readFileSync(references_addons[key].file);
-			node.svg = LZString.compressToBase64(svgData.toString());
-			node.offset = references_addons[key].offset;
 		}
 	}
 

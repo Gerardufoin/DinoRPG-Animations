@@ -1,6 +1,8 @@
 // @ts-check
 import { XFLParser } from './xfl/XFLParser.js';
 import { SVGAdapter } from './svg/SVGAdapter.js';
+import { mapping_sdino } from './svg/mapping_sdino.js';
+import { mapping_gfx } from './svg/mapping_gfx.js';
 
 const parser = new XFLParser();
 //parser.parse('./resources/sdino/LIBRARY/Symbol 163.xml', '_p1'); // moueffe
@@ -29,6 +31,6 @@ const parser = new XFLParser();
 //parser.parse('./resources/sdino/LIBRARY/Symbol 156.xml', '_sub'); // fx_dust
 
 const adapter = new SVGAdapter();
-adapter.parse('./results/SVG/test');
-
+adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
+adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');

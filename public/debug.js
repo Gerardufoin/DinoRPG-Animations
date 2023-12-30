@@ -36,7 +36,7 @@ function addFlashPreview(data, chk, parent) {
 		(parent ?? document.body).appendChild(container);
 
 		// Parameters from original website
-		var so = new SWFObject('sdino/sdino.swf', swdId, 40, 40, 8, '#FBDAA0');
+		var so = new SWFObject('/swf/fight.swf', swdId, 40, 40, 8, '#FBDAA0');
 		so.addParam('AllowScriptAccess', 'always');
 		so.addParam('FlashVars', `data=${data}&amp;chk=${chk}&amp;damages=1&amp;status=congel&amp;flip=1`);
 		so.addParam('menu', 'false');
@@ -259,49 +259,6 @@ addDinoz('K9kA0yg7yqhqQ000');
 addDinoz('K9KYPwEP8OroH000');
 addDinoz('K9cEtpgiKiwOI000');
 addDinoz('K9iyL99UFx2Bj000');
-
-/*const app = new Application({
-	background: '#E7B577',
-	//width: 130,
-	//height: 55
-	width: 500,
-	height: 500
-});
-document.body.appendChild(app.view);
-let sp = Sprite.from(Texture.from('sdino/fx_shadow.svg', { resourceOptions: { scale: 1 } }));
-sp.transform.setFromMatrix(
-	new Matrix(1, 0, 0, 1, 1 * -14.25, 1 * -8.95)
-);
-app.stage.addChild(sp);
-/*let sp1 = Sprite.from(Texture.from('test_square.svg', { resourceOptions: { scale: 1 } }));
-app.stage.addChild(sp1);
-let sp2 = Sprite.from(Texture.from('test_square2.svg', { resourceOptions: { scale: 1 } }));
-app.stage.addChild(sp2);
-let sp3 = Sprite.from(Texture.from('test_square.svg', { resourceOptions: { scale: 1 } }));
-let sp3c = new Container();
-sp3.setTransform(0, 0, 0, 0, 0, 0, 0, 2, 2);
-sp3c.addChild(sp3);
-app.stage.addChild(sp3c);
-let sp4 = Sprite.from(Texture.from('test_square.svg', { resourceOptions: { scale: 1 } }));
-app.stage.addChild(sp4);
-let sp5 = Sprite.from(Texture.from('test_square.svg', { resourceOptions: { scale: 1 } }));
-let sp5c = new Container();
-sp5.setTransform(0, 0, 0, 0, 0, 0, 0, 2, 2);
-sp5c.addChild(sp5);
-app.stage.addChild(sp5c);
-
-sp.setTransform(10, 10);
-sp1.setTransform(100, 100, 0.5, 0.5, 0, 0.86602783203125, -0.86602783203125, 2, 2);
-sp2.setTransform(10, 200);
-sp3c.setTransform(10, 300, 0.5, 0.5, 0, 0.86602783203125, -0.86602783203125);
-sp4.transform.setFromMatrix(new Matrix(0.5, 0.86602783203125, -0.86602783203125, 0.5, 15, 400));
-sp5.transform.setFromMatrix(new Matrix(0.5, 0.86602783203125, -0.86602783203125, 0.5, 10, 400));
-console.log(sp3c.localTransform);*/
-
-/*let sp = Sprite.from(Texture.from('sdino/moueffe/fx_impact_5.svg', { resourceOptions: { scale: 1 } }));
-app.stage.addChild(sp);*/
-
-//document.body.appendChild(DinoAnim.test.testSVG().view);
 
 for (const a of actions) {
 	const button = document.createElement('button');

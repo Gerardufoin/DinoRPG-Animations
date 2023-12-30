@@ -16,6 +16,25 @@ const config = {
 
 const standalone_config = {
 	...config,
+	devServer: {
+		static: {
+			directory: path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'public')
+		},
+		port: 8080,
+		/**
+		 * Used in order to run fight.swf with Ruffle.
+		 * The SWF expects /user/check to return 'OK' in order to load.
+		 * @param {object} middlewares Middlewares of the development server.
+		 * @param {object} server Development server.
+		 * @returns {object} The middlewars for chaining.
+		 */
+		setupMiddlewares: (middlewares, server) => {
+			server.app.post('/user/check', (_req, res) => {
+				res.send('OK');
+			});
+			return middlewares;
+		}
+	},
 	output: {
 		filename: 'dinorpg-animations-test.min.js',
 		path: path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'public'),

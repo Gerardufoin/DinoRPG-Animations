@@ -43,7 +43,7 @@ export class test {
 			d: 1.141
 		};
 
-		let texture = TextureManager.getTextureFromCompressedReference(part.ref.svg, TextureManager.DEFAULT_RESOLUTION);
+		let texture = TextureManager.getTextureFromCompressedReference(part.ref, TextureManager.DEFAULT_RESOLUTION);
 		const sprite = Sprite.from(texture);
 		//sprite.scale.set(1 / TextureManager.DEFAULT_RESOLUTION);
 

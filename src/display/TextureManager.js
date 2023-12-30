@@ -53,16 +53,25 @@ export class TextureManager {
 	}
 
 	/**
-	 * Returns a PixiJS Texture of the SVG data passed as parameter.
-	 * @param {string} data Raw SVG data compressed to base64 with LZ-String.
-	 * @param {number} scale The scale of the texture, needed at load time for SVG textures.
-	 * @returns {Texture} The PixiJS texture based on the SVG data and scale.
+	 * Returns a PixiJS Texture from the compressed reference data passed as parameter.
+	 * @param {{jpg?: string, png?: string, svg?: string}} data Object containing the data compressed to base64 with LZ-String.
+	 * @param {number} scale The scale of the texture, needed at load time for SVG textures. Ignored if the reference is not an SVG.
+	 * @returns {Texture} The PixiJS texture based on the image data and scale.
 	 */
 	static getTextureFromCompressedReference(data, scale = 1) {
 		let scl = (scale ?? 0) <= 0 ? 1 : scale;
-		const texture = Texture.from(decompressFromBase64(data) + `<!--${scl}-->`, {
-			resourceOptions: { scale: scl }
-		});
+		let texture = undefined;
+		if (data.svg) {
+			texture = Texture.from(decompressFromBase64(data.svg) + `<!--${scl}-->`, {
+				resourceOptions: { scale: scl }
+			});
+		} else if (data.jpg) {
+			texture = Texture.from('data:image/jpg;base64,' + decompressFromBase64(data.jpg));
+		} else if (data.png) {
+			texture = Texture.from('data:image/png;base64,' + decompressFromBase64(data.png));
+		} else {
+			return texture;
+		}
 		if (!texture.valid) {
 			TextureManager._pendingTextures++;
 			texture.baseTexture.on('loaded', () => {

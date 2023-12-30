@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" height="5.25px" width="4.9px" xmlns="http://www.w3.org/2000/svg">
+  <g id="shape0" transform="matrix(1.0, 0.0, 0.0, 1.0, 2.45, 2.6)">
+    <path d="M-1.2 0.05 L-1.4 -0.35 Q-1.6 -0.95 -1.2 -1.55 L0.1 -1.6 0.7 -1.35 1.2 -1.15 1.4 -0.9 1.45 0.05 1.2 0.15 0.9 0.3 0.85 0.3 0.25 0.45 -1.2 0.05 M0.55 0.85 L0.6 0.85 0.55 0.85" fill="#d6baba" fill-rule="evenodd" stroke="none"/>
+    <path d="M-1.2 0.05 L0.25 0.45 0.85 0.3 0.9 0.3 1.2 0.15 1.45 0.05 1.4 0.35 1.35 0.4 1.35 0.5 Q0.9 1.5 0.0 1.65 L-1.0 0.5 -1.1 0.35 -1.15 0.25 -1.25 0.05 -1.2 0.05 -1.15 0.25 -1.2 0.05 M0.55 0.85 L0.6 0.85 0.55 0.85" fill="#b98a8a" fill-rule="evenodd" stroke="none"/>
+    <path d="M1.45 0.05 L1.4 -0.9 1.2 -1.15 0.7 -1.35 0.1 -1.6 -1.2 -1.55 Q-1.6 -0.95 -1.4 -0.35 L-1.2 0.05 -1.15 0.25 -1.1 0.35 -1.0 0.5 0.0 1.65 Q0.9 1.5 1.35 0.5 L1.35 0.4 1.4 0.35 1.45 0.05 Z" fill="none" stroke="#a36a6a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>

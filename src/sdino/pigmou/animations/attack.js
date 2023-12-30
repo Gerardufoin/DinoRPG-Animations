@@ -3,7 +3,7 @@
 export let attack = {
 	callbacks: {
 		1: [['hit', 4]],
-		5: [['stop']]
+		6: [['stop']]
 	},
 	frames: [
 		{
@@ -283,6 +283,52 @@ export let attack = {
 				a: 0.761,
 				d: 0.761
 			},
+			back_left_leg: {
+				tx: 9.2,
+				ty: 5.6,
+				a: 1.116,
+				b: -0.217,
+				c: 0.217,
+				d: 1.116
+			},
+			head: {
+				tx: -3.2,
+				ty: -2,
+				a: 1.086,
+				b: -0.334,
+				c: 0.334,
+				d: 1.086
+			},
+			front_left_leg: {
+				tx: 0.9,
+				ty: 7.65,
+				a: 1.057,
+				b: -0.417,
+				c: 0.492,
+				d: 0.891
+			},
+			body: {
+				tx: 5.1,
+				ty: 1.75,
+				a: 1.116,
+				b: -0.217,
+				c: 0.217,
+				d: 1.116
+			},
+			tail: {
+				tx: 9.9,
+				ty: -4
+			},
+			front_right_leg: {
+				tx: -5.35,
+				ty: 5.1,
+				a: 1.134,
+				b: -0.074,
+				c: 0.074,
+				d: 1.134
+			}
+		},
+		{
 			back_left_leg: {
 				tx: 9.2,
 				ty: 5.6,

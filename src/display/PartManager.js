@@ -124,7 +124,7 @@ export class PartManager {
 			return null;
 		}
 		const resolution = part.resolution ?? TextureManager.DEFAULT_RESOLUTION;
-		let texture = TextureManager.getTextureFromCompressedReference(part.ref.svg, scale * resolution);
+		let texture = TextureManager.getTextureFromCompressedReference(part.ref, scale * resolution);
 		const sprite = Sprite.from(texture);
 		const filters = [];
 		sprite.scale.set(1 / resolution);
