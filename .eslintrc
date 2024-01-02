@@ -74,6 +74,7 @@
 		"jsdoc/valid-types": 1, // Recommended
 		"indent": ["error", "tab", { "SwitchCase": 1 }],
 		"linebreak-style": ["error", "windows"],
+		"no-unused-vars": "off",
 		"quotes": [
 			"error",
 			"single",

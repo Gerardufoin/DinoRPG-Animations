@@ -2,8 +2,10 @@
 // https://github.com/motion-twin/WebGamesArchives/tree/main/DinoRPG/gfx/fight
 import { Renderer, Ticker } from 'pixi.js';
 import { HaxeUnserializer } from './data/HaxeUnserializer.js';
-import { Converter } from './data/Converter.js';
+import { ETConverter } from './data/ETConverter.js';
 import { Scene } from './Scene.js';
+import { HaxeSerializer } from './data/HaxeSerializer.js';
+import { MTConverter } from './data/MTConverter.js';
 
 /**
  * Create a fight scene to render the history of a fight for DinoRPG.
@@ -21,6 +23,15 @@ export class Fight {
 	 * @type {Scene}
 	 */
 	_scene;
+	/**
+	 * Unserialized legacy data if any was passed at intialization.
+	 * @type {object}
+	 */
+	_legacyData;
+	/**
+	 * Data of the current fight under ET format.
+	 * @type {object}
+	 */
 
 	static Action = {
 		Add: 0,
@@ -62,15 +73,16 @@ export class Fight {
 	 */
 	constructor(data) {
 		if (data.legacy_data) {
-			data = Converter.convert(new HaxeUnserializer(decodeURIComponent(data.legacy_data)).unserialize());
+			this._legacyData = new HaxeUnserializer(decodeURIComponent(data.legacy_data)).unserialize();
+			this._data = ETConverter.convert(this._legacyData);
 		}
-		console.log(JSON.stringify(data, null, 4));
+		//console.log(JSON.stringify(data, null, 4));
 		this._renderer = new Renderer({
 			backgroundColor: 0xfce3bb,
 			width: 488,
 			height: 300
 		});
-		this._scene = new Scene(data.bg);
+		this._scene = new Scene(this._data.bg);
 
 		// setup ticker
 		var ticker = new Ticker();
@@ -86,5 +98,17 @@ export class Fight {
 	 */
 	getDisplay() {
 		return this._renderer.view;
+	}
+
+	/**
+	 * Get the fight data under MT format.
+	 * @param {boolean} forceETData Force the process to use the converted data as base, even if legacy data was passed at init.
+	 * @returns {string} The serialized data to feed fight.swf.
+	 */
+	getMTFormat(forceETData = false) {
+		if (this._legacyData && !forceETData) {
+			return encodeURIComponent(new HaxeSerializer(this._legacyData).serialize());
+		}
+		return encodeURIComponent(new HaxeSerializer(MTConverter.convert(this._data)).serialize());
 	}
 }

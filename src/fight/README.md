@@ -117,6 +117,9 @@ Add a fighter to the scene.
 
 ### Display (21)
 
+Used by MT to wait for assets to load and then remove the loading screen.
+Unused in this project for now.
+
 ### TimeLimit (22)
 
 ### Talk (23)

@@ -4,55 +4,55 @@ import { Fight } from '../Fight.js';
 import { AddFighter } from '../actions/AddFighter.js';
 
 /**
- * Convert MT fight data into the format used by Fight.js.
+ * Convert MT fight data into ET fight data.
  */
-export class Converter {
+export class ETConverter {
 	/**
 	 * Mapping between MT _History enum values and Fight.Action enum values.
 	 */
 	static HistoryToAction = {
-		_HAdd: Converter.convertHAdd,
-		_HAddCastle: Converter.convertHAddCastle,
-		_HMoveTo: Converter.convertHMoveTo,
-		_HDamages: Converter.convertHDamages,
-		_HDamagesGroup: Converter.convertHDamagesGroup,
-		_HCastleAttack: Converter.convertHCastleAttack,
-		_HReturn: Converter.convertHReturn,
-		_HDead: Converter.convertHDead,
-		_HLost: Converter.convertHLost,
-		_HEscape: Converter.convertHEscape,
-		_HFinish: Converter.convertHFinish,
-		_HEnergy: Converter.convertHEnergy,
-		_HMaxEnergy: Converter.convertHMaxEnergy,
-		_HPause: Converter.convertHPause,
-		_HAnnounce: Converter.convertHAnnounce,
-		_HGoto: Converter.convertHGoto,
-		_HRegen: Converter.convertHRegen,
-		_HObject: Converter.convertHObject,
-		_HFx: Converter.convertHFx,
-		_HStatus: Converter.convertHStatus,
-		_HNoStatus: Converter.convertHNoStatus,
-		_HDisplay: Converter.convertHDisplay,
-		_HTimeLimit: Converter.convertHTimeLimit,
-		_HTalk: Converter.convertHTalk,
-		_HText: Converter.convertHText,
-		_HFlip: Converter.convertHFlip,
-		_SpawnToy: Converter.convertSpawnToy,
-		_DestroyToy: Converter.convertDestroyToy,
-		_HWait: Converter.convertHWait,
-		_HLog: Converter.convertHLog,
-		_HNotify: Converter.convertHNotify
+		_HAdd: ETConverter.convertHAdd,
+		_HAddCastle: ETConverter.convertHAddCastle,
+		_HMoveTo: ETConverter.convertHMoveTo,
+		_HDamages: ETConverter.convertHDamages,
+		_HDamagesGroup: ETConverter.convertHDamagesGroup,
+		_HCastleAttack: ETConverter.convertHCastleAttack,
+		_HReturn: ETConverter.convertHReturn,
+		_HDead: ETConverter.convertHDead,
+		_HLost: ETConverter.convertHLost,
+		_HEscape: ETConverter.convertHEscape,
+		_HFinish: ETConverter.convertHFinish,
+		_HEnergy: ETConverter.convertHEnergy,
+		_HMaxEnergy: ETConverter.convertHMaxEnergy,
+		_HPause: ETConverter.convertHPause,
+		_HAnnounce: ETConverter.convertHAnnounce,
+		_HGoto: ETConverter.convertHGoto,
+		_HRegen: ETConverter.convertHRegen,
+		_HObject: ETConverter.convertHObject,
+		_HFx: ETConverter.convertHFx,
+		_HStatus: ETConverter.convertHStatus,
+		_HNoStatus: ETConverter.convertHNoStatus,
+		_HDisplay: ETConverter.convertHDisplay,
+		_HTimeLimit: ETConverter.convertHTimeLimit,
+		_HTalk: ETConverter.convertHTalk,
+		_HText: ETConverter.convertHText,
+		_HFlip: ETConverter.convertHFlip,
+		_SpawnToy: ETConverter.convertSpawnToy,
+		_DestroyToy: ETConverter.convertDestroyToy,
+		_HWait: ETConverter.convertHWait,
+		_HLog: ETConverter.convertHLog,
+		_HNotify: ETConverter.convertHNotify
 	};
 
 	/**
-	 * Convert the fight data unserialized using HaxeUnserializer and convert it into the format used by the project.
+	 * Convert the fight data unserialized using HaxeUnserializer into the format used by ET.
 	 * @param {object} mtData Data unserialized from MT legacy format.
 	 * @returns {{bg?:string, history: Array}} An object containing the fight data converted to the format used for this project.
 	 */
 	static convert(mtData) {
 		const data = {
-			bg: Converter.getBackground(mtData),
-			history: Converter.convertHistory(mtData)
+			bg: ETConverter.getBackground(mtData),
+			history: ETConverter.convertHistory(mtData)
 		};
 		return data;
 	}
@@ -80,8 +80,8 @@ export class Converter {
 		const history = [];
 		console.log(JSON.stringify(mtData._history, null, '\t'));
 		for (const h of mtData._history) {
-			if (Converter.HistoryToAction[h.value]) {
-				history.push(Converter.HistoryToAction[h.value](h.args));
+			if (ETConverter.HistoryToAction[h.value]) {
+				history.push(ETConverter.HistoryToAction[h.value](h.args));
 			} else {
 				console.error(`Error while converting history: Unknown action '${h.value}'.`);
 			}
@@ -108,7 +108,7 @@ export class Converter {
 			size: args[0]._size,
 			fid: args[0]._fid,
 			gfx: args[0]._gfx,
-			...Converter.convertEntranceEffect(args[1])
+			...ETConverter.convertEntranceEffect(args[1])
 		});
 		return { action: Fight.Action.Add, args: nArgs };
 	}
@@ -131,7 +131,7 @@ export class Converter {
 				obj.entrance = AddFighter.EntranceEffect.Stand;
 				break;
 			case '_AFGrow':
-				obj.entrance = AddFighter.EntranceEffect.Ground;
+				obj.entrance = AddFighter.EntranceEffect.Grow;
 				break;
 			case '_AFFall':
 				obj.entrance = AddFighter.EntranceEffect.Fall;
@@ -334,11 +334,10 @@ export class Converter {
 
 	/**
 	 * Convert the _History._HDisplay enum into a Fight.Action command.
-	 * @param {Array} args Arguments of the action.
+	 * @param {Array} _args Arguments of the action.
 	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
 	 */
-	static convertHDisplay(args) {
-		console.log('Conversion for "_HDisplay" not done yet.');
+	static convertHDisplay(_args) {
 		return { action: Fight.Action.Display };
 	}
 

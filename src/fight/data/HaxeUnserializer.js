@@ -214,7 +214,7 @@ export class HaxeUnserializer {
 			case 'l':
 				return this.getList();
 			default:
-				throw `Unable to deserializing character '${this.get(--this._position)}'`;
+				throw `Unable to deserialize character '${this.get(--this._position)}'`;
 		}
 	}
 }
