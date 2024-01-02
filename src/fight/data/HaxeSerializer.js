@@ -116,7 +116,7 @@ export class HaxeSerializer {
 	 * @throws Throws an exception if the serialization process for a data type is unknown.
 	 */
 	serializeData(data, forceList = false) {
-		if (data === null) {
+		if (data === null || data === undefined) {
 			return 'n';
 		}
 		if (typeof data == 'boolean') {

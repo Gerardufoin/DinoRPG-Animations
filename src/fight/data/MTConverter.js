@@ -128,6 +128,8 @@ export class MTConverter {
 			args: []
 		};
 		switch (fighter.entrance) {
+			case undefined:
+				break;
 			case AddFighter.EntranceEffect.Stand:
 				ret.value = '_AFStand';
 				break;
@@ -154,7 +156,7 @@ export class MTConverter {
 			return {
 				enum: '_AddFighterEffect',
 				value: '_AFPos',
-				args: [fighter.x, fighter.y, ret]
+				args: [fighter.x, fighter.y, fighter.entrance ? ret : null]
 			};
 		}
 		return ret;

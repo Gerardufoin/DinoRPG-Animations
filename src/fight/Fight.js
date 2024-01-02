@@ -75,6 +75,8 @@ export class Fight {
 		if (data.legacy_data) {
 			this._legacyData = new HaxeUnserializer(decodeURIComponent(data.legacy_data)).unserialize();
 			this._data = ETConverter.convert(this._legacyData);
+		} else {
+			this._data = data;
 		}
 		//console.log(JSON.stringify(data, null, 4));
 		this._renderer = new Renderer({
