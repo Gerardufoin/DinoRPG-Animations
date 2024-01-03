@@ -52,6 +52,8 @@ export class ETConverter {
 	static convert(mtData) {
 		const data = {
 			bg: ETConverter.getBackground(mtData),
+			top: mtData._mtop ?? 0,
+			bottom: mtData._mbottom ?? 0,
 			history: ETConverter.convertHistory(mtData)
 		};
 		return data;

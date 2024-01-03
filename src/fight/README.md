@@ -14,6 +14,8 @@ document.body.appendChild(fight.getDisplay());
 const fight = new DinoAnim.Fight({
 	data: {
 		bg: 's_dnv',
+		top: 120,
+		bottom: 20,
 		history: [
 			{
 				action: DinoAnim.Fight.Action.Add,

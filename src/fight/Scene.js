@@ -24,12 +24,19 @@ export class Scene extends Container {
 		columns: new Container(),
 		loading: new Container()
 	};
+	_top = 0.0;
+	_bottom = 0.0;
+
 	/**
 	 * Create a new scene where the fight will happen.
 	 * @param {string} background The key to the background reference picture.
+	 * @param {number} top Delimit the limit for the top part of the ground.
+	 * @param {number} bottom Delimit the limit for the bottom part of the ground.
 	 */
-	constructor(background) {
+	constructor(background, top, bottom) {
 		super();
+		this._top = top;
+		this._bottom = bottom;
 		for (const k in this._layers) {
 			this.addChild(this._layers[k]);
 		}
@@ -64,5 +71,14 @@ export class Scene extends Container {
 			col2.x = 488 - col2.width;
 		});
 		this._layers.columns.addChild(col2);
+	}
+
+	/**
+	 * Convert a global y coordinate into a scene y coordinate.
+	 * @param {number} y The global y value.
+	 * @returns {number} The global y value converted into scene coordinate.
+	 */
+	getY(y) {
+		return this._top + y * 0.5;
 	}
 }

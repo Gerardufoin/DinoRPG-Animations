@@ -3,9 +3,9 @@
 import { Renderer, Ticker } from 'pixi.js';
 import { HaxeUnserializer } from './data/HaxeUnserializer.js';
 import { ETConverter } from './data/ETConverter.js';
-import { Scene } from './Scene.js';
 import { HaxeSerializer } from './data/HaxeSerializer.js';
 import { MTConverter } from './data/MTConverter.js';
+import { Scene } from './Scene.js';
 
 /**
  * Create a fight scene to render the history of a fight for DinoRPG.
@@ -32,6 +32,7 @@ export class Fight {
 	 * Data of the current fight under ET format.
 	 * @type {object}
 	 */
+	_data;
 
 	static Action = {
 		Add: 0,
@@ -84,7 +85,7 @@ export class Fight {
 			width: 488,
 			height: 300
 		});
-		this._scene = new Scene(this._data.bg);
+		this._scene = new Scene(this._data.bg, this._data.top ?? 0, this._data.bottom ?? 0);
 
 		// setup ticker
 		var ticker = new Ticker();
