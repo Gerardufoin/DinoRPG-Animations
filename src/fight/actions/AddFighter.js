@@ -1,4 +1,5 @@
 // @ts-check
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/AddFighter.hx
 
 import { State } from '../State.js';
 

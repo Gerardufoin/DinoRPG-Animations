@@ -1,7 +1,9 @@
 // @ts-check
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Phys.hx
 
 import { Ticker } from 'pixi.js';
 import { Sprite } from './Sprite.js';
+import { PixiHelper } from '../display/PixiHelper.js';
 
 export class Phys extends Sprite {
 	/**
@@ -92,11 +94,7 @@ export class Phys extends Sprite {
 	towardSpeed(t, c, limit) {
 		const dx = t.x - this._x;
 		const dy = t.y - this._y;
-		this._vx += Phys.mm(-limit, dx * c, limit);
-		this._vy += Phys.mm(-limit, dy * c, limit);
-	}
-
-	static mm(a, b, c) {
-		return Math.min(Math.max(a, b), c);
+		this._vx += PixiHelper.mm(-limit, dx * c, limit);
+		this._vy += PixiHelper.mm(-limit, dy * c, limit);
 	}
 }

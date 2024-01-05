@@ -1,9 +1,11 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Scene.hx
+
 import { Container } from 'pixi.js';
 import { ref as gfx } from '../gfx/references.js';
 import { TextureManager } from '../display/TextureManager.js';
 import { Asset } from '../display/Asset.js';
+import { Fighter } from './Fighter.js';
 
 /**
  * The fight scene containing all the different layers to display.
@@ -26,6 +28,11 @@ export class Scene extends Container {
 	};
 	_top = 0.0;
 	_bottom = 0.0;
+	/**
+	 * Contains all the fighters currently instantiated and contained in the fighters layer.
+	 * @type {Fighter[]}
+	 */
+	_fighters = [];
 
 	/**
 	 * Create a new scene where the fight will happen.
@@ -71,6 +78,15 @@ export class Scene extends Container {
 			col2.x = 488 - col2.width;
 		});
 		this._layers.columns.addChild(col2);
+	}
+
+	/**
+	 * Add a fighter to the scene.
+	 * @param {Fighter} fighter The figter to add.
+	 */
+	addFighter(fighter) {
+		this._fighters.push(fighter);
+		this._layers.fighters.addChild(fighter.body);
 	}
 
 	/**

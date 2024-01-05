@@ -26,6 +26,11 @@ export class Animator extends Container {
 	 * @type {Animation}
 	 */
 	_body = new Animation();
+	/**
+	 * The list of the available animations for the body set.
+	 * @type {object}
+	 */
+	_animations;
 
 	/**
 	 * Controls if the animator is running or not.
@@ -51,12 +56,15 @@ export class Animator extends Container {
 	/**
 	 * Contructor of the Animator.
 	 * Adds the body to the main container, setup the update and add the default 'stop' callback which stop the animation.
+	 * @param {boolean} autoUpdate Set if the Animator must register itself to the PixiJS ticker for its animation to play automatically. True by default.
 	 */
-	constructor() {
+	constructor(autoUpdate = true) {
 		super();
 		this.addChild(this._body);
-		const ticker = Ticker.shared;
-		ticker.add(() => this.update());
+		if (autoUpdate) {
+			const ticker = Ticker.shared;
+			ticker.add(() => this.update());
+		}
 		this.registerCallback('resetChildAnimations', (animation) => {
 			animation.resetChildAnimations();
 		});
@@ -129,15 +137,37 @@ export class Animator extends Container {
 	}
 
 	/**
-	 * Register a new animation to be played.
-	 * The animation will start at keyframe 0 and play each frame contained in its "frames" attribute.
-	 * @param {any} animation The animation object to be played. Should contain at least a "frames" attribute.
+	 * Flip the container.
+	 * @param {boolean} side Direction the container has to face. True to face right, false to face left.
 	 */
-	playAnim(animation) {
-		this._body.setAnimation(animation.anim ?? animation);
-		this._body.setOffsetIdx(animation.offset ?? 0);
-		this._body.play();
-		this.setFrame(0);
+	flip(side) {
+		this.scale.x = side ? -1 : 1;
+	}
+
+	/**
+	 * Set all the animations available for the current body.
+	 * @param {object} animations An object whose keys are the name of the animation and the values are the content of said animation.
+	 */
+	setAnimations(animations) {
+		this._animations = animations;
+	}
+
+	/**
+	 * Will play the given animation if the animation name represent a valid key in the _animation property.
+	 * @param {string} key Name of the animation to play.
+	 */
+	playAnim(key) {
+		if (!this._animations) return;
+
+		if (!this._animations[key]) {
+			key = 'stand';
+		}
+		if (this._animations[key]) {
+			this._body.setAnimation(this._animations[key].anim ?? this._animations[key]);
+			this._body.setOffsetIdx(this._animations[key].offset ?? 0);
+			this._body.play();
+			this.setFrame(0);
+		}
 	}
 
 	/**

@@ -1,4 +1,5 @@
 // @ts-check
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Sprite.hx
 
 import { Container } from 'pixi.js';
 import { Scene } from './Scene.js';
