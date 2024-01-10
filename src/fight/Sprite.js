@@ -32,6 +32,7 @@ export class Sprite {
 	constructor(container, scene) {
 		this._root = container;
 		this._scene = scene;
+		// TODO: Check if needed depending on how it is used
 		//spriteList.push(this) ;
 	}
 

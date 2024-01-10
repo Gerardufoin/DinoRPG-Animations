@@ -1,7 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Scene.hx
 
-import { Container } from 'pixi.js';
+import { Container, Ticker } from 'pixi.js';
 import { ref as gfx } from '../gfx/references.js';
 import { TextureManager } from '../display/TextureManager.js';
 import { Asset } from '../display/Asset.js';
@@ -14,6 +14,13 @@ import { Fighter } from './Fighter.js';
  */
 export class Scene extends Container {
 	static MARGIN = 10;
+	static WIDTH = 400;
+	static HEIGHT = 300;
+	/**
+	 * Probability that a Fighter will start walking each second (between 0-1).
+	 * @type {number}
+	 */
+	static WALK_PROBA = 0.3;
 	_layers = {
 		bg: new Container(),
 		shade: new Container(),
@@ -35,6 +42,11 @@ export class Scene extends Container {
 	_fighters = [];
 
 	/**
+	 * Timer checking if a Fighter may start walking.
+	 */
+	_walkingTimer = 0;
+
+	/**
 	 * Create a new scene where the fight will happen.
 	 * @param {string} background The key to the background reference picture.
 	 * @param {number} top Delimit the limit for the top part of the ground.
@@ -49,6 +61,34 @@ export class Scene extends Container {
 		}
 		this.setBackground(background);
 		this.createColumns();
+		// The zindex of the entities is managed by their computed z position.
+		this._layers.fighters.sortableChildren = true;
+	}
+
+	update() {
+		//castle.update();
+		//updateForce();
+		// SLOTS
+		//updateSlots();
+		// SHAKE
+		//updateShake();
+		//updateWalk();
+		//updateTimeBar();
+	}
+
+	/**
+	 * Determinates if a Fighter should start walking.
+	 */
+	updateWalk() {
+		// MT version was "if (Math.random() / Ticker.shared.tmod < 0.025)", but I don't want to use tmod if possible, so no.
+		// Instead there will be a set probability that a Fighter will start walking each second.
+		if ((this._walkingTimer += Ticker.shared.elapsedMS) >= 1000) {
+			this._walkingTimer = 0;
+			const a = this._fighters.filter((f) => f.isReadyToWalk());
+			if (a.length) {
+				a[Math.floor(Math.random() * a.length)].startWalk();
+			}
+		}
 	}
 
 	/**
@@ -96,5 +136,38 @@ export class Scene extends Container {
 	 */
 	getY(y) {
 		return this._top + y * 0.5;
+	}
+
+	/**
+	 * Convert a scene y coordinate into a global coordinate.
+	 * @param {number} y The scene y coordinate.
+	 * @returns {number} The global y coordinate converted from the scene coordinate.
+	 */
+	getGY(y) {
+		return (y - this._top) * 2;
+	}
+
+	/**
+	 * Get the PY size. Not sure what the PY is...
+	 * @returns {number} The height of the scene, minus the top and bottom margin, multiplied by 2.
+	 */
+	getPYSize() {
+		return (Scene.HEIGHT - (this._top + this._bottom)) * 2;
+	}
+
+	/**
+	 * Get the middle point of the PY size.
+	 * @returns {number} PYSize / 2.
+	 */
+	getPYMiddle() {
+		return this.getPYSize() * 0.5;
+	}
+
+	/**
+	 * Get a random Y coordinate comprised in the PY size.
+	 * @returns {number} A random y coordinate between 0 and PY size.
+	 */
+	getRandomPYPos() {
+		return Math.random() * this.getPYSize();
 	}
 }

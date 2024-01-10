@@ -2,10 +2,12 @@
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Fighter.hx
 
 import { Container, Ticker } from 'pixi.js';
+import { PixiHelper } from '../display/PixiHelper.js';
+import { Animator } from '../display/Animator.js';
 import { sdino } from '../sdino.js';
 import { Phys } from './Phys.js';
-import { Animator } from '../display/Animator.js';
 import { State } from './State.js';
+import { Scene } from './Scene.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -52,13 +54,19 @@ export class Fighter extends Phys {
 	_range = 10;
 	_height = 36;
 
+	/**
+	 * Walk path of the Fighter. Null if the Fighter is not currently walking.
+	 * @type {{x: number, y: number, to: number} | null}
+	 */
+	_walkPath = null;
+
 	_mode = Fighter.Mode.Waiting;
 
 	/**
-	 * Current State using the Fighter for an action.
-	 * @type {State}
+	 * Current State using the Fighter for an action. Null if the Fighter does not have a state.
+	 * @type {State | null}
 	 */
-	_focus;
+	_focus = null;
 	/**
 	 * While this number is greater than 0, the Fighter cannot participate in a new action.
 	 * @type {number}
@@ -70,7 +78,7 @@ export class Fighter extends Phys {
 		super(body, scene);
 
 		this.body = body;
-		this.animator = new sdino({
+		this._animator = new sdino({
 			data: fInfos.gfx,
 			autoUpdate: false,
 			pflag: true
@@ -89,6 +97,7 @@ export class Fighter extends Phys {
 		this._ray = 10;
 		this.setForce(10 * this._size);
 
+		// TODO
 		/*if( haveProp(_PStatic) ) {
 			flFreeze = true;
 			force = Math.NaN;
@@ -105,6 +114,7 @@ export class Fighter extends Phys {
 		this._friction = 0.9;
 	}
 
+	// TODO
 	update() {
 		super.update();
 		this._animator.update();
@@ -113,8 +123,8 @@ export class Fighter extends Phys {
 		}
 		switch (this._mode) {
 			case Fighter.Mode.Waiting:
-				if (this._focus === undefined && this._lockTimer > 0) {
-					//updateWait();
+				if (this._focus == null && this._lockTimer > 0) {
+					this.updateWait();
 				}
 				//checkBounds();
 				break;
@@ -137,6 +147,70 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Check if the Fighter is available to start walking.
+	 *
+	 * To start walking, a Fighter must be waiting, not have a current state, not be locked, not be frozen, and not currently walking.
+	 * @returns {boolean} True if the Fighter is ready to walk, false otherwise.
+	 */
+	isReadyToWalk() {
+		return (
+			this._mode == Fighter.Mode.Waiting && this._focus == null && this._lockTimer <= 0 && this._walkPath == null
+		); //TODO && flFreeze != true ;
+	}
+
+	// WAIT MOVE
+	updateWait() {
+		//TODO if( flFreeze || haveProp(_PStatic) ) return;
+		if (this._walkPath != null) {
+			const a = this.getAng(this._walkPath);
+			const d = this.getDist(this._walkPath);
+			this._vx = -Math.cos(a) * this._walkSpeed * 0.5;
+			this._vy = -Math.sin(a) * this._walkSpeed * 0.5;
+			this._walkPath.to -= Ticker.shared.deltaTime; //mt.Timer.tmod;
+			if (d < this._walkSpeed * 2 || this._walkPath.to <= 0) {
+				this.stopWalk();
+			}
+			// TODO Play animation in reverse if Fighter is moving backward.
+			/*if(this._vx * this._intSide < 0 ) {
+					var m:flash.MovieClip = skin._p0._p1._anim._sub;
+					m.stop();
+					m.onEnterFrame = function() {
+						if( m._currentframe <= 1 )
+							m.gotoAndStop(m._totalframes - 1);
+						m.prevFrame();
+					}
+				}*/
+		}
+	}
+
+	/**
+	 * Set a random destination and make the Fighter walk toward it.
+	 */
+	startWalk() {
+		this._animator.playAnim('walk');
+		const w = Scene.WIDTH * 0.5;
+		this._walkPath = {
+			x: w - this._intSide * (20 + Math.random() * (w - 80)),
+			y: PixiHelper.mm(
+				this._ray,
+				this._y + (Math.random() * 2 - 1) * 20,
+				this._scene.getPYSize() - 2 * this._ray
+			),
+			to: 150.0
+		};
+	}
+
+	/**
+	 * Stop the current walk animation of the Fighter.
+	 */
+	stopWalk() {
+		this._animator.playAnim(this._defaultAnim);
+		this._walkPath = null;
+		this._vx = 0;
+		this._vy = 0;
+	}
+
+	/**
 	 * Set the side of the fighter.
 	 * @param {boolean} side The side of the fighter. True for left side (facing right), False for right side (facing left).
 	 */
@@ -156,6 +230,10 @@ export class Fighter extends Phys {
 		this.body.scale.x = this._sens;
 	}
 
+	/**
+	 * Reset the direction of the Fighter to their default (based on their side).
+	 * Set the animation to the current default animation except if they are currently landing.
+	 */
 	backToDefault() {
 		this.setSens(true);
 		if (this._currentAnim !== 'land') {
@@ -168,6 +246,7 @@ export class Fighter extends Phys {
 	 * @param {string} anim The animation to play.
 	 */
 	playAnim(anim) {
+		// TODO
 		/*if(flFly) {
 			if(a == "run" || a == "walk") {
 				return;
@@ -187,12 +266,13 @@ export class Fighter extends Phys {
 			return false;
 		}
 
-		//wp = null;
-		if (this._focus === undefined) {
+		this._walkPath = null;
+		if (this._focus == null) {
 			this.backToDefault();
 			this._focus = state;
 			this._vx = 0;
 			this._vy = 0;
+			// TODO
 			//if (!Number.isNaN(this._force))
 			this._force *= 1000;
 			return true;
@@ -205,7 +285,8 @@ export class Fighter extends Phys {
 	 * Unset the current State the Fighter is focusing on.
 	 */
 	unfocus() {
-		this._focus = undefined;
+		this._focus = null;
+		// TODO
 		//if(!Number.isNaN(this._force))
 		this._force /= 1000;
 	}

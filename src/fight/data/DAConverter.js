@@ -4,57 +4,57 @@ import { Fight } from '../Fight.js';
 import { AddFighter } from '../actions/AddFighter.js';
 
 /**
- * Convert MT fight data into ET fight data.
+ * Convert MT fight data into DA fight data.
  */
-export class ETConverter {
+export class DAConverter {
 	/**
 	 * Mapping between MT _History enum values and Fight.Action enum values.
 	 */
 	static HistoryToAction = {
-		_HAdd: ETConverter.convertHAdd,
-		_HAddCastle: ETConverter.convertHAddCastle,
-		_HMoveTo: ETConverter.convertHMoveTo,
-		_HDamages: ETConverter.convertHDamages,
-		_HDamagesGroup: ETConverter.convertHDamagesGroup,
-		_HCastleAttack: ETConverter.convertHCastleAttack,
-		_HReturn: ETConverter.convertHReturn,
-		_HDead: ETConverter.convertHDead,
-		_HLost: ETConverter.convertHLost,
-		_HEscape: ETConverter.convertHEscape,
-		_HFinish: ETConverter.convertHFinish,
-		_HEnergy: ETConverter.convertHEnergy,
-		_HMaxEnergy: ETConverter.convertHMaxEnergy,
-		_HPause: ETConverter.convertHPause,
-		_HAnnounce: ETConverter.convertHAnnounce,
-		_HGoto: ETConverter.convertHGoto,
-		_HRegen: ETConverter.convertHRegen,
-		_HObject: ETConverter.convertHObject,
-		_HFx: ETConverter.convertHFx,
-		_HStatus: ETConverter.convertHStatus,
-		_HNoStatus: ETConverter.convertHNoStatus,
-		_HDisplay: ETConverter.convertHDisplay,
-		_HTimeLimit: ETConverter.convertHTimeLimit,
-		_HTalk: ETConverter.convertHTalk,
-		_HText: ETConverter.convertHText,
-		_HFlip: ETConverter.convertHFlip,
-		_SpawnToy: ETConverter.convertSpawnToy,
-		_DestroyToy: ETConverter.convertDestroyToy,
-		_HWait: ETConverter.convertHWait,
-		_HLog: ETConverter.convertHLog,
-		_HNotify: ETConverter.convertHNotify
+		_HAdd: DAConverter.convertHAdd,
+		_HAddCastle: DAConverter.convertHAddCastle,
+		_HMoveTo: DAConverter.convertHMoveTo,
+		_HDamages: DAConverter.convertHDamages,
+		_HDamagesGroup: DAConverter.convertHDamagesGroup,
+		_HCastleAttack: DAConverter.convertHCastleAttack,
+		_HReturn: DAConverter.convertHReturn,
+		_HDead: DAConverter.convertHDead,
+		_HLost: DAConverter.convertHLost,
+		_HEscape: DAConverter.convertHEscape,
+		_HFinish: DAConverter.convertHFinish,
+		_HEnergy: DAConverter.convertHEnergy,
+		_HMaxEnergy: DAConverter.convertHMaxEnergy,
+		_HPause: DAConverter.convertHPause,
+		_HAnnounce: DAConverter.convertHAnnounce,
+		_HGoto: DAConverter.convertHGoto,
+		_HRegen: DAConverter.convertHRegen,
+		_HObject: DAConverter.convertHObject,
+		_HFx: DAConverter.convertHFx,
+		_HStatus: DAConverter.convertHStatus,
+		_HNoStatus: DAConverter.convertHNoStatus,
+		_HDisplay: DAConverter.convertHDisplay,
+		_HTimeLimit: DAConverter.convertHTimeLimit,
+		_HTalk: DAConverter.convertHTalk,
+		_HText: DAConverter.convertHText,
+		_HFlip: DAConverter.convertHFlip,
+		_SpawnToy: DAConverter.convertSpawnToy,
+		_DestroyToy: DAConverter.convertDestroyToy,
+		_HWait: DAConverter.convertHWait,
+		_HLog: DAConverter.convertHLog,
+		_HNotify: DAConverter.convertHNotify
 	};
 
 	/**
-	 * Convert the fight data unserialized using HaxeUnserializer into the format used by ET.
+	 * Convert the fight data unserialized using HaxeUnserializer into the format used by this project.
 	 * @param {object} mtData Data unserialized from MT legacy format.
 	 * @returns {{bg?:string, history: Array}} An object containing the fight data converted to the format used for this project.
 	 */
 	static convert(mtData) {
 		const data = {
-			bg: ETConverter.getBackground(mtData),
+			bg: DAConverter.getBackground(mtData),
 			top: mtData._mtop ?? 0,
 			bottom: mtData._mbottom ?? 0,
-			history: ETConverter.convertHistory(mtData)
+			history: DAConverter.convertHistory(mtData)
 		};
 		return data;
 	}
@@ -82,8 +82,8 @@ export class ETConverter {
 		const history = [];
 		console.log(JSON.stringify(mtData._history, null, '\t'));
 		for (const h of mtData._history) {
-			if (ETConverter.HistoryToAction[h.value]) {
-				history.push(ETConverter.HistoryToAction[h.value](h.args));
+			if (DAConverter.HistoryToAction[h.value]) {
+				history.push(DAConverter.HistoryToAction[h.value](h.args));
 			} else {
 				console.error(`Error while converting history: Unknown action '${h.value}'.`);
 			}
@@ -94,25 +94,26 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HAdd enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHAdd(args) {
-		const nArgs = [];
 		if (args.length !== 2) {
 			console.error(`_HAdd arguments size different from 2: ${args.length}`);
 		}
-		nArgs.push({
-			props: args[0]._props,
-			dino: args[0]._dino,
-			life: args[0]._life,
-			name: args[0]._name,
-			side: args[0]._side,
-			size: args[0]._size,
-			fid: args[0]._fid,
-			gfx: args[0]._gfx,
-			...ETConverter.convertEntranceEffect(args[1])
-		});
-		return { action: Fight.Action.Add, args: nArgs };
+		return {
+			action: Fight.Action.Add,
+			fighter: {
+				props: args[0]._props,
+				dino: args[0]._dino,
+				life: args[0]._life,
+				name: args[0]._name,
+				side: args[0]._side,
+				size: args[0]._size,
+				fid: args[0]._fid,
+				gfx: args[0]._gfx,
+				...DAConverter.convertEntranceEffect(args[1])
+			}
+		};
 	}
 
 	/**
@@ -157,7 +158,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HEnergy enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHEnergy(args) {
 		console.log('Conversion for "_HEnergy" not done yet.');
@@ -167,7 +168,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HMaxEnergy enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHMaxEnergy(args) {
 		console.log('Conversion for "_HMaxEnergy" not done yet.');
@@ -177,7 +178,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HPause enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHPause(args) {
 		console.log('Conversion for "_HPause" not done yet.');
@@ -187,7 +188,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HAnnounce enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHAnnounce(args) {
 		console.log('Conversion for "_HAnnounce" not done yet.');
@@ -197,7 +198,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HGoto enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHGoto(args) {
 		console.log('Conversion for "_HGoto" not done yet.');
@@ -207,7 +208,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HDamages enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHDamages(args) {
 		console.log('Conversion for "_HDamages" not done yet.');
@@ -217,7 +218,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HReturn enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHReturn(args) {
 		console.log('Conversion for "_HReturn" not done yet.');
@@ -227,7 +228,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HDead enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHDead(args) {
 		console.log('Conversion for "_HDead" not done yet.');
@@ -237,7 +238,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HLost enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHLost(args) {
 		console.log('Conversion for "_HLost" not done yet.');
@@ -247,7 +248,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HFinish enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHFinish(args) {
 		console.log('Conversion for "_HFinish" not done yet.');
@@ -257,7 +258,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HRegen enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHRegen(args) {
 		console.log('Conversion for "_HRegen" not done yet.');
@@ -267,7 +268,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HObject enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHObject(args) {
 		console.log('Conversion for "_HObject" not done yet.');
@@ -277,7 +278,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HStatus enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHStatus(args) {
 		console.log('Conversion for "_HStatus" not done yet.');
@@ -287,7 +288,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HNoStatus enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHNoStatus(args) {
 		console.log('Conversion for "_HNoStatus" not done yet.');
@@ -297,7 +298,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HDamagesGroup enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHDamagesGroup(args) {
 		console.log('Conversion for "_HDamagesGroup" not done yet.');
@@ -307,7 +308,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HFx enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHFx(args) {
 		console.log('Conversion for "_HFx" not done yet.');
@@ -317,7 +318,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HAddCastle enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHAddCastle(args) {
 		console.log('Conversion for "_HAddCastle" not done yet.');
@@ -327,7 +328,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HCastleAttack enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHCastleAttack(args) {
 		console.log('Conversion for "_HCastleAttack" not done yet.');
@@ -337,7 +338,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HDisplay enum into a Fight.Action command.
 	 * @param {Array} _args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHDisplay(_args) {
 		return { action: Fight.Action.Display };
@@ -346,7 +347,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HTimeLimit enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHTimeLimit(args) {
 		console.log('Conversion for "_HTimeLimit" not done yet.');
@@ -356,7 +357,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HTalk enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHTalk(args) {
 		console.log('Conversion for "_HTalk" not done yet.');
@@ -366,7 +367,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HText enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHText(args) {
 		console.log('Conversion for "_HText" not done yet.');
@@ -376,7 +377,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HEscape enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHEscape(args) {
 		console.log('Conversion for "_HEscape" not done yet.');
@@ -386,7 +387,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HMoveTo enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHMoveTo(args) {
 		console.log('Conversion for "_HMoveTo" not done yet.');
@@ -396,7 +397,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HFlip enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHFlip(args) {
 		console.log('Conversion for "_HFlip" not done yet.');
@@ -406,7 +407,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._SpawnToy enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertSpawnToy(args) {
 		console.log('Conversion for "_SpawnToy" not done yet.');
@@ -416,7 +417,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._DestroyToy enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertDestroyToy(args) {
 		console.log('Conversion for "_DestroyToy" not done yet.');
@@ -426,7 +427,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HWait enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHWait(args) {
 		console.log('Conversion for "_HWait" not done yet.');
@@ -436,7 +437,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HLog enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHLog(args) {
 		console.log('Conversion for "_HLog" not done yet.');
@@ -446,7 +447,7 @@ export class ETConverter {
 	/**
 	 * Convert the _History._HNotify enum into a Fight.Action command.
 	 * @param {Array} args Arguments of the action.
-	 * @returns {{action: number, args?: Array}} The converted action with its arguments.
+	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHNotify(args) {
 		console.log('Conversion for "_HNotify" not done yet.');

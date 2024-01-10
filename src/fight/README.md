@@ -19,22 +19,16 @@ const fight = new DinoAnim.Fight({
 		history: [
 			{
 				action: DinoAnim.Fight.Action.Add,
-				args: [
-					{
-						props: [],
-						dino: true,
-						life: 100,
-						name: 'Dragon Jr',
-						side: true,
-						size: 100,
-						fid: 0,
-						gfx: '09T1Yt9wqq4Rx000'
-					}
-				]
-			},
-			{
-				action: DinoAnim.Fight.Action.Finish,
-				args: [1]
+				fighter: {
+					props: [],
+					dino: true,
+					life: 100,
+					name: 'Dragon Jr',
+					side: true,
+					size: 100,
+					fid: 0,
+					gfx: '09T1Yt9wqq4Rx000'
+				}
 			}
 		]
 	}

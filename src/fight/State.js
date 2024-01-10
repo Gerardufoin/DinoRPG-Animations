@@ -2,8 +2,8 @@
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/State.hx
 
 import { Ticker } from 'pixi.js';
-import { Fighter } from './Fighter';
-import { PixiHelper } from '../display/PixiHelper';
+import { Fighter } from './Fighter.js';
+import { PixiHelper } from '../display/PixiHelper.js';
 
 /**
  * A State represents an action which will be played through the history of a fight.
@@ -23,19 +23,33 @@ export class State {
 	id;
 
 	/**
+	 * Callback called at the end of the State or when _endTimer reaches 0.
 	 * @type {() => void}
 	 */
 	endCall;
-	castingWait = true;
 	coef = 0;
-	spc = 0.1;
+	_spc = 0.1;
 	//var timer:Float;
-	endTimer;
+	//public var tids:List<{t : Fighter, life : Int}>;
 	/**
+	 * Once the time has elapsed, call the callback endCall.
+	 * If the timer is undefined, endCall is only called when the method "end" is called.
+	 */
+	_endTimer;
+	/**
+	 * Contains all the actor participating in the action.
 	 * @type {Fighter[]}
 	 */
 	casting = [];
-	//public var tids:List<{t : Fighter, life : Int}>;
+	/**
+	 * While this variable is true, it means all the actors needed for the State are not available.
+	 */
+	castingWait = true;
+	/**
+	 * Determines if a State should be removed from the state list.
+	 * @type {boolean}
+	 */
+	toDelete = false;
 
 	/**
 	 * State is abstract and shouldn't be instantiated by itself.
@@ -57,12 +71,12 @@ export class State {
 			return;
 		}
 		// TODO: Not quite sure how this is used yet. For both coef and spc.
-		this.coef = PixiHelper.mm(0, this.coef + this.spc * Ticker.shared.elapsedMS, 1);
-		if (this.endTimer !== undefined && this.endCall) {
-			this.endTimer -= Ticker.shared.elapsedMS;
-			if (this.endTimer <= 0) {
+		this.coef = PixiHelper.mm(0, this.coef + this._spc * Ticker.shared.elapsedMS, 1);
+		if (this._endTimer !== undefined && this.endCall) {
+			this._endTimer -= Ticker.shared.elapsedMS;
+			if (this._endTimer <= 0) {
 				this.endCall();
-				this.endTimer = undefined;
+				this._endTimer = undefined;
 			}
 		}
 	}
@@ -112,6 +126,9 @@ export class State {
 		this.casting = [];
 	}
 
+	/**
+	 * Ends the state. Flags the State to be deleted, release the actors and call the endCall callback.
+	 */
 	end() {
 		this.kill();
 		if (this.endCall) {
@@ -119,8 +136,11 @@ export class State {
 		}
 	}
 
+	/**
+	 * Flag the State to be deleted and release the actors.
+	 */
 	kill() {
-		//Main.me.states.remove(this);
+		this.toDelete = true;
 		this.releaseCasting();
 	}
 }

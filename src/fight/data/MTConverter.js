@@ -3,7 +3,7 @@
 import { AddFighter } from '../actions/AddFighter.js';
 
 /**
- * Convert ET fight data into MT fight data.
+ * Convert the project fight data into MT fight data.
  */
 export class MTConverter {
 	/**
@@ -44,8 +44,8 @@ export class MTConverter {
 	];
 
 	/**
-	 * Convert the fight data in ET format into the format used by MT for fight.swf.
-	 * @param {object} etData ET fight data to convert.
+	 * Convert the fight data into the format used by MT for fight.swf.
+	 * @param {object} etData Project fight data to convert.
 	 * @returns {object} An object containing the fight data converted to the format used by MT.
 	 */
 	static convert(etData) {
@@ -69,15 +69,15 @@ export class MTConverter {
 	}
 
 	/**
-	 * Convert the fight history from ET version to MT version.
-	 * @param {object} etData The fight data under ET format.
+	 * Convert the fight history to MT version.
+	 * @param {object} etData The fight data under this project version.
 	 * @returns {object} An object containing the fight history ready to be serialized.
 	 */
 	static convertHistory(etData) {
 		const history = [];
 		for (const h of etData.history) {
 			if (MTConverter.ActionToHistory[h.action]) {
-				const cmd = MTConverter.ActionToHistory[h.action](h.args);
+				const cmd = MTConverter.ActionToHistory[h.action](h);
 				if (cmd) {
 					history.push(cmd);
 				}
@@ -90,32 +90,32 @@ export class MTConverter {
 
 	/**
 	 * Convert the Add action into an _History._HAdd enum.
-	 * @param {Array} args Arguments of the action.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHAdd(args) {
+	static convertHAdd(obj) {
 		const ret = {
 			enum: '_History',
 			value: '_HAdd',
 			args: []
 		};
 		ret.args.push({
-			_props: args[0].props,
-			_dino: args[0].dino,
-			_life: args[0].life,
-			_name: args[0].name,
-			_side: args[0].side,
-			_size: args[0].size,
-			_fid: args[0].fid,
-			_gfx: args[0].gfx
+			_props: obj.fighter.props,
+			_dino: obj.fighter.dino,
+			_life: obj.fighter.life,
+			_name: obj.fighter.name,
+			_side: obj.fighter.side,
+			_size: obj.fighter.size,
+			_fid: obj.fighter.fid,
+			_gfx: obj.fighter.gfx
 		});
-		ret.args.push(MTConverter.convertEntranceEffect(args[0]));
+		ret.args.push(MTConverter.convertEntranceEffect(obj.fighter));
 		return ret;
 	}
 
 	/**
 	 * Convert an AddFighter.EntranceEffect into an entrance effect from MT.
-	 * @param {object} fighter The fighter data from ET Add command.
+	 * @param {object} fighter The fighter data from Add command.
 	 * @returns {object} The converted _AddFighterEffect enum or null if none is defined.
 	 */
 	static convertEntranceEffect(fighter) {
@@ -163,187 +163,187 @@ export class MTConverter {
 	}
 
 	/**
-	 * Convert the ET action into an _History._HEnergy enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HEnergy enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHEnergy(args) {
+	static convertHEnergy(obj) {
 		console.log('Conversion for "_HEnergy" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HMaxEnergy enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HMaxEnergy enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHMaxEnergy(args) {
+	static convertHMaxEnergy(obj) {
 		console.log('Conversion for "_HMaxEnergy" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HPause enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HPause enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHPause(args) {
+	static convertHPause(obj) {
 		console.log('Conversion for "_HPause" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HAnnounce enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HAnnounce enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHAnnounce(args) {
+	static convertHAnnounce(obj) {
 		console.log('Conversion for "_HAnnounce" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HGoto enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HGoto enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHGoto(args) {
+	static convertHGoto(obj) {
 		console.log('Conversion for "_HGoto" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HDamages enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HDamages enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHDamages(args) {
+	static convertHDamages(obj) {
 		console.log('Conversion for "_HDamages" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HReturn enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HReturn enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHReturn(args) {
+	static convertHReturn(obj) {
 		console.log('Conversion for "_HReturn" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HDead enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HDead enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHDead(args) {
+	static convertHDead(obj) {
 		console.log('Conversion for "_HDead" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HLost enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HLost enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHLost(args) {
+	static convertHLost(obj) {
 		console.log('Conversion for "_HLost" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HFinish enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HFinish enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHFinish(args) {
+	static convertHFinish(obj) {
 		console.log('Conversion for "_HFinish" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HRegen enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HRegen enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHRegen(args) {
+	static convertHRegen(obj) {
 		console.log('Conversion for "_HRegen" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HObject enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HObject enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHObject(args) {
+	static convertHObject(obj) {
 		console.log('Conversion for "_HObject" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HStatus enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HStatus enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHStatus(args) {
+	static convertHStatus(obj) {
 		console.log('Conversion for "_HStatus" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HNoStatus enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HNoStatus enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHNoStatus(args) {
+	static convertHNoStatus(obj) {
 		console.log('Conversion for "_HNoStatus" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HDamagesGroup enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HDamagesGroup enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHDamagesGroup(args) {
+	static convertHDamagesGroup(obj) {
 		console.log('Conversion for "_HDamagesGroup" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HFx enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HFx enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHFx(args) {
+	static convertHFx(obj) {
 		console.log('Conversion for "_HFx" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HAddCastle enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HAddCastle enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHAddCastle(args) {
+	static convertHAddCastle(obj) {
 		console.log('Conversion for "_HAddCastle" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HCastleAttack enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HCastleAttack enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHCastleAttack(args) {
+	static convertHCastleAttack(obj) {
 		console.log('Conversion for "_HCastleAttack" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HDisplay enum.
+	 * Convert the action into an _History._HDisplay enum.
 	 * @param {Array} _args Arguments of the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
@@ -356,111 +356,111 @@ export class MTConverter {
 	}
 
 	/**
-	 * Convert the ET action into an _History._HTimeLimit enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HTimeLimit enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHTimeLimit(args) {
+	static convertHTimeLimit(obj) {
 		console.log('Conversion for "_HTimeLimit" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HTalk enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HTalk enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHTalk(args) {
+	static convertHTalk(obj) {
 		console.log('Conversion for "_HTalk" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HText enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HText enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHText(args) {
+	static convertHText(obj) {
 		console.log('Conversion for "_HText" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HEscape enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HEscape enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHEscape(args) {
+	static convertHEscape(obj) {
 		console.log('Conversion for "_HEscape" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HMoveTo enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HMoveTo enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHMoveTo(args) {
+	static convertHMoveTo(obj) {
 		console.log('Conversion for "_HMoveTo" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HFlip enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HFlip enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHFlip(args) {
+	static convertHFlip(obj) {
 		console.log('Conversion for "_HFlip" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._SpawnToy enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._SpawnToy enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertSpawnToy(args) {
+	static convertSpawnToy(obj) {
 		console.log('Conversion for "_SpawnToy" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._DestroyToy enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._DestroyToy enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertDestroyToy(args) {
+	static convertDestroyToy(obj) {
 		console.log('Conversion for "_DestroyToy" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HWait enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HWait enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHWait(args) {
+	static convertHWait(obj) {
 		console.log('Conversion for "_HWait" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HLog enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HLog enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHLog(args) {
+	static convertHLog(obj) {
 		console.log('Conversion for "_HLog" not done yet.');
 		return undefined;
 	}
 
 	/**
-	 * Convert the ET action into an _History._HNotify enum.
-	 * @param {Array} args Arguments of the action.
+	 * Convert the action into an _History._HNotify enum.
+	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertHNotify(args) {
+	static convertHNotify(obj) {
 		console.log('Conversion for "_HNotify" not done yet.');
 		return undefined;
 	}

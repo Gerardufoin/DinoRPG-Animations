@@ -24,7 +24,7 @@ export class Asset extends Sprite {
 		if (this.texture.valid) {
 			fn();
 		} else {
-			this.texture.on('loaded', fn);
+			this.texture.baseTexture.on('loaded', fn);
 		}
 	}
 }
