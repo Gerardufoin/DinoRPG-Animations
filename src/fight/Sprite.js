@@ -17,6 +17,7 @@ export class Sprite {
 	_shade;
 	/**
 	 * Visual representation of the object.
+	 * Root container.
 	 * @type {Container}
 	 */
 	_root;
@@ -110,4 +111,8 @@ export class Sprite {
 		shade.removeMovieClip() ;
 		root.removeMovieClip() ;
 	}*/
+
+	getRootContainer() {
+		return this._root;
+	}
 }

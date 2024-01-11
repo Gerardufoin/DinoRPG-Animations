@@ -50,24 +50,24 @@ export class Phys extends Sprite {
 
 	update() {
 		if (this._friction != 0) {
-			const frict = Math.pow(this._friction, Ticker.shared.elapsedMS);
+			const frict = Math.pow(this._friction, Ticker.shared.deltaTime);
 			this._vx *= frict;
 			this._vy *= frict;
 			this._vz *= frict;
 			this._vr *= frict;
 		}
-		this._vz += this._weight * Ticker.shared.elapsedMS;
+		this._vz += this._weight * Ticker.shared.deltaTime;
 		if (this._frv != 0) {
-			this._vr *= Math.pow(this._frv, Ticker.shared.elapsedMS);
+			this._vr *= Math.pow(this._frv, Ticker.shared.deltaTime);
 		}
-		this._root.rotation += this._vr * Ticker.shared.elapsedMS;
+		this._root.rotation += this._vr * Ticker.shared.deltaTime;
 
-		this._x += this._vx * Ticker.shared.elapsedMS;
-		this._y += this._vy * Ticker.shared.elapsedMS;
-		this._z += this._vz * Ticker.shared.elapsedMS;
+		this._x += this._vx * Ticker.shared.deltaTime;
+		this._y += this._vy * Ticker.shared.deltaTime;
+		this._z += this._vz * Ticker.shared.deltaTime;
 
 		if (this._vsc != 0) {
-			this._root.scale.x *= Math.pow(this._vsc, Ticker.shared.elapsedMS);
+			this._root.scale.x *= Math.pow(this._vsc, Ticker.shared.deltaTime);
 			this._root.scale.y = this._root.scale.x;
 		}
 

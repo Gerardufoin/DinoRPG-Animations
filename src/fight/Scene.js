@@ -17,10 +17,10 @@ export class Scene extends Container {
 	static WIDTH = 400;
 	static HEIGHT = 300;
 	/**
-	 * Probability that a Fighter will start walking each second (between 0-1).
+	 * Probability that a Fighter will start walking each 0.1 second (between 0-1).
 	 * @type {number}
 	 */
-	static WALK_PROBA = 0.3;
+	static WALK_PROBA = 0.1;
 	_layers = {
 		bg: new Container(),
 		shade: new Container(),
@@ -68,11 +68,12 @@ export class Scene extends Container {
 	update() {
 		//castle.update();
 		//updateForce();
+		this._fighters.map((f) => f.update());
 		// SLOTS
 		//updateSlots();
 		// SHAKE
 		//updateShake();
-		//updateWalk();
+		this.updateWalk();
 		//updateTimeBar();
 	}
 
@@ -81,12 +82,14 @@ export class Scene extends Container {
 	 */
 	updateWalk() {
 		// MT version was "if (Math.random() / Ticker.shared.tmod < 0.025)", but I don't want to use tmod if possible, so no.
-		// Instead there will be a set probability that a Fighter will start walking each second.
-		if ((this._walkingTimer += Ticker.shared.elapsedMS) >= 1000) {
+		// Instead there will be a set probability that a Fighter will start walking each 0.1 second.
+		if ((this._walkingTimer += Ticker.shared.elapsedMS) >= 100) {
 			this._walkingTimer = 0;
-			const a = this._fighters.filter((f) => f.isReadyToWalk());
-			if (a.length) {
-				a[Math.floor(Math.random() * a.length)].startWalk();
+			if (Math.random() <= Scene.WALK_PROBA) {
+				const a = this._fighters.filter((f) => f.isReadyToWalk());
+				if (a.length) {
+					a[Math.floor(Math.random() * a.length)].startWalk();
+				}
 			}
 		}
 	}

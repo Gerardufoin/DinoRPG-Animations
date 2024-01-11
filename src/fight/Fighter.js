@@ -43,7 +43,6 @@ export class Fighter extends Phys {
 	_size = 1;
 	_props = [];
 
-	_intSide = 1;
 	_side = true;
 	_sens = 1;
 
@@ -123,7 +122,7 @@ export class Fighter extends Phys {
 		}
 		switch (this._mode) {
 			case Fighter.Mode.Waiting:
-				if (this._focus == null && this._lockTimer > 0) {
+				if (this._focus == null && this._lockTimer <= 0) {
 					this.updateWait();
 				}
 				//checkBounds();
@@ -190,7 +189,7 @@ export class Fighter extends Phys {
 		this._animator.playAnim('walk');
 		const w = Scene.WIDTH * 0.5;
 		this._walkPath = {
-			x: w - this._intSide * (20 + Math.random() * (w - 80)),
+			x: w - this.getIntSide() * (20 + Math.random() * (w - 80)),
 			y: PixiHelper.mm(
 				this._ray,
 				this._y + (Math.random() * 2 - 1) * 20,
@@ -216,8 +215,31 @@ export class Fighter extends Phys {
 	 */
 	setSide(side) {
 		this._side = side;
-		this._intSide = side ? 1 : -1;
 		this._animator.flip(side);
+	}
+
+	/**
+	 * Return the side of the Fighter as an integer.
+	 * @returns {number} 1 for left side, -1 for right side.
+	 */
+	getIntSide() {
+		return this._side ? 1 : -1;
+	}
+
+	/**
+	 * Check if the Fighter is a dino or not.
+	 * @returns {boolean} True if the Fighter is a dino, false otherwise.
+	 */
+	isDino() {
+		return this._isDino;
+	}
+
+	/**
+	 * Returns the side of the Fighter.
+	 * @returns {boolean} True if the Fighter is on the left side, false otherwise.
+	 */
+	getSide() {
+		return this._side;
 	}
 
 	/**
@@ -297,5 +319,12 @@ export class Fighter extends Phys {
 	 */
 	setLockTimer(lt) {
 		this._lockTimer = lt;
+	}
+
+	/**
+	 * Display the Fighter name temporarily.
+	 */
+	showName() {
+		//TODO
 	}
 }

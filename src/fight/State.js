@@ -4,6 +4,7 @@
 import { Ticker } from 'pixi.js';
 import { Fighter } from './Fighter.js';
 import { PixiHelper } from '../display/PixiHelper.js';
+import { Scene } from './Scene.js';
 
 /**
  * A State represents an action which will be played through the history of a fight.
@@ -27,7 +28,7 @@ export class State {
 	 * @type {() => void}
 	 */
 	endCall;
-	coef = 0;
+	_coef = 0;
 	_spc = 0.1;
 	//var timer:Float;
 	//public var tids:List<{t : Fighter, life : Int}>;
@@ -52,11 +53,19 @@ export class State {
 	toDelete = false;
 
 	/**
+	 * The Scene where the state is happening.
+	 * @type {Scene}
+	 */
+	_scene;
+
+	/**
 	 * State is abstract and shouldn't be instantiated by itself.
 	 * If you are reading this you are doing something wrong.
+	 * @param {Scene} scene The Scene where the State is happening.
 	 */
-	constructor() {
+	constructor(scene) {
 		this.id = State.CURRENT_ID++;
+		this._scene = scene;
 	}
 
 	/**
@@ -71,7 +80,7 @@ export class State {
 			return;
 		}
 		// TODO: Not quite sure how this is used yet. For both coef and spc.
-		this.coef = PixiHelper.mm(0, this.coef + this._spc * Ticker.shared.elapsedMS, 1);
+		this._coef = PixiHelper.mm(0, this._coef + this._spc * Ticker.shared.deltaTime, 1);
 		if (this._endTimer !== undefined && this.endCall) {
 			this._endTimer -= Ticker.shared.elapsedMS;
 			if (this._endTimer <= 0) {

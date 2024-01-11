@@ -108,7 +108,7 @@ export class Fight {
 
 		// setup ticker
 		var ticker = new Ticker();
-		ticker.add(() => {
+		Ticker.shared.add(() => {
 			this.update();
 			this._renderer.render(this._scene);
 		});
