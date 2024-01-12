@@ -1,13 +1,18 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/tree/main/DinoRPG/gfx/fight
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Main.hx
-import { Renderer, Ticker } from 'pixi.js';
+
+// Timer: https://github.com/motion-twin/WebGamesArchives/blob/main/libs-haxe3/mt/Timer.hx
+// mt.Timer.deltaT = Timer.shared.deltaMS / 1000
+// mt.Timer.tmod = Seems to be a weighted value changing depending on the divergence from the expected frame rate.
+import { Renderer } from 'pixi.js';
 import { HaxeUnserializer } from './data/HaxeUnserializer.js';
 import { HaxeSerializer } from './data/HaxeSerializer.js';
 import { DAConverter } from './data/DAConverter.js';
 import { MTConverter } from './data/MTConverter.js';
 import { Scene } from './Scene.js';
 import { History } from './History.js';
+import { Timer } from './Timer.js';
 
 /**
  * Create a fight scene to render the history of a fight for DinoRPG.
@@ -52,6 +57,11 @@ export class Fight {
 		Notify: 30
 	};
 
+	/**
+	 * Timer managing the time elapsed between two frame to make it fit an expected framerate.
+	 * @type {Timer}
+	 */
+	_timer;
 	/**
 	 * PixiJS renderer for the fight. Will render the instantiated Scene object.
 	 * @type {Renderer}
@@ -103,25 +113,23 @@ export class Fight {
 			height: 300
 		});
 		this._scene = new Scene(this._data.bg, this._data.top ?? 0, this._data.bottom ?? 0);
-
 		this._history = new History(this._scene, this._data.history);
+		this._timer = new Timer(32);
 
-		// setup ticker
-		var ticker = new Ticker();
-		Ticker.shared.add(() => {
+		this._timer.add(() => {
 			this.update();
 			this._renderer.render(this._scene);
 		});
-		ticker.start();
+		this._timer.start();
 		this._history.playNext();
 	}
 
 	update() {
-		this._scene.update();
-		this._history.updateStates();
+		this._scene.update(this._timer);
+		this._history.updateStates(this._timer);
 		//updateSprites();
 		if (this._waitingTime > 0) {
-			this._waitingTime -= Ticker.shared.elapsedMS;
+			this._waitingTime -= this._timer.tmod;
 			if (this._waitingTime <= 0) {
 				this._waitingTime = 0;
 				this._history.playNext();

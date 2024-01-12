@@ -4,6 +4,7 @@ import { Scene } from './Scene.js';
 import { State } from './State.js';
 import { Fight } from './Fight.js';
 import { AddFighter } from './actions/AddFighter.js';
+import { Timer } from './Timer.js';
 
 export class History {
 	/**
@@ -107,10 +108,11 @@ export class History {
 
 	/**
 	 * Update all the states.
+	 * @param {Timer} timer The Timer managing the elapsed time.
 	 */
-	updateStates() {
+	updateStates(timer) {
 		for (const st of this._states) {
-			st.update();
+			st.update(timer);
 		}
 		this._states = this._states.filter((s) => !s.toDelete);
 	}

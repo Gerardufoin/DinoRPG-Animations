@@ -1,11 +1,12 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Scene.hx
 
-import { Container, Ticker } from 'pixi.js';
+import { Container } from 'pixi.js';
 import { ref as gfx } from '../gfx/references.js';
 import { TextureManager } from '../display/TextureManager.js';
 import { Asset } from '../display/Asset.js';
 import { Fighter } from './Fighter.js';
+import { Timer } from './Timer.js';
 
 /**
  * The fight scene containing all the different layers to display.
@@ -16,11 +17,6 @@ export class Scene extends Container {
 	static MARGIN = 10;
 	static WIDTH = 400;
 	static HEIGHT = 300;
-	/**
-	 * Probability that a Fighter will start walking each 0.1 second (between 0-1).
-	 * @type {number}
-	 */
-	static WALK_PROBA = 0.1;
 	_layers = {
 		bg: new Container(),
 		shade: new Container(),
@@ -42,11 +38,6 @@ export class Scene extends Container {
 	_fighters = [];
 
 	/**
-	 * Timer checking if a Fighter may start walking.
-	 */
-	_walkingTimer = 0;
-
-	/**
 	 * Create a new scene where the fight will happen.
 	 * @param {string} background The key to the background reference picture.
 	 * @param {number} top Delimit the limit for the top part of the ground.
@@ -65,31 +56,31 @@ export class Scene extends Container {
 		this._layers.fighters.sortableChildren = true;
 	}
 
-	update() {
+	/**
+	 *
+	 * @param {Timer} timer
+	 */
+	update(timer) {
 		//castle.update();
 		//updateForce();
-		this._fighters.map((f) => f.update());
+		this._fighters.map((f) => f.update(timer));
 		// SLOTS
 		//updateSlots();
 		// SHAKE
 		//updateShake();
-		this.updateWalk();
+		this.updateWalk(timer);
 		//updateTimeBar();
 	}
 
 	/**
 	 * Determinates if a Fighter should start walking.
+	 * @param {Timer} timer The Timer managing the elapsed time.
 	 */
-	updateWalk() {
-		// MT version was "if (Math.random() / Ticker.shared.tmod < 0.025)", but I don't want to use tmod if possible, so no.
-		// Instead there will be a set probability that a Fighter will start walking each 0.1 second.
-		if ((this._walkingTimer += Ticker.shared.elapsedMS) >= 100) {
-			this._walkingTimer = 0;
-			if (Math.random() <= Scene.WALK_PROBA) {
-				const a = this._fighters.filter((f) => f.isReadyToWalk());
-				if (a.length) {
-					a[Math.floor(Math.random() * a.length)].startWalk();
-				}
+	updateWalk(timer) {
+		if (Math.random() / timer.tmod < 0.025) {
+			const a = this._fighters.filter((f) => f.isReadyToWalk());
+			if (a.length) {
+				a[Math.floor(Math.random() * a.length)].startWalk();
 			}
 		}
 	}

@@ -3,6 +3,7 @@
 
 import { Container } from 'pixi.js';
 import { Scene } from './Scene.js';
+import { Timer } from './Timer.js';
 
 export class Sprite {
 	_x = 0.0;
@@ -42,10 +43,17 @@ export class Sprite {
 		this._root.scale = n;
 	}
 
-	update() {
+	/**
+	 * Update method of the Sprite. Will udpate its position.
+	 * @param {Timer} _timer The Timer managing the elapsed time. Unused for Sprite but used of its children.
+	 */
+	update(_timer) {
 		this.updatePos();
 	}
 
+	/**
+	 * Update the position of the sprite based on its internal xyz coordinates.
+	 */
 	updatePos() {
 		const sceneY = this._scene.getY(this._y);
 		this._root.x = this._x;
@@ -74,8 +82,10 @@ export class Sprite {
 	}
 
 	updateShadeSize(s = 1) {
-		this._shade.scale.x = this._ray * s * 5;
-		this._shade.scale.y = this._ray * s * 5 * 0.5;
+		if (this._shade) {
+			this._shade.scale.x = this._ray * s * 5;
+			this._shade.scale.y = this._ray * s * 5 * 0.5;
+		}
 	}
 
 	/**

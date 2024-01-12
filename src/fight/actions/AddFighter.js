@@ -88,8 +88,8 @@ export class AddFighter extends State {
 		}
 	}
 
-	update() {
-		super.update();
+	update(timer) {
+		super.update(timer);
 		switch (this._fInfos.entrance) {
 			case AddFighter.EntranceEffect.Stand:
 			case AddFighter.EntranceEffect.Anim:

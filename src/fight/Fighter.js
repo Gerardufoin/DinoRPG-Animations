@@ -1,13 +1,14 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Fighter.hx
 
-import { Container, Ticker } from 'pixi.js';
+import { Container } from 'pixi.js';
 import { PixiHelper } from '../display/PixiHelper.js';
 import { Animator } from '../display/Animator.js';
 import { sdino } from '../sdino.js';
 import { Phys } from './Phys.js';
 import { State } from './State.js';
 import { Scene } from './Scene.js';
+import { Timer } from './Timer.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -113,17 +114,20 @@ export class Fighter extends Phys {
 		this._friction = 0.9;
 	}
 
-	// TODO
-	update() {
-		super.update();
-		this._animator.update();
+	/**
+	 * TODO.
+	 * @param {Timer} timer The Timer managing the elapsed time.
+	 */
+	update(timer) {
+		super.update(timer);
+		this._animator.update(timer.deltaTimeSec * 1000);
 		if (this._lockTimer > 0) {
-			this._lockTimer -= Ticker.shared.elapsedMS;
+			this._lockTimer -= timer.tmod;
 		}
 		switch (this._mode) {
 			case Fighter.Mode.Waiting:
 				if (this._focus == null && this._lockTimer <= 0) {
-					this.updateWait();
+					this.updateWait(timer);
 				}
 				//checkBounds();
 				break;
@@ -157,15 +161,18 @@ export class Fighter extends Phys {
 		); //TODO && flFreeze != true ;
 	}
 
-	// WAIT MOVE
-	updateWait() {
+	/**
+	 * TODO.
+	 * @param {Timer} timer The Timer managing the elapsed time.
+	 */
+	updateWait(timer) {
 		//TODO if( flFreeze || haveProp(_PStatic) ) return;
 		if (this._walkPath != null) {
 			const a = this.getAng(this._walkPath);
 			const d = this.getDist(this._walkPath);
 			this._vx = -Math.cos(a) * this._walkSpeed * 0.5;
 			this._vy = -Math.sin(a) * this._walkSpeed * 0.5;
-			this._walkPath.to -= Ticker.shared.deltaTime; //mt.Timer.tmod;
+			this._walkPath.to -= timer.tmod;
 			if (d < this._walkSpeed * 2 || this._walkPath.to <= 0) {
 				this.stopWalk();
 			}

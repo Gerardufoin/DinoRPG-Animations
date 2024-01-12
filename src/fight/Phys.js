@@ -1,9 +1,9 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Phys.hx
 
-import { Ticker } from 'pixi.js';
 import { Sprite } from './Sprite.js';
 import { PixiHelper } from '../display/PixiHelper.js';
+import { Timer } from './Timer.js';
 
 export class Phys extends Sprite {
 	/**
@@ -48,26 +48,30 @@ export class Phys extends Sprite {
 		super(container, scene);
 	}
 
-	update() {
+	/**
+	 * TODO.
+	 * @param {Timer} timer The Timer managing the elapsed time.
+	 */
+	update(timer) {
 		if (this._friction != 0) {
-			const frict = Math.pow(this._friction, Ticker.shared.deltaTime);
+			const frict = Math.pow(this._friction, timer.tmod);
 			this._vx *= frict;
 			this._vy *= frict;
 			this._vz *= frict;
 			this._vr *= frict;
 		}
-		this._vz += this._weight * Ticker.shared.deltaTime;
+		this._vz += this._weight * timer.tmod;
 		if (this._frv != 0) {
-			this._vr *= Math.pow(this._frv, Ticker.shared.deltaTime);
+			this._vr *= Math.pow(this._frv, timer.tmod);
 		}
-		this._root.rotation += this._vr * Ticker.shared.deltaTime;
+		this._root.rotation += this._vr * timer.tmod;
 
-		this._x += this._vx * Ticker.shared.deltaTime;
-		this._y += this._vy * Ticker.shared.deltaTime;
-		this._z += this._vz * Ticker.shared.deltaTime;
+		this._x += this._vx * timer.tmod;
+		this._y += this._vy * timer.tmod;
+		this._z += this._vz * timer.tmod;
 
 		if (this._vsc != 0) {
-			this._root.scale.x *= Math.pow(this._vsc, Ticker.shared.deltaTime);
+			this._root.scale.x *= Math.pow(this._vsc, timer.tmod);
 			this._root.scale.y = this._root.scale.x;
 		}
 
@@ -82,7 +86,7 @@ export class Phys extends Sprite {
 			}
 		}
 
-		super.update();
+		super.update(timer);
 	}
 
 	/**

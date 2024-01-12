@@ -63,7 +63,7 @@ export class Animator extends Container {
 		this.addChild(this._body);
 		if (autoUpdate) {
 			const ticker = Ticker.shared;
-			ticker.add(() => this.update());
+			ticker.add(() => this.update(Ticker.shared.deltaMS));
 		}
 		this.registerCallback('resetChildAnimations', (animation) => {
 			animation.resetChildAnimations();
@@ -173,13 +173,14 @@ export class Animator extends Container {
 	/**
 	 * Updates the timer of the animator if an animation is playing.
 	 * If the timer reaches the tick rate, switch to the next frame.
+	 * @param {number} deltaTime Elapsed time since last frame in ms.
 	 * @returns {void}
 	 */
-	update() {
+	update(deltaTime) {
 		if (!this.playing || this._body.getAnimationLength() == 0) {
 			return;
 		}
-		this._time += Ticker.shared.elapsedMS;
+		this._time += deltaTime;
 		if (this._time >= this._tickRate) {
 			this._body.increaseCurrentIdx(Math.floor(this._time / this._tickRate));
 			this._time = this._time % this._tickRate;

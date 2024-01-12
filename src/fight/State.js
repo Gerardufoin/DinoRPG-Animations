@@ -1,10 +1,10 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/State.hx
 
-import { Ticker } from 'pixi.js';
 import { Fighter } from './Fighter.js';
 import { PixiHelper } from '../display/PixiHelper.js';
 import { Scene } from './Scene.js';
+import { Timer } from './Timer.js';
 
 /**
  * A State represents an action which will be played through the history of a fight.
@@ -71,18 +71,19 @@ export class State {
 	/**
 	 * Updates the State.
 	 *
-	 * If the casting is not ready yet, check if it is ready and stop if it isnt.
+	 * If the casting is not ready yet, check if it is ready and stop if it is not.
+	 * @param {Timer} timer The Timer managing the elapsed time.
 	 * @returns {void}
 	 */
-	update() {
+	update(timer) {
 		if (this.castingWait) {
 			this.checkCasting();
 			return;
 		}
 		// TODO: Not quite sure how this is used yet. For both coef and spc.
-		this._coef = PixiHelper.mm(0, this._coef + this._spc * Ticker.shared.deltaTime, 1);
+		this._coef = PixiHelper.mm(0, this._coef + this._spc * timer.tmod, 1);
 		if (this._endTimer !== undefined && this.endCall) {
-			this._endTimer -= Ticker.shared.elapsedMS;
+			this._endTimer -= timer.tmod;
 			if (this._endTimer <= 0) {
 				this.endCall();
 				this._endTimer = undefined;
