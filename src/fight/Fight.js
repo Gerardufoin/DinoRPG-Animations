@@ -97,7 +97,7 @@ export class Fight {
 
 	/**
 	 * Create a fight based on the data parameter.
-	 * @param {{legacy_data?: string, bg?: string, history?: Array}} data Object containing the data descriving a fight.
+	 * @param {{legacy_data?: string, bg?: string, history?: Array, debug?: boolean}} data Object containing the data descriving a fight.
 	 */
 	constructor(data) {
 		if (data.legacy_data) {
@@ -112,15 +112,25 @@ export class Fight {
 			width: 488,
 			height: 300
 		});
-		this._scene = new Scene(this._data.bg, this._data.top ?? 0, this._data.bottom ?? 0);
-		this._history = new History(this._scene, this._data.history);
-		this._timer = new Timer(32);
 
+		this._scene = new Scene(
+			this._data.bg,
+			{
+				top: this._data.top ?? 0,
+				bottom: this._data.bottom ?? 0,
+				right: this._data.right ?? 0
+			},
+			data.debug
+		);
+
+		this._timer = new Timer(32);
 		this._timer.add(() => {
 			this.update();
 			this._renderer.render(this._scene);
 		});
 		this._timer.start();
+
+		this._history = new History(this._scene, this._data.history);
 		this._history.playNext();
 	}
 

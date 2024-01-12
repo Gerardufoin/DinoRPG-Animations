@@ -1,7 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Fighter.hx
 
-import { Container } from 'pixi.js';
+import { Container, Graphics } from 'pixi.js';
 import { PixiHelper } from '../display/PixiHelper.js';
 import { Animator } from '../display/Animator.js';
 import { sdino } from '../sdino.js';
@@ -112,6 +112,10 @@ export class Fighter extends Phys {
 
 		*/
 		this._friction = 0.9;
+
+		if (this._scene.debugMode) {
+			this.debugShowOrigin();
+		}
 	}
 
 	/**
@@ -129,7 +133,7 @@ export class Fighter extends Phys {
 				if (this._focus == null && this._lockTimer <= 0) {
 					this.updateWait(timer);
 				}
-				//checkBounds();
+				this.checkBounds(timer);
 				break;
 			case Fighter.Mode.Anim:
 				/*var mc = skin._p0._p1._anim._sub;
@@ -271,6 +275,28 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Check if the Fighter is still in the scene area.
+	 * If the Fighter is getting out of bound, guide it back into the Scene.
+	 * @param {Timer} timer Fight timer containing the elapsed time.
+	 */
+	checkBounds(timer) {
+		// if (haveProp(_PStatic)) return; TODO
+		const m = 4;
+		const wmod = 10;
+		if (this._x < m + this._ray || this._x > Scene.WIDTH - (this._ray + m + this._scene.margins.right)) {
+			const dx = PixiHelper.mm(m + this._ray + wmod, this._x, Scene.WIDTH - (m + this._ray + wmod)) - this._x;
+			this._x += dx * 0.3 * timer.tmod;
+			this._vx = 0;
+		}
+		const up = this._ray * 0.5;
+		const down = this._scene.getPYSize() - this._ray;
+		if (this._y < up || this._y > down) {
+			this._y = PixiHelper.mm(up, this._y, down);
+			this._vy = 0;
+		}
+	}
+
+	/**
 	 * Switch the current animation being played by the Fighter's Animator.
 	 * @param {string} anim The animation to play.
 	 */
@@ -333,5 +359,15 @@ export class Fighter extends Phys {
 	 */
 	showName() {
 		//TODO
+	}
+
+	/**
+	 * Adds a red dot at the center of the Fighter.
+	 * Debug purposes only.
+	 */
+	debugShowOrigin() {
+		const origin = new Graphics();
+		origin.beginFill(0xff0000).drawCircle(0, 0, 2).endFill();
+		this.body.addChild(origin);
 	}
 }

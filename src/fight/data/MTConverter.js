@@ -53,7 +53,7 @@ export class MTConverter {
 			_check: '/user/check?id=yYC6L',
 			_debug: '/tools/debugFight?sk=3GHQD1Sk',
 			_mbottom: etData.bottom ?? 0,
-			_mright: 0,
+			_mright: etData.right ?? 0,
 			_equip: '/img/icons/obj_::id::.gif',
 			_sdino: '/swf/sdino.swf?v=33',
 			_dino: '/swf/dino.swf?v=35',

@@ -54,6 +54,7 @@ export class DAConverter {
 			bg: DAConverter.getBackground(mtData),
 			top: mtData._mtop ?? 0,
 			bottom: mtData._mbottom ?? 0,
+			right: mtData._mright ?? 0,
 			history: DAConverter.convertHistory(mtData)
 		};
 		return data;

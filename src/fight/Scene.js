@@ -1,7 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Scene.hx
 
-import { Container } from 'pixi.js';
+import { Container, Graphics } from 'pixi.js';
 import { ref as gfx } from '../gfx/references.js';
 import { TextureManager } from '../display/TextureManager.js';
 import { Asset } from '../display/Asset.js';
@@ -27,10 +27,22 @@ export class Scene extends Container {
 		bgFront: new Container(),
 		inter: new Container(),
 		columns: new Container(),
-		loading: new Container()
+		loading: new Container(),
+		debug: new Container()
 	};
-	_top = 0.0;
-	_bottom = 0.0;
+	/**
+	 * If true, displays the debug parameters when instantiating entities.
+	 */
+	debugMode = false;
+	/**
+	 * Define the margins of the scene.
+	 * Margins delimits the walking area of the scene.
+	 */
+	margins = {
+		top: 0,
+		bottom: 0,
+		right: 0
+	};
 	/**
 	 * Contains all the fighters currently instantiated and contained in the fighters layer.
 	 * @type {Fighter[]}
@@ -40,13 +52,13 @@ export class Scene extends Container {
 	/**
 	 * Create a new scene where the fight will happen.
 	 * @param {string} background The key to the background reference picture.
-	 * @param {number} top Delimit the limit for the top part of the ground.
-	 * @param {number} bottom Delimit the limit for the bottom part of the ground.
+	 * @param {{top: number, bottom: number, right: number}} margins Set the margins for the walkable area.
+	 * @param {boolean} debug If true, the scene starts in debug mode. False by default.
 	 */
-	constructor(background, top, bottom) {
+	constructor(background, margins, debug = false) {
 		super();
-		this._top = top;
-		this._bottom = bottom;
+		this.debugMode = debug;
+		this.margins = margins;
 		for (const k in this._layers) {
 			this.addChild(this._layers[k]);
 		}
@@ -54,6 +66,11 @@ export class Scene extends Container {
 		this.createColumns();
 		// The zindex of the entities is managed by their computed z position.
 		this._layers.fighters.sortableChildren = true;
+
+		// DEBUG
+		if (this.debugMode) {
+			this.debugDrawMargins();
+		}
 	}
 
 	/**
@@ -106,12 +123,22 @@ export class Scene extends Container {
 	 */
 	createColumns() {
 		const texture = TextureManager.getTextureFromCompressedReference(gfx.scene.mcColumn);
-		this._layers.columns.addChild(new Asset(texture));
-		const col2 = new Asset(texture);
-		col2.onLoad(() => {
-			col2.x = 488 - col2.width;
+		const colLeft = new Asset(texture);
+		// Once the left column is loaded, move all the scene beside the background and the columns by the width of the column.
+		// The x = 0 of the other scenes should be on the border of the left column.
+		colLeft.onLoad(() => {
+			for (const l in this._layers) {
+				if (!['bg', 'columns'].includes(l)) {
+					this._layers[l].x += colLeft.width;
+				}
+			}
 		});
-		this._layers.columns.addChild(col2);
+		this._layers.columns.addChild(colLeft);
+		const colRight = new Asset(texture);
+		colRight.onLoad(() => {
+			colRight.x = 488 - colRight.width;
+		});
+		this._layers.columns.addChild(colRight);
 	}
 
 	/**
@@ -129,7 +156,7 @@ export class Scene extends Container {
 	 * @returns {number} The global y value converted into scene coordinate.
 	 */
 	getY(y) {
-		return this._top + y * 0.5;
+		return this.margins.top + y * 0.5;
 	}
 
 	/**
@@ -138,7 +165,7 @@ export class Scene extends Container {
 	 * @returns {number} The global y coordinate converted from the scene coordinate.
 	 */
 	getGY(y) {
-		return (y - this._top) * 2;
+		return (y - this.margins.top) * 2;
 	}
 
 	/**
@@ -146,7 +173,7 @@ export class Scene extends Container {
 	 * @returns {number} The height of the scene, minus the top and bottom margin, multiplied by 2.
 	 */
 	getPYSize() {
-		return (Scene.HEIGHT - (this._top + this._bottom)) * 2;
+		return (Scene.HEIGHT - (this.margins.top + this.margins.bottom)) * 2;
 	}
 
 	/**
@@ -163,5 +190,33 @@ export class Scene extends Container {
 	 */
 	getRandomPYPos() {
 		return Math.random() * this.getPYSize();
+	}
+
+	/**
+	 * Debug function. Draws the scene's given margins.
+	 */
+	debugDrawMargins() {
+		this.debugAddLine({ x: 0, y: this.margins.top }, { x: Scene.WIDTH, y: this.margins.top });
+		this.debugAddLine(
+			{ x: 0, y: Scene.HEIGHT - this.margins.bottom },
+			{ x: Scene.WIDTH, y: Scene.HEIGHT - this.margins.bottom }
+		);
+		this.debugAddLine(
+			{ x: Scene.WIDTH - this.margins.right, y: 0 },
+			{ x: Scene.WIDTH - this.margins.right, y: Scene.HEIGHT }
+		);
+	}
+
+	/**
+	 * Add a line to the debug layer.
+	 * The line starts from "from" and ends to "to".
+	 * @param {{x: number, y: number}} from Coordinates of the start of the line.
+	 * @param {{x: number, y: number}} to Coordinates of the end of the line.
+	 */
+	debugAddLine(from, to) {
+		console.log(from, to);
+		const line = new Graphics();
+		this._layers.debug.addChild(line);
+		line.lineStyle(2, 0xff0000).moveTo(from.x, from.y).lineTo(to.x, to.y);
 	}
 }
