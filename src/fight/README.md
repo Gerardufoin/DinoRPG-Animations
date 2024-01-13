@@ -43,9 +43,9 @@ document.body.appendChild(fight.getDisplay());
 
 Add a fighter to the scene.
 
-#### Arguments
+#### Properties
 
-1. Object - Details of the fighter to add.
+1. fighter - Object - Details of the fighter to add.
 
 | Variable  | Description                                                                                   |
 | --------- | --------------------------------------------------------------------------------------------- |
@@ -74,6 +74,14 @@ Add a fighter to the scene.
 ### AddCastle (1)
 
 ### MoveTo (2)
+
+Move a Fighter based on the passed Fighter's id to the designed xy position.
+
+#### Properties
+
+1. fid - number - The Fighter's id referencing the Fighter to move.
+2. x - number - The x coordinate of the destination.
+3. y - number - The y coordinate of the destination.
 
 ### Damages (3)
 
@@ -131,5 +139,11 @@ Unused in this project for now.
 ### Wait (28)
 
 ### Log (29)
+
+Sends a message to the console if the fight is started in debug mode.
+
+#### Properties
+
+1. msg - String - The message to print in the console.
 
 ### Notify (30)

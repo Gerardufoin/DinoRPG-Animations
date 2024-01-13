@@ -70,6 +70,20 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Get the running speed of the fighter.
+	 * @type {number}
+	 */
+	get runSpeed() {
+		return this._runSpeed;
+	}
+
+	/**
+	 * The last registered coordinates of the Fighter.
+	 * Used to send back the Fighter to this position via the return action.
+	 * @type {{x: number, y: number}}
+	 */
+	_lastCoord = null;
+	/**
 	 * Walk path of the Fighter. Null if the Fighter is not currently walking.
 	 * @type {{x: number, y: number, to: number} | null}
 	 */
@@ -319,6 +333,21 @@ export class Fighter extends Phys {
 			this._y = PixiHelper.mm(up, this._y, down);
 			this._vy = 0;
 		}
+	}
+
+	/**
+	 * Save the current coordinates of the Fighter for a futur return action.
+	 * If there are already saved coordinates, does nothing.
+	 * @returns {void}
+	 */
+	saveCurrentCoords() {
+		if (this._lastCoord) {
+			return;
+		}
+		this._lastCoord = {
+			x: this._x,
+			y: this._y
+		};
 	}
 
 	/**

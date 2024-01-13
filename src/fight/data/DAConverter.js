@@ -391,8 +391,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHMoveTo(args) {
-		console.log('Conversion for "_HMoveTo" not done yet.');
-		return { action: Fight.Action.MoveTo };
+		return { action: Fight.Action.MoveTo, fid: args[0], x: args[1], y: args[2] };
 	}
 
 	/**

@@ -401,8 +401,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHMoveTo(obj) {
-		console.log('Conversion for "_HMoveTo" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HMoveTo',
+			args: [obj.fid, obj.x, obj.y]
+		};
 	}
 
 	/**

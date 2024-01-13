@@ -159,6 +159,15 @@ export class Scene extends Container {
 	}
 
 	/**
+	 * Get the Fighter with the corresponding id.
+	 * @param {number} fid The id of the desired fighter.
+	 * @returns {Fighter} The Fighter with the corresponding id, or undefined if it does not exists.
+	 */
+	getFighter(fid) {
+		return this._fighters.find((f) => fid === f.id);
+	}
+
+	/**
 	 * Generate a particle based on the type of terrain of the current scene.
 	 * @param {number} x The x coordinate of the spawned particle.
 	 * @param {number} y The y coordinate of the spawned particle.
@@ -235,7 +244,6 @@ export class Scene extends Container {
 	 * @param {{x: number, y: number}} to Coordinates of the end of the line.
 	 */
 	debugAddLine(from, to) {
-		console.log(from, to);
 		const line = new Graphics();
 		this._layers.debug.addChild(line);
 		line.lineStyle(2, 0xff0000).moveTo(from.x, from.y).lineTo(to.x, to.y);
