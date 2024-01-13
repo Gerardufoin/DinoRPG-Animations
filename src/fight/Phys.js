@@ -4,7 +4,12 @@
 import { Sprite } from './Sprite.js';
 import { PixiHelper } from '../display/PixiHelper.js';
 import { Timer } from './Timer.js';
+import { Container } from 'pixi.js';
+import { Scene } from './Scene.js';
 
+/**
+ * The Phys class applies physic components to move the Sprite around.
+ */
 export class Phys extends Sprite {
 	/**
 	 * X velocity.
@@ -55,12 +60,17 @@ export class Phys extends Sprite {
 	 */
 	onBounce;
 
+	/**
+	 * Insantiate a Phys class. The parameters are for the Sprite initialisation.
+	 * @param {Container} container PixiJS container. The body being moved around.
+	 * @param {Scene} scene The scene where the body evolves.
+	 */
 	constructor(container, scene) {
 		super(container, scene);
 	}
 
 	/**
-	 * TODO.
+	 * Update the position based on the velocity and the frictions of the Fighter.
 	 * @param {Timer} timer The Timer managing the elapsed time.
 	 */
 	update(timer) {

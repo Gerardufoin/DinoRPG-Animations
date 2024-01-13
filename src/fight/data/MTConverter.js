@@ -451,8 +451,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHLog(obj) {
-		console.log('Conversion for "_HLog" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HLog',
+			args: [obj.msg]
+		};
 	}
 
 	/**

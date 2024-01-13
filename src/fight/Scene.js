@@ -74,10 +74,18 @@ export class Scene extends Container {
 	}
 
 	/**
-	 *
-	 * @param {Timer} timer
+	 * Update all the elements related to the scene in the following order.
+	 * - Castle.
+	 * - Forces.
+	 * - Fighters.
+	 * - Slots.
+	 * - Sceen shake.
+	 * - Start walking.
+	 * - Time bar.
+	 * @param {Timer} timer The fight Timer containing the elasped time.
 	 */
 	update(timer) {
+		// TODO
 		//castle.update();
 		//updateForce();
 		this._fighters.map((f) => f.update(timer));

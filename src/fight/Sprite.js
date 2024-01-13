@@ -58,6 +58,7 @@ export class Sprite {
 		const sceneY = this._scene.getY(this._y);
 		this._root.x = this._x;
 		this._root.y = sceneY + this._z * 0.5;
+		this._root.zIndex = sceneY;
 		if (this._shade) {
 			this._shade.x = this._x;
 			this._shade.y = sceneY;

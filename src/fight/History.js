@@ -77,7 +77,7 @@ export class History {
 			[Fight.Action.SpawnToy]: undefined,
 			[Fight.Action.DestroyToy]: undefined,
 			[Fight.Action.Wait]: undefined,
-			[Fight.Action.Log]: undefined,
+			[Fight.Action.Log]: 'printLog',
 			[Fight.Action.Notify]: undefined
 		};
 	}
@@ -92,17 +92,21 @@ export class History {
 			const h = this._history[this._historyIdx];
 			if (this._actions[h.action]) {
 				this._currentState = this[this._actions[h.action]](h);
-				this._states.push(this._currentState);
-				/**
-				 * Once the state ends, calls the next State in the history.
-				 */
-				this._currentState.endCall = () => {
+				if (this._currentState) {
+					this._states.push(this._currentState);
+					/**
+					 * Once the state ends, calls the next State in the history.
+					 */
+					this._currentState.endCall = () => {
+						this.playNext();
+					};
+				} else {
 					this.playNext();
-				};
-				return;
+				}
+			} else {
+				console.error(`Action ${h.action} not defined in history mapping.`);
+				this.playNext();
 			}
-			console.error(`Action ${h.action} not defined in history mapping.`);
-			this.playNext();
 		}
 	}
 
@@ -124,5 +128,17 @@ export class History {
 	 */
 	addFighter(action) {
 		return new AddFighter(this._scene, action.fighter);
+	}
+
+	/**
+	 * Print the message to the standard output.
+	 * @param {{action: number, msg: string}} action Action which triggered the call.
+	 * @returns {null} No State is returned.
+	 */
+	printLog(action) {
+		if (this._scene.debugMode) {
+			console.log(`Fight Log Message: ${action.msg}`);
+		}
+		return null;
 	}
 }

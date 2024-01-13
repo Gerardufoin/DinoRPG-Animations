@@ -441,8 +441,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHLog(args) {
-		console.log('Conversion for "_HLog" not done yet.');
-		return { action: Fight.Action.Log };
+		return { action: Fight.Action.Log, msg: args[0] };
 	}
 
 	/**

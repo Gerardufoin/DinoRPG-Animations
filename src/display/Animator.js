@@ -175,6 +175,8 @@ export class Animator extends Container {
 			this._body.setOffsetIdx(this._animations[key].offset ?? 0);
 			this._body.play();
 			this.setFrame(0);
+		} else {
+			this._body.markAsEnded();
 		}
 	}
 

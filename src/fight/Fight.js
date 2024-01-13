@@ -74,13 +74,13 @@ export class Fight {
 	 */
 	_legacyData;
 	/**
-	 * Data of the current fight under this project format.
+	 * Data of the current fight under DA format.
 	 * @type {object}
 	 */
 	_data;
 
 	/**
-	 * If waiting time is above 0, the game is paused.
+	 * If waiting time is above 0, the game is paused until the given time has elapsed.
 	 * @type {number}
 	 */
 	_waitingTime = 0;
@@ -93,7 +93,7 @@ export class Fight {
 
 	/**
 	 * Create a fight based on the data parameter.
-	 * @param {{legacy_data?: string, bg?: string, history?: Array, debug?: boolean}} data Object containing the data descriving a fight.
+	 * @param {{legacy_data?: string, bg?: string, history?: Array, debug?: boolean}} data Object containing the data describing a fight.
 	 */
 	constructor(data) {
 		if (data.legacy_data) {

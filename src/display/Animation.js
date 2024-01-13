@@ -43,7 +43,7 @@ export class Animation extends Container {
 	 * Reset once the animation is changed.
 	 * @type {boolean}
 	 */
-	_ended = false;
+	_ended = true;
 
 	/**
 	 * True if the current animation has reached its last frame at least once.
@@ -259,6 +259,13 @@ export class Animation extends Container {
 	 */
 	play() {
 		this._playing = true;
+	}
+
+	/**
+	 * Force the animation to be marked as ended.
+	 */
+	markAsEnded() {
+		this._ended = true;
 	}
 
 	/**

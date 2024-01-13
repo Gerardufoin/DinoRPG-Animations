@@ -4,6 +4,7 @@
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
+import { Timer } from '../Timer.js';
 
 /**
  * Action adding a new Fighter to the scene.
@@ -54,6 +55,13 @@ export class AddFighter extends State {
 		// TODO add slot to scene
 	}
 
+	/**
+	 * Initialize the Fighter position depending on its desired entrance type.
+	 *
+	 * Its x and y coordinates will be randomly choosen on the scene depending on the Fighter side.
+	 *
+	 * The x and y coordinates can be passed in the fighter info in the constructor if they are not desired to be random.
+	 */
 	init() {
 		const w = Scene.WIDTH * 0.5;
 		let ex = this._fInfos.x ? this._fInfos.x : w + -this._fighter.intSide * (w - (30 + Math.random() * 100));
@@ -98,6 +106,10 @@ export class AddFighter extends State {
 		}
 	}
 
+	/**
+	 * Update the Fighter entrance animation.
+	 * @param {Timer} timer The fight Timer containing the current time elasped.
+	 */
 	update(timer) {
 		super.update(timer);
 		switch (this._fInfos.entrance) {

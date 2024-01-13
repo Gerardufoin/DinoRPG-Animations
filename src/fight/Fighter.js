@@ -189,7 +189,9 @@ export class Fighter extends Phys {
 	}
 
 	/**
-	 * TODO.
+	 * Update the waiting mode the of the Fighter.
+	 *
+	 * In this mode, the Fighter can only walk around if not frozwn or static.
 	 * @param {Timer} timer The Timer managing the elapsed time.
 	 */
 	updateWait(timer) {
