@@ -151,6 +151,19 @@ export class Scene extends Container {
 	}
 
 	/**
+	 * Generate a particle based on the type of terrain of the current scene.
+	 * @param {number} x The x coordinate of the spawned particle.
+	 * @param {number} y The y coordinate of the spawned particle.
+	 * @param {number} vx The initial x velocity of the particle.
+	 * @param {number} vy The initial y velocity of the particle.
+	 * @param {number} vz The initial z velocity of the particle.
+	 * @param {boolean} flJump Dunno yet. Related to jumping.
+	 */
+	genGroundPart(x, y, vx = 0, vy = 0, vz = 0, flJump = false) {
+		// TODO
+	}
+
+	/**
 	 * Convert a global y coordinate into a scene y coordinate.
 	 * @param {number} y The global y value.
 	 * @returns {number} The global y value converted into scene coordinate.

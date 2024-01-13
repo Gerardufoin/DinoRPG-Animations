@@ -46,7 +46,7 @@ export class AddFighter extends State {
 		super(scene);
 		this._fInfos = fighter;
 		this._fighter = new Fighter(this._fInfos, scene);
-		this._spc = 0.03;
+		this._coefSpeed = 0.03;
 		this._endTimer = 5;
 		scene.addFighter(this._fighter);
 		this.addActor(this._fighter);
@@ -56,13 +56,13 @@ export class AddFighter extends State {
 
 	init() {
 		const w = Scene.WIDTH * 0.5;
-		let ex = this._fInfos.x ? this._fInfos.x : w + -this._fighter.getIntSide() * (w - (30 + Math.random() * 100));
+		let ex = this._fInfos.x ? this._fInfos.x : w + -this._fighter.intSide * (w - (30 + Math.random() * 100));
 		let ey = this._fInfos.y ? this._fInfos.y : this._scene.getRandomPYPos();
 
 		this._fighter._x = ex;
 		this._fighter._y = ey;
 
-		const xOffset = -this._fighter.getIntSide() * (w + 50);
+		const xOffset = -this._fighter.intSide * (w + 50);
 
 		switch (this._fInfos.entrance) {
 			case AddFighter.EntranceEffect.Stand:
@@ -73,18 +73,28 @@ export class AddFighter extends State {
 				this._fighter.playAnim('fall');
 				break;
 			case AddFighter.EntranceEffect.Run:
-				//this._fighter._x += xOffset;
-				//this._fighter.mo
+				this._fighter._x += xOffset;
+				this._fighter.moveTo(ex, ey);
 				break;
 			case AddFighter.EntranceEffect.Ground:
+				// Update the pose to instantiate the mask at the right position.
+				this._fighter.updatePos();
 				// TODO
+				/*holeMask = Scene.me.dm.attach("mcHoleMask",Scene.DP_FIGHTER);
+				f.root.setMask(holeMask);
+				holeMask._x = f.root._x;
+				holeMask._y = f.root._y;*/
+
+				this._fighter.playAnim('stand');
+				this._fighter.bounceFrict = 0;
+				this._fighter.updateShadeSize(0);
 				break;
 			case AddFighter.EntranceEffect.Anim:
 				this._fighter.playAnim(this._fInfos.anim);
 				break;
 			default:
-			//this._fighter._x += xOffset;
-			//this._fighter.mo
+				this._fighter._x += xOffset;
+				this._fighter.moveTo(ex, ey, Fighter.MovementType.JumpDown);
 		}
 	}
 
@@ -103,10 +113,21 @@ export class AddFighter extends State {
 				break;
 			case AddFighter.EntranceEffect.Ground:
 				// TODO
+				//holeMask._xscale = holeMask._yscale = (f.ray+20)*2;
+				//holeMask._xscale *= 3 ;
+
+				this._fighter._z = (this._fighter.height * 2 + 50) * (1 - this._coef);
+				if (this._coef > 0.8) {
+					this._fighter.updateShadeSize((this._coef - 0.8) / 0.2);
+				}
+				if (this._coef == 1) {
+					this._fighter.bounceFrict = 0.5;
+					//holeMask.removeMovieClip();
+				}
+				this._fighter.fxLand(1, 1, 20);
 				break;
 			default:
-			//this._fighter._x += xOffset;
-			//this._fighter.mo
+				this._fighter.updateMove(this._coef);
 		}
 
 		if (this._coef === 1) {
@@ -116,7 +137,7 @@ export class AddFighter extends State {
 				this._fighter.backToDefault();
 			}
 			this._fighter.setLockTimer(20);
-			if (!this._fighter.isDino() || !this._fighter.getSide()) {
+			if (!this._fighter.isDino || !this._fighter.side) {
 				this._fighter.showName();
 			}
 			this.kill();

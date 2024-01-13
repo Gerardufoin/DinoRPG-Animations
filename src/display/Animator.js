@@ -54,6 +54,14 @@ export class Animator extends Container {
 	_callbacks = {};
 
 	/**
+	 * True if the current animation has reached its last frame at least once.
+	 * @type {boolean}
+	 */
+	get hasAnimEnded() {
+		return this._body.hasEnded;
+	}
+
+	/**
 	 * Contructor of the Animator.
 	 * Adds the body to the main container, setup the update and add the default 'stop' callback which stop the animation.
 	 * @param {boolean} autoUpdate Set if the Animator must register itself to the PixiJS ticker for its animation to play automatically. True by default.

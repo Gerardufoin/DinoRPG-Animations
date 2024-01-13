@@ -33,10 +33,21 @@ export class Phys extends Sprite {
 	_vsc = 0.0;
 	_friction = 0.0;
 	_frv = 0.0;
+	/**
+	 * @type {number | null}
+	 */
 	_groundFrict = 0.5;
 	_groundRotFrict = 0.5;
 	_bounceFrict = 0.5;
 	_weight = 0.0;
+
+	/**
+	 * Set the bounce friction.
+	 * @param {number} bf The new bounce friction.
+	 */
+	set bounceFrict(bf) {
+		this._bounceFrict = bf;
+	}
 
 	/**
 	 * On bounce callback.

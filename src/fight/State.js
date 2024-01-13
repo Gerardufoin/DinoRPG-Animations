@@ -15,6 +15,11 @@ import { Timer } from './Timer.js';
  * State is an abstract class and cannot be instantiated by itself (well, it can, but it does nothing, so yeah).
  */
 export class State {
+	/**
+	 * Allows the attribution of an unique ID for each State.
+	 * Increased after each new State instantiation.
+	 * @type {number}
+	 */
 	static CURRENT_ID = 0;
 
 	/**
@@ -28,10 +33,16 @@ export class State {
 	 * @type {() => void}
 	 */
 	endCall;
+	/**
+	 * Current progression of the State between 0 and 1, 0 being the begining of the State and 1 its end.
+	 * @type {number}
+	 */
 	_coef = 0;
-	_spc = 0.1;
-	//var timer:Float;
-	//public var tids:List<{t : Fighter, life : Int}>;
+	/**
+	 * Speed of the coefficient in frames.
+	 * For example, 1 would increase _coef of 1 per frame (meaning the State would reached its max coef in 1 frame).
+	 */
+	_coefSpeed = 0.1;
 	/**
 	 * Once the time has elapsed, call the callback endCall.
 	 * If the timer is undefined, endCall is only called when the method "end" is called.
@@ -41,11 +52,12 @@ export class State {
 	 * Contains all the actor participating in the action.
 	 * @type {Fighter[]}
 	 */
-	casting = [];
+	_casting = [];
 	/**
 	 * While this variable is true, it means all the actors needed for the State are not available.
+	 * @type {boolean}
 	 */
-	castingWait = true;
+	_castingWait = true;
 	/**
 	 * Determines if a State should be removed from the state list.
 	 * @type {boolean}
@@ -76,12 +88,12 @@ export class State {
 	 * @returns {void}
 	 */
 	update(timer) {
-		if (this.castingWait) {
+		if (this._castingWait) {
 			this.checkCasting();
 			return;
 		}
-		// TODO: Not quite sure how this is used yet. For both coef and spc.
-		this._coef = PixiHelper.mm(0, this._coef + this._spc * timer.tmod, 1);
+		// Increase the coef by the speed multiplied by the elapsed frames (tmod) and cap it between 0 and 1.
+		this._coef = PixiHelper.mm(0, this._coef + this._coefSpeed * timer.tmod, 1);
 		if (this._endTimer !== undefined && this.endCall) {
 			this._endTimer -= timer.tmod;
 			if (this._endTimer <= 0) {
@@ -102,8 +114,8 @@ export class State {
 	 * @param {Fighter} f The new Fighter to add to the state.
 	 */
 	addActor(f) {
-		this.casting.push(f);
-		this.castingWait = true;
+		this._casting.push(f);
+		this._castingWait = true;
 	}
 
 	/**
@@ -113,12 +125,12 @@ export class State {
 	 * @returns {void}
 	 */
 	checkCasting() {
-		for (const f of this.casting) {
+		for (const f of this._casting) {
 			if (!f.setFocus(this)) {
 				return;
 			}
 		}
-		this.castingWait = false;
+		this._castingWait = false;
 		this.init();
 	}
 
@@ -127,13 +139,13 @@ export class State {
 	 * @param {number | undefined} n The lock timer to give to the Fighters before releasing them from the State.
 	 */
 	releaseCasting(n = undefined) {
-		for (const f of this.casting) {
+		for (const f of this._casting) {
 			f.unfocus();
 			if (n !== undefined) {
 				f.setLockTimer(n);
 			}
 		}
-		this.casting = [];
+		this._casting = [];
 	}
 
 	/**

@@ -9,6 +9,7 @@ import { Phys } from './Phys.js';
 import { State } from './State.js';
 import { Scene } from './Scene.js';
 import { Timer } from './Timer.js';
+import { SimpleTween } from './SimpleTween.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -16,6 +17,12 @@ export class Fighter extends Phys {
 		Anim: 1,
 		Dead: 2,
 		Dodge: 3
+	};
+	static MovementType = {
+		Jump: 0,
+		JumpAbove: 1,
+		JumpDown: 2,
+		Run: 3
 	};
 
 	/**
@@ -55,10 +62,28 @@ export class Fighter extends Phys {
 	_height = 36;
 
 	/**
+	 * Get the height of the fighter.
+	 * @type {number}
+	 */
+	get height() {
+		return this._height;
+	}
+
+	/**
 	 * Walk path of the Fighter. Null if the Fighter is not currently walking.
 	 * @type {{x: number, y: number, to: number} | null}
 	 */
 	_walkPath = null;
+	/**
+	 * Current movement of the Fighter. Null is the Fighter is not currently moving.
+	 * @type {SimpleTween}
+	 */
+	_tweenMove = null;
+	/**
+	 * Current movement type associated with the movement Tween. Value of the enum Fighter.MovementType.
+	 * @type {number}
+	 */
+	_moveType = null;
 
 	_mode = Fighter.Mode.Waiting;
 
@@ -124,7 +149,7 @@ export class Fighter extends Phys {
 	 */
 	update(timer) {
 		super.update(timer);
-		this._animator.update(timer.deltaTimeSec * 1000);
+		this._animator.update(timer.deltaTimeMS);
 		if (this._lockTimer > 0) {
 			this._lockTimer -= timer.tmod;
 		}
@@ -136,11 +161,9 @@ export class Fighter extends Phys {
 				this.checkBounds(timer);
 				break;
 			case Fighter.Mode.Anim:
-				/*var mc = skin._p0._p1._anim._sub;
-				if (mc._currentframe >= mc._totalframes) {
-					setWaiting();
-					// NEED _SUB for all anim
-				}*/
+				if (this._animator.hasAnimEnded) {
+					this.setWaiting();
+				}
 				break;
 			case Fighter.Mode.Dead:
 				break;
@@ -200,7 +223,7 @@ export class Fighter extends Phys {
 		this._animator.playAnim('walk');
 		const w = Scene.WIDTH * 0.5;
 		this._walkPath = {
-			x: w - this.getIntSide() * (20 + Math.random() * (w - 80)),
+			x: w - this.intSide * (20 + Math.random() * (w - 80)),
 			y: PixiHelper.mm(
 				this._ray,
 				this._y + (Math.random() * 2 - 1) * 20,
@@ -233,7 +256,7 @@ export class Fighter extends Phys {
 	 * Return the side of the Fighter as an integer.
 	 * @returns {number} 1 for left side, -1 for right side.
 	 */
-	getIntSide() {
+	get intSide() {
 		return this._side ? 1 : -1;
 	}
 
@@ -241,7 +264,7 @@ export class Fighter extends Phys {
 	 * Check if the Fighter is a dino or not.
 	 * @returns {boolean} True if the Fighter is a dino, false otherwise.
 	 */
-	isDino() {
+	get isDino() {
 		return this._isDino;
 	}
 
@@ -249,7 +272,7 @@ export class Fighter extends Phys {
 	 * Returns the side of the Fighter.
 	 * @returns {boolean} True if the Fighter is on the left side, false otherwise.
 	 */
-	getSide() {
+	get side() {
 		return this._side;
 	}
 
@@ -312,6 +335,14 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Change the Fighter into waiting mode, setting its current animation to the current default one.
+	 */
+	setWaiting() {
+		this._mode = Fighter.Mode.Waiting;
+		this.playAnim(this._defaultAnim);
+	}
+
+	/**
 	 * Try to lock a Fighter to do a specific action (State). If the Fighter is unavailable, return false.
 	 * @param {State} state The state the Fighter has to focus on.
 	 * @returns {boolean} False if the Fighter is unavailable, true otherwise.
@@ -347,11 +378,103 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Move the Fighter to the desired position over time.
+	 *
+	 * The type of movement can be chosend based on Fighter.MovementType.
+	 * @param {number} dx The x coordinate of the destination.
+	 * @param {number} dy The y coordinate of the destination.
+	 * @param {number} moveType A value from the Fighter.MovementType enum. Null by default.
+	 */
+	moveTo(dx, dy, moveType = null) {
+		if ((dx - this._x) * this.intSide < 0) {
+			this.setSens(false);
+		}
+		this._tweenMove = new SimpleTween(this, { x: this._x, y: this._y }, { x: dx, y: dy });
+		this._moveType = moveType;
+		switch (this._moveType) {
+			case Fighter.MovementType.Jump:
+			case Fighter.MovementType.JumpAbove:
+				this.playAnim('jump');
+				this.fxJump();
+				break;
+			case Fighter.MovementType.JumpDown:
+				this.playAnim('jumpDown');
+				this.fxJump();
+				break;
+			default:
+				this.playAnim('run');
+		}
+	}
+
+	/**
+	 * Set the position of the current Tween movement by a coefficience between 0 and 1.
+	 * The coefficient is the current linear progression of the tween (0 = start position, 1 = end position).
+	 * @param {number} coeff The current progression of the Tween movement between 0 and 1.
+	 */
+	updateMove(coeff) {
+		this._tweenMove.update(coeff);
+		switch (this._moveType) {
+			case Fighter.MovementType.Jump:
+				this._z = -Math.sin(coeff * 3.14) * 120;
+				if (coeff == 1) {
+					this.fxLand(12);
+				}
+				break;
+			case Fighter.MovementType.JumpAbove:
+				this._z = -Math.sin(coeff * 1.57) * 160;
+				break;
+			case Fighter.MovementType.JumpDown:
+				this._z = -Math.sin(1.57 + coeff * 1.57) * 160;
+				if (coeff == 1) {
+					this.fxLand(12);
+				}
+				break;
+			default:
+				this._scene.genGroundPart(
+					this._x + (Math.random() * 2 - 1) * this._ray,
+					this._y + (Math.random() * 2 - 1) * this._ray * 0.5
+				);
+		}
+	}
+
+	/**
 	 * Set the current lock timer for the Fighter.
 	 * @param {number} lt The new lock timer.
 	 */
 	setLockTimer(lt) {
 		this._lockTimer = lt;
+	}
+
+	// FX SECTION
+
+	/**
+	 * Management of the FX related to jumping.
+	 * Disable the water rings around the Fighter.
+	 */
+	fxJump() {
+		// TODO
+		//mcOndeFront._visible = false;
+		//mcOndeBack._visible = false;
+	}
+
+	/**
+	 * Management of the animation related to landing.
+	 * @param {number} max Maximum number of particles generated by the landing.
+	 * @param {number} speed Speed of the particles. 3 by default.
+	 * @param {number} cr Radius of the particle spawn area. 8 by default.
+	 */
+	fxLand(max, speed = 3, cr = 8) {
+		this.playAnim('land');
+		this._mode = Fighter.Mode.Anim;
+		//mcOndeFront._visible = true;
+		//mcOndeBack._visible = true;
+		for (let i = 0; i < max; ++i) {
+			const a = ((i + Math.random()) / max) * 6.28;
+			const ca = Math.cos(a);
+			const sa = Math.sin(a);
+			const sp = 0.5 + Math.random() * speed;
+			this._scene.genGroundPart(this._x + ca * sp * cr, this._y + sa * sp * cr, ca * sp, sa * sp, null, true);
+		}
 	}
 
 	/**

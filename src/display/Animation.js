@@ -38,6 +38,21 @@ export class Animation extends Container {
 	 * @type {boolean}
 	 */
 	_playing = true;
+	/**
+	 * Determine if the current animation has reached its last frame at least once.
+	 * Reset once the animation is changed.
+	 * @type {boolean}
+	 */
+	_ended = false;
+
+	/**
+	 * True if the current animation has reached its last frame at least once.
+	 * Reset once the animation changes.
+	 * @type {boolean}
+	 */
+	get hasEnded() {
+		return this._ended;
+	}
 
 	/**
 	 * Current index of the animation being played.
@@ -193,6 +208,9 @@ export class Animation extends Container {
 	 */
 	setCurrentIdx(idx) {
 		const length = this.getAnimationLength() - this._offsetIdx;
+		if (idx >= length - 1) {
+			this._ended = true;
+		}
 		this._currentIdx = length > 0 ? idx % length : 0;
 	}
 
@@ -209,6 +227,7 @@ export class Animation extends Container {
 	 * @param {Array} animation The animation to set as the current animation.
 	 */
 	setAnimation(animation) {
+		this._ended = false;
 		this._animation = animation;
 	}
 

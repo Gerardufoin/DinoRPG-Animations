@@ -125,4 +125,14 @@ export class Sprite {
 	getRootContainer() {
 		return this._root;
 	}
+
+	/**
+	 * Set the position of the Sprite.
+	 * @param {number} x Set the x position of the sprite. Keep the current position if undefined.
+	 * @param {number} y Set the y position of the sprite. Keep the current position if undefined.
+	 */
+	setPosition(x, y) {
+		this._x = x !== undefined ? x : this._x;
+		this._y = y !== undefined ? y : this._y;
+	}
 }

@@ -1,10 +1,6 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/tree/main/DinoRPG/gfx/fight
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Main.hx
-
-// Timer: https://github.com/motion-twin/WebGamesArchives/blob/main/libs-haxe3/mt/Timer.hx
-// mt.Timer.deltaT = Timer.shared.deltaMS / 1000
-// mt.Timer.tmod = Seems to be a weighted value changing depending on the divergence from the expected frame rate.
 import { Renderer } from 'pixi.js';
 import { HaxeUnserializer } from './data/HaxeUnserializer.js';
 import { HaxeSerializer } from './data/HaxeSerializer.js';
@@ -131,7 +127,12 @@ export class Fight {
 		this._timer.start();
 
 		this._history = new History(this._scene, this._data.history);
-		this._history.playNext();
+		// TODO: DinoAnim does not need to load external ressource, as such it begins as soon as the page finishes loading.
+		// A "Fake" loading screen will be needed to allow the page to render properly and let the player breath before the fight start.
+		// This will also leave the time for Timer.tmod to adapt to the current frame rate.
+		setTimeout(() => {
+			this._history.playNext();
+		}, 1000);
 	}
 
 	update() {
