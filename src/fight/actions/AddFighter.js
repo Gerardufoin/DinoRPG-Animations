@@ -52,7 +52,6 @@ export class AddFighter extends State {
 		scene.addFighter(this._fighter);
 		this.addActor(this._fighter);
 		this.checkCasting();
-		// TODO add slot to scene
 	}
 
 	/**

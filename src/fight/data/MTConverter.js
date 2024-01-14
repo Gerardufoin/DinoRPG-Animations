@@ -1,6 +1,8 @@
 // @ts-check
 
+import { Fighter } from '../Fighter.js';
 import { AddFighter } from '../actions/AddFighter.js';
+import { Damages } from '../actions/Damages.js';
 
 /**
  * Convert the project fight data into MT fight data.
@@ -214,12 +216,72 @@ export class MTConverter {
 
 	/**
 	 * Convert the action into an _History._HDamages enum.
-	 * @param {object} obj Object containing the action.
+	 * @param {{fid: number, tid: number, damages: number, lifeFx?: number, effect?: number}} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHDamages(obj) {
-		console.log('Conversion for "_HDamages" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HDamages',
+			args: [
+				obj.fid,
+				obj.tid,
+				obj.damages,
+				MTConverter.convertLifeEffect(obj.lifeFx),
+				MTConverter.convertDamagesEffect(obj.effect)
+			]
+		};
+	}
+
+	/**
+	 * Convert a Fighter.LifeEffect into a _LifeEffect enum.
+	 * @param {number} lifeFx Fighter.LifeEffect enum.
+	 * @returns {{enum: string, value: string, args: Array} | null} The corresponding _LifeEffect enum or null if none.
+	 */
+	static convertLifeEffect(lifeFx) {
+		const mapping = {
+			[Fighter.LifeEffect.Normal]: '_LNormal',
+			[Fighter.LifeEffect.Fire]: '_LFire',
+			[Fighter.LifeEffect.Wood]: '_LWood',
+			[Fighter.LifeEffect.Water]: '_LWater',
+			[Fighter.LifeEffect.Lightning]: '_LLightning',
+			[Fighter.LifeEffect.Air]: '_LAir',
+			[Fighter.LifeEffect.Burn]: '_LBurn',
+			[Fighter.LifeEffect.Heal]: '_LHeal',
+			[Fighter.LifeEffect.Skull]: '_LSkull',
+			[Fighter.LifeEffect.Acid]: '_LAcid'
+		};
+		if (lifeFx !== undefined && mapping[lifeFx]) {
+			return {
+				enum: '_LifeEffect',
+				value: mapping[lifeFx],
+				args: []
+			};
+		}
+		return null;
+	}
+
+	/**
+	 * Convert a Damages.Effect enum into an _Effect enum.
+	 * @param {number} effect Damages.Effect enum.
+	 * @returns {{enum: string, value: string, args: Array} | null} The corresponding _Effect enum or null if none.
+	 */
+	static convertDamagesEffect(effect) {
+		const mapping = {
+			[Damages.Effect.Normal]: '_ENormal',
+			[Damages.Effect.Drop]: '_EDrop',
+			[Damages.Effect.Back]: '_EBack',
+			[Damages.Effect.Eject]: '_EEject',
+			[Damages.Effect.Counter]: '_ECounter'
+		};
+		if (effect !== undefined && mapping[effect]) {
+			return {
+				enum: '_Effect',
+				value: mapping[effect],
+				args: []
+			};
+		}
+		return null;
 	}
 
 	/**

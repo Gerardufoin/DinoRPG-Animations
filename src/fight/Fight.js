@@ -136,8 +136,8 @@ export class Fight {
 	}
 
 	update() {
-		this._scene.update(this._timer);
 		this._history.updateStates(this._timer);
+		this._scene.update(this._timer);
 		//updateSprites();
 		if (this._waitingTime > 0) {
 			this._waitingTime -= this._timer.tmod;

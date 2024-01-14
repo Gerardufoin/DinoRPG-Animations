@@ -7,6 +7,7 @@ import { TextureManager } from '../display/TextureManager.js';
 import { Asset } from '../display/Asset.js';
 import { Fighter } from './Fighter.js';
 import { Timer } from './Timer.js';
+import { Slot } from './Slot.js';
 
 /**
  * The fight scene containing all the different layers to display.
@@ -165,6 +166,15 @@ export class Scene extends Container {
 	 */
 	getFighter(fid) {
 		return this._fighters.find((f) => fid === f.id);
+	}
+
+	/**
+	 * Add a created Slot to the display.
+	 * @param {Slot} slot The slot to add to a column.
+	 */
+	addSlot(slot) {
+		// @ts-ignore
+		this._layers.columns.getChildAt(slot.side ? 0 : 1).addChild(slot);
 	}
 
 	/**

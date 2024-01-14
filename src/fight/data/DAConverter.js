@@ -1,7 +1,9 @@
 // @ts-check
 
 import { Fight } from '../Fight.js';
+import { Fighter } from '../Fighter.js';
 import { AddFighter } from '../actions/AddFighter.js';
+import { Damages } from '../actions/Damages.js';
 
 /**
  * Convert MT fight data into DA fight data.
@@ -212,8 +214,57 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHDamages(args) {
-		console.log('Conversion for "_HDamages" not done yet.');
-		return { action: Fight.Action.Damages };
+		return {
+			action: Fight.Action.Damages,
+			fid: args[0],
+			tid: args[1],
+			damages: args[2],
+			lifeFx: DAConverter.convertLifeEffect(args[3]),
+			effect: DAConverter.convertDamagesEffect(args[4])
+		};
+	}
+
+	/**
+	 * Convert a _LifeEffect into a Fighter.LifeEffet.
+	 * @param {object} obj _LifeEffect enum.
+	 * @returns {number} The corresponding Fighter.LeftEffect or undefined if none.
+	 */
+	static convertLifeEffect(obj) {
+		const mapping = {
+			_LNormal: Fighter.LifeEffect.Normal,
+			_LFire: Fighter.LifeEffect.Fire,
+			_LWood: Fighter.LifeEffect.Wood,
+			_LWater: Fighter.LifeEffect.Water,
+			_LLightning: Fighter.LifeEffect.Lightning,
+			_LAir: Fighter.LifeEffect.Air,
+			_LBurn: Fighter.LifeEffect.Burn,
+			_LHeal: Fighter.LifeEffect.Heal,
+			_LSkull: Fighter.LifeEffect.Skull,
+			_LAcid: Fighter.LifeEffect.Acid
+		};
+		if (obj) {
+			return mapping[obj.value];
+		}
+		return undefined;
+	}
+
+	/**
+	 * Convert an _Effect enum into a Damages.Effect.
+	 * @param {object} obj The _Effect enum to convert.
+	 * @returns {number} The Damages.Effect or undefined.
+	 */
+	static convertDamagesEffect(obj) {
+		const mapping = {
+			_ENormal: Damages.Effect.Normal,
+			_EDrop: Damages.Effect.Drop,
+			_EBack: Damages.Effect.Back,
+			_EEject: Damages.Effect.Eject,
+			_ECounter: Damages.Effect.Counter
+		};
+		if (obj) {
+			return mapping[obj.value];
+		}
+		return undefined;
 	}
 
 	/**

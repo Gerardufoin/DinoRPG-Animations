@@ -33,6 +33,7 @@ export class MoveTo extends State {
 		if (!this._fighter) {
 			console.error(`MoveTo Error: Fighter with id ${fid} does not exist in the scene.`);
 			this.kill();
+			return;
 		}
 		this._dest = {
 			x: x,

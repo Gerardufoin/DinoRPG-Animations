@@ -31,6 +31,14 @@ export class Sprite {
 	/*public var root : flash.MovieClip ;
 	public var shade : flash.MovieClip ;*/
 
+	/**
+	 * Current position of the Sprite.
+	 * @type {{x: number, y: number, z: number}}
+	 */
+	get position() {
+		return { x: this._x, y: this._y, z: this._z };
+	}
+
 	constructor(container, scene) {
 		this._root = container;
 		this._scene = scene;

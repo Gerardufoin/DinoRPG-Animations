@@ -85,6 +85,37 @@ Move a Fighter based on the passed Fighter's id to the designed xy position.
 
 ### Damages (3)
 
+A fighter attacks another fighter and deals a certain amount of damages.
+
+#### Properties
+
+1. fid - Number - The ID of the attacking fighter.
+2. tid - Number - The ID of the targeted fighter.
+3. damages - Number | Null - The amount of damages dealt. If Null, the attack is dodged. If 0, the attack is guarded.
+4. lifeFx? - LifeEffect - The life effect played on the fighter during the attack.
+
+| LifeEffect    | Description               |
+| ------------- | ------------------------- |
+| Normal (0)    | No effect in particular.  |
+| Fire (1)      | Adds fire particles.      |
+| Wood (2)      | Adds leaf particles.      |
+| Water (3)     | Adds droplet particles.   |
+| Lightning (4) | Adds lightning particles. |
+| Air (5)       | Adds wind particles.      |
+| Burn (6)      | Adds burning particles.   |
+| Heal (7)      | Adds healing particles.   |
+| Skull (8)     | Adds skulls particles.    |
+| Acid (9)      | Adds acid particles.      |
+
+5. effect? - DamagesEffect - The type of action the fighter will take before attacking.
+
+| DamagesEffect | Description                                                                                             |
+| ------------- | ------------------------------------------------------------------------------------------------------- |
+| Normal (0)    | Standard attack, the attacker runs to the target and hits it. Default behaviour if effect is undefined. |
+| Drop (1)      | The attacker drops on the target.                                                                       |
+| Back (2)      | The attacker jumps behind the target and hits it.                                                       |
+| Eject (3)     | Not sure but sounds amawing.                                                                            |
+
 ### DamagesGroup (4)
 
 ### CastleAttack (5)

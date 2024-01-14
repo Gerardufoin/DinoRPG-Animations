@@ -10,6 +10,7 @@ import { State } from './State.js';
 import { Scene } from './Scene.js';
 import { Timer } from './Timer.js';
 import { SimpleTween } from './SimpleTween.js';
+import { Slot } from './Slot.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -18,11 +19,45 @@ export class Fighter extends Phys {
 		Dead: 2,
 		Dodge: 3
 	};
+	static Props = {
+		Static: 0,
+		Dark: 1,
+		Boss: 2
+	};
 	static MovementType = {
 		Jump: 0,
 		JumpAbove: 1,
 		JumpDown: 2,
 		Run: 3
+	};
+	static LifeEffect = {
+		Normal: 0,
+		Fire: 1,
+		Wood: 2,
+		Water: 3,
+		Lightning: 4,
+		Air: 5,
+		Burn: 6,
+		Heal: 7,
+		Skull: 8,
+		Acid: 9
+	};
+	static Status = {
+		Sleep: 0,
+		Flames: 1,
+		Burn: 2,
+		Intang: 3,
+		Fly: 4,
+		Slow: 5,
+		Quick: 6,
+		Stoned: 7,
+		Bless: 8,
+		Poison: 9,
+		Shield: 10,
+		Heal: 11,
+		MonoElt: 12,
+		Dazzled: 13,
+		Stun: 14
 	};
 
 	/**
@@ -40,6 +75,11 @@ export class Fighter extends Phys {
 	 * @type {number}
 	 */
 	id;
+	/**
+	 * Slot display of the Fighter.
+	 * @type {Slot}
+	 */
+	_slot;
 
 	_lock = false;
 	_name;
@@ -49,6 +89,10 @@ export class Fighter extends Phys {
 	_energy = 100;
 	_maxEnergy = 100;
 	_size = 1;
+	/**
+	 * List of props attached to the Fighter, based on Fighter.Props.
+	 * @type {number[]}
+	 */
 	_props = [];
 
 	_side = true;
@@ -76,6 +120,12 @@ export class Fighter extends Phys {
 	get runSpeed() {
 		return this._runSpeed;
 	}
+
+	/**
+	 * Current status of the Fighter, list of Fighter.Status with their possible value.
+	 * @type {{e: number, value: number}[]}
+	 */
+	_status = [];
 
 	/**
 	 * The last registered coordinates of the Fighter.
@@ -152,6 +202,11 @@ export class Fighter extends Phys {
 		*/
 		this._friction = 0.9;
 
+		if (this._isDino) {
+			this._slot = new Slot(this);
+			this._scene.addSlot(this._slot);
+		}
+
 		if (this._scene.debugMode) {
 			this.debugShowOrigin();
 		}
@@ -182,7 +237,7 @@ export class Fighter extends Phys {
 			case Fighter.Mode.Dead:
 				break;
 			case Fighter.Mode.Dodge:
-				//updateDodge();
+				this.updateDodge();
 				break;
 		}
 		/*
@@ -303,6 +358,25 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Get the coordinates where the Fighter needs to be to physically attack another Fighter.
+	 * @param {Fighter} target Target of the attack.
+	 * @param {number} sens Direction of the attack.
+	 * @returns {{x: number, y: number}} The xy coordinates where the Fighter has to go.
+	 */
+	getBrawlPos(target, sens = 1) {
+		return { x: target._x + (this._range + this._ray + target._ray) * this.intSide * sens, y: target._y + 2 };
+	}
+
+	/**
+	 * Checks if the Fighter is in attack range of another Figther.
+	 * @param {Fighter} target The Fighter to attack.
+	 * @returns {boolean} True if the Fighter is in attack range, false otherwise.
+	 */
+	atRange(target) {
+		return this.getDist({ x: target._x, y: target._y }) <= this._range + this._ray + target._ray;
+	}
+
+	/**
 	 * Reset the direction of the Fighter to their default (based on their side).
 	 * Set the animation to the current default animation except if they are currently landing.
 	 */
@@ -319,7 +393,7 @@ export class Fighter extends Phys {
 	 * @param {Timer} timer Fight timer containing the elapsed time.
 	 */
 	checkBounds(timer) {
-		// if (haveProp(_PStatic)) return; TODO
+		if (this.haveProp(Fighter.Props.Static)) return;
 		const m = 4;
 		const wmod = 10;
 		if (this._x < m + this._ray || this._x > Scene.WIDTH - (this._ray + m + this._scene.margins.right)) {
@@ -351,6 +425,15 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Check if the Fighter has the current status applied.
+	 * @param {number} status The Fighter.Status value to check for.
+	 * @returns {boolean} True if the Fighter has the given status, false otherwise.
+	 */
+	haveStatus(status) {
+		return this._status.find((s) => s.e === status) !== undefined;
+	}
+
+	/**
 	 * Switch the current animation being played by the Fighter's Animator.
 	 * @param {string} anim The animation to play.
 	 */
@@ -363,6 +446,111 @@ export class Fighter extends Phys {
 		}*/
 		this._currentAnim = anim;
 		this._animator.playAnim(anim);
+	}
+
+	/**
+	 * Dodge the attack of another Fighter.
+	 * @param {Fighter} attacker The Fighter attacking.
+	 */
+	dodge(attacker) {
+		this.playAnim('dodge');
+		const angle = this.getAng(attacker.position) + 0.75 * (Math.random() * 4 - 1);
+		const sp = 7;
+		this._vz = -15;
+		this._vx = Math.cos(angle) * sp;
+		this._vy = Math.sin(angle) * sp;
+		this._weight = 1.5;
+		this._mode = Fighter.Mode.Dodge;
+	}
+
+	/**
+	 * Stops the dodge animation of the Fighter once it reaches the ground.
+	 */
+	updateDodge() {
+		if (this._z == 0) {
+			this._weight = 0;
+			this._vx = 0;
+			this._vy = 0;
+			this._vz = 0;
+			this.backToDefault();
+			this._mode = Fighter.Mode.Waiting;
+		}
+	}
+
+	/**
+	 * The Fighter gets hit by another Fighter, losing [damages] health with the [lifeFx] effect.
+	 * @param {Fighter} attacker The Fighter attacking this one.
+	 * @param {number} damages The damages inflicted. If 0, the guard animation is played.
+	 * @param {number} lifeFx The life gain/loss effect to play, based on Fighter.LifeEffect.
+	 * @returns {void}
+	 */
+	hit(attacker, damages, lifeFx) {
+		if (damages == 0) {
+			this.playAnim('guard');
+			return;
+		}
+		if (!this.haveProp(Fighter.Props.Static)) {
+			var angle = this.getAng(attacker.position);
+			const sp = 3;
+			this._vx = Math.cos(angle) * sp;
+			this._vy = Math.sin(angle) * sp;
+		}
+		this.damages(damages, 6, lifeFx);
+	}
+
+	/**
+	 * The Fighter takes damages.
+	 * @param {number} damages The amount of damages taken.
+	 * @param {number} stunDuration The stun duration following the damage. 50 by default.
+	 * @param {number | null} lifeFx The Fighter.LifeEffect effect to play while receiving the damages, or null if none.
+	 */
+	damages(damages, stunDuration = 50, lifeFx = null) {
+		this.playAnim('hit');
+		this._life = Math.max(0, this._life - damages);
+		if (this._slot) {
+			this._slot.setLife(this._life / this._maxLife);
+			this._slot.fxDamage();
+		}
+
+		this.showDamages(damages);
+		this._lockTimer = stunDuration;
+		this._shake = 30;
+
+		if (lifeFx !== null) {
+			this.lifeEffect(lifeFx);
+		}
+	}
+
+	/**
+	 * The Fighter regenerates the given amount of life.
+	 * If a LifeEffect is given, it will be played.
+	 * @param {number} amount The amount of health to regenerate.
+	 * @param {number | null} lifeFx The Fighter.LifeEffect to play. Null by default.
+	 */
+	gainLife(amount, lifeFx = null) {
+		this._life += amount;
+		if (this._slot) {
+			this._slot.setLife(this._life / this._maxLife);
+		}
+		this.showDamages(amount, 0);
+		this._lockTimer = 5;
+		if (lifeFx !== null) {
+			this.lifeEffect(lifeFx);
+		}
+	}
+
+	/**
+	 * TODO
+	 * @param {number} damages
+	 * @param {number} type
+	 * @returns
+	 */
+	showDamages(damages, type = null) {
+		console.log(`ShowDamages: Fighter ${this.id} took ${damages} damages.`);
+		if (damages <= 0) return;
+		/*var mc = Scene.me.dm.attach("points",Scene.DP_INTER) ;
+		var py = Scene.getY(y) + (z-height)*0.5;
+		var p = new sp.Score(mc,x,py,d,type);*/
 	}
 
 	/**
@@ -479,6 +667,14 @@ export class Fighter extends Phys {
 	// FX SECTION
 
 	/**
+	 * Play the given Fighter.LifeEffect effect.
+	 * @param {number} effect The Fighter.LifeEffect to play.
+	 */
+	lifeEffect(effect) {
+		// TODO
+	}
+
+	/**
 	 * Management of the FX related to jumping.
 	 * Disable the water rings around the Fighter.
 	 */
@@ -513,6 +709,34 @@ export class Fighter extends Phys {
 	 */
 	showName() {
 		//TODO
+	}
+
+	/**
+	 * Checks if the Fighter has a specific prop.
+	 * @param {number} prop The Fighter.Props to check.
+	 * @returns {boolean} True if the Fighter has the given props, false otherwise.
+	 */
+	haveProp(prop) {
+		return this._props.includes(prop);
+	}
+
+	/**
+	 * Register a new callback for the Animator.
+	 * The callback will be triggered if a frame has registered a callback of the same name.
+	 * @param {string} name Name of the callback to register.
+	 * @param {*} callback Function called when the callback is triggered. Will receive the animation triggering the callback
+	 * as well as an array as parameter if any arguments are passed along.
+	 */
+	registerCallback(name, callback) {
+		this._animator.registerCallback(name, callback);
+	}
+
+	/**
+	 * Remove all callbacks registered under the given name.
+	 * @param {string} name Name of the callback to clear.
+	 */
+	clearCallback(name) {
+		this._animator.clearCallback(name);
 	}
 
 	/**

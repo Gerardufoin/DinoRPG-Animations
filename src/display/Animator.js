@@ -97,6 +97,14 @@ export class Animator extends Container {
 	}
 
 	/**
+	 * Remove all callbacks registered under the given name.
+	 * @param {string} name Name of the callback to clear.
+	 */
+	clearCallback(name) {
+		this._callbacks[name] = undefined;
+	}
+
+	/**
 	 * Set the transform Matrix of the body of the Animator based on the transforms of the dino.
 	 * @param {Array} transforms An array comprised of objects containing the tx ty a b c d element of a Matrix in order to set the transform.
 	 * @param {Array} dParts The configuration array of the dino.

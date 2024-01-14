@@ -6,6 +6,7 @@ import { Fight } from './Fight.js';
 import { AddFighter } from './actions/AddFighter.js';
 import { Timer } from './Timer.js';
 import { MoveTo } from './actions/MoveTo.js';
+import { Damages } from './actions/Damages.js';
 
 export class History {
 	/**
@@ -52,7 +53,7 @@ export class History {
 			[Fight.Action.Add]: 'addFighter',
 			[Fight.Action.AddCastle]: undefined,
 			[Fight.Action.MoveTo]: 'moveTo',
-			[Fight.Action.Damages]: undefined,
+			[Fight.Action.Damages]: 'damages',
 			[Fight.Action.DamagesGroup]: undefined,
 			[Fight.Action.CastleAttack]: undefined,
 			[Fight.Action.Return]: undefined,
@@ -138,6 +139,15 @@ export class History {
 	 */
 	moveTo(action) {
 		return new MoveTo(this._scene, action.fid, action.x, action.y);
+	}
+
+	/**
+	 * A Fighter attacks another Fighter.
+	 * @param {{action: number, fid: number, tid: number, damages: number | null, lifeFx?: number, effect?: number}} action Action which triggered the call.
+	 * @returns {State} The Damages State.
+	 */
+	damages(action) {
+		return new Damages(this._scene, action.fid, action.tid, action.damages, action.lifeFx, action.effect);
 	}
 
 	/**
