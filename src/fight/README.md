@@ -147,6 +147,22 @@ Makes the selected fighter go back to its first saved position since the last ti
 
 ### Goto (15)
 
+Moves a fighter at range of another fighter with the given movement type.
+
+#### Properties
+
+1. fid - Number - The ID of the moveing fighter.
+2. tid - Number - The ID of the targeted fighter.
+3. effect? - Number - The GotoEffect used to move the fighter. If none is given, default to Normal.
+
+| GotoEffect  | Description                                                     |
+| ----------- | --------------------------------------------------------------- |
+| Normal (0)  | Normal run animation.                                           |
+| Over (1)    | Jumps above the target.                                         |
+| Special (2) | Not sure yet. Create multiple shades with the given shadeColor. |
+
+5. shadeColor? - {col1?: number, col2: number} - The colors for the shades created when selecting GotoEffect.Special. If undefined, the shade will be pure black.
+
 ### Regen (16)
 
 ### Object (17)

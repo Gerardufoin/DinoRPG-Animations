@@ -4,6 +4,7 @@ import { Fight } from '../Fight.js';
 import { Fighter } from '../Fighter.js';
 import { AddFighter } from '../actions/AddFighter.js';
 import { Damages } from '../actions/Damages.js';
+import { GotoFighter } from '../actions/GotoFighter.js';
 
 /**
  * Convert MT fight data into DA fight data.
@@ -204,8 +205,34 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHGoto(args) {
-		console.log('Conversion for "_HGoto" not done yet.');
-		return { action: Fight.Action.Goto };
+		return { action: Fight.Action.Goto, fid: args[0], tid: args[1], ...DAConverter.convertGotoEffect(args[2]) };
+	}
+
+	/**
+	 * Convert a Goto effect from MT into a GotoFighter.Effect.
+	 * @param {object} effect MT Goto effect object.
+	 * @returns {{effect?: number, shadeColor?: {col1?:number, col2?: number}}} The converted GotoFighter.Effect.
+	 */
+	static convertGotoEffect(effect) {
+		const obj = {};
+		if (!effect) return obj;
+
+		switch (effect.value) {
+			case '_Normal':
+				obj.effect = GotoFighter.Effect.Normal;
+				break;
+			case '_GOver':
+				obj.entrance = GotoFighter.Effect.Over;
+				break;
+			case '_GSpecial':
+				obj.entrance = GotoFighter.Effect.Special;
+				obj.shadeColor = {
+					col1: obj.args[0],
+					col2: obj.args[1]
+				};
+				break;
+		}
+		return obj;
 	}
 
 	/**

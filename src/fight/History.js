@@ -8,6 +8,7 @@ import { Timer } from './Timer.js';
 import { MoveTo } from './actions/MoveTo.js';
 import { Damages } from './actions/Damages.js';
 import { Return } from './actions/Return.js';
+import { GotoFighter } from './actions/GotoFighter.js';
 
 export class History {
 	/**
@@ -66,7 +67,7 @@ export class History {
 			[Fight.Action.MaxEnergy]: undefined,
 			[Fight.Action.Pause]: undefined,
 			[Fight.Action.Announce]: undefined,
-			[Fight.Action.Goto]: undefined,
+			[Fight.Action.Goto]: 'goToFighter',
 			[Fight.Action.Regen]: undefined,
 			[Fight.Action.Object]: undefined,
 			[Fight.Action.Fx]: undefined,
@@ -154,10 +155,19 @@ export class History {
 	/**
 	 * A Fighter goes back to its saved position.
 	 * @param {{action: number, fid: number}} action Action which triggered the call.
-	 * @returns {State} The Return state.
+	 * @returns {State} The Return State.
 	 */
 	return(action) {
 		return new Return(this._scene, action.fid);
+	}
+
+	/**
+	 * A Fighter moves toward another Fighter with the desired movement effect.
+	 * @param {{action: number, fid: number, tid: number, effect: number, shadeColor?: {col1?: number, col2?: number}}} action Action which triggered the call.
+	 * @returns {State} The GoToFither State.
+	 */
+	goToFighter(action) {
+		return new GotoFighter(this._scene, action.fid, action.tid, action.effect, action.shadeColor);
 	}
 
 	/**

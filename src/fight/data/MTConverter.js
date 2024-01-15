@@ -3,6 +3,7 @@
 import { Fighter } from '../Fighter.js';
 import { AddFighter } from '../actions/AddFighter.js';
 import { Damages } from '../actions/Damages.js';
+import { GotoFighter } from '../actions/GotoFighter.js';
 
 /**
  * Convert the project fight data into MT fight data.
@@ -210,8 +211,39 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHGoto(obj) {
-		console.log('Conversion for "_HGoto" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HGoto',
+			args: [obj.fid, obj.tid, MTConverter.convertGotoEffect(obj)]
+		};
+	}
+
+	/**
+	 * Convert a GotoFighter.Effect into a _GotoEffect.
+	 * @param {object} obj DA object containing the data.
+	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
+	 */
+	static convertGotoEffect(obj) {
+		if (!obj.effect) return null;
+
+		const ret = {
+			enum: '_GotoEffect',
+			value: '_GNormal',
+			args: []
+		};
+		switch (obj.effect) {
+			case GotoFighter.Effect.Normal:
+				ret.value = '_GNormal';
+				break;
+			case GotoFighter.Effect.Over:
+				ret.value = '_GOver';
+				break;
+			case GotoFighter.Effect.Special:
+				ret.value = '_GSpecial';
+				ret.args = [obj.shadeColor.col1 ?? 0, obj.shadeColor.col2 ?? 0];
+				break;
+		}
+		return ret;
 	}
 
 	/**

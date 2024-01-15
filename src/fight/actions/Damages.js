@@ -109,7 +109,7 @@ export class Damages extends State {
 				if (this._attacker.atRange(this._target)) {
 					this.attack();
 				} else {
-					const pos = this._attacker.getBrawlPos(this._target, -1);
+					const pos = this._attacker.getBrawlPos(this._target);
 					this._coefSpeed = this._attacker.runSpeed / this._attacker.getDist(pos);
 					this._attacker.moveTo(pos.x, pos.y);
 					this._attacker.setSens(true);

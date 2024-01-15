@@ -365,7 +365,7 @@ export class Fighter extends Phys {
 	 * @returns {{x: number, y: number}} The xy coordinates where the Fighter has to go.
 	 */
 	getBrawlPos(target, sens = 1) {
-		return { x: target._x + (this._range + this._ray + target._ray) * this.intSide * sens, y: target._y + 2 };
+		return { x: target._x + (this._range + this._ray + target._ray) * target.intSide * sens, y: target._y + 2 };
 	}
 
 	/**
@@ -443,6 +443,28 @@ export class Fighter extends Phys {
 			x: this._x,
 			y: this._y
 		};
+	}
+
+	/**
+	 * Removes the selected status from the Fighter if it has it.
+	 * If null is passed, remove all the status.
+	 * @param {number | null} status A Fighter.Status enum value.
+	 */
+	removeStatus(status) {
+		this._status = this._status.filter((s) => {
+			if (status === null || s.e === status) {
+				switch (s.e) {
+					case Fighter.Status.Fly:
+						//flLand = true; TODO
+						break;
+					case Fighter.Status.Poison:
+					//colt.colorTransform = new flash.geom.ColorTransform(1,1,1,1,0,0,0,0); TODO
+				}
+				return false;
+			}
+			return true;
+		});
+		//this.displayStatus(); TODO
 	}
 
 	/**
