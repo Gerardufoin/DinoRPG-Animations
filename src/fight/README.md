@@ -114,13 +114,20 @@ A fighter attacks another fighter and deals a certain amount of damages.
 | Normal (0)    | Standard attack, the attacker runs to the target and hits it. Default behaviour if effect is undefined. |
 | Drop (1)      | The attacker drops on the target.                                                                       |
 | Back (2)      | The attacker jumps behind the target and hits it.                                                       |
-| Eject (3)     | Not sure but sounds amawing.                                                                            |
+| Eject (3)     | Not sure but sounds amazing.                                                                            |
+| Counter (4)   | If the attacks is the result of a counter. Does not seems to do anything visually.                      |
 
 ### DamagesGroup (4)
 
 ### CastleAttack (5)
 
 ### Return (6)
+
+Makes the selected fighter go back to its first saved position since the last time Return was called.
+
+#### Properties
+
+1. fid - Number - The ID of the returning fighter.
 
 ### Dead (7)
 

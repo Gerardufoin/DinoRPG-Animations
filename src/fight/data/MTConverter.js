@@ -290,8 +290,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHReturn(obj) {
-		console.log('Conversion for "_HReturn" not done yet.');
-		return undefined;
+		return null; /*{
+			enum: '_History',
+			value: '_HReturn',
+			args: [obj.fid]
+		};*/
 	}
 
 	/**

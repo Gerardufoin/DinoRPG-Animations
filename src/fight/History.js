@@ -7,6 +7,7 @@ import { AddFighter } from './actions/AddFighter.js';
 import { Timer } from './Timer.js';
 import { MoveTo } from './actions/MoveTo.js';
 import { Damages } from './actions/Damages.js';
+import { Return } from './actions/Return.js';
 
 export class History {
 	/**
@@ -56,7 +57,7 @@ export class History {
 			[Fight.Action.Damages]: 'damages',
 			[Fight.Action.DamagesGroup]: undefined,
 			[Fight.Action.CastleAttack]: undefined,
-			[Fight.Action.Return]: undefined,
+			[Fight.Action.Return]: undefined, //'return', (needs GoTo and GroupEffects to make any sens)
 			[Fight.Action.Dead]: undefined,
 			[Fight.Action.Lost]: undefined,
 			[Fight.Action.Escape]: undefined,
@@ -148,6 +149,15 @@ export class History {
 	 */
 	damages(action) {
 		return new Damages(this._scene, action.fid, action.tid, action.damages, action.lifeFx, action.effect);
+	}
+
+	/**
+	 * A Fighter goes back to its saved position.
+	 * @param {{action: number, fid: number}} action Action which triggered the call.
+	 * @returns {State} The Return state.
+	 */
+	return(action) {
+		return new Return(this._scene, action.fid);
 	}
 
 	/**

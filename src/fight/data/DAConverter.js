@@ -273,8 +273,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHReturn(args) {
-		console.log('Conversion for "_HReturn" not done yet.');
-		return { action: Fight.Action.Return };
+		return { action: Fight.Action.Return, fid: args[0] };
 	}
 
 	/**

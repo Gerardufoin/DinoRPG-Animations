@@ -21,8 +21,9 @@ export class Fighter extends Phys {
 	};
 	static Props = {
 		Static: 0,
-		Dark: 1,
-		Boss: 2
+		GroundOnly: 1,
+		Dark: 2,
+		Boss: 3
 	};
 	static MovementType = {
 		Jump: 0,
@@ -130,7 +131,7 @@ export class Fighter extends Phys {
 	/**
 	 * The last registered coordinates of the Fighter.
 	 * Used to send back the Fighter to this position via the return action.
-	 * @type {{x: number, y: number}}
+	 * @type {{x: number, y: number} | null}
 	 */
 	_lastCoord = null;
 	/**
@@ -140,12 +141,12 @@ export class Fighter extends Phys {
 	_walkPath = null;
 	/**
 	 * Current movement of the Fighter. Null is the Fighter is not currently moving.
-	 * @type {SimpleTween}
+	 * @type {SimpleTween | null}
 	 */
 	_tweenMove = null;
 	/**
 	 * Current movement type associated with the movement Tween. Value of the enum Fighter.MovementType.
-	 * @type {number}
+	 * @type {number | null}
 	 */
 	_moveType = null;
 
@@ -385,6 +386,26 @@ export class Fighter extends Phys {
 		if (this._currentAnim !== 'land') {
 			this.playAnim(this._defaultAnim);
 		}
+	}
+
+	/**
+	 * Prepare the Fighter to go back to its last saved coordinate, using the desired movement type passed as parameter.
+	 * @param {number} moveType A value from the Fighter.MoveType enum.
+	 * @returns {number} The ratio between the Fighter's running speed and the expected distance to cover.
+	 */
+	initReturn(moveType) {
+		if (!this._lastCoord) return 0;
+		const rec = 40;
+		const p = this._lastCoord;
+		this._lastCoord = null;
+		if (Math.abs(Scene.WIDTH * 0.5 - p.x) > this._ray + rec + 20) {
+			p.x += rec * this.intSide;
+		}
+		const c = 0.25;
+		p.y = p.y * (1 - c) + p.y * c;
+		this.moveTo(p.x, p.y, moveType);
+		this.setSens(false);
+		return this._runSpeed / this.getDist(p);
 	}
 
 	/**
@@ -631,6 +652,7 @@ export class Fighter extends Phys {
 	 * @param {number} coeff The current progression of the Tween movement between 0 and 1.
 	 */
 	updateMove(coeff) {
+		if (!this._tweenMove) return;
 		this._tweenMove.update(coeff);
 		switch (this._moveType) {
 			case Fighter.MovementType.Jump:
