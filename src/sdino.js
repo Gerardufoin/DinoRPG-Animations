@@ -39,7 +39,7 @@ export class sdino extends Animator {
 	 */
 	constructor(data) {
 		super(data.autoUpdate ?? true);
-		this.init(data.data, data.damage, data.pflag, 1);
+		this.init(data.data, data.damage, data.pflag, data.scale);
 		this.flip(data.flip);
 	}
 

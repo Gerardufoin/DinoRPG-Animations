@@ -14,29 +14,12 @@ export class Timer extends Ticker {
 	 * If the delta time exceed 500ms, set it to the expected frame rate to avoid deviations.
 	 * @type {number}
 	 */
-	static MAX_DELTA_TIME = 0.5;
-	/**
-	 * Weight of the variation of the tmod variable.
-	 * The smaller the number, the faster tmod will change based on the fps variation.
-	 * @type {number}
-	 */
-	static TMOD_FACTOR = 0.95;
-
+	static MAX_DELTA_TIME = 500;
 	/**
 	 * The expected frame rate of the Timer.
 	 * @type {number}
 	 */
 	_expectedFPS;
-	/**
-	 * Time eslapsed weighted by the expected frame rate.
-	 * @type {number}
-	 */
-	_tmod = 1;
-	/**
-	 * Elasped time between two frame in seconds.
-	 * @type {number}
-	 */
-	_deltaTime = 1;
 
 	/**
 	 * Build upon PixiJS Ticker to include the frame limitation of DinoRPG via tmod.
@@ -45,32 +28,15 @@ export class Timer extends Ticker {
 	constructor(fps) {
 		super();
 		this._expectedFPS = fps;
-		this.add(() => {
-			this._deltaTime = this.elapsedMS / 1000;
-			if (this._deltaTime < Timer.MAX_DELTA_TIME) {
-				this._tmod =
-					this._tmod * Timer.TMOD_FACTOR + (1 - Timer.TMOD_FACTOR) * this._deltaTime * this._expectedFPS;
-			} else {
-				this._deltaTime = 1 / this._expectedFPS;
-			}
-		});
 	}
 
 	/**
-	 * Time eslapsed weighted by the expected frame rate.
+	 * TMOD should be 1 when the app is running at the expected FPS.
+	 * Any FPS deviation from the expected value will reflect on tmod to compensate for the increase/decrease of FPS.
 	 * @type {number}
 	 */
 	get tmod() {
-		return this._tmod;
-	}
-
-	/**
-	 * Elasped time between two frame in seconds.
-	 * If bigger than Timer.MAX_DELTA_TIME, then is set to 1 / expectedFPS.
-	 * @type {number}
-	 */
-	get deltaTimeSec() {
-		return this._deltaTime;
+		return this._expectedFPS / this.FPS;
 	}
 
 	/**
@@ -79,6 +45,6 @@ export class Timer extends Ticker {
 	 * @type {number}
 	 */
 	get deltaTimeMS() {
-		return this._deltaTime * 1000;
+		return this.elapsedMS >= Timer.MAX_DELTA_TIME ? (1 / this._expectedFPS) * 1000 : this.elapsedMS;
 	}
 }

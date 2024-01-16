@@ -51,10 +51,11 @@ Add a fighter to the scene.
 | --------- | --------------------------------------------------------------------------------------------- |
 | props     | Array - ???                                                                                   |
 | dino      | Boolean - True if the fighter a dino, false if it is a monster.                               |
-| life      | Number - Life of the fighter                                                                  |
+| life      | Number - Life of the fighter.                                                                 |
+| maxLife?  | Number - Maximum life of the fighter. Default to "life" if not given.                         |
 | name      | String - Name of the fighter which will be displayed on entry.                                |
 | side      | Boolean - Side of the fighter. True for left side, false for right side.                      |
-| size      | Number - Size of the fighter multiplied by 100. 200 double the size of the fighter.           |
+| scale?    | Number - Scale of the fighter. 1 by default.                                                  |
 | fid       | Number - ID of the fighter. Used for the subsequent actions.                                  |
 | gfx       | String - Visual description of the fighter. See SDino and SMonster for more information.      |
 | entrance? | Number - Entrance effect, see table below. If undefined, the fighter does a simple drop down. |

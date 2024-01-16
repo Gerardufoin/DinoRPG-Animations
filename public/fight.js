@@ -41,6 +41,6 @@ const fightData = [
 ];
 //addFlashPreview(fightData[2], container);
 
-const fight = new DinoAnim.Fight({ legacy_data: fightData[0], debug: true });
+const fight = new DinoAnim.Fight({ legacy_data: fightData[4], debug: false });
 addFlashPreview(fight.getMTFormat(true));
 document.body.appendChild(fight.getDisplay());

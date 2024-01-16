@@ -104,7 +104,7 @@ export class DAConverter {
 		if (args.length !== 2) {
 			console.error(`_HAdd arguments size different from 2: ${args.length}`);
 		}
-		return {
+		const ret = {
 			action: Fight.Action.Add,
 			fighter: {
 				props: args[0]._props,
@@ -112,12 +112,14 @@ export class DAConverter {
 				life: args[0]._life,
 				name: args[0]._name,
 				side: args[0]._side,
-				size: args[0]._size,
+				scale: args[0]._size / 100,
 				fid: args[0]._fid,
 				gfx: args[0]._gfx,
 				...DAConverter.convertEntranceEffect(args[1])
 			}
 		};
+		ret.maxLife = ret.dino && ret.props.length == 0 ? args[0]._size : args[0]._life;
+		return ret;
 	}
 
 	/**

@@ -108,7 +108,7 @@ export class MTConverter {
 			_life: obj.fighter.life,
 			_name: obj.fighter.name,
 			_side: obj.fighter.side,
-			_size: obj.fighter.size,
+			_size: obj.fighter.scale * 100,
 			_fid: obj.fighter.fid,
 			_gfx: obj.fighter.gfx
 		});

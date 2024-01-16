@@ -167,25 +167,26 @@ export class Fighter extends Phys {
 		const body = new Container();
 		super(body, scene);
 
-		this.body = body;
-		this._animator = new sdino({
-			data: fInfos.gfx,
-			autoUpdate: false,
-			pflag: true
-		});
-		this.body.addChild(this._animator);
-		this.setSide(fInfos.side);
-
 		this.id = fInfos.fid;
 		this._isDino = fInfos.dino;
 		this._name = fInfos.name;
 		this._props = fInfos.props;
 		this._life = fInfos.life;
-		this._maxLife = this._isDino && this._props.length == 0 ? fInfos.size : fInfos.life;
-		this._size = Math.pow(fInfos.size / 100, 0.65);
+		this._maxLife = fInfos.maxLife ?? fInfos.life;
+		this._size = Math.pow(fInfos.scale ?? 1, 0.65);
 
 		this._ray = 10;
 		this.setForce(10 * this._size);
+
+		this.body = body;
+		this._animator = new sdino({
+			data: fInfos.gfx,
+			autoUpdate: false,
+			pflag: true,
+			scale: this._size
+		});
+		this.body.addChild(this._animator);
+		this.setSide(fInfos.side);
 
 		// TODO
 		/*if( haveProp(_PStatic) ) {
