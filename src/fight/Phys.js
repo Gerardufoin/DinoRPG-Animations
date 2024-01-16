@@ -64,9 +64,10 @@ export class Phys extends Sprite {
 	 * Insantiate a Phys class. The parameters are for the Sprite initialisation.
 	 * @param {Container} container PixiJS container. The body being moved around.
 	 * @param {Scene} scene The scene where the body evolves.
+	 * @param {number} layer The Scene.LAYERS layer where to add the Sprite.
 	 */
-	constructor(container, scene) {
-		super(container, scene);
+	constructor(container, scene, layer) {
+		super(container, scene, layer);
 	}
 
 	/**

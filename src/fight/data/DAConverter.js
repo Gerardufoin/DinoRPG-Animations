@@ -311,8 +311,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHDead(args) {
-		console.log('Conversion for "_HDead" not done yet.');
-		return { action: Fight.Action.Dead };
+		return { action: Fight.Action.Dead, fid: args[0] };
 	}
 
 	/**

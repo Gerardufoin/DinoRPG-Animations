@@ -335,8 +335,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHDead(obj) {
-		console.log('Conversion for "_HDead" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HDead',
+			args: [obj.fid]
+		};
 	}
 
 	/**

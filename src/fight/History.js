@@ -9,6 +9,7 @@ import { MoveTo } from './actions/MoveTo.js';
 import { Damages } from './actions/Damages.js';
 import { Return } from './actions/Return.js';
 import { GotoFighter } from './actions/GotoFighter.js';
+import { Dead } from './actions/Dead.js';
 
 export class History {
 	/**
@@ -59,7 +60,7 @@ export class History {
 			[Fight.Action.DamagesGroup]: undefined,
 			[Fight.Action.CastleAttack]: undefined,
 			[Fight.Action.Return]: undefined, //'return', (needs GoTo and GroupEffects to make any sens)
-			[Fight.Action.Dead]: undefined,
+			[Fight.Action.Dead]: 'dead',
 			[Fight.Action.Lost]: undefined,
 			[Fight.Action.Escape]: undefined,
 			[Fight.Action.Finish]: undefined,
@@ -159,6 +160,15 @@ export class History {
 	 */
 	return(action) {
 		return new Return(this._scene, action.fid);
+	}
+
+	/**
+	 * A Fighter dies.
+	 * @param {{action: number, fid: number}} action Action which triggered the call.
+	 * @returns {State} The Dead State.
+	 */
+	dead(action) {
+		return new Dead(this._scene, action.fid);
 	}
 
 	/**

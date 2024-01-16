@@ -6,12 +6,25 @@ import { Scene } from './Scene.js';
 import { Timer } from './Timer.js';
 
 export class Sprite {
+	/**
+	 * Allows the attribution of an unique ID for each Sprite.
+	 * Increased after each new State instantiation.
+	 * @type {number}
+	 */
+	static CURRENT_ID = 0;
+
+	/**
+	 * Each Sprite needs to be identifiable to be removed from the Scene.
+	 * As such, each state is given a unique id.
+	 */
+	spriteId;
+
 	_x = 0.0;
 	_y = 0.0;
 	_z = 0.0;
 	_ray = 0.0;
 	force = 0.0;
-	scale = 100;
+	scale = 1;
 	/**
 	 * @type {Container}
 	 */
@@ -27,6 +40,11 @@ export class Sprite {
 	 * @type {Scene}
 	 */
 	_scene;
+	/**
+	 * Scene layer where the Sprite was added.
+	 * @type {number}
+	 */
+	_layer;
 
 	/*public var root : flash.MovieClip ;
 	public var shade : flash.MovieClip ;*/
@@ -39,11 +57,12 @@ export class Sprite {
 		return { x: this._x, y: this._y, z: this._z };
 	}
 
-	constructor(container, scene) {
+	constructor(container, scene, layer) {
+		this.spriteId = Sprite.CURRENT_ID++;
 		this._root = container;
 		this._scene = scene;
-		// TODO: Check if needed depending on how it is used
-		//spriteList.push(this) ;
+		this._layer = layer;
+		this._scene.addSprite(this, this._layer);
 	}
 
 	setScale(n) {
@@ -124,12 +143,14 @@ export class Sprite {
 		//forceList.push(this) ;
 	}
 
-	/*public function kill() {
-		spriteList.remove(this) ;
-		if(force != null)forceList.remove(this) ;
-		shade.removeMovieClip() ;
-		root.removeMovieClip() ;
-	}*/
+	/**
+	 * Remove the Sprite from the Scene.
+	 */
+	kill() {
+		this._scene.removeSprite(this, this._layer);
+		//if(force != null)forceList.remove(this) ; TODO
+		//shade.removeMovieClip() ;
+	}
 
 	getRootContainer() {
 		return this._root;

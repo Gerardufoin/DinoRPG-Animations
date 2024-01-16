@@ -8,6 +8,7 @@ import { Asset } from '../display/Asset.js';
 import { Fighter } from './Fighter.js';
 import { Timer } from './Timer.js';
 import { Slot } from './Slot.js';
+import { Sprite } from './Sprite.js';
 
 /**
  * The fight scene containing all the different layers to display.
@@ -18,19 +19,24 @@ export class Scene extends Container {
 	static MARGIN = 10;
 	static WIDTH = 400;
 	static HEIGHT = 300;
-	_layers = {
-		bg: new Container(),
-		shade: new Container(),
-		castle: new Container(),
-		fighters: new Container(),
-		effects: new Container(),
-		parts: new Container(),
-		bgFront: new Container(),
-		inter: new Container(),
-		columns: new Container(),
-		loading: new Container(),
-		debug: new Container()
+	static LAYERS = {
+		BG: 0,
+		SHADE: 1,
+		CASTLE: 2,
+		FIGHTERS: 3,
+		EFFECTS: 4,
+		PARTS: 5,
+		BG_FRONT: 6,
+		INTER: 7,
+		COLUMNS: 8,
+		LOADING: 9,
+		DEBUG: 10
 	};
+	/**
+	 * Layers of the Scene. Each keys of Scene.Layers generate a layer at initialisation.
+	 * @type {{container: Container, sprites: Sprite[]}[]}
+	 */
+	_layers = [];
 	/**
 	 * If true, displays the debug parameters when instantiating entities.
 	 */
@@ -60,13 +66,17 @@ export class Scene extends Container {
 		super();
 		this.debugMode = debug;
 		this.margins = margins;
-		for (const k in this._layers) {
-			this.addChild(this._layers[k]);
+		for (const k in Scene.LAYERS) {
+			this._layers.push({
+				container: new Container(),
+				sprites: []
+			});
+			this.addChild(this._layers[Scene.LAYERS[k]].container);
 		}
 		this.setBackground(background);
 		this.createColumns();
 		// The zindex of the entities is managed by their computed z position.
-		this._layers.fighters.sortableChildren = true;
+		this._layers[Scene.LAYERS.FIGHTERS].container.sortableChildren = true;
 
 		// DEBUG
 		if (this.debugMode) {
@@ -89,7 +99,9 @@ export class Scene extends Container {
 		// TODO
 		//castle.update();
 		//updateForce();
-		this._fighters.map((f) => f.update(timer));
+		this._layers.map((l) => {
+			l.sprites.map((s) => s.update(timer));
+		});
 		// SLOTS
 		//updateSlots();
 		// SHAKE
@@ -123,7 +135,7 @@ export class Scene extends Container {
 			sprite.onLoad(() => {
 				sprite.x = 488 / 2 - sprite.width / 2;
 			});
-			this._layers.bg.addChild(sprite);
+			this._layers[Scene.LAYERS.BG].container.addChild(sprite);
 		}
 	}
 
@@ -136,27 +148,47 @@ export class Scene extends Container {
 		// Once the left column is loaded, move all the scene beside the background and the columns by the width of the column.
 		// The x = 0 of the other scenes should be on the border of the left column.
 		colLeft.onLoad(() => {
-			for (const l in this._layers) {
-				if (!['bg', 'columns'].includes(l)) {
-					this._layers[l].x += colLeft.width;
+			for (const k in this._layers) {
+				if (![Scene.LAYERS.BG, Scene.LAYERS.COLUMNS].includes(Number.parseInt(k))) {
+					this._layers[k].container.x += colLeft.width;
 				}
 			}
 		});
-		this._layers.columns.addChild(colLeft);
+		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colLeft);
 		const colRight = new Asset(texture);
 		colRight.onLoad(() => {
 			colRight.x = 488 - colRight.width;
 		});
-		this._layers.columns.addChild(colRight);
+		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colRight);
 	}
 
 	/**
-	 * Add a fighter to the scene.
-	 * @param {Fighter} fighter The figter to add.
+	 * Adds a Sprite to the specific layer.
+	 * The Sprite will then be updated when the Scene will be updated.
+	 * @param {Sprite} sprite The Sprite to add.
+	 * @param {number} layer The Scene.LAYERS where to add the Sprite.
+	 */
+	addSprite(sprite, layer) {
+		this._layers[layer].container.addChild(sprite.getRootContainer());
+		this._layers[layer].sprites.push(sprite);
+	}
+
+	/**
+	 * Removes a Sprite from the specified layer.
+	 * @param {Sprite} sprite The Sprite to remove.
+	 * @param {number} layer The Scene.LAYERS where to remove the Sprite.
+	 */
+	removeSprite(sprite, layer) {
+		this._layers[layer].container.removeChild(sprite.getRootContainer());
+		this._layers[layer].sprites = this._layers[layer].sprites.filter((s) => s.spriteId !== sprite.spriteId);
+	}
+
+	/**
+	 * Register a new fighter to the scene.
+	 * @param {Fighter} fighter The figter to register.
 	 */
 	addFighter(fighter) {
 		this._fighters.push(fighter);
-		this._layers.fighters.addChild(fighter.body);
 	}
 
 	/**
@@ -174,7 +206,7 @@ export class Scene extends Container {
 	 */
 	addSlot(slot) {
 		// @ts-ignore
-		this._layers.columns.getChildAt(slot.side ? 0 : 1).addChild(slot);
+		this._layers[Scene.LAYERS.COLUMNS].container.getChildAt(slot.side ? 0 : 1).addChild(slot);
 	}
 
 	/**
@@ -255,7 +287,7 @@ export class Scene extends Container {
 	 */
 	debugAddLine(from, to) {
 		const line = new Graphics();
-		this._layers.debug.addChild(line);
+		this._layers[Scene.LAYERS.DEBUG].container.addChild(line);
 		line.lineStyle(2, 0xff0000).moveTo(from.x, from.y).lineTo(to.x, to.y);
 	}
 }

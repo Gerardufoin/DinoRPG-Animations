@@ -132,6 +132,12 @@ Makes the selected fighter go back to its first saved position since the last ti
 
 ### Dead (7)
 
+A fighter dies.
+
+#### Properties
+
+1. fid - Number - The ID of the dying fighter.
+
 ### Lost (8)
 
 ### Escape (9)

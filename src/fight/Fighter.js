@@ -176,7 +176,7 @@ export class Fighter extends Phys {
 
 	constructor(fInfos, scene) {
 		const body = new Container();
-		super(body, scene);
+		super(body, scene, Scene.LAYERS.FIGHTERS);
 
 		this.id = fInfos.fid;
 		this._isDino = fInfos.dino;
@@ -493,7 +493,7 @@ export class Fighter extends Phys {
 	 * If null is passed, remove all the status.
 	 * @param {number | null} status A Fighter.Status enum value.
 	 */
-	removeStatus(status) {
+	removeStatus(status = null) {
 		this._status = this._status.filter((s) => {
 			if (status === null || s.e === status) {
 				switch (s.e) {
@@ -824,6 +824,17 @@ export class Fighter extends Phys {
 	 */
 	clearCallback(name) {
 		this._animator.clearCallback(name);
+	}
+
+	/**
+	 * Remove the status, the shadow, the force, and set the mode to Dead.
+	 */
+	die() {
+		this.removeStatus();
+		this.playAnim('dead');
+		this._mode = Fighter.Mode.Dead;
+		//f.shade.removeMovieClip() ; TODO
+		//Sprite.forceList.remove(f);
 	}
 
 	/**
