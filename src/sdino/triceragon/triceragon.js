@@ -14,6 +14,8 @@ import { ref } from '../references.js';
 
 export let triceragon = {
 	name: 'triceragon',
+	width: 0.684,
+	height: 0.812,
 	transforms: [
 		// 1639
 		{

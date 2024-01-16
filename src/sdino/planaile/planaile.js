@@ -11,6 +11,8 @@ import { dead } from './animations/dead.js';
 
 export let planaile = {
 	name: 'planaile',
+	width: 0.673,
+	height: 0.606,
 	transforms: [
 		// 336
 		{

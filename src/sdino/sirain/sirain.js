@@ -12,6 +12,8 @@ import { dead } from './animations/dead.js';
 
 export let sirain = {
 	name: 'sirain',
+	width: 0.59,
+	height: 0.66,
 	transforms: [
 		// 600
 		{

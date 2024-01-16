@@ -34,6 +34,17 @@ export class sdino extends Animator {
 	_code = '';
 
 	/**
+	 * The collider of the dinoz.
+	 * @type {{width: number, height: number}}
+	 */
+	get collider() {
+		return {
+			width: 36 * (this._dinoInfos?.width ?? 1),
+			height: 39 * (this._dinoInfos?.height ?? 1)
+		};
+	}
+
+	/**
 	 * Create a dino based on the data parameter.
 	 * @param {object} data Object containing the data describing a dino.
 	 */

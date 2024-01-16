@@ -13,6 +13,8 @@ import { dead } from './animations/dead.js';
 
 export let winks = {
 	name: 'winks',
+	width: 0.673,
+	height: 0.496,
 	transforms: [
 		// 285
 		{

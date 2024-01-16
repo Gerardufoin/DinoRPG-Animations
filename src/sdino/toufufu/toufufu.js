@@ -18,6 +18,8 @@ import { ref } from '../references.js';
 
 export let toufufu = {
 	name: 'toufufu',
+	width: 0.686,
+	height: 0.656,
 	transforms: [
 		// 1290
 		{

@@ -13,6 +13,8 @@ import { ref } from '../references.js';
 
 export let santaz = {
 	name: 'santaz',
+	widht: 0.529,
+	height: 0.696,
 	transforms: [
 		// 855
 		{

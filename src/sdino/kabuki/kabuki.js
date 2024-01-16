@@ -15,6 +15,8 @@ import { ref } from '../references.js';
 
 export let kabuki = {
 	name: 'kabuki',
+	width: 0.574,
+	height: 0.626,
 	transforms: [
 		// 965
 		{

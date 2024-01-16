@@ -13,6 +13,8 @@ import { dead } from './animations/dead.js';
 
 export let hippoclamp = {
 	name: 'hippoclamp',
+	width: 0.612,
+	height: 0.63,
 	transforms: [
 		// 666 - Hippoclamp confirmed to be satan
 		{

@@ -104,7 +104,18 @@ export class Fighter extends Phys {
 	_walkSpeed = 1.8;
 	_runSpeed = 8;
 	_range = 10;
-	_height = 36;
+
+	/**
+	 * Height of the Fighter. Defined by the _box entity in MT.
+	 * In this project, defined by the value returned by the entity collider.
+	 * @type {number}
+	 */
+	_height;
+	/**
+	 * Width of the Fighter, defined by the value returned by the entity collider.
+	 * @type {number}
+	 */
+	_width;
 
 	/**
 	 * Get the height of the fighter.
@@ -175,18 +186,21 @@ export class Fighter extends Phys {
 		this._maxLife = fInfos.maxLife ?? fInfos.life;
 		this._size = Math.pow(fInfos.scale ?? 1, 0.65);
 
-		this._ray = 10;
-		this.setForce(10 * this._size);
-
 		this.body = body;
-		this._animator = new sdino({
+		const dino = new sdino({
 			data: fInfos.gfx,
 			autoUpdate: false,
 			pflag: true,
 			scale: this._size
 		});
+		this._animator = dino;
 		this.body.addChild(this._animator);
 		this.setSide(fInfos.side);
+
+		this._height = dino.collider.height * this._size;
+		this._width = dino.collider.width * this._size;
+		this._ray = this._width * 0.5 * this._size;
+		this.setForce(10 * this._size);
 
 		// TODO
 		/*if( haveProp(_PStatic) ) {
@@ -202,6 +216,34 @@ export class Fighter extends Phys {
 		if(haveProp(_PDark)) skinDark(); ?
 
 		*/
+
+		/*
+		dropShadow() ;
+
+		// BIND FX FUNC
+		Reflect.setField( skin,"_fxAttach",fxAttach );
+		Reflect.setField( skin,"_fxAttachInside",fxAttachInside );
+		Reflect.setField( skin,"_fxAttachScene",fxAttachScene );
+
+
+		switch(Scene.me.groundType) {
+			case "water":
+				var h = -5;
+				mcOndeFront = bdm.attach("mcWaterOnde",DP_FRONT);
+				mcOndeFront._xscale = ray*2;
+				mcOndeFront._yscale = ray;
+				mcOndeFront._y = h;
+				mcOndeBack = bdm.attach("mcWaterOnde",DP_BACK);
+				mcOndeBack._xscale = mcOndeFront._xscale;
+				mcOndeBack._yscale = -mcOndeFront._yscale;
+				mcOndeBack._y = h;
+
+			default:
+
+		}
+		fxJump();
+		*/
+
 		this._friction = 0.9;
 
 		if (this._isDino) {
@@ -792,5 +834,11 @@ export class Fighter extends Phys {
 		const origin = new Graphics();
 		origin.beginFill(0xff0000).drawCircle(0, 0, 2).endFill();
 		this.body.addChild(origin);
+		// Collider
+		this.body.addChild(
+			new Graphics()
+				.lineStyle(2, 0xff0000)
+				.drawRect(-this._width / 2, -this._height / 2, this._width, this._height)
+		);
 	}
 }

@@ -14,6 +14,8 @@ import { ref } from '../references.js';
 
 export let feross = {
 	name: 'feross',
+	width: 0.599,
+	height: 0.53,
 	transforms: [
 		// 913
 		{

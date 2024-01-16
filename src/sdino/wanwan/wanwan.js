@@ -13,6 +13,8 @@ import { ref } from '../references.js';
 
 export let wanwan = {
 	name: 'wanwan',
+	width: 0.529,
+	height: 0.498,
 	transforms: [
 		// 775
 		{

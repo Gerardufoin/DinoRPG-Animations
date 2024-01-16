@@ -15,6 +15,8 @@ import { ref } from '../references.js';
 
 export let gorilloz = {
 	name: 'gorilloz',
+	width: 0.718,
+	height: 0.666,
 	transforms: [
 		// 710
 		{

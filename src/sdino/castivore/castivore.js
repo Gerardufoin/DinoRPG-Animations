@@ -11,6 +11,8 @@ import { ref } from '../references.js';
 
 export let castivore = {
 	name: 'castivore',
+	width: 0.978,
+	height: 0.561,
 	transforms: [
 		// 397
 		{

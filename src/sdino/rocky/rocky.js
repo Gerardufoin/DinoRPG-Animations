@@ -11,6 +11,8 @@ import { dead } from './animations/dead.js';
 
 export let rocky = {
 	name: 'rocky',
+	width: 0.989,
+	height: 0.927,
 	transforms: [
 		// 468
 		{

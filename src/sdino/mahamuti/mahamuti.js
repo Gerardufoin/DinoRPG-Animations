@@ -14,6 +14,8 @@ import { ref } from '../references.js';
 
 export let mahamuti = {
 	name: 'mahamuti',
+	width: 0.78,
+	height: 0.719,
 	transforms: [
 		// 1044
 		{

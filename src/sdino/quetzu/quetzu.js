@@ -16,6 +16,8 @@ import { fx_slash } from '../fx/slash.js';
 
 export let quetzu = {
 	name: 'quetzu',
+	width: 0.684,
+	height: 0.812,
 	transforms: [
 		// 1462
 		{

@@ -13,6 +13,8 @@ import { ref } from '../references.js';
 
 export let soufflet_larvae = {
 	name: 'soufflet',
+	width: 0.686,
+	height: 0.656,
 	transforms: transforms,
 	glow: {
 		distance: 1,

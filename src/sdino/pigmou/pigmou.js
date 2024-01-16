@@ -13,6 +13,8 @@ import { parts } from './parts.js';
 
 export let pigmou = {
 	name: 'pigmou',
+	width: 0.735,
+	height: 0.625,
 	transforms: [
 		// 231
 		{

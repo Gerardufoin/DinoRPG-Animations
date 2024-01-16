@@ -11,6 +11,8 @@ import { fly } from './animations/fly.js';
 
 export let nuagoz = {
 	name: 'nuagoz',
+	width: 0.519,
+	height: 0.63,
 	transforms: [
 		// 547
 		{

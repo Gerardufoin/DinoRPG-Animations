@@ -15,6 +15,8 @@ import { ref } from '../references.js';
 
 export let smog = {
 	name: 'smog',
+	width: 0.684,
+	height: 0.812,
 	transforms: [
 		// 1562
 		{

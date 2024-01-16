@@ -10,6 +10,8 @@ import { fly } from './animations/fly.js';
 
 export let pteroz = {
 	name: 'pteroz',
+	width: 0.707,
+	height: 0.663,
 	transforms: [
 		// 517
 		{
