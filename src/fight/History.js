@@ -13,6 +13,11 @@ import { Dead } from './actions/Dead.js';
 
 export class History {
 	/**
+	 * The fight instantiating the history.
+	 * @type {Fight}
+	 */
+	_fight;
+	/**
 	 * The scene that the history is impacting.
 	 * @type {Scene}
 	 */
@@ -46,10 +51,12 @@ export class History {
 
 	/**
 	 *
+	 * @param {Fight} fight
 	 * @param {Scene} scene
 	 * @param {object[]} history
 	 */
-	constructor(scene, history) {
+	constructor(fight, scene, history) {
+		this._fight = fight;
 		this._scene = scene;
 		this._history = history;
 		this._actions = {
@@ -66,7 +73,7 @@ export class History {
 			[Fight.Action.Finish]: undefined,
 			[Fight.Action.Energy]: 'energy',
 			[Fight.Action.MaxEnergy]: 'maxEnergy',
-			[Fight.Action.Pause]: undefined,
+			[Fight.Action.Pause]: 'pause',
 			[Fight.Action.Announce]: undefined,
 			[Fight.Action.Goto]: 'goToFighter',
 			[Fight.Action.Regen]: undefined,
@@ -105,7 +112,7 @@ export class History {
 					this._currentState.endCall = () => {
 						this.playNext();
 					};
-				} else {
+				} else if (!this._fight.paused) {
 					this.playNext();
 				}
 			} else {
@@ -202,6 +209,16 @@ export class History {
 				console.error(`MaxEnergy Error: Fighter with id ${f.fid} does not exist in the scene.`);
 			}
 		}
+		return null;
+	}
+
+	/**
+	 * Pause the history untile the given amount of frames have elapsed.
+	 * @param {{action: number, time: number}} action Action which triggered the call.
+	 * @returns {null} Nothing.
+	 */
+	pause(action) {
+		this._fight.pause(action.time);
 		return null;
 	}
 

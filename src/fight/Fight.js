@@ -16,6 +16,7 @@ import { Timer } from './Timer.js';
  * Can be created using the legacy fight data used by Motion Twin, or the adapted JSON version used for this project.
  */
 export class Fight {
+	static FRAME_RATE = 32;
 	/**
 	 * The different actions available in the fight history.
 	 */
@@ -86,6 +87,14 @@ export class Fight {
 	_waitingTime = 0;
 
 	/**
+	 * Is the current fight history paused?
+	 * @type {boolean}
+	 */
+	get paused() {
+		return this._waitingTime > 0;
+	}
+
+	/**
 	 * Fight history manager.
 	 * @type {History}
 	 */
@@ -119,14 +128,14 @@ export class Fight {
 			data.debug
 		);
 
-		this._timer = new Timer(32);
+		this._timer = new Timer(Fight.FRAME_RATE);
 		this._timer.add(() => {
 			this.update();
 			this._renderer.render(this._scene);
 		});
 		this._timer.start();
 
-		this._history = new History(this._scene, this._data.history);
+		this._history = new History(this, this._scene, this._data.history);
 		// TODO: DinoAnim does not need to load external ressource, as such it begins as soon as the page finishes loading.
 		// A "Fake" loading screen will be needed to allow the page to render properly and let the player breath before the fight start.
 		// This will also leave the time for Timer.tmod to adapt to the current frame rate.
@@ -135,6 +144,10 @@ export class Fight {
 		}, 1000);
 	}
 
+	/**
+	 * Update the States and the Scene.
+	 * If waiting time is above 0, decrease it and play the next history action once finish.
+	 */
 	update() {
 		this._history.updateStates(this._timer);
 		this._scene.update(this._timer);
@@ -154,6 +167,14 @@ export class Fight {
 	 */
 	getDisplay() {
 		return this._renderer.view;
+	}
+
+	/**
+	 * Pause the action for the given number of frames.
+	 * @param {number} frames The number of frames the pause has to last.
+	 */
+	pause(frames) {
+		this._waitingTime = frames;
 	}
 
 	/**

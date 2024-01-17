@@ -146,9 +146,27 @@ A fighter dies.
 
 ### Energy (11)
 
+Set the current energy of a group of fighters.
+
+#### Properties
+
+1. fighters - { fid: number, energy: number }[] - An array of fighter and their desired level of energy.
+
 ### MaxEnergy (12)
 
+Set the maximum energy of a group of fighters.
+
+#### Properties
+
+1. fighters - { fid: number, energy: number }[] - An array of fighter and their desired maximum level of energy.
+
 ### Pause (13)
+
+Pause the history for a given amount of frames.
+
+#### Properties
+
+1. time - Number - Number of frames until the next action in the history is played.
 
 ### Announce (14)
 

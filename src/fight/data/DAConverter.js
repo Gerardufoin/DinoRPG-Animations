@@ -199,8 +199,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHPause(args) {
-		console.log('Conversion for "_HPause" not done yet.');
-		return { action: Fight.Action.Pause };
+		return { action: Fight.Action.Pause, time: args[0] };
 	}
 
 	/**
