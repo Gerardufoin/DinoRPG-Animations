@@ -167,8 +167,14 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHEnergy(args) {
-		console.log('Conversion for "_HEnergy" not done yet.');
-		return { action: Fight.Action.Energy };
+		const ret = { action: Fight.Action.Energy, fighters: [] };
+		for (let i = 0; i < args[0].length; ++i) {
+			ret.fighters.push({
+				fid: args[0][i],
+				energy: args[1][i]
+			});
+		}
+		return ret;
 	}
 
 	/**
@@ -177,8 +183,14 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHMaxEnergy(args) {
-		console.log('Conversion for "_HMaxEnergy" not done yet.');
-		return { action: Fight.Action.MaxEnergy };
+		const ret = { action: Fight.Action.MaxEnergy, fighters: [] };
+		for (let i = 0; i < args[0].length; ++i) {
+			ret.fighters.push({
+				fid: args[0][i],
+				maxEnergy: args[1][i]
+			});
+		}
+		return ret;
 	}
 
 	/**

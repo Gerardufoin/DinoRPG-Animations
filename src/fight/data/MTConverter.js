@@ -171,8 +171,16 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHEnergy(obj) {
-		console.log('Conversion for "_HEnergy" not done yet.');
-		return undefined;
+		const ret = {
+			enum: '_History',
+			value: '_HEnergy',
+			args: [[], []]
+		};
+		for (const f of obj.fighters) {
+			ret.args[0].push(f.fid);
+			ret.args[1].push(f.energy);
+		}
+		return ret;
 	}
 
 	/**
@@ -181,8 +189,16 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHMaxEnergy(obj) {
-		console.log('Conversion for "_HMaxEnergy" not done yet.');
-		return undefined;
+		const ret = {
+			enum: '_History',
+			value: '_HMaxEnergy',
+			args: [[], []]
+		};
+		for (const f of obj.fighters) {
+			ret.args[0].push(f.fid);
+			ret.args[1].push(f.maxEnergy);
+		}
+		return ret;
 	}
 
 	/**

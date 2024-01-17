@@ -799,6 +799,30 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Sets the energy level of the Fighter.
+	 * @param {number} e The new energy level.
+	 */
+	setEnergy(e) {
+		this._energy = e;
+		console.log(`Fighter ${this.id}: Set energy to ${e}.`);
+		if (this._slot) {
+			this._slot.setEnergy(this._energy);
+		}
+	}
+
+	/**
+	 * Sets the maximum energy of the Fighter.
+	 * @param {number} e The new maximum energy level.
+	 */
+	setMaxEnergy(e) {
+		this._maxEnergy = e;
+		console.log(`Fighter ${this.id}: Set max energy to ${e}.`);
+		if (this._slot) {
+			this._slot.setMaxEnergy(this._maxEnergy);
+		}
+	}
+
+	/**
 	 * Checks if the Fighter has a specific prop.
 	 * @param {number} prop The Fighter.Props to check.
 	 * @returns {boolean} True if the Fighter has the given props, false otherwise.

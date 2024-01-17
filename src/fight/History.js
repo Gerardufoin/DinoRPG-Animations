@@ -64,8 +64,8 @@ export class History {
 			[Fight.Action.Lost]: undefined,
 			[Fight.Action.Escape]: undefined,
 			[Fight.Action.Finish]: undefined,
-			[Fight.Action.Energy]: undefined,
-			[Fight.Action.MaxEnergy]: undefined,
+			[Fight.Action.Energy]: 'energy',
+			[Fight.Action.MaxEnergy]: 'maxEnergy',
 			[Fight.Action.Pause]: undefined,
 			[Fight.Action.Announce]: undefined,
 			[Fight.Action.Goto]: 'goToFighter',
@@ -169,6 +169,40 @@ export class History {
 	 */
 	dead(action) {
 		return new Dead(this._scene, action.fid);
+	}
+
+	/**
+	 * Set the energy of the given figthers.
+	 * @param {{action: number, fighters: { fid: number, energy: number }[]}} action Action which triggered the call.
+	 * @returns {null} Nothing, immediately play the next action.
+	 */
+	energy(action) {
+		for (const f of action.fighters) {
+			const fighter = this._scene.getFighter(f.fid);
+			if (fighter) {
+				fighter.setEnergy(f.energy);
+			} else {
+				console.error(`Energy Error: Fighter with id ${f.fid} does not exist in the scene.`);
+			}
+		}
+		return null;
+	}
+
+	/**
+	 * Set the maximum energy of the given figthers.
+	 * @param {{action: number, fighters: { fid: number, maxEnergy: number }[]}} action Action which triggered the call.
+	 * @returns {null} Nothing, immediately play the next action.
+	 */
+	maxEnergy(action) {
+		for (const f of action.fighters) {
+			const fighter = this._scene.getFighter(f.fid);
+			if (fighter) {
+				fighter.setMaxEnergy(f.maxEnergy);
+			} else {
+				console.error(`MaxEnergy Error: Fighter with id ${f.fid} does not exist in the scene.`);
+			}
+		}
+		return null;
 	}
 
 	/**
