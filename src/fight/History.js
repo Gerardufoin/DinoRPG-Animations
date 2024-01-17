@@ -10,6 +10,7 @@ import { Damages } from './actions/Damages.js';
 import { Return } from './actions/Return.js';
 import { GotoFighter } from './actions/GotoFighter.js';
 import { Dead } from './actions/Dead.js';
+import { Announce } from './actions/Announce.js';
 
 export class History {
 	/**
@@ -74,7 +75,7 @@ export class History {
 			[Fight.Action.Energy]: 'energy',
 			[Fight.Action.MaxEnergy]: 'maxEnergy',
 			[Fight.Action.Pause]: 'pause',
-			[Fight.Action.Announce]: undefined,
+			[Fight.Action.Announce]: 'announce',
 			[Fight.Action.Goto]: 'goToFighter',
 			[Fight.Action.Regen]: undefined,
 			[Fight.Action.Object]: undefined,
@@ -220,6 +221,15 @@ export class History {
 	pause(action) {
 		this._fight.pause(action.time);
 		return null;
+	}
+
+	/**
+	 * A fighter announce an attack (or anything really).
+	 * @param {{action: number, fid: number, message: string}} action Action which triggered the call.
+	 * @returns {Announce} The Announce State.
+	 */
+	announce(action) {
+		return new Announce(this._scene, action.fid, action.message);
 	}
 
 	/**

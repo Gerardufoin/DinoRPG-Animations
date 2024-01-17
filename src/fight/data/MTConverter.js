@@ -220,8 +220,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHAnnounce(obj) {
-		console.log('Conversion for "_HAnnounce" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HAnnounce',
+			args: [obj.fid, obj.message]
+		};
 	}
 
 	/**

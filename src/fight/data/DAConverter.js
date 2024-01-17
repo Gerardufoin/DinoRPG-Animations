@@ -208,8 +208,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHAnnounce(args) {
-		console.log('Conversion for "_HAnnounce" not done yet.');
-		return { action: Fight.Action.Announce };
+		return { action: Fight.Action.Announce, fid: args[0], message: args[1] };
 	}
 
 	/**
