@@ -120,6 +120,51 @@ A fighter attacks another fighter and deals a certain amount of damages.
 
 ### DamagesGroup (4)
 
+A fighter attacks using a skill.
+
+#### Properties
+
+1. fid - Number - The ID of the attacking fighter.
+2. targets - {id: Number, damages: Number}[] - Array of objects comprised of the ID of each target with the damage received.
+3. skill - Number - The DamagesGroup.Skill used by the fighter.
+
+| Skill               | Description                                                                                                                                                            |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Todo (0)            | Placeholder skill in case a new skill is developped.                                                                                                                   |
+| Fireball (1)        |                                                                                                                                                                        |
+| Blow (2)            |                                                                                                                                                                        |
+| Lava (3)            |                                                                                                                                                                        |
+| Meteor (4)          |                                                                                                                                                                        |
+| Vigne (5)           |                                                                                                                                                                        |
+| WaterCanon (6)      |                                                                                                                                                                        |
+| Shower (7)          |                                                                                                                                                                        |
+| Shower2 (8)         | Needs to define the "type" property. Not sure why yet.                                                                                                                 |
+| LevitRay (9)        |                                                                                                                                                                        |
+| Lightning (10)      |                                                                                                                                                                        |
+| Crepuscule (11)     |                                                                                                                                                                        |
+| Mistral (12)        |                                                                                                                                                                        |
+| Tornade (13)        |                                                                                                                                                                        |
+| Disc (14)           |                                                                                                                                                                        |
+| Hole (15)           |                                                                                                                                                                        |
+| Ice (16)            |                                                                                                                                                                        |
+| Projectile (17)     | Needs to define "fx" for the appearance of the projectile, "anim" for the animation of the fighter firing the projectile, and "speed" for the speed of the projectile. |
+| Tremor (18)         |                                                                                                                                                                        |
+| JumpAttack (19)     | Needs to define "fx" for the fx to play at landing.                                                                                                                    |
+| ChainLightning (20) |                                                                                                                                                                        |
+| Heal (21)           | Needs to define "type". Type 0 spawns leaves fx, type 1 does not.                                                                                                      |
+| Charge (22)         |                                                                                                                                                                        |
+| Anim (23)           | Needs to define "anim" for the animation to play.                                                                                                                      |
+| Invoc (24)          | Needs to define "anim" for the invocation to play.                                                                                                                     |
+| Sylfide (25)        |                                                                                                                                                                        |
+| Rafale (26)         |                                                                                                                                                                        |
+| Deluge (27)         | Needs to define "fx" for the droplets, "power" for the strength, and "speed" for the speed.                                                                            |
+
+4. type? - Number - Chose a version of the skill for Shower2 or Heal.
+5. fx? - String - Chose an fx to play for Projectile, JumpAttack or Deluge.
+6. anim? - String - Play a specific animation for Anim, Projectile, or Invoc.
+7. speed? - Number - Set the speed of the skill for Projectile or Deluge.
+8. power? - Number - Set the strength of the skill for Deluge.
+
 ### CastleAttack (5)
 
 ### Return (6)
@@ -170,13 +215,20 @@ Pause the history for a given amount of frames.
 
 ### Announce (14)
 
-### Goto (15)
-
-Moves a fighter at range of another fighter with the given movement type.
+A fighter announces something, most likely the use of a skill.
 
 #### Properties
 
-1. fid - Number - The ID of the moveing fighter.
+1. fid - Number - The ID of the fighter making the announce.
+2. message - String - The announce.
+
+### Goto (15)
+
+Moves a fighter in range of another fighter with the given movement type.
+
+#### Properties
+
+1. fid - Number - The ID of the moving fighter.
 2. tid - Number - The ID of the targeted fighter.
 3. effect? - Number - The GotoEffect used to move the fighter. If none is given, default to Normal.
 
@@ -186,7 +238,7 @@ Moves a fighter at range of another fighter with the given movement type.
 | Over (1)    | Jumps above the target.                                         |
 | Special (2) | Not sure yet. Create multiple shades with the given shadeColor. |
 
-5. shadeColor? - {col1?: number, col2: number} - The colors for the shades created when selecting GotoEffect.Special. If undefined, the shade will be pure black.
+5. shadeColor? - {col1?: number, col2?: number} - The colors for the shades created when selecting GotoEffect.Special. If undefined, the shade will be pure black.
 
 ### Regen (16)
 

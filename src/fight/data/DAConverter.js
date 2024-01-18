@@ -4,6 +4,7 @@ import { Fight } from '../Fight.js';
 import { Fighter } from '../Fighter.js';
 import { AddFighter } from '../actions/AddFighter.js';
 import { Damages } from '../actions/Damages.js';
+import { DamagesGroup } from '../actions/DamagesGroup.js';
 import { GotoFighter } from '../actions/GotoFighter.js';
 
 /**
@@ -390,8 +391,86 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHDamagesGroup(args) {
-		console.log('Conversion for "_HDamagesGroup" not done yet.');
-		return { action: Fight.Action.DamagesGroup };
+		return {
+			action: Fight.Action.DamagesGroup,
+			fid: args[0],
+			targets: args[1].map((v) => {
+				return { id: v._tid, damages: v._life };
+			}),
+			...DAConverter.convertDamageSkill(args[2])
+		};
+	}
+
+	/**
+	 * Convert a _GroupEffect from from MT into a DamagesGroup.Skill.
+	 * @param {object} skill MT skill object.
+	 * @returns {{skill: number}} The converted DamagesGroup.Skill.
+	 */
+	static convertDamageSkill(skill) {
+		const mapping = {
+			_GrTodo: DamagesGroup.Skill.Todo,
+			_GrFireball: DamagesGroup.Skill.Fireball,
+			_GrBlow: DamagesGroup.Skill.Blow,
+			_GrLava: DamagesGroup.Skill.Lava,
+			_GrMeteor: DamagesGroup.Skill.Meteor,
+			_GrVigne: DamagesGroup.Skill.Vigne,
+			_GrWaterCanon: DamagesGroup.Skill.WaterCanon,
+			_GrShower: DamagesGroup.Skill.Shower,
+			_GrShower2: DamagesGroup.Skill.Shower2,
+			_GrLevitRay: DamagesGroup.Skill.LevitRay,
+			_GrLightning: DamagesGroup.Skill.Lightning,
+			_GrCrepuscule: DamagesGroup.Skill.Crepuscule,
+			_GrMistral: DamagesGroup.Skill.Mistral,
+			_GrTornade: DamagesGroup.Skill.Tornade,
+			_GrDisc: DamagesGroup.Skill.Disc,
+			_GrHole: DamagesGroup.Skill.Hole,
+			_GrIce: DamagesGroup.Skill.Ice,
+			_GrProjectile: DamagesGroup.Skill.Projectile,
+			_GrTremor: DamagesGroup.Skill.Tremor,
+			_GrJumpAttack: DamagesGroup.Skill.JumpAttack,
+			_GrChainLightning: DamagesGroup.Skill.ChainLightning,
+			_GrHeal: DamagesGroup.Skill.Heal,
+			_GrCharge: DamagesGroup.Skill.Charge,
+			_GrAnim: DamagesGroup.Skill.Anim,
+			_GrInvoc: DamagesGroup.Skill.Invoc,
+			_GrSylfide: DamagesGroup.Skill.Sylfide,
+			_GrRafale: DamagesGroup.Skill.Rafale,
+			_GrDeluge: DamagesGroup.Skill.Deluge
+		};
+		const obj = {
+			skill: DamagesGroup.Skill.Todo
+		};
+		if (!skill) return obj;
+
+		obj.skill = mapping[skill.value];
+		switch (obj.skill) {
+			case DamagesGroup.Skill.Shower2:
+				obj.type = skill.args[0]; // int (not sure)
+				break;
+			case DamagesGroup.Skill.Projectile:
+				obj.fx = skill.args[0]; //sand, gland, aiguillon, lame, rocher
+				obj.anim = skill.args[1]; // string (anim)
+				obj.speed = skill.args[2]; // float
+				break;
+			case DamagesGroup.Skill.JumpAttack:
+				obj.fx = skill.args[0]; //string (landing fx)
+				break;
+			case DamagesGroup.Skill.Heal:
+				obj.type = skill.args[0]; // 0-1, 0 = leaf fx, 1 = not
+				break;
+			case DamagesGroup.Skill.Anim:
+				obj.anim = skill.args[0]; // string
+				break;
+			case DamagesGroup.Skill.Invoc:
+				obj.anim = skill.args[0]; // string
+				break;
+			case DamagesGroup.Skill.Rafale:
+				obj.fx = skill.args[0]; // string - fx droplets of water
+				obj.power = skill.args[0];
+				obj.speed = skill.args[0];
+				break;
+		}
+		return obj;
 	}
 
 	/**

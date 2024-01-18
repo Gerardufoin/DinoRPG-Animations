@@ -3,6 +3,7 @@
 import { Fighter } from '../Fighter.js';
 import { AddFighter } from '../actions/AddFighter.js';
 import { Damages } from '../actions/Damages.js';
+import { DamagesGroup } from '../actions/DamagesGroup.js';
 import { GotoFighter } from '../actions/GotoFighter.js';
 
 /**
@@ -344,11 +345,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHReturn(obj) {
-		return null; /*{
+		return {
 			enum: '_History',
 			value: '_HReturn',
 			args: [obj.fid]
-		};*/
+		};
 	}
 
 	/**
@@ -430,8 +431,84 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHDamagesGroup(obj) {
-		console.log('Conversion for "_HDamagesGroup" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HDamagesGroup',
+			args: [
+				obj.fid,
+				obj.targets.map((t) => {
+					return { _tid: t.id, _life: t.damages };
+				}),
+				MTConverter.convertDamageSkill(obj)
+			]
+		};
+	}
+
+	/**
+	 * Convert a DamagesGroup.Skill enum into an _GroupEffect enum.
+	 * @param {object} skill Fight.Action.DamagesGroup action to convert.
+	 * @returns {{enum: string, value: string, args: Array}} The corresponding _GroupEffect enum or null if none.
+	 */
+	static convertDamageSkill(skill) {
+		const mapping = {
+			[DamagesGroup.Skill.Todo]: '_GrTodo',
+			[DamagesGroup.Skill.Fireball]: '_GrFireball',
+			[DamagesGroup.Skill.Blow]: '_GrBlow',
+			[DamagesGroup.Skill.Lava]: '_GrLava',
+			[DamagesGroup.Skill.Meteor]: '_GrMeteor',
+			[DamagesGroup.Skill.Vigne]: '_GrVigne',
+			[DamagesGroup.Skill.WaterCanon]: '_GrWaterCanon',
+			[DamagesGroup.Skill.Shower]: '_GrShower',
+			[DamagesGroup.Skill.Shower2]: '_GrShower2',
+			[DamagesGroup.Skill.LevitRay]: '_GrLevitRay',
+			[DamagesGroup.Skill.Lightning]: '_GrLightning',
+			[DamagesGroup.Skill.Crepuscule]: '_GrCrepuscule',
+			[DamagesGroup.Skill.Mistral]: '_GrMistral',
+			[DamagesGroup.Skill.Tornade]: '_GrTornade',
+			[DamagesGroup.Skill.Disc]: '_GrDisc',
+			[DamagesGroup.Skill.Hole]: '_GrHole',
+			[DamagesGroup.Skill.Ice]: '_GrIce',
+			[DamagesGroup.Skill.Projectile]: '_GrProjectile',
+			[DamagesGroup.Skill.Tremor]: '_GrTremor',
+			[DamagesGroup.Skill.JumpAttack]: '_GrJumpAttack',
+			[DamagesGroup.Skill.ChainLightning]: '_GrChainLightning',
+			[DamagesGroup.Skill.Heal]: '_GrHeal',
+			[DamagesGroup.Skill.Charge]: '_GrCharge',
+			[DamagesGroup.Skill.Anim]: '_GrAnim',
+			[DamagesGroup.Skill.Invoc]: '_GrInvoc',
+			[DamagesGroup.Skill.Sylfide]: '_GrSylfide',
+			[DamagesGroup.Skill.Rafale]: '_GrRafale',
+			[DamagesGroup.Skill.Deluge]: '_GrDeluge'
+		};
+		const ret = {
+			enum: '_GroupEffect',
+			value: mapping[skill.skill],
+			args: []
+		};
+		switch (skill.skill) {
+			case DamagesGroup.Skill.Shower2:
+				ret.args = [skill.type];
+				break;
+			case DamagesGroup.Skill.Projectile:
+				ret.args = [skill.fx, skill.anim, skill.speed];
+				break;
+			case DamagesGroup.Skill.JumpAttack:
+				ret.args = [skill.fx];
+				break;
+			case DamagesGroup.Skill.Heal:
+				ret.args = [skill.type];
+				break;
+			case DamagesGroup.Skill.Anim:
+				ret.args = [skill.anim];
+				break;
+			case DamagesGroup.Skill.Invoc:
+				ret.args = [skill.anim];
+				break;
+			case DamagesGroup.Skill.Rafale:
+				ret.args = [skill.fx, skill.power, skill.speed];
+				break;
+		}
+		return ret;
 	}
 
 	/**

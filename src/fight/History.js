@@ -11,6 +11,7 @@ import { Return } from './actions/Return.js';
 import { GotoFighter } from './actions/GotoFighter.js';
 import { Dead } from './actions/Dead.js';
 import { Announce } from './actions/Announce.js';
+import { DamagesGroup } from './actions/DamagesGroup.js';
 
 export class History {
 	/**
@@ -65,9 +66,9 @@ export class History {
 			[Fight.Action.AddCastle]: undefined,
 			[Fight.Action.MoveTo]: 'moveTo',
 			[Fight.Action.Damages]: 'damages',
-			[Fight.Action.DamagesGroup]: undefined,
+			[Fight.Action.DamagesGroup]: 'damagesGroup',
 			[Fight.Action.CastleAttack]: undefined,
-			[Fight.Action.Return]: undefined, //'return', (needs GoTo and GroupEffects to make any sens)
+			[Fight.Action.Return]: 'return',
 			[Fight.Action.Dead]: 'dead',
 			[Fight.Action.Lost]: undefined,
 			[Fight.Action.Escape]: undefined,
@@ -159,6 +160,22 @@ export class History {
 	 */
 	damages(action) {
 		return new Damages(this._scene, action.fid, action.tid, action.damages, action.lifeFx, action.effect);
+	}
+
+	/**
+	 * A Fighter attacks a group of Fighters.
+	 * @param {{action: number, fid: number, targets: {id: number, damages: number}[], skill: number, type?: number, fx?: string, anim?: string, speed?: number, power?: number}} action Action which triggered the call.
+	 * @returns {State} The DamagesGroup State.
+	 */
+	damagesGroup(action) {
+		return new DamagesGroup(this._scene, action.fid, action.targets, {
+			skill: action.skill,
+			type: action.type,
+			fx: action.fx,
+			anim: action.anim,
+			speed: action.speed,
+			power: action.power
+		});
 	}
 
 	/**
