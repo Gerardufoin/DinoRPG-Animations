@@ -267,7 +267,7 @@ export class DAConverter {
 	/**
 	 * Convert a _LifeEffect into a Fighter.LifeEffet.
 	 * @param {object} obj _LifeEffect enum.
-	 * @returns {number} The corresponding Fighter.LeftEffect or undefined if none.
+	 * @returns {{fx: number, amount?: number, size?: number}} The corresponding Fighter.LifeEffect with its arguments or undefined if none.
 	 */
 	static convertLifeEffect(obj) {
 		const mapping = {
@@ -283,7 +283,18 @@ export class DAConverter {
 			_LAcid: Fighter.LifeEffect.Acid
 		};
 		if (obj) {
-			return mapping[obj.value];
+			const ret = {
+				fx: mapping[obj.value]
+			};
+			switch (ret.fx) {
+				case Fighter.LifeEffect.Burn:
+					ret.amount = obj.args[0];
+					break;
+				case Fighter.LifeEffect.Skull:
+					ret.size = obj.args[0];
+					break;
+			}
+			return ret;
 		}
 		return undefined;
 	}
@@ -351,8 +362,12 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHRegen(args) {
-		console.log('Conversion for "_HRegen" not done yet.');
-		return { action: Fight.Action.Regen };
+		return {
+			action: Fight.Action.Regen,
+			fid: args[0],
+			amount: args[1],
+			lifeFx: DAConverter.convertLifeEffect(args[2])
+		};
 	}
 
 	/**

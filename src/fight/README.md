@@ -93,20 +93,20 @@ A fighter attacks another fighter and deals a certain amount of damages.
 1. fid - Number - The ID of the attacking fighter.
 2. tid - Number - The ID of the targeted fighter.
 3. damages - Number | Null - The amount of damages dealt. If Null, the attack is dodged. If 0, the attack is guarded.
-4. lifeFx? - LifeEffect - The life effect played on the fighter during the attack.
+4. lifeFx? - {fx: LifeEffect, amount?: number, size?: number} - The life effect played on the fighter during the attack.
 
-| LifeEffect    | Description               |
-| ------------- | ------------------------- |
-| Normal (0)    | No effect in particular.  |
-| Fire (1)      | Adds fire particles.      |
-| Wood (2)      | Adds leaf particles.      |
-| Water (3)     | Adds droplet particles.   |
-| Lightning (4) | Adds lightning particles. |
-| Air (5)       | Adds wind particles.      |
-| Burn (6)      | Adds burning particles.   |
-| Heal (7)      | Adds healing particles.   |
-| Skull (8)     | Adds skulls particles.    |
-| Acid (9)      | Adds acid particles.      |
+| LifeEffect    | Description                                                             |
+| ------------- | ----------------------------------------------------------------------- |
+| Normal (0)    | No effect in particular.                                                |
+| Fire (1)      | Adds fire particles.                                                    |
+| Wood (2)      | Adds leaf particles.                                                    |
+| Water (3)     | Adds droplet particles.                                                 |
+| Lightning (4) | Adds lightning particles.                                               |
+| Air (5)       | Adds wind particles.                                                    |
+| Burn (6)      | Adds burning particles. Set amount to display the amount of fx to show. |
+| Heal (7)      | Adds healing particles.                                                 |
+| Skull (8)     | Adds skulls particles. Set size to decide the size of the skull fx.     |
+| Acid (9)      | Adds acid particles.                                                    |
 
 5. effect? - DamagesEffect - The type of action the fighter will take before attacking.
 
@@ -241,6 +241,14 @@ Moves a fighter in range of another fighter with the given movement type.
 5. shadeColor? - {col1?: number, col2?: number} - The colors for the shades created when selecting GotoEffect.Special. If undefined, the shade will be pure black.
 
 ### Regen (16)
+
+A fighter regenerates a set amount of life with the given life effect. If the fighter was dead, resurrect it.
+
+#### Properties
+
+1. fid - Number - The ID of the fighter healing.
+2. amount - Number - Amount of health healed.
+3. lifeFx - {fx: LifeEffect, amount?: number, size?: number} - The life effect played during the regen. See LifeEffect above.
 
 ### Object (17)
 

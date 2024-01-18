@@ -68,7 +68,7 @@ export class DamagesGroup extends State {
 		this._attacker = this._scene.getFighter(fid);
 		if (!this._attacker) {
 			this.kill();
-			console.error(`Damages Error: Fighter with id ${fid} does not exist in the scene.`);
+			console.error(`DamagesGroup Error: Fighter with id ${fid} does not exist in the scene.`);
 			return;
 		}
 		this.addActor(this._attacker);
@@ -77,7 +77,7 @@ export class DamagesGroup extends State {
 			const f = this._scene.getFighter(t.id);
 			if (!f) {
 				this.kill();
-				console.error(`Damages Error: Fighter with id ${t.id} does not exist in the scene.`);
+				console.error(`DamagesGroup Error: Fighter with id ${t.id} does not exist in the scene.`);
 				return;
 			}
 			this._targets.push({ fighter: f, damages: t.damages });

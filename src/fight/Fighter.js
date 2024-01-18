@@ -567,7 +567,7 @@ export class Fighter extends Phys {
 	 * The Fighter gets hit by another Fighter, losing [damages] health with the [lifeFx] effect.
 	 * @param {Fighter} attacker The Fighter attacking this one.
 	 * @param {number} damages The damages inflicted. If 0, the guard animation is played.
-	 * @param {number} lifeFx The life gain/loss effect to play, based on Fighter.LifeEffect.
+	 * @param {{fx: number, amount?: number, size?: number}} lifeFx The life gain/loss effect to play, based on Fighter.LifeEffect.
 	 * @returns {void}
 	 */
 	hit(attacker, damages, lifeFx) {
@@ -588,7 +588,7 @@ export class Fighter extends Phys {
 	 * The Fighter takes damages.
 	 * @param {number} damages The amount of damages taken.
 	 * @param {number} stunDuration The stun duration following the damage. 50 by default.
-	 * @param {number | null} lifeFx The Fighter.LifeEffect effect to play while receiving the damages, or null if none.
+	 * @param {{fx: number, amount?: number, size?: number} | null} lifeFx The Fighter.LifeEffect effect to play while receiving the damages, or null if none.
 	 */
 	damages(damages, stunDuration = 50, lifeFx = null) {
 		this.playAnim('hit');
@@ -611,7 +611,7 @@ export class Fighter extends Phys {
 	 * The Fighter regenerates the given amount of life.
 	 * If a LifeEffect is given, it will be played.
 	 * @param {number} amount The amount of health to regenerate.
-	 * @param {number | null} lifeFx The Fighter.LifeEffect to play. Null by default.
+	 * @param {{fx: number, amount?: number, size?: number} | null} lifeFx The Fighter.LifeEffect to play. Null by default.
 	 */
 	gainLife(amount, lifeFx = null) {
 		this._life += amount;
@@ -755,7 +755,7 @@ export class Fighter extends Phys {
 
 	/**
 	 * Play the given Fighter.LifeEffect effect.
-	 * @param {number} effect The Fighter.LifeEffect to play.
+	 * @param {{fx: number, amount?: number, size?: number}} effect The Fighter.LifeEffect to play.
 	 */
 	lifeEffect(effect) {
 		// TODO
@@ -789,6 +789,16 @@ export class Fighter extends Phys {
 			const sp = 0.5 + Math.random() * speed;
 			this._scene.genGroundPart(this._x + ca * sp * cr, this._y + sa * sp * cr, ca * sp, sa * sp, null, true);
 		}
+	}
+
+	/**
+	 * The Figther resurrect from the dead. Like Jesus, but without waiting 3 days.
+	 * @returns {void}
+	 */
+	resurrect() {
+		if (this._mode !== Fighter.Mode.Dead) return;
+		this._mode = Fighter.Mode.Waiting;
+		this.backToDefault();
 	}
 
 	/**

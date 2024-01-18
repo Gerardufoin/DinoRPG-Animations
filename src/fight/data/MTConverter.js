@@ -271,7 +271,7 @@ export class MTConverter {
 
 	/**
 	 * Convert the action into an _History._HDamages enum.
-	 * @param {{fid: number, tid: number, damages: number, lifeFx?: number, effect?: number}} obj Object containing the action.
+	 * @param {{fid: number, tid: number, damages: number, lifeFx?: {fx: number, amount?: number, size?: number}, effect?: number}} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHDamages(obj) {
@@ -290,7 +290,7 @@ export class MTConverter {
 
 	/**
 	 * Convert a Fighter.LifeEffect into a _LifeEffect enum.
-	 * @param {number} lifeFx Fighter.LifeEffect enum.
+	 * @param {{fx: number, amount?: number, size?: number}} lifeFx Fighter.LifeEffect enum.
 	 * @returns {{enum: string, value: string, args: Array} | null} The corresponding _LifeEffect enum or null if none.
 	 */
 	static convertLifeEffect(lifeFx) {
@@ -306,12 +306,21 @@ export class MTConverter {
 			[Fighter.LifeEffect.Skull]: '_LSkull',
 			[Fighter.LifeEffect.Acid]: '_LAcid'
 		};
-		if (lifeFx !== undefined && mapping[lifeFx]) {
-			return {
+		if (lifeFx !== undefined && mapping[lifeFx.fx]) {
+			const ret = {
 				enum: '_LifeEffect',
-				value: mapping[lifeFx],
+				value: mapping[lifeFx.fx],
 				args: []
 			};
+			switch (lifeFx.fx) {
+				case Fighter.LifeEffect.Burn:
+					ret.args[lifeFx.amount];
+					break;
+				case Fighter.LifeEffect.Skull:
+					ret.args[lifeFx.size];
+					break;
+			}
+			return ret;
 		}
 		return null;
 	}
@@ -391,8 +400,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHRegen(obj) {
-		console.log('Conversion for "_HRegen" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HRegen',
+			args: [obj.fid, obj.amount, MTConverter.convertLifeEffect(obj.lifeFx)]
+		};
 	}
 
 	/**

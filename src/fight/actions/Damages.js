@@ -41,7 +41,7 @@ export class Damages extends State {
 	_damages;
 	/**
 	 * Type of effect to apply to the attack, based on Fighter.LifeEffect.
-	 * @type {number}
+	 * @type {{fx: number, amount?: number, size?: number}}
 	 */
 	_lifeFx;
 	/**
@@ -61,7 +61,7 @@ export class Damages extends State {
 	 * @param {number} fid The Fighter's id of the attacker.
 	 * @param {number} tid The Fighter's id of the target.
 	 * @param {number | null} damages The damages inflicted on the target.
-	 * @param {number} lifeFx The Fighter.LifeEffect to apply on the target.
+	 * @param {{fx: number, amount?: number, size?: number}} lifeFx The Fighter.LifeEffect to apply on the target.
 	 * @param {number} effect The Damages.Effect used to approach the target.
 	 */
 	constructor(scene, fid, tid, damages, lifeFx, effect = Damages.Effect.Normal) {

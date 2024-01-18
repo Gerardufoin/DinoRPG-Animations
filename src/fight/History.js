@@ -12,6 +12,7 @@ import { GotoFighter } from './actions/GotoFighter.js';
 import { Dead } from './actions/Dead.js';
 import { Announce } from './actions/Announce.js';
 import { DamagesGroup } from './actions/DamagesGroup.js';
+import { Regen } from './actions/Regen.js';
 
 export class History {
 	/**
@@ -78,12 +79,12 @@ export class History {
 			[Fight.Action.Pause]: 'pause',
 			[Fight.Action.Announce]: 'announce',
 			[Fight.Action.Goto]: 'goToFighter',
-			[Fight.Action.Regen]: undefined,
+			[Fight.Action.Regen]: 'regen',
 			[Fight.Action.Object]: undefined,
 			[Fight.Action.Fx]: undefined,
 			[Fight.Action.Status]: undefined,
 			[Fight.Action.NoStatus]: undefined,
-			[Fight.Action.Display]: undefined,
+			[Fight.Action.Display]: 'display',
 			[Fight.Action.TimeLimit]: undefined,
 			[Fight.Action.Talk]: undefined,
 			[Fight.Action.Text]: undefined,
@@ -155,7 +156,7 @@ export class History {
 
 	/**
 	 * A Fighter attacks another Fighter.
-	 * @param {{action: number, fid: number, tid: number, damages: number | null, lifeFx?: number, effect?: number}} action Action which triggered the call.
+	 * @param {{action: number, fid: number, tid: number, damages: number | null, lifeFx?: {fx: number, amount?: number, size?: number}, effect?: number}} action Action which triggered the call.
 	 * @returns {State} The Damages State.
 	 */
 	damages(action) {
@@ -256,6 +257,24 @@ export class History {
 	 */
 	goToFighter(action) {
 		return new GotoFighter(this._scene, action.fid, action.tid, action.effect, action.shadeColor);
+	}
+
+	/**
+	 * A Fighter regens the given amount of life. If the Figther was dead, the Fighter is resurrected.
+	 * @param {{action: number, fid: number, amount: number, lifeFx: {fx: number, amount?: number, size?: number}}} action Action which triggered the call.
+	 * @returns {State} The GoToFither State.
+	 */
+	regen(action) {
+		return new Regen(this._scene, action.fid, action.amount, action.lifeFx);
+	}
+
+	/**
+	 * Not implemented in this project for now. Wait for the loading screen for MT.
+	 * @param {{action: number}} action Action which triggered the call.
+	 * @returns {null} Nothing.
+	 */
+	display(action) {
+		return null;
 	}
 
 	/**
