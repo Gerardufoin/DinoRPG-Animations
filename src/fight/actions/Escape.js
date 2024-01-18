@@ -1,5 +1,5 @@
 // @ts-check
-// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Regen.hx
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Escape.hx
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';

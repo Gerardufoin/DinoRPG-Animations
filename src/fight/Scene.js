@@ -201,6 +201,14 @@ export class Scene extends Container {
 	}
 
 	/**
+	 * Get all the Fighters alive in the Scene.
+	 * @returns {Fighter[]} The list of the Fighters alive.
+	 */
+	getFighters() {
+		return this._fighters.filter((f) => f.alive);
+	}
+
+	/**
 	 * Add a created Slot to the display.
 	 * @param {Slot} slot The slot to add to a column.
 	 */

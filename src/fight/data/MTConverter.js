@@ -4,6 +4,7 @@ import { Fighter } from '../Fighter.js';
 import { AddFighter } from '../actions/AddFighter.js';
 import { Damages } from '../actions/Damages.js';
 import { DamagesGroup } from '../actions/DamagesGroup.js';
+import { Finish } from '../actions/Finish.js';
 import { GotoFighter } from '../actions/GotoFighter.js';
 
 /**
@@ -390,8 +391,38 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHFinish(obj) {
-		console.log('Conversion for "_HFinish" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HFinish',
+			args: [MTConverter.convertEndBehavior(obj.left), MTConverter.convertEndBehavior(obj.right)]
+		};
+	}
+
+	/**
+	 * Convert a Finish.EndBehaviour into a _EndBehavior enum.
+	 * @param {number} e The Finish.EndBehaviour enum to convert.
+	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
+	 */
+	static convertEndBehavior(e) {
+		const ret = {
+			enum: '',
+			value: '',
+			args: []
+		};
+		switch (e) {
+			case Finish.EndBehaviour.Run:
+				ret.value = '_EBRun';
+				break;
+			case Finish.EndBehaviour.Escape:
+				ret.value = '_EBEscape';
+				break;
+			case Finish.EndBehaviour.Guard:
+				ret.value = '_EBGuard';
+				break;
+			default:
+				ret.value = '_EBStand';
+		}
+		return ret;
 	}
 
 	/**

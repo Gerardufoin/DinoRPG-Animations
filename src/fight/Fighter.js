@@ -872,6 +872,14 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * True if a Fighter is not dead.
+	 * @type {boolean}
+	 */
+	get alive() {
+		return this._mode !== Fighter.Mode.Dead;
+	}
+
+	/**
 	 * Adds a red dot at the center of the Fighter.
 	 * Debug purposes only.
 	 */

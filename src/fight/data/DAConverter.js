@@ -5,6 +5,7 @@ import { Fighter } from '../Fighter.js';
 import { AddFighter } from '../actions/AddFighter.js';
 import { Damages } from '../actions/Damages.js';
 import { DamagesGroup } from '../actions/DamagesGroup.js';
+import { Finish } from '../actions/Finish.js';
 import { GotoFighter } from '../actions/GotoFighter.js';
 
 /**
@@ -352,8 +353,30 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHFinish(args) {
-		console.log('Conversion for "_HFinish" not done yet.');
-		return { action: Fight.Action.Finish };
+		return {
+			action: Fight.Action.Finish,
+			left: DAConverter.convertEndBehavior(args[0]),
+			right: DAConverter.convertEndBehavior(args[1])
+		};
+	}
+
+	/**
+	 * Convert an _EndBehavior enum into a Finish.EndBehaviour.
+	 * @param {object} obj The _EndBehavior enum to convert.
+	 * @returns {number} The Finish.EndBehaviour or undefined.
+	 */
+	static convertEndBehavior(obj) {
+		switch (obj.value) {
+			case '_EBRun':
+				return Finish.EndBehaviour.Run;
+			case '_EBEscape':
+				return Finish.EndBehaviour.Escape;
+			case '_EBStand':
+				return Finish.EndBehaviour.Stand;
+			case '_EBGuard':
+				return Finish.EndBehaviour.Guard;
+		}
+		return Finish.EndBehaviour.Stand;
 	}
 
 	/**
