@@ -563,8 +563,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHEscape(args) {
-		console.log('Conversion for "_HEscape" not done yet.');
-		return { action: Fight.Action.Escape };
+		return { action: Fight.Action.Escape, fid: args[0] };
 	}
 
 	/**

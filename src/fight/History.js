@@ -13,6 +13,7 @@ import { Dead } from './actions/Dead.js';
 import { Announce } from './actions/Announce.js';
 import { DamagesGroup } from './actions/DamagesGroup.js';
 import { Regen } from './actions/Regen.js';
+import { Escape } from './actions/Escape.js';
 
 export class History {
 	/**
@@ -72,7 +73,7 @@ export class History {
 			[Fight.Action.Return]: 'return',
 			[Fight.Action.Dead]: 'dead',
 			[Fight.Action.Lost]: undefined,
-			[Fight.Action.Escape]: undefined,
+			[Fight.Action.Escape]: 'escape',
 			[Fight.Action.Finish]: undefined,
 			[Fight.Action.Energy]: 'energy',
 			[Fight.Action.MaxEnergy]: 'maxEnergy',
@@ -195,6 +196,15 @@ export class History {
 	 */
 	dead(action) {
 		return new Dead(this._scene, action.fid);
+	}
+
+	/**
+	 * A Fighter escapes the fight. The Fighter is killed at the end of the escape action.
+	 * @param {{action: number, fid: number}} action Action which triggered the call.
+	 * @returns {State} The Escape State.
+	 */
+	escape(action) {
+		return new Escape(this._scene, action.fid);
 	}
 
 	/**

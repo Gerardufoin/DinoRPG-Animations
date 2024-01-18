@@ -187,6 +187,12 @@ A fighter dies.
 
 ### Escape (9)
 
+A fighter escapes the fight.
+
+#### Properties
+
+1. fid - Number - The ID of fighter escaping.
+
 ### Finish (10)
 
 ### Energy (11)

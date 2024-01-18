@@ -602,8 +602,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHEscape(obj) {
-		console.log('Conversion for "_HEscape" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HEscape',
+			args: [obj.fid]
+		};
 	}
 
 	/**
