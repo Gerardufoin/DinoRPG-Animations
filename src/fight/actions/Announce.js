@@ -1,11 +1,9 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Announce.hx
-
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { Timer } from '../Timer.js';
-import { Spirit } from '../parts/Spirit.js';
 
 /**
  * A Fighter announces an attack. Or something else. Like what it did today or how is the weather. Who knows really.
@@ -24,12 +22,13 @@ export class Announce extends State {
 
 	/**
 	 * Get the Fighter doing the announce.
-	 * @param {Scene} scene The scene where the action is happening.
+	 * @param {Scene} scene The Scene where the State is happening.
+	 * @param {() => void} endCall The function to call at the end of the State, if any.
 	 * @param {number} fid The Fighter's id.
 	 * @param {string} message The announce to make.
 	 */
-	constructor(scene, fid, message) {
-		super(scene);
+	constructor(scene, endCall, fid, message) {
+		super(scene, endCall);
 		this._message = message;
 		this._fighter = this._scene.getFighter(fid);
 		if (!this._fighter) {

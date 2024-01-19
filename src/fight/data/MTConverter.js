@@ -1,11 +1,11 @@
 // @ts-check
 
 import { Fighter } from '../Fighter.js';
-import { AddFighter } from '../actions/AddFighter.js';
-import { Damages } from '../actions/Damages.js';
-import { DamagesGroup } from '../actions/DamagesGroup.js';
-import { Finish } from '../actions/Finish.js';
-import { GotoFighter } from '../actions/GotoFighter.js';
+import { EntranceEffect } from '../actions/AddFighter.js';
+import { DamagesEffect } from '../actions/Damages.js';
+import { Skill } from '../actions/DamagesGroup.js';
+import { EndBehaviour } from '../actions/Finish.js';
+import { GotoEffect } from '../actions/GotoFighter.js';
 
 /**
  * Convert the project fight data into MT fight data.
@@ -119,7 +119,7 @@ export class MTConverter {
 	}
 
 	/**
-	 * Convert an AddFighter.EntranceEffect into an entrance effect from MT.
+	 * Convert an EntranceEffect into an entrance effect from MT.
 	 * @param {object} fighter The fighter data from Add command.
 	 * @returns {object} The converted _AddFighterEffect enum or null if none is defined.
 	 */
@@ -135,22 +135,22 @@ export class MTConverter {
 		switch (fighter.entrance) {
 			case undefined:
 				break;
-			case AddFighter.EntranceEffect.Stand:
+			case EntranceEffect.Stand:
 				ret.value = '_AFStand';
 				break;
-			case AddFighter.EntranceEffect.Grow:
+			case EntranceEffect.Grow:
 				ret.value = '_AFGrow';
 				break;
-			case AddFighter.EntranceEffect.Fall:
+			case EntranceEffect.Fall:
 				ret.value = '_AFFall';
 				break;
-			case AddFighter.EntranceEffect.Run:
+			case EntranceEffect.Run:
 				ret.value = '_AFRun';
 				break;
-			case AddFighter.EntranceEffect.Ground:
+			case EntranceEffect.Ground:
 				ret.value = '_AFGround';
 				break;
-			case AddFighter.EntranceEffect.Anim:
+			case EntranceEffect.Anim:
 				ret.value = '_AFAnim';
 				ret.args.push(fighter.anim);
 				break;
@@ -256,13 +256,13 @@ export class MTConverter {
 			args: []
 		};
 		switch (obj.effect) {
-			case GotoFighter.Effect.Normal:
+			case GotoEffect.Normal:
 				ret.value = '_GNormal';
 				break;
-			case GotoFighter.Effect.Over:
+			case GotoEffect.Over:
 				ret.value = '_GOver';
 				break;
-			case GotoFighter.Effect.Special:
+			case GotoEffect.Special:
 				ret.value = '_GSpecial';
 				ret.args = [obj.shadeColor.col1 ?? 0, obj.shadeColor.col2 ?? 0];
 				break;
@@ -327,17 +327,17 @@ export class MTConverter {
 	}
 
 	/**
-	 * Convert a Damages.Effect enum into an _Effect enum.
-	 * @param {number} effect Damages.Effect enum.
+	 * Convert a DamagesEffect enum into an _Effect enum.
+	 * @param {number} effect DamagesEffect enum.
 	 * @returns {{enum: string, value: string, args: Array} | null} The corresponding _Effect enum or null if none.
 	 */
 	static convertDamagesEffect(effect) {
 		const mapping = {
-			[Damages.Effect.Normal]: '_ENormal',
-			[Damages.Effect.Drop]: '_EDrop',
-			[Damages.Effect.Back]: '_EBack',
-			[Damages.Effect.Eject]: '_EEject',
-			[Damages.Effect.Counter]: '_ECounter'
+			[DamagesEffect.Normal]: '_ENormal',
+			[DamagesEffect.Drop]: '_EDrop',
+			[DamagesEffect.Back]: '_EBack',
+			[DamagesEffect.Eject]: '_EEject',
+			[DamagesEffect.Counter]: '_ECounter'
 		};
 		if (effect !== undefined && mapping[effect]) {
 			return {
@@ -391,11 +391,13 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHFinish(obj) {
-		return {
+		return undefined;
+		// Ruffle cannot play the Finish action.
+		/*return {
 			enum: '_History',
 			value: '_HFinish',
 			args: [MTConverter.convertEndBehavior(obj.left), MTConverter.convertEndBehavior(obj.right)]
-		};
+		};*/
 	}
 
 	/**
@@ -410,13 +412,13 @@ export class MTConverter {
 			args: []
 		};
 		switch (e) {
-			case Finish.EndBehaviour.Run:
+			case EndBehaviour.Run:
 				ret.value = '_EBRun';
 				break;
-			case Finish.EndBehaviour.Escape:
+			case EndBehaviour.Escape:
 				ret.value = '_EBEscape';
 				break;
-			case Finish.EndBehaviour.Guard:
+			case EndBehaviour.Guard:
 				ret.value = '_EBGuard';
 				break;
 			default:
@@ -488,40 +490,40 @@ export class MTConverter {
 	}
 
 	/**
-	 * Convert a DamagesGroup.Skill enum into an _GroupEffect enum.
+	 * Convert a Skill enum into an _GroupEffect enum.
 	 * @param {object} skill Fight.Action.DamagesGroup action to convert.
 	 * @returns {{enum: string, value: string, args: Array}} The corresponding _GroupEffect enum or null if none.
 	 */
 	static convertDamageSkill(skill) {
 		const mapping = {
-			[DamagesGroup.Skill.Todo]: '_GrTodo',
-			[DamagesGroup.Skill.Fireball]: '_GrFireball',
-			[DamagesGroup.Skill.Blow]: '_GrBlow',
-			[DamagesGroup.Skill.Lava]: '_GrLava',
-			[DamagesGroup.Skill.Meteor]: '_GrMeteor',
-			[DamagesGroup.Skill.Vigne]: '_GrVigne',
-			[DamagesGroup.Skill.WaterCanon]: '_GrWaterCanon',
-			[DamagesGroup.Skill.Shower]: '_GrShower',
-			[DamagesGroup.Skill.Shower2]: '_GrShower2',
-			[DamagesGroup.Skill.LevitRay]: '_GrLevitRay',
-			[DamagesGroup.Skill.Lightning]: '_GrLightning',
-			[DamagesGroup.Skill.Crepuscule]: '_GrCrepuscule',
-			[DamagesGroup.Skill.Mistral]: '_GrMistral',
-			[DamagesGroup.Skill.Tornade]: '_GrTornade',
-			[DamagesGroup.Skill.Disc]: '_GrDisc',
-			[DamagesGroup.Skill.Hole]: '_GrHole',
-			[DamagesGroup.Skill.Ice]: '_GrIce',
-			[DamagesGroup.Skill.Projectile]: '_GrProjectile',
-			[DamagesGroup.Skill.Tremor]: '_GrTremor',
-			[DamagesGroup.Skill.JumpAttack]: '_GrJumpAttack',
-			[DamagesGroup.Skill.ChainLightning]: '_GrChainLightning',
-			[DamagesGroup.Skill.Heal]: '_GrHeal',
-			[DamagesGroup.Skill.Charge]: '_GrCharge',
-			[DamagesGroup.Skill.Anim]: '_GrAnim',
-			[DamagesGroup.Skill.Invoc]: '_GrInvoc',
-			[DamagesGroup.Skill.Sylfide]: '_GrSylfide',
-			[DamagesGroup.Skill.Rafale]: '_GrRafale',
-			[DamagesGroup.Skill.Deluge]: '_GrDeluge'
+			[Skill.Todo]: '_GrTodo',
+			[Skill.Fireball]: '_GrFireball',
+			[Skill.Blow]: '_GrBlow',
+			[Skill.Lava]: '_GrLava',
+			[Skill.Meteor]: '_GrMeteor',
+			[Skill.Vigne]: '_GrVigne',
+			[Skill.WaterCanon]: '_GrWaterCanon',
+			[Skill.Shower]: '_GrShower',
+			[Skill.Shower2]: '_GrShower2',
+			[Skill.LevitRay]: '_GrLevitRay',
+			[Skill.Lightning]: '_GrLightning',
+			[Skill.Crepuscule]: '_GrCrepuscule',
+			[Skill.Mistral]: '_GrMistral',
+			[Skill.Tornade]: '_GrTornade',
+			[Skill.Disc]: '_GrDisc',
+			[Skill.Hole]: '_GrHole',
+			[Skill.Ice]: '_GrIce',
+			[Skill.Projectile]: '_GrProjectile',
+			[Skill.Tremor]: '_GrTremor',
+			[Skill.JumpAttack]: '_GrJumpAttack',
+			[Skill.ChainLightning]: '_GrChainLightning',
+			[Skill.Heal]: '_GrHeal',
+			[Skill.Charge]: '_GrCharge',
+			[Skill.Anim]: '_GrAnim',
+			[Skill.Invoc]: '_GrInvoc',
+			[Skill.Sylfide]: '_GrSylfide',
+			[Skill.Rafale]: '_GrRafale',
+			[Skill.Deluge]: '_GrDeluge'
 		};
 		const ret = {
 			enum: '_GroupEffect',
@@ -529,25 +531,25 @@ export class MTConverter {
 			args: []
 		};
 		switch (skill.skill) {
-			case DamagesGroup.Skill.Shower2:
+			case Skill.Shower2:
 				ret.args = [skill.type];
 				break;
-			case DamagesGroup.Skill.Projectile:
+			case Skill.Projectile:
 				ret.args = [skill.fx, skill.anim, skill.speed];
 				break;
-			case DamagesGroup.Skill.JumpAttack:
+			case Skill.JumpAttack:
 				ret.args = [skill.fx];
 				break;
-			case DamagesGroup.Skill.Heal:
+			case Skill.Heal:
 				ret.args = [skill.type];
 				break;
-			case DamagesGroup.Skill.Anim:
+			case Skill.Anim:
 				ret.args = [skill.anim];
 				break;
-			case DamagesGroup.Skill.Invoc:
+			case Skill.Invoc:
 				ret.args = [skill.anim];
 				break;
-			case DamagesGroup.Skill.Rafale:
+			case Skill.Rafale:
 				ret.args = [skill.fx, skill.power, skill.speed];
 				break;
 		}

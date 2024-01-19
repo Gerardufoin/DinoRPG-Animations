@@ -17,11 +17,12 @@ export class Return extends State {
 
 	/**
 	 * Makes the Fighter with the given Fighter's id go back to its saved position.
-	 * @param {Scene} scene The scene where the Fighter is contained.
+	 * @param {Scene} scene The Scene where the State is happening.
+	 * @param {() => void} endCall The function to call at the end of the State, if any.
 	 * @param {number} fid The id of the chosen Fighter.
 	 */
-	constructor(scene, fid) {
-		super(scene);
+	constructor(scene, endCall, fid) {
+		super(scene, endCall);
 		this._fighter = this._scene.getFighter(fid);
 		if (!this._fighter) {
 			console.error(`Return Error: Fighter with id ${fid} does not exist in the scene.`);

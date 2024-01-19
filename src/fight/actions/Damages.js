@@ -5,6 +5,14 @@ import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { Timer } from '../Timer.js';
 
+export const DamagesEffect = {
+	Normal: 0,
+	Drop: 1,
+	Back: 2,
+	Eject: 3,
+	Counter: 4
+};
+
 /**
  * A Fighter physically attacks another one.
  */
@@ -14,13 +22,6 @@ export class Damages extends State {
 		Hit: 1,
 		JumpBehind: 2,
 		Fall: 3
-	};
-	static Effect = {
-		Normal: 0,
-		Drop: 1,
-		Back: 2,
-		Eject: 3,
-		Counter: 4
 	};
 
 	/**
@@ -45,7 +46,7 @@ export class Damages extends State {
 	 */
 	_lifeFx;
 	/**
-	 * Determines how the attacker approaches the target, based on Damages.Effect.
+	 * Determines how the attacker approaches the target, based on DamagesEffect.
 	 * @type {number}
 	 */
 	_effect;
@@ -57,15 +58,16 @@ export class Damages extends State {
 
 	/**
 	 * A Fighter (fid) attacks another Fighter (tid) and inflict a certain amount of damages.
-	 * @param {Scene} scene The scene where the action happens.
+	 * @param {Scene} scene The Scene where the State is happening.
+	 * @param {() => void} endCall The function to call at the end of the State, if any.
 	 * @param {number} fid The Fighter's id of the attacker.
 	 * @param {number} tid The Fighter's id of the target.
 	 * @param {number | null} damages The damages inflicted on the target.
 	 * @param {{fx: number, amount?: number, size?: number}} lifeFx The Fighter.LifeEffect to apply on the target.
-	 * @param {number} effect The Damages.Effect used to approach the target.
+	 * @param {number} effect The DamagesEffect used to approach the target.
 	 */
-	constructor(scene, fid, tid, damages, lifeFx, effect = Damages.Effect.Normal) {
-		super(scene);
+	constructor(scene, endCall, fid, tid, damages, lifeFx, effect = DamagesEffect.Normal) {
+		super(scene, endCall);
 
 		this._attacker = this._scene.getFighter(fid);
 		this._target = this._scene.getFighter(tid);
@@ -83,17 +85,17 @@ export class Damages extends State {
 	}
 
 	/**
-	 * Initialize the behavior of the Fighter based on its desired Damages.Effect.
+	 * Initialize the behavior of the Fighter based on its desired DamagesEffect.
 	 */
 	init() {
 		this._coef = 0;
 		this._coefSpeed = 0.15;
-		if (this._effect === Damages.Effect.Drop && this._attacker.position.z == 0) {
-			this._effect = Damages.Effect.Normal;
+		if (this._effect === DamagesEffect.Drop && this._attacker.position.z == 0) {
+			this._effect = DamagesEffect.Normal;
 		}
 
 		switch (this._effect) {
-			case Damages.Effect.Back:
+			case DamagesEffect.Back:
 				{
 					const pos = this._attacker.getBrawlPos(this._target, -1);
 					this._coefSpeed = this._attacker.runSpeed / this._attacker.getDist(pos);
@@ -101,7 +103,7 @@ export class Damages extends State {
 					this._step = Damages.Step.JumpBehind;
 				}
 				break;
-			case Damages.Effect.Drop:
+			case DamagesEffect.Drop:
 				this._attacker.playAnim('air');
 				this._step = Damages.Step.Fall;
 				break;
@@ -135,11 +137,11 @@ export class Damages extends State {
 			}
 		}
 		switch (this._effect) {
-			case Damages.Effect.Back:
-			case Damages.Effect.Eject:
+			case DamagesEffect.Back:
+			case DamagesEffect.Eject:
 				this._attacker.playAnim('big');
 				break;
-			case Damages.Effect.Drop:
+			case DamagesEffect.Drop:
 				this._attacker.playAnim('land');
 				break;
 			default:

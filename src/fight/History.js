@@ -14,7 +14,13 @@ import { Announce } from './actions/Announce.js';
 import { DamagesGroup } from './actions/DamagesGroup.js';
 import { Regen } from './actions/Regen.js';
 import { Escape } from './actions/Escape.js';
+import { Finish } from './actions/Finish.js';
 
+/**
+ * Contains the history of the fight and play it action by action.
+ *
+ * In most cases, an action will generate a new State which will call the next action once it ends.
+ */
 export class History {
 	/**
 	 * The fight instantiating the history.
@@ -26,6 +32,7 @@ export class History {
 	 * @type {Scene}
 	 */
 	_scene;
+
 	/**
 	 * The history of the fight.
 	 * @type {{action: number, args: object[]}[]}
@@ -43,21 +50,17 @@ export class History {
 	_actions;
 
 	/**
-	 * Current state being acted upon.
-	 * @type {State}
-	 */
-	_currentState;
-	/**
 	 * List of all the currently running states.
 	 * @type {State[]}
 	 */
 	_states = [];
 
 	/**
-	 *
-	 * @param {Fight} fight
-	 * @param {Scene} scene
-	 * @param {object[]} history
+	 * Creates a new fight history using the history passed as parameter.
+	 * Initialize the actions' mappin.
+	 * @param {Fight} fight The Fight which created the History.
+	 * @param {Scene} scene The Scene where the actions are happening.
+	 * @param {object[]} history The history containing the list of all the steps of the fight.
 	 */
 	constructor(fight, scene, history) {
 		this._fight = fight;
@@ -74,7 +77,7 @@ export class History {
 			[Fight.Action.Dead]: 'dead',
 			[Fight.Action.Lost]: undefined,
 			[Fight.Action.Escape]: 'escape',
-			[Fight.Action.Finish]: undefined,
+			[Fight.Action.Finish]: 'finish',
 			[Fight.Action.Energy]: 'energy',
 			[Fight.Action.MaxEnergy]: 'maxEnergy',
 			[Fight.Action.Pause]: 'pause',
@@ -107,23 +110,23 @@ export class History {
 		if (this._history && this._historyIdx < this._history.length) {
 			const h = this._history[this._historyIdx];
 			if (this._actions[h.action]) {
-				this._currentState = this[this._actions[h.action]](h);
-				if (this._currentState) {
-					this._states.push(this._currentState);
-					/**
-					 * Once the state ends, calls the next State in the history.
-					 */
-					this._currentState.endCall = () => {
-						this.playNext();
-					};
-				} else if (!this._fight.paused) {
-					this.playNext();
+				const newState = this[this._actions[h.action]](h);
+				if (newState) {
+					this.registerState(newState);
 				}
 			} else {
 				console.error(`Action ${h.action} not defined in history mapping.`);
 				this.playNext();
 			}
 		}
+	}
+
+	/**
+	 * Register a new State to be updated.
+	 * @param {State} state The new State to register into the History State management.
+	 */
+	registerState(state) {
+		this._states.push(state);
 	}
 
 	/**
@@ -143,7 +146,13 @@ export class History {
 	 * @returns {State} The AddFighter State.
 	 */
 	addFighter(action) {
-		return new AddFighter(this._scene, action.fighter);
+		return new AddFighter(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fighter
+		);
 	}
 
 	/**
@@ -152,7 +161,15 @@ export class History {
 	 * @returns {State} The MoveTo State.
 	 */
 	moveTo(action) {
-		return new MoveTo(this._scene, action.fid, action.x, action.y);
+		return new MoveTo(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.x,
+			action.y
+		);
 	}
 
 	/**
@@ -161,7 +178,17 @@ export class History {
 	 * @returns {State} The Damages State.
 	 */
 	damages(action) {
-		return new Damages(this._scene, action.fid, action.tid, action.damages, action.lifeFx, action.effect);
+		return new Damages(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.tid,
+			action.damages,
+			action.lifeFx,
+			action.effect
+		);
 	}
 
 	/**
@@ -170,14 +197,22 @@ export class History {
 	 * @returns {State} The DamagesGroup State.
 	 */
 	damagesGroup(action) {
-		return new DamagesGroup(this._scene, action.fid, action.targets, {
-			skill: action.skill,
-			type: action.type,
-			fx: action.fx,
-			anim: action.anim,
-			speed: action.speed,
-			power: action.power
-		});
+		return new DamagesGroup(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.targets,
+			{
+				skill: action.skill,
+				type: action.type,
+				fx: action.fx,
+				anim: action.anim,
+				speed: action.speed,
+				power: action.power
+			}
+		);
 	}
 
 	/**
@@ -186,7 +221,13 @@ export class History {
 	 * @returns {State} The Return State.
 	 */
 	return(action) {
-		return new Return(this._scene, action.fid);
+		return new Return(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid
+		);
 	}
 
 	/**
@@ -195,7 +236,13 @@ export class History {
 	 * @returns {State} The Dead State.
 	 */
 	dead(action) {
-		return new Dead(this._scene, action.fid);
+		return new Dead(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid
+		);
 	}
 
 	/**
@@ -204,13 +251,34 @@ export class History {
 	 * @returns {State} The Escape State.
 	 */
 	escape(action) {
-		return new Escape(this._scene, action.fid);
+		return new Escape(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid
+		);
+	}
+
+	/**
+	 * The Fighters wrap up the Fight and enact their end of fight behavior.
+	 * @param {{action: number, left: number, right: number}} action Action which triggered the call.
+	 * @returns {State} The Finish State.
+	 */
+	finish(action) {
+		return new Finish(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.left,
+			action.right
+		);
 	}
 
 	/**
 	 * Set the energy of the given figthers.
 	 * @param {{action: number, fighters: { fid: number, energy: number }[]}} action Action which triggered the call.
-	 * @returns {null} Nothing, immediately play the next action.
 	 */
 	energy(action) {
 		for (const f of action.fighters) {
@@ -221,13 +289,12 @@ export class History {
 				console.error(`Energy Error: Fighter with id ${f.fid} does not exist in the scene.`);
 			}
 		}
-		return null;
+		this.playNext();
 	}
 
 	/**
 	 * Set the maximum energy of the given figthers.
 	 * @param {{action: number, fighters: { fid: number, maxEnergy: number }[]}} action Action which triggered the call.
-	 * @returns {null} Nothing, immediately play the next action.
 	 */
 	maxEnergy(action) {
 		for (const f of action.fighters) {
@@ -238,17 +305,18 @@ export class History {
 				console.error(`MaxEnergy Error: Fighter with id ${f.fid} does not exist in the scene.`);
 			}
 		}
-		return null;
+		this.playNext();
 	}
 
 	/**
 	 * Pause the history untile the given amount of frames have elapsed.
 	 * @param {{action: number, time: number}} action Action which triggered the call.
-	 * @returns {null} Nothing.
 	 */
 	pause(action) {
 		this._fight.pause(action.time);
-		return null;
+		if (!this._fight.paused) {
+			this.playNext();
+		}
 	}
 
 	/**
@@ -257,7 +325,14 @@ export class History {
 	 * @returns {Announce} The Announce State.
 	 */
 	announce(action) {
-		return new Announce(this._scene, action.fid, action.message);
+		return new Announce(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.message
+		);
 	}
 
 	/**
@@ -266,7 +341,16 @@ export class History {
 	 * @returns {State} The GoToFither State.
 	 */
 	goToFighter(action) {
-		return new GotoFighter(this._scene, action.fid, action.tid, action.effect, action.shadeColor);
+		return new GotoFighter(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.tid,
+			action.effect,
+			action.shadeColor
+		);
 	}
 
 	/**
@@ -275,27 +359,33 @@ export class History {
 	 * @returns {State} The GoToFither State.
 	 */
 	regen(action) {
-		return new Regen(this._scene, action.fid, action.amount, action.lifeFx);
+		return new Regen(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.amount,
+			action.lifeFx
+		);
 	}
 
 	/**
 	 * Not implemented in this project for now. Wait for the loading screen for MT.
 	 * @param {{action: number}} action Action which triggered the call.
-	 * @returns {null} Nothing.
 	 */
 	display(action) {
-		return null;
+		this.playNext();
 	}
 
 	/**
 	 * Print the message to the standard output.
 	 * @param {{action: number, msg: string}} action Action which triggered the call.
-	 * @returns {null} No State is returned.
 	 */
 	printLog(action) {
 		if (this._scene.debugMode) {
 			console.log(`Fight Log Message: ${action.msg}`);
 		}
-		return null;
+		this.playNext();
 	}
 }

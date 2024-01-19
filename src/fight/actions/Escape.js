@@ -17,11 +17,12 @@ export class Escape extends State {
 
 	/**
 	 * A Fighter (fid) escapes the fight.
-	 * @param {Scene} scene The scene where the action happens.
+	 * @param {Scene} scene The Scene where the State is happening.
+	 * @param {() => void} endCall The function to call at the end of the State, if any.
 	 * @param {number} fid The Fighter's id.
 	 */
-	constructor(scene, fid) {
-		super(scene);
+	constructor(scene, endCall, fid) {
+		super(scene, endCall);
 
 		this._fighter = this._scene.getFighter(fid);
 		if (!this._fighter) {

@@ -2,11 +2,11 @@
 
 import { Fight } from '../Fight.js';
 import { Fighter } from '../Fighter.js';
-import { AddFighter } from '../actions/AddFighter.js';
-import { Damages } from '../actions/Damages.js';
-import { DamagesGroup } from '../actions/DamagesGroup.js';
-import { Finish } from '../actions/Finish.js';
-import { GotoFighter } from '../actions/GotoFighter.js';
+import { EntranceEffect } from '../actions/AddFighter.js';
+import { DamagesEffect } from '../actions/Damages.js';
+import { Skill } from '../actions/DamagesGroup.js';
+import { EndBehaviour } from '../actions/Finish.js';
+import { GotoEffect } from '../actions/GotoFighter.js';
 
 /**
  * Convert MT fight data into DA fight data.
@@ -125,9 +125,9 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert an entrance effect from MT into a AddFighter.EntranceEffect.
+	 * Convert an entrance effect from MT into a EntranceEffect.
 	 * @param {object} effect MT entrance effect object.
-	 * @returns {{entrance: number, x?: number, y?: number, anim?: string}} The converted AddFighter.EntranceEffect.
+	 * @returns {{entrance: number, x?: number, y?: number, anim?: string}} The converted EntranceEffect.
 	 */
 	static convertEntranceEffect(effect) {
 		const obj = {};
@@ -139,22 +139,22 @@ export class DAConverter {
 		}
 		switch (effect.value) {
 			case '_AFStand':
-				obj.entrance = AddFighter.EntranceEffect.Stand;
+				obj.entrance = EntranceEffect.Stand;
 				break;
 			case '_AFGrow':
-				obj.entrance = AddFighter.EntranceEffect.Grow;
+				obj.entrance = EntranceEffect.Grow;
 				break;
 			case '_AFFall':
-				obj.entrance = AddFighter.EntranceEffect.Fall;
+				obj.entrance = EntranceEffect.Fall;
 				break;
 			case '_AFRun':
-				obj.entrance = AddFighter.EntranceEffect.Run;
+				obj.entrance = EntranceEffect.Run;
 				break;
 			case '_AFGround':
-				obj.entrance = AddFighter.EntranceEffect.Ground;
+				obj.entrance = EntranceEffect.Ground;
 				break;
 			case '_AFAnim':
-				obj.entrance = AddFighter.EntranceEffect.Anim;
+				obj.entrance = EntranceEffect.Anim;
 				obj.anim = effect.args[0];
 				break;
 			default:
@@ -233,13 +233,13 @@ export class DAConverter {
 
 		switch (effect.value) {
 			case '_Normal':
-				obj.effect = GotoFighter.Effect.Normal;
+				obj.effect = GotoEffect.Normal;
 				break;
 			case '_GOver':
-				obj.entrance = GotoFighter.Effect.Over;
+				obj.entrance = GotoEffect.Over;
 				break;
 			case '_GSpecial':
-				obj.entrance = GotoFighter.Effect.Special;
+				obj.entrance = GotoEffect.Special;
 				obj.shadeColor = {
 					col1: obj.args[0],
 					col2: obj.args[1]
@@ -301,17 +301,17 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert an _Effect enum into a Damages.Effect.
+	 * Convert an _Effect enum into a DamagesEffect.
 	 * @param {object} obj The _Effect enum to convert.
-	 * @returns {number} The Damages.Effect or undefined.
+	 * @returns {number} The DamagesEffect or undefined.
 	 */
 	static convertDamagesEffect(obj) {
 		const mapping = {
-			_ENormal: Damages.Effect.Normal,
-			_EDrop: Damages.Effect.Drop,
-			_EBack: Damages.Effect.Back,
-			_EEject: Damages.Effect.Eject,
-			_ECounter: Damages.Effect.Counter
+			_ENormal: DamagesEffect.Normal,
+			_EDrop: DamagesEffect.Drop,
+			_EBack: DamagesEffect.Back,
+			_EEject: DamagesEffect.Eject,
+			_ECounter: DamagesEffect.Counter
 		};
 		if (obj) {
 			return mapping[obj.value];
@@ -368,15 +368,15 @@ export class DAConverter {
 	static convertEndBehavior(obj) {
 		switch (obj.value) {
 			case '_EBRun':
-				return Finish.EndBehaviour.Run;
+				return EndBehaviour.Run;
 			case '_EBEscape':
-				return Finish.EndBehaviour.Escape;
+				return EndBehaviour.Escape;
 			case '_EBStand':
-				return Finish.EndBehaviour.Stand;
+				return EndBehaviour.Stand;
 			case '_EBGuard':
-				return Finish.EndBehaviour.Guard;
+				return EndBehaviour.Guard;
 		}
-		return Finish.EndBehaviour.Stand;
+		return EndBehaviour.Stand;
 	}
 
 	/**
@@ -440,69 +440,69 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert a _GroupEffect from from MT into a DamagesGroup.Skill.
+	 * Convert a _GroupEffect from from MT into a Skill.
 	 * @param {object} skill MT skill object.
-	 * @returns {{skill: number}} The converted DamagesGroup.Skill.
+	 * @returns {{skill: number}} The converted Skill.
 	 */
 	static convertDamageSkill(skill) {
 		const mapping = {
-			_GrTodo: DamagesGroup.Skill.Todo,
-			_GrFireball: DamagesGroup.Skill.Fireball,
-			_GrBlow: DamagesGroup.Skill.Blow,
-			_GrLava: DamagesGroup.Skill.Lava,
-			_GrMeteor: DamagesGroup.Skill.Meteor,
-			_GrVigne: DamagesGroup.Skill.Vigne,
-			_GrWaterCanon: DamagesGroup.Skill.WaterCanon,
-			_GrShower: DamagesGroup.Skill.Shower,
-			_GrShower2: DamagesGroup.Skill.Shower2,
-			_GrLevitRay: DamagesGroup.Skill.LevitRay,
-			_GrLightning: DamagesGroup.Skill.Lightning,
-			_GrCrepuscule: DamagesGroup.Skill.Crepuscule,
-			_GrMistral: DamagesGroup.Skill.Mistral,
-			_GrTornade: DamagesGroup.Skill.Tornade,
-			_GrDisc: DamagesGroup.Skill.Disc,
-			_GrHole: DamagesGroup.Skill.Hole,
-			_GrIce: DamagesGroup.Skill.Ice,
-			_GrProjectile: DamagesGroup.Skill.Projectile,
-			_GrTremor: DamagesGroup.Skill.Tremor,
-			_GrJumpAttack: DamagesGroup.Skill.JumpAttack,
-			_GrChainLightning: DamagesGroup.Skill.ChainLightning,
-			_GrHeal: DamagesGroup.Skill.Heal,
-			_GrCharge: DamagesGroup.Skill.Charge,
-			_GrAnim: DamagesGroup.Skill.Anim,
-			_GrInvoc: DamagesGroup.Skill.Invoc,
-			_GrSylfide: DamagesGroup.Skill.Sylfide,
-			_GrRafale: DamagesGroup.Skill.Rafale,
-			_GrDeluge: DamagesGroup.Skill.Deluge
+			_GrTodo: Skill.Todo,
+			_GrFireball: Skill.Fireball,
+			_GrBlow: Skill.Blow,
+			_GrLava: Skill.Lava,
+			_GrMeteor: Skill.Meteor,
+			_GrVigne: Skill.Vigne,
+			_GrWaterCanon: Skill.WaterCanon,
+			_GrShower: Skill.Shower,
+			_GrShower2: Skill.Shower2,
+			_GrLevitRay: Skill.LevitRay,
+			_GrLightning: Skill.Lightning,
+			_GrCrepuscule: Skill.Crepuscule,
+			_GrMistral: Skill.Mistral,
+			_GrTornade: Skill.Tornade,
+			_GrDisc: Skill.Disc,
+			_GrHole: Skill.Hole,
+			_GrIce: Skill.Ice,
+			_GrProjectile: Skill.Projectile,
+			_GrTremor: Skill.Tremor,
+			_GrJumpAttack: Skill.JumpAttack,
+			_GrChainLightning: Skill.ChainLightning,
+			_GrHeal: Skill.Heal,
+			_GrCharge: Skill.Charge,
+			_GrAnim: Skill.Anim,
+			_GrInvoc: Skill.Invoc,
+			_GrSylfide: Skill.Sylfide,
+			_GrRafale: Skill.Rafale,
+			_GrDeluge: Skill.Deluge
 		};
 		const obj = {
-			skill: DamagesGroup.Skill.Todo
+			skill: Skill.Todo
 		};
 		if (!skill) return obj;
 
 		obj.skill = mapping[skill.value];
 		switch (obj.skill) {
-			case DamagesGroup.Skill.Shower2:
+			case Skill.Shower2:
 				obj.type = skill.args[0]; // int (not sure)
 				break;
-			case DamagesGroup.Skill.Projectile:
+			case Skill.Projectile:
 				obj.fx = skill.args[0]; //sand, gland, aiguillon, lame, rocher
 				obj.anim = skill.args[1]; // string (anim)
 				obj.speed = skill.args[2]; // float
 				break;
-			case DamagesGroup.Skill.JumpAttack:
+			case Skill.JumpAttack:
 				obj.fx = skill.args[0]; //string (landing fx)
 				break;
-			case DamagesGroup.Skill.Heal:
+			case Skill.Heal:
 				obj.type = skill.args[0]; // 0-1, 0 = leaf fx, 1 = not
 				break;
-			case DamagesGroup.Skill.Anim:
+			case Skill.Anim:
 				obj.anim = skill.args[0]; // string
 				break;
-			case DamagesGroup.Skill.Invoc:
+			case Skill.Invoc:
 				obj.anim = skill.args[0]; // string
 				break;
-			case DamagesGroup.Skill.Rafale:
+			case Skill.Rafale:
 				obj.fx = skill.args[0]; // string - fx droplets of water
 				obj.power = skill.args[0];
 				obj.speed = skill.args[0];

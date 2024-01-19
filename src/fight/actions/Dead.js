@@ -1,6 +1,5 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Dead.hx
-
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
@@ -21,11 +20,12 @@ export class Dead extends State {
 
 	/**
 	 * Makes a Fighter die.
-	 * @param {Scene} scene The scene where the Fighter is added.
+	 * @param {Scene} scene The Scene where the State is happening.
+	 * @param {() => void} endCall The function to call at the end of the State, if any.
 	 * @param {number} fid Fighter's id.
 	 */
-	constructor(scene, fid) {
-		super(scene);
+	constructor(scene, endCall, fid) {
+		super(scene, endCall);
 		this._fighter = this._scene.getFighter(fid);
 		if (!this._fighter) {
 			this.kill();

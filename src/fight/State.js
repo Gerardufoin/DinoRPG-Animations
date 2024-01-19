@@ -8,11 +8,12 @@ import { Timer } from './Timer.js';
 
 /**
  * A State represents an action which will be played through the history of a fight.
+ * A new State is automatically added the the history and will be updated over time.
  *
  * A State will register a casting of actors (one or multiple Fighters) to perform the task at hand.
  * The task begins once all Fighters are ready to perform.
  *
- * State is an abstract class and cannot be instantiated by itself (well, it can, but it does nothing, so yeah).
+ * State is an abstract class and cannot be instantiated by itself (well, it can, but it does nothing, so don't).
  */
 export class State {
 	/**
@@ -74,10 +75,12 @@ export class State {
 	 * State is abstract and shouldn't be instantiated by itself.
 	 * If you are reading this you are doing something wrong.
 	 * @param {Scene} scene The Scene where the State is happening.
+	 * @param {() => void} endCall The callback once the State ends, if any.
 	 */
-	constructor(scene) {
+	constructor(scene, endCall = undefined) {
 		this.id = State.CURRENT_ID++;
 		this._scene = scene;
+		this.endCall = endCall;
 	}
 
 	/**

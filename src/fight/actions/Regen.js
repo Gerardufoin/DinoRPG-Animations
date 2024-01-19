@@ -26,13 +26,14 @@ export class Regen extends State {
 
 	/**
 	 * A Fighter (fid) heals the given amount of life while applying the specified visual effects on itself.
-	 * @param {Scene} scene The scene where the action happens.
+	 * @param {Scene} scene The Scene where the State is happening.
+	 * @param {() => void} endCall The function to call at the end of the State, if any.
 	 * @param {number} fid The Fighter's id.
 	 * @param {number} amount The amount of life healed.
 	 * @param {{fx: number, amount?: number, size?: number}} lifeFx The Fighter.LifeEffect to apply on the Fighter.
 	 */
-	constructor(scene, fid, amount, lifeFx) {
-		super(scene);
+	constructor(scene, endCall, fid, amount, lifeFx) {
+		super(scene, endCall);
 
 		this._fighter = this._scene.getFighter(fid);
 		if (!this._fighter) {
