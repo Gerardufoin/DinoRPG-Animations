@@ -39,8 +39,39 @@ const fightData = [
 	'oy6%3A_checky28%3A%252Fuser%252Fcheck%253Fid%253DyYC6Ly6%3A_debugy37%3A%252Ftools%252FdebugFight%253Fsk%253DCd8tbVIFy8%3A_mbottomi20y7%3A_mrightzy6%3A_equipy39%3A%252Fimg%252Ficons%252Fobj_%253A%253Aid%253A%253A.gify6%3A_sdinoy27%3A%252Fswf%252Fsdino.swf%253Fv%253D33y5%3A_dinoy26%3A%252Fswf%252Fdino.swf%253Fv%253D35y5%3A_dojony5%3A_mtopi110y3%3A_bgy28%3A%252Fimg%252Ffight%252Fs_plaza.jpgy7%3A_groundy4%3Adirty8%3A_debriefy54%3Ajavascript%253A_.toggleFlash%2528%2527debrief%2527%252C%2520-85%2529y8%3A_historylwy8%3A_Historyy5%3A_HAdd%3A2oy6%3A_propsahR10ty5%3A_lifei229y5%3A_namey11%3ADemonSpirity5%3A_sidety5%3A_sizei230y4%3A_fidzy4%3A_gfxy16%3A29VRA00KtkGM1000gnwR21R22%3A2oR23ahR10fR24i30R25y23%3AEl%25C3%25A9mental%2520jambesR27fR28i100R29i1R30y6%3Aearth2gnwR21R22%3A2oR23ahR10fR24i30R25R32R27fR28i100R29i2R30R33gnwR21y8%3A_HStatus%3A2zwy7%3A_Statusy6%3A_SHeal%3A1i1wR21y11%3A_HMaxEnergy%3A2azhai100hwR21y8%3A_HEnergy%3A2azhai100hwR21y5%3A_HLog%3A1y16%3AEnergy%2520enabledwR21y9%3A_HDisplay%3A1nwR21R38%3A2azi1i2hai100i100i100hwR21y7%3A_HPause%3A1zwR21y10%3A_HAnnounce%3A2zy17%3ARayon%2520Kaar-SherwR21y14%3A_HDamagesGroup%3A3zloR24i19y4%3A_tidi1goR24i18R46i2ghwy12%3A_GroupEffecty11%3A_GrLevitRay%3A0wR21y4%3A_HFx%3A1wy12%3A_SuperEffecty10%3A_SFMudWall%3A2i1twR21R49%3A1wR50R51%3A2i2twR21R38%3A2azhai56hwR21R38%3A2ai1i2zhai100i100i56hwR21R42%3A1zwR21y6%3A_HGoto%3A3i1zwy11%3A_GotoEffecty8%3A_GNormal%3A0wR21y9%3A_HDamages%3A5i1zi1wy11%3A_LifeEffecty8%3A_LNormal%3A0nwR21y6%3A_HLost%3A3i1i1wR56R57%3A0wR21R38%3A2ai1hai94hwR21y8%3A_HReturn%3A1i1wR21R38%3A2ai2zi1hai100i61i99hwR21R42%3A1i1wR21R52%3A3i2zwR53R54%3A0wR21R55%3A5i2zi1wR56R57%3A0nwR21R58%3A3i2i1wR56R57%3A0wR21R58%3A3i2i3wR56y6%3A_LAcid%3A0wR21R38%3A2ai2hai94hwR21R59%3A1i2wR21R38%3A2azi1i2hai61i100i100hwR21R42%3A1i7wR21y7%3A_HRegen%3A3zi1wR56y6%3A_LHeal%3A0wR21R38%3A2azi1i2hai61i100i100hwR21R42%3A1i2wR21R43%3A2zy3%3AGelwR21R45%3A3zloR24i15R46i2ghwR47y6%3A_GrIce%3A0wR21R34%3A2i2wR35y6%3A_SSlow%3A0wR21R38%3A2azhai39hwR21y6%3A_HDead%3A1i2wR21R38%3A2ai1zhai100i46hwR21R42%3A1i1wR21R52%3A3i1zwR53R54%3A0wR21R55%3A5i1zi1wR56R57%3A0nwR21R58%3A3i1i1wR56R57%3A0wR21R38%3A2ai1hai94hwR21R59%3A1i1wR21R38%3A2azi1hai46i100hwR21R42%3A1i3wR21R61%3A3zi1wR56R62%3A0wR21R38%3A2azi1hai46i100hwR21R42%3A1i1wR21R43%3A2zy20%3ACanon%2520%25C3%25A0%2520EauwR21R45%3A3zloR24i15R46i1ghwR47y13%3A_GrWaterCanon%3A0wR21R38%3A2azhai39hwR21R66%3A1i1wR21y8%3A_HFinish%3A2wy13%3A_EndBehavioury9%3A_EBEscape%3A0wR70y8%3A_EBStand%3A0hy9%3A_smonstery30%3A%252Fswf%252Fsmonster.swf%253Fv%253D26g',
 	'oy6%3A_checky28%3A%252Fuser%252Fcheck%253Fid%253DyYC6Ly6%3A_debugy37%3A%252Ftools%252FdebugFight%253Fsk%253DggBndL6py8%3A_mbottomi20y7%3A_mrightzy6%3A_equipy39%3A%252Fimg%252Ficons%252Fobj_%253A%253Aid%253A%253A.gify6%3A_sdinoy27%3A%252Fswf%252Fsdino.swf%253Fv%253D33y5%3A_dinoy26%3A%252Fswf%252Fdino.swf%253Fv%253D35y5%3A_dojony5%3A_mtopi155y3%3A_bgy26%3A%252Fimg%252Ffight%252Fs_dnv.jpgy7%3A_groundny8%3A_debriefy54%3Ajavascript%253A_.toggleFlash%2528%2527debrief%2527%252C%2520-85%2529y8%3A_historylwy8%3A_Historyy5%3A_HAdd%3A2oy6%3A_propsahR10ty5%3A_lifei100y5%3A_namey11%3ASilentStoney5%3A_sidety5%3A_sizei200y4%3A_fidzy4%3A_gfxy16%3A59e9OSz9v7KnK000gnwR20R21%3A2oR22ahR10fR23i80R24y6%3ACoqdurR26fR27i100R28i1R29y3%3Acoqgwy17%3A_AddFighterEffecty6%3A_AFRun%3A0wR20R21%3A2oR22ahR10fR23i20R24y9%3AGoupignonR26fR27i100R28i2R29y6%3Agoupi3gnwR20y11%3A_HMaxEnergy%3A2azhai100hwR20y8%3A_HEnergy%3A2azhai100hwR20y5%3A_HLog%3A1y16%3AEnergy%2520enabledwR20y9%3A_HDisplay%3A1nwR20R38%3A2azi1i2hai100i80i100hwR20y7%3A_HPause%3A1zwR20y10%3A_HAnnounce%3A2zy6%3AVigneswR20y8%3A_HNotify%3A2li1hwy13%3A_Notificationy10%3A_NInitDown%3A0wR20y14%3A_HDamagesGroup%3A3zloR23zy4%3A_tidi1ghwy12%3A_GroupEffecty8%3A_GrVigne%3A0wR20R38%3A2azhai80hwR20y6%3A_HGoto%3A3zi1wy11%3A_GotoEffecty8%3A_GNormal%3A0wR20y9%3A_HDamages%3A5zi1i130wy11%3A_LifeEffecty6%3A_LFire%3A0nwR20R38%3A2azhai74hwR20y6%3A_HDead%3A1i1wR20y8%3A_HReturn%3A1zwR20R38%3A2azi2hai74i100hwR20R42%3A1i7wR20R52%3A3zi2wR53R54%3A0wR20R55%3A5zi2i75wR56y11%3A_LLightning%3A0nwR20R38%3A2azhai68hwR20R58%3A1i2wR20R59%3A1zwR20y8%3A_HFinish%3A2wy13%3A_EndBehavioury9%3A_EBEscape%3A0wR62y8%3A_EBStand%3A0hy9%3A_smonstery30%3A%252Fswf%252Fsmonster.swf%253Fv%253D26g'
 ];
+const version = 0;
+const fightVersion = [
+	{ legacy_data: fightData[2], debug: true },
+	{
+		bg: 's_dnv',
+		top: 120,
+		bottom: 20,
+		history: [
+			{
+				action: DinoAnim.Fight.Action.Add,
+				fighter: {
+					props: [],
+					dino: true,
+					life: 100,
+					name: 'Dragon Jr',
+					side: true,
+					size: 100,
+					fid: 0,
+					gfx: '09T1Yt9wqq4Rx000'
+				}
+			},
+			{
+				action: DinoAnim.Fight.Action.Status,
+				fid: 0,
+				status: 14,
+				power: 0
+			}
+		],
+		debug: true
+	}
+];
 //addFlashPreview(fightData[2], container);
 
-const fight = new DinoAnim.Fight({ legacy_data: fightData[2], debug: true });
+const fight = new DinoAnim.Fight(fightVersion[version]);
 addFlashPreview(fight.getMTFormat(true));
 document.body.appendChild(fight.getDisplay());

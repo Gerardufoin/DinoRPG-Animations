@@ -12,26 +12,24 @@ document.body.appendChild(fight.getDisplay());
 
 ```javascript
 const fight = new DinoAnim.Fight({
-	data: {
-		bg: 's_dnv',
-		top: 120,
-		bottom: 20,
-		history: [
-			{
-				action: DinoAnim.Fight.Action.Add,
-				fighter: {
-					props: [],
-					dino: true,
-					life: 100,
-					name: 'Dragon Jr',
-					side: true,
-					size: 100,
-					fid: 0,
-					gfx: '09T1Yt9wqq4Rx000'
-				}
+	bg: 's_dnv',
+	top: 120,
+	bottom: 20,
+	history: [
+		{
+			action: DinoAnim.Fight.Action.Add,
+			fighter: {
+				props: [],
+				dino: true,
+				life: 100,
+				name: 'Dragon Jr',
+				side: true,
+				size: 100,
+				fid: 0,
+				gfx: '09T1Yt9wqq4Rx000'
 			}
-		]
-	}
+		}
+	]
 });
 
 document.body.appendChild(fight.getDisplay());
@@ -137,27 +135,26 @@ A fighter attacks using a skill.
 | Meteor (4)          |                                                                                                                                                                        |
 | Vigne (5)           |                                                                                                                                                                        |
 | WaterCanon (6)      |                                                                                                                                                                        |
-| Shower (7)          |                                                                                                                                                                        |
-| Shower2 (8)         | Needs to define the "type" property. Not sure why yet.                                                                                                                 |
-| LevitRay (9)        |                                                                                                                                                                        |
-| Lightning (10)      |                                                                                                                                                                        |
-| Crepuscule (11)     |                                                                                                                                                                        |
-| Mistral (12)        |                                                                                                                                                                        |
-| Tornade (13)        |                                                                                                                                                                        |
-| Disc (14)           |                                                                                                                                                                        |
-| Hole (15)           |                                                                                                                                                                        |
-| Ice (16)            |                                                                                                                                                                        |
-| Projectile (17)     | Needs to define "fx" for the appearance of the projectile, "anim" for the animation of the fighter firing the projectile, and "speed" for the speed of the projectile. |
-| Tremor (18)         |                                                                                                                                                                        |
-| JumpAttack (19)     | Needs to define "fx" for the fx to play at landing.                                                                                                                    |
-| ChainLightning (20) |                                                                                                                                                                        |
-| Heal (21)           | Needs to define "type". Type 0 spawns leaves fx, type 1 does not.                                                                                                      |
-| Charge (22)         |                                                                                                                                                                        |
-| Anim (23)           | Needs to define "anim" for the animation to play.                                                                                                                      |
-| Invoc (24)          | Needs to define "anim" for the invocation to play.                                                                                                                     |
-| Sylfide (25)        |                                                                                                                                                                        |
-| Rafale (26)         |                                                                                                                                                                        |
-| Deluge (27)         | Needs to define "fx" for the droplets, "power" for the strength, and "speed" for the speed.                                                                            |
+| Shower (7)          | May define the "type" property. Not sure why yet.                                                                                                                      |
+| LevitRay (8)        |                                                                                                                                                                        |
+| Lightning (9)       |                                                                                                                                                                        |
+| Crepuscule (10)     |                                                                                                                                                                        |
+| Mistral (11)        |                                                                                                                                                                        |
+| Tornade (12)        |                                                                                                                                                                        |
+| Disc (13)           |                                                                                                                                                                        |
+| Hole (14)           |                                                                                                                                                                        |
+| Ice (15)            |                                                                                                                                                                        |
+| Projectile (16)     | Needs to define "fx" for the appearance of the projectile, "anim" for the animation of the fighter firing the projectile, and "speed" for the speed of the projectile. |
+| Tremor (17)         |                                                                                                                                                                        |
+| JumpAttack (18)     | Needs to define "fx" for the fx to play at landing.                                                                                                                    |
+| ChainLightning (19) |                                                                                                                                                                        |
+| Heal (20)           | Needs to define "type". Type 0 spawns leaves fx, type 1 does not.                                                                                                      |
+| Charge (21)         |                                                                                                                                                                        |
+| Anim (22)           | Needs to define "anim" for the animation to play.                                                                                                                      |
+| Invoc (23)          | Needs to define "anim" for the invocation to play.                                                                                                                     |
+| Sylfide (24)        |                                                                                                                                                                        |
+| Rafale (25)         |                                                                                                                                                                        |
+| Deluge (26)         | Needs to define "fx" for the droplets, "power" for the strength, and "speed" for the speed.                                                                            |
 
 4. type? - Number - Chose a version of the skill for Shower2 or Heal.
 5. fx? - String - Chose an fx to play for Projectile, JumpAttack or Deluge.
@@ -276,7 +273,40 @@ A fighter regenerates a set amount of life with the given life effect. If the fi
 
 ### Status (19)
 
+A status if added to a fighter. An optional power property can be passed depending on the chosen status.
+
+#### Properties
+
+1. fid - Number - The ID of the fighter gaining the status.
+2. status - FighterStatus - Status being added.
+3. power? - number - Power of the status when applicable.
+
+| FighterStatus | Description                                                                                           |
+| ------------- | ----------------------------------------------------------------------------------------------------- |
+| Sleep (0)     | The figher fall asleep.                                                                               |
+| Flames (1)    | The fighter is covered in flames.                                                                     |
+| Burn (2)      | Like Flames, but a power can be passed. Not sure of the difference yet beside the flames being black. |
+| Intang (3)    | The fighter gains the Intangible status.                                                              |
+| Fly (4)       | The fighter starts flying.                                                                            |
+| Slow (5)      | The fighter gains the Slow status.                                                                    |
+| Quick (6)     | The fighter gains the Quick status.                                                                   |
+| Stoned (7)    | The fighter gains the Petrified status.                                                               |
+| Bless (8)     | The fighter gains the Bless status.                                                                   |
+| Poison (9)    | The gains the Poison status. Power changes the strength of the poison.                                |
+| Shield (10)   | The fighter is shielded (?).                                                                          |
+| Heal (11)     | Light particles are constantly emmited by the fighter.                                                |
+| MonoElt (12)  | The fighter gains the status icon with a cadenas (?).                                                 |
+| Dazzled (13)  | The figher gains the Dazzled status.                                                                  |
+| Stun (14)     | The fighter gain the Stun status.                                                                     |
+
 ### NoStatus (20)
+
+A status if removed from a fighter.
+
+#### Properties
+
+1. fid - Number - The ID of the fighter gaining the status.
+2. status - FighterStatus - Status being added.
 
 ### Display (21)
 

@@ -135,7 +135,7 @@ export class Fighter extends Phys {
 
 	/**
 	 * Current status of the Fighter, list of Fighter.Status with their possible value.
-	 * @type {{e: number, value: number}[]}
+	 * @type {{e: number, power?: number}[]}
 	 */
 	_status = [];
 
@@ -489,6 +489,16 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Adds the desired Fighter.Status to the status of the Fighter.
+	 * @param {number} status The Fighter.Status enum indicating which status to add.
+	 * @param {number | undefined} power The power of the status if applicable.
+	 */
+	addStatus(status, power) {
+		this._status.push({ e: status, power: power });
+		this.displayStatus();
+	}
+
+	/**
 	 * Removes the selected status from the Fighter if it has it.
 	 * If null is passed, remove all the status.
 	 * @param {number | null} status A Fighter.Status enum value.
@@ -507,7 +517,7 @@ export class Fighter extends Phys {
 			}
 			return true;
 		});
-		//this.displayStatus(); TODO
+		this.displayStatus();
 	}
 
 	/**
@@ -517,6 +527,13 @@ export class Fighter extends Phys {
 	 */
 	haveStatus(status) {
 		return this._status.find((s) => s.e === status) !== undefined;
+	}
+
+	/**
+	 * Display the status of the Fighter.
+	 */
+	displayStatus() {
+		// TODO
 	}
 
 	/**

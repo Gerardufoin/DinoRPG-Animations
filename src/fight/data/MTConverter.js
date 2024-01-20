@@ -70,6 +70,9 @@ export class MTConverter {
 			_history: MTConverter.convertHistory(etData),
 			_smonster: '/swf/smonster.swf?v=26'
 		};
+		if (data._history.filter((a) => a.value == '_HDisplay') == 0) {
+			data._history.unshift(MTConverter.convertHDisplay([]));
+		}
 		return data;
 	}
 
@@ -456,8 +459,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHStatus(obj) {
-		console.log('Conversion for "_HStatus" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HStatus',
+			args: [obj.fid, MTConverter.convertFighterStatus(obj)]
+		};
 	}
 
 	/**
@@ -466,8 +472,51 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHNoStatus(obj) {
-		console.log('Conversion for "_HNoStatus" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HNoStatus',
+			args: [obj.fid, MTConverter.convertFighterStatus(obj)]
+		};
+	}
+
+	/**
+	 * Convert a Fighter.Status enum into an MT _Status enum.
+	 * @param {object} status Fight.Action.Status/NoStatus to convert.
+	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
+	 */
+	static convertFighterStatus(status) {
+		const mapping = {
+			[Fighter.Status.Sleep]: '_SSleep',
+			[Fighter.Status.Flames]: '_SFlames',
+			[Fighter.Status.Burn]: '_SBurn',
+			[Fighter.Status.Intang]: '_SIntang',
+			[Fighter.Status.Fly]: '_SFly',
+			[Fighter.Status.Slow]: '_SSlow',
+			[Fighter.Status.Quick]: '_SQuick',
+			[Fighter.Status.Stoned]: '_SStoned',
+			[Fighter.Status.Bless]: '_SBless',
+			[Fighter.Status.Poison]: '_SPoison',
+			[Fighter.Status.Shield]: '_SShield',
+			[Fighter.Status.Heal]: '_SHeal',
+			[Fighter.Status.MonoElt]: '_SMonoElt',
+			[Fighter.Status.Dazzled]: '_SDazzled',
+			[Fighter.Status.Stun]: '_SStun'
+		};
+		const ret = {
+			enum: '_Status',
+			value: mapping[status.status],
+			args: []
+		};
+		switch (status.status) {
+			case Fighter.Status.Burn:
+			case Fighter.Status.Poison:
+			case Fighter.Status.MonoElt:
+			case Fighter.Status.Heal:
+			case Fighter.Status.Dazzled:
+				ret.args.push(status.power);
+				break;
+		}
+		return ret;
 	}
 
 	/**
@@ -504,7 +553,6 @@ export class MTConverter {
 			[Skill.Vigne]: '_GrVigne',
 			[Skill.WaterCanon]: '_GrWaterCanon',
 			[Skill.Shower]: '_GrShower',
-			[Skill.Shower2]: '_GrShower2',
 			[Skill.LevitRay]: '_GrLevitRay',
 			[Skill.Lightning]: '_GrLightning',
 			[Skill.Crepuscule]: '_GrCrepuscule',
@@ -531,8 +579,11 @@ export class MTConverter {
 			args: []
 		};
 		switch (skill.skill) {
-			case Skill.Shower2:
-				ret.args = [skill.type];
+			case Skill.Shower:
+				if (skill.type) {
+					ret.value = '_GrShower2';
+					ret.args = [skill.type];
+				}
 				break;
 			case Skill.Projectile:
 				ret.args = [skill.fx, skill.anim, skill.speed];

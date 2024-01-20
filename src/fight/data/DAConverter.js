@@ -7,6 +7,7 @@ import { DamagesEffect } from '../actions/Damages.js';
 import { Skill } from '../actions/DamagesGroup.js';
 import { EndBehaviour } from '../actions/Finish.js';
 import { GotoEffect } from '../actions/GotoFighter.js';
+import { FXEffect } from '../actions/Effect.js';
 
 /**
  * Convert MT fight data into DA fight data.
@@ -409,8 +410,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHStatus(args) {
-		console.log('Conversion for "_HStatus" not done yet.');
-		return { action: Fight.Action.Status };
+		return { action: Fight.Action.Status, fid: args[0], ...DAConverter.convertFighterStatus(args[1]) };
 	}
 
 	/**
@@ -419,8 +419,45 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHNoStatus(args) {
-		console.log('Conversion for "_HNoStatus" not done yet.');
-		return { action: Fight.Action.NoStatus };
+		return { action: Fight.Action.NoStatus, fid: args[0], ...DAConverter.convertFighterStatus(args[1]) };
+	}
+
+	/**
+	 * Convert a _Status enum from from MT into a Fighter.Status.
+	 * @param {object} status MT _Status enum.
+	 * @returns {{status: number, power?: number}} The converted Fighter.Status.
+	 */
+	static convertFighterStatus(status) {
+		const mapping = {
+			_SSleep: Fighter.Status.Sleep,
+			_SFlames: Fighter.Status.Flames,
+			_SBurn: Fighter.Status.Burn,
+			_SIntang: Fighter.Status.Intang,
+			_SFly: Fighter.Status.Fly,
+			_SSlow: Fighter.Status.Slow,
+			_SQuick: Fighter.Status.Quick,
+			_SStoned: Fighter.Status.Stoned,
+			_SBless: Fighter.Status.Bless,
+			_SPoison: Fighter.Status.Poison,
+			_SShield: Fighter.Status.Shield,
+			_SHeal: Fighter.Status.Heal,
+			_SMonoElt: Fighter.Status.MonoElt,
+			_SDazzled: Fighter.Status.Dazzled,
+			_SStun: Fighter.Status.Stun
+		};
+		const ret = {
+			status: mapping[status.value]
+		};
+		switch (ret.status) {
+			case Fighter.Status.Burn:
+			case Fighter.Status.Poison:
+			case Fighter.Status.MonoElt:
+			case Fighter.Status.Heal:
+			case Fighter.Status.Dazzled:
+				ret.power = status.args[0];
+				break;
+		}
+		return ret;
 	}
 
 	/**
@@ -442,7 +479,7 @@ export class DAConverter {
 	/**
 	 * Convert a _GroupEffect from from MT into a Skill.
 	 * @param {object} skill MT skill object.
-	 * @returns {{skill: number}} The converted Skill.
+	 * @returns {{skill: number, type?: number, fx?: number, anim?: string, speed?: number, power?: number}} The converted Skill.
 	 */
 	static convertDamageSkill(skill) {
 		const mapping = {
@@ -454,7 +491,7 @@ export class DAConverter {
 			_GrVigne: Skill.Vigne,
 			_GrWaterCanon: Skill.WaterCanon,
 			_GrShower: Skill.Shower,
-			_GrShower2: Skill.Shower2,
+			_GrShower2: Skill.Shower,
 			_GrLevitRay: Skill.LevitRay,
 			_GrLightning: Skill.Lightning,
 			_GrCrepuscule: Skill.Crepuscule,
@@ -482,8 +519,10 @@ export class DAConverter {
 
 		obj.skill = mapping[skill.value];
 		switch (obj.skill) {
-			case Skill.Shower2:
-				obj.type = skill.args[0]; // int (not sure)
+			case Skill.Shower:
+				if (skill.value === '_GrShower2') {
+					obj.type = skill.args[0]; // int (not sure)
+				}
 				break;
 			case Skill.Projectile:
 				obj.fx = skill.args[0]; //sand, gland, aiguillon, lame, rocher
@@ -517,8 +556,116 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHFx(args) {
-		console.log('Conversion for "_HFx" not done yet.');
-		return { action: Fight.Action.Fx };
+		return { action: Fight.Action.Fx, ...DAConverter.convertFXEffect(args[0]) };
+	}
+
+	/**
+	 * Convert a _SuperEffect from from MT into a FXEffect.
+	 * @param {object} effect MT _SuperEffect enum.
+	 * @returns {{fx: number}} The converted Skill.
+	 */
+	static convertFXEffect(effect) {
+		const mapping = {
+			_SFEnv7: FXEffect.Env7,
+			_SFAura: FXEffect.Aura,
+			_SFAura2: FXEffect.Aura,
+			_SFSnow: FXEffect.Snow,
+			_SFSwamp: FXEffect.Swamp,
+			_SFCloud: FXEffect.Cloud,
+			_SFFocus: FXEffect.Focus,
+			_SFDefault: FXEffect.Default,
+			_SFAttach: FXEffect.Attach,
+			_SFAttachAnim: FXEffect.AttachAnim,
+			_SFAnim: FXEffect.Anim,
+			_SFHypnose: FXEffect.Hypnose,
+			_SFRay: FXEffect.Ray,
+			_SFSpeed: FXEffect.Speed,
+			_SFRandom: FXEffect.HeadOrTail,
+			_SFLeaf: FXEffect.Leaf,
+			_SFMudWall: FXEffect.MudWall,
+			_SFBlink: FXEffect.Blink,
+			_SFGenerate: FXEffect.Generate
+		};
+		const ret = {
+			fx: mapping[effect.value]
+		};
+		switch (ret.fx) {
+			case FXEffect.Env7:
+				ret.frame = effect.args[0]; // (number) -> string [cendre, abysse, amazon, stelme, ourano]
+				ret.remove = effect.args[1]; //boolean
+				break;
+			case FXEffect.Aura:
+				ret.fid = effect.args[0]; // number
+				ret.color = effect.args[1]; // number
+				ret.id = effect.args[2]; // number
+				if (effect.value === '_SFAura2') {
+					ret.type = effect.args[3]; // number
+				}
+				break;
+			case FXEffect.Snow:
+				ret.fid = effect.args[0]; // number
+				ret.id = effect.args[1]; // number
+				ret.color = effect.args[2]; // number
+				ret.rainbowPercent = effect.args[3]; // number
+				break;
+			case FXEffect.Swamp:
+			case FXEffect.Default:
+			case FXEffect.Ray:
+				ret.fid = effect.args[0]; // number
+				break;
+			case FXEffect.Cloud:
+				ret.fid = effect.args[0]; // number
+				ret.id = effect.args[1]; // number
+				ret.color = effect.args[2]; // number
+				break;
+			case FXEffect.Focus:
+				ret.fid = effect.args[0]; // number
+				ret.color = effect.args[1]; // number
+				break;
+			case FXEffect.Anim:
+			case FXEffect.Attach:
+				ret.fid = effect.args[0]; // number
+				ret.link = effect.args[1]; // string
+				break;
+			case FXEffect.AttachAnim:
+				ret.fid = effect.args[0]; // number
+				ret.link = effect.args[1]; // string
+				ret.frame = effect.args[2]; // string ?
+				break;
+			case FXEffect.Hypnose:
+				ret.fid = effect.args[0]; // number
+				ret.tid = effect.args[1]; // number
+				break;
+			case FXEffect.Speed:
+				ret.fid = effect.args[0]; // number
+				ret.tids = effect.args[1]; // number[]
+				break;
+			case FXEffect.HeadOrTail:
+				ret.fid = effect.args[0]; // number
+				ret.frame = effect.args[1]; // number -> (type of card)
+				ret.result = effect.args[2]; // boolean
+				break;
+			case FXEffect.Leaf:
+				ret.fid = effect.args[0]; // number
+				ret.link = effect.args[1]; // string
+				break;
+			case FXEffect.MudWall:
+				ret.fid = effect.args[0]; // number
+				ret.remove = effect.args[1]; // boolean
+				break;
+			case FXEffect.Blink:
+				ret.fid = effect.args[0]; // number
+				ret.color = effect.args[1]; // number
+				ret.alpha = effect.args[2]; // number
+				break;
+			case FXEffect.Generate:
+				ret.fid = effect.args[0]; // number
+				ret.color = effect.args[1]; // number
+				ret.strength = effect.args[2]; // number
+				ret.radius = effect.args[3]; // number
+				break;
+		}
+		return ret;
 	}
 
 	/**

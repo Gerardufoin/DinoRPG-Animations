@@ -15,6 +15,8 @@ import { DamagesGroup } from './actions/DamagesGroup.js';
 import { Regen } from './actions/Regen.js';
 import { Escape } from './actions/Escape.js';
 import { Finish } from './actions/Finish.js';
+import { Status } from './actions/Status.js';
+import { NoStatus } from './actions/NoStatus.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -86,8 +88,8 @@ export class History {
 			[Fight.Action.Regen]: 'regen',
 			[Fight.Action.Object]: undefined,
 			[Fight.Action.Fx]: undefined,
-			[Fight.Action.Status]: undefined,
-			[Fight.Action.NoStatus]: undefined,
+			[Fight.Action.Status]: 'status',
+			[Fight.Action.NoStatus]: 'noStatus',
 			[Fight.Action.Display]: 'display',
 			[Fight.Action.TimeLimit]: undefined,
 			[Fight.Action.Talk]: undefined,
@@ -370,6 +372,39 @@ export class History {
 			action.fid,
 			action.amount,
 			action.lifeFx
+		);
+	}
+
+	/**
+	 * A status is added to a Fighter.
+	 * @param {{action: number, fid: number, status: number, power?: number}} action Action which triggered the call.
+	 * @returns {State} The Status State.
+	 */
+	status(action) {
+		return new Status(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.status,
+			action.power
+		);
+	}
+
+	/**
+	 * A status is removed from a Fighter.
+	 * @param {{action: number, fid: number, status: number}} action Action which triggered the call.
+	 * @returns {State} The Status State.
+	 */
+	noStatus(action) {
+		return new NoStatus(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.status
 		);
 	}
 
