@@ -73,7 +73,7 @@ export class Finish extends State {
 						const m = 50;
 						const tx = -m + (f.side ? Scene.WIDTH + 2 * m : 0);
 						const ty = f.position.y + (Math.random() * 2 - 1) * 20;
-						//new MoveTo(this._history, undefined, f.id, tx, ty, true);
+						this._newStates.push(new MoveTo(this._scene, undefined, f.id, tx, ty, true));
 					}
 					break;
 				case EndBehaviour.Escape:
@@ -81,7 +81,7 @@ export class Finish extends State {
 						const m = 50;
 						const tx = -m + (!f.side ? Scene.WIDTH + 2 * m : 0);
 						const ty = f.position.y;
-						//new MoveTo(this._history, undefined, f.id, tx, ty, true);
+						this._newStates.push(new MoveTo(this._scene, undefined, f.id, tx, ty, true));
 					}
 					break;
 				case EndBehaviour.Guard:
@@ -89,7 +89,7 @@ export class Finish extends State {
 						const m = f._ray + 10;
 						const tx = m + (f.side ? Scene.WIDTH + 2 * m : 0);
 						const ty = f.position.y;
-						//new MoveTo(this._history, undefined, f.id, tx, ty, false, true);
+						this._newStates.push(new MoveTo(this._scene, undefined, f.id, tx, ty, false, true));
 					}
 					break;
 			}

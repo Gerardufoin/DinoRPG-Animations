@@ -90,11 +90,11 @@ export class MoveTo extends State {
 				this._fighter.setSens(false);
 				this._fighter._mode = Fighter.Mode.Dead;
 			} else if (this._flEnd) {
-				this.kill();
+				this._fighter.kill();
 			} else {
 				this._fighter.backToDefault();
-				this.end();
 			}
+			this.end();
 		}
 	}
 }

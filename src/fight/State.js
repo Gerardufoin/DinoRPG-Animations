@@ -66,6 +66,13 @@ export class State {
 	toDelete = false;
 
 	/**
+	 * List of the new States created by the current State.
+	 * Will be collected by the history after an udpate.
+	 * @type {State[]}
+	 */
+	_newStates = [];
+
+	/**
 	 * The Scene where the state is happening.
 	 * @type {Scene}
 	 */
@@ -149,6 +156,16 @@ export class State {
 			}
 		}
 		this._casting = [];
+	}
+
+	/**
+	 * Collect the created new States and detach them from this object.
+	 * @returns {State[]} The new States created during the init or update method.
+	 */
+	collectNewStates() {
+		const ns = this._newStates;
+		this._newStates = [];
+		return ns;
 	}
 
 	/**

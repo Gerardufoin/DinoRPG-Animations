@@ -192,6 +192,17 @@ export class Scene extends Container {
 	}
 
 	/**
+	 * Stops a Fighter from being accessed from the Scene.
+	 * Will not remove the Fighter visually, kill the Fighter instead.
+	 * @param {Fighter} fighter The Fighter to remove.
+	 */
+	removeFighter(fighter) {
+		this._fighters = this._fighters.filter((f) => {
+			f.id !== fighter.id;
+		});
+	}
+
+	/**
 	 * Get the Fighter with the corresponding id.
 	 * @param {number} fid The id of the desired fighter.
 	 * @returns {Fighter} The Fighter with the corresponding id, or undefined if it does not exists.

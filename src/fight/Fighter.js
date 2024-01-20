@@ -880,6 +880,15 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Remove the Fighter from the scene.
+	 * If you want the Fighter to appear dead instead, use die().
+	 */
+	kill() {
+		this._scene.removeFighter(this);
+		super.kill();
+	}
+
+	/**
 	 * Adds a red dot at the center of the Fighter.
 	 * Debug purposes only.
 	 */

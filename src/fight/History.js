@@ -130,12 +130,15 @@ export class History {
 	}
 
 	/**
-	 * Update all the states.
+	 * Update all the states and collect the new States created during the update or init.
 	 * @param {Timer} timer The Timer managing the elapsed time.
 	 */
 	updateStates(timer) {
 		for (const st of this._states) {
 			st.update(timer);
+			for (const ns of st.collectNewStates()) {
+				this._states.push(ns);
+			}
 		}
 		this._states = this._states.filter((s) => !s.toDelete);
 	}
