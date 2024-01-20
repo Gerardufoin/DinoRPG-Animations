@@ -3,6 +3,7 @@ import { Container, Ticker } from 'pixi.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { PixiHelper } from './PixiHelper.js';
 import { Animation } from './Animation.js';
+import { ImageExtractor } from './ImageExtractor.js';
 
 /**
  * The Animator class will contain the dino's body and control its animations.
@@ -31,6 +32,11 @@ export class Animator extends Container {
 	 * @type {object}
 	 */
 	_animations;
+	/**
+	 * Current animation being played.
+	 * @type {string}
+	 */
+	_currentAnim = '';
 
 	/**
 	 * Controls if the animator is running or not.
@@ -178,6 +184,8 @@ export class Animator extends Container {
 		if (!this._animations[key]) {
 			key = 'stand';
 		}
+		if (this._currentAnim == key) return;
+
 		if (this._animations[key]) {
 			this._body.setAnimation(this._animations[key].anim ?? this._animations[key]);
 			this._body.setOffsetIdx(this._animations[key].offset ?? 0);
@@ -186,6 +194,7 @@ export class Animator extends Container {
 		} else {
 			this._body.markAsEnded();
 		}
+		this._currentAnim = key;
 	}
 
 	/**
@@ -226,5 +235,52 @@ export class Animator extends Container {
 	 */
 	getCurrentAnimationLength() {
 		return this._body.getAnimationLength();
+	}
+
+	/**
+	 * Extract the visual data from the container into an image.
+	 * Useful to display the dino without having to instanciate a WebGL context every time.
+	 * @param {any} callback A callback receiving the resulting image as parameter.
+	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
+	 * @param {number | undefined} height The height of the image. Needs width to be defined.
+	 */
+	toImage(callback, width = undefined, height = undefined) {
+		ImageExtractor.convertToImage(this, callback, width, height, true);
+	}
+
+	/**
+	 * Extract the visual data from the container into raw image data.
+	 * Useful to display the dino without having to instanciate a WebGL context every time.
+	 * @param {any} callback A callback receiving the resulting image as parameter.
+	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
+	 * @param {number | undefined} height The height of the image. Needs width to be defined.
+	 * @param {string} format Format of the output. 'image/png' by default.
+	 */
+	toRawImage(callback, width = undefined, height = undefined, format = 'image/png') {
+		ImageExtractor.convertToImage(this, callback, width, height, false, format);
+	}
+
+	/**
+	 * Extract the visual data from the container into an animation.
+	 * The animation is a div tag of class 'DinoRPG-Animation' comprised of multiple img tags.
+	 * A timeout then goes through the classes DinoRPG-Animation and set the appropriate image.
+	 * @param {any} callback A callback receiving the resulting image as parameter.
+	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
+	 * @param {number | undefined} height The height of the image. Needs width to be defined.
+	 */
+	toAnimation(callback, width = undefined, height = undefined) {
+		ImageExtractor.convertToAnimation(this, callback, width, height, true);
+	}
+
+	/**
+	 * Extract the visual data from the container into an animation.
+	 * The animation is an array comprised of multiple raw image data (one per frame, in order).
+	 * @param {any} callback A callback receiving the resulting image as parameter.
+	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
+	 * @param {number | undefined} height The height of the image. Needs width to be defined.
+	 * @param {string} format Format of the output. 'image/png' by default.
+	 */
+	toRawAnimation(callback, width = undefined, height = undefined, format = 'image/png') {
+		ImageExtractor.convertToAnimation(this, callback, width, height, false, format);
 	}
 }

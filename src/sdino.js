@@ -2,7 +2,6 @@
 import { dinoz, error } from './sdino/dinoz.js';
 import { Animator } from './display/Animator.js';
 import { PartManager } from './display/PartManager.js';
-import { ImageExtractor } from './display/ImageExtractor.js';
 
 /**
  * Conversion of the sdino.swf file of the web game "Dino RPG".
@@ -22,11 +21,6 @@ export class sdino extends Animator {
 	 * @type {Array}
 	 */
 	_palette;
-	/**
-	 * Scale of the dino.
-	 * @type {number}
-	 */
-	_scale = 1;
 	/**
 	 * Raw code data received at init time.
 	 * @type {string}
@@ -102,14 +96,20 @@ export class sdino extends Animator {
 				dParts,
 				this._palette,
 				`sdino/${this._dinoInfos.name}/`,
-				this._scale
+				this._body._scale
 			);
 			if (part) {
 				this.addPart(pName, part);
 			}
 		}
 		if (this._dinoInfos.shadow) {
-			var shadow = PartManager.getSubPart(this._dinoInfos.shadow, dParts, this._palette, 'sdino/', this._scale);
+			var shadow = PartManager.getSubPart(
+				this._dinoInfos.shadow,
+				dParts,
+				this._palette,
+				'sdino/',
+				this._body._scale
+			);
 			if (shadow) this.addChildAt(shadow, 0);
 		}
 		if (this._dinoInfos.transforms) {
@@ -139,7 +139,6 @@ export class sdino extends Animator {
 	init(data, damage, pflag = false, scale = 1) {
 		//_p0._box._visible = false;
 		this._body._scale = scale;
-		this._scale = scale;
 		let dParts = [];
 		this._code = data;
 		for (let i = 0; i < data?.length ?? 0; ++i) {
@@ -163,53 +162,6 @@ export class sdino extends Animator {
 		this.playAnim('stand');
 		this.playing = pflag;
 		return true;
-	}
-
-	/**
-	 * Extract the visual data from the container into an image.
-	 * Useful to display the dino without having to instanciate a WebGL context every time.
-	 * @param {any} callback A callback receiving the resulting image as parameter.
-	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
-	 * @param {number | undefined} height The height of the image. Needs width to be defined.
-	 */
-	toImage(callback, width = undefined, height = undefined) {
-		ImageExtractor.convertToImage(this, callback, width, height, true);
-	}
-
-	/**
-	 * Extract the visual data from the container into raw image data.
-	 * Useful to display the dino without having to instanciate a WebGL context every time.
-	 * @param {any} callback A callback receiving the resulting image as parameter.
-	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
-	 * @param {number | undefined} height The height of the image. Needs width to be defined.
-	 * @param {string} format Format of the output. 'image/png' by default.
-	 */
-	toRawImage(callback, width = undefined, height = undefined, format = 'image/png') {
-		ImageExtractor.convertToImage(this, callback, width, height, false, format);
-	}
-
-	/**
-	 * Extract the visual data from the container into an animation.
-	 * The animation is a div tag of class 'DinoRPG-Animation' comprised of multiple img tags.
-	 * A timeout then goes through the classes DinoRPG-Animation and set the appropriate image.
-	 * @param {any} callback A callback receiving the resulting image as parameter.
-	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
-	 * @param {number | undefined} height The height of the image. Needs width to be defined.
-	 */
-	toAnimation(callback, width = undefined, height = undefined) {
-		ImageExtractor.convertToAnimation(this, callback, width, height, true);
-	}
-
-	/**
-	 * Extract the visual data from the container into an animation.
-	 * The animation is an array comprised of multiple raw image data (one per frame, in order).
-	 * @param {any} callback A callback receiving the resulting image as parameter.
-	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
-	 * @param {number | undefined} height The height of the image. Needs width to be defined.
-	 * @param {string} format Format of the output. 'image/png' by default.
-	 */
-	toRawAnimation(callback, width = undefined, height = undefined, format = 'image/png') {
-		ImageExtractor.convertToAnimation(this, callback, width, height, false, format);
 	}
 
 	/**

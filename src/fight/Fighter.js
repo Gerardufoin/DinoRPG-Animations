@@ -11,6 +11,7 @@ import { Scene } from './Scene.js';
 import { Timer } from './Timer.js';
 import { SimpleTween } from './SimpleTween.js';
 import { Slot } from './Slot.js';
+import { smonster } from '../smonster.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -187,18 +188,30 @@ export class Fighter extends Phys {
 		this._size = Math.pow(fInfos.scale ?? 1, 0.65);
 
 		this.body = body;
-		const dino = new sdino({
-			data: fInfos.gfx,
-			autoUpdate: false,
-			pflag: true,
-			scale: this._size
-		});
-		this._animator = dino;
+		if (this.isDino) {
+			const dino = new sdino({
+				data: fInfos.gfx,
+				autoUpdate: false,
+				pflag: true,
+				scale: this._size
+			});
+			this._height = dino.collider.height * this._size;
+			this._width = dino.collider.width * this._size;
+			this._animator = dino;
+		} else {
+			const monster = new smonster({
+				type: fInfos.gfx,
+				autoUpdate: false,
+				pflag: true,
+				scale: this._size
+			});
+			this._height = monster.collider.height * this._size;
+			this._width = monster.collider.width * this._size;
+			this._animator = monster;
+		}
 		this.body.addChild(this._animator);
 		this.setSide(fInfos.side);
 
-		this._height = dino.collider.height * this._size;
-		this._width = dino.collider.width * this._size;
 		this._ray = this._width * 0.5 * this._size;
 		this.setForce(10 * this._size);
 

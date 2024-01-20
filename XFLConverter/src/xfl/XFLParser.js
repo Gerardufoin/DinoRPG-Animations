@@ -4,10 +4,12 @@ import libxmljs from 'libxmljs2';
 import path from 'path';
 import fs from 'fs';
 
-import { mapping } from './mapping.js';
+import { mapping_sdino } from './mapping_sdino.js';
+import { mapping_smonster } from './mapping_smonster.js';
 
 const FLAG_NO_RGB = false;
 const ELEM_IGNORE_RGB = ['156'];
+const MAPPING = [mapping_sdino, mapping_smonster];
 
 /**
  * Parse XFL files and return the raw data ready for conversion.
@@ -19,6 +21,8 @@ export class XFLParser {
 		ignoreAttributes: false,
 		attributeNamePrefix: ''
 	});
+
+	_useMapping = 0;
 
 	// abandonned
 	getStyle(shapeData, style) {
@@ -63,9 +67,9 @@ export class XFLParser {
 	 * @returns The output string on which the part mapping has been applied.
 	 */
 	applyMapping(output) {
-		for (let k in mapping) {
-			if (mapping[k]) {
-				output = output.replaceAll(`"${k}"`, `"${mapping[k]}"`);
+		for (let k in MAPPING[this._useMapping]) {
+			if (MAPPING[this._useMapping][k]) {
+				output = output.replaceAll(`"${k}"`, `"${MAPPING[this._useMapping][k]}"`);
 			}
 		}
 		return output;
@@ -97,8 +101,12 @@ export class XFLParser {
 	 * @param {string} file Path to the root XFL file to parse.
 	 * @param {string} fileType Type of tile being parsed, based on MotionTwin naming.
 	 * @param {object | undefined} parentData Data of the parent container, if any.
+	 * @param {number | undefined} mappingIdx The mapping to use.
 	 */
-	parse(file, fileType, parentData = undefined) {
+	parse(file, fileType, parentData = undefined, mappingIdx = undefined) {
+		if (mappingIdx !== undefined) {
+			this._useMapping = mappingIdx;
+		}
 		const xflContent = fs.readFileSync(file);
 		this.validate(file, xflContent.toString());
 		const data = this._parser.parse(xflContent);
@@ -106,7 +114,13 @@ export class XFLParser {
 			name: ''
 		};
 		result.name = data.DOMSymbolItem.name;
-		this.parseLayers(data.DOMSymbolItem.timeline.DOMTimeline.layers, result, fileType, parentData?.transform);
+		this.parseLayers(
+			data.DOMSymbolItem.timeline.DOMTimeline.layers,
+			result,
+			fileType,
+			path.dirname(file),
+			parentData?.transform
+		);
 		this.saveResult(result, fileType, parentData?.name);
 	}
 
@@ -114,13 +128,14 @@ export class XFLParser {
 	 * Start the parsing process of the DOMTimeline.layers depending on which type of file we are parsing.
 	 * @param {*} layers The DOMTimeline.layers of the XFL document.
 	 * @param {object} result Object containing the result of the parsing.
-	 * @param {string} fileType Type of file being parsed (_part, _sub, _anim)
+	 * @param {string} fileType Type of file being parsed (_part, _sub, _anim).
+	 * @param {string} directory Directory of the file being parsed.
 	 * @param {object | undefined} parentTransform Transform of the parent container, if any.
 	 */
-	parseLayers(layers, result, fileType, parentTransform = undefined) {
+	parseLayers(layers, result, fileType, directory, parentTransform = undefined) {
 		switch (fileType) {
 			case '_anim':
-				this.parseAnim(layers, result);
+				this.parseAnim(layers, result, directory);
 				break;
 			case '_sub':
 				this.parseSub(layers, result, parentTransform);
@@ -129,7 +144,7 @@ export class XFLParser {
 				this.parsePart(layers, result);
 				break;
 			case '_p1':
-				this.parseMain(layers, result);
+				this.parseMain(layers, result, directory);
 				break;
 		}
 	}
@@ -163,13 +178,14 @@ export class XFLParser {
 	 * Parse the DOMTimeline.layers for the type "_p1"
 	 * @param {*} layers The DOMTimeline.layers to parse.
 	 * @param {object} result Object containing the result of the parsing.
+	 * @param {string} directory Directory of the file being parsed.
 	 */
-	parseMain(layers, result) {
+	parseMain(layers, result, directory) {
 		let animFile = undefined;
 		result.transforms = [];
 		for (const l of this.toArray(layers.DOMLayer)) {
 			if (l.name === 'Layer 1') {
-				for (const f of l.frames.DOMFrame) {
+				for (const f of this.toArray(l.frames.DOMFrame)) {
 					const symbolInstance = f.elements.DOMSymbolInstance;
 					if (!animFile && symbolInstance.libraryItemName) {
 						animFile = symbolInstance.libraryItemName;
@@ -192,7 +208,7 @@ export class XFLParser {
 			}
 		}
 		if (animFile) {
-			this.parse(path.join('./resources/sdino/LIBRARY/', animFile + '.xml'), '_anim');
+			this.parse(path.join(directory, animFile + '.xml'), '_anim');
 		}
 	}
 
@@ -200,8 +216,9 @@ export class XFLParser {
 	 * Parse the DOMTimeline.layers for the type "_anim"
 	 * @param {*} layers The DOMTimeline.layers to parse.
 	 * @param {object} result Object containing the result of the parsing.
+	 * @param {string} directory Directory of the file being parsed.
 	 */
-	parseAnim(layers, result) {
+	parseAnim(layers, result, directory) {
 		result.anims = {};
 		const animations = [];
 		for (const l of this.toArray(layers.DOMLayer)) {
@@ -213,7 +230,22 @@ export class XFLParser {
 						animations[idx + i] = { name: f.name || '' };
 					}
 				}
-			} else if (l.name === 'Layer 2') {
+			} else if (l.name.includes('Labels Layer')) {
+				let idx = 0;
+				for (const f of l.frames.DOMFrame) {
+					const duration = f.duration ?? 1;
+					for (let i = 0; i < duration; ++i) {
+						if (animations[idx] && animations[idx].name) {
+							if (f.name) {
+								animations[idx].name += ', ' + f.name;
+							}
+						} else {
+							animations[idx] = { name: f.name || '' };
+						}
+						idx++;
+					}
+				}
+			} else if (l.name === 'Layer 1' || l.name === 'Layer 2') {
 				for (const f of l.frames.DOMFrame) {
 					const idx = Number.parseInt(f.index);
 					const symbolInstance = f.elements.DOMSymbolInstance;
@@ -251,7 +283,7 @@ export class XFLParser {
 				}
 				result.anims[anim.name] = anim.data;
 				console.log(anim.data?.item);
-				this.parse(path.join('./resources/sdino/LIBRARY/', anim.data?.item + '.xml'), anim.data?.itemType, {
+				this.parse(path.join(directory, anim.data?.item + '.xml'), anim.data?.itemType, {
 					name: anim.name,
 					transform: anim.data?.transform
 				});
