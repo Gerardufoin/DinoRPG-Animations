@@ -1,6 +1,7 @@
 // @ts-check
 
 export let walk = {
+	id: 'mahamuti_walk',
 	frames: [
 		{
 			left_tusk_fur: {

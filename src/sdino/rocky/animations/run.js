@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'rocky_run',
 	frames: [
 		{
 			left_hand: {

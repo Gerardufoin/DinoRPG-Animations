@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'wanwan_hit',
 	frames: [
 		{
 			nose: {

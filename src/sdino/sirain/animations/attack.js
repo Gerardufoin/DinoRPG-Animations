@@ -1,6 +1,7 @@
 // @ts-check
 
 export let attack = {
+	id: 'sirain_attack',
 	callbacks: {
 		3: [['hit']],
 		9: [['stop']]

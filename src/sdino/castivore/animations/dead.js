@@ -1,6 +1,7 @@
 // @ts-check
 
 export let dead = {
+	id: 'castivore_dead',
 	callbacks: {
 		23: [['stop']]
 	},

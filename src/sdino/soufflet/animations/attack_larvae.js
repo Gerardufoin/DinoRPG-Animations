@@ -1,6 +1,7 @@
 // @ts-check
 
 export let attack = {
+	id: 'soufflet_l_attack',
 	callbacks: {
 		5: [['hit']],
 		11: [['stop']]

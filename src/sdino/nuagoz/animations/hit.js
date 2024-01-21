@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'nuagoz_hit',
 	frames: [
 		{
 			body: {

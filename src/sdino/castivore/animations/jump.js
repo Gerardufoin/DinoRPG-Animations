@@ -1,6 +1,7 @@
 // @ts-check
 
 export let jump = {
+	id: 'castivore_jump',
 	callbacks: {
 		6: [['stop']]
 	},

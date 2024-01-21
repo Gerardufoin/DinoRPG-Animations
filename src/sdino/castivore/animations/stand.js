@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'castivore_stand',
 	frames: [
 		{
 			special: {

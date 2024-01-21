@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'mahamuti_run',
 	frames: [
 		{
 			left_front_leg: {

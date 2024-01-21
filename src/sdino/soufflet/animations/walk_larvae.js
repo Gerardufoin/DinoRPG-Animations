@@ -1,6 +1,7 @@
 // @ts-check
 
 export let walk = {
+	id: 'soufflet_l_walk',
 	frames: [
 		{
 			left_antennae: {

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let attack = {
+	id: 'feross_attack',
 	callbacks: {
 		3: [['hit']],
 		6: [['stop']]

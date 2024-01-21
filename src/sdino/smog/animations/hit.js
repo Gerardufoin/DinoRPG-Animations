@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'smog_hit',
 	frames: [
 		{
 			left_foreleg: {

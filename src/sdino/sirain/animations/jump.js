@@ -1,6 +1,7 @@
 // @ts-check
 
 export let jump = {
+	id: 'sirain_jump',
 	frames: [
 		{
 			eye: {

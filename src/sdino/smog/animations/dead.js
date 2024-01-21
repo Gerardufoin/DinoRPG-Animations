@@ -1,6 +1,7 @@
 // @ts-check
 
 export let dead = {
+	id: 'smog_dead',
 	callbacks: {
 		24: [['stop']]
 	},

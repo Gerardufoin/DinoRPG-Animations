@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'hippoclamp_run',
 	callbacks: {
 		4: [['fxAttach', 'smoke_small', 0, 5, { alpha: 'random(100)' }]],
 		7: [['fxAttach', 'smoke_small', 0, 5, { alpha: 'random(100)' }]],

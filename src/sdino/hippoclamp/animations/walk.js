@@ -1,6 +1,7 @@
 // @ts-check
 
 export let walk = {
+	id: 'hippoclamp_walk',
 	frames: [
 		{
 			left_eye: {

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'feross_hit',
 	frames: [
 		{
 			special: {

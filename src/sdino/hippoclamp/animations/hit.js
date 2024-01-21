@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'hippoclamp_hit',
 	frames: [
 		{
 			left_eye: {

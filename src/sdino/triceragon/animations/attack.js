@@ -1,6 +1,7 @@
 // @ts-check
 
 export let attack = {
+	id: 'triceragon_attack',
 	callbacks: {
 		4: [['hit', 18]],
 		8: [['stop']]

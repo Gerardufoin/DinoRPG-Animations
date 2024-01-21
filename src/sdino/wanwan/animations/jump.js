@@ -1,6 +1,7 @@
 // @ts-check
 
 export let jump = {
+	id: 'wanwan_jump',
 	callbacks: {
 		3: [['stop']]
 	},

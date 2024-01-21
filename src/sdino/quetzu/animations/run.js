@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'quetzu_run',
 	frames: [
 		{
 			head: {

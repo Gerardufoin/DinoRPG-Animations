@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'castivore_hit',
 	frames: [
 		{
 			special: {

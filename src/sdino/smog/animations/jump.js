@@ -1,6 +1,7 @@
 // @ts-check
 
 export let jump = {
+	id: 'smog_jump',
 	frames: [
 		{
 			left_foreleg: {

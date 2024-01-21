@@ -1,6 +1,7 @@
 // @ts-check
 
 export let attack = {
+	id: 'moueffe_attack',
 	callbacks: {
 		8: [['hit', 10]],
 		21: [['stop']]

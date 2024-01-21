@@ -1,6 +1,7 @@
 // @ts-check
 
 export let land = {
+	id: 'wanwan_land',
 	callbacks: {
 		2: [
 			['hit', 4],

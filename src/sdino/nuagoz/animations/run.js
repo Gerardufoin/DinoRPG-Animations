@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'nuagoz_run',
 	frames: [
 		{
 			body: {

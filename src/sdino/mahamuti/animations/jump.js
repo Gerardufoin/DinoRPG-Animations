@@ -1,6 +1,7 @@
 // @ts-check
 
 export let jump = {
+	id: 'mahamuti_jump',
 	frames: [
 		{
 			left_front_leg: {

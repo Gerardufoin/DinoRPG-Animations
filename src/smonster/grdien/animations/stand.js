@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'grdien_stand',
 	frames: [
 		{
 			l_eye: {

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let land = {
+	id: 'gorilloz_land',
 	callbacks: {
 		4: [['hit'], ['fxAttach', 'smoke_small', 0, 5]],
 		10: [['stop']]

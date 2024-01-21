@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'mahamuti_stand',
 	frames: [
 		{
 			left_tusk_fur: {

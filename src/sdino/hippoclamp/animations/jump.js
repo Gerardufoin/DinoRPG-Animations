@@ -1,6 +1,7 @@
 // @ts-check
 
 export let jump = {
+	id: 'hippoclamp_jump',
 	callbacks: {
 		4: [['stop']]
 	},

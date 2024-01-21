@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'pteroz_run',
 	frames: [
 		{
 			left_wing: {

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let jump = {
+	id: 'moueffe_jump',
 	callbacks: {
 		4: [['stop']]
 	},

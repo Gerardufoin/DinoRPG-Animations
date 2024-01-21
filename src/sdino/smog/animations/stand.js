@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'smog_stand',
 	frames: [
 		{
 			left_foreleg: {

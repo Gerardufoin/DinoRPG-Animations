@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'winks_hit',
 	frames: [
 		{
 			left_leg_2: {

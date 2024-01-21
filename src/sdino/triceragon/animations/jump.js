@@ -1,6 +1,7 @@
 // @ts-check
 
 export let jump = {
+	id: 'triceragon_jump',
 	frames: [
 		{
 			left_horn: {

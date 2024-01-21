@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'feross_stand',
 	frames: [
 		{
 			special: {

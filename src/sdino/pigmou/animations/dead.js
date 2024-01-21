@@ -1,6 +1,7 @@
 // @ts-check
 
 export let dead = {
+	id: 'pigmou_dead',
 	callbacks: {
 		18: [['stop']]
 	},

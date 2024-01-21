@@ -1,6 +1,7 @@
 // @ts-check
 
 export let attack = {
+	id: 'grdien_attack',
 	callbacks: {
 		13: [['hit', 10]],
 		23: [['stop']]

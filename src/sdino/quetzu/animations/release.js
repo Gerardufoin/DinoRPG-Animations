@@ -1,6 +1,7 @@
 // @ts-check
 
 export let release = {
+	id: 'quetzu_release',
 	frames: [
 		{
 			left_arm_bottom: {

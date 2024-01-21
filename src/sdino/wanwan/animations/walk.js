@@ -1,6 +1,7 @@
 // @ts-check
 
 export let walk = {
+	id: 'wanwan_walk',
 	frames: [
 		{
 			nose: {

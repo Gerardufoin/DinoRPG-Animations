@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'soufflet_l_hit',
 	frames: [
 		{
 			left_antennae: {

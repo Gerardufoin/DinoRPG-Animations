@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'santaz_run',
 	frames: [
 		{
 			hair: {

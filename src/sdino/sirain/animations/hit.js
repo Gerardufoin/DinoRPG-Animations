@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'sirain_hit',
 	frames: [
 		{
 			eye: {

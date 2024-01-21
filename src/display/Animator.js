@@ -184,17 +184,22 @@ export class Animator extends Container {
 		if (!this._animations[key]) {
 			key = 'stand';
 		}
-		if (this._currentAnim == key) return;
 
 		if (this._animations[key]) {
-			this._body.setAnimation(this._animations[key].anim ?? this._animations[key]);
-			this._body.setOffsetIdx(this._animations[key].offset ?? 0);
+			const animation = this._animations[key].anim ?? this._animations[key];
+			const offset = this._animations[key].offset ?? 0;
+			this._body.setAnimation(animation);
 			this._body.play();
-			this.setFrame(0);
+			if (animation.id == this._currentAnim) {
+				this._body.setNextOffsetIdx(offset);
+			} else {
+				this._body.setOffsetIdx(offset);
+				this.setFrame(0);
+				this._currentAnim = animation.id;
+			}
 		} else {
 			this._body.markAsEnded();
 		}
-		this._currentAnim = key;
 	}
 
 	/**

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'soufflet_l_stand',
 	frames: [
 		{
 			left_antennae: {

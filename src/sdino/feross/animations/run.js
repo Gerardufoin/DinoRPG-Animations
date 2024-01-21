@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'feross_run',
 	frames: [
 		{
 			left_nostril: {

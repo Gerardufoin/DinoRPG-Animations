@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'triceragon_run',
 	frames: [
 		{
 			left_horn: {

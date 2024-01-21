@@ -1,6 +1,7 @@
 // @ts-check
 
 export let sleep = {
+	id: 'smog_sleep',
 	frames: [
 		{
 			left_foreleg: {

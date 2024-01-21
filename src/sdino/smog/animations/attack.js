@@ -1,6 +1,7 @@
 // @ts-check
 
 export let attack = {
+	id: 'smog_attack',
 	callbacks: {
 		4: [['hit', 18]],
 		11: [['stop']]

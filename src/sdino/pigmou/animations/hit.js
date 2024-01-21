@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'pigmou_hit',
 	frames: [
 		{
 			back_left_leg: {

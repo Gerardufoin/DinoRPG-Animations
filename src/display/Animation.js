@@ -64,6 +64,11 @@ export class Animation extends Container {
 	 * @type {number}
 	 */
 	_offsetIdx = 0;
+	/**
+	 * Next animation offset. Will be applied as soon as the animation loops.
+	 * @type {number}
+	 */
+	_nextOffsetIdx;
 
 	/**
 	 * Color transformation of the animation.
@@ -184,7 +189,20 @@ export class Animation extends Container {
 	 */
 	setOffsetIdx(idx) {
 		const length = this.getAnimationLength();
-		this._offsetIdx = length > 0 ? (idx ?? 0) % this.getAnimationLength() : 0;
+		this._offsetIdx = length > 0 ? (idx ?? 0) % length : 0;
+		this._nextOffsetIdx = undefined;
+	}
+
+	/**
+	 * Set the next offset index, which will be updated once the animation finishes looping.
+	 * @param {number | undefined} idx The new offset index of the animation.
+	 */
+	setNextOffsetIdx(idx) {
+		const length = this.getAnimationLength();
+		const offsetIdx = length > 0 ? (idx ?? 0) % length : 0;
+		if (offsetIdx !== this._offsetIdx) {
+			this._nextOffsetIdx = offsetIdx;
+		}
 	}
 
 	/**
@@ -207,9 +225,15 @@ export class Animation extends Container {
 	 * @param {number} idx The desired current index.
 	 */
 	setCurrentIdx(idx) {
-		const length = this.getAnimationLength() - this._offsetIdx;
+		let length = this.getAnimationLength() - this._offsetIdx;
 		if (idx >= length - 1) {
 			this._ended = true;
+			if (this._nextOffsetIdx !== undefined) {
+				this.setOffsetIdx(this._nextOffsetIdx);
+				this._nextOffsetIdx = undefined;
+				idx -= length - 1;
+				length = this.getAnimationLength() - this._offsetIdx;
+			}
 		}
 		this._currentIdx = length > 0 ? idx % length : 0;
 	}

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let attack = {
+	id: 'winks_attack',
 	callbacks: {
 		2: [['hit']],
 		5: [['stop']]

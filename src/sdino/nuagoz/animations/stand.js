@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'nuagoz_stand',
 	frames: [
 		{
 			body: {

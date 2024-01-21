@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'sirain_run',
 	frames: [
 		{
 			eye: {

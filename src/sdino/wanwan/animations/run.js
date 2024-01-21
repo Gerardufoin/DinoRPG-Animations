@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'wanwan_run',
 	frames: [
 		{
 			left_front_leg: {

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let walk = {
+	id: 'santaz_walk',
 	frames: [
 		{
 			hair: {

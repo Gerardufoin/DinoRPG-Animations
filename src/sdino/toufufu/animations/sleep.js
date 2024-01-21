@@ -1,6 +1,7 @@
 // @ts-check
 
 export let sleep = {
+	id: 'toufufu_sleep',
 	frames: [
 		{
 			left_lower_leg: {

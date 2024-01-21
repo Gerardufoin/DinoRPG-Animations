@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'mahamuti_hit',
 	frames: [
 		{
 			left_front_leg: {

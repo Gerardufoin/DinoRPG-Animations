@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'kabuki_run',
 	frames: [
 		{
 			special: {

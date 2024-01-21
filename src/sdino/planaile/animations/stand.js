@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'planaile_stand',
 	frames: [
 		{
 			left_eye: {

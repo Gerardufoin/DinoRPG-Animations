@@ -1,6 +1,7 @@
 // @ts-check
 
 export let walk = {
+	id: 'sirain_walk',
 	frames: [
 		{
 			eye: {

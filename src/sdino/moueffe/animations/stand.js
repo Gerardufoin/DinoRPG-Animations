@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'moueffe_stand',
 	frames: [
 		{
 			left_arm: {

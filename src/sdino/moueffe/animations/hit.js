@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'moueffe_hit',
 	frames: [
 		{
 			head: {

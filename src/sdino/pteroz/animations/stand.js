@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'pteroz_stand',
 	frames: [
 		{
 			left_wing: {

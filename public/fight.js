@@ -55,16 +55,23 @@ const fightVersion = [
 					life: 100,
 					name: 'Dragon Jr',
 					side: true,
-					size: 100,
+					scale: 1,
 					fid: 0,
 					gfx: '09T1Yt9wqq4Rx000'
 				}
 			},
 			{
-				action: DinoAnim.Fight.Action.Status,
-				fid: 0,
-				status: 14,
-				power: 0
+				action: DinoAnim.Fight.Action.Add,
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Gardien Abricole',
+					side: false,
+					scale: 1,
+					fid: 1,
+					gfx: 'grdien'
+				}
 			}
 		],
 		debug: true

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let walk = {
+	id: 'smog_walk',
 	frames: [
 		{
 			left_foreleg: {

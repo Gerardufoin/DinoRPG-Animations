@@ -113,6 +113,7 @@ export class DAConverter {
 				props: args[0]._props,
 				dino: args[0]._dino,
 				life: args[0]._life,
+				maxLife: args[0]._dino && args[0]._props.length == 0 ? args[0]._size : args[0]._life,
 				name: args[0]._name,
 				side: args[0]._side,
 				scale: args[0]._size / 100,
@@ -121,7 +122,6 @@ export class DAConverter {
 				...DAConverter.convertEntranceEffect(args[1])
 			}
 		};
-		ret.maxLife = ret.dino && ret.props.length == 0 ? args[0]._size : args[0]._life;
 		return ret;
 	}
 

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let jump = {
+	id: 'kabuki_jump',
 	callbacks: {
 		2: [['stop']]
 	},

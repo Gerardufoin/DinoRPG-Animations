@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'triceragon_hit',
 	frames: [
 		{
 			left_horn: {

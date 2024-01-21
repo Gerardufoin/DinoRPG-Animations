@@ -1,6 +1,7 @@
 // @ts-check
 
 export let land = {
+	id: 'soufflet_a_land',
 	callbacks: {
 		5: [
 			['hit', 9],

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let fly = {
+	id: 'nuagoz_fly',
 	frames: [
 		{
 			body: {

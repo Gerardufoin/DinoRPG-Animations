@@ -1,6 +1,7 @@
 // @ts-check
 
 export let walk = {
+	id: 'castivore_walk',
 	callbacks: {
 		6: [['gotoAndPlay', 1]]
 	},

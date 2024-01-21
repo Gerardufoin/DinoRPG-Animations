@@ -16,6 +16,7 @@ export let fx_dust = [
 			]
 		},
 		animation: {
+			id: 'fx_dust',
 			frames: [
 				{
 					fx_dust: {

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'quetzu_hit',
 	callbacks: {
 		8: [['stop']]
 	},

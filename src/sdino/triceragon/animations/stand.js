@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'triceragon_stand',
 	frames: [
 		{
 			left_horn: {

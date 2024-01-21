@@ -1,6 +1,7 @@
 // @ts-check
 
 export let release = {
+	id: 'toufufu_release',
 	callbacks: {
 		3: [['hit', 41]],
 		44: [['stop']]

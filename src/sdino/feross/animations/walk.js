@@ -1,6 +1,7 @@
 // @ts-check
 
 export let walk = {
+	id: 'feross_walk',
 	frames: [
 		{
 			special: {

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let special = {
+	id: 'toufufu_special',
 	frames: [
 		{
 			fx_dodge: {

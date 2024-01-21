@@ -1,6 +1,7 @@
 // @ts-check
 
 export let land = {
+	id: 'kabuki_land',
 	callbacks: {
 		3: [
 			['hit', 5],

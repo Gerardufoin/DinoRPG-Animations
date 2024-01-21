@@ -1,6 +1,7 @@
 // @ts-check
 
 export let attack = {
+	id: 'pigmou_attack',
 	callbacks: {
 		1: [['hit', 4]],
 		6: [['stop']]

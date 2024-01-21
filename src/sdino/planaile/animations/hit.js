@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'planaile_hit',
 	frames: [
 		{
 			left_eye: {

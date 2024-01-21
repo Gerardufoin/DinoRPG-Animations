@@ -1,6 +1,7 @@
 // @ts-check
 
 export let jump = {
+	id: 'feross_jump',
 	frames: [
 		{
 			special: {

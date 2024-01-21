@@ -1,6 +1,7 @@
 // @ts-check
 
 export let dead = {
+	id: 'nuagoz_dead',
 	callbacks: {
 		35: [['stop']]
 	},

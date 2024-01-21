@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'toufufu_stand',
 	frames: [
 		{
 			left_lower_leg: {

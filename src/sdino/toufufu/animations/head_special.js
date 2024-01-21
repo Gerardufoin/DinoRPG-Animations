@@ -108,6 +108,7 @@ export let head_special = [
 			]
 		},
 		animation: {
+			id: 'toufufu_band',
 			// Frame 0 is the version of the headband for the still image and should not be used in the animation
 			callbacks: {
 				16: [['gotoAndPlay', 1]]

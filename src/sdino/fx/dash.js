@@ -36,6 +36,7 @@ export let fx_dash = [
 			]
 		},
 		animation: {
+			id: 'fx_dash',
 			frames: [
 				{
 					fx_dash_1: {}

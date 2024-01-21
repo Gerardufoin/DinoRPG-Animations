@@ -1,6 +1,7 @@
 // @ts-check
 
 export let jump = {
+	id: 'soufflet_l_jump',
 	frames: [
 		{
 			left_antennae: {

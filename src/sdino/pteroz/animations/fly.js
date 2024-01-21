@@ -1,6 +1,7 @@
 // @ts-check
 
 export let fly = {
+	id: 'pteroz_fly',
 	frames: [
 		{
 			left_wing: {

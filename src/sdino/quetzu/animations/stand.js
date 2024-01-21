@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'quetzu_stand',
 	frames: [
 		{
 			head: {

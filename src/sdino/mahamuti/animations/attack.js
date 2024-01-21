@@ -1,6 +1,7 @@
 // @ts-check
 
 export let attack = {
+	id: 'mahamuti_attack',
 	callbacks: {
 		6: [['hit']]
 	},

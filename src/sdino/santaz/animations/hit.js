@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'santaz_hit',
 	frames: [
 		{
 			hair: {

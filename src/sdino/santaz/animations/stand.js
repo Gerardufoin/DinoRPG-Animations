@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'santaz_stand',
 	frames: [
 		{
 			hair: {

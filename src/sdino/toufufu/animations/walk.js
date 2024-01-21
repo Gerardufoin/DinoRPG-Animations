@@ -1,6 +1,7 @@
 // @ts-check
 
 export let walk = {
+	id: 'toufufu_walk',
 	frames: [
 		{
 			head: {

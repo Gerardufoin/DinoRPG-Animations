@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'grdien_hit',
 	frames: [
 		{
 			l_eye: {

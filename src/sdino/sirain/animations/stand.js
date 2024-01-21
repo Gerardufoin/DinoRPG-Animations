@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'sirain_stand',
 	frames: [
 		{
 			eye: {

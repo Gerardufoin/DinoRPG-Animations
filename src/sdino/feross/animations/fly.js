@@ -1,6 +1,7 @@
 // @ts-check
 
 export let fly = {
+	id: 'feross_fly',
 	frames: [
 		{
 			left_front_leg: {

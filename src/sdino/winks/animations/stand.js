@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'winks_stand',
 	callbacks: {
 		0: [['stop']]
 	},

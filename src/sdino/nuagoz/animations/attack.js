@@ -1,6 +1,7 @@
 // @ts-check
 
 export let attack = {
+	id: 'nuagoz_attack',
 	callbacks: {
 		2: [['hit', 13]],
 		15: [['stop']]

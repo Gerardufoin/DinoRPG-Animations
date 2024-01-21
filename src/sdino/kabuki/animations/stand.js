@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'kabuki_stand',
 	frames: [
 		{
 			special: {

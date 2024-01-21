@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'hippoclamp_stand',
 	frames: [
 		{
 			left_eye: {

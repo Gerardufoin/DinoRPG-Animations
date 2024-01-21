@@ -31,6 +31,7 @@ export let fx_slash = [
 			]
 		},
 		animation: {
+			id: 'fx_slash',
 			frames: [
 				{
 					fx_slash_1: {}

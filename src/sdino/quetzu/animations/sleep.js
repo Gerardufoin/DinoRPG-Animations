@@ -1,6 +1,7 @@
 // @ts-check
 
 export let sleep = {
+	id: 'quetzu_sleep',
 	frames: [
 		{
 			head: {

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'kabuki_hit',
 	frames: [
 		{
 			special: {

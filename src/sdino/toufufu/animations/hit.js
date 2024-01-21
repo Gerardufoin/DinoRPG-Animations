@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'toufufu_hit',
 	frames: [
 		{
 			left_lower_leg: {

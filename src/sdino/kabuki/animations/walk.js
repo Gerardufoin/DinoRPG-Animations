@@ -1,6 +1,7 @@
 // @ts-check
 
 export let walk = {
+	id: 'kabuki_walk',
 	frames: [
 		{
 			special: {

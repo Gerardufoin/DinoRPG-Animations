@@ -1,6 +1,7 @@
 // @ts-check
 
 export let hit = {
+	id: 'gorilloz_hit',
 	frames: [
 		{
 			left_hand: {

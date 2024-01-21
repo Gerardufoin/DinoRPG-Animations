@@ -1,6 +1,7 @@
 // @ts-check
 
 export let fly = {
+	id: 'planaile_fly',
 	callbacks: {
 		4: [['stop']]
 	},

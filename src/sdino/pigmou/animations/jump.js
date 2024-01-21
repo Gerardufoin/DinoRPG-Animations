@@ -1,6 +1,7 @@
 // @ts-check
 
 export let jump = {
+	id: 'pigmou_jump',
 	callbacks: {
 		2: [['stop']]
 	},

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'winks_run',
 	frames: [
 		{
 			left_leg_2: {

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let walk = {
+	id: 'triceragon_walk',
 	frames: [
 		{
 			left_horn: {

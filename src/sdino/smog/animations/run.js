@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'smog_run',
 	frames: [
 		{
 			left_foreleg: {

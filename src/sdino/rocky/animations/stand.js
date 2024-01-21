@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'rocky_land',
 	frames: [
 		{
 			left_hand: {

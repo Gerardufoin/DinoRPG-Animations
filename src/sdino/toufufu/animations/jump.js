@@ -1,6 +1,7 @@
 // @ts-check
 
 export let jump = {
+	id: 'toufufu_jump',
 	frames: [
 		{
 			head: {

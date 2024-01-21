@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'pigmou_stand',
 	frames: [
 		{
 			back_left_leg: {

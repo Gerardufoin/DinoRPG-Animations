@@ -1,6 +1,7 @@
 // @ts-check
 
 export let walk = {
+	id: 'planaile_walk',
 	frames: [
 		{
 			left_eye: {

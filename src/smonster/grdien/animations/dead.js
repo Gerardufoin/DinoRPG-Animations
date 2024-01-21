@@ -1,6 +1,7 @@
 // @ts-check
 
 export let dead = {
+	id: 'grdien_dead',
 	callbacks: {
 		49: [['stop']]
 	},

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let attack = {
+	id: 'quetzu_attack',
 	callbacks: {
 		9: [['resetChildAnimations'], ['hit', 18]],
 		27: [['stop']]

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let run = {
+	id: 'soufflet_l_run',
 	frames: [
 		{
 			left_antennae: {

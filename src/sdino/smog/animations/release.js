@@ -1,6 +1,7 @@
 // @ts-check
 
 export let release = {
+	id: 'smog_release',
 	callbacks: {
 		5: [['hit']],
 		8: [['stop']]

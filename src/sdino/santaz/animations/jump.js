@@ -1,6 +1,7 @@
 // @ts-check
 
 export let jump = {
+	id: 'santaz_jump',
 	frames: [
 		{
 			hair: {

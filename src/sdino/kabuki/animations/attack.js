@@ -1,6 +1,7 @@
 // @ts-check
 
 export let attack = {
+	id: 'kabuki_attack',
 	callbacks: {
 		3: [['hit', 9]],
 		12: [['stop']]

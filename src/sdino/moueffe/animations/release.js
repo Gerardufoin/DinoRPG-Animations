@@ -1,6 +1,7 @@
 // @ts-check
 
 export let release = {
+	id: 'moueffe_release',
 	callbacks: {
 		12: [['hit', 10]],
 		15: [['stop']]

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let release = {
+	id: 'mahamuti_release',
 	callbacks: {
 		3: [['hit', 39]],
 		43: [['stop']]

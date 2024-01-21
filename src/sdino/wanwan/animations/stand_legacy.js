@@ -1,6 +1,7 @@
 // @ts-check
 
 export let stand = {
+	id: 'wanwan_stand_l',
 	frames: [
 		{
 			nose: {

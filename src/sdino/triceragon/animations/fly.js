@@ -1,6 +1,7 @@
 // @ts-check
 
 export let fly = {
+	id: 'triceragon_fly',
 	frames: [
 		{
 			left_horn: {

@@ -1,6 +1,7 @@
 // @ts-check
 
 export let walk = {
+	id: 'pigmou_walk',
 	callbacks: {
 		10: [['gotoAndPlay', 1]]
 	},

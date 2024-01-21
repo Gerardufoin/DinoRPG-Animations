@@ -24,7 +24,7 @@ const fight = new DinoAnim.Fight({
 				life: 100,
 				name: 'Dragon Jr',
 				side: true,
-				size: 100,
+				scale: 1,
 				fid: 0,
 				gfx: '09T1Yt9wqq4Rx000'
 			}

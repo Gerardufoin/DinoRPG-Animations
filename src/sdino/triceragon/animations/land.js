@@ -1,6 +1,7 @@
 // @ts-check
 
 export let land = {
+	id: 'triceragon_land',
 	frames: [
 		{
 			left_horn: {

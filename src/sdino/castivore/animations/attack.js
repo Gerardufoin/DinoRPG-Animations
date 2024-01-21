@@ -1,6 +1,7 @@
 // @ts-check
 
 export let attack = {
+	id: 'castivore_attack',
 	callbacks: {
 		2: [['hit']],
 		5: [['stop']]

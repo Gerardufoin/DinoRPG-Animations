@@ -1,6 +1,7 @@
 // @ts-check
 
 export let big = {
+	id: 'toufufu_big',
 	callbacks: {
 		12: [['hit', 22]],
 		34: ['stop']
