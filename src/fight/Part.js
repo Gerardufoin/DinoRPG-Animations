@@ -64,7 +64,7 @@ export class Part extends Phys {
 			if (this._timer <= this._fadeLimit) {
 				const c = this._timer / this._fadeLimit;
 				if (this._fadeScale) {
-					this._root.scale.x = this._root.scale.y = c * this.scale;
+					this._root.scale.x = this._root.scale.y = c * this._scale;
 				} else {
 					this._root.alpha = c * this._alpha;
 				}

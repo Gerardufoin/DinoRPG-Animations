@@ -11,6 +11,7 @@ import { Scene } from './Scene.js';
 import { Timer } from './Timer.js';
 import { SimpleTween } from './SimpleTween.js';
 import { Slot } from './Slot.js';
+import { Score } from './parts/Score.js';
 import { smonster } from '../smonster.js';
 
 export class Fighter extends Phys {
@@ -648,7 +649,7 @@ export class Fighter extends Phys {
 		if (this._slot) {
 			this._slot.setLife(this._life / this._maxLife);
 		}
-		this.showDamages(amount, 0);
+		this.showDamages(amount, false);
 		this._lockTimer = 5;
 		if (lifeFx !== null) {
 			this.lifeEffect(lifeFx);
@@ -656,17 +657,13 @@ export class Fighter extends Phys {
 	}
 
 	/**
-	 * TODO
-	 * @param {number} damages
-	 * @param {number} type
-	 * @returns
+	 * Display the damage received above the Fighter by spawning a new Score object.
+	 * @param {number} damages The number to display.
+	 * @param {boolean} hurt If true, the number is red, otherwise it is green. True by default.
 	 */
-	showDamages(damages, type = null) {
-		console.log(`ShowDamages: Fighter ${this.id} took ${damages} damages.`);
+	showDamages(damages, hurt = true) {
 		if (damages <= 0) return;
-		/*var mc = Scene.me.dm.attach("points",Scene.DP_INTER) ;
-		var py = Scene.getY(y) + (z-height)*0.5;
-		var p = new sp.Score(mc,x,py,d,type);*/
+		new Score(this._scene, this._x, this._scene.getY(this._y) + (this._z - this._height) * 0.5, damages, hurt);
 	}
 
 	/**

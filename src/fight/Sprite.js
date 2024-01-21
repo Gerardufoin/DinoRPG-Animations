@@ -24,7 +24,7 @@ export class Sprite {
 	_z = 0.0;
 	_ray = 0.0;
 	force = 0.0;
-	scale = 1;
+	_scale = 1;
 	/**
 	 * @type {Container}
 	 */
@@ -66,8 +66,8 @@ export class Sprite {
 	}
 
 	setScale(n) {
-		this.scale = n;
-		this._root.scale = n;
+		this._scale = n;
+		this._root.scale.x = this._root.scale.y = n;
 	}
 
 	/**
@@ -84,8 +84,12 @@ export class Sprite {
 	updatePos() {
 		const sceneY = this._scene.getY(this._y);
 		this._root.x = this._x;
-		this._root.y = sceneY + this._z * 0.5;
-		this._root.zIndex = sceneY;
+		if (this._z !== undefined) {
+			this._root.y = sceneY + this._z * 0.5;
+			this._root.zIndex = sceneY;
+		} else {
+			this._root.y = this._y;
+		}
 		if (this._shade) {
 			this._shade.x = this._x;
 			this._shade.y = sceneY;
