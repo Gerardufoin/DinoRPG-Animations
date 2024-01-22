@@ -30,11 +30,13 @@ export class Score extends Phys2D {
 		const txt = new Text(value, {
 			fontFamily: 'Arial',
 			fontSize: 14 * (1 + (Math.abs(value) / 100) * 2),
+			fontWeight: 'bold',
 			align: 'center',
 			fill: 0xffffff,
 			stroke: hurt ? 0xaa0000 : 0x00aa00,
 			strokeThickness: 2
 		});
+		txt.resolution = 2;
 		txt.anchor.set(0.5);
 		super(txt, scene, Scene.LAYERS.INTER);
 		this._x = x;

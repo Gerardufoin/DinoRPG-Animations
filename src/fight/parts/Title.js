@@ -28,6 +28,7 @@ export class Title extends Phys2D {
 			stroke: 0x000000,
 			strokeThickness: 2
 		});
+		txt.resolution = 2;
 		txt.anchor.set(0.5);
 		super(txt, scene, Scene.LAYERS.INTER);
 		this._x = x;
