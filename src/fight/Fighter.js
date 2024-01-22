@@ -13,6 +13,7 @@ import { SimpleTween } from './SimpleTween.js';
 import { Slot } from './Slot.js';
 import { Score } from './parts/Score.js';
 import { smonster } from '../smonster.js';
+import { Title } from './parts/Title.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -85,6 +86,10 @@ export class Fighter extends Phys {
 	_slot;
 
 	_lock = false;
+	/**
+	 * Name of the Fighter.
+	 * @type {string}
+	 */
 	_name;
 	_isDino;
 	_life;
@@ -832,7 +837,7 @@ export class Fighter extends Phys {
 	 * Display the Fighter name temporarily.
 	 */
 	showName() {
-		//TODO
+		new Title(this._scene, this._x, this._scene.getY(this._y) - this._height, this._name.toUpperCase());
 	}
 
 	/**
