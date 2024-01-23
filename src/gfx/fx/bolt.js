@@ -1,4 +1,3 @@
-import { BLEND_MODES } from 'pixi.js';
 import { ref } from '../references.js';
 
 // 939

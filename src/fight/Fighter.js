@@ -16,6 +16,7 @@ import { smonster } from '../smonster.js';
 import { Title } from './parts/Title.js';
 import { Sprite } from './Sprite.js';
 import { Bolt } from './parts/Bolt.js';
+import { Flameche } from './parts/Flameche.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -835,13 +836,30 @@ export class Fighter extends Phys {
 	// FX SECTION
 
 	/**
+	 * Adds flameches particles to the Fighter.
+	 * @param {number} max The number of flames to spawn in.
+	 * @param {number} sleep Random delay before the flames appears.
+	 */
+	fxBurn(max, sleep = 10) {
+		for (let i = 0; i < max; ++i) {
+			const flameche = new Flameche(
+				this._scene,
+				(Math.random() * 2 - 1) * this._ray,
+				-Math.random() * this._height,
+				this.intSide,
+				Math.random() * sleep
+			);
+			this.addSprite(flameche, Fighter.LAYERS.DP_FRONT);
+		}
+	}
+
+	/**
 	 * Adds bolts particles to the Fighter.
 	 * @param {number} max Number of bolts particles to spawn in.
 	 */
 	fxLightning(max) {
 		for (let i = 0; i < max; ++i) {
 			const bolt = new Bolt(this._scene, (Math.random() * 2 - 1) * this._ray, -Math.random() * this._height);
-			console.log('Lightning !!!!!!!!!!!!!!!!!');
 			this.addSprite(bolt, Fighter.LAYERS.DP_FRONT);
 		}
 	}
@@ -853,6 +871,12 @@ export class Fighter extends Phys {
 	lifeEffect(effect) {
 		// TODO
 		switch (effect.fx) {
+			case Fighter.LifeEffect.Burn:
+				this.fxBurn(effect.amount);
+				break;
+			case Fighter.LifeEffect.Fire:
+				this.fxBurn(14, 20);
+				break;
 			case Fighter.LifeEffect.Lightning:
 				this.fxLightning(16);
 				break;

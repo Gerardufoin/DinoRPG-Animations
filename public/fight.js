@@ -41,7 +41,7 @@ const fightData = [
 ];
 const version = 0;
 const fightVersion = [
-	{ legacy_data: fightData[2], debug: true },
+	{ legacy_data: fightData[2], debug: false },
 	{
 		bg: 's_dnv',
 		top: 120,

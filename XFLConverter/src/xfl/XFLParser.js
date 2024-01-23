@@ -6,10 +6,11 @@ import fs from 'fs';
 
 import { mapping_sdino } from './mapping_sdino.js';
 import { mapping_smonster } from './mapping_smonster.js';
+import { mapping_gfx } from './mapping_gfx.js';
 
 const FLAG_NO_RGB = false;
 const ELEM_IGNORE_RGB = ['156'];
-const MAPPING = [mapping_sdino, mapping_smonster];
+const MAPPING = [mapping_sdino, mapping_smonster, mapping_gfx];
 
 /**
  * Parse XFL files and return the raw data ready for conversion.
@@ -407,6 +408,8 @@ export class XFLParser {
 						blq: this.parseFloat(symbolInstance.filters?.BlurFilter?.quality),
 						l: layer
 					};
+					frameData.tx = frameData.tx === 0 ? undefined : frameData.tx;
+					frameData.ty = frameData.ty === 0 ? undefined : frameData.ty;
 					if (symbolInstance.filters?.AdjustColorFilter) {
 						console.log('AdjustColorFilter found in animation but not handled.');
 					}
