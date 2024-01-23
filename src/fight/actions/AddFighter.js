@@ -1,5 +1,8 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/AddFighter.hx
+import { Container, Sprite } from 'pixi.js';
+import { TextureManager } from '../../display/TextureManager.js';
+import { ref as gfx } from '../../gfx/references.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
@@ -35,6 +38,12 @@ export class AddFighter extends State {
 	 * @type {Fighter}
 	 */
 	_fighter;
+
+	/**
+	 * Mask used to make the Fighter pop out of the ground for EntranceEffect.Ground.
+	 * @type {Container}
+	 */
+	_holeMask = new Container();
 
 	/**
 	 * Add a Fighter to the scene. The entrance propery will decide how the Fighter arrives on the scene.
@@ -86,17 +95,26 @@ export class AddFighter extends State {
 				this._fighter.moveTo(ex, ey);
 				break;
 			case EntranceEffect.Ground:
-				// Update the pose to instantiate the mask at the right position.
-				this._fighter.updatePos();
-				// TODO
-				/*holeMask = Scene.me.dm.attach("mcHoleMask",Scene.DP_FIGHTER);
-				f.root.setMask(holeMask);
-				holeMask._x = f.root._x;
-				holeMask._y = f.root._y;*/
+				{
+					// Update the pose to instantiate the mask at the right position.
+					this._fighter.updatePos();
 
-				this._fighter.playAnim('stand');
-				this._fighter.bounceFrict = 0;
-				this._fighter.updateShadeSize(0);
+					const holeText = TextureManager.getTextureFromCompressedReference(gfx.parts.mcHoleMask);
+					const holeSprite = new Sprite(holeText);
+					const scale = ((this._fighter._ray + 20) * 2) / 100;
+					holeSprite.x = -gfx.parts.mcHoleMask.offset.x * scale * 3;
+					holeSprite.y = -gfx.parts.mcHoleMask.offset.y * scale;
+					holeSprite.scale.x = scale * 3;
+					holeSprite.scale.y = scale;
+					this._holeMask.addChild(holeSprite);
+					const root = this._fighter.getRootContainer();
+					root.addChild(this._holeMask);
+					root.mask = this._holeMask;
+
+					this._fighter.playAnim('stand');
+					this._fighter.bounceFrict = 0;
+					this._fighter.updateShadeSize(0);
+				}
 				break;
 			case EntranceEffect.Anim:
 				this._fighter.playAnim(this._fInfos.anim);
@@ -125,17 +143,16 @@ export class AddFighter extends State {
 				this._fighter.updateShadeSize(this._coef);
 				break;
 			case EntranceEffect.Ground:
-				// TODO
-				//holeMask._xscale = holeMask._yscale = (f.ray+20)*2;
-				//holeMask._xscale *= 3 ;
-
 				this._fighter._z = (this._fighter.height * 2 + 50) * (1 - this._coef);
+				this._holeMask.y = -this._fighter._z * 0.5;
 				if (this._coef > 0.8) {
 					this._fighter.updateShadeSize((this._coef - 0.8) / 0.2);
 				}
 				if (this._coef == 1) {
 					this._fighter.bounceFrict = 0.5;
-					//holeMask.removeMovieClip();
+					const root = this._fighter.getRootContainer();
+					root.mask = undefined;
+					root.removeChild(this._holeMask);
 				}
 				this._fighter.fxLand(1, 1, 20);
 				break;
@@ -146,7 +163,7 @@ export class AddFighter extends State {
 		if (this._coef === 1) {
 			if (this._fInfos.entrance === EntranceEffect.Fall) {
 				this._fighter.playAnim('land');
-			} else if (this._fInfos.entrance !== undefined /* And not jump? */) {
+			} else if (this._fInfos.entrance !== undefined /* TODO And not jump? */) {
 				this._fighter.backToDefault();
 			}
 			this._fighter.setLockTimer(20);

@@ -20,5 +20,6 @@ export let mapping_gfx = {
 	935: 'fx/mcBolt_2',
 	936: 'fx/mcBolt_3',
 	937: 'fx/mcBolt_4',
-	938: 'fx/mcBolt_5'
+	938: 'fx/mcBolt_5',
+	975: 'parts/mcHoleMask'
 };
