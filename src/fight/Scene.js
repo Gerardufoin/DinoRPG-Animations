@@ -100,7 +100,14 @@ export class Scene extends Container {
 		//castle.update();
 		//updateForce();
 		this._layers.map((l) => {
-			l.sprites.map((s) => s.update(timer));
+			l.sprites = l.sprites.filter((s) => {
+				s.update(timer);
+				if (s.isDeleted) {
+					l.container.removeChild(s.getRootContainer());
+					return false;
+				}
+				return true;
+			});
 		});
 		// SLOTS
 		//updateSlots();
@@ -171,16 +178,6 @@ export class Scene extends Container {
 	addSprite(sprite, layer) {
 		this._layers[layer].container.addChild(sprite.getRootContainer());
 		this._layers[layer].sprites.push(sprite);
-	}
-
-	/**
-	 * Removes a Sprite from the specified layer.
-	 * @param {Sprite} sprite The Sprite to remove.
-	 * @param {number} layer The Scene.LAYERS where to remove the Sprite.
-	 */
-	removeSprite(sprite, layer) {
-		this._layers[layer].container.removeChild(sprite.getRootContainer());
-		this._layers[layer].sprites = this._layers[layer].sprites.filter((s) => s.spriteId !== sprite.spriteId);
 	}
 
 	/**

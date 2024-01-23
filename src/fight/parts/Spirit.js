@@ -76,7 +76,7 @@ export class Spirit extends Part {
 	 * @param {Scene} scene The Scene where to add the Spirit.
 	 */
 	constructor(scene) {
-		super(new Container(), scene, Scene.LAYERS.FIGHTERS);
+		super(new Container(), scene);
 		const texture = TextureManager.getTextureFromCompressedReference(gfx.parts.mcGhost);
 		const sprite = Sprite.from(texture);
 		this._head.addChild(sprite);

@@ -23,7 +23,7 @@ export class Animation extends Container {
 	/**
 	 * Current animation loaded.
 	 * Contains all the keyframes.
-	 * @type {any}
+	 * @type {{id: string, callbacks?: object, frames: object[]}}
 	 */
 	_animation = null;
 	/**
@@ -248,7 +248,7 @@ export class Animation extends Container {
 
 	/**
 	 * Replace the current animation by the one passed as parameter.
-	 * @param {Array} animation The animation to set as the current animation.
+	 * @param {{id: string, callbacks?: object, frames: object[]}} animation The animation to set as the current animation.
 	 */
 	setAnimation(animation) {
 		this._ended = false;

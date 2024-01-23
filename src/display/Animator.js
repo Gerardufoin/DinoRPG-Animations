@@ -4,6 +4,7 @@ import { GlowFilter } from '@pixi/filter-glow';
 import { PixiHelper } from './PixiHelper.js';
 import { Animation } from './Animation.js';
 import { ImageExtractor } from './ImageExtractor.js';
+import { PartManager } from './PartManager.js';
 
 /**
  * The Animator class will contain the dino's body and control its animations.
@@ -240,6 +241,23 @@ export class Animator extends Container {
 	 */
 	getCurrentAnimationLength() {
 		return this._body.getAnimationLength();
+	}
+
+	/**
+	 * Use the detail of an animation to fill the animator with the appropriate parts and animation.
+	 * @param {{parts: object, animation: {id: string, callbacks?: object, frames: object[]}}} details The detail of the animation to instantiate.
+	 * @param {number} scale The scale of the animation. Default to 1.
+	 * @returns {Animator} The instance of this animator to chain calls.
+	 */
+	loadAnimation(details, scale = 1) {
+		this._body.setAnimation(details.animation);
+		for (const pName in details.parts) {
+			const element = PartManager.createPart(details.parts[pName], [], [], '', scale);
+			if (element) {
+				this.addPart(pName, element);
+			}
+		}
+		return this;
 	}
 
 	/**

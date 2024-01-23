@@ -40,6 +40,8 @@ export class Dead extends State {
 	 */
 	init() {
 		const spirit = new Spirit(this._scene);
+		this._scene.addSprite(spirit, Scene.LAYERS.FIGHTERS);
+
 		spirit._x = this._fighter.position.x;
 		spirit._y = this._fighter.position.y - this._fighter.height;
 		spirit.updatePos();

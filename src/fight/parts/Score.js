@@ -38,7 +38,7 @@ export class Score extends Phys2D {
 		});
 		txt.resolution = 2;
 		txt.anchor.set(0.5);
-		super(txt, scene, Scene.LAYERS.INTER);
+		super(txt, scene);
 		this._x = x;
 		this._y = y;
 		this._limitY = y - 25;

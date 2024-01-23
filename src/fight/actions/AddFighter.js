@@ -47,6 +47,8 @@ export class AddFighter extends State {
 		super(scene, endCall);
 		this._fInfos = fighter;
 		this._fighter = new Fighter(this._fInfos, this._scene);
+		this._scene.addSprite(this._fighter, Scene.LAYERS.FIGHTERS);
+
 		this._coefSpeed = 0.03;
 		this._endTimer = 5;
 		this._scene.addFighter(this._fighter);

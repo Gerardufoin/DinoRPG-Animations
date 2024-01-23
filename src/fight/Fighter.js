@@ -14,6 +14,8 @@ import { Slot } from './Slot.js';
 import { Score } from './parts/Score.js';
 import { smonster } from '../smonster.js';
 import { Title } from './parts/Title.js';
+import { Sprite } from './Sprite.js';
+import { Bolt } from './parts/Bolt.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -63,6 +65,17 @@ export class Fighter extends Phys {
 		Dazzled: 13,
 		Stun: 14
 	};
+	static LAYERS = {
+		DP_BACK: 0,
+		DP_BODY: 1,
+		DP_STATUS: 2,
+		DP_FRONT: 3
+	};
+	/**
+	 * Layers of the Fighters. Each keys of Fighter.LAYERS generate a layer at initialisation.
+	 * @type {{container: Container, sprites: Sprite[]}[]}
+	 */
+	_layers = [];
 
 	/**
 	 * The PixiJS representation of the Fighter.
@@ -183,7 +196,7 @@ export class Fighter extends Phys {
 
 	constructor(fInfos, scene) {
 		const body = new Container();
-		super(body, scene, Scene.LAYERS.FIGHTERS);
+		super(body, scene);
 
 		this.id = fInfos.fid;
 		this._isDino = fInfos.dino;
@@ -194,6 +207,14 @@ export class Fighter extends Phys {
 		this._size = Math.pow(fInfos.scale ?? 1, 0.65);
 
 		this.body = body;
+		for (const k in Fighter.LAYERS) {
+			this._layers.push({
+				container: new Container(),
+				sprites: []
+			});
+			this.body.addChild(this._layers[Fighter.LAYERS[k]].container);
+		}
+
 		if (this.isDino) {
 			const dino = new sdino({
 				data: fInfos.gfx,
@@ -215,7 +236,7 @@ export class Fighter extends Phys {
 			this._width = monster.collider.width * this._size;
 			this._animator = monster;
 		}
-		this.body.addChild(this._animator);
+		this._layers[Fighter.LAYERS.DP_BODY].container.addChild(this._animator);
 		this.setSide(fInfos.side);
 
 		this._ray = this._width * 0.5 * this._size;
@@ -276,12 +297,33 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Adds a Sprite to the specific layer.
+	 * The Sprite will then be updated when the Fighter will be updated.
+	 * @param {Sprite} sprite The Sprite to add.
+	 * @param {number} layer The Fighter.LAYERS where to add the Sprite.
+	 */
+	addSprite(sprite, layer) {
+		this._layers[layer].container.addChild(sprite.getRootContainer());
+		this._layers[layer].sprites.push(sprite);
+	}
+
+	/**
 	 * TODO.
 	 * @param {Timer} timer The Timer managing the elapsed time.
 	 */
 	update(timer) {
 		super.update(timer);
 		this._animator.update(timer.deltaTimeMS);
+		this._layers.map((l) => {
+			l.sprites = l.sprites.filter((s) => {
+				s.update(timer);
+				if (s.isDeleted) {
+					l.container.removeChild(s.getRootContainer());
+					return false;
+				}
+				return true;
+			});
+		});
 		if (this._lockTimer > 0) {
 			this._lockTimer -= timer.tmod;
 		}
@@ -668,7 +710,14 @@ export class Fighter extends Phys {
 	 */
 	showDamages(damages, hurt = true) {
 		if (damages <= 0) return;
-		new Score(this._scene, this._x, this._scene.getY(this._y) + (this._z - this._height) * 0.5, damages, hurt);
+		const dmg = new Score(
+			this._scene,
+			this._x,
+			this._scene.getY(this._y) + (this._z - this._height) * 0.5,
+			damages,
+			hurt
+		);
+		this._scene.addSprite(dmg, Scene.LAYERS.INTER);
 	}
 
 	/**
@@ -786,11 +835,28 @@ export class Fighter extends Phys {
 	// FX SECTION
 
 	/**
+	 * Adds bolts particles to the Fighter.
+	 * @param {number} max Number of bolts particles to spawn in.
+	 */
+	fxLightning(max) {
+		for (let i = 0; i < max; ++i) {
+			const bolt = new Bolt(this._scene, (Math.random() * 2 - 1) * this._ray, -Math.random() * this._height);
+			console.log('Lightning !!!!!!!!!!!!!!!!!');
+			this.addSprite(bolt, Fighter.LAYERS.DP_FRONT);
+		}
+	}
+
+	/**
 	 * Play the given Fighter.LifeEffect effect.
 	 * @param {{fx: number, amount?: number, size?: number}} effect The Fighter.LifeEffect to play.
 	 */
 	lifeEffect(effect) {
 		// TODO
+		switch (effect.fx) {
+			case Fighter.LifeEffect.Lightning:
+				this.fxLightning(16);
+				break;
+		}
 	}
 
 	/**
@@ -837,7 +903,13 @@ export class Fighter extends Phys {
 	 * Display the Fighter name temporarily.
 	 */
 	showName() {
-		new Title(this._scene, this._x, this._scene.getY(this._y) - this._height, this._name.toUpperCase());
+		const name = new Title(
+			this._scene,
+			this._x,
+			this._scene.getY(this._y) - this._height,
+			this._name.toUpperCase()
+		);
+		this._scene.addSprite(name, Scene.LAYERS.INTER);
 	}
 
 	/**

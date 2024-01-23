@@ -5,6 +5,7 @@ import { Container } from 'pixi.js';
 import { Sprite } from '../Sprite.js';
 import { Timer } from '../Timer.js';
 import { Scene } from '../Scene.js';
+import { Animator } from '../../display/Animator.js';
 
 /**
  * Create a Sprite impacted with a 2D physic.
@@ -26,6 +27,12 @@ export class Phys2D extends Sprite {
 	 * @type {number}
 	 */
 	_friction = 0;
+
+	/**
+	 * Pause the process for the given number of frames.
+	 * @type {number}
+	 */
+	_sleep = 0;
 	/**
 	 * The fadeout time. When it reaches 0, the Sprite fades out depending on its fade type.
 	 * @type {number}
@@ -53,14 +60,19 @@ export class Phys2D extends Sprite {
 	_fadeType;
 
 	/**
+	 * If the Phys2D is linked to an animator.
+	 * @type {Animator}
+	 */
+	_animator;
+
+	/**
 	 * Create a Sprite impacted by 2D physic.
 	 * This will unset the z coordinate of the Sprite.
 	 * @param {Container} container The display for the Sprite.
 	 * @param {Scene} scene The Scene containing the Sprite.
-	 * @param {number} layer The layer on the Scene where the Sprite will be added.
 	 */
-	constructor(container, scene, layer) {
-		super(container, scene, layer);
+	constructor(container, scene) {
+		super(container, scene);
 		this._z = undefined;
 	}
 	/**
@@ -68,6 +80,17 @@ export class Phys2D extends Sprite {
 	 * @param {Timer} timer The Fight's timer, containing the elapsed time.
 	 */
 	update(timer) {
+		if (this._sleep > 0) {
+			this._sleep -= timer.tmod;
+			if (this._sleep <= 0) {
+				this._root.visible = true;
+				if (this._animator) {
+					this._animator.playing = true;
+				}
+			}
+			return;
+		}
+
 		this._vy += this._weight * timer.tmod;
 
 		if (this._friction != 0) {
@@ -80,7 +103,7 @@ export class Phys2D extends Sprite {
 		this._y += this._vy * timer.tmod;
 
 		// TODO: Clean the fadeout types if the others are not used.
-		if (this._fadeoutTimer != null) {
+		if (this._fadeoutTimer > 0) {
 			this._fadeoutTimer -= timer.tmod;
 			if (this._fadeoutTimer < this._fadeLimit) {
 				var c = this._fadeoutTimer / this._fadeLimit;
@@ -104,11 +127,14 @@ export class Phys2D extends Sprite {
 					default:
 						this._root.alpha = c * this._alpha;
 				}
-				if (this._fadeoutTimer <= 0) {
-					this.kill();
-				}
+			}
+			if (this._fadeoutTimer <= 0) {
+				this.kill();
 			}
 		}
 		super.update(timer);
+		if (this._animator) {
+			this._animator.update(timer.deltaTimeMS);
+		}
 	}
 }

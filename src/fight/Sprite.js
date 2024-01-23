@@ -40,11 +40,21 @@ export class Sprite {
 	 * @type {Scene}
 	 */
 	_scene;
+
 	/**
-	 * Scene layer where the Sprite was added.
-	 * @type {number}
+	 * If true, the Sprite will be removed from its containers.
+	 * @type {boolean}
 	 */
-	_layer;
+	_toDelete = false;
+
+	/**
+	 * Show if the Sprite has been killed.
+	 * If so, it has to be removed from its containers.
+	 * @type {boolean}
+	 */
+	get isDeleted() {
+		return this._toDelete;
+	}
 
 	/*public var root : flash.MovieClip ;
 	public var shade : flash.MovieClip ;*/
@@ -57,12 +67,10 @@ export class Sprite {
 		return { x: this._x, y: this._y, z: this._z };
 	}
 
-	constructor(container, scene, layer) {
+	constructor(container, scene) {
 		this.spriteId = Sprite.CURRENT_ID++;
 		this._root = container;
 		this._scene = scene;
-		this._layer = layer;
-		this._scene.addSprite(this, this._layer);
 	}
 
 	setScale(n) {
@@ -151,7 +159,7 @@ export class Sprite {
 	 * Remove the Sprite from the Scene.
 	 */
 	kill() {
-		this._scene.removeSprite(this, this._layer);
+		this._toDelete = true;
 		//if(force != null)forceList.remove(this) ; TODO
 		//shade.removeMovieClip() ;
 	}
