@@ -167,7 +167,7 @@ export class PartManager {
 				new GlowFilter({
 					distance: part.glow.distance ?? 1,
 					color: part.glow.color,
-					quality: part.glow.quality ?? 1,
+					quality: part.glow.quality ?? 0.1,
 					innerStrength: 0,
 					outerStrength: part.glow.strength ?? 1
 				})

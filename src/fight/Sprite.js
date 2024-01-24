@@ -4,7 +4,12 @@
 import { Container } from 'pixi.js';
 import { Scene } from './Scene.js';
 import { Timer } from './Timer.js';
+import { Shade, ShadeType } from './parts/Shade.js';
+import { Animator } from '../display/Animator.js';
 
+/**
+ * Sprite class of DinoRPG, main component to display entities.
+ */
 export class Sprite {
 	/**
 	 * Allows the attribution of an unique ID for each Sprite.
@@ -25,8 +30,10 @@ export class Sprite {
 	_ray = 0.0;
 	force = 0.0;
 	_scale = 1;
+
 	/**
-	 * @type {Container}
+	 * The shadow of the Sprite.
+	 * @type {Animator}
 	 */
 	_shade;
 	/**
@@ -67,23 +74,35 @@ export class Sprite {
 		return { x: this._x, y: this._y, z: this._z };
 	}
 
+	/**
+	 * Create a new Sprite.
+	 * @param {Container} container PixiJS Container, which will become the root container.
+	 * @param {Scene} scene The Scene where the Sprite is instantiated.
+	 */
 	constructor(container, scene) {
 		this.spriteId = Sprite.CURRENT_ID++;
 		this._root = container;
 		this._scene = scene;
 	}
 
-	setScale(n) {
-		this._scale = n;
-		this._root.scale.x = this._root.scale.y = n;
+	/**
+	 * Set the scale of the Sprite.
+	 * @param {number} scale The new scale.
+	 */
+	setScale(scale) {
+		this._scale = scale;
+		this._root.scale.x = this._root.scale.y = scale;
 	}
 
 	/**
 	 * Update method of the Sprite. Will udpate its position.
-	 * @param {Timer} _timer The Timer managing the elapsed time. Unused for Sprite but used of its children.
+	 * @param {Timer} timer The Timer managing the elapsed time. Unused for Sprite but used of its children.
 	 */
-	update(_timer) {
+	update(timer) {
 		this.updatePos();
+		if (this._shade) {
+			this._shade.update(timer.deltaTimeMS);
+		}
 	}
 
 	/**
@@ -104,6 +123,10 @@ export class Sprite {
 		}
 	}
 
+	/**
+	 * Set the ray of the sprite, which is half its width.
+	 * @param {number} r The new ray.
+	 */
 	setRay(r) {
 		this._ray = r;
 		if (this._shade) {
@@ -111,27 +134,44 @@ export class Sprite {
 		}
 	}
 
-	dropShadow() {
+	/**
+	 * Create a new shadow for the Sprite and adds it the the Shade layer of the Scene.
+	 * @param {number} shadeType Which type of shade should be instantiated.
+	 */
+	dropShadow(shadeType = ShadeType.Normal) {
 		if (this._shade) return;
-		// TODO when context is found
-		/*shade = Main.me.scene.dm.attach("mcShade", Scene.DP_SHADE) ;
-		shade._alpha = 40 ;
-		updateShadeSize();
-		shade._x = -10000;
-		shade.gotoAndStop(shadeType+1);*/
+		this._shade = new Shade(shadeType);
+		this._shade.x = -10000;
+		this._shade.alpha = 0.45;
+		this._scene.addContainer(this._shade, Scene.LAYERS.SHADE);
+		this.updateShadeSize();
 	}
 
-	updateShadeSize(s = 1) {
+	/**
+	 * Remove the shade from the Sprite, if any.
+	 */
+	removeShadow() {
 		if (this._shade) {
-			this._shade.scale.x = this._ray * s * 5;
-			this._shade.scale.y = this._ray * s * 5 * 0.5;
+			this._scene.removeContainer(this._shade, Scene.LAYERS.SHADE);
+			this._shade = undefined;
 		}
 	}
 
 	/**
-	 *
-	 * @param {{x: number, y: number}} o
-	 * @returns
+	 * Update the scale of the Sprite's shadow.
+	 * @param {number} scale The new scale of the shadow.
+	 */
+	updateShadeSize(scale = 1) {
+		if (this._shade) {
+			this._shade.scale.x = (this._ray * scale * 5) / 100;
+			this._shade.scale.y = (this._ray * scale * 5 * 0.5) / 100;
+		}
+	}
+
+	/**
+	 * Get the distance between the Sprite and a given set of xy coordinates.
+	 * @param {{x: number, y: number}} o The coordinates to get the distance to.
+	 * @returns {number} The distance between the Sprite and the given coordinates.
 	 */
 	getDist(o) {
 		const dx = this._x - o.x;
@@ -140,9 +180,9 @@ export class Sprite {
 	}
 
 	/**
-	 *
-	 * @param {{x: number, y: number}} o
-	 * @returns
+	 * Get the angle between the coordinates of the Sprite and a given set of coordinates.
+	 * @param {{x: number, y: number}} o The coordinates to get the angle from.
+	 * @returns {number} The angle between the coordinates of the Sprite and the given coordinates.
 	 */
 	getAng(o) {
 		const dx = this._x - o.x;
@@ -150,8 +190,12 @@ export class Sprite {
 		return Math.atan2(dy, dx);
 	}
 
-	setForce(n) {
-		this._force = n;
+	/**
+	 * Sets the force of the Sprite in the Scene.
+	 * @param {number} force New force value.
+	 */
+	setForce(force) {
+		this._force = force;
 		//forceList.push(this) ;
 	}
 
@@ -161,9 +205,13 @@ export class Sprite {
 	kill() {
 		this._toDelete = true;
 		//if(force != null)forceList.remove(this) ; TODO
-		//shade.removeMovieClip() ;
+		this.removeShadow();
 	}
 
+	/**
+	 * Get the PixiJS Container of the Sprite.
+	 * @returns {Container} The root container of the Sprite.
+	 */
 	getRootContainer() {
 		return this._root;
 	}

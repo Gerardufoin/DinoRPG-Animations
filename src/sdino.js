@@ -26,6 +26,11 @@ export class sdino extends Animator {
 	 * @type {string}
 	 */
 	_code = '';
+	/**
+	 * If true, the dino's shadow is baked into the entity.
+	 * @type {boolean}
+	 */
+	_castShadow = true;
 
 	/**
 	 * The collider of the dinoz.
@@ -44,6 +49,7 @@ export class sdino extends Animator {
 	 */
 	constructor(data) {
 		super(data.autoUpdate ?? true);
+		this._castShadow = data.shadow ?? true;
 		this.init(data.data, data.damage, data.pflag, data.scale);
 		this.flip(data.flip);
 	}
@@ -102,7 +108,7 @@ export class sdino extends Animator {
 				this.addPart(pName, part);
 			}
 		}
-		if (this._dinoInfos.shadow) {
+		if (this._castShadow && this._dinoInfos.shadow) {
 			var shadow = PartManager.getSubPart(
 				this._dinoInfos.shadow,
 				dParts,

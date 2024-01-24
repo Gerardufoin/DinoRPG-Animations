@@ -181,6 +181,24 @@ export class Scene extends Container {
 	}
 
 	/**
+	 * Adds a PixiJS Container to a specific layer.
+	 * @param {Container} cont The Container to add to the layer.
+	 * @param {number} layer The layer where to add the Container.
+	 */
+	addContainer(cont, layer) {
+		this._layers[layer].container.addChild(cont);
+	}
+
+	/**
+	 * Removes a PixiJS Container from a specific layer.
+	 * @param {Container} cont The Container to remove from the layer.
+	 * @param {number} layer The layer from which to remove the Container.
+	 */
+	removeContainer(cont, layer) {
+		this._layers[layer].container.removeChild(cont);
+	}
+
+	/**
 	 * Register a new fighter to the scene.
 	 * @param {Fighter} fighter The figter to register.
 	 */

@@ -221,26 +221,31 @@ export class Fighter extends Phys {
 				data: fInfos.gfx,
 				autoUpdate: false,
 				pflag: true,
-				scale: this._size
+				scale: this._size,
+				shadow: false
 			});
 			this._height = dino.collider.height * this._size;
 			this._width = dino.collider.width * this._size;
 			this._animator = dino;
+			this._animator.y = -31 + 19; // DOMDocument.xml -> TODO move to dinoz description?
 		} else {
 			const monster = new smonster({
 				type: fInfos.gfx,
 				autoUpdate: false,
 				pflag: true,
-				scale: this._size
+				scale: this._size,
+				shadow: false
 			});
 			this._height = monster.collider.height * this._size;
 			this._width = monster.collider.width * this._size;
 			this._animator = monster;
+			this._animator.y = -31 + 23; // DOMDocument.xml
 		}
 		this._layers[Fighter.LAYERS.DP_BODY].container.addChild(this._animator);
 		this.setSide(fInfos.side);
 
-		this._ray = this._width * 0.5 * this._size;
+		this._ray = this._width * 0.5;
+		this.dropShadow();
 		this.setForce(10 * this._size);
 
 		// TODO
@@ -259,7 +264,6 @@ export class Fighter extends Phys {
 		*/
 
 		/*
-		dropShadow() ;
 
 		// BIND FX FUNC
 		Reflect.setField( skin,"_fxAttach",fxAttach );
@@ -995,8 +999,8 @@ export class Fighter extends Phys {
 		this.removeStatus();
 		this.playAnim('dead');
 		this._mode = Fighter.Mode.Dead;
-		//f.shade.removeMovieClip() ; TODO
-		//Sprite.forceList.remove(f);
+		this.removeShadow();
+		//Sprite.forceList.remove(f); TODO
 	}
 
 	/**
@@ -1022,13 +1026,11 @@ export class Fighter extends Phys {
 	 */
 	debugShowOrigin() {
 		const origin = new Graphics();
-		origin.beginFill(0xff0000).drawCircle(0, 0, 2).endFill();
+		origin.beginFill(0xff0000).drawCircle(0, 0, 3).endFill();
 		this.body.addChild(origin);
 		// Collider
 		this.body.addChild(
-			new Graphics()
-				.lineStyle(2, 0xff0000)
-				.drawRect(-this._width / 2, -this._height / 2, this._width, this._height)
+			new Graphics().lineStyle(2, 0xff0000).drawRect(-this._width / 2, -this._height, this._width, this._height)
 		);
 	}
 }

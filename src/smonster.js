@@ -13,6 +13,11 @@ export class smonster extends Animator {
 	 * @type {object}
 	 */
 	_monsterInfos;
+	/**
+	 * If true, the monster shadow is baked into the entity.
+	 * @type {boolean}
+	 */
+	_castShadow = true;
 
 	/**
 	 * The collider of the monster.
@@ -20,17 +25,18 @@ export class smonster extends Animator {
 	 */
 	get collider() {
 		return {
-			width: 36 * (this._monsterInfos?.width ?? 1),
+			width: 29 * (this._monsterInfos?.width ?? 1),
 			height: 39 * (this._monsterInfos?.height ?? 1)
 		};
 	}
 
 	/**
 	 * Create the monster passed as parameter.
-	 * @param {{type: string, autoUpdate?: boolean, pflag?: boolean, scale?: number, flip?: boolean}} data Data of the monster to instantiate.
+	 * @param {{type: string, autoUpdate?: boolean, pflag?: boolean, scale?: number, flip?: boolean, shadow?: boolean}} data Data of the monster to instantiate.
 	 */
 	constructor(data) {
 		super(data.autoUpdate ?? true);
+		this._castShadow = data.shadow ?? true;
 		this.init(data.type, data.pflag, data.scale);
 		this.flip(data.flip);
 	}
@@ -57,7 +63,7 @@ export class smonster extends Animator {
 				this.addPart(pName, part);
 			}
 		}
-		if (this._monsterInfos.shadow) {
+		if (this._castShadow && this._monsterInfos.shadow) {
 			var shadow = PartManager.getSubPart(this._monsterInfos.shadow, [], [], 'smonster/', this._body._scale);
 			if (shadow) this.addChildAt(shadow, 0);
 		}
