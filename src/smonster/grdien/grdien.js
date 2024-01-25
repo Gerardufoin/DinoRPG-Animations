@@ -27,6 +27,10 @@ export let grdien = {
 			ty: 24,
 			a: 1.258,
 			d: 1.258
+		},
+		// adjust
+		{
+			ty: -8
 		}
 	],
 	glow: {
@@ -39,7 +43,7 @@ export let grdien = {
 		ref: ref_sdino.fx.shadow,
 		transform: {
 			tx: -1.2,
-			ty: 7.7,
+			ty: 0,
 			a: 1.278,
 			d: 1.156
 		},

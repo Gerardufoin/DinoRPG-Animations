@@ -46,7 +46,7 @@ function updateDinoz(data) {
 	});
 	appPortrait.stage.addChild(currentPortrait);
 	currentPortrait.x = 20;
-	currentPortrait.y = 20;
+	currentPortrait.y = 31;
 
 	currentAnim = new DinoAnim.sdino({
 		data: data,
@@ -55,7 +55,7 @@ function updateDinoz(data) {
 	});
 	appAnimation.stage.addChild(currentAnim);
 	currentAnim.x = 50;
-	currentAnim.y = 50;
+	currentAnim.y = 60;
 }
 
 document.getElementById('update').addEventListener('click', () => {

@@ -107,6 +107,10 @@ export let planaile = {
 		{
 			tx: -12.35,
 			ty: -11.65
+		},
+		// adjust
+		{
+			ty: -8.9
 		}
 	],
 	glow: {
@@ -173,7 +177,7 @@ export let planaile = {
 		ref: ref.fx.shadow,
 		transform: {
 			tx: -1.25,
-			ty: 8.9,
+			ty: 0,
 			a: 0.917,
 			d: 0.917
 		},

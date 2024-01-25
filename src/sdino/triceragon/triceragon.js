@@ -112,6 +112,10 @@ export let triceragon = {
 		{
 			tx: 1.2,
 			ty: -1.9
+		},
+		// adjust
+		{
+			ty: -7.5
 		}
 	],
 	glow: {
@@ -179,7 +183,7 @@ export let triceragon = {
 		ref: ref.fx.shadow,
 		transform: {
 			tx: -2.15,
-			ty: 10.4,
+			ty: 0,
 			a: 0.968,
 			d: 0.709
 		},

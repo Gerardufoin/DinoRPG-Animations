@@ -112,6 +112,10 @@ export let moueffe = {
 			ty: 0.85,
 			a: 0.915,
 			d: 0.915
+		},
+		// adjust
+		{
+			ty: -11.1
 		}
 	],
 	glow: {
@@ -191,7 +195,7 @@ export let moueffe = {
 		ref: ref.fx.shadow,
 		transform: {
 			tx: -0.8,
-			ty: 11.1,
+			ty: 0,
 			a: 1.351,
 			d: 1.129
 		},

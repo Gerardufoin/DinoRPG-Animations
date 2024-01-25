@@ -111,6 +111,10 @@ export let santaz = {
 		{
 			tx: 0.6,
 			ty: -1.75
+		},
+		// adjust
+		{
+			ty: -7.5
 		}
 	],
 	glow: {
@@ -182,8 +186,8 @@ export let santaz = {
 	shadow: {
 		ref: ref.fx.shadow,
 		transform: {
-			tx: -1.4,
-			ty: 9.65,
+			tx: 0,
+			ty: 0,
 			a: 0.709,
 			d: 0.709
 		},

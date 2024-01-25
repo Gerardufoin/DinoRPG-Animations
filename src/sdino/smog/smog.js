@@ -118,6 +118,11 @@ export let smog = {
 			ty: -16.8,
 			a: 1.141,
 			d: 1.141
+		},
+		// adjust
+		{
+			tx: 3.5,
+			ty: -4
 		}
 	],
 	glow: {
@@ -191,8 +196,8 @@ export let smog = {
 	shadow: {
 		ref: ref.fx.shadow,
 		transform: {
-			tx: -3.5,
-			ty: 6,
+			tx: 0,
+			ty: 0,
 			a: 0.968,
 			d: 0.709
 		},

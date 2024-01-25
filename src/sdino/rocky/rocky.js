@@ -107,6 +107,10 @@ export let rocky = {
 			ty: 0.4,
 			a: 0.953,
 			d: 0.953
+		},
+		// adjust
+		{
+			ty: -11.5
 		}
 	],
 	glow: {
@@ -173,7 +177,7 @@ export let rocky = {
 		ref: ref.fx.shadow,
 		transform: {
 			tx: -0.2,
-			ty: 11.5,
+			ty: 0,
 			a: 1.351,
 			d: 1.129
 		},

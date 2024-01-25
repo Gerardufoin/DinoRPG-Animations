@@ -108,6 +108,10 @@ export let pteroz = {
 			ty: 1.25,
 			a: 1.117,
 			d: 1.117
+		},
+		// adjust
+		{
+			ty: -8.55
 		}
 	],
 	glow: {
@@ -188,7 +192,7 @@ export let pteroz = {
 		ref: ref.fx.shadow,
 		transform: {
 			tx: -1.7,
-			ty: 8.55,
+			ty: 0,
 			a: 0.917,
 			d: 0.917
 		},

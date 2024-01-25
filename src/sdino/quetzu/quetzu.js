@@ -111,6 +111,11 @@ export let quetzu = {
 			ty: -16.8,
 			a: 1.141,
 			d: 1.141
+		},
+		// adjust
+		{
+			tx: 2.15,
+			ty: -7.5
 		}
 	],
 	glow: {
@@ -179,8 +184,8 @@ export let quetzu = {
 	shadow: {
 		ref: ref.fx.shadow,
 		transform: {
-			tx: -2.15,
-			ty: 10.4,
+			tx: 0,
+			ty: 0,
 			a: 0.968,
 			d: 0.709
 		},

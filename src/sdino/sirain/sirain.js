@@ -108,6 +108,10 @@ export let sirain = {
 		{
 			tx: -1.65,
 			ty: 0.9
+		},
+		// adjust
+		{
+			ty: -8.55
 		}
 	],
 	glow: {
@@ -198,7 +202,7 @@ export let sirain = {
 		ref: ref.fx.shadow,
 		transform: {
 			tx: -0.8,
-			ty: 8.55,
+			ty: 0,
 			a: 0.612,
 			d: 0.612
 		},

@@ -107,6 +107,10 @@ export let nuagoz = {
 		{
 			tx: 0.1,
 			ty: -1.8
+		},
+		// adjust
+		{
+			ty: -8.55
 		}
 	],
 	glow: {
@@ -277,7 +281,7 @@ export let nuagoz = {
 		ref: ref.fx.shadow,
 		transform: {
 			tx: -0.8,
-			ty: 8.55,
+			ty: 0,
 			a: 0.612,
 			d: 0.612
 		},

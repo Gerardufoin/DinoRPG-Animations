@@ -109,6 +109,10 @@ export let hippoclamp = {
 		{
 			tx: -1.5,
 			ty: -0.65
+		},
+		// adjust
+		{
+			ty: -8.65
 		}
 	],
 	glow: {
@@ -175,7 +179,7 @@ export let hippoclamp = {
 		ref: ref.fx.shadow,
 		transform: {
 			tx: -0.5,
-			ty: 8.65,
+			ty: 0,
 			a: 0.733,
 			d: 0.733
 		},

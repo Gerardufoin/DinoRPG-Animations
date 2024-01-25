@@ -18,7 +18,8 @@ export class Bolt extends Phys2D {
 	 * @param {number} y The initial Y coordinate.
 	 */
 	constructor(scene, x, y) {
-		const animator = new Animator(false).loadAnimation(fx_bolt, 1 + Math.random());
+		// Round random scale to first digit to optimize SVG loading
+		const animator = new Animator(false).loadAnimation(fx_bolt, Math.round((1 + Math.random()) * 10) / 10);
 		super(animator, scene);
 
 		this._animator = animator;

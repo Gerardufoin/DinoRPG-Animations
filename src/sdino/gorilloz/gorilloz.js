@@ -111,6 +111,10 @@ export let gorilloz = {
 		{
 			tx: -0.95,
 			ty: 2.0
+		},
+		// adjust
+		{
+			ty: -9.65
 		}
 	],
 	glow: {
@@ -156,7 +160,7 @@ export let gorilloz = {
 		ref: ref.fx.shadow,
 		transform: {
 			tx: -1.4,
-			ty: 9.65,
+			ty: 0,
 			a: 0.839,
 			d: 0.839
 		},

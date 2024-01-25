@@ -107,6 +107,11 @@ export let transforms = [
 	{
 		tx: -2.4,
 		ty: 1.25
+	},
+	// adjust
+	{
+		tx: 2,
+		ty: -7
 	}
 ];
 

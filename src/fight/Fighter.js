@@ -227,7 +227,6 @@ export class Fighter extends Phys {
 			this._height = dino.collider.height * this._size;
 			this._width = dino.collider.width * this._size;
 			this._animator = dino;
-			this._animator.y = -31 + 19; // DOMDocument.xml -> TODO move to dinoz description?
 		} else {
 			const monster = new smonster({
 				type: fInfos.gfx,
@@ -239,7 +238,6 @@ export class Fighter extends Phys {
 			this._height = monster.collider.height * this._size;
 			this._width = monster.collider.width * this._size;
 			this._animator = monster;
-			this._animator.y = -31 + 23; // DOMDocument.xml
 		}
 		this._layers[Fighter.LAYERS.DP_BODY].container.addChild(this._animator);
 		this.setSide(fInfos.side);

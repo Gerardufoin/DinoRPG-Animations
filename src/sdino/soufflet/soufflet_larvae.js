@@ -26,8 +26,8 @@ export let soufflet_larvae = {
 	shadow: {
 		ref: ref.fx.shadow,
 		transform: {
-			tx: -1.4,
-			ty: 9.65,
+			tx: 0,
+			ty: 0,
 			a: 0.968,
 			d: 0.709
 		},

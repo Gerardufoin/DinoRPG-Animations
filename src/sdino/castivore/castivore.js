@@ -107,6 +107,10 @@ export let castivore = {
 		{
 			tx: -14.85,
 			ty: 4.05
+		},
+		// adjust
+		{
+			ty: -9.5
 		}
 	],
 	glow: {
@@ -206,8 +210,8 @@ export let castivore = {
 	shadow: {
 		ref: ref.fx.shadow,
 		transform: {
-			tx: -0.8,
-			ty: 11.1,
+			tx: -2,
+			ty: 0,
 			a: 1.351,
 			d: 1.129
 		},

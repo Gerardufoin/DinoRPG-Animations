@@ -104,8 +104,12 @@ export let pigmou = {
 					contrast: 11
 				}
 			]
-		}
+		},
 		// 1642 No transform, set to tx: 0 and ty: 0
+		// adjust
+		{
+			ty: -8.55
+		}
 	],
 	glow: {
 		distance: 1,
@@ -184,7 +188,7 @@ export let pigmou = {
 		ref: ref.fx.shadow,
 		transform: {
 			tx: 0.3,
-			ty: 8.55,
+			ty: 0,
 			a: 0.917,
 			d: 0.917
 		},

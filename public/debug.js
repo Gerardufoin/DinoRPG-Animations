@@ -80,7 +80,7 @@ function addDinoz(data, showOrigin = false) {
 	if (showOrigin) {
 		const origin = new DinoAnim.Graphics();
 		origin.beginFill(0xff0000);
-		origin.drawCircle(20, 20, 1);
+		origin.drawCircle(20, 30, 1);
 		origin.endFill();
 		app.stage.addChild(origin);
 	}
