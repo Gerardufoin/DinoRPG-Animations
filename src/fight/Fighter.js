@@ -17,6 +17,7 @@ import { Title } from './parts/Title.js';
 import { Sprite } from './Sprite.js';
 import { Bolt } from './parts/Bolt.js';
 import { Flameche } from './parts/Flameche.js';
+import { SmokeSmall } from './parts/smoke/SmokeSmall.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -215,6 +216,7 @@ export class Fighter extends Phys {
 			});
 			this.body.addChild(this._layers[Fighter.LAYERS[k]].container);
 		}
+		this._layers[Fighter.LAYERS.DP_BODY].container.sortableChildren = true;
 
 		if (this.isDino) {
 			const dino = new sdino({
@@ -246,6 +248,9 @@ export class Fighter extends Phys {
 		this.dropShadow();
 		this.setForce(10 * this._size);
 
+		this._animator.registerCallback('fxAttach', (anim, args) => {
+			this.fxAttach(args[0], args[1], args[2], args[3]);
+		});
 		// TODO
 		/*if( haveProp(_PStatic) ) {
 			flFreeze = true;
@@ -253,10 +258,6 @@ export class Fighter extends Phys {
 		}*/
 
 		/* Notes:
-		skin._x = intSide* 20 ;
-		skin._y = -31 ;
-		skin._xscale = -intSide * 100 ;
-		skin._yscale = 100 ;
 		if(haveProp(_PDark)) skinDark(); ?
 
 		*/
@@ -912,6 +913,25 @@ export class Fighter extends Phys {
 			const sa = Math.sin(a);
 			const sp = 0.5 + Math.random() * speed;
 			this._scene.genGroundPart(this._x + ca * sp * cr, this._y + sa * sp * cr, ca * sp, sa * sp, null, true);
+		}
+	}
+
+	/**
+	 * Used by callbacks to spawn an FX in the Scene.
+	 * @param {string} asset The asset to spawn.
+	 * @param {number} x The x coordinate of the asset.
+	 * @param {number} y The y coordinate of the asset.
+	 * @param {{randomAlpha?: boolean}} options Optional configuration.
+	 */
+	fxAttach(asset, x = 0, y = 0, options = undefined) {
+		switch (asset) {
+			case 'smoke':
+				break;
+			case 'smoke_small':
+				SmokeSmall.spawn(this._scene, this._x + x, this._y + y);
+				break;
+			default:
+				console.error(`FxAttach: Unknown asset ${asset}`);
 		}
 	}
 

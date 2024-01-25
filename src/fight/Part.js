@@ -12,12 +12,12 @@ export class Part extends Phys {
 	 * Time before the Part fades out.
 	 * @type {number}
 	 */
-	_timer = 0;
+	_fadeoutTimer = 0;
 	/**
-	 * Freeze timer. Part will not update while frozen.
+	 * Sleep timer. Part will not update while asleep.
 	 * @type {number}
 	 */
-	_freezeTimer = 0;
+	_sleep = 0;
 	/**
 	 * Base alpha of the Part. Used to fade it out through a coefficient.
 	 * @type {number}
@@ -49,27 +49,27 @@ export class Part extends Phys {
 	 * @returns {void}
 	 */
 	update(timer) {
-		if (this._freezeTimer > 0) {
-			this._freezeTimer -= timer.tmod;
-			if (this._freezeTimer <= 0) {
+		if (this._sleep > 0) {
+			this._sleep -= timer.tmod;
+			if (this._sleep <= 0) {
 				//root.play(); TODO
-				//root._visible = true;
+				this._root.visible = true;
 			} else {
 				return;
 			}
 		}
 		super.update(timer);
-		if (this._timer > 0) {
-			this._timer -= timer.tmod;
-			if (this._timer <= this._fadeLimit) {
-				const c = this._timer / this._fadeLimit;
+		if (this._fadeoutTimer > 0) {
+			this._fadeoutTimer -= timer.tmod;
+			if (this._fadeoutTimer <= this._fadeLimit) {
+				const c = this._fadeoutTimer / this._fadeLimit;
 				if (this._fadeScale) {
 					this._root.scale.x = this._root.scale.y = c * this._scale;
 				} else {
 					this._root.alpha = c * this._alpha;
 				}
 			}
-			if (this._timer <= 0) {
+			if (this._fadeoutTimer <= 0) {
 				this.kill();
 			}
 		}

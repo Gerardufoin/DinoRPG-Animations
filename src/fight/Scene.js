@@ -100,8 +100,11 @@ export class Scene extends Container {
 		//castle.update();
 		//updateForce();
 		this._layers.map((l) => {
-			l.sprites = l.sprites.filter((s) => {
+			l.sprites.map((s) => {
 				s.update(timer);
+			});
+			// Filter the deleted Sprites separately from the update in case the update added new Sprites.
+			l.sprites = l.sprites.filter((s) => {
 				if (s.isDeleted) {
 					l.container.removeChild(s.getRootContainer());
 					return false;

@@ -85,7 +85,7 @@ export class Spirit extends Part {
 
 		this._root.addChild(this._tail);
 		this._root.addChild(this._head);
-		this._timer = 100;
+		this._fadeoutTimer = 100;
 		this._root.filters = [
 			new GlowFilter({
 				distance: 5,
