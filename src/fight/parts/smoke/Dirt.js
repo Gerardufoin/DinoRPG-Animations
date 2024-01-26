@@ -40,7 +40,7 @@ export class Dirt extends Dust {
 		this._root = new Container();
 		this._root.addChild(this._dust);
 
-		this._dust.filters = [new BlurFilter(7)];
+		this._dust.filters = [new BlurFilter(10)];
 		this._vx = vx;
 		this._vz = vz;
 	}

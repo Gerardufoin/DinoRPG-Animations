@@ -11,13 +11,13 @@ import { Scene } from './Scene.js';
 import { Timer } from './Timer.js';
 import { SimpleTween } from './SimpleTween.js';
 import { Slot } from './Slot.js';
-import { Score } from './parts/Score.js';
+import { Score } from './parts/text/Score.js';
 import { smonster } from '../smonster.js';
-import { Title } from './parts/Title.js';
+import { Title } from './parts/text/Title.js';
 import { Sprite } from './Sprite.js';
-import { Bolt } from './parts/Bolt.js';
-import { Flameche } from './parts/Flameche.js';
-import { SmokeSmall } from './parts/smoke/SmokeSmall.js';
+import { Bolt } from './parts/life/Bolt.js';
+import { Flameche } from './parts/life/Flameche.js';
+import { Smoke } from './parts/smoke/Smoke.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -216,7 +216,6 @@ export class Fighter extends Phys {
 			});
 			this.body.addChild(this._layers[Fighter.LAYERS[k]].container);
 		}
-		this._layers[Fighter.LAYERS.DP_BODY].container.sortableChildren = true;
 
 		if (this.isDino) {
 			const dino = new sdino({
@@ -926,9 +925,10 @@ export class Fighter extends Phys {
 	fxAttach(asset, x = 0, y = 0, options = undefined) {
 		switch (asset) {
 			case 'smoke':
+				Smoke.spawn(this._scene, this._x + x, this._y + y);
 				break;
 			case 'smoke_small':
-				SmokeSmall.spawn(this._scene, this._x + x, this._y + y);
+				Smoke.spawnSmall(this._scene, this._x + x, this._y + y);
 				break;
 			default:
 				console.error(`FxAttach: Unknown asset ${asset}`);

@@ -233,6 +233,7 @@ export class Animator extends Container {
 			this._time = 0;
 		}
 		this._body.updateAnimation();
+		this._body.executeCallbacks(this._callbacks);
 	}
 
 	/**

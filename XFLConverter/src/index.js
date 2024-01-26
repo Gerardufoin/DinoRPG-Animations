@@ -36,7 +36,8 @@ const parser = new XFLParser();
 
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 836.xml', '_sub', undefined, 2); // fxFlameche
-parser.parse('./resources/gfx/LIBRARY/Symbol 661.xml', '_sub', undefined, 2); // smoke_small
+//parser.parse('./resources/gfx/LIBRARY/Symbol 661.xml', '_sub', undefined, 2); // smoke_small
+parser.parse('./resources/gfx/LIBRARY/Symbol 679.xml', '_sub', undefined, 2); // smoke_small
 
 const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
