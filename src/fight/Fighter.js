@@ -160,6 +160,19 @@ export class Fighter extends Phys {
 	 * @type {{e: number, power?: number}[]}
 	 */
 	_status = [];
+	/**
+	 * States if the Fighter is frozen or not.
+	 * Frozen Fighter cannot move.
+	 * @type {boolean}
+	 */
+	_flFreeze = false;
+	/**
+	 * Return true if the Fighter is frozen.
+	 * @type {boolean}
+	 */
+	get isFrozen() {
+		return this._flFreeze;
+	}
 
 	/**
 	 * The last registered coordinates of the Fighter.
@@ -250,11 +263,11 @@ export class Fighter extends Phys {
 		this._animator.registerCallback('fxAttach', (anim, args) => {
 			this.fxAttach(args[0], args[1], args[2], args[3]);
 		});
-		// TODO
-		/*if( haveProp(_PStatic) ) {
-			flFreeze = true;
-			force = Math.NaN;
-		}*/
+
+		if (this.haveProp(Fighter.Props.Static)) {
+			this._flFreeze = true;
+			this.setForce(null);
+		}
 
 		/* Notes:
 		if(haveProp(_PDark)) skinDark(); ?
@@ -361,8 +374,12 @@ export class Fighter extends Phys {
 	 */
 	isReadyToWalk() {
 		return (
-			this._mode == Fighter.Mode.Waiting && this._focus == null && this._lockTimer <= 0 && this._walkPath == null
-		); //TODO && flFreeze != true ;
+			this._mode == Fighter.Mode.Waiting &&
+			this._focus == null &&
+			this._lockTimer <= 0 &&
+			this._walkPath == null &&
+			!this.isFrozen
+		);
 	}
 
 	/**
@@ -372,7 +389,7 @@ export class Fighter extends Phys {
 	 * @param {Timer} timer The Timer managing the elapsed time.
 	 */
 	updateWait(timer) {
-		//TODO if( flFreeze || haveProp(_PStatic) ) return;
+		if (this.isFrozen || this.haveProp(Fighter.Props.Static)) return;
 		if (this._walkPath != null) {
 			const a = this.getAng(this._walkPath);
 			const d = this.getDist(this._walkPath);
@@ -747,9 +764,9 @@ export class Fighter extends Phys {
 			this._focus = state;
 			this._vx = 0;
 			this._vy = 0;
-			// TODO
-			//if (!Number.isNaN(this._force))
-			this._force *= 1000;
+			if (this._force !== null) {
+				this._force *= 1000;
+			}
 			return true;
 		} else {
 			return this._focus.id === state.id;
@@ -761,9 +778,9 @@ export class Fighter extends Phys {
 	 */
 	unfocus() {
 		this._focus = null;
-		// TODO
-		//if(!Number.isNaN(this._force))
-		this._force /= 1000;
+		if (this._force !== null) {
+			this._force /= 1000;
+		}
 	}
 
 	/**
@@ -1018,7 +1035,7 @@ export class Fighter extends Phys {
 		this.playAnim('dead');
 		this._mode = Fighter.Mode.Dead;
 		this.removeShadow();
-		//Sprite.forceList.remove(f); TODO
+		this._scene.removeForceSprite(this);
 	}
 
 	/**

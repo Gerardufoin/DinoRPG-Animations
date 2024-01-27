@@ -27,8 +27,38 @@ export class Sprite {
 	_x = 0.0;
 	_y = 0.0;
 	_z = 0.0;
+
+	/**
+	 * Reach of the sprite. Can be understood as half its width.
+	 * @type {number}
+	 */
 	_ray = 0.0;
-	force = 0.0;
+	/**
+	 * Get the ray of the Sprite.
+	 * @type {number}
+	 */
+	get ray() {
+		return this._ray;
+	}
+	/**
+	 * Force of the Sprite against other Sprite.
+	 * Sprite with forces push against each other.
+	 * Update the position in Scene.
+	 * @type {number | null}
+	 */
+	_force = null;
+	/**
+	 * Get the current force of the Sprite.
+	 * @type {number | null}
+	 */
+	get force() {
+		return this._force;
+	}
+	/**
+	 * Actual scale of the Sprite.
+	 * Can be used for animation if the Sprite has to grow/shrink over time.
+	 * @type {number}
+	 */
 	_scale = 1;
 
 	/**
@@ -192,11 +222,15 @@ export class Sprite {
 
 	/**
 	 * Sets the force of the Sprite in the Scene.
-	 * @param {number} force New force value.
+	 * @param {number | null} force New force value.
 	 */
 	setForce(force) {
 		this._force = force;
-		//forceList.push(this) ;
+		if (this._force !== null) {
+			this._scene.addForceSprite(this);
+		} else {
+			this._scene.removeForceSprite(this);
+		}
 	}
 
 	/**
@@ -204,7 +238,7 @@ export class Sprite {
 	 */
 	kill() {
 		this._toDelete = true;
-		//if(force != null)forceList.remove(this) ; TODO
+		this._scene.removeForceSprite(this);
 		this.removeShadow();
 	}
 

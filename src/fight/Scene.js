@@ -55,6 +55,11 @@ export class Scene extends Container {
 	 * @type {Fighter[]}
 	 */
 	_fighters = [];
+	/**
+	 * List of the Sprite applying a force in the Scene.
+	 * @type {Sprite[]}
+	 */
+	_forces = [];
 
 	/**
 	 * Create a new scene where the fight will happen.
@@ -98,7 +103,7 @@ export class Scene extends Container {
 	update(timer) {
 		// TODO
 		//castle.update();
-		//updateForce();
+		this.updateForces();
 		this._layers.map((l) => {
 			l.sprites.map((s) => {
 				s.update(timer);
@@ -238,6 +243,24 @@ export class Scene extends Container {
 	}
 
 	/**
+	 * A Sprite applying its force to other Sprites.
+	 * @param {Sprite} sprite The Sprite to add the the forces list.
+	 */
+	addForceSprite(sprite) {
+		if (this._forces.filter((f) => f.spriteId === sprite.spriteId).length == 0 && sprite.force !== null) {
+			this._forces.push(sprite);
+		}
+	}
+
+	/**
+	 * Remove a Sprite from the forces list.
+	 * @param {Sprite} sprite The Sprite to remove from the forces list.
+	 */
+	removeForceSprite(sprite) {
+		this._forces = this._forces.filter((f) => f.spriteId !== sprite.spriteId);
+	}
+
+	/**
 	 * Add a created Slot to the display.
 	 * @param {Slot} slot The slot to add to a column.
 	 */
@@ -299,6 +322,35 @@ export class Scene extends Container {
 	 */
 	getRandomPYPos() {
 		return Math.random() * this.getPYSize();
+	}
+
+	/**
+	 * Update all the Sprite registered as having a force.
+	 * Each Sprite with a force will push against each others.
+	 */
+	updateForces() {
+		for (let i = 0; i < this._forces.length; ++i) {
+			const s1 = this._forces[i];
+			for (let j = i + 1; j < this._forces.length; ++j) {
+				const s2 = this._forces[j];
+				if (Math.abs(s1.position.z - s2.position.z) < 20) {
+					const dist = s1.getDist(s2.position);
+					const lim = s1.ray + s2.ray;
+					if (dist < lim) {
+						const a = s1.getAng(s2.position);
+						const d = lim - dist;
+						const ca = Math.cos(a);
+						const sa = Math.sin(a);
+						const fc = s1.force / (s2.force + s1.force);
+
+						s1._x += ca * d * (1 - fc);
+						s1._y += sa * d * (1 - fc);
+						s2._x -= ca * d * fc;
+						s2._y -= sa * d * fc;
+					}
+				}
+			}
+		}
 	}
 
 	/**
