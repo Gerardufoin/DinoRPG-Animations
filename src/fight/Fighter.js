@@ -19,6 +19,7 @@ import { Bolt } from './parts/life/Bolt.js';
 import { Flameche } from './parts/life/Flameche.js';
 import { Smoke } from './parts/smoke/Smoke.js';
 import { Leaf } from './parts/life/Leaf.js';
+import { Wind } from './parts/life/Wind.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -877,6 +878,12 @@ export class Fighter extends Phys {
 		}
 	}
 
+	/**
+	 * Creates a number of leaves on the Fighter with the given velocities.
+	 * @param {number} max The number of leaves to create.
+	 * @param {number} dvx The x velocity. If not given, a random velocity is chosen.
+	 * @param {number} dvz The y velocity. If not given, a random velocity is chosen.
+	 */
 	fxLeaf(max, dvx = undefined, dvz = undefined) {
 		for (let i = 0; i < max; ++i) {
 			const x = this.position.x + (Math.random() * 2 - 1) * this.ray;
@@ -903,6 +910,23 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Adds wind particles to the Fighter.
+	 * @param {number} max Number of wind particles to spawn in.
+	 */
+	fxWind(max) {
+		for (let i = 0; i < max; ++i) {
+			const wind = new Wind(
+				this._scene,
+				Math.random() * (this.ray + 24) * this.intSide,
+				-Math.random() * this.height,
+				-(2 + Math.random() * 3) * this.intSide,
+				0
+			);
+			this.addSprite(wind, Fighter.LAYERS.DP_FRONT);
+		}
+	}
+
+	/**
 	 * Play the given Fighter.LifeEffect effect.
 	 * @param {{fx: number, amount?: number, size?: number}} effect The Fighter.LifeEffect to play.
 	 */
@@ -920,6 +944,9 @@ export class Fighter extends Phys {
 				break;
 			case Fighter.LifeEffect.Lightning:
 				this.fxLightning(16);
+				break;
+			case Fighter.LifeEffect.Air:
+				this.fxWind(14);
 				break;
 		}
 	}

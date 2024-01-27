@@ -73,6 +73,55 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'grdien'
 				}
+			},
+			{
+				action: DinoAnim.Fight.Action.Damages,
+				fid: 0,
+				tid: 1,
+				damages: 1,
+				lifeFx: { fx: 5 }
+			},
+			{
+				action: DinoAnim.Fight.Action.Damages,
+				fid: 0,
+				tid: 1,
+				damages: 1,
+				lifeFx: { fx: 5 }
+			},
+			{
+				action: DinoAnim.Fight.Action.Damages,
+				fid: 0,
+				tid: 1,
+				damages: 1,
+				lifeFx: { fx: 5 }
+			},
+			{
+				action: DinoAnim.Fight.Action.Damages,
+				fid: 0,
+				tid: 1,
+				damages: 1,
+				lifeFx: { fx: 5 }
+			},
+			{
+				action: DinoAnim.Fight.Action.Damages,
+				fid: 0,
+				tid: 1,
+				damages: 1,
+				lifeFx: { fx: 5 }
+			},
+			{
+				action: DinoAnim.Fight.Action.Damages,
+				fid: 0,
+				tid: 1,
+				damages: 1,
+				lifeFx: { fx: 5 }
+			},
+			{
+				action: DinoAnim.Fight.Action.Damages,
+				fid: 0,
+				tid: 1,
+				damages: 1,
+				lifeFx: { fx: 5 }
 			}
 		],
 		debug: true

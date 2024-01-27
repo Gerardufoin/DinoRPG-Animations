@@ -29,6 +29,17 @@ export class Phys2D extends Sprite {
 	_friction = 0;
 
 	/**
+	 * The velocity of the rotation.
+	 * @type {number}
+	 */
+	_vr = 0;
+	/**
+	 * The friction for the rotation, reducing the rotation's velocity over time.
+	 * @type {number}
+	 */
+	_rFriction = 0;
+
+	/**
 	 * Pause the process for the given number of frames.
 	 * @type {number}
 	 */
@@ -93,7 +104,7 @@ export class Phys2D extends Sprite {
 
 		this._vy += this._weight * timer.tmod;
 
-		if (this._friction != 0) {
+		if (this._friction) {
 			var f = Math.pow(this._friction, timer.tmod);
 			this._vx *= f;
 			this._vy *= f;
@@ -101,6 +112,11 @@ export class Phys2D extends Sprite {
 
 		this._x += this._vx * timer.tmod;
 		this._y += this._vy * timer.tmod;
+
+		this._root.angle += this._vr * timer.tmod;
+		if (this._rFriction) {
+			this._vr *= Math.pow(this._rFriction, timer.tmod);
+		}
 
 		// TODO: Clean the fadeout types if the others are not used.
 		if (this._fadeoutTimer > 0) {
