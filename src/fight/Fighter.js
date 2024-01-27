@@ -260,6 +260,10 @@ export class Fighter extends Phys {
 		this.dropShadow();
 		this.setForce(10 * this._size);
 
+		// Callbacks
+		this._animator.registerCallback('fxShake', (anim, args) => {
+			this._scene.fxShake(args[0], args[1], args[2]);
+		});
 		this._animator.registerCallback('fxAttach', (anim, args) => {
 			this.fxAttach(args[0], args[1], args[2], args[3]);
 		});

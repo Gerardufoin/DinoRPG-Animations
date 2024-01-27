@@ -60,6 +60,20 @@ export class Scene extends Container {
 	 * @type {Sprite[]}
 	 */
 	_forces = [];
+	/**
+	 * Current shaking of the Scene.
+	 * The force impacts how much the Scene is displaced. Once below 1, the shaking stops.
+	 * The friction reduces the force over time.
+	 * The speed impacts how fast the scene shakes, between 0 and 1.
+	 * The timer keeps track of the time, increasing with the speed over tmod.
+	 * @type {{force: number, friction: number, speed: number, timer: number}}
+	 */
+	_shake = {
+		force: 0,
+		friction: 0,
+		speed: 0,
+		timer: 0
+	};
 
 	/**
 	 * Create a new scene where the fight will happen.
@@ -119,10 +133,27 @@ export class Scene extends Container {
 		});
 		// SLOTS
 		//updateSlots();
-		// SHAKE
-		//updateShake();
+		this.updateShake(timer);
 		this.updateWalk(timer);
 		//updateTimeBar();
+	}
+
+	/**
+	 * Update the shaking of the Scene.
+	 * @param {Timer} timer The Fight's timer, containing the elapsed time.
+	 */
+	updateShake(timer) {
+		if (this._shake.force != 0) {
+			this._shake.timer += this._shake.speed * timer.tmod;
+			if (this._shake.timer > 1) {
+				this._shake.timer--;
+				this._shake.force *= -this._shake.friction;
+				if (Math.abs(this._shake.force) < 1) {
+					this._shake.force = 0;
+				}
+				this.y = this._shake.force;
+			}
+		}
 	}
 
 	/**
@@ -160,6 +191,8 @@ export class Scene extends Container {
 	createColumns() {
 		const texture = TextureManager.getTextureFromCompressedReference(gfx.scene.mcColumn);
 		const colLeft = new Asset(texture);
+		const colLeftTop = new Asset(texture);
+		const colLeftBottom = new Asset(texture);
 		// Once the left column is loaded, move all the scene beside the background and the columns by the width of the column.
 		// The x = 0 of the other scenes should be on the border of the left column.
 		colLeft.onLoad(() => {
@@ -168,13 +201,26 @@ export class Scene extends Container {
 					this._layers[k].container.x += colLeft.width;
 				}
 			}
+			colLeftTop.y = -colLeft.height;
+			colLeftBottom.y = colLeft.height;
 		});
 		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colLeft);
+		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colLeftTop);
+		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colLeftBottom);
+
 		const colRight = new Asset(texture);
+		const colRightTop = new Asset(texture);
+		const colRightBottom = new Asset(texture);
 		colRight.onLoad(() => {
 			colRight.x = 488 - colRight.width;
+			colRightTop.x = colRight.x;
+			colRightTop.y = -colRight.height;
+			colRightBottom.x = colRight.x;
+			colRightBottom.y = colRight.height;
 		});
 		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colRight);
+		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colRightTop);
+		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colRightBottom);
 	}
 
 	/**
@@ -280,6 +326,21 @@ export class Scene extends Container {
 	 */
 	genGroundPart(x, y, vx = 0, vy = 0, vz = 0, flJump = false) {
 		// TODO
+	}
+
+	/**
+	 * Makes the Scene shake.
+	 * @param {number} force The strength of the Scene displacement.
+	 * @param {number} frict The friction of the shaking, reducing the strengh over time.
+	 * @param {number} speed The speed of the shaking, impacting how often the shake happens.
+	 */
+	fxShake(force = 8, frict = 0.75, speed = 1) {
+		this._shake = {
+			force: force,
+			friction: frict,
+			speed: speed,
+			timer: 0
+		};
 	}
 
 	/**
