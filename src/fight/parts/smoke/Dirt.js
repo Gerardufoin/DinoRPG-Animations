@@ -11,6 +11,13 @@ import { Scene } from '../../Scene.js';
  */
 export class Dirt extends Dust {
 	/**
+	 * The BlurFilter of the Dirts.
+	 * Storing it to prevent WebGL to create it each time.
+	 * @type {BlurFilter}
+	 */
+	static BlurFilter;
+
+	/**
 	 * Number of frames needed for the Dirt to do a full rotation.
 	 * @type {number}
 	 */
@@ -40,7 +47,10 @@ export class Dirt extends Dust {
 		this._root = new Container();
 		this._root.addChild(this._dust);
 
-		this._dust.filters = [new BlurFilter(10)];
+		if (!Dirt.BlurFilter) {
+			Dirt.BlurFilter = new BlurFilter(10);
+		}
+		this._dust.filters = [Dirt.BlurFilter];
 		this._vx = vx;
 		this._vz = vz;
 	}

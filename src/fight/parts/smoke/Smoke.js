@@ -4,13 +4,24 @@
 import { Filter } from 'pixi.js';
 import { Scene } from '../../Scene.js';
 import { Dirt } from './Dirt.js';
-import { offsetShader } from '../../../display/shaders/ColorOffsetShader.js';
+import { PixiHelper } from '../../../display/PixiHelper.js';
 
 /**
  * Creates a big puff smoke at the given location.
  */
 export class Smoke {
+	/**
+	 * Offset the Smoke by a random amount at spawn.
+	 * @type {number}
+	 */
 	static RANDOM_OFFSET = 5;
+	/**
+	 * The ColorOffsetFilter of the Smoke.
+	 * Storing it to prevent WebGL to create it each time.
+	 * @type {Filter}
+	 */
+	static ColorOffsetFilter;
+
 	// GFX 679
 	/**
 	 * Spawn three big clouds of dirt at the given coordinates.
@@ -55,12 +66,10 @@ export class Smoke {
 			vx,
 			vz
 		);
-		smoke._dust.filters.push(
-			new Filter(undefined, offsetShader, {
-				offset: new Float32Array([-11, -51, -92]),
-				mult: new Float32Array([1, 1, 1])
-			})
-		);
+		if (!Smoke.ColorOffsetFilter) {
+			Smoke.ColorOffsetFilter = PixiHelper.colorOffsetFilter(-11, -51, -92);
+		}
+		smoke._dust.filters.push(Smoke.ColorOffsetFilter);
 		smoke.setAlpha(0.8);
 		smoke._fadeoutTimer = 30;
 		smoke._fadeLimit = 30 - Math.random() * 5;

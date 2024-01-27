@@ -1,6 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Part.hx
 
+import { Animator } from '../display/Animator.js';
 import { Phys } from './Phys.js';
 import { Timer } from './Timer.js';
 
@@ -35,6 +36,12 @@ export class Part extends Phys {
 	_fadeScale = false;
 
 	/**
+	 * Set if the Part is linked to an animation.
+	 * @type {Animator}
+	 */
+	_animator;
+
+	/**
 	 * Sets the alpha of the container.
 	 * @param {number} n Value of the alpha.
 	 */
@@ -52,13 +59,18 @@ export class Part extends Phys {
 		if (this._sleep > 0) {
 			this._sleep -= timer.tmod;
 			if (this._sleep <= 0) {
-				//root.play(); TODO
+				if (this._animator) {
+					this._animator.playing = true;
+				}
 				this._root.visible = true;
 			} else {
 				return;
 			}
 		}
 		super.update(timer);
+		if (this._animator) {
+			this._animator.update(timer.deltaTimeMS);
+		}
 		if (this._fadeoutTimer > 0) {
 			this._fadeoutTimer -= timer.tmod;
 			if (this._fadeoutTimer <= this._fadeLimit) {

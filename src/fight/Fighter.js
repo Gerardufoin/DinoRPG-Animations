@@ -18,6 +18,7 @@ import { Sprite } from './Sprite.js';
 import { Bolt } from './parts/life/Bolt.js';
 import { Flameche } from './parts/life/Flameche.js';
 import { Smoke } from './parts/smoke/Smoke.js';
+import { Leaf } from './parts/life/Leaf.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -876,6 +877,20 @@ export class Fighter extends Phys {
 		}
 	}
 
+	fxLeaf(max, dvx = undefined, dvz = undefined) {
+		for (let i = 0; i < max; ++i) {
+			const x = this.position.x + (Math.random() * 2 - 1) * this.ray;
+			const y = this.position.y + (Math.random() * 2 - 1) * this.ray * 0.5;
+			const z = this.position.z - Math.random() * this._height * 2;
+
+			const vx = dvx !== undefined ? dvx : -this.intSide * Math.random() * 3;
+			const vz = dvz !== undefined ? dvz : (Math.random() * 2 - 1) * 1.5;
+
+			const leaf = new Leaf(this._scene, x, y, z, vx, vz);
+			this._scene.addSprite(leaf, Scene.LAYERS.FIGHTERS);
+		}
+	}
+
 	/**
 	 * Adds bolts particles to the Fighter.
 	 * @param {number} max Number of bolts particles to spawn in.
@@ -899,6 +914,9 @@ export class Fighter extends Phys {
 				break;
 			case Fighter.LifeEffect.Fire:
 				this.fxBurn(14, 20);
+				break;
+			case Fighter.LifeEffect.Wood:
+				this.fxLeaf(10);
 				break;
 			case Fighter.LifeEffect.Lightning:
 				this.fxLightning(16);

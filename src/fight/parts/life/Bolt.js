@@ -10,6 +10,13 @@ import { Phys2D } from '../Phys2D.js';
  */
 export class Bolt extends Phys2D {
 	/**
+	 * The GlowFilter of the bolts.
+	 * Storing it to prevent WebGL to create it each time.
+	 * @type {GlowFilter}
+	 */
+	static GlowFilter;
+
+	/**
 	 * Instantiate a new Bolt of lightning at the given coordinates.
 	 *
 	 * The Bolt will appear after a random short delay and disappear after 5 frames.
@@ -31,14 +38,16 @@ export class Bolt extends Phys2D {
 		this._y = y;
 		this._root.angle = Math.random() * 360;
 		this._root.alpha = 0.8;
-		this._root.filters = [
-			new GlowFilter({
+
+		if (!Bolt.GlowFilter) {
+			Bolt.GlowFilter = new GlowFilter({
 				distance: 5,
 				color: 0xffff00,
 				innerStrength: 0,
 				outerStrength: 1
-			})
-		];
+			});
+		}
+		this._root.filters = [Bolt.GlowFilter];
 
 		this._sleep = Math.random() * 20;
 		this._animator.playing = false;
