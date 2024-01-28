@@ -51,7 +51,7 @@ export class Part extends Phys {
 	}
 
 	/**
-	 * Update the Part, change the scale and the alpha.
+	 * Update the Part, change the scale and handle the sleep and fadeout.
 	 * @param {Timer} timer The Fight's timer, containing the elapsed time.
 	 * @returns {void}
 	 */

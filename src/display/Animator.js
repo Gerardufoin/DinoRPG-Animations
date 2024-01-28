@@ -75,6 +75,7 @@ export class Animator extends Container {
 	 */
 	constructor(autoUpdate = true) {
 		super();
+		this._body.filters = [];
 		this.addChild(this._body);
 		if (autoUpdate) {
 			const ticker = Ticker.shared;
@@ -117,18 +118,19 @@ export class Animator extends Container {
 	 * @param {Array} dParts The configuration array of the dino.
 	 */
 	setBodyTransforms(transforms, dParts) {
-		// TODO: Add brighness and contrast
 		const bodyMatrix = this._body.transform.localTransform;
 		for (const t of transforms) {
-			if (t.partIdx) {
-				bodyMatrix.append(
-					PixiHelper.matrixFromObject(
-						t.transforms[dParts[t.partIdx] % t.transforms.length],
-						this._body.getScale()
+			const mtrData = t.partIdx ? t.transforms[dParts[t.partIdx] % t.transforms.length] : t;
+			bodyMatrix.append(PixiHelper.matrixFromObject(mtrData, this._body.getScale()));
+			if (mtrData.contrast || mtrData.brightness || mtrData.hue || mtrData.saturation) {
+				this._body.filters.push(
+					PixiHelper.adjustColorFilter(
+						mtrData.brightness ?? 0,
+						mtrData.contrast ?? 0,
+						mtrData.saturation ?? 0,
+						mtrData.hue ?? 0
 					)
 				);
-			} else {
-				bodyMatrix.append(PixiHelper.matrixFromObject(t, this._body.getScale()));
 			}
 		}
 		this._body.transform.setFromMatrix(bodyMatrix);
@@ -146,7 +148,7 @@ export class Animator extends Container {
 			quality: glowParam.quality ?? 0.1,
 			outerStrength: glowParam.strength
 		});
-		this._body.filters = [filter];
+		this._body.filters.push(filter);
 	}
 
 	/**

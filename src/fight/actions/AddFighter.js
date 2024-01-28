@@ -1,12 +1,12 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/AddFighter.hx
-import { Container, Sprite } from 'pixi.js';
-import { TextureManager } from '../../display/TextureManager.js';
+import { Container } from 'pixi.js';
 import { ref as gfx } from '../../gfx/references.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { Timer } from '../Timer.js';
+import { Asset } from '../../display/Asset.js';
 
 /**
  * Enum stating an entrance effect of a Fighter:
@@ -99,11 +99,10 @@ export class AddFighter extends State {
 					// Update the pose to instantiate the mask at the right position.
 					this._fighter.updatePos();
 
-					const holeText = TextureManager.getTextureFromCompressedReference(gfx.parts.mcHoleMask);
-					const holeSprite = new Sprite(holeText);
+					const holeSprite = new Asset(gfx.parts.hole_mask);
 					const scale = ((this._fighter._ray + 20) * 2) / 100;
-					holeSprite.x = -gfx.parts.mcHoleMask.offset.x * scale * 3;
-					holeSprite.y = -gfx.parts.mcHoleMask.offset.y * scale;
+					holeSprite.x *= scale * 3;
+					holeSprite.y *= scale;
 					holeSprite.scale.x = scale * 3;
 					holeSprite.scale.y = scale;
 					this._holeMask.addChild(holeSprite);

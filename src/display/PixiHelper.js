@@ -30,15 +30,15 @@ export class PixiHelper {
 
 	/**
 	 * Convert an AdjustColorFilter from Flash into a ColorMatrixFilter for PixiJS.
-	 * @param {number} brighness The change of brightness, between -100 and 100.
+	 * @param {number} brightness The change of brightness, between -100 and 100.
 	 * @param {number} contrast The change of contrast, between -100 and 100.
 	 * @param {number} saturation The change for the saturation, between -100 and 100.
 	 * @param {number} hue The change of the hue, rotation over 360°.
 	 * @returns {ColorMatrixFilter} The resulting ColorMatrixFilter.
 	 */
-	static adjustColorFilter(brighness, contrast, saturation, hue) {
+	static adjustColorFilter(brightness, contrast, saturation, hue) {
 		const matrix = new ColorMatrixFilter();
-		matrix.brightness((PixiHelper.mm(-100, brighness, 100) + 100) / 100, true);
+		matrix.brightness((PixiHelper.mm(-100, brightness, 100) + 100) / 100, true);
 		matrix.contrast(PixiHelper.mm(-100, contrast, 100) / 100, true);
 		matrix.saturate(PixiHelper.mm(-100, saturation, 100) / 100, true);
 		matrix.hue(hue, true);

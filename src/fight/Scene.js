@@ -3,7 +3,6 @@
 
 import { Container, Graphics } from 'pixi.js';
 import { ref as gfx } from '../gfx/references.js';
-import { TextureManager } from '../display/TextureManager.js';
 import { Asset } from '../display/Asset.js';
 import { Fighter } from './Fighter.js';
 import { Timer } from './Timer.js';
@@ -175,8 +174,7 @@ export class Scene extends Container {
 	 */
 	setBackground(key) {
 		if (key && gfx.background[key]) {
-			const texture = TextureManager.getTextureFromCompressedReference(gfx.background[key]);
-			const sprite = new Asset(texture);
+			const sprite = new Asset(gfx.background[key]);
 			sprite.y = -Scene.MARGIN;
 			sprite.onLoad(() => {
 				sprite.x = 488 / 2 - sprite.width / 2;
@@ -189,10 +187,9 @@ export class Scene extends Container {
 	 * Create the columns bordering the scenes.
 	 */
 	createColumns() {
-		const texture = TextureManager.getTextureFromCompressedReference(gfx.scene.mcColumn);
-		const colLeft = new Asset(texture);
-		const colLeftTop = new Asset(texture);
-		const colLeftBottom = new Asset(texture);
+		const colLeft = new Asset(gfx.scene.column);
+		const colLeftTop = new Asset(gfx.scene.column);
+		const colLeftBottom = new Asset(gfx.scene.column);
 		// Once the left column is loaded, move all the scene beside the background and the columns by the width of the column.
 		// The x = 0 of the other scenes should be on the border of the left column.
 		colLeft.onLoad(() => {
@@ -208,9 +205,9 @@ export class Scene extends Container {
 		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colLeftTop);
 		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colLeftBottom);
 
-		const colRight = new Asset(texture);
-		const colRightTop = new Asset(texture);
-		const colRightBottom = new Asset(texture);
+		const colRight = new Asset(gfx.scene.column);
+		const colRightTop = new Asset(gfx.scene.column);
+		const colRightBottom = new Asset(gfx.scene.column);
 		colRight.onLoad(() => {
 			colRight.x = 488 - colRight.width;
 			colRightTop.x = colRight.x;

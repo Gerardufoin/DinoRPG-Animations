@@ -71,9 +71,11 @@ export class SVGAdapter {
 			const matchSymb = symbFolder.match(/\w+_(\d+)/);
 			if (matchSymb) {
 				const symbol = matchSymb[1];
-				const files = fs.readdirSync(path.join(folder, symbFolder));
+				const files = fs
+					.readdirSync(path.join(folder, symbFolder), { withFileTypes: true })
+					.filter((f) => f.isFile());
 				for (let i = 0; i < files.length; ++i) {
-					const svgContent = fs.readFileSync(path.join(folder, symbFolder, files[i]));
+					const svgContent = fs.readFileSync(path.join(folder, symbFolder, files[i].name));
 					const svgDoc = libxmljs.parseXml(svgContent.toString());
 					if (svgDoc.validate(schema)) {
 						const data = this._parser.parse(svgContent);
@@ -102,7 +104,7 @@ export class SVGAdapter {
 						}
 						const name = symbol + (files.length > 1 ? `_${i + 1}` : '');
 						this.saveAdaptedSVG(resultFolder, name, this._builder.build(data), mapping);
-					} else if (symbol == '1350') {
+					} else if (symbol == '773') {
 						console.log(`${symbol}: ${svgDoc.validationErrors}`);
 					}
 				}

@@ -4,8 +4,10 @@
  * Mapping between the extracted symbol from gfx.swf and their name in the project
  */
 export let mapping_gfx = {
-	717: 'parts/mcGhost',
-	875: 'scene/mcColumn',
+	717: 'parts/ghost',
+	763: 'fx/acid_ball',
+	765: 'fx/acid_smoke',
+	773: 'fx/skull',
 	825: 'fx/flameche_base',
 	826: 'fx/flameche_1',
 	827: 'fx/flameche_2',
@@ -16,11 +18,18 @@ export let mapping_gfx = {
 	833: 'fx/flameche_6',
 	834: 'fx/flameche_7',
 	835: 'fx/flameche_8',
-	934: 'fx/mcBolt_1',
-	935: 'fx/mcBolt_2',
-	936: 'fx/mcBolt_3',
-	937: 'fx/mcBolt_4',
-	938: 'fx/mcBolt_5',
+	875: 'scene/column',
+	886: 'fx/explo_1',
+	887: 'fx/explo_2',
+	888: 'fx/explo_3',
+	889: 'fx/explo_4',
+	890: 'fx/explo_5',
+	891: 'fx/explo_6',
+	934: 'fx/bolt_1',
+	935: 'fx/bolt_2',
+	936: 'fx/bolt_3',
+	937: 'fx/bolt_4',
+	938: 'fx/bolt_5',
 	944: 'fx/petal_1',
 	945: 'fx/petal_2',
 	946: 'fx/petal_3',
@@ -37,5 +46,5 @@ export let mapping_gfx = {
 	957: 'fx/petal_14',
 	958: 'fx/petal_15',
 	959: 'fx/petal_16',
-	975: 'parts/mcHoleMask'
+	975: 'parts/hole_mask'
 };

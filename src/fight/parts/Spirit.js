@@ -4,10 +4,10 @@
 import { Container, Graphics, Sprite } from 'pixi.js';
 import { ref as gfx } from '../../gfx/references.js';
 import { Part } from '../Part.js';
-import { TextureManager } from '../../display/TextureManager.js';
 import { Scene } from '../Scene.js';
 import { Timer } from '../Timer.js';
 import { GlowFilter } from '@pixi/filter-glow';
+import { Asset } from '../../display/Asset.js';
 
 /**
  * Instantiate a Spirit in the Scene.
@@ -77,11 +77,7 @@ export class Spirit extends Part {
 	 */
 	constructor(scene) {
 		super(new Container(), scene);
-		const texture = TextureManager.getTextureFromCompressedReference(gfx.parts.mcGhost);
-		const sprite = Sprite.from(texture);
-		this._head.addChild(sprite);
-		sprite.x -= gfx.parts.mcGhost.offset.x;
-		sprite.y -= gfx.parts.mcGhost.offset.y;
+		this._head.addChild(new Asset(gfx.parts.ghost));
 
 		this._root.addChild(this._tail);
 		this._root.addChild(this._head);

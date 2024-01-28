@@ -21,6 +21,7 @@ import { Smoke } from './parts/smoke/Smoke.js';
 import { Leaf } from './parts/life/Leaf.js';
 import { Wind } from './parts/life/Wind.js';
 import { Drip } from './parts/life/Drip.js';
+import { Acid } from './parts/life/Acid.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -49,9 +50,10 @@ export class Fighter extends Phys {
 		Lightning: 4,
 		Air: 5,
 		Burn: 6,
-		Heal: 7,
-		Skull: 8,
-		Acid: 9
+		Explode: 7,
+		Heal: 8,
+		Skull: 9,
+		Acid: 10
 	};
 	static Status = {
 		Sleep: 0,
@@ -175,6 +177,30 @@ export class Fighter extends Phys {
 	 */
 	get isFrozen() {
 		return this._flFreeze;
+	}
+	/**
+	 * States if the Fighter is flying or not.
+	 * @type {boolean}
+	 */
+	_flFly = false;
+	/**
+	 * Return true if the Fighter is flying.
+	 * @type {boolean}
+	 */
+	get isFlying() {
+		return this._flFly;
+	}
+	/**
+	 * States if the Fighter is currently in the landing process or not.
+	 * @type {boolean}
+	 */
+	_flLand = false;
+	/**
+	 * Return true if the Fighter is landing.
+	 * @type {boolean}
+	 */
+	get isLanding() {
+		return this._flLand;
 	}
 	/**
 	 * While greated than 0, the Fighter will generate drips each frame.
@@ -608,7 +634,7 @@ export class Fighter extends Phys {
 			if (status === null || s.e === status) {
 				switch (s.e) {
 					case Fighter.Status.Fly:
-						//flLand = true; TODO
+						this._flLand = true;
 						break;
 					case Fighter.Status.Poison:
 					//colt.colorTransform = new flash.geom.ColorTransform(1,1,1,1,0,0,0,0); TODO
@@ -641,12 +667,7 @@ export class Fighter extends Phys {
 	 * @param {string} anim The animation to play.
 	 */
 	playAnim(anim) {
-		// TODO
-		/*if(flFly) {
-			if(a == "run" || a == "walk") {
-				return;
-			}
-		}*/
+		if (this.isFlying && ['run', 'walk'].includes(anim)) return;
 		this._currentAnim = anim;
 		this._animator.playAnim(anim);
 	}
@@ -776,7 +797,7 @@ export class Fighter extends Phys {
 	 * @returns {boolean} False if the Fighter is unavailable, true otherwise.
 	 */
 	setFocus(state) {
-		if (this._lockTimer > 0 || this._mode != Fighter.Mode.Waiting /*|| flLand*/) {
+		if (this._lockTimer > 0 || this._mode != Fighter.Mode.Waiting || this.isLanding) {
 			return false;
 		}
 
@@ -1002,14 +1023,41 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Spawns acid particles on the Fighter.
+	 * @param {number} max The amount of acid particles to spawn in.
+	 */
+	fxAcid(max) {
+		for (let i = 0; i < max; ++i) {
+			const acid = new Acid(
+				this._scene,
+				(Math.random() * 2 - 1) * this.ray,
+				-(this.height + 5 + Math.random() * 16),
+				-((Math.random() * 0.5 + 0.5) * this.height)
+			);
+			this.addSprite(acid, Fighter.LAYERS.DP_FRONT);
+		}
+	}
+
+	/**
 	 * Play the given Fighter.LifeEffect effect.
 	 * @param {{fx: number, amount?: number, size?: number}} effect The Fighter.LifeEffect to play.
 	 */
 	lifeEffect(effect) {
-		// TODO
 		switch (effect.fx) {
 			case Fighter.LifeEffect.Burn:
 				this.fxBurn(effect.amount);
+				break;
+			case Fighter.LifeEffect.Explode:
+				//TODO
+				break;
+			case Fighter.LifeEffect.Heal:
+				//TODO
+				break;
+			case Fighter.LifeEffect.Skull:
+				//TODO
+				break;
+			case Fighter.LifeEffect.Acid:
+				this.fxAcid(12);
 				break;
 			case Fighter.LifeEffect.Fire:
 				this.fxBurn(14, 20);
@@ -1026,6 +1074,8 @@ export class Fighter extends Phys {
 			case Fighter.LifeEffect.Air:
 				this.fxWind(14);
 				break;
+			default:
+				console.error(`LifeEffect: Unknown effect ${effect}`);
 		}
 	}
 

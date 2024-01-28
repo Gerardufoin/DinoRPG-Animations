@@ -102,9 +102,10 @@ A fighter attacks another fighter and deals a certain amount of damages.
 | Lightning (4) | Adds lightning particles.                                               |
 | Air (5)       | Adds wind particles.                                                    |
 | Burn (6)      | Adds burning particles. Set amount to display the amount of fx to show. |
-| Heal (7)      | Adds healing particles.                                                 |
-| Skull (8)     | Adds skulls particles. Set size to decide the size of the skull fx.     |
-| Acid (9)      | Adds acid particles.                                                    |
+| Explode (7)   | Adds explosion particles.                                               |
+| Heal (8)      | Adds healing particles.                                                 |
+| Skull (9)     | Adds skulls particles. Set size to decide the size of the skull fx.     |
+| Acid (10)     | Adds acid particles.                                                    |
 
 5. effect? - DamagesEffect - The type of action the fighter will take before attacking.
 

@@ -3,9 +3,9 @@
 
 import { Part } from '../../Part.js';
 import { ref } from '../../../sdino/references.js';
-import { TextureManager } from '../../../display/TextureManager.js';
-import { Container, Sprite } from 'pixi.js';
+import { Container } from 'pixi.js';
 import { Scene } from '../../Scene.js';
+import { Asset } from '../../../display/Asset.js';
 
 /**
  * Create a Dust particle at the given coordinates.
@@ -18,13 +18,8 @@ export class Dust extends Part {
 	 * @param {number} y The initial y coordinate.
 	 */
 	constructor(scene, x, y) {
-		const dustText = TextureManager.getTextureFromCompressedReference(ref.fx.dust);
-		const dustSp = new Sprite(dustText);
-		dustSp.x = -ref.fx.dust.offset.x;
-		dustSp.y = -ref.fx.dust.offset.y;
-		const dust = new Container();
-		dust.addChild(dustSp);
-		super(dust, scene);
+		super(new Container(), scene);
+		this._root.addChild(new Asset(ref.fx.dust));
 
 		this._x = x;
 		this._y = y;

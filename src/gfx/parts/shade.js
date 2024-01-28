@@ -5,7 +5,7 @@ export let shade = {
 	parts: {
 		shade: [
 			{
-				ref: ref.parts.mcShade
+				ref: ref.parts.shade
 			}
 		]
 	},
@@ -24,7 +24,7 @@ export let shade_fire = {
 	parts: {
 		sf_1: [
 			{
-				ref: ref.parts.mcShade_fire_1,
+				ref: ref.parts.shade_fire_1,
 				transform: {
 					tx: -0.1,
 					ty: 0.05,
@@ -35,7 +35,7 @@ export let shade_fire = {
 		],
 		sf_2: [
 			{
-				ref: ref.parts.mcShade_fire_2,
+				ref: ref.parts.shade_fire_2,
 				transform: {
 					tx: -0.1,
 					ty: 0.05,
@@ -46,7 +46,7 @@ export let shade_fire = {
 		],
 		sf_3: [
 			{
-				ref: ref.parts.mcShade_fire_3,
+				ref: ref.parts.shade_fire_3,
 				transform: {
 					tx: -0.1,
 					ty: 0.05,
@@ -57,7 +57,7 @@ export let shade_fire = {
 		],
 		sf_4: [
 			{
-				ref: ref.parts.mcShade_fire_4,
+				ref: ref.parts.shade_fire_4,
 				transform: {
 					tx: -0.1,
 					ty: 0.05,
@@ -68,7 +68,7 @@ export let shade_fire = {
 		],
 		sf_5: [
 			{
-				ref: ref.parts.mcShade_fire_5,
+				ref: ref.parts.shade_fire_5,
 				transform: {
 					tx: -0.1,
 					ty: 0.05,
@@ -79,7 +79,7 @@ export let shade_fire = {
 		],
 		sf_6: [
 			{
-				ref: ref.parts.mcShade_fire_6,
+				ref: ref.parts.shade_fire_6,
 				transform: {
 					tx: -0.1,
 					ty: 0.05,
@@ -90,7 +90,7 @@ export let shade_fire = {
 		],
 		sf_7: [
 			{
-				ref: ref.parts.mcShade_fire_7,
+				ref: ref.parts.shade_fire_7,
 				transform: {
 					tx: -0.1,
 					ty: 0.05,
