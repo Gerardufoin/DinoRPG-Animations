@@ -22,6 +22,7 @@ import { Leaf } from './parts/life/Leaf.js';
 import { Wind } from './parts/life/Wind.js';
 import { Drip } from './parts/life/Drip.js';
 import { Acid } from './parts/life/Acid.js';
+import { Skull } from './parts/life/Skull.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -1039,6 +1040,14 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Spawns a skull particle with the given size on the Fighter.
+	 * @param {number} size The size of the skull particle, 1 by default.
+	 */
+	fxSkull(size = 1) {
+		this.addSprite(new Skull(this._scene, 0, -this._height * 0.5, size), Fighter.LAYERS.DP_FRONT);
+	}
+
+	/**
 	 * Play the given Fighter.LifeEffect effect.
 	 * @param {{fx: number, amount?: number, size?: number}} effect The Fighter.LifeEffect to play.
 	 */
@@ -1054,7 +1063,7 @@ export class Fighter extends Phys {
 				//TODO
 				break;
 			case Fighter.LifeEffect.Skull:
-				//TODO
+				this.fxSkull(effect.size);
 				break;
 			case Fighter.LifeEffect.Acid:
 				this.fxAcid(12);

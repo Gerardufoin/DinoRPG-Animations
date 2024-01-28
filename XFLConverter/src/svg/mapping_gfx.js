@@ -7,7 +7,7 @@ export let mapping_gfx = {
 	717: 'parts/ghost',
 	763: 'fx/acid_ball',
 	765: 'fx/acid_smoke',
-	773: 'fx/skull',
+	//773: 'fx/skull', // Done manually
 	825: 'fx/flameche_base',
 	826: 'fx/flameche_1',
 	827: 'fx/flameche_2',

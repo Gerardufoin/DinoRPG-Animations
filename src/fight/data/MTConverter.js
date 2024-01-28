@@ -306,6 +306,7 @@ export class MTConverter {
 			[Fighter.LifeEffect.Lightning]: '_LLightning',
 			[Fighter.LifeEffect.Air]: '_LAir',
 			[Fighter.LifeEffect.Burn]: '_LBurn',
+			[Fighter.LifeEffect.Explode]: '_LExplode',
 			[Fighter.LifeEffect.Heal]: '_LHeal',
 			[Fighter.LifeEffect.Skull]: '_LSkull',
 			[Fighter.LifeEffect.Acid]: '_LAcid'
@@ -318,10 +319,10 @@ export class MTConverter {
 			};
 			switch (lifeFx.fx) {
 				case Fighter.LifeEffect.Burn:
-					ret.args[lifeFx.amount];
+					ret.args = [lifeFx.amount ?? 1];
 					break;
 				case Fighter.LifeEffect.Skull:
-					ret.args[lifeFx.size];
+					ret.args = [lifeFx.size ?? 1];
 					break;
 			}
 			return ret;

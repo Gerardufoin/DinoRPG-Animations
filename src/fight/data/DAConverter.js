@@ -280,6 +280,7 @@ export class DAConverter {
 			_LLightning: Fighter.LifeEffect.Lightning,
 			_LAir: Fighter.LifeEffect.Air,
 			_LBurn: Fighter.LifeEffect.Burn,
+			_LExplode: Fighter.LifeEffect.Explode,
 			_LHeal: Fighter.LifeEffect.Heal,
 			_LSkull: Fighter.LifeEffect.Skull,
 			_LAcid: Fighter.LifeEffect.Acid

@@ -13,12 +13,12 @@ export class Asset extends Sprite {
 	 * The Asset object is a wrapper for the class Sprite of PixiJS.
 	 * It takes a reference object as parameter and instantiate the texture, moving it using the offset if needed.
 	 * @param {{jpg?: string, png?: string, svg?: string, offset?: {x: number, y: number}}} reference The reference to the compressed texture used to instantiate the Sprite.
+	 * @param {number} scale Scale of tzhe texture to instantiate. Only applicable for SVG.
 	 */
-	constructor(reference) {
-		const texture = TextureManager.getTextureFromCompressedReference(reference);
-		super(texture);
-		this.x = -(reference.offset?.x ?? 0);
-		this.y = -(reference.offset?.y ?? 0);
+	constructor(reference, scale = 1) {
+		super(TextureManager.getTextureFromCompressedReference(reference, scale));
+		this.x = -(reference.offset?.x ?? 0) * scale;
+		this.y = -(reference.offset?.y ?? 0) * scale;
 	}
 
 	/**
