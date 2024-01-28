@@ -53,9 +53,10 @@ export class Leaf extends Faller {
 
 		if (!Leaf.GreenOutlineFilter) {
 			Leaf.GreenOutlineFilter = new GlowFilter({
-				distance: 4,
+				distance: 2,
 				color: 0x227700,
-				outerStrength: 1
+				outerStrength: 3,
+				quality: 0.5
 			});
 		}
 		if (!Leaf.ColorFilter) {

@@ -25,6 +25,7 @@ import { Acid } from './parts/life/Acid.js';
 import { Skull } from './parts/life/Skull.js';
 import { Heal } from './parts/life/Heal.js';
 import { Explosion } from './parts/life/Explosion.js';
+import { StatusDisplay } from './StatusDisplay.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -83,7 +84,8 @@ export class Fighter extends Phys {
 		DP_BACK: 0,
 		DP_BODY: 1,
 		DP_STATUS: 2,
-		DP_FRONT: 3
+		DP_FRONT: 3,
+		DP_STATUS_ICON: 4
 	};
 	/**
 	 * Layers of the Fighters. Each keys of Fighter.LAYERS generate a layer at initialisation.
@@ -173,6 +175,11 @@ export class Fighter extends Phys {
 	 */
 	_status = [];
 	/**
+	 * Status icons of the Fighter.
+	 * @type {StatusDisplay}
+	 */
+	_statusDisplay = new StatusDisplay();
+	/**
 	 * States if the Fighter is frozen or not.
 	 * Frozen Fighter cannot move.
 	 * @type {boolean}
@@ -222,6 +229,11 @@ export class Fighter extends Phys {
 		force: 0,
 		timer: 0
 	};
+	/**
+	 * Displacement value for status moving over time (fly, poison, shield, bless).
+	 * @type {number}
+	 */
+	_decal = 0;
 
 	/**
 	 * The last registered coordinates of the Fighter.
@@ -309,6 +321,8 @@ export class Fighter extends Phys {
 		}
 		this._layers[Fighter.LAYERS.DP_BODY].container.addChild(this._animator);
 		this.setSide(fInfos.side);
+
+		this._layers[Fighter.LAYERS.DP_STATUS_ICON].container.addChild(this._statusDisplay);
 
 		this._ray = this._width * 0.5;
 		this.dropShadow();
@@ -632,8 +646,10 @@ export class Fighter extends Phys {
 	 * @param {number | undefined} power The power of the status if applicable.
 	 */
 	addStatus(status, power) {
-		this._status.push({ e: status, power: power });
-		this.displayStatus();
+		if (!this.haveStatus(status)) {
+			this._status.push({ e: status, power: power });
+			this.displayStatus();
+		}
 	}
 
 	/**
@@ -671,7 +687,61 @@ export class Fighter extends Phys {
 	 * Display the status of the Fighter.
 	 */
 	displayStatus() {
-		// TODO
+		this._defaultAnim = 'stand';
+		this._root.alpha = 1;
+		this._root.filters = [];
+		this._walkSpeed = 1.8;
+		this._runSpeed = 8;
+		this._flFreeze = this.haveProp(Fighter.Props.Static);
+		this._flFly = false;
+		this._decal = 0;
+		if (this._force !== null) {
+			this._force = 10;
+		}
+
+		for (const s of this._status) {
+			switch (s.e) {
+				case Fighter.Status.Sleep:
+					this._defaultAnim = 'sleep';
+					this.playAnim('sleep');
+					this._flFreeze = true;
+					break;
+				case Fighter.Status.Intang:
+					this._root.alpha = 0.5;
+					break;
+				case Fighter.Status.Fly:
+					this._defaultAnim = 'jump';
+					this.playAnim('jump');
+					this._flFly = true;
+					this.setGroundFx(false);
+					break;
+				case Fighter.Status.Slow:
+					this._walkSpeed *= 0.5;
+					this._runSpeed *= 0.5;
+					break;
+				case Fighter.Status.Quick:
+					this._walkSpeed *= 2;
+					this._runSpeed *= 2;
+					break;
+				case Fighter.Status.Stoned:
+				case Fighter.Status.Stun:
+					this._flFreeze = true;
+					if (this._force !== null) {
+						this._force = 100000;
+					}
+					break;
+			}
+		}
+		this._statusDisplay.showIcons(this._status);
+	}
+
+	/**
+	 * Show or hides the ground fxs.
+	 * @param {boolean} v If true, the ground fx are visible. Otherwise they are not.
+	 */
+	setGroundFx(v) {
+		//mcOndeFront._visible = v; TODO
+		//mcOndeBack._visible = v;
 	}
 
 	/**

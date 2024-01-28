@@ -4,6 +4,9 @@
  * Mapping between the extracted symbol from gfx.swf and their name in the project
  */
 export let mapping_gfx = {
+	586: 'status/slow',
+	589: 'status/quick',
+	619: 'status/lock',
 	706: 'fx/light',
 	708: 'fx/healing',
 	717: 'parts/ghost',
@@ -20,6 +23,16 @@ export let mapping_gfx = {
 	833: 'fx/flameche_6',
 	834: 'fx/flameche_7',
 	835: 'fx/flameche_8',
+	837: 'status/background',
+	838: 'status/sleep',
+	839: 'status/intang',
+	840: 'status/petrified',
+	842: 'status/blessed',
+	843: 'status/poison',
+	845: 'status/blob_1',
+	847: 'status/blob_2',
+	848: 'status/dazzled',
+	849: 'status/stun',
 	875: 'scene/column',
 	886: 'fx/explo_1',
 	887: 'fx/explo_2',

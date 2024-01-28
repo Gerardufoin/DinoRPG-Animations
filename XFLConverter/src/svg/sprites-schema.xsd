@@ -36,6 +36,7 @@
                         <xs:attribute name="stroke" type="xs:string" use="optional" />
                         <xs:attribute name="stroke-linecap" type="xs:string" use="optional" />
                         <xs:attribute name="stroke-linejoin" type="xs:string" use="optional" />
+                        <xs:attribute name="stroke-miterlimit" type="xs:decimal" use="optional" />
                         <xs:attribute name="stroke-opacity" type="xs:decimal" use="optional" />
                         <xs:attribute name="stroke-width" type="xs:decimal" use="optional" />
                       </xs:complexType>
