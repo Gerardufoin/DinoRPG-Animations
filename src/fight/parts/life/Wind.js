@@ -59,9 +59,7 @@ export class Wind extends Light {
 		particle.x = Math.random() * 20;
 		this._root.angle = Math.random() * 360;
 
-		this._sleep = Math.random() * 20;
-		this._root.visible = false;
-		this._root.scale.x = this._root.scale.y = 0;
+		this.sleep(Math.random() * 20);
 		this.updatePos();
 	}
 
@@ -73,7 +71,7 @@ export class Wind extends Light {
 		super.update(timer);
 		if (!this.asleep && this._growTimer < Wind.GROWTH_TIME) {
 			this._growTimer += timer.tmod;
-			this._root.scale.x = this._root.scale.y = Math.min(this._growTimer / Wind.GROWTH_TIME, 1);
+			this._root.scale.set(Math.min(this._growTimer / Wind.GROWTH_TIME, 1));
 		}
 	}
 }

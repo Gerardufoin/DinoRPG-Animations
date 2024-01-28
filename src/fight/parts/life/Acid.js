@@ -66,10 +66,10 @@ export class Acid extends Phys2D {
 		this._animTimer += timer.tmod;
 		if (this._ball.visible) {
 			// Ball grows over 3 frames
-			this._ball.scale.x = this._ball.scale.y = Math.min(this._animTimer / 3, 1);
+			this._ball.scale.set(Math.min(this._animTimer / 3, 1));
 		} else {
 			// Smoke grows from 0.4 to 1.1 over 7 frames
-			this._smoke.scale.x = this._smoke.scale.y = Math.min((this._animTimer / 7) * 0.7, 0.7) + 0.4;
+			this._smoke.scale.set(Math.min((this._animTimer / 7) * 0.7, 0.7) + 0.4);
 		}
 		// Once target is reached, we show the smoke, make its weight lighter and setup the fadeout timer.
 		if (this._y > this._targetY) {

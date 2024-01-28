@@ -50,7 +50,7 @@ export class AddFighter extends State {
 	 * If the entrance is undefined, the Fighter does its default entrance animation, which is a jumpdown.
 	 * @param {Scene} scene The Scene where the State is happening.
 	 * @param {() => void} endCall The function to call at the end of the State, if any.
-	 * @param {{props: Array, dino: boolean, life: number, name: string, side: boolean, size: number, fid: number, gfx: string, entrance?: number, anim?: string, x?: number, y?: number}} fighter The Fighter to add.
+	 * @param {{props: number[], dino: boolean, life: number, maxLife?: number, name: string, side: boolean, scale: number, fid: number, gfx: string, entrance?: number, anim?: string, x?: number, y?: number}} fighter The Fighter to add.
 	 */
 	constructor(scene, endCall, fighter) {
 		super(scene, endCall);

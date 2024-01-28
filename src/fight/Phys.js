@@ -2,7 +2,6 @@
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Phys.hx
 
 import { Sprite } from './Sprite.js';
-import { PixiHelper } from '../display/PixiHelper.js';
 import { Timer } from './Timer.js';
 import { Container } from 'pixi.js';
 import { Scene } from './Scene.js';
@@ -108,18 +107,5 @@ export class Phys extends Sprite {
 		}
 
 		super.update(timer);
-	}
-
-	/**
-	 *
-	 * @param {{x: number, y: number}} t Destination
-	 * @param {number} c ???
-	 * @param {number} limit Max increase
-	 */
-	towardSpeed(t, c, limit) {
-		const dx = t.x - this._x;
-		const dy = t.y - this._y;
-		this._vx += PixiHelper.mm(-limit, dx * c, limit);
-		this._vy += PixiHelper.mm(-limit, dy * c, limit);
 	}
 }

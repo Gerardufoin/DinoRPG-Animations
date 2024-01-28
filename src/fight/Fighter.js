@@ -24,7 +24,12 @@ import { Drip } from './parts/life/Drip.js';
 import { Acid } from './parts/life/Acid.js';
 import { Skull } from './parts/life/Skull.js';
 import { Heal } from './parts/life/Heal.js';
+import { Explosion } from './parts/life/Explosion.js';
 
+/**
+ * A DinoRPG fighter. Can be either a dino or a monster.
+ * Contains all the components related to the fighters.
+ */
 export class Fighter extends Phys {
 	static Mode = {
 		Waiting: 0,
@@ -253,6 +258,11 @@ export class Fighter extends Phys {
 	 */
 	_lockTimer = 0;
 
+	/**
+	 * Creates a new Fighter based on the given Fighter's information.
+	 * @param {{props: number[], dino: boolean, life: number, maxLife?: number, name: string, side: boolean, scale: number, fid: number, gfx: string, entrance?: number, anim?: string, x?: number, y?: number}} fInfos The Fighter's informations.
+	 * @param {Scene} scene The Scene where the Fighter is added.
+	 */
 	constructor(fInfos, scene) {
 		const body = new Container();
 		super(body, scene);
@@ -1042,7 +1052,7 @@ export class Fighter extends Phys {
 
 	/**
 	 * Spawns healing particle on the Fighter.
-	 * @param {number} max The number of particle to spawn in.
+	 * @param {number} max The number of particles to spawn in.
 	 */
 	fxHeal(max) {
 		for (let i = 0; i < max; ++i) {
@@ -1062,6 +1072,19 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Spawns explosion particles on the Fighter.
+	 * @param {number} max The number of particles to spawn in.
+	 */
+	fxExplosion(max) {
+		for (let i = 0; i < max; ++i) {
+			this.addSprite(
+				new Explosion(this._scene, (Math.random() * 2 - 1) * this.ray, -Math.random() * this._height),
+				Fighter.LAYERS.DP_FRONT
+			);
+		}
+	}
+
+	/**
 	 * Play the given Fighter.LifeEffect effect.
 	 * @param {{fx: number, amount?: number, size?: number}} effect The Fighter.LifeEffect to play.
 	 */
@@ -1071,7 +1094,7 @@ export class Fighter extends Phys {
 				this.fxBurn(effect.amount);
 				break;
 			case Fighter.LifeEffect.Explode:
-				//TODO
+				this.fxExplosion(6);
 				break;
 			case Fighter.LifeEffect.Heal:
 				this.fxHeal(32);

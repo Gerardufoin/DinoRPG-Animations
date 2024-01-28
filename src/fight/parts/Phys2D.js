@@ -137,7 +137,7 @@ export class Phys2D extends Sprite {
 					case 4:
 						break;
 					case 0:
-						this._root.scale.x = this._root.scale.y = c * this._scale;
+						this._root.scale.set(c * this._scale);
 						break;
 					case 1:
 						this._root.visible = Math.round(this._fadeoutTimer) % 4 > 1;
@@ -159,6 +159,18 @@ export class Phys2D extends Sprite {
 		super.update(timer);
 		if (this._animator) {
 			this._animator.update(timer.deltaTimeMS);
+		}
+	}
+
+	/**
+	 * Pause the entity for the given duration.
+	 * @param {number} duration The duration of the pause.
+	 */
+	sleep(duration) {
+		this._sleep = duration;
+		this._root.visible = false;
+		if (this._animator) {
+			this._animator.playing = false;
 		}
 	}
 }

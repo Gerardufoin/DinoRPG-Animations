@@ -30,12 +30,9 @@ export class Flameche extends Phys2D {
 		this._x = x;
 		this._y = y;
 		this._vx = -Math.random() * 2 * intSide;
-		this._sleep = sleep;
 
 		this._root.angle = -intSide * 30;
-		this._animator.playing = false;
-		this._root.visible = false;
-
+		this.sleep(sleep);
 		this.updatePos();
 	}
 }

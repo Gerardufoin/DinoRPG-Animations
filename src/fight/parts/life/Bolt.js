@@ -48,10 +48,7 @@ export class Bolt extends Phys2D {
 		}
 		this._root.filters = [Bolt.GlowFilter];
 
-		this._sleep = Math.random() * 20;
-		this._animator.playing = false;
-		this._root.visible = false;
-
+		this.sleep(Math.random() * 20);
 		this.updatePos();
 	}
 }

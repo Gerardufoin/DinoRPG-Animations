@@ -56,7 +56,7 @@ export class Skull extends Phys2D {
 	update(timer) {
 		super.update(timer);
 		this._animTimer += timer.tmod;
-		this._root.scale.x = this._root.scale.y = 1 + Math.min((this._animTimer / Skull.ANIMATION_LENGTH) * 0.5, 0.5);
+		this._root.scale.set(1 + Math.min((this._animTimer / Skull.ANIMATION_LENGTH) * 0.5, 0.5));
 		this._blurFilter.blur = Math.min((this._animTimer / Skull.ANIMATION_LENGTH) * 1, 1);
 	}
 }

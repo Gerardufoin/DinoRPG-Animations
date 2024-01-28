@@ -121,7 +121,7 @@ export class Sprite {
 	 */
 	setScale(scale) {
 		this._scale = scale;
-		this._root.scale.x = this._root.scale.y = scale;
+		this._root.scale.set(scale);
 	}
 
 	/**

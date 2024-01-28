@@ -50,8 +50,7 @@ export class Heal extends Light {
 		this._root.addChild(this._sparkle);
 		this._root.addChild(light);
 
-		this._sleep = Math.random() * 20;
-		this._root.visible = false;
+		this.sleep(Math.random() * 20);
 
 		this.setScale(0.5 + Math.random());
 		this._weight = -(0.02 + Math.random() * 0.1);
@@ -73,7 +72,7 @@ export class Heal extends Light {
 			// When the timer reaches SPARKLE_FRAME_START, the coef start at 0, then goes toward 1 at half the duration, and finally goes back to 0.
 			const coef =
 				1 - Math.abs(Math.max(this._animTimer - Heal.SPARKLE_FRAME_START, 0) / (sparkleDuration / 2) - 1);
-			this._sparkle.scale.x = this._sparkle.scale.y = coef;
+			this._sparkle.scale.set(coef);
 		}
 	}
 }
