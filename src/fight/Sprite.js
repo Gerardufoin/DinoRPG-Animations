@@ -41,9 +41,9 @@ export class Sprite {
 		return this._ray;
 	}
 	/**
-	 * Force of the Sprite against other Sprite.
-	 * Sprite with forces push against each other.
-	 * Update the position in Scene.
+	 * Force of the Sprite against other Sprites.
+	 * Sprites with force push against each others.
+	 * The forces are applied in the Scene's update.
 	 * @type {number | null}
 	 */
 	_force = null;

@@ -10,7 +10,10 @@ import { Timer } from '../Timer.js';
  * If flBurst is set to true, the Part will play its burst animation once in contact with the ground.
  */
 export class Faller extends Part {
-	_flBurst = false;
+	/**
+	 * True while the Part is falling.
+	 * @type {boolean}
+	 */
 	_flFall = true;
 
 	/**
@@ -24,14 +27,17 @@ export class Faller extends Part {
 			this._vy = 0;
 			this._vz = 0;
 			this._weight = 0;
+			this.landed();
 			if (this._animator) {
 				this._animator.playing = false;
-				if (this._flBurst) {
-					this._root.rotation = 0;
-					this._animator.playAnim('burst');
-				}
 			}
 			this._flFall = false;
 		}
 	}
+
+	/**
+	 * Function called once the entity hits the ground.
+	 * Overwritten by children.
+	 */
+	landed() {}
 }

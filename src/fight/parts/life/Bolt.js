@@ -41,10 +41,9 @@ export class Bolt extends Phys2D {
 
 		if (!Bolt.GlowFilter) {
 			Bolt.GlowFilter = new GlowFilter({
-				distance: 5,
+				distance: 10,
 				color: 0xffff00,
-				innerStrength: 0,
-				outerStrength: 1
+				outerStrength: 2
 			});
 		}
 		this._root.filters = [Bolt.GlowFilter];

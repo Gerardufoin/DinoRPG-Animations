@@ -90,7 +90,6 @@ export class Spirit extends Part {
 			new GlowFilter({
 				distance: 5,
 				color: 0xffffff,
-				innerStrength: 0,
 				outerStrength: 1
 			})
 		];

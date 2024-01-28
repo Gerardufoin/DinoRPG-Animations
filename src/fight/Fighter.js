@@ -20,6 +20,7 @@ import { Flameche } from './parts/life/Flameche.js';
 import { Smoke } from './parts/smoke/Smoke.js';
 import { Leaf } from './parts/life/Leaf.js';
 import { Wind } from './parts/life/Wind.js';
+import { Drip } from './parts/life/Drip.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -175,6 +176,19 @@ export class Fighter extends Phys {
 	get isFrozen() {
 		return this._flFreeze;
 	}
+	/**
+	 * While greated than 0, the Fighter will generate drips each frame.
+	 * @type {number}
+	 */
+	_dripTimer = 0;
+	/**
+	 * While greater than 0, the Fighter shakes each frame.
+	 * @type {{force: number, timer: number}}
+	 */
+	_shake = {
+		force: 0,
+		timer: 0
+	};
 
 	/**
 	 * The last registered coordinates of the Fighter.
@@ -367,9 +381,8 @@ export class Fighter extends Phys {
 				this.updateDodge();
 				break;
 		}
-		/*
-		updateFx();
-		updateStatus();*/
+		this.updateFx(timer);
+		//updateStatus(); TODO
 	}
 
 	/**
@@ -704,7 +717,10 @@ export class Fighter extends Phys {
 
 		this.showDamages(damages);
 		this._lockTimer = stunDuration;
-		this._shake = 30;
+		this._shake = {
+			force: 30,
+			timer: 1
+		};
 
 		if (lifeFx !== null) {
 			this.lifeEffect(lifeFx);
@@ -861,6 +877,40 @@ export class Fighter extends Phys {
 	// FX SECTION
 
 	/**
+	 * Update the shake animation by moving the animator by the shake force.
+	 * @param {Timer} timer The Fight's timer, containing the elapsed time.
+	 */
+	updateShake(timer) {
+		if (this._shake.force) {
+			this._shake.timer += timer.tmod;
+			if (this._shake.timer > 1) {
+				this._shake.timer--;
+				this._shake.force *= -0.6;
+				this._animator.x = this._shake.force;
+
+				if (Math.abs(this._shake.force) < 1) {
+					this._shake.force = 0;
+					this._animator.x = 0;
+				}
+			}
+		}
+	}
+
+	/**
+	 * Updates the FX effect attached to the Fighter (shake and drip).
+	 * @param {Timer} timer Fight's timer, containing the elapsed time.
+	 */
+	updateFx(timer) {
+		this.updateShake(timer);
+		if (this._dripTimer > 0) {
+			if (Math.floor(this._dripTimer) != Math.floor(this._dripTimer - timer.tmod)) {
+				this.fxDrip();
+			}
+			this._dripTimer -= timer.tmod;
+		}
+	}
+
+	/**
 	 * Adds flameches particles to the Fighter.
 	 * @param {number} max The number of flames to spawn in.
 	 * @param {number} sleep Random delay before the flames appears.
@@ -927,6 +977,31 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Adds drip particles to the Fighter and set the drip timer.
+	 * @param {number} max Number of drip particles to spawn in, divided by two.
+	 */
+	fxWater(max) {
+		const amnt = Math.round(max * 0.5);
+		for (let i = 0; i < amnt; ++i) {
+			this.fxDrip();
+		}
+		this._dripTimer = amnt;
+	}
+
+	/**
+	 * Adds a drip particle to the Fighter.
+	 */
+	fxDrip() {
+		const drip = new Drip(
+			this._scene,
+			this._x + (Math.random() * 2 - 1) * this.ray,
+			this._y + (Math.random() * 2 - 1) * this.ray * 0.5,
+			this._z - Math.random() * this._height * 2
+		);
+		this._scene.addSprite(drip, Scene.LAYERS.FIGHTERS);
+	}
+
+	/**
 	 * Play the given Fighter.LifeEffect effect.
 	 * @param {{fx: number, amount?: number, size?: number}} effect The Fighter.LifeEffect to play.
 	 */
@@ -941,6 +1016,9 @@ export class Fighter extends Phys {
 				break;
 			case Fighter.LifeEffect.Wood:
 				this.fxLeaf(10);
+				break;
+			case Fighter.LifeEffect.Water:
+				this.fxWater(20);
 				break;
 			case Fighter.LifeEffect.Lightning:
 				this.fxLightning(16);

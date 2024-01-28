@@ -144,7 +144,6 @@ export class Animator extends Container {
 			distance: glowParam.distance ?? 1,
 			color: glowParam.color,
 			quality: glowParam.quality ?? 0.1,
-			innerStrength: 0,
 			outerStrength: glowParam.strength
 		});
 		this._body.filters = [filter];

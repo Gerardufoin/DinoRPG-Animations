@@ -46,10 +46,9 @@ export class Wind extends Light {
 
 		if (!Wind.GlowFilter) {
 			Wind.GlowFilter = new GlowFilter({
-				distance: 15,
+				distance: 10,
 				color: 0xffffff,
-				innerStrength: 0,
-				outerStrength: 6
+				outerStrength: 5
 			});
 		}
 		this._root.filters = [Wind.GlowFilter];

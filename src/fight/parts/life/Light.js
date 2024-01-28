@@ -32,8 +32,7 @@ export class Light extends Phys2D {
 			Light.GlowFilter = new GlowFilter({
 				distance: 10,
 				color: 0xffffff,
-				innerStrength: 0,
-				outerStrength: 0.5
+				outerStrength: 1
 			});
 		}
 		light.filters = [Light.GlowFilter];

@@ -55,7 +55,6 @@ export class Leaf extends Faller {
 			Leaf.GreenOutlineFilter = new GlowFilter({
 				distance: 4,
 				color: 0x227700,
-				innerStrength: 0,
 				outerStrength: 1
 			});
 		}
