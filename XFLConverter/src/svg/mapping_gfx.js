@@ -4,6 +4,8 @@
  * Mapping between the extracted symbol from gfx.swf and their name in the project
  */
 export let mapping_gfx = {
+	706: 'fx/light',
+	708: 'fx/healing',
 	717: 'parts/ghost',
 	763: 'fx/acid_ball',
 	765: 'fx/acid_smoke',

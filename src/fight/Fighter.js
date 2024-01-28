@@ -23,6 +23,7 @@ import { Wind } from './parts/life/Wind.js';
 import { Drip } from './parts/life/Drip.js';
 import { Acid } from './parts/life/Acid.js';
 import { Skull } from './parts/life/Skull.js';
+import { Heal } from './parts/life/Heal.js';
 
 export class Fighter extends Phys {
 	static Mode = {
@@ -1040,6 +1041,19 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Spawns healing particle on the Fighter.
+	 * @param {number} max The number of particle to spawn in.
+	 */
+	fxHeal(max) {
+		for (let i = 0; i < max; ++i) {
+			this.addSprite(
+				new Heal(this._scene, (Math.random() * 2 - 1) * this.ray, -Math.random() * this._height),
+				Fighter.LAYERS.DP_FRONT
+			);
+		}
+	}
+
+	/**
 	 * Spawns a skull particle with the given size on the Fighter.
 	 * @param {number} size The size of the skull particle, 1 by default.
 	 */
@@ -1060,7 +1074,7 @@ export class Fighter extends Phys {
 				//TODO
 				break;
 			case Fighter.LifeEffect.Heal:
-				//TODO
+				this.fxHeal(32);
 				break;
 			case Fighter.LifeEffect.Skull:
 				this.fxSkull(effect.size);

@@ -45,6 +45,14 @@ export class Phys2D extends Sprite {
 	 */
 	_sleep = 0;
 	/**
+	 * Checks if the entity is asleep.
+	 * Asleep entities are not updated.
+	 * @type {boolean}
+	 */
+	get asleep() {
+		return this._sleep > 0;
+	}
+	/**
 	 * The fadeout time. When it reaches 0, the Sprite fades out depending on its fade type.
 	 * @type {number}
 	 */
@@ -91,7 +99,7 @@ export class Phys2D extends Sprite {
 	 * @param {Timer} timer The Fight's timer, containing the elapsed time.
 	 */
 	update(timer) {
-		if (this._sleep > 0) {
+		if (this.asleep) {
 			this._sleep -= timer.tmod;
 			if (this._sleep <= 0) {
 				this._root.visible = true;

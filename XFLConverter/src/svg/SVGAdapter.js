@@ -104,7 +104,7 @@ export class SVGAdapter {
 						}
 						const name = symbol + (files.length > 1 ? `_${i + 1}` : '');
 						this.saveAdaptedSVG(resultFolder, name, this._builder.build(data), mapping);
-					} else if (symbol == '773') {
+					} else if (symbol == '706') {
 						console.log(`${symbol}: ${svgDoc.validationErrors}`);
 					}
 				}

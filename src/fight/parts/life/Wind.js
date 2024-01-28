@@ -71,7 +71,7 @@ export class Wind extends Light {
 	 */
 	update(timer) {
 		super.update(timer);
-		if (this._sleep <= 0 && this._growTimer < Wind.GROWTH_TIME) {
+		if (!this.asleep && this._growTimer < Wind.GROWTH_TIME) {
 			this._growTimer += timer.tmod;
 			this._root.scale.x = this._root.scale.y = Math.min(this._growTimer / Wind.GROWTH_TIME, 1);
 		}

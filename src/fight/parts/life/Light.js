@@ -1,22 +1,16 @@
 // @ts-check
 
-import { Graphics } from 'pixi.js';
+import { Container } from 'pixi.js';
 import { Phys2D } from '../Phys2D.js';
-import { GlowFilter } from '@pixi/filter-glow';
 import { Scene } from '../../Scene.js';
+import { Asset } from '../../../display/Asset.js';
+import { ref } from '../../../gfx/references.js';
 
 // GFX 707
 /**
  * Creates a pacticle of light at the given coordinates with the given velocity.
  */
 export class Light extends Phys2D {
-	/**
-	 * The GlowFilter of the Light.
-	 * Storing it to prevent WebGL to create it each time.
-	 * @type {GlowFilter}
-	 */
-	static GlowFilter;
-
 	/**
 	 * Creates a particle of light at the given coordinates with the given velocity.
 	 * @param {Scene} scene The Scene where the particle is spawned in.
@@ -26,16 +20,8 @@ export class Light extends Phys2D {
 	 * @param {number} vy The initial y velocity.
 	 */
 	constructor(scene, x, y, vx, vy) {
-		const light = new Graphics().beginFill(0xffffff).drawCircle(0, 0, 1);
-		super(light, scene);
-		if (!Light.GlowFilter) {
-			Light.GlowFilter = new GlowFilter({
-				distance: 10,
-				color: 0xffffff,
-				outerStrength: 1
-			});
-		}
-		light.filters = [Light.GlowFilter];
+		super(new Container(), scene);
+		this._root.addChild(new Asset(ref.fx.light));
 
 		this._x = x;
 		this._y = y;
