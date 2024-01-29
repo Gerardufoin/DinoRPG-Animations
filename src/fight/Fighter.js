@@ -180,6 +180,11 @@ export class Fighter extends Phys {
 	 */
 	_statusDisplay = new StatusDisplay();
 	/**
+	 * Timer for the status which spawn particles.
+	 * @type {number}
+	 */
+	_statusSpawnTimer = 0;
+	/**
 	 * States if the Fighter is frozen or not.
 	 * Frozen Fighter cannot move.
 	 * @type {boolean}
@@ -396,7 +401,7 @@ export class Fighter extends Phys {
 	}
 
 	/**
-	 * TODO.
+	 * Update the physic, animator, Sprites attached to the Fighter, current Figther's mode, as well as fx and status display.
 	 * @param {Timer} timer The Timer managing the elapsed time.
 	 */
 	update(timer) {
@@ -434,7 +439,7 @@ export class Fighter extends Phys {
 				break;
 		}
 		this.updateFx(timer);
-		//updateStatus(); TODO
+		this.updateStatus(timer);
 	}
 
 	/**
@@ -733,6 +738,113 @@ export class Fighter extends Phys {
 			}
 		}
 		this._statusDisplay.showIcons(this._status);
+	}
+
+	/**
+	 * Update the visual effect of the status applied to the Fighter.
+	 * @param {Timer} timer The Fight's timer, containing the elapsed time.
+	 */
+	updateStatus(timer) {
+		if (this.isLanding) {
+			this._z += 5;
+			if (this._z > 0) {
+				this._z = 0;
+				this._flLand = false;
+				this.setGroundFx(true);
+			}
+		}
+
+		this._decal = (this._decal + 27 * timer.tmod) % 628;
+		this._statusSpawnTimer += timer.tmod;
+		let spawn = false;
+		if (this._statusSpawnTimer >= 1) {
+			spawn = true;
+			this._statusSpawnTimer = 0;
+		}
+		this._root.filters = [];
+		for (const s of this._status) {
+			switch (s.e) {
+				case Fighter.Status.Flames:
+					if (spawn) {
+						this.addSprite(
+							new Flameche(this._scene, (Math.random() * 2 - 1) * 15, -Math.random() * 20, 0, 0),
+							Fighter.LAYERS.DP_BODY
+						);
+					}
+					break;
+				case Fighter.Status.Burn:
+					if (spawn) {
+						this.addSprite(
+							new Flameche(this._scene, (Math.random() * 2 - 1) * 15, -Math.random() * 20, 0, 0, true),
+							Fighter.LAYERS.DP_BODY
+						);
+					}
+					break;
+				case Fighter.Status.Fly:
+					{
+						const tz = Math.sin(this._decal * 0.01) * 15 - 60;
+						const dz = tz - this._z;
+						var lim = 3;
+						this._z += PixiHelper.mm(-lim, dz, lim);
+					}
+					break;
+				/*case _SStoned:
+					var fl = new flash.filters.ColorMatrixFilter();
+					var r = 0.2;
+					var g = 0.1;
+					var b = 0.7;
+					fl.matrix = [
+						r,	g,	b,	0,	0,
+						r,	g,	b,	0,	0,
+						r,	g,	b,	0,	0,
+						0,	0,	0,	1,	0,
+					];
+					var a = root.filters;
+					a.push(fl);
+					root.filters = a;
+
+				case _SShield :
+					var col = Col.getRainbow( decal/628 );
+					var c = Col.mergeCol( Col.objToCol(col), 0xFFFF00, 0.2 );
+					Filt.glow(root,4,4, c );
+
+				case _SBless :
+					var c = Math.sin(decal*0.01);
+					Filt.glow(root,2,4,0xFFFFFF);
+					Filt.glow(root,2+8*c,2+2*c,0xFFFFFF);
+
+				case _SPoison(pow) :
+					var c = (1+Math.cos(decal*0.01))*0.5;
+					colt = new flash.geom.Transform(skin);
+					colt.colorTransform = new flash.geom.ColorTransform(1,1,1,1,0,c*150,0,0);
+
+				case _SHeal(n) :	// ANIM
+					var p = new mt.bumdum.Phys( bdm.attach("fxLight",1) );
+					p.x = (Math.random()*2-1)*17;
+					p.y = (5-Math.random()*15) * 2;
+					p.vy = -Math.random()*3;
+					p.timer = 10+Math.random()*10;
+					p.root.blendMode = "add";
+					Col.setPercentColor( p.root, 100, Col.objToCol( Col.getRainbow(Math.random()) ) );
+
+				case _SStun:
+					var fl = new flash.filters.ColorMatrixFilter();
+					var r = 0.7;
+					var g = 0.7;
+					var b = 0.7;
+					fl.matrix = [
+						r,	g,	b,	0,	0,
+						r,	g,	b,	0,	0,
+						r,	g,	b,	0,	0,
+						0,	0,	0,	1,	0,
+					];
+					var a = root.filters;
+					a.push(fl);
+					root.filters = a;
+					
+				default:*/
+			}
+		}
 	}
 
 	/**
@@ -1160,6 +1272,8 @@ export class Fighter extends Phys {
 	 */
 	lifeEffect(effect) {
 		switch (effect.fx) {
+			case Fighter.LifeEffect.Normal:
+				break;
 			case Fighter.LifeEffect.Burn:
 				this.fxBurn(effect.amount);
 				break;
@@ -1200,9 +1314,7 @@ export class Fighter extends Phys {
 	 * Disable the water rings around the Fighter.
 	 */
 	fxJump() {
-		// TODO
-		//mcOndeFront._visible = false;
-		//mcOndeBack._visible = false;
+		this.setGroundFx(false);
 	}
 
 	/**
@@ -1214,8 +1326,7 @@ export class Fighter extends Phys {
 	fxLand(max, speed = 3, cr = 8) {
 		this.playAnim('land');
 		this._mode = Fighter.Mode.Anim;
-		//mcOndeFront._visible = true;
-		//mcOndeBack._visible = true;
+		this.setGroundFx(true);
 		for (let i = 0; i < max; ++i) {
 			const a = ((i + Math.random()) / max) * 6.28;
 			const ca = Math.cos(a);

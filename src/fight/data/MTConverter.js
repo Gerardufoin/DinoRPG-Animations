@@ -514,7 +514,7 @@ export class MTConverter {
 			case Fighter.Status.MonoElt:
 			case Fighter.Status.Heal:
 			case Fighter.Status.Dazzled:
-				ret.args.push(status.power);
+				ret.args.push(status.power ?? 1);
 				break;
 		}
 		return ret;

@@ -259,6 +259,7 @@ export class Animator extends Container {
 				this.addPart(pName, element);
 			}
 		}
+		this._body.updateAnimation();
 		return this;
 	}
 

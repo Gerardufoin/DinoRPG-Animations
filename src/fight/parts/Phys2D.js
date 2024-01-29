@@ -168,9 +168,9 @@ export class Phys2D extends Sprite {
 	 */
 	sleep(duration) {
 		this._sleep = duration;
-		this._root.visible = false;
+		this._root.visible = duration == 0;
 		if (this._animator) {
-			this._animator.playing = false;
+			this._animator.playing = duration == 0;
 		}
 	}
 }
