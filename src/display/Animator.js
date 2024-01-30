@@ -259,7 +259,7 @@ export class Animator extends Container {
 				this.addPart(pName, element);
 			}
 		}
-		this._body.updateAnimation();
+		this.setFrame(0);
 		return this;
 	}
 

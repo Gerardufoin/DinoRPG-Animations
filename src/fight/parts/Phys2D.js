@@ -94,6 +94,16 @@ export class Phys2D extends Sprite {
 		super(container, scene);
 		this._z = undefined;
 	}
+
+	/**
+	 * Sets the alpha of the container.
+	 * @param {number} n Value of the alpha.
+	 */
+	setAlpha(n) {
+		this._alpha = n;
+		this._root.alpha = this._alpha;
+	}
+
 	/**
 	 * Update the 2D physic of the object.
 	 * @param {Timer} timer The Fight's timer, containing the elapsed time.

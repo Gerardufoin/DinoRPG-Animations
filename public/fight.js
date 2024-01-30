@@ -78,7 +78,7 @@ const fightVersion = [
 			{
 				action: DinoAnim.Fight.Action.Status,
 				fid: 0,
-				status: 1
+				status: 9
 			},
 			/*{
 				action: DinoAnim.Fight.Action.Status,

@@ -1,6 +1,6 @@
 // @ts-check
-
-import { ColorMatrixFilter, Filter, Matrix } from 'pixi.js';
+// Color related functions: https://github.com/motion-twin/WebGamesArchives/blob/main/libs-haxe3/mt/flash/Color.hx
+import { Color, ColorMatrixFilter, Filter, Matrix } from 'pixi.js';
 import { offsetShader } from './shaders/ColorOffsetShader.js';
 
 /**
@@ -59,6 +59,47 @@ export class PixiHelper {
 		return new Filter(undefined, offsetShader, {
 			offset: new Float32Array([r, g, b]),
 			mult: new Float32Array([mr, mg, mb])
+		});
+	}
+
+	/**
+	 * Get a color from the rainbow based on the given coefficient.
+	 * If no coefficient is given, the color is random.
+	 * @param {number} c Coefficient of the color.
+	 * @returns {Color} The color from the rainbow.
+	 */
+	static getRainbow(c = undefined) {
+		if (c === undefined) {
+			c = Math.random();
+		}
+		const a = [0.0, 0.0, 0.0];
+		const part = (1 / 3) * 2;
+		for (let i = 0; i < 3; ++i) {
+			let v = part + i * 2 * part - c;
+			// hMod from https://github.com/motion-twin/WebGamesArchives/blob/main/libs-haxe2/mt/bumdum/Lib.hx
+			while (v > 0.5) v -= 1;
+			while (v < -0.5) v += 1;
+			a[i] = Math.min(1.5 - Math.abs(v) * 3, 1);
+		}
+		return new Color({ r: a[0] * 255, g: a[1] * 255, b: a[2] * 255 });
+	}
+
+	/**
+	 * Merge two colors based on the coefficient.
+	 * For example a coefficient of 0.2 will keep 80% of the first color and 20% of the second one.
+	 * @param {Color} col1 The first color to merge.
+	 * @param {Color | number| string} col2 The second color to merge.
+	 * @param {number} c Coefficient used to merge the colors. 0.5 by default.
+	 * @returns {Color} The new merged color.
+	 */
+	static mergeCol(col1, col2, c = 0.5) {
+		if (!(col2 instanceof Color)) {
+			col2 = new Color(col2);
+		}
+		return new Color({
+			r: Math.round((col1.red * c + col2.red * (1 - c)) * 255),
+			g: Math.round((col1.green * c + col2.green * (1 - c)) * 255),
+			b: Math.round((col1.blue * c + col2.blue * (1 - c)) * 255)
 		});
 	}
 }

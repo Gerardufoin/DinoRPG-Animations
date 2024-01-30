@@ -1,7 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Fighter.hx
 
-import { Container, Graphics } from 'pixi.js';
+import { ColorMatrixFilter, Container, Filter, Graphics } from 'pixi.js';
 import { PixiHelper } from '../display/PixiHelper.js';
 import { Animator } from '../display/Animator.js';
 import { sdino } from '../sdino.js';
@@ -26,6 +26,8 @@ import { Skull } from './parts/life/Skull.js';
 import { Heal } from './parts/life/Heal.js';
 import { Explosion } from './parts/life/Explosion.js';
 import { StatusDisplay } from './StatusDisplay.js';
+import { GlowFilter } from '@pixi/filter-glow';
+import { Light } from './parts/life/Light.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -239,6 +241,27 @@ export class Fighter extends Phys {
 	 * @type {number}
 	 */
 	_decal = 0;
+	/**
+	 * Status filters.
+	 * Storing them to prevent WebGL to create them each time.
+	 * @type {Filter[]}
+	 */
+	static StatusFilters;
+	/**
+	 * Shield status glow filter.
+	 * @type {GlowFilter}
+	 */
+	_shieldGlowFilter;
+	/**
+	 * Moving part of the blessed status.
+	 * @type {GlowFilter}
+	 */
+	_blessGlowFilter;
+	/**
+	 * Poison status ColorMatrixFilter.
+	 * @type {ColorMatrixFilter}
+	 */
+	_poisonColorFilter = new ColorMatrixFilter();
 
 	/**
 	 * The last registered coordinates of the Fighter.
@@ -283,6 +306,10 @@ export class Fighter extends Phys {
 	constructor(fInfos, scene) {
 		const body = new Container();
 		super(body, scene);
+
+		if (!Fighter.StatusFilters) {
+			Fighter.GenerateStatusFilters();
+		}
 
 		this.id = fInfos.fid;
 		this._isDino = fInfos.dino;
@@ -340,6 +367,12 @@ export class Fighter extends Phys {
 		this._animator.registerCallback('fxAttach', (anim, args) => {
 			this.fxAttach(args[0], args[1], args[2], args[3]);
 		});
+
+		// Add poison filter to animator
+		if (!this._animator.filters) {
+			this._animator.filters = [];
+		}
+		this._animator.filters.push(this._poisonColorFilter);
 
 		if (this.haveProp(Fighter.Props.Static)) {
 			this._flFreeze = true;
@@ -492,7 +525,7 @@ export class Fighter extends Phys {
 	 * Set a random destination and make the Fighter walk toward it.
 	 */
 	startWalk() {
-		this._animator.playAnim('walk');
+		this.playAnim('walk');
 		const w = Scene.WIDTH * 0.5;
 		this._walkPath = {
 			x: w - this.intSide * (20 + Math.random() * (w - 80)),
@@ -509,7 +542,7 @@ export class Fighter extends Phys {
 	 * Stop the current walk animation of the Fighter.
 	 */
 	stopWalk() {
-		this._animator.playAnim(this._defaultAnim);
+		this.playAnim(this._defaultAnim);
 		this._walkPath = null;
 		this._vx = 0;
 		this._vy = 0;
@@ -670,7 +703,7 @@ export class Fighter extends Phys {
 						this._flLand = true;
 						break;
 					case Fighter.Status.Poison:
-					//colt.colorTransform = new flash.geom.ColorTransform(1,1,1,1,0,0,0,0); TODO
+						this._poisonColorFilter.matrix[6] = 1;
 				}
 				return false;
 			}
@@ -788,61 +821,68 @@ export class Fighter extends Phys {
 						this._z += PixiHelper.mm(-lim, dz, lim);
 					}
 					break;
-				/*case _SStoned:
-					var fl = new flash.filters.ColorMatrixFilter();
-					var r = 0.2;
-					var g = 0.1;
-					var b = 0.7;
-					fl.matrix = [
-						r,	g,	b,	0,	0,
-						r,	g,	b,	0,	0,
-						r,	g,	b,	0,	0,
-						0,	0,	0,	1,	0,
-					];
-					var a = root.filters;
-					a.push(fl);
-					root.filters = a;
-
-				case _SShield :
-					var col = Col.getRainbow( decal/628 );
-					var c = Col.mergeCol( Col.objToCol(col), 0xFFFF00, 0.2 );
-					Filt.glow(root,4,4, c );
-
-				case _SBless :
-					var c = Math.sin(decal*0.01);
-					Filt.glow(root,2,4,0xFFFFFF);
-					Filt.glow(root,2+8*c,2+2*c,0xFFFFFF);
-
-				case _SPoison(pow) :
-					var c = (1+Math.cos(decal*0.01))*0.5;
-					colt = new flash.geom.Transform(skin);
-					colt.colorTransform = new flash.geom.ColorTransform(1,1,1,1,0,c*150,0,0);
-
-				case _SHeal(n) :	// ANIM
-					var p = new mt.bumdum.Phys( bdm.attach("fxLight",1) );
-					p.x = (Math.random()*2-1)*17;
-					p.y = (5-Math.random()*15) * 2;
-					p.vy = -Math.random()*3;
-					p.timer = 10+Math.random()*10;
-					p.root.blendMode = "add";
-					Col.setPercentColor( p.root, 100, Col.objToCol( Col.getRainbow(Math.random()) ) );
-
-				case _SStun:
-					var fl = new flash.filters.ColorMatrixFilter();
-					var r = 0.7;
-					var g = 0.7;
-					var b = 0.7;
-					fl.matrix = [
-						r,	g,	b,	0,	0,
-						r,	g,	b,	0,	0,
-						r,	g,	b,	0,	0,
-						0,	0,	0,	1,	0,
-					];
-					var a = root.filters;
-					a.push(fl);
-					root.filters = a;
-					
-				default:*/
+				case Fighter.Status.Stoned:
+					{
+						this._root.filters.push(Fighter.StatusFilters[Fighter.Status.Stoned]);
+					}
+					break;
+				case Fighter.Status.Shield:
+					{
+						if (!this._shieldGlowFilter) {
+							this._shieldGlowFilter = new GlowFilter({
+								color: 0xffffff,
+								distance: 2,
+								outerStrength: 4,
+								quality: 0.5
+							});
+						}
+						const rcol = PixiHelper.getRainbow(this._decal / 628);
+						const c = PixiHelper.mergeCol(rcol, 0xffff00, 0.2);
+						this._shieldGlowFilter.color = c.toNumber();
+						this._root.filters.push(this._shieldGlowFilter);
+					}
+					break;
+				case Fighter.Status.Bless:
+					{
+						if (!this._blessGlowFilter) {
+							this._blessGlowFilter = new GlowFilter({
+								color: 0xffffff,
+								distance: 4,
+								outerStrength: 2,
+								quality: 0.4
+							});
+						}
+						const c = Math.sin(this._decal * 0.01);
+						this._blessGlowFilter.outerStrength = 2 + 4 * c;
+						this._root.filters.push(Fighter.StatusFilters[Fighter.Status.Bless]);
+						this._root.filters.push(this._blessGlowFilter);
+					}
+					break;
+				case Fighter.Status.Poison:
+					{
+						// Index 6 of the ColorMatrixFilter impacts the green.
+						this._poisonColorFilter.matrix[6] = (1 + Math.cos(this._decal * 0.01)) * 0.5 + 1;
+					}
+					break;
+				case Fighter.Status.Heal:
+					if (spawn) {
+						this.addSprite(
+							new Light(
+								this._scene,
+								(Math.random() * 2 - 1) * 17,
+								(5 - Math.random() * 15) * 2,
+								0,
+								-Math.random() * 3,
+								10 + Math.random() * 10,
+								true
+							),
+							Fighter.LAYERS.DP_BODY
+						);
+					}
+					break;
+				case Fighter.Status.Stun:
+					this._root.filters.push(Fighter.StatusFilters[Fighter.Status.Stun]);
+					break;
 			}
 		}
 	}
@@ -1457,6 +1497,36 @@ export class Fighter extends Phys {
 	kill() {
 		this._scene.removeFighter(this);
 		super.kill();
+	}
+
+	/**
+	 * Generates the generic shaders related to the Fighters status.
+	 * All Fighters share the same shaders for performance.
+	 */
+	static GenerateStatusFilters() {
+		Fighter.StatusFilters = [];
+
+		// Petrified
+		const stoneMatrix = new ColorMatrixFilter();
+		const r = 0.2;
+		const g = 0.1;
+		const b = 0.7;
+		stoneMatrix.matrix = [r, g, b, 0, 0, r, g, b, 0, 0, r, g, b, 0, 0, 0, 0, 0, 1, 0];
+		Fighter.StatusFilters[Fighter.Status.Stoned] = stoneMatrix;
+
+		// Static part of the blessed glow filter.
+		Fighter.StatusFilters[Fighter.Status.Bless] = new GlowFilter({
+			color: 0xffffff,
+			outerStrength: 4,
+			distance: 2,
+			quality: 0.3
+		});
+
+		// Stun shader
+		const stunMatrix = new ColorMatrixFilter();
+		const v = 0.7;
+		stunMatrix.matrix = [v, v, v, 0, 0, v, v, v, 0, 0, v, v, v, 0, 0, 0, 0, 0, 1, 0];
+		Fighter.StatusFilters[Fighter.Status.Stun] = stunMatrix;
 	}
 
 	/**

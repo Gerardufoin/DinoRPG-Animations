@@ -282,23 +282,23 @@ A status if added to a fighter. An optional power property can be passed dependi
 2. status - FighterStatus - Status being added.
 3. power? - number - Power of the status when applicable.
 
-| FighterStatus | Description                                                            |
-| ------------- | ---------------------------------------------------------------------- |
-| Sleep (0)     | The figher fall asleep.                                                |
-| Flames (1)    | The fighter is covered in flames.                                      |
-| Burn (2)      | The fighter is covered in black flame.                                 |
-| Intang (3)    | The fighter gains the Intangible status.                               |
-| Fly (4)       | The fighter starts flying.                                             |
-| Slow (5)      | The fighter gains the Slow status.                                     |
-| Quick (6)     | The fighter gains the Quick status.                                    |
-| Stoned (7)    | The fighter gains the Petrified status.                                |
-| Bless (8)     | The fighter gains the Bless status.                                    |
-| Poison (9)    | The gains the Poison status. Power changes the strength of the poison. |
-| Shield (10)   | The fighter is shielded (?).                                           |
-| Heal (11)     | Light particles are constantly emmited by the fighter.                 |
-| MonoElt (12)  | The fighter gains the status icon with a cadenas (?).                  |
-| Dazzled (13)  | The figher gains the Dazzled status.                                   |
-| Stun (14)     | The fighter gain the Stun status.                                      |
+| FighterStatus | Description                                            |
+| ------------- | ------------------------------------------------------ |
+| Sleep (0)     | The figher fall asleep.                                |
+| Flames (1)    | The fighter is covered in flames.                      |
+| Burn (2)      | The fighter is covered in black flame.                 |
+| Intang (3)    | The fighter gains the Intangible status.               |
+| Fly (4)       | The fighter starts flying.                             |
+| Slow (5)      | The fighter gains the Slow status.                     |
+| Quick (6)     | The fighter gains the Quick status.                    |
+| Stoned (7)    | The fighter gains the Petrified status.                |
+| Bless (8)     | The fighter gains the Bless status.                    |
+| Poison (9)    | The fighter gains the Poison status.                   |
+| Shield (10)   | The fighter is shielded and glow rainbowy over time.   |
+| Heal (11)     | Light particles are constantly emmited by the fighter. |
+| MonoElt (12)  | The fighter gains the status icon with a cadenas.      |
+| Dazzled (13)  | The figher gains the Dazzled status.                   |
+| Stun (14)     | The fighter gain the Stun status.                      |
 
 ### NoStatus (20)
 
