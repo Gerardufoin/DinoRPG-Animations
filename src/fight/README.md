@@ -280,7 +280,6 @@ A status if added to a fighter. An optional power property can be passed dependi
 
 1. fid - Number - The ID of the fighter gaining the status.
 2. status - FighterStatus - Status being added.
-3. power? - number - Power of the status when applicable.
 
 | FighterStatus | Description                                            |
 | ------------- | ------------------------------------------------------ |

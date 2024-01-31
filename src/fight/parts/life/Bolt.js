@@ -37,7 +37,6 @@ export class Bolt extends Phys2D {
 		this._x = x;
 		this._y = y;
 		this._root.angle = Math.random() * 360;
-		this._root.alpha = 0.8;
 
 		if (!Bolt.GlowFilter) {
 			Bolt.GlowFilter = new GlowFilter({

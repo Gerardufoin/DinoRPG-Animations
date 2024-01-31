@@ -18,11 +18,6 @@ export class Status extends State {
 	 * @type {number}
 	 */
 	_status;
-	/**
-	 * The power of the status, if applicable.
-	 * @type {number}
-	 */
-	_power;
 
 	/**
 	 * Add the passed status to the fighter.
@@ -30,13 +25,11 @@ export class Status extends State {
 	 * @param {() => void} endCall The function to call at the end of the State, if any.
 	 * @param {number} fid The id of the chosen Fighter.
 	 * @param {number} status The Fighter.Status to add to the Fighter.
-	 * @param {number} power The power of the status if applicable.
 	 */
-	constructor(scene, endCall, fid, status, power) {
+	constructor(scene, endCall, fid, status) {
 		super(scene, endCall);
 		this._fighter = this._scene.getFighter(fid);
 		this._status = status;
-		this._power = power;
 		if (!this._fighter) {
 			console.error(`Status Error: Fighter with id ${fid} does not exist in the scene.`);
 			this.kill();
@@ -49,7 +42,7 @@ export class Status extends State {
 	 * Adds the Status to the Fighter.
 	 */
 	init() {
-		this._fighter.addStatus(this._status, this._power);
+		this._fighter.addStatus(this._status);
 		this._fighter.setLockTimer(10);
 		this.end();
 	}

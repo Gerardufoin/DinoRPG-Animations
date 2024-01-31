@@ -411,7 +411,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHStatus(args) {
-		return { action: Fight.Action.Status, fid: args[0], ...DAConverter.convertFighterStatus(args[1]) };
+		return { action: Fight.Action.Status, fid: args[0], status: DAConverter.convertFighterStatus(args[1]) };
 	}
 
 	/**
@@ -420,13 +420,13 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHNoStatus(args) {
-		return { action: Fight.Action.NoStatus, fid: args[0], ...DAConverter.convertFighterStatus(args[1]) };
+		return { action: Fight.Action.NoStatus, fid: args[0], status: DAConverter.convertFighterStatus(args[1]) };
 	}
 
 	/**
 	 * Convert a _Status enum from from MT into a Fighter.Status.
 	 * @param {object} status MT _Status enum.
-	 * @returns {{status: number, power?: number}} The converted Fighter.Status.
+	 * @returns {number} The converted Fighter.Status.
 	 */
 	static convertFighterStatus(status) {
 		const mapping = {
@@ -446,19 +446,7 @@ export class DAConverter {
 			_SDazzled: Fighter.Status.Dazzled,
 			_SStun: Fighter.Status.Stun
 		};
-		const ret = {
-			status: mapping[status.value]
-		};
-		switch (ret.status) {
-			case Fighter.Status.Burn:
-			case Fighter.Status.Poison:
-			case Fighter.Status.MonoElt:
-			case Fighter.Status.Heal:
-			case Fighter.Status.Dazzled:
-				ret.power = status.args[0];
-				break;
-		}
-		return ret;
+		return mapping[status.value];
 	}
 
 	/**

@@ -54,7 +54,7 @@ export class StatusDisplay extends Container {
 
 	/**
 	 * Display the icons for the list of status given in parameters.
-	 * @param {{e: number, power?: number}[]} status The list of status whose icons have to be displayed.
+	 * @param {number[]} status The list of status whose icons have to be displayed.
 	 */
 	showIcons(status) {
 		const keys = Object.keys(this._statusIcons);
@@ -62,7 +62,7 @@ export class StatusDisplay extends Container {
 			this._statusIcons[k].visible = false;
 		}
 
-		const icons = status.map((s) => s.e.toString()).filter((s) => keys.includes(s));
+		const icons = status.map((s) => s.toString()).filter((s) => keys.includes(s));
 		const max = icons.length;
 		const size = 12;
 		const ec = 2;

@@ -172,8 +172,8 @@ export class Fighter extends Phys {
 	}
 
 	/**
-	 * Current status of the Fighter, list of Fighter.Status with their possible value.
-	 * @type {{e: number, power?: number}[]}
+	 * Current status of the Fighter as a list of Fighter.Status.
+	 * @type {number[]}
 	 */
 	_status = [];
 	/**
@@ -681,11 +681,10 @@ export class Fighter extends Phys {
 	/**
 	 * Adds the desired Fighter.Status to the status of the Fighter.
 	 * @param {number} status The Fighter.Status enum indicating which status to add.
-	 * @param {number | undefined} power The power of the status if applicable.
 	 */
-	addStatus(status, power) {
+	addStatus(status) {
 		if (!this.haveStatus(status)) {
-			this._status.push({ e: status, power: power });
+			this._status.push(status);
 			this.displayStatus();
 		}
 	}
@@ -697,8 +696,8 @@ export class Fighter extends Phys {
 	 */
 	removeStatus(status = null) {
 		this._status = this._status.filter((s) => {
-			if (status === null || s.e === status) {
-				switch (s.e) {
+			if (status === null || s === status) {
+				switch (s) {
 					case Fighter.Status.Fly:
 						this._flLand = true;
 						break;
@@ -718,7 +717,7 @@ export class Fighter extends Phys {
 	 * @returns {boolean} True if the Fighter has the given status, false otherwise.
 	 */
 	haveStatus(status) {
-		return this._status.find((s) => s.e === status) !== undefined;
+		return this._status.find((s) => s === status) !== undefined;
 	}
 
 	/**
@@ -738,7 +737,7 @@ export class Fighter extends Phys {
 		}
 
 		for (const s of this._status) {
-			switch (s.e) {
+			switch (s) {
 				case Fighter.Status.Sleep:
 					this._defaultAnim = 'sleep';
 					this.playAnim('sleep', false);
@@ -796,7 +795,7 @@ export class Fighter extends Phys {
 		}
 		this._root.filters = [];
 		for (const s of this._status) {
-			switch (s.e) {
+			switch (s) {
 				case Fighter.Status.Flames:
 					if (spawn) {
 						this.addSprite(

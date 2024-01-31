@@ -509,12 +509,13 @@ export class MTConverter {
 			args: []
 		};
 		switch (status.status) {
+			// The status needs an argument but it is not used in the display of the fight.
 			case Fighter.Status.Burn:
 			case Fighter.Status.Poison:
 			case Fighter.Status.MonoElt:
 			case Fighter.Status.Heal:
 			case Fighter.Status.Dazzled:
-				ret.args.push(status.power ?? 1);
+				ret.args.push(1);
 				break;
 		}
 		return ret;

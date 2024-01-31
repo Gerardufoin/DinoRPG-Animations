@@ -377,7 +377,7 @@ export class History {
 
 	/**
 	 * A status is added to a Fighter.
-	 * @param {{action: number, fid: number, status: number, power?: number}} action Action which triggered the call.
+	 * @param {{action: number, fid: number, status: number}} action Action which triggered the call.
 	 * @returns {State} The Status State.
 	 */
 	status(action) {
@@ -387,8 +387,7 @@ export class History {
 				this.playNext();
 			},
 			action.fid,
-			action.status,
-			action.power
+			action.status
 		);
 	}
 
