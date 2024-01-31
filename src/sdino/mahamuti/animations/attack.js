@@ -3,7 +3,8 @@
 export let attack = {
 	id: 'mahamuti_attack',
 	callbacks: {
-		6: [['hit']]
+		6: [['hit']],
+		12: [['stop']]
 	},
 	frames: [
 		{

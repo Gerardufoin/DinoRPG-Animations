@@ -741,7 +741,7 @@ export class Fighter extends Phys {
 			switch (s.e) {
 				case Fighter.Status.Sleep:
 					this._defaultAnim = 'sleep';
-					this.playAnim('sleep');
+					this.playAnim('sleep', false);
 					this._flFreeze = true;
 					break;
 				case Fighter.Status.Intang:
@@ -749,7 +749,7 @@ export class Fighter extends Phys {
 					break;
 				case Fighter.Status.Fly:
 					this._defaultAnim = 'jump';
-					this.playAnim('jump');
+					this.playAnim('jump', false);
 					this._flFly = true;
 					this.setGroundFx(false);
 					break;

@@ -3,7 +3,8 @@
 export let attack = {
 	id: 'hippoclamp_attack',
 	callbacks: {
-		3: [['hit']]
+		3: [['hit']],
+		14: [['stop']]
 	},
 	frames: [
 		{

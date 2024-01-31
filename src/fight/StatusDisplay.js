@@ -103,9 +103,9 @@ export class StatusDisplay extends Container {
 		slow.y += 5.6;
 		if (!StatusDisplay.SlowFilter) {
 			StatusDisplay.SlowFilter = new GlowFilter({
-				distance: 2,
+				distance: 1,
 				color: 0xffffff,
-				outerStrength: 2,
+				outerStrength: 4,
 				quality: 0.5
 			});
 		}
