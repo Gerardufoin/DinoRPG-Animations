@@ -542,7 +542,7 @@ export class Fighter extends Phys {
 	 * Stop the current walk animation of the Fighter.
 	 */
 	stopWalk() {
-		this.playAnim(this._defaultAnim);
+		this.playAnim(this._defaultAnim, false);
 		this._walkPath = null;
 		this._vx = 0;
 		this._vy = 0;
@@ -617,7 +617,7 @@ export class Fighter extends Phys {
 	backToDefault() {
 		this.setSens(true);
 		if (this._currentAnim !== 'land') {
-			this.playAnim(this._defaultAnim);
+			this.playAnim(this._defaultAnim, false);
 		}
 	}
 
@@ -899,11 +899,12 @@ export class Fighter extends Phys {
 	/**
 	 * Switch the current animation being played by the Fighter's Animator.
 	 * @param {string} anim The animation to play.
+	 * @param {boolean} unpauseIfSame If true, unpause the animation if the new animation is the same as the one currently playing. True by defalut.
 	 */
-	playAnim(anim) {
+	playAnim(anim, unpauseIfSame = true) {
 		if (this.isFlying && ['run', 'walk'].includes(anim)) return;
 		this._currentAnim = anim;
-		this._animator.playAnim(anim);
+		this._animator.playAnim(anim, unpauseIfSame);
 	}
 
 	/**
@@ -1022,7 +1023,7 @@ export class Fighter extends Phys {
 	 */
 	setWaiting() {
 		this._mode = Fighter.Mode.Waiting;
-		this.playAnim(this._defaultAnim);
+		this.playAnim(this._defaultAnim, false);
 	}
 
 	/**

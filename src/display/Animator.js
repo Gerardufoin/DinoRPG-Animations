@@ -179,8 +179,9 @@ export class Animator extends Container {
 	/**
 	 * Will play the given animation if the animation name represent a valid key in the _animation property.
 	 * @param {string} key Name of the animation to play.
+	 * @param {boolean} unpauseIfSame If true, unpause the animation if the new animation is the same as the current one. True by default.
 	 */
-	playAnim(key) {
+	playAnim(key, unpauseIfSame = true) {
 		if (!this._animations) return;
 
 		if (!this._animations[key]) {
@@ -191,10 +192,13 @@ export class Animator extends Container {
 			const animation = this._animations[key].anim ?? this._animations[key];
 			const offset = this._animations[key].offset ?? 0;
 			this._body.setAnimation(animation);
-			this._body.play();
 			if (animation.id == this._currentAnim) {
+				if (unpauseIfSame) {
+					this._body.play();
+				}
 				this._body.setNextOffsetIdx(offset);
 			} else {
+				this._body.play();
 				this._body.setOffsetIdx(offset);
 				this.setFrame(0);
 				this._currentAnim = animation.id;

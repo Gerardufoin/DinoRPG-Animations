@@ -35,6 +35,7 @@ export class Animation extends Container {
 	/**
 	 * Controls if the animation is running or not.
 	 * Setting it to false will freeze the animation on its current frame but the sub animation will still run.
+	 * If you want to pause everything at once, use the playing in the Animator instead.
 	 * @type {boolean}
 	 */
 	_playing = true;
@@ -212,7 +213,9 @@ export class Animation extends Container {
 	 * @param {number} idx The new animation index.
 	 */
 	increaseCurrentIdx(idx) {
-		this.setCurrentIdx(this._currentIdx + idx);
+		if (this._playing) {
+			this.setCurrentIdx(this._currentIdx + idx);
+		}
 		for (const a of this._childAnimations) {
 			a.increaseCurrentIdx(idx);
 		}
