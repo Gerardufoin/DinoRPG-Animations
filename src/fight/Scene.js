@@ -8,6 +8,7 @@ import { Fighter } from './Fighter.js';
 import { Timer } from './Timer.js';
 import { Slot } from './Slot.js';
 import { Sprite } from './Sprite.js';
+import { Tween } from '../display/Tween.js';
 
 /**
  * The fight scene containing all the different layers to display.
@@ -59,6 +60,11 @@ export class Scene extends Container {
 	 * @type {Sprite[]}
 	 */
 	_forces = [];
+	/**
+	 * List of Tweens currently playing.
+	 * @type {Tween[]}
+	 */
+	_tweens = [];
 	/**
 	 * Current shaking of the Scene.
 	 * The force impacts how much the Scene is displaced. Once below 1, the shaking stops.
@@ -114,6 +120,7 @@ export class Scene extends Container {
 	 * @param {Timer} timer The fight Timer containing the elasped time.
 	 */
 	update(timer) {
+		this.updateTweens(timer);
 		// TODO
 		//castle.update();
 		this.updateForces();
@@ -135,6 +142,15 @@ export class Scene extends Container {
 		this.updateShake(timer);
 		this.updateWalk(timer);
 		//updateTimeBar();
+	}
+
+	/**
+	 * Update the registered Tweens and remove the disposable ones.
+	 * @param {Timer} timer The Fight's timer, containing the elapsed time.
+	 */
+	updateTweens(timer) {
+		this._tweens.map((t) => t.update(timer.tmod));
+		this._tweens = this._tweens.filter((t) => !t._disposed);
 	}
 
 	/**
@@ -301,6 +317,14 @@ export class Scene extends Container {
 	 */
 	removeForceSprite(sprite) {
 		this._forces = this._forces.filter((f) => f.spriteId !== sprite.spriteId);
+	}
+
+	/**
+	 * Add a new Tween animation to the list.
+	 * @param {Tween} tween The new Tween to add to the list.
+	 */
+	addTween(tween) {
+		this._tweens.push(tween.getHead());
 	}
 
 	/**
