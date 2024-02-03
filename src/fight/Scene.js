@@ -149,7 +149,7 @@ export class Scene extends Container {
 	 * @param {Timer} timer The Fight's timer, containing the elapsed time.
 	 */
 	updateTweens(timer) {
-		this._tweens.map((t) => t.update(timer.tmod));
+		this._tweens.map((t) => t.update(timer.deltaTimeS));
 		this._tweens = this._tweens.filter((t) => !t._disposed);
 	}
 

@@ -101,7 +101,20 @@ export class Fighter extends Phys {
 	 */
 	_animator;
 	/**
-	 * Body of the fighter. Add in the scene and contains the animator.
+	 * Skin of the Fighter, contains the Animator.
+	 * Is used by actions to make the Fighter glow.
+	 * @type {Container}
+	 */
+	_skin = new Container();
+	/**
+	 * Get the skin of the Fighter.
+	 * @type {Container}
+	 */
+	get skin() {
+		return this._skin;
+	}
+	/**
+	 * Body of the fighter. Add in the scene and contains the layers.
 	 * @type {Container}
 	 */
 	body;
@@ -299,6 +312,19 @@ export class Fighter extends Phys {
 	_lockTimer = 0;
 
 	/**
+	 * The visual representation of the Fighter when making an announce.
+	 * @type {Animator}
+	 */
+	_announcePortrait;
+	/**
+	 * Get the visual representation of the Fighter for an announce.
+	 * @type {Container}
+	 */
+	get portrait() {
+		return this._announcePortrait;
+	}
+
+	/**
 	 * Creates a new Fighter based on the given Fighter's information.
 	 * @param {{props: number[], dino: boolean, life: number, maxLife?: number, name: string, side: boolean, scale: number, fid: number, gfx: string, entrance?: number, anim?: string, x?: number, y?: number}} fInfos The Fighter's informations.
 	 * @param {Scene} scene The Scene where the Fighter is added.
@@ -339,6 +365,14 @@ export class Fighter extends Phys {
 			this._height = dino.collider.height * this._size;
 			this._width = dino.collider.width * this._size;
 			this._animator = dino;
+
+			this._announcePortrait = new sdino({
+				data: fInfos.gfx,
+				autoUpdate: false,
+				pflag: false,
+				scale: 2,
+				shadow: false
+			});
 		} else {
 			const monster = new smonster({
 				type: fInfos.gfx,
@@ -351,7 +385,9 @@ export class Fighter extends Phys {
 			this._width = monster.collider.width * this._size;
 			this._animator = monster;
 		}
-		this._layers[Fighter.LAYERS.DP_BODY].container.addChild(this._animator);
+		this._skin.addChild(this._animator);
+		this._skin.filters = [];
+		this._layers[Fighter.LAYERS.DP_BODY].container.addChild(this._skin);
 		this.setSide(fInfos.side);
 
 		this._layers[Fighter.LAYERS.DP_STATUS_ICON].container.addChild(this._statusDisplay);
@@ -555,6 +591,9 @@ export class Fighter extends Phys {
 	setSide(side) {
 		this._side = side;
 		this._animator.flip(side);
+		if (this._announcePortrait) {
+			this._announcePortrait.flip(side);
+		}
 	}
 
 	/**

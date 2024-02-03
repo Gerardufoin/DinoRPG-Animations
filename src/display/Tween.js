@@ -1,7 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/libs-haxe2/mt/kiroukou/motion/Tween.hx
 
-import { PixiHelper } from './PixiHelper';
+import { PixiHelper } from './PixiHelper.js';
 
 /**
  * Type of movement for the Tween.
@@ -85,7 +85,7 @@ export class NumberProperty extends IProperty {
 		super();
 		this._set = set;
 		this._get = get;
-		this.end = end;
+		this._end = end;
 	}
 
 	/**
@@ -180,7 +180,7 @@ export class Tween {
 	 */
 	_reversed = false;
 	/**
-	 * Delay in frames before the start of the Tween. 0 by default.
+	 * Delay in seconds before the start of the Tween. 0 by default.
 	 * @type {number}
 	 */
 	_delay = 0;
@@ -237,10 +237,10 @@ export class Tween {
 	 */
 	_customEase;
 	/**
-	 * Probability for TFx.TRandom easing.
+	 * Probability for TFx.TRand easing.
 	 * @type {number}
 	 */
-	_proba = 1;
+	_randomEaseProba = 1;
 
 	/**
 	 * Has the Tween started.
@@ -301,7 +301,7 @@ export class Tween {
 	 * @param {boolean} autoStart Choose if the Tween starts automatically after creation.
 	 */
 	constructor(target, tfx = TFx.TLinear, autoStart = true) {
-		this.target = target;
+		this._target = target;
 		this._autoStart = autoStart;
 		this.fx(tfx);
 	}
@@ -365,7 +365,7 @@ export class Tween {
 	}
 
 	/**
-	 * Sets the delay in frames before the start of the Tween.
+	 * Sets the delay in seconds before the start of the Tween.
 	 * @param {number} t The new delay.
 	 * @returns {Tween} This Tween for chaining calls.
 	 */
@@ -404,52 +404,52 @@ export class Tween {
 		this._fx = e;
 		switch (e) {
 			case TFx.TLinear:
-				this._ease = (v) => v;
+				this._ease = (v) => v; // eslint-disable-line
 				break;
 			case TFx.TRand:
-				this._ease = (v) => (v === 0 || v === 1 || Math.random() < this._proba ? v : this._ke);
+				this._ease = (v) => (v === 0 || v === 1 || Math.random() < this._randomEaseProba ? v : this._ke); // eslint-disable-line
 				break;
 			case TFx.TEase:
-				this._ease = (v) => Tween.bezier(v, 0, 0, 1, 1);
+				this._ease = (v) => Tween.bezier(v, 0, 0, 1, 1); // eslint-disable-line
 				break;
 			case TFx.TEaseIn:
-				this._ease = (v) => Tween.bezier(v, 0, 0, 0.5, 1);
+				this._ease = (v) => Tween.bezier(v, 0, 0, 0.5, 1); // eslint-disable-line
 				break;
 			case TFx.TEaseOut:
-				this._ease = (v) => Tween.bezier(v, 0, 0.5, 1, 1);
+				this._ease = (v) => Tween.bezier(v, 0, 0.5, 1, 1); // eslint-disable-line
 				break;
 			case TFx.TBurn:
-				this._ease = (v) => Tween.bezier(v, 0, 1, 0, 1);
+				this._ease = (v) => Tween.bezier(v, 0, 1, 0, 1); // eslint-disable-line
 				break;
 			case TFx.TBurnIn:
-				this._ease = (v) => Tween.bezier(v, 0, 1, 1, 1);
+				this._ease = (v) => Tween.bezier(v, 0, 1, 1, 1); // eslint-disable-line
 				break;
 			case TFx.TBurnOut:
-				this._ease = (v) => Tween.bezier(v, 0, 0, 0, 1);
+				this._ease = (v) => Tween.bezier(v, 0, 0, 0, 1); // eslint-disable-line
 				break;
 			case TFx.TZigZag:
-				this._ease = (v) => Tween.bezier(v, 0, 2.5, -1.5, 1);
+				this._ease = (v) => Tween.bezier(v, 0, 2.5, -1.5, 1); // eslint-disable-line
 				break;
 			case TFx.TLoop:
-				this._ease = (v) => Tween.bezier(v, 0, 1.33, 1.33, 0);
+				this._ease = (v) => Tween.bezier(v, 0, 1.33, 1.33, 0); // eslint-disable-line
 				break;
 			case TFx.TLoopEaseIn:
-				this._ease = (v) => Tween.bezier(v, 0, 0, 2.25, 0);
+				this._ease = (v) => Tween.bezier(v, 0, 0, 2.25, 0); // eslint-disable-line
 				break;
 			case TFx.TLoopEaseOut:
-				this._ease = (v) => Tween.bezier(v, 0, 2.25, 0, 0);
+				this._ease = (v) => Tween.bezier(v, 0, 2.25, 0, 0); // eslint-disable-line
 				break;
 			case TFx.TShake:
-				this._ease = (v) => Tween.bezier(v, 0.5, 1.22, 1.25, 0);
+				this._ease = (v) => Tween.bezier(v, 0.5, 1.22, 1.25, 0); // eslint-disable-line
 				break;
 			case TFx.TShakeBoth:
-				this._ease = (v) => Tween.bezier(v, 0.5, 1.22, 1.25, 0);
+				this._ease = (v) => Tween.bezier(v, 0.5, 1.22, 1.25, 0); // eslint-disable-line
 				break;
 			case TFx.TJump:
-				this._ease = (v) => Tween.bezier(v, 0, 2, 2.79, 1);
+				this._ease = (v) => Tween.bezier(v, 0, 2, 2.79, 1); // eslint-disable-line
 				break;
 			case TFx.TElasticEnd:
-				this._ease = (v) => Tween.bezier(v, 0, 0.7, 1.5, 1);
+				this._ease = (v) => Tween.bezier(v, 0, 0.7, 1.5, 1); // eslint-disable-line
 				break;
 			case TFx.TCustom:
 				this._ease = this._customEase;
@@ -474,7 +474,7 @@ export class Tween {
 	 * @returns {Tween} This Tween for chaining calls.
 	 */
 	rand(n) {
-		this._proba = n;
+		this._randomEaseProba = n;
 		return this.fx(TFx.TRand);
 	}
 

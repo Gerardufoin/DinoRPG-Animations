@@ -40,6 +40,15 @@ export class Timer extends Ticker {
 	}
 
 	/**
+	 * Elasped time between two frame in seconds.
+	 * If bigger than Timer.MAX_DELTA_TIME, then is set to 1 / expectedFPS.
+	 * @type {number}
+	 */
+	get deltaTimeS() {
+		return this.deltaTimeMS / 1000;
+	}
+
+	/**
 	 * Elasped time between two frame in milliseconds.
 	 * If bigger than Timer.MAX_DELTA_TIME, then is set to 1 / expectedFPS * 1000.
 	 * @type {number}
