@@ -56,6 +56,11 @@ export class Scene extends Container {
 	 */
 	_fighters = [];
 	/**
+	 * Contains the slot for both side of the fight.
+	 * @type {Container[]}
+	 */
+	_slots = [new Container(), new Container()];
+	/**
 	 * List of the Sprite applying a force in the Scene.
 	 * @type {Sprite[]}
 	 */
@@ -203,6 +208,7 @@ export class Scene extends Container {
 	 * Create the columns bordering the scenes.
 	 */
 	createColumns() {
+		const colLeftContainer = new Container();
 		const colLeft = new Asset(gfx.scene.column);
 		const colLeftTop = new Asset(gfx.scene.column);
 		const colLeftBottom = new Asset(gfx.scene.column);
@@ -217,23 +223,20 @@ export class Scene extends Container {
 			colLeftTop.y = -colLeft.height;
 			colLeftBottom.y = colLeft.height;
 		});
-		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colLeft);
-		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colLeftTop);
-		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colLeftBottom);
+		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colLeftContainer);
+		colLeftContainer.addChild(colLeft, colLeftTop, colLeftBottom, this._slots[0]);
 
+		const colRightContainer = new Container();
 		const colRight = new Asset(gfx.scene.column);
 		const colRightTop = new Asset(gfx.scene.column);
 		const colRightBottom = new Asset(gfx.scene.column);
 		colRight.onLoad(() => {
-			colRight.x = 488 - colRight.width;
-			colRightTop.x = colRight.x;
+			colRightContainer.x = 488 - colRight.width;
 			colRightTop.y = -colRight.height;
-			colRightBottom.x = colRight.x;
 			colRightBottom.y = colRight.height;
 		});
-		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colRight);
-		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colRightTop);
-		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colRightBottom);
+		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colRightContainer);
+		colRightContainer.addChild(colRight, colRightTop, colRightBottom, this._slots[1]);
 	}
 
 	/**
@@ -332,8 +335,11 @@ export class Scene extends Container {
 	 * @param {Slot} slot The slot to add to a column.
 	 */
 	addSlot(slot) {
-		// @ts-ignore
-		this._layers[Scene.LAYERS.COLUMNS].container.getChildAt(slot.side ? 0 : 1).addChild(slot);
+		const idx = slot.side ? 0 : 1;
+		slot.x = slot.side ? 3 : -10;
+		slot.y = 3 + 40 * this._slots[idx].children.length;
+		console.log(idx, slot.x, slot.y, this._slots[idx].children.length);
+		this._slots[idx].addChild(slot);
 	}
 
 	/**

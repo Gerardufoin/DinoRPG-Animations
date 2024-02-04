@@ -12,7 +12,7 @@ export let mapping_gfx = {
 	717: 'parts/ghost',
 	763: 'fx/acid_ball',
 	765: 'fx/acid_smoke',
-	//773: 'fx/skull', // Done manually
+	//773: 'fx/skull', // Done manually, do not uncomment
 	825: 'fx/flameche_base',
 	826: 'fx/flameche_1',
 	827: 'fx/flameche_2',
@@ -40,6 +40,14 @@ export let mapping_gfx = {
 	889: 'fx/explo_4',
 	890: 'fx/explo_5',
 	891: 'fx/explo_6',
+	894: 'scene/slot_bg',
+	895: 'scene/slot_bar',
+	897: 'scene/slot_border',
+	898: 'scene/slot_energy_border',
+	900: 'scene/slot_max_energy',
+	902: 'scene/slot_hit',
+	903: 'scene/slot_energy',
+	//905: 'scene/slot_mask', // Changed manually to be red
 	934: 'fx/bolt_1',
 	935: 'fx/bolt_2',
 	936: 'fx/bolt_3',

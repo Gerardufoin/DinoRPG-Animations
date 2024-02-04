@@ -449,7 +449,18 @@ export class Fighter extends Phys {
 		this._friction = 0.9;
 
 		if (this._isDino) {
-			this._slot = new Slot(this);
+			this._slot = new Slot(
+				this._scene,
+				this,
+				new sdino({
+					data: fInfos.gfx,
+					autoUpdate: false,
+					pflag: false,
+					scale: Slot.FIGHTER_PORTRAIT_SCALE,
+					shadow: false,
+					flip: this.side
+				})
+			);
 			this._scene.addSlot(this._slot);
 		}
 
@@ -509,6 +520,7 @@ export class Fighter extends Phys {
 		}
 		this.updateFx(timer);
 		this.updateStatus(timer);
+		this._slot.update(timer);
 	}
 
 	/**
