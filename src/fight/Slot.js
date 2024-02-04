@@ -184,8 +184,6 @@ export class Slot extends Container {
 		this._scene.addTween(new Tween(this._energyBar.max.scale, TFx.TEaseOut).to(0.5, { y: 2 - energy / 100 }));
 	}
 
-	// TODO: Energy has an offset at the bottom of the bar which grows with the scale.
-	// This offset has to be removed from the SVG and added manually in the code.
 	/**
 	 * Set the current amount of energy of the Slot.
 	 * @param {number} energy The current amount of energy.

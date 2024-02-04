@@ -41,12 +41,12 @@ export let mapping_gfx = {
 	890: 'fx/explo_5',
 	891: 'fx/explo_6',
 	894: 'scene/slot_bg',
-	895: 'scene/slot_bar',
+	//895: 'scene/slot_bar', // All the bar have to be taken raw to not add offset to the dimension and prevent issue when scaling.
 	897: 'scene/slot_border',
 	898: 'scene/slot_energy_border',
-	900: 'scene/slot_max_energy',
-	902: 'scene/slot_hit',
-	903: 'scene/slot_energy',
+	//900: 'scene/slot_max_energy',
+	//902: 'scene/slot_hit',
+	//903: 'scene/slot_energy',
 	//905: 'scene/slot_mask', // Changed manually to be red
 	934: 'fx/bolt_1',
 	935: 'fx/bolt_2',
