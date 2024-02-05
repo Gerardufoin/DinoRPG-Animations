@@ -338,7 +338,6 @@ export class Scene extends Container {
 		const idx = slot.side ? 0 : 1;
 		slot.x = slot.side ? 3 : -10;
 		slot.y = 3 + 40 * this._slots[idx].children.length;
-		console.log(idx, slot.x, slot.y, this._slots[idx].children.length);
 		this._slots[idx].addChild(slot);
 	}
 

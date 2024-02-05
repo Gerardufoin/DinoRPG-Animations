@@ -1481,7 +1481,6 @@ export class Fighter extends Phys {
 	 */
 	setEnergy(e) {
 		this._energy = e;
-		console.log(`Fighter ${this.id}: Set energy to ${e}.`);
 		if (this._slot) {
 			this._slot.setEnergy(this._energy);
 		}
@@ -1493,7 +1492,6 @@ export class Fighter extends Phys {
 	 */
 	setMaxEnergy(e) {
 		this._maxEnergy = e;
-		console.log(`Fighter ${this.id}: Set max energy to ${e}.`);
 		if (this._slot) {
 			this._slot.setMaxEnergy(this._maxEnergy);
 		}
