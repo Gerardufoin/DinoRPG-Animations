@@ -70,36 +70,36 @@ export class History {
 		this._history = history;
 		this._actions = {
 			[Fight.Action.Add]: 'addFighter',
-			[Fight.Action.AddCastle]: undefined,
-			[Fight.Action.MoveTo]: 'moveTo',
-			[Fight.Action.Damages]: 'damages',
-			[Fight.Action.DamagesGroup]: 'damagesGroup',
-			[Fight.Action.CastleAttack]: undefined,
-			[Fight.Action.Return]: 'return',
-			[Fight.Action.Dead]: 'dead',
-			[Fight.Action.Lost]: undefined,
-			[Fight.Action.Escape]: 'escape',
-			[Fight.Action.Finish]: 'finish',
-			[Fight.Action.Energy]: 'energy',
-			[Fight.Action.MaxEnergy]: 'maxEnergy',
-			[Fight.Action.Pause]: 'pause',
 			[Fight.Action.Announce]: 'announce',
-			[Fight.Action.Goto]: 'goToFighter',
-			[Fight.Action.Regen]: 'regen',
 			[Fight.Action.Object]: undefined,
-			[Fight.Action.Fx]: undefined,
+			[Fight.Action.Lost]: undefined,
 			[Fight.Action.Status]: 'status',
 			[Fight.Action.NoStatus]: 'noStatus',
-			[Fight.Action.Display]: 'display',
+			[Fight.Action.Regen]: 'regen',
+			[Fight.Action.Damages]: 'damages',
+			[Fight.Action.DamagesGroup]: 'damagesGroup',
+			[Fight.Action.Fx]: undefined,
+			[Fight.Action.Dead]: 'dead',
+			[Fight.Action.Goto]: 'goToFighter',
+			[Fight.Action.Return]: 'return',
+			[Fight.Action.Pause]: 'pause',
+			[Fight.Action.Finish]: 'finish',
+			[Fight.Action.AddCastle]: undefined,
 			[Fight.Action.TimeLimit]: undefined,
-			[Fight.Action.Talk]: undefined,
+			[Fight.Action.CastleAttack]: undefined,
+			[Fight.Action.Display]: 'display',
 			[Fight.Action.Text]: undefined,
+			[Fight.Action.Talk]: undefined,
+			[Fight.Action.Escape]: 'escape',
+			[Fight.Action.MoveTo]: 'moveTo',
 			[Fight.Action.Flip]: undefined,
 			[Fight.Action.SpawnToy]: undefined,
 			[Fight.Action.DestroyToy]: undefined,
 			[Fight.Action.Wait]: undefined,
 			[Fight.Action.Log]: 'printLog',
-			[Fight.Action.Notify]: undefined
+			[Fight.Action.Notify]: undefined,
+			[Fight.Action.Energy]: 'energy',
+			[Fight.Action.MaxEnergy]: 'maxEnergy'
 		};
 	}
 
@@ -161,19 +161,67 @@ export class History {
 	}
 
 	/**
-	 * Move a Fighter to a specific destination.
-	 * @param {{action: number, fid: number, x: number, y: number}} action Action which triggered the call.
-	 * @returns {State} The MoveTo State.
+	 * A fighter announce an attack (or anything really).
+	 * @param {{action: number, fid: number, message: string}} action Action which triggered the call.
+	 * @returns {Announce} The Announce State.
 	 */
-	moveTo(action) {
-		return new MoveTo(
+	announce(action) {
+		return new Announce(
 			this._scene,
 			() => {
 				this.playNext();
 			},
 			action.fid,
-			action.x,
-			action.y
+			action.message
+		);
+	}
+
+	/**
+	 * A status is added to a Fighter.
+	 * @param {{action: number, fid: number, status: number}} action Action which triggered the call.
+	 * @returns {State} The Status State.
+	 */
+	status(action) {
+		return new Status(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.status
+		);
+	}
+
+	/**
+	 * A status is removed from a Fighter.
+	 * @param {{action: number, fid: number, status: number}} action Action which triggered the call.
+	 * @returns {State} The Status State.
+	 */
+	noStatus(action) {
+		return new NoStatus(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.status
+		);
+	}
+
+	/**
+	 * A Fighter regens the given amount of life. If the Figther was dead, the Fighter is resurrected.
+	 * @param {{action: number, fid: number, amount: number, lifeFx: {fx: number, amount?: number, size?: number}}} action Action which triggered the call.
+	 * @returns {State} The GoToFither State.
+	 */
+	regen(action) {
+		return new Regen(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.amount,
+			action.lifeFx
 		);
 	}
 
@@ -221,6 +269,39 @@ export class History {
 	}
 
 	/**
+	 * A Fighter dies.
+	 * @param {{action: number, fid: number}} action Action which triggered the call.
+	 * @returns {State} The Dead State.
+	 */
+	dead(action) {
+		return new Dead(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid
+		);
+	}
+
+	/**
+	 * A Fighter moves toward another Fighter with the desired movement effect.
+	 * @param {{action: number, fid: number, tid: number, effect: number, shadeColor?: {col1?: number, col2?: number}}} action Action which triggered the call.
+	 * @returns {State} The GoToFither State.
+	 */
+	goToFighter(action) {
+		return new GotoFighter(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.tid,
+			action.effect,
+			action.shadeColor
+		);
+	}
+
+	/**
 	 * A Fighter goes back to its saved position.
 	 * @param {{action: number, fid: number}} action Action which triggered the call.
 	 * @returns {State} The Return State.
@@ -236,18 +317,38 @@ export class History {
 	}
 
 	/**
-	 * A Fighter dies.
-	 * @param {{action: number, fid: number}} action Action which triggered the call.
-	 * @returns {State} The Dead State.
+	 * Pause the history untile the given amount of frames have elapsed.
+	 * @param {{action: number, time: number}} action Action which triggered the call.
 	 */
-	dead(action) {
-		return new Dead(
+	pause(action) {
+		this._fight.pause(action.time);
+		if (!this._fight.paused) {
+			this.playNext();
+		}
+	}
+
+	/**
+	 * The Fighters wrap up the Fight and enact their end of fight behavior.
+	 * @param {{action: number, left: number, right: number}} action Action which triggered the call.
+	 * @returns {State} The Finish State.
+	 */
+	finish(action) {
+		return new Finish(
 			this._scene,
 			() => {
 				this.playNext();
 			},
-			action.fid
+			action.left,
+			action.right
 		);
+	}
+
+	/**
+	 * Not implemented in this project for now. Wait for the loading screen for MT.
+	 * @param {{action: number}} action Action which triggered the call.
+	 */
+	display(action) {
+		this.playNext();
 	}
 
 	/**
@@ -266,19 +367,31 @@ export class History {
 	}
 
 	/**
-	 * The Fighters wrap up the Fight and enact their end of fight behavior.
-	 * @param {{action: number, left: number, right: number}} action Action which triggered the call.
-	 * @returns {State} The Finish State.
+	 * Move a Fighter to a specific destination.
+	 * @param {{action: number, fid: number, x: number, y: number}} action Action which triggered the call.
+	 * @returns {State} The MoveTo State.
 	 */
-	finish(action) {
-		return new Finish(
+	moveTo(action) {
+		return new MoveTo(
 			this._scene,
 			() => {
 				this.playNext();
 			},
-			action.left,
-			action.right
+			action.fid,
+			action.x,
+			action.y
 		);
+	}
+
+	/**
+	 * Print the message to the standard output.
+	 * @param {{action: number, msg: string}} action Action which triggered the call.
+	 */
+	printLog(action) {
+		if (this._scene.debugMode) {
+			console.log(`Fight Log Message: ${action.msg}`);
+		}
+		this.playNext();
 	}
 
 	/**
@@ -309,119 +422,6 @@ export class History {
 			} else {
 				console.error(`MaxEnergy Error: Fighter with id ${f.fid} does not exist in the scene.`);
 			}
-		}
-		this.playNext();
-	}
-
-	/**
-	 * Pause the history untile the given amount of frames have elapsed.
-	 * @param {{action: number, time: number}} action Action which triggered the call.
-	 */
-	pause(action) {
-		this._fight.pause(action.time);
-		if (!this._fight.paused) {
-			this.playNext();
-		}
-	}
-
-	/**
-	 * A fighter announce an attack (or anything really).
-	 * @param {{action: number, fid: number, message: string}} action Action which triggered the call.
-	 * @returns {Announce} The Announce State.
-	 */
-	announce(action) {
-		return new Announce(
-			this._scene,
-			() => {
-				this.playNext();
-			},
-			action.fid,
-			action.message
-		);
-	}
-
-	/**
-	 * A Fighter moves toward another Fighter with the desired movement effect.
-	 * @param {{action: number, fid: number, tid: number, effect: number, shadeColor?: {col1?: number, col2?: number}}} action Action which triggered the call.
-	 * @returns {State} The GoToFither State.
-	 */
-	goToFighter(action) {
-		return new GotoFighter(
-			this._scene,
-			() => {
-				this.playNext();
-			},
-			action.fid,
-			action.tid,
-			action.effect,
-			action.shadeColor
-		);
-	}
-
-	/**
-	 * A Fighter regens the given amount of life. If the Figther was dead, the Fighter is resurrected.
-	 * @param {{action: number, fid: number, amount: number, lifeFx: {fx: number, amount?: number, size?: number}}} action Action which triggered the call.
-	 * @returns {State} The GoToFither State.
-	 */
-	regen(action) {
-		return new Regen(
-			this._scene,
-			() => {
-				this.playNext();
-			},
-			action.fid,
-			action.amount,
-			action.lifeFx
-		);
-	}
-
-	/**
-	 * A status is added to a Fighter.
-	 * @param {{action: number, fid: number, status: number}} action Action which triggered the call.
-	 * @returns {State} The Status State.
-	 */
-	status(action) {
-		return new Status(
-			this._scene,
-			() => {
-				this.playNext();
-			},
-			action.fid,
-			action.status
-		);
-	}
-
-	/**
-	 * A status is removed from a Fighter.
-	 * @param {{action: number, fid: number, status: number}} action Action which triggered the call.
-	 * @returns {State} The Status State.
-	 */
-	noStatus(action) {
-		return new NoStatus(
-			this._scene,
-			() => {
-				this.playNext();
-			},
-			action.fid,
-			action.status
-		);
-	}
-
-	/**
-	 * Not implemented in this project for now. Wait for the loading screen for MT.
-	 * @param {{action: number}} action Action which triggered the call.
-	 */
-	display(action) {
-		this.playNext();
-	}
-
-	/**
-	 * Print the message to the standard output.
-	 * @param {{action: number, msg: string}} action Action which triggered the call.
-	 */
-	printLog(action) {
-		if (this._scene.debugMode) {
-			console.log(`Fight Log Message: ${action.msg}`);
 		}
 		this.playNext();
 	}

@@ -40,11 +40,12 @@ export class Fighter extends Phys {
 		Dead: 2,
 		Dodge: 3
 	};
-	static Props = {
-		Static: 0,
-		GroundOnly: 1,
-		Dark: 2,
-		Boss: 3
+	static Property = {
+		Boss: 0,
+		Static: 1,
+		GroundOnly: 2,
+		Dark: 3,
+		Nothing: 4
 	};
 	static MovementType = {
 		Jump: 0,
@@ -54,30 +55,34 @@ export class Fighter extends Phys {
 	};
 	static LifeEffect = {
 		Normal: 0,
-		Fire: 1,
-		Wood: 2,
-		Water: 3,
-		Lightning: 4,
-		Air: 5,
-		Burn: 6,
-		Explode: 7,
-		Heal: 8,
-		Skull: 9,
-		Acid: 10
+		Object: 1, // No visual
+		Skull: 2,
+		Acid: 3,
+		Poison: 4, // No visual
+		Heal: 5,
+		Explode: 6,
+		Burn: 7,
+		Fire: 8,
+		Wood: 9,
+		Water: 10,
+		Lightning: 11,
+		Air: 12,
+		Gold: 13, // No visual
+		Todo: 14 // Debug
 	};
 	static Status = {
 		Sleep: 0,
 		Flames: 1,
-		Burn: 2,
-		Intang: 3,
-		Fly: 4,
-		Slow: 5,
-		Quick: 6,
-		Stoned: 7,
+		Intang: 2,
+		Fly: 3,
+		Slow: 4,
+		Quick: 5,
+		Stoned: 6,
+		Shield: 7,
 		Bless: 8,
 		Poison: 9,
-		Shield: 10,
-		Heal: 11,
+		Heal: 10,
+		Burn: 11,
 		MonoElt: 12,
 		Dazzled: 13,
 		Stun: 14
@@ -410,7 +415,7 @@ export class Fighter extends Phys {
 		}
 		this._animator.filters.push(this._poisonColorFilter);
 
-		if (this.haveProp(Fighter.Props.Static)) {
+		if (this.haveProp(Fighter.Property.Static)) {
 			this._flFreeze = true;
 			this.setForce(null);
 		}
@@ -546,7 +551,7 @@ export class Fighter extends Phys {
 	 * @param {Timer} timer The Timer managing the elapsed time.
 	 */
 	updateWait(timer) {
-		if (this.isFrozen || this.haveProp(Fighter.Props.Static)) return;
+		if (this.isFrozen || this.haveProp(Fighter.Property.Static)) return;
 		if (this._walkPath != null) {
 			const a = this.getAng(this._walkPath);
 			const d = this.getDist(this._walkPath);
@@ -698,7 +703,7 @@ export class Fighter extends Phys {
 	 * @param {Timer} timer Fight timer containing the elapsed time.
 	 */
 	checkBounds(timer) {
-		if (this.haveProp(Fighter.Props.Static)) return;
+		if (this.haveProp(Fighter.Property.Static)) return;
 		const m = 4;
 		const wmod = 10;
 		if (this._x < m + this._ray || this._x > Scene.WIDTH - (this._ray + m + this._scene.margins.right)) {
@@ -780,7 +785,7 @@ export class Fighter extends Phys {
 		this._root.filters = [];
 		this._walkSpeed = 1.8;
 		this._runSpeed = 8;
-		this._flFreeze = this.haveProp(Fighter.Props.Static);
+		this._flFreeze = this.haveProp(Fighter.Property.Static);
 		this._flFly = false;
 		this._decal = 0;
 		if (this._force !== null) {
@@ -998,7 +1003,7 @@ export class Fighter extends Phys {
 			this.playAnim('guard');
 			return;
 		}
-		if (!this.haveProp(Fighter.Props.Static)) {
+		if (!this.haveProp(Fighter.Property.Static)) {
 			var angle = this.getAng(attacker.position);
 			const sp = 3;
 			this._vx = Math.cos(angle) * sp;

@@ -37,7 +37,7 @@ export class Return extends State {
 	 */
 	init() {
 		const movements = [Fighter.MovementType.Run, Fighter.MovementType.Jump];
-		if (this._fighter.haveStatus(Fighter.Status.Fly) || this._fighter.haveProp(Fighter.Props.GroundOnly)) {
+		if (this._fighter.haveStatus(Fighter.Status.Fly) || this._fighter.haveProp(Fighter.Property.GroundOnly)) {
 			movements.shift();
 		}
 		this._fighter.initReturn(movements[Math.floor(Math.random() * movements.length)]);

@@ -13,8 +13,9 @@ import { Timer } from '../Timer.js';
  */
 export const GotoEffect = {
 	Normal: 0,
-	Over: 1,
-	Special: 2
+	Special: 1,
+	Over: 2,
+	Todo: 3
 };
 
 /**

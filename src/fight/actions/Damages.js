@@ -7,10 +7,14 @@ import { Timer } from '../Timer.js';
 
 export const DamagesEffect = {
 	Normal: 0,
-	Drop: 1,
-	Back: 2,
-	Eject: 3,
-	Counter: 4
+	Back: 1,
+	Counter: 2,
+	Drop: 3,
+	Eject: 4,
+	FlyCancel: 5,
+	IntangCancel: 6,
+	IntangBreak: 7,
+	Missed: 8
 };
 
 /**

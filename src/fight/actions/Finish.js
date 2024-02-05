@@ -13,9 +13,9 @@ import { MoveTo } from './MoveTo.js';
  * - Guard: Guard something.
  */
 export const EndBehaviour = {
-	Run: 0,
-	Escape: 1,
-	Stand: 2,
+	Stand: 0,
+	Run: 1,
+	Escape: 2,
 	Guard: 3
 };
 

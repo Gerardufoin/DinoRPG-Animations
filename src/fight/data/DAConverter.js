@@ -18,36 +18,36 @@ export class DAConverter {
 	 */
 	static HistoryToAction = {
 		_HAdd: DAConverter.convertHAdd,
-		_HAddCastle: DAConverter.convertHAddCastle,
-		_HMoveTo: DAConverter.convertHMoveTo,
-		_HDamages: DAConverter.convertHDamages,
-		_HDamagesGroup: DAConverter.convertHDamagesGroup,
-		_HCastleAttack: DAConverter.convertHCastleAttack,
-		_HReturn: DAConverter.convertHReturn,
-		_HDead: DAConverter.convertHDead,
-		_HLost: DAConverter.convertHLost,
-		_HEscape: DAConverter.convertHEscape,
-		_HFinish: DAConverter.convertHFinish,
-		_HEnergy: DAConverter.convertHEnergy,
-		_HMaxEnergy: DAConverter.convertHMaxEnergy,
-		_HPause: DAConverter.convertHPause,
 		_HAnnounce: DAConverter.convertHAnnounce,
-		_HGoto: DAConverter.convertHGoto,
-		_HRegen: DAConverter.convertHRegen,
 		_HObject: DAConverter.convertHObject,
-		_HFx: DAConverter.convertHFx,
+		_HLost: DAConverter.convertHLost,
 		_HStatus: DAConverter.convertHStatus,
 		_HNoStatus: DAConverter.convertHNoStatus,
-		_HDisplay: DAConverter.convertHDisplay,
+		_HRegen: DAConverter.convertHRegen,
+		_HDamages: DAConverter.convertHDamages,
+		_HDamagesGroup: DAConverter.convertHDamagesGroup,
+		_HFx: DAConverter.convertHFx,
+		_HDead: DAConverter.convertHDead,
+		_HGoto: DAConverter.convertHGoto,
+		_HReturn: DAConverter.convertHReturn,
+		_HPause: DAConverter.convertHPause,
+		_HFinish: DAConverter.convertHFinish,
+		_HAddCastle: DAConverter.convertHAddCastle,
 		_HTimeLimit: DAConverter.convertHTimeLimit,
-		_HTalk: DAConverter.convertHTalk,
+		_HCastleAttack: DAConverter.convertHCastleAttack,
+		_HDisplay: DAConverter.convertHDisplay,
 		_HText: DAConverter.convertHText,
+		_HTalk: DAConverter.convertHTalk,
+		_HEscape: DAConverter.convertHEscape,
+		_HMoveTo: DAConverter.convertHMoveTo,
 		_HFlip: DAConverter.convertHFlip,
 		_SpawnToy: DAConverter.convertSpawnToy,
 		_DestroyToy: DAConverter.convertDestroyToy,
 		_HWait: DAConverter.convertHWait,
 		_HLog: DAConverter.convertHLog,
-		_HNotify: DAConverter.convertHNotify
+		_HNotify: DAConverter.convertHNotify,
+		_HEnergy: DAConverter.convertHEnergy,
+		_HMaxEnergy: DAConverter.convertHMaxEnergy
 	};
 
 	/**
@@ -142,14 +142,17 @@ export class DAConverter {
 			case '_AFStand':
 				obj.entrance = EntranceEffect.Stand;
 				break;
+			case '_AFJump':
+				obj.entrance = EntranceEffect.Jump;
+				break;
+			case '_AFRun':
+				obj.entrance = EntranceEffect.Run;
+				break;
 			case '_AFGrow':
 				obj.entrance = EntranceEffect.Grow;
 				break;
 			case '_AFFall':
 				obj.entrance = EntranceEffect.Fall;
-				break;
-			case '_AFRun':
-				obj.entrance = EntranceEffect.Run;
 				break;
 			case '_AFGround':
 				obj.entrance = EntranceEffect.Ground;
@@ -246,6 +249,9 @@ export class DAConverter {
 					col2: obj.args[1]
 				};
 				break;
+			case '_GTodo':
+				obj.entrance = GotoEffect.Todo;
+				break;
 		}
 		return obj;
 	}
@@ -274,16 +280,20 @@ export class DAConverter {
 	static convertLifeEffect(obj) {
 		const mapping = {
 			_LNormal: Fighter.LifeEffect.Normal,
+			_LObject: Fighter.LifeEffect.Object,
+			_LSkull: Fighter.LifeEffect.Skull,
+			_LAcid: Fighter.LifeEffect.Acid,
+			_LPoison: Fighter.LifeEffect.Poison,
+			_LHeal: Fighter.LifeEffect.Heal,
+			_LExplode: Fighter.LifeEffect.Explode,
+			_LBurn: Fighter.LifeEffect.Burn,
 			_LFire: Fighter.LifeEffect.Fire,
 			_LWood: Fighter.LifeEffect.Wood,
 			_LWater: Fighter.LifeEffect.Water,
 			_LLightning: Fighter.LifeEffect.Lightning,
 			_LAir: Fighter.LifeEffect.Air,
-			_LBurn: Fighter.LifeEffect.Burn,
-			_LExplode: Fighter.LifeEffect.Explode,
-			_LHeal: Fighter.LifeEffect.Heal,
-			_LSkull: Fighter.LifeEffect.Skull,
-			_LAcid: Fighter.LifeEffect.Acid
+			_LGold: Fighter.LifeEffect.Gold,
+			_LTodo: Fighter.LifeEffect.Todo
 		};
 		if (obj) {
 			const ret = {
@@ -310,10 +320,14 @@ export class DAConverter {
 	static convertDamagesEffect(obj) {
 		const mapping = {
 			_ENormal: DamagesEffect.Normal,
-			_EDrop: DamagesEffect.Drop,
 			_EBack: DamagesEffect.Back,
+			_ECounter: DamagesEffect.Counter,
+			_EDrop: DamagesEffect.Drop,
 			_EEject: DamagesEffect.Eject,
-			_ECounter: DamagesEffect.Counter
+			_EFlyCancel: DamagesEffect.FlyCancel,
+			_EIntangCancel: DamagesEffect.IntangCancel,
+			_EIntangBreak: DamagesEffect.IntangBreak,
+			_EMissed: DamagesEffect.Missed
 		};
 		if (obj) {
 			return mapping[obj.value];
@@ -369,12 +383,12 @@ export class DAConverter {
 	 */
 	static convertEndBehavior(obj) {
 		switch (obj.value) {
+			case '_EBStand':
+				return EndBehaviour.Stand;
 			case '_EBRun':
 				return EndBehaviour.Run;
 			case '_EBEscape':
 				return EndBehaviour.Escape;
-			case '_EBStand':
-				return EndBehaviour.Stand;
 			case '_EBGuard':
 				return EndBehaviour.Guard;
 		}
@@ -432,16 +446,16 @@ export class DAConverter {
 		const mapping = {
 			_SSleep: Fighter.Status.Sleep,
 			_SFlames: Fighter.Status.Flames,
-			_SBurn: Fighter.Status.Burn,
 			_SIntang: Fighter.Status.Intang,
 			_SFly: Fighter.Status.Fly,
 			_SSlow: Fighter.Status.Slow,
 			_SQuick: Fighter.Status.Quick,
 			_SStoned: Fighter.Status.Stoned,
+			_SShield: Fighter.Status.Shield,
 			_SBless: Fighter.Status.Bless,
 			_SPoison: Fighter.Status.Poison,
-			_SShield: Fighter.Status.Shield,
 			_SHeal: Fighter.Status.Heal,
+			_SBurn: Fighter.Status.Burn,
 			_SMonoElt: Fighter.Status.MonoElt,
 			_SDazzled: Fighter.Status.Dazzled,
 			_SStun: Fighter.Status.Stun

@@ -64,25 +64,73 @@ Add a fighter to the scene.
 | EntranceEffect | Description                                         |
 | -------------- | --------------------------------------------------- |
 | Stand (0)      | Instantiate the fighter without entrance effect.    |
-| Grow (1)       | Scale in the fighter from 0% to 100%.               |
-| Fall (2)       | Make the fighter fall from the top of the scene.    |
-| Run (3)        | Make the fighter run in from their respective side. |
-| Ground (4)     | Make the fighter erupt from the ground.             |
-| Anim (5)       | Play a specific animation from the fighter.         |
+| Jump (1)       | Makes the Fighter jump in from their side.          |
+| Run (2)        | Make the fighter run in from their respective side. |
+| Grow (3)       | Scale in the fighter from 0% to 100%.               |
+| Fall (4)       | Make the fighter fall from the top of the scene.    |
+| Ground (5)     | Make the fighter erupt from the ground.             |
+| Anim (6)       | Play a specific animation from the fighter.         |
 
-### AddCastle (1)
+### Announce (1)
 
-### MoveTo (2)
-
-Move a Fighter based on the passed Fighter's id to the designed xy position.
+A fighter announces something, most likely the use of a skill.
 
 #### Properties
 
-1. fid - number - The Fighter's id referencing the Fighter to move.
-2. x - number - The x coordinate of the destination.
-3. y - number - The y coordinate of the destination.
+1. fid - Number - The ID of the fighter making the announce.
+2. message - String - The announce.
 
-### Damages (3)
+### Object (2)
+
+### Lost (3)
+
+### Status (4)
+
+A status if added to a fighter. An optional power property can be passed depending on the chosen status.
+
+#### Properties
+
+1. fid - Number - The ID of the fighter gaining the status.
+2. status - FighterStatus - Status being added.
+
+| FighterStatus | Description                                            |
+| ------------- | ------------------------------------------------------ |
+| Sleep (0)     | The figher fall asleep.                                |
+| Flames (1)    | The fighter is covered in flames.                      |
+| Burn (2)      | The fighter is covered in black flame.                 |
+| Intang (3)    | The fighter gains the Intangible status.               |
+| Fly (4)       | The fighter starts flying.                             |
+| Slow (5)      | The fighter gains the Slow status.                     |
+| Quick (6)     | The fighter gains the Quick status.                    |
+| Stoned (7)    | The fighter gains the Petrified status.                |
+| Bless (8)     | The fighter gains the Bless status.                    |
+| Poison (9)    | The fighter gains the Poison status.                   |
+| Shield (10)   | The fighter is shielded and glow rainbowy over time.   |
+| Heal (11)     | Light particles are constantly emmited by the fighter. |
+| MonoElt (12)  | The fighter gains the status icon with a cadenas.      |
+| Dazzled (13)  | The figher gains the Dazzled status.                   |
+| Stun (14)     | The fighter gain the Stun status.                      |
+
+### NoStatus (5)
+
+A status if removed from a fighter.
+
+#### Properties
+
+1. fid - Number - The ID of the fighter gaining the status.
+2. status - FighterStatus - Status being added.
+
+### Regen (6)
+
+A fighter regenerates a set amount of life with the given life effect. If the fighter was dead, resurrect it.
+
+#### Properties
+
+1. fid - Number - The ID of the fighter healing.
+2. amount - Number - Amount of health healed.
+3. lifeFx - {fx: LifeEffect, amount?: number, size?: number} - The life effect played during the regen. See LifeEffect above.
+
+### Damages (7)
 
 A fighter attacks another fighter and deals a certain amount of damages.
 
@@ -93,31 +141,39 @@ A fighter attacks another fighter and deals a certain amount of damages.
 3. damages - Number | Null - The amount of damages dealt. If Null, the attack is dodged. If 0, the attack is guarded.
 4. lifeFx? - {fx: LifeEffect, amount?: number, size?: number} - The life effect played on the fighter during the attack.
 
-| LifeEffect    | Description                                                             |
-| ------------- | ----------------------------------------------------------------------- |
-| Normal (0)    | No effect in particular.                                                |
-| Fire (1)      | Adds fire particles.                                                    |
-| Wood (2)      | Adds leaf particles.                                                    |
-| Water (3)     | Adds droplet particles.                                                 |
-| Lightning (4) | Adds lightning particles.                                               |
-| Air (5)       | Adds wind particles.                                                    |
-| Burn (6)      | Adds burning particles. Set amount to display the amount of fx to show. |
-| Explode (7)   | Adds explosion particles.                                               |
-| Heal (8)      | Adds healing particles.                                                 |
-| Skull (9)     | Adds skulls particles. Set size to decide the size of the skull fx.     |
-| Acid (10)     | Adds acid particles.                                                    |
+| LifeEffect     | Description                                                             |
+| -------------- | ----------------------------------------------------------------------- |
+| Normal (0)     | No effect in particular.                                                |
+| Object (1)     | No visual.                                                              |
+| Skull (2)      | Adds skulls particles. Set size to decide the size of the skull fx.     |
+| Acid (3)       | Adds acid particles.                                                    |
+| Poison (4)     | No visual.                                                              |
+| Heal (5)       | Adds healing particles.                                                 |
+| Explode (6)    | Adds explosion particles.                                               |
+| Burn (7)       | Adds burning particles. Set amount to display the amount of fx to show. |
+| Fire (8)       | Adds fire particles.                                                    |
+| Wood (9)       | Adds leaf particles.                                                    |
+| Water (10)     | Adds droplet particles.                                                 |
+| Lightning (11) | Adds lightning particles.                                               |
+| Air (12)       | Adds wind particles.                                                    |
+| Gold (13)      | No visual.                                                              |
+| Todo (14)      | Debug.                                                                  |
 
 5. effect? - DamagesEffect - The type of action the fighter will take before attacking.
 
-| DamagesEffect | Description                                                                                             |
-| ------------- | ------------------------------------------------------------------------------------------------------- |
-| Normal (0)    | Standard attack, the attacker runs to the target and hits it. Default behaviour if effect is undefined. |
-| Drop (1)      | The attacker drops on the target.                                                                       |
-| Back (2)      | The attacker jumps behind the target and hits it.                                                       |
-| Eject (3)     | Not sure but sounds amazing.                                                                            |
-| Counter (4)   | If the attacks is the result of a counter. Does not seems to do anything visually.                      |
+| DamagesEffect    | Description                                                                                             |
+| ---------------- | ------------------------------------------------------------------------------------------------------- |
+| Normal (0)       | Standard attack, the attacker runs to the target and hits it. Default behaviour if effect is undefined. |
+| Back (1)         | The attacker jumps behind the target and hits it.                                                       |
+| Counter (2)      | If the attacks is the result of a counter. No visual.                                                   |
+| Drop (3)         | The attacker drops on the target.                                                                       |
+| Eject (4)        | Not sure but sounds amazing.                                                                            |
+| FlyCancel (5)    | No visual.                                                                                              |
+| IntangCancel (6) | No visual.                                                                                              |
+| IntangBreak (7)  | No visual.                                                                                              |
+| Missed (8)       | No visual.                                                                                              |
 
-### DamagesGroup (4)
+### DamagesGroup (8)
 
 A fighter attacks using a skill.
 
@@ -163,17 +219,9 @@ A fighter attacks using a skill.
 7. speed? - Number - Set the speed of the skill for Projectile or Deluge.
 8. power? - Number - Set the strength of the skill for Deluge.
 
-### CastleAttack (5)
+### Fx (9)
 
-### Return (6)
-
-Makes the selected fighter go back to its first saved position since the last time Return was called.
-
-#### Properties
-
-1. fid - Number - The ID of the returning fighter.
-
-### Dead (7)
+### Dead (10)
 
 A fighter dies.
 
@@ -181,66 +229,7 @@ A fighter dies.
 
 1. fid - Number - The ID of the dying fighter.
 
-### Lost (8)
-
-### Escape (9)
-
-A fighter escapes the fight.
-
-#### Properties
-
-1. fid - Number - The ID of fighter escaping.
-
-### Finish (10)
-
-The fighters sill alive end the fight and enact their given end of fight behavior.
-
-#### Properties
-
-1. left - EndBehavior - The end behavior of the left sided fighters.
-2. right - EndBehavior - The end behavior of the right sided fighters.
-
-| EndBehavior | Description                                             |
-| ----------- | ------------------------------------------------------- |
-| Run (0)     | The fighters exit toward the opposite end of the scene. |
-| Escape (1)  | The fighters exit from their side of the scene.         |
-| Stand (2)   | The fighters stand in place and do nothing.             |
-| Guard (3)   | The fighters are marked as dead and switch direction.   |
-
-### Energy (11)
-
-Set the current energy of a group of fighters.
-
-#### Properties
-
-1. fighters - { fid: number, energy: number }[] - An array of fighter and their desired level of energy.
-
-### MaxEnergy (12)
-
-Set the maximum energy of a group of fighters.
-
-#### Properties
-
-1. fighters - { fid: number, energy: number }[] - An array of fighter and their desired maximum level of energy.
-
-### Pause (13)
-
-Pause the history for a given amount of frames.
-
-#### Properties
-
-1. time - Number - Number of frames until the next action in the history is played.
-
-### Announce (14)
-
-A fighter announces something, most likely the use of a skill.
-
-#### Properties
-
-1. fid - Number - The ID of the fighter making the announce.
-2. message - String - The announce.
-
-### Goto (15)
+### Goto (11)
 
 Moves a fighter in range of another fighter with the given movement type.
 
@@ -253,81 +242,86 @@ Moves a fighter in range of another fighter with the given movement type.
 | GotoEffect  | Description                                                     |
 | ----------- | --------------------------------------------------------------- |
 | Normal (0)  | Normal run animation.                                           |
-| Over (1)    | Jumps above the target.                                         |
-| Special (2) | Not sure yet. Create multiple shades with the given shadeColor. |
+| Special (1) | Not sure yet. Create multiple shades with the given shadeColor. |
+| Over (2)    | Jumps above the target.                                         |
+| Todo (3)    | Debug.                                                          |
 
 5. shadeColor? - {col1?: number, col2?: number} - The colors for the shades created when selecting GotoEffect.Special. If undefined, the shade will be pure black.
 
-### Regen (16)
+### Return (12)
 
-A fighter regenerates a set amount of life with the given life effect. If the fighter was dead, resurrect it.
-
-#### Properties
-
-1. fid - Number - The ID of the fighter healing.
-2. amount - Number - Amount of health healed.
-3. lifeFx - {fx: LifeEffect, amount?: number, size?: number} - The life effect played during the regen. See LifeEffect above.
-
-### Object (17)
-
-### Fx (18)
-
-### Status (19)
-
-A status if added to a fighter. An optional power property can be passed depending on the chosen status.
+Makes the selected fighter go back to its first saved position since the last time Return was called.
 
 #### Properties
 
-1. fid - Number - The ID of the fighter gaining the status.
-2. status - FighterStatus - Status being added.
+1. fid - Number - The ID of the returning fighter.
 
-| FighterStatus | Description                                            |
-| ------------- | ------------------------------------------------------ |
-| Sleep (0)     | The figher fall asleep.                                |
-| Flames (1)    | The fighter is covered in flames.                      |
-| Burn (2)      | The fighter is covered in black flame.                 |
-| Intang (3)    | The fighter gains the Intangible status.               |
-| Fly (4)       | The fighter starts flying.                             |
-| Slow (5)      | The fighter gains the Slow status.                     |
-| Quick (6)     | The fighter gains the Quick status.                    |
-| Stoned (7)    | The fighter gains the Petrified status.                |
-| Bless (8)     | The fighter gains the Bless status.                    |
-| Poison (9)    | The fighter gains the Poison status.                   |
-| Shield (10)   | The fighter is shielded and glow rainbowy over time.   |
-| Heal (11)     | Light particles are constantly emmited by the fighter. |
-| MonoElt (12)  | The fighter gains the status icon with a cadenas.      |
-| Dazzled (13)  | The figher gains the Dazzled status.                   |
-| Stun (14)     | The fighter gain the Stun status.                      |
+### Pause (13)
 
-### NoStatus (20)
-
-A status if removed from a fighter.
+Pause the history for a given amount of frames.
 
 #### Properties
 
-1. fid - Number - The ID of the fighter gaining the status.
-2. status - FighterStatus - Status being added.
+1. time - Number - Number of frames until the next action in the history is played.
 
-### Display (21)
+### Finish (14)
+
+The fighters sill alive end the fight and enact their given end of fight behavior.
+
+#### Properties
+
+1. left - EndBehavior - The end behavior of the left sided fighters.
+2. right - EndBehavior - The end behavior of the right sided fighters.
+
+| EndBehavior | Description                                             |
+| ----------- | ------------------------------------------------------- |
+| Stand (0)   | The fighters stand in place and do nothing.             |
+| Run (1)     | The fighters exit toward the opposite end of the scene. |
+| Escape (2)  | The fighters exit from their side of the scene.         |
+| Guard (3)   | The fighters are marked as dead and switch direction.   |
+
+### AddCastle (15)
+
+### TimeLimit (16)
+
+### CastleAttack (17)
+
+### Display (18)
 
 Used by MT to wait for assets to load and then remove the loading screen.
 Unused in this project for now.
 
-### TimeLimit (22)
+### Text (19)
 
-### Talk (23)
+### Talk (20)
 
-### Text (24)
+### Escape (21)
 
-### Flip (25)
+A fighter escapes the fight.
 
-### SpawnToy (26)
+#### Properties
 
-### DestroyToy (27)
+1. fid - Number - The ID of fighter escaping.
 
-### Wait (28)
+### MoveTo (22)
 
-### Log (29)
+Move a Fighter based on the passed Fighter's id to the designed xy position.
+
+#### Properties
+
+1. fid - number - The Fighter's id referencing the Fighter to move.
+2. x - number - The x coordinate of the destination.
+3. y - number - The y coordinate of the destination.
+
+### Flip (23)
+
+### SpawnToy (24)
+
+### DestroyToy (25)
+
+### Wait (26)
+
+### Log (27)
 
 Sends a message to the console if the fight is started in debug mode.
 
@@ -335,4 +329,20 @@ Sends a message to the console if the fight is started in debug mode.
 
 1. msg - String - The message to print in the console.
 
-### Notify (30)
+### Notify (28)
+
+### Energy (29)
+
+Set the current energy of a group of fighters.
+
+#### Properties
+
+1. fighters - { fid: number, energy: number }[] - An array of fighter and their desired level of energy.
+
+### MaxEnergy (30)
+
+Set the maximum energy of a group of fighters.
+
+#### Properties
+
+1. fighters - { fid: number, energy: number }[] - An array of fighter and their desired maximum level of energy.

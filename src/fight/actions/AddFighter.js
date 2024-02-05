@@ -10,7 +10,8 @@ import { Asset } from '../../display/Asset.js';
 
 /**
  * Enum stating an entrance effect of a Fighter:
- * - Stand is a normal entrance.
+ * - Stand/Jump is a normal entrance.
+ * - Run makes the Fighter run in from its side.
  * - Grow makes the Fighter grows from 0% to 100%.
  * - Fall makes the Fighter fall from the top of the scene.
  * - Ground makes the Fighter emerge from the ground.
@@ -18,11 +19,12 @@ import { Asset } from '../../display/Asset.js';
  */
 export const EntranceEffect = {
 	Stand: 0,
-	Grow: 1,
-	Fall: 2,
-	Run: 3,
-	Ground: 4,
-	Anim: 5
+	Jump: 1,
+	Run: 2,
+	Grow: 3,
+	Fall: 4,
+	Ground: 5,
+	Anim: 6
 };
 
 /**

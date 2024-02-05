@@ -16,36 +16,36 @@ export class MTConverter {
 	 */
 	static ActionToHistory = [
 		MTConverter.convertHAdd,
-		MTConverter.convertHAddCastle,
-		MTConverter.convertHMoveTo,
-		MTConverter.convertHDamages,
-		MTConverter.convertHDamagesGroup,
-		MTConverter.convertHCastleAttack,
-		MTConverter.convertHReturn,
-		MTConverter.convertHDead,
-		MTConverter.convertHLost,
-		MTConverter.convertHEscape,
-		MTConverter.convertHFinish,
-		MTConverter.convertHEnergy,
-		MTConverter.convertHMaxEnergy,
-		MTConverter.convertHPause,
 		MTConverter.convertHAnnounce,
-		MTConverter.convertHGoto,
-		MTConverter.convertHRegen,
 		MTConverter.convertHObject,
-		MTConverter.convertHFx,
+		MTConverter.convertHLost,
 		MTConverter.convertHStatus,
 		MTConverter.convertHNoStatus,
-		MTConverter.convertHDisplay,
+		MTConverter.convertHRegen,
+		MTConverter.convertHDamages,
+		MTConverter.convertHDamagesGroup,
+		MTConverter.convertHFx,
+		MTConverter.convertHDead,
+		MTConverter.convertHGoto,
+		MTConverter.convertHReturn,
+		MTConverter.convertHPause,
+		MTConverter.convertHFinish,
+		MTConverter.convertHAddCastle,
 		MTConverter.convertHTimeLimit,
-		MTConverter.convertHTalk,
+		MTConverter.convertHCastleAttack,
+		MTConverter.convertHDisplay,
 		MTConverter.convertHText,
+		MTConverter.convertHTalk,
+		MTConverter.convertHEscape,
+		MTConverter.convertHMoveTo,
 		MTConverter.convertHFlip,
 		MTConverter.convertSpawnToy,
 		MTConverter.convertDestroyToy,
 		MTConverter.convertHWait,
 		MTConverter.convertHLog,
-		MTConverter.convertHNotify
+		MTConverter.convertHNotify,
+		MTConverter.convertHEnergy,
+		MTConverter.convertHMaxEnergy
 	];
 
 	/**
@@ -141,14 +141,17 @@ export class MTConverter {
 			case EntranceEffect.Stand:
 				ret.value = '_AFStand';
 				break;
+			case EntranceEffect.Jump:
+				ret.value = '_AFJump';
+				break;
+			case EntranceEffect.Run:
+				ret.value = '_AFRun';
+				break;
 			case EntranceEffect.Grow:
 				ret.value = '_AFGrow';
 				break;
 			case EntranceEffect.Fall:
 				ret.value = '_AFFall';
-				break;
-			case EntranceEffect.Run:
-				ret.value = '_AFRun';
 				break;
 			case EntranceEffect.Ground:
 				ret.value = '_AFGround';
@@ -269,6 +272,9 @@ export class MTConverter {
 				ret.value = '_GSpecial';
 				ret.args = [obj.shadeColor.col1 ?? 0, obj.shadeColor.col2 ?? 0];
 				break;
+			case GotoEffect.Todo:
+				ret.value = '_GTodo';
+				break;
 		}
 		return ret;
 	}
@@ -300,16 +306,20 @@ export class MTConverter {
 	static convertLifeEffect(lifeFx) {
 		const mapping = {
 			[Fighter.LifeEffect.Normal]: '_LNormal',
+			[Fighter.LifeEffect.Object]: '_LObject',
+			[Fighter.LifeEffect.Skull]: '_LSkull',
+			[Fighter.LifeEffect.Acid]: '_LAcid',
+			[Fighter.LifeEffect.Poison]: '_LPoison',
+			[Fighter.LifeEffect.Heal]: '_LHeal',
+			[Fighter.LifeEffect.Explode]: '_LExplode',
+			[Fighter.LifeEffect.Burn]: '_LBurn',
 			[Fighter.LifeEffect.Fire]: '_LFire',
 			[Fighter.LifeEffect.Wood]: '_LWood',
 			[Fighter.LifeEffect.Water]: '_LWater',
 			[Fighter.LifeEffect.Lightning]: '_LLightning',
 			[Fighter.LifeEffect.Air]: '_LAir',
-			[Fighter.LifeEffect.Burn]: '_LBurn',
-			[Fighter.LifeEffect.Explode]: '_LExplode',
-			[Fighter.LifeEffect.Heal]: '_LHeal',
-			[Fighter.LifeEffect.Skull]: '_LSkull',
-			[Fighter.LifeEffect.Acid]: '_LAcid'
+			[Fighter.LifeEffect.Gold]: '_LGold',
+			[Fighter.LifeEffect.Todo]: '_LTodo'
 		};
 		if (lifeFx !== undefined && mapping[lifeFx.fx]) {
 			const ret = {
@@ -338,10 +348,14 @@ export class MTConverter {
 	static convertDamagesEffect(effect) {
 		const mapping = {
 			[DamagesEffect.Normal]: '_ENormal',
-			[DamagesEffect.Drop]: '_EDrop',
 			[DamagesEffect.Back]: '_EBack',
+			[DamagesEffect.Counter]: '_ECounter',
+			[DamagesEffect.Drop]: '_EDrop',
 			[DamagesEffect.Eject]: '_EEject',
-			[DamagesEffect.Counter]: '_ECounter'
+			[DamagesEffect.FlyCancel]: '_EFlyCancel',
+			[DamagesEffect.IntangCancel]: '_EIntangCancel',
+			[DamagesEffect.IntangBreak]: '_EIntangBreak',
+			[DamagesEffect.Missed]: '_EMissed'
 		};
 		if (effect !== undefined && mapping[effect]) {
 			return {
@@ -489,16 +503,16 @@ export class MTConverter {
 		const mapping = {
 			[Fighter.Status.Sleep]: '_SSleep',
 			[Fighter.Status.Flames]: '_SFlames',
-			[Fighter.Status.Burn]: '_SBurn',
 			[Fighter.Status.Intang]: '_SIntang',
 			[Fighter.Status.Fly]: '_SFly',
 			[Fighter.Status.Slow]: '_SSlow',
 			[Fighter.Status.Quick]: '_SQuick',
 			[Fighter.Status.Stoned]: '_SStoned',
+			[Fighter.Status.Shield]: '_SShield',
 			[Fighter.Status.Bless]: '_SBless',
 			[Fighter.Status.Poison]: '_SPoison',
-			[Fighter.Status.Shield]: '_SShield',
 			[Fighter.Status.Heal]: '_SHeal',
+			[Fighter.Status.Burn]: '_SBurn',
 			[Fighter.Status.MonoElt]: '_SMonoElt',
 			[Fighter.Status.Dazzled]: '_SDazzled',
 			[Fighter.Status.Stun]: '_SStun'
@@ -509,7 +523,7 @@ export class MTConverter {
 			args: []
 		};
 		switch (status.status) {
-			// The status needs an argument but it is not used in the display of the fight.
+			// Those statuses need an argument but it is not used in the display of the fight.
 			case Fighter.Status.Burn:
 			case Fighter.Status.Poison:
 			case Fighter.Status.MonoElt:
