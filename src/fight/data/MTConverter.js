@@ -399,8 +399,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHLost(obj) {
-		console.log('Conversion for "_HLost" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HLost',
+			args: [obj.fid, obj.amount, MTConverter.convertLifeEffect(obj.lifeFx)]
+		};
 	}
 
 	/**

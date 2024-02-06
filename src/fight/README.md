@@ -84,6 +84,33 @@ A fighter announces something, most likely the use of a skill.
 
 ### Lost (3)
 
+A fighter loses a set amount of life with the given life effect. Does nothing if the fighter is dead.
+This can for example be used for status effect (poison, torch, etc).
+
+#### Properties
+
+1. fid - Number - The ID of the fighter losing life.
+2. amount - Number - Amount of health healed.
+3. lifeFx - {fx: LifeEffect, amount?: number, size?: number} - The life effect played during the damage.
+
+| LifeEffect     | Description                                                             |
+| -------------- | ----------------------------------------------------------------------- |
+| Normal (0)     | No effect in particular.                                                |
+| Object (1)     | No visual.                                                              |
+| Skull (2)      | Adds skulls particles. Set size to decide the size of the skull fx.     |
+| Acid (3)       | Adds acid particles.                                                    |
+| Poison (4)     | No visual.                                                              |
+| Heal (5)       | Adds healing particles.                                                 |
+| Explode (6)    | Adds explosion particles.                                               |
+| Burn (7)       | Adds burning particles. Set amount to display the amount of fx to show. |
+| Fire (8)       | Adds fire particles.                                                    |
+| Wood (9)       | Adds leaf particles.                                                    |
+| Water (10)     | Adds droplet particles.                                                 |
+| Lightning (11) | Adds lightning particles.                                               |
+| Air (12)       | Adds wind particles.                                                    |
+| Gold (13)      | No visual.                                                              |
+| Todo (14)      | Debug.                                                                  |
+
 ### Status (4)
 
 A status if added to a fighter. An optional power property can be passed depending on the chosen status.
@@ -139,26 +166,7 @@ A fighter attacks another fighter and deals a certain amount of damages.
 1. fid - Number - The ID of the attacking fighter.
 2. tid - Number - The ID of the targeted fighter.
 3. damages - Number | Null - The amount of damages dealt. If Null, the attack is dodged. If 0, the attack is guarded.
-4. lifeFx? - {fx: LifeEffect, amount?: number, size?: number} - The life effect played on the fighter during the attack.
-
-| LifeEffect     | Description                                                             |
-| -------------- | ----------------------------------------------------------------------- |
-| Normal (0)     | No effect in particular.                                                |
-| Object (1)     | No visual.                                                              |
-| Skull (2)      | Adds skulls particles. Set size to decide the size of the skull fx.     |
-| Acid (3)       | Adds acid particles.                                                    |
-| Poison (4)     | No visual.                                                              |
-| Heal (5)       | Adds healing particles.                                                 |
-| Explode (6)    | Adds explosion particles.                                               |
-| Burn (7)       | Adds burning particles. Set amount to display the amount of fx to show. |
-| Fire (8)       | Adds fire particles.                                                    |
-| Wood (9)       | Adds leaf particles.                                                    |
-| Water (10)     | Adds droplet particles.                                                 |
-| Lightning (11) | Adds lightning particles.                                               |
-| Air (12)       | Adds wind particles.                                                    |
-| Gold (13)      | No visual.                                                              |
-| Todo (14)      | Debug.                                                                  |
-
+4. lifeFx? - {fx: LifeEffect, amount?: number, size?: number} - The life effect played on the fighter during the attack. See LifeEffect above.
 5. effect? - DamagesEffect - The type of action the fighter will take before attacking.
 
 | DamagesEffect    | Description                                                                                             |

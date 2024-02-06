@@ -17,6 +17,7 @@ import { Escape } from './actions/Escape.js';
 import { Finish } from './actions/Finish.js';
 import { Status } from './actions/Status.js';
 import { NoStatus } from './actions/NoStatus.js';
+import { Lost } from './actions/Lost.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -72,7 +73,7 @@ export class History {
 			[Fight.Action.Add]: 'addFighter',
 			[Fight.Action.Announce]: 'announce',
 			[Fight.Action.Object]: undefined,
-			[Fight.Action.Lost]: undefined,
+			[Fight.Action.Lost]: 'lost',
 			[Fight.Action.Status]: 'status',
 			[Fight.Action.NoStatus]: 'noStatus',
 			[Fight.Action.Regen]: 'regen',
@@ -173,6 +174,23 @@ export class History {
 			},
 			action.fid,
 			action.message
+		);
+	}
+
+	/**
+	 * A fighter lose some life with the given LifeEffect.
+	 * @param {{action: number, fid: number, amount: number, lifeFx: {fx: number, amount?: number, size?: number}}} action Action which triggered the call.
+	 * @returns {Lost} The Lost State.
+	 */
+	lost(action) {
+		return new Lost(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.amount,
+			action.lifeFx
 		);
 	}
 

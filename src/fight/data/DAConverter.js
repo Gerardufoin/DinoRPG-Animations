@@ -359,8 +359,12 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHLost(args) {
-		console.log('Conversion for "_HLost" not done yet.');
-		return { action: Fight.Action.Lost };
+		return {
+			action: Fight.Action.Lost,
+			fid: args[0],
+			amount: args[1],
+			lifeFx: DAConverter.convertLifeEffect(args[2])
+		};
 	}
 
 	/**
