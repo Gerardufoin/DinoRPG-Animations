@@ -486,6 +486,24 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Adds a PixiJS Container to a specific layer.
+	 * @param {Container} cont The Container to add to the layer.
+	 * @param {number} layer The layer where to add the Container.
+	 */
+	addContainer(cont, layer) {
+		this._layers[layer].container.addChild(cont);
+	}
+
+	/**
+	 * Removes a PixiJS Container from a specific layer.
+	 * @param {Container} cont The Container to remove from the layer.
+	 * @param {number} layer The layer from which to remove the Container.
+	 */
+	removeContainer(cont, layer) {
+		this._layers[layer].container.removeChild(cont);
+	}
+
+	/**
 	 * Update the physic, animator, Sprites attached to the Fighter, current Figther's mode, as well as fx and status display.
 	 * @param {Timer} timer The Timer managing the elapsed time.
 	 */

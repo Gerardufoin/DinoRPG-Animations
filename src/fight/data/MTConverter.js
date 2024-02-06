@@ -6,6 +6,7 @@ import { DamagesEffect } from '../actions/Damages.js';
 import { Skill } from '../actions/DamagesGroup.js';
 import { EndBehaviour } from '../actions/Finish.js';
 import { GotoEffect } from '../actions/GotoFighter.js';
+import { Notifications } from '../actions/Notification.js';
 
 /**
  * Convert the project fight data into MT fight data.
@@ -784,7 +785,47 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHNotify(obj) {
-		console.log('Conversion for "_HNotify" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HNotify',
+			args: [obj.fids, MTConverter.convertNotification(obj.notification)]
+		};
+	}
+
+	/**
+	 * Convert a Notifications enum into an _Notification enum.
+	 * @param {number} notif Notifications enum.
+	 * @returns {{enum: string, value: string, args: Array} | null} The corresponding _Notification enum or null if none.
+	 */
+	static convertNotification(notif) {
+		const mapping = {
+			[Notifications.Slow]: '_NSlow',
+			[Notifications.Quick]: '_NQuick',
+			[Notifications.Silence]: '_NSilence',
+			[Notifications.Sharignan]: '_NSharignan',
+			[Notifications.NoUse]: '_NNoUse',
+			[Notifications.Down]: '_NDown',
+			[Notifications.Up]: '_NUp',
+			[Notifications.Fire]: '_NFire',
+			[Notifications.Wood]: '_NWood',
+			[Notifications.Water]: '_NWater',
+			[Notifications.Thunder]: '_NThunder',
+			[Notifications.Air]: '_NAir',
+			[Notifications.InitUp]: '_NInitUp',
+			[Notifications.InitDown]: '_NInitDown',
+			[Notifications.Snake]: '_NSnake',
+			[Notifications.Strong]: '_NStrong',
+			[Notifications.Shield]: '_NShield',
+			[Notifications.MonoElt]: '_NMonoElt',
+			[Notifications.Todo]: '_NTodo'
+		};
+		if (notif !== undefined && mapping[notif]) {
+			return {
+				enum: '_Notification',
+				value: mapping[notif],
+				args: []
+			};
+		}
+		return null;
 	}
 }

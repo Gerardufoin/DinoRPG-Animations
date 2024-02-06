@@ -8,6 +8,7 @@ import { Skill } from '../actions/DamagesGroup.js';
 import { EndBehaviour } from '../actions/Finish.js';
 import { GotoEffect } from '../actions/GotoFighter.js';
 import { FXEffect } from '../actions/Effect.js';
+import { Notifications } from '../actions/Notification.js';
 
 /**
  * Convert MT fight data into DA fight data.
@@ -807,7 +808,36 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHNotify(args) {
-		console.log('Conversion for "_HNotify" not done yet.');
-		return { action: Fight.Action.Notify };
+		return { action: Fight.Action.Notify, fids: args[0], notification: DAConverter.convertNotifications(args[1]) };
+	}
+
+	/**
+	 * Convert a _Notification enum from from MT into a Notifications enum.
+	 * @param {object} notif MT _Notification enum.
+	 * @returns {number} The converted Notifications enum value.
+	 */
+	static convertNotifications(notif) {
+		const mapping = {
+			_NSlow: Notifications.Slow,
+			_NQuick: Notifications.Quick,
+			_NSilence: Notifications.Silence,
+			_NSharignan: Notifications.Sharignan,
+			_NNoUse: Notifications.NoUse,
+			_NDown: Notifications.Down,
+			_NUp: Notifications.Up,
+			_NFire: Notifications.Fire,
+			_NWood: Notifications.Wood,
+			_NWater: Notifications.Water,
+			_NThunder: Notifications.Thunder,
+			_NAir: Notifications.Air,
+			_NInitUp: Notifications.InitUp,
+			_NInitDown: Notifications.InitDown,
+			_NSnake: Notifications.Snake,
+			_NStrong: Notifications.Strong,
+			_NShield: Notifications.Shield,
+			_NMonoElt: Notifications.MonoElt,
+			_NTodo: Notifications.Todo
+		};
+		return mapping[notif.value];
 	}
 }
