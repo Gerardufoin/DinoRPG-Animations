@@ -1,6 +1,10 @@
 // @ts-check
 
 export let mapping_gfx = {
+	// Strong notification
+	'Symbol 612': 'shoulder',
+	'Symbol 614': 'arm',
+	'Symbol 616': 'forearm',
 	// fxFlameche
 	'Symbol 825': 'base',
 	'Symbol 826': 'fx_1',

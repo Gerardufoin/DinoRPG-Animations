@@ -339,6 +339,35 @@ Sends a message to the console if the fight is started in debug mode.
 
 ### Notify (28)
 
+Plays a notification above a group of fighters, which goes up a fade out over time.
+
+#### Properties
+
+1. fids - Number[] - The list of IDs of the affected fighters.
+2. notification - Notifications - A value of the Notifications enum.
+
+| Notifications | Description                           |
+| ------------- | ------------------------------------- |
+| Slow (0)      | Adds an anvil notification.           |
+| Quick (1)     | Adds a thunderbolt notification.      |
+| Silence (2)   | Adds a speech bubble notification.    |
+| Sharingan (3) | Adds a Sharingan notification.        |
+| NoUse (4)     | Adds a red cross notification.        |
+| Down (5)      | Adds a Down notification.             |
+| Up (6)        | Adds an Up notification.              |
+| Fire (7)      | Adds a red orb notification.          |
+| Wood (8)      | Adds a green orb notification.        |
+| Water (9)     | Adds a blue orb notification.         |
+| Thunder (10)  | Adds a yellow orb notification.       |
+| Air (11)      | Adds a white orb notification.        |
+| InitUp (12)   | Adds a blue firecracker notification. |
+| InitDown (13) | Adds a red firecracker notification.  |
+| Snake (14)    | Adds a snake notification.            |
+| Strong (15)   | Adds a flexing muscle notification.   |
+| Shield (16)   | Adds a shield notification.           |
+| MonoElt (17)  | Adds a lock notification.             |
+| Todo (18)     | No visual, debug notification.        |
+
 ### Energy (29)
 
 Set the current energy of a group of fighters.

@@ -83,6 +83,15 @@ export class Animation extends Container {
 	_blurFilter;
 
 	/**
+	 * Create a new Animation and specify the scale.
+	 * @param {number} scale The Scale of the animation.
+	 */
+	constructor(scale = 1) {
+		super();
+		this._scale = scale;
+	}
+
+	/**
 	 * Add a child animation to the object.
 	 * The child animation may or may not have an actual playing animation.
 	 * @param {Animation} anim A PixiJS Container containing multiple sprites and possibly an animation in its children.

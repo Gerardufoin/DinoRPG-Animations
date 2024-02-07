@@ -2,6 +2,7 @@
 import { Application, Container, Graphics, Sprite, Texture, Matrix } from 'pixi.js';
 import { sdino } from './sdino.js';
 import { Fight } from './fight/Fight.js';
+import { Notifications } from './fight/actions/Notification.js';
 //import { PixiHelper } from './display/PixiHelper.js';
 
 // Help combining transforms from parented animations
@@ -21,4 +22,4 @@ import { Fight } from './fight/Fight.js';
 );*/
 
 // Ultimately, only the project class should be exposed. Other classes are currently there for testing purposes.
-export { Application, Graphics, Container, Sprite, Texture, Matrix, sdino, Fight };
+export { Application, Graphics, Container, Sprite, Texture, Matrix, sdino, Fight, Notifications };

@@ -258,6 +258,7 @@ export class Animator extends Container {
 	 * @returns {Animator} The instance of this animator to chain calls.
 	 */
 	loadAnimation(details, scale = 1) {
+		this._body._scale = scale;
 		this._body.setAnimation(details.animation);
 		for (const pName in details.parts) {
 			const element = PartManager.createPart(details.parts[pName], [], [], '', scale);

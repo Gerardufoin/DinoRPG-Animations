@@ -543,7 +543,9 @@ export class Fighter extends Phys {
 		}
 		this.updateFx(timer);
 		this.updateStatus(timer);
-		this._slot.update(timer);
+		if (this._slot) {
+			this._slot.update(timer);
+		}
 	}
 
 	/**

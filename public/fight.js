@@ -76,20 +76,176 @@ const fightVersion = [
 				}
 			},
 			{
-				action: DinoAnim.Fight.Action.Status,
-				fid: 0,
-				status: 9
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
 			},
 			{
-				action: DinoAnim.Fight.Action.Announce,
-				fid: 0,
-				message: 'Hopity Bopity'
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Stun
 			},
 			{
-				action: DinoAnim.Fight.Action.Announce,
-				fid: 1,
-				message: 'Bruuuuh whaaat !!'
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
 			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Shield
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.MonoElt
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Strong
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Snake
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.InitDown
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.InitUp
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Air
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Thunder
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Water
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Wood
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Fire
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Up
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Down
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.NoUse
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Sharingan
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Silence
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Quick
+			},
+			{
+				action: DinoAnim.Fight.Action.Pause,
+				time: 50
+			},
+			{
+				action: DinoAnim.Fight.Action.Notify,
+				fids: [0, 1],
+				notification: DinoAnim.Notifications.Slow
+			}
 			/*{
 				action: DinoAnim.Fight.Action.Status,
 				fid: 0,
@@ -145,13 +301,13 @@ const fightVersion = [
 				fid: 1,
 				status: 13
 			}*/
-			{
+			/*{
 				action: DinoAnim.Fight.Action.Damages,
 				fid: 0,
 				tid: 1,
 				damages: 1,
 				lifeFx: lifeType
-			}
+			}*/
 		],
 		debug: false
 	}

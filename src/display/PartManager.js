@@ -28,7 +28,7 @@ export class PartManager {
 	 * @returns {Animation} A part of the dino containing all its sub-parts and possible sub-animations.
 	 */
 	static createPart(partsList, partsDetail, palette, assetPath, scale = 1) {
-		let part = new Animation();
+		let part = new Animation(scale);
 		for (const element of partsList) {
 			let sprite = PartManager.getSubPart(element, partsDetail, palette, assetPath, scale);
 			if (sprite) {
@@ -76,7 +76,7 @@ export class PartManager {
 						currentTransform.clone()
 					);
 				} else {
-					const cont = new Animation();
+					const cont = new Animation(scale);
 					for (const p of part.parts[idx]) {
 						const newPart = PartManager.getSubPart(
 							p,
@@ -95,7 +95,7 @@ export class PartManager {
 			}
 		} else if (part.animation && part.parts) {
 			// If the part is an animation, set the animation and get its parts for instantiation
-			let anim = new Animation();
+			let anim = new Animation(scale);
 			anim.setAnimation(part.animation);
 			for (const pName in part.parts) {
 				const element = PartManager.createPart(part.parts[pName], partsDetail, palette, assetPath, scale);
@@ -174,7 +174,7 @@ export class PartManager {
 		}
 		sprite.filters = filters;
 		// Transformation are not directly applied to the sprite so it can be scaled for resolution purposes
-		const localTransform = new Animation();
+		const localTransform = new Animation(scale);
 		localTransform.addChild(sprite);
 		localTransform.transform.setFromMatrix(
 			parentTransform.append(

@@ -18,6 +18,7 @@ import { Finish } from './actions/Finish.js';
 import { Status } from './actions/Status.js';
 import { NoStatus } from './actions/NoStatus.js';
 import { Lost } from './actions/Lost.js';
+import { Notification } from './actions/Notification.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -98,7 +99,7 @@ export class History {
 			[Fight.Action.DestroyToy]: undefined,
 			[Fight.Action.Wait]: undefined,
 			[Fight.Action.Log]: 'printLog',
-			[Fight.Action.Notify]: undefined,
+			[Fight.Action.Notify]: 'notify',
 			[Fight.Action.Energy]: 'energy',
 			[Fight.Action.MaxEnergy]: 'maxEnergy'
 		};
@@ -409,6 +410,15 @@ export class History {
 		if (this._scene.debugMode) {
 			console.log(`Fight Log Message: ${action.msg}`);
 		}
+		this.playNext();
+	}
+
+	/**
+	 * Display a notification icon above the given figthers.
+	 * @param {{action: number, fids: [], notification: number}} action Action which triggered the call.
+	 */
+	notify(action) {
+		this.registerState(new Notification(this._scene, undefined, action.fids, action.notification));
 		this.playNext();
 	}
 
