@@ -147,7 +147,7 @@ export class Fighter extends Phys {
 	_maxEnergy = 100;
 	_size = 1;
 	/**
-	 * List of props attached to the Fighter, based on Fighter.Props.
+	 * List of properties attached to the Fighter, based on Fighter.Property.
 	 * @type {number[]}
 	 */
 	_props = [];

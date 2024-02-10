@@ -82,6 +82,15 @@ A fighter announces something, most likely the use of a skill.
 
 ### Object (2)
 
+A fighter uses an item. The icon of the item appears above the Fighter's head before fading out.
+An Announce is made with the figther calling the name of the item.
+
+#### Properties
+
+1. fid - number - The ID of the fighter using the item.
+2. name - string - The name displayed in the Announce.
+3. item - string - An asset from the /assets/gfx/items folder. Only use the filename without the extention.
+
 ### Lost (3)
 
 A fighter loses a set amount of life with the given life effect. Does nothing if the fighter is dead.

@@ -222,10 +222,10 @@ export class Animator extends Container {
 		if (this._time >= this._tickRate) {
 			while (this._time >= this._tickRate) {
 				this._body.increaseCurrentIdx(1);
+				this._body.updateAnimation();
 				this._body.executeCallbacks(this._callbacks);
 				this._time -= this._tickRate;
 			}
-			this._body.updateAnimation();
 		}
 	}
 

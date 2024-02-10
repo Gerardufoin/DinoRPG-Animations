@@ -19,6 +19,7 @@ import { Status } from './actions/Status.js';
 import { NoStatus } from './actions/NoStatus.js';
 import { Lost } from './actions/Lost.js';
 import { Notification } from './actions/Notification.js';
+import { UseItem } from './actions/UseItem.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -36,6 +37,13 @@ export class History {
 	 * @type {Scene}
 	 */
 	_scene;
+	/**
+	 * Get the Scene linked to the History.
+	 * @type {Scene}
+	 */
+	get scene() {
+		return this._scene;
+	}
 
 	/**
 	 * The history of the fight.
@@ -73,7 +81,7 @@ export class History {
 		this._actions = {
 			[Fight.Action.Add]: 'addFighter',
 			[Fight.Action.Announce]: 'announce',
-			[Fight.Action.Object]: undefined,
+			[Fight.Action.Object]: 'item',
 			[Fight.Action.Lost]: 'lost',
 			[Fight.Action.Status]: 'status',
 			[Fight.Action.NoStatus]: 'noStatus',
@@ -175,6 +183,23 @@ export class History {
 			},
 			action.fid,
 			action.message
+		);
+	}
+
+	/**
+	 * A fighter shows an item.
+	 * @param {{action: number, fid: number, name: string, item: string}} action Action which triggered the call.
+	 * @returns {UseItem} The Item State.
+	 */
+	item(action) {
+		return new UseItem(
+			this,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.name,
+			action.item
 		);
 	}
 

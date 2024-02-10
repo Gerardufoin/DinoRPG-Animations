@@ -75,7 +75,7 @@ export class DAConverter {
 	static getBackground(mtData) {
 		let bgRef = mtData._dojo ? mtData._dojo : mtData._bg;
 		if (bgRef) {
-			const match = bgRef.match(/(\w+)\./);
+			const match = bgRef.match(/(\w+)\.\w+$/);
 			return match ? match[1] : undefined;
 		}
 		return undefined;
@@ -111,7 +111,7 @@ export class DAConverter {
 		const ret = {
 			action: Fight.Action.Add,
 			fighter: {
-				props: args[0]._props,
+				props: args[0]._props.map((p) => DAConverter.convertProperty(p)),
 				dino: args[0]._dino,
 				life: args[0]._life,
 				maxLife: args[0]._dino && args[0]._props.length == 0 ? args[0]._size : args[0]._life,
@@ -124,6 +124,22 @@ export class DAConverter {
 			}
 		};
 		return ret;
+	}
+
+	/**
+	 * Convert a props from MT into a Fighter.Property.
+	 * @param {object} prop MT props object.
+	 * @returns {number} The converted Fighter.Property.
+	 */
+	static convertProperty(prop) {
+		const mapping = {
+			_PBoss: Fighter.Property.Boss,
+			_PStatic: Fighter.Property.Static,
+			_PGroundOnly: Fighter.Property.GroundOnly,
+			_PDark: Fighter.Property.Dark,
+			_PNothing: Fighter.Property.Nothing
+		};
+		return mapping[prop.value] ?? Fighter.Property.Nothing;
 	}
 
 	/**
@@ -246,8 +262,8 @@ export class DAConverter {
 			case '_GSpecial':
 				obj.entrance = GotoEffect.Special;
 				obj.shadeColor = {
-					col1: obj.args[0],
-					col2: obj.args[1]
+					col1: effect.args[0],
+					col2: effect.args[1]
 				};
 				break;
 			case '_GTodo':
@@ -420,8 +436,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHObject(args) {
-		console.log('Conversion for "_HObject" not done yet.');
-		return { action: Fight.Action.Object };
+		return { action: Fight.Action.Object, fid: args[0], name: args[1], item: args[2] };
 	}
 
 	/**

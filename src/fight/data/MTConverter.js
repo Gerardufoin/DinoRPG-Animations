@@ -60,7 +60,7 @@ export class MTConverter {
 			_debug: '/tools/debugFight?sk=3GHQD1Sk',
 			_mbottom: etData.bottom ?? 0,
 			_mright: etData.right ?? 0,
-			_equip: '/img/icons/obj_::id::.gif',
+			_equip: '/img/icons/::id::.gif',
 			_sdino: '/swf/sdino.swf?v=33',
 			_dino: '/swf/dino.swf?v=35',
 			_dojo: null,
@@ -109,7 +109,7 @@ export class MTConverter {
 			args: []
 		};
 		ret.args.push({
-			_props: obj.fighter.props,
+			_props: obj.fighter.props.map((p) => MTConverter.convertProperty(p)),
 			_dino: obj.fighter.dino,
 			_life: obj.fighter.life,
 			_name: obj.fighter.name,
@@ -120,6 +120,26 @@ export class MTConverter {
 		});
 		ret.args.push(MTConverter.convertEntranceEffect(obj.fighter));
 		return ret;
+	}
+
+	/**
+	 * Convert a Fighter.Property into a _Property enum from MT.
+	 * @param {number} prop The Fighter.Property value.
+	 * @returns {object} The _Property enum.
+	 */
+	static convertProperty(prop) {
+		const mapping = {
+			[Fighter.Property.Boss]: '_PBoss',
+			[Fighter.Property.Static]: '_PStatic',
+			[Fighter.Property.GroundOnly]: '_PGroundOnly',
+			[Fighter.Property.Dark]: '_PDark',
+			[Fighter.Property.Nothing]: '_PNothing'
+		};
+		return {
+			enum: '_Property',
+			value: mapping[prop],
+			args: []
+		};
 	}
 
 	/**
@@ -468,8 +488,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHObject(obj) {
-		console.log('Conversion for "_HObject" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HObject',
+			args: [obj.fid, obj.name, obj.item]
+		};
 	}
 
 	/**

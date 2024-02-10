@@ -1,6 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/tree/main/DinoRPG/gfx/fight
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Main.hx
+// enums: https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/src/com/Fight.hx
 import { Renderer } from 'pixi.js';
 import { HaxeUnserializer } from './data/HaxeUnserializer.js';
 import { HaxeSerializer } from './data/HaxeSerializer.js';
