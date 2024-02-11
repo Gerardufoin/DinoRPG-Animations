@@ -658,6 +658,15 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * The Fighter flips around and change side.
+	 */
+	flip() {
+		this.backToDefault();
+		this._side = !this._side;
+		this._animator.flip(this._side);
+	}
+
+	/**
 	 * Set the current direction of the Fighter.
 	 * Different from side, where side is the global direction, while sens is the temporary one (if the Fighter is moving backward for example).
 	 * @param {boolean} sens The direction the Fighter will be facing. True for the default direction, False for the opposite direction.

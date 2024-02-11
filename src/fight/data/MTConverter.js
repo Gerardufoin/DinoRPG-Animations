@@ -755,8 +755,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHFlip(obj) {
-		console.log('Conversion for "_HFlip" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HFlip',
+			args: [obj.fid]
+		};
 	}
 
 	/**
@@ -833,8 +836,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHWait(obj) {
-		console.log('Conversion for "_HWait" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HWait',
+			args: [obj.time]
+		};
 	}
 
 	/**

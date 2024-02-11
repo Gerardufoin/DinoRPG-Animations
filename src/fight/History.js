@@ -22,6 +22,8 @@ import { Notification } from './actions/Notification.js';
 import { UseItem } from './actions/UseItem.js';
 import { SpawnToy } from './actions/SpawnToy.js';
 import { DestroyToy } from './actions/DestroyToy.js';
+import { Flip } from './actions/Flip.js';
+import { Wait } from './actions/Wait.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -104,10 +106,10 @@ export class History {
 			[Fight.Action.Talk]: undefined,
 			[Fight.Action.Escape]: 'escape',
 			[Fight.Action.MoveTo]: 'moveTo',
-			[Fight.Action.Flip]: undefined,
+			[Fight.Action.Flip]: 'flip',
 			[Fight.Action.SpawnToy]: 'spawnToy',
 			[Fight.Action.DestroyToy]: 'destroyToy',
-			[Fight.Action.Wait]: undefined,
+			[Fight.Action.Wait]: 'wait',
 			[Fight.Action.Log]: 'printLog',
 			[Fight.Action.Notify]: 'notify',
 			[Fight.Action.Energy]: 'energy',
@@ -430,6 +432,21 @@ export class History {
 	}
 
 	/**
+	 * Flips a Fighter around.
+	 * @param {{action: number, fid: number}} action Action which triggered the call.
+	 * @returns {State} The Flip State.
+	 */
+	flip(action) {
+		return new Flip(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid
+		);
+	}
+
+	/**
 	 * Spawns a Toy in the Scene.
 	 * @param {{action: number, toy: string, x?: number, y?: number, z?: number, vx?: number, vy?: number, vz?: number}} action Action which triggered the call.
 	 * @returns {State} The SpawnToy State.
@@ -462,6 +479,21 @@ export class History {
 				this.playNext();
 			},
 			action.toy
+		);
+	}
+
+	/**
+	 * Waits for a specific amount of time in milliseconds.
+	 * @param {{action: number, time: number}} action Action which triggered the call.
+	 * @returns {State} The Wait State.
+	 */
+	wait(action) {
+		return new Wait(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.time
 		);
 	}
 

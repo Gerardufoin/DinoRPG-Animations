@@ -46,7 +46,7 @@ const fightData = [
 const lifeType = { fx: 9, size: 1, amount: 10 };
 const version = 0;
 const fightVersion = [
-	{ legacy_data: fightData[6], debug: false },
+	{ legacy_data: fightData[5], debug: false },
 	{
 		bg: 's_dnv',
 		top: 120,

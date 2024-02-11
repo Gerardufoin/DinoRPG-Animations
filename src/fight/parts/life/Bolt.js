@@ -25,8 +25,7 @@ export class Bolt extends Phys2D {
 	 * @param {number} y The initial Y coordinate.
 	 */
 	constructor(scene, x, y) {
-		// Round random scale to first digit to optimize SVG loading
-		const animator = new Animator(false).loadAnimation(fx_bolt, Math.round((1 + Math.random()) * 10) / 10);
+		const animator = new Animator(false).loadAnimation(fx_bolt);
 		super(animator, scene);
 
 		this._animator = animator;
@@ -36,6 +35,8 @@ export class Bolt extends Phys2D {
 
 		this._x = x;
 		this._y = y;
+		// The scale is not applied to the SVG for optimization. Does not make a difference visually for the bolt.
+		this.setScale(1 + Math.random());
 		this._root.angle = Math.random() * 360;
 
 		if (!Bolt.GlowFilter) {

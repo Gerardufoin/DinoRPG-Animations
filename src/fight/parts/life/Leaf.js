@@ -46,7 +46,7 @@ export class Leaf extends Faller {
 		this._vx = vx;
 		this._vz = vz;
 		this._root.angle = Math.random() * 360;
-		this.setScale(0.8 - Math.random() * 0.3);
+		this.setScale(0.7 - Math.random() * 0.2);
 		this._weight = 0.1 + Math.random() * 0.15;
 		this._fadeoutTimer = 10 + Math.random() * 30;
 		this._animator.setFrame(Math.round(Math.random() * 10 + 1));
@@ -55,14 +55,14 @@ export class Leaf extends Faller {
 			Leaf.GreenOutlineFilter = new GlowFilter({
 				distance: 2,
 				color: 0x227700,
-				outerStrength: 3,
+				outerStrength: 12,
 				quality: 0.5
 			});
 		}
 		if (!Leaf.ColorFilter) {
 			Leaf.ColorFilter = PixiHelper.adjustColorFilter(0, -10, -45, 49);
 		}
-		this._root.filters = [Leaf.ColorFilter, Leaf.GreenOutlineFilter, Leaf.GreenOutlineFilter];
+		this._root.filters = [Leaf.ColorFilter, Leaf.GreenOutlineFilter];
 
 		this._fadeLimit = 5;
 

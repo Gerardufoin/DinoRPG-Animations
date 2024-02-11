@@ -774,8 +774,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHFlip(args) {
-		console.log('Conversion for "_HFlip" not done yet.');
-		return { action: Fight.Action.Flip };
+		return { action: Fight.Action.Flip, fid: args[0] };
 	}
 
 	/**
@@ -852,8 +851,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHWait(args) {
-		console.log('Conversion for "_HWait" not done yet.');
-		return { action: Fight.Action.Wait };
+		return { action: Fight.Action.Wait, time: args[0] };
 	}
 
 	/**
