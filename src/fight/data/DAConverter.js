@@ -784,8 +784,16 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertSpawnToy(args) {
-		console.log('Conversion for "_SpawnToy" not done yet.');
-		return { action: Fight.Action.SpawnToy };
+		return {
+			action: Fight.Action.SpawnToy,
+			toy: DAConverter.convertToy(args[0]),
+			x: args[1],
+			y: args[2],
+			z: args[3],
+			vx: args[4],
+			vy: args[5],
+			vz: args[6]
+		};
 	}
 
 	/**
@@ -794,8 +802,48 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertDestroyToy(args) {
-		console.log('Conversion for "_DestroyToy" not done yet.');
-		return { action: Fight.Action.DestroyToy };
+		return { action: Fight.Action.DestroyToy, toy: DAConverter.convertToy(args[0]) };
+	}
+
+	/**
+	 * Convert a toy id into an asset from the gfx/toys folder.
+	 * @param {number} toyId The toy id used by MT to find the ressource in mcToys.
+	 * @returns {string} The asset name from the gfx/toys folder, or unk if unknown.
+	 */
+	static convertToy(toyId) {
+		const mapping = [
+			'wcharm',
+			'totem',
+			'sylkey',
+			'skull',
+			'rasca',
+			'potion',
+			'pelle',
+			'palmes',
+			'nenuph',
+			'medal4',
+			'medal3',
+			'matesc',
+			'marais',
+			'lantrn',
+			'ice',
+			'gshop',
+			'gant',
+			'fcharm',
+			'cup3',
+			'cup1',
+			'book',
+			'corail',
+			'conts1',
+			'ccard',
+			'bouee',
+			'bckpck',
+			'basalt',
+			'astone',
+			'amulst',
+			'wpure'
+		];
+		return mapping[toyId] ?? 'unk';
 	}
 
 	/**

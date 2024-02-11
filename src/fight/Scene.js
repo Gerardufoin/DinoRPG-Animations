@@ -66,6 +66,11 @@ export class Scene extends Container {
 	 */
 	_forces = [];
 	/**
+	 * List of the toys spawned in the scene.
+	 * @type {{toy: Sprite, name: string}[]}
+	 */
+	_toys = [];
+	/**
 	 * List of Tweens currently playing.
 	 * @type {Tween[]}
 	 */
@@ -320,6 +325,32 @@ export class Scene extends Container {
 	 */
 	removeForceSprite(sprite) {
 		this._forces = this._forces.filter((f) => f.spriteId !== sprite.spriteId);
+	}
+
+	/**
+	 * Adds a Toy to the scene.
+	 * @param {Sprite} toy The toy to add.
+	 * @param {string} name The type of toy being added. Used to remove them later on.
+	 */
+	addToy(toy, name) {
+		this._toys.push({
+			toy: toy,
+			name: name
+		});
+		this.addSprite(toy, Scene.LAYERS.FIGHTERS);
+	}
+
+	/**
+	 * Remove all the toys with the given name from the scene.
+	 * @param {string} name The type of toy being removed.
+	 */
+	removeToy(name) {
+		this._toys.map((t) => {
+			if (t.name === name) {
+				t.toy.kill();
+			}
+		});
+		this._toys = this._toys.filter((t) => t.name !== name);
 	}
 
 	/**

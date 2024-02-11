@@ -188,7 +188,7 @@ export class MTConverter {
 			return {
 				enum: '_AddFighterEffect',
 				value: '_AFPos',
-				args: [fighter.x, fighter.y, fighter.entrance ? ret : null]
+				args: [fighter.x, fighter.y, fighter.entrance !== undefined ? ret : null]
 			};
 		}
 		return ret;
@@ -765,8 +765,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertSpawnToy(obj) {
-		console.log('Conversion for "_SpawnToy" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_SpawnToy',
+			args: [MTConverter.convertToy(obj.toy), obj.x, obj.y, obj.z, obj.vx, obj.vy, obj.vz]
+		};
 	}
 
 	/**
@@ -775,8 +778,53 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertDestroyToy(obj) {
-		console.log('Conversion for "_DestroyToy" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_DestroyToy',
+			args: [MTConverter.convertToy(obj.toy)]
+		};
+	}
+
+	/**
+	 * Convert a toy asset into the toy id used for mcToys.
+	 * @param {string} toy The toy asset name to convert.
+	 * @returns {number} The index of the toy in mcToys.
+	 */
+	static convertToy(toy) {
+		const mapping = [
+			'wcharm',
+			'totem',
+			'sylkey',
+			'skull',
+			'rasca',
+			'potion',
+			'pelle',
+			'palmes',
+			'nenuph',
+			'medal4',
+			'medal3',
+			'matesc',
+			'marais',
+			'lantrn',
+			'ice',
+			'gshop',
+			'gant',
+			'fcharm',
+			'cup3',
+			'cup1',
+			'book',
+			'corail',
+			'conts1',
+			'ccard',
+			'bouee',
+			'bckpck',
+			'basalt',
+			'astone',
+			'amulst',
+			'wpure'
+		];
+		const idx = mapping.indexOf(toy);
+		return idx < 0 ? 0 : idx;
 	}
 
 	/**

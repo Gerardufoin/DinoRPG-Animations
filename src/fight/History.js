@@ -20,6 +20,8 @@ import { NoStatus } from './actions/NoStatus.js';
 import { Lost } from './actions/Lost.js';
 import { Notification } from './actions/Notification.js';
 import { UseItem } from './actions/UseItem.js';
+import { SpawnToy } from './actions/SpawnToy.js';
+import { DestroyToy } from './actions/DestroyToy.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -81,7 +83,7 @@ export class History {
 		this._actions = {
 			[Fight.Action.Add]: 'addFighter',
 			[Fight.Action.Announce]: 'announce',
-			[Fight.Action.Object]: 'item',
+			[Fight.Action.Object]: 'useItem',
 			[Fight.Action.Lost]: 'lost',
 			[Fight.Action.Status]: 'status',
 			[Fight.Action.NoStatus]: 'noStatus',
@@ -103,8 +105,8 @@ export class History {
 			[Fight.Action.Escape]: 'escape',
 			[Fight.Action.MoveTo]: 'moveTo',
 			[Fight.Action.Flip]: undefined,
-			[Fight.Action.SpawnToy]: undefined,
-			[Fight.Action.DestroyToy]: undefined,
+			[Fight.Action.SpawnToy]: 'spawnToy',
+			[Fight.Action.DestroyToy]: 'destroyToy',
 			[Fight.Action.Wait]: undefined,
 			[Fight.Action.Log]: 'printLog',
 			[Fight.Action.Notify]: 'notify',
@@ -187,11 +189,11 @@ export class History {
 	}
 
 	/**
-	 * A fighter shows an item.
+	 * A fighter uses an item.
 	 * @param {{action: number, fid: number, name: string, item: string}} action Action which triggered the call.
-	 * @returns {UseItem} The Item State.
+	 * @returns {State} The UseItem State.
 	 */
-	item(action) {
+	useItem(action) {
 		return new UseItem(
 			this,
 			() => {
@@ -424,6 +426,42 @@ export class History {
 			action.fid,
 			action.x,
 			action.y
+		);
+	}
+
+	/**
+	 * Spawns a Toy in the Scene.
+	 * @param {{action: number, toy: string, x?: number, y?: number, z?: number, vx?: number, vy?: number, vz?: number}} action Action which triggered the call.
+	 * @returns {State} The SpawnToy State.
+	 */
+	spawnToy(action) {
+		return new SpawnToy(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.toy,
+			action.x,
+			action.y,
+			action.z,
+			action.vx,
+			action.vy,
+			action.vz
+		);
+	}
+
+	/**
+	 * Removes all Toys with the given name from the Scene.
+	 * @param {{action: number, toy: string}} action Action which triggered the call.
+	 * @returns {State} The DestroyToy State.
+	 */
+	destroyToy(action) {
+		return new DestroyToy(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.toy
 		);
 	}
 
