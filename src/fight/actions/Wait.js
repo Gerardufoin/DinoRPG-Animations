@@ -1,6 +1,5 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Flip.hx
-import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { Timer } from '../Timer.js';

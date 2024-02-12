@@ -148,7 +148,7 @@ export class MTConverter {
 	 * @returns {object} The converted _AddFighterEffect enum or null if none is defined.
 	 */
 	static convertEntranceEffect(fighter) {
-		if (!fighter.x && !fighter.y && !fighter.entrance) {
+		if (fighter.x === undefined && fighter.y === undefined && fighter.entrance === undefined) {
 			return null;
 		}
 		const ret = {
@@ -709,8 +709,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHTalk(obj) {
-		console.log('Conversion for "_HTalk" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HTalk',
+			args: [obj.fid, obj.message]
+		};
 	}
 
 	/**
@@ -719,8 +722,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHText(obj) {
-		console.log('Conversion for "_HText" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HText',
+			args: [obj.message]
+		};
 	}
 
 	/**

@@ -24,6 +24,7 @@ import { SpawnToy } from './actions/SpawnToy.js';
 import { DestroyToy } from './actions/DestroyToy.js';
 import { Flip } from './actions/Flip.js';
 import { Wait } from './actions/Wait.js';
+import { Talk } from './actions/Talk.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -103,7 +104,7 @@ export class History {
 			[Fight.Action.CastleAttack]: undefined,
 			[Fight.Action.Display]: 'display',
 			[Fight.Action.Text]: undefined,
-			[Fight.Action.Talk]: undefined,
+			[Fight.Action.Talk]: 'talk',
 			[Fight.Action.Escape]: 'escape',
 			[Fight.Action.MoveTo]: 'moveTo',
 			[Fight.Action.Flip]: 'flip',
@@ -397,6 +398,22 @@ export class History {
 	 */
 	display(action) {
 		this.playNext();
+	}
+
+	/**
+	 * A Fighter start talking, creating a speech bubble above its head.
+	 * @param {{action: number, fid: number, message: string}} action Action which triggered the call.
+	 * @returns {State} The Talk State.
+	 */
+	talk(action) {
+		return new Talk(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.message
+		);
 	}
 
 	/**

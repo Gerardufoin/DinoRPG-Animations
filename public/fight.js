@@ -46,7 +46,7 @@ const fightData = [
 const lifeType = { fx: 9, size: 1, amount: 10 };
 const version = 0;
 const fightVersion = [
-	{ legacy_data: fightData[5], debug: false },
+	{ legacy_data: fightData[8], debug: false },
 	{
 		bg: 's_dnv',
 		top: 120,
@@ -77,6 +77,12 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'grdien'
 				}
+			},
+			{
+				action: DinoAnim.Fight.Action.Talk,
+				fid: 0,
+				message:
+					'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
 			},
 			{
 				action: DinoAnim.Fight.Action.Pause,

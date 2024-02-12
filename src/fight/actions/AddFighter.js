@@ -76,8 +76,11 @@ export class AddFighter extends State {
 	 */
 	init() {
 		const w = Scene.WIDTH * 0.5;
-		let ex = this._fInfos.x ? this._fInfos.x : w + -this._fighter.intSide * (w - (30 + Math.random() * 100));
-		let ey = this._fInfos.y ? this._fInfos.y : this._scene.getRandomPYPos();
+		let ex =
+			this._fInfos.x !== undefined
+				? this._fInfos.x
+				: w + -this._fighter.intSide * (w - (30 + Math.random() * 100));
+		let ey = this._fInfos.y !== undefined ? this._fInfos.y : this._scene.getRandomPYPos();
 
 		this._fighter._x = ex;
 		this._fighter._y = ey;

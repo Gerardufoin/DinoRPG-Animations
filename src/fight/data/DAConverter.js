@@ -736,8 +736,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHTalk(args) {
-		console.log('Conversion for "_HTalk" not done yet.');
-		return { action: Fight.Action.Talk };
+		return { action: Fight.Action.Talk, fid: args[0], message: args[1] };
 	}
 
 	/**
@@ -746,8 +745,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHText(args) {
-		console.log('Conversion for "_HText" not done yet.');
-		return { action: Fight.Action.Text };
+		return { action: Fight.Action.Text, message: args[0] };
 	}
 
 	/**
