@@ -18,6 +18,7 @@ import { Tween } from '../display/Tween.js';
 export class Scene extends Container {
 	static MARGIN = 10;
 	static WIDTH = 400;
+	static FULL_WIDTH = 488;
 	static HEIGHT = 300;
 	static LAYERS = {
 		BG: 0,
@@ -203,7 +204,7 @@ export class Scene extends Container {
 			const sprite = new Asset(gfx.background[key]);
 			sprite.y = -Scene.MARGIN;
 			sprite.onLoad(() => {
-				sprite.x = 488 / 2 - sprite.width / 2;
+				sprite.x = Scene.FULL_WIDTH / 2 - sprite.width / 2;
 			});
 			this._layers[Scene.LAYERS.BG].container.addChild(sprite);
 		}
@@ -236,7 +237,7 @@ export class Scene extends Container {
 		const colRightTop = new Asset(gfx.scene.column);
 		const colRightBottom = new Asset(gfx.scene.column);
 		colRight.onLoad(() => {
-			colRightContainer.x = 488 - colRight.width;
+			colRightContainer.x = Scene.FULL_WIDTH - colRight.width;
 			colRightTop.y = -colRight.height;
 			colRightBottom.y = colRight.height;
 		});

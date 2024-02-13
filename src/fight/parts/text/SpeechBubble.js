@@ -1,8 +1,8 @@
 // @ts-check
-// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/sp/Score.hx
-
-import { Container, Graphics, Text } from 'pixi.js';
+import { Container, Graphics, Rectangle, Text } from 'pixi.js';
 import { Timer } from '../../Timer.js';
+import { GlowFilter } from '@pixi/filter-glow';
+import { Scene } from '../../Scene.js';
 
 /**
  * Instantiate a Speech Bubble, displaying it at the given coordinates.
@@ -35,13 +35,31 @@ export class SpeechBubble extends Container {
 		});
 		txt.resolution = 2;
 		txt.anchor.set(0.5, 1);
-		txt.y = -5;
 
 		const bubble = new Graphics()
 			.beginFill(0xffffff)
-			.drawRect(-(txt.width + 10) / 2, -(txt.height + 8), txt.width + 10, txt.height + 8);
+			.drawRect(-(txt.width + 10) / 2, -(txt.height + 3), txt.width + 10, txt.height + 6);
+		const corner = new Graphics().beginFill(0xffffff).drawPolygon([0, 0, 0, 9, 9, 0]);
+		bubble.filters = [
+			new GlowFilter({
+				color: 0xffffff,
+				distance: 5,
+				outerStrength: 6,
+				quality: 1
+			})
+		];
 		this.addChild(bubble);
 		this.addChild(txt);
+		this.addChild(corner);
+		this.filterArea = new Rectangle(0, 0, Scene.FULL_WIDTH, Scene.HEIGHT);
+		this.filters = [
+			new GlowFilter({
+				color: 0x000000,
+				distance: 2,
+				outerStrength: 2,
+				quality: 1
+			})
+		];
 		this.x = x;
 		this.y = y;
 	}

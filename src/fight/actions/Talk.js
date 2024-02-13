@@ -1,5 +1,5 @@
 // @ts-check
-// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Flip.hx
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Talk.hx
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
@@ -61,8 +61,8 @@ export class Talk extends State {
 	 */
 	init() {
 		this._bubble = new SpeechBubble(
-			this._fighter.body.x,
-			this._fighter.body.y - (this._fighter.height + 10),
+			this._fighter.getRootContainer().x,
+			this._fighter.getRootContainer().y - (this._fighter.height + 10),
 			this._message
 		);
 		this._scene.addContainer(this._bubble, Scene.LAYERS.LOADING);
