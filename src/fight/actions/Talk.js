@@ -29,6 +29,14 @@ export class Talk extends State {
 	_bubble;
 
 	/**
+	 * Current step of the talk.
+	 * 0 is when the bubble is being displayed.
+	 * 1 is when the State is waiting for confirmation from the player.
+	 * 2 is when the State is released and the bubble starts fading out.
+	 */
+	_step = 0;
+
+	/**
 	 * Creates a Speech Bubble above the given Fighter and fill it over time with the given message.
 	 * @param {Scene} scene The Scene where the State is happening.
 	 * @param {() => void} endCall The function to call at the end of the State, if any.
@@ -66,6 +74,9 @@ export class Talk extends State {
 			this._message
 		);
 		this._scene.addContainer(this._bubble, Scene.LAYERS.LOADING);
+		this._scene.setClick(() => {
+			this._bubble.speedUp();
+		}, true);
 	}
 
 	/**
@@ -76,6 +87,36 @@ export class Talk extends State {
 		super.update(timer);
 		if (this._castingWait) return;
 
-		this._bubble.update(timer);
+		switch (this._step) {
+			case 0:
+				this._bubble.update(timer);
+				if (this._bubble.isDisplayed) {
+					this._step = 1;
+					this._scene.setClick(
+						() => {
+							this.endTalk();
+						},
+						true,
+						true
+					);
+				}
+				break;
+			case 2:
+				this._bubble.alpha = 1 - this._coef;
+				if (this._coef == 1) {
+					this._scene.removeContainer(this._bubble, Scene.LAYERS.LOADING);
+					this.end();
+				}
+				break;
+		}
+	}
+
+	/**
+	 * Ends the talk. The State enters the next step and start fading out the speech bubble.
+	 */
+	endTalk() {
+		this._step = 2;
+		this._coef = 1;
+		this._coefSpeed = 0;
 	}
 }

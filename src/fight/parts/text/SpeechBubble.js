@@ -9,6 +9,67 @@ import { Scene } from '../../Scene.js';
  */
 export class SpeechBubble extends Container {
 	/**
+	 * Horizontal padding between the text and the bubble border.
+	 * @type {number}
+	 */
+	static PADDING_HORIZONTAL = 10;
+	/**
+	 * Vertical padding between the text and the bubble border.
+	 * @type {number}
+	 */
+	static PADDING_VERTICAL = 6;
+
+	/**
+	 * Complete message to display over time in the speech bubble.
+	 * @type {string}
+	 */
+	_message;
+	/**
+	 * PixiJS Text being displayed in the bubble.
+	 * @type {Text}
+	 */
+	_text;
+	/**
+	 * The reference to the bubble part of the speech.
+	 * @type {Graphics}
+	 */
+	_bubble;
+	/**
+	 * The width of the speech bubble. Depends on the amount of text to display.
+	 * @type {number}
+	 */
+	_width;
+
+	/**
+	 * Speed at which the text is displayed.
+	 * @type {number}
+	 */
+	_speed = 0.6;
+	/**
+	 * Display speed multiplicator.
+	 * @type {number}
+	 */
+	_mult = 1;
+	/**
+	 * Speech display timer, show one more letter when reaching 1.
+	 * @type {number}
+	 */
+	_timer = 0;
+	/**
+	 * Current character index of the message being displayed.
+	 * @type {number}
+	 */
+	_index = 0;
+
+	/**
+	 * Return true if the message is fully displayed.
+	 * @type {boolean}
+	 */
+	get isDisplayed() {
+		return this._index >= this._message.length;
+	}
+
+	/**
 	 * Create a SpeechBubble which will spawn at the given coordinates and will fill with text over time.
 	 * @param {number} x The initial X coordinate.
 	 * @param {number} y The initial Y coordinate.
@@ -16,6 +77,7 @@ export class SpeechBubble extends Container {
 	 */
 	constructor(x, y, message) {
 		super();
+		this._message = message;
 		let width = 100;
 		if (message.length > 30) width = 150;
 		if (message.length > 200) width = 200;
@@ -23,7 +85,7 @@ export class SpeechBubble extends Container {
 		// PixiJS wordwarp one pixel sooner than Flash (or than Ruffle at least).
 		width += 1;
 
-		const txt = new Text(message, {
+		this._text = new Text(message, {
 			fontFamily: 'Verdana',
 			fontSize: 10,
 			lineHeight: 13,
@@ -33,23 +95,25 @@ export class SpeechBubble extends Container {
 			wordWrapWidth: width,
 			breakWords: true
 		});
-		txt.resolution = 2;
-		txt.anchor.set(0.5, 1);
+		this._text.resolution = 2;
+		this._text.anchor.set(0.5, 1);
+		this._text.y -= SpeechBubble.PADDING_VERTICAL / 2;
+		// We take the final width of the bubble, the one when the message si fully displayed.
+		// This is so the bubble width does not change while displaying the message.
+		this._width = this._text.width;
 
-		const bubble = new Graphics()
-			.beginFill(0xffffff)
-			.drawRect(-(txt.width + 10) / 2, -(txt.height + 3), txt.width + 10, txt.height + 6);
-		const corner = new Graphics().beginFill(0xffffff).drawPolygon([0, 0, 0, 9, 9, 0]);
-		bubble.filters = [
+		this._bubble = new Graphics();
+		const corner = new Graphics().beginFill(0xffffff).drawPolygon([0, 0, 0, 10, 10, 0]);
+		this._bubble.filters = [
 			new GlowFilter({
 				color: 0xffffff,
 				distance: 5,
-				outerStrength: 6,
+				outerStrength: 50,
 				quality: 1
 			})
 		];
-		this.addChild(bubble);
-		this.addChild(txt);
+		this.addChild(this._bubble);
+		this.addChild(this._text);
 		this.addChild(corner);
 		this.filterArea = new Rectangle(0, 0, Scene.FULL_WIDTH, Scene.HEIGHT);
 		this.filters = [
@@ -62,11 +126,54 @@ export class SpeechBubble extends Container {
 		];
 		this.x = x;
 		this.y = y;
+		this.setText('');
+	}
+
+	/**
+	 * Sets the text in the speech bubble and resize the bubble to fit the text.
+	 * @param {string} text The text to display in the bubble.
+	 */
+	setText(text) {
+		this._text.text = text;
+		this._bubble.clear();
+		this._bubble
+			.beginFill(0xffffff)
+			.drawRect(
+				-(this._width + SpeechBubble.PADDING_HORIZONTAL) / 2,
+				-(this._text.height + SpeechBubble.PADDING_VERTICAL),
+				this._width + SpeechBubble.PADDING_HORIZONTAL,
+				this._text.height + SpeechBubble.PADDING_VERTICAL
+			);
+	}
+
+	/**
+	 * Speed up the text display.
+	 */
+	speedUp() {
+		this._mult = 2;
 	}
 
 	/**
 	 * Update the Speech Bubble content over time until the text is completely displayed.
 	 * @param {Timer} timer The Fight's timer, containing the elapsed time.
 	 */
-	update(timer) {}
+	update(timer) {
+		if (this._index < this._message.length) {
+			this._timer += this._speed * this._mult * timer.tmod;
+			if (this._timer >= 1) {
+				this._index += Math.floor(this._timer);
+				this._timer = this._timer % 1;
+				const str = this._message.substring(0, this._index);
+				this.setText(str);
+				const c = str.charAt(str.length - 1);
+				if (c.match(/[.!?]/)) {
+					this._timer -= 10;
+				} else if (c == ',') {
+					this._timer -= 5;
+				} else if (c.match(/[A-Z]/)) {
+					this._timer += this._speed;
+				}
+			}
+		}
+	}
 }

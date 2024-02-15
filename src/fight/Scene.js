@@ -9,6 +9,7 @@ import { Timer } from './Timer.js';
 import { Slot } from './Slot.js';
 import { Sprite } from './Sprite.js';
 import { Tween } from '../display/Tween.js';
+import { ContinueArrow } from './parts/ContinueArrow.js';
 
 /**
  * The fight scene containing all the different layers to display.
@@ -92,6 +93,12 @@ export class Scene extends Container {
 	};
 
 	/**
+	 * The continue arrow showing up at the bottom right of the screen.
+	 * @type {ContinueArrow}
+	 */
+	_continueArrow;
+
+	/**
 	 * Create a new scene where the fight will happen.
 	 * @param {string} background The key to the background reference picture.
 	 * @param {{top: number, bottom: number, right: number}} margins Set the margins for the walkable area.
@@ -153,6 +160,9 @@ export class Scene extends Container {
 		this.updateShake(timer);
 		this.updateWalk(timer);
 		//updateTimeBar();
+		if (this._continueArrow) {
+			this._continueArrow.update(timer);
+		}
 	}
 
 	/**
@@ -399,6 +409,46 @@ export class Scene extends Container {
 			speed: speed,
 			timer: 0
 		};
+	}
+
+	/**
+	 * Set a click callback when clicking on the Scene, and change the cursor to a hand when hovering the scene.
+	 * When a click is done, the given callback will be called.
+	 * @param {() => void} callback The callback to call when a click is done.
+	 * @param {boolean} unique If true, the callback will only work once. False by default.
+	 * @param {boolean} arrow If true, display an arrow at the bottom left of the screen. False by default.
+	 */
+	setClick(callback, unique = false, arrow = false) {
+		let clickCb = callback;
+		if (unique) {
+			/**
+			 * If not unique, call the click callback and then remove the onclick from the container.
+			 */
+			clickCb = () => {
+				callback();
+				this.removeClick();
+			};
+		}
+		this.onclick = clickCb;
+		this.eventMode = 'static';
+		this.cursor = 'pointer';
+		if (arrow && !this._continueArrow) {
+			this._continueArrow = new ContinueArrow(Scene.WIDTH + 18, Scene.HEIGHT - 15);
+			this.addContainer(this._continueArrow, Scene.LAYERS.LOADING);
+		}
+	}
+
+	/**
+	 * Remove the click callback from the Scene and reset the cursor when hovering.
+	 */
+	removeClick() {
+		this.eventMode = 'none';
+		this.cursor = 'default';
+		this.onclick = undefined;
+		if (this._continueArrow) {
+			this.removeContainer(this._continueArrow, Scene.LAYERS.LOADING);
+			this._continueArrow = undefined;
+		}
 	}
 
 	/**

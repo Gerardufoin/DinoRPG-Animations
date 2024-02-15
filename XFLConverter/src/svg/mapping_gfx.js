@@ -34,6 +34,7 @@ export let mapping_gfx = {
 	199: 'toys/astone',
 	201: 'toys/amulst',
 	203: 'toys/wpure',
+	584: 'scene/click',
 	586: 'status/slow',
 	589: 'status/quick',
 	591: 'status/silence',

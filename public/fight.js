@@ -62,7 +62,9 @@ const fightVersion = [
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: '09T1Yt9wqq4Rx000'
+					gfx: '09T1Yt9wqq4Rx000',
+					x: 100,
+					y: 100
 				}
 			},
 			{
@@ -318,7 +320,7 @@ const fightVersion = [
 				lifeFx: lifeType
 			}*/
 		],
-		debug: false
+		debug: true
 	}
 ];
 //addFlashPreview(fightData[2], container);

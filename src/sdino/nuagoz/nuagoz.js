@@ -110,7 +110,7 @@ export let nuagoz = {
 		},
 		// adjust
 		{
-			ty: -8.55
+			ty: -10.55
 		}
 	],
 	glow: {

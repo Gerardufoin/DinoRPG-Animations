@@ -33,10 +33,11 @@ export class Timer extends Ticker {
 	/**
 	 * TMOD should be 1 when the app is running at the expected FPS.
 	 * Any FPS deviation from the expected value will reflect on tmod to compensate for the increase/decrease of FPS.
+	 * If more than Timer.MAX_DELTA_TIME milliseconds have elapsed since the last frame, returns 1 instead.
 	 * @type {number}
 	 */
 	get tmod() {
-		return this._expectedFPS / this.FPS;
+		return this.elapsedMS >= Timer.MAX_DELTA_TIME ? 1 : this._expectedFPS / this.FPS;
 	}
 
 	/**
