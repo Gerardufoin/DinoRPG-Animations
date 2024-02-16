@@ -116,7 +116,7 @@ export class Talk extends State {
 	 */
 	endTalk() {
 		this._step = 2;
-		this._coef = 1;
-		this._coefSpeed = 0;
+		this._coef = 0;
+		this._coefSpeed = 0.2;
 	}
 }

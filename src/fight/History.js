@@ -25,6 +25,7 @@ import { DestroyToy } from './actions/DestroyToy.js';
 import { Flip } from './actions/Flip.js';
 import { Wait } from './actions/Wait.js';
 import { Talk } from './actions/Talk.js';
+import { Text } from './actions/Text.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -103,7 +104,7 @@ export class History {
 			[Fight.Action.TimeLimit]: undefined,
 			[Fight.Action.CastleAttack]: undefined,
 			[Fight.Action.Display]: 'display',
-			[Fight.Action.Text]: undefined,
+			[Fight.Action.Text]: 'text',
 			[Fight.Action.Talk]: 'talk',
 			[Fight.Action.Escape]: 'escape',
 			[Fight.Action.MoveTo]: 'moveTo',
@@ -398,6 +399,21 @@ export class History {
 	 */
 	display(action) {
 		this.playNext();
+	}
+
+	/**
+	 * Creates a text box at the top of the screen and fill it over time with the given message.
+	 * @param {{action: number, message: string}} action Action which triggered the call.
+	 * @returns {State} The Text State.
+	 */
+	text(action) {
+		return new Text(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.message
+		);
 	}
 
 	/**

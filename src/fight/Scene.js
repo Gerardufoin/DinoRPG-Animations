@@ -120,6 +120,10 @@ export class Scene extends Container {
 		// The zindex of the entities is managed by their computed z position.
 		this._layers[Scene.LAYERS.FIGHTERS].container.sortableChildren = true;
 
+		this._continueArrow = new ContinueArrow(Scene.WIDTH + 18, Scene.HEIGHT - 15);
+		this.addContainer(this._continueArrow, Scene.LAYERS.LOADING);
+		this._continueArrow.visible = false;
+
 		// DEBUG
 		if (this.debugMode) {
 			this.debugDrawMargins();
@@ -160,7 +164,7 @@ export class Scene extends Container {
 		this.updateShake(timer);
 		this.updateWalk(timer);
 		//updateTimeBar();
-		if (this._continueArrow) {
+		if (this._continueArrow.visible) {
 			this._continueArrow.update(timer);
 		}
 	}
@@ -432,9 +436,8 @@ export class Scene extends Container {
 		this.onclick = clickCb;
 		this.eventMode = 'static';
 		this.cursor = 'pointer';
-		if (arrow && !this._continueArrow) {
-			this._continueArrow = new ContinueArrow(Scene.WIDTH + 18, Scene.HEIGHT - 15);
-			this.addContainer(this._continueArrow, Scene.LAYERS.LOADING);
+		if (arrow) {
+			this._continueArrow.visible = true;
 		}
 	}
 
@@ -445,10 +448,7 @@ export class Scene extends Container {
 		this.eventMode = 'none';
 		this.cursor = 'default';
 		this.onclick = undefined;
-		if (this._continueArrow) {
-			this.removeContainer(this._continueArrow, Scene.LAYERS.LOADING);
-			this._continueArrow = undefined;
-		}
+		this._continueArrow.visible = false;
 	}
 
 	/**

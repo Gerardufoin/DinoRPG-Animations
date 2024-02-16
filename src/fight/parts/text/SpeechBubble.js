@@ -3,6 +3,7 @@ import { Container, Graphics, Rectangle, Text } from 'pixi.js';
 import { Timer } from '../../Timer.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { Scene } from '../../Scene.js';
+import { PixiHelper } from '../../../display/PixiHelper.js';
 
 /**
  * Instantiate a Speech Bubble, displaying it at the given coordinates.
@@ -18,6 +19,18 @@ export class SpeechBubble extends Container {
 	 * @type {number}
 	 */
 	static PADDING_VERTICAL = 6;
+	/**
+	 * The GlowFilter of the bubble.
+	 * Storing it to prevent WebGL to create it each time.
+	 * @type {GlowFilter}
+	 */
+	static BubbleGlow;
+	/**
+	 * The GlowFilter of the bubble border.
+	 * Storing it to prevent WebGL to create it each time.
+	 * @type {GlowFilter}
+	 */
+	static BorderGlow;
 
 	/**
 	 * Complete message to display over time in the speech bubble.
@@ -104,28 +117,33 @@ export class SpeechBubble extends Container {
 
 		this._bubble = new Graphics();
 		const corner = new Graphics().beginFill(0xffffff).drawPolygon([0, 0, 0, 10, 10, 0]);
-		this._bubble.filters = [
-			new GlowFilter({
+		if (!SpeechBubble.BubbleGlow) {
+			SpeechBubble.BubbleGlow = new GlowFilter({
 				color: 0xffffff,
 				distance: 5,
 				outerStrength: 50,
 				quality: 1
-			})
-		];
+			});
+		}
+		this._bubble.filters = [SpeechBubble.BubbleGlow];
 		this.addChild(this._bubble);
 		this.addChild(this._text);
 		this.addChild(corner);
 		this.filterArea = new Rectangle(0, 0, Scene.FULL_WIDTH, Scene.HEIGHT);
-		this.filters = [
-			new GlowFilter({
+		if (!SpeechBubble.BorderGlow) {
+			SpeechBubble.BorderGlow = new GlowFilter({
 				color: 0x000000,
 				distance: 2,
 				outerStrength: 2,
 				quality: 1
-			})
-		];
-		this.x = x;
-		this.y = y;
+			});
+		}
+		this.filters = [SpeechBubble.BorderGlow];
+		// Keep the bubble inside the scene.
+		const minX = (this.width + 5) * 0.5 - 20;
+		const minY = this.height - 2;
+		this.x = PixiHelper.mm(minX, x, Scene.WIDTH - minX);
+		this.y = PixiHelper.mm(minY, y, Scene.HEIGHT);
 		this.setText('');
 	}
 
