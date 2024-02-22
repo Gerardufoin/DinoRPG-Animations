@@ -599,7 +599,7 @@ export class Fighter extends Phys {
 	 */
 	startWalk() {
 		this.playAnim('walk');
-		const w = Scene.WIDTH * 0.5;
+		const w = this._scene.width * 0.5;
 		this._walkPath = {
 			x: w - this.intSide * (20 + Math.random() * (w - 80)),
 			y: PixiHelper.mm(
@@ -716,7 +716,7 @@ export class Fighter extends Phys {
 		const rec = 40;
 		const p = this._lastCoord;
 		this._lastCoord = null;
-		if (Math.abs(Scene.WIDTH * 0.5 - p.x) > this._ray + rec + 20) {
+		if (Math.abs(this._scene.width * 0.5 - p.x) > this._ray + rec + 20) {
 			p.x += rec * this.intSide;
 		}
 		const c = 0.25;
@@ -735,8 +735,9 @@ export class Fighter extends Phys {
 		if (this.haveProp(Fighter.Property.Static)) return;
 		const m = 4;
 		const wmod = 10;
-		if (this._x < m + this._ray || this._x > Scene.WIDTH - (this._ray + m + this._scene.margins.right)) {
-			const dx = PixiHelper.mm(m + this._ray + wmod, this._x, Scene.WIDTH - (m + this._ray + wmod)) - this._x;
+		if (this._x < m + this._ray || this._x > this._scene.width - (this._ray + m + this._scene.margins.right)) {
+			const dx =
+				PixiHelper.mm(m + this._ray + wmod, this._x, this._scene.width - (m + this._ray + wmod)) - this._x;
 			this._x += dx * 0.3 * timer.tmod;
 			this._vx = 0;
 		}

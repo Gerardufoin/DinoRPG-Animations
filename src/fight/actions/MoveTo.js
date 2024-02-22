@@ -43,7 +43,7 @@ export class MoveTo extends State {
 	 * @param {number} x The x coordinate of the destination.
 	 * @param {number} y The y coordinate of the destination.
 	 * @param {boolean} end End of fight action - If true, the State is killed after the movement.
-	 * @param {boolean} spin End of fight action - If true, the Fighter is changed to Dead after the movement.
+	 * @param {boolean} spin End of fight action - If true, the Fighter is changed to Dead after the movement. This prevent the Fighter from doing any other action.
 	 */
 	constructor(scene, endCall, fid, x, y, end = false, spin = false) {
 		super(scene, endCall);

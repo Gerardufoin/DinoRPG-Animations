@@ -10,6 +10,7 @@ import { Slot } from './Slot.js';
 import { Sprite } from './Sprite.js';
 import { Tween } from '../display/Tween.js';
 import { ContinueArrow } from './parts/ContinueArrow.js';
+import { Castle } from './Castle.js';
 
 /**
  * The fight scene containing all the different layers to display.
@@ -53,6 +54,13 @@ export class Scene extends Container {
 		right: 0
 	};
 	/**
+	 * The actual width of the scene. Changes if there is a Castle.
+	 * @type {number}
+	 */
+	get width() {
+		return Scene.WIDTH - this.margins.right - (this._castle ? 132 : 0);
+	}
+	/**
 	 * Contains all the fighters currently instantiated and contained in the fighters layer.
 	 * @type {Fighter[]}
 	 */
@@ -67,6 +75,12 @@ export class Scene extends Container {
 	 * @type {Sprite[]}
 	 */
 	_forces = [];
+	/**
+	 * The Castle if any is instantiated.
+	 * @type {Castle}
+	 */
+	_castle;
+
 	/**
 	 * List of the toys spawned in the scene.
 	 * @type {{toy: Sprite, name: string}[]}
@@ -135,7 +149,6 @@ export class Scene extends Container {
 	 * - Castle.
 	 * - Forces.
 	 * - Fighters.
-	 * - Slots.
 	 * - Sceen shake.
 	 * - Start walking.
 	 * - Time bar.
@@ -143,8 +156,9 @@ export class Scene extends Container {
 	 */
 	update(timer) {
 		this.updateTweens(timer);
-		// TODO
-		//castle.update();
+		if (this._castle) {
+			this._castle.update(timer);
+		}
 		this.updateForces();
 		this._layers.map((l) => {
 			l.sprites.map((s) => {
@@ -159,8 +173,6 @@ export class Scene extends Container {
 				return true;
 			});
 		});
-		// SLOTS
-		//updateSlots();
 		this.updateShake(timer);
 		this.updateWalk(timer);
 		//updateTimeBar();
@@ -531,10 +543,7 @@ export class Scene extends Container {
 			{ x: 0, y: Scene.HEIGHT - this.margins.bottom },
 			{ x: Scene.WIDTH, y: Scene.HEIGHT - this.margins.bottom }
 		);
-		this.debugAddLine(
-			{ x: Scene.WIDTH - this.margins.right, y: 0 },
-			{ x: Scene.WIDTH - this.margins.right, y: Scene.HEIGHT }
-		);
+		this.debugAddLine({ x: this.width, y: 0 }, { x: this.width, y: Scene.HEIGHT });
 	}
 
 	/**

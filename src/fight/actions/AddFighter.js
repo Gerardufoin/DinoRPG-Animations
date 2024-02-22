@@ -75,7 +75,7 @@ export class AddFighter extends State {
 	 * The x and y coordinates can be passed in the fighter info in the constructor if they are not desired to be random.
 	 */
 	init() {
-		const w = Scene.WIDTH * 0.5;
+		const w = this._scene.width * 0.5;
 		let ex =
 			this._fInfos.x !== undefined
 				? this._fInfos.x

@@ -87,7 +87,7 @@ export class Finish extends State {
 				case EndBehaviour.Guard:
 					{
 						const m = f._ray + 10;
-						const tx = m + (f.side ? Scene.WIDTH + 2 * m : 0);
+						const tx = m + (f.side ? this._scene.width + 2 * m : 0);
 						const ty = f.position.y;
 						this._newStates.push(new MoveTo(this._scene, undefined, f.id, tx, ty, false, true));
 					}
