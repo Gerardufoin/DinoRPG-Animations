@@ -4,6 +4,17 @@
  * Mapping between the extracted symbol from gfx.swf and their name in the project
  */
 export let mapping_gfx = {
+	23: 'castle/enclos',
+	66: 'castle/armor_1',
+	68: 'castle/armor_2',
+	70: 'castle/armor_3',
+	76: 'castle/ponds_1',
+	78: 'castle/ponds_2',
+	80: 'castle/ponds_3',
+	135: 'castle/wall',
+	137: 'castle/wall_dmg_1',
+	139: 'castle/wall_dmg_2',
+	141: 'castle/wall_destroyed',
 	145: 'toys/wcharm',
 	147: 'toys/totem',
 	149: 'toys/sylkey',

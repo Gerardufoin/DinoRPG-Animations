@@ -12,20 +12,18 @@
  */
 
 import { ColorMatrixFilter, Container, Filter } from 'pixi.js';
-import { Fighter } from './Fighter.js';
 import { Asset } from '../display/Asset.js';
 import { ref } from '../gfx/references.js';
 import { PixiHelper } from '../display/PixiHelper.js';
 import { Timer } from './Timer.js';
 import { Scene } from './Scene.js';
 import { Tween, TFx } from '../display/Tween.js';
-import { sdino } from '../sdino.js';
 import { GlowFilter } from '@pixi/filter-glow';
 
 /**
- * Creates a new Slot for the given Fighter.
+ * Creates a new Slot.
  *
- * The Slot contains a portrait, a life bar, and an energy bar, which can be changed as the Fighter gain/lose life/energy.
+ * The Slot contains a portrait, a life bar, and an energy bar, which can be changed as the entity linked to the slot gains/loses life/energy.
  */
 export class Slot extends Container {
 	/**
@@ -68,16 +66,16 @@ export class Slot extends Container {
 	 */
 	_energyBar;
 	/**
-	 * Masked representation of the Fighter's portrait.
+	 * Masked representation of the portrait.
 	 */
 	_portrait = new Container();
 	/**
-	 * Keep track of the shaking direction of the portrait when the Fighter takes damage.
+	 * Keep track of the shaking direction of the portrait when damages are received.
 	 * @type {number}
 	 */
 	_shakeSens = 1;
 	/**
-	 * Timer for the effect when the Fighter gets hit.
+	 * Timer for the effect when damages are received.
 	 * @type {number}
 	 */
 	_damageTimer = 0;
@@ -87,30 +85,27 @@ export class Slot extends Container {
 	 * @type {Scene}
 	 */
 	_scene;
-	/**
-	 * The slot's Fighter.
-	 * @type {Fighter}
-	 */
-	_fighter;
 
 	/**
-	 * Return the side of the Slot's Fighter.
+	 * The side of the Slot.
 	 * @type {boolean}
 	 */
-	get side() {
-		return this._fighter.side;
-	}
+	side;
 
 	/**
-	 * Creates a new slot linked to a specific Fighter.
+	 * Creates a new slot displaying the life, energy and portrait of an entity.
 	 * @param {Scene} scene The Scene where the slot is added.
-	 * @param {Fighter} fighter The Fighter creating the slot.
-	 * @param {sdino} portrait Visual of the Fighter in the Slot.
+	 * @param {number} life The current life to display.
+	 * @param {number} maxLife The maximum amount of life.
+	 * @param {number | null} energy The current energy to display or null if there is no energy bar.
+	 * @param {number | null} maxEnergy The maximum amount of energy.
+	 * @param {boolean} side The side on which to display the slot.
+	 * @param {Container} portrait Visual of the entity to display in the Slot.
 	 */
-	constructor(scene, fighter, portrait) {
+	constructor(scene, life, maxLife, energy, maxEnergy, side, portrait) {
 		super();
-		this._fighter = fighter;
 		this._scene = scene;
+		this.side = side;
 
 		this.createDisplay(portrait);
 
@@ -122,30 +117,20 @@ export class Slot extends Container {
 			});
 		}
 		this.filters = [Slot.BorderGlowFilter];
-		// TODO CASTLE
-		/*if(f == null) {
-			setLife( Main.me.castle.life / Main.me.castle.max );
-			var mc = new mt.DepthManager(root.skin).attach("mcCastle", 0);
-			mc._x = 28;
-			mc._y = -15;
-			mc._xscale = mc._yscale = 40;
-			var mc:flash.MovieClip = cast(mc).wall;
-			mc.stop();
-			return;
-		}*/
 
-		this.setLife(this._fighter._life / this._fighter._maxLife);
+		this.setLife(life / maxLife);
 		this._lifeBar.hit.scale.y = this._lifeBar.bar.scale.y;
-		if (this._fighter._energy) {
-			this.setMaxEnergy(this._fighter._maxEnergy);
-			this.setEnergy(this._fighter._energy);
+
+		if (energy !== null) {
+			this.setMaxEnergy(maxEnergy);
+			this.setEnergy(energy);
 		} else {
 			this.hideEnergyBar();
 		}
 	}
 
 	/**
-	 * Update the visual effect when the Fighter gets hurt.
+	 * Update the visual effect when damages are received.
 	 * @param {Timer} timer The Fight's timer, containing the elapsed time.
 	 */
 	update(timer) {
@@ -221,7 +206,7 @@ export class Slot extends Container {
 
 	/**
 	 * Create the slot background and its bars.
-	 * @param {sdino} portrait Visual of the Fighter.
+	 * @param {Container} portrait Visual of the entity linked to the slot.
 	 */
 	createDisplay(portrait) {
 		this.addChild(new Asset(ref.scene.slot_bg));
@@ -271,8 +256,6 @@ export class Slot extends Container {
 		this._energyBar.bar.y += 33.95;
 		this.addChild(this._energyBar.bar);
 
-		portrait.x = 18;
-		portrait.y = 33;
 		this._portrait.addChild(portrait);
 		const mask = new Asset(ref.scene.slot_mask);
 		this._portrait.addChild(mask);

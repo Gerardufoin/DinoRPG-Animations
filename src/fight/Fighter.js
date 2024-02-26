@@ -454,17 +454,24 @@ export class Fighter extends Phys {
 		this._friction = 0.9;
 
 		if (this._isDino) {
+			const portrait = new sdino({
+				data: fInfos.gfx,
+				autoUpdate: false,
+				pflag: false,
+				scale: Slot.FIGHTER_PORTRAIT_SCALE,
+				shadow: false,
+				flip: this.side
+			});
+			portrait.x = 18;
+			portrait.y = 33;
 			this._slot = new Slot(
 				this._scene,
-				this,
-				new sdino({
-					data: fInfos.gfx,
-					autoUpdate: false,
-					pflag: false,
-					scale: Slot.FIGHTER_PORTRAIT_SCALE,
-					shadow: false,
-					flip: this.side
-				})
+				this._life,
+				this._maxLife,
+				this._energy,
+				this._maxEnergy,
+				this.side,
+				portrait
 			);
 			this._scene.addSlot(this._slot);
 		}

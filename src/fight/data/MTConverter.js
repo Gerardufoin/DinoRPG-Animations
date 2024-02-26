@@ -666,8 +666,22 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHAddCastle(obj) {
-		console.log('Conversion for "_HAddCastle" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HAddCastle',
+			args: [
+				{
+					_life: obj.infos.life,
+					_max: obj.infos.maxLife,
+					_cage: obj.infos.enclos ? 'str' : null,
+					_ground: obj.infos.ground,
+					_armor: obj.infos.armor,
+					_repair: obj.infos.repair,
+					_color: obj.infos.color,
+					_invisible: obj.infos.invisible
+				}
+			]
+		};
 	}
 
 	/**
@@ -676,8 +690,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHCastleAttack(obj) {
-		console.log('Conversion for "_HCastleAttack" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HCastleAttack',
+			args: [obj.fid, obj.life, null]
+		};
 	}
 
 	/**

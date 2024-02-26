@@ -697,8 +697,19 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHAddCastle(args) {
-		console.log('Conversion for "_HAddCastle" not done yet.');
-		return { action: Fight.Action.AddCastle };
+		return {
+			action: Fight.Action.AddCastle,
+			infos: {
+				life: args[0]._life ?? 0,
+				maxLife: args[0]._max ?? 100,
+				enclos: args[0]._cage ? true : false,
+				ground: args[0]._ground ?? 0,
+				armor: args[0]._armor ?? 0,
+				repair: args[0]._repair ?? 0,
+				color: args[0]._color ?? 0,
+				invisible: args[0]._invisible ?? false
+			}
+		};
 	}
 
 	/**
@@ -707,8 +718,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHCastleAttack(args) {
-		console.log('Conversion for "_HCastleAttack" not done yet.');
-		return { action: Fight.Action.CastleAttack };
+		return { action: Fight.Action.AttackCastle, fid: args[0], life: args[1] };
 	}
 
 	/**

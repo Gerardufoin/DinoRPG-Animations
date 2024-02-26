@@ -39,7 +39,7 @@ export class Fight {
 		Finish: 14,
 		AddCastle: 15,
 		TimeLimit: 16,
-		CastleAttack: 17,
+		AttackCastle: 17,
 		Display: 18,
 		Text: 19,
 		Talk: 20,

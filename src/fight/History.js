@@ -26,6 +26,7 @@ import { Flip } from './actions/Flip.js';
 import { Wait } from './actions/Wait.js';
 import { Talk } from './actions/Talk.js';
 import { Text } from './actions/Text.js';
+import { Castle } from './Castle.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -100,9 +101,9 @@ export class History {
 			[Fight.Action.Return]: 'return',
 			[Fight.Action.Pause]: 'pause',
 			[Fight.Action.Finish]: 'finish',
-			[Fight.Action.AddCastle]: undefined,
+			[Fight.Action.AddCastle]: 'addCastle',
 			[Fight.Action.TimeLimit]: undefined,
-			[Fight.Action.CastleAttack]: undefined,
+			[Fight.Action.AttackCastle]: undefined,
 			[Fight.Action.Display]: 'display',
 			[Fight.Action.Text]: 'text',
 			[Fight.Action.Talk]: 'talk',
@@ -391,6 +392,15 @@ export class History {
 			action.left,
 			action.right
 		);
+	}
+
+	/**
+	 * Adds a Castle to the Scene.
+	 * @param {{action: number, infos: import('./Castle.js').CastleInfos}} action Action which triggered the call.
+	 */
+	addCastle(action) {
+		//this._scene.createCastle(action.infos);
+		this.playNext();
 	}
 
 	/**
