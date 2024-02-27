@@ -2,10 +2,7 @@
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Sprite.hx
 
 import { Container } from 'pixi.js';
-import { Scene } from './Scene.js';
 import { Timer } from './Timer.js';
-import { Shade, ShadeType } from './parts/Shade.js';
-import { Animator } from '../display/Animator.js';
 
 /**
  * Sprite class of DinoRPG, main component to display entities.
@@ -41,20 +38,6 @@ export class Sprite {
 		return this._ray;
 	}
 	/**
-	 * Force of the Sprite against other Sprites.
-	 * Sprites with force push against each others.
-	 * The forces are applied in the Scene's update.
-	 * @type {number | null}
-	 */
-	_force = null;
-	/**
-	 * Get the current force of the Sprite.
-	 * @type {number | null}
-	 */
-	get force() {
-		return this._force;
-	}
-	/**
 	 * Actual scale of the Sprite.
 	 * Can be used for animation if the Sprite has to grow/shrink over time.
 	 * @type {number}
@@ -62,21 +45,11 @@ export class Sprite {
 	_scale = 1;
 
 	/**
-	 * The shadow of the Sprite.
-	 * @type {Animator}
-	 */
-	_shade;
-	/**
 	 * Visual representation of the object.
 	 * Root container.
 	 * @type {Container}
 	 */
 	_root;
-	/**
-	 * Scene where the sprite is instantiated.
-	 * @type {Scene}
-	 */
-	_scene;
 
 	/**
 	 * If true, the Sprite will be removed from its containers.
@@ -93,9 +66,6 @@ export class Sprite {
 		return this._toDelete;
 	}
 
-	/*public var root : flash.MovieClip ;
-	public var shade : flash.MovieClip ;*/
-
 	/**
 	 * Current position of the Sprite.
 	 * @type {{x: number, y: number, z: number}}
@@ -107,12 +77,10 @@ export class Sprite {
 	/**
 	 * Create a new Sprite.
 	 * @param {Container} container PixiJS Container, which will become the root container.
-	 * @param {Scene} scene The Scene where the Sprite is instantiated.
 	 */
-	constructor(container, scene) {
+	constructor(container) {
 		this.spriteId = Sprite.CURRENT_ID++;
 		this._root = container;
-		this._scene = scene;
 	}
 
 	/**
@@ -125,78 +93,10 @@ export class Sprite {
 	}
 
 	/**
-	 * Update method of the Sprite. Will udpate its position.
+	 * Update method of the Sprite. Logic was moved to Entity class.
 	 * @param {Timer} timer The Timer managing the elapsed time. Unused for Sprite but used of its children.
 	 */
-	update(timer) {
-		this.updatePos();
-		if (this._shade) {
-			this._shade.update(timer.deltaTimeMS);
-		}
-	}
-
-	/**
-	 * Update the position of the sprite based on its internal xyz coordinates.
-	 */
-	updatePos() {
-		const sceneY = this._scene.getY(this._y);
-		this._root.x = this._x;
-		if (this._z !== undefined) {
-			this._root.y = sceneY + this._z * 0.5;
-			this._root.zIndex = sceneY;
-		} else {
-			this._root.y = this._y;
-		}
-		if (this._shade) {
-			this._shade.x = this._x;
-			this._shade.y = sceneY;
-		}
-	}
-
-	/**
-	 * Set the ray of the sprite, which is half its width.
-	 * @param {number} r The new ray.
-	 */
-	setRay(r) {
-		this._ray = r;
-		if (this._shade) {
-			this.updateShadeSize();
-		}
-	}
-
-	/**
-	 * Create a new shadow for the Sprite and adds it the the Shade layer of the Scene.
-	 * @param {number} shadeType Which type of shade should be instantiated.
-	 */
-	dropShadow(shadeType = ShadeType.Normal) {
-		if (this._shade) return;
-		this._shade = new Shade(shadeType);
-		this._shade.x = -10000;
-		this._shade.alpha = 0.45;
-		this._scene.addContainer(this._shade, Scene.LAYERS.SHADE);
-		this.updateShadeSize();
-	}
-
-	/**
-	 * Remove the shade from the Sprite, if any.
-	 */
-	removeShadow() {
-		if (this._shade) {
-			this._scene.removeContainer(this._shade, Scene.LAYERS.SHADE);
-			this._shade = undefined;
-		}
-	}
-
-	/**
-	 * Update the scale of the Sprite's shadow.
-	 * @param {number} scale The new scale of the shadow.
-	 */
-	updateShadeSize(scale = 1) {
-		if (this._shade) {
-			this._shade.scale.x = (this._ray * scale * 5) / 100;
-			this._shade.scale.y = (this._ray * scale * 5 * 0.5) / 100;
-		}
-	}
+	update(timer) {}
 
 	/**
 	 * Get the distance between the Sprite and a given set of xy coordinates.
@@ -221,25 +121,10 @@ export class Sprite {
 	}
 
 	/**
-	 * Sets the force of the Sprite in the Scene.
-	 * @param {number | null} force New force value.
-	 */
-	setForce(force) {
-		this._force = force;
-		if (this._force !== null) {
-			this._scene.addForceSprite(this);
-		} else {
-			this._scene.removeForceSprite(this);
-		}
-	}
-
-	/**
 	 * Remove the Sprite from the Scene.
 	 */
 	kill() {
 		this._toDelete = true;
-		this._scene.removeForceSprite(this);
-		this.removeShadow();
 	}
 
 	/**

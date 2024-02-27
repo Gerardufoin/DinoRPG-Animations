@@ -1,15 +1,15 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Phys.hx
 
-import { Sprite } from './Sprite.js';
 import { Timer } from './Timer.js';
 import { Container } from 'pixi.js';
 import { Scene } from './Scene.js';
+import { Entity } from './Entity.js';
 
 /**
  * The Phys class applies physic components to move the Sprite around.
  */
-export class Phys extends Sprite {
+export class Phys extends Entity {
 	/**
 	 * X velocity.
 	 * @type {number}

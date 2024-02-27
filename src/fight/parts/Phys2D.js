@@ -2,16 +2,16 @@
 // https://github.com/motion-twin/WebGamesArchives/blob/main/libs-haxe2/mt/bumdum/Phys.hx
 
 import { Container } from 'pixi.js';
-import { Sprite } from '../Sprite.js';
 import { Timer } from '../Timer.js';
 import { Scene } from '../Scene.js';
 import { Animator } from '../../display/Animator.js';
+import { Entity } from '../Entity.js';
 
 /**
  * Create a Sprite impacted with a 2D physic.
  * The 2D physic Sprite will ignore the scene Y restrictions.
  */
-export class Phys2D extends Sprite {
+export class Phys2D extends Entity {
 	/**
 	 * The X velocity.
 	 * @type {number}

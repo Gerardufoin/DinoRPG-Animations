@@ -71,11 +71,6 @@ export class Scene extends Container {
 	 */
 	_slots = [new Container(), new Container()];
 	/**
-	 * List of the Sprite applying a force in the Scene.
-	 * @type {Sprite[]}
-	 */
-	_forces = [];
-	/**
 	 * The Castle if any is instantiated.
 	 * @type {Castle}
 	 */
@@ -337,24 +332,6 @@ export class Scene extends Container {
 	}
 
 	/**
-	 * A Sprite applying its force to other Sprites.
-	 * @param {Sprite} sprite The Sprite to add the the forces list.
-	 */
-	addForceSprite(sprite) {
-		if (this._forces.filter((f) => f.spriteId === sprite.spriteId).length == 0 && sprite.force !== null) {
-			this._forces.push(sprite);
-		}
-	}
-
-	/**
-	 * Remove a Sprite from the forces list.
-	 * @param {Sprite} sprite The Sprite to remove from the forces list.
-	 */
-	removeForceSprite(sprite) {
-		this._forces = this._forces.filter((f) => f.spriteId !== sprite.spriteId);
-	}
-
-	/**
 	 * Adds a Toy to the scene.
 	 * @param {Sprite} toy The toy to add.
 	 * @param {string} name The type of toy being added. Used to remove them later on.
@@ -506,14 +483,15 @@ export class Scene extends Container {
 	}
 
 	/**
-	 * Update all the Sprite registered as having a force.
-	 * Each Sprite with a force will push against each others.
+	 * Update all the Fighters having a force.
+	 * Each Fighter with a force will push against each others.
 	 */
 	updateForces() {
-		for (let i = 0; i < this._forces.length; ++i) {
-			const s1 = this._forces[i];
-			for (let j = i + 1; j < this._forces.length; ++j) {
-				const s2 = this._forces[j];
+		const forces = this._fighters.filter((f) => f.force !== null);
+		for (let i = 0; i < forces.length; ++i) {
+			const s1 = forces[i];
+			for (let j = i + 1; j < forces.length; ++j) {
+				const s2 = forces[j];
 				if (Math.abs(s1.position.z - s2.position.z) < 20) {
 					const dist = s1.getDist(s2.position);
 					const lim = s1.ray + s2.ray;

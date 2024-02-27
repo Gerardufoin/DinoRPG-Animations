@@ -303,6 +303,10 @@ export class Fighter extends Phys {
 	 */
 	_moveType = null;
 
+	/**
+	 * Current state of the Fighter, locking it out of certain action until the mode changes.
+	 * @type {number}
+	 */
 	_mode = Fighter.Mode.Waiting;
 
 	/**
@@ -315,6 +319,23 @@ export class Fighter extends Phys {
 	 * @type {number}
 	 */
 	_lockTimer = 0;
+
+	/**
+	 * Force of the Fighter against other Fighters.
+	 * Fighters with force push against each others.
+	 * The forces are applied in the Scene's update.
+	 * If the force is null, the Fighter is not influenced by any force and does not applies any force either.
+	 * @type {number | null}
+	 */
+	_force = null;
+	/**
+	 * Get the current force of the Fighter.
+	 * The force is the strength the Fighter applies on the body of other Fighters around it.
+	 * @type {number | null}
+	 */
+	get force() {
+		return this._force;
+	}
 
 	/**
 	 * The visual representation of the Fighter when making an announce.
@@ -399,7 +420,7 @@ export class Fighter extends Phys {
 
 		this._ray = this._width * 0.5;
 		this.dropShadow();
-		this.setForce(10 * this._size);
+		this._force = 10 * this._size;
 
 		// Callbacks
 		this._animator.registerCallback('fxShake', (anim, args) => {
@@ -417,7 +438,7 @@ export class Fighter extends Phys {
 
 		if (this.haveProp(Fighter.Property.Static)) {
 			this._flFreeze = true;
-			this.setForce(null);
+			this._force = null;
 		}
 
 		/* Notes:
@@ -1573,7 +1594,7 @@ export class Fighter extends Phys {
 		this.playAnim('dead');
 		this._mode = Fighter.Mode.Dead;
 		this.removeShadow();
-		this._scene.removeForceSprite(this);
+		this._force = null;
 	}
 
 	/**
