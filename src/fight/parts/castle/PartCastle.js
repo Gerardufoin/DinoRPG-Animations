@@ -2,7 +2,7 @@
 
 import { Container } from 'pixi.js';
 import { Phys } from '../../Phys.js';
-import { Scene } from '../../Scene.js';
+import { IScene } from '../../IScene.js';
 
 /**
  * A piece of stone falling from a damaged Castle..
@@ -10,7 +10,7 @@ import { Scene } from '../../Scene.js';
 export class PartCastle extends Phys {
 	/**
 	 * Create a new piece of stone at the given positions with the given initial velocity.
-	 * @param {Scene} scene The Scene where the part is spawned in.
+	 * @param {IScene} scene The Scene where the part is spawned in.
 	 * @param {number | null} x The initial x coordinate.
 	 * @param {number | null} y The initial y coordinate.
 	 * @param {number | null} z The initial z coordinate.

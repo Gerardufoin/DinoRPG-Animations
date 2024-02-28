@@ -1,5 +1,6 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Dead.hx
+import { Layers } from '../DepthManager.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
@@ -40,7 +41,7 @@ export class Dead extends State {
 	 */
 	init() {
 		const spirit = new Spirit(this._scene);
-		this._scene.addSprite(spirit, Scene.LAYERS.FIGHTERS);
+		this._scene.dm.addSprite(spirit, Layers.Scene.FIGHTERS);
 
 		spirit._x = this._fighter.position.x;
 		spirit._y = this._fighter.position.y - this._fighter.height;

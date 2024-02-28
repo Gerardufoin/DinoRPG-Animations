@@ -1,5 +1,6 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Text.hx
+import { Layers } from '../DepthManager.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
@@ -53,7 +54,7 @@ export class Text extends State {
 	 */
 	init() {
 		this._textBox = new TextBox(this._message);
-		this._scene.addContainer(this._textBox, Scene.LAYERS.PARTS);
+		this._scene.dm.addContainer(this._textBox, Layers.Scene.PARTS);
 		this._scene.setClick(() => {
 			this._textBox.speedUp();
 		}, true);
@@ -84,7 +85,7 @@ export class Text extends State {
 			case 2:
 				this._textBox.alpha = 1 - this._coef;
 				if (this._coef == 1) {
-					this._scene.removeContainer(this._textBox, Scene.LAYERS.PARTS);
+					this._scene.dm.removeContainer(this._textBox, Layers.Scene.PARTS);
 					this.end();
 				}
 				break;

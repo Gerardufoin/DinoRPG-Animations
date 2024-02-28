@@ -3,8 +3,8 @@
 
 import { Timer } from './Timer.js';
 import { Container } from 'pixi.js';
-import { Scene } from './Scene.js';
 import { Entity } from './Entity.js';
+import { IScene } from './IScene.js';
 
 /**
  * The Phys class applies physic components to move the Sprite around.
@@ -62,7 +62,7 @@ export class Phys extends Entity {
 	/**
 	 * Insantiate a Phys class. The parameters are for the Sprite initialisation.
 	 * @param {Container} container PixiJS container. The body being moved around.
-	 * @param {Scene} scene The scene where the body evolves.
+	 * @param {IScene} scene The scene where the body evolves.
 	 */
 	constructor(container, scene) {
 		super(container, scene);

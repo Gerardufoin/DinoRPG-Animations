@@ -3,9 +3,9 @@
 
 import { Container } from 'pixi.js';
 import { Timer } from '../Timer.js';
-import { Scene } from '../Scene.js';
 import { Animator } from '../../display/Animator.js';
 import { Entity } from '../Entity.js';
+import { IScene } from '../IScene.js';
 
 /**
  * Create a Sprite impacted with a 2D physic.
@@ -88,7 +88,7 @@ export class Phys2D extends Entity {
 	 * Create a Sprite impacted by 2D physic.
 	 * This will unset the z coordinate of the Sprite.
 	 * @param {Container} container The display for the Sprite.
-	 * @param {Scene} scene The Scene containing the Sprite.
+	 * @param {IScene} scene The Scene containing the Sprite.
 	 */
 	constructor(container, scene) {
 		super(container, scene);

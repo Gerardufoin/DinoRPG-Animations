@@ -1,6 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Finish.hx
 import { Fighter } from '../Fighter.js';
+import { SCENE_WIDTH } from '../IScene.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { MoveTo } from './MoveTo.js';
@@ -71,7 +72,7 @@ export class Finish extends State {
 				case EndBehaviour.Run:
 					{
 						const m = 50;
-						const tx = -m + (f.side ? Scene.WIDTH + 2 * m : 0);
+						const tx = -m + (f.side ? SCENE_WIDTH + 2 * m : 0);
 						const ty = f.position.y + (Math.random() * 2 - 1) * 20;
 						this._newStates.push(new MoveTo(this._scene, undefined, f.id, tx, ty, true));
 					}
@@ -79,7 +80,7 @@ export class Finish extends State {
 				case EndBehaviour.Escape:
 					{
 						const m = 50;
-						const tx = -m + (!f.side ? Scene.WIDTH + 2 * m : 0);
+						const tx = -m + (!f.side ? SCENE_WIDTH + 2 * m : 0);
 						const ty = f.position.y;
 						this._newStates.push(new MoveTo(this._scene, undefined, f.id, tx, ty, true));
 					}

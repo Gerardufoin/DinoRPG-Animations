@@ -16,9 +16,9 @@ import { Asset } from '../display/Asset.js';
 import { ref } from '../gfx/references.js';
 import { PixiHelper } from '../display/PixiHelper.js';
 import { Timer } from './Timer.js';
-import { Scene } from './Scene.js';
 import { Tween, TFx } from '../display/Tween.js';
 import { GlowFilter } from '@pixi/filter-glow';
+import { TweenManager } from './TweenManager.js';
 
 /**
  * Creates a new Slot.
@@ -81,31 +81,23 @@ export class Slot extends Container {
 	_damageTimer = 0;
 
 	/**
-	 * The Scene where the Slot exists.
-	 * @type {Scene}
+	 * The Tween Manager of the Scene containing the Slot.
+	 * @type {TweenManager}
 	 */
-	_scene;
-
-	/**
-	 * The side of the Slot.
-	 * @type {boolean}
-	 */
-	side;
+	_tweenManager;
 
 	/**
 	 * Creates a new slot displaying the life, energy and portrait of an entity.
-	 * @param {Scene} scene The Scene where the slot is added.
 	 * @param {number} life The current life to display.
 	 * @param {number} maxLife The maximum amount of life.
 	 * @param {number | null} energy The current energy to display or null if there is no energy bar.
 	 * @param {number | null} maxEnergy The maximum amount of energy.
-	 * @param {boolean} side The side on which to display the slot.
 	 * @param {Container} portrait Visual of the entity to display in the Slot.
+	 * @param {TweenManager} tm The Tween Manager of the Scene.
 	 */
-	constructor(scene, life, maxLife, energy, maxEnergy, side, portrait) {
+	constructor(life, maxLife, energy, maxEnergy, portrait, tm) {
 		super();
-		this._scene = scene;
-		this.side = side;
+		this._tweenManager = tm;
 
 		this.createDisplay(portrait);
 
@@ -166,7 +158,9 @@ export class Slot extends Container {
 	 * @param {number} energy The maximum amount of energy.
 	 */
 	setMaxEnergy(energy) {
-		this._scene.addTween(new Tween(this._energyBar.max.scale, TFx.TEaseOut).to(0.5, { y: 2 - energy / 100 }));
+		this._tweenManager.addTween(
+			new Tween(this._energyBar.max.scale, TFx.TEaseOut).to(0.5, { y: 2 - energy / 100 })
+		);
 	}
 
 	/**
@@ -175,7 +169,7 @@ export class Slot extends Container {
 	 */
 	setEnergy(energy) {
 		this._energyBar.hit.scale.y = this._energyBar.bar.scale.y;
-		this._scene.addTween(new Tween(this._energyBar.hit.scale, TFx.TEaseOut).to(0.5, { y: energy / 100 }));
+		this._tweenManager.addTween(new Tween(this._energyBar.hit.scale, TFx.TEaseOut).to(0.5, { y: energy / 100 }));
 		this._energyBar.bar.scale.y = energy / 100;
 	}
 

@@ -1,11 +1,11 @@
 // @ts-check
 import { Animator } from '../../../display/Animator.js';
-import { Scene } from '../../Scene.js';
 import { Phys2D } from '../Phys2D.js';
 import { fx_explosion } from '../../../gfx/fx/explosion.js';
 import { BlurFilter, Container } from 'pixi.js';
 import { Asset } from '../../../display/Asset.js';
 import { ref } from '../../../sdino/references.js';
+import { IScene } from '../../IScene.js';
 
 /**
  * Creates an explosion at the desired position.
@@ -20,7 +20,7 @@ export class Explosion extends Phys2D {
 
 	/**
 	 * Instantiate a new explosion at the given coordinates.
-	 * @param {Scene} scene The Scene where the Bolt is spawned.
+	 * @param {IScene} scene The Scene where the Bolt is spawned.
 	 * @param {number} x The initial X coordinate.
 	 * @param {number} y The initial Y coordinate.
 	 */

@@ -2,8 +2,8 @@
 import { ColorMatrixFilter } from 'pixi.js';
 import { Animator } from '../../../display/Animator.js';
 import { fx_flameche } from '../../../gfx/fx/flameche.js';
-import { Scene } from '../../Scene.js';
 import { Phys2D } from '../Phys2D.js';
+import { IScene } from '../../IScene.js';
 
 /**
  * Creates a small burst of flames at the desired position.
@@ -20,7 +20,7 @@ export class Flameche extends Phys2D {
 	 * Instantiate a new small burst of flames at the given coordinates.
 	 *
 	 * The flames will disappear at the end of their animation, based on their Destroy callback.
-	 * @param {Scene} scene The Scene where the Bolt is spawned.
+	 * @param {IScene} scene The Scene where the Bolt is spawned.
 	 * @param {number} x The initial x coordinate.
 	 * @param {number} y The initial y coordinate.
 	 * @param {number} intSide The side where the flames points toward, either 1 or -1.

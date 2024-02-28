@@ -6,7 +6,7 @@ import { Phys2D } from '../Phys2D.js';
 import { Asset } from '../../../display/Asset.js';
 import { ref } from '../../../gfx/references.js';
 import { Timer } from '../../Timer.js';
-import { Scene } from '../../Scene.js';
+import { IScene } from '../../IScene.js';
 
 // GFX 767
 /**
@@ -37,7 +37,7 @@ export class Acid extends Phys2D {
 	/**
 	 * Create an acid particle at the given coordinates.
 	 * Once the acid particle reaches the target y coordinate, it bursts into smoke.
-	 * @param {Scene} scene The Scene where the acid is spawned in.
+	 * @param {IScene} scene The Scene where the acid is spawned in.
 	 * @param {number} x The initial x coordinate.
 	 * @param {number} y The initial y coordinate.
 	 * @param {number} ty The target y coordinate where the acid will become smoke.

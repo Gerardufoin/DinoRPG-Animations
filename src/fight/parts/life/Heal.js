@@ -5,8 +5,8 @@ import { Container } from 'pixi.js';
 import { Asset } from '../../../display/Asset.js';
 import { ref } from '../../../gfx/references.js';
 import { Timer } from '../../Timer.js';
-import { Scene } from '../../Scene.js';
 import { Light } from './Light.js';
+import { IScene } from '../../IScene.js';
 
 // GFX 710
 /**
@@ -36,7 +36,7 @@ export class Heal extends Light {
 
 	/**
 	 * Create a healing spark at the given coordinates.
-	 * @param {Scene} scene The Scene where the acid is spawned in.
+	 * @param {IScene} scene The Scene where the acid is spawned in.
 	 * @param {number} x The initial x coordinate.
 	 * @param {number} y The initial y coordinate.
 	 */

@@ -2,9 +2,9 @@
 import { Container, Graphics, NineSlicePlane, Text } from 'pixi.js';
 import { Timer } from '../../Timer.js';
 import { GlowFilter } from '@pixi/filter-glow';
-import { Scene } from '../../Scene.js';
 import { ref } from '../../../gfx/references.js';
 import { TextureManager } from '../../../display/TextureManager.js';
+import { SCENE_WIDTH } from '../../IScene.js';
 
 /**
  * Instantiate a Text Box at the top of the screen.
@@ -127,7 +127,7 @@ export class TextBox extends Container {
 		this._box.height = TextBox.DEFAULT_BOX_HEIGHT;
 		this.addChild(this._box);
 		this.addChild(this._text);
-		this.x = Scene.WIDTH / 2;
+		this.x = SCENE_WIDTH / 2;
 		this.y = 2;
 		this.setText('');
 	}

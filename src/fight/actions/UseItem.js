@@ -1,5 +1,6 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Object.hx
+import { Layers } from '../DepthManager.js';
 import { Fighter } from '../Fighter.js';
 import { History } from '../History.js';
 import { Scene } from '../Scene.js';
@@ -61,14 +62,14 @@ export class UseItem extends State {
 	 * Create the display for the item and add a new Announce state with the item name.
 	 */
 	init() {
-		this._scene.addSprite(
+		this._scene.dm.addSprite(
 			new Item(
 				this._scene,
 				this._item,
 				this._fighter.position.x - 20,
 				this._scene.getY(this._fighter.position.y) - 50
 			),
-			Scene.LAYERS.PARTS
+			Layers.Scene.PARTS
 		);
 		this.releaseCasting();
 

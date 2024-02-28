@@ -7,6 +7,7 @@ import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { Timer } from '../Timer.js';
 import { Asset } from '../../display/Asset.js';
+import { Layers } from '../DepthManager.js';
 
 /**
  * Enum stating an entrance effect of a Fighter:
@@ -58,7 +59,7 @@ export class AddFighter extends State {
 		super(scene, endCall);
 		this._fInfos = fighter;
 		this._fighter = new Fighter(this._fInfos, this._scene);
-		this._scene.addSprite(this._fighter, Scene.LAYERS.FIGHTERS);
+		this._scene.dm.addSprite(this._fighter, Layers.Scene.FIGHTERS);
 
 		this._coefSpeed = 0.03;
 		this._endTimer = 5;

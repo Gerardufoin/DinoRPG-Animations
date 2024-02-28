@@ -6,7 +6,7 @@ import { Phys2D } from '../Phys2D.js';
 import { Asset } from '../../../display/Asset.js';
 import { ref } from '../../../gfx/references.js';
 import { Timer } from '../../Timer.js';
-import { Scene } from '../../Scene.js';
+import { IScene } from '../../IScene.js';
 
 // GFX 774
 /**
@@ -31,7 +31,7 @@ export class Skull extends Phys2D {
 
 	/**
 	 * Create a skull at the given coordinates with the given size.
-	 * @param {Scene} scene The Scene where the acid is spawned in.
+	 * @param {IScene} scene The Scene where the acid is spawned in.
 	 * @param {number} x The initial x coordinate.
 	 * @param {number} y The initial y coordinate.
 	 * @param {number} size The initial size of the skull. 1 by default.

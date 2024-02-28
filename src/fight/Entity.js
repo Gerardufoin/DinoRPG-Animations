@@ -2,11 +2,12 @@
 // Half of https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Sprite.hx
 
 import { Container } from 'pixi.js';
-import { Scene } from './Scene.js';
 import { Timer } from './Timer.js';
 import { Shade, ShadeType } from './parts/Shade.js';
 import { Animator } from '../display/Animator.js';
 import { Sprite } from './Sprite.js';
+import { Layers } from './DepthManager.js';
+import { IScene } from './IScene.js';
 
 /**
  * An entity is a Sprite casting a shadow and containing a reference to the Scene.
@@ -21,14 +22,14 @@ export class Entity extends Sprite {
 	_shade;
 	/**
 	 * Scene where the entity is instantiated.
-	 * @type {Scene}
+	 * @type {IScene}
 	 */
 	_scene;
 
 	/**
 	 * Create a new Entity.
 	 * @param {Container} container PixiJS Container, which will become the root container of the Sprite.
-	 * @param {Scene} scene The Scene where the Entity is instantiated.
+	 * @param {IScene} scene The Scene where the Entity is instantiated.
 	 */
 	constructor(container, scene) {
 		super(container);
@@ -74,7 +75,7 @@ export class Entity extends Sprite {
 		this._shade = new Shade(shadeType);
 		this._shade.x = -10000;
 		this._shade.alpha = 0.45;
-		this._scene.addContainer(this._shade, Scene.LAYERS.SHADE);
+		this._scene.dm.addContainer(this._shade, Layers.Scene.SHADE);
 		this.updateShadeSize();
 	}
 
@@ -83,7 +84,7 @@ export class Entity extends Sprite {
 	 */
 	removeShadow() {
 		if (this._shade) {
-			this._scene.removeContainer(this._shade, Scene.LAYERS.SHADE);
+			this._scene.dm.removeContainer(this._shade, Layers.Scene.SHADE);
 			this._shade = undefined;
 		}
 	}

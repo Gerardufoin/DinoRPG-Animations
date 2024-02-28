@@ -2,8 +2,8 @@
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/sp/Score.hx
 
 import { Text } from 'pixi.js';
-import { Scene } from '../../Scene.js';
 import { Phys2D } from '../Phys2D.js';
+import { IScene } from '../../IScene.js';
 
 /**
  * Instantiate a Title text, displaying it at the given coordinates.
@@ -13,7 +13,7 @@ import { Phys2D } from '../Phys2D.js';
 export class Title extends Phys2D {
 	/**
 	 * Create a Title which will spawn at the given coordinates and fade out over time.
-	 * @param {Scene} scene The Scene where the Title will be spawned.
+	 * @param {IScene} scene The Scene where the Title will be spawned.
 	 * @param {number} x The initial X coordinate.
 	 * @param {number} y The initial Y coordinate.
 	 * @param {string} text The text to display.

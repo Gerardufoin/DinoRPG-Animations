@@ -2,10 +2,10 @@
 
 import { BLEND_MODES, Container } from 'pixi.js';
 import { Phys2D } from '../Phys2D.js';
-import { Scene } from '../../Scene.js';
 import { Asset } from '../../../display/Asset.js';
 import { ref } from '../../../gfx/references.js';
 import { PixiHelper } from '../../../display/PixiHelper.js';
+import { IScene } from '../../IScene.js';
 
 // GFX 707
 /**
@@ -14,7 +14,7 @@ import { PixiHelper } from '../../../display/PixiHelper.js';
 export class Light extends Phys2D {
 	/**
 	 * Creates a particle of light at the given coordinates with the given velocity.
-	 * @param {Scene} scene The Scene where the particle is spawned in.
+	 * @param {IScene} scene The Scene where the particle is spawned in.
 	 * @param {number} x The initial x coordinate.
 	 * @param {number} y The initial y coordinate.
 	 * @param {number} vx The initial x velocity.

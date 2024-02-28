@@ -2,9 +2,9 @@
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/sp/Score.hx
 
 import { Text } from 'pixi.js';
-import { Scene } from '../../Scene.js';
 import { Phys2D } from '../Phys2D.js';
 import { Timer } from '../../Timer.js';
+import { IScene } from '../../IScene.js';
 
 /**
  * Instantiate a Score text, displaying it at the given coordinates.
@@ -20,7 +20,7 @@ export class Score extends Phys2D {
 
 	/**
 	 * Create a Score value which will spawn at the given coordinates and fadeout over time.
-	 * @param {Scene} scene The Scene where the Score will be spawned.
+	 * @param {IScene} scene The Scene where the Score will be spawned.
 	 * @param {number} x The initial X coordinate.
 	 * @param {number} y The initial Y coordinate.
 	 * @param {number} value The value to display.

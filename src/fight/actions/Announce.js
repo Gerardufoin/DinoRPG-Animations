@@ -10,6 +10,8 @@ import { ref } from '../../gfx/references.js';
 import { AnnounceText } from '../parts/text/AnnounceText.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { Tween } from '../../display/Tween.js';
+import { Layers } from '../DepthManager.js';
+import { SCENE_HEIGHT, SCENE_WIDTH } from '../IScene.js';
 
 /**
  * Visual element for the announce, containing the PixiJS Container, the start and end position of the Tween.
@@ -97,7 +99,7 @@ export class Announce extends State {
 		this.addActor(this._fighter);
 		this._coefSpeed = 0.035;
 
-		this._scene.addContainer(this._box, Scene.LAYERS.INTER);
+		this._scene.dm.addContainer(this._box, Layers.Scene.INTER);
 
 		if (!Announce.GlowFilter) {
 			Announce.GlowFilter = new GlowFilter({
@@ -115,7 +117,7 @@ export class Announce extends State {
 	init() {
 		if (this._castingWait) return;
 
-		const w = Scene.WIDTH * 0.5;
+		const w = SCENE_WIDTH * 0.5;
 
 		// Background
 		const bg = new Asset(ref.scene.announce);
@@ -127,7 +129,7 @@ export class Announce extends State {
 		this._bg.slider.addChild(bg);
 		this._box.addChild(this._bg.slider);
 		this._bg.slider.x = this._bg.bx;
-		this._bg.slider.y = Scene.HEIGHT;
+		this._bg.slider.y = SCENE_HEIGHT;
 		this._bg.slider.scale.x = this._fighter.intSide;
 		bg.onLoad(() => {
 			bg.y -= bg.height;
@@ -144,12 +146,12 @@ export class Announce extends State {
 			};
 			this._box.addChild(portrait);
 			portrait.x = this._portrait.bx;
-			portrait.y = Scene.HEIGHT - (10 + Announce.PORTRAIT_HEIGHT * Announce.PORTRAIT_SCALE);
+			portrait.y = SCENE_HEIGHT - (10 + Announce.PORTRAIT_HEIGHT * Announce.PORTRAIT_SCALE);
 		}
 
 		// Text
 		this._text = {
-			slider: new AnnounceText(w - this._fighter.intSide * w, Scene.HEIGHT, this._message.toUpperCase()),
+			slider: new AnnounceText(w - this._fighter.intSide * w, SCENE_HEIGHT, this._message.toUpperCase()),
 			bx: 0,
 			tx: 0
 		};
@@ -199,17 +201,17 @@ export class Announce extends State {
 
 		if (this._coef === 1) {
 			this._fighter.skin.filters = [];
-			this._scene.addTween(
+			this._scene.tm.addTween(
 				new Tween(this._text.slider).to(0.2, {
 					x: this._text.bx - this._fighter.intSide * this._text.slider.width
 				})
 			);
 			if (this._portrait) {
-				this._scene.addTween(new Tween(this._portrait.slider).to(0.25, { x: this._portrait.bx }));
+				this._scene.tm.addTween(new Tween(this._portrait.slider).to(0.25, { x: this._portrait.bx }));
 			}
-			this._scene.addTween(
+			this._scene.tm.addTween(
 				new Tween(this._bg.slider).to(0.2, { x: this._bg.bx }).onComplete((t) => {
-					this._scene.removeContainer(this._box, Scene.LAYERS.INTER);
+					this._scene.dm.removeContainer(this._box, Layers.Scene.INTER);
 				})
 			);
 			this.end();

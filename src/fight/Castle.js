@@ -1,7 +1,6 @@
 // @ts-check
 
 import { ColorMatrixFilter, Container } from 'pixi.js';
-import { Scene } from './Scene.js';
 import { Slot } from './Slot.js';
 import { Fighter } from './Fighter.js';
 import { Timer } from './Timer.js';
@@ -10,6 +9,9 @@ import { Animator } from '../display/Animator.js';
 import { PartCastle } from './parts/castle/PartCastle.js';
 import { Asset } from '../display/Asset.js';
 import { ref } from '../gfx/references.js';
+import { DepthManager, Layers } from './DepthManager.js';
+import { TweenManager } from './TweenManager.js';
+import { IScene, SCENE_WIDTH } from './IScene.js';
 
 /**
  * Information relative to the castle.
@@ -40,8 +42,8 @@ export class Castle {
 	static POND_ASSETS = ['ponds_1', 'ponds_2', 'ponds_3'];
 
 	/**
-	 * The Scene where the Castle is instantiated.
-	 * @type {Scene}
+	 * Reference to the Scene management.
+	 * @type {IScene}
 	 */
 	_scene;
 	/**
@@ -95,7 +97,7 @@ export class Castle {
 
 	/**
 	 * Creates a new Castle based on the information passed as parameters.
-	 * @param {Scene} scene The Scene where the Castle is instantiated.
+	 * @param {IScene} scene The scene Spawning the Castle.
 	 * @param {CastleInfos} infos The information relative to the initialization of the Castle.
 	 */
 	constructor(scene, infos) {
@@ -104,9 +106,9 @@ export class Castle {
 		this._life = infos.life;
 
 		if (infos.ground > 0) {
-			this._scene.addContainer(
+			this._scene.dm.addContainer(
 				new Asset(ref.castle[Castle.POND_ASSETS[infos.ground % Castle.POND_ASSETS.length]]),
-				Scene.LAYERS.CASTLE
+				Layers.Scene.CASTLE
 			);
 		}
 
@@ -121,13 +123,13 @@ export class Castle {
 			this._skin.addChild(s);
 			s.visible = false;
 		}
-		this._skin.x = Scene.WIDTH;
-		this._scene.addContainer(this._skin, Scene.LAYERS.CASTLE);
+		this._skin.x = SCENE_WIDTH - 167;
+		this._scene.dm.addContainer(this._skin, Layers.Scene.CASTLE);
 
 		if (infos.enclos) {
 			const enclos = new Asset(ref.castle.enclos);
 			enclos.x = this._skin.x;
-			this._scene.addContainer(enclos, Scene.LAYERS.CASTLE);
+			this._scene.dm.addContainer(enclos, Layers.Scene.CASTLE);
 		}
 
 		if (infos.repair) {
@@ -144,7 +146,7 @@ export class Castle {
 		if (infos.armor) {
 			this._armor = new Asset(ref.castle[Castle.ARMOR_ASSETS[infos.armor % Castle.ARMOR_ASSETS.length]]);
 			this._armor.x = this._skin.x;
-			this._scene.addContainer(this._armor, Scene.LAYERS.CASTLE);
+			this._scene.dm.addContainer(this._armor, Layers.Scene.CASTLE);
 		}
 
 		if (infos.invisible) {
@@ -166,7 +168,8 @@ export class Castle {
 		portrait.x = 28;
 		portrait.y = -15;
 		portrait.scale.set(0.4);
-		this._slot = new Slot(this._scene, this._life, this._maxLife, null, null, false, portrait);
+		this._slot = new Slot(this._life, this._maxLife, null, null, portrait, this._scene.tm);
+		this._scene.addSlot(this._slot, false);
 		// Call incLife to set the Castle skin.
 		this.incLife(0);
 	}
@@ -183,7 +186,7 @@ export class Castle {
 
 		for (let i = 0; i < 20; ++i) {
 			const cy = Math.random() * 2 - 1;
-			this._scene.addSprite(
+			this._scene.dm.addSprite(
 				new PartCastle(
 					this._scene,
 					fighter.position.x + fighter.ray,
@@ -193,7 +196,7 @@ export class Castle {
 					cy * 2,
 					-Math.random() * 16
 				),
-				Scene.LAYERS.FIGHTERS
+				Layers.Scene.FIGHTERS
 			);
 		}
 
@@ -222,7 +225,7 @@ export class Castle {
 		}
 
 		for (let i = 0; i < 80; ++i) {
-			this._scene.addSprite(
+			this._scene.dm.addSprite(
 				new PartCastle(
 					this._scene,
 					300 + Math.random() * 80,
@@ -232,7 +235,7 @@ export class Castle {
 					(Math.random() * 2 - 1) * 3,
 					0
 				),
-				Scene.LAYERS.FIGHTERS
+				Layers.Scene.FIGHTERS
 			);
 		}
 

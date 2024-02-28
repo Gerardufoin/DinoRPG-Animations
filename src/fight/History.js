@@ -399,7 +399,7 @@ export class History {
 	 * @param {{action: number, infos: import('./Castle.js').CastleInfos}} action Action which triggered the call.
 	 */
 	addCastle(action) {
-		//this._scene.createCastle(action.infos);
+		this._scene.createCastle(action.infos);
 		this.playNext();
 	}
 

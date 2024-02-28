@@ -1,6 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Escape.hx
 import { Fighter } from '../Fighter.js';
+import { SCENE_WIDTH } from '../IScene.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { Timer } from '../Timer.js';
@@ -39,7 +40,7 @@ export class Escape extends State {
 	init() {
 		this._fighter.playAnim('run');
 		const m = 50 + this._fighter._ray;
-		const tx = -m + (!this._fighter.side ? Scene.WIDTH + 2 * m : 0);
+		const tx = -m + (!this._fighter.side ? SCENE_WIDTH + 2 * m : 0);
 		const ty = this._fighter._y;
 		const dist = this._fighter.getDist({ x: tx, y: ty });
 		this._coefSpeed = this._fighter.runSpeed / dist;

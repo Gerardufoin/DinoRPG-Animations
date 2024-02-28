@@ -3,8 +3,8 @@
 import { Graphics } from 'pixi.js';
 import { Faller } from '../Faller.js';
 import { GlowFilter } from '@pixi/filter-glow';
-import { Scene } from '../../Scene.js';
 import { Timer } from '../../Timer.js';
+import { IScene } from '../../IScene.js';
 
 // GFX 742
 /**
@@ -34,7 +34,7 @@ export class Drip extends Faller {
 
 	/**
 	 * Instantiate a drip of water at the given coordinates.
-	 * @param {Scene} scene The Scene where the drip of water is instantiated.
+	 * @param {IScene} scene The Scene where the drip of water is instantiated.
 	 * @param {number} x The initial x coordinate.
 	 * @param {number} y The initial y coordinate.
 	 * @param {number} z The initial z coordinate.

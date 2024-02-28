@@ -1,10 +1,10 @@
 // @ts-check
 
 import { GlowFilter } from '@pixi/filter-glow';
-import { Scene } from '../../Scene.js';
 import { Light } from './Light.js';
 import { Container } from 'pixi.js';
 import { Timer } from '../../Timer.js';
+import { IScene } from '../../IScene.js';
 
 // GFX 752
 /**
@@ -31,7 +31,7 @@ export class Wind extends Light {
 
 	/**
 	 * Creates a particle of wind at the given coordinates with the given velocity.
-	 * @param {Scene} scene The Scene where the particle is spawned in.
+	 * @param {IScene} scene The Scene where the particle is spawned in.
 	 * @param {number} x The initial x coordinate.
 	 * @param {number} y The initial y coordinate.
 	 * @param {number} vx The initial x velocity.

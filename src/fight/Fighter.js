@@ -7,7 +7,6 @@ import { Animator } from '../display/Animator.js';
 import { sdino } from '../sdino.js';
 import { Phys } from './Phys.js';
 import { State } from './State.js';
-import { Scene } from './Scene.js';
 import { Timer } from './Timer.js';
 import { SimpleTween } from './SimpleTween.js';
 import { Slot } from './Slot.js';
@@ -28,6 +27,8 @@ import { Explosion } from './parts/life/Explosion.js';
 import { StatusDisplay } from './StatusDisplay.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { Light } from './parts/life/Light.js';
+import { Layers } from './DepthManager.js';
+import { IScene } from './IScene.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -134,17 +135,50 @@ export class Fighter extends Phys {
 	 */
 	_slot;
 
+	/**
+	 * If true, the Fighter is locked and cannot start a new action.
+	 * @type {boolean}
+	 */
 	_lock = false;
 	/**
 	 * Name of the Fighter.
 	 * @type {string}
 	 */
 	_name;
+	/**
+	 * If true, the Fighter is a dino and instantiated via sdino.
+	 * Otherwise it is a monster.
+	 * @type {boolean}
+	 */
 	_isDino;
+	/**
+	 * Current life of the Fighter.
+	 * Life is the yellow bar in the slots.
+	 * @type {number}
+	 */
 	_life;
+	/**
+	 * Max life of the Fighter.
+	 * @type {number}
+	 */
 	_maxLife;
+	/**
+	 * Current energy of the Fighter.
+	 * Energy is the blue bar in the slots.
+	 * @type {number}
+	 */
 	_energy = 100;
+	/**
+	 * Maximum energy of the Fighter.
+	 * @type {number}
+	 */
 	_maxEnergy = 100;
+	/**
+	 * Size of the Fighter.
+	 * Bigger size will increase the display of the Fighter and the force applied to others.
+	 * Cannot be changed at runtime.
+	 * @type {number}
+	 */
 	_size = 1;
 	/**
 	 * List of properties attached to the Fighter, based on Fighter.Property.
@@ -152,13 +186,43 @@ export class Fighter extends Phys {
 	 */
 	_props = [];
 
+	/**
+	 * Side of the Fighter, true for left side, false for right side.
+	 * @type {boolean}
+	 */
 	_side = true;
+	/**
+	 * Direction the Fighter is facing, based on their side.
+	 * 1 is facing the opposite direction from the side, 0 to face their own side.
+	 * @type {number}
+	 */
 	_sens = 1;
 
+	/**
+	 * Default animation the Fighter reverts to when an animation is over.
+	 * This will change if the Fighter is sleeping, for example.
+	 * @type {string}
+	 */
 	_defaultAnim = 'stand';
+	/**
+	 * Current animation being played by the Animator.
+	 * @type {string}
+	 */
 	_currentAnim = 'stand';
+	/**
+	 * Current walking speed of the Fighter.
+	 * @type {number}
+	 */
 	_walkSpeed = 1.8;
+	/**
+	 * Current running speed of the Fighter.
+	 * @type {number}
+	 */
 	_runSpeed = 8;
+	/**
+	 * Reach of the Fighter. Used with the ray to determine if the Fighter can hit another dino or should get closer.
+	 * @type {number}
+	 */
 	_range = 10;
 
 	/**
@@ -353,7 +417,7 @@ export class Fighter extends Phys {
 	/**
 	 * Creates a new Fighter based on the given Fighter's information.
 	 * @param {{props: number[], dino: boolean, life: number, maxLife?: number, name: string, side: boolean, scale: number, fid: number, gfx: string, entrance?: number, anim?: string, x?: number, y?: number}} fInfos The Fighter's informations.
-	 * @param {Scene} scene The Scene where the Fighter is added.
+	 * @param {IScene} scene The Scene where the Fighter is added.
 	 */
 	constructor(fInfos, scene) {
 		const body = new Container();
@@ -485,16 +549,8 @@ export class Fighter extends Phys {
 			});
 			portrait.x = 18;
 			portrait.y = 33;
-			this._slot = new Slot(
-				this._scene,
-				this._life,
-				this._maxLife,
-				this._energy,
-				this._maxEnergy,
-				this.side,
-				portrait
-			);
-			this._scene.addSlot(this._slot);
+			this._slot = new Slot(this._life, this._maxLife, this._energy, this._maxEnergy, portrait, this._scene.tm);
+			this._scene.addSlot(this._slot, this.side);
 		}
 
 		if (this._scene.debugMode) {
@@ -1128,7 +1184,7 @@ export class Fighter extends Phys {
 			damages,
 			hurt
 		);
-		this._scene.addSprite(dmg, Scene.LAYERS.INTER);
+		this._scene.dm.addSprite(dmg, Layers.Scene.INTER);
 	}
 
 	/**
@@ -1313,7 +1369,7 @@ export class Fighter extends Phys {
 			const vz = dvz !== undefined ? dvz : (Math.random() * 2 - 1) * 1.5;
 
 			const leaf = new Leaf(this._scene, x, y, z, vx, vz);
-			this._scene.addSprite(leaf, Scene.LAYERS.FIGHTERS);
+			this._scene.dm.addSprite(leaf, Layers.Scene.FIGHTERS);
 		}
 	}
 
@@ -1367,7 +1423,7 @@ export class Fighter extends Phys {
 			this._y + (Math.random() * 2 - 1) * this.ray * 0.5,
 			this._z - Math.random() * this._height * 2
 		);
-		this._scene.addSprite(drip, Scene.LAYERS.FIGHTERS);
+		this._scene.dm.addSprite(drip, Layers.Scene.FIGHTERS);
 	}
 
 	/**
@@ -1533,7 +1589,7 @@ export class Fighter extends Phys {
 			this._scene.getY(this._y) - this._height,
 			this._name.toUpperCase()
 		);
-		this._scene.addSprite(name, Scene.LAYERS.INTER);
+		this._scene.dm.addSprite(name, Layers.Scene.INTER);
 	}
 
 	/**
@@ -1603,15 +1659,6 @@ export class Fighter extends Phys {
 	 */
 	get alive() {
 		return this._mode !== Fighter.Mode.Dead;
-	}
-
-	/**
-	 * Remove the Fighter from the scene.
-	 * If you want the Fighter to appear dead instead, use die().
-	 */
-	kill() {
-		this._scene.removeFighter(this);
-		super.kill();
 	}
 
 	/**

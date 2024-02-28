@@ -1,5 +1,6 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Talk.hx
+import { Layers } from '../DepthManager.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
@@ -73,7 +74,7 @@ export class Talk extends State {
 			this._fighter.getRootContainer().y - (this._fighter.height + 10),
 			this._message
 		);
-		this._scene.addContainer(this._bubble, Scene.LAYERS.LOADING);
+		this._scene.dm.addContainer(this._bubble, Layers.Scene.LOADING);
 		this._scene.setClick(() => {
 			this._bubble.speedUp();
 		}, true);
@@ -104,7 +105,7 @@ export class Talk extends State {
 			case 2:
 				this._bubble.alpha = 1 - this._coef;
 				if (this._coef == 1) {
-					this._scene.removeContainer(this._bubble, Scene.LAYERS.LOADING);
+					this._scene.dm.removeContainer(this._bubble, Layers.Scene.LOADING);
 					this.end();
 				}
 				break;

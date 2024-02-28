@@ -4,10 +4,10 @@
 import { Container, Graphics, Sprite } from 'pixi.js';
 import { ref as gfx } from '../../gfx/references.js';
 import { Part } from '../Part.js';
-import { Scene } from '../Scene.js';
 import { Timer } from '../Timer.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { Asset } from '../../display/Asset.js';
+import { IScene } from '../IScene.js';
 
 /**
  * Instantiate a Spirit in the Scene.
@@ -73,7 +73,7 @@ export class Spirit extends Part {
 
 	/**
 	 * Instantiate a new head for the Spirit and add it to the Fighter layer of the Scene.
-	 * @param {Scene} scene The Scene where to add the Spirit.
+	 * @param {IScene} scene The Scene where to add the Spirit.
 	 */
 	constructor(scene) {
 		super(new Container(), scene);

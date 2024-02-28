@@ -2,9 +2,9 @@
 
 import { Container } from 'pixi.js';
 import { Phys } from '../Phys.js';
-import { Scene } from '../Scene.js';
 import { Asset } from '../../display/Asset.js';
 import { ref } from '../../gfx/references.js';
+import { IScene } from '../IScene.js';
 
 /**
  * A Toy is a physical entity whose display is chosen with a key from gfx.toys.
@@ -12,7 +12,7 @@ import { ref } from '../../gfx/references.js';
 export class Toy extends Phys {
 	/**
 	 * Create a new toy at the given positions with the given initial velocity.
-	 * @param {Scene} scene The Scene where the Toy is spawned in.
+	 * @param {IScene} scene The Scene where the Toy is spawned in.
 	 * @param {string} toy The reference to the toy display. Has to be an index from gfx.toys.
 	 * @param {number | null} x The initial x coordinate.
 	 * @param {number | null} y The initial y coordinate.

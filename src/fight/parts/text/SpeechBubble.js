@@ -2,8 +2,8 @@
 import { Container, Graphics, Rectangle, Text } from 'pixi.js';
 import { Timer } from '../../Timer.js';
 import { GlowFilter } from '@pixi/filter-glow';
-import { Scene } from '../../Scene.js';
 import { PixiHelper } from '../../../display/PixiHelper.js';
+import { SCENE_FULL_WIDTH, SCENE_HEIGHT, SCENE_WIDTH } from '../../IScene.js';
 
 /**
  * Instantiate a Speech Bubble, displaying it at the given coordinates.
@@ -129,7 +129,7 @@ export class SpeechBubble extends Container {
 		this.addChild(this._bubble);
 		this.addChild(this._text);
 		this.addChild(corner);
-		this.filterArea = new Rectangle(0, 0, Scene.FULL_WIDTH, Scene.HEIGHT);
+		this.filterArea = new Rectangle(0, 0, SCENE_FULL_WIDTH, SCENE_HEIGHT);
 		if (!SpeechBubble.BorderGlow) {
 			SpeechBubble.BorderGlow = new GlowFilter({
 				color: 0x000000,
@@ -142,8 +142,8 @@ export class SpeechBubble extends Container {
 		// Keep the bubble inside the scene.
 		const minX = (this.width + 5) * 0.5 - 20;
 		const minY = this.height - 2;
-		this.x = PixiHelper.mm(minX, x, Scene.WIDTH - minX);
-		this.y = PixiHelper.mm(minY, y, Scene.HEIGHT);
+		this.x = PixiHelper.mm(minX, x, SCENE_WIDTH - minX);
+		this.y = PixiHelper.mm(minY, y, SCENE_HEIGHT);
 		this.setText('');
 	}
 

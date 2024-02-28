@@ -6,100 +6,27 @@ import { ref as gfx } from '../gfx/references.js';
 import { Asset } from '../display/Asset.js';
 import { Fighter } from './Fighter.js';
 import { Timer } from './Timer.js';
-import { Slot } from './Slot.js';
-import { Sprite } from './Sprite.js';
-import { Tween } from '../display/Tween.js';
 import { ContinueArrow } from './parts/ContinueArrow.js';
 import { Castle } from './Castle.js';
+import { DepthManager, Layers } from './DepthManager.js';
+import { IScene, SCENE_FULL_WIDTH, SCENE_HEIGHT, SCENE_MARGIN, SCENE_WIDTH } from './IScene.js';
 
 /**
  * The fight scene containing all the different layers to display.
  *
  * Will contain every displayable elements needed to display the fight.
  */
-export class Scene extends Container {
-	static MARGIN = 10;
-	static WIDTH = 400;
-	static FULL_WIDTH = 488;
-	static HEIGHT = 300;
-	static LAYERS = {
-		BG: 0,
-		SHADE: 1,
-		CASTLE: 2,
-		FIGHTERS: 3,
-		EFFECTS: 4,
-		PARTS: 5,
-		BG_FRONT: 6,
-		INTER: 7,
-		COLUMNS: 8,
-		LOADING: 9,
-		DEBUG: 10
-	};
-	/**
-	 * Layers of the Scene. Each keys of Scene.Layers generate a layer at initialisation.
-	 * @type {{container: Container, sprites: Sprite[]}[]}
-	 */
-	_layers = [];
-	/**
-	 * If true, displays the debug parameters when instantiating entities.
-	 */
-	debugMode = false;
-	/**
-	 * Define the margins of the scene.
-	 * Margins delimits the walking area of the scene.
-	 */
-	margins = {
-		top: 0,
-		bottom: 0,
-		right: 0
-	};
-	/**
-	 * The actual width of the scene. Changes if there is a Castle.
-	 * @type {number}
-	 */
-	get width() {
-		return Scene.WIDTH - this.margins.right - (this._castle ? 132 : 0);
-	}
+export class Scene extends IScene {
 	/**
 	 * Contains all the fighters currently instantiated and contained in the fighters layer.
 	 * @type {Fighter[]}
 	 */
 	_fighters = [];
 	/**
-	 * Contains the slot for both side of the fight.
-	 * @type {Container[]}
-	 */
-	_slots = [new Container(), new Container()];
-	/**
 	 * The Castle if any is instantiated.
 	 * @type {Castle}
 	 */
 	_castle;
-
-	/**
-	 * List of the toys spawned in the scene.
-	 * @type {{toy: Sprite, name: string}[]}
-	 */
-	_toys = [];
-	/**
-	 * List of Tweens currently playing.
-	 * @type {Tween[]}
-	 */
-	_tweens = [];
-	/**
-	 * Current shaking of the Scene.
-	 * The force impacts how much the Scene is displaced. Once below 1, the shaking stops.
-	 * The friction reduces the force over time.
-	 * The speed impacts how fast the scene shakes, between 0 and 1.
-	 * The timer keeps track of the time, increasing with the speed over tmod.
-	 * @type {{force: number, friction: number, speed: number, timer: number}}
-	 */
-	_shake = {
-		force: 0,
-		friction: 0,
-		speed: 0,
-		timer: 0
-	};
 
 	/**
 	 * The continue arrow showing up at the bottom right of the screen.
@@ -117,20 +44,15 @@ export class Scene extends Container {
 		super();
 		this.debugMode = debug;
 		this.margins = margins;
-		for (const k in Scene.LAYERS) {
-			this._layers.push({
-				container: new Container(),
-				sprites: []
-			});
-			this.addChild(this._layers[Scene.LAYERS[k]].container);
-		}
+		this._depthManager = new DepthManager(Object.keys(Layers.Scene).length);
+		this.addChild(this._depthManager);
 		this.setBackground(background);
 		this.createColumns();
 		// The zindex of the entities is managed by their computed z position.
-		this._layers[Scene.LAYERS.FIGHTERS].container.sortableChildren = true;
+		this.dm.setSortableLayer(Layers.Scene.FIGHTERS);
 
-		this._continueArrow = new ContinueArrow(Scene.WIDTH + 18, Scene.HEIGHT - 15);
-		this.addContainer(this._continueArrow, Scene.LAYERS.LOADING);
+		this._continueArrow = new ContinueArrow(SCENE_WIDTH + 18, SCENE_HEIGHT - 15);
+		this.dm.addContainer(this._continueArrow, Layers.Scene.LOADING);
 		this._continueArrow.visible = false;
 
 		// DEBUG
@@ -150,39 +72,20 @@ export class Scene extends Container {
 	 * @param {Timer} timer The fight Timer containing the elasped time.
 	 */
 	update(timer) {
-		this.updateTweens(timer);
+		this._tweenManager.update(timer);
 		if (this._castle) {
 			this._castle.update(timer);
 		}
 		this.updateForces();
-		this._layers.map((l) => {
-			l.sprites.map((s) => {
-				s.update(timer);
-			});
-			// Filter the deleted Sprites separately from the update in case the update added new Sprites.
-			l.sprites = l.sprites.filter((s) => {
-				if (s.isDeleted) {
-					l.container.removeChild(s.getRootContainer());
-					return false;
-				}
-				return true;
-			});
-		});
+		this.dm.update(timer);
 		this.updateShake(timer);
 		this.updateWalk(timer);
 		//updateTimeBar();
 		if (this._continueArrow.visible) {
 			this._continueArrow.update(timer);
 		}
-	}
-
-	/**
-	 * Update the registered Tweens and remove the disposable ones.
-	 * @param {Timer} timer The Fight's timer, containing the elapsed time.
-	 */
-	updateTweens(timer) {
-		this._tweens.map((t) => t.update(timer.deltaTimeS));
-		this._tweens = this._tweens.filter((t) => !t._disposed);
+		// Filter the deleted Fighters.
+		this._fighters = this._fighters.filter((f) => !f.isDeleted);
 	}
 
 	/**
@@ -223,11 +126,11 @@ export class Scene extends Container {
 	setBackground(key) {
 		if (key && gfx.background[key]) {
 			const sprite = new Asset(gfx.background[key]);
-			sprite.y = -Scene.MARGIN;
+			sprite.y = -SCENE_MARGIN;
 			sprite.onLoad(() => {
-				sprite.x = Scene.FULL_WIDTH / 2 - sprite.width / 2;
+				sprite.x = SCENE_FULL_WIDTH / 2 - sprite.width / 2;
 			});
-			this._layers[Scene.LAYERS.BG].container.addChild(sprite);
+			this.dm.addContainer(sprite, Layers.Scene.BG);
 		}
 	}
 
@@ -242,15 +145,15 @@ export class Scene extends Container {
 		// Once the left column is loaded, move all the scene beside the background and the columns by the width of the column.
 		// The x = 0 of the other scenes should be on the border of the left column.
 		colLeft.onLoad(() => {
-			for (const k in this._layers) {
-				if (![Scene.LAYERS.BG, Scene.LAYERS.COLUMNS].includes(Number.parseInt(k))) {
-					this._layers[k].container.x += colLeft.width;
+			for (const k in Layers.Scene) {
+				if (![Layers.Scene.BG, Layers.Scene.COLUMNS].includes(Layers.Scene[k])) {
+					this.dm.offsetLayer(colLeft.width, 0, Layers.Scene[k]);
 				}
 			}
 			colLeftTop.y = -colLeft.height;
 			colLeftBottom.y = colLeft.height;
 		});
-		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colLeftContainer);
+		this.dm.addContainer(colLeftContainer, Layers.Scene.COLUMNS);
 		colLeftContainer.addChild(colLeft, colLeftTop, colLeftBottom, this._slots[0]);
 
 		const colRightContainer = new Container();
@@ -258,41 +161,12 @@ export class Scene extends Container {
 		const colRightTop = new Asset(gfx.scene.column);
 		const colRightBottom = new Asset(gfx.scene.column);
 		colRight.onLoad(() => {
-			colRightContainer.x = Scene.FULL_WIDTH - colRight.width;
+			colRightContainer.x = SCENE_FULL_WIDTH - colRight.width;
 			colRightTop.y = -colRight.height;
 			colRightBottom.y = colRight.height;
 		});
-		this._layers[Scene.LAYERS.COLUMNS].container.addChild(colRightContainer);
+		this.dm.addContainer(colRightContainer, Layers.Scene.COLUMNS);
 		colRightContainer.addChild(colRight, colRightTop, colRightBottom, this._slots[1]);
-	}
-
-	/**
-	 * Adds a Sprite to the specific layer.
-	 * The Sprite will then be updated when the Scene will be updated.
-	 * @param {Sprite} sprite The Sprite to add.
-	 * @param {number} layer The Scene.LAYERS where to add the Sprite.
-	 */
-	addSprite(sprite, layer) {
-		this._layers[layer].container.addChild(sprite.getRootContainer());
-		this._layers[layer].sprites.push(sprite);
-	}
-
-	/**
-	 * Adds a PixiJS Container to a specific layer.
-	 * @param {Container} cont The Container to add to the layer.
-	 * @param {number} layer The layer where to add the Container.
-	 */
-	addContainer(cont, layer) {
-		this._layers[layer].container.addChild(cont);
-	}
-
-	/**
-	 * Removes a PixiJS Container from a specific layer.
-	 * @param {Container} cont The Container to remove from the layer.
-	 * @param {number} layer The layer from which to remove the Container.
-	 */
-	removeContainer(cont, layer) {
-		this._layers[layer].container.removeChild(cont);
 	}
 
 	/**
@@ -332,48 +206,16 @@ export class Scene extends Container {
 	}
 
 	/**
-	 * Adds a Toy to the scene.
-	 * @param {Sprite} toy The toy to add.
-	 * @param {string} name The type of toy being added. Used to remove them later on.
+	 * Creates a new Castle in the Scene if none already exists.
+	 * @param {import('./Castle.js').CastleInfos} infos Information relative to the Castle.
 	 */
-	addToy(toy, name) {
-		this._toys.push({
-			toy: toy,
-			name: name
-		});
-		this.addSprite(toy, Scene.LAYERS.FIGHTERS);
-	}
-
-	/**
-	 * Remove all the toys with the given name from the scene.
-	 * @param {string} name The type of toy being removed.
-	 */
-	removeToy(name) {
-		this._toys.map((t) => {
-			if (t.name === name) {
-				t.toy.kill();
-			}
-		});
-		this._toys = this._toys.filter((t) => t.name !== name);
-	}
-
-	/**
-	 * Add a new Tween animation to the list.
-	 * @param {Tween} tween The new Tween to add to the list.
-	 */
-	addTween(tween) {
-		this._tweens.push(tween.getHead());
-	}
-
-	/**
-	 * Add a created Slot to the display.
-	 * @param {Slot} slot The slot to add to a column.
-	 */
-	addSlot(slot) {
-		const idx = slot.side ? 0 : 1;
-		slot.x = slot.side ? 3 : -10;
-		slot.y = 3 + 40 * this._slots[idx].children.length;
-		this._slots[idx].addChild(slot);
+	createCastle(infos) {
+		if (!this._castle) {
+			this._castle = new Castle(this, infos);
+			this._castleOffset = 132;
+		} else {
+			console.error(`[AddCastle]: A Castle already exists in the Scene.`);
+		}
 	}
 
 	/**
@@ -387,21 +229,6 @@ export class Scene extends Container {
 	 */
 	genGroundPart(x, y, vx = 0, vy = 0, vz = 0, flJump = false) {
 		// TODO
-	}
-
-	/**
-	 * Makes the Scene shake.
-	 * @param {number} force The strength of the Scene displacement.
-	 * @param {number} frict The friction of the shaking, reducing the strengh over time.
-	 * @param {number} speed The speed of the shaking, impacting how often the shake happens.
-	 */
-	fxShake(force = 8, frict = 0.75, speed = 1) {
-		this._shake = {
-			force: force,
-			friction: frict,
-			speed: speed,
-			timer: 0
-		};
 	}
 
 	/**
@@ -441,48 +268,6 @@ export class Scene extends Container {
 	}
 
 	/**
-	 * Convert a global y coordinate into a scene y coordinate.
-	 * @param {number} y The global y value.
-	 * @returns {number} The global y value converted into scene coordinate.
-	 */
-	getY(y) {
-		return this.margins.top + y * 0.5;
-	}
-
-	/**
-	 * Convert a scene y coordinate into a global coordinate.
-	 * @param {number} y The scene y coordinate.
-	 * @returns {number} The global y coordinate converted from the scene coordinate.
-	 */
-	getGY(y) {
-		return (y - this.margins.top) * 2;
-	}
-
-	/**
-	 * Get the PY size. Not sure what the PY is...
-	 * @returns {number} The height of the scene, minus the top and bottom margin, multiplied by 2.
-	 */
-	getPYSize() {
-		return (Scene.HEIGHT - (this.margins.top + this.margins.bottom)) * 2;
-	}
-
-	/**
-	 * Get the middle point of the PY size.
-	 * @returns {number} PYSize / 2.
-	 */
-	getPYMiddle() {
-		return this.getPYSize() * 0.5;
-	}
-
-	/**
-	 * Get a random Y coordinate comprised in the PY size.
-	 * @returns {number} A random y coordinate between 0 and PY size.
-	 */
-	getRandomPYPos() {
-		return Math.random() * this.getPYSize();
-	}
-
-	/**
 	 * Update all the Fighters having a force.
 	 * Each Fighter with a force will push against each others.
 	 */
@@ -516,12 +301,12 @@ export class Scene extends Container {
 	 * Debug function. Draws the scene's given margins.
 	 */
 	debugDrawMargins() {
-		this.debugAddLine({ x: 0, y: this.margins.top }, { x: Scene.WIDTH, y: this.margins.top });
+		this.debugAddLine({ x: 0, y: this.margins.top }, { x: SCENE_WIDTH, y: this.margins.top });
 		this.debugAddLine(
-			{ x: 0, y: Scene.HEIGHT - this.margins.bottom },
-			{ x: Scene.WIDTH, y: Scene.HEIGHT - this.margins.bottom }
+			{ x: 0, y: SCENE_HEIGHT - this.margins.bottom },
+			{ x: SCENE_WIDTH, y: SCENE_HEIGHT - this.margins.bottom }
 		);
-		this.debugAddLine({ x: this.width, y: 0 }, { x: this.width, y: Scene.HEIGHT });
+		this.debugAddLine({ x: this.width, y: 0 }, { x: this.width, y: SCENE_HEIGHT });
 	}
 
 	/**
@@ -532,7 +317,7 @@ export class Scene extends Container {
 	 */
 	debugAddLine(from, to) {
 		const line = new Graphics();
-		this._layers[Scene.LAYERS.DEBUG].container.addChild(line);
+		this.dm.addContainer(line, Layers.Scene.DEBUG);
 		line.lineStyle(2, 0xff0000).moveTo(from.x, from.y).lineTo(to.x, to.y);
 	}
 }

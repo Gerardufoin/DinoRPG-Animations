@@ -4,7 +4,7 @@
 import { BlurFilter, Container } from 'pixi.js';
 import { Dust } from './Dust.js';
 import { Timer } from '../../Timer.js';
-import { Scene } from '../../Scene.js';
+import { IScene } from '../../IScene.js';
 
 /**
  * Spawn in a blurry Dust part rotating over time.
@@ -35,7 +35,7 @@ export class Dirt extends Dust {
 
 	/**
 	 * Spawn a Dirt part at the given xy coordinates, following the given direction vector.
-	 * @param {Scene} scene The Scene the part is spawned in.
+	 * @param {IScene} scene The Scene the part is spawned in.
 	 * @param {number} x The initial x coordinate.
 	 * @param {number} y The initial y coordinate.
 	 * @param {number} vx The initial x velocity.

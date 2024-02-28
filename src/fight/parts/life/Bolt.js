@@ -2,8 +2,8 @@
 import { GlowFilter } from '@pixi/filter-glow';
 import { Animator } from '../../../display/Animator.js';
 import { fx_bolt } from '../../../gfx/fx/bolt.js';
-import { Scene } from '../../Scene.js';
 import { Phys2D } from '../Phys2D.js';
+import { IScene } from '../../IScene.js';
 
 /**
  * Creates a bolt of lightning at the desired position.
@@ -20,7 +20,7 @@ export class Bolt extends Phys2D {
 	 * Instantiate a new Bolt of lightning at the given coordinates.
 	 *
 	 * The Bolt will appear after a random short delay and disappear after 5 frames.
-	 * @param {Scene} scene The Scene where the Bolt is spawned.
+	 * @param {IScene} scene The Scene where the Bolt is spawned.
 	 * @param {number} x The initial X coordinate.
 	 * @param {number} y The initial Y coordinate.
 	 */
