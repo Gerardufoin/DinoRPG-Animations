@@ -60,7 +60,7 @@ const fightVersion = [
 					enclos: false,
 					ground: 0,
 					armor: 0,
-					repair: 3,
+					repair: 0,
 					color: 0,
 					invisible: false
 				}

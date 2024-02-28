@@ -9,8 +9,7 @@ import { Animator } from '../display/Animator.js';
 import { PartCastle } from './parts/castle/PartCastle.js';
 import { Asset } from '../display/Asset.js';
 import { ref } from '../gfx/references.js';
-import { DepthManager, Layers } from './DepthManager.js';
-import { TweenManager } from './TweenManager.js';
+import { Layers } from './DepthManager.js';
 import { IScene, SCENE_WIDTH } from './IScene.js';
 
 /**
@@ -107,7 +106,7 @@ export class Castle {
 
 		if (infos.ground > 0) {
 			this._scene.dm.addContainer(
-				new Asset(ref.castle[Castle.POND_ASSETS[infos.ground % Castle.POND_ASSETS.length]]),
+				new Asset(ref.castle[Castle.POND_ASSETS[(infos.ground - 1) % Castle.POND_ASSETS.length]]),
 				Layers.Scene.CASTLE
 			);
 		}
@@ -128,7 +127,7 @@ export class Castle {
 
 		if (infos.enclos) {
 			const enclos = new Asset(ref.castle.enclos);
-			enclos.x = this._skin.x;
+			enclos.x = SCENE_WIDTH - 82;
 			this._scene.dm.addContainer(enclos, Layers.Scene.CASTLE);
 		}
 
@@ -143,9 +142,9 @@ export class Castle {
 			this._repairMan.skin.y = 192;
 		}
 
-		if (infos.armor) {
-			this._armor = new Asset(ref.castle[Castle.ARMOR_ASSETS[infos.armor % Castle.ARMOR_ASSETS.length]]);
-			this._armor.x = this._skin.x;
+		if (infos.armor > 0) {
+			this._armor = new Asset(ref.castle[Castle.ARMOR_ASSETS[(infos.armor - 1) % Castle.ARMOR_ASSETS.length]]);
+			this._armor.x = SCENE_WIDTH - 131;
 			this._scene.dm.addContainer(this._armor, Layers.Scene.CASTLE);
 		}
 
@@ -153,14 +152,14 @@ export class Castle {
 			this._skin.alpha = 0.5;
 		}
 
-		if (infos.color) {
+		if (infos.color > 0) {
 			/** @type {import('pixi.js').ColorMatrix[]} */
 			const colors = [
 				[1.2, 0, 0, 0, 0, 0, 0.7, 0, 0, 0, 0, 0, 0.7, 0, 0, 0, 0, 0, 1, 0],
 				[0.7, 0, 0, 0, 0, 0, 0.7, 0, 0, 0, 0, 0, 0.7, 0, 0, 0, 0, 0, 1, 0]
 			];
 			const filter = new ColorMatrixFilter();
-			filter.matrix = colors[infos.color % colors.length];
+			filter.matrix = colors[(infos.color - 1) % colors.length];
 			this._skin.filters = [filter];
 		}
 
@@ -210,7 +209,7 @@ export class Castle {
 	 * @param {number} amount The amount of life to add or remove.
 	 */
 	incLife(amount) {
-		this._life = PixiHelper.mm(0, amount, this._maxLife);
+		this._life = PixiHelper.mm(0, this._life + amount, this._maxLife);
 		const coef = 1 - this._life / this._maxLife;
 
 		const curState = Math.floor(coef * (this._states.length - 1));

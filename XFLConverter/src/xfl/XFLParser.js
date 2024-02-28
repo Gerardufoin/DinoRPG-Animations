@@ -379,7 +379,8 @@ export class XFLParser {
 					const symbolInstance = f.elements.DOMSymbolInstance;
 					const element = symbolInstance.libraryItemName + (symbolInstance.name ?? '');
 					const elementNb = symbolInstance.libraryItemName.match(/Symbol (\d+)/)[1];
-					// Elements to ignore. Seems like a mistake from MT
+					// Elements to ignore.
+					// 225 Seems like a mistake from MT
 					if (['225'].includes(elementNb)) {
 						continue;
 					}

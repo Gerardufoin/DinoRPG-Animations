@@ -1,6 +1,33 @@
 // @ts-check
 
 export let mapping_gfx = {
+	// Worker
+	'Symbol 91': 'l_hand',
+	'Symbol 91-1': 'r_hand',
+	'Symbol 94': 'r_foot',
+	'Symbol 97': 'l_arm_bot',
+	'Symbol 97-1': 'l_arm_top',
+	'Symbol 97-2': 'r_arm_top',
+	'Symbol 97-3': 'r_for_bot',
+	'Symbol 97-4': 'l_leg_top',
+	'Symbol 97-5': 'r_leg_top',
+	'Symbol 97-6': 'l_leg_bot',
+	'Symbol 97-7': 'r_leg_bot',
+	'Symbol 100': 'l_foot',
+	'Symbol 102': 'pants',
+	'Symbol 105': 'body',
+	'Symbol 106': 'hammer_1',
+	'Symbol 109': 'l_ear',
+	'Symbol 109-1': 'r_ear',
+	'Symbol 116smc': 'helmet',
+	'Symbol 117': 'hammer_2',
+	'Symbol 118': 'hammer_3',
+	'Symbol 119': 'hammer_4',
+	'Symbol 120': 'hammer_5',
+	'Symbol 121': 'hammer_6',
+	'Symbol 122': 'hammer_7',
+	'Symbol 123': 'hammer_8',
+	'Symbol 124': 'hammer_9',
 	// Strong notification
 	'Symbol 612': 'shoulder',
 	'Symbol 614': 'arm',
