@@ -1,6 +1,7 @@
 // @ts-check
 
 export let mapping_gfx = {
+	'Symbol 88': 'shade',
 	// Worker
 	'Symbol 91': 'l_hand',
 	'Symbol 91-1': 'r_hand',
@@ -19,7 +20,7 @@ export let mapping_gfx = {
 	'Symbol 106': 'hammer_1',
 	'Symbol 109': 'l_ear',
 	'Symbol 109-1': 'r_ear',
-	'Symbol 116smc': 'helmet',
+	'Symbol 116smc': 'head',
 	'Symbol 117': 'hammer_2',
 	'Symbol 118': 'hammer_3',
 	'Symbol 119': 'hammer_4',

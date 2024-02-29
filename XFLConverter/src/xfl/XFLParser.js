@@ -419,6 +419,8 @@ export class XFLParser {
 						frameData.mr = frameData.mg = frameData.mb = undefined;
 					}
 					for (let i = 0; i < duration; ++i) {
+						// Frame data has to be a copy each frame in order to not fucked up the layer sorting later on.
+						const frameDataCpy = JSON.parse(JSON.stringify(frameData));
 						if (!result.frames[idx + i]) {
 							result.frames[idx + i] = {};
 						}
@@ -431,7 +433,7 @@ export class XFLParser {
 						if (!result.elementsCheck.includes(elemName)) {
 							result.elementsCheck.push(elemName);
 						}
-						result.frames[idx + i][elemName] = frameData;
+						result.frames[idx + i][elemName] = frameDataCpy;
 						if (parentTransform && result.frames[idx + i][elemName]) {
 							result.frames[idx + i][elemName] = this.multiplyMatrix(
 								result.frames[idx + i][elemName],

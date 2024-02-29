@@ -5,12 +5,12 @@ import { Slot } from './Slot.js';
 import { Fighter } from './Fighter.js';
 import { Timer } from './Timer.js';
 import { PixiHelper } from '../display/PixiHelper.js';
-import { Animator } from '../display/Animator.js';
 import { PartCastle } from './parts/castle/PartCastle.js';
 import { Asset } from '../display/Asset.js';
 import { ref } from '../gfx/references.js';
 import { Layers } from './DepthManager.js';
 import { IScene, SCENE_WIDTH } from './IScene.js';
+import { Worker } from './parts/castle/Worker.js';
 
 /**
  * Information relative to the castle.
@@ -84,7 +84,7 @@ export class Castle {
 	_armor;
 	/**
 	 * The goblin repairing the Castle, if any.
-	 * @type {{skin: Animator, speed: number, frame: number}}
+	 * @type {Worker}
 	 */
 	_repairMan;
 
@@ -129,23 +129,20 @@ export class Castle {
 			const enclos = new Asset(ref.castle.enclos);
 			enclos.x = SCENE_WIDTH - 82;
 			this._scene.dm.addContainer(enclos, Layers.Scene.CASTLE);
+			enclos.alpha = infos.invisible ? 0.5 : 1;
 		}
 
-		if (infos.repair) {
-			// TODO worker
-			this._repairMan = {
-				skin: new Animator(false),
-				speed: infos.repair,
-				frame: 0
-			};
-			this._repairMan.skin.x = 392;
-			this._repairMan.skin.y = 192;
+		if (infos.repair > 0) {
+			this._repairMan = new Worker(392, 192, infos.repair);
+			this._scene.dm.addContainer(this._repairMan, Layers.Scene.CASTLE);
 		}
 
 		if (infos.armor > 0) {
-			this._armor = new Asset(ref.castle[Castle.ARMOR_ASSETS[(infos.armor - 1) % Castle.ARMOR_ASSETS.length]]);
+			// Armor 0 is skipped and apparently not used in MT code. You can reach it by giving armor 3
+			this._armor = new Asset(ref.castle[Castle.ARMOR_ASSETS[infos.armor % Castle.ARMOR_ASSETS.length]]);
 			this._armor.x = SCENE_WIDTH - 131;
 			this._scene.dm.addContainer(this._armor, Layers.Scene.CASTLE);
+			this._armor.alpha = infos.invisible ? 0.5 : 1;
 		}
 
 		if (infos.invisible) {
@@ -221,25 +218,28 @@ export class Castle {
 			if (this._armor) {
 				this._armor.visible = false;
 			}
-		}
+			if (this._repairMan) {
+				this._repairMan.stopStriking = true;
+			}
 
-		for (let i = 0; i < 80; ++i) {
-			this._scene.dm.addSprite(
-				new PartCastle(
-					this._scene,
-					300 + Math.random() * 80,
-					Math.random() * 250 - 50,
-					-Math.random() * 100,
-					(Math.random() * 2 - 1) * 3,
-					(Math.random() * 2 - 1) * 3,
-					0
-				),
-				Layers.Scene.FIGHTERS
-			);
-		}
+			for (let i = 0; i < 80; ++i) {
+				this._scene.dm.addSprite(
+					new PartCastle(
+						this._scene,
+						300 + Math.random() * 80,
+						Math.random() * 250 - 50,
+						-Math.random() * 100,
+						(Math.random() * 2 - 1) * 3,
+						(Math.random() * 2 - 1) * 3,
+						0
+					),
+					Layers.Scene.FIGHTERS
+				);
+			}
 
-		for (let i = 0; i < 14; ++i) {
-			// TODO fxCastleSmoke
+			for (let i = 0; i < 14; ++i) {
+				// TODO fxCastleSmoke
+			}
 		}
 	}
 
@@ -249,7 +249,7 @@ export class Castle {
 	 */
 	update(timer) {
 		if (this._repairMan) {
-			this._repairMan.skin.update(timer.deltaTimeMS);
+			this._repairMan.updateAnim(timer);
 		}
 
 		if (this._shake) {

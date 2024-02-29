@@ -1,8 +1,9 @@
 // @ts-check
 
-import { Container } from 'pixi.js';
 import { Phys } from '../../Phys.js';
 import { IScene } from '../../IScene.js';
+import { Asset } from '../../../display/Asset.js';
+import { ref } from '../../../gfx/references.js';
 
 /**
  * A piece of stone falling from a damaged Castle..
@@ -19,8 +20,7 @@ export class PartCastle extends Phys {
 	 * @param {number | null} vz The initial vz coordinate.
 	 */
 	constructor(scene, x, y, z, vx, vy, vz) {
-		// TODO display partCastle
-		super(new Container(), scene);
+		super(new Asset(ref.castle.stone), scene);
 
 		this._weight = 0.5 + Math.random();
 		this._fadeoutTimer = 10 + Math.random() * 60;

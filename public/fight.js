@@ -57,12 +57,12 @@ const fightVersion = [
 				infos: {
 					life: 10,
 					maxLife: 100,
-					enclos: false,
-					ground: 0,
-					armor: 0,
-					repair: 0,
+					enclos: true,
+					ground: 1,
+					armor: 1,
+					repair: 1,
 					color: 0,
-					invisible: false
+					invisible: true
 				}
 			},
 			{
