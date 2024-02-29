@@ -693,7 +693,7 @@ export class MTConverter {
 		return {
 			enum: '_History',
 			value: '_HCastleAttack',
-			args: [obj.fid, obj.life, null]
+			args: [obj.fid, obj.damages, null]
 		};
 	}
 

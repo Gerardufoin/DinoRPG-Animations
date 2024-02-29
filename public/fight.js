@@ -96,7 +96,7 @@ const fightVersion = [
 			{
 				action: DinoAnim.Fight.Action.AttackCastle,
 				fid: 0,
-				life: 10
+				damages: 10
 			},
 			{
 				action: DinoAnim.Fight.Action.Text,

@@ -26,7 +26,7 @@ import { Flip } from './actions/Flip.js';
 import { Wait } from './actions/Wait.js';
 import { Talk } from './actions/Talk.js';
 import { Text } from './actions/Text.js';
-import { Castle } from './Castle.js';
+import { AttackCastle } from './actions/AttackCastle.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -103,7 +103,7 @@ export class History {
 			[Fight.Action.Finish]: 'finish',
 			[Fight.Action.AddCastle]: 'addCastle',
 			[Fight.Action.TimeLimit]: undefined,
-			[Fight.Action.AttackCastle]: undefined,
+			[Fight.Action.AttackCastle]: 'attackCastle',
 			[Fight.Action.Display]: 'display',
 			[Fight.Action.Text]: 'text',
 			[Fight.Action.Talk]: 'talk',
@@ -401,6 +401,23 @@ export class History {
 	addCastle(action) {
 		this._scene.createCastle(action.infos);
 		this.playNext();
+	}
+
+	/**
+	 * A Fighter attacks the Castle.
+	 * @param {{action: number, fid: number, damages: number}} action Action which triggered the call.
+	 * @returns {State} The AttackCastle State.
+	 */
+	attackCastle(action) {
+		return new AttackCastle(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fid,
+			action.damages,
+			this._scene._castle
+		);
 	}
 
 	/**

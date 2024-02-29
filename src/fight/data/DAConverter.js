@@ -718,7 +718,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHCastleAttack(args) {
-		return { action: Fight.Action.AttackCastle, fid: args[0], life: args[1] };
+		return { action: Fight.Action.AttackCastle, fid: args[0], damages: args[1] };
 	}
 
 	/**

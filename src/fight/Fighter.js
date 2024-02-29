@@ -792,7 +792,7 @@ export class Fighter extends Phys {
 
 	/**
 	 * Prepare the Fighter to go back to its last saved coordinate, using the desired movement type passed as parameter.
-	 * @param {number} moveType A value from the Fighter.MoveType enum.
+	 * @param {number | null} moveType A value from the Fighter.MoveType enum or null for the default movement.
 	 * @returns {number} The ratio between the Fighter's running speed and the expected distance to cover.
 	 */
 	initReturn(moveType) {

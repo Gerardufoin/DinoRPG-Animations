@@ -1,14 +1,14 @@
 // @ts-check
 
-import { Phys } from '../../Phys.js';
 import { IScene } from '../../IScene.js';
 import { Asset } from '../../../display/Asset.js';
 import { ref } from '../../../gfx/references.js';
+import { Part } from '../../Part.js';
 
 /**
  * A piece of stone falling from a damaged Castle..
  */
-export class PartCastle extends Phys {
+export class PartCastle extends Part {
 	/**
 	 * Create a new piece of stone at the given positions with the given initial velocity.
 	 * @param {IScene} scene The Scene where the part is spawned in.
