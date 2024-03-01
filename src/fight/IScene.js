@@ -5,6 +5,9 @@ import { Container } from 'pixi.js';
 import { Sprite } from './Sprite.js';
 import { DepthManager, Layers } from './DepthManager.js';
 import { TweenManager } from './TweenManager.js';
+import { LoadingScreen } from './parts/scene/LoadingScreen.js';
+import { PixiHelper } from '../display/PixiHelper.js';
+import { Timer } from './Timer.js';
 
 export const SCENE_MARGIN = 10;
 export const SCENE_WIDTH = 400;
@@ -21,6 +24,12 @@ export class IScene extends Container {
 	 * If true, displays the debug parameters when instantiating entities.
 	 */
 	debugMode = false;
+
+	/**
+	 * The loading screen of the Scene.
+	 * @type {LoadingScreen}
+	 */
+	_loadingScreen;
 
 	/**
 	 * Scene DepthManager, containing all the different layers.
@@ -95,6 +104,21 @@ export class IScene extends Container {
 	};
 
 	/**
+	 * Slowly remove the loading screen and display the slots.
+	 * Return true as long as the loading screen is not completely fadeout.
+	 * @param {Timer} timer The Fight's timer, containing the elapsed time.
+	 * @returns {boolean} True if the loading screen is still fading out, false otherwise.
+	 */
+	endLoading(timer) {
+		this._loadingScreen.alpha = PixiHelper.mm(0, this._loadingScreen.alpha - 0.05 * timer.tmod, 1);
+		for (const s of this._slots) {
+			s.alpha = 1 - this._loadingScreen.alpha;
+		}
+		this._loadingScreen.visible = this._loadingScreen.alpha != 0;
+		return this._loadingScreen.alpha === 0;
+	}
+
+	/**
 	 * Adds a Toy to the scene.
 	 * @param {Sprite} toy The toy to add.
 	 * @param {string} name The type of toy being added. Used to remove them later on.
@@ -139,6 +163,7 @@ export class IScene extends Container {
 	 * @param {number} speed The speed of the shaking, impacting how often the shake happens.
 	 */
 	fxShake(force = 8, frict = 0.75, speed = 1) {
+		if (this._loadingScreen.visible) return;
 		this._shake = {
 			force: force,
 			friction: frict,

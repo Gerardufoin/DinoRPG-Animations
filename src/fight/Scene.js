@@ -10,6 +10,7 @@ import { ContinueArrow } from './parts/ContinueArrow.js';
 import { Castle } from './Castle.js';
 import { DepthManager, Layers } from './DepthManager.js';
 import { IScene, SCENE_FULL_WIDTH, SCENE_HEIGHT, SCENE_MARGIN, SCENE_WIDTH } from './IScene.js';
+import { LoadingScreen } from './parts/scene/LoadingScreen.js';
 
 /**
  * The fight scene containing all the different layers to display.
@@ -55,6 +56,10 @@ export class Scene extends IScene {
 		this.dm.addContainer(this._continueArrow, Layers.Scene.LOADING);
 		this._continueArrow.visible = false;
 
+		this._loadingScreen = new LoadingScreen();
+		this.dm.addContainer(this._loadingScreen, Layers.Scene.LOADING);
+		this._slots.map((s) => (s.alpha = 0));
+
 		// DEBUG
 		if (this.debugMode) {
 			this.debugDrawMargins();
@@ -72,6 +77,9 @@ export class Scene extends IScene {
 	 * @param {Timer} timer The fight Timer containing the elasped time.
 	 */
 	update(timer) {
+		if (this._loadingScreen.visible) {
+			this._loadingScreen.update(timer);
+		}
 		this._tweenManager.update(timer);
 		if (this._castle) {
 			this._castle.update(timer);

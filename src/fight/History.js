@@ -27,6 +27,7 @@ import { Wait } from './actions/Wait.js';
 import { Talk } from './actions/Talk.js';
 import { Text } from './actions/Text.js';
 import { AttackCastle } from './actions/AttackCastle.js';
+import { Start } from './actions/Start.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -421,11 +422,14 @@ export class History {
 	}
 
 	/**
-	 * Not implemented in this project for now. Wait for the loading screen for MT.
-	 * @param {{action: number}} action Action which triggered the call.
+	 * Removes the loading screen.
+	 * @param {{action: number}} _action Action which triggered the call.
+	 * @returns {State} The Start State.
 	 */
-	display(action) {
-		this.playNext();
+	display(_action) {
+		return new Start(this._scene, () => {
+			this.playNext();
+		});
 	}
 
 	/**

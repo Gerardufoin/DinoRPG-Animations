@@ -168,7 +168,7 @@ export class AddFighter extends State {
 		if (this._coef === 1) {
 			if (this._fInfos.entrance === EntranceEffect.Fall) {
 				this._fighter.playAnim('land');
-			} else if (this._fInfos.entrance !== undefined /* TODO And not jump? */) {
+			} else if (this._fInfos.entrance !== undefined && this._fInfos.entrance !== EntranceEffect.Jump) {
 				this._fighter.backToDefault();
 			}
 			this._fighter.setLockTimer(20);

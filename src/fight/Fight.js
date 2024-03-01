@@ -137,9 +137,7 @@ export class Fight {
 		this._timer.start();
 
 		this._history = new History(this, this._scene, this._data.history);
-		// TODO: DinoAnim does not need to load external ressource, as such it begins as soon as the page finishes loading.
-		// A "Fake" loading screen will be needed to allow the page to render properly and let the player breath before the fight start.
-		// This will also leave the time for Timer.tmod to adapt to the current frame rate.
+		// "Fake" loading delay to leave the time for the player to understand what is happening and for some resources to load.
 		setTimeout(() => {
 			this._history.playNext();
 		}, 1000);

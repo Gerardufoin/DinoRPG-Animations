@@ -305,8 +305,10 @@ The fighters sill alive end the fight and enact their given end of fight behavio
 
 ### Display (18)
 
-Used by MT to wait for assets to load and then remove the loading screen.
-Unused in this project for now.
+Removes the loading screen.
+If no Display action is given, a Display action is automatically added at the very beginning of the fight history.
+
+Choosing when to remove the loading screen can allow you to setup the scene before displaying it for the player, for example if you want all/some of the fighters to already be there or if you want to instantiate a castle
 
 ### Text (19)
 

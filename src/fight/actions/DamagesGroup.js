@@ -91,6 +91,14 @@ export class DamagesGroup extends State {
 	init() {
 		console.log(`Fighter ${this._attacker.id} uses skill ${Object.keys(Skill)[this._skill.skill]}`);
 		// TODO
+		// Temp
+		for (const t of this._targets) {
+			if (this._skill.skill === Skill.Heal) {
+				t.fighter.gainLife(t.damages);
+			} else if (this._skill.skill !== Skill.Vigne) {
+				t.fighter.damages(t.damages);
+			}
+		}
 		this.end();
 	}
 }

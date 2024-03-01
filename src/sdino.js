@@ -124,14 +124,6 @@ export class sdino extends Animator {
 		if (this._dinoInfos.glow) {
 			this.setBodyGlow(this._dinoInfos.glow);
 		}
-		this.applyStatus();
-	}
-
-	/**
-	 * Apply status to the dino. Only the "congel" status exists to my knowledge.
-	 */
-	applyStatus() {
-		//TODO
 	}
 
 	/**
