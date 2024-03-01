@@ -55,14 +55,14 @@ const fightVersion = [
 			{
 				action: DinoAnim.Fight.Action.AddCastle,
 				infos: {
-					life: 10,
+					life: 100,
 					maxLife: 100,
 					enclos: true,
 					ground: 1,
 					armor: 1,
 					repair: 1,
 					color: 0,
-					invisible: true
+					invisible: false
 				}
 			},
 			{
@@ -92,6 +92,56 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'grdien'
 				}
+			},
+			{
+				action: DinoAnim.Fight.Action.AttackCastle,
+				fid: 0,
+				damages: 10
+			},
+			{
+				action: DinoAnim.Fight.Action.AttackCastle,
+				fid: 0,
+				damages: 10
+			},
+			{
+				action: DinoAnim.Fight.Action.AttackCastle,
+				fid: 0,
+				damages: 10
+			},
+			{
+				action: DinoAnim.Fight.Action.AttackCastle,
+				fid: 0,
+				damages: 10
+			},
+			{
+				action: DinoAnim.Fight.Action.AttackCastle,
+				fid: 0,
+				damages: 10
+			},
+			{
+				action: DinoAnim.Fight.Action.AttackCastle,
+				fid: 0,
+				damages: 10
+			},
+			{
+				action: DinoAnim.Fight.Action.AttackCastle,
+				fid: 0,
+				damages: 10
+			},
+			{
+				action: DinoAnim.Fight.Action.AttackCastle,
+				fid: 0,
+				damages: 10
+			},
+			{
+				action: DinoAnim.Fight.Action.AttackCastle,
+				fid: 0,
+				damages: 10
+			},
+			{
+				action: DinoAnim.Fight.Action.AttackCastle,
+				fid: 0,
+				damages: 10
 			},
 			{
 				action: DinoAnim.Fight.Action.AttackCastle,
@@ -338,7 +388,7 @@ const fightVersion = [
 				lifeFx: lifeType
 			}*/
 		],
-		debug: true
+		debug: false
 	}
 ];
 //addFlashPreview(fightData[2], container);

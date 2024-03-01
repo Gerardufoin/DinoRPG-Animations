@@ -102,4 +102,21 @@ export class PixiHelper {
 			b: Math.round((col1.blue * c + col2.blue * (1 - c)) * 255)
 		});
 	}
+
+	/**
+	 * Set a percentage of color on a ColorMatrixFilter.
+	 * This is destructive and will override the rgb elements of the matrix.
+	 * @param {ColorMatrixFilter} filter The ColorMatrixFilter whose matrix will be modified.
+	 * @param {number} percent The percent of the given color to apply, between 0 and 100.
+	 * @param {Color | number | string} color The given color.
+	 */
+	static setPercentColor(filter, percent, color) {
+		if (!(color instanceof Color)) {
+			color = new Color(color);
+		}
+		percent /= 100;
+		filter.matrix[0] = 1 + color.red * percent;
+		filter.matrix[6] = 1 + color.green * percent;
+		filter.matrix[12] = 1 + color.blue * percent;
+	}
 }

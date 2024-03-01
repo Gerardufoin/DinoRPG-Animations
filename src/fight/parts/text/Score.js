@@ -29,7 +29,7 @@ export class Score extends Phys2D {
 	constructor(scene, x, y, value, hurt = true) {
 		const txt = new Text(value, {
 			fontFamily: 'Arial',
-			fontSize: 14 * (1 + (Math.abs(value) / 100) * 2),
+			fontSize: Math.floor(14 * (1 + (Math.abs(value) / 100) * 2)),
 			fontWeight: 'bold',
 			align: 'center',
 			fill: 0xffffff,

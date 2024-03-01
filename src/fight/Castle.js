@@ -11,6 +11,7 @@ import { ref } from '../gfx/references.js';
 import { Layers } from './DepthManager.js';
 import { IScene, SCENE_WIDTH } from './IScene.js';
 import { Worker } from './parts/castle/Worker.js';
+import { Smoke } from './parts/castle/Smoke.js';
 
 /**
  * Information relative to the castle.
@@ -62,10 +63,21 @@ export class Castle {
 	 */
 	_blinking = false;
 	/**
-	 * The amount of shaking affecting the Castle.
+	 * The strength of the blinking affecting the Castle.
+	 * Stronger blinking start with a higher percent of white and last longer.
 	 * @type {number}
 	 */
-	_shake = 0;
+	_blinkStrength = 0;
+	/**
+	 * The blink timer. Every time it reaches one, inverse _blinking and update _blinkFilter.
+	 * @type {number}
+	 */
+	_blinkTimer = 0;
+	/**
+	 * The Shake filter color.
+	 * @type {ColorMatrixFilter}
+	 */
+	_blinkFilter = new ColorMatrixFilter();
 
 	/**
 	 * The display of the Castle.
@@ -124,12 +136,12 @@ export class Castle {
 		}
 		this._skin.x = SCENE_WIDTH - 167;
 		this._scene.dm.addContainer(this._skin, Layers.Scene.CASTLE);
+		this._skin.filters = [];
 
 		if (infos.enclos) {
 			const enclos = new Asset(ref.castle.enclos);
 			enclos.x = SCENE_WIDTH - 82;
 			this._scene.dm.addContainer(enclos, Layers.Scene.CASTLE);
-			enclos.alpha = infos.invisible ? 0.5 : 1;
 		}
 
 		if (infos.repair > 0) {
@@ -157,12 +169,12 @@ export class Castle {
 			];
 			const filter = new ColorMatrixFilter();
 			filter.matrix = colors[(infos.color - 1) % colors.length];
-			this._skin.filters = [filter];
+			this._skin.filters.push(filter);
 		}
+		this._skin.filters.push(this._blinkFilter);
 
 		const portrait = new Asset(ref.castle.wall);
-		portrait.x = 28;
-		portrait.y = -15;
+		portrait.x = -25;
 		portrait.scale.set(0.4);
 		this._slot = new Slot(this._life, this._maxLife, null, null, portrait, this._scene.tm);
 		this._scene.addSlot(this._slot, false);
@@ -177,7 +189,7 @@ export class Castle {
 	 */
 	damage(damages, fighter) {
 		this.incLife(-damages);
-		this._shake = 30;
+		this._blinkStrength = 30;
 		this._blinking = true;
 
 		for (let i = 0; i < 20; ++i) {
@@ -221,6 +233,7 @@ export class Castle {
 			if (this._repairMan) {
 				this._repairMan.stopStriking = true;
 			}
+			this._skin.alpha = 1;
 
 			for (let i = 0; i < 80; ++i) {
 				this._scene.dm.addSprite(
@@ -238,7 +251,10 @@ export class Castle {
 			}
 
 			for (let i = 0; i < 14; ++i) {
-				// TODO fxCastleSmoke
+				this._scene.dm.addSprite(
+					new Smoke(this._scene, 300 + Math.random() * 80, Math.random() * 330 - 30, -Math.random() * 100),
+					Layers.Scene.FIGHTERS
+				);
 			}
 		}
 	}
@@ -248,14 +264,29 @@ export class Castle {
 	 * @param {Timer} timer The Fight's Timer, containing the elapsed time.
 	 */
 	update(timer) {
+		this._slot.update(timer);
 		if (this._repairMan) {
 			this._repairMan.updateAnim(timer);
 		}
 
-		if (this._shake) {
-			this._shake *= 0.5;
-			if (this._shake < 0.5) {
-				this._shake = 0;
+		if (this._blinkStrength) {
+			this._blinkTimer += timer.tmod;
+			if (this._blinkTimer >= 1) {
+				this._blinkTimer -= 1;
+				this._blinkStrength *= 0.5;
+				if (this._blinkStrength < 0.5) {
+					this._blinkStrength = 0;
+					this._blinkTimer = 0;
+					this._blinking = false;
+					PixiHelper.setPercentColor(this._blinkFilter, 0, 0xffffff);
+				} else {
+					PixiHelper.setPercentColor(
+						this._blinkFilter,
+						this._blinking ? 20 + this._blinkStrength : 0,
+						0xffffff
+					);
+					this._blinking = !this._blinking;
+				}
 			}
 		}
 	}

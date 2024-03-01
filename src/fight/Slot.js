@@ -251,10 +251,12 @@ export class Slot extends Container {
 		this.addChild(this._energyBar.bar);
 
 		this._portrait.addChild(portrait);
+		const masked = new Container();
 		const mask = new Asset(ref.scene.slot_mask);
-		this._portrait.addChild(mask);
-		this._portrait.mask = mask;
-		this.addChild(this._portrait);
+		masked.addChild(this._portrait);
+		masked.addChild(mask);
+		masked.mask = mask;
+		this.addChild(masked);
 	}
 
 	/**

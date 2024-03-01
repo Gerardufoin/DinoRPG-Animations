@@ -43,6 +43,7 @@ export class Dirt extends Dust {
 	 */
 	constructor(scene, x, y, vx, vz) {
 		super(scene, x, y);
+		// Create one more parent container to add the filter.
 		this._dust = this._root;
 		this._root = new Container();
 		this._root.addChild(this._dust);

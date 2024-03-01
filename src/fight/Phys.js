@@ -35,8 +35,18 @@ export class Phys extends Entity {
 	 * @type {number}
 	 */
 	_vsc = 0.0;
+	/**
+	 * Friction of the entity.
+	 * Slows down the velocity over time.
+	 * @type {number}
+	 */
 	_friction = 0.0;
-	_frv = 0.0;
+	/**
+	 * Friction of the entity's rotation velocity.
+	 * Slows down the rotation velocity over time.
+	 * @type {number}
+	 */
+	_rotationFrict = 0.0;
 	/**
 	 * @type {number | null}
 	 */
@@ -81,10 +91,10 @@ export class Phys extends Entity {
 			this._vr *= frict;
 		}
 		this._vz += this._weight * timer.tmod;
-		if (this._frv != 0) {
-			this._vr *= Math.pow(this._frv, timer.tmod);
+		if (this._rotationFrict != 0) {
+			this._vr *= Math.pow(this._rotationFrict, timer.tmod);
 		}
-		this._root.rotation += this._vr * timer.tmod;
+		this._root.angle += this._vr * timer.tmod;
 
 		this._x += this._vx * timer.tmod;
 		this._y += this._vy * timer.tmod;
