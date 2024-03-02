@@ -1,6 +1,7 @@
 // @ts-check
 // getEffect from https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Main.hx
 
+import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 
 export const FXEffect = {
@@ -24,8 +25,33 @@ export const FXEffect = {
 	Generate: 17
 };
 
+/**
+ * Creates a visual effect in the Scene, ranging from auras to invocations.
+ * TODO.
+ */
 export class Effect extends State {
-	constructor(scene, endCall) {
+	/**
+	 * The visual effect being played, value from the FxEffect enum.
+	 * @type {number}
+	 */
+	_fx;
+
+	/**
+	 * Creates the given visual effect in the Scene.
+	 * @param {Scene} scene The Scene where the State is happening.
+	 * @param {() => void} endCall The function to call at the end of the State, if any.
+	 * @param {number} fx The visual effect to spawn.
+	 */
+	constructor(scene, endCall, fx) {
 		super(scene, endCall);
+		this._fx = fx;
+	}
+
+	/**
+	 * Initialize the effect being used.
+	 */
+	init() {
+		console.log(`Playing visual effect ${Object.keys(FXEffect)[this._fx]}`);
+		this.end();
 	}
 }

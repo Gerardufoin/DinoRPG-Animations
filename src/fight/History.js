@@ -28,6 +28,7 @@ import { Talk } from './actions/Talk.js';
 import { Text } from './actions/Text.js';
 import { AttackCastle } from './actions/AttackCastle.js';
 import { Start } from './actions/Start.js';
+import { Effect } from './actions/Effect.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -55,7 +56,7 @@ export class History {
 
 	/**
 	 * The history of the fight.
-	 * @type {{action: number, args: object[]}[]}
+	 * @type {{action: number}[]}
 	 */
 	_history;
 	/**
@@ -96,14 +97,14 @@ export class History {
 			[Fight.Action.Regen]: 'regen',
 			[Fight.Action.Damages]: 'damages',
 			[Fight.Action.DamagesGroup]: 'damagesGroup',
-			[Fight.Action.Fx]: undefined,
+			[Fight.Action.Fx]: 'fx',
 			[Fight.Action.Dead]: 'dead',
 			[Fight.Action.Goto]: 'goToFighter',
 			[Fight.Action.Return]: 'return',
 			[Fight.Action.Pause]: 'pause',
 			[Fight.Action.Finish]: 'finish',
 			[Fight.Action.AddCastle]: 'addCastle',
-			[Fight.Action.TimeLimit]: undefined,
+			[Fight.Action.TimeLimit]: 'timeLimit',
 			[Fight.Action.AttackCastle]: 'attackCastle',
 			[Fight.Action.Display]: 'display',
 			[Fight.Action.Text]: 'text',
@@ -119,6 +120,9 @@ export class History {
 			[Fight.Action.Energy]: 'energy',
 			[Fight.Action.MaxEnergy]: 'maxEnergy'
 		};
+		if (!this._history.find((v) => v.action === Fight.Action.Display)) {
+			this._history.unshift({ action: Fight.Action.Display });
+		}
 	}
 
 	/**
@@ -321,6 +325,21 @@ export class History {
 	}
 
 	/**
+	 * A visual effect is played in the Scene.
+	 * @param {{action: number, fx: number}} action Action which triggered the call.
+	 * @returns {State} The Effect State.
+	 */
+	fx(action) {
+		return new Effect(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fx
+		);
+	}
+
+	/**
 	 * A Fighter dies.
 	 * @param {{action: number, fid: number}} action Action which triggered the call.
 	 * @returns {State} The Dead State.
@@ -370,10 +389,12 @@ export class History {
 
 	/**
 	 * Pause the history untile the given amount of frames have elapsed.
+	 * Decrease the remaining time of the time bar if one was instantiated.
 	 * @param {{action: number, time: number}} action Action which triggered the call.
 	 */
 	pause(action) {
 		this._fight.pause(action.time);
+		this._scene.reduceTimeBar(action.time);
 		if (!this._fight.paused) {
 			this.playNext();
 		}
@@ -401,6 +422,15 @@ export class History {
 	 */
 	addCastle(action) {
 		this._scene.createCastle(action.infos);
+		this.playNext();
+	}
+
+	/**
+	 * Adds the time bar to the Scene.
+	 * @param {{action: number, time: number}} action Action which triggered the call.
+	 */
+	timeLimit(action) {
+		this._scene.initTimeBar(action.time);
 		this.playNext();
 	}
 

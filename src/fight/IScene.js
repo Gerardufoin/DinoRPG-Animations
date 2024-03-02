@@ -8,11 +8,19 @@ import { TweenManager } from './TweenManager.js';
 import { LoadingScreen } from './parts/scene/LoadingScreen.js';
 import { PixiHelper } from '../display/PixiHelper.js';
 import { Timer } from './Timer.js';
+import { TimeBar } from './parts/scene/TimeBar.js';
 
 export const SCENE_MARGIN = 10;
 export const SCENE_WIDTH = 400;
 export const SCENE_FULL_WIDTH = 488;
 export const SCENE_HEIGHT = 300;
+
+export const GroundType = {
+	None: 0,
+	Dirt: 1,
+	Water: 2,
+	Rock: 3
+};
 
 /**
  * Interface for the Scene, containing the Depth Manager, Tween Manager and margins.
@@ -30,6 +38,11 @@ export class IScene extends Container {
 	 * @type {LoadingScreen}
 	 */
 	_loadingScreen;
+	/**
+	 * The time bar for timed fights.
+	 * @type {TimeBar}
+	 */
+	_timeBar;
 
 	/**
 	 * Scene DepthManager, containing all the different layers.
@@ -46,12 +59,19 @@ export class IScene extends Container {
 	/**
 	 * Define the margins of the scene.
 	 * Margins delimits the walking area of the scene.
+	 * @type {{top: number, bottom: number, right: number}}
 	 */
 	margins = {
 		top: 0,
 		bottom: 0,
 		right: 0
 	};
+	/**
+	 * Type of ground of the Scene.
+	 * Value of the GroundType enum.
+	 * @type {number}
+	 */
+	_groundType = GroundType.None;
 	/**
 	 * Offset from the right side of the Scene.
 	 * 132 if there is a Castle in the Scene, otherwise 0.
@@ -119,6 +139,29 @@ export class IScene extends Container {
 	}
 
 	/**
+	 * Initialize the time bar with the expected duration in frames.
+	 * @param {number} duration The duration of the time bar in frames.
+	 */
+	initTimeBar(duration) {
+		if (!this._timeBar) {
+			this._timeBar = new TimeBar(duration);
+			this._timeBar.x = 8;
+			this._timeBar.y = 4;
+			this.dm.addContainer(this._timeBar, Layers.Scene.INTER);
+		}
+	}
+
+	/**
+	 * Increase the elapsed time, decreasing the size of the time bar.
+	 * @param {number} time The time to add, in frame number.
+	 */
+	reduceTimeBar(time) {
+		if (this._timeBar) {
+			this._timeBar.decreaseTime(time);
+		}
+	}
+
+	/**
 	 * Adds a Toy to the scene.
 	 * @param {Sprite} toy The toy to add.
 	 * @param {string} name The type of toy being added. Used to remove them later on.
@@ -159,7 +202,7 @@ export class IScene extends Container {
 	/**
 	 * Makes the Scene shake.
 	 * @param {number} force The strength of the Scene displacement.
-	 * @param {number} frict The friction of the shaking, reducing the strengh over time.
+	 * @param {number} frict The friction of the shaking, reducing the strength over time.
 	 * @param {number} speed The speed of the shaking, impacting how often the shake happens.
 	 */
 	fxShake(force = 8, frict = 0.75, speed = 1) {

@@ -1,9 +1,11 @@
 // @ts-check
 
 import { Fighter } from '../Fighter.js';
+import { GroundType } from '../IScene.js';
 import { EntranceEffect } from '../actions/AddFighter.js';
 import { DamagesEffect } from '../actions/Damages.js';
 import { Skill } from '../actions/DamagesGroup.js';
+import { FXEffect } from '../actions/Effect.js';
 import { EndBehaviour } from '../actions/Finish.js';
 import { GotoEffect } from '../actions/GotoFighter.js';
 import { Notifications } from '../actions/Notification.js';
@@ -66,7 +68,7 @@ export class MTConverter {
 			_dojo: null,
 			_mtop: etData.top ?? 0,
 			_bg: `/img/fight/${etData.bg}.jpg`,
-			_ground: null,
+			_ground: MTConverter.getGroundType(etData.ground),
 			_debrief: `javascript:_.toggleFlash('debrief', -85)`,
 			_history: MTConverter.convertHistory(etData),
 			_smonster: '/swf/smonster.swf?v=26'
@@ -75,6 +77,20 @@ export class MTConverter {
 			data._history.unshift(MTConverter.convertHDisplay([]));
 		}
 		return data;
+	}
+
+	/**
+	 * Convert a GroupType enum value into a valid ground value for MT data.
+	 * @param {number} type The type of ground of the Scene.
+	 * @returns {string} The corresponding MT ground type.
+	 */
+	static getGroundType(type) {
+		const mapping = {
+			[GroundType.Dirt]: 'dirt',
+			[GroundType.Water]: 'water',
+			[GroundType.Rock]: 'rock'
+		};
+		return mapping[type] ?? null;
 	}
 
 	/**
@@ -656,8 +672,122 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHFx(obj) {
-		console.log('Conversion for "_HFx" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HFx',
+			args: [MTConverter.convertFXEffect(obj)]
+		};
+	}
+
+	/**
+	 * Convert an FXEffect enum into a _SuperEffect from MT.
+	 * @param {object} effect DA FXEffect enum.
+	 * @returns {{enum: string, value: string, args: Array}} The corresponding _SuperEffect enum.
+	 */
+	static convertFXEffect(effect) {
+		const mapping = {
+			[FXEffect.Env7]: '_SFEnv7',
+			[FXEffect.Aura]: '_SFAura',
+			[FXEffect.Snow]: '_SFSnow',
+			[FXEffect.Swamp]: '_SFSwamp',
+			[FXEffect.Cloud]: '_SFCloud',
+			[FXEffect.Focus]: '_SFFocus',
+			[FXEffect.Default]: '_SFDefault',
+			[FXEffect.Attach]: '_SFAttach',
+			[FXEffect.AttachAnim]: '_SFAttachAnim',
+			[FXEffect.Anim]: '_SFAnim',
+			[FXEffect.Hypnose]: '_SFHypnose',
+			[FXEffect.Ray]: '_SFRay',
+			[FXEffect.Speed]: '_SFSpeed',
+			[FXEffect.HeadOrTail]: '_SFRandom',
+			[FXEffect.Leaf]: '_SFLeaf',
+			[FXEffect.MudWall]: '_SFMudWall',
+			[FXEffect.Blink]: '_SFBlink',
+			[FXEffect.Generate]: '_SFGenerate'
+		};
+		const ret = {
+			enum: '_SuperEffect',
+			value: mapping[effect.fx],
+			args: []
+		};
+		switch (effect.fx) {
+			case FXEffect.Env7:
+				ret.args.push(effect.frame);
+				ret.args.push(effect.remove);
+				break;
+			case FXEffect.Aura:
+				ret.args.push(effect.fid);
+				ret.args.push(effect.color);
+				ret.args.push(effect.id);
+				if (effect.type !== undefined) {
+					ret.fx = '_SFAura2';
+					ret.args.push(effect.type);
+				}
+				break;
+			case FXEffect.Snow:
+				ret.args.push(effect.fid);
+				ret.args.push(effect.id);
+				ret.args.push(effect.color);
+				ret.args.push(effect.rainbowPercent);
+				break;
+			case FXEffect.Swamp:
+			case FXEffect.Default:
+			case FXEffect.Ray:
+				ret.args.push(effect.fid);
+				break;
+			case FXEffect.Cloud:
+				ret.args.push(effect.fid);
+				ret.args.push(effect.id);
+				ret.args.push(effect.color);
+				break;
+			case FXEffect.Focus:
+				ret.args.push(effect.fid);
+				ret.args.push(effect.color);
+				break;
+			case FXEffect.Anim:
+			case FXEffect.Attach:
+				ret.args.push(effect.fid);
+				ret.args.push(effect.link);
+				break;
+			case FXEffect.AttachAnim:
+				ret.args.push(effect.fid);
+				ret.args.push(effect.link);
+				ret.args.push(effect.frame);
+				break;
+			case FXEffect.Hypnose:
+				ret.args.push(effect.fid);
+				ret.args.push(effect.tid);
+				break;
+			case FXEffect.Speed:
+				ret.args.push(effect.fid);
+				ret.args.push(effect.tids);
+				break;
+			case FXEffect.HeadOrTail:
+				ret.args.push(effect.fid);
+				ret.args.push(effect.frame);
+				ret.args.push(effect.result);
+				break;
+			case FXEffect.Leaf:
+				ret.args.push(effect.fid);
+				ret.args.push(effect.link);
+				break;
+			case FXEffect.MudWall:
+				ret.args.push(effect.fid);
+				ret.args.push(effect.remove);
+				break;
+			case FXEffect.Blink:
+				ret.args.push(effect.fid);
+				ret.args.push(effect.color);
+				ret.args.push(effect.alpha);
+				break;
+			case FXEffect.Generate:
+				ret.args.push(effect.fid);
+				ret.args.push(effect.color);
+				ret.args.push(effect.strength);
+				ret.args.push(effect.radius);
+				break;
+		}
+		return ret;
 	}
 
 	/**
@@ -716,8 +846,11 @@ export class MTConverter {
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertHTimeLimit(obj) {
-		console.log('Conversion for "_HTimeLimit" not done yet.');
-		return undefined;
+		return {
+			enum: '_History',
+			value: '_HTimeLimit',
+			args: [obj.time]
+		};
 	}
 
 	/**

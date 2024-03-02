@@ -39,12 +39,14 @@ export class Scene extends IScene {
 	 * Create a new scene where the fight will happen.
 	 * @param {string} background The key to the background reference picture.
 	 * @param {{top: number, bottom: number, right: number}} margins Set the margins for the walkable area.
+	 * @param {number} ground The type of ground for the Scene.
 	 * @param {boolean} debug If true, the scene starts in debug mode. False by default.
 	 */
-	constructor(background, margins, debug = false) {
+	constructor(background, margins, ground, debug = false) {
 		super();
 		this.debugMode = debug;
 		this.margins = margins;
+		this._groundType = ground;
 		this._depthManager = new DepthManager(Object.keys(Layers.Scene).length);
 		this.addChild(this._depthManager);
 		this.setBackground(background);
@@ -88,7 +90,9 @@ export class Scene extends IScene {
 		this.dm.update(timer);
 		this.updateShake(timer);
 		this.updateWalk(timer);
-		//updateTimeBar();
+		if (this._timeBar) {
+			this._timeBar.update(timer);
+		}
 		if (this._continueArrow.visible) {
 			this._continueArrow.update(timer);
 		}

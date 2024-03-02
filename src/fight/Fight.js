@@ -112,7 +112,6 @@ export class Fight {
 		} else {
 			this._data = data;
 		}
-		//console.log(JSON.stringify(data, null, 4));
 		this._renderer = new Renderer({
 			backgroundColor: 0xfce3bb,
 			width: 488,
@@ -126,6 +125,7 @@ export class Fight {
 				bottom: this._data.bottom ?? 0,
 				right: this._data.right ?? 0
 			},
+			this._data.ground ?? 0,
 			data.debug
 		);
 

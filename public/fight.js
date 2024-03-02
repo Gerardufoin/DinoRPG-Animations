@@ -51,6 +51,7 @@ const fightVersion = [
 		bg: 's_dnv',
 		top: 120,
 		bottom: 20,
+		ground: 0,
 		history: [
 			{
 				action: DinoAnim.Fight.Action.AddCastle,

@@ -353,7 +353,7 @@ export let parts = {
 						distance: 1,
 						color: '#FF9900',
 						quality: 1,
-						strengh: 1
+						strength: 1
 					}
 				},
 				// 201

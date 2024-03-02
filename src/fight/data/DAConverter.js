@@ -9,6 +9,7 @@ import { EndBehaviour } from '../actions/Finish.js';
 import { GotoEffect } from '../actions/GotoFighter.js';
 import { FXEffect } from '../actions/Effect.js';
 import { Notifications } from '../actions/Notification.js';
+import { GroundType } from '../IScene.js';
 
 /**
  * Convert MT fight data into DA fight data.
@@ -62,6 +63,7 @@ export class DAConverter {
 			top: mtData._mtop ?? 0,
 			bottom: mtData._mbottom ?? 0,
 			right: mtData._mright ?? 0,
+			ground: DAConverter.getGroundType(mtData._ground),
 			history: DAConverter.convertHistory(mtData)
 		};
 		return data;
@@ -79,6 +81,20 @@ export class DAConverter {
 			return match ? match[1] : undefined;
 		}
 		return undefined;
+	}
+
+	/**
+	 * Convert the ground type value from MT into a GroupType enum value.
+	 * @param {string} groundType The type of ground of the Scene.
+	 * @returns {number} The GroupType enum value.
+	 */
+	static getGroundType(groundType) {
+		const mapping = {
+			dirt: GroundType.Dirt,
+			water: GroundType.Water,
+			rock: GroundType.Rock
+		};
+		return mapping[groundType] ?? GroundType.None;
 	}
 
 	/**
@@ -736,8 +752,7 @@ export class DAConverter {
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHTimeLimit(args) {
-		console.log('Conversion for "_HTimeLimit" not done yet.');
-		return { action: Fight.Action.TimeLimit };
+		return { action: Fight.Action.TimeLimit, time: args[0] };
 	}
 
 	/**
