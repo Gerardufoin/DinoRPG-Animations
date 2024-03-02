@@ -73,6 +73,13 @@ export class IScene extends Container {
 	 */
 	_groundType = GroundType.None;
 	/**
+	 * Get the ground type of the IScene.
+	 * @type {number}
+	 */
+	get groundType() {
+		return this._groundType;
+	}
+	/**
 	 * Offset from the right side of the Scene.
 	 * 132 if there is a Castle in the Scene, otherwise 0.
 	 */

@@ -27,8 +27,9 @@ import { Explosion } from './parts/life/Explosion.js';
 import { StatusDisplay } from './StatusDisplay.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { Light } from './parts/life/Light.js';
-import { Layers } from './DepthManager.js';
-import { IScene } from './IScene.js';
+import { DepthManager, Layers } from './DepthManager.js';
+import { GroundType, IScene } from './IScene.js';
+import { WaterOnde } from './parts/scene/WaterOnde.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -88,18 +89,18 @@ export class Fighter extends Phys {
 		Dazzled: 13,
 		Stun: 14
 	};
-	static LAYERS = {
-		DP_BACK: 0,
-		DP_BODY: 1,
-		DP_STATUS: 2,
-		DP_FRONT: 3,
-		DP_STATUS_ICON: 4
-	};
 	/**
-	 * Layers of the Fighters. Each keys of Fighter.LAYERS generate a layer at initialisation.
-	 * @type {{container: Container, sprites: Sprite[]}[]}
+	 * The depth manager of the Fighter, managing its layers.
+	 * @type {DepthManager}
 	 */
-	_layers = [];
+	_depthManager;
+	/**
+	 * Get the Depth Manager of the Fighter.
+	 * @type {DepthManager}
+	 */
+	get dm() {
+		return this._depthManager;
+	}
 
 	/**
 	 * The PixiJS representation of the Fighter.
@@ -306,6 +307,16 @@ export class Fighter extends Phys {
 		return this._flLand;
 	}
 	/**
+	 * The front part of the water onde, going above the Fighter.
+	 * @type {Sprite}
+	 */
+	_waterOndeFront;
+	/**
+	 * The back part of the water onde, going behind the Fighter.
+	 * @type {Sprite}
+	 */
+	_waterOndeBack;
+	/**
 	 * While greated than 0, the Fighter will generate drips each frame.
 	 * @type {number}
 	 */
@@ -436,13 +447,8 @@ export class Fighter extends Phys {
 		this._size = Math.pow(fInfos.scale ?? 1, 0.65);
 
 		this.body = body;
-		for (const k in Fighter.LAYERS) {
-			this._layers.push({
-				container: new Container(),
-				sprites: []
-			});
-			this.body.addChild(this._layers[Fighter.LAYERS[k]].container);
-		}
+		this._depthManager = new DepthManager(Object.keys(Layers.Fighter).length);
+		this.body.addChild(this._depthManager);
 
 		if (this.isDino) {
 			const dino = new sdino({
@@ -477,14 +483,15 @@ export class Fighter extends Phys {
 		}
 		this._skin.addChild(this._animator);
 		this._skin.filters = [];
-		this._layers[Fighter.LAYERS.DP_BODY].container.addChild(this._skin);
+		this.dm.addContainer(this._skin, Layers.Fighter.BODY);
 		this.setSide(fInfos.side);
 
-		this._layers[Fighter.LAYERS.DP_STATUS_ICON].container.addChild(this._statusDisplay);
+		this.dm.addContainer(this._statusDisplay, Layers.Fighter.STATUS_ICON);
 
 		this._ray = this._width * 0.5;
 		this.dropShadow();
 		this._force = 10 * this._size;
+		this._friction = 0.9;
 
 		// Callbacks
 		this._animator.registerCallback('fxShake', (anim, args) => {
@@ -493,6 +500,8 @@ export class Fighter extends Phys {
 		this._animator.registerCallback('fxAttach', (anim, args) => {
 			this.fxAttach(args[0], args[1], args[2], args[3]);
 		});
+		//Reflect.setField( skin,"_fxAttachInside",fxAttachInside ); TODO
+		//Reflect.setField( skin,"_fxAttachScene",fxAttachScene );
 
 		// Add poison filter to animator
 		if (!this._animator.filters) {
@@ -500,44 +509,24 @@ export class Fighter extends Phys {
 		}
 		this._animator.filters.push(this._poisonColorFilter);
 
+		// If the Fighter is static, we freeze it (prevent it from walking) and remove its force (prevent it from pushing).
 		if (this.haveProp(Fighter.Property.Static)) {
 			this._flFreeze = true;
 			this._force = null;
 		}
 
-		/* Notes:
-		if(haveProp(_PDark)) skinDark(); ?
+		// if(haveProp(_PDark)) skinDark(); TODO
 
-		*/
-
-		/*
-
-		// BIND FX FUNC
-		Reflect.setField( skin,"_fxAttach",fxAttach );
-		Reflect.setField( skin,"_fxAttachInside",fxAttachInside );
-		Reflect.setField( skin,"_fxAttachScene",fxAttachScene );
-
-
-		switch(Scene.me.groundType) {
-			case "water":
-				var h = -5;
-				mcOndeFront = bdm.attach("mcWaterOnde",DP_FRONT);
-				mcOndeFront._xscale = ray*2;
-				mcOndeFront._yscale = ray;
-				mcOndeFront._y = h;
-				mcOndeBack = bdm.attach("mcWaterOnde",DP_BACK);
-				mcOndeBack._xscale = mcOndeFront._xscale;
-				mcOndeBack._yscale = -mcOndeFront._yscale;
-				mcOndeBack._y = h;
-
-			default:
-
+		// Creates the water onde if the Scene has water as ground.
+		if (this._scene.groundType === GroundType.Water) {
+			this._waterOndeFront = new WaterOnde(0, -5, (this._ray * 2) / 100, this._ray / 100);
+			this.dm.addSprite(this._waterOndeFront, Layers.Fighter.FRONT);
+			this._waterOndeBack = new WaterOnde(0, -5, (this._ray * 2) / 100, -this._ray / 100);
+			this.dm.addSprite(this._waterOndeBack, Layers.Fighter.BACK);
+			this.setGroundFx(false);
 		}
-		fxJump();
-		*/
 
-		this._friction = 0.9;
-
+		// If the Fighter is a dino, adds a slot with its portrait.
 		if (this._isDino) {
 			const portrait = new sdino({
 				data: fInfos.gfx,
@@ -553,38 +542,10 @@ export class Fighter extends Phys {
 			this._scene.addSlot(this._slot, this.side);
 		}
 
+		// Debug mode, show the colliders and origin.
 		if (this._scene.debugMode) {
 			this.debugShowOrigin();
 		}
-	}
-
-	/**
-	 * Adds a Sprite to the specific layer.
-	 * The Sprite will then be updated when the Fighter will be updated.
-	 * @param {Sprite} sprite The Sprite to add.
-	 * @param {number} layer The Fighter.LAYERS where to add the Sprite.
-	 */
-	addSprite(sprite, layer) {
-		this._layers[layer].container.addChild(sprite.getRootContainer());
-		this._layers[layer].sprites.push(sprite);
-	}
-
-	/**
-	 * Adds a PixiJS Container to a specific layer.
-	 * @param {Container} cont The Container to add to the layer.
-	 * @param {number} layer The layer where to add the Container.
-	 */
-	addContainer(cont, layer) {
-		this._layers[layer].container.addChild(cont);
-	}
-
-	/**
-	 * Removes a PixiJS Container from a specific layer.
-	 * @param {Container} cont The Container to remove from the layer.
-	 * @param {number} layer The layer from which to remove the Container.
-	 */
-	removeContainer(cont, layer) {
-		this._layers[layer].container.removeChild(cont);
 	}
 
 	/**
@@ -594,16 +555,7 @@ export class Fighter extends Phys {
 	update(timer) {
 		super.update(timer);
 		this._animator.update(timer.deltaTimeMS);
-		this._layers.map((l) => {
-			l.sprites = l.sprites.filter((s) => {
-				s.update(timer);
-				if (s.isDeleted) {
-					l.container.removeChild(s.getRootContainer());
-					return false;
-				}
-				return true;
-			});
-		});
+		this.dm.update(timer);
 		if (this._lockTimer > 0) {
 			this._lockTimer -= timer.tmod;
 		}
@@ -968,17 +920,17 @@ export class Fighter extends Phys {
 			switch (s) {
 				case Fighter.Status.Flames:
 					if (spawn) {
-						this.addSprite(
+						this.dm.addSprite(
 							new Flameche(this._scene, (Math.random() * 2 - 1) * 15, -Math.random() * 20, 0, 0),
-							Fighter.LAYERS.DP_BODY
+							Layers.Fighter.BODY
 						);
 					}
 					break;
 				case Fighter.Status.Burn:
 					if (spawn) {
-						this.addSprite(
+						this.dm.addSprite(
 							new Flameche(this._scene, (Math.random() * 2 - 1) * 15, -Math.random() * 20, 0, 0, true),
-							Fighter.LAYERS.DP_BODY
+							Layers.Fighter.BODY
 						);
 					}
 					break;
@@ -1035,7 +987,7 @@ export class Fighter extends Phys {
 					break;
 				case Fighter.Status.Heal:
 					if (spawn) {
-						this.addSprite(
+						this.dm.addSprite(
 							new Light(
 								this._scene,
 								(Math.random() * 2 - 1) * 17,
@@ -1045,7 +997,7 @@ export class Fighter extends Phys {
 								10 + Math.random() * 10,
 								true
 							),
-							Fighter.LAYERS.DP_BODY
+							Layers.Fighter.BODY
 						);
 					}
 					break;
@@ -1061,8 +1013,10 @@ export class Fighter extends Phys {
 	 * @param {boolean} v If true, the ground fx are visible. Otherwise they are not.
 	 */
 	setGroundFx(v) {
-		//mcOndeFront._visible = v; TODO
-		//mcOndeBack._visible = v;
+		if (this._waterOndeFront) {
+			this._waterOndeFront.getRootContainer().visible = v;
+			this._waterOndeBack.getRootContainer().visible = v;
+		}
 	}
 
 	/**
@@ -1349,7 +1303,7 @@ export class Fighter extends Phys {
 				this.intSide,
 				Math.random() * sleep
 			);
-			this.addSprite(flameche, Fighter.LAYERS.DP_FRONT);
+			this.dm.addSprite(flameche, Layers.Fighter.FRONT);
 		}
 	}
 
@@ -1380,7 +1334,7 @@ export class Fighter extends Phys {
 	fxLightning(max) {
 		for (let i = 0; i < max; ++i) {
 			const bolt = new Bolt(this._scene, (Math.random() * 2 - 1) * this._ray, -Math.random() * this._height);
-			this.addSprite(bolt, Fighter.LAYERS.DP_FRONT);
+			this.dm.addSprite(bolt, Layers.Fighter.FRONT);
 		}
 	}
 
@@ -1397,7 +1351,7 @@ export class Fighter extends Phys {
 				-(2 + Math.random() * 3) * this.intSide,
 				0
 			);
-			this.addSprite(wind, Fighter.LAYERS.DP_FRONT);
+			this.dm.addSprite(wind, Layers.Fighter.FRONT);
 		}
 	}
 
@@ -1438,7 +1392,7 @@ export class Fighter extends Phys {
 				-(this.height + 5 + Math.random() * 16),
 				-((Math.random() * 0.5 + 0.5) * this.height)
 			);
-			this.addSprite(acid, Fighter.LAYERS.DP_FRONT);
+			this.dm.addSprite(acid, Layers.Fighter.FRONT);
 		}
 	}
 
@@ -1448,9 +1402,9 @@ export class Fighter extends Phys {
 	 */
 	fxHeal(max) {
 		for (let i = 0; i < max; ++i) {
-			this.addSprite(
+			this.dm.addSprite(
 				new Heal(this._scene, (Math.random() * 2 - 1) * this.ray, -Math.random() * this._height),
-				Fighter.LAYERS.DP_FRONT
+				Layers.Fighter.FRONT
 			);
 		}
 	}
@@ -1460,7 +1414,7 @@ export class Fighter extends Phys {
 	 * @param {number} size The size of the skull particle, 1 by default.
 	 */
 	fxSkull(size = 1) {
-		this.addSprite(new Skull(this._scene, 0, -this._height * 0.5, size), Fighter.LAYERS.DP_FRONT);
+		this.dm.addSprite(new Skull(this._scene, 0, -this._height * 0.5, size), Layers.Fighter.FRONT);
 	}
 
 	/**
@@ -1469,9 +1423,9 @@ export class Fighter extends Phys {
 	 */
 	fxExplosion(max) {
 		for (let i = 0; i < max; ++i) {
-			this.addSprite(
+			this.dm.addSprite(
 				new Explosion(this._scene, (Math.random() * 2 - 1) * this.ray, -Math.random() * this._height),
-				Fighter.LAYERS.DP_FRONT
+				Layers.Fighter.FRONT
 			);
 		}
 	}

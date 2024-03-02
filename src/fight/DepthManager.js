@@ -18,6 +18,13 @@ export const Layers = {
 		COLUMNS: 8,
 		LOADING: 9,
 		DEBUG: 10
+	},
+	Fighter: {
+		BACK: 0,
+		BODY: 1,
+		STATUS: 2,
+		FRONT: 3,
+		STATUS_ICON: 4
 	}
 };
 

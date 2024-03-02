@@ -15,6 +15,7 @@ import { DownNotification } from '../parts/notifications/DownNotification.js';
 import { UpNotification } from '../parts/notifications/UpNotification.js';
 import { InitUpNotification } from '../parts/notifications/InitUpNotification.js';
 import { StrongNotification } from '../parts/notifications/StrongNotification.js';
+import { Layers } from '../DepthManager.js';
 
 export const Notifications = {
 	Slow: 0,
@@ -78,7 +79,7 @@ export class Notification extends State {
 				const n = this.createDisplay(notif);
 				n.filters = [this._blurFilter];
 				n.y = -f.height / 2;
-				f.addContainer(n, Fighter.LAYERS.DP_FRONT);
+				f.dm.addContainer(n, Layers.Fighter.FRONT);
 				this._fighters.push({
 					fighter: f,
 					notification: n
@@ -172,7 +173,7 @@ export class Notification extends State {
 			}
 			if (this._coef === 1) {
 				for (const f of this._fighters) {
-					f.fighter.removeContainer(f.notification, Fighter.LAYERS.DP_FRONT);
+					f.fighter.dm.removeContainer(f.notification, Layers.Fighter.FRONT);
 				}
 				this.end();
 			}

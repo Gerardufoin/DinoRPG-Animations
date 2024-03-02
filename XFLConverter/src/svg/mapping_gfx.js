@@ -69,6 +69,7 @@ export let mapping_gfx = {
 	199: 'toys/astone',
 	201: 'toys/amulst',
 	203: 'toys/wpure',
+	206: 'fx/star',
 	584: 'scene/click',
 	586: 'status/slow',
 	589: 'status/quick',
@@ -97,6 +98,8 @@ export let mapping_gfx = {
 	706: 'fx/light',
 	708: 'fx/healing',
 	717: 'parts/ghost',
+	725: 'fx/stone',
+	730: 'fx/water_onde',
 	763: 'fx/acid_ball',
 	765: 'fx/acid_smoke',
 	//773: 'fx/skull', // Done manually, do not uncomment

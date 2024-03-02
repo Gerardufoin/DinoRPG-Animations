@@ -9,7 +9,7 @@ import { Timer } from './Timer.js';
 import { ContinueArrow } from './parts/ContinueArrow.js';
 import { Castle } from './Castle.js';
 import { DepthManager, Layers } from './DepthManager.js';
-import { IScene, SCENE_FULL_WIDTH, SCENE_HEIGHT, SCENE_MARGIN, SCENE_WIDTH } from './IScene.js';
+import { GroundType, IScene, SCENE_FULL_WIDTH, SCENE_HEIGHT, SCENE_MARGIN, SCENE_WIDTH } from './IScene.js';
 import { LoadingScreen } from './parts/scene/LoadingScreen.js';
 
 /**
@@ -231,16 +231,23 @@ export class Scene extends IScene {
 	}
 
 	/**
-	 * Generate a particle based on the type of terrain of the current scene.
+	 * Generate a particle based on the type of ground of the current scene and if the caller is jumping or not.
 	 * @param {number} x The x coordinate of the spawned particle.
 	 * @param {number} y The y coordinate of the spawned particle.
 	 * @param {number} vx The initial x velocity of the particle.
 	 * @param {number} vy The initial y velocity of the particle.
 	 * @param {number} vz The initial z velocity of the particle.
-	 * @param {boolean} flJump Dunno yet. Related to jumping.
+	 * @param {boolean} flJump Is the call related to a jump action? Used for spawning rocks.
 	 */
 	genGroundPart(x, y, vx = 0, vy = 0, vz = 0, flJump = false) {
-		// TODO
+		switch (this._groundType) {
+			case GroundType.Dirt:
+				break;
+			case GroundType.Water:
+				break;
+			case GroundType.Rock:
+				break;
+		}
 	}
 
 	/**
