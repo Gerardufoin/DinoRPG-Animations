@@ -190,55 +190,72 @@ A fighter attacks another fighter and deals a certain amount of damages.
 | IntangBreak (7)  | No visual.                                                                                              |
 | Missed (8)       | No visual.                                                                                              |
 
-### DamagesGroup (8)
+### Skill (8)
 
-A fighter attacks using a skill.
+A skill is used. It can either be used by a specific Fighter with specific targets, or be an effect like an invocation.
+
+TODO
 
 #### Properties
 
-1. fid - Number - The ID of the attacking fighter.
-2. targets - {id: Number, damages: Number}[] - Array of objects comprised of the ID of each target with the damage received.
-3. skill - Number - The Skill enum used by the fighter.
+1. skill - Number - The SkillList enum of the skill being used.
 
-| Skill               | Description                                                                                                                                                            |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Todo (0)            | Placeholder skill in case a new skill is developped.                                                                                                                   |
-| Fireball (1)        |                                                                                                                                                                        |
-| Blow (2)            |                                                                                                                                                                        |
-| Lava (3)            |                                                                                                                                                                        |
-| Meteor (4)          |                                                                                                                                                                        |
-| Vigne (5)           |                                                                                                                                                                        |
-| WaterCanon (6)      |                                                                                                                                                                        |
-| Shower (7)          | May define the "type" property. Not sure why yet.                                                                                                                      |
-| LevitRay (8)        |                                                                                                                                                                        |
-| Lightning (9)       |                                                                                                                                                                        |
-| Crepuscule (10)     |                                                                                                                                                                        |
-| Mistral (11)        |                                                                                                                                                                        |
-| Tornade (12)        |                                                                                                                                                                        |
-| Disc (13)           |                                                                                                                                                                        |
-| Hole (14)           |                                                                                                                                                                        |
-| Ice (15)            |                                                                                                                                                                        |
-| Projectile (16)     | Needs to define "fx" for the appearance of the projectile, "anim" for the animation of the fighter firing the projectile, and "speed" for the speed of the projectile. |
-| Tremor (17)         |                                                                                                                                                                        |
-| JumpAttack (18)     | Needs to define "fx" for the fx to play at landing.                                                                                                                    |
-| ChainLightning (19) |                                                                                                                                                                        |
-| Heal (20)           | Needs to define "type". Type 0 spawns leaves fx, type 1 does not.                                                                                                      |
-| Charge (21)         |                                                                                                                                                                        |
-| Anim (22)           | Needs to define "anim" for the animation to play.                                                                                                                      |
-| Invoc (23)          | Needs to define "anim" for the invocation to play.                                                                                                                     |
-| Sylfide (24)        |                                                                                                                                                                        |
-| Rafale (25)         |                                                                                                                                                                        |
-| Deluge (26)         | Needs to define "fx" for the droplets, "power" for the strength, and "speed" for the speed.                                                                            |
+| Skill               | Description                                          |
+| ------------------- | ---------------------------------------------------- |
+| Todo (0)            | Placeholder skill in case a new skill is developped. |
+| Fireball (1)        |                                                      |
+| Blow (2)            |                                                      |
+| Lava (3)            |                                                      |
+| Meteor (4)          |                                                      |
+| Vigne (5)           |                                                      |
+| WaterCanon (6)      |                                                      |
+| Shower (7)          |                                                      |
+| LevitRay (8)        |                                                      |
+| Lightning (9)       |                                                      |
+| Crepuscule (10)     |                                                      |
+| Mistral (11)        |                                                      |
+| Tornade (12)        |                                                      |
+| Disc (13)           |                                                      |
+| Hole (14)           |                                                      |
+| Ice (15)            |                                                      |
+| Projectile (16)     |                                                      |
+| Tremor (17)         |                                                      |
+| JumpAttack (18)     |                                                      |
+| ChainLightning (19) |                                                      |
+| Heal (20)           |                                                      |
+| Charge (21)         |                                                      |
+| Anim (22)           |                                                      |
+| Invoc (23)          |                                                      |
+| Sylfide (24)        |                                                      |
+| Rafale (25)         |                                                      |
+| Deluge (26)         |                                                      |
+| Env7 (27)           |                                                      |
+| Aura (28)           |                                                      |
+| Snow (29)           |                                                      |
+| Swamp (30)          |                                                      |
+| Cloud (31)          |                                                      |
+| Focus (32)          |                                                      |
+| Default (33)        |                                                      |
+| Attach (34)         |                                                      |
+| AttachAnim (35)     |                                                      |
+| Hypnose (36)        |                                                      |
+| Ray (37)            |                                                      |
+| Speed (38)          |                                                      |
+| HeadOrTail (39)     |                                                      |
+| Leaf (40)           |                                                      |
+| MudWall (41)        |                                                      |
+| Blink (42)          |                                                      |
+| Generate (43)       |                                                      |
 
-4. type? - Number - Chose a version of the skill for Shower2 or Heal.
-5. fx? - String - Chose an fx to play for Projectile, JumpAttack or Deluge.
-6. anim? - String - Play a specific animation for Anim, Projectile, or Invoc.
-7. speed? - Number - Set the speed of the skill for Projectile or Deluge.
-8. power? - Number - Set the strength of the skill for Deluge.
+4. details - Object - The parameters of the skill, with the following possible properties based on the chosen skill.
 
-### Fx (9)
+| Parameters | Type                          | Description                                                |
+| ---------- | ----------------------------- | ---------------------------------------------------------- |
+| fid?       | number                        | The ID of the Fighter using the skill, if any.             |
+| targets?   | { id: number, life?: number } | The targets of the skill and the life gained/losed, if any |
+| TODO       |                               |                                                            |
 
-### Dead (10)
+### Dead (9)
 
 A fighter dies.
 
@@ -246,7 +263,7 @@ A fighter dies.
 
 1. fid - Number - The ID of the dying fighter.
 
-### Goto (11)
+### Goto (10)
 
 Moves a fighter in range of another fighter with the given movement type.
 
@@ -265,7 +282,7 @@ Moves a fighter in range of another fighter with the given movement type.
 
 5. shadeColor? - {col1?: number, col2?: number} - The colors for the shades created when selecting GotoEffect.Special. If undefined, the shade will be pure black.
 
-### Return (12)
+### Return (11)
 
 Makes the selected fighter go back to its first saved position since the last time Return was called.
 
@@ -273,7 +290,7 @@ Makes the selected fighter go back to its first saved position since the last ti
 
 1. fid - Number - The ID of the returning fighter.
 
-### Pause (13)
+### Pause (12)
 
 Pause the history for a given amount of frames.
 
@@ -281,7 +298,7 @@ Pause the history for a given amount of frames.
 
 1. time - Number - Number of frames until the next action in the history is played.
 
-### Finish (14)
+### Finish (13)
 
 The fighters sill alive end the fight and enact their given end of fight behavior.
 
@@ -297,24 +314,24 @@ The fighters sill alive end the fight and enact their given end of fight behavio
 | Escape (2)  | The fighters exit from their side of the scene.         |
 | Guard (3)   | The fighters are marked as dead and switch direction.   |
 
-### AddCastle (15)
+### AddCastle (14)
 
-### TimeLimit (16)
+### TimeLimit (15)
 
-### CastleAttack (17)
+### CastleAttack (16)
 
-### Display (18)
+### Display (17)
 
 Removes the loading screen.
 If no Display action is given, a Display action is automatically added at the very beginning of the fight history.
 
 Choosing when to remove the loading screen can allow you to setup the scene before displaying it for the player, for example if you want all/some of the fighters to already be there or if you want to instantiate a castle
 
-### Text (19)
+### Text (18)
 
-### Talk (20)
+### Talk (19)
 
-### Escape (21)
+### Escape (20)
 
 A fighter escapes the fight.
 
@@ -322,7 +339,7 @@ A fighter escapes the fight.
 
 1. fid - Number - The ID of fighter escaping.
 
-### MoveTo (22)
+### MoveTo (21)
 
 Move a Fighter based on the passed Fighter's id to the designed xy position.
 
@@ -332,15 +349,15 @@ Move a Fighter based on the passed Fighter's id to the designed xy position.
 2. x - number - The x coordinate of the destination.
 3. y - number - The y coordinate of the destination.
 
-### Flip (23)
+### Flip (22)
 
-### SpawnToy (24)
+### SpawnToy (23)
 
-### DestroyToy (25)
+### DestroyToy (24)
 
-### Wait (26)
+### Wait (25)
 
-### Log (27)
+### Log (26)
 
 Sends a message to the console if the fight is started in debug mode.
 
@@ -348,7 +365,7 @@ Sends a message to the console if the fight is started in debug mode.
 
 1. msg - String - The message to print in the console.
 
-### Notify (28)
+### Notify (27)
 
 Plays a notification above a group of fighters, which goes up a fade out over time.
 
@@ -379,7 +396,7 @@ Plays a notification above a group of fighters, which goes up a fade out over ti
 | MonoElt (17)  | Adds a lock notification.             |
 | Todo (18)     | No visual, debug notification.        |
 
-### Energy (29)
+### Energy (28)
 
 Set the current energy of a group of fighters.
 
@@ -387,7 +404,7 @@ Set the current energy of a group of fighters.
 
 1. fighters - { fid: number, energy: number }[] - An array of fighter and their desired level of energy.
 
-### MaxEnergy (30)
+### MaxEnergy (29)
 
 Set the maximum energy of a group of fighters.
 

@@ -11,7 +11,6 @@ import { Return } from './actions/Return.js';
 import { GotoFighter } from './actions/GotoFighter.js';
 import { Dead } from './actions/Dead.js';
 import { Announce } from './actions/Announce.js';
-import { DamagesGroup } from './actions/DamagesGroup.js';
 import { Regen } from './actions/Regen.js';
 import { Escape } from './actions/Escape.js';
 import { Finish } from './actions/Finish.js';
@@ -28,7 +27,7 @@ import { Talk } from './actions/Talk.js';
 import { Text } from './actions/Text.js';
 import { AttackCastle } from './actions/AttackCastle.js';
 import { Start } from './actions/Start.js';
-import { Effect } from './actions/Effect.js';
+import { Skill } from './actions/Skill.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -96,8 +95,7 @@ export class History {
 			[Fight.Action.NoStatus]: 'noStatus',
 			[Fight.Action.Regen]: 'regen',
 			[Fight.Action.Damages]: 'damages',
-			[Fight.Action.DamagesGroup]: 'damagesGroup',
-			[Fight.Action.Fx]: 'fx',
+			[Fight.Action.Skill]: 'skill',
 			[Fight.Action.Dead]: 'dead',
 			[Fight.Action.Goto]: 'goToFighter',
 			[Fight.Action.Return]: 'return',
@@ -301,41 +299,18 @@ export class History {
 	}
 
 	/**
-	 * A Fighter attacks a group of Fighters.
-	 * @param {{action: number, fid: number, targets: {id: number, damages: number}[], skill: number, type?: number, fx?: string, anim?: string, speed?: number, power?: number}} action Action which triggered the call.
-	 * @returns {State} The DamagesGroup State.
+	 * A skill is used.
+	 * @param {{action: number, skill: number, details: import('./actions/Skill.js').SkillDetails}} action Action which triggered the call.
+	 * @returns {State} The Skill State.
 	 */
-	damagesGroup(action) {
-		return new DamagesGroup(
+	skill(action) {
+		return new Skill(
 			this._scene,
 			() => {
 				this.playNext();
 			},
-			action.fid,
-			action.targets,
-			{
-				skill: action.skill,
-				type: action.type,
-				fx: action.fx,
-				anim: action.anim,
-				speed: action.speed,
-				power: action.power
-			}
-		);
-	}
-
-	/**
-	 * A visual effect is played in the Scene.
-	 * @param {{action: number, fx: number}} action Action which triggered the call.
-	 * @returns {State} The Effect State.
-	 */
-	fx(action) {
-		return new Effect(
-			this._scene,
-			() => {
-				this.playNext();
-			},
-			action.fx
+			action.skill,
+			action.details
 		);
 	}
 

@@ -4,11 +4,10 @@ import { Fighter } from '../Fighter.js';
 import { GroundType } from '../IScene.js';
 import { EntranceEffect } from '../actions/AddFighter.js';
 import { DamagesEffect } from '../actions/Damages.js';
-import { Skill } from '../actions/DamagesGroup.js';
-import { FXEffect } from '../actions/Effect.js';
 import { EndBehaviour } from '../actions/Finish.js';
 import { GotoEffect } from '../actions/GotoFighter.js';
 import { Notifications } from '../actions/Notification.js';
+import { SkillList } from '../actions/Skill.js';
 
 /**
  * Convert the project fight data into MT fight data.
@@ -26,8 +25,7 @@ export class MTConverter {
 		MTConverter.convertHNoStatus,
 		MTConverter.convertHRegen,
 		MTConverter.convertHDamages,
-		MTConverter.convertHDamagesGroup,
-		MTConverter.convertHFx,
+		MTConverter.convertSkill,
 		MTConverter.convertHDead,
 		MTConverter.convertHGoto,
 		MTConverter.convertHReturn,
@@ -579,6 +577,39 @@ export class MTConverter {
 	}
 
 	/**
+	 * Convert a Skill action into either a _HDamagesGroup or _HFx enum.
+	 * @param {object} obj The object containing the action.
+	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
+	 */
+	static convertSkill(obj) {
+		if (
+			(obj.skill == SkillList.Anim && !obj.details.targets) ||
+			[
+				SkillList.Env7,
+				SkillList.Aura,
+				SkillList.Snow,
+				SkillList.Swamp,
+				SkillList.Cloud,
+				SkillList.Focus,
+				SkillList.Default,
+				SkillList.Attach,
+				SkillList.AttachAnim,
+				SkillList.Hypnose,
+				SkillList.Ray,
+				SkillList.Speed,
+				SkillList.HeadOrTail,
+				SkillList.Leaf,
+				SkillList.MudWall,
+				SkillList.Blink,
+				SkillList.Generate
+			].includes(obj.skill)
+		) {
+			return MTConverter.convertHFx(obj);
+		}
+		return MTConverter.convertHDamagesGroup(obj);
+	}
+
+	/**
 	 * Convert the action into an _History._HDamagesGroup enum.
 	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
@@ -588,9 +619,9 @@ export class MTConverter {
 			enum: '_History',
 			value: '_HDamagesGroup',
 			args: [
-				obj.fid,
-				obj.targets.map((t) => {
-					return { _tid: t.id, _life: t.damages };
+				obj.details.fid,
+				obj.details.targets.map((t) => {
+					return { _tid: t.id, _life: t.life };
 				}),
 				MTConverter.convertDamageSkill(obj)
 			]
@@ -598,39 +629,39 @@ export class MTConverter {
 	}
 
 	/**
-	 * Convert a Skill enum into an _GroupEffect enum.
-	 * @param {object} skill Fight.Action.DamagesGroup action to convert.
+	 * Convert a Skill action into an _GroupEffect enum.
+	 * @param {object} skill Fight.Action.Skill action to convert.
 	 * @returns {{enum: string, value: string, args: Array}} The corresponding _GroupEffect enum or null if none.
 	 */
 	static convertDamageSkill(skill) {
 		const mapping = {
-			[Skill.Todo]: '_GrTodo',
-			[Skill.Fireball]: '_GrFireball',
-			[Skill.Blow]: '_GrBlow',
-			[Skill.Lava]: '_GrLava',
-			[Skill.Meteor]: '_GrMeteor',
-			[Skill.Vigne]: '_GrVigne',
-			[Skill.WaterCanon]: '_GrWaterCanon',
-			[Skill.Shower]: '_GrShower',
-			[Skill.LevitRay]: '_GrLevitRay',
-			[Skill.Lightning]: '_GrLightning',
-			[Skill.Crepuscule]: '_GrCrepuscule',
-			[Skill.Mistral]: '_GrMistral',
-			[Skill.Tornade]: '_GrTornade',
-			[Skill.Disc]: '_GrDisc',
-			[Skill.Hole]: '_GrHole',
-			[Skill.Ice]: '_GrIce',
-			[Skill.Projectile]: '_GrProjectile',
-			[Skill.Tremor]: '_GrTremor',
-			[Skill.JumpAttack]: '_GrJumpAttack',
-			[Skill.ChainLightning]: '_GrChainLightning',
-			[Skill.Heal]: '_GrHeal',
-			[Skill.Charge]: '_GrCharge',
-			[Skill.Anim]: '_GrAnim',
-			[Skill.Invoc]: '_GrInvoc',
-			[Skill.Sylfide]: '_GrSylfide',
-			[Skill.Rafale]: '_GrRafale',
-			[Skill.Deluge]: '_GrDeluge'
+			[SkillList.Todo]: '_GrTodo',
+			[SkillList.Fireball]: '_GrFireball',
+			[SkillList.Blow]: '_GrBlow',
+			[SkillList.Lava]: '_GrLava',
+			[SkillList.Meteor]: '_GrMeteor',
+			[SkillList.Vigne]: '_GrVigne',
+			[SkillList.WaterCanon]: '_GrWaterCanon',
+			[SkillList.Shower]: '_GrShower',
+			[SkillList.LevitRay]: '_GrLevitRay',
+			[SkillList.Lightning]: '_GrLightning',
+			[SkillList.Crepuscule]: '_GrCrepuscule',
+			[SkillList.Mistral]: '_GrMistral',
+			[SkillList.Tornade]: '_GrTornade',
+			[SkillList.Disc]: '_GrDisc',
+			[SkillList.Hole]: '_GrHole',
+			[SkillList.Ice]: '_GrIce',
+			[SkillList.Projectile]: '_GrProjectile',
+			[SkillList.Tremor]: '_GrTremor',
+			[SkillList.JumpAttack]: '_GrJumpAttack',
+			[SkillList.ChainLightning]: '_GrChainLightning',
+			[SkillList.Heal]: '_GrHeal',
+			[SkillList.Charge]: '_GrCharge',
+			[SkillList.Anim]: '_GrAnim',
+			[SkillList.Invoc]: '_GrInvoc',
+			[SkillList.Sylfide]: '_GrSylfide',
+			[SkillList.Rafale]: '_GrRafale',
+			[SkillList.Deluge]: '_GrDeluge'
 		};
 		const ret = {
 			enum: '_GroupEffect',
@@ -638,36 +669,36 @@ export class MTConverter {
 			args: []
 		};
 		switch (skill.skill) {
-			case Skill.Shower:
-				if (skill.type) {
+			case SkillList.Shower:
+				if (skill.details.type) {
 					ret.value = '_GrShower2';
-					ret.args = [skill.type];
+					ret.args = [skill.details.type];
 				}
 				break;
-			case Skill.Projectile:
-				ret.args = [skill.fx, skill.anim, skill.speed];
+			case SkillList.Projectile:
+				ret.args = [skill.details.fx, skill.details.anim, skill.details.speed];
 				break;
-			case Skill.JumpAttack:
-				ret.args = [skill.fx];
+			case SkillList.JumpAttack:
+				ret.args = [skill.details.fx];
 				break;
-			case Skill.Heal:
-				ret.args = [skill.type];
+			case SkillList.Heal:
+				ret.args = [skill.details.type];
 				break;
-			case Skill.Anim:
-				ret.args = [skill.anim];
+			case SkillList.Anim:
+				ret.args = [skill.details.anim];
 				break;
-			case Skill.Invoc:
-				ret.args = [skill.anim];
+			case SkillList.Invoc:
+				ret.args = [skill.details.anim];
 				break;
-			case Skill.Rafale:
-				ret.args = [skill.fx, skill.power, skill.speed];
+			case SkillList.Rafale:
+				ret.args = [skill.details.fx, skill.details.power, skill.details.speed];
 				break;
 		}
 		return ret;
 	}
 
 	/**
-	 * Convert the action into an _History._HFx enum.
+	 * Convert the Skill action into an _History._HFx enum.
 	 * @param {object} obj Object containing the action.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
@@ -680,111 +711,111 @@ export class MTConverter {
 	}
 
 	/**
-	 * Convert an FXEffect enum into a _SuperEffect from MT.
-	 * @param {object} effect DA FXEffect enum.
+	 * Convert an Skill action into a _SuperEffect from MT.
+	 * @param {object} skill The skill action to convert.
 	 * @returns {{enum: string, value: string, args: Array}} The corresponding _SuperEffect enum.
 	 */
-	static convertFXEffect(effect) {
+	static convertFXEffect(skill) {
 		const mapping = {
-			[FXEffect.Env7]: '_SFEnv7',
-			[FXEffect.Aura]: '_SFAura',
-			[FXEffect.Snow]: '_SFSnow',
-			[FXEffect.Swamp]: '_SFSwamp',
-			[FXEffect.Cloud]: '_SFCloud',
-			[FXEffect.Focus]: '_SFFocus',
-			[FXEffect.Default]: '_SFDefault',
-			[FXEffect.Attach]: '_SFAttach',
-			[FXEffect.AttachAnim]: '_SFAttachAnim',
-			[FXEffect.Anim]: '_SFAnim',
-			[FXEffect.Hypnose]: '_SFHypnose',
-			[FXEffect.Ray]: '_SFRay',
-			[FXEffect.Speed]: '_SFSpeed',
-			[FXEffect.HeadOrTail]: '_SFRandom',
-			[FXEffect.Leaf]: '_SFLeaf',
-			[FXEffect.MudWall]: '_SFMudWall',
-			[FXEffect.Blink]: '_SFBlink',
-			[FXEffect.Generate]: '_SFGenerate'
+			[SkillList.Env7]: '_SFEnv7',
+			[SkillList.Aura]: '_SFAura',
+			[SkillList.Snow]: '_SFSnow',
+			[SkillList.Swamp]: '_SFSwamp',
+			[SkillList.Cloud]: '_SFCloud',
+			[SkillList.Focus]: '_SFFocus',
+			[SkillList.Default]: '_SFDefault',
+			[SkillList.Attach]: '_SFAttach',
+			[SkillList.AttachAnim]: '_SFAttachAnim',
+			[SkillList.Anim]: '_SFAnim',
+			[SkillList.Hypnose]: '_SFHypnose',
+			[SkillList.Ray]: '_SFRay',
+			[SkillList.Speed]: '_SFSpeed',
+			[SkillList.HeadOrTail]: '_SFRandom',
+			[SkillList.Leaf]: '_SFLeaf',
+			[SkillList.MudWall]: '_SFMudWall',
+			[SkillList.Blink]: '_SFBlink',
+			[SkillList.Generate]: '_SFGenerate'
 		};
 		const ret = {
 			enum: '_SuperEffect',
-			value: mapping[effect.fx],
+			value: mapping[skill.skill],
 			args: []
 		};
-		switch (effect.fx) {
-			case FXEffect.Env7:
-				ret.args.push(effect.frame);
-				ret.args.push(effect.remove);
+		switch (skill.skill) {
+			case SkillList.Env7:
+				ret.args.push(skill.details.frame);
+				ret.args.push(skill.details.remove);
 				break;
-			case FXEffect.Aura:
-				ret.args.push(effect.fid);
-				ret.args.push(effect.color);
-				ret.args.push(effect.id);
-				if (effect.type !== undefined) {
+			case SkillList.Aura:
+				ret.args.push(skill.details.fid);
+				ret.args.push(skill.details.color);
+				ret.args.push(skill.details.id);
+				if (skill.details.type !== undefined) {
 					ret.fx = '_SFAura2';
-					ret.args.push(effect.type);
+					ret.args.push(skill.details.type);
 				}
 				break;
-			case FXEffect.Snow:
-				ret.args.push(effect.fid);
-				ret.args.push(effect.id);
-				ret.args.push(effect.color);
-				ret.args.push(effect.rainbowPercent);
+			case SkillList.Snow:
+				ret.args.push(skill.details.fid);
+				ret.args.push(skill.details.id);
+				ret.args.push(skill.details.color);
+				ret.args.push(skill.details.rainbowPercent);
 				break;
-			case FXEffect.Swamp:
-			case FXEffect.Default:
-			case FXEffect.Ray:
-				ret.args.push(effect.fid);
+			case SkillList.Swamp:
+			case SkillList.Default:
+			case SkillList.Ray:
+				ret.args.push(skill.details.fid);
 				break;
-			case FXEffect.Cloud:
-				ret.args.push(effect.fid);
-				ret.args.push(effect.id);
-				ret.args.push(effect.color);
+			case SkillList.Cloud:
+				ret.args.push(skill.details.fid);
+				ret.args.push(skill.details.id);
+				ret.args.push(skill.details.color);
 				break;
-			case FXEffect.Focus:
-				ret.args.push(effect.fid);
-				ret.args.push(effect.color);
+			case SkillList.Focus:
+				ret.args.push(skill.details.fid);
+				ret.args.push(skill.details.color);
 				break;
-			case FXEffect.Anim:
-			case FXEffect.Attach:
-				ret.args.push(effect.fid);
-				ret.args.push(effect.link);
+			case SkillList.Anim:
+			case SkillList.Attach:
+				ret.args.push(skill.details.fid);
+				ret.args.push(skill.details.link);
 				break;
-			case FXEffect.AttachAnim:
-				ret.args.push(effect.fid);
-				ret.args.push(effect.link);
-				ret.args.push(effect.frame);
+			case SkillList.AttachAnim:
+				ret.args.push(skill.details.fid);
+				ret.args.push(skill.details.link);
+				ret.args.push(skill.details.frame);
 				break;
-			case FXEffect.Hypnose:
-				ret.args.push(effect.fid);
-				ret.args.push(effect.tid);
+			case SkillList.Hypnose:
+				ret.args.push(skill.details.fid);
+				ret.args.push(skill.details.tid);
 				break;
-			case FXEffect.Speed:
-				ret.args.push(effect.fid);
-				ret.args.push(effect.tids);
+			case SkillList.Speed:
+				ret.args.push(skill.details.fid);
+				ret.args.push(skill.details.tids);
 				break;
-			case FXEffect.HeadOrTail:
-				ret.args.push(effect.fid);
-				ret.args.push(effect.frame);
-				ret.args.push(effect.result);
+			case SkillList.HeadOrTail:
+				ret.args.push(skill.details.fid);
+				ret.args.push(skill.details.frame);
+				ret.args.push(skill.details.result);
 				break;
-			case FXEffect.Leaf:
-				ret.args.push(effect.fid);
-				ret.args.push(effect.link);
+			case SkillList.Leaf:
+				ret.args.push(skill.details.fid);
+				ret.args.push(skill.details.link);
 				break;
-			case FXEffect.MudWall:
-				ret.args.push(effect.fid);
-				ret.args.push(effect.remove);
+			case SkillList.MudWall:
+				ret.args.push(skill.details.fid);
+				ret.args.push(skill.details.remove);
 				break;
-			case FXEffect.Blink:
-				ret.args.push(effect.fid);
-				ret.args.push(effect.color);
-				ret.args.push(effect.alpha);
+			case SkillList.Blink:
+				ret.args.push(skill.details.fid);
+				ret.args.push(skill.details.color);
+				ret.args.push(skill.details.alpha);
 				break;
-			case FXEffect.Generate:
-				ret.args.push(effect.fid);
-				ret.args.push(effect.color);
-				ret.args.push(effect.strength);
-				ret.args.push(effect.radius);
+			case SkillList.Generate:
+				ret.args.push(skill.details.fid);
+				ret.args.push(skill.details.color);
+				ret.args.push(skill.details.strength);
+				ret.args.push(skill.details.radius);
 				break;
 		}
 		return ret;
