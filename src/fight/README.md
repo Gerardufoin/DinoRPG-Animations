@@ -248,7 +248,7 @@ TODO
 | TODO     |                               |                                                            |
 
 | Skill               | Description                                          |
-| ------------------- | ---------------------------------------------------- | --- |
+| ------------------- | ---------------------------------------------------- |
 | Todo (0)            | Placeholder skill in case a new skill is developped. |
 | Fireball (1)        |                                                      |
 | Blow (2)            |                                                      |
@@ -292,7 +292,7 @@ TODO
 | Leaf (40)           |                                                      |
 | MudWall (41)        |                                                      |
 | Blink (42)          |                                                      |
-| Generate (43)       |                                                      |     |
+| Generate (43)       |                                                      |
 
 ### Dead (9)
 
