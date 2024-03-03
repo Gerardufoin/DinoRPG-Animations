@@ -1,5 +1,6 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Finish.hx
+import { EndBehaviour } from '../Constants.js';
 import { Fighter } from '../Fighter.js';
 import { SCENE_WIDTH } from '../IScene.js';
 import { Scene } from '../Scene.js';
@@ -7,21 +8,7 @@ import { State } from '../State.js';
 import { MoveTo } from './MoveTo.js';
 
 /**
- * Behavior of the Fighters at the end of the fight:
- * - Run: Run across the scene and exit on the other side.
- * - Escape: Run away on the Fighter's side.
- * - Stand: Stand in place and do nothing.
- * - Guard: Guard something.
- */
-export const EndBehaviour = {
-	Stand: 0,
-	Run: 1,
-	Escape: 2,
-	Guard: 3
-};
-
-/**
- * The Fighters wrap up the Fight and execute their assigned EndBehavior.
+ * The Fighters wrap up the Fight and execute their assigned EndBehaviour.
  */
 export class Finish extends State {
 	/**

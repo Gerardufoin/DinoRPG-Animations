@@ -18,41 +18,6 @@ import { Timer } from './Timer.js';
  */
 export class Fight {
 	static FRAME_RATE = 32;
-	/**
-	 * The different actions available in the fight history.
-	 */
-	static Action = {
-		Add: 0,
-		Announce: 1,
-		Object: 2,
-		Lost: 3,
-		Status: 4,
-		NoStatus: 5,
-		Regen: 6,
-		Damages: 7,
-		Skill: 8,
-		Dead: 9,
-		Goto: 10,
-		Return: 11,
-		Pause: 12,
-		Finish: 13,
-		AddCastle: 14,
-		TimeLimit: 15,
-		AttackCastle: 16,
-		Display: 17,
-		Text: 18,
-		Talk: 19,
-		Escape: 20,
-		MoveTo: 21,
-		Flip: 22,
-		SpawnToy: 23,
-		DestroyToy: 24,
-		Wait: 25,
-		Log: 26,
-		Notify: 27,
-		Energy: 28,
-		MaxEnergy: 29
-	};
 
 	/**
 	 * Timer managing the time elapsed between two frame to make it fit an expected framerate.

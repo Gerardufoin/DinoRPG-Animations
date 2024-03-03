@@ -9,18 +9,12 @@ import { LoadingScreen } from './parts/scene/LoadingScreen.js';
 import { PixiHelper } from '../display/PixiHelper.js';
 import { Timer } from './Timer.js';
 import { TimeBar } from './parts/scene/TimeBar.js';
+import { GroundType } from './Constants.js';
 
 export const SCENE_MARGIN = 10;
 export const SCENE_WIDTH = 400;
 export const SCENE_FULL_WIDTH = 488;
 export const SCENE_HEIGHT = 300;
-
-export const GroundType = {
-	None: 0,
-	Dirt: 1,
-	Water: 2,
-	Rock: 3
-};
 
 /**
  * Interface for the Scene, containing the Depth Manager, Tween Manager and margins.

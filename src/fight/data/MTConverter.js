@@ -1,20 +1,24 @@
 // @ts-check
 
-import { Fighter } from '../Fighter.js';
-import { GroundType } from '../IScene.js';
-import { EntranceEffect } from '../actions/AddFighter.js';
-import { DamagesEffect } from '../actions/Damages.js';
-import { EndBehaviour } from '../actions/Finish.js';
-import { GotoEffect } from '../actions/GotoFighter.js';
-import { Notifications } from '../actions/Notification.js';
-import { SkillList } from '../actions/Skill.js';
+import {
+	DamagesEffect,
+	EndBehaviour,
+	EntranceEffect,
+	FighterProperty,
+	FighterStatus,
+	GotoEffect,
+	GroundType,
+	LifeEffect,
+	NotificationList,
+	SkillList
+} from '../Constants.js';
 
 /**
  * Convert the project fight data into MT fight data.
  */
 export class MTConverter {
 	/**
-	 * Mapping between Fight.Action enum values and the corresponding conversion method.
+	 * Mapping between Action enum values and the corresponding conversion method.
 	 */
 	static ActionToHistory = [
 		MTConverter.convertHAdd,
@@ -137,17 +141,17 @@ export class MTConverter {
 	}
 
 	/**
-	 * Convert a Fighter.Property into a _Property enum from MT.
-	 * @param {number} prop The Fighter.Property value.
+	 * Convert a FighterProperty into a _Property enum from MT.
+	 * @param {number} prop The FighterProperty value.
 	 * @returns {object} The _Property enum.
 	 */
 	static convertProperty(prop) {
 		const mapping = {
-			[Fighter.Property.Boss]: '_PBoss',
-			[Fighter.Property.Static]: '_PStatic',
-			[Fighter.Property.GroundOnly]: '_PGroundOnly',
-			[Fighter.Property.Dark]: '_PDark',
-			[Fighter.Property.Nothing]: '_PNothing'
+			[FighterProperty.Boss]: '_PBoss',
+			[FighterProperty.Static]: '_PStatic',
+			[FighterProperty.GroundOnly]: '_PGroundOnly',
+			[FighterProperty.Dark]: '_PDark',
+			[FighterProperty.Nothing]: '_PNothing'
 		};
 		return {
 			enum: '_Property',
@@ -334,27 +338,27 @@ export class MTConverter {
 	}
 
 	/**
-	 * Convert a Fighter.LifeEffect into a _LifeEffect enum.
-	 * @param {{fx: number, amount?: number, size?: number}} lifeFx Fighter.LifeEffect enum.
+	 * Convert a LifeEffect into a _LifeEffect enum.
+	 * @param {{fx: number, amount?: number, size?: number}} lifeFx LifeEffect enum.
 	 * @returns {{enum: string, value: string, args: Array} | null} The corresponding _LifeEffect enum or null if none.
 	 */
 	static convertLifeEffect(lifeFx) {
 		const mapping = {
-			[Fighter.LifeEffect.Normal]: '_LNormal',
-			[Fighter.LifeEffect.Object]: '_LObject',
-			[Fighter.LifeEffect.Skull]: '_LSkull',
-			[Fighter.LifeEffect.Acid]: '_LAcid',
-			[Fighter.LifeEffect.Poison]: '_LPoison',
-			[Fighter.LifeEffect.Heal]: '_LHeal',
-			[Fighter.LifeEffect.Explode]: '_LExplode',
-			[Fighter.LifeEffect.Burn]: '_LBurn',
-			[Fighter.LifeEffect.Fire]: '_LFire',
-			[Fighter.LifeEffect.Wood]: '_LWood',
-			[Fighter.LifeEffect.Water]: '_LWater',
-			[Fighter.LifeEffect.Lightning]: '_LLightning',
-			[Fighter.LifeEffect.Air]: '_LAir',
-			[Fighter.LifeEffect.Gold]: '_LGold',
-			[Fighter.LifeEffect.Todo]: '_LTodo'
+			[LifeEffect.Normal]: '_LNormal',
+			[LifeEffect.Object]: '_LObject',
+			[LifeEffect.Skull]: '_LSkull',
+			[LifeEffect.Acid]: '_LAcid',
+			[LifeEffect.Poison]: '_LPoison',
+			[LifeEffect.Heal]: '_LHeal',
+			[LifeEffect.Explode]: '_LExplode',
+			[LifeEffect.Burn]: '_LBurn',
+			[LifeEffect.Fire]: '_LFire',
+			[LifeEffect.Wood]: '_LWood',
+			[LifeEffect.Water]: '_LWater',
+			[LifeEffect.Lightning]: '_LLightning',
+			[LifeEffect.Air]: '_LAir',
+			[LifeEffect.Gold]: '_LGold',
+			[LifeEffect.Todo]: '_LTodo'
 		};
 		if (lifeFx !== undefined && mapping[lifeFx.fx]) {
 			const ret = {
@@ -363,10 +367,10 @@ export class MTConverter {
 				args: []
 			};
 			switch (lifeFx.fx) {
-				case Fighter.LifeEffect.Burn:
+				case LifeEffect.Burn:
 					ret.args = [lifeFx.amount ?? 1];
 					break;
-				case Fighter.LifeEffect.Skull:
+				case LifeEffect.Skull:
 					ret.args = [lifeFx.size ?? 1];
 					break;
 			}
@@ -452,16 +456,16 @@ export class MTConverter {
 		/*return {
 			enum: '_History',
 			value: '_HFinish',
-			args: [MTConverter.convertEndBehavior(obj.left), MTConverter.convertEndBehavior(obj.right)]
+			args: [MTConverter.convertEndBehaviour(obj.left), MTConverter.convertEndBehaviour(obj.right)]
 		};*/
 	}
 
 	/**
-	 * Convert a Finish.EndBehaviour into a _EndBehavior enum.
+	 * Convert a Finish.EndBehaviour into a _EndBehaviour enum.
 	 * @param {number} e The Finish.EndBehaviour enum to convert.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
-	static convertEndBehavior(e) {
+	static convertEndBehaviour(e) {
 		const ret = {
 			enum: '',
 			value: '',
@@ -536,27 +540,27 @@ export class MTConverter {
 	}
 
 	/**
-	 * Convert a Fighter.Status enum into an MT _Status enum.
-	 * @param {object} status Fight.Action.Status/NoStatus to convert.
+	 * Convert a FighterStatus enum into an MT _Status enum.
+	 * @param {object} status Action.Status/NoStatus to convert.
 	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
 	 */
 	static convertFighterStatus(status) {
 		const mapping = {
-			[Fighter.Status.Sleep]: '_SSleep',
-			[Fighter.Status.Flames]: '_SFlames',
-			[Fighter.Status.Intang]: '_SIntang',
-			[Fighter.Status.Fly]: '_SFly',
-			[Fighter.Status.Slow]: '_SSlow',
-			[Fighter.Status.Quick]: '_SQuick',
-			[Fighter.Status.Stoned]: '_SStoned',
-			[Fighter.Status.Shield]: '_SShield',
-			[Fighter.Status.Bless]: '_SBless',
-			[Fighter.Status.Poison]: '_SPoison',
-			[Fighter.Status.Heal]: '_SHeal',
-			[Fighter.Status.Burn]: '_SBurn',
-			[Fighter.Status.MonoElt]: '_SMonoElt',
-			[Fighter.Status.Dazzled]: '_SDazzled',
-			[Fighter.Status.Stun]: '_SStun'
+			[FighterStatus.Sleep]: '_SSleep',
+			[FighterStatus.Flames]: '_SFlames',
+			[FighterStatus.Intang]: '_SIntang',
+			[FighterStatus.Fly]: '_SFly',
+			[FighterStatus.Slow]: '_SSlow',
+			[FighterStatus.Quick]: '_SQuick',
+			[FighterStatus.Stoned]: '_SStoned',
+			[FighterStatus.Shield]: '_SShield',
+			[FighterStatus.Bless]: '_SBless',
+			[FighterStatus.Poison]: '_SPoison',
+			[FighterStatus.Heal]: '_SHeal',
+			[FighterStatus.Burn]: '_SBurn',
+			[FighterStatus.MonoElt]: '_SMonoElt',
+			[FighterStatus.Dazzled]: '_SDazzled',
+			[FighterStatus.Stun]: '_SStun'
 		};
 		const ret = {
 			enum: '_Status',
@@ -565,11 +569,11 @@ export class MTConverter {
 		};
 		switch (status.status) {
 			// Those statuses need an argument but it is not used in the display of the fight.
-			case Fighter.Status.Burn:
-			case Fighter.Status.Poison:
-			case Fighter.Status.MonoElt:
-			case Fighter.Status.Heal:
-			case Fighter.Status.Dazzled:
+			case FighterStatus.Burn:
+			case FighterStatus.Poison:
+			case FighterStatus.MonoElt:
+			case FighterStatus.Heal:
+			case FighterStatus.Dazzled:
 				ret.args.push(1);
 				break;
 		}
@@ -630,7 +634,7 @@ export class MTConverter {
 
 	/**
 	 * Convert a Skill action into an _GroupEffect enum.
-	 * @param {object} skill Fight.Action.Skill action to convert.
+	 * @param {object} skill Action.Skill action to convert.
 	 * @returns {{enum: string, value: string, args: Array}} The corresponding _GroupEffect enum or null if none.
 	 */
 	static convertDamageSkill(skill) {
@@ -832,14 +836,14 @@ export class MTConverter {
 			value: '_HAddCastle',
 			args: [
 				{
-					_life: obj.infos.life,
-					_max: obj.infos.maxLife,
-					_cage: obj.infos.enclos ? 'str' : null,
-					_ground: obj.infos.ground,
-					_armor: obj.infos.armor,
-					_repair: obj.infos.repair,
-					_color: obj.infos.color,
-					_invisible: obj.infos.invisible
+					_life: obj.castle.life,
+					_max: obj.castle.maxLife,
+					_cage: obj.castle.enclos ? 'str' : null,
+					_ground: obj.castle.ground,
+					_armor: obj.castle.armor,
+					_repair: obj.castle.repair,
+					_color: obj.castle.color,
+					_invisible: obj.castle.invisible
 				}
 			]
 		};
@@ -1057,31 +1061,31 @@ export class MTConverter {
 	}
 
 	/**
-	 * Convert a Notifications enum into an _Notification enum.
-	 * @param {number} notif Notifications enum.
+	 * Convert a NotificationList enum into an _Notification enum.
+	 * @param {number} notif NotificationList enum.
 	 * @returns {{enum: string, value: string, args: Array} | null} The corresponding _Notification enum or null if none.
 	 */
 	static convertNotification(notif) {
 		const mapping = {
-			[Notifications.Slow]: '_NSlow',
-			[Notifications.Quick]: '_NQuick',
-			[Notifications.Silence]: '_NSilence',
-			[Notifications.Sharignan]: '_NSharignan',
-			[Notifications.NoUse]: '_NNoUse',
-			[Notifications.Down]: '_NDown',
-			[Notifications.Up]: '_NUp',
-			[Notifications.Fire]: '_NFire',
-			[Notifications.Wood]: '_NWood',
-			[Notifications.Water]: '_NWater',
-			[Notifications.Thunder]: '_NThunder',
-			[Notifications.Air]: '_NAir',
-			[Notifications.InitUp]: '_NInitUp',
-			[Notifications.InitDown]: '_NInitDown',
-			[Notifications.Snake]: '_NSnake',
-			[Notifications.Strong]: '_NStrong',
-			[Notifications.Shield]: '_NShield',
-			[Notifications.MonoElt]: '_NMonoElt',
-			[Notifications.Todo]: '_NTodo'
+			[NotificationList.Slow]: '_NSlow',
+			[NotificationList.Quick]: '_NQuick',
+			[NotificationList.Silence]: '_NSilence',
+			[NotificationList.Sharignan]: '_NSharignan',
+			[NotificationList.NoUse]: '_NNoUse',
+			[NotificationList.Down]: '_NDown',
+			[NotificationList.Up]: '_NUp',
+			[NotificationList.Fire]: '_NFire',
+			[NotificationList.Wood]: '_NWood',
+			[NotificationList.Water]: '_NWater',
+			[NotificationList.Thunder]: '_NThunder',
+			[NotificationList.Air]: '_NAir',
+			[NotificationList.InitUp]: '_NInitUp',
+			[NotificationList.InitDown]: '_NInitDown',
+			[NotificationList.Snake]: '_NSnake',
+			[NotificationList.Strong]: '_NStrong',
+			[NotificationList.Shield]: '_NShield',
+			[NotificationList.MonoElt]: '_NMonoElt',
+			[NotificationList.Todo]: '_NTodo'
 		};
 		if (notif !== undefined && mapping[notif]) {
 			return {

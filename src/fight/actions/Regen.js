@@ -19,7 +19,7 @@ export class Regen extends State {
 	 */
 	_amount;
 	/**
-	 * Type of effect to apply to the Fighter, based on Fighter.LifeEffect.
+	 * Type of effect to apply to the Fighter, based on LifeEffect.
 	 * @type {{fx: number, amount?: number, size?: number}}
 	 */
 	_lifeFx;
@@ -30,7 +30,7 @@ export class Regen extends State {
 	 * @param {() => void} endCall The function to call at the end of the State, if any.
 	 * @param {number} fid The Fighter's id.
 	 * @param {number} amount The amount of life healed.
-	 * @param {{fx: number, amount?: number, size?: number}} lifeFx The Fighter.LifeEffect to apply on the Fighter.
+	 * @param {{fx: number, amount?: number, size?: number}} lifeFx The LifeEffect to apply on the Fighter.
 	 */
 	constructor(scene, endCall, fid, amount, lifeFx) {
 		super(scene, endCall);

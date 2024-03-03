@@ -1,21 +1,25 @@
 // @ts-check
 
-import { Fight } from '../Fight.js';
-import { Fighter } from '../Fighter.js';
-import { EntranceEffect } from '../actions/AddFighter.js';
-import { DamagesEffect } from '../actions/Damages.js';
-import { EndBehaviour } from '../actions/Finish.js';
-import { GotoEffect } from '../actions/GotoFighter.js';
-import { Notifications } from '../actions/Notification.js';
-import { GroundType } from '../IScene.js';
-import { Skill, SkillList } from '../actions/Skill.js';
+import {
+	Action,
+	DamagesEffect,
+	EndBehaviour,
+	EntranceEffect,
+	FighterProperty,
+	FighterStatus,
+	GotoEffect,
+	GroundType,
+	LifeEffect,
+	NotificationList,
+	SkillList
+} from '../Constants.js';
 
 /**
  * Convert MT fight data into DA fight data.
  */
 export class DAConverter {
 	/**
-	 * Mapping between MT _History enum values and Fight.Action enum values.
+	 * Mapping between MT _History enum values and Action enum values.
 	 */
 	static HistoryToAction = {
 		_HAdd: DAConverter.convertHAdd,
@@ -115,7 +119,7 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert the _History._HAdd enum into a Fight.Action command.
+	 * Convert the _History._HAdd enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
@@ -124,7 +128,7 @@ export class DAConverter {
 			console.error(`_HAdd arguments size different from 2: ${args.length}`);
 		}
 		const ret = {
-			action: Fight.Action.Add,
+			action: Action.Add,
 			fighter: {
 				props: args[0]._props.map((p) => DAConverter.convertProperty(p)),
 				dino: args[0]._dino,
@@ -142,19 +146,19 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert a props from MT into a Fighter.Property.
+	 * Convert a props from MT into a FighterProperty.
 	 * @param {object} prop MT props object.
-	 * @returns {number} The converted Fighter.Property.
+	 * @returns {number} The converted FighterProperty.
 	 */
 	static convertProperty(prop) {
 		const mapping = {
-			_PBoss: Fighter.Property.Boss,
-			_PStatic: Fighter.Property.Static,
-			_PGroundOnly: Fighter.Property.GroundOnly,
-			_PDark: Fighter.Property.Dark,
-			_PNothing: Fighter.Property.Nothing
+			_PBoss: FighterProperty.Boss,
+			_PStatic: FighterProperty.Static,
+			_PGroundOnly: FighterProperty.GroundOnly,
+			_PDark: FighterProperty.Dark,
+			_PNothing: FighterProperty.Nothing
 		};
-		return mapping[prop.value] ?? Fighter.Property.Nothing;
+		return mapping[prop.value] ?? FighterProperty.Nothing;
 	}
 
 	/**
@@ -200,12 +204,12 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert the _History._HEnergy enum into a Fight.Action command.
+	 * Convert the _History._HEnergy enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHEnergy(args) {
-		const ret = { action: Fight.Action.Energy, fighters: [] };
+		const ret = { action: Action.Energy, fighters: [] };
 		for (let i = 0; i < args[0].length; ++i) {
 			ret.fighters.push({
 				fid: args[0][i],
@@ -216,12 +220,12 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert the _History._HMaxEnergy enum into a Fight.Action command.
+	 * Convert the _History._HMaxEnergy enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHMaxEnergy(args) {
-		const ret = { action: Fight.Action.MaxEnergy, fighters: [] };
+		const ret = { action: Action.MaxEnergy, fighters: [] };
 		for (let i = 0; i < args[0].length; ++i) {
 			ret.fighters.push({
 				fid: args[0][i],
@@ -232,30 +236,30 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert the _History._HPause enum into a Fight.Action command.
+	 * Convert the _History._HPause enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHPause(args) {
-		return { action: Fight.Action.Pause, time: args[0] };
+		return { action: Action.Pause, time: args[0] };
 	}
 
 	/**
-	 * Convert the _History._HAnnounce enum into a Fight.Action command.
+	 * Convert the _History._HAnnounce enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHAnnounce(args) {
-		return { action: Fight.Action.Announce, fid: args[0], message: args[1] };
+		return { action: Action.Announce, fid: args[0], message: args[1] };
 	}
 
 	/**
-	 * Convert the _History._HGoto enum into a Fight.Action command.
+	 * Convert the _History._HGoto enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHGoto(args) {
-		return { action: Fight.Action.Goto, fid: args[0], tid: args[1], ...DAConverter.convertGotoEffect(args[2]) };
+		return { action: Action.Goto, fid: args[0], tid: args[1], ...DAConverter.convertGotoEffect(args[2]) };
 	}
 
 	/**
@@ -289,13 +293,13 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert the _History._HDamages enum into a Fight.Action command.
+	 * Convert the _History._HDamages enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHDamages(args) {
 		return {
-			action: Fight.Action.Damages,
+			action: Action.Damages,
 			fid: args[0],
 			tid: args[1],
 			damages: args[2],
@@ -307,35 +311,35 @@ export class DAConverter {
 	/**
 	 * Convert a _LifeEffect into a Fighter.LifeEffet.
 	 * @param {object} obj _LifeEffect enum.
-	 * @returns {{fx: number, amount?: number, size?: number}} The corresponding Fighter.LifeEffect with its arguments or undefined if none.
+	 * @returns {{fx: number, amount?: number, size?: number}} The corresponding LifeEffect with its arguments or undefined if none.
 	 */
 	static convertLifeEffect(obj) {
 		const mapping = {
-			_LNormal: Fighter.LifeEffect.Normal,
-			_LObject: Fighter.LifeEffect.Object,
-			_LSkull: Fighter.LifeEffect.Skull,
-			_LAcid: Fighter.LifeEffect.Acid,
-			_LPoison: Fighter.LifeEffect.Poison,
-			_LHeal: Fighter.LifeEffect.Heal,
-			_LExplode: Fighter.LifeEffect.Explode,
-			_LBurn: Fighter.LifeEffect.Burn,
-			_LFire: Fighter.LifeEffect.Fire,
-			_LWood: Fighter.LifeEffect.Wood,
-			_LWater: Fighter.LifeEffect.Water,
-			_LLightning: Fighter.LifeEffect.Lightning,
-			_LAir: Fighter.LifeEffect.Air,
-			_LGold: Fighter.LifeEffect.Gold,
-			_LTodo: Fighter.LifeEffect.Todo
+			_LNormal: LifeEffect.Normal,
+			_LObject: LifeEffect.Object,
+			_LSkull: LifeEffect.Skull,
+			_LAcid: LifeEffect.Acid,
+			_LPoison: LifeEffect.Poison,
+			_LHeal: LifeEffect.Heal,
+			_LExplode: LifeEffect.Explode,
+			_LBurn: LifeEffect.Burn,
+			_LFire: LifeEffect.Fire,
+			_LWood: LifeEffect.Wood,
+			_LWater: LifeEffect.Water,
+			_LLightning: LifeEffect.Lightning,
+			_LAir: LifeEffect.Air,
+			_LGold: LifeEffect.Gold,
+			_LTodo: LifeEffect.Todo
 		};
 		if (obj) {
 			const ret = {
 				fx: mapping[obj.value]
 			};
 			switch (ret.fx) {
-				case Fighter.LifeEffect.Burn:
+				case LifeEffect.Burn:
 					ret.amount = obj.args[0];
 					break;
-				case Fighter.LifeEffect.Skull:
+				case LifeEffect.Skull:
 					ret.size = obj.args[0];
 					break;
 			}
@@ -368,31 +372,31 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert the _History._HReturn enum into a Fight.Action command.
+	 * Convert the _History._HReturn enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHReturn(args) {
-		return { action: Fight.Action.Return, fid: args[0] };
+		return { action: Action.Return, fid: args[0] };
 	}
 
 	/**
-	 * Convert the _History._HDead enum into a Fight.Action command.
+	 * Convert the _History._HDead enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHDead(args) {
-		return { action: Fight.Action.Dead, fid: args[0] };
+		return { action: Action.Dead, fid: args[0] };
 	}
 
 	/**
-	 * Convert the _History._HLost enum into a Fight.Action command.
+	 * Convert the _History._HLost enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHLost(args) {
 		return {
-			action: Fight.Action.Lost,
+			action: Action.Lost,
 			fid: args[0],
 			amount: args[1],
 			lifeFx: DAConverter.convertLifeEffect(args[2])
@@ -400,24 +404,24 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert the _History._HFinish enum into a Fight.Action command.
+	 * Convert the _History._HFinish enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHFinish(args) {
 		return {
-			action: Fight.Action.Finish,
-			left: DAConverter.convertEndBehavior(args[0]),
-			right: DAConverter.convertEndBehavior(args[1])
+			action: Action.Finish,
+			left: DAConverter.convertEndBehaviour(args[0]),
+			right: DAConverter.convertEndBehaviour(args[1])
 		};
 	}
 
 	/**
-	 * Convert an _EndBehavior enum into a Finish.EndBehaviour.
-	 * @param {object} obj The _EndBehavior enum to convert.
+	 * Convert an _EndBehaviour enum into a Finish.EndBehaviour.
+	 * @param {object} obj The _EndBehaviour enum to convert.
 	 * @returns {number} The Finish.EndBehaviour or undefined.
 	 */
-	static convertEndBehavior(obj) {
+	static convertEndBehaviour(obj) {
 		switch (obj.value) {
 			case '_EBStand':
 				return EndBehaviour.Stand;
@@ -432,13 +436,13 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert the _History._HRegen enum into a Fight.Action command.
+	 * Convert the _History._HRegen enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHRegen(args) {
 		return {
-			action: Fight.Action.Regen,
+			action: Action.Regen,
 			fid: args[0],
 			amount: args[1],
 			lifeFx: DAConverter.convertLifeEffect(args[2])
@@ -446,60 +450,60 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert the _History._HObject enum into a Fight.Action command.
+	 * Convert the _History._HObject enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHObject(args) {
-		return { action: Fight.Action.Object, fid: args[0], name: args[1], item: args[2] };
+		return { action: Action.Object, fid: args[0], name: args[1], item: args[2] };
 	}
 
 	/**
-	 * Convert the _History._HStatus enum into a Fight.Action command.
+	 * Convert the _History._HStatus enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHStatus(args) {
-		return { action: Fight.Action.Status, fid: args[0], status: DAConverter.convertFighterStatus(args[1]) };
+		return { action: Action.Status, fid: args[0], status: DAConverter.convertFighterStatus(args[1]) };
 	}
 
 	/**
-	 * Convert the _History._HNoStatus enum into a Fight.Action command.
+	 * Convert the _History._HNoStatus enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHNoStatus(args) {
-		return { action: Fight.Action.NoStatus, fid: args[0], status: DAConverter.convertFighterStatus(args[1]) };
+		return { action: Action.NoStatus, fid: args[0], status: DAConverter.convertFighterStatus(args[1]) };
 	}
 
 	/**
-	 * Convert a _Status enum from from MT into a Fighter.Status.
+	 * Convert a _Status enum from from MT into a FighterStatus.
 	 * @param {object} status MT _Status enum.
-	 * @returns {number} The converted Fighter.Status.
+	 * @returns {number} The converted FighterStatus.
 	 */
 	static convertFighterStatus(status) {
 		const mapping = {
-			_SSleep: Fighter.Status.Sleep,
-			_SFlames: Fighter.Status.Flames,
-			_SIntang: Fighter.Status.Intang,
-			_SFly: Fighter.Status.Fly,
-			_SSlow: Fighter.Status.Slow,
-			_SQuick: Fighter.Status.Quick,
-			_SStoned: Fighter.Status.Stoned,
-			_SShield: Fighter.Status.Shield,
-			_SBless: Fighter.Status.Bless,
-			_SPoison: Fighter.Status.Poison,
-			_SHeal: Fighter.Status.Heal,
-			_SBurn: Fighter.Status.Burn,
-			_SMonoElt: Fighter.Status.MonoElt,
-			_SDazzled: Fighter.Status.Dazzled,
-			_SStun: Fighter.Status.Stun
+			_SSleep: FighterStatus.Sleep,
+			_SFlames: FighterStatus.Flames,
+			_SIntang: FighterStatus.Intang,
+			_SFly: FighterStatus.Fly,
+			_SSlow: FighterStatus.Slow,
+			_SQuick: FighterStatus.Quick,
+			_SStoned: FighterStatus.Stoned,
+			_SShield: FighterStatus.Shield,
+			_SBless: FighterStatus.Bless,
+			_SPoison: FighterStatus.Poison,
+			_SHeal: FighterStatus.Heal,
+			_SBurn: FighterStatus.Burn,
+			_SMonoElt: FighterStatus.MonoElt,
+			_SDazzled: FighterStatus.Dazzled,
+			_SStun: FighterStatus.Stun
 		};
 		return mapping[status.value];
 	}
 
 	/**
-	 * Convert the _History._HDamagesGroup enum into a Fight.Action command.
+	 * Convert the _History._HDamagesGroup enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
@@ -512,7 +516,7 @@ export class DAConverter {
 			return { id: v._tid, life: v._life };
 		});
 		return {
-			action: Fight.Action.Skill,
+			action: Action.Skill,
 			skill: skill,
 			details: details
 		};
@@ -593,7 +597,7 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert the _History._HFx enum into a Fight.Action command.
+	 * Convert the _History._HFx enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
@@ -601,7 +605,7 @@ export class DAConverter {
 		const details = DAConverter.convertFXSkill(args[0]);
 		const skill = details.skill;
 		details.skill = undefined;
-		return { action: Fight.Action.Skill, skill: skill, details: details };
+		return { action: Action.Skill, skill: skill, details: details };
 	}
 
 	/**
@@ -714,14 +718,14 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert the _History._HAddCastle enum into a Fight.Action command.
+	 * Convert the _History._HAddCastle enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHAddCastle(args) {
 		return {
-			action: Fight.Action.AddCastle,
-			infos: {
+			action: Action.AddCastle,
+			castle: {
 				life: args[0]._life ?? 0,
 				maxLife: args[0]._max ?? 100,
 				enclos: args[0]._cage ? true : false,
@@ -735,85 +739,85 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert the _History._HCastleAttack enum into a Fight.Action command.
+	 * Convert the _History._HCastleAttack enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHCastleAttack(args) {
-		return { action: Fight.Action.AttackCastle, fid: args[0], damages: args[1] };
+		return { action: Action.AttackCastle, fid: args[0], damages: args[1] };
 	}
 
 	/**
-	 * Convert the _History._HDisplay enum into a Fight.Action command.
+	 * Convert the _History._HDisplay enum into a Action command.
 	 * @param {Array} _args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHDisplay(_args) {
-		return { action: Fight.Action.Display };
+		return { action: Action.Display };
 	}
 
 	/**
-	 * Convert the _History._HTimeLimit enum into a Fight.Action command.
+	 * Convert the _History._HTimeLimit enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHTimeLimit(args) {
-		return { action: Fight.Action.TimeLimit, time: args[0] };
+		return { action: Action.TimeLimit, time: args[0] };
 	}
 
 	/**
-	 * Convert the _History._HTalk enum into a Fight.Action command.
+	 * Convert the _History._HTalk enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHTalk(args) {
-		return { action: Fight.Action.Talk, fid: args[0], message: args[1] };
+		return { action: Action.Talk, fid: args[0], message: args[1] };
 	}
 
 	/**
-	 * Convert the _History._HText enum into a Fight.Action command.
+	 * Convert the _History._HText enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHText(args) {
-		return { action: Fight.Action.Text, message: args[0] };
+		return { action: Action.Text, message: args[0] };
 	}
 
 	/**
-	 * Convert the _History._HEscape enum into a Fight.Action command.
+	 * Convert the _History._HEscape enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHEscape(args) {
-		return { action: Fight.Action.Escape, fid: args[0] };
+		return { action: Action.Escape, fid: args[0] };
 	}
 
 	/**
-	 * Convert the _History._HMoveTo enum into a Fight.Action command.
+	 * Convert the _History._HMoveTo enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHMoveTo(args) {
-		return { action: Fight.Action.MoveTo, fid: args[0], x: args[1], y: args[2] };
+		return { action: Action.MoveTo, fid: args[0], x: args[1], y: args[2] };
 	}
 
 	/**
-	 * Convert the _History._HFlip enum into a Fight.Action command.
+	 * Convert the _History._HFlip enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHFlip(args) {
-		return { action: Fight.Action.Flip, fid: args[0] };
+		return { action: Action.Flip, fid: args[0] };
 	}
 
 	/**
-	 * Convert the _History._SpawnToy enum into a Fight.Action command.
+	 * Convert the _History._SpawnToy enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertSpawnToy(args) {
 		return {
-			action: Fight.Action.SpawnToy,
+			action: Action.SpawnToy,
 			toy: DAConverter.convertToy(args[0]),
 			x: args[1],
 			y: args[2],
@@ -825,12 +829,12 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert the _History._DestroyToy enum into a Fight.Action command.
+	 * Convert the _History._DestroyToy enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertDestroyToy(args) {
-		return { action: Fight.Action.DestroyToy, toy: DAConverter.convertToy(args[0]) };
+		return { action: Action.DestroyToy, toy: DAConverter.convertToy(args[0]) };
 	}
 
 	/**
@@ -875,58 +879,58 @@ export class DAConverter {
 	}
 
 	/**
-	 * Convert the _History._HWait enum into a Fight.Action command.
+	 * Convert the _History._HWait enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHWait(args) {
-		return { action: Fight.Action.Wait, time: args[0] };
+		return { action: Action.Wait, time: args[0] };
 	}
 
 	/**
-	 * Convert the _History._HLog enum into a Fight.Action command.
+	 * Convert the _History._HLog enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHLog(args) {
-		return { action: Fight.Action.Log, msg: args[0] };
+		return { action: Action.Log, msg: args[0] };
 	}
 
 	/**
-	 * Convert the _History._HNotify enum into a Fight.Action command.
+	 * Convert the _History._HNotify enum into a Action command.
 	 * @param {Array} args Arguments of the action.
 	 * @returns {object} The converted action with its arguments.
 	 */
 	static convertHNotify(args) {
-		return { action: Fight.Action.Notify, fids: args[0], notification: DAConverter.convertNotifications(args[1]) };
+		return { action: Action.Notify, fids: args[0], notification: DAConverter.convertNotifications(args[1]) };
 	}
 
 	/**
-	 * Convert a _Notification enum from from MT into a Notifications enum.
+	 * Convert a _Notification enum from from MT into a NotificationList enum.
 	 * @param {object} notif MT _Notification enum.
-	 * @returns {number} The converted Notifications enum value.
+	 * @returns {number} The converted NotificationList enum value.
 	 */
 	static convertNotifications(notif) {
 		const mapping = {
-			_NSlow: Notifications.Slow,
-			_NQuick: Notifications.Quick,
-			_NSilence: Notifications.Silence,
-			_NSharignan: Notifications.Sharignan,
-			_NNoUse: Notifications.NoUse,
-			_NDown: Notifications.Down,
-			_NUp: Notifications.Up,
-			_NFire: Notifications.Fire,
-			_NWood: Notifications.Wood,
-			_NWater: Notifications.Water,
-			_NThunder: Notifications.Thunder,
-			_NAir: Notifications.Air,
-			_NInitUp: Notifications.InitUp,
-			_NInitDown: Notifications.InitDown,
-			_NSnake: Notifications.Snake,
-			_NStrong: Notifications.Strong,
-			_NShield: Notifications.Shield,
-			_NMonoElt: Notifications.MonoElt,
-			_NTodo: Notifications.Todo
+			_NSlow: NotificationList.Slow,
+			_NQuick: NotificationList.Quick,
+			_NSilence: NotificationList.Silence,
+			_NSharignan: NotificationList.Sharignan,
+			_NNoUse: NotificationList.NoUse,
+			_NDown: NotificationList.Down,
+			_NUp: NotificationList.Up,
+			_NFire: NotificationList.Fire,
+			_NWood: NotificationList.Wood,
+			_NWater: NotificationList.Water,
+			_NThunder: NotificationList.Thunder,
+			_NAir: NotificationList.Air,
+			_NInitUp: NotificationList.InitUp,
+			_NInitDown: NotificationList.InitDown,
+			_NSnake: NotificationList.Snake,
+			_NStrong: NotificationList.Strong,
+			_NShield: NotificationList.Shield,
+			_NMonoElt: NotificationList.MonoElt,
+			_NTodo: NotificationList.Todo
 		};
 		return mapping[notif.value];
 	}

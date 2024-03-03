@@ -28,8 +28,9 @@ import { StatusDisplay } from './StatusDisplay.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { Light } from './parts/life/Light.js';
 import { DepthManager, Layers } from './DepthManager.js';
-import { GroundType, IScene } from './IScene.js';
+import { IScene } from './IScene.js';
 import { WaterOnde } from './parts/scene/WaterOnde.js';
+import { FighterProperty, FighterStatus, GroundType, LifeEffect } from './Constants.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -42,53 +43,13 @@ export class Fighter extends Phys {
 		Dead: 2,
 		Dodge: 3
 	};
-	static Property = {
-		Boss: 0,
-		Static: 1,
-		GroundOnly: 2,
-		Dark: 3,
-		Nothing: 4
-	};
 	static MovementType = {
 		Jump: 0,
 		JumpAbove: 1,
 		JumpDown: 2,
 		Run: 3
 	};
-	static LifeEffect = {
-		Normal: 0,
-		Object: 1, // No visual
-		Skull: 2,
-		Acid: 3,
-		Poison: 4, // No visual
-		Heal: 5,
-		Explode: 6,
-		Burn: 7,
-		Fire: 8,
-		Wood: 9,
-		Water: 10,
-		Lightning: 11,
-		Air: 12,
-		Gold: 13, // No visual
-		Todo: 14 // Debug
-	};
-	static Status = {
-		Sleep: 0,
-		Flames: 1,
-		Intang: 2,
-		Fly: 3,
-		Slow: 4,
-		Quick: 5,
-		Stoned: 6,
-		Shield: 7,
-		Bless: 8,
-		Poison: 9,
-		Heal: 10,
-		Burn: 11,
-		MonoElt: 12,
-		Dazzled: 13,
-		Stun: 14
-	};
+
 	/**
 	 * The depth manager of the Fighter, managing its layers.
 	 * @type {DepthManager}
@@ -182,7 +143,7 @@ export class Fighter extends Phys {
 	 */
 	_size = 1;
 	/**
-	 * List of properties attached to the Fighter, based on Fighter.Property.
+	 * List of properties attached to the Fighter, based on FighterProperty.
 	 * @type {number[]}
 	 */
 	_props = [];
@@ -255,7 +216,7 @@ export class Fighter extends Phys {
 	}
 
 	/**
-	 * Current status of the Fighter as a list of Fighter.Status.
+	 * Current status of the Fighter as a list of FighterStatus.
 	 * @type {number[]}
 	 */
 	_status = [];
@@ -510,7 +471,7 @@ export class Fighter extends Phys {
 		this._animator.filters.push(this._poisonColorFilter);
 
 		// If the Fighter is static, we freeze it (prevent it from walking) and remove its force (prevent it from pushing).
-		if (this.haveProp(Fighter.Property.Static)) {
+		if (this.haveProp(FighterProperty.Static)) {
 			this._flFreeze = true;
 			this._force = null;
 		}
@@ -607,7 +568,7 @@ export class Fighter extends Phys {
 	 * @param {Timer} timer The Timer managing the elapsed time.
 	 */
 	updateWait(timer) {
-		if (this.isFrozen || this.haveProp(Fighter.Property.Static)) return;
+		if (this.isFrozen || this.haveProp(FighterProperty.Static)) return;
 		if (this._walkPath != null) {
 			const a = this.getAng(this._walkPath);
 			const d = this.getDist(this._walkPath);
@@ -768,7 +729,7 @@ export class Fighter extends Phys {
 	 * @param {Timer} timer Fight timer containing the elapsed time.
 	 */
 	checkBounds(timer) {
-		if (this.haveProp(Fighter.Property.Static)) return;
+		if (this.haveProp(FighterProperty.Static)) return;
 		const m = 4;
 		const wmod = 10;
 		if (this._x < m + this._ray || this._x > this._scene.width - (this._ray + m + this._scene.margins.right)) {
@@ -801,8 +762,8 @@ export class Fighter extends Phys {
 	}
 
 	/**
-	 * Adds the desired Fighter.Status to the status of the Fighter.
-	 * @param {number} status The Fighter.Status enum indicating which status to add.
+	 * Adds the desired FighterStatus to the status of the Fighter.
+	 * @param {number} status The FighterStatus enum indicating which status to add.
 	 */
 	addStatus(status) {
 		if (!this.haveStatus(status)) {
@@ -814,16 +775,16 @@ export class Fighter extends Phys {
 	/**
 	 * Removes the selected status from the Fighter if it has it.
 	 * If null is passed, remove all the status.
-	 * @param {number | null} status A Fighter.Status enum value.
+	 * @param {number | null} status A FighterStatus enum value.
 	 */
 	removeStatus(status = null) {
 		this._status = this._status.filter((s) => {
 			if (status === null || s === status) {
 				switch (s) {
-					case Fighter.Status.Fly:
+					case FighterStatus.Fly:
 						this._flLand = true;
 						break;
-					case Fighter.Status.Poison:
+					case FighterStatus.Poison:
 						this._poisonColorFilter.matrix[6] = 1;
 				}
 				return false;
@@ -835,7 +796,7 @@ export class Fighter extends Phys {
 
 	/**
 	 * Check if the Fighter has the current status applied.
-	 * @param {number} status The Fighter.Status value to check for.
+	 * @param {number} status The FighterStatus value to check for.
 	 * @returns {boolean} True if the Fighter has the given status, false otherwise.
 	 */
 	haveStatus(status) {
@@ -851,7 +812,7 @@ export class Fighter extends Phys {
 		this._root.filters = [];
 		this._walkSpeed = 1.8;
 		this._runSpeed = 8;
-		this._flFreeze = this.haveProp(Fighter.Property.Static);
+		this._flFreeze = this.haveProp(FighterProperty.Static);
 		this._flFly = false;
 		this._decal = 0;
 		if (this._force !== null) {
@@ -860,30 +821,30 @@ export class Fighter extends Phys {
 
 		for (const s of this._status) {
 			switch (s) {
-				case Fighter.Status.Sleep:
+				case FighterStatus.Sleep:
 					this._defaultAnim = 'sleep';
 					this.playAnim('sleep', false);
 					this._flFreeze = true;
 					break;
-				case Fighter.Status.Intang:
+				case FighterStatus.Intang:
 					this._root.alpha = 0.5;
 					break;
-				case Fighter.Status.Fly:
+				case FighterStatus.Fly:
 					this._defaultAnim = 'jump';
 					this.playAnim('jump', false);
 					this._flFly = true;
 					this.setGroundFx(false);
 					break;
-				case Fighter.Status.Slow:
+				case FighterStatus.Slow:
 					this._walkSpeed *= 0.5;
 					this._runSpeed *= 0.5;
 					break;
-				case Fighter.Status.Quick:
+				case FighterStatus.Quick:
 					this._walkSpeed *= 2;
 					this._runSpeed *= 2;
 					break;
-				case Fighter.Status.Stoned:
-				case Fighter.Status.Stun:
+				case FighterStatus.Stoned:
+				case FighterStatus.Stun:
 					this._flFreeze = true;
 					if (this._force !== null) {
 						this._force = 100000;
@@ -918,7 +879,7 @@ export class Fighter extends Phys {
 		this._root.filters = [];
 		for (const s of this._status) {
 			switch (s) {
-				case Fighter.Status.Flames:
+				case FighterStatus.Flames:
 					if (spawn) {
 						this.dm.addSprite(
 							new Flameche(this._scene, (Math.random() * 2 - 1) * 15, -Math.random() * 20, 0, 0),
@@ -926,7 +887,7 @@ export class Fighter extends Phys {
 						);
 					}
 					break;
-				case Fighter.Status.Burn:
+				case FighterStatus.Burn:
 					if (spawn) {
 						this.dm.addSprite(
 							new Flameche(this._scene, (Math.random() * 2 - 1) * 15, -Math.random() * 20, 0, 0, true),
@@ -934,7 +895,7 @@ export class Fighter extends Phys {
 						);
 					}
 					break;
-				case Fighter.Status.Fly:
+				case FighterStatus.Fly:
 					{
 						const tz = Math.sin(this._decal * 0.01) * 15 - 60;
 						const dz = tz - this._z;
@@ -942,12 +903,12 @@ export class Fighter extends Phys {
 						this._z += PixiHelper.mm(-lim, dz, lim);
 					}
 					break;
-				case Fighter.Status.Stoned:
+				case FighterStatus.Stoned:
 					{
-						this._root.filters.push(Fighter.StatusFilters[Fighter.Status.Stoned]);
+						this._root.filters.push(Fighter.StatusFilters[FighterStatus.Stoned]);
 					}
 					break;
-				case Fighter.Status.Shield:
+				case FighterStatus.Shield:
 					{
 						if (!this._shieldGlowFilter) {
 							this._shieldGlowFilter = new GlowFilter({
@@ -963,7 +924,7 @@ export class Fighter extends Phys {
 						this._root.filters.push(this._shieldGlowFilter);
 					}
 					break;
-				case Fighter.Status.Bless:
+				case FighterStatus.Bless:
 					{
 						if (!this._blessGlowFilter) {
 							this._blessGlowFilter = new GlowFilter({
@@ -975,17 +936,17 @@ export class Fighter extends Phys {
 						}
 						const c = Math.sin(this._decal * 0.01);
 						this._blessGlowFilter.outerStrength = 2 + 4 * c;
-						this._root.filters.push(Fighter.StatusFilters[Fighter.Status.Bless]);
+						this._root.filters.push(Fighter.StatusFilters[FighterStatus.Bless]);
 						this._root.filters.push(this._blessGlowFilter);
 					}
 					break;
-				case Fighter.Status.Poison:
+				case FighterStatus.Poison:
 					{
 						// Index 6 of the ColorMatrixFilter impacts the green.
 						this._poisonColorFilter.matrix[6] = (1 + Math.cos(this._decal * 0.01)) * 0.5 + 1;
 					}
 					break;
-				case Fighter.Status.Heal:
+				case FighterStatus.Heal:
 					if (spawn) {
 						this.dm.addSprite(
 							new Light(
@@ -1001,8 +962,8 @@ export class Fighter extends Phys {
 						);
 					}
 					break;
-				case Fighter.Status.Stun:
-					this._root.filters.push(Fighter.StatusFilters[Fighter.Status.Stun]);
+				case FighterStatus.Stun:
+					this._root.filters.push(Fighter.StatusFilters[FighterStatus.Stun]);
 					break;
 			}
 		}
@@ -1063,7 +1024,7 @@ export class Fighter extends Phys {
 	 * The Fighter gets hit by another Fighter, losing [damages] health with the [lifeFx] effect.
 	 * @param {Fighter} attacker The Fighter attacking this one.
 	 * @param {number} damages The damages inflicted. If 0, the guard animation is played.
-	 * @param {{fx: number, amount?: number, size?: number}} lifeFx The life gain/loss effect to play, based on Fighter.LifeEffect.
+	 * @param {{fx: number, amount?: number, size?: number}} lifeFx The life gain/loss effect to play, based on LifeEffect.
 	 * @returns {void}
 	 */
 	hit(attacker, damages, lifeFx) {
@@ -1071,7 +1032,7 @@ export class Fighter extends Phys {
 			this.playAnim('guard');
 			return;
 		}
-		if (!this.haveProp(Fighter.Property.Static)) {
+		if (!this.haveProp(FighterProperty.Static)) {
 			var angle = this.getAng(attacker.position);
 			const sp = 3;
 			this._vx = Math.cos(angle) * sp;
@@ -1084,7 +1045,7 @@ export class Fighter extends Phys {
 	 * The Fighter takes damages.
 	 * @param {number} damages The amount of damages taken.
 	 * @param {number} stunDuration The stun duration following the damage. 50 by default.
-	 * @param {{fx: number, amount?: number, size?: number} | null} lifeFx The Fighter.LifeEffect effect to play while receiving the damages, or null if none.
+	 * @param {{fx: number, amount?: number, size?: number} | null} lifeFx The LifeEffect effect to play while receiving the damages, or null if none.
 	 */
 	damages(damages, stunDuration = 50, lifeFx = null) {
 		this.playAnim('hit');
@@ -1110,7 +1071,7 @@ export class Fighter extends Phys {
 	 * The Fighter regenerates the given amount of life.
 	 * If a LifeEffect is given, it will be played.
 	 * @param {number} amount The amount of health to regenerate.
-	 * @param {{fx: number, amount?: number, size?: number} | null} lifeFx The Fighter.LifeEffect to play. Null by default.
+	 * @param {{fx: number, amount?: number, size?: number} | null} lifeFx The LifeEffect to play. Null by default.
 	 */
 	gainLife(amount, lifeFx = null) {
 		this._life += amount;
@@ -1431,44 +1392,44 @@ export class Fighter extends Phys {
 	}
 
 	/**
-	 * Play the given Fighter.LifeEffect effect.
-	 * @param {{fx: number, amount?: number, size?: number}} effect The Fighter.LifeEffect to play.
+	 * Play the given LifeEffect effect.
+	 * @param {{fx: number, amount?: number, size?: number}} effect The LifeEffect to play.
 	 */
 	lifeEffect(effect) {
 		switch (effect.fx) {
-			case Fighter.LifeEffect.Normal:
-			case Fighter.LifeEffect.Poison:
-			case Fighter.LifeEffect.Gold:
-			case Fighter.LifeEffect.Todo:
+			case LifeEffect.Normal:
+			case LifeEffect.Poison:
+			case LifeEffect.Gold:
+			case LifeEffect.Todo:
 				break;
-			case Fighter.LifeEffect.Burn:
+			case LifeEffect.Burn:
 				this.fxBurn(effect.amount);
 				break;
-			case Fighter.LifeEffect.Explode:
+			case LifeEffect.Explode:
 				this.fxExplosion(6);
 				break;
-			case Fighter.LifeEffect.Heal:
+			case LifeEffect.Heal:
 				this.fxHeal(32);
 				break;
-			case Fighter.LifeEffect.Skull:
+			case LifeEffect.Skull:
 				this.fxSkull(effect.size);
 				break;
-			case Fighter.LifeEffect.Acid:
+			case LifeEffect.Acid:
 				this.fxAcid(12);
 				break;
-			case Fighter.LifeEffect.Fire:
+			case LifeEffect.Fire:
 				this.fxBurn(14, 20);
 				break;
-			case Fighter.LifeEffect.Wood:
+			case LifeEffect.Wood:
 				this.fxLeaf(10);
 				break;
-			case Fighter.LifeEffect.Water:
+			case LifeEffect.Water:
 				this.fxWater(20);
 				break;
-			case Fighter.LifeEffect.Lightning:
+			case LifeEffect.Lightning:
 				this.fxLightning(16);
 				break;
-			case Fighter.LifeEffect.Air:
+			case LifeEffect.Air:
 				this.fxWind(14);
 				break;
 			default:
@@ -1628,10 +1589,10 @@ export class Fighter extends Phys {
 		const g = 0.1;
 		const b = 0.7;
 		stoneMatrix.matrix = [r, g, b, 0, 0, r, g, b, 0, 0, r, g, b, 0, 0, 0, 0, 0, 1, 0];
-		Fighter.StatusFilters[Fighter.Status.Stoned] = stoneMatrix;
+		Fighter.StatusFilters[FighterStatus.Stoned] = stoneMatrix;
 
 		// Static part of the blessed glow filter.
-		Fighter.StatusFilters[Fighter.Status.Bless] = new GlowFilter({
+		Fighter.StatusFilters[FighterStatus.Bless] = new GlowFilter({
 			color: 0xffffff,
 			outerStrength: 4,
 			distance: 2,
@@ -1642,7 +1603,7 @@ export class Fighter extends Phys {
 		const stunMatrix = new ColorMatrixFilter();
 		const v = 0.7;
 		stunMatrix.matrix = [v, v, v, 0, 0, v, v, v, 0, 0, v, v, v, 0, 0, 0, 0, 0, 1, 0];
-		Fighter.StatusFilters[Fighter.Status.Stun] = stunMatrix;
+		Fighter.StatusFilters[FighterStatus.Stun] = stunMatrix;
 	}
 
 	/**

@@ -1,22 +1,10 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/GotoFighter.hx
+import { FighterStatus, GotoEffect } from '../Constants.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { Timer } from '../Timer.js';
-
-/**
- * Enum stating how the Fighter moves toward its target:
- * - Normal is a normal run.
- * - Over makes the Fighter jump above the target. Removes the flying status.
- * - Special is not clear yet.
- */
-export const GotoEffect = {
-	Normal: 0,
-	Special: 1,
-	Over: 2,
-	Todo: 3
-};
 
 /**
  * Move a Fighter toward another Fighter.
@@ -84,7 +72,7 @@ export class GotoFighter extends State {
 		switch (this._gotoEffect) {
 			case GotoEffect.Over:
 				p = this._target.position;
-				this._fighter.removeStatus(Fighter.Status.Fly);
+				this._fighter.removeStatus(FighterStatus.Fly);
 				break;
 			default:
 				p = this._fighter.getBrawlPos(this._target);

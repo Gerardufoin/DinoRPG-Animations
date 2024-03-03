@@ -15,9 +15,11 @@ const fight = new DinoAnim.Fight({
 	bg: 's_dnv',
 	top: 120,
 	bottom: 20,
+	right: 0,
+	ground: DinoAnim.GroundType.None,
 	history: [
 		{
-			action: DinoAnim.Fight.Action.Add,
+			action: DinoAnim.Action.Add,
 			fighter: {
 				props: [],
 				dino: true,
@@ -35,31 +37,51 @@ const fight = new DinoAnim.Fight({
 document.body.appendChild(fight.getDisplay());
 ```
 
+| Properties | Type                      | Description                                                                                                                                  |
+| ---------- | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| bg         | String                    | Set the background of the scene. The value is one of the name of the background in the folder /assets/gfx/background, without the extension. |
+| top?       | Number                    | The top margin of the scene. The margins define where the fighters can walk. 0 by default.                                                   |
+| bottom?    | Number                    | The bottom margin of the scene. 0 by default.                                                                                                |
+| right?     | Number                    | The right margin of the scene. 0 by default.                                                                                                 |
+| ground?    | GroundType                | The type of ground of the scene. Ground type define which particle are emitted on walk and landing. None by default.                         |
+| history    | { action: Action, ... }[] | The list of the actions of the fight. See below for the description of the actions and their parameters.                                     |
+
+| GroundType | Description                                                                                                               |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------- |
+| None (0)   | Default ground type. No effect.                                                                                           |
+| Dirt (1)   | Creates clouds of dust of the same color as the background when the fighters are moving.                                  |
+| Water (2)  | Creates ripples around the fighters. When they are walking, creates droplets for water which burst up and then fall down. |
+| Rock (3)   | Creates stone particles of the same color as the background when a fighter lands.                                         |
+
 ## Actions
 
 ### Add (0)
 
-Add a fighter to the scene.
+Adds a fighter to the scene.
 
 #### Properties
 
-1. fighter - Object - Details of the fighter to add.
+| Property | Type           | Description                    |
+| -------- | -------------- | ------------------------------ |
+| fighter  | FighterDetails | Details of the fighter to add. |
 
-| Variable  | Description                                                                                  |
-| --------- | -------------------------------------------------------------------------------------------- |
-| props     | Array - ???                                                                                  |
-| dino      | Boolean - True if the fighter a dino, false if it is a monster.                              |
-| life      | Number - Life of the fighter.                                                                |
-| maxLife?  | Number - Maximum life of the fighter. Default to "life" if not given.                        |
-| name      | String - Name of the fighter which will be displayed on entry.                               |
-| side      | Boolean - Side of the fighter. True for left side, false for right side.                     |
-| scale?    | Number - Scale of the fighter. 1 by default.                                                 |
-| fid       | Number - ID of the fighter. Used for the subsequent actions.                                 |
-| gfx       | String - Visual description of the fighter. See SDino and SMonster for more information.     |
-| entrance? | Number - EntranceEffect, see table below. If undefined, the fighter does a simple drop down. |
-| anim?     | String - Desired animation for the "Anim" entrance effect.                                   |
-| x?        | Number - X position of the fighter. Randomly generated if empty.                             |
-| y?        | Number - Y position of the fighter. Randomly generated if empty.                             |
+##### FighterDetails
+
+| Property  | Type              | Description                                                                                                          |
+| --------- | ----------------- | -------------------------------------------------------------------------------------------------------------------- |
+| props     | FighterProperty[] | A list of the fighter properties. See below for the possible values.                                                 |
+| dino      | Boolean           | True if the fighter a dino, false if it is a monster.                                                                |
+| life      | Number            | Life of the fighter.                                                                                                 |
+| maxLife?  | Number            | Maximum life of the fighter. Default to "life" if not given.                                                         |
+| name      | String            | Name of the fighter which will be displayed on entry.                                                                |
+| side      | Boolean           | Side of the fighter. True for left side, false for right side.                                                       |
+| scale?    | Number            | Scale of the fighter. 1 by default.                                                                                  |
+| fid       | Number            | ID of the fighter. Used for the subsequent actions.                                                                  |
+| gfx       | String            | Visual description of the fighter. See SDino and SMonster for more information.                                      |
+| entrance? | EntranceEffect    | The way the fighter enters the Scene. See table below for values. If undefined, the fighter does a simple drop down. |
+| anim?     | String            | Desired animation for the "Anim" entrance effect.                                                                    |
+| x?        | Number            | X position of the fighter. Randomly generated if empty.                                                              |
+| y?        | Number            | Y position of the fighter. Randomly generated if empty.                                                              |
 
 | EntranceEffect | Description                                         |
 | -------------- | --------------------------------------------------- |
@@ -77,8 +99,10 @@ A fighter announces something, most likely the use of a skill.
 
 #### Properties
 
-1. fid - Number - The ID of the fighter making the announce.
-2. message - String - The announce.
+| Property | Type   | Description                                |
+| -------- | ------ | ------------------------------------------ |
+| fid      | Number | The ID of the fighter making the announce. |
+| message  | String | The announce.                              |
 
 ### Object (2)
 
@@ -87,9 +111,11 @@ An Announce is made with the figther calling the name of the item.
 
 #### Properties
 
-1. fid - number - The ID of the fighter using the item.
-2. name - string - The name displayed in the Announce.
-3. item - string - An asset from the /assets/gfx/items folder. Only use the filename without the extention.
+| Property | Type   | Description                                                                              |
+| -------- | ------ | ---------------------------------------------------------------------------------------- |
+| fid      | Number | The ID of the fighter using the item.                                                    |
+| name     | String | The item name displayed in the Announce.                                                 |
+| item     | String | An asset from the /assets/gfx/items folder. Only use the filename without the extention. |
 
 ### Lost (3)
 
@@ -98,9 +124,11 @@ This can for example be used for status effect (poison, torch, etc).
 
 #### Properties
 
-1. fid - Number - The ID of the fighter losing life.
-2. amount - Number - Amount of health healed.
-3. lifeFx - {fx: LifeEffect, amount?: number, size?: number} - The life effect played during the damage.
+| Property | Type                                             | Description                               |
+| -------- | ------------------------------------------------ | ----------------------------------------- |
+| fid      | Number                                           | The ID of the fighter losing life.        |
+| amount   | Number                                           | Amount of health healed.                  |
+| lifeFx   | {fx: LifeEffect, amount?: number, size?: number} | The life effect played during the damage. |
 
 | LifeEffect     | Description                                                             |
 | -------------- | ----------------------------------------------------------------------- |
@@ -126,8 +154,10 @@ A status if added to a fighter. An optional power property can be passed dependi
 
 #### Properties
 
-1. fid - Number - The ID of the fighter gaining the status.
-2. status - FighterStatus - Status being added.
+| Property | Type          | Description                               |
+| -------- | ------------- | ----------------------------------------- |
+| fid      | Number        | The ID of the fighter gaining the status. |
+| status   | FighterStatus | Status being added.                       |
 
 | FighterStatus | Description                                            |
 | ------------- | ------------------------------------------------------ |
@@ -149,12 +179,14 @@ A status if added to a fighter. An optional power property can be passed dependi
 
 ### NoStatus (5)
 
-A status if removed from a fighter.
+A status is removed from a fighter.
 
 #### Properties
 
-1. fid - Number - The ID of the fighter gaining the status.
-2. status - FighterStatus - Status being added.
+| Property | Type          | Description                               |
+| -------- | ------------- | ----------------------------------------- |
+| fid      | Number        | The ID of the fighter gaining the status. |
+| status   | FighterStatus | Status being added.                       |
 
 ### Regen (6)
 
@@ -162,9 +194,11 @@ A fighter regenerates a set amount of life with the given life effect. If the fi
 
 #### Properties
 
-1. fid - Number - The ID of the fighter healing.
-2. amount - Number - Amount of health healed.
-3. lifeFx - {fx: LifeEffect, amount?: number, size?: number} - The life effect played during the regen. See LifeEffect above.
+| Property | Type                                             | Description                                                    |
+| -------- | ------------------------------------------------ | -------------------------------------------------------------- |
+| fid      | Number                                           | The ID of the fighter healing.                                 |
+| amount   | Number                                           | Amount of health healed.                                       |
+| lifeFx   | {fx: LifeEffect, amount?: number, size?: number} | The life effect played during the regen. See LifeEffect above. |
 
 ### Damages (7)
 
@@ -172,11 +206,13 @@ A fighter attacks another fighter and deals a certain amount of damages.
 
 #### Properties
 
-1. fid - Number - The ID of the attacking fighter.
-2. tid - Number - The ID of the targeted fighter.
-3. damages - Number | Null - The amount of damages dealt. If Null, the attack is dodged. If 0, the attack is guarded.
-4. lifeFx? - {fx: LifeEffect, amount?: number, size?: number} - The life effect played on the fighter during the attack. See LifeEffect above.
-5. effect? - DamagesEffect - The type of action the fighter will take before attacking.
+| Property | Type                                             | Description                                                                              |
+| -------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| fid      | Number                                           | The ID of the attacking fighter.                                                         |
+| tid      | Number                                           | The ID of the targeted fighter.                                                          |
+| damages  | Number (Null)                                    | The amount of damages dealt. If Null, the attack is dodged. If 0, the attack is guarded. |
+| lifeFx?  | {fx: LifeEffect, amount?: number, size?: number} | The life effect played on the fighter during the attack. See LifeEffect above.           |
+| effect?  | DamagesEffect                                    | The type of action the fighter will take before attacking.                               |
 
 | DamagesEffect    | Description                                                                                             |
 | ---------------- | ------------------------------------------------------------------------------------------------------- |
@@ -198,10 +234,21 @@ TODO
 
 #### Properties
 
-1. skill - Number - The SkillList enum of the skill being used.
+| Property | Type         | Description                                             |
+| -------- | ------------ | ------------------------------------------------------- |
+| skill    | SkillList    | The skill being used.                                   |
+| details  | SkillDetails | The parameters of the skill, based on the chosen skill. |
+
+##### SkillDetails
+
+| Property | Type                          | Description                                                |
+| -------- | ----------------------------- | ---------------------------------------------------------- |
+| fid?     | number                        | The ID of the Fighter using the skill, if any.             |
+| targets? | { id: number, life?: number } | The targets of the skill and the life gained/losed, if any |
+| TODO     |                               |                                                            |
 
 | Skill               | Description                                          |
-| ------------------- | ---------------------------------------------------- |
+| ------------------- | ---------------------------------------------------- | --- |
 | Todo (0)            | Placeholder skill in case a new skill is developped. |
 | Fireball (1)        |                                                      |
 | Blow (2)            |                                                      |
@@ -245,15 +292,7 @@ TODO
 | Leaf (40)           |                                                      |
 | MudWall (41)        |                                                      |
 | Blink (42)          |                                                      |
-| Generate (43)       |                                                      |
-
-4. details - Object - The parameters of the skill, with the following possible properties based on the chosen skill.
-
-| Parameters | Type                          | Description                                                |
-| ---------- | ----------------------------- | ---------------------------------------------------------- |
-| fid?       | number                        | The ID of the Fighter using the skill, if any.             |
-| targets?   | { id: number, life?: number } | The targets of the skill and the life gained/losed, if any |
-| TODO       |                               |                                                            |
+| Generate (43)       |                                                      |     |
 
 ### Dead (9)
 
@@ -261,7 +300,9 @@ A fighter dies.
 
 #### Properties
 
-1. fid - Number - The ID of the dying fighter.
+| Property | Type   | Description                  |
+| -------- | ------ | ---------------------------- |
+| fid      | Number | The ID of the dying fighter. |
 
 ### Goto (10)
 
@@ -269,9 +310,12 @@ Moves a fighter in range of another fighter with the given movement type.
 
 #### Properties
 
-1. fid - Number - The ID of the moving fighter.
-2. tid - Number - The ID of the targeted fighter.
-3. effect? - Number - The GotoEffect used to move the fighter. If none is given, default to Normal.
+| Property    | Type                           | Description                                                                                                      |
+| ----------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| fid         | Number                         | The ID of the moving fighter.                                                                                    |
+| tid         | Number                         | The ID of the targeted fighter.                                                                                  |
+| effect?     | GotoEffect                     | The GotoEffect used to move the fighter. If none is given, default to Normal.                                    |
+| shadeColor? | {col1?: number, col2?: number} | The colors for the shades created when selecting GotoEffect.Special. If undefined, the shade will be pure black. |
 
 | GotoEffect  | Description                                                     |
 | ----------- | --------------------------------------------------------------- |
@@ -280,23 +324,26 @@ Moves a fighter in range of another fighter with the given movement type.
 | Over (2)    | Jumps above the target.                                         |
 | Todo (3)    | Debug.                                                          |
 
-5. shadeColor? - {col1?: number, col2?: number} - The colors for the shades created when selecting GotoEffect.Special. If undefined, the shade will be pure black.
-
 ### Return (11)
 
 Makes the selected fighter go back to its first saved position since the last time Return was called.
 
 #### Properties
 
-1. fid - Number - The ID of the returning fighter.
+| Property | Type   | Description                      |
+| -------- | ------ | -------------------------------- |
+| fid      | Number | The ID of the returning fighter. |
 
 ### Pause (12)
 
 Pause the history for a given amount of frames.
+If a time bar has been created, this will reduce it by the same amount of frames.
 
 #### Properties
 
-1. time - Number - Number of frames until the next action in the history is played.
+| Property | Type   | Description                                                      |
+| -------- | ------ | ---------------------------------------------------------------- |
+| time     | Number | Number of frames until the next action in the history is played. |
 
 ### Finish (13)
 
@@ -304,21 +351,62 @@ The fighters sill alive end the fight and enact their given end of fight behavio
 
 #### Properties
 
-1. left - EndBehavior - The end behavior of the left sided fighters.
-2. right - EndBehavior - The end behavior of the right sided fighters.
+| Property | Type         | Description                                    |
+| -------- | ------------ | ---------------------------------------------- |
+| left     | EndBehaviour | The end behaviour of the left sided fighters.  |
+| right    | EndBehaviour | The end behaviour of the right sided fighters. |
 
-| EndBehavior | Description                                             |
-| ----------- | ------------------------------------------------------- |
-| Stand (0)   | The fighters stand in place and do nothing.             |
-| Run (1)     | The fighters exit toward the opposite end of the scene. |
-| Escape (2)  | The fighters exit from their side of the scene.         |
-| Guard (3)   | The fighters are marked as dead and switch direction.   |
+| EndBehaviour | Description                                                   |
+| ------------ | ------------------------------------------------------------- |
+| Stand (0)    | The fighters stand in place and do nothing.                   |
+| Run (1)      | The fighters exit toward the opposite end of the scene.       |
+| Escape (2)   | The fighters exit from their side of the scene.               |
+| Guard (3)    | The fighters are immobilized and face the opposite direction. |
 
 ### AddCastle (14)
 
+Adds a castle to the scene, with the given customization.
+
+#### Properties
+
+| Property | Type          | Description                               |
+| -------- | ------------- | ----------------------------------------- |
+| castle   | CastleDetails | The customization for the castle display. |
+
+##### CastleDetails
+
+| Property  | Type    | Description                                                               |
+| --------- | ------- | ------------------------------------------------------------------------- |
+| life      | Number  | Current life of the castle.                                               |
+| maxLife   | Number  | Maximum life of the castle.                                               |
+| enclos    | Boolean | If true, adds a pen inside the castle.                                    |
+| ground    | Number  | Adds pounds in frond of the castle. 1-3 changes the color.                |
+| repair    | Number  | Adds a repairman inside the castle. 1-3 changes the helmet and the speed. |
+| maxLife   | Number  | Maximum life of the castle.                                               |
+| color     | Number  | Changes the color of the castle (1-2).                                    |
+| invisible | Boolean | If true, the castle is half transparent.                                  |
+
 ### TimeLimit (15)
 
+Adds a time bar to the scene.
+The time decreases every time Pause is called.
+
+#### Properties
+
+| Property | Type   | Description                                   |
+| -------- | ------ | --------------------------------------------- |
+| time     | Number | The total duration of the timebar, in frames. |
+
 ### CastleAttack (16)
+
+A fighter attacks the castle, dealing the given amount of damages.
+
+#### Properties
+
+| Property | Type   | Description                                 |
+| -------- | ------ | ------------------------------------------- |
+| fid      | Number | The ID of the fighter attacking the castle. |
+| damages  | Number | The amount of damages dealt to the castle.  |
 
 ### Display (17)
 
@@ -329,33 +417,96 @@ Choosing when to remove the loading screen can allow you to setup the scene befo
 
 ### Text (18)
 
+A text is displayed at the top of the scene. Once the message is completly displayed, the player has to click to continue.
+Clicking on the scene doubles the text speed.
+
+#### Properties
+
+| Property | Type   | Description                             |
+| -------- | ------ | --------------------------------------- |
+| message  | String | The message to display in the text box. |
+
 ### Talk (19)
+
+A fighter speak, creating a text bubble with the given message. Once the message is completly displayed, the player has to click to continue.
+Clicking on the scene doubles the text speed.
+
+#### Properties
+
+| Property | Type   | Description                           |
+| -------- | ------ | ------------------------------------- |
+| fid      | Number | The ID of the fighter speaking.       |
+| message  | String | The message to display in the bubble. |
 
 ### Escape (20)
 
-A fighter escapes the fight.
+A fighter escapes the fight, leaving from its side of the scene.
 
 #### Properties
 
-1. fid - Number - The ID of fighter escaping.
+| Property | Type   | Description                     |
+| -------- | ------ | ------------------------------- |
+| fid      | Number | The ID of the fighter escaping. |
 
 ### MoveTo (21)
 
-Move a Fighter based on the passed Fighter's id to the designed xy position.
+Move a fighter based on the given fighter's id to the designed xy coordinates.
 
 #### Properties
 
-1. fid - number - The Fighter's id referencing the Fighter to move.
-2. x - number - The x coordinate of the destination.
-3. y - number - The y coordinate of the destination.
+| Property | Type   | Description                          |
+| -------- | ------ | ------------------------------------ |
+| fid      | Number | The ID of the fighter moving.        |
+| x        | Number | The x coordinate of the destination. |
+| y        | Number | The y coordinate of the destination. |
 
 ### Flip (22)
 
+Flips a fighter, making it face the other direction.
+To use in cutscenes and movies.
+
+#### Properties
+
+| Property | Type   | Description                    |
+| -------- | ------ | ------------------------------ |
+| fid      | Number | The ID of the fighter to flip. |
+
 ### SpawnToy (23)
+
+Spawns a toy in the scene at the given position with the given velocity.
+
+#### Properties
+
+| Property | Type   | Description                                                                                               |
+| -------- | ------ | --------------------------------------------------------------------------------------------------------- |
+| toy      | String | The toy's reference, which has to be an asset from the folder assets/gfx/toys without the file extension. |
+| x?       | Number | The initial x coordinate. 0 by default.                                                                   |
+| y?       | Number | The initial y coordinate. 0 by default.                                                                   |
+| z?       | Number | The initial z coordinate. 0 by default.                                                                   |
+| vx?      | Number | The initial x velocity. 0 by default.                                                                     |
+| vy?      | Number | The initial y velocity. 0 by default.                                                                     |
+| vz?      | Number | The initial z velocity. 0 by default.                                                                     |
 
 ### DestroyToy (24)
 
+Destroy all instances of the given toy from the scene.
+
+#### Properties
+
+| Property | Type   | Description                                                                                                                                          |
+| -------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| toy      | String | The toy's reference, which has to be an asset from the folder assets/gfx/toys without the file extension. All instances of this toy will be removed. |
+
 ### Wait (25)
+
+Pause the actions for the given amount of milliseconds.
+Contrary to Pause, this does not change the time bar.
+
+#### Properties
+
+| Property | Type   | Description                                      |
+| -------- | ------ | ------------------------------------------------ |
+| time     | Number | The amount of time to wait for, in milliseconds. |
 
 ### Log (26)
 
@@ -363,38 +514,42 @@ Sends a message to the console if the fight is started in debug mode.
 
 #### Properties
 
-1. msg - String - The message to print in the console.
+| Property | Type   | Description                          |
+| -------- | ------ | ------------------------------------ |
+| msg      | String | The message to print in the console. |
 
-### Notify (27)
+### Notification (27)
 
-Plays a notification above a group of fighters, which goes up a fade out over time.
+Plays a notification above a group of fighters, which goes up and fades out over time.
 
 #### Properties
 
-1. fids - Number[] - The list of IDs of the affected fighters.
-2. notification - Notifications - A value of the Notifications enum.
+| Property     | Type             | Description                               |
+| ------------ | ---------------- | ----------------------------------------- |
+| fids         | Number[]         | The list of IDs of the impacted fighters. |
+| notification | NotificationList | The icon to display.                      |
 
-| Notifications | Description                           |
-| ------------- | ------------------------------------- |
-| Slow (0)      | Adds an anvil notification.           |
-| Quick (1)     | Adds a thunderbolt notification.      |
-| Silence (2)   | Adds a speech bubble notification.    |
-| Sharingan (3) | Adds a Sharingan notification.        |
-| NoUse (4)     | Adds a red cross notification.        |
-| Down (5)      | Adds a Down notification.             |
-| Up (6)        | Adds an Up notification.              |
-| Fire (7)      | Adds a red orb notification.          |
-| Wood (8)      | Adds a green orb notification.        |
-| Water (9)     | Adds a blue orb notification.         |
-| Thunder (10)  | Adds a yellow orb notification.       |
-| Air (11)      | Adds a white orb notification.        |
-| InitUp (12)   | Adds a blue firecracker notification. |
-| InitDown (13) | Adds a red firecracker notification.  |
-| Snake (14)    | Adds a snake notification.            |
-| Strong (15)   | Adds a flexing muscle notification.   |
-| Shield (16)   | Adds a shield notification.           |
-| MonoElt (17)  | Adds a lock notification.             |
-| Todo (18)     | No visual, debug notification.        |
+| NotificationList | Description                           |
+| ---------------- | ------------------------------------- |
+| Slow (0)         | Adds an anvil notification.           |
+| Quick (1)        | Adds a thunderbolt notification.      |
+| Silence (2)      | Adds a speech bubble notification.    |
+| Sharingan (3)    | Adds a Sharingan notification.        |
+| NoUse (4)        | Adds a red cross notification.        |
+| Down (5)         | Adds a Down notification.             |
+| Up (6)           | Adds an Up notification.              |
+| Fire (7)         | Adds a red orb notification.          |
+| Wood (8)         | Adds a green orb notification.        |
+| Water (9)        | Adds a blue orb notification.         |
+| Thunder (10)     | Adds a yellow orb notification.       |
+| Air (11)         | Adds a white orb notification.        |
+| InitUp (12)      | Adds a blue firecracker notification. |
+| InitDown (13)    | Adds a red firecracker notification.  |
+| Snake (14)       | Adds a snake notification.            |
+| Strong (15)      | Adds a flexing muscle notification.   |
+| Shield (16)      | Adds a shield notification.           |
+| MonoElt (17)     | Adds a lock notification.             |
+| Todo (18)        | No visual, debug notification.        |
 
 ### Energy (28)
 
@@ -402,7 +557,9 @@ Set the current energy of a group of fighters.
 
 #### Properties
 
-1. fighters - { fid: number, energy: number }[] - An array of fighter and their desired level of energy.
+| Property | Type                              | Description                                            |
+| -------- | --------------------------------- | ------------------------------------------------------ |
+| fighters | { fid: Number, energy: Number }[] | An array of fighter and their desired level of energy. |
 
 ### MaxEnergy (29)
 
@@ -410,4 +567,6 @@ Set the maximum energy of a group of fighters.
 
 #### Properties
 
-1. fighters - { fid: number, energy: number }[] - An array of fighter and their desired maximum level of energy.
+| Property | Type                              | Description                                                    |
+| -------- | --------------------------------- | -------------------------------------------------------------- |
+| fighters | { fid: Number, energy: Number }[] | An array of fighter and their desired maximum level of energy. |

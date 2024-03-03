@@ -28,6 +28,7 @@ import { Text } from './actions/Text.js';
 import { AttackCastle } from './actions/AttackCastle.js';
 import { Start } from './actions/Start.js';
 import { Skill } from './actions/Skill.js';
+import { Action } from './Constants.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -64,7 +65,7 @@ export class History {
 	 */
 	_historyIdx = -1;
 	/**
-	 * Mapping between Fight.Action and History.
+	 * Mapping between Action and History.
 	 * @type {object}
 	 */
 	_actions;
@@ -87,39 +88,39 @@ export class History {
 		this._scene = scene;
 		this._history = history;
 		this._actions = {
-			[Fight.Action.Add]: 'addFighter',
-			[Fight.Action.Announce]: 'announce',
-			[Fight.Action.Object]: 'useItem',
-			[Fight.Action.Lost]: 'lost',
-			[Fight.Action.Status]: 'status',
-			[Fight.Action.NoStatus]: 'noStatus',
-			[Fight.Action.Regen]: 'regen',
-			[Fight.Action.Damages]: 'damages',
-			[Fight.Action.Skill]: 'skill',
-			[Fight.Action.Dead]: 'dead',
-			[Fight.Action.Goto]: 'goToFighter',
-			[Fight.Action.Return]: 'return',
-			[Fight.Action.Pause]: 'pause',
-			[Fight.Action.Finish]: 'finish',
-			[Fight.Action.AddCastle]: 'addCastle',
-			[Fight.Action.TimeLimit]: 'timeLimit',
-			[Fight.Action.AttackCastle]: 'attackCastle',
-			[Fight.Action.Display]: 'display',
-			[Fight.Action.Text]: 'text',
-			[Fight.Action.Talk]: 'talk',
-			[Fight.Action.Escape]: 'escape',
-			[Fight.Action.MoveTo]: 'moveTo',
-			[Fight.Action.Flip]: 'flip',
-			[Fight.Action.SpawnToy]: 'spawnToy',
-			[Fight.Action.DestroyToy]: 'destroyToy',
-			[Fight.Action.Wait]: 'wait',
-			[Fight.Action.Log]: 'printLog',
-			[Fight.Action.Notify]: 'notify',
-			[Fight.Action.Energy]: 'energy',
-			[Fight.Action.MaxEnergy]: 'maxEnergy'
+			[Action.Add]: 'addFighter',
+			[Action.Announce]: 'announce',
+			[Action.Object]: 'useItem',
+			[Action.Lost]: 'lost',
+			[Action.Status]: 'status',
+			[Action.NoStatus]: 'noStatus',
+			[Action.Regen]: 'regen',
+			[Action.Damages]: 'damages',
+			[Action.Skill]: 'skill',
+			[Action.Dead]: 'dead',
+			[Action.Goto]: 'goToFighter',
+			[Action.Return]: 'return',
+			[Action.Pause]: 'pause',
+			[Action.Finish]: 'finish',
+			[Action.AddCastle]: 'addCastle',
+			[Action.TimeLimit]: 'timeLimit',
+			[Action.AttackCastle]: 'attackCastle',
+			[Action.Display]: 'display',
+			[Action.Text]: 'text',
+			[Action.Talk]: 'talk',
+			[Action.Escape]: 'escape',
+			[Action.MoveTo]: 'moveTo',
+			[Action.Flip]: 'flip',
+			[Action.SpawnToy]: 'spawnToy',
+			[Action.DestroyToy]: 'destroyToy',
+			[Action.Wait]: 'wait',
+			[Action.Log]: 'printLog',
+			[Action.Notify]: 'notify',
+			[Action.Energy]: 'energy',
+			[Action.MaxEnergy]: 'maxEnergy'
 		};
-		if (!this._history.find((v) => v.action === Fight.Action.Display)) {
-			this._history.unshift({ action: Fight.Action.Display });
+		if (!this._history.find((v) => v.action === Action.Display)) {
+			this._history.unshift({ action: Action.Display });
 		}
 	}
 
@@ -393,10 +394,10 @@ export class History {
 
 	/**
 	 * Adds a Castle to the Scene.
-	 * @param {{action: number, infos: import('./Castle.js').CastleInfos}} action Action which triggered the call.
+	 * @param {{action: number, castle: import('./Castle.js').CastleDetails}} action Action which triggered the call.
 	 */
 	addCastle(action) {
-		this._scene.createCastle(action.infos);
+		this._scene.createCastle(action.castle);
 		this.playNext();
 	}
 

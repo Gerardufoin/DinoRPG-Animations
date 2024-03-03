@@ -24,7 +24,7 @@ import { Smoke } from './parts/castle/Smoke.js';
  * 		repair: number,
  * 		color: number,
  * 		invisible: boolean
- * 	}} CastleInfos
+ * 	}} CastleDetails
  */
 
 /**
@@ -109,7 +109,7 @@ export class Castle {
 	/**
 	 * Creates a new Castle based on the information passed as parameters.
 	 * @param {IScene} scene The scene Spawning the Castle.
-	 * @param {CastleInfos} infos The information relative to the initialization of the Castle.
+	 * @param {CastleDetails} infos The information relative to the initialization of the Castle.
 	 */
 	constructor(scene, infos) {
 		this._scene = scene;

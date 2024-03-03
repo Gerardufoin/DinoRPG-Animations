@@ -5,6 +5,7 @@ import { Fighter } from './Fighter.js';
 import { Asset } from '../display/Asset.js';
 import { ref } from '../gfx/references.js';
 import { GlowFilter } from '@pixi/filter-glow';
+import { FighterStatus } from './Constants.js';
 
 // GFX 850
 /**
@@ -40,16 +41,16 @@ export class StatusDisplay extends Container {
 		super();
 
 		this.y = -40;
-		this._statusIcons[Fighter.Status.Sleep] = this.createBasicIcon(ref.status.sleep);
-		this._statusIcons[Fighter.Status.Intang] = this.createBasicIcon(ref.status.intang);
-		this._statusIcons[Fighter.Status.Slow] = this.createSlowIcon();
-		this._statusIcons[Fighter.Status.Quick] = this.createQuickIcon();
-		this._statusIcons[Fighter.Status.Stoned] = this.createBasicIcon(ref.status.petrified);
-		this._statusIcons[Fighter.Status.Bless] = this.createBlessedIcon();
-		this._statusIcons[Fighter.Status.Poison] = this.createBasicIcon(ref.status.poison);
-		this._statusIcons[Fighter.Status.MonoElt] = this.createBasicIcon(ref.status.lock, 1.85, 0.85);
-		this._statusIcons[Fighter.Status.Dazzled] = this.createBasicIcon(ref.status.dazzled);
-		this._statusIcons[Fighter.Status.Stun] = this.createBasicIcon(ref.status.stun);
+		this._statusIcons[FighterStatus.Sleep] = this.createBasicIcon(ref.status.sleep);
+		this._statusIcons[FighterStatus.Intang] = this.createBasicIcon(ref.status.intang);
+		this._statusIcons[FighterStatus.Slow] = this.createSlowIcon();
+		this._statusIcons[FighterStatus.Quick] = this.createQuickIcon();
+		this._statusIcons[FighterStatus.Stoned] = this.createBasicIcon(ref.status.petrified);
+		this._statusIcons[FighterStatus.Bless] = this.createBlessedIcon();
+		this._statusIcons[FighterStatus.Poison] = this.createBasicIcon(ref.status.poison);
+		this._statusIcons[FighterStatus.MonoElt] = this.createBasicIcon(ref.status.lock, 1.85, 0.85);
+		this._statusIcons[FighterStatus.Dazzled] = this.createBasicIcon(ref.status.dazzled);
+		this._statusIcons[FighterStatus.Stun] = this.createBasicIcon(ref.status.stun);
 	}
 
 	/**

@@ -2,6 +2,7 @@
 // Mix both DamagesGroup and HFx from MT into a single action
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/DamagesGroup.hx
 // getEffect from https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Main.hx
+import { SkillList } from '../Constants.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
@@ -18,55 +19,6 @@ import { State } from '../State.js';
  * 	power?: number
  * }} SkillDetails
  */
-
-export const SkillList = {
-	Todo: 0,
-	// _DamagesGroup
-	Fireball: 1,
-	Blow: 2,
-	Lava: 3,
-	Meteor: 4,
-	Vigne: 5,
-	WaterCanon: 6,
-	Shower: 7,
-	LevitRay: 8,
-	Lightning: 9,
-	Crepuscule: 10,
-	Mistral: 11,
-	Tornade: 12,
-	Disc: 13,
-	Hole: 14,
-	Ice: 15,
-	Projectile: 16,
-	Tremor: 17,
-	JumpAttack: 18,
-	ChainLightning: 19,
-	Heal: 20,
-	Charge: 21,
-	Anim: 22,
-	Invoc: 23,
-	Sylfide: 24,
-	Rafale: 25,
-	Deluge: 26,
-	// FX
-	Env7: 27,
-	Aura: 28,
-	Snow: 29,
-	Swamp: 30,
-	Cloud: 31,
-	Focus: 32,
-	Default: 33,
-	Attach: 34,
-	AttachAnim: 35,
-	Hypnose: 36,
-	Ray: 37,
-	Speed: 38,
-	HeadOrTail: 39,
-	Leaf: 40,
-	MudWall: 41,
-	Blink: 42,
-	Generate: 43
-};
 
 /**
  * A skill is used based on the given skill type and details.

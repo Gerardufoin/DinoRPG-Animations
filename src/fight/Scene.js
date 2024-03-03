@@ -9,13 +9,14 @@ import { Timer } from './Timer.js';
 import { ContinueArrow } from './parts/ContinueArrow.js';
 import { Castle } from './Castle.js';
 import { DepthManager, Layers } from './DepthManager.js';
-import { GroundType, IScene, SCENE_FULL_WIDTH, SCENE_HEIGHT, SCENE_MARGIN, SCENE_WIDTH } from './IScene.js';
+import { IScene, SCENE_FULL_WIDTH, SCENE_HEIGHT, SCENE_MARGIN, SCENE_WIDTH } from './IScene.js';
 import { LoadingScreen } from './parts/scene/LoadingScreen.js';
 import { Phys } from './Phys.js';
 import { GroundDirt } from './parts/scene/GroundDirt.js';
 import { GroundStone } from './parts/scene/GroundStone.js';
 import { PixiHelper } from '../display/PixiHelper.js';
 import { GroundWater } from './parts/scene/GroundWater.js';
+import { GroundType } from './Constants.js';
 
 /**
  * The fight scene containing all the different layers to display.
@@ -237,7 +238,7 @@ export class Scene extends IScene {
 
 	/**
 	 * Creates a new Castle in the Scene if none already exists.
-	 * @param {import('./Castle.js').CastleInfos} infos Information relative to the Castle.
+	 * @param {import('./Castle.js').CastleDetails} infos Information relative to the Castle.
 	 */
 	createCastle(infos) {
 		if (!this._castle) {

@@ -1,9 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Scene.hx
 
-import { Container } from 'pixi.js';
 import { Timer } from './Timer.js';
-import { Sprite } from './Sprite.js';
 import { Tween } from '../display/Tween.js';
 
 /**

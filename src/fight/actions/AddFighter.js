@@ -8,25 +8,7 @@ import { State } from '../State.js';
 import { Timer } from '../Timer.js';
 import { Asset } from '../../display/Asset.js';
 import { Layers } from '../DepthManager.js';
-
-/**
- * Enum stating an entrance effect of a Fighter:
- * - Stand/Jump is a normal entrance.
- * - Run makes the Fighter run in from its side.
- * - Grow makes the Fighter grows from 0% to 100%.
- * - Fall makes the Fighter fall from the top of the scene.
- * - Ground makes the Fighter emerge from the ground.
- * - Anim makes the Fighter do a custom animation.
- */
-export const EntranceEffect = {
-	Stand: 0,
-	Jump: 1,
-	Run: 2,
-	Grow: 3,
-	Fall: 4,
-	Ground: 5,
-	Anim: 6
-};
+import { EntranceEffect } from '../Constants.js';
 
 /**
  * Action adding a new Fighter to the scene.

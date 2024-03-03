@@ -14,7 +14,7 @@ export class NoStatus extends State {
 	 */
 	_fighter;
 	/**
-	 * The Fighter.Status to remove from the Fighter.
+	 * The FighterStatus to remove from the Fighter.
 	 * @type {number}
 	 */
 	_status;
@@ -24,7 +24,7 @@ export class NoStatus extends State {
 	 * @param {Scene} scene The Scene where the State is happening.
 	 * @param {() => void} endCall The function to call at the end of the State, if any.
 	 * @param {number} fid The id of the chosen Fighter.
-	 * @param {number} status The Fighter.Status to remove from the Fighter.
+	 * @param {number} status The FighterStatus to remove from the Fighter.
 	 */
 	constructor(scene, endCall, fid, status) {
 		super(scene, endCall);

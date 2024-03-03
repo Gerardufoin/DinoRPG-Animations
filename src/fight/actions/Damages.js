@@ -1,21 +1,10 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/MoveTo.hx
+import { DamagesEffect, FighterStatus } from '../Constants.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { Timer } from '../Timer.js';
-
-export const DamagesEffect = {
-	Normal: 0,
-	Back: 1,
-	Counter: 2,
-	Drop: 3,
-	Eject: 4,
-	FlyCancel: 5,
-	IntangCancel: 6,
-	IntangBreak: 7,
-	Missed: 8
-};
 
 /**
  * A Fighter physically attacks another one.
@@ -45,7 +34,7 @@ export class Damages extends State {
 	 */
 	_damages;
 	/**
-	 * Type of effect to apply to the attack, based on Fighter.LifeEffect.
+	 * Type of effect to apply to the attack, based on LifeEffect.
 	 * @type {{fx: number, amount?: number, size?: number}}
 	 */
 	_lifeFx;
@@ -67,7 +56,7 @@ export class Damages extends State {
 	 * @param {number} fid The Fighter's id of the attacker.
 	 * @param {number} tid The Fighter's id of the target.
 	 * @param {number | null} damages The damages inflicted on the target.
-	 * @param {{fx: number, amount?: number, size?: number}} lifeFx The Fighter.LifeEffect to apply on the target.
+	 * @param {{fx: number, amount?: number, size?: number}} lifeFx The LifeEffect to apply on the target.
 	 * @param {number} effect The DamagesEffect used to approach the target.
 	 */
 	constructor(scene, endCall, fid, tid, damages, lifeFx, effect = DamagesEffect.Normal) {
@@ -134,7 +123,7 @@ export class Damages extends State {
 			this.hit(args[0], args[1]);
 		});
 		if (this._damages == null) {
-			if (this._target.haveStatus(Fighter.Status.Fly)) {
+			if (this._target.haveStatus(FighterStatus.Fly)) {
 				this._target._vx += -this._target.intSide * 5;
 			} else {
 				this._target.dodge(this._attacker);

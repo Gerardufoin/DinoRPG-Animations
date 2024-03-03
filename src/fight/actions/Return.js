@@ -1,5 +1,6 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Return.hx
+import { FighterProperty, FighterStatus } from '../Constants.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
@@ -37,7 +38,7 @@ export class Return extends State {
 	 */
 	init() {
 		const movements = [Fighter.MovementType.Run, Fighter.MovementType.Jump];
-		if (this._fighter.haveStatus(Fighter.Status.Fly) || this._fighter.haveProp(Fighter.Property.GroundOnly)) {
+		if (this._fighter.haveStatus(FighterStatus.Fly) || this._fighter.haveProp(FighterProperty.GroundOnly)) {
 			movements.shift();
 		}
 		this._fighter.initReturn(movements[Math.floor(Math.random() * movements.length)]);

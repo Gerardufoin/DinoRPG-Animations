@@ -2,7 +2,19 @@
 import { Application, Container, Graphics, Sprite, Texture, Matrix } from 'pixi.js';
 import { sdino } from './sdino.js';
 import { Fight } from './fight/Fight.js';
-import { Notifications } from './fight/actions/Notification.js';
+import {
+	Action,
+	GroundType,
+	FighterProperty,
+	LifeEffect,
+	FighterStatus,
+	EntranceEffect,
+	DamagesEffect,
+	SkillList,
+	GotoEffect,
+	EndBehaviour,
+	NotificationList
+} from './fight/Constants.js';
 //import { PixiHelper } from './display/PixiHelper.js';
 
 // Help combining transforms from parented animations
@@ -22,4 +34,24 @@ import { Notifications } from './fight/actions/Notification.js';
 );*/
 
 // Ultimately, only the project class should be exposed. Other classes are currently there for testing purposes.
-export { Application, Graphics, Container, Sprite, Texture, Matrix, sdino, Fight, Notifications };
+export {
+	Application,
+	Graphics,
+	Container,
+	Sprite,
+	Texture,
+	Matrix,
+	sdino,
+	Fight,
+	Action,
+	GroundType,
+	FighterProperty,
+	LifeEffect,
+	FighterStatus,
+	EntranceEffect,
+	DamagesEffect,
+	SkillList,
+	GotoEffect,
+	EndBehaviour,
+	NotificationList
+};

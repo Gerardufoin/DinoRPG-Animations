@@ -16,28 +16,7 @@ import { UpNotification } from '../parts/notifications/UpNotification.js';
 import { InitUpNotification } from '../parts/notifications/InitUpNotification.js';
 import { StrongNotification } from '../parts/notifications/StrongNotification.js';
 import { Layers } from '../DepthManager.js';
-
-export const Notifications = {
-	Slow: 0,
-	Quick: 1,
-	Silence: 2,
-	Sharingan: 3,
-	NoUse: 4,
-	Down: 5,
-	Up: 6,
-	Fire: 7,
-	Wood: 8,
-	Water: 9,
-	Thunder: 10,
-	Air: 11,
-	InitUp: 12,
-	InitDown: 13,
-	Snake: 14,
-	Strong: 15,
-	Shield: 16,
-	MonoElt: 17,
-	Todo: 18
-};
+import { NotificationList } from '../Constants.js';
 
 /**
  * A notification appears above a group of Fighters.
@@ -99,43 +78,43 @@ export class Notification extends State {
 	 */
 	createDisplay(notif) {
 		switch (notif) {
-			case Notifications.Slow:
+			case NotificationList.Slow:
 				return new SlowNotification();
-			case Notifications.Quick:
+			case NotificationList.Quick:
 				return new QuickNotification();
-			case Notifications.Silence:
+			case NotificationList.Silence:
 				return new BasicNotification(ref.status.silence, -10.55, -8.1, 2);
-			case Notifications.Sharingan:
+			case NotificationList.Sharingan:
 				return new SharinganNotification();
-			case Notifications.NoUse:
+			case NotificationList.NoUse:
 				return new BasicNotification(ref.status.no_use);
-			case Notifications.Down:
+			case NotificationList.Down:
 				return new DownNotification();
-			case Notifications.Up:
+			case NotificationList.Up:
 				return new UpNotification();
-			case Notifications.Fire:
+			case NotificationList.Fire:
 				return new BasicNotification(ref.status.fire);
-			case Notifications.Wood:
+			case NotificationList.Wood:
 				return new BasicNotification(ref.status.wood);
-			case Notifications.Water:
+			case NotificationList.Water:
 				return new BasicNotification(ref.status.water);
-			case Notifications.Thunder:
+			case NotificationList.Thunder:
 				return new BasicNotification(ref.status.thunder);
-			case Notifications.Air:
+			case NotificationList.Air:
 				return new BasicNotification(ref.status.air);
-			case Notifications.InitUp:
+			case NotificationList.InitUp:
 				return new InitUpNotification();
-			case Notifications.InitDown:
+			case NotificationList.InitDown:
 				return new BasicNotification(ref.status.init_down, -11.35, -12.45);
-			case Notifications.Snake:
+			case NotificationList.Snake:
 				return new BasicNotification(ref.status.snake, -11.65, -8.8, 2);
-			case Notifications.Strong:
+			case NotificationList.Strong:
 				return new StrongNotification();
-			case Notifications.MonoElt:
+			case NotificationList.MonoElt:
 				return new BasicNotification(ref.status.lock, -5.9, -7.1, 1.85);
-			case Notifications.Shield:
+			case NotificationList.Shield:
 				return new BasicNotification(ref.status.shield, -5.35, -8.6, 1.8);
-			case Notifications.Stun:
+			case NotificationList.Stun:
 				return new BasicNotification(ref.status.stun_notif);
 		}
 		return new NotificationDisplay();
