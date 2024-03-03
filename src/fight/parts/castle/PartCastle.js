@@ -4,6 +4,7 @@ import { IScene } from '../../IScene.js';
 import { Asset } from '../../../display/Asset.js';
 import { ref } from '../../../gfx/references.js';
 import { Part } from '../../Part.js';
+import { Container } from 'pixi.js';
 
 /**
  * A piece of stone falling from a damaged Castle..
@@ -20,7 +21,8 @@ export class PartCastle extends Part {
 	 * @param {number | null} vz The initial vz coordinate.
 	 */
 	constructor(scene, x, y, z, vx, vy, vz) {
-		super(new Asset(ref.castle.stone), scene);
+		super(new Container(), scene);
+		this._root.addChild(new Asset(ref.castle.stone));
 
 		this._weight = 0.5 + Math.random();
 		this._fadeoutTimer = 10 + Math.random() * 60;

@@ -6,8 +6,6 @@ import { Timer } from '../Timer.js';
 
 /**
  * Creates a Part which will stop moving once making contact with the ground.
- *
- * If flBurst is set to true, the Part will play its burst animation once in contact with the ground.
  */
 export class Faller extends Part {
 	/**

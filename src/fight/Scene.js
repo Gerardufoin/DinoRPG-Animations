@@ -1,7 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Scene.hx
 
-import { Container, Graphics } from 'pixi.js';
+import { Color, Container, Graphics, Renderer } from 'pixi.js';
 import { ref as gfx } from '../gfx/references.js';
 import { Asset } from '../display/Asset.js';
 import { Fighter } from './Fighter.js';
@@ -11,6 +11,11 @@ import { Castle } from './Castle.js';
 import { DepthManager, Layers } from './DepthManager.js';
 import { GroundType, IScene, SCENE_FULL_WIDTH, SCENE_HEIGHT, SCENE_MARGIN, SCENE_WIDTH } from './IScene.js';
 import { LoadingScreen } from './parts/scene/LoadingScreen.js';
+import { Phys } from './Phys.js';
+import { GroundDirt } from './parts/scene/GroundDirt.js';
+import { GroundStone } from './parts/scene/GroundStone.js';
+import { PixiHelper } from '../display/PixiHelper.js';
+import { GroundWater } from './parts/scene/GroundWater.js';
 
 /**
  * The fight scene containing all the different layers to display.
@@ -36,20 +41,27 @@ export class Scene extends IScene {
 	_continueArrow;
 
 	/**
+	 * The background pixels data, including the array of RGBA colors, the width and the height.
+	 * @type {{width: number, height: number, pixels: Uint8Array}}
+	 */
+	_backgroundPixelData;
+
+	/**
 	 * Create a new scene where the fight will happen.
 	 * @param {string} background The key to the background reference picture.
 	 * @param {{top: number, bottom: number, right: number}} margins Set the margins for the walkable area.
 	 * @param {number} ground The type of ground for the Scene.
+	 * @param {Renderer} renderer The renderer which will render the Scene. Used to get the Background colors.
 	 * @param {boolean} debug If true, the scene starts in debug mode. False by default.
 	 */
-	constructor(background, margins, ground, debug = false) {
+	constructor(background, margins, ground, renderer, debug = false) {
 		super();
 		this.debugMode = debug;
 		this.margins = margins;
 		this._groundType = ground;
 		this._depthManager = new DepthManager(Object.keys(Layers.Scene).length);
 		this.addChild(this._depthManager);
-		this.setBackground(background);
+		this.setBackground(background, renderer);
 		this.createColumns();
 		// The zindex of the entities is managed by their computed z position.
 		this.dm.setSortableLayer(Layers.Scene.FIGHTERS);
@@ -134,13 +146,19 @@ export class Scene extends IScene {
 	/**
 	 * Set the scene background.
 	 * @param {string} key The background key to use in gfx.background.
+	 * @param {Renderer} renderer The Renderer of the application, used to get the background colors.
 	 */
-	setBackground(key) {
+	setBackground(key, renderer) {
 		if (key && gfx.background[key]) {
 			const sprite = new Asset(gfx.background[key]);
 			sprite.y = -SCENE_MARGIN;
 			sprite.onLoad(() => {
 				sprite.x = SCENE_FULL_WIDTH / 2 - sprite.width / 2;
+				this._backgroundPixelData = {
+					width: sprite.width,
+					height: sprite.height,
+					pixels: renderer.extract.pixels(sprite)
+				};
 			});
 			this.dm.addContainer(sprite, Layers.Scene.BG);
 		}
@@ -231,6 +249,25 @@ export class Scene extends IScene {
 	}
 
 	/**
+	 * Return the color of the background at the given position.
+	 * @param {number} x The x coordinate.
+	 * @param {number} y The y coordinate.
+	 * @returns {Color} The color of the background.
+	 */
+	getBGPixel(x, y) {
+		if (!this._backgroundPixelData) return new Color();
+		x = PixiHelper.mm(0, x + SCENE_MARGIN, this._backgroundPixelData.width);
+		y = PixiHelper.mm(0, y + SCENE_MARGIN, this._backgroundPixelData.width);
+
+		const pos = (Math.floor(x) + Math.floor(y) * this._backgroundPixelData.width) * 4;
+		return new Color({
+			r: this._backgroundPixelData.pixels[pos],
+			g: this._backgroundPixelData.pixels[pos + 1],
+			b: this._backgroundPixelData.pixels[pos + 2]
+		});
+	}
+
+	/**
 	 * Generate a particle based on the type of ground of the current scene and if the caller is jumping or not.
 	 * @param {number} x The x coordinate of the spawned particle.
 	 * @param {number} y The y coordinate of the spawned particle.
@@ -238,16 +275,42 @@ export class Scene extends IScene {
 	 * @param {number} vy The initial y velocity of the particle.
 	 * @param {number} vz The initial z velocity of the particle.
 	 * @param {boolean} flJump Is the call related to a jump action? Used for spawning rocks.
+	 * @returns {Phys} The ground part generated.
 	 */
 	genGroundPart(x, y, vx = 0, vy = 0, vz = 0, flJump = false) {
 		switch (this._groundType) {
 			case GroundType.Dirt:
+				if (Math.random() <= 0.5) {
+					const dirt = new GroundDirt(this, x, y, -2, vx, vy, vz, this.getBGPixel(x, this.getY(y)));
+					this.dm.addSprite(dirt, Layers.Scene.FIGHTERS);
+					return dirt;
+				}
 				break;
 			case GroundType.Water:
+				if (Math.random() <= 0.5) {
+					const drop = new GroundWater(this, x, y, -2, 0, 0, -(2 + Math.random() * 5));
+					this.dm.addSprite(drop, Layers.Scene.SHADE);
+					return drop;
+				}
 				break;
 			case GroundType.Rock:
+				if (flJump && Math.random() < 0.25) {
+					const stone = new GroundStone(
+						this,
+						x,
+						y,
+						-2,
+						vx,
+						vy,
+						-(2 + Math.random() * 3),
+						this.getBGPixel(x, this.getY(y))
+					);
+					this.dm.addSprite(stone, Layers.Scene.FIGHTERS);
+					return stone;
+				}
 				break;
 		}
+		return null;
 	}
 
 	/**

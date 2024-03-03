@@ -125,6 +125,7 @@ export class Fight {
 				right: this._data.right ?? 0
 			},
 			this._data.ground ?? 0,
+			this._renderer,
 			data.debug
 		);
 
