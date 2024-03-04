@@ -77,6 +77,7 @@ export class AddFighter extends State {
 			case EntranceEffect.Fall:
 				this._fighter._z = -800;
 				this._fighter.playAnim('fall');
+				this._fighter.setGroundFx(false);
 				break;
 			case EntranceEffect.Run:
 				this._fighter._x += xOffset;
@@ -109,6 +110,7 @@ export class AddFighter extends State {
 			default:
 				this._fighter._x += xOffset;
 				this._fighter.moveTo(ex, ey, Fighter.MovementType.JumpDown);
+				this._fighter.setGroundFx(false);
 		}
 	}
 
@@ -153,6 +155,7 @@ export class AddFighter extends State {
 			} else if (this._fInfos.entrance !== undefined && this._fInfos.entrance !== EntranceEffect.Jump) {
 				this._fighter.backToDefault();
 			}
+			this._fighter.setGroundFx(true);
 			this._fighter.setLockTimer(20);
 			if (!this._fighter.isDino || !this._fighter.side) {
 				this._fighter.showName();

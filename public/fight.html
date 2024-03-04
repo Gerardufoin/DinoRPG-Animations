@@ -7,11 +7,28 @@
 			canvas {
 				margin: 5px;
 			}
+
+			#fight-container {
+				user-select: none;
+			}
+
+			button:not(:last-child) {
+				margin-right: 3px;
+			}
+
+			#doc-ref,
+			#debug-mode {
+				margin-top: 10px;
+			}
 		</style>
 	</head>
 	<body>
-		<!-- Flash preview debug -->
-		<script src="twinoid/std.js"></script>
+		<div id="fight-container"></div>
+		<div id="controls"></div>
+		<div id="debug-mode"><input type="checkbox" onchange="toggleDebug(this)" />Debug mode (need to reload)</div>
+		<div id="doc-ref">
+			<a href="https://github.com/Gerardufoin/DinoRPG-Animations/tree/main/src/fight">Documentation</a>
+		</div>
 		<script src="dinorpg-animations-test.min.js"></script>
 		<script src="fight.js"></script>
 	</body>

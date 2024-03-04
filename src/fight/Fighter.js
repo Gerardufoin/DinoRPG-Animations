@@ -484,7 +484,6 @@ export class Fighter extends Phys {
 			this.dm.addSprite(this._waterOndeFront, Layers.Fighter.FRONT);
 			this._waterOndeBack = new WaterOnde(0, -5, (this._ray * 2) / 100, -this._ray / 100);
 			this.dm.addSprite(this._waterOndeBack, Layers.Fighter.BACK);
-			this.setGroundFx(false);
 		}
 
 		// If the Fighter is a dino, adds a slot with its portrait.

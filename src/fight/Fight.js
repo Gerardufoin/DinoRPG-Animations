@@ -151,4 +151,14 @@ export class Fight {
 		}
 		return encodeURIComponent(new HaxeSerializer(MTConverter.convert(this._data)).serialize());
 	}
+
+	/**
+	 * Destroy the fight display and clean the memory.
+	 * Call if you need to remove the Fight from the webpage without reloading.
+	 * The Fight object is rendered useless after this method is called and will have to be discarded.
+	 */
+	destroy() {
+		this._timer.destroy();
+		this._renderer.destroy();
+	}
 }

@@ -135,6 +135,7 @@ export class State {
 	 * @returns {void}
 	 */
 	checkCasting() {
+		if (this.toDelete) return;
 		for (const f of this._casting) {
 			if (!f.setFocus(this)) {
 				return;
