@@ -2,7 +2,7 @@
 // Mix both DamagesGroup and HFx from MT into a single action
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/DamagesGroup.hx
 // getEffect from https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Main.hx
-import { SkillList } from '../Constants.js';
+import { SkillList } from '../Enums.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';

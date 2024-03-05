@@ -5,7 +5,7 @@ import { Fighter } from './Fighter.js';
 import { Asset } from '../display/Asset.js';
 import { ref } from '../gfx/references.js';
 import { GlowFilter } from '@pixi/filter-glow';
-import { FighterStatus } from './Constants.js';
+import { FighterStatus } from './Enums.js';
 
 // GFX 850
 /**

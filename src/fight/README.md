@@ -397,7 +397,7 @@ The time decreases every time Pause is called.
 | -------- | ------ | --------------------------------------------- |
 | time     | Number | The total duration of the timebar, in frames. |
 
-### CastleAttack (16)
+### AttackCastle (16)
 
 A fighter attacks the castle, dealing the given amount of damages.
 
@@ -518,7 +518,7 @@ Sends a message to the console if the fight is started in debug mode.
 | -------- | ------ | ------------------------------------ |
 | msg      | String | The message to print in the console. |
 
-### Notification (27)
+### Notify (27)
 
 Plays a notification above a group of fighters, which goes up and fades out over time.
 

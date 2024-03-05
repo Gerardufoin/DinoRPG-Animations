@@ -11,7 +11,7 @@ import {
 	LifeEffect,
 	NotificationList,
 	SkillList
-} from '../Constants.js';
+} from '../Enums.js';
 
 /**
  * Convert the project fight data into MT fight data.

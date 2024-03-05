@@ -9,7 +9,7 @@ import { LoadingScreen } from './parts/scene/LoadingScreen.js';
 import { PixiHelper } from '../display/PixiHelper.js';
 import { Timer } from './Timer.js';
 import { TimeBar } from './parts/scene/TimeBar.js';
-import { GroundType } from './Constants.js';
+import { GroundType } from './Enums.js';
 
 export const SCENE_MARGIN = 10;
 export const SCENE_WIDTH = 400;

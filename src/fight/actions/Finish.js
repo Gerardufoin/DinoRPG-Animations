@@ -1,6 +1,6 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Finish.hx
-import { EndBehaviour } from '../Constants.js';
+import { EndBehaviour } from '../Enums.js';
 import { Fighter } from '../Fighter.js';
 import { SCENE_WIDTH } from '../IScene.js';
 import { Scene } from '../Scene.js';

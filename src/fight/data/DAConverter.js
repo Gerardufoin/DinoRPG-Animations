@@ -12,7 +12,7 @@ import {
 	LifeEffect,
 	NotificationList,
 	SkillList
-} from '../Constants.js';
+} from '../Enums.js';
 
 /**
  * Convert MT fight data into DA fight data.
@@ -107,7 +107,6 @@ export class DAConverter {
 	 */
 	static convertHistory(mtData) {
 		const history = [];
-		console.log(JSON.stringify(mtData._history, null, '\t'));
 		for (const h of mtData._history) {
 			if (DAConverter.HistoryToAction[h.value]) {
 				history.push(DAConverter.HistoryToAction[h.value](h.args));

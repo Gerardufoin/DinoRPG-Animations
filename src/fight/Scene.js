@@ -16,7 +16,7 @@ import { GroundDirt } from './parts/scene/GroundDirt.js';
 import { GroundStone } from './parts/scene/GroundStone.js';
 import { PixiHelper } from '../display/PixiHelper.js';
 import { GroundWater } from './parts/scene/GroundWater.js';
-import { GroundType } from './Constants.js';
+import { GroundType } from './Enums.js';
 
 /**
  * The fight scene containing all the different layers to display.

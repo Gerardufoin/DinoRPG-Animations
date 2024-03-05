@@ -14,7 +14,7 @@ import {
 	GotoEffect,
 	EndBehaviour,
 	NotificationList
-} from './fight/Constants.js';
+} from './fight/Enums.js';
 //import { PixiHelper } from './display/PixiHelper.js';
 
 // Help combining transforms from parented animations

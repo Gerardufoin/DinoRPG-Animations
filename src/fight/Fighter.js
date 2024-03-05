@@ -30,7 +30,7 @@ import { Light } from './parts/life/Light.js';
 import { DepthManager, Layers } from './DepthManager.js';
 import { IScene } from './IScene.js';
 import { WaterOnde } from './parts/scene/WaterOnde.js';
-import { FighterProperty, FighterStatus, GroundType, LifeEffect } from './Constants.js';
+import { FighterProperty, FighterStatus, GroundType, LifeEffect } from './Enums.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.

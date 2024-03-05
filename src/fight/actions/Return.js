@@ -1,6 +1,6 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Return.hx
-import { FighterProperty, FighterStatus } from '../Constants.js';
+import { FighterProperty, FighterStatus } from '../Enums.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';

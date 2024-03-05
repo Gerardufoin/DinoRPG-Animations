@@ -28,7 +28,7 @@ import { Text } from './actions/Text.js';
 import { AttackCastle } from './actions/AttackCastle.js';
 import { Start } from './actions/Start.js';
 import { Skill } from './actions/Skill.js';
-import { Action } from './Constants.js';
+import { Action } from './Enums.js';
 
 /**
  * Contains the history of the fight and play it action by action.

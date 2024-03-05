@@ -8,7 +8,7 @@ import { State } from '../State.js';
 import { Timer } from '../Timer.js';
 import { Asset } from '../../display/Asset.js';
 import { Layers } from '../DepthManager.js';
-import { EntranceEffect } from '../Constants.js';
+import { EntranceEffect } from '../Enums.js';
 
 /**
  * Action adding a new Fighter to the scene.

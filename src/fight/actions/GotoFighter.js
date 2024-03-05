@@ -1,6 +1,6 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/GotoFighter.hx
-import { FighterStatus, GotoEffect } from '../Constants.js';
+import { FighterStatus, GotoEffect } from '../Enums.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';

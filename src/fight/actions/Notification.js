@@ -16,7 +16,7 @@ import { UpNotification } from '../parts/notifications/UpNotification.js';
 import { InitUpNotification } from '../parts/notifications/InitUpNotification.js';
 import { StrongNotification } from '../parts/notifications/StrongNotification.js';
 import { Layers } from '../DepthManager.js';
-import { NotificationList } from '../Constants.js';
+import { NotificationList } from '../Enums.js';
 
 /**
  * A notification appears above a group of Fighters.
