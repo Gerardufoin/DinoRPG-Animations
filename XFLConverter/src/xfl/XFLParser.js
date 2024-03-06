@@ -122,7 +122,9 @@ export class XFLParser {
 			path.dirname(file),
 			parentData?.transform
 		);
-		this.saveResult(result, fileType, parentData?.name);
+		if (Object.keys(result).length > 1) {
+			this.saveResult(result, fileType, parentData?.name);
+		}
 	}
 
 	/**
@@ -135,6 +137,9 @@ export class XFLParser {
 	 */
 	parseLayers(layers, result, fileType, directory, parentTransform = undefined) {
 		switch (fileType) {
+			case 'smonster':
+				this.parseMonsters(layers, directory);
+				break;
 			case '_anim':
 				this.parseAnim(layers, result, directory);
 				break;
@@ -173,6 +178,122 @@ export class XFLParser {
 		}
 		let nb = Number.parseFloat(value);
 		return undefinedIfZero && !nb ? undefined : this.roundToPlace(nb, 3);
+	}
+
+	/**
+	 * Parse the DOMTimeline.layers for the main monsters file
+	 * @param {*} layers The DOMTimeline.layers to parse.
+	 * @param {string} directory Directory of the file being parsed.
+	 */
+	parseMonsters(layers, directory) {
+		const monstersIdx = [];
+		const monsterList = [];
+		const monsterObjs = {};
+		for (const l of this.toArray(layers.DOMLayer)) {
+			if (l.name === 'Labels Layer') {
+				let lastLabel = '';
+				for (const f of l.frames.DOMFrame) {
+					const duration = f.duration ?? 1;
+					if (f.name) {
+						lastLabel = f.name;
+						monsterList.push(f.name);
+					}
+					for (let i = 0; i < duration; ++i) {
+						monstersIdx.push(lastLabel);
+					}
+				}
+			} else {
+				for (const f of l.frames.DOMFrame) {
+					if (!f.elements) continue;
+					const idx = Number.parseInt(f.index);
+					const symbolInstance = f.elements.DOMSymbolInstance;
+					const monsterData = {
+						item: symbolInstance.libraryItemName,
+						itemType: symbolInstance.name,
+						transform: {
+							tx: this.parseFloat(symbolInstance.matrix.Matrix.tx),
+							ty: this.parseFloat(symbolInstance.matrix.Matrix.ty),
+							a: this.parseFloat(symbolInstance.matrix.Matrix.a),
+							b: this.parseFloat(symbolInstance.matrix.Matrix.b),
+							c: this.parseFloat(symbolInstance.matrix.Matrix.c),
+							d: this.parseFloat(symbolInstance.matrix.Matrix.d),
+							brightness: this.parseFloat(symbolInstance.filters?.AdjustColorFilter?.brightness, true),
+							contrast: this.parseFloat(symbolInstance.filters?.AdjustColorFilter?.contrast, true),
+							saturation: this.parseFloat(symbolInstance.filters?.AdjustColorFilter?.saturation, true),
+							hue: this.parseFloat(symbolInstance.filters?.AdjustColorFilter?.hue, true)
+						},
+						glow: {
+							x: this.parseFloat(symbolInstance.filters?.GlowFilter?.blurX),
+							y: this.parseFloat(symbolInstance.filters?.GlowFilter?.blurY),
+							quality: this.parseFloat(symbolInstance.filters?.GlowFilter?.quality),
+							strength: this.parseFloat(symbolInstance.filters?.GlowFilter?.strength),
+							color: symbolInstance.filters?.GlowFilter?.color
+						},
+						blur: {
+							x: this.parseFloat(symbolInstance.filters?.BlurFilter?.blurX),
+							y: this.parseFloat(symbolInstance.filters?.BlurFilter?.blurY),
+							quality: this.parseFloat(symbolInstance.filters?.BlurFilter?.quality)
+						}
+					};
+					const duration = f.duration ?? 1;
+					for (let i = 0; i < duration; ++i) {
+						if (!monsterObjs[monstersIdx[idx + i]]) {
+							monsterObjs[monstersIdx[idx + i]] = {};
+						}
+						monsterObjs[monstersIdx[idx + i]][symbolInstance.name] = monsterData;
+					}
+				}
+			}
+		}
+		if (!fs.existsSync(this.RESULTS_FOLDER)) {
+			fs.mkdirSync(this.RESULTS_FOLDER);
+		}
+		fs.writeFileSync(
+			path.join(this.RESULTS_FOLDER, 'monster_base.js'),
+			Object.keys(monsterObjs)
+				.map(
+					(m) => `
+// ${monsterObjs[m]._p1.item}
+export let ${m} = {
+	name: '${m}',
+	// ${monsterObjs[m]._box.item}
+	width: ${monsterObjs[m]._box.transform.a},
+	height: ${monsterObjs[m]._box.transform.d},
+	transforms: [
+		// 4089
+		${JSON.stringify(monsterObjs[m]._p1.transform, undefined, '\t')},
+		// Adjust
+		{
+			ty: ${-monsterObjs[m]._s?.transform?.ty ?? 0}
+		}
+	],
+	glow: {
+		distance: ${monsterObjs[m]._p1.glow.x},
+		color: ${monsterObjs[m]._p1.glow.color?.replace('#', '0x') ?? ''},
+		quality: ${monsterObjs[m]._p1.glow.quality},
+		strength: ${Math.round((monsterObjs[m]._p1.glow.strength - 0.7) * 1000) / 1000}
+	},
+	shadow: {
+		ref: ref_sdino.fx.shadow,
+		transform: {
+			tx: ${monsterObjs[m]._s?.transform?.tx ?? 0},
+			a: ${monsterObjs[m]._s?.transform?.a ?? 0},
+			d: ${monsterObjs[m]._s?.transform?.d ?? 0}
+		},
+		alpha: 0.5,
+		blur: { x: 1, y: 1 }
+	},
+	parts: {},
+	animations: {}
+}
+`
+				)
+				.join('\n\n\n')
+		);
+		fs.writeFileSync(
+			path.join(this.RESULTS_FOLDER, 'monster_list.txt'),
+			monsterList.map((m) => `- [ ] ${m}`).join('\n')
+		);
 	}
 
 	/**

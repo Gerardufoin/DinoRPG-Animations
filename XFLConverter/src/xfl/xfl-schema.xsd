@@ -151,21 +151,32 @@
 																												<xs:element minOccurs="0" name="filters">
 																													<xs:complexType>
 																														<xs:sequence>
-																															<xs:element minOccurs="0" name="AdjustColorFilter">
-																																<xs:complexType>
-																																	<xs:attribute name="brightness" type="xs:byte" use="optional"/>
-																																	<xs:attribute name="contrast" type="xs:byte" use="optional"/>
-																																	<xs:attribute name="saturation" type="xs:byte" use="optional"/>
-																																	<xs:attribute name="hue" type="xs:byte" use="optional"/>
-																																</xs:complexType>
-																															</xs:element>
-																															<xs:element minOccurs="0" name="BlurFilter">
-																																<xs:complexType>
-																																	<xs:attribute name="blurX" type="xs:decimal" use="optional"/>
-																																	<xs:attribute name="blurY" type="xs:decimal" use="optional"/>
-																																	<xs:attribute name="quality" type="xs:decimal" use="optional"/>
-																																</xs:complexType>
-																															</xs:element>
+															                                                                <xs:choice maxOccurs="unbounded">
+																																<xs:element minOccurs="0" name="AdjustColorFilter">
+																																	<xs:complexType>
+																																		<xs:attribute name="brightness" type="xs:short" use="optional"/>
+																																		<xs:attribute name="contrast" type="xs:short" use="optional"/>
+																																		<xs:attribute name="saturation" type="xs:short" use="optional"/>
+																																		<xs:attribute name="hue" type="xs:short" use="optional"/>
+																																	</xs:complexType>
+																																</xs:element>
+																																<xs:element minOccurs="0" name="BlurFilter">
+																																	<xs:complexType>
+																																		<xs:attribute name="blurX" type="xs:decimal" use="optional"/>
+																																		<xs:attribute name="blurY" type="xs:decimal" use="optional"/>
+																																		<xs:attribute name="quality" type="xs:decimal" use="optional"/>
+																																	</xs:complexType>
+																																</xs:element>
+																																<xs:element minOccurs="0" name="GlowFilter">
+																																	<xs:complexType>
+																																		<xs:attribute name="blurX" type="xs:decimal" use="optional"/>
+																																		<xs:attribute name="blurY" type="xs:decimal" use="optional"/>
+																																		<xs:attribute name="quality" type="xs:decimal" use="optional"/>
+																																		<xs:attribute name="strength" type="xs:decimal" use="optional"/>
+																																		<xs:attribute name="color" type="xs:string" use="optional"/>
+																																	</xs:complexType>
+																																</xs:element>
+															                                                                </xs:choice>
 																														</xs:sequence>
 																													</xs:complexType>
 																												</xs:element>
@@ -183,11 +194,11 @@
 																							</xs:complexType>
 																						</xs:element>
 																					</xs:sequence>
-																					<xs:attribute name="index" type="xs:unsignedByte" use="required"/>
+																					<xs:attribute name="index" type="xs:unsignedInt" use="required"/>
 																					<xs:attribute name="keyMode" type="xs:unsignedShort" use="required"/>
 																					<xs:attribute name="name" type="xs:string" use="optional"/>
 																					<xs:attribute name="labelType" type="xs:string" use="optional"/>
-																					<xs:attribute name="duration" type="xs:unsignedByte" use="optional"/>
+																					<xs:attribute name="duration" type="xs:unsignedInt" use="optional"/>
 																				</xs:complexType>
 																			</xs:element>
 																		</xs:sequence>
