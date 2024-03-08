@@ -333,6 +333,7 @@ export class Scene extends IScene {
 			};
 		}
 		this.onclick = clickCb;
+		this.ontap = clickCb;
 		this.eventMode = 'static';
 		this.cursor = 'pointer';
 		if (arrow) {
@@ -347,6 +348,7 @@ export class Scene extends IScene {
 		this.eventMode = 'none';
 		this.cursor = 'default';
 		this.onclick = undefined;
+		this.ontap = undefined;
 		this._continueArrow.visible = false;
 	}
 
