@@ -106,7 +106,7 @@ const buttons = [
 				},
 				{
 					action: DinoAnim.Action.Text,
-					message: `For a dinoz, you must give its description string. For a monster, you must give its name as found on the monster page (TODO).`
+					message: `For a dinoz, you must give its description string. For a monster, you must give its name as found on the monster page (link below).`
 				},
 				{
 					action: DinoAnim.Action.Add,

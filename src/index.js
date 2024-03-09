@@ -1,6 +1,7 @@
 // Sandbox test page
 import { Application, Container, Graphics, Sprite, Texture, Matrix } from 'pixi.js';
 import { sdino } from './sdino.js';
+import { smonster } from './smonster.js';
 import { Fight } from './fight/Fight.js';
 import {
 	Action,
@@ -42,6 +43,7 @@ export {
 	Texture,
 	Matrix,
 	sdino,
+	smonster,
 	Fight,
 	Action,
 	GroundType,

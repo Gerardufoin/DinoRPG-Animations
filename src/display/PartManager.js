@@ -103,6 +103,9 @@ export class PartManager {
 					anim.addPart(pName, element);
 				}
 			}
+			if (part.transform) {
+				anim.transform.setFromMatrix(PixiHelper.matrixFromObject(part.transform));
+			}
 			return anim;
 		}
 		return null;

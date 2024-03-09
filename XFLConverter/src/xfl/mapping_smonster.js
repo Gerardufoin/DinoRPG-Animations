@@ -18,5 +18,30 @@ export let mapping_smonster = {
 	'Symbol 516': 'l_hand',
 	'Symbol 518': 'head',
 	'Symbol 522': 'l_eye',
-	'Symbol 522-1': 'r_eye'
+	'Symbol 522-1': 'r_eye',
+	// Taurus
+	'Symbol 2883': 'r_back_spike',
+	'Symbol 2885': 'mane',
+	'Symbol 2887': 'l_back_spike',
+	'Symbol 2891_p6b': 'r_forearm',
+	'Symbol 2895_p3f': 'r_foot',
+	'Symbol 2898': 'l_upper_leg',
+	'Symbol 2899': 'l_arm',
+	'Symbol 2899-1': 'r_upper_leg',
+	'Symbol 2899-2': 'r_arm',
+	'Symbol 2903_p3b': 'r_leg',
+	'Symbol 2913_p7': 'body',
+	'Symbol 2920_p5': 'head',
+	'Symbol 2922_p3c': 'l_foot',
+	'Symbol 2926_p3a': 'l_leg',
+	'Symbol 2933_p6a': 'l_forearm',
+	'Symbol 2935': 'l_sideburn',
+	'Symbol 2935-1': 'r_sideburn',
+	'Symbol 2947': 'l_hand',
+	'Symbol 2947-1': 'r_hand',
+	// Taurus tail
+	'Symbol 2905': 't_4',
+	'Symbol 2907_col0': 't_1',
+	'Symbol 2907_col0-1': 't_2',
+	'Symbol 2907_col0-2': 't_3'
 };
