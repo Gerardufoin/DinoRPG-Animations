@@ -109,13 +109,6 @@ export let sleep = {
 				ty: -23.2,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: 0.45,
 				ty: -33.55,
@@ -138,10 +131,12 @@ export let sleep = {
 		{
 			l_sideburn: {
 				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				ty: -17.05,
+				a: 0.864,
+				d: 0.864,
+				l: 16,
+				b: -0.008,
+				c: 0.008
 			},
 			l_forearm: {
 				tx: 5.2,
@@ -245,13 +240,6 @@ export let sleep = {
 				c: -0.005,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: 0.2,
 				ty: -33.65,
@@ -274,10 +262,12 @@ export let sleep = {
 		{
 			l_sideburn: {
 				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				ty: -17.1,
+				a: 0.861,
+				d: 0.861,
+				l: 16,
+				b: -0.018,
+				c: 0.018
 			},
 			l_forearm: {
 				tx: 5.1,
@@ -381,13 +371,6 @@ export let sleep = {
 				c: -0.009,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: 0,
 				ty: -33.75,
@@ -409,11 +392,13 @@ export let sleep = {
 		},
 		{
 			l_sideburn: {
-				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				tx: -3.75,
+				ty: -17.3,
+				a: 0.858,
+				d: 0.858,
+				l: 16,
+				b: -0.027,
+				c: 0.027
 			},
 			l_forearm: {
 				tx: 5.05,
@@ -519,13 +504,6 @@ export let sleep = {
 				c: -0.014,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -0.25,
 				ty: -33.8,
@@ -548,10 +526,12 @@ export let sleep = {
 		{
 			l_sideburn: {
 				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				ty: -17.35,
+				a: 0.854,
+				d: 0.854,
+				l: 16,
+				b: -0.037,
+				c: 0.037
 			},
 			l_forearm: {
 				tx: 4.95,
@@ -658,13 +638,6 @@ export let sleep = {
 				d: 1.001,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -0.45,
 				ty: -33.9,
@@ -686,11 +659,13 @@ export let sleep = {
 		},
 		{
 			l_sideburn: {
-				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				tx: -3.85,
+				ty: -17.4,
+				a: 0.85,
+				d: 0.85,
+				l: 16,
+				b: -0.05,
+				c: 0.05
 			},
 			l_forearm: {
 				tx: 4.85,
@@ -797,13 +772,6 @@ export let sleep = {
 				d: 1.001,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -0.7,
 				ty: -33.95,
@@ -825,11 +793,13 @@ export let sleep = {
 		},
 		{
 			l_sideburn: {
-				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				tx: -3.85,
+				ty: -17.5,
+				a: 0.846,
+				d: 0.846,
+				l: 16,
+				b: -0.059,
+				c: 0.059
 			},
 			l_forearm: {
 				tx: 4.8,
@@ -936,13 +906,6 @@ export let sleep = {
 				d: 1.001,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -0.9,
 				ty: -34.05,
@@ -964,11 +927,13 @@ export let sleep = {
 		},
 		{
 			l_sideburn: {
-				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				tx: -3.85,
+				ty: -17.55,
+				a: 0.843,
+				d: 0.843,
+				l: 16,
+				b: -0.069,
+				c: 0.069
 			},
 			l_forearm: {
 				tx: 4.65,
@@ -1075,13 +1040,6 @@ export let sleep = {
 				d: 1.001,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -1.15,
 				ty: -34.1,
@@ -1103,11 +1061,13 @@ export let sleep = {
 		},
 		{
 			l_sideburn: {
-				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				tx: -3.85,
+				ty: -17.7,
+				a: 0.839,
+				d: 0.839,
+				l: 16,
+				b: -0.078,
+				c: 0.078
 			},
 			l_forearm: {
 				tx: 4.6,
@@ -1214,13 +1174,6 @@ export let sleep = {
 				d: 1.001,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -1.4,
 				ty: -34.15,
@@ -1243,10 +1196,12 @@ export let sleep = {
 		{
 			l_sideburn: {
 				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				ty: -17.8,
+				a: 0.835,
+				d: 0.835,
+				l: 16,
+				b: -0.087,
+				c: 0.087
 			},
 			l_forearm: {
 				tx: 4.55,
@@ -1353,13 +1308,6 @@ export let sleep = {
 				d: 1.001,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -1.6,
 				ty: -34.25,
@@ -1381,11 +1329,13 @@ export let sleep = {
 		},
 		{
 			l_sideburn: {
-				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				tx: -3.85,
+				ty: -17.9,
+				a: 0.831,
+				d: 0.831,
+				l: 16,
+				b: -0.097,
+				c: 0.097
 			},
 			l_forearm: {
 				tx: 4.4,
@@ -1491,13 +1441,6 @@ export let sleep = {
 				c: -0.049,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -1.85,
 				ty: -34.3,
@@ -1519,11 +1462,13 @@ export let sleep = {
 		},
 		{
 			l_sideburn: {
-				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				tx: -3.9,
+				ty: -17.95,
+				a: 0.827,
+				d: 0.827,
+				l: 16,
+				b: -0.106,
+				c: 0.106
 			},
 			l_forearm: {
 				tx: 4.35,
@@ -1629,13 +1574,6 @@ export let sleep = {
 				c: -0.053,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -2.05,
 				ty: -34.4,
@@ -1657,11 +1595,13 @@ export let sleep = {
 		},
 		{
 			l_sideburn: {
-				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				tx: -3.95,
+				ty: -18.05,
+				a: 0.822,
+				d: 0.822,
+				l: 16,
+				b: -0.119,
+				c: 0.119
 			},
 			l_forearm: {
 				tx: 4.2,
@@ -1767,13 +1707,6 @@ export let sleep = {
 				c: -0.058,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -2.3,
 				ty: -34.45,
@@ -1795,11 +1728,13 @@ export let sleep = {
 		},
 		{
 			l_sideburn: {
-				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				tx: -3.9,
+				ty: -18.15,
+				a: 0.818,
+				d: 0.818,
+				l: 16,
+				b: -0.128,
+				c: 0.128
 			},
 			l_forearm: {
 				tx: 4.2,
@@ -1905,13 +1840,6 @@ export let sleep = {
 				c: -0.066,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -2.5,
 				ty: -34.55,
@@ -1933,11 +1861,13 @@ export let sleep = {
 		},
 		{
 			l_sideburn: {
-				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				tx: -3.9,
+				ty: -18.2,
+				a: 0.814,
+				d: 0.814,
+				l: 16,
+				b: -0.139,
+				c: 0.139
 			},
 			l_forearm: {
 				tx: 4.05,
@@ -2043,13 +1973,6 @@ export let sleep = {
 				c: -0.071,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -2.75,
 				ty: -34.55,
@@ -2071,11 +1994,13 @@ export let sleep = {
 		},
 		{
 			l_sideburn: {
-				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				tx: -3.85,
+				ty: -17.95,
+				a: 0.82,
+				d: 0.82,
+				l: 16,
+				b: -0.123,
+				c: 0.123
 			},
 			l_forearm: {
 				tx: 4.15,
@@ -2181,13 +2106,6 @@ export let sleep = {
 				c: -0.062,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -2.4,
 				ty: -34.45,
@@ -2210,10 +2128,12 @@ export let sleep = {
 		{
 			l_sideburn: {
 				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				ty: -17.85,
+				a: 0.827,
+				d: 0.827,
+				l: 16,
+				b: -0.106,
+				c: 0.106
 			},
 			l_forearm: {
 				tx: 4.3,
@@ -2319,13 +2239,6 @@ export let sleep = {
 				c: -0.053,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -2.05,
 				ty: -34.35,
@@ -2348,10 +2261,12 @@ export let sleep = {
 		{
 			l_sideburn: {
 				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				ty: -17.75,
+				a: 0.833,
+				d: 0.833,
+				l: 16,
+				b: -0.092,
+				c: 0.092
 			},
 			l_forearm: {
 				tx: 4.35,
@@ -2458,13 +2373,6 @@ export let sleep = {
 				d: 1.001,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -1.7,
 				ty: -34.2,
@@ -2487,10 +2395,12 @@ export let sleep = {
 		{
 			l_sideburn: {
 				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				ty: -17.6,
+				a: 0.839,
+				d: 0.839,
+				l: 16,
+				b: -0.077,
+				c: 0.077
 			},
 			l_forearm: {
 				tx: 4.55,
@@ -2597,13 +2507,6 @@ export let sleep = {
 				d: 1.001,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -1.35,
 				ty: -34.1,
@@ -2625,11 +2528,13 @@ export let sleep = {
 		},
 		{
 			l_sideburn: {
-				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				tx: -3.85,
+				ty: -17.4,
+				a: 0.846,
+				d: 0.846,
+				l: 16,
+				b: -0.06,
+				c: 0.06
 			},
 			l_forearm: {
 				tx: 4.7,
@@ -2736,13 +2641,6 @@ export let sleep = {
 				d: 1.001,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -0.95,
 				ty: -34,
@@ -2764,11 +2662,13 @@ export let sleep = {
 		},
 		{
 			l_sideburn: {
-				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				tx: -3.85,
+				ty: -17.3,
+				a: 0.851,
+				d: 0.851,
+				l: 16,
+				b: -0.045,
+				c: 0.045
 			},
 			l_forearm: {
 				tx: 4.8,
@@ -2875,13 +2775,6 @@ export let sleep = {
 				d: 1.001,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -0.6,
 				ty: -33.9,
@@ -2904,10 +2797,12 @@ export let sleep = {
 		{
 			l_sideburn: {
 				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				ty: -17.15,
+				a: 0.857,
+				d: 0.857,
+				l: 16,
+				b: -0.028,
+				c: 0.028
 			},
 			l_forearm: {
 				tx: 4.95,
@@ -3013,13 +2908,6 @@ export let sleep = {
 				c: -0.014,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: -0.25,
 				ty: -33.75,
@@ -3042,10 +2930,12 @@ export let sleep = {
 		{
 			l_sideburn: {
 				tx: -3.8,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 16
+				ty: -17.05,
+				a: 0.862,
+				d: 0.862,
+				l: 16,
+				b: -0.013,
+				c: 0.013
 			},
 			l_forearm: {
 				tx: 5.1,
@@ -3149,13 +3039,6 @@ export let sleep = {
 				c: -0.005,
 				l: 4
 			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
-			},
 			l_back_spike: {
 				tx: 0.1,
 				ty: -33.65,
@@ -3181,7 +3064,9 @@ export let sleep = {
 				ty: -16.9,
 				a: 0.868,
 				d: 0.868,
-				l: 16
+				l: 16,
+				b: 0,
+				c: 0
 			},
 			l_forearm: {
 				tx: 5.3,
@@ -3280,13 +3165,6 @@ export let sleep = {
 				tx: -19.75,
 				ty: -23.2,
 				l: 4
-			},
-			r_sideburn: {
-				tx: -2.65,
-				ty: -16.9,
-				a: 0.868,
-				d: 0.868,
-				l: 3
 			},
 			l_back_spike: {
 				tx: 0.45,
