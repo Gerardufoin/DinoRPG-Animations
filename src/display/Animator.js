@@ -91,6 +91,9 @@ export class Animator extends Container {
 			animation.setCurrentIdx(idx);
 			animation.updateAnimation();
 		});
+		this.registerCallback('playAnim', (_animation, key) => {
+			this.playAnim(key);
+		});
 	}
 
 	/**

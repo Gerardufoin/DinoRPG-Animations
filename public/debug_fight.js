@@ -73,9 +73,9 @@ const fightVersion = [
 					dino: true,
 					life: 100,
 					name: 'Dragon Jr',
-					side: true,
+					side: false,
 					scale: 1,
-					fid: 0,
+					fid: 1,
 					gfx: '09T1Yt9wqq4Rx000',
 					x: 100,
 					y: 100
@@ -88,11 +88,17 @@ const fightVersion = [
 					dino: false,
 					life: 100,
 					name: 'Gardien Abricole',
-					side: false,
+					side: true,
 					scale: 1,
-					fid: 1,
-					gfx: 'taurus'
+					fid: 0,
+					gfx: 'mandragore'
 				}
+			},
+			{
+				action: DinoAnim.Action.Damages,
+				fid: 0,
+				tid: 1,
+				damages: 10
 			},
 			{
 				action: DinoAnim.Action.AttackCastle,

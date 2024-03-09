@@ -8,14 +8,20 @@
 				display: block;
 				margin: 5px;
 			}
+
+			button:not(:first-child) {
+				margin-left: 2px;
+			}
+
+			#monsters {
+				margin-top: 10px;
+			}
 		</style>
 	</head>
 	<body>
 		<div id="smonster"></div>
 		<div id="controls"></div>
-		<legend>Monster id</legend>
-		<input type="text" id="monster_id" value="grdien"></input>
-		<button id="update">Update</button>
+		<div id="monsters"></div>
 		<script src="dinorpg-animations-test.min.js"></script>
 		<script src="smonster.js"></script>
 	</body>

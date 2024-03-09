@@ -14,14 +14,16 @@ const actions = [
 	'release',
 	'dead',
 	'big',
-	'special'
+	'special',
+	'counter'
 ];
+const monsterList = ['grdien', 'mandragore', 'taurus'];
 let currentAnim = undefined;
 
 const appAnimation = new DinoAnim.Application({
 	background: '#E7B577',
-	width: 200,
-	height: 200
+	width: 300,
+	height: 300
 });
 document.getElementById('smonster').appendChild(appAnimation.view);
 
@@ -36,15 +38,9 @@ function updateMonster(type) {
 		pflag: true
 	});
 	appAnimation.stage.addChild(currentAnim);
-	currentAnim.x = 100;
-	currentAnim.y = 180;
+	currentAnim.x = 150;
+	currentAnim.y = 250;
 }
-
-document.getElementById('update').addEventListener('click', () => {
-	const code = document.getElementById('monster_id');
-	updateMonster(code.value);
-});
-document.getElementById('update').click();
 
 for (const a of actions) {
 	const button = document.createElement('button');
@@ -54,3 +50,14 @@ for (const a of actions) {
 	});
 	document.getElementById('controls').appendChild(button);
 }
+
+for (const m of monsterList) {
+	const button = document.createElement('button');
+	button.innerHTML = m;
+	button.addEventListener('click', () => {
+		updateMonster(m);
+	});
+	document.getElementById('monsters').appendChild(button);
+}
+
+updateMonster('mandragore');

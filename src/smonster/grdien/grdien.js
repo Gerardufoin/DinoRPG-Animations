@@ -43,7 +43,6 @@ export let grdien = {
 		ref: ref_sdino.fx.shadow,
 		transform: {
 			tx: -1.2,
-			ty: 0,
 			a: 1.278,
 			d: 1.156
 		},

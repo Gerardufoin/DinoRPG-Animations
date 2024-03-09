@@ -45,9 +45,6 @@ export class Worker extends Animator {
 		}
 		this.setAnimations(worker.animations);
 		this.playAnim('windup');
-		this.registerCallback('playAnim', (_animation, key) => {
-			this.playAnim(key);
-		});
 
 		this.x = x;
 		this.y = y;
