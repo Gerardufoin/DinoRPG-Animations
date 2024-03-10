@@ -6,6 +6,7 @@ import { SkillList } from '../Enums.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
+import { JumpAttack } from './skills/group/JumpAttack.js';
 
 /**
  * The parameters of a skill.
@@ -57,7 +58,7 @@ export class Skill extends State {
 		this._skill = skill;
 		this._details = details;
 
-		if (details.fid) {
+		if (details.fid !== undefined) {
 			this._fighter = this._scene.getFighter(details.fid);
 			if (!this._fighter) {
 				this.kill();
@@ -86,13 +87,27 @@ export class Skill extends State {
 	 * Initialize the skill being used.
 	 */
 	init() {
+		// Target without life are dodging the skill.
+		if (this._targets) {
+			for (const t of this._targets ?? []) {
+				if (t.life === undefined) {
+					t.fighter.playAnim('special');
+				}
+			}
+			this._targets = this._targets.filter((t) => t.life !== undefined);
+		}
+		const state = this.getSkill();
+		if (state) {
+			this._newStates.push(state);
+			return;
+		}
+
+		// Temp
 		if (this._fighter) {
 			console.log(`Fighter ${this._fighter.id} uses skill ${Object.keys(SkillList)[this._skill]}`);
 		} else {
 			console.log(`Skill ${Object.keys(SkillList)[this._skill]} invoked.`);
 		}
-		// TODO
-		// Temp
 		for (const t of this._targets ?? []) {
 			if (t.life) {
 				if (this._skill === SkillList.Heal) {
@@ -103,5 +118,19 @@ export class Skill extends State {
 			}
 		}
 		this.end();
+	}
+
+	/**
+	 * Get the correct skill.
+	 * @returns {State} The State corresponding to the skill.
+	 */
+	getSkill() {
+		// TODO
+		switch (this._skill) {
+			case SkillList.Tremor:
+			case SkillList.JumpAttack:
+				return new JumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);
+		}
+		return null;
 	}
 }

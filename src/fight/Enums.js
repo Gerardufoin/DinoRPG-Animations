@@ -186,6 +186,17 @@ export const SkillList = {
 };
 
 /**
+ * Types of skills.
+ */
+export const SkillType = {
+	Fire: 0,
+	Wood: 1,
+	Water: 2,
+	Lightning: 3,
+	Air: 4
+};
+
+/**
  * Enum stating how the Fighter moves toward its target:
  * - Normal is a normal run.
  * - Over makes the Fighter jump above the target. Removes the flying status.

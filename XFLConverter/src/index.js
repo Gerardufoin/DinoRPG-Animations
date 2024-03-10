@@ -48,6 +48,6 @@ const parser = new XFLParser();
 
 const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
-//adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
-adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
+adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
+//adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');

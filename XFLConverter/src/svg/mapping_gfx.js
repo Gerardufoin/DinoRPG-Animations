@@ -70,6 +70,7 @@ export let mapping_gfx = {
 	201: 'toys/amulst',
 	203: 'toys/wpure',
 	206: 'fx/star',
+	211: 'fx/shockwave',
 	584: 'scene/click',
 	586: 'status/slow',
 	589: 'status/quick',
