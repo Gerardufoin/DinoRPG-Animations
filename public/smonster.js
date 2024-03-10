@@ -7,6 +7,7 @@ const actions = [
 	'hit',
 	'fly',
 	'jump',
+	'fall',
 	'land',
 	'sleep',
 	'ill',
@@ -17,12 +18,12 @@ const actions = [
 	'special',
 	'counter'
 ];
-const monsterList = ['grdien', 'mandragore', 'taurus'];
+const monsterList = ['grdien', 'mandragore', 'lucet', 'taurus'];
 let currentAnim = undefined;
 
 const appAnimation = new DinoAnim.Application({
 	background: '#E7B577',
-	width: 300,
+	width: 500,
 	height: 300
 });
 document.getElementById('smonster').appendChild(appAnimation.view);
@@ -38,7 +39,7 @@ function updateMonster(type) {
 		pflag: true
 	});
 	appAnimation.stage.addChild(currentAnim);
-	currentAnim.x = 150;
+	currentAnim.x = 250;
 	currentAnim.y = 250;
 }
 
@@ -60,4 +61,4 @@ for (const m of monsterList) {
 	document.getElementById('monsters').appendChild(button);
 }
 
-updateMonster('mandragore');
+updateMonster('lucet');

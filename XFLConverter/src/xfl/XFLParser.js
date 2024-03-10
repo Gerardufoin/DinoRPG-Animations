@@ -371,6 +371,7 @@ export let ${m} = {
 				for (const f of l.frames.DOMFrame) {
 					const idx = Number.parseInt(f.index);
 					const symbolInstance = f.elements.DOMSymbolInstance;
+					if (!symbolInstance) continue;
 					const frameData = {
 						item: symbolInstance.libraryItemName,
 						itemType: symbolInstance.name,
@@ -397,7 +398,7 @@ export let ${m} = {
 			}
 		}
 		for (const anim of animations) {
-			if (anim.name !== '') {
+			if (anim.name !== '' && anim.data) {
 				if (result.anims[anim.name]) {
 					throw new Error(
 						`Animation ${anim.name} already exists, cannot have two animation with the same name.`
@@ -409,6 +410,8 @@ export let ${m} = {
 					name: anim.name,
 					transform: anim.data?.transform
 				});
+			} else if (anim.name !== '') {
+				console.log(`${anim.name} does not have data`);
 			}
 		}
 	}
@@ -463,6 +466,15 @@ export let ${m} = {
 			blx: this.multiplyColors(m2.blx, m1.blx),
 			bly: this.multiplyColors(m2.bly, m1.bly),
 			blq: this.multiplyColors(m2.blq, m1.blq),
+			acb: this.multiplyColors(m2.acb, m1.acb),
+			acc: this.multiplyColors(m2.acc, m1.acc),
+			acs: this.multiplyColors(m2.acs, m1.acs),
+			ach: this.multiplyColors(m2.ach, m1.ach),
+			glx: this.multiplyColors(m2.glx, m1.glx),
+			gly: this.multiplyColors(m2.gly, m1.gly),
+			glc: m1.glc ?? m2.glc,
+			glq: this.multiplyColors(m2.glq, m1.glq),
+			gls: this.multiplyColors(m2.gls, m1.gls),
 			l: m1.l ?? m2.l
 		};
 		matrix.a = matrix.a === 1 ? undefined : matrix.a;
@@ -528,13 +540,19 @@ export let ${m} = {
 						blx: this.parseFloat(symbolInstance.filters?.BlurFilter?.blurX),
 						bly: this.parseFloat(symbolInstance.filters?.BlurFilter?.blurY),
 						blq: this.parseFloat(symbolInstance.filters?.BlurFilter?.quality),
+						acb: this.parseFloat(symbolInstance.filters?.AdjustColorFilter?.brightness),
+						acc: this.parseFloat(symbolInstance.filters?.AdjustColorFilter?.contrast),
+						acs: this.parseFloat(symbolInstance.filters?.AdjustColorFilter?.saturation),
+						ach: this.parseFloat(symbolInstance.filters?.AdjustColorFilter?.hue),
+						glx: this.parseFloat(symbolInstance.filters?.GlowFilter?.blurX),
+						gly: this.parseFloat(symbolInstance.filters?.GlowFilter?.blurY),
+						glc: symbolInstance.filters?.GlowFilter?.color,
+						glq: this.parseFloat(symbolInstance.filters?.GlowFilter?.quality),
+						gls: this.parseFloat(symbolInstance.filters?.GlowFilter?.strength),
 						l: layer
 					};
 					frameData.tx = frameData.tx === 0 ? undefined : frameData.tx;
 					frameData.ty = frameData.ty === 0 ? undefined : frameData.ty;
-					if (symbolInstance.filters?.AdjustColorFilter) {
-						console.log('AdjustColorFilter found in animation but not handled.');
-					}
 					if (FLAG_NO_RGB || ELEM_IGNORE_RGB.includes(elementNb)) {
 						frameData.or = frameData.og = frameData.ob = undefined;
 						frameData.mr = frameData.mg = frameData.mb = undefined;

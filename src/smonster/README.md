@@ -57,7 +57,7 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [ ] frking
 -   [ ] rapaca
 -   [ ] morg
--   [ ] mandragore
+-   [x] mandragore
 -   [ ] cyclo
 -   [ ] cyclo2
 -   [ ] groms
@@ -65,7 +65,7 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [ ] grom3
 -   [ ] doro
 -   [ ] dorou
--   [ ] lucet
+-   [x] lucet
 -   [ ] lapouf
 -   [ ] ecu
 -   [ ] piglou
@@ -80,7 +80,7 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [ ] garouz
 -   [ ] amanpe
 -   [ ] upgrd
--   [ ] taurus
+-   [x] taurus
 -   [ ] bao
 -   [ ] sofia
 -   [ ] chima

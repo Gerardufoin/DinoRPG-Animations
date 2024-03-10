@@ -34,10 +34,11 @@ export class PixiHelper {
 	 * @param {number} contrast The change of contrast, between -100 and 100.
 	 * @param {number} saturation The change for the saturation, between -100 and 100.
 	 * @param {number} hue The change of the hue, rotation over 360°.
+	 * @param {ColorMatrixFilter} matrix The matrix to set. If undefined, a new Matrix will be created.
 	 * @returns {ColorMatrixFilter} The resulting ColorMatrixFilter.
 	 */
-	static adjustColorFilter(brightness, contrast, saturation, hue) {
-		const matrix = new ColorMatrixFilter();
+	static adjustColorFilter(brightness, contrast, saturation, hue, matrix = undefined) {
+		matrix ??= new ColorMatrixFilter();
 		matrix.brightness((PixiHelper.mm(-100, brightness, 100) + 100) / 100, true);
 		matrix.contrast(PixiHelper.mm(-100, contrast, 100) / 100, true);
 		matrix.saturate(PixiHelper.mm(-100, saturation, 100) / 100, true);

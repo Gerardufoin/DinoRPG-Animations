@@ -1,6 +1,8 @@
 // @ts-check
-import { BlurFilter, Container, Filter, Matrix } from 'pixi.js';
+import { BlurFilter, Color, ColorMatrixFilter, Container, Filter, Matrix } from 'pixi.js';
 import { offsetShader } from './shaders/ColorOffsetShader.js';
+import { GlowFilter } from '@pixi/filter-glow';
+import { PixiHelper } from './PixiHelper.js';
 
 /**
  * The Animation class is a PixiJS Container which contains a cluster of dispay objects and control their animations.
@@ -81,6 +83,16 @@ export class Animation extends Container {
 	 * @type {BlurFilter}
 	 */
 	_blurFilter;
+	/**
+	 * Adjust color filter of the animation.
+	 * @type {ColorMatrixFilter}
+	 */
+	_adjustColorFilter;
+	/**
+	 * Glow filter of the animation.
+	 * @type {GlowFilter}
+	 */
+	_glowFilter;
 
 	/**
 	 * Create a new Animation and specify the scale.
@@ -144,6 +156,8 @@ export class Animation extends Container {
 						frame[p].mb
 					);
 					this._parts[p].setBlurFilter(frame[p].blx, frame[p].bly, frame[p].blq);
+					this._parts[p].setAdjustColorFilter(frame[p].acb, frame[p].acc, frame[p].acs, frame[p].ach);
+					this._parts[p].setGlowFilter(frame[p].glx, frame[p].gly, frame[p].glc, frame[p].glq, frame[p].gls);
 					// Ordering of the parts display
 					if (frame[p].l !== undefined) {
 						this.swapChildren(this._parts[p], this.getChildAt(frame[p].l));
@@ -336,7 +350,7 @@ export class Animation extends Container {
 
 	/**
 	 * Set the blur filter for the animation. If none exist, a new one will be created.
-	 * @param {number} blurX The x distanc of the blur. 0 if undefined.
+	 * @param {number} blurX The x distance of the blur. 0 if undefined.
 	 * @param {number} blurY The y distance of the blur. 0 if undefined.
 	 * @param {number} blurQuality The quality of the blur. 0 if undefined.
 	 */
@@ -352,6 +366,52 @@ export class Animation extends Container {
 			this._blurFilter.blurX = blurX ?? 0;
 			this._blurFilter.blurY = blurY ?? 0;
 			this._blurFilter.quality = blurQuality ?? 1;
+		}
+	}
+
+	/**
+	 * Set the glow filter for the animation. If none exist, a new one will be created.
+	 * @param {number} blurX The x distance of the glow. 0 if undefined.
+	 * @param {number} blurY The y distance of the glow. 0 if undefined.
+	 * @param {string} color The color of the glow. White if undefined.
+	 * @param {number} quality The quality of the glow. 1 if undefined.
+	 * @param {number} strength The strength of the glow. 0 if undefined.
+	 */
+	setGlowFilter(blurX, blurY, color, quality, strength) {
+		if (this._glowFilter || blurX || blurY || quality || strength) {
+			if (!this._glowFilter) {
+				this._glowFilter = new GlowFilter({
+					distance: blurX ?? blurY ?? 0,
+					quality: quality ?? 0.3
+				});
+				if (!this.filters) {
+					this.filters = [];
+				}
+				this.filters.push(this._glowFilter);
+			}
+			this._glowFilter.color = new Color(color).toNumber();
+			this._glowFilter.outerStrength = strength ?? 0;
+		}
+	}
+
+	/**
+	 * Set the adjust color filter for the animation. If none exist, a new one will be created.
+	 * @param {number} brightness The brightness of the filter. 0 if undefined.
+	 * @param {number} contrast The contrast of the filter. 0 if undefined.
+	 * @param {number} saturation The saturation of the filter. 0 if undefined.
+	 * @param {number} hue The hue of the filter. 0 if undefined.
+	 */
+	setAdjustColorFilter(brightness, contrast, saturation, hue) {
+		if (this._adjustColorFilter || brightness || contrast || saturation || hue) {
+			if (!this._adjustColorFilter) {
+				this._adjustColorFilter = new ColorMatrixFilter();
+				if (!this.filters) {
+					this.filters = [];
+				}
+				this.filters.push(this._adjustColorFilter);
+			}
+			this._adjustColorFilter.reset();
+			PixiHelper.adjustColorFilter(brightness, contrast, saturation, hue, this._adjustColorFilter);
 		}
 	}
 }
