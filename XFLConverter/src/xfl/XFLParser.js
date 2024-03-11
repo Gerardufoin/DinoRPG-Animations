@@ -354,7 +354,7 @@ export let ${m} = {
 				}
 			} else if (l.name.includes('Labels Layer')) {
 				let idx = 0;
-				for (const f of l.frames.DOMFrame) {
+				for (const f of this.toArray(l.frames.DOMFrame)) {
 					const duration = f.duration ?? 1;
 					for (let i = 0; i < duration; ++i) {
 						if (animations[idx] && animations[idx].name) {

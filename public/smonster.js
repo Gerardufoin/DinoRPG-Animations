@@ -16,9 +16,10 @@ const actions = [
 	'dead',
 	'big',
 	'special',
-	'counter'
+	'counter',
+	'dodge'
 ];
-const monsterList = ['goupi', 'goupi2', 'goupi3', 'grdien', 'mandragore', 'lucet', 'taurus'];
+const monsterList = ['goupi', 'goupi2', 'goupi3', 'wolf', 'grdien', 'mandragore', 'lucet', 'taurus'];
 let currentAnim = undefined;
 
 const appAnimation = new DinoAnim.Application({
@@ -36,6 +37,7 @@ function updateMonster(type) {
 	currentAnim = new DinoAnim.smonster({
 		type: type,
 		flip: 1,
+		scale: 1,
 		pflag: true
 	});
 	appAnimation.stage.addChild(currentAnim);
@@ -61,4 +63,4 @@ for (const m of monsterList) {
 	document.getElementById('monsters').appendChild(button);
 }
 
-updateMonster('goupi');
+updateMonster('wolf');

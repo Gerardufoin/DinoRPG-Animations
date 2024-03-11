@@ -3,10 +3,10 @@
 The following is the list of all the monsters in Dino-RPG.
 Checked monsters are the ones recreated in the project as of yet.
 
--   [ ] goupi
--   [ ] goupi2
--   [ ] goupi3
--   [ ] wolf
+-   [x] goupi
+-   [x] goupi2
+-   [x] goupi3
+-   [x] wolf
 -   [ ] gluon
 -   [ ] gvert
 -   [ ] coq
