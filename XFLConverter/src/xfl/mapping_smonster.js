@@ -7,6 +7,11 @@ export let mapping_smonster = {
 	'Symbol 4-3': 'fx_dust_4',
 	'Symbol 4-4': 'fx_dust_5',
 	'Symbol 4-5': 'fx_dust_6',
+	// Goupignon
+	'Symbol 57': 'shade',
+	'Symbol 62': 'body',
+	'Symbol 67': 'cap',
+	'Symbol 77': 'sleep_bubble',
 	// Gardien Abricole
 	'Symbol 500': 'r_arm',
 	'Symbol 502': 'r_hand',

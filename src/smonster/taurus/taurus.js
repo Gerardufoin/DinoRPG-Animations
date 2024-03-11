@@ -14,7 +14,7 @@ import { sleep } from './animations/sleep.js';
 import { release } from './animations/release.js';
 
 // 2950
-export let taurus = {
+export const taurus = {
 	name: 'taurus',
 	// box 82
 	width: 2.406,

@@ -1,6 +1,6 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'lucet_hit',
 	callbacks: {
 		18: [['playAnim', 'stand']]

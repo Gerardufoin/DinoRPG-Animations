@@ -1,7 +1,7 @@
 // @ts-check
 import { ref } from '../references.js';
 
-export let parts = {
+export const parts = {
 	// 1869
 	l_foot: [
 		{

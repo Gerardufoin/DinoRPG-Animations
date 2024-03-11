@@ -18,7 +18,7 @@ const actions = [
 	'special',
 	'counter'
 ];
-const monsterList = ['grdien', 'mandragore', 'lucet', 'taurus'];
+const monsterList = ['goupi', 'goupi2', 'goupi3', 'grdien', 'mandragore', 'lucet', 'taurus'];
 let currentAnim = undefined;
 
 const appAnimation = new DinoAnim.Application({
@@ -61,4 +61,4 @@ for (const m of monsterList) {
 	document.getElementById('monsters').appendChild(button);
 }
 
-updateMonster('lucet');
+updateMonster('goupi');

@@ -1,6 +1,6 @@
 // @ts-check
 
-export let cast = {
+export const cast = {
 	id: 'mandragore_cast',
 	frames: [
 		{

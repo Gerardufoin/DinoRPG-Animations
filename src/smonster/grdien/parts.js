@@ -2,7 +2,7 @@
 import { ref } from '../references.js';
 import { grdien_eye } from './animations/eye.js';
 
-export let parts = {
+export const parts = {
 	// 500
 	r_arm: [
 		{

@@ -1,6 +1,6 @@
 // @ts-check
 
-export let sleep = {
+export const sleep = {
 	id: 'mandragore_sleep',
 	frames: [
 		{

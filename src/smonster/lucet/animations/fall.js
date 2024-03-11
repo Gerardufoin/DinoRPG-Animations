@@ -1,6 +1,6 @@
 // @ts-check
 
-export let fall = {
+export const fall = {
 	id: 'lucet_fall',
 	frames: [
 		{

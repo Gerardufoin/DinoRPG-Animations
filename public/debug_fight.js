@@ -51,7 +51,7 @@ const fightVersion = [
 		bg: 's_dnv',
 		top: 120,
 		bottom: 20,
-		ground: 2,
+		ground: 0,
 		history: [
 			{
 				action: DinoAnim.Action.AddCastle,
@@ -91,7 +91,7 @@ const fightVersion = [
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: 'grdien'
+					gfx: 'goupi3'
 				}
 			},
 			{
@@ -109,6 +109,11 @@ const fightVersion = [
 				damages: 10
 			},
 			{
+				action: DinoAnim.Action.Dead,
+				fid: 0
+			}
+
+			/*{
 				action: DinoAnim.Action.AttackCastle,
 				fid: 0,
 				damages: 10
@@ -162,12 +167,6 @@ const fightVersion = [
 				action: DinoAnim.Action.AttackCastle,
 				fid: 0,
 				damages: 10
-			},
-			{
-				action: DinoAnim.Action.Text,
-				fid: 0,
-				message:
-					'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
 			},
 			{
 				action: DinoAnim.Action.Pause,
@@ -339,7 +338,7 @@ const fightVersion = [
 				action: DinoAnim.Action.Notify,
 				fids: [0, 1],
 				notification: DinoAnim.NotificationList.Slow
-			}
+			}*/
 		],
 		debug: false
 	}

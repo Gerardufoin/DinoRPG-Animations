@@ -3,7 +3,7 @@ import { BLEND_MODES } from 'pixi.js';
 import { ref } from '../references.js';
 import { taurus_tail } from './animations/tail.js';
 
-export let parts = {
+export const parts = {
 	// 2883
 	r_back_spike: [
 		{
@@ -129,7 +129,7 @@ export let parts = {
 				b: -0.5,
 				c: 0.5
 			},
-			blend: [BLEND_MODES.ADD],
+			blend: BLEND_MODES.ADD,
 			alpha: 0.238
 		}
 	],

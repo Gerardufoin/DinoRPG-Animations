@@ -1,6 +1,6 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'lucet_jump',
 	callbacks: {
 		9: [['stop']]

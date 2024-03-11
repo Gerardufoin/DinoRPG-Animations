@@ -1,6 +1,6 @@
 // @ts-check
 
-export let counter = {
+export const counter = {
 	id: 'mandragore_counter',
 	callbacks: {
 		12: [['stop']]

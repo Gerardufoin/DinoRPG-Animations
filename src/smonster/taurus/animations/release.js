@@ -1,6 +1,6 @@
 // @ts-check
 
-export let release = {
+export const release = {
 	id: 'taurus_release',
 	callbacks: {
 		12: [['hit', 10]],

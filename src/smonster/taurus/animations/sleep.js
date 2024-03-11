@@ -1,6 +1,6 @@
 // @ts-check
 
-export let sleep = {
+export const sleep = {
 	id: 'taurus_sleep',
 	frames: [
 		{

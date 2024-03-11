@@ -15,7 +15,7 @@ import { ref } from '../references.js';
 import { counter } from './animations/counter.js';
 
 // Symbol 1921
-export let mandragore = {
+export const mandragore = {
 	name: 'mandragore',
 	// Symbol 82
 	width: 1.233,

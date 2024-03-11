@@ -2,7 +2,7 @@
 import { fx_slash } from '../../sdino/fx/slash.js';
 import { ref } from '../references.js';
 
-export let parts = {
+export const parts = {
 	// 2158
 	claws: [
 		// 2157

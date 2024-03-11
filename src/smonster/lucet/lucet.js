@@ -13,7 +13,7 @@ import { land } from './animations/land.js';
 import { sleep } from './animations/sleep.js';
 
 // Symbol 2203
-export let lucet = {
+export const lucet = {
 	name: 'lucet',
 	// Symbol 82
 	width: 2.417,

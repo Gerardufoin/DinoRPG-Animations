@@ -1,6 +1,6 @@
 // @ts-check
 
-export let land = {
+export const land = {
 	id: 'mandragore_land',
 	callbacks: {
 		14: [['stop']]

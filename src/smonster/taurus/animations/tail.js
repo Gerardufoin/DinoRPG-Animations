@@ -6,7 +6,7 @@ const segment = {
 };
 
 // 2908
-export let taurus_tail = {
+export const taurus_tail = {
 	parts: {
 		// 2907 segment 1
 		t_1: [segment],

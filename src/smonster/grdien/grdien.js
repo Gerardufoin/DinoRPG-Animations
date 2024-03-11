@@ -9,7 +9,7 @@ import { attack } from './animations/attack.js';
 import { land } from './animations/land.js';
 import { dead } from './animations/dead.js';
 
-export let grdien = {
+export const grdien = {
 	name: 'grdien',
 	width: 2.323,
 	height: 2.227,

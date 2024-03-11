@@ -1,6 +1,6 @@
 // @ts-check
 
-export let attack = {
+export const attack = {
 	id: 'lucet_attack',
 	callbacks: {
 		9: [['resetChildAnimations'], ['hit', 24]],

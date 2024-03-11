@@ -1,6 +1,6 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'mandragore_hit',
 	callbacks: {
 		9: [['playAnim', 'stand']]

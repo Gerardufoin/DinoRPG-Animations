@@ -4,6 +4,10 @@
  * Mapping between the extracted symbol from smonster.swf and their name in the project
  */
 export let mapping_smonster = {
+	61: 'goupi/body',
+	63: 'goupi/cap',
+	65: 'goupi/dots',
+	76: 'shared/sleep_bubble',
 	499: 'grdien/r_arm',
 	501: 'grdien/r_hand',
 	503: 'grdien/r_forearm',

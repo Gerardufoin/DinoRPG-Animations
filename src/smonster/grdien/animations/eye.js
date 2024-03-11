@@ -1,7 +1,7 @@
 import { ref } from '../../references.js';
 
 // 522
-export let grdien_eye = {
+export const grdien_eye = {
 	parts: {
 		eye: [
 			{

@@ -1,6 +1,6 @@
 // @ts-check
 
-export let sleep = {
+export const sleep = {
 	id: 'lucet_sleep',
 	frames: [
 		{
