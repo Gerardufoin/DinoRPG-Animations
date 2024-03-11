@@ -411,7 +411,13 @@ export class Animation extends Container {
 				this.filters.push(this._adjustColorFilter);
 			}
 			this._adjustColorFilter.reset();
-			PixiHelper.adjustColorFilter(brightness, contrast, saturation, hue, this._adjustColorFilter);
+			PixiHelper.adjustColorFilter(
+				brightness ?? 0,
+				contrast ?? 0,
+				saturation ?? 0,
+				hue ?? 0,
+				this._adjustColorFilter
+			);
 		}
 	}
 }

@@ -1,5 +1,6 @@
 // @ts-check
 import { ref } from '../references.js';
+import { grdien_eye } from './animations/eye.js';
 
 export let parts = {
 	// 500
@@ -70,10 +71,5 @@ export let parts = {
 		}
 	],
 	// 522
-	// TODO: Eye animation
-	eye: [
-		{
-			ref: ref.grdien.eye
-		}
-	]
+	eye: [grdien_eye]
 };

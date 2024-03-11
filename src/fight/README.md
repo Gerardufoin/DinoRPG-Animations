@@ -83,6 +83,14 @@ Adds a fighter to the scene.
 | x?        | Number            | X position of the fighter. Randomly generated if empty.                                                              |
 | y?        | Number            | Y position of the fighter. Randomly generated if empty.                                                              |
 
+| FighterProperty | Description                                              |
+| --------------- | -------------------------------------------------------- |
+| Boss (0)        | No effect                                                |
+| Static (1)      | The fighter does not walk or push, and cannot be pushed. |
+| GroundOnly (2)  | The fighter cannot fly.                                  |
+| Dark (3)        | The fighter skin is dark.                                |
+| Nothing (4)     | No effect                                                |
+
 | EntranceEffect | Description                                         |
 | -------------- | --------------------------------------------------- |
 | Stand (0)      | Instantiate the fighter without entrance effect.    |
@@ -150,7 +158,7 @@ This can for example be used for status effect (poison, torch, etc).
 
 ### Status (4)
 
-A status if added to a fighter. An optional power property can be passed depending on the chosen status.
+Adds a status to a fighter.
 
 #### Properties
 
@@ -382,7 +390,7 @@ Adds a castle to the scene, with the given customization.
 | enclos    | Boolean | If true, adds a pen inside the castle.                                    |
 | ground    | Number  | Adds pounds in frond of the castle. 1-3 changes the color.                |
 | repair    | Number  | Adds a repairman inside the castle. 1-3 changes the helmet and the speed. |
-| maxLife   | Number  | Maximum life of the castle.                                               |
+| armor     | Number  | The armor of the castle (1-3). Third one is not implemented by MT.        |
 | color     | Number  | Changes the color of the castle (1-2).                                    |
 | invisible | Boolean | If true, the castle is half transparent.                                  |
 

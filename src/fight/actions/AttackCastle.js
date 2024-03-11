@@ -86,6 +86,14 @@ export class AttackCastle extends State {
 	}
 
 	/**
+	 * Increase the step counter and reset the coef.
+	 */
+	nextStep() {
+		this._coef = 0;
+		this._step++;
+	}
+
+	/**
 	 * Update the Fighter movement, attack, and recall.
 	 * @param {Timer} timer The fight Timer containing the current time elasped.
 	 */
@@ -110,6 +118,7 @@ export class AttackCastle extends State {
 						);
 						this._castle.damage(this._damages, this._fighter);
 						this._fighter.clearCallback('hit');
+						this.nextStep();
 					});
 					this._coefSpeed = 0.1;
 				}
@@ -117,6 +126,7 @@ export class AttackCastle extends State {
 			case AttackStep.Hit:
 				if (this._coef === 1) {
 					this._fighter.initReturn(null);
+					this.nextStep();
 				}
 				break;
 			case AttackStep.Recall:
@@ -124,11 +134,6 @@ export class AttackCastle extends State {
 				if (this._coef === 1) {
 					this.end();
 				}
-		}
-
-		if (this._coef === 1) {
-			this._coef = 0;
-			this._step++;
 		}
 	}
 }
