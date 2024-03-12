@@ -7,6 +7,7 @@ const actions = [
 	'hit',
 	'fly',
 	'jump',
+	'jumpDown',
 	'fall',
 	'land',
 	'sleep',
@@ -19,7 +20,7 @@ const actions = [
 	'counter',
 	'dodge'
 ];
-const monsterList = ['goupi', 'goupi2', 'goupi3', 'wolf', 'grdien', 'mandragore', 'lucet', 'taurus'];
+const monsterList = ['goupi', 'goupi2', 'goupi3', 'wolf', 'gluon', 'grdien', 'mandragore', 'lucet', 'taurus'];
 let currentAnim = undefined;
 
 const appAnimation = new DinoAnim.Application({
@@ -63,4 +64,4 @@ for (const m of monsterList) {
 	document.getElementById('monsters').appendChild(button);
 }
 
-updateMonster('wolf');
+updateMonster('gluon');

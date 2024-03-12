@@ -91,7 +91,7 @@ const fightVersion = [
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: 'wolf'
+					gfx: 'gluon'
 				}
 			},
 			{
