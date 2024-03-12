@@ -7,8 +7,8 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] goupi2
 -   [x] goupi3
 -   [x] wolf
--   [ ] gluon
--   [ ] gvert
+-   [x] gluon
+-   [x] gvert
 -   [ ] coq
 -   [ ] flam
 -   [ ] goblin

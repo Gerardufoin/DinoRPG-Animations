@@ -35,10 +35,11 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 4089.xml', 'smonster', undefined, 1); // smonster
 //parser.parse('./resources/smonster/LIBRARY/Symbol 80.xml', '_p1', undefined, 1); // goupi Goupignon
 //parser.parse('./resources/smonster/LIBRARY/Symbol 116.xml', '_p1', undefined, 1); // wolf
-parser.parse('./resources/smonster/LIBRARY/Symbol 157.xml', '_p1', undefined, 1); // gluon
+//parser.parse('./resources/smonster/LIBRARY/Symbol 157.xml', '_p1', undefined, 1); // gluon
 //parser.parse('./resources/smonster/LIBRARY/Symbol 120.xml', '_sub', undefined, 1); // Gluon puddle
 //parser.parse('./resources/smonster/LIBRARY/Symbol 131.xml', '_sub', undefined, 1); // Gluon drip
 //parser.parse('./resources/smonster/LIBRARY/Symbol 149.xml', '_sub', undefined, 1); // Gluon ball
+//parser.parse('./resources/smonster/LIBRARY/Symbol 180.xml', '_p1', undefined, 1); // gvert
 //parser.parse('./resources/smonster/LIBRARY/Symbol 529.xml', '_p1', undefined, 1); // grdien Gardien Abricole
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
@@ -55,5 +56,5 @@ parser.parse('./resources/smonster/LIBRARY/Symbol 157.xml', '_p1', undefined, 1)
 const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
 //adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
-//adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
+adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');
