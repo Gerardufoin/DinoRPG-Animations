@@ -96,13 +96,19 @@ export class sdino extends Animator {
 	 * @param {Array} dParts The customization array given at the class creation.
 	 */
 	apply(dParts) {
+		if (this._dinoInfos.transforms) {
+			this.setBodyTransforms(this._dinoInfos.transforms, dParts);
+		}
+		const scaling = Math.max(this._body.scale.x, this._body.scale.y);
+		const partsScaling = PartManager.getAnimationsScaling(this._dinoInfos.animations);
 		for (let pName in this._dinoInfos.parts) {
 			let part = PartManager.createPart(
 				this._dinoInfos.parts[pName],
 				dParts,
 				this._palette,
 				`sdino/${this._dinoInfos.name}/`,
-				this._body._scale
+				this._body._scale,
+				scaling * (partsScaling[pName] ?? 1)
 			);
 			if (part) {
 				this.addPart(pName, part);
@@ -117,9 +123,6 @@ export class sdino extends Animator {
 				this._body._scale
 			);
 			if (shadow) this.addChildAt(shadow, 0);
-		}
-		if (this._dinoInfos.transforms) {
-			this.setBodyTransforms(this._dinoInfos.transforms, dParts);
 		}
 		if (this._dinoInfos.glow) {
 			this.setBodyGlow(this._dinoInfos.glow);

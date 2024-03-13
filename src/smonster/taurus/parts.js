@@ -7,35 +7,30 @@ export const parts = {
 	// 2883
 	r_back_spike: [
 		{
-			ref: ref.taurus.r_back_spike,
-			resolution: 4
+			ref: ref.taurus.r_back_spike
 		}
 	],
 	// 2885
 	mane: [
 		{
-			ref: ref.taurus.mane,
-			resolution: 3
+			ref: ref.taurus.mane
 		}
 	],
 	// 2887
 	l_back_spike: [
 		{
-			ref: ref.taurus.l_back_spike,
-			resolution: 4
+			ref: ref.taurus.l_back_spike
 		}
 	],
 	// 2891 p6b
 	r_forearm: [
 		// 2888
 		{
-			ref: ref.taurus.r_arm_spike,
-			resolution: 3
+			ref: ref.taurus.r_arm_spike
 		},
 		// 2890
 		{
 			ref: ref.taurus.r_arm,
-			resolution: 3,
 			transform: {
 				tx: 11.95,
 				ty: 8.2,
@@ -51,7 +46,6 @@ export const parts = {
 		// 2893
 		{
 			ref: ref.taurus.foot,
-			resolution: 3,
 			transform: {
 				tx: -5.15,
 				ty: -3.55
@@ -59,8 +53,7 @@ export const parts = {
 		},
 		// 2894
 		{
-			ref: ref.taurus.r_foot_claws,
-			resolution: 3
+			ref: ref.taurus.r_foot_claws
 		}
 	],
 	// 2898
@@ -68,7 +61,6 @@ export const parts = {
 		// 2897
 		{
 			ref: ref.taurus.connector,
-			resolution: 4,
 			transform: {
 				tx: 3.35,
 				ty: 1.85
@@ -78,8 +70,7 @@ export const parts = {
 	// 2899
 	connector_2: [
 		{
-			ref: ref.taurus.connector,
-			resolution: 4
+			ref: ref.taurus.connector
 		}
 	],
 	// 2903 p3b
@@ -87,7 +78,6 @@ export const parts = {
 		// 2901
 		{
 			ref: ref.taurus.r_leg,
-			resolution: 3,
 			transform: {
 				tx: 3.75,
 				ty: 2.0
@@ -95,8 +85,7 @@ export const parts = {
 		},
 		// 2902
 		{
-			ref: ref.taurus.r_leg_spike,
-			resolution: 3
+			ref: ref.taurus.r_leg_spike
 		}
 	],
 	// 2913 p7
@@ -115,8 +104,7 @@ export const parts = {
 		},
 		// 2910
 		{
-			ref: ref.taurus.body,
-			resolution: 3
+			ref: ref.taurus.body
 		},
 		// 2912
 		{
@@ -137,13 +125,11 @@ export const parts = {
 	head: [
 		// 2914
 		{
-			ref: ref.taurus.r_horn,
-			resolution: 3
+			ref: ref.taurus.r_horn
 		},
 		// 2916
 		{
 			ref: ref.taurus.head,
-			resolution: 3,
 			transform: {
 				tx: 9.45,
 				ty: -9.45,
@@ -154,7 +140,6 @@ export const parts = {
 		// 2918
 		{
 			ref: ref.taurus.hair,
-			resolution: 3,
 			transform: {
 				tx: 7.6,
 				ty: -15.45,
@@ -164,8 +149,7 @@ export const parts = {
 		},
 		// 2920
 		{
-			ref: ref.taurus.l_horn,
-			resolution: 3
+			ref: ref.taurus.l_horn
 		}
 	],
 	// 2922 p3c
@@ -173,7 +157,6 @@ export const parts = {
 		// 2893
 		{
 			ref: ref.taurus.foot,
-			resolution: 3,
 			transform: {
 				tx: -5.15,
 				ty: -3.55
@@ -181,8 +164,7 @@ export const parts = {
 		},
 		// 2921
 		{
-			ref: ref.taurus.l_foot_claws,
-			resolution: 3
+			ref: ref.taurus.l_foot_claws
 		}
 	],
 	// 2926 p3a
@@ -190,7 +172,6 @@ export const parts = {
 		// 2924
 		{
 			ref: ref.taurus.l_leg,
-			resolution: 3,
 			transform: {
 				tx: 3.75,
 				ty: 2.0
@@ -198,8 +179,7 @@ export const parts = {
 		},
 		// 2925
 		{
-			ref: ref.taurus.l_leg_spike,
-			resolution: 3
+			ref: ref.taurus.l_leg_spike
 		}
 	],
 	// 2933 p6a
@@ -214,8 +194,7 @@ export const parts = {
 				d: 0.963,
 				b: -0.258,
 				c: 0.258
-			},
-			resolution: 3
+			}
 		},
 		// 2931
 		{
@@ -225,27 +204,23 @@ export const parts = {
 				ty: 4.15
 			},
 			blend: BLEND_MODES.SCREEN,
-			alpha: 0.65,
-			resolution: 3
+			alpha: 0.65
 		},
 		// 2932
 		{
-			ref: ref.taurus.l_arm_spike,
-			resolution: 3
+			ref: ref.taurus.l_arm_spike
 		}
 	],
 	// 2935
 	sideburn: [
 		{
-			ref: ref.taurus.sideburn,
-			resolution: 3
+			ref: ref.taurus.sideburn
 		}
 	],
 	// 2947
 	hand: [
 		{
 			ref: ref.taurus.hand,
-			resolution: 3,
 			transform: {
 				tx: -2.75,
 				ty: -2.15

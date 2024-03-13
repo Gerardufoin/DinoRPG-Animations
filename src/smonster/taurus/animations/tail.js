@@ -1,8 +1,7 @@
 import { ref } from '../../references.js';
 
 const segment = {
-	ref: ref.taurus.tail_segment,
-	resolution: 3
+	ref: ref.taurus.tail_segment
 };
 
 // 2908
@@ -17,8 +16,7 @@ export const taurus_tail = {
 		// 2905 tail end
 		t_4: [
 			{
-				ref: ref.taurus.tail_end,
-				resolution: 3
+				ref: ref.taurus.tail_end
 			}
 		]
 	},

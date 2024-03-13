@@ -66,8 +66,7 @@ export let parts = {
 						d: 1.021,
 						b: -0.108,
 						c: 0.108
-					},
-					resolution: 3
+					}
 				},
 				[
 					{
@@ -102,8 +101,7 @@ export let parts = {
 						d: 1.194,
 						b: -0.459,
 						c: 0.459
-					},
-					resolution: 3
+					}
 				},
 				{
 					colorIdx: 1,
@@ -115,8 +113,7 @@ export let parts = {
 						d: 1.647,
 						b: -0.633,
 						c: 0.633
-					},
-					resolution: 3
+					}
 				}
 			]
 		}

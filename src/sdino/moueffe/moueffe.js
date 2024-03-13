@@ -115,7 +115,7 @@ export let moueffe = {
 		},
 		// adjust
 		{
-			ty: -11.1
+			ty: -11.5
 		}
 	],
 	glow: {

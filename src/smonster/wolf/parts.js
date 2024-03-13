@@ -11,8 +11,7 @@ export const parts = {
 	// 86
 	leg_1: [
 		{
-			ref: ref.wolf.leg_1,
-			resolution: 3.5
+			ref: ref.wolf.leg_1
 		}
 	],
 	// 88
@@ -30,8 +29,7 @@ export const parts = {
 	// 92
 	body: [
 		{
-			ref: ref.wolf.body,
-			resolution: 3.5
+			ref: ref.wolf.body
 		}
 	],
 	// 94

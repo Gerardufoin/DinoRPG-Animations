@@ -5,36 +5,31 @@ export const parts = {
 	// 159
 	paw: [
 		{
-			ref: ref.gvert.paw,
-			resolution: 3.5
+			ref: ref.gvert.paw
 		}
 	],
 	// 161
 	leg_1: [
 		{
-			ref: ref.gvert.leg_1,
-			resolution: 5
+			ref: ref.gvert.leg_1
 		}
 	],
 	// 163
 	body: [
 		{
-			ref: ref.gvert.body,
-			resolution: 7
+			ref: ref.gvert.body
 		}
 	],
 	// 165
 	head: [
 		{
-			ref: ref.gvert.head,
-			resolution: 3.5
+			ref: ref.gvert.head
 		}
 	],
 	// 167
 	leg_2: [
 		{
-			ref: ref.gvert.leg_2,
-			resolution: 5
+			ref: ref.gvert.leg_2
 		}
 	],
 	sleep_bubble: [

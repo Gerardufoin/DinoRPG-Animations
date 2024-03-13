@@ -51,13 +51,19 @@ export class smonster extends Animator {
 		this._body._scale = scale;
 		this._monsterInfos = monsters[type] ?? error;
 
+		if (this._monsterInfos.transforms) {
+			this.setBodyTransforms(this._monsterInfos.transforms, []);
+		}
+		const scaling = Math.max(this._body.scale.x, this._body.scale.y);
+		const partsScaling = PartManager.getAnimationsScaling(this._monsterInfos.animations);
 		for (let pName in this._monsterInfos.parts) {
 			let part = PartManager.createPart(
 				this._monsterInfos.parts[pName],
 				[],
 				[],
 				`smonster/${this._monsterInfos.name}/`,
-				this._body._scale
+				this._body._scale,
+				scaling * (partsScaling[pName] ?? 1)
 			);
 			if (part) {
 				this.addPart(pName, part);
@@ -66,9 +72,6 @@ export class smonster extends Animator {
 		if (this._castShadow && this._monsterInfos.shadow) {
 			var shadow = PartManager.getSubPart(this._monsterInfos.shadow, [], [], 'smonster/', this._body._scale);
 			if (shadow) this.addChildAt(shadow, 0);
-		}
-		if (this._monsterInfos.transforms) {
-			this.setBodyTransforms(this._monsterInfos.transforms, []);
 		}
 		if (this._monsterInfos.glow) {
 			this.setBodyGlow(this._monsterInfos.glow);

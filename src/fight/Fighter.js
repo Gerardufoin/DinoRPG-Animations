@@ -1203,6 +1203,9 @@ export class Fighter extends Phys {
 					this._y + (Math.random() * 2 - 1) * this._ray * 0.5
 				);
 		}
+		if (coeff >= 1) {
+			this._tweenMove = null;
+		}
 	}
 
 	/**

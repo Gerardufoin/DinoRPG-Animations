@@ -125,8 +125,7 @@ export let parts = {
 					transform: {
 						tx: -0.15,
 						ty: -1.1
-					},
-					resolution: 2.5
+					}
 				},
 				// 1296
 				{
@@ -135,8 +134,7 @@ export let parts = {
 					transform: {
 						tx: -0.4,
 						ty: -1.75
-					},
-					resolution: 2.5
+					}
 				},
 				// 1298
 				{

@@ -87,6 +87,7 @@ export class Damages extends State {
 			this._effect = DamagesEffect.Normal;
 		}
 
+		this._attacker.saveCurrentCoords();
 		switch (this._effect) {
 			case DamagesEffect.Back:
 				{

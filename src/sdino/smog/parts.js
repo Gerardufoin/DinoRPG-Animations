@@ -13,8 +13,7 @@ const wings = {
 			transform: {
 				tx: -0.5,
 				ty: -1.9
-			},
-			resolution: 0.5
+			}
 		}
 	]
 };
@@ -433,8 +432,7 @@ export let parts = {
 					transform: {
 						tx: 19.15,
 						ty: 11.95
-					},
-					resolution: 0.5
+					}
 				},
 				// 1546 -> 1545
 				{
@@ -444,8 +442,7 @@ export let parts = {
 						ty: -12.5,
 						a: 1.322,
 						d: 1.322
-					},
-					resolution: 0.5
+					}
 				}
 			]
 		}
