@@ -76,7 +76,11 @@ const goupi_base = {
 		// 57
 		shade: [
 			{
-				ref: ref_sdino.fx.shadow
+				ref: ref_sdino.fx.shadow,
+				blur: {
+					x: 2,
+					y: 2
+				}
 			}
 		],
 		fx_dust_1: fx_dust,

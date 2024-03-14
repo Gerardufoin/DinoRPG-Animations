@@ -204,7 +204,6 @@ export const dead = {
 				ty: 14.45,
 				a: 1.317,
 				d: 1.031,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -406,7 +405,6 @@ export const dead = {
 				ty: 14.45,
 				a: 1.202,
 				d: 0.941,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -608,7 +606,6 @@ export const dead = {
 				ty: 14.45,
 				a: 1.087,
 				d: 0.851,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -810,7 +807,6 @@ export const dead = {
 				ty: 14.85,
 				a: 1.235,
 				d: 0.92,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -1034,7 +1030,6 @@ export const dead = {
 				ty: 15.25,
 				a: 1.384,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -1260,7 +1255,6 @@ export const dead = {
 				ty: 13.75,
 				a: 1.407,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -1486,7 +1480,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -1724,7 +1717,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -1963,7 +1955,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -2202,7 +2193,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -2441,7 +2431,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -2680,7 +2669,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -2919,7 +2907,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -3158,7 +3145,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -3397,7 +3383,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -3636,7 +3621,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -3875,7 +3859,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -4114,7 +4097,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -4353,7 +4335,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -4592,7 +4573,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -4820,7 +4800,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -5048,7 +5027,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -5276,7 +5254,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -5491,7 +5468,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -5706,7 +5682,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -5921,7 +5896,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		},
@@ -6136,7 +6110,6 @@ export const dead = {
 				ty: 12.25,
 				a: 1.431,
 				d: 0.989,
-				alpha: 0.199,
 				l: 0
 			}
 		}

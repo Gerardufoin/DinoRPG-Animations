@@ -31,6 +31,7 @@ import { DepthManager, Layers } from './DepthManager.js';
 import { IScene } from './IScene.js';
 import { WaterOnde } from './parts/scene/WaterOnde.js';
 import { FighterProperty, FighterStatus, GroundType, LifeEffect } from './Enums.js';
+import { FadeFX } from './parts/FadeFX.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -455,14 +456,18 @@ export class Fighter extends Phys {
 		this._friction = 0.9;
 
 		// Callbacks
-		this._animator.registerCallback('fxShake', (anim, args) => {
+		this._animator.registerCallback('fxShake', (_anim, args) => {
 			this._scene.fxShake(args[0], args[1], args[2]);
 		});
-		this._animator.registerCallback('fxAttach', (anim, args) => {
+		this._animator.registerCallback('fxAttach', (_anim, args) => {
 			this.fxAttach(args[0], args[1], args[2], args[3]);
 		});
-		//Reflect.setField( skin,"_fxAttachInside",fxAttachInside ); TODO
-		//Reflect.setField( skin,"_fxAttachScene",fxAttachScene );
+		this._animator.registerCallback('fxAttachInside', (_anim, args) => {
+			this.fxAttachInside(args[0], args[1], args[2], args[3]);
+		});
+		this._animator.registerCallback('fxAttachScene', (_anim, args) => {
+			this.fxAttachScene(args[0], args[1], args[2], args[3]);
+		});
 
 		// Add poison filter to animator
 		if (!this._animator.filters) {
@@ -1483,6 +1488,61 @@ export class Fighter extends Phys {
 				break;
 			default:
 				console.error(`FxAttach: Unknown asset ${asset}`);
+		}
+	}
+
+	/**
+	 * Used by callbacks to attach an fx to the fighter (not seen yet).
+	 * @param {string} asset The asset to attach.
+	 * @param {number} x The x position of the asset.
+	 * @param {number} y The y position of the asset.
+	 * @param {boolean} flBack Is the asset attached to the BACK layer or the FRONT layer.
+	 */
+	fxAttachInside(asset, x = 0, y = 0, flBack = false) {
+		const dp = flBack ? Layers.Fighter.BACK : Layers.Fighter.FRONT;
+		//switch (asset) {}
+		// TODO
+		/*var mc = bdm.attach(link,dp);
+			mc._x = x;
+			mc._y = y;*/
+	}
+
+	/**
+	 * Used by callbacks to attach an fx to the scene on a specific layer.
+	 * @param {string} asset The asset to attach.
+	 * @param {number} x The x position of the asset.
+	 * @param {number} y The y position of the asset.
+	 * @param {number} layer The layer where to attach the fx. Default to PARTS.
+	 */
+	fxAttachScene(asset, x = 0, y = 0, layer = Layers.Scene.PARTS) {
+		switch (asset) {
+			// TODO find way for the mark to work with both MULTIPLY and ADD to simulate OVERLAY
+			case 'coq_patte_a':
+				this._scene.dm.addSprite(
+					new FadeFX(
+						this._scene,
+						asset,
+						this._root.x - (x + -5.4) * this._sens * this.intSide,
+						this._root.y + y + 15.4,
+						-this._sens * this.intSide,
+						134
+					),
+					layer
+				);
+				break;
+			case 'coq_patte_b':
+				this._scene.dm.addSprite(
+					new FadeFX(
+						this._scene,
+						asset,
+						this._root.x - (x - 36) * this._sens * this.intSide,
+						this._root.y + y - 5.5,
+						-this._sens * this.intSide,
+						134
+					),
+					layer
+				);
+				break;
 		}
 	}
 

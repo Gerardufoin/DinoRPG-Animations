@@ -1,5 +1,6 @@
 // @ts-check
 import { bad } from '../sdino/bad.js';
+import { coq } from './coq/coq.js';
 import { gluon } from './gluon/gluon.js';
 import { goupi, goupi2, goupi3 } from './goupi/goupi.js';
 import { grdien } from './grdien/grdien.js';
@@ -16,6 +17,7 @@ export const monsters = {
 	wolf: wolf,
 	gluon: gluon,
 	gvert: gvert,
+	coq: coq,
 	grdien: grdien,
 	mandragore: mandragore,
 	lucet: lucet,

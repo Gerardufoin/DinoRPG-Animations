@@ -22,7 +22,7 @@ export const attack = {
 				d: 1.038,
 				l: 4
 			},
-			body_ball: {
+			body_ball_atk: {
 				tx: 26.35,
 				ty: 1.65,
 				a: -0.412,
@@ -32,7 +32,7 @@ export const attack = {
 				alpha: 0.699,
 				l: 3
 			},
-			body_ball_atk: {
+			body_ball: {
 				tx: 27.3,
 				ty: 5.6,
 				a: -0.461,
@@ -71,7 +71,7 @@ export const attack = {
 				d: 1.038,
 				l: 4
 			},
-			body_ball: {
+			body_ball_atk: {
 				tx: -6.85,
 				ty: 1.8,
 				a: 0.936,
@@ -81,7 +81,7 @@ export const attack = {
 				alpha: 0.699,
 				l: 3
 			},
-			body_ball_atk: {
+			body_ball: {
 				tx: -14.85,
 				ty: 5.35,
 				a: 0.023,
@@ -120,7 +120,7 @@ export const attack = {
 				d: 1.038,
 				l: 4
 			},
-			body_ball: {
+			body_ball_atk: {
 				tx: -34.15,
 				ty: -9.25,
 				a: 1.106,
@@ -130,7 +130,7 @@ export const attack = {
 				alpha: 0.699,
 				l: 3
 			},
-			body_ball_atk: {
+			body_ball: {
 				tx: -46.95,
 				ty: 0.25,
 				a: 1.431,
@@ -169,7 +169,7 @@ export const attack = {
 				d: 1.038,
 				l: 4
 			},
-			body_ball: {
+			body_ball_atk: {
 				tx: -12.3,
 				ty: -11.6,
 				a: -0.703,
@@ -179,7 +179,7 @@ export const attack = {
 				alpha: 0.699,
 				l: 3
 			},
-			body_ball_atk: {
+			body_ball: {
 				tx: -35.2,
 				ty: -5.25,
 				a: 1.227,
@@ -218,7 +218,7 @@ export const attack = {
 				d: 1.038,
 				l: 4
 			},
-			body_ball: {
+			body_ball_atk: {
 				tx: 10,
 				ty: -1.9,
 				a: -0.415,
@@ -228,7 +228,7 @@ export const attack = {
 				alpha: 0.699,
 				l: 3
 			},
-			body_ball_atk: {
+			body_ball: {
 				tx: -1.85,
 				ty: -1.45,
 				a: -0.013,
@@ -267,7 +267,7 @@ export const attack = {
 				d: 1.038,
 				l: 3
 			},
-			body_ball: {
+			body_ball_atk: {
 				tx: 6.75,
 				ty: 4.25,
 				a: -0.62,
@@ -306,7 +306,7 @@ export const attack = {
 				d: 1.038,
 				l: 3
 			},
-			body_ball: {
+			body_ball_atk: {
 				tx: 4.4,
 				ty: 10.8,
 				a: -0.502,

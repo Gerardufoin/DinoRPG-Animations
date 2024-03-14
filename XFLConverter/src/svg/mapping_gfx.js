@@ -94,6 +94,8 @@ export let mapping_gfx = {
 	619: 'status/lock',
 	621: 'status/shield',
 	622: 'status/stun_notif',
+	//662: 'fx/coq_patte_b',
+	//670: 'fx/coq_patte_a', // Edited manually to work with blend MULTIPLY instead of OVERLAY
 	696: 'scene/timebar_bg',
 	697: 'scene/timebar',
 	706: 'fx/light',

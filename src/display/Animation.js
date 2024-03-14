@@ -179,8 +179,16 @@ export class Animation extends Container {
 	executeCallbacks(callbacksFunc) {
 		if (this._playing && this._animation?.callbacks) {
 			for (const f of this._animation.callbacks[this.getCurrentIdx()] ?? []) {
-				if (callbacksFunc[f[0]]) {
-					callbacksFunc[f[0]](this, f.slice(1));
+				let cb = f;
+				// "rand" callback allows you to randomnly choose if a callback is called or not.
+				// ex: ['rand', 2, 0, ['stop']] give 50% chance to either stop the animation.
+				if (cb[0] == 'rand' && typeof cb[1] === 'number' && typeof cb[2] === 'number') {
+					if (Math.floor(Math.random() * cb[1]) == cb[2]) {
+						cb = cb[3];
+					}
+				}
+				if (callbacksFunc[cb[0]]) {
+					callbacksFunc[cb[0]](this, cb.slice(1));
 				}
 			}
 		}

@@ -79,7 +79,17 @@ export const wolf = {
 		sleep_bubble: parts.sleep_bubble,
 		fx_dust_1: fx_dust,
 		fx_dust_2: fx_dust,
-		fx_dust_3: fx_dust
+		fx_dust_3: fx_dust,
+		// 57
+		shade: [
+			{
+				ref: ref_sdino.fx.shadow,
+				blur: {
+					x: 2,
+					y: 2
+				}
+			}
+		]
 	},
 	animations: {
 		// guard, release, ill, and cast same as stand

@@ -34,7 +34,7 @@ export class Return extends State {
 	}
 
 	/**
-	 * Randomly chose the retrun behavior of the Fighter.
+	 * Randomly chose the return behavior of the Fighter.
 	 */
 	init() {
 		const movements = [Fighter.MovementType.Run, Fighter.MovementType.Jump];
