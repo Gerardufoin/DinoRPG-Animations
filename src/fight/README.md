@@ -249,11 +249,12 @@ TODO
 
 ##### SkillDetails
 
-| Property | Type                          | Description                                                |
-| -------- | ----------------------------- | ---------------------------------------------------------- |
-| fid?     | number                        | The ID of the Fighter using the skill, if any.             |
-| targets? | { id: number, life?: number } | The targets of the skill and the life gained/losed, if any |
-| TODO     |                               |                                                            |
+| Property | Type                          | Description                                                                                                                                |
+| -------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| fid?     | Number                        | The ID of the Fighter using the skill, if any.                                                                                             |
+| targets? | { id: Number, life?: Number } | The targets of the skill and the life gained/losed, if any. If life is undefined, the target dodge the skill with the 'special' animation. |
+| fx?      | String                        | The fx played by the skill. Used by 'Tremor', 'JumpAttack'.                                                                                |
+| anim?    | String                        | The animation used by the skill. Used by 'Anim'.                                                                                           |
 
 | Skill               | Description                                                                                                                                                                                           |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -279,7 +280,7 @@ TODO
 | ChainLightning (19) |                                                                                                                                                                                                       |
 | Heal (20)           |                                                                                                                                                                                                       |
 | Charge (21)         |                                                                                                                                                                                                       |
-| Anim (22)           |                                                                                                                                                                                                       |
+| Anim (22)           | The fighter (fid) plays the given animation (anim).                                                                                                                                                   |
 | Invoc (23)          |                                                                                                                                                                                                       |
 | Sylfide (24)        |                                                                                                                                                                                                       |
 | Rafale (25)         |                                                                                                                                                                                                       |
@@ -578,3 +579,31 @@ Set the maximum energy of a group of fighters.
 | Property | Type                              | Description                                                    |
 | -------- | --------------------------------- | -------------------------------------------------------------- |
 | fighters | { fid: Number, energy: Number }[] | An array of fighter and their desired maximum level of energy. |
+
+## New Actions
+
+The following are actions created for this project only.
+They are not compatible with the fight.swf version from Motion-Twin.
+
+### Emote (30)
+
+The given figthers show the given emote above them.
+The emote appears and behave based on the given behaviour.
+
+| Property  | Type           | Description                                       |
+| --------- | -------------- | ------------------------------------------------- |
+| fids      | number[]       | An array of fighters which will display an emote. |
+| emote     | EmoteList      | The kind of emote to display.                     |
+| behaviour | EmoteBehaviour | The expected behaviour of the emote.              |
+
+| EmoteList    | Description                               |
+| ------------ | ----------------------------------------- |
+| Surprise (0) | A speech bubble with an exclamation mark. |
+| Question (1) | A speech bubble with a question mark.     |
+| Angry (2)    | An angry speech bubble.                   |
+
+| EmoteBehaviour | Description                                      |
+| -------------- | ------------------------------------------------ |
+| Float (0)      | The emote floats up, slowing over time.          |
+| Bounce (1)     | The emote spawns and bounce up and down.         |
+| Grow (2)       | The emote grows and shrink over time, wobbeling. |

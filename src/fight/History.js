@@ -29,6 +29,7 @@ import { AttackCastle } from './actions/AttackCastle.js';
 import { Start } from './actions/Start.js';
 import { Skill } from './actions/Skill.js';
 import { Action } from './Enums.js';
+import { Emote } from './actions/Emote.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -117,7 +118,8 @@ export class History {
 			[Action.Log]: 'printLog',
 			[Action.Notify]: 'notify',
 			[Action.Energy]: 'energy',
-			[Action.MaxEnergy]: 'maxEnergy'
+			[Action.MaxEnergy]: 'maxEnergy',
+			[Action.Emote]: 'emote'
 		};
 		if (!this._history.find((v) => v.action === Action.Display)) {
 			this._history.unshift({ action: Action.Display });
@@ -617,5 +619,22 @@ export class History {
 			}
 		}
 		this.playNext();
+	}
+
+	/**
+	 * Adds an emote above the designated Fighters.
+	 * @param {{action: number, fids: number[], emote: number, behaviour: number}} action Action which triggered the call.
+	 * @returns {State} The Emote State.
+	 */
+	emote(action) {
+		return new Emote(
+			this._scene,
+			() => {
+				this.playNext();
+			},
+			action.fids,
+			action.emote,
+			action.behaviour
+		);
 	}
 }

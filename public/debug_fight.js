@@ -94,7 +94,7 @@ const fightVersion = [
 					gfx: 'coq'
 				}
 			},
-			{
+			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Tremor,
 				details: {
@@ -118,7 +118,7 @@ const fightVersion = [
 				fid: 1,
 				tid: 0,
 				damages: 10
-			},
+			},*/
 			{
 				action: DinoAnim.Action.Dead,
 				fid: 0

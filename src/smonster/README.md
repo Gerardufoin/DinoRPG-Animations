@@ -9,7 +9,7 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] wolf
 -   [x] gluon
 -   [x] gvert
--   [ ] coq
+-   [x] coq
 -   [ ] flam
 -   [ ] goblin
 -   [ ] korgon

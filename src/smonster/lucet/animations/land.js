@@ -3,6 +3,7 @@
 export const land = {
 	id: 'lucet_land',
 	callbacks: {
+		2: [['hit'], ['fxShake', 16, 0.8, 0.5]],
 		12: [['stop']]
 	},
 	frames: [

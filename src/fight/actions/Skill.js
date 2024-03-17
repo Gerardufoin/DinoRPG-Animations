@@ -6,6 +6,7 @@ import { SkillList } from '../Enums.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
+import { Anim } from './skills/Anim.js';
 import { JumpAttack } from './skills/group/JumpAttack.js';
 
 /**
@@ -130,6 +131,8 @@ export class Skill extends State {
 			case SkillList.Tremor:
 			case SkillList.JumpAttack:
 				return new JumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);
+			case SkillList.Anim:
+				return new Anim(this._scene, () => this.end(), this._fighter, this._details.anim);
 		}
 		return null;
 	}

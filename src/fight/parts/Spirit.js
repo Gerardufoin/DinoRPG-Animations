@@ -72,6 +72,12 @@ export class Spirit extends Part {
 	_ec = 0.1;
 
 	/**
+	 * Store a few tmod to use the lowest for update.
+	 * @type {number[]}
+	 */
+	_tmodHistory = [];
+
+	/**
 	 * Instantiate a new head for the Spirit and add it to the Fighter layer of the Scene.
 	 * @param {IScene} scene The Scene where to add the Spirit.
 	 */
@@ -97,11 +103,18 @@ export class Spirit extends Part {
 	 */
 	update(timer) {
 		super.update(timer);
+		// MT code does not take well to lag of any kind. Spirit will start to break apart when the framerate changes.
+		// This forces the update to run at the lowest tmod obtained in the first 20 frames, so the Spirit updates at a constant rate no matter the drops in framerate.
+		// This should ideally be recoded from scratch...
+		if (this._tmodHistory.length < 20) {
+			this._tmodHistory.push(timer.tmod);
+		}
+		const tmod = Math.min(...this._tmodHistory);
 
-		this._dec = (this._dec + this._speedDec * timer.tmod) % 628;
-		this._angle += Math.cos(this._dec * 0.01) * this._ec * timer.tmod;
+		this._dec = (this._dec + this._speedDec * tmod) % 628;
+		this._angle += Math.cos(this._dec * 0.01) * this._ec * tmod;
 
-		const dist = this._speed * timer.tmod;
+		const dist = this._speed * tmod;
 		const dx = Math.cos(this._angle) * dist;
 		const dy = Math.sin(this._angle) * dist;
 
@@ -123,7 +136,7 @@ export class Spirit extends Part {
 		// Tails fadeout over time and are then removed from the scene once their timer reaches 0.
 		this._tailparts.push({ timer: Spirit.TAIL_FADEOUT_FRAMES, part: tailPart });
 		this._tailParts = this._tailparts.filter((t) => {
-			t.timer -= timer.tmod;
+			t.timer -= tmod;
 			if (t.timer <= 0) {
 				this._tail.removeChild(t.part);
 				return false;
@@ -132,8 +145,8 @@ export class Spirit extends Part {
 			return true;
 		});
 
-		this._speedDec += 0.3 * timer.tmod;
-		this._ec += 0.002 * timer.tmod;
-		this._speed += 0.1 * timer.tmod;
+		this._speedDec += 0.3 * tmod;
+		this._ec += 0.002 * tmod;
+		this._speed += 0.1 * tmod;
 	}
 }

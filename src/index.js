@@ -14,7 +14,9 @@ import {
 	SkillList,
 	GotoEffect,
 	EndBehaviour,
-	NotificationList
+	NotificationList,
+	EmoteList,
+	EmoteBehaviour
 } from './fight/Enums.js';
 //import { PixiHelper } from './display/PixiHelper.js';
 
@@ -55,5 +57,7 @@ export {
 	SkillList,
 	GotoEffect,
 	EndBehaviour,
-	NotificationList
+	NotificationList,
+	EmoteList,
+	EmoteBehaviour
 };

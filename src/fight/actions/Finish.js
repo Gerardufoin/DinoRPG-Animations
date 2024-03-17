@@ -5,6 +5,7 @@ import { Fighter } from '../Fighter.js';
 import { SCENE_WIDTH } from '../IScene.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
+import { Timer } from '../Timer.js';
 import { MoveTo } from './MoveTo.js';
 
 /**
@@ -26,6 +27,11 @@ export class Finish extends State {
 	 * @type {Fighter[]}
 	 */
 	_fighters;
+	/**
+	 * All the movement states created by the Finish action.
+	 * @type {State[]}
+	 */
+	_movements = [];
 
 	/**
 	 * Defined the end behavior of both side of Fighters.
@@ -61,7 +67,9 @@ export class Finish extends State {
 						const m = 50;
 						const tx = -m + (f.side ? SCENE_WIDTH + 2 * m : 0);
 						const ty = f.position.y + (Math.random() * 2 - 1) * 20;
-						this._newStates.push(new MoveTo(this._scene, undefined, f.id, tx, ty, true));
+						const state = new MoveTo(this._scene, undefined, f.id, tx, ty, true);
+						this._movements.push(state);
+						this._newStates.push(state);
 					}
 					break;
 				case EndBehaviour.Escape:
@@ -69,7 +77,9 @@ export class Finish extends State {
 						const m = 50;
 						const tx = -m + (!f.side ? SCENE_WIDTH + 2 * m : 0);
 						const ty = f.position.y;
-						this._newStates.push(new MoveTo(this._scene, undefined, f.id, tx, ty, true));
+						const state = new MoveTo(this._scene, undefined, f.id, tx, ty, true);
+						this._movements.push(state);
+						this._newStates.push(state);
 					}
 					break;
 				case EndBehaviour.Guard:
@@ -77,10 +87,26 @@ export class Finish extends State {
 						const m = f._ray + 10;
 						const tx = m + (f.side ? this._scene.width + 2 * m : 0);
 						const ty = f.position.y;
-						this._newStates.push(new MoveTo(this._scene, undefined, f.id, tx, ty, false, true));
+						const state = new MoveTo(this._scene, undefined, f.id, tx, ty, false, true);
+						this._movements.push(state);
+						this._newStates.push(state);
 					}
 					break;
 			}
+		}
+	}
+
+	/**
+	 * Checks if the movements are done, and if yes ends the state.
+	 * @param {Timer} timer The fight's timer, containing the elapsed time.
+	 */
+	update(timer) {
+		super.update(timer);
+		if (this._castingWait) return;
+
+		this._movements = this._movements.filter((s) => !s.toDelete);
+		if (this._movements.length == 0) {
+			this.end();
 		}
 	}
 }

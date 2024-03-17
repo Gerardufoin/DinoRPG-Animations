@@ -103,6 +103,7 @@ export let mapping_smonster = {
 	2185: 'lucet/light',
 	2189: 'lucet/attack',
 	2198: 'lucet/head_sleep',
+	2464: 'febrez/bubble',
 	2882: 'taurus/r_back_spike',
 	2884: 'taurus/mane',
 	2886: 'taurus/l_back_spike',
