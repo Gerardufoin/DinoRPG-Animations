@@ -158,7 +158,7 @@ export class Announce extends State {
 		this._box.addChild(this._text.slider);
 		this._text.bx = this._text.slider.x;
 		const tw = this._text.slider.width + 8;
-		const dx = tw + (this._portrait ? 60 : 0);
+		const dx = tw + (this._portrait ? 60 : 10);
 		this._text.tx = w - this._fighter.intSide * (w - dx);
 		if (this._fighter.side) {
 			this._text.slider.x -= tw;

@@ -3,7 +3,7 @@
 document.body.appendChild(
 	new DinoAnim.Fight({
 		bg: 's_dnv',
-		top: 0,
+		top: 70,
 		bottom: 0,
 		ground: 0,
 		history: [
@@ -20,7 +20,7 @@ document.body.appendChild(
 					gfx: '19hot0hFbItLS000',
 					entrance: DinoAnim.EntranceEffect.Stand,
 					x: 50,
-					y: 200
+					y: 60
 				}
 			},
 			{
@@ -36,7 +36,7 @@ document.body.appendChild(
 					gfx: '89e7EDLfIWKJf000',
 					entrance: DinoAnim.EntranceEffect.Stand,
 					x: 150,
-					y: 225
+					y: 85
 				}
 			},
 			{
@@ -52,7 +52,7 @@ document.body.appendChild(
 					gfx: '39N9HVcY4gLiQ000',
 					entrance: DinoAnim.EntranceEffect.Stand,
 					x: 85,
-					y: 520
+					y: 380
 				}
 			},
 			{
@@ -66,9 +66,9 @@ document.body.appendChild(
 			{
 				action: DinoAnim.Action.Display
 			},
-			/*{
+			{
 				action: DinoAnim.Action.Text,
-				message: 'Aah, Dinoville, le joyaux de Dinoland, le point de départ de toute aventure qui se respecte.'
+				message: 'Aaah, Dinoville, le joyaux de Dinoland, le point de départ de toute aventure qui se respecte.'
 			},
 			{
 				action: DinoAnim.Action.Text,
@@ -77,11 +77,22 @@ document.body.appendChild(
 			},
 			{
 				action: DinoAnim.Action.Text,
-				message: "C'est ici que vous pourrez recruter votre premier compagnion et..."
+				message: "C'est ici que vous pourrez recruter votre premier compagnon et..."
+			},
+			{
+				action: DinoAnim.Action.Shake,
+				force: 20,
+				frict: 0.9
 			},
 			{
 				action: DinoAnim.Action.Wait,
-				time: 1000
+				time: 500
+			},
+			{
+				action: DinoAnim.Action.Emote,
+				fids: [0, 1, 2],
+				emote: DinoAnim.EmoteList.Question,
+				behaviour: DinoAnim.EmoteBehaviour.Float
 			},
 			{
 				action: DinoAnim.Action.Flip,
@@ -90,14 +101,11 @@ document.body.appendChild(
 			{
 				action: DinoAnim.Action.Flip,
 				fid: 2
-			},*/
-			{
-				action: DinoAnim.Action.Emote,
-				fids: [0, 1, 2],
-				emote: DinoAnim.EmoteList.Question,
-				behaviour: DinoAnim.EmoteBehaviour.Float
 			},
-			// TODO Add shaking and ! bubble
+			{
+				action: DinoAnim.Action.Wait,
+				time: 1000
+			},
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
@@ -111,20 +119,10 @@ document.body.appendChild(
 					gfx: 'taurus',
 					entrance: DinoAnim.EntranceEffect.Run,
 					x: 325,
-					y: 400
+					y: 260
 				}
 			},
 			{
-				action: DinoAnim.Action.Wait,
-				time: 1000
-			},
-			{
-				action: DinoAnim.Action.Emote,
-				fids: [0, 1, 2],
-				emote: DinoAnim.EmoteList.Surprise,
-				behaviour: DinoAnim.EmoteBehaviour.Bounce
-			},
-			/*{
 				action: DinoAnim.Action.Talk,
 				fid: -1,
 				message: 'Gufufufu...'
@@ -137,7 +135,7 @@ document.body.appendChild(
 			{
 				action: DinoAnim.Action.Talk,
 				fid: -1,
-				message: 'Maintenant que le passage est ouvert, le temps des conquètes est enfin là !'
+				message: 'Maintenant que le passage est ouvert, il est temps de conquérir ce monde !'
 			},
 			{
 				action: DinoAnim.Action.Talk,
@@ -145,14 +143,19 @@ document.body.appendChild(
 				message: 'Agenouillez-vous devant Taurus ! Votre nouveau maitre !'
 			},
 			{
+				action: DinoAnim.Action.Emote,
+				fids: [0, 1, 2],
+				emote: DinoAnim.EmoteList.Surprise,
+				behaviour: DinoAnim.EmoteBehaviour.Bounce
+			},
+			{
 				action: DinoAnim.Action.Announce,
 				fid: -1,
 				message: 'Corruption'
 			},
-			// TODO Add corruption skill
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Tremor,
+				skill: DinoAnim.SkillList.Corruption,
 				details: {
 					fid: -1,
 					targets: [
@@ -161,7 +164,7 @@ document.body.appendChild(
 						{ id: 2, life: 100 }
 					]
 				}
-			},*/
+			},
 			{
 				action: DinoAnim.Action.Dead,
 				fid: 0
@@ -174,10 +177,10 @@ document.body.appendChild(
 				action: DinoAnim.Action.Dead,
 				fid: 2
 			},
-			/*{
+			{
 				action: DinoAnim.Action.Talk,
 				fid: -1,
-				message: 'Pathétic. Conquérir ce monde sera encore plus simple que prévu.'
+				message: 'Pathétic. Conquérir la surface sera encore plus simple que prévu.'
 			},
 			{
 				action: DinoAnim.Action.Text,
@@ -192,8 +195,8 @@ document.body.appendChild(
 			{
 				action: DinoAnim.Action.Text,
 				message:
-					'Hmm... Il semblerait que votre aventure aura été plus courte que prévue et touche à sa fin. Dommage.'
-			},*/
+					'Hélas, il semblerait que votre aventure aura été plus courte que prévue et touche à sa fin. Dommage...'
+			},
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
@@ -207,14 +210,24 @@ document.body.appendChild(
 					gfx: 'mandragore',
 					entrance: DinoAnim.EntranceEffect.Jump,
 					x: 65,
-					y: 360
+					y: 220
 				}
 			},
-			/*{
+			{
 				action: DinoAnim.Action.Talk,
 				fid: -2,
 				message:
 					"Mais qu'est-ce que c'est que tout ce boucan !? On ne peut même plus profiter de sa retraite en paix par ici ?"
+			},
+			{
+				action: DinoAnim.Action.Emote,
+				fids: [-2],
+				emote: DinoAnim.EmoteList.Surprise,
+				behaviour: DinoAnim.EmoteBehaviour.Bounce
+			},
+			{
+				action: DinoAnim.Action.Wait,
+				time: 1000
 			},
 			{
 				action: DinoAnim.Action.Talk,
@@ -239,14 +252,14 @@ Mais que fiche mon disciple ?`
 			{
 				action: DinoAnim.Action.Talk,
 				fid: -1,
-				message: 'Soit ! Fais de ton mieux pour me distraire, vieil homme.'
+				message: 'Soit ! Fais de ton mieux pour distraire le grand Taurus, vieil homme.'
 			},
 			{
 				action: DinoAnim.Action.Talk,
 				fid: -2,
 				message:
-					'Houla, respire mon grand. Je suis trop vieux pour ces bétises. Lucette va te racompagner à ma place.'
-			},*/
+					'Houla, respire mon grand. Je suis trop vieux pour ces bétises. Lucette va te raccompagner à ma place.'
+			},
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
@@ -260,7 +273,7 @@ Mais que fiche mon disciple ?`
 					gfx: 'lucet',
 					entrance: DinoAnim.EntranceEffect.Fall,
 					x: 100,
-					y: 400
+					y: 260
 				}
 			},
 			{
@@ -276,10 +289,9 @@ Mais que fiche mon disciple ?`
 				fid: -3,
 				message: 'Lumière divine'
 			},
-			// TODO add skill Divine Light
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Tremor,
+				skill: DinoAnim.SkillList.DivineLight,
 				details: {
 					fid: -3,
 					targets: [{ id: -1, life: 500 }]
@@ -296,7 +308,7 @@ Mais que fiche mon disciple ?`
 			{
 				action: DinoAnim.Action.Talk,
 				fid: -1,
-				message: 'Argh, quelle puissance...'
+				message: 'Gaah, quelle puissance...'
 			},
 			{
 				action: DinoAnim.Action.Talk,

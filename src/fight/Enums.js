@@ -34,7 +34,8 @@ export const Action = {
 	Notify: 27,
 	Energy: 28,
 	MaxEnergy: 29,
-	Emote: 30
+	Emote: 30,
+	Shake: 31
 };
 
 /**
@@ -183,7 +184,10 @@ export const SkillList = {
 	Leaf: 40,
 	MudWall: 41,
 	Blink: 42,
-	Generate: 43
+	Generate: 43,
+	// New
+	Corruption: 44,
+	DivineLight: 45
 };
 
 /**

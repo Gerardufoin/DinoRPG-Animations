@@ -7,6 +7,8 @@ import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { Anim } from './skills/Anim.js';
+import { Corruption } from './skills/group/Corruption.js';
+import { DivineLight } from './skills/group/DivineLight.js';
 import { JumpAttack } from './skills/group/JumpAttack.js';
 
 /**
@@ -133,6 +135,10 @@ export class Skill extends State {
 				return new JumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);
 			case SkillList.Anim:
 				return new Anim(this._scene, () => this.end(), this._fighter, this._details.anim);
+			case SkillList.Corruption:
+				return new Corruption(this._scene, () => this.end(), this._fighter, this._targets);
+			case SkillList.DivineLight:
+				return new DivineLight(this._scene, () => this.end(), this._fighter, this._targets);
 		}
 		return null;
 	}

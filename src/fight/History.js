@@ -119,7 +119,8 @@ export class History {
 			[Action.Notify]: 'notify',
 			[Action.Energy]: 'energy',
 			[Action.MaxEnergy]: 'maxEnergy',
-			[Action.Emote]: 'emote'
+			[Action.Emote]: 'emote',
+			[Action.Shake]: 'shake'
 		};
 		if (!this._history.find((v) => v.action === Action.Display)) {
 			this._history.unshift({ action: Action.Display });
@@ -636,5 +637,14 @@ export class History {
 			action.emote,
 			action.behaviour
 		);
+	}
+
+	/**
+	 * Shake the scene using the given parameters.
+	 * @param {{action: number, force: number, frict: number, speed: number}} action Action which triggered the call.
+	 */
+	shake(action) {
+		this._scene.fxShake(action.force, action.frict, action.speed);
+		this.playNext();
 	}
 }

@@ -59,6 +59,8 @@ export class EmoteDisplay extends Phys2D {
 
 		this._x = x;
 		this._y = y;
+		this._root.visible = false;
+		this._sleep = Math.random() * 5;
 
 		this._behaviour = behaviour;
 		this._fadeoutTimer = 40;
