@@ -11,7 +11,8 @@ import {
 	GroundType,
 	LifeEffect,
 	NotificationList,
-	SkillList
+	SkillList,
+	SkillType
 } from '../Enums.js';
 
 /**
@@ -565,8 +566,12 @@ export class DAConverter {
 		obj.skill = mapping[skill.value];
 		switch (obj.skill) {
 			case SkillList.Shower:
-				if (skill.value === '_GrShower2') {
-					obj.type = skill.args[0]; // int (not sure)
+				switch (skill.args[0]) {
+					case 1:
+						obj.type = SkillType.Fire;
+						break;
+					default:
+						obj.type = SkillType.Water;
 				}
 				break;
 			case SkillList.Projectile:

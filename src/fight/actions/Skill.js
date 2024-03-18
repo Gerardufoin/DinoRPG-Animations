@@ -10,6 +10,7 @@ import { Anim } from './skills/Anim.js';
 import { Corruption } from './skills/group/Corruption.js';
 import { DivineLight } from './skills/group/DivineLight.js';
 import { JumpAttack } from './skills/group/JumpAttack.js';
+import { Shower } from './skills/group/Shower.js';
 
 /**
  * The parameters of a skill.
@@ -130,6 +131,8 @@ export class Skill extends State {
 	getSkill() {
 		// TODO
 		switch (this._skill) {
+			case SkillList.Shower:
+				return new Shower(this._scene, () => this.end(), this._fighter, this._targets, this._details.type);
 			case SkillList.Tremor:
 			case SkillList.JumpAttack:
 				return new JumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);

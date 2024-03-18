@@ -16,7 +16,8 @@ import {
 	EndBehaviour,
 	NotificationList,
 	EmoteList,
-	EmoteBehaviour
+	EmoteBehaviour,
+	SkillType
 } from './fight/Enums.js';
 //import { PixiHelper } from './display/PixiHelper.js';
 
@@ -59,5 +60,6 @@ export {
 	EndBehaviour,
 	NotificationList,
 	EmoteList,
-	EmoteBehaviour
+	EmoteBehaviour,
+	SkillType
 };

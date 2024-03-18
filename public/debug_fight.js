@@ -53,7 +53,7 @@ const fightVersion = [
 		bottom: 20,
 		ground: 0,
 		history: [
-			{
+			/*{
 				action: DinoAnim.Action.AddCastle,
 				castle: {
 					life: 100,
@@ -65,7 +65,7 @@ const fightVersion = [
 					color: 0,
 					invisible: false
 				}
-			},
+			},*/
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
@@ -73,12 +73,10 @@ const fightVersion = [
 					dino: true,
 					life: 100,
 					name: 'Dragon Jr',
-					side: false,
+					side: true,
 					scale: 1,
 					fid: 1,
-					gfx: '09T1Yt9wqq4Rx000',
-					x: 100,
-					y: 100
+					gfx: '09T1Yt9wqq4Rx000'
 				}
 			},
 			{
@@ -88,21 +86,38 @@ const fightVersion = [
 					dino: false,
 					life: 100,
 					name: 'Gardien Abricole',
-					side: true,
+					side: false,
 					scale: 1,
 					fid: 0,
 					gfx: 'coq'
 				}
 			},
-			/*{
-				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Tremor,
-				details: {
-					fid: 0,
-					targets: [{ id: 1, life: 10 }]
+			{
+				action: DinoAnim.Action.Add,
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Gardien Abricole',
+					side: false,
+					scale: 1,
+					fid: 2,
+					gfx: 'gvert'
 				}
 			},
 			{
+				action: DinoAnim.Action.Skill,
+				skill: DinoAnim.SkillList.Shower,
+				details: {
+					fid: 1,
+					targets: [
+						{ id: 0, life: 10 },
+						{ id: 2, life: 10 }
+					],
+					type: DinoAnim.SkillType.Fire
+				}
+			}
+			/*{
 				action: DinoAnim.Action.Damages,
 				fid: 0,
 				tid: 1,
@@ -119,10 +134,10 @@ const fightVersion = [
 				tid: 0,
 				damages: 10
 			},*/
-			{
+			/*{
 				action: DinoAnim.Action.Dead,
 				fid: 0
-			}
+			}*/
 			/*{
 				action: DinoAnim.Action.AttackCastle,
 				fid: 0,

@@ -62,7 +62,7 @@ export class DivineLight extends GroupEffect {
 					this.nextStep();
 				}
 				break;
-			// Beam stays open a bit wobbling.
+			// Beam stays open a bit while wobbling.
 			case 1:
 				this._beams.map((b) => b.update(0.95 + Math.sin(this._coef * Math.PI * 20) * 0.05));
 				if (this._coef == 1) {

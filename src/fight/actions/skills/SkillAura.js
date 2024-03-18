@@ -2,7 +2,7 @@
 
 import { GlowFilter } from '@pixi/filter-glow';
 import { Container } from 'pixi.js';
-import { SkillType } from '../../Enums';
+import { SkillType } from '../../Enums.js';
 
 /**
  * Creates an aura around a container which will grow depending of the given coefficient.
@@ -35,15 +35,15 @@ export class SkillAura {
 			SkillAura.FirstAura = new GlowFilter({
 				quality: 1,
 				color: 0xffffff,
-				distance: 4
+				distance: 1
 			});
 			SkillAura.SecondAura = new GlowFilter({
 				quality: 1,
-				distance: 2.5
+				distance: 5
 			});
 			SkillAura.ThirdAura = new GlowFilter({
 				quality: 1,
-				distance: 1
+				distance: 25
 			});
 		}
 		target.filters = [SkillAura.FirstAura, SkillAura.SecondAura, SkillAura.ThirdAura];
@@ -79,8 +79,8 @@ export class SkillAura {
 	 */
 	update(coef) {
 		const c = 1 + (1 + Math.random()) * coef;
-		SkillAura.FirstAura.outerStrength = c;
-		SkillAura.SecondAura.outerStrength = c * 2;
-		SkillAura.ThirdAura.outerStrength = c * 3;
+		SkillAura.FirstAura.outerStrength = c * 2;
+		SkillAura.SecondAura.outerStrength = c * 1.5;
+		SkillAura.ThirdAura.outerStrength = c * 1.2;
 	}
 }

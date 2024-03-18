@@ -1,0 +1,74 @@
+// @ts-check
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/Shower.hx
+
+import { Container } from 'pixi.js';
+import { GroupEffect } from '../GroupEffect.js';
+import { Scene } from '../../../Scene.js';
+import { Fighter } from '../../../Fighter.js';
+import { Timer } from '../../../Timer.js';
+import { SkillAura } from '../SkillAura.js';
+
+/**
+ * Creates shower of a specific element which damages the targets.
+ */
+export class Shower extends GroupEffect {
+	/**
+	 * "Rain" drops instantiated in the scene.
+	 * @type {{cont: Container, x: number, y: number}[]}
+	 */
+	_rain = [];
+	/**
+	 * Type of shower. Value from the SkillType enum.
+	 * @type {number}
+	 */
+	_type;
+
+	/**
+	 * Aura around the caster while casting the skill.
+	 * @type {SkillAura}
+	 */
+	_aura;
+
+	/**
+	 * The caster creates a shower, harming the targets.
+	 * The type of shower depends on the element passed as type.
+	 * @param {Scene} scene The Scene where the skill is cast.
+	 * @param {() => void} endCall Callback at the end of the State.
+	 * @param {Fighter} caster The Fighter using the skill.
+	 * @param {{fighter: Fighter, life?: number}[]} targets The targets of the skill.
+	 * @param {number} type The type of shower, value from SkillType.
+	 */
+	constructor(scene, endCall, caster, targets, type) {
+		super(scene, endCall, caster, targets);
+		this._type = type;
+		this._caster.playAnim('cast');
+		this._coefSpeed = 0.03;
+		this._aura = new SkillAura(type, this._caster.skin);
+	}
+
+	/**
+	 * Update the state.
+	 * @param {Timer} timer The fight's timer, containing the elapsed time.
+	 */
+	update(timer) {
+		super.update(timer);
+
+		switch (this._step) {
+			case 0:
+				this._aura.update(this._coef);
+				if (this._coef == 1) {
+					this._caster.skin.filters = [];
+					this._caster.playAnim('release');
+					this.nextStep();
+					this._coefSpeed = 0.015;
+				}
+				break;
+			case 1:
+				if (this._coef == 1) {
+					this.damageAll();
+					this.end();
+				}
+				break;
+		}
+	}
+}

@@ -10,7 +10,8 @@ import {
 	GroundType,
 	LifeEffect,
 	NotificationList,
-	SkillList
+	SkillList,
+	SkillType
 } from '../Enums.js';
 
 /**
@@ -674,9 +675,9 @@ export class MTConverter {
 		};
 		switch (skill.skill) {
 			case SkillList.Shower:
-				if (skill.details.type) {
+				if (skill.details.type === SkillType.Fire) {
 					ret.value = '_GrShower2';
-					ret.args = [skill.details.type];
+					ret.args = [1];
 				}
 				break;
 			case SkillList.Projectile:
