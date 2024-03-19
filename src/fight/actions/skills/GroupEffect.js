@@ -1,9 +1,12 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/GroupEffect.hx
 
+import { Layers } from '../../DepthManager.js';
 import { Fighter } from '../../Fighter.js';
 import { Scene } from '../../Scene.js';
 import { State } from '../../State.js';
+import { Timer } from '../../Timer.js';
+import { SkillRay } from './SkillRay.js';
 
 /**
  * Parent class for the targeted skills.
@@ -14,6 +17,12 @@ export class GroupEffect extends State {
 	 * @type {number}
 	 */
 	_step = 0;
+	/**
+	 * Timer to respect frame rate.
+	 * @type {number}
+	 */
+	_frameTimer = 0;
+
 	/**
 	 * Figther casting the skill.
 	 * @type {Fighter}
@@ -40,22 +49,29 @@ export class GroupEffect extends State {
 	}
 
 	/**
+	 * Update the frame timer.
+	 * @param {Timer} timer The Fight's timer, containing the elapsed time.
+	 */
+	update(timer) {
+		super.update(timer);
+		this._frameTimer += timer.tmod;
+	}
+
+	/**
 	 * Go to the next step of the skill and reset the coefficient.
 	 */
 	nextStep() {
 		this._step++;
+		this._frameTimer = 0;
 		this._coef = 0;
 	}
 
 	/**
-	 * Generate rays around the caster.
+	 * Spawn two rays around the caster.
 	 */
 	genRayConcentrate() {
-		// TODO
-		/*var mc = caster.bdm.attach("mcRayConcentrate",Fighter.DP_BACK);
-		mc._y = -caster.height*0.5;
-		mc._rotation = Math.random()*360;
-		return mc;*/
+		this._caster.dm.addSprite(new SkillRay(this._scene, -this._caster.height * 0.5), Layers.Fighter.BACK);
+		this._caster.dm.addSprite(new SkillRay(this._scene, -this._caster.height * 0.5), Layers.Fighter.BACK);
 	}
 
 	/**

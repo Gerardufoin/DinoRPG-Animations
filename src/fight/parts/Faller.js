@@ -25,11 +25,11 @@ export class Faller extends Part {
 			this._vy = 0;
 			this._vz = 0;
 			this._weight = 0;
-			this.landed();
 			if (this._animator) {
 				this._animator.playing = false;
 			}
 			this._flFall = false;
+			this.landed();
 		}
 	}
 

@@ -114,7 +114,7 @@ const fightVersion = [
 						{ id: 0, life: 10 },
 						{ id: 2, life: 10 }
 					],
-					type: DinoAnim.SkillType.Fire
+					type: DinoAnim.SkillType.Water
 				}
 			}
 			/*{

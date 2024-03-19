@@ -265,7 +265,7 @@ TODO
 | Meteor (4)             |                                                                                                                                                                                                       |
 | Vigne (5)              |                                                                                                                                                                                                       |
 | WaterCanon (6)         |                                                                                                                                                                                                       |
-| Shower (7)             |                                                                                                                                                                                                       |
+| Shower (7)             | The fighter (fid) damages the targets with a rain of the given SkillType (type). Only Fire and Water have a visual.                                                                                   |
 | LevitRay (8)           |                                                                                                                                                                                                       |
 | Lightning (9)          |                                                                                                                                                                                                       |
 | Crepuscule (10)        |                                                                                                                                                                                                       |
@@ -304,6 +304,14 @@ TODO
 | Generate (43)          |                                                                                                                                                                                                       |
 | Corruption (44 - New)  | The scene becomes dark, then the targets take the given amount of damages.                                                                                                                            |
 | DivineLight (45 - New) | Beams of light fall upon the targets, damaging them by the given amount of damages.                                                                                                                   |
+
+| SkillType     | Description      |
+| ------------- | ---------------- |
+| Fire (0)      | Fire skill.      |
+| Wood (1)      | Wood skill.      |
+| Water (2)     | Water skill.     |
+| Lightning (3) | Lightning skill. |
+| Air (4)       | Air skill.       |
 
 ### Dead (9)
 

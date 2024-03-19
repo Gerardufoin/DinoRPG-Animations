@@ -1,22 +1,20 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/Shower.hx
 
-import { Container } from 'pixi.js';
 import { GroupEffect } from '../GroupEffect.js';
 import { Scene } from '../../../Scene.js';
 import { Fighter } from '../../../Fighter.js';
 import { Timer } from '../../../Timer.js';
 import { SkillAura } from '../SkillAura.js';
+import { SkillType } from '../../../Enums.js';
+import { FireRain } from '../../../parts/skills/shower/FireRain.js';
+import { Layers } from '../../../DepthManager.js';
+import { WaterRain } from '../../../parts/skills/shower/WaterRain.js';
 
 /**
  * Creates shower of a specific element which damages the targets.
  */
 export class Shower extends GroupEffect {
-	/**
-	 * "Rain" drops instantiated in the scene.
-	 * @type {{cont: Container, x: number, y: number}[]}
-	 */
-	_rain = [];
 	/**
 	 * Type of shower. Value from the SkillType enum.
 	 * @type {number}
@@ -56,6 +54,10 @@ export class Shower extends GroupEffect {
 		switch (this._step) {
 			case 0:
 				this._aura.update(this._coef);
+				if (this._frameTimer >= 1) {
+					this._frameTimer -= 1;
+					this.genRayConcentrate();
+				}
 				if (this._coef == 1) {
 					this._caster.skin.filters = [];
 					this._caster.playAnim('release');
@@ -64,7 +66,28 @@ export class Shower extends GroupEffect {
 				}
 				break;
 			case 1:
+				if (this._coef < 0.8 && this._frameTimer >= 1) {
+					this._frameTimer -= 1;
+					for (let i = 0; i < 2; ++i) {
+						switch (this._type) {
+							case SkillType.Fire:
+								this._scene.dm.addSprite(
+									new FireRain(this._scene, this._caster.intSide),
+									Layers.Scene.FIGHTERS
+								);
+								break;
+							case SkillType.Water:
+								this._scene.dm.addSprite(
+									new WaterRain(this._scene, this._caster.intSide),
+									Layers.Scene.FIGHTERS
+								);
+								break;
+						}
+					}
+				}
+
 				if (this._coef == 1) {
+					this._caster.playAnim('stand');
 					this.damageAll();
 					this.end();
 				}
