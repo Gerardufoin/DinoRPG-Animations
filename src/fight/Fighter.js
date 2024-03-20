@@ -32,6 +32,7 @@ import { IScene } from './IScene.js';
 import { WaterOnde } from './parts/scene/WaterOnde.js';
 import { FighterProperty, FighterStatus, GroundType, LifeEffect } from './Enums.js';
 import { FadeFX } from './parts/FadeFX.js';
+import { FireSpark } from './parts/life/FireSpark.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -1272,6 +1273,19 @@ export class Fighter extends Phys {
 				Math.random() * sleep
 			);
 			this.dm.addSprite(flameche, Layers.Fighter.FRONT);
+		}
+	}
+
+	/**
+	 * Creates the given amount of fire sparks on the Fighter.
+	 * @param {number} max The number of fire sparks to instantiate.
+	 */
+	fxBurst(max) {
+		for (let i = 0; i < max; ++i) {
+			this._scene.dm.addSprite(
+				new FireSpark(this._scene, (i / max) * 6.28, this.position.x, this.position.y),
+				Layers.Scene.FIGHTERS
+			);
 		}
 	}
 

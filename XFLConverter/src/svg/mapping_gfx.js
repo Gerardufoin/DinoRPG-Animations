@@ -149,6 +149,15 @@ export let mapping_gfx = {
 	847: 'status/blob_2',
 	848: 'status/dazzled',
 	849: 'status/stun',
+	860: 'fx/fireball_1',
+	861: 'fx/fireball_2',
+	862: 'fx/fireball_3',
+	863: 'fx/fireball_4',
+	864: 'fx/fireball_5',
+	865: 'fx/fireball_6',
+	866: 'fx/fireball_7',
+	867: 'fx/fireball_8',
+	868: 'fx/fireball_9',
 	//871: 'scene/loading_bg',
 	//872: 'scene/loading',
 	875: 'scene/column',
@@ -187,5 +196,6 @@ export let mapping_gfx = {
 	957: 'fx/petal_14',
 	958: 'fx/petal_15',
 	959: 'fx/petal_16',
+	964: 'fx/fire_breath',
 	975: 'parts/hole_mask'
 };

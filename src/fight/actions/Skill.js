@@ -7,10 +7,11 @@ import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { Anim } from './skills/Anim.js';
-import { Corruption } from './skills/group/Corruption.js';
-import { DivineLight } from './skills/group/DivineLight.js';
-import { JumpAttack } from './skills/group/JumpAttack.js';
-import { Shower } from './skills/group/Shower.js';
+import { GrCorruption } from './skills/group/GrCorruption.js';
+import { GrDivineLight } from './skills/group/GrDivineLight.js';
+import { GrFireball } from './skills/group/GrFireball.js';
+import { GrJumpAttack } from './skills/group/GrJumpAttack.js';
+import { GrShower } from './skills/group/GrShower.js';
 
 /**
  * The parameters of a skill.
@@ -131,17 +132,19 @@ export class Skill extends State {
 	getSkill() {
 		// TODO
 		switch (this._skill) {
+			case SkillList.Fireball:
+				return new GrFireball(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Shower:
-				return new Shower(this._scene, () => this.end(), this._fighter, this._targets, this._details.type);
+				return new GrShower(this._scene, () => this.end(), this._fighter, this._targets, this._details.type);
 			case SkillList.Tremor:
 			case SkillList.JumpAttack:
-				return new JumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);
+				return new GrJumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);
 			case SkillList.Anim:
 				return new Anim(this._scene, () => this.end(), this._fighter, this._details.anim);
 			case SkillList.Corruption:
-				return new Corruption(this._scene, () => this.end(), this._fighter, this._targets);
+				return new GrCorruption(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.DivineLight:
-				return new DivineLight(this._scene, () => this.end(), this._fighter, this._targets);
+				return new GrDivineLight(this._scene, () => this.end(), this._fighter, this._targets);
 		}
 		return null;
 	}

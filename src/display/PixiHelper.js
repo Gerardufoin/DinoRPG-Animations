@@ -64,6 +64,20 @@ export class PixiHelper {
 	}
 
 	/**
+	 * A modulus of some kind. Not sure really.
+	 * Ref: https://github.com/motion-twin/WebGamesArchives/blob/main/libs-haxe2/mt/bumdum/Lib.hx.
+	 * @param {number} n The number to modulus.
+	 * @param {number} mod The modulus value.
+	 * @returns {number | null} The resulting operation or null if mod is 0.
+	 */
+	static hMod(n, mod) {
+		if (!mod) return null;
+		while (n > mod) n -= mod * 2;
+		while (n < -mod) n += mod * 2;
+		return n;
+	}
+
+	/**
 	 * Get a color from the rainbow based on the given coefficient.
 	 * If no coefficient is given, the color is random.
 	 * @param {number} c Coefficient of the color.
@@ -77,9 +91,7 @@ export class PixiHelper {
 		const part = (1 / 3) * 2;
 		for (let i = 0; i < 3; ++i) {
 			let v = part + i * 2 * part - c;
-			// hMod from https://github.com/motion-twin/WebGamesArchives/blob/main/libs-haxe2/mt/bumdum/Lib.hx
-			while (v > 0.5) v -= 1;
-			while (v < -0.5) v += 1;
+			v = PixiHelper.hMod(v, 0.5);
 			a[i] = Math.min(1.5 - Math.abs(v) * 3, 1);
 		}
 		return new Color({ r: a[0] * 255, g: a[1] * 255, b: a[2] * 255 });

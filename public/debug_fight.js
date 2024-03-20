@@ -85,7 +85,7 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Gardien Abricole',
+					name: '',
 					side: false,
 					scale: 1,
 					fid: 0,
@@ -98,11 +98,22 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Gardien Abricole',
+					name: '',
 					side: false,
 					scale: 1,
 					fid: 2,
 					gfx: 'gvert'
+				}
+			},
+			{
+				action: DinoAnim.Action.Skill,
+				skill: DinoAnim.SkillList.Fireball,
+				details: {
+					fid: 1,
+					targets: [
+						{ id: 0, life: 10 },
+						{ id: 2, life: 10 }
+					]
 				}
 			},
 			{
