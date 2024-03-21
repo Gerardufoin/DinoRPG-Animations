@@ -4,6 +4,7 @@ import { Color, Container, Graphics } from 'pixi.js';
 import { IScene } from '../../IScene.js';
 import { Part } from '../../Part.js';
 import { Timer } from '../../Timer.js';
+import { PixiHelper } from '../../../display/PixiHelper.js';
 
 /**
  * Creates a fire spark in at the given coordinates, flying away at the given angle.
@@ -72,15 +73,7 @@ export class FireSpark extends Part {
 		}
 		if (this._colorTimer < FireSpark.COLOR_CHANGE_TIME) {
 			this._colorTimer = Math.min(this._colorTimer + timer.tmod, FireSpark.COLOR_CHANGE_TIME);
-			// Steps happens every 1/3 of the color change duration.
-			// First 1/3, blue goes from 100% to 0%
-			// Next for 2/3 green goes from 100% to 0%
-			// When reaching 2/3, red goes from 100% to 0% during the last 1/3
-			const step = FireSpark.COLOR_CHANGE_TIME / 3;
-			const coefB = Math.max(0, 1 - this._colorTimer / (FireSpark.COLOR_CHANGE_TIME / 3));
-			const coefG = 1 - Math.max(0, this._colorTimer - step) / (step * 2);
-			const coefR = 1 - Math.max(0, this._colorTimer - 2 * step) / step;
-			this._spark.tint = new Color({ r: 255 * coefR, g: 255 * coefG, b: 255 * coefB });
+			this._spark.tint = PixiHelper.getFireColorGradient(this._colorTimer / FireSpark.COLOR_CHANGE_TIME);
 		}
 	}
 }

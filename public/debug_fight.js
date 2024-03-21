@@ -107,7 +107,7 @@ const fightVersion = [
 			},
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Fireball,
+				skill: DinoAnim.SkillList.Blow,
 				details: {
 					fid: 1,
 					targets: [

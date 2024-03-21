@@ -9,6 +9,7 @@ import { State } from '../State.js';
 import { Anim } from './skills/Anim.js';
 import { GrCorruption } from './skills/group/GrCorruption.js';
 import { GrDivineLight } from './skills/group/GrDivineLight.js';
+import { GrFireBreath } from './skills/group/GrFireBreath.js';
 import { GrFireball } from './skills/group/GrFireball.js';
 import { GrJumpAttack } from './skills/group/GrJumpAttack.js';
 import { GrShower } from './skills/group/GrShower.js';
@@ -134,6 +135,8 @@ export class Skill extends State {
 		switch (this._skill) {
 			case SkillList.Fireball:
 				return new GrFireball(this._scene, () => this.end(), this._fighter, this._targets);
+			case SkillList.Blow:
+				return new GrFireBreath(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Shower:
 				return new GrShower(this._scene, () => this.end(), this._fighter, this._targets, this._details.type);
 			case SkillList.Tremor:

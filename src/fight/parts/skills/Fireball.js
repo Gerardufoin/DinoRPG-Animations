@@ -39,7 +39,7 @@ export class Fireball extends Homing {
 	 * @param {number} x The initial x coordinate.
 	 * @param {number} y The initial y coordinate.
 	 * @param {number} z The initial z coordinate.
-	 * @param {number} side The side of the Fighter creating the Fireball (0 left, 1 right).
+	 * @param {number} side The side of the Fighter creating the Fireball (1 left, -1 right).
 	 */
 	constructor(scene, targetData, x, y, z, side) {
 		super(new Container(), scene, targetData.fighter);

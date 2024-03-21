@@ -132,4 +132,24 @@ export class PixiHelper {
 		filter.matrix[6] = 1 + color.green * percent;
 		filter.matrix[12] = 1 + color.blue * percent;
 	}
+
+	/**
+	 * Creates a color gradient ranging from white->yellow->orange->red->black based on the given coefficient.
+	 * Steps happens every 0.33 of the color change duration.
+	 * First 0.33, blue goes from 100% to 0%.
+	 * Next for the next 0.66, green goes from 100% to 0%.
+	 * When reaching 0.825, red goes from 100% to 0% during the last 0.175.
+	 * @param {number} coef The current progression of the gradient between 0 and 1.
+	 * @param {number} speedR Changes how fast the red value fall. 1 by default.
+	 * @param {number} speedG Changes how fast the green value fall. 1 by default.
+	 * @param {number} speedB Changes how fast the blue value falls. 1 by default.
+	 * @returns {Color} The current color of the fire gradient.
+	 */
+	static getFireColorGradient(coef, speedR = 1, speedG = 1, speedB = 1) {
+		const step = 1 / 3;
+		const coefB = Math.max(0, 1 - (coef / step) * speedB);
+		const coefG = Math.max(0, 1 - (Math.max(0, coef - step) / (1 - step)) * speedG);
+		const coefR = Math.max(0, 1 - (Math.max(0, coef - 2 * step) / (1 - 2 * step)) * speedR);
+		return new Color({ r: 255 * coefR, g: 255 * coefG, b: 255 * coefB });
+	}
 }

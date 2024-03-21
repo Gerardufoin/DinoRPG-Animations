@@ -713,7 +713,7 @@ export class Fighter extends Phys {
 	 * @param {number | null} moveType A value from the Fighter.MoveType enum or null for the default movement.
 	 * @returns {number} The ratio between the Fighter's running speed and the expected distance to cover.
 	 */
-	initReturn(moveType) {
+	initReturn(moveType = null) {
 		if (!this._lastCoord) return 0;
 		const rec = 40;
 		const p = this._lastCoord;
