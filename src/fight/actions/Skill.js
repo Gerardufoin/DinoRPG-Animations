@@ -6,12 +6,13 @@ import { SkillList } from '../Enums.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
-import { Anim } from './skills/Anim.js';
+import { FxAnim } from './skills/fx/FxAnim.js';
 import { GrCorruption } from './skills/group/GrCorruption.js';
 import { GrDivineLight } from './skills/group/GrDivineLight.js';
 import { GrFireBreath } from './skills/group/GrFireBreath.js';
 import { GrFireball } from './skills/group/GrFireball.js';
 import { GrJumpAttack } from './skills/group/GrJumpAttack.js';
+import { GrLava } from './skills/group/GrLava.js';
 import { GrShower } from './skills/group/GrShower.js';
 
 /**
@@ -137,13 +138,15 @@ export class Skill extends State {
 				return new GrFireball(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Blow:
 				return new GrFireBreath(this._scene, () => this.end(), this._fighter, this._targets);
+			case SkillList.Lava:
+				return new GrLava(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Shower:
 				return new GrShower(this._scene, () => this.end(), this._fighter, this._targets, this._details.type);
 			case SkillList.Tremor:
 			case SkillList.JumpAttack:
 				return new GrJumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);
 			case SkillList.Anim:
-				return new Anim(this._scene, () => this.end(), this._fighter, this._details.anim);
+				return new FxAnim(this._scene, () => this.end(), this._fighter, this._details.anim);
 			case SkillList.Corruption:
 				return new GrCorruption(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.DivineLight:

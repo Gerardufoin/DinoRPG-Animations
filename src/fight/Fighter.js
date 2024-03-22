@@ -1062,10 +1062,7 @@ export class Fighter extends Phys {
 
 		this.showDamages(damages);
 		this._lockTimer = stunDuration;
-		this._shake = {
-			force: 30,
-			timer: 1
-		};
+		this.setShake(30);
 
 		if (lifeFx !== null) {
 			this.lifeEffect(lifeFx);
@@ -1223,6 +1220,17 @@ export class Fighter extends Phys {
 	}
 
 	// FX SECTION
+
+	/**
+	 * Sets the shake value of the Fighter, making it shake over time.
+	 * @param {number} force The strength of the shaking.
+	 */
+	setShake(force) {
+		this._shake = {
+			force: force,
+			timer: 1
+		};
+	}
 
 	/**
 	 * Update the shake animation by moving the animator by the shake force.

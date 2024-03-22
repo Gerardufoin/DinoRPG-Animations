@@ -1,34 +1,34 @@
 import { ref } from '../references.js';
 
-// 892
+// GFX 892
 export let fx_explosion = {
 	parts: {
-		e_1: [
+		e1: [
 			{
 				ref: ref.fx.explo_1
 			}
 		],
-		e_2: [
+		e2: [
 			{
 				ref: ref.fx.explo_2
 			}
 		],
-		e_3: [
+		e3: [
 			{
 				ref: ref.fx.explo_3
 			}
 		],
-		e_4: [
+		e4: [
 			{
 				ref: ref.fx.explo_4
 			}
 		],
-		e_5: [
+		e5: [
 			{
 				ref: ref.fx.explo_5
 			}
 		],
-		e_6: [
+		e6: [
 			{
 				ref: ref.fx.explo_6
 			}
@@ -41,34 +41,34 @@ export let fx_explosion = {
 		},
 		frames: [
 			{
-				e_1: {}
+				e1: {}
 			},
 			{
-				e_2: {}
+				e2: {}
 			},
 			{
-				e_3: {}
+				e3: {}
 			},
 			{
-				e_3: {}
+				e3: {}
 			},
 			{
-				e_4: {}
+				e4: {}
 			},
 			{
-				e_4: {}
+				e4: {}
 			},
 			{
-				e_5: {}
+				e5: {}
 			},
 			{
-				e_5: {}
+				e5: {}
 			},
 			{
-				e_6: {}
+				e6: {}
 			},
 			{
-				e_6: {}
+				e6: {}
 			},
 			{}
 		]

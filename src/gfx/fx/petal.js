@@ -1,84 +1,84 @@
 import { ref } from '../references.js';
 
-// 960
+// GFX 960
 export let fx_petal = {
 	parts: {
-		p_1: [
+		p1: [
 			{
 				ref: ref.fx.petal_1
 			}
 		],
-		p_2: [
+		p2: [
 			{
 				ref: ref.fx.petal_2
 			}
 		],
-		p_3: [
+		p3: [
 			{
 				ref: ref.fx.petal_3
 			}
 		],
-		p_4: [
+		p4: [
 			{
 				ref: ref.fx.petal_4
 			}
 		],
-		p_5: [
+		p5: [
 			{
 				ref: ref.fx.petal_5
 			}
 		],
-		p_6: [
+		p6: [
 			{
 				ref: ref.fx.petal_6
 			}
 		],
-		p_7: [
+		p7: [
 			{
 				ref: ref.fx.petal_7
 			}
 		],
-		p_8: [
+		p8: [
 			{
 				ref: ref.fx.petal_8
 			}
 		],
-		p_9: [
+		p9: [
 			{
 				ref: ref.fx.petal_9
 			}
 		],
-		p_10: [
+		p10: [
 			{
 				ref: ref.fx.petal_10
 			}
 		],
-		p_11: [
+		p11: [
 			{
 				ref: ref.fx.petal_11
 			}
 		],
-		p_12: [
+		p12: [
 			{
 				ref: ref.fx.petal_12
 			}
 		],
-		p_13: [
+		p13: [
 			{
 				ref: ref.fx.petal_13
 			}
 		],
-		p_14: [
+		p14: [
 			{
 				ref: ref.fx.petal_14
 			}
 		],
-		p_15: [
+		p15: [
 			{
 				ref: ref.fx.petal_15
 			}
 		],
-		p_16: [
+		p16: [
 			{
 				ref: ref.fx.petal_16
 			}
@@ -88,55 +88,55 @@ export let fx_petal = {
 		id: 'fx_petal',
 		frames: [
 			{
-				p_1: {}
+				p1: {}
 			},
 			{
-				p_2: {}
+				p2: {}
 			},
 			{
-				p_3: {}
+				p3: {}
 			},
 			{
-				p_4: {}
+				p4: {}
 			},
 			{
-				p_5: {}
+				p5: {}
 			},
 			{
-				p_6: {}
+				p6: {}
 			},
 			{
-				p_7: {}
+				p7: {}
 			},
 			{
-				p_8: {}
+				p8: {}
 			},
 			{
-				p_9: {}
+				p9: {}
 			},
 			{
-				p_10: {}
+				p10: {}
 			},
 			{
-				p_11: {}
+				p11: {}
 			},
 			{
-				p_12: {}
+				p12: {}
 			},
 			{
-				p_13: {}
+				p13: {}
 			},
 			{
-				p_14: {}
+				p14: {}
 			},
 			{
-				p_15: {}
+				p15: {}
 			},
 			{
-				p_4: {}
+				p4: {}
 			},
 			{
-				p_16: {}
+				p16: {}
 			}
 		]
 	}

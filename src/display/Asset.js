@@ -14,11 +14,14 @@ export class Asset extends Sprite {
 	 * It takes a reference object as parameter and instantiate the texture, moving it using the offset if needed.
 	 * @param {{jpg?: string, png?: string, svg?: string, offset?: {x: number, y: number}}} reference The reference to the compressed texture used to instantiate the Sprite.
 	 * @param {number} scale Scale of tzhe texture to instantiate. Only applicable for SVG.
+	 * @param {boolean} offset If true, apply the reference offset, if any. True by default.
 	 */
-	constructor(reference, scale = 1) {
+	constructor(reference, scale = 1, offset = true) {
 		super(TextureManager.getTextureFromCompressedReference(reference, scale));
-		this.x = -(reference.offset?.x ?? 0) * scale;
-		this.y = -(reference.offset?.y ?? 0) * scale;
+		if (offset) {
+			this.x = -(reference.offset?.x ?? 0) * scale;
+			this.y = -(reference.offset?.y ?? 0) * scale;
+		}
 	}
 
 	/**

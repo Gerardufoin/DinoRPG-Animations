@@ -1,7 +1,7 @@
 import { BLEND_MODES } from 'pixi.js';
 import { ref } from '../references.js';
 
-// 939
+// GFX 939
 export let fx_bolt = {
 	parts: {
 		fx_bolt_1: [

@@ -1,6 +1,6 @@
 import { ref } from '../references.js';
 
-// 836
+// GFX 836
 export let fx_flameche = {
 	parts: {
 		base: [

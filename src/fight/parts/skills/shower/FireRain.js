@@ -21,8 +21,7 @@ export class FireRain extends ARain {
 	constructor(scene, side) {
 		super(scene, side);
 
-		this._trail = new Asset(ref.fx.braise_trail);
-		this._trail.x = this._trail.y = 0;
+		this._trail = new Asset(ref.fx.braise_trail, 1, false);
 		this._trail.anchor.set(1, 0.5);
 		this._trail.scale.set(0.2 + Math.random() * 0.1, 1);
 		this._root.addChild(this._trail);

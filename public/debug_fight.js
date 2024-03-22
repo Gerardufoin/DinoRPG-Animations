@@ -107,7 +107,7 @@ const fightVersion = [
 			},
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Blow,
+				skill: DinoAnim.SkillList.Lava,
 				details: {
 					fid: 1,
 					targets: [
@@ -115,8 +115,8 @@ const fightVersion = [
 						{ id: 2, life: 10 }
 					]
 				}
-			},
-			{
+			}
+			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Shower,
 				details: {
@@ -127,7 +127,7 @@ const fightVersion = [
 					],
 					type: DinoAnim.SkillType.Water
 				}
-			}
+			}*/
 			/*{
 				action: DinoAnim.Action.Damages,
 				fid: 0,

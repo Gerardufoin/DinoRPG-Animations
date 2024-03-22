@@ -1,6 +1,6 @@
 import { ref } from '../references.js';
 
-// 869
+// GFX 869
 export let fx_fireball = {
 	parts: {
 		f1: [{ ref: ref.fx.fireball_1 }],
