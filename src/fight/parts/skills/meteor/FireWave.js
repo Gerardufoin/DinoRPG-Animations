@@ -32,7 +32,7 @@ export class FireWave extends Part {
 	constructor(scene, x, y) {
 		super(new Container(), scene);
 
-		const wave = new Asset(ref.fx.fire_wave, 3, false);
+		const wave = new Asset(ref.fx.meteor.wave, 3, false);
 		wave.anchor.set(0.5, 0.5);
 		wave.scale.set(1 / 3, 0.5 / 3);
 		this._root.addChild(wave);

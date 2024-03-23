@@ -136,10 +136,11 @@ export class PartManager {
 	 * @returns {Animation | null} A PixiJS container representing the element.
 	 */
 	static getElement(part, partsDetail, palette, assetPath, scale, scaling, parentTransform = undefined) {
-		if (part.special && (partsDetail.length <= 15 || partsDetail[15] <= 0)) {
+		if (!part.ref || (part.special && (partsDetail.length <= 15 || partsDetail[15] <= 0))) {
 			return null;
 		}
 
+		const ref = part.ref instanceof Array ? part.ref[Math.floor(Math.random() * part.ref.length)] : part.ref;
 		// Transformation are not directly applied to the sprite so it can be scaled for resolution purposes
 		const localTransform = new Animation(scale);
 		localTransform.transform.setFromMatrix(
@@ -150,12 +151,12 @@ export class PartManager {
 					part.transform?.b ?? 0,
 					part.transform?.c ?? 0,
 					part.transform?.d ?? 1,
-					((part.transform?.a ?? 1) * -(part.ref?.offset?.x ?? 0) +
-						(part.transform?.c ?? 0) * -(part.ref?.offset?.y ?? 0) +
+					((part.transform?.a ?? 1) * -(ref.offset?.x ?? 0) +
+						(part.transform?.c ?? 0) * -(ref.offset?.y ?? 0) +
 						(part.transform?.tx ?? 0)) *
 						scale,
-					((part.transform?.b ?? 0) * -(part.ref?.offset?.x ?? 0) +
-						(part.transform?.d ?? 1) * -(part.ref?.offset?.y ?? 0) +
+					((part.transform?.b ?? 0) * -(ref.offset?.x ?? 0) +
+						(part.transform?.d ?? 1) * -(ref.offset?.y ?? 0) +
 						(part.transform?.ty ?? 0)) *
 						scale
 				)
@@ -164,7 +165,7 @@ export class PartManager {
 
 		const resolution = part.resolution ?? TextureManager.DEFAULT_RESOLUTION;
 		scaling *= Math.max(localTransform.scale.x, localTransform.scale.y);
-		let texture = TextureManager.getTextureFromCompressedReference(part.ref, scale * scaling, resolution);
+		let texture = TextureManager.getTextureFromCompressedReference(ref, scale * scaling, resolution);
 		const sprite = Sprite.from(texture);
 		const filters = [];
 		sprite.scale.set(1 / (resolution * scaling));

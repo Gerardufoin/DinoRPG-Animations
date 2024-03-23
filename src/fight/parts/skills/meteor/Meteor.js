@@ -50,7 +50,7 @@ export class Meteor extends Phys {
 	constructor(scene, side) {
 		super(new Container(), scene);
 
-		this._rock = new Asset(ref.fx.meteor, 1, false);
+		this._rock = new Asset(ref.fx.meteor.rock, 1, false);
 		this._rock.anchor.set(0.5, 0.5);
 		this._root.addChild(this._rock);
 

@@ -24,7 +24,7 @@ export class MeteorImpact extends Part {
 	constructor(scene, x, y) {
 		super(new Container(), scene);
 
-		this._root.addChild(new Asset(ref.fx.meteor_impact));
+		this._root.addChild(new Asset(ref.fx.meteor.impact));
 		this._x = x;
 		this._y = y;
 

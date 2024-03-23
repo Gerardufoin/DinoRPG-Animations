@@ -15,6 +15,7 @@ import { GrJumpAttack } from './skills/group/GrJumpAttack.js';
 import { GrLava } from './skills/group/GrLava.js';
 import { GrMeteor } from './skills/group/GrMeteor.js';
 import { GrShower } from './skills/group/GrShower.js';
+import { GrVines } from './skills/group/GrVines.js';
 
 /**
  * The parameters of a skill.
@@ -143,6 +144,8 @@ export class Skill extends State {
 				return new GrLava(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Meteor:
 				return new GrMeteor(this._scene, () => this.end(), this._fighter, this._targets);
+			case SkillList.Vigne:
+				return new GrVines(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Shower:
 				return new GrShower(this._scene, () => this.end(), this._fighter, this._targets, this._details.type);
 			case SkillList.Tremor:

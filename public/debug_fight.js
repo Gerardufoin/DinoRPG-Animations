@@ -107,12 +107,12 @@ const fightVersion = [
 			},
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Meteor,
+				skill: DinoAnim.SkillList.Vigne,
 				details: {
 					fid: 1,
 					targets: [
-						{ id: 0, life: 10 },
-						{ id: 2, life: 10 }
+						{ id: 0, life: 0 },
+						{ id: 2, life: 0 }
 					]
 				}
 			}

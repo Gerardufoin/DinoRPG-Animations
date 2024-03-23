@@ -5,7 +5,7 @@ import { Asset } from '../../../../display/Asset.js';
 import { ref } from '../../../../gfx/references.js';
 import { IScene } from '../../../IScene.js';
 import { Animator } from '../../../../display/Animator.js';
-import { fx_braise_ploc } from '../../../../gfx/fx/braise_ploc.js';
+import { fx_braise_explo } from '../../../../gfx/fx/braise_explo.js';
 import { Timer } from '../../../Timer.js';
 
 // GFX 65
@@ -21,13 +21,13 @@ export class FireRain extends ARain {
 	constructor(scene, side) {
 		super(scene, side);
 
-		this._trail = new Asset(ref.fx.braise_trail, 1, false);
+		this._trail = new Asset(ref.fx.braise.trail, 1, false);
 		this._trail.anchor.set(1, 0.5);
 		this._trail.scale.set(0.2 + Math.random() * 0.1, 1);
 		this._root.addChild(this._trail);
-		this._root.addChild(new Asset(ref.fx[`braise_${Math.floor(Math.random() * 5) + 1}`]));
+		this._root.addChild(new Asset(ref.fx.braise[`b_${Math.floor(Math.random() * 5) + 1}`]));
 
-		this._animator = new Animator(false).loadAnimation(fx_braise_ploc);
+		this._animator = new Animator(false).loadAnimation(fx_braise_explo);
 		this._animator.alpha = 0;
 		this._animator.playing = false;
 	}
