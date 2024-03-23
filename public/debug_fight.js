@@ -107,7 +107,7 @@ const fightVersion = [
 			},
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Lava,
+				skill: DinoAnim.SkillList.Meteor,
 				details: {
 					fid: 1,
 					targets: [

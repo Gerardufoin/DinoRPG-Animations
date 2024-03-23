@@ -82,7 +82,7 @@ export class GrLava extends GroupEffect {
 					this.genRayConcentrate();
 				}
 				if (this._coef === 1) {
-					GrLava.BurnFilter.outerStrength = 0;
+					GrLava.BurnFilter.innerStrength = 0;
 					for (const t of this._targets) {
 						if (t.life !== null) {
 							const lava = new Lava();
@@ -98,7 +98,7 @@ export class GrLava extends GroupEffect {
 				}
 				break;
 			case 1:
-				GrLava.BurnFilter.outerStrength = (0.5 + this._coef) * 3;
+				GrLava.BurnFilter.innerStrength = this._coef * 2;
 				if (this._coef == 1) {
 					this._lavas.map((l) => l.close());
 					for (const t of this._targets) {

@@ -72,7 +72,7 @@ export class Part extends Phys {
 			this._animator.update(timer.deltaTimeMS);
 		}
 		if (this._fadeoutTimer > 0) {
-			this._fadeoutTimer -= timer.tmod;
+			this._fadeoutTimer = Math.max(0, this._fadeoutTimer - timer.tmod);
 			if (this._fadeoutTimer <= this._fadeLimit) {
 				const c = this._fadeoutTimer / this._fadeLimit;
 				if (this._fadeScale) {
