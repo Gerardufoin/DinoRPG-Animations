@@ -51,8 +51,21 @@ export class Phys extends Entity {
 	 * @type {number | null}
 	 */
 	_groundFrict = 0.5;
+	/**
+	 * The friction applied to the rotation when the entity is on the ground (z = 0).
+	 * @type {number}
+	 */
 	_groundRotFrict = 0.5;
+	/**
+	 * The friction applied to vz when the entity is hitting the ground (z = 0).
+	 * @type {number}
+	 */
 	_bounceFrict = 0.5;
+	/**
+	 * The weight of the entity.
+	 * If above 0, will increase vz over time.
+	 * @type {number}
+	 */
 	_weight = 0.0;
 
 	/**

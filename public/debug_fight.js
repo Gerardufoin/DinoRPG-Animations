@@ -105,14 +105,19 @@ const fightVersion = [
 					gfx: 'gvert'
 				}
 			},
+			/*{
+				action: DinoAnim.Action.Status,
+				fid: 1,
+				status: DinoAnim.FighterStatus.Fly
+			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Vigne,
+				skill: DinoAnim.SkillList.WaterCanon,
 				details: {
 					fid: 1,
 					targets: [
-						{ id: 0, life: 0 },
-						{ id: 2, life: 0 }
+						{ id: 0, life: 10 }
+						//{ id: 2, life: 10 }
 					]
 				}
 			}

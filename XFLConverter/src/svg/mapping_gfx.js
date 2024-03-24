@@ -140,6 +140,9 @@ export let mapping_gfx = {
 	763: 'fx/acid_ball',
 	765: 'fx/acid_smoke',
 	//773: 'fx/skull', // Done manually, do not uncomment
+	775: 'fx/water/puddle',
+	779: 'fx/water/ecume',
+	783: 'fx/water/drop',
 	/*785: 'fx/lava',
 	789: 'fx/lava_end_1',
 	790: 'fx/lava_end_2',

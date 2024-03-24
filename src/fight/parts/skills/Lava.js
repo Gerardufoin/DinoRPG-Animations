@@ -1,7 +1,6 @@
 // @ts-check
 
 import { Container, TilingSprite, WRAP_MODES } from 'pixi.js';
-import { Asset } from '../../../display/Asset.js';
 import { ref } from '../../../gfx/references.js';
 import { Timer } from '../../Timer.js';
 import { Sprite } from '../../Sprite.js';

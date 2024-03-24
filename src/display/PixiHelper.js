@@ -152,4 +152,18 @@ export class PixiHelper {
 		const coefR = Math.max(0, 1 - (Math.max(0, coef - 2 * step) / (1 - 2 * step)) * speedR);
 		return new Color({ r: 255 * coefR, g: 255 * coefG, b: 255 * coefB });
 	}
+
+	/**
+	 * Get a probability adapted based on the elapsed time.
+	 * For example, given a probability of 0.5 for tmod = 1 (0.5 each frame at the expected FPS),
+	 * this will change the probability to accomodate the different frame rate, based on the formula x = 1 - Math.pow(1 - proba, tmod).
+	 * @param {number} proba The expected proba every tmod (0-1).
+	 * @param {number} tmod The current tmod value (will be capped between 0 and 1).
+	 * @returns {boolean} Execute a random check on the resulting probability and returns true if the random succeded, false otherwise.
+	 */
+	static tmodRandom(proba, tmod) {
+		tmod = PixiHelper.mm(0, tmod, 1);
+		const p = 1 - Math.pow(1 - proba, tmod);
+		return Math.random() <= p;
+	}
 }

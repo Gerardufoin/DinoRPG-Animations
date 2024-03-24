@@ -1,6 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/Vigne.hx
 
+import { PixiHelper } from '../../../../display/PixiHelper.js';
 import { Layers } from '../../../DepthManager.js';
 import { FighterStatus, SkillType } from '../../../Enums.js';
 import { Fighter } from '../../../Fighter.js';
@@ -89,7 +90,7 @@ export class GrVines extends GroupEffect {
 								);
 							}
 						}
-					} else if (this._frameTimer >= 1 && Math.floor(Math.random() * 2.5) == 0) {
+					} else if (PixiHelper.tmodRandom(1 / 3, timer.tmod)) {
 						this._scene.dm.addSprite(
 							new MovingVine(
 								this._scene,
@@ -100,9 +101,6 @@ export class GrVines extends GroupEffect {
 							Layers.Scene.FIGHTERS
 						);
 					}
-				}
-				if (this._frameTimer >= 1) {
-					this._frameTimer -= 1;
 				}
 				if (this._coef == 1) {
 					this._caster.playAnim('stand');
