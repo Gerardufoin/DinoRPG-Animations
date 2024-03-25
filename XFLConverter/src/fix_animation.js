@@ -78,6 +78,6 @@ function followKey(anim, target, key) {
 const animation = [];
 
 //const result = mirrorTo(animation, 12, 'r_f_lower_leg');
-let result = freezeFrame(mirrorTo(animation, 73, 'l_f_upper_leg'), 44, 'l_f_upper_leg', 44, 74);
+let result = freezeFrame(freezeFrame(animation, 33, 'l_foot', 33), 33, 'r_foot', 33);
 
 fs.writeFileSync('./results/animation_fix.txt', JSON.stringify(result, undefined, '\t'));

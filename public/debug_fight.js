@@ -102,7 +102,7 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'gvert'
+					gfx: 'goblin'
 				}
 			},
 			/*{

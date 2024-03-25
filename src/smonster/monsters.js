@@ -3,6 +3,7 @@ import { bad } from '../sdino/bad.js';
 import { coq } from './coq/coq.js';
 import { flam } from './flam/flam.js';
 import { gluon } from './gluon/gluon.js';
+import { goblin } from './goblin/goblin.js';
 import { goupi, goupi2, goupi3 } from './goupi/goupi.js';
 import { grdien } from './grdien/grdien.js';
 import { gvert } from './gvert/gvert.js';
@@ -20,6 +21,7 @@ export const monsters = {
 	gvert: gvert,
 	coq: coq,
 	flam: flam,
+	goblin: goblin,
 	grdien: grdien,
 	mandragore: mandragore,
 	lucet: lucet,
