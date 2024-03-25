@@ -43,6 +43,12 @@ export class Meteor extends Phys {
 	_fire;
 
 	/**
+	 * If true, the meteorite spawns an impact and is destroyed when hitting the ground.
+	 * @type {boolean}
+	 */
+	_groundImpact = true;
+
+	/**
 	 * Spawns in a new metor which falls from the given side.
 	 * @param {IScene} scene The scene where the meteor is instantiated.
 	 * @param {number} side The side from which the Meteor comes from (-1 left, 1 right).
@@ -94,7 +100,7 @@ export class Meteor extends Phys {
 		this._fire.update(timer.deltaTimeMS);
 
 		this._rock.angle += 8 * timer.tmod;
-		if (this._z > -this._ray) {
+		if (this._groundImpact && this._z > -this._ray) {
 			this._scene.dm.addSprite(new MeteorImpact(this._scene, this._x, this._y), Layers.Scene.FIGHTERS);
 			this._scene.dm.addSprite(new FireWave(this._scene, this._x, this._y), Layers.Scene.SHADE);
 			this.kill();

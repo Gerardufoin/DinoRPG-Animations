@@ -48,6 +48,11 @@ export class GroupEffect extends State {
 	 * @type {SkillAura}
 	 */
 	_aura;
+	/**
+	 * If set to true, the aura stops being automatically handled by the GroupEffect class.
+	 * @type {boolean}
+	 */
+	_manualAura = false;
 
 	/**
 	 * Create a new GroupEffect, storing the caster and the targets.
@@ -77,7 +82,7 @@ export class GroupEffect extends State {
 	update(timer) {
 		super.update(timer);
 		this._frameTimer += timer.tmod;
-		if (this._aura) {
+		if (!this._manualAura && this._aura) {
 			this._aura.update(this._coef);
 			if (this._frameTimer >= 1) {
 				this._frameTimer -= 1;
@@ -93,7 +98,7 @@ export class GroupEffect extends State {
 		this._step++;
 		this._frameTimer = 0;
 		this._coef = 0;
-		if (this._aura) {
+		if (!this._manualAura && this._aura) {
 			this.removeSkillAura();
 		}
 	}

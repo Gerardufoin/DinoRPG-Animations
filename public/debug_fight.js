@@ -112,7 +112,7 @@ const fightVersion = [
 			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Lightning,
+				skill: DinoAnim.SkillList.Crepuscule,
 				details: {
 					fid: 1,
 					targets: [

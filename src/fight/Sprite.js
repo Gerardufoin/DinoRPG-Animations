@@ -81,6 +81,7 @@ export class Sprite {
 	constructor(container) {
 		this.spriteId = Sprite.CURRENT_ID++;
 		this._root = container;
+		this._root.name = `Sprite${this.spriteId}`;
 	}
 
 	/**

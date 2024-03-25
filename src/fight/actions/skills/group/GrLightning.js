@@ -21,7 +21,7 @@ export class GrLightning extends GroupEffect {
 	_strikes = [];
 
 	/**
-	 * The caster strike each target with a lightning strike.
+	 * The caster strikes each target with a lightning strike.
 	 * @param {Scene} scene The Scene where the effect takes place.
 	 * @param {() => void} endCall The callback at the end of the State.
 	 * @param {Fighter} caster The Fighter casting the skill.

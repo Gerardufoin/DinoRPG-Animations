@@ -394,8 +394,9 @@ export class Fighter extends Phys {
 	 * @param {IScene} scene The Scene where the Fighter is added.
 	 */
 	constructor(fInfos, scene) {
-		const body = new Container();
-		super(body, scene);
+		super(new Container(), scene);
+		this.body = new Container();
+		this._root.addChild(this.body);
 
 		if (!Fighter.StatusFilters) {
 			Fighter.GenerateStatusFilters();
@@ -409,7 +410,6 @@ export class Fighter extends Phys {
 		this._maxLife = fInfos.maxLife ?? fInfos.life;
 		this._size = Math.pow(fInfos.scale ?? 1, 0.65);
 
-		this.body = body;
 		this._depthManager = new DepthManager(Object.keys(Layers.Fighter).length);
 		this.body.addChild(this._depthManager);
 
@@ -813,8 +813,8 @@ export class Fighter extends Phys {
 	 */
 	displayStatus() {
 		this._defaultAnim = 'stand';
-		this._root.alpha = 1;
-		this._root.filters = [];
+		this.body.alpha = 1;
+		this.body.filters = [];
 		this._walkSpeed = 1.8;
 		this._runSpeed = 8;
 		this._flFreeze = this.haveProp(FighterProperty.Static);
@@ -832,7 +832,7 @@ export class Fighter extends Phys {
 					this._flFreeze = true;
 					break;
 				case FighterStatus.Intang:
-					this._root.alpha = 0.5;
+					this.body.alpha = 0.5;
 					break;
 				case FighterStatus.Fly:
 					this._defaultAnim = 'jump';
@@ -881,7 +881,7 @@ export class Fighter extends Phys {
 			spawn = true;
 			this._statusSpawnTimer = 0;
 		}
-		this._root.filters = [];
+		this.body.filters = [];
 		for (const s of this._status) {
 			switch (s) {
 				case FighterStatus.Flames:
@@ -910,7 +910,7 @@ export class Fighter extends Phys {
 					break;
 				case FighterStatus.Stoned:
 					{
-						this._root.filters.push(Fighter.StatusFilters[FighterStatus.Stoned]);
+						this.body.filters.push(Fighter.StatusFilters[FighterStatus.Stoned]);
 					}
 					break;
 				case FighterStatus.Shield:
@@ -926,7 +926,7 @@ export class Fighter extends Phys {
 						const rcol = PixiHelper.getRainbow(this._decal / 628);
 						const c = PixiHelper.mergeCol(rcol, 0xffff00, 0.2);
 						this._shieldGlowFilter.color = c.toNumber();
-						this._root.filters.push(this._shieldGlowFilter);
+						this.body.filters.push(this._shieldGlowFilter);
 					}
 					break;
 				case FighterStatus.Bless:
@@ -941,8 +941,8 @@ export class Fighter extends Phys {
 						}
 						const c = Math.sin(this._decal * 0.01);
 						this._blessGlowFilter.outerStrength = 2 + 4 * c;
-						this._root.filters.push(Fighter.StatusFilters[FighterStatus.Bless]);
-						this._root.filters.push(this._blessGlowFilter);
+						this.body.filters.push(Fighter.StatusFilters[FighterStatus.Bless]);
+						this.body.filters.push(this._blessGlowFilter);
 					}
 					break;
 				case FighterStatus.Poison:
@@ -968,7 +968,7 @@ export class Fighter extends Phys {
 					}
 					break;
 				case FighterStatus.Stun:
-					this._root.filters.push(Fighter.StatusFilters[FighterStatus.Stun]);
+					this.body.filters.push(Fighter.StatusFilters[FighterStatus.Stun]);
 					break;
 			}
 		}

@@ -141,4 +141,17 @@ export class DepthManager extends Container {
 			console.error(`[offsetLayer]: Layer ${layer} does not exist.`);
 		}
 	}
+
+	/**
+	 * Get the container of the given layer.
+	 * @param {number} layer The desired layer.
+	 * @returns {Container | null} The container of the desired layer, or null if the layer does not exist.
+	 */
+	getLayer(layer) {
+		if (layer < this._layers.length) {
+			return this._layers[layer].container;
+		}
+		console.error(`[getLayer]: Layer ${layer} does not exist.`);
+		return null;
+	}
 }
