@@ -248,7 +248,7 @@ export let parts = {
 				},
 				// 122
 				{
-					colorIdx: 0,
+					colorIdx: 1,
 					ref: ref.moueffe.head_acc_6,
 					transform: {
 						tx: 6.5,

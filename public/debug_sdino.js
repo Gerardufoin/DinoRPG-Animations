@@ -92,6 +92,7 @@ function addDinoz(data, showOrigin = false) {
 
 // Moueffe
 addDinoz('09T1Yt9wqq4Rx000', true);
+addDinoz('0813611605200000', true);
 /*addDinoz('09w7y7qqpdhld000');
 addDinoz('09adQBgO8T065000');
 addDinoz('09vGg4LW1S9fn000');
@@ -252,13 +253,13 @@ addDinoz('J9bs4pEZMwUTj130');
 addDinoz('J9ZWi50KhhgW4200');
 addDinoz('J9aOkvDj21xBA000');*/
 // Triceragon
-addDinoz('K9jZyXBMazmTs000', true);
+/*addDinoz('K9jZyXBMazmTs000', true);
 addDinoz('K91liNj083KJY000');
 addDinoz('K99LpvDPJfNdO010');
 addDinoz('K9kA0yg7yqhqQ000');
 addDinoz('K9KYPwEP8OroH000');
 addDinoz('K9cEtpgiKiwOI000');
-addDinoz('K9iyL99UFx2Bj000');
+addDinoz('K9iyL99UFx2Bj000');*/
 
 for (const a of actions) {
 	const button = document.createElement('button');
