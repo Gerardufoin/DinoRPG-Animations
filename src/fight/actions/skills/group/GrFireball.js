@@ -8,17 +8,11 @@ import { Scene } from '../../../Scene.js';
 import { Timer } from '../../../Timer.js';
 import { Fireball } from '../../../parts/skills/Fireball.js';
 import { GroupEffect } from '../GroupEffect.js';
-import { SkillAura } from '../SkillAura.js';
 
 /**
  * Creates one Fireball for each enemy, which will home toward their target.
  */
 export class GrFireball extends GroupEffect {
-	/**
-	 * Aura around the caster while casting the skill.
-	 * @type {SkillAura}
-	 */
-	_aura;
 	/**
 	 * The Fireballs in the Scene.
 	 * @type {Fireball[]}
@@ -36,7 +30,7 @@ export class GrFireball extends GroupEffect {
 		super(scene, endCall, caster, targets);
 		caster.playAnim('cast');
 		this._coefSpeed = 0.03;
-		this._aura = new SkillAura(SkillType.Fire, this._caster.skin);
+		this.addSkillAura(SkillType.Fire);
 	}
 
 	/**
@@ -48,14 +42,8 @@ export class GrFireball extends GroupEffect {
 
 		switch (this._step) {
 			case 0:
-				this._aura.update(this._coef);
-				if (this._frameTimer >= 1) {
-					this._frameTimer -= 1;
-					this.genRayConcentrate();
-				}
 				if (this._coef === 1) {
 					this.initFireballs();
-					this._caster.skin.filters = [];
 					this._caster.playAnim('release');
 					this.nextStep();
 				}
@@ -74,7 +62,7 @@ export class GrFireball extends GroupEffect {
 					return true;
 				});
 				if (this._fireballs.length == 0) {
-					this._caster.playAnim('stand');
+					this._caster.backToDefault();
 					this.end();
 				}
 		}

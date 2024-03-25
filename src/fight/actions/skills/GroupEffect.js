@@ -6,6 +6,7 @@ import { Fighter } from '../../Fighter.js';
 import { Scene } from '../../Scene.js';
 import { State } from '../../State.js';
 import { Timer } from '../../Timer.js';
+import { SkillAura } from './SkillAura.js';
 import { SkillRay } from './SkillRay.js';
 
 /**
@@ -35,6 +36,12 @@ export class GroupEffect extends State {
 	_targets;
 
 	/**
+	 * Aura around the caster while casting the skill, if any.
+	 * @type {SkillAura}
+	 */
+	_aura;
+
+	/**
 	 * Create a new GroupEffect, storing the caster and the targets.
 	 * @param {Scene} scene The scene containing the skill.
 	 * @param {() => void} endCall The callback to trigger at the end of the State.
@@ -55,6 +62,13 @@ export class GroupEffect extends State {
 	update(timer) {
 		super.update(timer);
 		this._frameTimer += timer.tmod;
+		if (this._aura) {
+			this._aura.update(this._coef);
+			if (this._frameTimer >= 1) {
+				this._frameTimer -= 1;
+				this.genRayConcentrate();
+			}
+		}
 	}
 
 	/**
@@ -64,6 +78,9 @@ export class GroupEffect extends State {
 		this._step++;
 		this._frameTimer = 0;
 		this._coef = 0;
+		if (this._aura) {
+			this.removeSkillAura();
+		}
 	}
 
 	/**
@@ -72,6 +89,24 @@ export class GroupEffect extends State {
 	genRayConcentrate() {
 		this._caster.dm.addSprite(new SkillRay(this._scene, -this._caster.height * 0.5), Layers.Fighter.BACK);
 		this._caster.dm.addSprite(new SkillRay(this._scene, -this._caster.height * 0.5), Layers.Fighter.BACK);
+	}
+
+	/**
+	 * Creates a skill aura of the given type around the Fighter.
+	 * The aura grows over time and generate rays periodically.
+	 * The aura is automatically removed at the end of the current step.
+	 * @param {number} type A type from the SkillType enum.
+	 */
+	addSkillAura(type) {
+		this._aura = new SkillAura(type, this._caster.skin);
+	}
+
+	/**
+	 * Removes the skill aura around the Fighter.
+	 */
+	removeSkillAura() {
+		this._caster.skin.filters = [];
+		this._aura = undefined;
 	}
 
 	/**

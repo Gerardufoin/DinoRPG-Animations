@@ -9,7 +9,6 @@ import { Scene } from '../../../Scene.js';
 import { Timer } from '../../../Timer.js';
 import { Lava } from '../../../parts/skills/Lava.js';
 import { GroupEffect } from '../GroupEffect.js';
-import { SkillAura } from '../SkillAura.js';
 import { GlowFilter } from '@pixi/filter-glow';
 
 /**
@@ -30,11 +29,6 @@ export class GrLava extends GroupEffect {
 	static BurnFilter;
 
 	/**
-	 * Aura around the caster while casting the skill.
-	 * @type {SkillAura}
-	 */
-	_aura;
-	/**
 	 * List of all the instantiated lava pillars.
 	 * @type {Lava[]}
 	 */
@@ -51,7 +45,7 @@ export class GrLava extends GroupEffect {
 		super(scene, endCall, caster, targets);
 		this._caster.playAnim('cast');
 		this._coefSpeed = 0.03;
-		this._aura = new SkillAura(SkillType.Fire, this._caster.skin);
+		this.addSkillAura(SkillType.Fire);
 		if (!GrLava.BlackFilter) {
 			GrLava.BlackFilter = new ColorMatrixFilter();
 			GrLava.BlackFilter.matrix[0] = 0;
@@ -76,11 +70,6 @@ export class GrLava extends GroupEffect {
 
 		switch (this._step) {
 			case 0:
-				this._aura.update(this._coef);
-				if (this._frameTimer >= 1) {
-					this._frameTimer -= 1;
-					this.genRayConcentrate();
-				}
 				if (this._coef === 1) {
 					GrLava.BurnFilter.innerStrength = 0;
 					for (const t of this._targets) {
@@ -92,7 +81,6 @@ export class GrLava extends GroupEffect {
 							this._lavas.push(lava);
 						}
 					}
-					this._caster.skin.filters = [];
 					this._caster.playAnim('release');
 					this.nextStep();
 				}
@@ -107,7 +95,7 @@ export class GrLava extends GroupEffect {
 							t.fighter.skin.filters = [];
 						}
 					}
-					this._caster.playAnim('stand');
+					this._caster.backToDefault();
 					this.end();
 				}
 				break;

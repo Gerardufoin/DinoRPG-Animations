@@ -9,17 +9,11 @@ import { Scene } from '../../../Scene.js';
 import { Timer } from '../../../Timer.js';
 import { Meteor } from '../../../parts/skills/meteor/Meteor.js';
 import { GroupEffect } from '../GroupEffect.js';
-import { SkillAura } from '../SkillAura.js';
 
 /**
  * Creates a meteor rain which falls on the targets.
  */
 export class GrMeteor extends GroupEffect {
-	/**
-	 * Aura around the caster while casting the skill.
-	 * @type {SkillAura}
-	 */
-	_aura;
 	/**
 	 * List of all the instantiated lava pillars.
 	 * @type {Meteor[]}
@@ -37,7 +31,7 @@ export class GrMeteor extends GroupEffect {
 		super(scene, endCall, caster, targets);
 		this._caster.playAnim('cast');
 		this._coefSpeed = 0.03;
-		this._aura = new SkillAura(SkillType.Fire, this._caster.skin);
+		this.addSkillAura(SkillType.Fire);
 	}
 
 	/**
@@ -49,13 +43,7 @@ export class GrMeteor extends GroupEffect {
 
 		switch (this._step) {
 			case 0:
-				this._aura.update(this._coef);
-				if (this._frameTimer >= 1) {
-					this._frameTimer -= 1;
-					this.genRayConcentrate();
-				}
 				if (this._coef === 1) {
-					this._caster.skin.filters = [];
 					this._caster.playAnim('release');
 					this.nextStep();
 					this._coefSpeed = 0.015;
@@ -69,7 +57,7 @@ export class GrMeteor extends GroupEffect {
 				}
 				this._meteors = this._meteors.filter((m) => !m.isDeleted);
 				if (this._coef == 1 && this._meteors.length == 0) {
-					this._caster.playAnim('stand');
+					this._caster.backToDefault();
 					this.damageAll();
 					this.end();
 				}

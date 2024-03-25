@@ -13,6 +13,7 @@ import { GrFireBreath } from './skills/group/GrFireBreath.js';
 import { GrFireball } from './skills/group/GrFireball.js';
 import { GrJumpAttack } from './skills/group/GrJumpAttack.js';
 import { GrLava } from './skills/group/GrLava.js';
+import { GrLevitRay } from './skills/group/GrLevitRay.js';
 import { GrMeteor } from './skills/group/GrMeteor.js';
 import { GrShower } from './skills/group/GrShower.js';
 import { GrVines } from './skills/group/GrVines.js';
@@ -151,6 +152,8 @@ export class Skill extends State {
 				return new GrWaterCanon(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Shower:
 				return new GrShower(this._scene, () => this.end(), this._fighter, this._targets, this._details.type);
+			case SkillList.LevitRay:
+				return new GrLevitRay(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Tremor:
 			case SkillList.JumpAttack:
 				return new GrJumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);

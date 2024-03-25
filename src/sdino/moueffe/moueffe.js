@@ -15,7 +15,7 @@ import { parts } from './parts.js';
 export let moueffe = {
 	name: 'moueffe',
 	width: 0.941,
-	height: 1,
+	height: 0.8,
 	transforms: [
 		// 163
 		{

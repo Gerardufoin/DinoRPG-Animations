@@ -9,6 +9,7 @@ import { ref } from '../../../../gfx/references.js';
 // GFX 779
 /**
  * Creates ecume which floats backward.
+ * To attach inside the depth manager of a water canon.
  */
 export class Ecume extends Phys2D {
 	/**

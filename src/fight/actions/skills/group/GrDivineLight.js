@@ -74,7 +74,7 @@ export class GrDivineLight extends GroupEffect {
 			case 2:
 				this._beams.map((b) => b.update(1 - this._coef));
 				if (this._coef == 1) {
-					this._caster.playAnim('stand');
+					this._caster.backToDefault();
 					this._beams.map((b) => this._scene.dm.removeContainer(b, Layers.Scene.FIGHTERS));
 					this.damageAll();
 					this.end();

@@ -10,17 +10,11 @@ import { Timer } from '../../../Timer.js';
 import { MovingVine } from '../../../parts/skills/vine/MovingVine.js';
 import { StaticVine } from '../../../parts/skills/vine/StaticVine.js';
 import { GroupEffect } from '../GroupEffect.js';
-import { SkillAura } from '../SkillAura.js';
 
 /**
  * The caster spawns vines which crawls toward their target.
  */
 export class GrVines extends GroupEffect {
-	/**
-	 * Aura around the caster while casting the skill.
-	 * @type {SkillAura}
-	 */
-	_aura;
 	/**
 	 * List of the vines positions.
 	 * @type {{sx: number, sy: number, ex: number, ey: number, t: Fighter, life: number}[]}
@@ -38,7 +32,7 @@ export class GrVines extends GroupEffect {
 		super(scene, endCall, caster, targets);
 		this._caster.playAnim('cast');
 		this._coefSpeed = 0.03;
-		this._aura = new SkillAura(SkillType.Wood, this._caster.skin);
+		this.addSkillAura(SkillType.Wood);
 
 		for (const t of this._targets) {
 			if (t.life !== null) {
@@ -63,13 +57,7 @@ export class GrVines extends GroupEffect {
 
 		switch (this._step) {
 			case 0:
-				this._aura.update(this._coef);
-				if (this._frameTimer >= 1) {
-					this._frameTimer -= 1;
-					this.genRayConcentrate();
-				}
 				if (this._coef === 1) {
-					this._caster.skin.filters = [];
 					this._caster.playAnim('release');
 					this.nextStep();
 				}
@@ -103,7 +91,7 @@ export class GrVines extends GroupEffect {
 					}
 				}
 				if (this._coef == 1) {
-					this._caster.playAnim('stand');
+					this._caster.backToDefault();
 					this.end();
 				}
 				break;

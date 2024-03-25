@@ -1,5 +1,5 @@
 // @ts-check
-// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/Lava.hx
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/WaterCanon.hx
 
 import { Layers } from '../../../DepthManager.js';
 import { FighterProperty } from '../../../Enums.js';

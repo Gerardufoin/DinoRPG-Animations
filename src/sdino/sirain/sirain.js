@@ -106,7 +106,7 @@ export let sirain = {
 		},
 		// 1642
 		{
-			tx: -1.65,
+			tx: -0.8,
 			ty: 0.9
 		},
 		// adjust

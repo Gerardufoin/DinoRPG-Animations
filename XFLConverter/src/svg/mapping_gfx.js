@@ -137,6 +137,7 @@ export let mapping_gfx = {
 	717: 'parts/ghost',
 	725: 'fx/stone',
 	730: 'fx/water_onde',
+	757: 'fx/water/ray',
 	763: 'fx/acid_ball',
 	765: 'fx/acid_smoke',
 	//773: 'fx/skull', // Done manually, do not uncomment

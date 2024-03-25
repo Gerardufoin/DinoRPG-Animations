@@ -73,7 +73,7 @@ export class GrCorruption extends GroupEffect {
 					this._spawnTimer -= GrCorruption.DARKNESS_CLOUD_FREQUENCY;
 				}
 				if (this._coef == 1) {
-					this._caster.playAnim('stand');
+					this._caster.backToDefault();
 					this._coefSpeed = 0.05;
 					this.damageAll();
 					this.nextStep();

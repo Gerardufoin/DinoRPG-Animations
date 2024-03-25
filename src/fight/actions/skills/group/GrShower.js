@@ -5,7 +5,6 @@ import { GroupEffect } from '../GroupEffect.js';
 import { Scene } from '../../../Scene.js';
 import { Fighter } from '../../../Fighter.js';
 import { Timer } from '../../../Timer.js';
-import { SkillAura } from '../SkillAura.js';
 import { SkillType } from '../../../Enums.js';
 import { FireRain } from '../../../parts/skills/shower/FireRain.js';
 import { Layers } from '../../../DepthManager.js';
@@ -22,12 +21,6 @@ export class GrShower extends GroupEffect {
 	_type;
 
 	/**
-	 * Aura around the caster while casting the skill.
-	 * @type {SkillAura}
-	 */
-	_aura;
-
-	/**
 	 * The caster creates a shower, harming the targets.
 	 * The type of shower depends on the element passed as type.
 	 * @param {Scene} scene The Scene where the skill is cast.
@@ -41,7 +34,7 @@ export class GrShower extends GroupEffect {
 		this._type = type;
 		this._caster.playAnim('cast');
 		this._coefSpeed = 0.03;
-		this._aura = new SkillAura(type, this._caster.skin);
+		this.addSkillAura(type);
 	}
 
 	/**
@@ -53,13 +46,7 @@ export class GrShower extends GroupEffect {
 
 		switch (this._step) {
 			case 0:
-				this._aura.update(this._coef);
-				if (this._frameTimer >= 1) {
-					this._frameTimer -= 1;
-					this.genRayConcentrate();
-				}
 				if (this._coef == 1) {
-					this._caster.skin.filters = [];
 					this._caster.playAnim('release');
 					this.nextStep();
 					this._coefSpeed = 0.015;
@@ -87,7 +74,7 @@ export class GrShower extends GroupEffect {
 				}
 
 				if (this._coef == 1) {
-					this._caster.playAnim('stand');
+					this._caster.backToDefault();
 					this.damageAll();
 					this.end();
 				}
