@@ -39,8 +39,10 @@
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
-                  <xs:attribute name="cx" type="xs:unsignedShort" use="required" />
-                  <xs:attribute name="cy" type="xs:unsignedShort" use="required" />
+                  <xs:attribute name="cx" type="xs:decimal" use="required" />
+                  <xs:attribute name="cy" type="xs:decimal" use="required" />
+                  <xs:attribute name="fx" type="xs:decimal" use="required" />
+                  <xs:attribute name="fy" type="xs:decimal" use="required" />
                   <xs:attribute name="gradientTransform" type="xs:string" use="required" />
                   <xs:attribute name="gradientUnits" type="xs:string" use="required" />
                   <xs:attribute name="id" type="xs:string" use="required" />

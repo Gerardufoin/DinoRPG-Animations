@@ -28,6 +28,7 @@ const monsterList = [
 	'gluon',
 	'gvert',
 	'coq',
+	'flam',
 	'grdien',
 	'mandragore',
 	'lucet',
@@ -76,4 +77,4 @@ for (const m of monsterList) {
 	document.getElementById('monsters').appendChild(button);
 }
 
-updateMonster('coq');
+updateMonster('flam');

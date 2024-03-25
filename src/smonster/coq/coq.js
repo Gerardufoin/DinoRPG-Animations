@@ -12,7 +12,7 @@ import { walk } from './animations/walk.js';
 import { parts } from './parts.js';
 
 // Symbol 209
-export let coq = {
+export const coq = {
 	name: 'coq',
 	// Symbol 82
 	width: 2.128,

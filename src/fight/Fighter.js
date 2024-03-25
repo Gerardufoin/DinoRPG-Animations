@@ -33,6 +33,7 @@ import { WaterOnde } from './parts/scene/WaterOnde.js';
 import { FighterProperty, FighterStatus, GroundType, LifeEffect } from './Enums.js';
 import { FadeFX } from './parts/FadeFX.js';
 import { FireSpark } from './parts/life/FireSpark.js';
+import { ShadeType } from './parts/Shade.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -98,6 +99,11 @@ export class Fighter extends Phys {
 	 * @type {Slot}
 	 */
 	_slot;
+	/**
+	 * The type of shadow of the Fighter.
+	 * @type {number}
+	 */
+	_shadeType = ShadeType.Normal;
 
 	/**
 	 * If true, the Fighter is locked and cannot start a new action.
@@ -443,6 +449,7 @@ export class Fighter extends Phys {
 			this._height = monster.collider.height * this._size;
 			this._width = monster.collider.width * this._size;
 			this._animator = monster;
+			this._shadeType = monster.getShadeType();
 		}
 		this._skin.addChild(this._animator);
 		this._skin.filters = [];
@@ -452,7 +459,7 @@ export class Fighter extends Phys {
 		this.dm.addContainer(this._statusDisplay, Layers.Fighter.STATUS_ICON);
 
 		this._ray = this._width * 0.5;
-		this.dropShadow();
+		this.dropShadow(this._shadeType);
 		this._force = 10 * this._size;
 		this._friction = 0.9;
 

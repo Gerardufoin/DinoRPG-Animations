@@ -28,8 +28,8 @@ export let shade_fire = {
 				transform: {
 					tx: -0.1,
 					ty: 0.05,
-					a: 1.901,
-					d: 1.645
+					a: 2.1,
+					d: 1.7
 				}
 			}
 		],
@@ -39,8 +39,8 @@ export let shade_fire = {
 				transform: {
 					tx: -0.1,
 					ty: 0.05,
-					a: 1.901,
-					d: 1.645
+					a: 2.1,
+					d: 1.7
 				}
 			}
 		],
@@ -50,8 +50,8 @@ export let shade_fire = {
 				transform: {
 					tx: -0.1,
 					ty: 0.05,
-					a: 1.901,
-					d: 1.645
+					a: 2.1,
+					d: 1.7
 				}
 			}
 		],
@@ -61,8 +61,8 @@ export let shade_fire = {
 				transform: {
 					tx: -0.1,
 					ty: 0.05,
-					a: 1.901,
-					d: 1.645
+					a: 2.1,
+					d: 1.7
 				}
 			}
 		],
@@ -72,8 +72,8 @@ export let shade_fire = {
 				transform: {
 					tx: -0.1,
 					ty: 0.05,
-					a: 1.901,
-					d: 1.645
+					a: 2.1,
+					d: 1.7
 				}
 			}
 		],
@@ -83,8 +83,8 @@ export let shade_fire = {
 				transform: {
 					tx: -0.1,
 					ty: 0.05,
-					a: 1.901,
-					d: 1.645
+					a: 2.1,
+					d: 1.7
 				}
 			}
 		],
@@ -94,8 +94,8 @@ export let shade_fire = {
 				transform: {
 					tx: -0.1,
 					ty: 0.05,
-					a: 1.901,
-					d: 1.645
+					a: 2.1,
+					d: 1.7
 				}
 			}
 		]

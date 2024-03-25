@@ -124,7 +124,7 @@
 																														</xs:sequence>
 																													</xs:complexType>
 																												</xs:element>
-																												<xs:element name="transformationPoint">
+																												<xs:element minOccurs="0" name="transformationPoint">
 																													<xs:complexType>
 																														<xs:sequence>
 																															<xs:element name="Point"/>

@@ -89,7 +89,7 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 0,
-					gfx: 'coq'
+					gfx: 'flam'
 				}
 			},
 			{

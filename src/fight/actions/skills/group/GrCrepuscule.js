@@ -91,7 +91,6 @@ export class GrCrepuscule extends GroupEffect {
 				this._aura.update(1);
 				this._meteors = this._meteors.filter((m) => !m.isDeleted);
 				if (this._meteors.length == 0) {
-					this._caster.backToDefault();
 					this._coefSpeed = 0.1;
 					this.nextStep();
 				}
@@ -100,6 +99,7 @@ export class GrCrepuscule extends GroupEffect {
 				this.fade(1 - this._coef);
 				this._aura.update(1 - this._coef);
 				if (this._coef == 1) {
+					this._caster.backToDefault();
 					this.removeNightFilter();
 					this.removeSkillAura();
 					this._scene.dm.removeContainer(this._mcCrep, Layers.Scene.SHADE);

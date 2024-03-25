@@ -2,6 +2,7 @@
 import { Animator } from './display/Animator.js';
 import { monsters, error } from './smonster/monsters.js';
 import { PartManager } from './display/PartManager.js';
+import { ShadeType } from './fight/parts/Shade.js';
 
 /**
  * Conversion of the smonstger.swf file of the web game "Dino RPG".
@@ -79,5 +80,13 @@ export class smonster extends Animator {
 		this.setAnimations(this._monsterInfos.animations);
 		this.playAnim('stand');
 		this.playing = pflag;
+	}
+
+	/**
+	 * Get the shade type for the monster. Normal in most case, Fire if the monster emits light.
+	 * @returns {number} A value of the ShadeType enum.
+	 */
+	getShadeType() {
+		return this._monsterInfos.light ? ShadeType.Fire : ShadeType.Normal;
 	}
 }

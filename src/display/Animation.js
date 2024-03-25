@@ -202,6 +202,7 @@ export class Animation extends Container {
 	 */
 	resetChildAnimations() {
 		for (const c of this._childAnimations) {
+			c._playing = true;
 			c.setCurrentIdx(0);
 			c.resetChildAnimations();
 		}

@@ -13,11 +13,6 @@ export const attack = {
 				ty: 26.2,
 				a: 4.371,
 				d: -1.961,
-				glx: 16,
-				gly: 16,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 0.84,
 				l: 15
 			},
 			l_f_upper_leg: {
@@ -199,11 +194,6 @@ export const attack = {
 				ty: 7.95,
 				a: 4.371,
 				d: -1.961,
-				glx: 14,
-				gly: 14,
-				glc: '#ffff00',
-				glq: 1,
-				gls: 1.4,
 				l: 15
 			},
 			l_f_upper_leg: {
@@ -387,11 +377,6 @@ export const attack = {
 				ty: -3.5,
 				a: 4.371,
 				d: -1.961,
-				glx: 8,
-				gly: 8,
-				glc: '#ff0000',
-				glq: 1,
-				gls: 0.76,
 				l: 15
 			},
 			l_f_upper_leg: {
