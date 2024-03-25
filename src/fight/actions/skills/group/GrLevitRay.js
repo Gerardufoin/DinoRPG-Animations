@@ -6,7 +6,6 @@ import { SkillType } from '../../../Enums.js';
 import { Fighter } from '../../../Fighter.js';
 import { Scene } from '../../../Scene.js';
 import { Timer } from '../../../Timer.js';
-import { FireBreath } from '../../../parts/skills/FireBreath.js';
 import { Ecume } from '../../../parts/skills/waterray/Ecume.js';
 import { WaterRay } from '../../../parts/skills/waterray/WaterRay.js';
 import { GroupEffect } from '../GroupEffect.js';

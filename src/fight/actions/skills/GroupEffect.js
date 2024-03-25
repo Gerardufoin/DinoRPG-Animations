@@ -1,6 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/GroupEffect.hx
 
+import { ColorMatrixFilter } from 'pixi.js';
 import { Layers } from '../../DepthManager.js';
 import { Fighter } from '../../Fighter.js';
 import { Scene } from '../../Scene.js';
@@ -13,6 +14,13 @@ import { SkillRay } from './SkillRay.js';
  * Parent class for the targeted skills.
  */
 export class GroupEffect extends State {
+	/**
+	 * The ColorMatrixFilter for the black shader.
+	 * Storing it to prevent WebGL to create it each time.
+	 * @type {ColorMatrixFilter}
+	 */
+	static BlackFilter;
+
 	/**
 	 * Current state of the effect.
 	 * @type {number}
@@ -53,6 +61,13 @@ export class GroupEffect extends State {
 
 		this._caster = caster;
 		this._targets = targets;
+
+		if (!GroupEffect.BlackFilter) {
+			GroupEffect.BlackFilter = new ColorMatrixFilter();
+			GroupEffect.BlackFilter.matrix[0] = 0;
+			GroupEffect.BlackFilter.matrix[6] = 0;
+			GroupEffect.BlackFilter.matrix[12] = 0;
+		}
 	}
 
 	/**

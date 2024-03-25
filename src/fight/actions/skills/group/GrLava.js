@@ -16,12 +16,6 @@ import { GlowFilter } from '@pixi/filter-glow';
  */
 export class GrLava extends GroupEffect {
 	/**
-	 * The ColorMatrixFilter for the black shader.
-	 * Storing it to prevent WebGL to create it each time.
-	 * @type {ColorMatrixFilter}
-	 */
-	static BlackFilter;
-	/**
 	 * The GlowFilter for the red outline.
 	 * Storing it to prevent WebGL to create it each time.
 	 * @type {GlowFilter}
@@ -46,12 +40,6 @@ export class GrLava extends GroupEffect {
 		this._caster.playAnim('cast');
 		this._coefSpeed = 0.03;
 		this.addSkillAura(SkillType.Fire);
-		if (!GrLava.BlackFilter) {
-			GrLava.BlackFilter = new ColorMatrixFilter();
-			GrLava.BlackFilter.matrix[0] = 0;
-			GrLava.BlackFilter.matrix[6] = 0;
-			GrLava.BlackFilter.matrix[12] = 0;
-		}
 		if (!GrLava.BurnFilter) {
 			GrLava.BurnFilter = new GlowFilter({
 				quality: 1,
@@ -77,7 +65,7 @@ export class GrLava extends GroupEffect {
 							const lava = new Lava();
 							t.fighter.dm.addSprite(lava, Layers.Fighter.BACK);
 							t.fighter.setShake(20);
-							t.fighter.skin.filters = [GrLava.BlackFilter, GrLava.BurnFilter];
+							t.fighter.skin.filters = [GroupEffect.BlackFilter, GrLava.BurnFilter];
 							this._lavas.push(lava);
 						}
 					}

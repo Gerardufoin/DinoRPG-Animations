@@ -14,7 +14,11 @@ export class Bolt extends Phys2D {
 	 * Storing it to prevent WebGL to create it each time.
 	 * @type {GlowFilter}
 	 */
-	static GlowFilter;
+	static GlowFilter = new GlowFilter({
+		distance: 10,
+		color: 0xffff00,
+		outerStrength: 2
+	});
 
 	/**
 	 * Instantiate a new Bolt of lightning at the given coordinates.
@@ -38,14 +42,6 @@ export class Bolt extends Phys2D {
 		// The scale is not applied to the SVG for optimization. Does not make a difference visually for the bolt.
 		this.setScale(1 + Math.random());
 		this._root.angle = Math.random() * 360;
-
-		if (!Bolt.GlowFilter) {
-			Bolt.GlowFilter = new GlowFilter({
-				distance: 10,
-				color: 0xffff00,
-				outerStrength: 2
-			});
-		}
 		this._root.filters = [Bolt.GlowFilter];
 
 		this.sleep(Math.random() * 20);

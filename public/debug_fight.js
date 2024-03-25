@@ -112,7 +112,7 @@ const fightVersion = [
 			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.LevitRay,
+				skill: DinoAnim.SkillList.Lightning,
 				details: {
 					fid: 1,
 					targets: [
