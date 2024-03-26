@@ -85,7 +85,7 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: '',
+					name: 'Renfort Korgon',
 					side: false,
 					scale: 1,
 					fid: 0,
@@ -98,7 +98,7 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: '',
+					name: 'Korgon Masqué',
 					side: false,
 					scale: 1,
 					fid: 2,
@@ -111,11 +111,24 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: '',
+					name: 'Korgon',
 					side: false,
 					scale: 1,
 					fid: 3,
 					gfx: 'korgon'
+				}
+			},
+			{
+				action: DinoAnim.Action.Add,
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Borg',
+					side: false,
+					scale: 1,
+					fid: 4,
+					gfx: 'borg'
 				}
 			},
 			/*{

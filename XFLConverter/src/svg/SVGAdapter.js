@@ -165,7 +165,7 @@ export class SVGAdapter {
 					}
 				}
 				this.saveAdaptedSVG(resultFolder, f, this._builder.build(data), mapping);
-			} else if (f == '210.svg') {
+			} else if (f == '332.svg') {
 				console.log(`${f}: ${svgDoc.validationErrors}`);
 			} else {
 				console.log(`${f} does not fit the schema`);
