@@ -11,12 +11,12 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] gvert
 -   [x] coq
 -   [x] flam
--   [ ] goblin
--   [ ] korgon
--   [ ] rkrgns
--   [ ] kmask
--   [ ] borg
--   [ ] pira
+-   [x] goblin
+-   [x] korgon
+-   [x] rkrgns
+-   [x] kmask
+-   [x] borg
+-   [x] pira
 -   [ ] anguil
 -   [ ] kazka
 -   [ ] ronciv

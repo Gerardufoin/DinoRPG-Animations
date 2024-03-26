@@ -11,6 +11,7 @@ import { gvert } from './gvert/gvert.js';
 import { kmask, korgon, rkrgns } from './korgon/korgon.js';
 import { lucet } from './lucet/lucet.js';
 import { mandragore } from './mandragore/mandragore.js';
+import { pira } from './pira/pira.js';
 import { taurus } from './taurus/taurus.js';
 import { wolf } from './wolf/wolf.js';
 
@@ -28,6 +29,7 @@ export const monsters = {
 	rkrgns: rkrgns,
 	kmask: kmask,
 	borg: borg,
+	pira: pira,
 	grdien: grdien,
 	mandragore: mandragore,
 	lucet: lucet,

@@ -181,6 +181,17 @@ export let mapping_smonster = {
 	'Symbol 345': 'eyes',
 	'Symbol 347': 'mouth',
 	'Symbol 349': 'l_hand',
+	// Piranoz
+	'Symbol 363': 'tail',
+	'Symbol 365': 'r_eye',
+	'Symbol 369': 'body',
+	'Symbol 371': 'l_eye',
+	'Symbol 374': 'back_fin',
+	'Symbol 379': 'mouth',
+	'Symbol 379-1': 'mouth_attack',
+	'Symbol 382': 'l_fin',
+	'Symbol 382-1': 'r_fin',
+	'Symbol 388': 'inside',
 	// Gardien Abricole
 	'Symbol 500': 'r_arm',
 	'Symbol 502': 'r_hand',

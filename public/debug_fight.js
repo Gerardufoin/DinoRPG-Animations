@@ -131,6 +131,19 @@ const fightVersion = [
 					gfx: 'borg'
 				}
 			},
+			{
+				action: DinoAnim.Action.Add,
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Piranoz',
+					side: false,
+					scale: 1,
+					fid: 5,
+					gfx: 'pira'
+				}
+			},
 			/*{
 				action: DinoAnim.Action.Status,
 				fid: 1,
