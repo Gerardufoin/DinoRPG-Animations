@@ -17,7 +17,7 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] kmask
 -   [x] borg
 -   [x] pira
--   [ ] anguil
+-   [x] anguil
 -   [ ] kazka
 -   [ ] ronciv
 -   [x] grdien

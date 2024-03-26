@@ -144,6 +144,19 @@ const fightVersion = [
 					gfx: 'pira'
 				}
 			},
+			{
+				action: DinoAnim.Action.Add,
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Anguilloz',
+					side: false,
+					scale: 1,
+					fid: 6,
+					gfx: 'anguil'
+				}
+			},
 			/*{
 				action: DinoAnim.Action.Status,
 				fid: 1,
@@ -151,7 +164,7 @@ const fightVersion = [
 			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Disc,
+				skill: DinoAnim.SkillList.Lightning,
 				details: {
 					fid: 1,
 					targets: [
@@ -159,7 +172,7 @@ const fightVersion = [
 						{ id: 2, life: 10 }
 					]
 				}
-			}
+			},
 			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Shower,
@@ -172,13 +185,13 @@ const fightVersion = [
 					type: DinoAnim.SkillType.Water
 				}
 			}*/
-			/*{
+			{
 				action: DinoAnim.Action.Damages,
-				fid: 0,
+				fid: 6,
 				tid: 1,
 				damages: 10
-			},
-			{
+			}
+			/*{
 				action: DinoAnim.Action.AttackCastle,
 				fid: 0,
 				damages: 10

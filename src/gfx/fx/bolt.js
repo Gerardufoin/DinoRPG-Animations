@@ -7,31 +7,31 @@ export let fx_bolt = {
 		fx_bolt_1: [
 			{
 				ref: ref.fx.bolt_1,
-				blend: [BLEND_MODES.ADD]
+				blend: BLEND_MODES.ADD
 			}
 		],
 		fx_bolt_2: [
 			{
 				ref: ref.fx.bolt_2,
-				blend: [BLEND_MODES.ADD]
+				blend: BLEND_MODES.ADD
 			}
 		],
 		fx_bolt_3: [
 			{
 				ref: ref.fx.bolt_3,
-				blend: [BLEND_MODES.ADD]
+				blend: BLEND_MODES.ADD
 			}
 		],
 		fx_bolt_4: [
 			{
 				ref: ref.fx.bolt_4,
-				blend: [BLEND_MODES.ADD]
+				blend: BLEND_MODES.ADD
 			}
 		],
 		fx_bolt_5: [
 			{
 				ref: ref.fx.bolt_5,
-				blend: [BLEND_MODES.ADD]
+				blend: BLEND_MODES.ADD
 			}
 		]
 	},

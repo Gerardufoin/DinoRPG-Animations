@@ -35,6 +35,7 @@ const monsterList = [
 	'kmask',
 	'borg',
 	'pira',
+	'anguil',
 	'grdien',
 	'mandragore',
 	'lucet',
@@ -83,4 +84,4 @@ for (const m of monsterList) {
 	document.getElementById('monsters').appendChild(button);
 }
 
-updateMonster('pira');
+updateMonster('anguil');

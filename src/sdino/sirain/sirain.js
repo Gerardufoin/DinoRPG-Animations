@@ -472,7 +472,7 @@ export let sirain = {
 			{
 				special: true,
 				colorIdx: 0,
-				blend: [BLEND_MODES.MULTIPLY],
+				blend: BLEND_MODES.MULTIPLY,
 				ref: ref.sirain.head_special,
 				transform: {
 					tx: -2.8,

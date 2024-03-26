@@ -1,5 +1,6 @@
 // @ts-check
 import { bad } from '../sdino/bad.js';
+import { anguil } from './anguil/anguil.js';
 import { borg } from './borg/borg.js';
 import { coq } from './coq/coq.js';
 import { flam } from './flam/flam.js';
@@ -30,6 +31,7 @@ export const monsters = {
 	kmask: kmask,
 	borg: borg,
 	pira: pira,
+	anguil: anguil,
 	grdien: grdien,
 	mandragore: mandragore,
 	lucet: lucet,

@@ -257,11 +257,11 @@ export let hippoclamp = {
 							colorIdx: 1,
 							ref: ref.hippoclamp.back_fin
 						},
-						// 615 - PixiJS add mode does not work similarly to Flash, adding an alpha to approximate result
+						// 615
 						{
 							ref: ref.hippoclamp.back_shine,
-							blend: [BLEND_MODES.ADD],
-							alpha: 0.18,
+							blend: BLEND_MODES.ADD,
+							alpha: 0.21,
 							transform: {
 								tx: 0.15,
 								ty: -0.45,

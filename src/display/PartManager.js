@@ -118,6 +118,7 @@ export class PartManager {
 			if (part.transform) {
 				anim.transform.setFromMatrix(PixiHelper.matrixFromObject(part.transform));
 			}
+			anim.filters = PartManager.createPartFilters(part);
 			return anim;
 		}
 		return null;
@@ -167,7 +168,6 @@ export class PartManager {
 		scaling *= Math.max(localTransform.scale.x, localTransform.scale.y);
 		let texture = TextureManager.getTextureFromCompressedReference(ref, scale * scaling, resolution);
 		const sprite = Sprite.from(texture);
-		const filters = [];
 		sprite.scale.set(1 / (resolution * scaling));
 
 		if (part.colorIdx !== undefined) {
@@ -180,6 +180,19 @@ export class PartManager {
 		if (part.alpha) {
 			sprite.alpha = part.alpha;
 		}
+		sprite.filters = PartManager.createPartFilters(part);
+		localTransform.addChild(sprite);
+		return localTransform;
+	}
+
+	/**
+	 * Creates the filters for a given part based on its properties.
+	 * @param {object} part The part whose filters to create.
+	 * @returns {Filter[] | undefined} The created filters or undefined it there is no filter.
+	 */
+	static createPartFilters(part) {
+		const filters = [];
+
 		if (part.blur) {
 			const blurFilter = new BlurFilter();
 			blurFilter.blurX = part.blur.x ?? 0;
@@ -213,9 +226,7 @@ export class PartManager {
 				})
 			);
 		}
-		sprite.filters = filters;
-		localTransform.addChild(sprite);
-		return localTransform;
+		return filters.length ? filters : undefined;
 	}
 
 	/**

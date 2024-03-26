@@ -34,6 +34,7 @@ import { FighterProperty, FighterStatus, GroundType, LifeEffect } from './Enums.
 import { FadeFX } from './parts/FadeFX.js';
 import { FireSpark } from './parts/life/FireSpark.js';
 import { ShadeType } from './parts/Shade.js';
+import { Slash } from './parts/Slash.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -1514,6 +1515,9 @@ export class Fighter extends Phys {
 				break;
 			case 'smoke_small':
 				Smoke.spawnSmall(this._scene, this._x + x, this._y + y);
+				break;
+			case 'slash':
+				this._scene.dm.addSprite(new Slash(this._scene, this._x + x, this._y + y), Layers.Scene.FIGHTERS);
 				break;
 			default:
 				console.error(`FxAttach: Unknown asset ${asset}`);

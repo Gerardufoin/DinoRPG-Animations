@@ -49,6 +49,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 327.xml', '_p1', undefined, 1); // kmask Korgon masqué
 //parser.parse('./resources/smonster/LIBRARY/Symbol 360.xml', '_p1', undefined, 1); // borg Borg
 //parser.parse('./resources/smonster/LIBRARY/Symbol 393.xml', '_p1', undefined, 1); // pira Piranoz
+//parser.parse('./resources/smonster/LIBRARY/Symbol 435.xml', '_p1', undefined, 1); // anguil Anguilloz
 //parser.parse('./resources/smonster/LIBRARY/Symbol 529.xml', '_p1', undefined, 1); // grdien Gardien Abricole
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
@@ -61,11 +62,12 @@ const parser = new XFLParser();
 //parser.parse('./resources/gfx/LIBRARY/Symbol 125.xml', '_sub', undefined, 2); // worker
 //parser.parse('./resources/gfx/LIBRARY/Symbol 836.xml', '_sub', undefined, 2); // fxFlameche
 //parser.parse('./resources/gfx/LIBRARY/Symbol 617.xml', '_sub', undefined, 2); // strong notification
+//parser.parse('./resources/gfx/LIBRARY/Symbol 660.xml', '_sub', undefined, 2); // slash
 //parser.parse('./resources/gfx/LIBRARY/Symbol 661.xml', '_sub', undefined, 2); // smoke_small
 //parser.parse('./resources/gfx/LIBRARY/Symbol 679.xml', '_sub', undefined, 2); // smoke
 
 const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
 //adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
-adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
+//adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');

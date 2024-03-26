@@ -146,7 +146,7 @@ export let parts = {
 		{
 			colorIdx: 0,
 			ref: ref.moueffe.body_belly,
-			blend: [BLEND_MODES.ADD],
+			blend: BLEND_MODES.ADD,
 			alpha: 0.238
 		},
 		{

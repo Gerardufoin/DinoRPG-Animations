@@ -40,7 +40,7 @@ export let parts = {
 				{
 					colorIdx: 0,
 					ref: ref.pigmou.front_leg_special,
-					blend: [BLEND_MODES.MULTIPLY],
+					blend: BLEND_MODES.MULTIPLY,
 					transform: {
 						tx: -4.85,
 						ty: -3.2
@@ -134,7 +134,7 @@ export let parts = {
 				{
 					colorIdx: 0,
 					ref: ref.pigmou.body_special,
-					blend: [BLEND_MODES.MULTIPLY],
+					blend: BLEND_MODES.MULTIPLY,
 					transform: {
 						tx: -4,
 						ty: -4.4
@@ -203,7 +203,7 @@ export let parts = {
 				{
 					colorIdx: 0,
 					ref: ref.pigmou.head_special,
-					blend: [BLEND_MODES.MULTIPLY],
+					blend: BLEND_MODES.MULTIPLY,
 					transform: {
 						tx: -6.65,
 						ty: -7.8
@@ -296,7 +296,7 @@ export let parts = {
 				{
 					colorIdx: 2,
 					ref: ref.pigmou.head_acc_10,
-					blend: [BLEND_MODES.MULTIPLY],
+					blend: BLEND_MODES.MULTIPLY,
 					transform: {
 						tx: 1.9,
 						ty: -3.05
@@ -455,7 +455,7 @@ export let parts = {
 				{
 					colorIdx: 0,
 					ref: ref.pigmou.back_leg_special,
-					blend: [BLEND_MODES.MULTIPLY],
+					blend: BLEND_MODES.MULTIPLY,
 					transform: {
 						tx: -2.85,
 						ty: -2.85

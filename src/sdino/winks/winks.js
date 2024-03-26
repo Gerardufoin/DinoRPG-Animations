@@ -481,7 +481,7 @@ export let winks = {
 					{
 						colorIdx: 2,
 						ref: ref.winks.body_dots,
-						blend: [BLEND_MODES.MULTIPLY],
+						blend: BLEND_MODES.MULTIPLY,
 						transform: {
 							tx: -0.65,
 							ty: -4.85,
