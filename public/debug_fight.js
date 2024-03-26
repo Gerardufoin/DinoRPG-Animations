@@ -89,7 +89,7 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 0,
-					gfx: 'flam'
+					gfx: 'coq'
 				}
 			},
 			{
@@ -102,7 +102,7 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'goblin'
+					gfx: 'gvert'
 				}
 			},
 			/*{
@@ -112,7 +112,7 @@ const fightVersion = [
 			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Crepuscule,
+				skill: DinoAnim.SkillList.Mistral,
 				details: {
 					fid: 1,
 					targets: [

@@ -16,7 +16,11 @@ export class Wind extends Light {
 	 * Storing it to prevent WebGL to create it each time.
 	 * @type {GlowFilter}
 	 */
-	static GlowFilter;
+	static GlowFilter = new GlowFilter({
+		distance: 5,
+		color: 0xffffff,
+		outerStrength: 0.5
+	});
 	/**
 	 * Time taken (in frames) for the particle to grow from 0 to 1.
 	 * @type {number}
@@ -44,13 +48,6 @@ export class Wind extends Light {
 		this._root = new Container();
 		this._root.addChild(particle);
 
-		if (!Wind.GlowFilter) {
-			Wind.GlowFilter = new GlowFilter({
-				distance: 10,
-				color: 0xffffff,
-				outerStrength: 2
-			});
-		}
 		this._root.filters = [Wind.GlowFilter];
 
 		this._fadeoutTimer = 10 + Math.random() * 10;
