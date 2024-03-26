@@ -112,7 +112,7 @@ const fightVersion = [
 			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Mistral,
+				skill: DinoAnim.SkillList.Tornade,
 				details: {
 					fid: 1,
 					targets: [

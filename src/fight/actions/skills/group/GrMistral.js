@@ -6,7 +6,6 @@ import { SkillType } from '../../../Enums.js';
 import { Fighter } from '../../../Fighter.js';
 import { Scene } from '../../../Scene.js';
 import { Timer } from '../../../Timer.js';
-import { FireBreath } from '../../../parts/skills/FireBreath.js';
 import { MistralFx } from '../../../parts/skills/MistralFx.js';
 import { GroupEffect } from '../GroupEffect.js';
 
@@ -34,7 +33,6 @@ export class GrMistral extends GroupEffect {
 	 */
 	update(timer) {
 		super.update(timer);
-		if (this._castingWait) return;
 
 		switch (this._step) {
 			case 0:
