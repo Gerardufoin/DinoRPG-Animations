@@ -9,6 +9,7 @@ import { State } from '../State.js';
 import { FxAnim } from './skills/fx/FxAnim.js';
 import { GrCorruption } from './skills/group/GrCorruption.js';
 import { GrCrepuscule } from './skills/group/GrCrepuscule.js';
+import { GrDisc } from './skills/group/GrDisc.js';
 import { GrDivineLight } from './skills/group/GrDivineLight.js';
 import { GrFireBreath } from './skills/group/GrFireBreath.js';
 import { GrFireball } from './skills/group/GrFireball.js';
@@ -166,6 +167,8 @@ export class Skill extends State {
 				return new GrMistral(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Tornade:
 				return new GrTornado(this._scene, () => this.end(), this._fighter, this._targets);
+			case SkillList.Disc:
+				return new GrDisc(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Tremor:
 			case SkillList.JumpAttack:
 				return new GrJumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);

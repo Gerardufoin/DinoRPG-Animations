@@ -1,5 +1,6 @@
 // @ts-check
 // Color related functions: https://github.com/motion-twin/WebGamesArchives/blob/main/libs-haxe3/mt/flash/Color.hx
+// https://github.com/motion-twin/WebGamesArchives/blob/main/libs-haxe2/mt/bumdum9/Lib.hx
 import { Color, ColorMatrixFilter, Filter, Matrix } from 'pixi.js';
 import { offsetShader } from './shaders/ColorOffsetShader.js';
 
