@@ -89,7 +89,7 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 0,
-					gfx: 'coq'
+					gfx: 'rkrgns'
 				}
 			},
 			{
@@ -102,7 +102,20 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'gvert'
+					gfx: 'kmask'
+				}
+			},
+			{
+				action: DinoAnim.Action.Add,
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: '',
+					side: false,
+					scale: 1,
+					fid: 3,
+					gfx: 'korgon'
 				}
 			},
 			/*{

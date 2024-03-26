@@ -1,5 +1,5 @@
 // @ts-check
-// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/Mistral.hx
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/Disc.hx
 
 import { Layers } from '../../../DepthManager.js';
 import { LifeEffect, SkillType } from '../../../Enums.js';

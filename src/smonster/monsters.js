@@ -7,6 +7,7 @@ import { goblin } from './goblin/goblin.js';
 import { goupi, goupi2, goupi3 } from './goupi/goupi.js';
 import { grdien } from './grdien/grdien.js';
 import { gvert } from './gvert/gvert.js';
+import { kmask, korgon, rkrgns } from './korgon/korgon.js';
 import { lucet } from './lucet/lucet.js';
 import { mandragore } from './mandragore/mandragore.js';
 import { taurus } from './taurus/taurus.js';
@@ -22,6 +23,9 @@ export const monsters = {
 	coq: coq,
 	flam: flam,
 	goblin: goblin,
+	korgon: korgon,
+	rkrgns: rkrgns,
+	kmask: kmask,
 	grdien: grdien,
 	mandragore: mandragore,
 	lucet: lucet,
