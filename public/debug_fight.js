@@ -48,10 +48,10 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5], debug: false },
 	{
-		bg: 'swp_clear',
+		bg: 's_fleuve',
 		top: 120,
 		bottom: 20,
-		ground: 2,
+		ground: 0,
 		history: [
 			/*{
 				action: DinoAnim.Action.AddCastle,
@@ -91,6 +91,20 @@ const fightVersion = [
 					fid: 0,
 					gfx: 'rkrgns'
 				}
+			},*/
+			{
+				action: DinoAnim.Action.Add,
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Gardien Arboricole',
+					side: false,
+					scale: 1,
+					fid: 2,
+					gfx: 'grdien',
+					entrance: DinoAnim.EntranceEffect.Ground
+				}
 			},
 			{
 				action: DinoAnim.Action.Add,
@@ -98,32 +112,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Korgon Masqué',
-					side: false,
-					scale: 1,
-					fid: 2,
-					gfx: 'kmask'
-				}
-			},*/
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [DinoAnim.FighterProperty.Static],
-					dino: false,
-					life: 100,
-					name: 'Kazkadine',
+					name: 'Roncivore',
 					side: false,
 					scale: 1,
 					fid: 3,
-					gfx: 'kazka'
-				}
-			},
-			{
-				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Anim,
-				details: {
-					fid: 3,
-					anim: 'hit'
+					gfx: 'ronciv'
 				}
 			}
 			/*{

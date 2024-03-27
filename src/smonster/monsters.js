@@ -14,6 +14,7 @@ import { kmask, korgon, rkrgns } from './korgon/korgon.js';
 import { lucet } from './lucet/lucet.js';
 import { mandragore } from './mandragore/mandragore.js';
 import { pira } from './pira/pira.js';
+import { ronciv } from './ronciv/ronciv.js';
 import { taurus } from './taurus/taurus.js';
 import { wolf } from './wolf/wolf.js';
 
@@ -34,6 +35,7 @@ export const monsters = {
 	pira: pira,
 	anguil: anguil,
 	kazka: kazka,
+	ronciv: ronciv,
 	grdien: grdien,
 	mandragore: mandragore,
 	lucet: lucet,

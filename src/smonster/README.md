@@ -18,8 +18,8 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] borg
 -   [x] pira
 -   [x] anguil
--   [ ] kazka
--   [ ] ronciv
+-   [x] kazka
+-   [x] ronciv
 -   [x] grdien
 -   [ ] bat
 -   [ ] ewater
