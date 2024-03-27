@@ -55,7 +55,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 529.xml', '_p1', undefined, 1); // grdien Gardien Abricole
 //parser.parse('./resources/smonster/LIBRARY/Symbol 546.xml', '_p1', undefined, 1); // grdien Gardien Abricole
 //parser.parse('./resources/smonster/LIBRARY/Symbol 595.xml', '_p1', undefined, 1); // ewater Elémental d'Eau
-parser.parse('./resources/smonster/LIBRARY/Symbol 592.xml', '_sub', undefined, 1); // ewater puddle
+//parser.parse('./resources/smonster/LIBRARY/Symbol 592.xml', '_sub', undefined, 1); // ewater puddle
+//parser.parse('./resources/smonster/LIBRARY/Symbol 644.xml', '_p1', undefined, 1); // efire Elémental de feu
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus

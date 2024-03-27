@@ -48,7 +48,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5], debug: false },
 	{
-		bg: 's_fleuve',
+		bg: 's_univ',
 		top: 120,
 		bottom: 20,
 		ground: 0,
@@ -92,20 +92,19 @@ const fightVersion = [
 					gfx: 'rkrgns'
 				}
 			},*/
-			/*{
+			{
 				action: DinoAnim.Action.Add,
 				fighter: {
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Gardien Arboricole',
+					name: 'Elémental de feu',
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'grdien',
-					entrance: DinoAnim.EntranceEffect.Ground
+					gfx: 'efire'
 				}
-			},*/
+			},
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {

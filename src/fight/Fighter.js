@@ -16,7 +16,7 @@ import { Title } from './parts/text/Title.js';
 import { Sprite } from './Sprite.js';
 import { Bolt } from './parts/life/Bolt.js';
 import { Flameche } from './parts/life/Flameche.js';
-import { Smoke } from './parts/smoke/Smoke.js';
+import { Smoke, SmokeType } from './parts/smoke/Smoke.js';
 import { Leaf } from './parts/life/Leaf.js';
 import { Wind } from './parts/life/Wind.js';
 import { Drip } from './parts/life/Drip.js';
@@ -1526,7 +1526,7 @@ export class Fighter extends Phys {
 					this._x + x + (options?.offsetX ?? 0),
 					this._y + y + (options?.offsetY ?? 0),
 					undefined,
-					true
+					SmokeType.Steam
 				);
 				break;
 			case 'vapeur_small':
@@ -1535,7 +1535,25 @@ export class Fighter extends Phys {
 					this._x + Math.random() * x + (options?.offsetX ?? 0),
 					this._y + Math.random() * y + (options?.offsetY ?? 0),
 					0.6 + Math.random() * 0.2,
-					true
+					SmokeType.Steam
+				);
+				break;
+			case 'brule':
+				Smoke.spawn(
+					this._scene,
+					this._x + x + (options?.offsetX ?? 0),
+					this._y + y + (options?.offsetY ?? 0),
+					undefined,
+					SmokeType.Burn
+				);
+				break;
+			case 'brule_small':
+				Smoke.spawnSmall(
+					this._scene,
+					this._x + Math.random() * x + (options?.offsetX ?? 0),
+					this._y + Math.random() * y + (options?.offsetY ?? 0),
+					undefined,
+					SmokeType.Burn
 				);
 				break;
 			case 'slash':
