@@ -14,9 +14,6 @@ export const hit = {
 				b: -2.04,
 				c: 1.483,
 				d: 3.926,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -26,9 +23,6 @@ export const hit = {
 				b: 2.785,
 				c: -2.785,
 				d: 3.88,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -36,9 +30,6 @@ export const hit = {
 				ty: 23.55,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -48,9 +39,6 @@ export const hit = {
 				b: -0.819,
 				c: 0.819,
 				d: 3.018,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -60,9 +48,6 @@ export const hit = {
 				b: 0.633,
 				c: -0.633,
 				d: 3.86,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -72,9 +57,6 @@ export const hit = {
 				b: 0.61,
 				c: -0.799,
 				d: 2.284,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -84,9 +66,6 @@ export const hit = {
 				b: -0.259,
 				c: 0.259,
 				d: 1.828,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -94,9 +73,6 @@ export const hit = {
 				ty: -12.7,
 				a: 5.302,
 				d: 6.52,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -106,9 +82,6 @@ export const hit = {
 				b: 1.549,
 				c: -1.549,
 				d: 3.278,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -118,9 +91,6 @@ export const hit = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -130,9 +100,6 @@ export const hit = {
 				b: -0.107,
 				c: 0.123,
 				d: 2.712,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -140,9 +107,6 @@ export const hit = {
 				ty: 8.9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -152,9 +116,6 @@ export const hit = {
 				b: -2.715,
 				c: 2.178,
 				d: 2.872,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -164,9 +125,6 @@ export const hit = {
 				b: 2.032,
 				c: -2.242,
 				d: 3.408,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -174,9 +132,6 @@ export const hit = {
 				ty: 11,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -188,9 +143,6 @@ export const hit = {
 				b: -2.025,
 				c: 1.472,
 				d: 3.924,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -200,9 +152,6 @@ export const hit = {
 				b: 2.775,
 				c: -2.775,
 				d: 3.876,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -210,9 +159,6 @@ export const hit = {
 				ty: 23.55,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -222,9 +168,6 @@ export const hit = {
 				b: -0.811,
 				c: 0.811,
 				d: 3.017,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -234,9 +177,6 @@ export const hit = {
 				b: 0.63,
 				c: -0.63,
 				d: 3.857,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -246,9 +186,6 @@ export const hit = {
 				b: 0.609,
 				c: -0.798,
 				d: 2.281,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -258,9 +195,6 @@ export const hit = {
 				b: -0.22,
 				c: 0.338,
 				d: 2.402,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -268,9 +202,6 @@ export const hit = {
 				ty: -12.65,
 				a: 5.301,
 				d: 6.519,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -280,9 +211,6 @@ export const hit = {
 				b: 1.547,
 				c: -1.547,
 				d: 3.272,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -292,9 +220,6 @@ export const hit = {
 				b: 0.922,
 				c: -1.062,
 				d: 3.261,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -304,9 +229,6 @@ export const hit = {
 				b: -0.098,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -314,9 +236,6 @@ export const hit = {
 				ty: 8.95,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -326,9 +245,6 @@ export const hit = {
 				b: -2.704,
 				c: 2.17,
 				d: 2.869,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -338,9 +254,6 @@ export const hit = {
 				b: 2.024,
 				c: -2.237,
 				d: 3.402,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -348,9 +261,6 @@ export const hit = {
 				ty: 10.95,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -362,9 +272,6 @@ export const hit = {
 				b: -2.023,
 				c: 1.471,
 				d: 3.923,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -374,9 +281,6 @@ export const hit = {
 				b: 2.774,
 				c: -2.774,
 				d: 3.874,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -384,9 +288,6 @@ export const hit = {
 				ty: 23.55,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -396,9 +297,6 @@ export const hit = {
 				b: -0.811,
 				c: 0.811,
 				d: 3.016,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -408,9 +306,6 @@ export const hit = {
 				b: 0.629,
 				c: -0.629,
 				d: 3.857,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -420,9 +315,6 @@ export const hit = {
 				b: 0.608,
 				c: -0.798,
 				d: 2.281,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -432,9 +324,6 @@ export const hit = {
 				b: -0.183,
 				c: 0.42,
 				d: 2.978,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -442,9 +331,6 @@ export const hit = {
 				ty: -12.6,
 				a: 5.301,
 				d: 6.519,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -454,9 +340,6 @@ export const hit = {
 				b: 1.546,
 				c: -1.546,
 				d: 3.271,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -466,9 +349,6 @@ export const hit = {
 				b: 0.922,
 				c: -1.062,
 				d: 3.26,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -478,9 +358,6 @@ export const hit = {
 				b: -0.097,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -488,9 +365,6 @@ export const hit = {
 				ty: 9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -500,9 +374,6 @@ export const hit = {
 				b: -2.702,
 				c: 2.169,
 				d: 2.868,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -512,9 +383,6 @@ export const hit = {
 				b: 2.023,
 				c: -2.236,
 				d: 3.4,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -522,9 +390,6 @@ export const hit = {
 				ty: 10.95,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -536,9 +401,6 @@ export const hit = {
 				b: -2.022,
 				c: 1.47,
 				d: 3.922,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -548,9 +410,6 @@ export const hit = {
 				b: 2.772,
 				c: -2.772,
 				d: 3.873,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -558,9 +417,6 @@ export const hit = {
 				ty: 23.55,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -570,9 +426,6 @@ export const hit = {
 				b: -0.81,
 				c: 0.81,
 				d: 3.016,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -582,9 +435,6 @@ export const hit = {
 				b: 0.629,
 				c: -0.629,
 				d: 3.856,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -594,9 +444,6 @@ export const hit = {
 				b: 0.608,
 				c: -0.798,
 				d: 2.28,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -606,9 +453,6 @@ export const hit = {
 				b: 0.242,
 				c: 0.259,
 				d: 1.828,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -617,9 +461,6 @@ export const hit = {
 				a: 5.301,
 				c: 0.001,
 				d: 6.519,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -629,9 +470,6 @@ export const hit = {
 				b: 1.546,
 				c: -1.546,
 				d: 3.27,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -641,9 +479,6 @@ export const hit = {
 				b: 0.921,
 				c: -1.061,
 				d: 3.26,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -653,9 +488,6 @@ export const hit = {
 				b: -0.097,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -663,9 +495,6 @@ export const hit = {
 				ty: 9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -675,9 +504,6 @@ export const hit = {
 				b: -2.701,
 				c: 2.168,
 				d: 2.867,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -687,9 +513,6 @@ export const hit = {
 				b: 2.022,
 				c: -2.235,
 				d: 3.399,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -697,9 +520,6 @@ export const hit = {
 				ty: 10.9,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -711,9 +531,6 @@ export const hit = {
 				b: -2.026,
 				c: 1.473,
 				d: 3.925,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -723,9 +540,6 @@ export const hit = {
 				b: 2.776,
 				c: -2.776,
 				d: 3.877,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -733,9 +547,6 @@ export const hit = {
 				ty: 23.55,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -745,9 +556,6 @@ export const hit = {
 				b: -0.812,
 				c: 0.812,
 				d: 3.017,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -757,9 +565,6 @@ export const hit = {
 				b: 0.63,
 				c: -0.63,
 				d: 3.858,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -769,9 +574,6 @@ export const hit = {
 				b: 0.609,
 				c: -0.798,
 				d: 2.282,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -781,9 +583,6 @@ export const hit = {
 				b: 0.24,
 				c: 0.257,
 				d: 1.827,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -793,9 +592,6 @@ export const hit = {
 				b: -0.003,
 				c: 0.003,
 				d: 6.519,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -805,9 +601,6 @@ export const hit = {
 				b: 1.547,
 				c: -1.547,
 				d: 3.273,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -817,9 +610,6 @@ export const hit = {
 				b: 0.922,
 				c: -1.062,
 				d: 3.262,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -829,9 +619,6 @@ export const hit = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -839,9 +626,6 @@ export const hit = {
 				ty: 8.95,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -851,9 +635,6 @@ export const hit = {
 				b: -2.705,
 				c: 2.172,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -863,9 +644,6 @@ export const hit = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.403,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -873,9 +651,6 @@ export const hit = {
 				ty: 10.95,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		}

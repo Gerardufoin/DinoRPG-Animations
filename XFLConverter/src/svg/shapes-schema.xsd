@@ -28,47 +28,49 @@
         <xs:element name="defs" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
-              <xs:element minOccurs="0" maxOccurs="unbounded" name="radialGradient">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element maxOccurs="unbounded" name="stop">
-                      <xs:complexType>
-                        <xs:attribute name="offset" type="xs:decimal" use="required" />
-                        <xs:attribute name="stop-color" type="xs:string" use="required" />
-                        <xs:attribute name="stop-opacity" type="xs:decimal" use="optional" />
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                  <xs:attribute name="cx" type="xs:decimal" use="required" />
-                  <xs:attribute name="cy" type="xs:decimal" use="required" />
-                  <xs:attribute name="fx" type="xs:decimal" use="optional" />
-                  <xs:attribute name="fy" type="xs:decimal" use="optional" />
-                  <xs:attribute name="gradientTransform" type="xs:string" use="required" />
-                  <xs:attribute name="gradientUnits" type="xs:string" use="required" />
-                  <xs:attribute name="id" type="xs:string" use="required" />
-                  <xs:attribute name="r" type="xs:decimal" use="required" />
-                  <xs:attribute name="spreadMethod" type="xs:string" use="required" />
-                </xs:complexType>
-              </xs:element>
-              <xs:element minOccurs="0" maxOccurs="unbounded" name="linearGradient">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element maxOccurs="unbounded" name="stop">
-                      <xs:complexType>
-                        <xs:attribute name="offset" type="xs:decimal" use="required" />
-                        <xs:attribute name="stop-color" type="xs:string" use="required" />
-                        <xs:attribute name="stop-opacity" type="xs:decimal" use="optional" />
-                      </xs:complexType>
-                    </xs:element>
-                  </xs:sequence>
-                  <xs:attribute name="gradientTransform" type="xs:string" use="required" />
-                  <xs:attribute name="gradientUnits" type="xs:string" use="required" />
-                  <xs:attribute name="id" type="xs:string" use="required" />
-                  <xs:attribute name="spreadMethod" type="xs:string" use="required" />
-                  <xs:attribute name="x1" type="xs:decimal" use="required" />
-                  <xs:attribute name="x2" type="xs:decimal" use="required" />
-                </xs:complexType>
-              </xs:element>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element minOccurs="0" maxOccurs="unbounded" name="radialGradient">
+					<xs:complexType>
+					<xs:sequence>
+						<xs:element maxOccurs="unbounded" name="stop">
+						<xs:complexType>
+							<xs:attribute name="offset" type="xs:decimal" use="required" />
+							<xs:attribute name="stop-color" type="xs:string" use="required" />
+							<xs:attribute name="stop-opacity" type="xs:decimal" use="optional" />
+						</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="cx" type="xs:decimal" use="required" />
+					<xs:attribute name="cy" type="xs:decimal" use="required" />
+					<xs:attribute name="fx" type="xs:decimal" use="optional" />
+					<xs:attribute name="fy" type="xs:decimal" use="optional" />
+					<xs:attribute name="gradientTransform" type="xs:string" use="required" />
+					<xs:attribute name="gradientUnits" type="xs:string" use="required" />
+					<xs:attribute name="id" type="xs:string" use="required" />
+					<xs:attribute name="r" type="xs:decimal" use="required" />
+					<xs:attribute name="spreadMethod" type="xs:string" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element minOccurs="0" maxOccurs="unbounded" name="linearGradient">
+					<xs:complexType>
+					<xs:sequence>
+						<xs:element maxOccurs="unbounded" name="stop">
+						<xs:complexType>
+							<xs:attribute name="offset" type="xs:decimal" use="required" />
+							<xs:attribute name="stop-color" type="xs:string" use="required" />
+							<xs:attribute name="stop-opacity" type="xs:decimal" use="optional" />
+						</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="gradientTransform" type="xs:string" use="required" />
+					<xs:attribute name="gradientUnits" type="xs:string" use="required" />
+					<xs:attribute name="id" type="xs:string" use="required" />
+					<xs:attribute name="spreadMethod" type="xs:string" use="required" />
+					<xs:attribute name="x1" type="xs:decimal" use="required" />
+					<xs:attribute name="x2" type="xs:decimal" use="required" />
+					</xs:complexType>
+				</xs:element>
+			  </xs:choice>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

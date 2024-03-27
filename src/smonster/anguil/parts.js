@@ -6,21 +6,51 @@ import { anguil_whisker } from './animations/whisker.js';
 
 export const parts = {
 	// 395
-	t_arm: [
+	l_t_arm: [
 		{
 			ref: ref.anguil.arm_top
 		}
 	],
+	r_t_arm: [
+		{
+			ref: ref.anguil.arm_top,
+			colorOffset: {
+				r: -31,
+				g: -36,
+				b: -26
+			}
+		}
+	],
 	// 397
-	b_arm: [
+	l_b_arm: [
 		{
 			ref: ref.anguil.arm_bottom
 		}
 	],
+	r_b_arm: [
+		{
+			ref: ref.anguil.arm_bottom,
+			colorOffset: {
+				r: -31,
+				g: -36,
+				b: -26
+			}
+		}
+	],
 	// 399
-	scythe: [
+	l_scythe: [
 		{
 			ref: ref.anguil.scythe
+		}
+	],
+	r_scythe: [
+		{
+			ref: ref.anguil.scythe,
+			colorOffset: {
+				r: -31,
+				g: -36,
+				b: -26
+			}
 		}
 	],
 	// 401

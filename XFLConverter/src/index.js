@@ -50,6 +50,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 360.xml', '_p1', undefined, 1); // borg Borg
 //parser.parse('./resources/smonster/LIBRARY/Symbol 393.xml', '_p1', undefined, 1); // pira Piranoz
 //parser.parse('./resources/smonster/LIBRARY/Symbol 435.xml', '_p1', undefined, 1); // anguil Anguilloz
+parser.parse('./resources/smonster/LIBRARY/Symbol 471.xml', '_p1', undefined, 1); // kazka Kazkadine
 //parser.parse('./resources/smonster/LIBRARY/Symbol 529.xml', '_p1', undefined, 1); // grdien Gardien Abricole
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette

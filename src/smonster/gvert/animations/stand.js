@@ -11,9 +11,6 @@ export const stand = {
 				b: -3.271,
 				c: 2.379,
 				d: 3.461,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -23,9 +20,6 @@ export const stand = {
 				b: 1.78,
 				c: -1.78,
 				d: 4.436,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -33,9 +27,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -45,9 +36,6 @@ export const stand = {
 				b: -1.671,
 				c: 1.671,
 				d: 2.647,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -57,9 +45,6 @@ export const stand = {
 				b: 0.055,
 				c: -0.055,
 				d: 3.913,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -67,9 +52,6 @@ export const stand = {
 				ty: 17.25,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -79,9 +61,6 @@ export const stand = {
 				b: -0.259,
 				c: 0.259,
 				d: 1.828,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -89,9 +68,6 @@ export const stand = {
 				ty: -9.4,
 				a: 5.302,
 				d: 6.52,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -101,9 +77,6 @@ export const stand = {
 				b: 1.549,
 				c: -1.549,
 				d: 3.278,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -113,9 +86,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -125,9 +95,6 @@ export const stand = {
 				b: -0.107,
 				c: 0.123,
 				d: 2.712,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -135,9 +102,6 @@ export const stand = {
 				ty: 8.9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -147,9 +111,6 @@ export const stand = {
 				b: -2.715,
 				c: 2.178,
 				d: 2.872,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -159,9 +120,6 @@ export const stand = {
 				b: 2.032,
 				c: -2.242,
 				d: 3.408,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -169,9 +127,6 @@ export const stand = {
 				ty: 11,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -183,9 +138,6 @@ export const stand = {
 				b: -3.271,
 				c: 2.379,
 				d: 3.448,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -195,9 +147,6 @@ export const stand = {
 				b: 1.774,
 				c: -1.774,
 				d: 4.433,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -205,9 +154,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -217,9 +163,6 @@ export const stand = {
 				b: -1.67,
 				c: 1.67,
 				d: 2.641,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -229,9 +172,6 @@ export const stand = {
 				b: 0.052,
 				c: -0.052,
 				d: 3.912,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -239,9 +179,6 @@ export const stand = {
 				ty: 17.2,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -251,9 +188,6 @@ export const stand = {
 				b: -0.257,
 				c: 0.257,
 				d: 1.827,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -262,9 +196,6 @@ export const stand = {
 				a: 5.304,
 				c: 0.001,
 				d: 6.522,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -274,9 +205,6 @@ export const stand = {
 				b: 1.547,
 				c: -1.547,
 				d: 3.274,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -286,9 +214,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -298,9 +223,6 @@ export const stand = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -308,9 +230,6 @@ export const stand = {
 				ty: 8.95,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -320,9 +239,6 @@ export const stand = {
 				b: -2.705,
 				c: 2.171,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -332,9 +248,6 @@ export const stand = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.403,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -342,9 +255,6 @@ export const stand = {
 				ty: 10.95,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -356,9 +266,6 @@ export const stand = {
 				b: -3.291,
 				c: 2.393,
 				d: 3.442,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -368,9 +275,6 @@ export const stand = {
 				b: 1.775,
 				c: -1.775,
 				d: 4.432,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -378,9 +282,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -390,9 +291,6 @@ export const stand = {
 				b: -1.67,
 				c: 1.67,
 				d: 2.641,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -402,9 +300,6 @@ export const stand = {
 				b: 0.053,
 				c: -0.053,
 				d: 3.912,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -412,9 +307,6 @@ export const stand = {
 				ty: 17.2,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -424,9 +316,6 @@ export const stand = {
 				b: -0.258,
 				c: 0.258,
 				d: 1.827,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -435,9 +324,6 @@ export const stand = {
 				a: 5.31,
 				c: 0.005,
 				d: 6.532,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -447,9 +333,6 @@ export const stand = {
 				b: 1.547,
 				c: -1.534,
 				d: 3.28,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -459,9 +342,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -471,9 +351,6 @@ export const stand = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -481,9 +358,6 @@ export const stand = {
 				ty: 8.95,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -493,9 +367,6 @@ export const stand = {
 				b: -2.705,
 				c: 2.171,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -505,9 +376,6 @@ export const stand = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.403,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -515,9 +383,6 @@ export const stand = {
 				ty: 10.95,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -529,9 +394,6 @@ export const stand = {
 				b: -3.287,
 				c: 2.39,
 				d: 3.436,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -541,9 +403,6 @@ export const stand = {
 				b: 1.791,
 				c: -1.791,
 				d: 4.425,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -551,9 +410,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -563,9 +419,6 @@ export const stand = {
 				b: -1.671,
 				c: 1.671,
 				d: 2.641,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -575,9 +428,6 @@ export const stand = {
 				b: 0.053,
 				c: -0.053,
 				d: 3.912,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -585,9 +435,6 @@ export const stand = {
 				ty: 17.2,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -597,9 +444,6 @@ export const stand = {
 				b: -0.258,
 				c: 0.258,
 				d: 1.827,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -608,9 +452,6 @@ export const stand = {
 				a: 5.323,
 				c: 0.033,
 				d: 6.549,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -620,9 +461,6 @@ export const stand = {
 				b: 1.547,
 				c: -1.521,
 				d: 3.287,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -632,9 +470,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -644,9 +479,6 @@ export const stand = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -654,9 +486,6 @@ export const stand = {
 				ty: 8.95,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -666,9 +495,6 @@ export const stand = {
 				b: -2.705,
 				c: 2.171,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -678,9 +504,6 @@ export const stand = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.403,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -688,9 +511,6 @@ export const stand = {
 				ty: 10.95,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -702,9 +522,6 @@ export const stand = {
 				b: -3.288,
 				c: 2.391,
 				d: 3.435,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -714,9 +531,6 @@ export const stand = {
 				b: 1.794,
 				c: -1.794,
 				d: 4.423,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -724,9 +538,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -736,9 +547,6 @@ export const stand = {
 				b: -1.671,
 				c: 1.671,
 				d: 2.64,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -748,9 +556,6 @@ export const stand = {
 				b: 0.053,
 				c: -0.053,
 				d: 3.912,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -758,9 +563,6 @@ export const stand = {
 				ty: 17.2,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -770,9 +572,6 @@ export const stand = {
 				b: -0.258,
 				c: 0.258,
 				d: 1.827,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -781,9 +580,6 @@ export const stand = {
 				a: 5.343,
 				c: 0.087,
 				d: 6.576,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -793,9 +589,6 @@ export const stand = {
 				b: 1.547,
 				c: -1.507,
 				d: 3.294,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -805,9 +598,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -817,9 +607,6 @@ export const stand = {
 				b: -0.098,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -827,9 +614,6 @@ export const stand = {
 				ty: 8.95,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -839,9 +623,6 @@ export const stand = {
 				b: -2.704,
 				c: 2.171,
 				d: 2.869,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -851,9 +632,6 @@ export const stand = {
 				b: 2.025,
 				c: -2.237,
 				d: 3.402,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -861,9 +639,6 @@ export const stand = {
 				ty: 10.95,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -875,9 +650,6 @@ export const stand = {
 				b: -3.29,
 				c: 2.392,
 				d: 3.434,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -887,9 +659,6 @@ export const stand = {
 				b: 1.812,
 				c: -1.812,
 				d: 4.415,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -897,9 +666,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -909,9 +675,6 @@ export const stand = {
 				b: -1.671,
 				c: 1.671,
 				d: 2.639,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -921,9 +684,6 @@ export const stand = {
 				b: 0.054,
 				c: -0.054,
 				d: 3.912,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -931,9 +691,6 @@ export const stand = {
 				ty: 17.2,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -943,9 +700,6 @@ export const stand = {
 				b: -0.258,
 				c: 0.258,
 				d: 1.827,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -954,9 +708,6 @@ export const stand = {
 				a: 5.37,
 				c: 0.145,
 				d: 6.614,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -966,9 +717,6 @@ export const stand = {
 				b: 1.547,
 				c: -1.479,
 				d: 3.308,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -978,9 +726,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -990,9 +735,6 @@ export const stand = {
 				b: -0.098,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -1000,9 +742,6 @@ export const stand = {
 				ty: 8.95,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1012,9 +751,6 @@ export const stand = {
 				b: -2.704,
 				c: 2.171,
 				d: 2.869,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1024,9 +760,6 @@ export const stand = {
 				b: 2.024,
 				c: -2.237,
 				d: 3.402,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -1034,9 +767,6 @@ export const stand = {
 				ty: 10.95,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -1048,9 +778,6 @@ export const stand = {
 				b: -3.308,
 				c: 2.405,
 				d: 3.425,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -1060,9 +787,6 @@ export const stand = {
 				b: 1.832,
 				c: -1.831,
 				d: 4.406,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -1070,9 +794,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -1082,9 +803,6 @@ export const stand = {
 				b: -1.672,
 				c: 1.672,
 				d: 2.638,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -1094,9 +812,6 @@ export const stand = {
 				b: 0.055,
 				c: -0.055,
 				d: 3.912,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -1104,9 +819,6 @@ export const stand = {
 				ty: 17.2,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -1116,9 +828,6 @@ export const stand = {
 				b: -0.259,
 				c: 0.259,
 				d: 1.827,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -1127,9 +836,6 @@ export const stand = {
 				a: 5.405,
 				c: 0.209,
 				d: 6.661,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -1139,9 +845,6 @@ export const stand = {
 				b: 1.546,
 				c: -1.451,
 				d: 3.323,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -1151,9 +854,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -1163,9 +863,6 @@ export const stand = {
 				b: -0.098,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -1173,9 +870,6 @@ export const stand = {
 				ty: 8.95,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1185,9 +879,6 @@ export const stand = {
 				b: -2.703,
 				c: 2.17,
 				d: 2.869,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1197,9 +888,6 @@ export const stand = {
 				b: 2.024,
 				c: -2.237,
 				d: 3.401,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -1207,9 +895,6 @@ export const stand = {
 				ty: 10.95,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -1221,9 +906,6 @@ export const stand = {
 				b: -3.312,
 				c: 2.408,
 				d: 3.423,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -1233,9 +915,6 @@ export const stand = {
 				b: 1.852,
 				c: -1.851,
 				d: 4.397,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -1243,9 +922,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -1255,9 +931,6 @@ export const stand = {
 				b: -1.681,
 				c: 1.681,
 				d: 2.632,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -1267,9 +940,6 @@ export const stand = {
 				b: 0.069,
 				c: -0.069,
 				d: 3.911,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -1277,9 +947,6 @@ export const stand = {
 				ty: 17.15,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -1289,9 +956,6 @@ export const stand = {
 				b: -0.265,
 				c: 0.265,
 				d: 1.826,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -1300,9 +964,6 @@ export const stand = {
 				a: 5.445,
 				c: 0.299,
 				d: 6.713,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -1312,9 +973,6 @@ export const stand = {
 				b: 1.546,
 				c: -1.421,
 				d: 3.338,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -1324,9 +982,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -1336,9 +991,6 @@ export const stand = {
 				b: -0.097,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -1346,9 +998,6 @@ export const stand = {
 				ty: 9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1358,9 +1007,6 @@ export const stand = {
 				b: -2.702,
 				c: 2.169,
 				d: 2.868,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1370,9 +1016,6 @@ export const stand = {
 				b: 2.023,
 				c: -2.236,
 				d: 3.4,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -1380,9 +1023,6 @@ export const stand = {
 				ty: 10.9,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -1394,9 +1034,6 @@ export const stand = {
 				b: -3.332,
 				c: 2.422,
 				d: 3.413,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -1406,9 +1043,6 @@ export const stand = {
 				b: 1.886,
 				c: -1.886,
 				d: 4.381,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -1416,9 +1050,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -1428,9 +1059,6 @@ export const stand = {
 				b: -1.681,
 				c: 1.681,
 				d: 2.631,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -1440,9 +1068,6 @@ export const stand = {
 				b: 0.07,
 				c: -0.07,
 				d: 3.911,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -1450,9 +1075,6 @@ export const stand = {
 				ty: 17.15,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -1462,9 +1084,6 @@ export const stand = {
 				b: -0.266,
 				c: 0.266,
 				d: 1.825,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -1473,9 +1092,6 @@ export const stand = {
 				a: 5.484,
 				c: 0.389,
 				d: 6.763,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -1485,9 +1101,6 @@ export const stand = {
 				b: 1.546,
 				c: -1.391,
 				d: 3.352,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -1497,9 +1110,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -1509,9 +1119,6 @@ export const stand = {
 				b: -0.097,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -1519,9 +1126,6 @@ export const stand = {
 				ty: 9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1531,9 +1135,6 @@ export const stand = {
 				b: -2.702,
 				c: 2.169,
 				d: 2.867,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1543,9 +1144,6 @@ export const stand = {
 				b: 2.023,
 				c: -2.235,
 				d: 3.4,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -1553,9 +1151,6 @@ export const stand = {
 				ty: 10.9,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -1567,9 +1162,6 @@ export const stand = {
 				b: -3.351,
 				c: 2.437,
 				d: 3.403,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -1579,9 +1171,6 @@ export const stand = {
 				b: 1.905,
 				c: -1.905,
 				d: 4.372,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -1589,9 +1178,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -1601,9 +1187,6 @@ export const stand = {
 				b: -1.682,
 				c: 1.682,
 				d: 2.63,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -1613,9 +1196,6 @@ export const stand = {
 				b: 0.071,
 				c: -0.071,
 				d: 3.911,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -1623,9 +1203,6 @@ export const stand = {
 				ty: 17.15,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -1635,9 +1212,6 @@ export const stand = {
 				b: -0.266,
 				c: 0.266,
 				d: 1.825,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -1646,9 +1220,6 @@ export const stand = {
 				a: 5.518,
 				c: 0.478,
 				d: 6.805,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -1658,9 +1229,6 @@ export const stand = {
 				b: 1.546,
 				c: -1.362,
 				d: 3.366,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -1670,9 +1238,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -1682,9 +1247,6 @@ export const stand = {
 				b: -0.097,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -1692,9 +1254,6 @@ export const stand = {
 				ty: 9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1704,9 +1263,6 @@ export const stand = {
 				b: -2.701,
 				c: 2.168,
 				d: 2.867,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1716,9 +1272,6 @@ export const stand = {
 				b: 2.022,
 				c: -2.235,
 				d: 3.399,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -1726,9 +1279,6 @@ export const stand = {
 				ty: 10.9,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -1740,9 +1290,6 @@ export const stand = {
 				b: -3.37,
 				c: 2.451,
 				d: 3.394,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -1752,9 +1299,6 @@ export const stand = {
 				b: 1.923,
 				c: -1.923,
 				d: 4.363,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -1762,9 +1306,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -1774,9 +1315,6 @@ export const stand = {
 				b: -1.691,
 				c: 1.691,
 				d: 2.623,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -1786,9 +1324,6 @@ export const stand = {
 				b: 0.072,
 				c: -0.072,
 				d: 3.911,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -1796,9 +1331,6 @@ export const stand = {
 				ty: 17.15,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -1808,9 +1340,6 @@ export const stand = {
 				b: -0.266,
 				c: 0.266,
 				d: 1.825,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -1819,9 +1348,6 @@ export const stand = {
 				a: 5.544,
 				c: 0.539,
 				d: 6.837,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -1831,9 +1357,6 @@ export const stand = {
 				b: 1.545,
 				c: -1.334,
 				d: 3.378,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -1843,9 +1366,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -1855,9 +1375,6 @@ export const stand = {
 				b: -0.097,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -1865,9 +1382,6 @@ export const stand = {
 				ty: 9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1877,9 +1391,6 @@ export const stand = {
 				b: -2.7,
 				c: 2.168,
 				d: 2.866,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1889,9 +1400,6 @@ export const stand = {
 				b: 2.022,
 				c: -2.235,
 				d: 3.399,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -1899,9 +1407,6 @@ export const stand = {
 				ty: 10.9,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -1913,9 +1418,6 @@ export const stand = {
 				b: -3.373,
 				c: 2.452,
 				d: 3.392,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -1925,9 +1427,6 @@ export const stand = {
 				b: 1.925,
 				c: -1.925,
 				d: 4.361,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -1935,9 +1434,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -1947,9 +1443,6 @@ export const stand = {
 				b: -1.691,
 				c: 1.691,
 				d: 2.623,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -1959,9 +1452,6 @@ export const stand = {
 				b: 0.085,
 				c: -0.085,
 				d: 3.911,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -1969,9 +1459,6 @@ export const stand = {
 				ty: 17.15,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -1981,9 +1468,6 @@ export const stand = {
 				b: -0.267,
 				c: 0.267,
 				d: 1.825,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -1992,9 +1476,6 @@ export const stand = {
 				a: 5.562,
 				c: 0.574,
 				d: 6.86,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -2004,9 +1485,6 @@ export const stand = {
 				b: 1.545,
 				c: -1.32,
 				d: 3.385,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -2016,9 +1494,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -2028,9 +1503,6 @@ export const stand = {
 				b: -0.097,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -2038,9 +1510,6 @@ export const stand = {
 				ty: 9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -2050,9 +1519,6 @@ export const stand = {
 				b: -2.7,
 				c: 2.168,
 				d: 2.866,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -2062,9 +1528,6 @@ export const stand = {
 				b: 2.021,
 				c: -2.235,
 				d: 3.398,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -2072,9 +1535,6 @@ export const stand = {
 				ty: 10.9,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -2086,9 +1546,6 @@ export const stand = {
 				b: -3.373,
 				c: 2.452,
 				d: 3.392,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -2098,9 +1555,6 @@ export const stand = {
 				b: 1.925,
 				c: -1.925,
 				d: 4.361,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -2108,9 +1562,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -2120,9 +1571,6 @@ export const stand = {
 				b: -1.691,
 				c: 1.691,
 				d: 2.622,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -2132,9 +1580,6 @@ export const stand = {
 				b: 0.086,
 				c: -0.086,
 				d: 3.911,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -2142,9 +1587,6 @@ export const stand = {
 				ty: 17.15,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -2154,9 +1596,6 @@ export const stand = {
 				b: -0.267,
 				c: 0.267,
 				d: 1.825,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -2165,9 +1604,6 @@ export const stand = {
 				a: 5.574,
 				c: 0.605,
 				d: 6.874,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -2177,9 +1613,6 @@ export const stand = {
 				b: 1.545,
 				c: -1.306,
 				d: 3.391,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -2189,9 +1622,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -2201,9 +1631,6 @@ export const stand = {
 				b: -0.096,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -2211,9 +1638,6 @@ export const stand = {
 				ty: 9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -2223,9 +1647,6 @@ export const stand = {
 				b: -2.7,
 				c: 2.167,
 				d: 2.866,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -2235,9 +1656,6 @@ export const stand = {
 				b: 2.021,
 				c: -2.234,
 				d: 3.398,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -2245,9 +1663,6 @@ export const stand = {
 				ty: 10.9,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -2259,9 +1674,6 @@ export const stand = {
 				b: -3.37,
 				c: 2.451,
 				d: 3.394,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -2271,9 +1683,6 @@ export const stand = {
 				b: 1.923,
 				c: -1.923,
 				d: 4.363,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -2281,9 +1690,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -2293,9 +1699,6 @@ export const stand = {
 				b: -1.691,
 				c: 1.691,
 				d: 2.622,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -2305,9 +1708,6 @@ export const stand = {
 				b: 0.086,
 				c: -0.086,
 				d: 3.911,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -2315,9 +1715,6 @@ export const stand = {
 				ty: 17.15,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -2327,9 +1724,6 @@ export const stand = {
 				b: -0.273,
 				c: 0.273,
 				d: 1.824,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -2338,9 +1732,6 @@ export const stand = {
 				a: 5.581,
 				c: 0.609,
 				d: 6.882,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -2350,9 +1741,6 @@ export const stand = {
 				b: 1.545,
 				c: -1.305,
 				d: 3.392,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -2362,9 +1750,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -2374,9 +1759,6 @@ export const stand = {
 				b: -0.096,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -2384,9 +1766,6 @@ export const stand = {
 				ty: 9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -2396,9 +1775,6 @@ export const stand = {
 				b: -2.7,
 				c: 2.167,
 				d: 2.866,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -2408,9 +1784,6 @@ export const stand = {
 				b: 2.021,
 				c: -2.234,
 				d: 3.398,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -2418,9 +1791,6 @@ export const stand = {
 				ty: 10.9,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -2432,9 +1802,6 @@ export const stand = {
 				b: -3.351,
 				c: 2.437,
 				d: 3.403,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -2444,9 +1811,6 @@ export const stand = {
 				b: 1.905,
 				c: -1.905,
 				d: 4.372,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -2454,9 +1818,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -2466,9 +1827,6 @@ export const stand = {
 				b: -1.695,
 				c: 1.695,
 				d: 2.626,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -2478,9 +1836,6 @@ export const stand = {
 				b: 0.088,
 				c: -0.088,
 				d: 3.911,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -2488,9 +1843,6 @@ export const stand = {
 				ty: 17.2,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -2500,9 +1852,6 @@ export const stand = {
 				b: -0.273,
 				c: 0.273,
 				d: 1.825,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -2511,9 +1860,6 @@ export const stand = {
 				a: 5.583,
 				c: 0.635,
 				d: 6.885,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -2523,9 +1869,6 @@ export const stand = {
 				b: 1.547,
 				c: -1.305,
 				d: 3.396,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -2535,9 +1878,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -2547,9 +1887,6 @@ export const stand = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -2557,9 +1894,6 @@ export const stand = {
 				ty: 8.95,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -2569,9 +1903,6 @@ export const stand = {
 				b: -2.705,
 				c: 2.172,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -2581,9 +1912,6 @@ export const stand = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.403,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -2591,9 +1919,6 @@ export const stand = {
 				ty: 10.95,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -2605,9 +1930,6 @@ export const stand = {
 				b: -3.332,
 				c: 2.422,
 				d: 3.413,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -2617,9 +1939,6 @@ export const stand = {
 				b: 1.886,
 				c: -1.886,
 				d: 4.381,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -2627,9 +1946,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -2639,9 +1955,6 @@ export const stand = {
 				b: -1.691,
 				c: 1.691,
 				d: 2.622,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -2651,9 +1964,6 @@ export const stand = {
 				b: 0.086,
 				c: -0.086,
 				d: 3.911,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -2661,9 +1971,6 @@ export const stand = {
 				ty: 17.25,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -2673,9 +1980,6 @@ export const stand = {
 				b: -0.267,
 				c: 0.267,
 				d: 1.825,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -2684,9 +1988,6 @@ export const stand = {
 				a: 5.576,
 				c: 0.606,
 				d: 6.875,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -2696,9 +1997,6 @@ export const stand = {
 				b: 1.545,
 				c: -1.305,
 				d: 3.391,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -2708,9 +2006,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -2720,9 +2015,6 @@ export const stand = {
 				b: -0.096,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -2730,9 +2022,6 @@ export const stand = {
 				ty: 8.9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -2742,9 +2031,6 @@ export const stand = {
 				b: -2.699,
 				c: 2.167,
 				d: 2.866,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -2754,9 +2040,6 @@ export const stand = {
 				b: 2.021,
 				c: -2.234,
 				d: 3.398,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -2764,9 +2047,6 @@ export const stand = {
 				ty: 11,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -2778,9 +2058,6 @@ export const stand = {
 				b: -3.312,
 				c: 2.408,
 				d: 3.423,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -2790,9 +2067,6 @@ export const stand = {
 				b: 1.852,
 				c: -1.851,
 				d: 4.397,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -2800,9 +2074,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -2812,9 +2083,6 @@ export const stand = {
 				b: -1.691,
 				c: 1.691,
 				d: 2.623,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -2824,9 +2092,6 @@ export const stand = {
 				b: 0.073,
 				c: -0.073,
 				d: 3.911,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -2834,9 +2099,6 @@ export const stand = {
 				ty: 17.25,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -2846,9 +2108,6 @@ export const stand = {
 				b: -0.266,
 				c: 0.266,
 				d: 1.825,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -2857,9 +2116,6 @@ export const stand = {
 				a: 5.553,
 				c: 0.546,
 				d: 6.848,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -2869,9 +2125,6 @@ export const stand = {
 				b: 1.545,
 				c: -1.321,
 				d: 3.384,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -2881,9 +2134,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -2893,9 +2143,6 @@ export const stand = {
 				b: -0.097,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -2903,9 +2150,6 @@ export const stand = {
 				ty: 8.9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -2915,9 +2159,6 @@ export const stand = {
 				b: -2.7,
 				c: 2.168,
 				d: 2.866,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -2927,9 +2168,6 @@ export const stand = {
 				b: 2.022,
 				c: -2.235,
 				d: 3.398,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -2937,9 +2175,6 @@ export const stand = {
 				ty: 11,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -2951,9 +2186,6 @@ export const stand = {
 				b: -3.308,
 				c: 2.405,
 				d: 3.425,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -2963,9 +2195,6 @@ export const stand = {
 				b: 1.832,
 				c: -1.831,
 				d: 4.406,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -2973,9 +2202,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -2985,9 +2211,6 @@ export const stand = {
 				b: -1.682,
 				c: 1.682,
 				d: 2.63,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -2997,9 +2220,6 @@ export const stand = {
 				b: 0.071,
 				c: -0.071,
 				d: 3.911,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -3007,9 +2227,6 @@ export const stand = {
 				ty: 17.25,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -3019,9 +2236,6 @@ export const stand = {
 				b: -0.266,
 				c: 0.266,
 				d: 1.825,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -3030,9 +2244,6 @@ export const stand = {
 				a: 5.509,
 				c: 0.45,
 				d: 6.794,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -3042,9 +2253,6 @@ export const stand = {
 				b: 1.546,
 				c: -1.364,
 				d: 3.365,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -3054,9 +2262,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -3066,9 +2271,6 @@ export const stand = {
 				b: -0.097,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -3076,9 +2278,6 @@ export const stand = {
 				ty: 8.9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -3088,9 +2287,6 @@ export const stand = {
 				b: -2.701,
 				c: 2.168,
 				d: 2.867,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -3100,9 +2296,6 @@ export const stand = {
 				b: 2.022,
 				c: -2.235,
 				d: 3.399,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -3110,9 +2303,6 @@ export const stand = {
 				ty: 11,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -3124,9 +2314,6 @@ export const stand = {
 				b: -3.29,
 				c: 2.392,
 				d: 3.434,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -3136,9 +2323,6 @@ export const stand = {
 				b: 1.812,
 				c: -1.812,
 				d: 4.415,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -3146,9 +2330,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -3158,9 +2339,6 @@ export const stand = {
 				b: -1.681,
 				c: 1.681,
 				d: 2.632,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -3170,9 +2348,6 @@ export const stand = {
 				b: 0.069,
 				c: -0.069,
 				d: 3.912,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -3180,9 +2355,6 @@ export const stand = {
 				ty: 17.25,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -3192,9 +2364,6 @@ export const stand = {
 				b: -0.265,
 				c: 0.265,
 				d: 1.826,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -3203,9 +2372,6 @@ export const stand = {
 				a: 5.445,
 				c: 0.299,
 				d: 6.712,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -3215,9 +2381,6 @@ export const stand = {
 				b: 1.546,
 				c: -1.421,
 				d: 3.338,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -3227,9 +2390,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -3239,9 +2399,6 @@ export const stand = {
 				b: -0.097,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -3249,9 +2406,6 @@ export const stand = {
 				ty: 8.9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -3261,9 +2415,6 @@ export const stand = {
 				b: -2.702,
 				c: 2.169,
 				d: 2.868,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -3273,9 +2424,6 @@ export const stand = {
 				b: 2.023,
 				c: -2.236,
 				d: 3.4,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -3283,9 +2431,6 @@ export const stand = {
 				ty: 11,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -3297,9 +2442,6 @@ export const stand = {
 				b: -3.288,
 				c: 2.391,
 				d: 3.435,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -3309,9 +2451,6 @@ export const stand = {
 				b: 1.794,
 				c: -1.794,
 				d: 4.423,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -3319,9 +2458,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -3331,9 +2467,6 @@ export const stand = {
 				b: -1.671,
 				c: 1.671,
 				d: 2.639,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -3343,9 +2476,6 @@ export const stand = {
 				b: 0.055,
 				c: -0.055,
 				d: 3.912,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -3353,9 +2483,6 @@ export const stand = {
 				ty: 17.3,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -3365,9 +2492,6 @@ export const stand = {
 				b: -0.258,
 				c: 0.258,
 				d: 1.827,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -3376,9 +2500,6 @@ export const stand = {
 				a: 5.379,
 				c: 0.151,
 				d: 6.625,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -3388,9 +2509,6 @@ export const stand = {
 				b: 1.546,
 				c: -1.478,
 				d: 3.309,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -3400,9 +2518,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -3412,9 +2527,6 @@ export const stand = {
 				b: -0.098,
 				c: 0.119,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -3422,9 +2534,6 @@ export const stand = {
 				ty: 8.85,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -3434,9 +2543,6 @@ export const stand = {
 				b: -2.703,
 				c: 2.17,
 				d: 2.869,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -3446,9 +2552,6 @@ export const stand = {
 				b: 2.024,
 				c: -2.237,
 				d: 3.402,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -3456,9 +2559,6 @@ export const stand = {
 				ty: 11.05,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -3470,9 +2570,6 @@ export const stand = {
 				b: -3.287,
 				c: 2.39,
 				d: 3.436,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -3482,9 +2579,6 @@ export const stand = {
 				b: 1.791,
 				c: -1.791,
 				d: 4.425,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -3492,9 +2586,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -3504,9 +2595,6 @@ export const stand = {
 				b: -1.671,
 				c: 1.671,
 				d: 2.641,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -3516,9 +2604,6 @@ export const stand = {
 				b: 0.053,
 				c: -0.053,
 				d: 3.912,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -3526,9 +2611,6 @@ export const stand = {
 				ty: 17.3,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -3538,9 +2620,6 @@ export const stand = {
 				b: -0.258,
 				c: 0.258,
 				d: 1.827,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -3549,9 +2628,6 @@ export const stand = {
 				a: 5.333,
 				c: 0.06,
 				d: 6.562,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -3561,9 +2637,6 @@ export const stand = {
 				b: 1.547,
 				c: -1.519,
 				d: 3.288,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -3573,9 +2646,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -3585,9 +2655,6 @@ export const stand = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -3595,9 +2662,6 @@ export const stand = {
 				ty: 8.85,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -3607,9 +2671,6 @@ export const stand = {
 				b: -2.704,
 				c: 2.171,
 				d: 2.869,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -3619,9 +2680,6 @@ export const stand = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.402,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -3629,9 +2687,6 @@ export const stand = {
 				ty: 11.05,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -3643,9 +2698,6 @@ export const stand = {
 				b: -3.291,
 				c: 2.393,
 				d: 3.442,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -3655,9 +2707,6 @@ export const stand = {
 				b: 1.775,
 				c: -1.775,
 				d: 4.432,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -3665,9 +2714,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -3677,9 +2723,6 @@ export const stand = {
 				b: -1.67,
 				c: 1.67,
 				d: 2.641,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -3689,9 +2732,6 @@ export const stand = {
 				b: 0.053,
 				c: -0.053,
 				d: 3.913,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -3699,9 +2739,6 @@ export const stand = {
 				ty: 17.3,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -3711,9 +2748,6 @@ export const stand = {
 				b: -0.258,
 				c: 0.258,
 				d: 1.827,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -3722,9 +2756,6 @@ export const stand = {
 				a: 5.309,
 				c: 0.004,
 				d: 6.528,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -3734,9 +2765,6 @@ export const stand = {
 				b: 1.547,
 				c: -1.535,
 				d: 3.279,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -3746,9 +2774,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -3758,9 +2783,6 @@ export const stand = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -3768,9 +2790,6 @@ export const stand = {
 				ty: 8.85,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -3780,9 +2799,6 @@ export const stand = {
 				b: -2.705,
 				c: 2.171,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -3792,9 +2808,6 @@ export const stand = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.403,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -3802,9 +2815,6 @@ export const stand = {
 				ty: 11.05,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -3816,9 +2826,6 @@ export const stand = {
 				b: -3.271,
 				c: 2.379,
 				d: 3.448,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -3828,9 +2835,6 @@ export const stand = {
 				b: 1.774,
 				c: -1.774,
 				d: 4.433,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -3838,9 +2842,6 @@ export const stand = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -3850,9 +2851,6 @@ export const stand = {
 				b: -1.671,
 				c: 1.671,
 				d: 2.647,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -3862,9 +2860,6 @@ export const stand = {
 				b: 0.055,
 				c: -0.055,
 				d: 3.913,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -3872,9 +2867,6 @@ export const stand = {
 				ty: 17.25,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -3884,9 +2876,6 @@ export const stand = {
 				b: -0.259,
 				c: 0.259,
 				d: 1.828,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -3894,9 +2883,6 @@ export const stand = {
 				ty: -9.4,
 				a: 5.302,
 				d: 6.52,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -3906,9 +2892,6 @@ export const stand = {
 				b: 1.549,
 				c: -1.549,
 				d: 3.278,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -3918,9 +2901,6 @@ export const stand = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -3930,9 +2910,6 @@ export const stand = {
 				b: -0.107,
 				c: 0.123,
 				d: 2.712,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -3940,9 +2917,6 @@ export const stand = {
 				ty: 8.9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -3952,9 +2926,6 @@ export const stand = {
 				b: -2.715,
 				c: 2.178,
 				d: 2.872,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -3964,9 +2935,6 @@ export const stand = {
 				b: 2.032,
 				c: -2.242,
 				d: 3.408,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -3974,9 +2942,6 @@ export const stand = {
 				ty: 11,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		}

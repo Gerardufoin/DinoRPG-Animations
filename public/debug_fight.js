@@ -48,10 +48,10 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5], debug: false },
 	{
-		bg: 's_dnv',
+		bg: 'swp_clear',
 		top: 120,
 		bottom: 20,
-		ground: 0,
+		ground: 2,
 		history: [
 			/*{
 				action: DinoAnim.Action.AddCastle,
@@ -79,7 +79,7 @@ const fightVersion = [
 					gfx: '09T1Yt9wqq4Rx000'
 				}
 			},
-			{
+			/*{
 				action: DinoAnim.Action.Add,
 				fighter: {
 					props: [],
@@ -104,65 +104,34 @@ const fightVersion = [
 					fid: 2,
 					gfx: 'kmask'
 				}
-			},
+			},*/
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
-					props: [],
+					props: [DinoAnim.FighterProperty.Static],
 					dino: false,
 					life: 100,
-					name: 'Korgon',
+					name: 'Kazkadine',
 					side: false,
 					scale: 1,
 					fid: 3,
-					gfx: 'korgon'
+					gfx: 'kazka'
 				}
 			},
 			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Borg',
-					side: false,
-					scale: 1,
-					fid: 4,
-					gfx: 'borg'
+				action: DinoAnim.Action.Skill,
+				skill: DinoAnim.SkillList.Anim,
+				details: {
+					fid: 3,
+					anim: 'hit'
 				}
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Piranoz',
-					side: false,
-					scale: 1,
-					fid: 5,
-					gfx: 'pira'
-				}
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Anguilloz',
-					side: false,
-					scale: 1,
-					fid: 6,
-					gfx: 'anguil'
-				}
-			},
+			}
 			/*{
 				action: DinoAnim.Action.Status,
 				fid: 1,
 				status: DinoAnim.FighterStatus.Fly
 			},*/
-			{
+			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Lightning,
 				details: {
@@ -172,7 +141,7 @@ const fightVersion = [
 						{ id: 2, life: 10 }
 					]
 				}
-			},
+			},*/
 			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Shower,
@@ -185,12 +154,12 @@ const fightVersion = [
 					type: DinoAnim.SkillType.Water
 				}
 			}*/
-			{
+			/*{
 				action: DinoAnim.Action.Damages,
-				fid: 6,
+				fid: 0,
 				tid: 1,
 				damages: 10
-			}
+			}*/
 			/*{
 				action: DinoAnim.Action.AttackCastle,
 				fid: 0,

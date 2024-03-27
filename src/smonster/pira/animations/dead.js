@@ -2483,9 +2483,6 @@ export const dead = {
 				b: 0.557,
 				c: -0.609,
 				d: 0.536,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_2: {
@@ -2493,9 +2490,6 @@ export const dead = {
 				ty: 24.05,
 				a: 2.187,
 				d: 0.62,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -2578,9 +2572,6 @@ export const dead = {
 				c: -1.443,
 				d: 0.757,
 				alpha: 0.91,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_2: {
@@ -2589,9 +2580,6 @@ export const dead = {
 				a: 2.834,
 				d: 1.256,
 				alpha: 0.871,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -2674,9 +2662,6 @@ export const dead = {
 				c: -2.443,
 				d: 0.787,
 				alpha: 0.828,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_2: {
@@ -2685,9 +2670,6 @@ export const dead = {
 				a: 3.436,
 				d: 1.847,
 				alpha: 0.75,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -2770,9 +2752,6 @@ export const dead = {
 				c: -3.46,
 				d: 0.625,
 				alpha: 0.746,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -2782,9 +2761,6 @@ export const dead = {
 				b: 0.557,
 				c: -0.61,
 				d: -0.536,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_3: {
@@ -2793,9 +2769,6 @@ export const dead = {
 				a: 3.993,
 				d: 2.395,
 				alpha: 0.641,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -2878,9 +2851,6 @@ export const dead = {
 				c: -4.377,
 				d: 0.285,
 				alpha: 0.668,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -2891,9 +2861,6 @@ export const dead = {
 				c: -1.033,
 				d: -1.137,
 				alpha: 0.871,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_3: {
@@ -2902,9 +2869,6 @@ export const dead = {
 				a: 4.506,
 				d: 2.898,
 				alpha: 0.539,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -2987,9 +2951,6 @@ export const dead = {
 				c: -5.1,
 				d: -0.183,
 				alpha: 0.598,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -3000,9 +2961,6 @@ export const dead = {
 				c: -1.243,
 				d: -1.732,
 				alpha: 0.75,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_3: {
@@ -3011,9 +2969,6 @@ export const dead = {
 				a: 4.974,
 				d: 3.358,
 				alpha: 0.445,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -3096,9 +3051,6 @@ export const dead = {
 				c: -5.577,
 				d: -0.751,
 				alpha: 0.527,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -3109,9 +3061,6 @@ export const dead = {
 				c: -1.277,
 				d: -2.301,
 				alpha: 0.641,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_3: {
@@ -3120,9 +3069,6 @@ export const dead = {
 				a: 5.398,
 				d: 3.775,
 				alpha: 0.359,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -3205,9 +3151,6 @@ export const dead = {
 				c: -5.784,
 				d: -1.377,
 				alpha: 0.465,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -3218,9 +3161,6 @@ export const dead = {
 				c: -1.159,
 				d: -2.834,
 				alpha: 0.539,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_3: {
@@ -3229,9 +3169,6 @@ export const dead = {
 				a: 5.777,
 				d: 4.147,
 				alpha: 0.285,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -3314,9 +3251,6 @@ export const dead = {
 				c: -5.731,
 				d: -2.013,
 				alpha: 0.406,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -3327,9 +3261,6 @@ export const dead = {
 				c: -0.919,
 				d: -3.322,
 				alpha: 0.445,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_3: {
@@ -3338,9 +3269,6 @@ export const dead = {
 				a: 6.111,
 				d: 4.475,
 				alpha: 0.219,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -3423,9 +3351,6 @@ export const dead = {
 				c: -5.432,
 				d: -2.634,
 				alpha: 0.348,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -3436,9 +3361,6 @@ export const dead = {
 				c: -0.589,
 				d: -3.759,
 				alpha: 0.359,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_3: {
@@ -3447,9 +3369,6 @@ export const dead = {
 				a: 6.401,
 				d: 4.76,
 				alpha: 0.16,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -3532,9 +3451,6 @@ export const dead = {
 				c: -4.961,
 				d: -3.196,
 				alpha: 0.297,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -3545,9 +3461,6 @@ export const dead = {
 				c: -0.222,
 				d: -4.142,
 				alpha: 0.285,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_3: {
@@ -3556,9 +3469,6 @@ export const dead = {
 				a: 6.646,
 				d: 5.001,
 				alpha: 0.109,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -3641,9 +3551,6 @@ export const dead = {
 				c: -4.307,
 				d: -3.708,
 				alpha: 0.25,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -3654,9 +3561,6 @@ export const dead = {
 				c: 0.121,
 				d: -4.472,
 				alpha: 0.219,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_3: {
@@ -3665,9 +3569,6 @@ export const dead = {
 				a: 6.847,
 				d: 5.198,
 				alpha: 0.07,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -3750,9 +3651,6 @@ export const dead = {
 				c: -3.584,
 				d: -4.138,
 				alpha: 0.207,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -3763,9 +3661,6 @@ export const dead = {
 				c: 0.496,
 				d: -4.75,
 				alpha: 0.16,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_3: {
@@ -3774,9 +3669,6 @@ export const dead = {
 				a: 7.003,
 				d: 5.352,
 				alpha: 0.039,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -3859,9 +3751,6 @@ export const dead = {
 				c: -2.791,
 				d: -4.498,
 				alpha: 0.168,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -3872,9 +3761,6 @@ export const dead = {
 				c: 0.861,
 				d: -4.978,
 				alpha: 0.109,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_3: {
@@ -3883,9 +3769,6 @@ export const dead = {
 				a: 7.114,
 				d: 5.461,
 				alpha: 0.02,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -3968,9 +3851,6 @@ export const dead = {
 				c: -1.998,
 				d: -4.784,
 				alpha: 0.133,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -3981,9 +3861,6 @@ export const dead = {
 				c: 1.164,
 				d: -5.159,
 				alpha: 0.07,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_3: {
@@ -3992,9 +3869,6 @@ export const dead = {
 				a: 7.181,
 				d: 5.527,
 				alpha: 0.004,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -4077,9 +3951,6 @@ export const dead = {
 				c: -1.211,
 				d: -5.007,
 				alpha: 0.102,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 10
 			},
 			fx_dust_2: {
@@ -4090,9 +3961,6 @@ export const dead = {
 				c: 1.425,
 				d: -5.297,
 				alpha: 0.039,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_3: {
@@ -4101,9 +3969,6 @@ export const dead = {
 				a: 7.204,
 				d: 5.549,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -4186,9 +4051,6 @@ export const dead = {
 				c: -0.491,
 				d: -5.173,
 				alpha: 0.074,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_2: {
@@ -4199,9 +4061,6 @@ export const dead = {
 				c: 1.633,
 				d: -5.392,
 				alpha: 0.02,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -4284,9 +4143,6 @@ export const dead = {
 				c: 0.138,
 				d: -5.291,
 				alpha: 0.051,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_2: {
@@ -4297,9 +4153,6 @@ export const dead = {
 				c: 1.748,
 				d: -5.449,
 				alpha: 0.004,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -4382,9 +4235,6 @@ export const dead = {
 				c: 0.692,
 				d: -5.37,
 				alpha: 0.031,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 9
 			},
 			fx_dust_2: {
@@ -4395,9 +4245,6 @@ export const dead = {
 				c: 1.801,
 				d: -5.469,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -4480,9 +4327,6 @@ export const dead = {
 				c: 1.122,
 				d: -5.422,
 				alpha: 0.02,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -4565,9 +4409,6 @@ export const dead = {
 				c: 1.42,
 				d: -5.455,
 				alpha: 0.008,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -4650,9 +4491,6 @@ export const dead = {
 				c: 1.615,
 				d: -5.471,
 				alpha: 0.004,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -4735,9 +4573,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -4820,9 +4655,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -4905,9 +4737,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -4990,9 +4819,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -5075,9 +4901,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -5160,9 +4983,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -5245,9 +5065,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -5330,9 +5147,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -5415,9 +5229,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -5500,9 +5311,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -5585,9 +5393,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -5670,9 +5475,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -5755,9 +5557,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -5840,9 +5639,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -5925,9 +5721,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -6010,9 +5803,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {
@@ -6095,9 +5885,6 @@ export const dead = {
 				c: 1.706,
 				d: -5.477,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 8
 			},
 			l_fin: {

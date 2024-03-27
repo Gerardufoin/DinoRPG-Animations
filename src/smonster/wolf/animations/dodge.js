@@ -14,9 +14,6 @@ export const dodge = {
 				b: -1.535,
 				c: 1.116,
 				d: 1.624,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -26,9 +23,6 @@ export const dodge = {
 				b: 0.835,
 				c: -0.835,
 				d: 2.082,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -38,9 +32,6 @@ export const dodge = {
 				b: -0.784,
 				c: 0.784,
 				d: 1.242,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -50,9 +41,6 @@ export const dodge = {
 				b: 0.026,
 				c: -0.026,
 				d: 1.836,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -62,9 +50,6 @@ export const dodge = {
 				b: -0.193,
 				c: 0.193,
 				d: 1.36,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -72,9 +57,6 @@ export const dodge = {
 				ty: 16.05,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -82,9 +64,6 @@ export const dodge = {
 				ty: 10.2,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -92,9 +71,6 @@ export const dodge = {
 				ty: -1.45,
 				a: 2.025,
 				d: 2.49,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -104,9 +80,6 @@ export const dodge = {
 				b: 0.59,
 				c: 0.59,
 				d: 1.248,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -116,9 +89,6 @@ export const dodge = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -128,9 +98,6 @@ export const dodge = {
 				b: -0.05,
 				c: 0.058,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -138,9 +105,6 @@ export const dodge = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -150,9 +114,6 @@ export const dodge = {
 				b: 0.828,
 				c: -0.828,
 				d: 0.776,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -162,9 +123,6 @@ export const dodge = {
 				b: -1.274,
 				c: 1.022,
 				d: 1.348,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -174,9 +132,6 @@ export const dodge = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -184,9 +139,6 @@ export const dodge = {
 				ty: 9.45,
 				a: 1.272,
 				d: 1.153,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -198,9 +150,6 @@ export const dodge = {
 				b: -0.668,
 				c: 0.486,
 				d: 1.905,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -210,9 +159,6 @@ export const dodge = {
 				b: 0.497,
 				c: -0.497,
 				d: 2.183,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -222,9 +168,6 @@ export const dodge = {
 				b: -0.337,
 				c: 0.337,
 				d: 1.427,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -234,9 +177,6 @@ export const dodge = {
 				b: -0.073,
 				c: 0.073,
 				d: 1.833,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -246,9 +186,6 @@ export const dodge = {
 				b: -0.482,
 				c: 0.482,
 				d: 1.283,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -258,9 +195,6 @@ export const dodge = {
 				b: -0.631,
 				c: 0.631,
 				d: 1.233,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -270,9 +204,6 @@ export const dodge = {
 				b: -0.443,
 				c: 0.581,
 				d: 0.973,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -282,9 +213,6 @@ export const dodge = {
 				b: 0.169,
 				c: -0.208,
 				d: 2.48,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -294,9 +222,6 @@ export const dodge = {
 				b: 0.127,
 				c: 0.127,
 				d: 1.373,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -306,9 +231,6 @@ export const dodge = {
 				b: -0.034,
 				c: -0.085,
 				d: 1.607,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -318,9 +240,6 @@ export const dodge = {
 				b: 0.072,
 				c: -0.05,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -330,9 +249,6 @@ export const dodge = {
 				b: -0.563,
 				c: 0.488,
 				d: 0.852,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -342,9 +258,6 @@ export const dodge = {
 				b: 0.891,
 				c: -0.891,
 				d: 0.699,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -354,9 +267,6 @@ export const dodge = {
 				b: -1.094,
 				c: 0.902,
 				d: 1.427,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -366,9 +276,6 @@ export const dodge = {
 				b: 0.554,
 				c: -0.687,
 				d: 1.782,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -378,9 +285,6 @@ export const dodge = {
 				b: -0.587,
 				c: 0.532,
 				d: 1.018,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -392,9 +296,6 @@ export const dodge = {
 				b: 0.264,
 				c: -0.192,
 				d: 1.956,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -404,9 +305,6 @@ export const dodge = {
 				b: 0.159,
 				c: -0.159,
 				d: 2.233,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -416,9 +314,6 @@ export const dodge = {
 				b: 0.142,
 				c: -0.142,
 				d: 1.459,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -428,9 +323,6 @@ export const dodge = {
 				b: -0.174,
 				c: 0.174,
 				d: 1.825,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -440,9 +332,6 @@ export const dodge = {
 				b: -0.754,
 				c: 0.754,
 				d: 1.144,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -452,9 +341,6 @@ export const dodge = {
 				b: -1.125,
 				c: 1.125,
 				d: 0.806,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -464,9 +350,6 @@ export const dodge = {
 				b: -0.763,
 				c: 1,
 				d: 0.533,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -476,9 +359,6 @@ export const dodge = {
 				b: 0.344,
 				c: -0.423,
 				d: 2.453,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -488,9 +368,6 @@ export const dodge = {
 				b: -0.347,
 				c: -0.347,
 				d: 1.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -500,9 +377,6 @@ export const dodge = {
 				b: -0.509,
 				c: 0.334,
 				d: 1.573,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -512,9 +386,6 @@ export const dodge = {
 				b: 0.2,
 				c: -0.159,
 				d: 1.263,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -524,9 +395,6 @@ export const dodge = {
 				b: -0.977,
 				c: 0.847,
 				d: 0.496,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -536,9 +404,6 @@ export const dodge = {
 				b: 0.948,
 				c: -0.948,
 				d: 0.623,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -548,9 +413,6 @@ export const dodge = {
 				b: -0.908,
 				c: 0.778,
 				d: 1.501,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -560,9 +422,6 @@ export const dodge = {
 				b: 0.142,
 				c: -0.299,
 				d: 1.887,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -572,9 +431,6 @@ export const dodge = {
 				b: -1.043,
 				c: 0.946,
 				d: 0.652,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		}

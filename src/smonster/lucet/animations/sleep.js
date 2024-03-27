@@ -65,11 +65,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -86,11 +81,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -207,11 +197,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -228,11 +213,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -349,11 +329,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -370,11 +345,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -494,11 +464,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -515,11 +480,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -639,11 +599,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -660,11 +615,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -784,11 +734,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -805,11 +750,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -929,11 +869,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -950,11 +885,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -1074,11 +1004,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -1095,11 +1020,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -1219,11 +1139,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -1240,11 +1155,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -1364,11 +1274,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -1385,11 +1290,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -1509,11 +1409,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -1530,11 +1425,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -1654,11 +1544,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -1675,11 +1560,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -1799,11 +1679,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -1820,11 +1695,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -1944,11 +1814,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -1965,11 +1830,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -2089,11 +1949,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -2110,11 +1965,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -2234,11 +2084,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -2255,11 +2100,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -2379,11 +2219,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -2400,11 +2235,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -2524,11 +2354,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -2545,11 +2370,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -2669,11 +2489,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -2690,11 +2505,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -2814,11 +2624,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -2835,11 +2640,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -2959,11 +2759,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -2980,11 +2775,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -3104,11 +2894,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -3125,11 +2910,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -3249,11 +3029,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -3270,11 +3045,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -3394,11 +3164,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -3415,11 +3180,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -3539,11 +3299,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -3560,11 +3315,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -3684,11 +3434,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -3705,11 +3450,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -3829,11 +3569,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -3850,11 +3585,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -3974,11 +3704,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -3995,11 +3720,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -4119,11 +3839,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -4140,11 +3855,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -4264,11 +3974,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -4285,11 +3990,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -4409,11 +4109,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -4430,11 +4125,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -4554,11 +4244,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -4575,11 +4260,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -4699,11 +4379,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -4720,11 +4395,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -4844,11 +4514,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -4865,11 +4530,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -4989,11 +4649,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -5010,11 +4665,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -5134,11 +4784,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -5155,11 +4800,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -5279,11 +4919,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -5300,11 +4935,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -5424,11 +5054,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -5445,11 +5070,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -5569,11 +5189,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -5590,11 +5205,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -5714,11 +5324,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -5735,11 +5340,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -5859,11 +5459,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -5880,11 +5475,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -6004,11 +5594,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -6025,11 +5610,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -6149,11 +5729,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -6170,11 +5745,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -6294,11 +5864,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -6315,11 +5880,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -6439,11 +5999,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -6460,11 +6015,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -6584,11 +6134,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -6605,11 +6150,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -6729,11 +6269,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -6750,11 +6285,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -6874,11 +6404,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -6895,11 +6420,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -7019,11 +6539,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -7040,11 +6555,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -7164,11 +6674,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -7185,11 +6690,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -7309,11 +6809,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -7330,11 +6825,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -7454,11 +6944,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -7475,11 +6960,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -7599,11 +7079,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -7620,11 +7095,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -7744,11 +7214,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -7765,11 +7230,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -7889,11 +7349,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -7910,11 +7365,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -8034,11 +7484,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -8055,11 +7500,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -8179,11 +7619,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -8200,11 +7635,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -8324,11 +7754,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -8345,11 +7770,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -8469,11 +7889,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -8490,11 +7905,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -8614,11 +8024,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -8635,11 +8040,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -8759,11 +8159,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -8780,11 +8175,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -8904,11 +8294,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -8925,11 +8310,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -9049,11 +8429,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -9070,11 +8445,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -9194,11 +8564,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -9215,11 +8580,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -9339,11 +8699,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -9360,11 +8715,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -9484,11 +8834,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -9505,11 +8850,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -9629,11 +8969,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -9650,11 +8985,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -9774,11 +9104,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -9795,11 +9120,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -9919,11 +9239,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -9940,11 +9255,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -10064,11 +9374,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -10085,11 +9390,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -10209,11 +9509,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -10230,11 +9525,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -10354,11 +9644,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -10375,11 +9660,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -10499,11 +9779,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -10520,11 +9795,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -10644,11 +9914,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -10665,11 +9930,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -10789,11 +10049,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -10810,11 +10065,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -10934,11 +10184,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -10955,11 +10200,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -11079,11 +10319,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -11100,11 +10335,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -11224,11 +10454,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -11245,11 +10470,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -11345,11 +10565,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -11366,11 +10581,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {
@@ -11466,11 +10676,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 4
 			},
 			l_wing: {
@@ -11487,11 +10692,6 @@ export const sleep = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 3
 			},
 			l_arm: {

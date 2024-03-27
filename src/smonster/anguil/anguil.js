@@ -40,12 +40,12 @@ export const anguil = {
 		blur: { x: 1, y: 1 }
 	},
 	parts: {
-		l_t_arm: parts.t_arm,
-		r_t_arm: parts.t_arm,
-		l_b_arm: parts.b_arm,
-		r_b_arm: parts.b_arm,
-		l_scythe: parts.scythe,
-		r_scythe: parts.scythe,
+		l_t_arm: parts.l_t_arm,
+		r_t_arm: parts.r_t_arm,
+		l_b_arm: parts.l_b_arm,
+		r_b_arm: parts.r_b_arm,
+		l_scythe: parts.l_scythe,
+		r_scythe: parts.r_scythe,
 		b_tail: parts.b_tail,
 		t_tail: parts.t_tail,
 		t_body: parts.t_body,

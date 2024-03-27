@@ -105,11 +105,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 6
 			},
 			l_wing: {
@@ -126,11 +121,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 5
 			},
 			r_light: {
@@ -285,11 +275,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 6
 			},
 			l_wing: {
@@ -306,11 +291,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 5
 			},
 			r_light: {
@@ -468,11 +448,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 6
 			},
 			l_wing: {
@@ -489,11 +464,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 5
 			},
 			r_light: {
@@ -639,11 +609,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 6
 			},
 			l_wing: {
@@ -660,11 +625,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 5
 			},
 			r_light: {
@@ -810,11 +770,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 6
 			},
 			l_wing: {
@@ -831,11 +786,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 5
 			},
 			r_light: {
@@ -983,11 +933,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 6
 			},
 			l_wing: {
@@ -1004,11 +949,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 5
 			},
 			r_light: {
@@ -1156,11 +1096,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 6
 			},
 			l_wing: {
@@ -1177,11 +1112,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 5
 			},
 			r_light: {
@@ -1329,11 +1259,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 6
 			},
 			l_wing: {
@@ -1350,11 +1275,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 5
 			},
 			r_light: {
@@ -1502,11 +1422,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 6
 			},
 			l_wing: {
@@ -1523,11 +1438,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 5
 			},
 			r_light: {
@@ -1675,11 +1585,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 6
 			},
 			l_wing: {
@@ -1696,11 +1601,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 5
 			},
 			r_light: {
@@ -1848,11 +1748,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 6
 			},
 			l_wing: {
@@ -1869,11 +1764,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 5
 			},
 			r_light: {
@@ -2016,11 +1906,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 6
 			},
 			l_wing: {
@@ -2037,11 +1922,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 5
 			},
 			r_light: {
@@ -2163,11 +2043,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 6
 			},
 			l_wing: {
@@ -2184,11 +2059,6 @@ export const land = {
 				acc: 11,
 				acs: 8,
 				ach: 180,
-				glx: 5,
-				gly: 5,
-				glc: '#ffffff',
-				glq: 1,
-				gls: 1,
 				l: 5
 			},
 			r_light: {

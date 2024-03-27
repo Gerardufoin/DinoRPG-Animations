@@ -14,9 +14,6 @@ export const dead = {
 				b: 2.702,
 				c: -1.965,
 				d: -0.056,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_lower_leg: {
@@ -26,9 +23,6 @@ export const dead = {
 				b: 0.282,
 				c: -0.282,
 				d: 2.21,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_b_upper_leg: {
@@ -38,9 +32,6 @@ export const dead = {
 				b: 0.968,
 				c: -0.968,
 				d: 1.095,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -50,9 +41,6 @@ export const dead = {
 				b: 0.335,
 				c: -0.335,
 				d: 1.794,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			head: {
@@ -62,9 +50,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.586,
 				d: 1.238,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_f_paw: {
@@ -74,9 +59,6 @@ export const dead = {
 				b: -1.281,
 				c: 1.281,
 				d: 0.512,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_b_paw: {
@@ -86,9 +68,6 @@ export const dead = {
 				b: -0.574,
 				c: 0.752,
 				d: 0.847,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			upper_body: {
@@ -98,9 +77,6 @@ export const dead = {
 				b: 1.657,
 				c: -2.038,
 				d: 1.416,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -110,9 +86,6 @@ export const dead = {
 				b: 0.907,
 				c: -0.905,
 				d: 1.32,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -122,9 +95,6 @@ export const dead = {
 				b: 0.232,
 				c: 0.232,
 				d: 1.356,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_upper_leg: {
@@ -134,9 +104,6 @@ export const dead = {
 				b: 0.764,
 				c: -0.65,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_paw: {
@@ -146,9 +113,6 @@ export const dead = {
 				b: 0.139,
 				c: -0.12,
 				d: 0.972,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -158,9 +122,6 @@ export const dead = {
 				b: 0.899,
 				c: -0.899,
 				d: 0.685,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -170,9 +131,6 @@ export const dead = {
 				b: 2.314,
 				c: -1.659,
 				d: -0.3,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -182,9 +140,6 @@ export const dead = {
 				b: 1.813,
 				c: -1.792,
 				d: 0.637,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -194,9 +149,6 @@ export const dead = {
 				b: 1.003,
 				c: -0.909,
 				d: 0.695,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -215,9 +167,6 @@ export const dead = {
 				b: 2.702,
 				c: -1.965,
 				d: -0.056,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_lower_leg: {
@@ -227,9 +176,6 @@ export const dead = {
 				b: 0.282,
 				c: -0.282,
 				d: 2.21,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_b_upper_leg: {
@@ -239,9 +185,6 @@ export const dead = {
 				b: 0.968,
 				c: -0.968,
 				d: 1.095,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -251,9 +194,6 @@ export const dead = {
 				b: 0.335,
 				c: -0.335,
 				d: 1.794,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			head: {
@@ -263,9 +203,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.586,
 				d: 1.238,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_f_paw: {
@@ -275,9 +212,6 @@ export const dead = {
 				b: -1.281,
 				c: 1.281,
 				d: 0.512,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_b_paw: {
@@ -287,9 +221,6 @@ export const dead = {
 				b: -0.574,
 				c: 0.752,
 				d: 0.847,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			upper_body: {
@@ -299,9 +230,6 @@ export const dead = {
 				b: 1.657,
 				c: -2.038,
 				d: 1.416,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -311,9 +239,6 @@ export const dead = {
 				b: 0.907,
 				c: -0.905,
 				d: 1.32,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -323,9 +248,6 @@ export const dead = {
 				b: 0.232,
 				c: 0.232,
 				d: 1.356,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_upper_leg: {
@@ -335,9 +257,6 @@ export const dead = {
 				b: 0.764,
 				c: -0.65,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_paw: {
@@ -347,9 +266,6 @@ export const dead = {
 				b: 0.139,
 				c: -0.12,
 				d: 0.972,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -359,9 +275,6 @@ export const dead = {
 				b: 0.899,
 				c: -0.899,
 				d: 0.685,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -371,9 +284,6 @@ export const dead = {
 				b: 2.314,
 				c: -1.659,
 				d: -0.3,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -383,9 +293,6 @@ export const dead = {
 				b: 1.813,
 				c: -1.792,
 				d: 0.637,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -395,9 +302,6 @@ export const dead = {
 				b: 1.003,
 				c: -0.909,
 				d: 0.695,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -416,9 +320,6 @@ export const dead = {
 				b: 0.254,
 				c: -0.254,
 				d: -1.806,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_paw: {
@@ -428,9 +329,6 @@ export const dead = {
 				b: 0.264,
 				c: -0.346,
 				d: -1.076,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -440,9 +338,6 @@ export const dead = {
 				b: 2.086,
 				c: -1.517,
 				d: -1.248,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -452,9 +347,6 @@ export const dead = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.103,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -464,9 +356,6 @@ export const dead = {
 				b: -0.181,
 				c: 0.181,
 				d: -1.451,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -476,9 +365,6 @@ export const dead = {
 				b: 0.893,
 				c: -0.893,
 				d: -1.039,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_b_paw: {
@@ -488,9 +374,6 @@ export const dead = {
 				b: 1.152,
 				c: -1.152,
 				d: -0.764,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			upper_body: {
@@ -500,9 +383,6 @@ export const dead = {
 				b: 0.377,
 				c: -0.463,
 				d: -2.438,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			lower_body: {
@@ -512,9 +392,6 @@ export const dead = {
 				b: -0.35,
 				c: -0.35,
 				d: -1.329,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_lower_leg: {
@@ -524,9 +401,6 @@ export const dead = {
 				b: 0.781,
 				c: -0.581,
 				d: -1.496,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_upper_leg: {
@@ -536,9 +410,6 @@ export const dead = {
 				b: 0.831,
 				c: -0.732,
 				d: -1.038,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_paw: {
@@ -548,9 +419,6 @@ export const dead = {
 				b: 0.85,
 				c: -0.737,
 				d: -0.649,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -560,9 +428,6 @@ export const dead = {
 				b: 0.825,
 				c: -0.825,
 				d: -0.772,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -572,9 +437,6 @@ export const dead = {
 				b: -1.529,
 				c: 0.95,
 				d: -1.393,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -584,9 +446,6 @@ export const dead = {
 				b: 1.717,
 				c: -1.549,
 				d: -1.109,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -596,9 +455,6 @@ export const dead = {
 				b: 1.255,
 				c: -1.138,
 				d: -0.15,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -617,9 +473,6 @@ export const dead = {
 				b: 0.254,
 				c: -0.254,
 				d: -1.806,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_paw: {
@@ -629,9 +482,6 @@ export const dead = {
 				b: 0.264,
 				c: -0.346,
 				d: -1.076,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -641,9 +491,6 @@ export const dead = {
 				b: 2.086,
 				c: -1.517,
 				d: -1.248,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -653,9 +500,6 @@ export const dead = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.103,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -665,9 +509,6 @@ export const dead = {
 				b: -0.181,
 				c: 0.181,
 				d: -1.451,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -677,9 +518,6 @@ export const dead = {
 				b: 0.893,
 				c: -0.893,
 				d: -1.039,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_b_paw: {
@@ -689,9 +527,6 @@ export const dead = {
 				b: 1.152,
 				c: -1.152,
 				d: -0.764,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			upper_body: {
@@ -701,9 +536,6 @@ export const dead = {
 				b: 0.377,
 				c: -0.463,
 				d: -2.438,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			lower_body: {
@@ -713,9 +545,6 @@ export const dead = {
 				b: -0.35,
 				c: -0.35,
 				d: -1.329,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_lower_leg: {
@@ -725,9 +554,6 @@ export const dead = {
 				b: 0.781,
 				c: -0.581,
 				d: -1.496,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_upper_leg: {
@@ -737,9 +563,6 @@ export const dead = {
 				b: 0.831,
 				c: -0.732,
 				d: -1.038,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_paw: {
@@ -749,9 +572,6 @@ export const dead = {
 				b: 0.85,
 				c: -0.737,
 				d: -0.649,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -761,9 +581,6 @@ export const dead = {
 				b: 0.825,
 				c: -0.825,
 				d: -0.772,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -773,9 +590,6 @@ export const dead = {
 				b: -1.529,
 				c: 0.95,
 				d: -1.393,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -785,9 +599,6 @@ export const dead = {
 				b: 1.717,
 				c: -1.549,
 				d: -1.109,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -797,9 +608,6 @@ export const dead = {
 				b: 1.255,
 				c: -1.138,
 				d: -0.15,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -818,9 +626,6 @@ export const dead = {
 				b: 0.622,
 				c: 0.68,
 				d: 0.598,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_2: {
@@ -828,9 +633,6 @@ export const dead = {
 				ty: 16.45,
 				a: -2.44,
 				d: 0.692,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -840,9 +642,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -852,9 +651,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -864,9 +660,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -876,9 +669,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -888,9 +678,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -900,9 +687,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -912,9 +696,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -924,9 +705,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -936,9 +714,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -948,9 +723,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -960,9 +732,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -972,9 +741,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -984,9 +750,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -996,9 +759,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -1008,9 +768,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -1020,9 +777,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -1042,9 +796,6 @@ export const dead = {
 				c: 1.609,
 				d: 0.845,
 				alpha: 0.91,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_2: {
@@ -1053,9 +804,6 @@ export const dead = {
 				a: -3.16,
 				d: 1.4,
 				alpha: 0.871,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -1065,9 +813,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -1077,9 +822,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1089,9 +831,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -1101,9 +840,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -1113,9 +849,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -1125,9 +858,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -1137,9 +867,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -1149,9 +876,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -1161,9 +885,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -1173,9 +894,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -1185,9 +903,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -1197,9 +912,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -1209,9 +921,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -1221,9 +930,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -1233,9 +939,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -1245,9 +948,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -1267,9 +967,6 @@ export const dead = {
 				c: 2.724,
 				d: 0.878,
 				alpha: 0.828,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_2: {
@@ -1278,9 +975,6 @@ export const dead = {
 				a: -3.832,
 				d: 2.06,
 				alpha: 0.75,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -1290,9 +984,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -1302,9 +993,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1314,9 +1002,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -1326,9 +1011,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -1338,9 +1020,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -1350,9 +1029,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -1362,9 +1038,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -1374,9 +1047,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -1386,9 +1056,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -1398,9 +1065,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -1410,9 +1074,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -1422,9 +1083,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -1434,9 +1092,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -1446,9 +1101,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -1458,9 +1110,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -1470,9 +1119,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -1492,9 +1138,6 @@ export const dead = {
 				c: 3.858,
 				d: 0.697,
 				alpha: 0.746,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 19
 			},
 			fx_dust_2: {
@@ -1504,9 +1147,6 @@ export const dead = {
 				b: 0.622,
 				c: 0.68,
 				d: -0.598,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_3: {
@@ -1515,9 +1155,6 @@ export const dead = {
 				a: -4.453,
 				d: 2.671,
 				alpha: 0.641,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -1527,9 +1164,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -1539,9 +1173,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1551,9 +1182,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -1563,9 +1191,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -1575,9 +1200,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -1587,9 +1209,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -1599,9 +1218,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -1611,9 +1227,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -1623,9 +1236,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -1635,9 +1245,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -1647,9 +1254,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -1659,9 +1263,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -1671,9 +1272,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -1683,9 +1281,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -1695,9 +1290,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -1707,9 +1299,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -1729,9 +1318,6 @@ export const dead = {
 				c: 4.881,
 				d: 0.318,
 				alpha: 0.668,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 19
 			},
 			fx_dust_2: {
@@ -1742,9 +1328,6 @@ export const dead = {
 				c: 1.152,
 				d: -1.268,
 				alpha: 0.871,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_3: {
@@ -1753,9 +1336,6 @@ export const dead = {
 				a: -5.025,
 				d: 3.233,
 				alpha: 0.539,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -1765,9 +1345,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -1777,9 +1354,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1789,9 +1363,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -1801,9 +1372,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -1813,9 +1381,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -1825,9 +1390,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -1837,9 +1399,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -1849,9 +1408,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -1861,9 +1417,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -1873,9 +1426,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -1885,9 +1435,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -1897,9 +1444,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -1909,9 +1453,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -1921,9 +1462,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -1933,9 +1471,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -1945,9 +1480,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -1967,9 +1499,6 @@ export const dead = {
 				c: 5.687,
 				d: -0.204,
 				alpha: 0.598,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 19
 			},
 			fx_dust_2: {
@@ -1980,9 +1509,6 @@ export const dead = {
 				c: 1.386,
 				d: -1.931,
 				alpha: 0.75,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_3: {
@@ -1991,9 +1517,6 @@ export const dead = {
 				a: -5.547,
 				d: 3.746,
 				alpha: 0.445,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -2003,9 +1526,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -2015,9 +1535,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -2027,9 +1544,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -2039,9 +1553,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -2051,9 +1562,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -2063,9 +1571,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -2075,9 +1580,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -2087,9 +1589,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -2099,9 +1598,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -2111,9 +1607,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -2123,9 +1616,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -2135,9 +1625,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -2147,9 +1634,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -2159,9 +1643,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -2171,9 +1652,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -2183,9 +1661,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -2205,9 +1680,6 @@ export const dead = {
 				c: 6.22,
 				d: -0.838,
 				alpha: 0.527,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 19
 			},
 			fx_dust_2: {
@@ -2218,9 +1690,6 @@ export const dead = {
 				c: 1.424,
 				d: -2.566,
 				alpha: 0.641,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_3: {
@@ -2229,9 +1698,6 @@ export const dead = {
 				a: -6.02,
 				d: 4.21,
 				alpha: 0.359,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -2241,9 +1707,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -2253,9 +1716,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -2265,9 +1725,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -2277,9 +1734,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -2289,9 +1743,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -2301,9 +1752,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -2313,9 +1761,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -2325,9 +1770,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -2337,9 +1779,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -2349,9 +1788,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -2361,9 +1797,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -2373,9 +1806,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -2385,9 +1815,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -2397,9 +1824,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -2409,9 +1833,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -2421,9 +1842,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -2443,9 +1861,6 @@ export const dead = {
 				c: 6.45,
 				d: -1.536,
 				alpha: 0.465,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 19
 			},
 			fx_dust_2: {
@@ -2456,9 +1871,6 @@ export const dead = {
 				c: 1.292,
 				d: -3.161,
 				alpha: 0.539,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_3: {
@@ -2467,9 +1879,6 @@ export const dead = {
 				a: -6.443,
 				d: 4.625,
 				alpha: 0.285,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -2479,9 +1888,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -2491,9 +1897,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -2503,9 +1906,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -2515,9 +1915,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -2527,9 +1924,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -2539,9 +1933,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -2551,9 +1942,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -2563,9 +1951,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -2575,9 +1960,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -2587,9 +1969,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -2599,9 +1978,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -2611,9 +1987,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -2623,9 +1996,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -2635,9 +2005,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -2647,9 +2014,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -2659,9 +2023,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -2681,9 +2042,6 @@ export const dead = {
 				c: 6.391,
 				d: -2.245,
 				alpha: 0.406,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 19
 			},
 			fx_dust_2: {
@@ -2694,9 +2052,6 @@ export const dead = {
 				c: 1.025,
 				d: -3.705,
 				alpha: 0.445,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_3: {
@@ -2705,9 +2060,6 @@ export const dead = {
 				a: -6.816,
 				d: 4.991,
 				alpha: 0.219,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -2717,9 +2069,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -2729,9 +2078,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -2741,9 +2087,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -2753,9 +2096,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -2765,9 +2105,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -2777,9 +2114,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -2789,9 +2123,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -2801,9 +2132,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -2813,9 +2141,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -2825,9 +2150,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -2837,9 +2159,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -2849,9 +2168,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -2861,9 +2177,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -2873,9 +2186,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -2885,9 +2195,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -2897,9 +2204,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -2919,9 +2223,6 @@ export const dead = {
 				c: 6.058,
 				d: -2.937,
 				alpha: 0.348,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 19
 			},
 			fx_dust_2: {
@@ -2932,9 +2233,6 @@ export const dead = {
 				c: 0.656,
 				d: -4.193,
 				alpha: 0.359,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_3: {
@@ -2943,9 +2241,6 @@ export const dead = {
 				a: -7.139,
 				d: 5.309,
 				alpha: 0.16,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -2955,9 +2250,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -2967,9 +2259,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -2979,9 +2268,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -2991,9 +2277,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -3003,9 +2286,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -3015,9 +2295,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -3027,9 +2304,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -3039,9 +2313,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -3051,9 +2322,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -3063,9 +2331,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -3075,9 +2340,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -3087,9 +2349,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -3099,9 +2358,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -3111,9 +2367,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -3123,9 +2376,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -3135,9 +2385,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -3157,9 +2404,6 @@ export const dead = {
 				c: 5.533,
 				d: -3.564,
 				alpha: 0.297,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 19
 			},
 			fx_dust_2: {
@@ -3170,9 +2414,6 @@ export const dead = {
 				c: 0.247,
 				d: -4.62,
 				alpha: 0.285,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_3: {
@@ -3181,9 +2422,6 @@ export const dead = {
 				a: -7.412,
 				d: 5.578,
 				alpha: 0.109,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -3193,9 +2431,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -3205,9 +2440,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -3217,9 +2449,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -3229,9 +2458,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -3241,9 +2467,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -3253,9 +2476,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -3265,9 +2485,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -3277,9 +2494,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -3289,9 +2503,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -3301,9 +2512,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -3313,9 +2521,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -3325,9 +2530,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -3337,9 +2539,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -3349,9 +2548,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -3361,9 +2557,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -3373,9 +2566,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -3395,9 +2585,6 @@ export const dead = {
 				c: 4.803,
 				d: -4.136,
 				alpha: 0.25,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 19
 			},
 			fx_dust_2: {
@@ -3408,9 +2595,6 @@ export const dead = {
 				c: -0.135,
 				d: -4.988,
 				alpha: 0.219,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_3: {
@@ -3419,9 +2603,6 @@ export const dead = {
 				a: -7.636,
 				d: 5.798,
 				alpha: 0.07,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -3431,9 +2612,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -3443,9 +2621,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -3455,9 +2630,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -3467,9 +2639,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -3479,9 +2648,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -3491,9 +2657,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -3503,9 +2666,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -3515,9 +2675,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -3527,9 +2684,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -3539,9 +2693,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -3551,9 +2702,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -3563,9 +2711,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -3575,9 +2720,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -3587,9 +2729,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -3599,9 +2738,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -3611,9 +2747,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -3633,9 +2766,6 @@ export const dead = {
 				c: 3.997,
 				d: -4.615,
 				alpha: 0.207,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 19
 			},
 			fx_dust_2: {
@@ -3646,9 +2776,6 @@ export const dead = {
 				c: -0.554,
 				d: -5.298,
 				alpha: 0.16,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_3: {
@@ -3657,9 +2784,6 @@ export const dead = {
 				a: -7.81,
 				d: 5.969,
 				alpha: 0.039,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -3669,9 +2793,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -3681,9 +2802,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -3693,9 +2811,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -3705,9 +2820,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -3717,9 +2829,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -3729,9 +2838,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -3741,9 +2847,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -3753,9 +2856,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -3765,9 +2865,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -3777,9 +2874,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -3789,9 +2883,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -3801,9 +2892,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -3813,9 +2901,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -3825,9 +2910,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -3837,9 +2919,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -3849,9 +2928,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -3871,9 +2947,6 @@ export const dead = {
 				c: 3.113,
 				d: -5.016,
 				alpha: 0.168,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 19
 			},
 			fx_dust_2: {
@@ -3884,9 +2957,6 @@ export const dead = {
 				c: -0.96,
 				d: -5.552,
 				alpha: 0.109,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_3: {
@@ -3895,9 +2965,6 @@ export const dead = {
 				a: -7.934,
 				d: 6.091,
 				alpha: 0.02,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -3907,9 +2974,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -3919,9 +2983,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -3931,9 +2992,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -3943,9 +3001,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -3955,9 +3010,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -3967,9 +3019,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -3979,9 +3028,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -3991,9 +3037,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -4003,9 +3046,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -4015,9 +3055,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -4027,9 +3064,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -4039,9 +3073,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -4051,9 +3082,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -4063,9 +3091,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -4075,9 +3100,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -4087,9 +3109,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -4109,9 +3128,6 @@ export const dead = {
 				c: 2.229,
 				d: -5.336,
 				alpha: 0.133,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 19
 			},
 			fx_dust_2: {
@@ -4122,9 +3138,6 @@ export const dead = {
 				c: -1.298,
 				d: -5.754,
 				alpha: 0.07,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_3: {
@@ -4133,9 +3146,6 @@ export const dead = {
 				a: -8.009,
 				d: 6.164,
 				alpha: 0.004,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -4145,9 +3155,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -4157,9 +3164,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -4169,9 +3173,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -4181,9 +3182,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -4193,9 +3191,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -4205,9 +3200,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -4217,9 +3209,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -4229,9 +3218,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -4241,9 +3227,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -4253,9 +3236,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -4265,9 +3245,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -4277,9 +3254,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -4289,9 +3263,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -4301,9 +3272,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -4313,9 +3281,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -4325,9 +3290,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -4347,9 +3309,6 @@ export const dead = {
 				c: 1.351,
 				d: -5.585,
 				alpha: 0.102,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 19
 			},
 			fx_dust_2: {
@@ -4360,9 +3319,6 @@ export const dead = {
 				c: -1.589,
 				d: -5.908,
 				alpha: 0.039,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_3: {
@@ -4371,9 +3327,6 @@ export const dead = {
 				a: -8.034,
 				d: 6.189,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -4383,9 +3336,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -4395,9 +3345,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -4407,9 +3354,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -4419,9 +3363,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -4431,9 +3372,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -4443,9 +3381,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -4455,9 +3390,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -4467,9 +3399,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -4479,9 +3408,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -4491,9 +3417,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -4503,9 +3426,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -4515,9 +3435,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -4527,9 +3444,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -4539,9 +3453,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -4551,9 +3462,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -4563,9 +3471,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -4585,9 +3490,6 @@ export const dead = {
 				c: 0.547,
 				d: -5.769,
 				alpha: 0.074,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_2: {
@@ -4598,9 +3500,6 @@ export const dead = {
 				c: -1.822,
 				d: -6.013,
 				alpha: 0.02,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -4610,9 +3509,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -4622,9 +3518,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -4634,9 +3527,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -4646,9 +3536,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -4658,9 +3545,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -4670,9 +3554,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -4682,9 +3563,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -4694,9 +3572,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -4706,9 +3581,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -4718,9 +3590,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -4730,9 +3599,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -4742,9 +3608,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -4754,9 +3617,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -4766,9 +3626,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -4778,9 +3635,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -4790,9 +3644,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -4812,9 +3663,6 @@ export const dead = {
 				c: -0.154,
 				d: -5.901,
 				alpha: 0.051,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_2: {
@@ -4825,9 +3673,6 @@ export const dead = {
 				c: -1.949,
 				d: -6.077,
 				alpha: 0.004,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -4837,9 +3682,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -4849,9 +3691,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -4861,9 +3700,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -4873,9 +3709,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -4885,9 +3718,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -4897,9 +3727,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -4909,9 +3736,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -4921,9 +3745,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -4933,9 +3754,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -4945,9 +3763,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -4957,9 +3772,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -4969,9 +3781,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -4981,9 +3790,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -4993,9 +3799,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -5005,9 +3808,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -5017,9 +3817,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -5039,9 +3836,6 @@ export const dead = {
 				c: -0.771,
 				d: -5.989,
 				alpha: 0.031,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 18
 			},
 			fx_dust_2: {
@@ -5052,9 +3846,6 @@ export const dead = {
 				c: -2.009,
 				d: -6.1,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -5064,9 +3855,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -5076,9 +3864,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -5088,9 +3873,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -5100,9 +3882,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -5112,9 +3891,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -5124,9 +3900,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -5136,9 +3909,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -5148,9 +3918,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -5160,9 +3927,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -5172,9 +3936,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -5184,9 +3945,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -5196,9 +3954,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -5208,9 +3963,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -5220,9 +3972,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -5232,9 +3981,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -5244,9 +3990,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -5266,9 +4009,6 @@ export const dead = {
 				c: -1.252,
 				d: -6.048,
 				alpha: 0.02,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -5278,9 +4018,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -5290,9 +4027,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -5302,9 +4036,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -5314,9 +4045,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -5326,9 +4054,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -5338,9 +4063,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -5350,9 +4072,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -5362,9 +4081,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -5374,9 +4090,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -5386,9 +4099,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -5398,9 +4108,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -5410,9 +4117,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -5422,9 +4126,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -5434,9 +4135,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -5446,9 +4144,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -5458,9 +4153,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -5480,9 +4172,6 @@ export const dead = {
 				c: -1.584,
 				d: -6.084,
 				alpha: 0.008,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -5492,9 +4181,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -5504,9 +4190,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -5516,9 +4199,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -5528,9 +4208,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -5540,9 +4217,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -5552,9 +4226,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -5564,9 +4235,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -5576,9 +4244,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -5588,9 +4253,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -5600,9 +4262,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -5612,9 +4271,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -5624,9 +4280,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -5636,9 +4289,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -5648,9 +4298,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -5660,9 +4307,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -5672,9 +4316,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -5694,9 +4335,6 @@ export const dead = {
 				c: -1.801,
 				d: -6.102,
 				alpha: 0.004,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -5706,9 +4344,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -5718,9 +4353,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -5730,9 +4362,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -5742,9 +4371,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -5754,9 +4380,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -5766,9 +4389,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -5778,9 +4398,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -5790,9 +4407,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -5802,9 +4416,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -5814,9 +4425,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -5826,9 +4434,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -5838,9 +4443,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -5850,9 +4452,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -5862,9 +4461,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -5874,9 +4470,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -5886,9 +4479,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {
@@ -5908,9 +4498,6 @@ export const dead = {
 				c: -1.903,
 				d: -6.109,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 17
 			},
 			l_f_paw: {
@@ -5920,9 +4507,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 1.363,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 16
 			},
 			l_f_upper_leg: {
@@ -5932,9 +4516,6 @@ export const dead = {
 				b: 2.226,
 				c: -2.226,
 				d: 0.245,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -5944,9 +4525,6 @@ export const dead = {
 				b: -0.428,
 				c: 0.311,
 				d: -1.942,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_lower_leg: {
@@ -5956,9 +4534,6 @@ export const dead = {
 				b: 1.831,
 				c: -1.831,
 				d: 0.055,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_upper_leg: {
@@ -5968,9 +4543,6 @@ export const dead = {
 				b: 0.165,
 				c: -0.165,
 				d: -1.457,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			l_b_paw: {
@@ -5980,9 +4552,6 @@ export const dead = {
 				b: 0.864,
 				c: -1.133,
 				d: 0.05,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -5992,9 +4561,6 @@ export const dead = {
 				b: 0.024,
 				c: -0.024,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			lower_body: {
@@ -6004,9 +4570,6 @@ export const dead = {
 				b: 1.177,
 				c: 1.447,
 				d: 2.02,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			r_b_lower_leg: {
@@ -6016,9 +4579,6 @@ export const dead = {
 				b: 1.743,
 				c: -1.573,
 				d: 0.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			r_b_upper_leg: {
@@ -6028,9 +4588,6 @@ export const dead = {
 				b: 0.586,
 				c: -0.585,
 				d: -1.303,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_paw: {
@@ -6040,9 +4597,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.851,
 				d: 0.492,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			head_dead: {
@@ -6052,9 +4606,6 @@ export const dead = {
 				b: 0.383,
 				c: 0.383,
 				d: 1.316,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			tail: {
@@ -6064,9 +4615,6 @@ export const dead = {
 				b: -0.198,
 				c: -0.198,
 				d: 1.114,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_f_upper_leg: {
@@ -6076,9 +4624,6 @@ export const dead = {
 				b: 1.398,
 				c: -1.103,
 				d: -1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_lower_leg: {
@@ -6088,9 +4633,6 @@ export const dead = {
 				b: 1.986,
 				c: -1.909,
 				d: 0.077,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_paw: {
@@ -6100,9 +4642,6 @@ export const dead = {
 				b: 1.032,
 				c: -0.935,
 				d: 0.67,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			shade: {

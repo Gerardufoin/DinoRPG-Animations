@@ -1,6 +1,6 @@
 import { ref } from '../references.js';
 
-// 1454
+// sdino 1454
 export let fx_slash = [
 	{
 		parts: {
@@ -31,7 +31,7 @@ export let fx_slash = [
 			]
 		},
 		animation: {
-			id: 'fx_slash',
+			id: 'fx_slash_sdino',
 			frames: [
 				{
 					fx_slash_1: {}

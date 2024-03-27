@@ -1,47 +1,60 @@
 // @ts-check
 import { ref } from '../references.js';
 
+const color = {
+	r: -82,
+	g: -97,
+	b: -82
+};
+
 export const parts = {
 	// 84
 	paw: [
 		{
-			ref: ref.wolf.paw
+			ref: ref.wolf.paw,
+			colorOffset: color
 		}
 	],
 	// 86
 	leg_1: [
 		{
-			ref: ref.wolf.leg_1
+			ref: ref.wolf.leg_1,
+			colorOffset: color
 		}
 	],
 	// 88
 	tail: [
 		{
-			ref: ref.wolf.tail
+			ref: ref.wolf.tail,
+			colorOffset: color
 		}
 	],
 	// 90
 	leg_2: [
 		{
-			ref: ref.wolf.leg_2
+			ref: ref.wolf.leg_2,
+			colorOffset: color
 		}
 	],
 	// 92
 	body: [
 		{
-			ref: ref.wolf.body
+			ref: ref.wolf.body,
+			colorOffset: color
 		}
 	],
 	// 94
 	head: [
 		{
-			ref: ref.wolf.head
+			ref: ref.wolf.head,
+			colorOffset: color
 		}
 	],
 	// 111
 	head_dead: [
 		{
-			ref: ref.wolf.head_dead
+			ref: ref.wolf.head_dead,
+			colorOffset: color
 		}
 	],
 	sleep_bubble: [

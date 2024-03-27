@@ -75,17 +75,11 @@ export const dead = {
 				b: 0.477,
 				c: -0.477,
 				d: 0.876,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
 				tx: 13.15,
 				ty: -3.3,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -95,9 +89,6 @@ export const dead = {
 				b: 0.053,
 				c: -0.053,
 				d: 0.998,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -174,9 +165,6 @@ export const dead = {
 				b: 0.551,
 				c: -0.551,
 				d: 0.829,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -184,9 +172,6 @@ export const dead = {
 				ty: -3.3,
 				b: -0.014,
 				c: 0.014,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -196,9 +181,6 @@ export const dead = {
 				b: 0.018,
 				c: -0.018,
 				d: 0.999,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -289,9 +271,6 @@ export const dead = {
 				b: 0.621,
 				c: -0.621,
 				d: 0.777,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -301,9 +280,6 @@ export const dead = {
 				b: -0.027,
 				c: 0.027,
 				d: 0.999,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -313,9 +289,6 @@ export const dead = {
 				b: -0.009,
 				c: 0.009,
 				d: 0.999,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -406,9 +379,6 @@ export const dead = {
 				b: 0.687,
 				c: -0.687,
 				d: 0.72,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -418,9 +388,6 @@ export const dead = {
 				b: -0.044,
 				c: 0.044,
 				d: 0.998,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -430,9 +397,6 @@ export const dead = {
 				b: -0.039,
 				c: 0.039,
 				d: 0.998,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -533,9 +497,6 @@ export const dead = {
 				b: 0.746,
 				c: -0.746,
 				d: 0.657,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -545,9 +506,6 @@ export const dead = {
 				b: -0.057,
 				c: 0.057,
 				d: 0.997,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -557,9 +515,6 @@ export const dead = {
 				b: -0.07,
 				c: 0.07,
 				d: 0.996,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -660,9 +615,6 @@ export const dead = {
 				b: 0.8,
 				c: -0.8,
 				d: 0.59,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -672,9 +624,6 @@ export const dead = {
 				b: -0.074,
 				c: 0.074,
 				d: 0.995,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -684,9 +633,6 @@ export const dead = {
 				b: -0.097,
 				c: 0.097,
 				d: 0.994,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -787,9 +733,6 @@ export const dead = {
 				b: 0.847,
 				c: -0.847,
 				d: 0.521,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -799,9 +742,6 @@ export const dead = {
 				b: -0.087,
 				c: 0.087,
 				d: 0.994,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -811,9 +751,6 @@ export const dead = {
 				b: -0.127,
 				c: 0.127,
 				d: 0.99,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -914,9 +851,6 @@ export const dead = {
 				b: 0.887,
 				c: -0.887,
 				d: 0.449,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -926,9 +860,6 @@ export const dead = {
 				b: -0.101,
 				c: 0.101,
 				d: 0.992,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -938,9 +869,6 @@ export const dead = {
 				b: -0.157,
 				c: 0.157,
 				d: 0.986,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -1041,9 +969,6 @@ export const dead = {
 				b: 0.919,
 				c: -0.919,
 				d: 0.377,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -1053,9 +978,6 @@ export const dead = {
 				b: -0.114,
 				c: 0.114,
 				d: 0.99,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -1065,9 +987,6 @@ export const dead = {
 				b: -0.183,
 				c: 0.183,
 				d: 0.981,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -1168,9 +1087,6 @@ export const dead = {
 				b: 0.947,
 				c: -0.947,
 				d: 0.3,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -1180,9 +1096,6 @@ export const dead = {
 				b: -0.127,
 				c: 0.127,
 				d: 0.988,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -1192,9 +1105,6 @@ export const dead = {
 				b: -0.212,
 				c: 0.212,
 				d: 0.975,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -1295,9 +1205,6 @@ export const dead = {
 				b: 0.968,
 				c: -0.968,
 				d: 0.225,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -1307,9 +1214,6 @@ export const dead = {
 				b: -0.143,
 				c: 0.143,
 				d: 0.986,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -1319,9 +1223,6 @@ export const dead = {
 				b: -0.238,
 				c: 0.238,
 				d: 0.969,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -1422,9 +1323,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.982,
 				d: 0.151,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -1434,9 +1332,6 @@ export const dead = {
 				b: -0.156,
 				c: 0.156,
 				d: 0.984,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -1446,9 +1341,6 @@ export const dead = {
 				b: -0.264,
 				c: 0.264,
 				d: 0.962,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -1549,9 +1441,6 @@ export const dead = {
 				b: 0.991,
 				c: -0.991,
 				d: 0.074,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -1561,9 +1450,6 @@ export const dead = {
 				b: -0.169,
 				c: 0.169,
 				d: 0.981,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -1573,9 +1459,6 @@ export const dead = {
 				b: -0.292,
 				c: 0.292,
 				d: 0.954,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -1676,9 +1559,6 @@ export const dead = {
 				b: 0.993,
 				c: -0.993,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -1688,9 +1568,6 @@ export const dead = {
 				b: -0.182,
 				c: 0.182,
 				d: 0.978,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -1700,9 +1577,6 @@ export const dead = {
 				b: -0.317,
 				c: 0.317,
 				d: 0.946,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -1803,9 +1677,6 @@ export const dead = {
 				b: 0.99,
 				c: -0.99,
 				d: -0.07,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -1815,9 +1686,6 @@ export const dead = {
 				b: -0.191,
 				c: 0.191,
 				d: 0.976,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -1827,9 +1695,6 @@ export const dead = {
 				b: -0.342,
 				c: 0.342,
 				d: 0.937,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -1930,9 +1795,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.982,
 				d: -0.143,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -1942,9 +1804,6 @@ export const dead = {
 				b: -0.206,
 				c: 0.206,
 				d: 0.974,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -1954,9 +1813,6 @@ export const dead = {
 				b: -0.366,
 				c: 0.366,
 				d: 0.929,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -2065,9 +1921,6 @@ export const dead = {
 				b: 0.975,
 				c: -0.975,
 				d: -0.177,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -2077,9 +1930,6 @@ export const dead = {
 				b: -0.109,
 				c: 0.109,
 				d: 0.988,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -2089,9 +1939,6 @@ export const dead = {
 				b: 0.091,
 				c: -0.091,
 				d: 0.993,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -2200,9 +2047,6 @@ export const dead = {
 				b: 0.967,
 				c: -0.967,
 				d: -0.207,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -2212,9 +2056,6 @@ export const dead = {
 				b: -0.014,
 				c: 0.014,
 				d: 0.994,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -2224,9 +2065,6 @@ export const dead = {
 				b: 0.518,
 				c: -0.518,
 				d: 0.85,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -2335,9 +2173,6 @@ export const dead = {
 				b: 0.958,
 				c: -0.958,
 				d: -0.24,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -2347,9 +2182,6 @@ export const dead = {
 				b: 0.074,
 				c: -0.074,
 				d: 0.991,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -2359,9 +2191,6 @@ export const dead = {
 				b: 0.835,
 				c: -0.835,
 				d: 0.539,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -2470,9 +2299,6 @@ export const dead = {
 				b: 0.949,
 				c: -0.949,
 				d: -0.272,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -2482,9 +2308,6 @@ export const dead = {
 				b: 0.164,
 				c: -0.164,
 				d: 0.98,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -2494,9 +2317,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -2605,9 +2425,6 @@ export const dead = {
 				b: 0.951,
 				c: -0.951,
 				d: -0.26,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -2617,9 +2434,6 @@ export const dead = {
 				b: 0.152,
 				c: -0.152,
 				d: 0.981,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -2629,9 +2443,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -2740,9 +2551,6 @@ export const dead = {
 				b: 0.953,
 				c: -0.953,
 				d: -0.252,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -2752,9 +2560,6 @@ export const dead = {
 				b: 0.143,
 				c: -0.143,
 				d: 0.982,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -2764,9 +2569,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -2875,9 +2677,6 @@ export const dead = {
 				b: 0.956,
 				c: -0.956,
 				d: -0.243,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -2887,9 +2686,6 @@ export const dead = {
 				b: 0.134,
 				c: -0.134,
 				d: 0.984,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -2899,9 +2695,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -3010,9 +2803,6 @@ export const dead = {
 				b: 0.954,
 				c: -0.954,
 				d: -0.248,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -3022,9 +2812,6 @@ export const dead = {
 				b: 0.139,
 				c: -0.139,
 				d: 0.983,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -3034,9 +2821,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -3145,9 +2929,6 @@ export const dead = {
 				b: 0.952,
 				c: -0.952,
 				d: -0.256,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -3157,9 +2938,6 @@ export const dead = {
 				b: 0.147,
 				c: -0.147,
 				d: 0.982,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -3169,9 +2947,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -3280,9 +3055,6 @@ export const dead = {
 				b: 0.95,
 				c: -0.95,
 				d: -0.264,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -3292,9 +3064,6 @@ export const dead = {
 				b: 0.156,
 				c: -0.156,
 				d: 0.98,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -3304,9 +3073,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -3415,9 +3181,6 @@ export const dead = {
 				b: 0.949,
 				c: -0.949,
 				d: -0.272,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -3427,9 +3190,6 @@ export const dead = {
 				b: 0.164,
 				c: -0.164,
 				d: 0.98,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -3439,9 +3199,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -3550,9 +3307,6 @@ export const dead = {
 				b: 0.951,
 				c: -0.951,
 				d: -0.26,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -3562,9 +3316,6 @@ export const dead = {
 				b: 0.173,
 				c: -0.173,
 				d: 0.977,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -3574,9 +3325,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -3685,9 +3433,6 @@ export const dead = {
 				b: 0.953,
 				c: -0.953,
 				d: -0.252,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -3697,9 +3442,6 @@ export const dead = {
 				b: 0.182,
 				c: -0.182,
 				d: 0.976,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -3709,9 +3451,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -3818,9 +3557,6 @@ export const dead = {
 				b: 0.956,
 				c: -0.956,
 				d: -0.243,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -3830,9 +3566,6 @@ export const dead = {
 				b: 0.194,
 				c: -0.194,
 				d: 0.973,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -3842,9 +3575,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -3953,9 +3683,6 @@ export const dead = {
 				b: 0.958,
 				c: -0.958,
 				d: -0.235,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -3965,9 +3692,6 @@ export const dead = {
 				b: 0.203,
 				c: -0.203,
 				d: 0.972,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -3977,9 +3701,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -4088,9 +3809,6 @@ export const dead = {
 				b: 0.96,
 				c: -0.96,
 				d: -0.226,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -4100,9 +3818,6 @@ export const dead = {
 				b: 0.212,
 				c: -0.212,
 				d: 0.97,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -4112,9 +3827,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -4223,9 +3935,6 @@ export const dead = {
 				b: 0.962,
 				c: -0.962,
 				d: -0.218,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -4235,9 +3944,6 @@ export const dead = {
 				b: 0.223,
 				c: -0.223,
 				d: 0.967,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -4247,9 +3953,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -4358,9 +4061,6 @@ export const dead = {
 				b: 0.964,
 				c: -0.964,
 				d: -0.209,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -4370,9 +4070,6 @@ export const dead = {
 				b: 0.232,
 				c: -0.232,
 				d: 0.965,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -4382,9 +4079,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -4493,9 +4187,6 @@ export const dead = {
 				b: 0.965,
 				c: -0.965,
 				d: -0.201,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -4505,9 +4196,6 @@ export const dead = {
 				b: 0.241,
 				c: -0.241,
 				d: 0.963,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -4517,9 +4205,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -4628,9 +4313,6 @@ export const dead = {
 				b: 0.967,
 				c: -0.967,
 				d: -0.193,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -4640,9 +4322,6 @@ export const dead = {
 				b: 0.249,
 				c: -0.249,
 				d: 0.96,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -4652,9 +4331,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -4763,9 +4439,6 @@ export const dead = {
 				b: 0.969,
 				c: -0.969,
 				d: -0.184,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -4775,9 +4448,6 @@ export const dead = {
 				b: 0.258,
 				c: -0.258,
 				d: 0.958,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -4787,9 +4457,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -4898,9 +4565,6 @@ export const dead = {
 				b: 0.97,
 				c: -0.97,
 				d: -0.176,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -4910,9 +4574,6 @@ export const dead = {
 				b: 0.266,
 				c: -0.266,
 				d: 0.956,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -4922,9 +4583,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -5033,9 +4691,6 @@ export const dead = {
 				b: 0.972,
 				c: -0.972,
 				d: -0.168,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -5045,9 +4700,6 @@ export const dead = {
 				b: 0.274,
 				c: -0.274,
 				d: 0.953,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -5057,9 +4709,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -5168,9 +4817,6 @@ export const dead = {
 				b: 0.973,
 				c: -0.973,
 				d: -0.159,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -5180,9 +4826,6 @@ export const dead = {
 				b: 0.282,
 				c: -0.282,
 				d: 0.951,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -5192,9 +4835,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -5303,9 +4943,6 @@ export const dead = {
 				b: 0.974,
 				c: -0.974,
 				d: -0.151,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -5315,9 +4952,6 @@ export const dead = {
 				b: 0.291,
 				c: -0.291,
 				d: 0.948,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -5327,9 +4961,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -5438,9 +5069,6 @@ export const dead = {
 				b: 0.975,
 				c: -0.975,
 				d: -0.146,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -5450,9 +5078,6 @@ export const dead = {
 				b: 0.299,
 				c: -0.299,
 				d: 0.946,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -5462,9 +5087,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -5573,9 +5195,6 @@ export const dead = {
 				b: 0.976,
 				c: -0.976,
 				d: -0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -5585,9 +5204,6 @@ export const dead = {
 				b: 0.304,
 				c: -0.304,
 				d: 0.944,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -5597,9 +5213,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -5708,9 +5321,6 @@ export const dead = {
 				b: 0.977,
 				c: -0.977,
 				d: -0.133,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -5720,9 +5330,6 @@ export const dead = {
 				b: 0.312,
 				c: -0.312,
 				d: 0.942,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -5732,9 +5339,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -5843,9 +5447,6 @@ export const dead = {
 				b: 0.978,
 				c: -0.978,
 				d: -0.125,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -5855,9 +5456,6 @@ export const dead = {
 				b: 0.32,
 				c: -0.32,
 				d: 0.939,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -5867,9 +5465,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -5978,9 +5573,6 @@ export const dead = {
 				b: 0.979,
 				c: -0.979,
 				d: -0.117,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -5990,9 +5582,6 @@ export const dead = {
 				b: 0.327,
 				c: -0.327,
 				d: 0.936,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -6002,9 +5591,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -6113,9 +5699,6 @@ export const dead = {
 				b: 0.98,
 				c: -0.98,
 				d: -0.112,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -6125,9 +5708,6 @@ export const dead = {
 				b: 0.332,
 				c: -0.332,
 				d: 0.934,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -6137,9 +5717,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -6248,9 +5825,6 @@ export const dead = {
 				b: 0.981,
 				c: -0.981,
 				d: -0.104,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -6260,9 +5834,6 @@ export const dead = {
 				b: 0.34,
 				c: -0.34,
 				d: 0.932,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -6272,9 +5843,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -6383,9 +5951,6 @@ export const dead = {
 				b: 0.981,
 				c: -0.981,
 				d: -0.099,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -6395,9 +5960,6 @@ export const dead = {
 				b: 0.344,
 				c: -0.344,
 				d: 0.93,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -6407,9 +5969,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -6518,9 +6077,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.982,
 				d: -0.095,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -6530,9 +6086,6 @@ export const dead = {
 				b: 0.352,
 				c: -0.352,
 				d: 0.927,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -6542,9 +6095,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -6653,9 +6203,6 @@ export const dead = {
 				b: 0.982,
 				c: -0.982,
 				d: -0.087,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -6665,9 +6212,6 @@ export const dead = {
 				b: 0.357,
 				c: -0.357,
 				d: 0.925,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -6677,9 +6221,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -6788,9 +6329,6 @@ export const dead = {
 				b: 0.983,
 				c: -0.983,
 				d: -0.082,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -6800,9 +6338,6 @@ export const dead = {
 				b: 0.364,
 				c: -0.364,
 				d: 0.922,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -6812,9 +6347,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -6923,9 +6455,6 @@ export const dead = {
 				b: 0.983,
 				c: -0.983,
 				d: -0.078,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -6935,9 +6464,6 @@ export const dead = {
 				b: 0.368,
 				c: -0.368,
 				d: 0.92,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -6947,9 +6473,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -7058,9 +6581,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: -0.07,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -7070,9 +6590,6 @@ export const dead = {
 				b: 0.373,
 				c: -0.373,
 				d: 0.919,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -7082,9 +6599,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -7193,9 +6707,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: -0.065,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -7205,9 +6716,6 @@ export const dead = {
 				b: 0.38,
 				c: -0.38,
 				d: 0.916,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -7217,9 +6725,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -7328,9 +6833,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: -0.061,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -7340,9 +6842,6 @@ export const dead = {
 				b: 0.384,
 				c: -0.384,
 				d: 0.914,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -7352,9 +6851,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -7463,9 +6959,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: -0.057,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -7475,9 +6968,6 @@ export const dead = {
 				b: 0.388,
 				c: -0.388,
 				d: 0.912,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -7487,9 +6977,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -7598,9 +7085,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: -0.052,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -7610,9 +7094,6 @@ export const dead = {
 				b: 0.393,
 				c: -0.393,
 				d: 0.91,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -7622,9 +7103,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -7733,9 +7211,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: -0.048,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -7745,9 +7220,6 @@ export const dead = {
 				b: 0.397,
 				c: -0.397,
 				d: 0.908,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -7757,9 +7229,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -7868,9 +7337,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: -0.044,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -7880,9 +7346,6 @@ export const dead = {
 				b: 0.401,
 				c: -0.401,
 				d: 0.907,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -7892,9 +7355,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -8003,9 +7463,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: -0.039,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -8015,9 +7472,6 @@ export const dead = {
 				b: 0.405,
 				c: -0.405,
 				d: 0.905,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -8027,9 +7481,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -8138,9 +7589,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: -0.035,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -8150,9 +7598,6 @@ export const dead = {
 				b: 0.409,
 				c: -0.409,
 				d: 0.903,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -8162,9 +7607,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -8273,9 +7715,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: -0.031,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -8285,9 +7724,6 @@ export const dead = {
 				b: 0.412,
 				c: -0.412,
 				d: 0.901,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -8297,9 +7733,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -8408,9 +7841,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: -0.027,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -8420,9 +7850,6 @@ export const dead = {
 				b: 0.416,
 				c: -0.416,
 				d: 0.9,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -8432,9 +7859,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -8543,9 +7967,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: -0.026,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -8555,9 +7976,6 @@ export const dead = {
 				b: 0.42,
 				c: -0.42,
 				d: 0.898,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -8567,9 +7985,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -8678,9 +8093,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: -0.022,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -8690,9 +8102,6 @@ export const dead = {
 				b: 0.424,
 				c: -0.424,
 				d: 0.896,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -8702,9 +8111,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -8813,9 +8219,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: -0.018,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -8825,9 +8228,6 @@ export const dead = {
 				b: 0.427,
 				c: -0.427,
 				d: 0.894,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -8837,9 +8237,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -8948,9 +8345,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: -0.017,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -8960,9 +8354,6 @@ export const dead = {
 				b: 0.428,
 				c: -0.428,
 				d: 0.894,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -8972,9 +8363,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -9083,9 +8471,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: -0.013,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -9095,9 +8480,6 @@ export const dead = {
 				b: 0.432,
 				c: -0.432,
 				d: 0.892,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -9107,9 +8489,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -9218,9 +8597,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: -0.01,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -9230,9 +8606,6 @@ export const dead = {
 				b: 0.435,
 				c: -0.435,
 				d: 0.89,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -9242,9 +8615,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -9353,9 +8723,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: -0.009,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -9365,9 +8732,6 @@ export const dead = {
 				b: 0.436,
 				c: -0.436,
 				d: 0.89,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -9377,9 +8741,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -9488,9 +8849,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: -0.005,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -9500,9 +8858,6 @@ export const dead = {
 				b: 0.439,
 				c: -0.439,
 				d: 0.888,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -9512,9 +8867,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -9623,9 +8975,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: -0.005,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -9635,9 +8984,6 @@ export const dead = {
 				b: 0.44,
 				c: -0.44,
 				d: 0.888,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -9647,9 +8993,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -9758,9 +9101,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: -0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -9770,9 +9110,6 @@ export const dead = {
 				b: 0.443,
 				c: -0.443,
 				d: 0.887,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -9782,9 +9119,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -9893,9 +9227,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: -0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -9905,9 +9236,6 @@ export const dead = {
 				b: 0.443,
 				c: -0.443,
 				d: 0.886,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -9917,9 +9245,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -10028,9 +9353,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -10040,9 +9362,6 @@ export const dead = {
 				b: 0.444,
 				c: -0.444,
 				d: 0.886,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -10052,9 +9371,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -10163,9 +9479,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -10175,9 +9488,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -10187,9 +9497,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -10298,9 +9605,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -10310,9 +9614,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -10322,9 +9623,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -10433,9 +9731,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -10445,9 +9740,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -10457,9 +9749,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -10568,9 +9857,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -10580,9 +9866,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -10592,9 +9875,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -10703,9 +9983,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -10715,9 +9992,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -10727,9 +10001,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -10838,9 +10109,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -10850,9 +10118,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -10862,9 +10127,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -10973,9 +10235,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -10985,9 +10244,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -10997,9 +10253,6 @@ export const dead = {
 				b: 0.984,
 				c: -0.984,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -11108,9 +10361,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -11120,9 +10370,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -11132,9 +10379,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -11243,9 +10487,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -11255,9 +10496,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -11267,9 +10505,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -11378,9 +10613,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -11390,9 +10622,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -11402,9 +10631,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -11513,9 +10739,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -11525,9 +10748,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -11537,9 +10757,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -11648,9 +10865,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -11660,9 +10874,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -11672,9 +10883,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -11783,9 +10991,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -11795,9 +11000,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -11807,9 +11009,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -11918,9 +11117,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -11930,9 +11126,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -11942,9 +11135,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -12053,9 +11243,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -12065,9 +11252,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -12077,9 +11261,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {
@@ -12188,9 +11369,6 @@ export const dead = {
 				b: 0.986,
 				c: -0.986,
 				d: 0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 3
 			},
 			r_b_arm: {
@@ -12200,9 +11378,6 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_t_arm: {
@@ -12212,9 +11387,6 @@ export const dead = {
 				b: 0.985,
 				c: -0.985,
 				d: 0.138,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			shade: {

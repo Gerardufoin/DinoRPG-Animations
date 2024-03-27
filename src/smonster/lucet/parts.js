@@ -68,7 +68,13 @@ export const parts = {
 	// 2166
 	wing: [
 		{
-			ref: ref.lucet.wing
+			ref: ref.lucet.wing,
+			glow: {
+				distance: 6,
+				color: 0xffffff,
+				quality: 0.5,
+				strength: 1
+			}
 		}
 	],
 	// 2168

@@ -104,9 +104,6 @@ export const land = {
 				b: 0.346,
 				c: -0.288,
 				d: 1.062,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -116,9 +113,6 @@ export const land = {
 				b: -0.204,
 				c: 0.17,
 				d: 1.102,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -128,9 +122,6 @@ export const land = {
 				b: -0.142,
 				c: 0.119,
 				d: 1.111,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -230,9 +221,6 @@ export const land = {
 				b: 0.274,
 				c: -0.247,
 				d: 1.004,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -242,9 +230,6 @@ export const land = {
 				b: -0.237,
 				c: 0.23,
 				d: 1.015,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -254,9 +239,6 @@ export const land = {
 				b: -0.183,
 				c: 0.177,
 				d: 1.026,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -354,9 +336,6 @@ export const land = {
 				b: 0.229,
 				c: -0.229,
 				d: 0.969,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -366,9 +345,6 @@ export const land = {
 				b: -0.262,
 				c: 0.262,
 				d: 0.963,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -378,9 +354,6 @@ export const land = {
 				b: -0.211,
 				c: 0.211,
 				d: 0.975,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -480,9 +453,6 @@ export const land = {
 				b: 0.206,
 				c: -0.27,
 				d: 0.869,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -492,9 +462,6 @@ export const land = {
 				b: -0.235,
 				c: 0.31,
 				d: 0.864,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -504,9 +471,6 @@ export const land = {
 				b: -0.189,
 				c: 0.249,
 				d: 0.875,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -604,9 +568,6 @@ export const land = {
 				b: 0.229,
 				c: -0.229,
 				d: 0.969,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -616,9 +577,6 @@ export const land = {
 				b: -0.262,
 				c: 0.262,
 				d: 0.963,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -628,9 +586,6 @@ export const land = {
 				b: -0.211,
 				c: 0.211,
 				d: 0.975,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -728,9 +683,6 @@ export const land = {
 				b: 0.37,
 				c: -0.37,
 				d: 0.924,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -740,9 +692,6 @@ export const land = {
 				b: -0.113,
 				c: 0.113,
 				d: 0.992,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -752,9 +701,6 @@ export const land = {
 				b: -0.061,
 				c: 0.061,
 				d: 0.997,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -852,9 +798,6 @@ export const land = {
 				b: 0.45,
 				c: -0.45,
 				d: 0.888,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -864,9 +807,6 @@ export const land = {
 				b: -0.027,
 				c: 0.027,
 				d: 0.999,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -876,9 +816,6 @@ export const land = {
 				b: 0.023,
 				c: -0.023,
 				d: 0.999,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -947,17 +884,11 @@ export const land = {
 				b: 0.477,
 				c: -0.477,
 				d: 0.876,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 13.15,
 				ty: -3.3,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -967,9 +898,6 @@ export const land = {
 				b: 0.053,
 				c: -0.053,
 				d: 0.998,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		}

@@ -22,9 +22,6 @@ export const attack = {
 				b: -5.413,
 				c: 3.936,
 				d: 1.446,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -34,9 +31,6 @@ export const attack = {
 				b: 0.919,
 				c: -0.554,
 				d: 2.829,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -46,9 +40,6 @@ export const attack = {
 				b: -0.233,
 				c: 0.233,
 				d: 2.95,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -58,9 +49,6 @@ export const attack = {
 				b: -1.671,
 				c: 1.671,
 				d: 2.647,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -70,9 +58,6 @@ export const attack = {
 				b: 1.263,
 				c: -1.263,
 				d: 3.7,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -80,9 +65,6 @@ export const attack = {
 				ty: 17.25,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -92,9 +74,6 @@ export const attack = {
 				b: -0.259,
 				c: 0.259,
 				d: 1.828,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -102,9 +81,6 @@ export const attack = {
 				ty: -9.4,
 				a: 5.302,
 				d: 6.52,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -114,9 +90,6 @@ export const attack = {
 				b: 1.549,
 				c: -1.549,
 				d: 3.278,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -126,9 +99,6 @@ export const attack = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -138,9 +108,6 @@ export const attack = {
 				b: -0.107,
 				c: 0.123,
 				d: 2.712,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -148,9 +115,6 @@ export const attack = {
 				ty: 8.9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -160,9 +124,6 @@ export const attack = {
 				b: -2.715,
 				c: 2.178,
 				d: 2.872,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -172,9 +133,6 @@ export const attack = {
 				b: 2.032,
 				c: -2.242,
 				d: 3.408,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -182,9 +140,6 @@ export const attack = {
 				ty: 11,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -203,9 +158,6 @@ export const attack = {
 				b: 2.463,
 				c: -1.791,
 				d: 3.789,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -215,9 +167,6 @@ export const attack = {
 				b: 4.017,
 				c: -4.017,
 				d: 2.568,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -227,9 +176,6 @@ export const attack = {
 				b: 0.941,
 				c: -0.941,
 				d: 2.801,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -239,9 +185,6 @@ export const attack = {
 				b: -1.67,
 				c: 1.67,
 				d: 2.641,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -251,9 +194,6 @@ export const attack = {
 				b: -3.2,
 				c: 3.2,
 				d: 2.226,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -263,9 +203,6 @@ export const attack = {
 				b: -1.525,
 				c: 1.999,
 				d: 1.352,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -275,9 +212,6 @@ export const attack = {
 				b: -0.225,
 				c: 0.257,
 				d: 1.827,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -285,9 +219,6 @@ export const attack = {
 				ty: -9.3,
 				a: 5.302,
 				d: 6.519,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -297,9 +228,6 @@ export const attack = {
 				b: 1.547,
 				c: -1.547,
 				d: 3.273,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -309,9 +237,6 @@ export const attack = {
 				b: -2.462,
 				c: 1.978,
 				d: 2.794,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -321,9 +246,6 @@ export const attack = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -331,9 +253,6 @@ export const attack = {
 				ty: 8.95,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -343,9 +262,6 @@ export const attack = {
 				b: -2.705,
 				c: 2.172,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -355,9 +271,6 @@ export const attack = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.403,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -365,9 +278,6 @@ export const attack = {
 				ty: 10.95,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -386,9 +296,6 @@ export const attack = {
 				b: 4.266,
 				c: -3.654,
 				d: 2.155,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -398,9 +305,6 @@ export const attack = {
 				b: 4.152,
 				c: -4.891,
 				d: 1.104,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -410,9 +314,6 @@ export const attack = {
 				b: 1.254,
 				c: -1.477,
 				d: 2.348,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -422,9 +323,6 @@ export const attack = {
 				b: -1.504,
 				c: 1.772,
 				d: 2.383,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -434,9 +332,6 @@ export const attack = {
 				b: -3.742,
 				c: 3.457,
 				d: 1.018,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -446,9 +341,6 @@ export const attack = {
 				b: -1.773,
 				c: 2.153,
 				d: 0.598,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -458,9 +350,6 @@ export const attack = {
 				b: -0.19,
 				c: 0.275,
 				d: 1.646,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -468,9 +357,6 @@ export const attack = {
 				ty: -7.55,
 				a: 5.622,
 				d: 5.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -480,9 +366,6 @@ export const attack = {
 				b: 1.394,
 				c: -1.642,
 				d: 2.951,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -492,9 +375,6 @@ export const attack = {
 				b: -2.362,
 				c: 1.642,
 				d: 2.611,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -504,9 +384,6 @@ export const attack = {
 				b: -0.096,
 				c: 0.131,
 				d: 2.441,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -516,9 +393,6 @@ export const attack = {
 				b: -0.795,
 				c: 0.585,
 				d: 1.796,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -528,9 +402,6 @@ export const attack = {
 				b: -2.444,
 				c: 2.309,
 				d: 2.586,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -540,9 +411,6 @@ export const attack = {
 				b: 1.83,
 				c: -2.377,
 				d: 3.068,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -550,9 +418,6 @@ export const attack = {
 				ty: 10.8,
 				a: 2.874,
 				d: 2.212,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -571,9 +436,6 @@ export const attack = {
 				b: 4.414,
 				c: -3.585,
 				d: 2.227,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -583,9 +445,6 @@ export const attack = {
 				b: 3.776,
 				c: -4.264,
 				d: 1.008,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -595,9 +454,6 @@ export const attack = {
 				b: 1.325,
 				c: -1.408,
 				d: 1.911,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -607,9 +463,6 @@ export const attack = {
 				b: -1.863,
 				c: 2.013,
 				d: 2.247,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -619,9 +472,6 @@ export const attack = {
 				b: -3.632,
 				c: 3.463,
 				d: 1.299,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -631,9 +481,6 @@ export const attack = {
 				b: -1.626,
 				c: 2.06,
 				d: 1.008,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -643,9 +490,6 @@ export const attack = {
 				b: -0.192,
 				c: 0.262,
 				d: 1.655,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -653,9 +497,6 @@ export const attack = {
 				ty: -8.25,
 				a: 5.341,
 				d: 6.086,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -665,9 +506,6 @@ export const attack = {
 				b: 1.437,
 				c: -1.612,
 				d: 3.056,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -677,9 +515,6 @@ export const attack = {
 				b: -2.147,
 				c: 1.541,
 				d: 2.798,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -689,9 +524,6 @@ export const attack = {
 				b: -0.1,
 				c: 0.123,
 				d: 2.531,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -701,9 +533,6 @@ export const attack = {
 				b: -0.933,
 				c: 0.726,
 				d: 1.817,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -713,9 +542,6 @@ export const attack = {
 				b: -2.524,
 				c: 2.261,
 				d: 2.681,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -725,9 +551,6 @@ export const attack = {
 				b: 1.892,
 				c: -2.335,
 				d: 3.175,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -735,9 +558,6 @@ export const attack = {
 				ty: 10.85,
 				a: 2.819,
 				d: 2.293,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -749,9 +569,6 @@ export const attack = {
 				b: 4.572,
 				c: -3.513,
 				d: 2.311,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -761,9 +578,6 @@ export const attack = {
 				b: 3.402,
 				c: -3.64,
 				d: 0.911,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -773,9 +587,6 @@ export const attack = {
 				b: 1.275,
 				c: -1.293,
 				d: 1.496,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -785,9 +596,6 @@ export const attack = {
 				b: -2.195,
 				c: 2.249,
 				d: 2.088,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -797,9 +605,6 @@ export const attack = {
 				b: -3.517,
 				c: 3.447,
 				d: 1.594,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -809,9 +614,6 @@ export const attack = {
 				b: -1.451,
 				c: 1.884,
 				d: 1.41,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -821,9 +623,6 @@ export const attack = {
 				b: -0.19,
 				c: 0.249,
 				d: 1.664,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -831,9 +630,6 @@ export const attack = {
 				ty: -8.9,
 				a: 5.059,
 				d: 6.303,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -843,9 +639,6 @@ export const attack = {
 				b: 1.493,
 				c: -1.581,
 				d: 3.165,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -855,9 +648,6 @@ export const attack = {
 				b: -1.944,
 				c: 1.429,
 				d: 2.984,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -867,9 +657,6 @@ export const attack = {
 				b: -0.099,
 				c: 0.126,
 				d: 2.621,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -879,9 +666,6 @@ export const attack = {
 				b: -1.063,
 				c: 0.873,
 				d: 1.827,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -891,9 +675,6 @@ export const attack = {
 				b: -2.623,
 				c: 2.218,
 				d: 2.776,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -903,9 +684,6 @@ export const attack = {
 				b: 1.96,
 				c: -2.288,
 				d: 3.289,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -913,9 +691,6 @@ export const attack = {
 				ty: 10.9,
 				a: 2.765,
 				d: 2.375,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -927,9 +702,6 @@ export const attack = {
 				b: 4.739,
 				c: -3.446,
 				d: 2.394,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -939,9 +711,6 @@ export const attack = {
 				b: 3.021,
 				c: -3.021,
 				d: 0.803,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -951,9 +720,6 @@ export const attack = {
 				b: 1.124,
 				c: -1.124,
 				d: 1.117,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -963,9 +729,6 @@ export const attack = {
 				b: -2.474,
 				c: 2.474,
 				d: 1.911,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -975,9 +738,6 @@ export const attack = {
 				b: -3.407,
 				c: 3.407,
 				d: 1.902,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -987,9 +747,6 @@ export const attack = {
 				b: -1.248,
 				c: 1.636,
 				d: 1.78,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -999,9 +756,6 @@ export const attack = {
 				b: -0.193,
 				c: 0.237,
 				d: 1.674,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -1009,9 +763,6 @@ export const attack = {
 				ty: -9.4,
 				a: 4.777,
 				d: 6.52,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -1021,9 +772,6 @@ export const attack = {
 				b: 1.549,
 				c: -1.549,
 				d: 3.278,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -1033,9 +781,6 @@ export const attack = {
 				b: -1.743,
 				c: 1.311,
 				d: 3.166,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -1045,9 +790,6 @@ export const attack = {
 				b: -0.107,
 				c: 0.123,
 				d: 2.712,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -1057,9 +799,6 @@ export const attack = {
 				b: -1.184,
 				c: 1.027,
 				d: 1.829,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1069,9 +808,6 @@ export const attack = {
 				b: -2.715,
 				c: 2.178,
 				d: 2.872,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1081,9 +817,6 @@ export const attack = {
 				b: 2.032,
 				c: -2.242,
 				d: 3.408,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -1091,9 +824,6 @@ export const attack = {
 				ty: 11,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -1105,9 +835,6 @@ export const attack = {
 				b: 3.123,
 				c: -2.271,
 				d: 3.522,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -1117,9 +844,6 @@ export const attack = {
 				b: 3.118,
 				c: -3.118,
 				d: 1.664,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -1129,9 +853,6 @@ export const attack = {
 				b: 1.072,
 				c: -1.072,
 				d: 1.599,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -1141,9 +862,6 @@ export const attack = {
 				b: -2.297,
 				c: 2.297,
 				d: 2.115,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -1153,9 +871,6 @@ export const attack = {
 				b: -2.775,
 				c: 2.775,
 				d: 2.738,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -1165,9 +880,6 @@ export const attack = {
 				b: -0.972,
 				c: 1.275,
 				d: 2.052,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -1177,9 +889,6 @@ export const attack = {
 				b: -0.208,
 				c: 0.241,
 				d: 1.712,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -1187,9 +896,6 @@ export const attack = {
 				ty: -9.3,
 				a: 4.908,
 				d: 6.519,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -1199,9 +905,6 @@ export const attack = {
 				b: 1.547,
 				c: -1.547,
 				d: 3.273,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -1211,9 +914,6 @@ export const attack = {
 				b: -1.102,
 				c: 0.729,
 				d: 3.348,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -1223,9 +923,6 @@ export const attack = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -1235,9 +932,6 @@ export const attack = {
 				b: -0.899,
 				c: 0.779,
 				d: 1.945,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1247,9 +941,6 @@ export const attack = {
 				b: -2.705,
 				c: 2.171,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1259,9 +950,6 @@ export const attack = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.403,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -1269,9 +957,6 @@ export const attack = {
 				ty: 10.95,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -1283,9 +968,6 @@ export const attack = {
 				b: 1.03,
 				c: -0.749,
 				d: 4.128,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -1295,9 +977,6 @@ export const attack = {
 				b: 2.952,
 				c: -2.952,
 				d: 2.619,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -1307,9 +986,6 @@ export const attack = {
 				b: 0.87,
 				c: -0.87,
 				d: 2.096,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -1319,9 +995,6 @@ export const attack = {
 				b: -2.104,
 				c: 2.104,
 				d: 2.308,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -1331,9 +1004,6 @@ export const attack = {
 				b: -1.954,
 				c: 1.954,
 				d: 3.377,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -1343,9 +1013,6 @@ export const attack = {
 				b: -0.669,
 				c: 0.878,
 				d: 2.253,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -1355,9 +1022,6 @@ export const attack = {
 				b: -0.225,
 				c: 0.247,
 				d: 1.751,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -1365,9 +1029,6 @@ export const attack = {
 				ty: -9.3,
 				a: 5.04,
 				d: 6.519,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -1377,9 +1038,6 @@ export const attack = {
 				b: 1.547,
 				c: -1.547,
 				d: 3.273,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -1389,9 +1047,6 @@ export const attack = {
 				b: -0.426,
 				c: 0.123,
 				d: 3.428,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -1401,9 +1056,6 @@ export const attack = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -1413,9 +1065,6 @@ export const attack = {
 				b: -0.608,
 				c: 0.527,
 				d: 2.03,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1425,9 +1074,6 @@ export const attack = {
 				b: -2.705,
 				c: 2.171,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1437,9 +1083,6 @@ export const attack = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.403,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -1447,9 +1090,6 @@ export const attack = {
 				ty: 10.95,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -1461,9 +1101,6 @@ export const attack = {
 				b: -1.202,
 				c: 0.874,
 				d: 4.104,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -1473,9 +1110,6 @@ export const attack = {
 				b: 2.507,
 				c: -2.507,
 				d: 3.566,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -1485,9 +1119,6 @@ export const attack = {
 				b: 0.511,
 				c: -0.511,
 				d: 2.564,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -1497,9 +1128,6 @@ export const attack = {
 				b: -1.894,
 				c: 1.894,
 				d: 2.484,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -1509,9 +1137,6 @@ export const attack = {
 				b: -0.981,
 				c: 0.981,
 				d: 3.782,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -1521,9 +1146,6 @@ export const attack = {
 				b: -0.338,
 				c: 0.443,
 				d: 2.379,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -1533,9 +1155,6 @@ export const attack = {
 				b: -0.241,
 				c: 0.252,
 				d: 1.789,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -1543,9 +1162,6 @@ export const attack = {
 				ty: -9.3,
 				a: 5.171,
 				d: 6.519,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -1555,9 +1171,6 @@ export const attack = {
 				b: 1.547,
 				c: -1.547,
 				d: 3.273,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -1567,9 +1180,6 @@ export const attack = {
 				b: 0.239,
 				c: -0.466,
 				d: 3.399,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -1579,9 +1189,6 @@ export const attack = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -1591,9 +1198,6 @@ export const attack = {
 				b: -0.306,
 				c: 0.266,
 				d: 2.082,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1603,9 +1207,6 @@ export const attack = {
 				b: -2.705,
 				c: 2.171,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1615,9 +1216,6 @@ export const attack = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.403,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -1625,9 +1223,6 @@ export const attack = {
 				ty: 10.95,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -1639,9 +1234,6 @@ export const attack = {
 				b: -3.271,
 				c: 2.379,
 				d: 3.461,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -1651,9 +1243,6 @@ export const attack = {
 				b: 1.78,
 				c: -1.78,
 				d: 4.436,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -1661,9 +1250,6 @@ export const attack = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -1673,9 +1259,6 @@ export const attack = {
 				b: -1.671,
 				c: 1.671,
 				d: 2.647,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -1685,9 +1268,6 @@ export const attack = {
 				b: 0.055,
 				c: -0.055,
 				d: 3.913,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -1695,9 +1275,6 @@ export const attack = {
 				ty: 17.25,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -1707,9 +1284,6 @@ export const attack = {
 				b: -0.259,
 				c: 0.259,
 				d: 1.828,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -1717,9 +1291,6 @@ export const attack = {
 				ty: -9.4,
 				a: 5.302,
 				d: 6.52,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -1729,9 +1300,6 @@ export const attack = {
 				b: 1.549,
 				c: -1.549,
 				d: 3.278,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -1741,9 +1309,6 @@ export const attack = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -1753,9 +1318,6 @@ export const attack = {
 				b: -0.107,
 				c: 0.123,
 				d: 2.712,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -1763,9 +1325,6 @@ export const attack = {
 				ty: 8.9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1775,9 +1334,6 @@ export const attack = {
 				b: -2.715,
 				c: 2.178,
 				d: 2.872,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1787,9 +1343,6 @@ export const attack = {
 				b: 2.032,
 				c: -2.242,
 				d: 3.408,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -1797,9 +1350,6 @@ export const attack = {
 				ty: 11,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		}

@@ -108,9 +108,6 @@ export const attack = {
 				b: 0.968,
 				c: -0.968,
 				d: 0.193,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -120,9 +117,6 @@ export const attack = {
 				b: 0.307,
 				c: -0.307,
 				d: 0.942,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -132,9 +126,6 @@ export const attack = {
 				b: -0.126,
 				c: 0.126,
 				d: 0.986,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -236,9 +227,6 @@ export const attack = {
 				b: 0.951,
 				c: -0.951,
 				d: 0.26,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -248,9 +236,6 @@ export const attack = {
 				b: 0.364,
 				c: -0.364,
 				d: 0.92,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -260,9 +245,6 @@ export const attack = {
 				b: -0.195,
 				c: 0.195,
 				d: 0.974,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -364,9 +346,6 @@ export const attack = {
 				b: 0.931,
 				c: -0.931,
 				d: 0.322,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -376,9 +355,6 @@ export const attack = {
 				b: 0.419,
 				c: -0.419,
 				d: 0.896,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -388,9 +364,6 @@ export const attack = {
 				b: -0.266,
 				c: 0.266,
 				d: 0.956,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -492,9 +465,6 @@ export const attack = {
 				b: 0.907,
 				c: -0.907,
 				d: 0.386,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -504,9 +474,6 @@ export const attack = {
 				b: 0.473,
 				c: -0.473,
 				d: 0.87,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -516,9 +483,6 @@ export const attack = {
 				b: -0.331,
 				c: 0.331,
 				d: 0.937,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -620,9 +584,6 @@ export const attack = {
 				b: 0.906,
 				c: -0.906,
 				d: 0.385,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -632,9 +593,6 @@ export const attack = {
 				b: 0.473,
 				c: -0.473,
 				d: 0.869,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -644,9 +602,6 @@ export const attack = {
 				b: -0.328,
 				c: 0.328,
 				d: 0.936,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -748,9 +703,6 @@ export const attack = {
 				b: 0.907,
 				c: -0.907,
 				d: 0.386,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -760,9 +712,6 @@ export const attack = {
 				b: 0.473,
 				c: -0.473,
 				d: 0.87,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -772,9 +721,6 @@ export const attack = {
 				b: -0.331,
 				c: 0.331,
 				d: 0.937,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -876,9 +822,6 @@ export const attack = {
 				b: 0.662,
 				c: -0.653,
 				d: 0.755,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -888,9 +831,6 @@ export const attack = {
 				b: 0.087,
 				c: -0.084,
 				d: 1.007,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -900,9 +840,6 @@ export const attack = {
 				b: -0.598,
 				c: 0.603,
 				d: 0.812,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1004,9 +941,6 @@ export const attack = {
 				b: 0.302,
 				c: -0.271,
 				d: 0.975,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1016,9 +950,6 @@ export const attack = {
 				b: -0.295,
 				c: 0.318,
 				d: 0.978,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1028,9 +959,6 @@ export const attack = {
 				b: -0.803,
 				c: 0.824,
 				d: 0.617,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1132,9 +1060,6 @@ export const attack = {
 				b: -0.102,
 				c: 0.157,
 				d: 1.013,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1144,9 +1069,6 @@ export const attack = {
 				b: -0.628,
 				c: 0.675,
 				d: 0.8,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1156,9 +1078,6 @@ export const attack = {
 				b: -0.937,
 				c: 0.98,
 				d: 0.372,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1260,9 +1179,6 @@ export const attack = {
 				b: -0.486,
 				c: 0.558,
 				d: 0.873,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1272,9 +1188,6 @@ export const attack = {
 				b: -0.863,
 				c: 0.938,
 				d: 0.505,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1284,9 +1197,6 @@ export const attack = {
 				b: -0.993,
 				c: 1.062,
 				d: 0.098,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1388,9 +1298,6 @@ export const attack = {
 				b: -0.79,
 				c: 0.865,
 				d: 0.596,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1400,9 +1307,6 @@ export const attack = {
 				b: -0.982,
 				c: 1.074,
 				d: 0.146,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1412,9 +1316,6 @@ export const attack = {
 				b: -0.976,
 				c: 1.068,
 				d: -0.182,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1516,9 +1417,6 @@ export const attack = {
 				b: -0.79,
 				c: 0.79,
 				d: 0.596,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1528,9 +1426,6 @@ export const attack = {
 				b: -0.982,
 				c: 0.982,
 				d: 0.146,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1540,9 +1435,6 @@ export const attack = {
 				b: -0.976,
 				c: 0.976,
 				d: -0.182,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1644,9 +1536,6 @@ export const attack = {
 				b: -0.79,
 				c: 0.79,
 				d: 0.596,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1656,9 +1545,6 @@ export const attack = {
 				b: -0.982,
 				c: 0.982,
 				d: 0.146,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1668,9 +1554,6 @@ export const attack = {
 				b: -0.976,
 				c: 0.976,
 				d: -0.182,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1772,9 +1655,6 @@ export const attack = {
 				b: -0.79,
 				c: 0.79,
 				d: 0.596,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1784,9 +1664,6 @@ export const attack = {
 				b: -0.982,
 				c: 0.982,
 				d: 0.146,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1796,9 +1673,6 @@ export const attack = {
 				b: -0.976,
 				c: 0.976,
 				d: -0.182,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1900,9 +1774,6 @@ export const attack = {
 				b: -0.788,
 				c: 0.788,
 				d: 0.596,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1912,9 +1783,6 @@ export const attack = {
 				b: -0.982,
 				c: 0.982,
 				d: 0.143,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1924,9 +1792,6 @@ export const attack = {
 				b: -0.976,
 				c: 0.976,
 				d: -0.181,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -2028,9 +1893,6 @@ export const attack = {
 				b: -0.79,
 				c: 0.79,
 				d: 0.596,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -2040,9 +1902,6 @@ export const attack = {
 				b: -0.982,
 				c: 0.982,
 				d: 0.146,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -2052,9 +1911,6 @@ export const attack = {
 				b: -0.976,
 				c: 0.976,
 				d: -0.182,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -2156,9 +2012,6 @@ export const attack = {
 				b: -0.427,
 				c: 0.427,
 				d: 0.894,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -2168,9 +2021,6 @@ export const attack = {
 				b: -0.805,
 				c: 0.805,
 				d: 0.582,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -2180,9 +2030,6 @@ export const attack = {
 				b: -0.906,
 				c: 0.906,
 				d: 0.409,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -2284,9 +2131,6 @@ export const attack = {
 				b: 0.027,
 				c: -0.027,
 				d: 0.994,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -2296,9 +2140,6 @@ export const attack = {
 				b: -0.45,
 				c: 0.45,
 				d: 0.889,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -2308,9 +2149,6 @@ export const attack = {
 				b: -0.514,
 				c: 0.514,
 				d: 0.853,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -2379,17 +2217,11 @@ export const attack = {
 				b: 0.477,
 				c: -0.477,
 				d: 0.876,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 13.15,
 				ty: -3.3,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -2399,9 +2231,6 @@ export const attack = {
 				b: 0.053,
 				c: -0.053,
 				d: 0.998,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		}

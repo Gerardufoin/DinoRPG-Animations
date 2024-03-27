@@ -11,9 +11,6 @@ export const jump = {
 				b: 1.879,
 				c: -1.366,
 				d: 1.417,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -23,9 +20,6 @@ export const jump = {
 				b: 1.988,
 				c: -1.988,
 				d: 1.016,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -35,9 +29,6 @@ export const jump = {
 				b: -1.308,
 				c: 1.308,
 				d: 0.663,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -47,9 +38,6 @@ export const jump = {
 				b: -1.663,
 				c: 1.663,
 				d: 0.769,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -59,9 +47,6 @@ export const jump = {
 				b: -0.193,
 				c: 0.193,
 				d: 1.36,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -71,9 +56,6 @@ export const jump = {
 				b: 0.942,
 				c: 0.942,
 				d: 1.007,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			tail: {
@@ -83,9 +65,6 @@ export const jump = {
 				b: 0.275,
 				c: -0.275,
 				d: 1.099,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			l_f_paw: {
@@ -95,9 +74,6 @@ export const jump = {
 				b: -0.671,
 				c: 0.671,
 				d: 1.209,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			l_b_paw: {
@@ -107,9 +83,6 @@ export const jump = {
 				b: -0.837,
 				c: 1.097,
 				d: 0.294,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			lower_body: {
@@ -119,9 +92,6 @@ export const jump = {
 				b: 0.752,
 				c: -0.925,
 				d: 2.309,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -131,9 +101,6 @@ export const jump = {
 				b: -1.808,
 				c: 1.585,
 				d: 0.275,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_upper_leg: {
@@ -143,9 +110,6 @@ export const jump = {
 				b: -0.05,
 				c: 0.058,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_b_paw: {
@@ -155,9 +119,6 @@ export const jump = {
 				b: -1.083,
 				c: 0.939,
 				d: -0.297,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -167,9 +128,6 @@ export const jump = {
 				b: 2.291,
 				c: -1.554,
 				d: 0.664,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -179,9 +137,6 @@ export const jump = {
 				b: 1.696,
 				c: -1.7,
 				d: 0.869,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -191,9 +146,6 @@ export const jump = {
 				b: -0.829,
 				c: 0.751,
 				d: 0.869,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -205,9 +157,6 @@ export const jump = {
 				b: 1.879,
 				c: -1.366,
 				d: 1.417,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -217,9 +166,6 @@ export const jump = {
 				b: 1.988,
 				c: -1.988,
 				d: 1.016,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -229,9 +175,6 @@ export const jump = {
 				b: -1.308,
 				c: 1.308,
 				d: 0.663,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -241,9 +184,6 @@ export const jump = {
 				b: -1.663,
 				c: 1.663,
 				d: 0.769,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -253,9 +193,6 @@ export const jump = {
 				b: -0.193,
 				c: 0.193,
 				d: 1.36,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			upper_body: {
@@ -265,9 +202,6 @@ export const jump = {
 				b: 0.942,
 				c: 0.942,
 				d: 1.007,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			tail: {
@@ -277,9 +211,6 @@ export const jump = {
 				b: -0.266,
 				c: 0.266,
 				d: 1.102,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			l_f_paw: {
@@ -289,9 +220,6 @@ export const jump = {
 				b: -0.671,
 				c: 0.671,
 				d: 1.209,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			l_b_paw: {
@@ -301,9 +229,6 @@ export const jump = {
 				b: -0.837,
 				c: 1.097,
 				d: 0.294,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			lower_body: {
@@ -313,9 +238,6 @@ export const jump = {
 				b: 0.752,
 				c: -0.925,
 				d: 2.309,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -325,9 +247,6 @@ export const jump = {
 				b: -1.808,
 				c: 1.585,
 				d: 0.275,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_upper_leg: {
@@ -337,9 +256,6 @@ export const jump = {
 				b: -0.05,
 				c: 0.058,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			r_b_paw: {
@@ -349,9 +265,6 @@ export const jump = {
 				b: -1.083,
 				c: 0.939,
 				d: -0.297,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -361,9 +274,6 @@ export const jump = {
 				b: 2.291,
 				c: -1.554,
 				d: 0.664,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -373,9 +283,6 @@ export const jump = {
 				b: 1.696,
 				c: -1.7,
 				d: 0.869,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -385,9 +292,6 @@ export const jump = {
 				b: -0.829,
 				c: 0.751,
 				d: 0.869,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		}

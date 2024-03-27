@@ -14,9 +14,6 @@ export const fly = {
 				b: -3.271,
 				c: 2.379,
 				d: 3.461,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -26,9 +23,6 @@ export const fly = {
 				b: 1.78,
 				c: -1.78,
 				d: 4.436,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -36,9 +30,6 @@ export const fly = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -48,9 +39,6 @@ export const fly = {
 				b: -1.671,
 				c: 1.671,
 				d: 2.647,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -60,9 +48,6 @@ export const fly = {
 				b: 0.055,
 				c: -0.055,
 				d: 3.913,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -70,9 +55,6 @@ export const fly = {
 				ty: 17.25,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -82,9 +64,6 @@ export const fly = {
 				b: -0.259,
 				c: 0.259,
 				d: 1.828,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -92,9 +71,6 @@ export const fly = {
 				ty: -9.4,
 				a: 5.302,
 				d: 6.52,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -104,9 +80,6 @@ export const fly = {
 				b: 1.549,
 				c: -1.549,
 				d: 3.278,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -116,9 +89,6 @@ export const fly = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -128,9 +98,6 @@ export const fly = {
 				b: -0.107,
 				c: 0.123,
 				d: 2.712,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -138,9 +105,6 @@ export const fly = {
 				ty: 8.9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -150,9 +114,6 @@ export const fly = {
 				b: -2.715,
 				c: 2.178,
 				d: 2.872,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -162,9 +123,6 @@ export const fly = {
 				b: 2.032,
 				c: -2.242,
 				d: 3.408,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -172,9 +130,6 @@ export const fly = {
 				ty: 11,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -186,9 +141,6 @@ export const fly = {
 				b: -4.833,
 				c: 3.514,
 				d: 2.287,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -198,9 +150,6 @@ export const fly = {
 				b: 0.252,
 				c: -0.252,
 				d: 4.769,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -210,9 +159,6 @@ export const fly = {
 				b: 0.377,
 				c: -0.377,
 				d: 2.935,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -222,9 +168,6 @@ export const fly = {
 				b: -0.704,
 				c: 0.704,
 				d: 3.045,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -234,9 +177,6 @@ export const fly = {
 				b: 1.11,
 				c: -1.11,
 				d: 3.742,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -246,9 +186,6 @@ export const fly = {
 				b: 0.471,
 				c: -0.618,
 				d: 2.338,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -258,9 +195,6 @@ export const fly = {
 				b: -0.13,
 				c: 0.13,
 				d: 1.84,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -270,9 +204,6 @@ export const fly = {
 				b: 0.602,
 				c: -0.741,
 				d: 6.47,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -282,9 +213,6 @@ export const fly = {
 				b: 0.646,
 				c: -0.646,
 				d: 3.565,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -294,9 +222,6 @@ export const fly = {
 				b: 0.922,
 				c: -1.062,
 				d: 3.262,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -306,9 +231,6 @@ export const fly = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -316,9 +238,6 @@ export const fly = {
 				ty: 8.95,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -328,9 +247,6 @@ export const fly = {
 				b: -2.705,
 				c: 2.171,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -340,9 +256,6 @@ export const fly = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.403,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -352,9 +265,6 @@ export const fly = {
 				b: -0.693,
 				c: 0.628,
 				d: 2.373,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -366,9 +276,6 @@ export const fly = {
 				b: -5.679,
 				c: 4.13,
 				d: 0.766,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -378,9 +285,6 @@ export const fly = {
 				b: -1.292,
 				c: 1.292,
 				d: 4.596,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -390,9 +294,6 @@ export const fly = {
 				b: 0.766,
 				c: -0.766,
 				d: 2.859,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -402,9 +303,6 @@ export const fly = {
 				b: 0.333,
 				c: -0.333,
 				d: 3.107,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -414,9 +312,6 @@ export const fly = {
 				b: 2.082,
 				c: -2.082,
 				d: 3.298,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -426,9 +321,6 @@ export const fly = {
 				b: 0.917,
 				c: -1.202,
 				d: 2.097,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -438,9 +330,6 @@ export const fly = {
 				b: -0.005,
 				c: 0.005,
 				d: 1.844,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -450,9 +339,6 @@ export const fly = {
 				b: 1.212,
 				c: -1.491,
 				d: 6.337,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -462,9 +348,6 @@ export const fly = {
 				b: -0.298,
 				c: 0.298,
 				d: 3.613,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -474,9 +357,6 @@ export const fly = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -486,9 +366,6 @@ export const fly = {
 				b: -0.107,
 				c: 0.123,
 				d: 2.712,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -496,9 +373,6 @@ export const fly = {
 				ty: 8.9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -508,9 +382,6 @@ export const fly = {
 				b: -2.715,
 				c: 2.178,
 				d: 2.872,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -520,9 +391,6 @@ export const fly = {
 				b: 2.032,
 				c: -2.242,
 				d: 3.408,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -532,9 +400,6 @@ export const fly = {
 				b: -1.355,
 				c: 1.228,
 				d: 2.127,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -546,9 +411,6 @@ export const fly = {
 				b: -3.577,
 				c: 2.601,
 				d: 3.286,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -558,9 +420,6 @@ export const fly = {
 				b: 0.932,
 				c: -0.932,
 				d: 4.678,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -570,9 +429,6 @@ export const fly = {
 				b: 0.854,
 				c: -0.854,
 				d: 2.83,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -582,9 +438,6 @@ export const fly = {
 				b: -1.246,
 				c: 1.247,
 				d: 2.862,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -594,9 +447,6 @@ export const fly = {
 				b: 0.324,
 				c: -0.324,
 				d: 3.885,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -606,9 +456,6 @@ export const fly = {
 				b: 0.09,
 				c: -0.118,
 				d: 2.413,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -618,9 +465,6 @@ export const fly = {
 				b: -0.089,
 				c: 0.089,
 				d: 1.842,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -630,9 +474,6 @@ export const fly = {
 				b: 0.967,
 				c: -1.189,
 				d: 6.396,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -642,9 +483,6 @@ export const fly = {
 				b: 0.332,
 				c: -0.332,
 				d: 3.609,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -654,9 +492,6 @@ export const fly = {
 				b: -0.526,
 				c: 0.212,
 				d: 3.428,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -666,9 +501,6 @@ export const fly = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -678,9 +510,6 @@ export const fly = {
 				b: -0.897,
 				c: 0.772,
 				d: 1.951,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -690,9 +519,6 @@ export const fly = {
 				b: -2.705,
 				c: 2.171,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -702,9 +528,6 @@ export const fly = {
 				b: 2.747,
 				c: -2.883,
 				d: 2.873,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -714,9 +537,6 @@ export const fly = {
 				b: -0.389,
 				c: 0.353,
 				d: 2.428,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -728,9 +548,6 @@ export const fly = {
 				b: 0.256,
 				c: -0.186,
 				d: 4.191,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -740,9 +557,6 @@ export const fly = {
 				b: 2.955,
 				c: -2.955,
 				d: 3.738,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -752,9 +566,6 @@ export const fly = {
 				b: 0.941,
 				c: -0.941,
 				d: 2.801,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -764,9 +575,6 @@ export const fly = {
 				b: -2.498,
 				c: 2.497,
 				d: 1.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -776,9 +584,6 @@ export const fly = {
 				b: -1.494,
 				c: 1.494,
 				d: 3.597,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -788,9 +593,6 @@ export const fly = {
 				b: -0.743,
 				c: 0.975,
 				d: 2.206,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -800,9 +602,6 @@ export const fly = {
 				b: -0.17,
 				c: 0.17,
 				d: 1.837,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -812,9 +611,6 @@ export const fly = {
 				b: 0.718,
 				c: -0.883,
 				d: 6.445,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -824,9 +620,6 @@ export const fly = {
 				b: 0.954,
 				c: -0.954,
 				d: 3.494,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -836,9 +629,6 @@ export const fly = {
 				b: -1.919,
 				c: 1.469,
 				d: 3.102,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -848,9 +638,6 @@ export const fly = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -860,9 +647,6 @@ export const fly = {
 				b: -1.665,
 				c: 1.441,
 				d: 1.524,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -872,9 +656,6 @@ export const fly = {
 				b: -2.705,
 				c: 2.171,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -884,9 +665,6 @@ export const fly = {
 				b: 3.353,
 				c: -3.4,
 				d: 2.235,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -896,9 +674,6 @@ export const fly = {
 				b: 0.622,
 				c: -0.564,
 				d: 2.386,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -910,9 +685,6 @@ export const fly = {
 				b: 3.988,
 				c: -2.9,
 				d: 3.03,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -922,9 +694,6 @@ export const fly = {
 				b: 4.333,
 				c: -4.333,
 				d: 1.999,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -934,9 +703,6 @@ export const fly = {
 				b: 1.037,
 				c: -1.037,
 				d: 2.769,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -946,9 +712,6 @@ export const fly = {
 				b: -3.09,
 				c: 3.101,
 				d: 0.388,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -958,9 +721,6 @@ export const fly = {
 				b: -2.989,
 				c: 2.989,
 				d: 2.504,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -970,9 +730,6 @@ export const fly = {
 				b: -1.428,
 				c: 1.872,
 				d: 1.524,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -982,9 +739,6 @@ export const fly = {
 				b: -0.259,
 				c: 0.259,
 				d: 1.828,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -994,9 +748,6 @@ export const fly = {
 				b: 0.486,
 				c: -0.598,
 				d: 6.48,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -1006,9 +757,6 @@ export const fly = {
 				b: 1.549,
 				c: -1.549,
 				d: 3.278,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -1018,9 +766,6 @@ export const fly = {
 				b: -3.025,
 				c: 2.523,
 				d: 2.336,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -1030,9 +775,6 @@ export const fly = {
 				b: -0.107,
 				c: 0.123,
 				d: 2.712,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -1042,9 +784,6 @@ export const fly = {
 				b: -2.196,
 				c: 1.908,
 				d: 0.881,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1054,9 +793,6 @@ export const fly = {
 				b: -2.715,
 				c: 2.178,
 				d: 2.872,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1066,9 +802,6 @@ export const fly = {
 				b: 3.818,
 				c: -3.787,
 				d: 1.498,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -1078,9 +811,6 @@ export const fly = {
 				b: 1.555,
 				c: -1.41,
 				d: 2.007,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		}

@@ -1774,9 +1774,6 @@ export const dead = {
 				b: 1.003,
 				c: -1.528,
 				d: 0.964,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_2: {
@@ -1784,9 +1781,6 @@ export const dead = {
 				ty: 31.724,
 				a: 5.486,
 				d: 1.117,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -1923,9 +1917,6 @@ export const dead = {
 				c: -3.619,
 				d: 1.362,
 				alpha: 0.91,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_2: {
@@ -1934,9 +1925,6 @@ export const dead = {
 				a: 7.108,
 				d: 2.259,
 				alpha: 0.871,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -2073,9 +2061,6 @@ export const dead = {
 				c: -6.126,
 				d: 1.417,
 				alpha: 0.828,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_2: {
@@ -2084,9 +2069,6 @@ export const dead = {
 				a: 8.618,
 				d: 3.324,
 				alpha: 0.75,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -2223,9 +2205,6 @@ export const dead = {
 				c: -8.677,
 				d: 1.124,
 				alpha: 0.746,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 16
 			},
 			fx_dust_2: {
@@ -2235,9 +2214,6 @@ export const dead = {
 				b: 1.003,
 				c: -1.529,
 				d: -0.964,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_3: {
@@ -2246,9 +2222,6 @@ export const dead = {
 				a: 10.015,
 				d: 4.309,
 				alpha: 0.641,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -2385,9 +2358,6 @@ export const dead = {
 				c: -10.977,
 				d: 0.513,
 				alpha: 0.668,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 16
 			},
 			fx_dust_2: {
@@ -2398,9 +2368,6 @@ export const dead = {
 				c: -2.592,
 				d: -2.046,
 				alpha: 0.871,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_3: {
@@ -2409,9 +2376,6 @@ export const dead = {
 				a: 11.301,
 				d: 5.215,
 				alpha: 0.539,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -2548,9 +2512,6 @@ export const dead = {
 				c: -12.791,
 				d: -0.329,
 				alpha: 0.598,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 16
 			},
 			fx_dust_2: {
@@ -2561,9 +2522,6 @@ export const dead = {
 				c: -3.117,
 				d: -3.116,
 				alpha: 0.75,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_3: {
@@ -2572,9 +2530,6 @@ export const dead = {
 				a: 12.475,
 				d: 6.043,
 				alpha: 0.445,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -2711,9 +2666,6 @@ export const dead = {
 				c: -13.988,
 				d: -1.352,
 				alpha: 0.527,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 16
 			},
 			fx_dust_2: {
@@ -2724,9 +2676,6 @@ export const dead = {
 				c: -3.203,
 				d: -4.139,
 				alpha: 0.641,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_3: {
@@ -2735,9 +2684,6 @@ export const dead = {
 				a: 13.539,
 				d: 6.792,
 				alpha: 0.359,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -2874,9 +2820,6 @@ export const dead = {
 				c: -14.505,
 				d: -2.478,
 				alpha: 0.465,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 16
 			},
 			fx_dust_2: {
@@ -2887,9 +2830,6 @@ export const dead = {
 				c: -2.906,
 				d: -5.099,
 				alpha: 0.539,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_3: {
@@ -2898,9 +2838,6 @@ export const dead = {
 				a: 14.489,
 				d: 7.462,
 				alpha: 0.285,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -3037,9 +2974,6 @@ export const dead = {
 				c: -14.372,
 				d: -3.623,
 				alpha: 0.406,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 16
 			},
 			fx_dust_2: {
@@ -3050,9 +2984,6 @@ export const dead = {
 				c: -2.306,
 				d: -5.977,
 				alpha: 0.445,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_3: {
@@ -3061,9 +2992,6 @@ export const dead = {
 				a: 15.327,
 				d: 8.053,
 				alpha: 0.219,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -3200,9 +3128,6 @@ export const dead = {
 				c: -13.623,
 				d: -4.738,
 				alpha: 0.348,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 16
 			},
 			fx_dust_2: {
@@ -3213,9 +3138,6 @@ export const dead = {
 				c: -1.476,
 				d: -6.764,
 				alpha: 0.359,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_3: {
@@ -3224,9 +3146,6 @@ export const dead = {
 				a: 16.054,
 				d: 8.566,
 				alpha: 0.16,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -3363,9 +3282,6 @@ export const dead = {
 				c: -12.442,
 				d: -5.75,
 				alpha: 0.297,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 16
 			},
 			fx_dust_2: {
@@ -3376,9 +3292,6 @@ export const dead = {
 				c: -0.555,
 				d: -7.454,
 				alpha: 0.285,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_3: {
@@ -3387,9 +3300,6 @@ export const dead = {
 				a: 16.669,
 				d: 8.999,
 				alpha: 0.109,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -3526,9 +3436,6 @@ export const dead = {
 				c: -10.802,
 				d: -6.672,
 				alpha: 0.25,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 16
 			},
 			fx_dust_2: {
@@ -3539,9 +3446,6 @@ export const dead = {
 				c: 0.303,
 				d: -8.048,
 				alpha: 0.219,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_3: {
@@ -3550,9 +3454,6 @@ export const dead = {
 				a: 17.172,
 				d: 9.353,
 				alpha: 0.07,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -3688,9 +3589,6 @@ export const dead = {
 				c: -8.988,
 				d: -7.445,
 				alpha: 0.207,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 16
 			},
 			fx_dust_2: {
@@ -3701,9 +3599,6 @@ export const dead = {
 				c: 1.245,
 				d: -8.547,
 				alpha: 0.16,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_3: {
@@ -3712,9 +3607,6 @@ export const dead = {
 				a: 17.564,
 				d: 9.629,
 				alpha: 0.039,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -3851,9 +3743,6 @@ export const dead = {
 				c: -7.001,
 				d: -8.092,
 				alpha: 0.168,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 16
 			},
 			fx_dust_2: {
@@ -3864,9 +3753,6 @@ export const dead = {
 				c: 2.159,
 				d: -8.956,
 				alpha: 0.109,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_3: {
@@ -3875,9 +3761,6 @@ export const dead = {
 				a: 17.844,
 				d: 9.826,
 				alpha: 0.02,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -4014,9 +3897,6 @@ export const dead = {
 				c: -5.012,
 				d: -8.608,
 				alpha: 0.133,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 16
 			},
 			fx_dust_2: {
@@ -4027,9 +3907,6 @@ export const dead = {
 				c: 2.92,
 				d: -9.284,
 				alpha: 0.07,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_3: {
@@ -4038,9 +3915,6 @@ export const dead = {
 				a: 18.011,
 				d: 9.945,
 				alpha: 0.004,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -4177,9 +4051,6 @@ export const dead = {
 				c: -3.037,
 				d: -9.01,
 				alpha: 0.102,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 16
 			},
 			fx_dust_2: {
@@ -4190,9 +4061,6 @@ export const dead = {
 				c: 3.573,
 				d: -9.531,
 				alpha: 0.039,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_3: {
@@ -4201,9 +4069,6 @@ export const dead = {
 				a: 18.068,
 				d: 9.984,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -4340,9 +4205,6 @@ export const dead = {
 				c: -1.231,
 				d: -9.307,
 				alpha: 0.074,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_2: {
@@ -4353,9 +4215,6 @@ export const dead = {
 				c: 4.097,
 				d: -9.702,
 				alpha: 0.02,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -4492,9 +4351,6 @@ export const dead = {
 				c: 0.347,
 				d: -9.52,
 				alpha: 0.051,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_2: {
@@ -4505,9 +4361,6 @@ export const dead = {
 				c: 4.384,
 				d: -9.805,
 				alpha: 0.004,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -4644,9 +4497,6 @@ export const dead = {
 				c: 1.735,
 				d: -9.663,
 				alpha: 0.031,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 15
 			},
 			fx_dust_2: {
@@ -4657,9 +4507,6 @@ export const dead = {
 				c: 4.517,
 				d: -9.841,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -4796,9 +4643,6 @@ export const dead = {
 				c: 2.814,
 				d: -9.756,
 				alpha: 0.02,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -4935,9 +4779,6 @@ export const dead = {
 				c: 3.562,
 				d: -9.816,
 				alpha: 0.008,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -5074,9 +4915,6 @@ export const dead = {
 				c: 4.051,
 				d: -9.845,
 				alpha: 0.004,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -5226,9 +5064,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -5404,9 +5239,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -5582,9 +5414,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -5760,9 +5589,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -5938,9 +5764,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -6116,9 +5939,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -6294,9 +6114,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -6472,9 +6289,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -6650,9 +6464,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -6828,9 +6639,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -7006,9 +6814,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -7184,9 +6989,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -7362,9 +7164,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -7540,9 +7339,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -7718,9 +7514,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -7896,9 +7689,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -8074,9 +7864,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -8252,9 +8039,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -8430,9 +8214,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -8608,9 +8389,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -8786,9 +8564,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -8964,9 +8739,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -9142,9 +8914,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -9320,9 +9089,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -9498,9 +9264,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -9676,9 +9439,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -9854,9 +9614,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -10032,9 +9789,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -10210,9 +9964,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -10388,9 +10139,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -10566,9 +10314,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -10744,9 +10489,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -10922,9 +10664,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -11100,9 +10839,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -11278,9 +11014,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -11456,9 +11189,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -11634,9 +11364,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -11812,9 +11539,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -11990,9 +11714,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -12168,9 +11889,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -12346,9 +12064,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -12524,9 +12239,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -12702,9 +12414,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -12880,9 +12589,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -13058,9 +12764,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -13236,9 +12939,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -13414,9 +13114,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -13592,9 +13289,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -13770,9 +13464,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -13948,9 +13639,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -14126,9 +13814,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -14304,9 +13989,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -14482,9 +14164,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -14660,9 +14339,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -14838,9 +14514,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -15016,9 +14689,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -15194,9 +14864,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -15372,9 +15039,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -15550,9 +15214,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -15728,9 +15389,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -15906,9 +15564,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -16084,9 +15739,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -16262,9 +15914,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -16440,9 +16089,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -16618,9 +16264,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -16796,9 +16439,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -16974,9 +16614,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -17152,9 +16789,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -17330,9 +16964,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -17508,9 +17139,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -17686,9 +17314,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -17864,9 +17489,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -18042,9 +17664,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -18220,9 +17839,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -18398,9 +18014,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -18576,9 +18189,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -18754,9 +18364,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -18932,9 +18539,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -19110,9 +18714,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -19288,9 +18889,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -19466,9 +19064,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -19644,9 +19239,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -19822,9 +19414,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -20000,9 +19589,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -20178,9 +19764,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -20356,9 +19939,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -20534,9 +20114,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -20712,9 +20289,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -20890,9 +20464,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -21068,9 +20639,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -21245,9 +20813,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -21422,9 +20987,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -21599,9 +21161,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -21776,9 +21335,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -21953,9 +21509,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -22130,9 +21683,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -22308,9 +21858,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -22486,9 +22033,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -22664,9 +22208,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -22842,9 +22383,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -23020,9 +22558,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -23198,9 +22733,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -23376,9 +22908,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -23553,9 +23082,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -23730,9 +23256,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -23907,9 +23430,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -24084,9 +23604,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -24261,9 +23778,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -24438,9 +23952,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {
@@ -24616,9 +24127,6 @@ export const dead = {
 				c: 4.28,
 				d: -9.855,
 				alpha: 0,
-				or: -11,
-				og: -51,
-				ob: -92,
 				l: 14
 			},
 			l_shoulder: {

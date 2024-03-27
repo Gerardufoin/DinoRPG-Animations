@@ -15,9 +15,6 @@ export const land = {
 				b: -2.868,
 				c: 2.086,
 				d: 3.633,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -27,9 +24,6 @@ export const land = {
 				b: 1.999,
 				c: -1.999,
 				d: 4.32,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -39,9 +33,6 @@ export const land = {
 				b: 0.453,
 				c: -0.453,
 				d: 2.919,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -51,9 +42,6 @@ export const land = {
 				b: -1.511,
 				c: 1.513,
 				d: 2.725,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -63,9 +51,6 @@ export const land = {
 				b: 2.255,
 				c: -2.255,
 				d: 3.177,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -75,9 +60,6 @@ export const land = {
 				b: -1.678,
 				c: 2.201,
 				d: 0.984,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -87,9 +69,6 @@ export const land = {
 				b: -0.669,
 				c: 0.669,
 				d: 1.715,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -99,9 +78,6 @@ export const land = {
 				b: -1.037,
 				c: 1.275,
 				d: 6.38,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -111,9 +87,6 @@ export const land = {
 				b: 1.046,
 				c: -1.046,
 				d: 3.463,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -123,9 +96,6 @@ export const land = {
 				b: -0.938,
 				c: 0.583,
 				d: 3.38,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -135,9 +105,6 @@ export const land = {
 				b: -0.557,
 				c: 0.508,
 				d: 2.663,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -147,9 +114,6 @@ export const land = {
 				b: -1.127,
 				c: 0.978,
 				d: 1.853,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -159,9 +123,6 @@ export const land = {
 				b: -3.314,
 				c: 2.568,
 				d: 2.514,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -171,9 +132,6 @@ export const land = {
 				b: 2.166,
 				c: -2.354,
 				d: 3.316,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -183,9 +141,6 @@ export const land = {
 				b: 0.096,
 				c: -0.087,
 				d: 2.451,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -197,9 +152,6 @@ export const land = {
 				b: -4.392,
 				c: 3.193,
 				d: 2.728,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -209,9 +161,6 @@ export const land = {
 				b: 2.336,
 				c: -2.336,
 				d: 4.164,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -221,9 +170,6 @@ export const land = {
 				b: 0.766,
 				c: -0.766,
 				d: 2.859,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -233,9 +179,6 @@ export const land = {
 				b: 0.333,
 				c: -0.333,
 				d: 3.107,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -245,9 +188,6 @@ export const land = {
 				b: 3.887,
 				c: -3.887,
 				d: 0.396,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -257,9 +197,6 @@ export const land = {
 				b: -1.6,
 				c: 2.097,
 				d: 1.202,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -269,9 +206,6 @@ export const land = {
 				b: -0.482,
 				c: 0.482,
 				d: 1.779,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -281,9 +215,6 @@ export const land = {
 				b: -0.604,
 				c: 0.743,
 				d: 6.475,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -293,9 +224,6 @@ export const land = {
 				b: 1.549,
 				c: -1.549,
 				d: 3.278,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -305,9 +233,6 @@ export const land = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -317,9 +242,6 @@ export const land = {
 				b: -0.107,
 				c: 0.123,
 				d: 2.712,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -327,9 +249,6 @@ export const land = {
 				ty: 8.9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -339,9 +258,6 @@ export const land = {
 				b: -2.715,
 				c: 2.178,
 				d: 2.872,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -351,9 +267,6 @@ export const land = {
 				b: 2.032,
 				c: -2.242,
 				d: 3.408,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -361,9 +274,6 @@ export const land = {
 				ty: 11,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -375,9 +285,6 @@ export const land = {
 				b: -5.205,
 				c: 3.785,
 				d: 1.808,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -387,9 +294,6 @@ export const land = {
 				b: 0.562,
 				c: -0.562,
 				d: 4.739,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -399,9 +303,6 @@ export const land = {
 				b: 0.757,
 				c: -0.757,
 				d: 2.859,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -411,9 +312,6 @@ export const land = {
 				b: 0.328,
 				c: -0.328,
 				d: 3.106,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -423,9 +321,6 @@ export const land = {
 				b: 3.312,
 				c: -3.312,
 				d: 2.055,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -435,9 +330,6 @@ export const land = {
 				b: -0.479,
 				c: 0.627,
 				d: 2.333,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -447,9 +339,6 @@ export const land = {
 				b: -0.242,
 				c: 0.242,
 				d: 1.827,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -459,9 +348,6 @@ export const land = {
 				b: 0.302,
 				c: -0.372,
 				d: 6.502,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -471,9 +357,6 @@ export const land = {
 				b: 0.646,
 				c: -0.646,
 				d: 3.565,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -483,9 +366,6 @@ export const land = {
 				b: 0.922,
 				c: -1.062,
 				d: 3.262,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -495,9 +375,6 @@ export const land = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -505,9 +382,6 @@ export const land = {
 				ty: 8.95,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -517,9 +391,6 @@ export const land = {
 				b: -2.705,
 				c: 2.171,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -529,9 +400,6 @@ export const land = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.403,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -541,9 +409,6 @@ export const land = {
 				b: -0.693,
 				c: 0.628,
 				d: 2.373,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -555,9 +420,6 @@ export const land = {
 				b: -5.679,
 				c: 4.13,
 				d: 0.766,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -567,9 +429,6 @@ export const land = {
 				b: -1.292,
 				c: 1.292,
 				d: 4.596,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -579,9 +438,6 @@ export const land = {
 				b: 0.766,
 				c: -0.766,
 				d: 2.859,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -591,9 +447,6 @@ export const land = {
 				b: 0.333,
 				c: -0.333,
 				d: 3.107,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -603,9 +456,6 @@ export const land = {
 				b: 2.082,
 				c: -2.082,
 				d: 3.298,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -615,9 +465,6 @@ export const land = {
 				b: 0.917,
 				c: -1.202,
 				d: 2.097,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -627,9 +474,6 @@ export const land = {
 				b: -0.005,
 				c: 0.005,
 				d: 1.844,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -639,9 +483,6 @@ export const land = {
 				b: 1.212,
 				c: -1.491,
 				d: 6.337,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -651,9 +492,6 @@ export const land = {
 				b: -0.298,
 				c: 0.298,
 				d: 3.613,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -663,9 +501,6 @@ export const land = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -675,9 +510,6 @@ export const land = {
 				b: -0.107,
 				c: 0.123,
 				d: 2.712,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -685,9 +517,6 @@ export const land = {
 				ty: 8.9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -697,9 +526,6 @@ export const land = {
 				b: -2.715,
 				c: 2.178,
 				d: 2.872,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -709,9 +535,6 @@ export const land = {
 				b: 2.032,
 				c: -2.242,
 				d: 3.408,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -721,9 +544,6 @@ export const land = {
 				b: -1.355,
 				c: 1.228,
 				d: 2.127,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -735,9 +555,6 @@ export const land = {
 				b: -5.205,
 				c: 3.785,
 				d: 1.808,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -747,9 +564,6 @@ export const land = {
 				b: -0.254,
 				c: 0.254,
 				d: 4.768,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -759,9 +573,6 @@ export const land = {
 				b: 0.504,
 				c: -0.504,
 				d: 2.915,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -771,9 +582,6 @@ export const land = {
 				b: -0.356,
 				c: 0.356,
 				d: 3.105,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -783,9 +591,6 @@ export const land = {
 				b: 1.448,
 				c: -1.448,
 				d: 3.622,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -795,9 +600,6 @@ export const land = {
 				b: 0.624,
 				c: -0.819,
 				d: 2.274,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -807,9 +609,6 @@ export const land = {
 				b: -0.089,
 				c: 0.089,
 				d: 1.842,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -819,9 +618,6 @@ export const land = {
 				b: 0.808,
 				c: -0.993,
 				d: 6.434,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -831,9 +627,6 @@ export const land = {
 				b: 0.332,
 				c: -0.332,
 				d: 3.609,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -843,9 +636,6 @@ export const land = {
 				b: 0.922,
 				c: -1.062,
 				d: 3.262,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -855,9 +645,6 @@ export const land = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -865,9 +652,6 @@ export const land = {
 				ty: 8.95,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -877,9 +661,6 @@ export const land = {
 				b: -2.705,
 				c: 2.171,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -889,9 +670,6 @@ export const land = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.403,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -901,9 +679,6 @@ export const land = {
 				b: -0.919,
 				c: 0.833,
 				d: 2.308,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -915,9 +690,6 @@ export const land = {
 				b: -4.379,
 				c: 3.184,
 				d: 2.727,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -927,9 +699,6 @@ export const land = {
 				b: 0.77,
 				c: -0.77,
 				d: 4.713,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -939,9 +708,6 @@ export const land = {
 				b: 0.248,
 				c: -0.248,
 				d: 2.949,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -951,9 +717,6 @@ export const land = {
 				b: -1.034,
 				c: 1.034,
 				d: 2.949,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -963,9 +726,6 @@ export const land = {
 				b: 0.763,
 				c: -0.763,
 				d: 3.831,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -975,9 +735,6 @@ export const land = {
 				b: 0.314,
 				c: -0.412,
 				d: 2.384,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -987,9 +744,6 @@ export const land = {
 				b: -0.17,
 				c: 0.17,
 				d: 1.837,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -999,9 +753,6 @@ export const land = {
 				b: 0.397,
 				c: -0.488,
 				d: 6.496,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -1011,9 +762,6 @@ export const land = {
 				b: 0.954,
 				c: -0.954,
 				d: 3.494,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -1023,9 +771,6 @@ export const land = {
 				b: 0.922,
 				c: -1.062,
 				d: 3.262,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -1035,9 +780,6 @@ export const land = {
 				b: -0.098,
 				c: 0.12,
 				d: 2.711,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -1045,9 +787,6 @@ export const land = {
 				ty: 8.95,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1057,9 +796,6 @@ export const land = {
 				b: -2.705,
 				c: 2.171,
 				d: 2.87,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1069,9 +805,6 @@ export const land = {
 				b: 2.025,
 				c: -2.238,
 				d: 3.403,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -1081,9 +814,6 @@ export const land = {
 				b: -0.462,
 				c: 0.419,
 				d: 2.419,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		},
@@ -1095,9 +825,6 @@ export const land = {
 				b: -3.271,
 				c: 2.379,
 				d: 3.461,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 14
 			},
 			l_f_lower_leg: {
@@ -1107,9 +834,6 @@ export const land = {
 				b: 1.78,
 				c: -1.78,
 				d: 4.436,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 13
 			},
 			l_f_paw: {
@@ -1117,9 +841,6 @@ export const land = {
 				ty: 25.2,
 				a: 2.96,
 				d: 2.96,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 12
 			},
 			r_b_upper_leg: {
@@ -1129,9 +850,6 @@ export const land = {
 				b: -1.671,
 				c: 1.671,
 				d: 2.647,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 11
 			},
 			l_b_lower_leg: {
@@ -1141,9 +859,6 @@ export const land = {
 				b: 0.055,
 				c: -0.055,
 				d: 3.913,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 10
 			},
 			l_b_paw: {
@@ -1151,9 +866,6 @@ export const land = {
 				ty: 17.25,
 				a: 1.848,
 				d: 2.423,
-				or: -72,
-				og: -118,
-				ob: -255,
 				l: 9
 			},
 			head: {
@@ -1163,9 +875,6 @@ export const land = {
 				b: -0.259,
 				c: 0.259,
 				d: 1.828,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 8
 			},
 			upper_body: {
@@ -1173,9 +882,6 @@ export const land = {
 				ty: -9.4,
 				a: 5.302,
 				d: 6.52,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 7
 			},
 			lower_body: {
@@ -1185,9 +891,6 @@ export const land = {
 				b: 1.549,
 				c: -1.549,
 				d: 3.278,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 6
 			},
 			r_b_lower_leg: {
@@ -1197,9 +900,6 @@ export const land = {
 				b: 0.924,
 				c: -1.066,
 				d: 3.264,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 5
 			},
 			l_b_upper_leg: {
@@ -1209,9 +909,6 @@ export const land = {
 				b: -0.107,
 				c: 0.123,
 				d: 2.712,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 4
 			},
 			r_b_paw: {
@@ -1219,9 +916,6 @@ export const land = {
 				ty: 8.9,
 				a: 2.423,
 				d: 2.1,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1231,9 +925,6 @@ export const land = {
 				b: -2.715,
 				c: 2.178,
 				d: 2.872,
-				or: -67,
-				og: -31,
-				ob: -179,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1243,9 +934,6 @@ export const land = {
 				b: 2.032,
 				c: -2.242,
 				d: 3.408,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 1
 			},
 			r_f_paw: {
@@ -1253,9 +941,6 @@ export const land = {
 				ty: 11,
 				a: 2.71,
 				d: 2.457,
-				or: -72,
-				og: -118,
-				ob: -235,
 				l: 0
 			}
 		}

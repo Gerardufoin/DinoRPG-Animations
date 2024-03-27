@@ -44,9 +44,9 @@ export class Smoke {
 	 * @param {number} y The initial y coordinates.
 	 */
 	static spawnSmall(scene, x, y) {
-		scene.dm.addSprite(Smoke.createSmoke(scene, x - 5.25, y - 1, -0.55, -0.9, 1.4), Layers.Scene.FIGHTERS);
-		scene.dm.addSprite(Smoke.createSmoke(scene, x + 2, y + 3.25, 0.2, -0.8, 1.4), Layers.Scene.FIGHTERS);
-		scene.dm.addSprite(Smoke.createSmoke(scene, x + 10, y + 1, 0.35, -0.9, 1.4), Layers.Scene.FIGHTERS);
+		scene.dm.addSprite(Smoke.createSmoke(scene, x - 9.25, y - 1, -0.9, -1.3, 1.4), Layers.Scene.FIGHTERS);
+		scene.dm.addSprite(Smoke.createSmoke(scene, x + 2, y + 1.5, 0.2, -1.4, 1.4), Layers.Scene.FIGHTERS);
+		scene.dm.addSprite(Smoke.createSmoke(scene, x + 12, y + 1, 0.7, -1.3, 1.4), Layers.Scene.FIGHTERS);
 	}
 
 	/**

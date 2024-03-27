@@ -19,9 +19,6 @@ export const sleep = {
 				b: 1.309,
 				c: -0.951,
 				d: 1.723,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -31,9 +28,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -43,9 +37,6 @@ export const sleep = {
 				b: 1.057,
 				c: -1.057,
 				d: 1.014,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -55,9 +46,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -67,9 +55,6 @@ export const sleep = {
 				b: -0.193,
 				c: 0.193,
 				d: 1.36,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -77,9 +62,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -87,9 +69,6 @@ export const sleep = {
 				ty: 12.1,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -97,9 +76,6 @@ export const sleep = {
 				ty: 7.35,
 				a: 2.025,
 				d: 2.49,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -109,9 +85,6 @@ export const sleep = {
 				b: 0.089,
 				c: 0.089,
 				d: 1.376,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -121,9 +94,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -133,9 +103,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.206,
 				d: 0.406,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -143,9 +110,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -155,9 +119,6 @@ export const sleep = {
 				b: 0.299,
 				c: -0.299,
 				d: 1.093,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -167,9 +128,6 @@ export const sleep = {
 				b: 2.214,
 				c: -1.487,
 				d: 0.804,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -179,9 +137,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -191,9 +146,6 @@ export const sleep = {
 				b: -0.65,
 				c: 0.589,
 				d: 0.989,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -213,9 +165,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -225,9 +174,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -237,9 +183,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -249,9 +192,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -261,9 +201,6 @@ export const sleep = {
 				b: -0.192,
 				c: 0.192,
 				d: 1.359,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -271,9 +208,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -281,9 +215,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -291,9 +222,6 @@ export const sleep = {
 				ty: 7.35,
 				a: 2.027,
 				d: 2.493,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -303,9 +231,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.377,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -315,9 +240,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -327,9 +249,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -337,9 +256,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -349,9 +265,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -361,9 +274,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -373,9 +283,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -385,9 +292,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -407,9 +311,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -419,9 +320,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -431,9 +329,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -443,9 +338,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -455,9 +347,6 @@ export const sleep = {
 				b: -0.192,
 				c: 0.192,
 				d: 1.359,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -465,9 +354,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -475,9 +361,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -485,9 +368,6 @@ export const sleep = {
 				ty: 7.35,
 				a: 2.034,
 				d: 2.502,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -497,9 +377,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.38,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -509,9 +386,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -521,9 +395,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -531,9 +402,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -543,9 +411,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -555,9 +420,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -567,9 +429,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -579,9 +438,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -601,9 +457,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -613,9 +466,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -625,9 +475,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -637,9 +484,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -649,9 +493,6 @@ export const sleep = {
 				b: -0.198,
 				c: 0.198,
 				d: 1.358,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -659,9 +500,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -669,9 +507,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -679,9 +514,6 @@ export const sleep = {
 				ty: 7.3,
 				a: 2.048,
 				d: 2.518,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -691,9 +523,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.386,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -703,9 +532,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -715,9 +541,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -725,9 +548,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -737,9 +557,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -749,9 +566,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -761,9 +575,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -773,9 +584,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -795,9 +603,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -807,9 +612,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -819,9 +621,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -831,9 +630,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -843,9 +639,6 @@ export const sleep = {
 				b: -0.204,
 				c: 0.204,
 				d: 1.357,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -853,9 +646,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -863,9 +653,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -873,9 +660,6 @@ export const sleep = {
 				ty: 7.35,
 				a: 2.068,
 				d: 2.544,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -885,9 +669,6 @@ export const sleep = {
 				b: 0.087,
 				c: 0.087,
 				d: 1.396,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -897,9 +678,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -909,9 +687,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -919,9 +694,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -931,9 +703,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -943,9 +712,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -955,9 +721,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -967,9 +730,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -989,9 +749,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1001,9 +758,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -1013,9 +767,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -1025,9 +776,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -1037,9 +785,6 @@ export const sleep = {
 				b: -0.216,
 				c: 0.216,
 				d: 1.355,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -1047,9 +792,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -1057,9 +799,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -1067,9 +806,6 @@ export const sleep = {
 				ty: 7.25,
 				a: 2.099,
 				d: 2.582,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -1079,9 +815,6 @@ export const sleep = {
 				b: 0.088,
 				c: 0.088,
 				d: 1.41,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -1091,9 +824,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -1103,9 +833,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -1113,9 +840,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -1125,9 +849,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1137,9 +858,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1149,9 +867,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -1161,9 +876,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -1183,9 +895,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1195,9 +904,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -1207,9 +913,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -1219,9 +922,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -1231,9 +931,6 @@ export const sleep = {
 				b: -0.233,
 				c: 0.233,
 				d: 1.352,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -1241,9 +938,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -1251,9 +945,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -1261,9 +952,6 @@ export const sleep = {
 				ty: 7.2,
 				a: 2.141,
 				d: 2.633,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -1273,9 +961,6 @@ export const sleep = {
 				b: 0.089,
 				c: 0.089,
 				d: 1.43,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -1285,9 +970,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -1297,9 +979,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -1307,9 +986,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -1319,9 +995,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1331,9 +1004,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1343,9 +1013,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -1355,9 +1022,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -1377,9 +1041,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1389,9 +1050,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -1401,9 +1059,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -1413,9 +1068,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -1425,9 +1077,6 @@ export const sleep = {
 				b: -0.25,
 				c: 0.25,
 				d: 1.349,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -1435,9 +1084,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -1445,9 +1091,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -1455,9 +1098,6 @@ export const sleep = {
 				ty: 7.05,
 				a: 2.193,
 				d: 2.697,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -1467,9 +1107,6 @@ export const sleep = {
 				b: 0.09,
 				c: 0.09,
 				d: 1.454,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -1479,9 +1116,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -1491,9 +1125,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -1501,9 +1132,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -1513,9 +1141,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1525,9 +1150,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1537,9 +1159,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -1549,9 +1168,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -1571,9 +1187,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1583,9 +1196,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -1595,9 +1205,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -1607,9 +1214,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -1619,9 +1223,6 @@ export const sleep = {
 				b: -0.268,
 				c: 0.268,
 				d: 1.345,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -1629,9 +1230,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -1639,9 +1237,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -1649,9 +1244,6 @@ export const sleep = {
 				ty: 7,
 				a: 2.25,
 				d: 2.767,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -1661,9 +1253,6 @@ export const sleep = {
 				b: 0.092,
 				c: 0.092,
 				d: 1.48,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -1673,9 +1262,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -1685,9 +1271,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -1695,9 +1278,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -1707,9 +1287,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1719,9 +1296,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1731,9 +1305,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -1743,9 +1314,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -1765,9 +1333,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1777,9 +1342,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -1789,9 +1351,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -1801,9 +1360,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -1813,9 +1369,6 @@ export const sleep = {
 				b: -0.286,
 				c: 0.286,
 				d: 1.342,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -1823,9 +1376,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -1833,9 +1383,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -1843,9 +1390,6 @@ export const sleep = {
 				ty: 6.9,
 				a: 2.303,
 				d: 2.832,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -1855,9 +1399,6 @@ export const sleep = {
 				b: 0.093,
 				c: 0.093,
 				d: 1.504,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -1867,9 +1408,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -1879,9 +1417,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -1889,9 +1424,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -1901,9 +1433,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1913,9 +1442,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1925,9 +1451,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -1937,9 +1460,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -1959,9 +1479,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1971,9 +1488,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -1983,9 +1497,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -1995,9 +1506,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -2007,9 +1515,6 @@ export const sleep = {
 				b: -0.303,
 				c: 0.303,
 				d: 1.338,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -2017,9 +1522,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -2027,9 +1529,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -2037,9 +1536,6 @@ export const sleep = {
 				ty: 6.85,
 				a: 2.348,
 				d: 2.887,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -2049,9 +1545,6 @@ export const sleep = {
 				b: 0.095,
 				c: 0.095,
 				d: 1.525,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -2061,9 +1554,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -2073,9 +1563,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -2083,9 +1570,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -2095,9 +1579,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -2107,9 +1588,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -2119,9 +1597,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -2131,9 +1606,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -2153,9 +1625,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -2165,9 +1634,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -2177,9 +1643,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -2189,9 +1652,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -2201,9 +1661,6 @@ export const sleep = {
 				b: -0.315,
 				c: 0.315,
 				d: 1.335,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -2211,9 +1668,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -2221,9 +1675,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -2231,9 +1682,6 @@ export const sleep = {
 				ty: 6.8,
 				a: 2.383,
 				d: 2.931,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -2243,9 +1691,6 @@ export const sleep = {
 				b: 0.096,
 				c: 0.096,
 				d: 1.541,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -2255,9 +1700,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -2267,9 +1709,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -2277,9 +1716,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -2289,9 +1725,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -2301,9 +1734,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -2313,9 +1743,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -2325,9 +1752,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -2347,9 +1771,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -2359,9 +1780,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -2371,9 +1789,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -2383,9 +1798,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -2395,9 +1807,6 @@ export const sleep = {
 				b: -0.322,
 				c: 0.322,
 				d: 1.333,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -2405,9 +1814,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -2415,9 +1821,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -2425,9 +1828,6 @@ export const sleep = {
 				ty: 6.7,
 				a: 2.411,
 				d: 2.965,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -2437,9 +1837,6 @@ export const sleep = {
 				b: 0.097,
 				c: 0.097,
 				d: 1.554,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -2449,9 +1846,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -2461,9 +1855,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -2471,9 +1862,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -2483,9 +1871,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -2495,9 +1880,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -2507,9 +1889,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -2519,9 +1898,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -2541,9 +1917,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -2553,9 +1926,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -2565,9 +1935,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -2577,9 +1944,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -2589,9 +1953,6 @@ export const sleep = {
 				b: -0.332,
 				c: 0.332,
 				d: 1.331,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -2599,9 +1960,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -2609,9 +1967,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -2619,9 +1974,6 @@ export const sleep = {
 				ty: 6.7,
 				a: 2.432,
 				d: 2.99,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -2631,9 +1983,6 @@ export const sleep = {
 				b: 0.097,
 				c: 0.097,
 				d: 1.563,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -2643,9 +1992,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -2655,9 +2001,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -2665,9 +2008,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -2677,9 +2017,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -2689,9 +2026,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -2701,9 +2035,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -2713,9 +2044,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -2735,9 +2063,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -2747,9 +2072,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -2759,9 +2081,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -2771,9 +2090,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -2783,9 +2099,6 @@ export const sleep = {
 				b: -0.338,
 				c: 0.338,
 				d: 1.329,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -2793,9 +2106,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -2803,9 +2113,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -2813,9 +2120,6 @@ export const sleep = {
 				ty: 6.65,
 				a: 2.447,
 				d: 3.009,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -2825,9 +2129,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.57,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -2837,9 +2138,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -2849,9 +2147,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -2859,9 +2154,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -2871,9 +2163,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -2883,9 +2172,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -2895,9 +2181,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -2907,9 +2190,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -2929,9 +2209,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -2941,9 +2218,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -2953,9 +2227,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -2965,9 +2236,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -2977,9 +2245,6 @@ export const sleep = {
 				b: -0.339,
 				c: 0.339,
 				d: 1.329,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -2987,9 +2252,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -2997,9 +2259,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -3007,9 +2266,6 @@ export const sleep = {
 				ty: 6.65,
 				a: 2.457,
 				d: 3.022,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -3019,9 +2275,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.575,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -3031,9 +2284,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -3043,9 +2293,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -3053,9 +2300,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -3065,9 +2309,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -3077,9 +2318,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -3089,9 +2327,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -3101,9 +2336,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -3123,9 +2355,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -3135,9 +2364,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -3147,9 +2373,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -3159,9 +2382,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -3171,9 +2391,6 @@ export const sleep = {
 				b: -0.344,
 				c: 0.344,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -3181,9 +2398,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -3191,9 +2405,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -3201,9 +2412,6 @@ export const sleep = {
 				ty: 6.6,
 				a: 2.464,
 				d: 3.03,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -3213,9 +2421,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.578,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -3225,9 +2430,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -3237,9 +2439,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -3247,9 +2446,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -3259,9 +2455,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -3271,9 +2464,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -3283,9 +2473,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -3295,9 +2482,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -3317,9 +2501,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -3329,9 +2510,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -3341,9 +2519,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -3353,9 +2528,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -3365,9 +2537,6 @@ export const sleep = {
 				b: -0.344,
 				c: 0.344,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -3375,9 +2544,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -3385,9 +2551,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -3395,9 +2558,6 @@ export const sleep = {
 				ty: 6.65,
 				a: 2.468,
 				d: 3.035,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -3407,9 +2567,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.58,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -3419,9 +2576,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -3431,9 +2585,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -3441,9 +2592,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -3453,9 +2601,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -3465,9 +2610,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -3477,9 +2619,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -3489,9 +2628,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -3511,9 +2647,6 @@ export const sleep = {
 				b: 1.309,
 				c: -0.951,
 				d: 1.723,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -3523,9 +2656,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -3535,9 +2665,6 @@ export const sleep = {
 				b: 1.057,
 				c: -1.057,
 				d: 1.014,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -3547,9 +2674,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -3559,9 +2683,6 @@ export const sleep = {
 				b: -0.346,
 				c: 0.346,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -3569,9 +2690,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -3579,9 +2697,6 @@ export const sleep = {
 				ty: 12.1,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -3589,9 +2704,6 @@ export const sleep = {
 				ty: 6.6,
 				a: 2.469,
 				d: 3.036,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -3601,9 +2713,6 @@ export const sleep = {
 				b: 0.103,
 				c: 0.103,
 				d: 1.581,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -3613,9 +2722,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -3625,9 +2731,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.206,
 				d: 0.406,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -3635,9 +2738,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -3647,9 +2747,6 @@ export const sleep = {
 				b: 0.299,
 				c: -0.299,
 				d: 1.093,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -3659,9 +2756,6 @@ export const sleep = {
 				b: 2.214,
 				c: -1.487,
 				d: 0.804,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -3671,9 +2765,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -3683,9 +2774,6 @@ export const sleep = {
 				b: -0.65,
 				c: 0.589,
 				d: 0.989,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -3705,9 +2793,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -3717,9 +2802,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -3729,9 +2811,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -3741,9 +2820,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -3753,9 +2829,6 @@ export const sleep = {
 				b: -0.344,
 				c: 0.344,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -3763,9 +2836,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -3773,9 +2843,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -3783,9 +2850,6 @@ export const sleep = {
 				ty: 6.6,
 				a: 2.469,
 				d: 3.036,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -3795,9 +2859,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.581,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -3807,9 +2868,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -3819,9 +2877,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -3829,9 +2884,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -3841,9 +2893,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -3853,9 +2902,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -3865,9 +2911,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -3877,9 +2920,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -3899,9 +2939,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -3911,9 +2948,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -3923,9 +2957,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -3935,9 +2966,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -3947,9 +2975,6 @@ export const sleep = {
 				b: -0.344,
 				c: 0.344,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -3957,9 +2982,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -3967,9 +2989,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -3977,9 +2996,6 @@ export const sleep = {
 				ty: 6.6,
 				a: 2.469,
 				d: 3.036,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -3989,9 +3005,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.581,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -4001,9 +3014,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -4013,9 +3023,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -4023,9 +3030,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -4035,9 +3039,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -4047,9 +3048,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -4059,9 +3057,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -4071,9 +3066,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -4093,9 +3085,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -4105,9 +3094,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -4117,9 +3103,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -4129,9 +3112,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -4141,9 +3121,6 @@ export const sleep = {
 				b: -0.344,
 				c: 0.344,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -4151,9 +3128,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -4161,9 +3135,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -4171,9 +3142,6 @@ export const sleep = {
 				ty: 6.6,
 				a: 2.469,
 				d: 3.036,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -4183,9 +3151,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.581,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -4195,9 +3160,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -4207,9 +3169,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -4217,9 +3176,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -4229,9 +3185,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -4241,9 +3194,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -4253,9 +3203,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -4265,9 +3212,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -4287,9 +3231,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -4299,9 +3240,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -4311,9 +3249,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -4323,9 +3258,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -4335,9 +3267,6 @@ export const sleep = {
 				b: -0.344,
 				c: 0.344,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -4345,9 +3274,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -4355,9 +3281,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -4365,9 +3288,6 @@ export const sleep = {
 				ty: 6.6,
 				a: 2.469,
 				d: 3.036,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -4377,9 +3297,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.581,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -4389,9 +3306,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -4401,9 +3315,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -4411,9 +3322,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -4423,9 +3331,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -4435,9 +3340,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -4447,9 +3349,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -4459,9 +3358,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -4481,9 +3377,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -4493,9 +3386,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -4505,9 +3395,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -4517,9 +3404,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -4529,9 +3413,6 @@ export const sleep = {
 				b: -0.344,
 				c: 0.344,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -4539,9 +3420,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -4549,9 +3427,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -4559,9 +3434,6 @@ export const sleep = {
 				ty: 6.6,
 				a: 2.469,
 				d: 3.036,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -4571,9 +3443,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.581,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -4583,9 +3452,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -4595,9 +3461,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -4605,9 +3468,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -4617,9 +3477,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -4629,9 +3486,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -4641,9 +3495,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -4653,9 +3504,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -4675,9 +3523,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -4687,9 +3532,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -4699,9 +3541,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -4711,9 +3550,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -4723,9 +3559,6 @@ export const sleep = {
 				b: -0.344,
 				c: 0.344,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -4733,9 +3566,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -4743,9 +3573,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -4753,9 +3580,6 @@ export const sleep = {
 				ty: 6.6,
 				a: 2.469,
 				d: 3.036,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -4765,9 +3589,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.581,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -4777,9 +3598,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -4789,9 +3607,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -4799,9 +3614,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -4811,9 +3623,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -4823,9 +3632,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -4835,9 +3641,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -4847,9 +3650,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -4869,9 +3669,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -4881,9 +3678,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -4893,9 +3687,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -4905,9 +3696,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -4917,9 +3705,6 @@ export const sleep = {
 				b: -0.344,
 				c: 0.344,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -4927,9 +3712,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -4937,9 +3719,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -4947,9 +3726,6 @@ export const sleep = {
 				ty: 6.6,
 				a: 2.469,
 				d: 3.036,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -4959,9 +3735,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.581,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -4971,9 +3744,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -4983,9 +3753,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -4993,9 +3760,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -5005,9 +3769,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -5017,9 +3778,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -5029,9 +3787,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -5041,9 +3796,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -5063,9 +3815,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -5075,9 +3824,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -5087,9 +3833,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -5099,9 +3842,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -5111,9 +3851,6 @@ export const sleep = {
 				b: -0.344,
 				c: 0.344,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -5121,9 +3858,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -5131,9 +3865,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -5141,9 +3872,6 @@ export const sleep = {
 				ty: 6.6,
 				a: 2.469,
 				d: 3.036,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -5153,9 +3881,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.581,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -5165,9 +3890,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -5177,9 +3899,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -5187,9 +3906,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -5199,9 +3915,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -5211,9 +3924,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -5223,9 +3933,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -5235,9 +3942,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -5257,9 +3961,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -5269,9 +3970,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -5281,9 +3979,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -5293,9 +3988,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -5305,9 +3997,6 @@ export const sleep = {
 				b: -0.344,
 				c: 0.344,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -5315,9 +4004,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -5325,9 +4011,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -5335,9 +4018,6 @@ export const sleep = {
 				ty: 6.6,
 				a: 2.469,
 				d: 3.036,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -5347,9 +4027,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.581,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -5359,9 +4036,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -5371,9 +4045,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -5381,9 +4052,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -5393,9 +4061,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -5405,9 +4070,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -5417,9 +4079,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -5429,9 +4088,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -5451,9 +4107,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -5463,9 +4116,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -5475,9 +4125,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -5487,9 +4134,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -5499,9 +4143,6 @@ export const sleep = {
 				b: -0.344,
 				c: 0.344,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -5509,9 +4150,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -5519,9 +4157,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -5529,9 +4164,6 @@ export const sleep = {
 				ty: 6.6,
 				a: 2.469,
 				d: 3.036,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -5541,9 +4173,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.581,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -5553,9 +4182,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -5565,9 +4191,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -5575,9 +4198,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -5587,9 +4207,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -5599,9 +4216,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -5611,9 +4225,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -5623,9 +4234,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -5645,9 +4253,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -5657,9 +4262,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -5669,9 +4271,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -5681,9 +4280,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -5693,9 +4289,6 @@ export const sleep = {
 				b: -0.344,
 				c: 0.344,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -5703,9 +4296,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -5713,9 +4303,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -5723,9 +4310,6 @@ export const sleep = {
 				ty: 6.6,
 				a: 2.469,
 				d: 3.036,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -5735,9 +4319,6 @@ export const sleep = {
 				b: 0.098,
 				c: 0.098,
 				d: 1.581,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -5747,9 +4328,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -5759,9 +4337,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -5769,9 +4344,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -5781,9 +4353,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -5793,9 +4362,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -5805,9 +4371,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -5817,9 +4380,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -5839,9 +4399,6 @@ export const sleep = {
 				b: 1.309,
 				c: -0.951,
 				d: 1.723,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -5851,9 +4408,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -5863,9 +4417,6 @@ export const sleep = {
 				b: 1.057,
 				c: -1.057,
 				d: 1.014,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -5875,9 +4426,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -5887,9 +4435,6 @@ export const sleep = {
 				b: -0.346,
 				c: 0.346,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -5897,9 +4442,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -5907,9 +4449,6 @@ export const sleep = {
 				ty: 12.1,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -5917,9 +4456,6 @@ export const sleep = {
 				ty: 6.6,
 				a: 2.469,
 				d: 3.036,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -5929,9 +4465,6 @@ export const sleep = {
 				b: 0.103,
 				c: 0.103,
 				d: 1.581,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -5941,9 +4474,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -5953,9 +4483,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.206,
 				d: 0.406,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -5963,9 +4490,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -5975,9 +4499,6 @@ export const sleep = {
 				b: 0.299,
 				c: -0.299,
 				d: 1.093,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -5987,9 +4508,6 @@ export const sleep = {
 				b: 2.214,
 				c: -1.487,
 				d: 0.804,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -5999,9 +4517,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -6011,9 +4526,6 @@ export const sleep = {
 				b: -0.65,
 				c: 0.589,
 				d: 0.989,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -6033,9 +4545,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -6045,9 +4554,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -6057,9 +4563,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -6069,9 +4572,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -6081,9 +4581,6 @@ export const sleep = {
 				b: -0.333,
 				c: 0.333,
 				d: 1.33,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -6091,9 +4588,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -6101,9 +4595,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -6111,9 +4602,6 @@ export const sleep = {
 				ty: 6.7,
 				a: 2.446,
 				d: 3.008,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -6123,9 +4611,6 @@ export const sleep = {
 				b: 0.097,
 				c: 0.097,
 				d: 1.57,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -6135,9 +4620,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -6147,9 +4629,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -6157,9 +4636,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -6169,9 +4645,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -6181,9 +4654,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -6193,9 +4663,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -6205,9 +4672,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -6227,9 +4691,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -6239,9 +4700,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -6251,9 +4709,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -6263,9 +4718,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -6275,9 +4727,6 @@ export const sleep = {
 				b: -0.327,
 				c: 0.327,
 				d: 1.332,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -6285,9 +4734,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -6295,9 +4741,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -6305,9 +4748,6 @@ export const sleep = {
 				ty: 6.7,
 				a: 2.423,
 				d: 2.98,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -6317,9 +4757,6 @@ export const sleep = {
 				b: 0.097,
 				c: 0.097,
 				d: 1.56,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -6329,9 +4766,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -6341,9 +4775,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -6351,9 +4782,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -6363,9 +4791,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -6375,9 +4800,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -6387,9 +4809,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -6399,9 +4818,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -6421,9 +4837,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -6433,9 +4846,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -6445,9 +4855,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -6457,9 +4864,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -6469,9 +4873,6 @@ export const sleep = {
 				b: -0.321,
 				c: 0.321,
 				d: 1.334,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -6479,9 +4880,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -6489,9 +4887,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -6499,9 +4894,6 @@ export const sleep = {
 				ty: 6.7,
 				a: 2.401,
 				d: 2.952,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -6511,9 +4903,6 @@ export const sleep = {
 				b: 0.096,
 				c: 0.096,
 				d: 1.549,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -6523,9 +4912,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -6535,9 +4921,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -6545,9 +4928,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -6557,9 +4937,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -6569,9 +4946,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -6581,9 +4955,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -6593,9 +4964,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -6615,9 +4983,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.947,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -6627,9 +4992,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -6639,9 +5001,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -6651,9 +5010,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -6663,9 +5019,6 @@ export const sleep = {
 				b: -0.31,
 				c: 0.31,
 				d: 1.336,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -6673,9 +5026,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -6683,9 +5033,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -6693,9 +5040,6 @@ export const sleep = {
 				ty: 6.75,
 				a: 2.378,
 				d: 2.924,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -6705,9 +5049,6 @@ export const sleep = {
 				b: 0.095,
 				c: 0.095,
 				d: 1.539,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -6717,9 +5058,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -6729,9 +5067,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -6739,9 +5074,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -6751,9 +5083,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -6763,9 +5092,6 @@ export const sleep = {
 				b: 2.212,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -6775,9 +5101,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -6787,9 +5110,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -6809,9 +5129,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.947,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -6821,9 +5138,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -6833,9 +5147,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -6845,9 +5156,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -6857,9 +5165,6 @@ export const sleep = {
 				b: -0.304,
 				c: 0.304,
 				d: 1.338,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -6867,9 +5172,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -6877,9 +5179,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -6887,9 +5186,6 @@ export const sleep = {
 				ty: 6.8,
 				a: 2.355,
 				d: 2.896,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -6899,9 +5195,6 @@ export const sleep = {
 				b: 0.095,
 				c: 0.095,
 				d: 1.528,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -6911,9 +5204,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -6923,9 +5213,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -6933,9 +5220,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -6945,9 +5229,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -6957,9 +5238,6 @@ export const sleep = {
 				b: 2.212,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -6969,9 +5247,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -6981,9 +5256,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -7003,9 +5275,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.947,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -7015,9 +5284,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -7027,9 +5293,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -7039,9 +5302,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -7051,9 +5311,6 @@ export const sleep = {
 				b: -0.297,
 				c: 0.297,
 				d: 1.339,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -7061,9 +5318,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -7071,9 +5325,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -7081,9 +5332,6 @@ export const sleep = {
 				ty: 6.9,
 				a: 2.332,
 				d: 2.868,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -7093,9 +5341,6 @@ export const sleep = {
 				b: 0.094,
 				c: 0.094,
 				d: 1.517,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -7105,9 +5350,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -7117,9 +5359,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -7127,9 +5366,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -7139,9 +5375,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -7151,9 +5384,6 @@ export const sleep = {
 				b: 2.212,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -7163,9 +5393,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -7175,9 +5402,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -7197,9 +5421,6 @@ export const sleep = {
 				b: 1.302,
 				c: -0.947,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -7209,9 +5430,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -7221,9 +5439,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -7233,9 +5448,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -7245,9 +5457,6 @@ export const sleep = {
 				b: -0.287,
 				c: 0.287,
 				d: 1.341,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -7255,9 +5464,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -7265,9 +5471,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -7275,9 +5478,6 @@ export const sleep = {
 				ty: 6.85,
 				a: 2.309,
 				d: 2.84,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -7287,9 +5487,6 @@ export const sleep = {
 				b: 0.093,
 				c: 0.093,
 				d: 1.507,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -7299,9 +5496,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -7311,9 +5505,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -7321,9 +5512,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -7333,9 +5521,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -7345,9 +5530,6 @@ export const sleep = {
 				b: 2.212,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -7357,9 +5539,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -7369,9 +5548,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -7391,9 +5567,6 @@ export const sleep = {
 				b: 1.302,
 				c: -0.947,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -7403,9 +5576,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -7415,9 +5585,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -7427,9 +5594,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -7439,9 +5603,6 @@ export const sleep = {
 				b: -0.28,
 				c: 0.28,
 				d: 1.343,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -7449,9 +5610,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -7459,9 +5617,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -7469,9 +5624,6 @@ export const sleep = {
 				ty: 6.9,
 				a: 2.286,
 				d: 2.812,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -7481,9 +5633,6 @@ export const sleep = {
 				b: 0.092,
 				c: 0.092,
 				d: 1.496,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -7493,9 +5642,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -7505,9 +5651,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -7515,9 +5658,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -7527,9 +5667,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -7539,9 +5676,6 @@ export const sleep = {
 				b: 2.212,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -7551,9 +5685,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -7563,9 +5694,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -7585,9 +5713,6 @@ export const sleep = {
 				b: 1.302,
 				c: -0.947,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -7597,9 +5722,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -7609,9 +5731,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -7621,9 +5740,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -7633,9 +5749,6 @@ export const sleep = {
 				b: -0.274,
 				c: 0.274,
 				d: 1.344,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -7643,9 +5756,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -7653,9 +5763,6 @@ export const sleep = {
 				ty: 12.2,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -7663,9 +5770,6 @@ export const sleep = {
 				ty: 6.95,
 				a: 2.264,
 				d: 2.784,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -7675,9 +5779,6 @@ export const sleep = {
 				b: 0.092,
 				c: 0.092,
 				d: 1.486,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -7687,9 +5788,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -7699,9 +5797,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -7709,9 +5804,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -7721,9 +5813,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -7733,9 +5822,6 @@ export const sleep = {
 				b: 2.212,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -7745,9 +5831,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -7757,9 +5840,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -7779,9 +5859,6 @@ export const sleep = {
 				b: 1.302,
 				c: -0.947,
 				d: 1.72,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -7791,9 +5868,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -7803,9 +5877,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -7815,9 +5886,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -7827,9 +5895,6 @@ export const sleep = {
 				b: -0.263,
 				c: 0.263,
 				d: 1.346,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -7837,9 +5902,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -7847,9 +5909,6 @@ export const sleep = {
 				ty: 12.2,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -7857,9 +5916,6 @@ export const sleep = {
 				ty: 7,
 				a: 2.241,
 				d: 2.755,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -7869,9 +5925,6 @@ export const sleep = {
 				b: 0.091,
 				c: 0.091,
 				d: 1.475,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -7881,9 +5934,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -7893,9 +5943,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -7903,9 +5950,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -7915,9 +5959,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -7927,9 +5968,6 @@ export const sleep = {
 				b: 2.212,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -7939,9 +5977,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -7951,9 +5986,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -7973,9 +6005,6 @@ export const sleep = {
 				b: 1.302,
 				c: -0.947,
 				d: 1.72,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -7985,9 +6014,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -7997,9 +6023,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -8009,9 +6032,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -8021,9 +6041,6 @@ export const sleep = {
 				b: -0.257,
 				c: 0.257,
 				d: 1.347,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -8031,9 +6048,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -8041,9 +6055,6 @@ export const sleep = {
 				ty: 12.2,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -8051,9 +6062,6 @@ export const sleep = {
 				ty: 7.05,
 				a: 2.218,
 				d: 2.727,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -8063,9 +6071,6 @@ export const sleep = {
 				b: 0.09,
 				c: 0.09,
 				d: 1.465,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -8075,9 +6080,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -8087,9 +6089,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -8097,9 +6096,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -8109,9 +6105,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -8121,9 +6114,6 @@ export const sleep = {
 				b: 2.211,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -8133,9 +6123,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -8145,9 +6132,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -8167,9 +6151,6 @@ export const sleep = {
 				b: 1.302,
 				c: -0.947,
 				d: 1.72,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -8179,9 +6160,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -8191,9 +6169,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -8203,9 +6178,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -8215,9 +6187,6 @@ export const sleep = {
 				b: -0.246,
 				c: 0.246,
 				d: 1.349,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -8225,9 +6194,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -8235,9 +6201,6 @@ export const sleep = {
 				ty: 12.2,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -8245,9 +6208,6 @@ export const sleep = {
 				ty: 7.05,
 				a: 2.195,
 				d: 2.699,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -8257,9 +6217,6 @@ export const sleep = {
 				b: 0.09,
 				c: 0.09,
 				d: 1.454,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -8269,9 +6226,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -8281,9 +6235,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.204,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -8291,9 +6242,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -8303,9 +6251,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -8315,9 +6260,6 @@ export const sleep = {
 				b: 2.211,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -8327,9 +6269,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -8339,9 +6278,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -8361,9 +6297,6 @@ export const sleep = {
 				b: 1.301,
 				c: -0.946,
 				d: 1.72,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -8373,9 +6306,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -8385,9 +6315,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -8397,9 +6324,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -8409,9 +6333,6 @@ export const sleep = {
 				b: -0.239,
 				c: 0.239,
 				d: 1.351,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -8419,9 +6340,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -8429,9 +6347,6 @@ export const sleep = {
 				ty: 12.2,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -8439,9 +6354,6 @@ export const sleep = {
 				ty: 7.1,
 				a: 2.172,
 				d: 2.671,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -8451,9 +6363,6 @@ export const sleep = {
 				b: 0.089,
 				c: 0.089,
 				d: 1.444,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -8463,9 +6372,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -8475,9 +6381,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.204,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -8485,9 +6388,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -8497,9 +6397,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -8509,9 +6406,6 @@ export const sleep = {
 				b: 2.211,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -8521,9 +6415,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -8533,9 +6424,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -8555,9 +6443,6 @@ export const sleep = {
 				b: 1.301,
 				c: -0.946,
 				d: 1.72,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -8567,9 +6452,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -8579,9 +6461,6 @@ export const sleep = {
 				b: 1.052,
 				c: -1.052,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -8591,9 +6470,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -8603,9 +6479,6 @@ export const sleep = {
 				b: -0.233,
 				c: 0.233,
 				d: 1.352,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -8613,9 +6486,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -8623,9 +6493,6 @@ export const sleep = {
 				ty: 12.2,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -8633,9 +6500,6 @@ export const sleep = {
 				ty: 7.15,
 				a: 2.149,
 				d: 2.643,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -8645,9 +6509,6 @@ export const sleep = {
 				b: 0.088,
 				c: 0.088,
 				d: 1.433,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -8657,9 +6518,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -8669,9 +6527,6 @@ export const sleep = {
 				b: 1.394,
 				c: -1.204,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -8679,9 +6534,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -8691,9 +6543,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -8703,9 +6552,6 @@ export const sleep = {
 				b: 2.211,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -8715,9 +6561,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -8727,9 +6570,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -8749,9 +6589,6 @@ export const sleep = {
 				b: 1.301,
 				c: -0.946,
 				d: 1.72,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -8761,9 +6598,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -8773,9 +6607,6 @@ export const sleep = {
 				b: 1.052,
 				c: -1.052,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -8785,9 +6616,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -8797,9 +6625,6 @@ export const sleep = {
 				b: -0.222,
 				c: 0.222,
 				d: 1.354,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -8807,9 +6632,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -8817,9 +6639,6 @@ export const sleep = {
 				ty: 12.2,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -8827,9 +6646,6 @@ export const sleep = {
 				ty: 7.15,
 				a: 2.126,
 				d: 2.615,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -8839,9 +6655,6 @@ export const sleep = {
 				b: 0.088,
 				c: 0.088,
 				d: 1.423,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -8851,9 +6664,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -8863,9 +6673,6 @@ export const sleep = {
 				b: 1.394,
 				c: -1.204,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -8873,9 +6680,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -8885,9 +6689,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.091,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -8897,9 +6698,6 @@ export const sleep = {
 				b: 2.211,
 				c: -1.484,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -8909,9 +6707,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -8921,9 +6716,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -8943,9 +6735,6 @@ export const sleep = {
 				b: 1.301,
 				c: -0.946,
 				d: 1.72,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -8955,9 +6744,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -8967,9 +6753,6 @@ export const sleep = {
 				b: 1.052,
 				c: -1.052,
 				d: 1.011,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -8979,9 +6762,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -8991,9 +6771,6 @@ export const sleep = {
 				b: -0.215,
 				c: 0.215,
 				d: 1.355,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -9001,9 +6778,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -9011,9 +6785,6 @@ export const sleep = {
 				ty: 12.2,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -9021,9 +6792,6 @@ export const sleep = {
 				ty: 7.25,
 				a: 2.104,
 				d: 2.587,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -9033,9 +6801,6 @@ export const sleep = {
 				b: 0.087,
 				c: 0.087,
 				d: 1.412,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -9045,9 +6810,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -9057,9 +6819,6 @@ export const sleep = {
 				b: 1.394,
 				c: -1.204,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -9067,9 +6826,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -9079,9 +6835,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.091,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -9091,9 +6844,6 @@ export const sleep = {
 				b: 2.211,
 				c: -1.484,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -9103,9 +6853,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -9115,9 +6862,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -9137,9 +6881,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -9149,9 +6890,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -9161,9 +6899,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -9173,9 +6908,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -9185,9 +6917,6 @@ export const sleep = {
 				b: -0.21,
 				c: 0.21,
 				d: 1.356,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -9195,9 +6924,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -9205,9 +6931,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -9215,9 +6938,6 @@ export const sleep = {
 				ty: 7.25,
 				a: 2.081,
 				d: 2.559,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -9227,9 +6947,6 @@ export const sleep = {
 				b: 0.087,
 				c: 0.087,
 				d: 1.402,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -9239,9 +6956,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -9251,9 +6965,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -9261,9 +6972,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -9273,9 +6981,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -9285,9 +6990,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -9297,9 +6999,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -9309,9 +7008,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -9331,9 +7027,6 @@ export const sleep = {
 				b: 1.301,
 				c: -0.946,
 				d: 1.72,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -9343,9 +7036,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -9355,9 +7045,6 @@ export const sleep = {
 				b: 1.052,
 				c: -1.052,
 				d: 1.011,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -9367,9 +7054,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -9379,9 +7063,6 @@ export const sleep = {
 				b: -0.204,
 				c: 0.204,
 				d: 1.356,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -9389,9 +7070,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -9399,9 +7077,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -9409,9 +7084,6 @@ export const sleep = {
 				ty: 7.35,
 				a: 2.077,
 				d: 2.554,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -9421,9 +7093,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.4,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -9433,9 +7102,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -9445,9 +7111,6 @@ export const sleep = {
 				b: 1.394,
 				c: -1.204,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -9455,9 +7118,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -9467,9 +7127,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.091,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -9479,9 +7136,6 @@ export const sleep = {
 				b: 2.211,
 				c: -1.484,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -9491,9 +7145,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -9503,9 +7154,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -9525,9 +7173,6 @@ export const sleep = {
 				b: 1.301,
 				c: -0.946,
 				d: 1.72,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -9537,9 +7182,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -9549,9 +7191,6 @@ export const sleep = {
 				b: 1.052,
 				c: -1.052,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -9561,9 +7200,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -9573,9 +7209,6 @@ export const sleep = {
 				b: -0.204,
 				c: 0.204,
 				d: 1.357,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -9583,9 +7216,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -9593,9 +7223,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -9603,9 +7230,6 @@ export const sleep = {
 				ty: 7.3,
 				a: 2.073,
 				d: 2.55,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -9615,9 +7239,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.398,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -9627,9 +7248,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -9639,9 +7257,6 @@ export const sleep = {
 				b: 1.394,
 				c: -1.204,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -9649,9 +7264,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -9661,9 +7273,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.091,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -9673,9 +7282,6 @@ export const sleep = {
 				b: 2.211,
 				c: -1.484,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -9685,9 +7291,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -9697,9 +7300,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -9719,9 +7319,6 @@ export const sleep = {
 				b: 1.302,
 				c: -0.946,
 				d: 1.72,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -9731,9 +7328,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -9743,9 +7337,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -9755,9 +7346,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -9767,9 +7355,6 @@ export const sleep = {
 				b: -0.204,
 				c: 0.204,
 				d: 1.357,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -9777,9 +7362,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -9787,9 +7369,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -9797,9 +7376,6 @@ export const sleep = {
 				ty: 7.3,
 				a: 2.07,
 				d: 2.545,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -9809,9 +7385,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.396,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -9821,9 +7394,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -9833,9 +7403,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.204,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -9843,9 +7410,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -9855,9 +7419,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -9867,9 +7428,6 @@ export const sleep = {
 				b: 2.211,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -9879,9 +7437,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -9891,9 +7446,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -9913,9 +7465,6 @@ export const sleep = {
 				b: 1.302,
 				c: -0.946,
 				d: 1.72,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -9925,9 +7474,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -9937,9 +7483,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -9949,9 +7492,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -9961,9 +7501,6 @@ export const sleep = {
 				b: -0.203,
 				c: 0.203,
 				d: 1.357,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -9971,9 +7508,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -9981,9 +7515,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -9991,9 +7522,6 @@ export const sleep = {
 				ty: 7.35,
 				a: 2.066,
 				d: 2.541,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -10003,9 +7531,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.395,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -10015,9 +7540,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -10027,9 +7549,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.204,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -10037,9 +7556,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -10049,9 +7565,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -10061,9 +7574,6 @@ export const sleep = {
 				b: 2.211,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -10073,9 +7583,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -10085,9 +7592,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -10107,9 +7611,6 @@ export const sleep = {
 				b: 1.302,
 				c: -0.947,
 				d: 1.72,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -10119,9 +7620,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -10131,9 +7629,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -10143,9 +7638,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -10155,9 +7647,6 @@ export const sleep = {
 				b: -0.203,
 				c: 0.203,
 				d: 1.357,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -10165,9 +7654,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -10175,9 +7661,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -10185,9 +7668,6 @@ export const sleep = {
 				ty: 7.4,
 				a: 2.062,
 				d: 2.536,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -10197,9 +7677,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.393,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -10209,9 +7686,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -10221,9 +7695,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -10231,9 +7702,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -10243,9 +7711,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -10255,9 +7720,6 @@ export const sleep = {
 				b: 2.211,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -10267,9 +7729,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -10279,9 +7738,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -10301,9 +7757,6 @@ export const sleep = {
 				b: 1.302,
 				c: -0.947,
 				d: 1.72,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -10313,9 +7766,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -10325,9 +7775,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -10337,9 +7784,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -10349,9 +7793,6 @@ export const sleep = {
 				b: -0.198,
 				c: 0.198,
 				d: 1.358,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -10359,9 +7800,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -10369,9 +7807,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -10379,9 +7814,6 @@ export const sleep = {
 				ty: 7.35,
 				a: 2.059,
 				d: 2.531,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -10391,9 +7823,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.391,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -10403,9 +7832,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -10415,9 +7841,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -10425,9 +7848,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -10437,9 +7857,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -10449,9 +7866,6 @@ export const sleep = {
 				b: 2.212,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -10461,9 +7875,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -10473,9 +7884,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -10495,9 +7903,6 @@ export const sleep = {
 				b: 1.302,
 				c: -0.947,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -10507,9 +7912,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -10519,9 +7921,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -10531,9 +7930,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -10543,9 +7939,6 @@ export const sleep = {
 				b: -0.198,
 				c: 0.198,
 				d: 1.358,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -10553,9 +7946,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -10563,9 +7953,6 @@ export const sleep = {
 				ty: 12.15,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -10573,9 +7960,6 @@ export const sleep = {
 				ty: 7.35,
 				a: 2.055,
 				d: 2.527,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -10585,9 +7969,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.39,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -10597,9 +7978,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -10609,9 +7987,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -10619,9 +7994,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -10631,9 +8003,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -10643,9 +8012,6 @@ export const sleep = {
 				b: 2.212,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -10655,9 +8021,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -10667,9 +8030,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -10689,9 +8049,6 @@ export const sleep = {
 				b: 1.302,
 				c: -0.947,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -10701,9 +8058,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -10713,9 +8067,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -10725,9 +8076,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -10737,9 +8085,6 @@ export const sleep = {
 				b: -0.198,
 				c: 0.198,
 				d: 1.358,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -10747,9 +8092,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -10757,9 +8099,6 @@ export const sleep = {
 				ty: 12.1,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -10767,9 +8106,6 @@ export const sleep = {
 				ty: 7.4,
 				a: 2.051,
 				d: 2.522,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -10779,9 +8115,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.388,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -10791,9 +8124,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -10803,9 +8133,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -10813,9 +8140,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -10825,9 +8149,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -10837,9 +8158,6 @@ export const sleep = {
 				b: 2.212,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -10849,9 +8167,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -10861,9 +8176,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -10883,9 +8195,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.947,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -10895,9 +8204,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -10907,9 +8213,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -10919,9 +8222,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -10931,9 +8231,6 @@ export const sleep = {
 				b: -0.198,
 				c: 0.198,
 				d: 1.358,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -10941,9 +8238,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -10951,9 +8245,6 @@ export const sleep = {
 				ty: 12.1,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -10961,9 +8252,6 @@ export const sleep = {
 				ty: 7.35,
 				a: 2.047,
 				d: 2.518,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -10973,9 +8261,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.386,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -10985,9 +8270,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -10997,9 +8279,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -11007,9 +8286,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -11019,9 +8295,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -11031,9 +8304,6 @@ export const sleep = {
 				b: 2.212,
 				c: -1.485,
 				d: 0.8,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -11043,9 +8313,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -11055,9 +8322,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -11077,9 +8341,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.947,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -11089,9 +8350,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -11101,9 +8359,6 @@ export const sleep = {
 				b: 1.053,
 				c: -1.053,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -11113,9 +8368,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -11125,9 +8377,6 @@ export const sleep = {
 				b: -0.197,
 				c: 0.197,
 				d: 1.358,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -11135,9 +8384,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -11145,9 +8391,6 @@ export const sleep = {
 				ty: 12.1,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -11155,9 +8398,6 @@ export const sleep = {
 				ty: 7.35,
 				a: 2.044,
 				d: 2.513,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -11167,9 +8407,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.385,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -11179,9 +8416,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -11191,9 +8425,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -11201,9 +8432,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -11213,9 +8441,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -11225,9 +8450,6 @@ export const sleep = {
 				b: 2.212,
 				c: -1.485,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -11237,9 +8459,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -11249,9 +8468,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.588,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -11271,9 +8487,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.947,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -11283,9 +8496,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -11295,9 +8505,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.012,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -11307,9 +8514,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -11319,9 +8523,6 @@ export const sleep = {
 				b: -0.197,
 				c: 0.197,
 				d: 1.358,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -11329,9 +8530,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -11339,9 +8537,6 @@ export const sleep = {
 				ty: 12.1,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -11349,9 +8544,6 @@ export const sleep = {
 				ty: 7.35,
 				a: 2.04,
 				d: 2.509,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -11361,9 +8553,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.383,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -11373,9 +8562,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -11385,9 +8571,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -11395,9 +8578,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -11407,9 +8587,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -11419,9 +8596,6 @@ export const sleep = {
 				b: 2.212,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -11431,9 +8605,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -11443,9 +8614,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -11465,9 +8633,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.947,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -11477,9 +8642,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -11489,9 +8651,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -11501,9 +8660,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -11513,9 +8669,6 @@ export const sleep = {
 				b: -0.192,
 				c: 0.192,
 				d: 1.359,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -11523,9 +8676,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -11533,9 +8683,6 @@ export const sleep = {
 				ty: 12.1,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -11543,9 +8690,6 @@ export const sleep = {
 				ty: 7.4,
 				a: 2.036,
 				d: 2.504,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -11555,9 +8699,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.381,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -11567,9 +8708,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -11579,9 +8717,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -11589,9 +8724,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -11601,9 +8733,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -11613,9 +8742,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -11625,9 +8751,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -11637,9 +8760,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -11659,9 +8779,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.721,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -11671,9 +8788,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -11683,9 +8797,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -11695,9 +8806,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -11707,9 +8815,6 @@ export const sleep = {
 				b: -0.192,
 				c: 0.192,
 				d: 1.359,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -11717,9 +8822,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -11727,9 +8829,6 @@ export const sleep = {
 				ty: 12.1,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -11737,9 +8836,6 @@ export const sleep = {
 				ty: 7.4,
 				a: 2.033,
 				d: 2.5,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -11749,9 +8845,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.38,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -11761,9 +8854,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -11773,9 +8863,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -11783,9 +8870,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -11795,9 +8879,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -11807,9 +8888,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -11819,9 +8897,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -11831,9 +8906,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -11853,9 +8925,6 @@ export const sleep = {
 				b: 1.303,
 				c: -0.948,
 				d: 1.722,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -11865,9 +8934,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -11877,9 +8943,6 @@ export const sleep = {
 				b: 1.054,
 				c: -1.054,
 				d: 1.013,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -11889,9 +8952,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -11901,9 +8961,6 @@ export const sleep = {
 				b: -0.192,
 				c: 0.192,
 				d: 1.359,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -11911,9 +8968,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -11921,9 +8975,6 @@ export const sleep = {
 				ty: 12.1,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -11931,9 +8982,6 @@ export const sleep = {
 				ty: 7.4,
 				a: 2.029,
 				d: 2.495,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -11943,9 +8991,6 @@ export const sleep = {
 				b: 0.086,
 				c: 0.086,
 				d: 1.378,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -11955,9 +9000,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -11967,9 +9009,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.205,
 				d: 0.404,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -11977,9 +9016,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -11989,9 +9025,6 @@ export const sleep = {
 				b: 0.298,
 				c: -0.298,
 				d: 1.092,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -12001,9 +9034,6 @@ export const sleep = {
 				b: 2.213,
 				c: -1.486,
 				d: 0.801,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -12013,9 +9043,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -12025,9 +9052,6 @@ export const sleep = {
 				b: -0.649,
 				c: 0.589,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -12047,9 +9071,6 @@ export const sleep = {
 				b: 1.309,
 				c: -0.951,
 				d: 1.723,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -12059,9 +9080,6 @@ export const sleep = {
 				b: 2.229,
 				c: -2.229,
 				d: -0.176,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -12071,9 +9089,6 @@ export const sleep = {
 				b: 1.057,
 				c: -1.057,
 				d: 1.014,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -12083,9 +9098,6 @@ export const sleep = {
 				b: -1.822,
 				c: 1.822,
 				d: -0.19,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -12095,9 +9107,6 @@ export const sleep = {
 				b: -0.193,
 				c: 0.193,
 				d: 1.36,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -12105,9 +9114,6 @@ export const sleep = {
 				ty: 15.3,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -12115,9 +9121,6 @@ export const sleep = {
 				ty: 12.1,
 				a: 0.867,
 				d: 1.137,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -12125,9 +9128,6 @@ export const sleep = {
 				ty: 7.35,
 				a: 2.025,
 				d: 2.49,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -12137,9 +9137,6 @@ export const sleep = {
 				b: 0.089,
 				c: 0.089,
 				d: 1.376,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -12149,9 +9146,6 @@ export const sleep = {
 				b: 0.434,
 				c: -0.5,
 				d: 1.532,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -12161,9 +9155,6 @@ export const sleep = {
 				b: 1.395,
 				c: -1.206,
 				d: 0.406,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -12171,9 +9162,6 @@ export const sleep = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -12183,9 +9171,6 @@ export const sleep = {
 				b: 0.299,
 				c: -0.299,
 				d: 1.093,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -12195,9 +9180,6 @@ export const sleep = {
 				b: 2.214,
 				c: -1.487,
 				d: 0.804,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -12207,9 +9189,6 @@ export const sleep = {
 				b: 0.954,
 				c: -1.052,
 				d: 1.599,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -12219,9 +9198,6 @@ export const sleep = {
 				b: -0.65,
 				c: 0.589,
 				d: 0.989,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		}

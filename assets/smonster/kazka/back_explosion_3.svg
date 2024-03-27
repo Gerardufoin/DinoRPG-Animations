@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" height="67.55px" width="123.9px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.0, 0.0, 0.0, 1.0, 57.75, 50.25)">
+    <path d="M2.3 -34.5 Q5.4 -32.1 9.25 -32.3 L10.2 -32.2 Q11.55 -31.9 11.95 -30.55 12.2 -29.65 11.55 -28.85 10.2 -27.25 8.0 -27.2 7.15 -27.2 6.25 -27.65 L4.1 -28.4 0.9 -28.05 Q-0.35 -28.3 -1.15 -29.15 L-1.45 -29.45 Q-2.3 -31.4 -3.65 -33.3 -4.2 -34.1 -4.05 -35.15 L-2.25 -36.2 Q-0.85 -36.95 0.35 -35.9 L2.3 -34.5" fill="url(#gradient0)" fill-rule="evenodd" stroke="none"/>
+    <path d="M52.75 -29.5 Q50.2 -27.4 46.75 -27.45 46.95 -28.85 48.55 -29.45 50.35 -30.25 52.25 -30.5 L52.9 -30.35 Q53.15 -29.85 52.75 -29.5" fill="url(#gradient1)" fill-rule="evenodd" stroke="none"/>
+    <path d="M65.15 -10.05 L64.95 -9.55 Q63.6 -8.65 62.25 -9.2 60.4 -9.95 58.9 -11.35 62.1 -11.65 65.0 -10.2 L65.15 -10.05" fill="url(#gradient2)" fill-rule="evenodd" stroke="none"/>
+    <path d="M45.75 7.35 L48.2 8.5 53.2 11.7 53.15 12.45 50.35 12.4 48.8 10.9 45.75 7.35" fill="url(#gradient3)" fill-rule="evenodd" stroke="none"/>
+    <path d="M3.9 7.25 Q5.65 7.7 6.7 9.1 8.25 11.4 7.0 13.8 5.8 15.95 3.55 16.3 2.7 16.15 2.05 15.6 1.2 14.95 0.95 13.95 0.65 12.7 -0.45 12.35 L-3.5 11.3 Q-5.8 10.65 -6.7 8.65 -6.95 8.05 -6.45 7.6 -5.35 6.55 -3.85 6.2 0.15 6.35 3.9 7.25" fill="url(#gradient4)" fill-rule="evenodd" stroke="none"/>
+    <path d="M-43.7 -37.2 Q-46.0 -38.55 -47.25 -41.0 L-46.95 -41.65 -46.15 -41.55 -45.55 -41.3 Q-44.15 -39.4 -43.7 -37.2" fill="url(#gradient5)" fill-rule="evenodd" stroke="none"/>
+    <path d="M-55.75 -12.3 Q-57.05 -13.0 -56.7 -14.3 L-54.15 -14.7 Q-51.0 -14.75 -48.8 -12.45 L-53.4 -11.85 Q-54.6 -11.6 -55.75 -12.3" fill="url(#gradient6)" fill-rule="evenodd" stroke="none"/>
+    <path d="M-23.25 -47.3 L-24.0 -46.55 Q-24.6 -46.45 -25.0 -47.1 -25.7 -48.15 -25.45 -49.1 -23.75 -49.75 -23.35 -47.85 L-23.25 -47.3" fill="url(#gradient7)" fill-rule="evenodd" stroke="none"/>
+    <path d="M-25.4 -5.3 Q-25.9 -2.6 -28.1 -1.3 L-28.25 -0.45 -28.2 1.2 Q-27.95 4.15 -30.8 3.4 L-33.5 -0.3 -31.2 -9.4 Q-28.5 -10.3 -26.0 -7.2 -25.2 -6.2 -25.4 -5.3" fill="url(#gradient8)" fill-rule="evenodd" stroke="none"/>
+    <path d="M2.3 -34.5 L0.35 -35.9 Q-0.85 -36.95 -2.25 -36.2 L-4.05 -35.15 Q-4.2 -34.1 -3.65 -33.3 -2.3 -31.4 -1.45 -29.45 L-1.15 -29.15 Q-0.35 -28.3 0.9 -28.05 L4.1 -28.4 6.25 -27.65 Q7.15 -27.2 8.0 -27.2 10.2 -27.25 11.55 -28.85 12.2 -29.65 11.95 -30.55 11.55 -31.9 10.2 -32.2 L9.25 -32.3 Q5.4 -32.1 2.3 -34.5 M52.75 -29.5 Q53.15 -29.85 52.9 -30.35 L52.25 -30.5 Q50.35 -30.25 48.55 -29.45 46.95 -28.85 46.75 -27.45 50.2 -27.4 52.75 -29.5 M65.15 -10.05 L65.0 -10.2 Q62.1 -11.65 58.9 -11.35 60.4 -9.95 62.25 -9.2 63.6 -8.65 64.95 -9.55 L65.15 -10.05 M45.75 7.35 L48.8 10.9 50.35 12.4 53.15 12.45 53.2 11.7 48.2 8.5 45.75 7.35 M3.9 7.25 Q0.15 6.35 -3.85 6.2 -5.35 6.55 -6.45 7.6 -6.95 8.05 -6.7 8.65 -5.8 10.65 -3.5 11.3 L-0.45 12.35 Q0.65 12.7 0.95 13.95 1.2 14.95 2.05 15.6 2.7 16.15 3.55 16.3 5.8 15.95 7.0 13.8 8.25 11.4 6.7 9.1 5.65 7.7 3.9 7.25 M-43.7 -37.2 Q-44.15 -39.4 -45.55 -41.3 L-46.15 -41.55 -46.95 -41.65 -47.25 -41.0 Q-46.0 -38.55 -43.7 -37.2 M-55.75 -12.3 Q-57.05 -13.0 -56.7 -14.3 L-54.15 -14.7 Q-51.0 -14.75 -48.8 -12.45 L-53.4 -11.85 Q-54.6 -11.6 -55.75 -12.3 M-23.25 -47.3 L-23.35 -47.85 Q-23.75 -49.75 -25.45 -49.1 -25.7 -48.15 -25.0 -47.1 -24.6 -46.45 -24.0 -46.55 L-23.25 -47.3 M-25.4 -5.3 Q-25.9 -2.6 -28.1 -1.3 L-28.25 -0.45 -28.2 1.2 Q-27.95 4.15 -30.8 3.4 L-33.5 -0.3 -31.2 -9.4 Q-28.5 -10.3 -26.0 -7.2 -25.2 -6.2 -25.4 -5.3 Z" fill="none" stroke="#660000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.4" stroke-width="1"/>
+    <path d="M15.4 0.4 Q14.2 -0.1 14.0 -1.3 L13.95 -1.75 Q14.75 -3.55 16.95 -3.5 19.35 -3.35 21.5 -2.25 23.4 -1.4 22.6 0.65 22.2 1.55 22.25 2.55 L22.6 5.65 Q23.05 8.1 21.1 9.3 20.15 9.35 19.65 8.55 18.1 5.8 18.75 2.5 18.85 2.05 18.55 1.7 17.2 0.4 15.4 0.4" fill="url(#gradient9)" fill-rule="evenodd" stroke="none"/>
+    <path d="M15.4 0.4 Q17.2 0.4 18.55 1.7 18.85 2.05 18.75 2.5 18.1 5.8 19.65 8.55 20.15 9.35 21.1 9.3 23.05 8.1 22.6 5.65 L22.25 2.55 Q22.2 1.55 22.6 0.65 23.4 -1.4 21.5 -2.25 19.35 -3.35 16.95 -3.5 14.75 -3.55 13.95 -1.75 L14.0 -1.3 Q14.2 -0.1 15.4 0.4 Z" fill="none" stroke="#660000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.4" stroke-width="1"/>
+  </g>
+  <defs>
+    <linearGradient gradientTransform="matrix(0.0019, 0.0237, -0.0098, 8.0E-4, -43.8, -44.3)" gradientUnits="userSpaceOnUse" id="gradient0" spreadMethod="pad" x1="-819.2" x2="819.2">
+      <stop offset="0.0" stop-color="#a90101"></stop>
+      <stop offset="1.0" stop-color="#8b1b98"></stop>
+    </linearGradient>
+    <linearGradient gradientTransform="matrix(0.0019, 0.0245, -0.0101, 8.0E-4, -22.6, -40.8)" gradientUnits="userSpaceOnUse" id="gradient1" spreadMethod="pad" x1="-819.2" x2="819.2">
+      <stop offset="0.0" stop-color="#a90101"></stop>
+      <stop offset="1.0" stop-color="#8b1b98"></stop>
+    </linearGradient>
+    <radialGradient cx="0" cy="0" gradientTransform="matrix(0.0215, -0.0042, 0.0023, 0.0117, 28.95, -5.4)" gradientUnits="userSpaceOnUse" id="gradient2" r="819.2" spreadMethod="pad">
+      <stop offset="0.2549019607843137" stop-color="#ef8f8f"></stop>
+      <stop offset="1.0" stop-color="#d66a6a"></stop>
+    </radialGradient>
+    <radialGradient cx="0" cy="0" gradientTransform="matrix(0.027, -0.0053, 0.0029, 0.0147, 16.55, 5.45)" gradientUnits="userSpaceOnUse" id="gradient3" r="819.2" spreadMethod="pad">
+      <stop offset="0.2549019607843137" stop-color="#ef8f8f"></stop>
+      <stop offset="1.0" stop-color="#d66a6a"></stop>
+    </radialGradient>
+    <radialGradient cx="0" cy="0" gradientTransform="matrix(0.0274, -0.0053, 0.0029, 0.0149, -0.1, 4.2)" gradientUnits="userSpaceOnUse" id="gradient4" r="819.2" spreadMethod="pad">
+      <stop offset="0.2549019607843137" stop-color="#ef8f8f"></stop>
+      <stop offset="1.0" stop-color="#d66a6a"></stop>
+    </radialGradient>
+    <radialGradient cx="0" cy="0" gradientTransform="matrix(0.0222, -0.0043, 0.0024, 0.0121, -28.35, -24.7)" gradientUnits="userSpaceOnUse" id="gradient5" r="819.2" spreadMethod="pad">
+      <stop offset="0.2549019607843137" stop-color="#ef8f8f"></stop>
+      <stop offset="1.0" stop-color="#d66a6a"></stop>
+    </radialGradient>
+    <radialGradient cx="0" cy="0" gradientTransform="matrix(0.0223, -0.0043, 0.0024, 0.0122, -36.15, -7.8)" gradientUnits="userSpaceOnUse" id="gradient6" r="819.2" spreadMethod="pad">
+      <stop offset="0.2549019607843137" stop-color="#ef8f8f"></stop>
+      <stop offset="1.0" stop-color="#d66a6a"></stop>
+    </radialGradient>
+    <radialGradient cx="0" cy="0" gradientTransform="matrix(0.0226, -0.0044, 0.0024, 0.0123, -17.6, -26.1)" gradientUnits="userSpaceOnUse" id="gradient7" r="819.2" spreadMethod="pad">
+      <stop offset="0.2549019607843137" stop-color="#ef8f8f"></stop>
+      <stop offset="1.0" stop-color="#d66a6a"></stop>
+    </radialGradient>
+    <radialGradient cx="0" cy="0" gradientTransform="matrix(0.015, -0.0267, 0.0186, 0.0142, -18.75, -10.55)" gradientUnits="userSpaceOnUse" id="gradient8" r="819.2" spreadMethod="pad">
+      <stop offset="0.2549019607843137" stop-color="#ef8f8f"></stop>
+      <stop offset="1.0" stop-color="#d66a6a"></stop>
+    </radialGradient>
+    <linearGradient gradientTransform="matrix(-0.0131, 0.0275, -0.0114, -0.0054, -26.6, -61.3)" gradientUnits="userSpaceOnUse" id="gradient9" spreadMethod="pad" x1="-819.2" x2="819.2">
+      <stop offset="0.0" stop-color="#a90101"></stop>
+      <stop offset="1.0" stop-color="#8b1b98"></stop>
+    </linearGradient>
+  </defs>
+</svg>

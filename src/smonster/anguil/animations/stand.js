@@ -68,17 +68,11 @@ export const stand = {
 				b: 0.477,
 				c: -0.477,
 				d: 0.876,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 13.15,
 				ty: -3.3,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -88,9 +82,6 @@ export const stand = {
 				b: 0.053,
 				c: -0.053,
 				d: 0.998,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -160,9 +151,6 @@ export const stand = {
 				b: 0.503,
 				c: -0.503,
 				d: 0.859,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -170,9 +158,6 @@ export const stand = {
 				ty: -3.6,
 				b: 0.01,
 				c: -0.01,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -182,9 +167,6 @@ export const stand = {
 				b: 0.075,
 				c: -0.075,
 				d: 0.996,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -259,9 +241,6 @@ export const stand = {
 				b: 0.529,
 				c: -0.529,
 				d: 0.844,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -271,9 +250,6 @@ export const stand = {
 				b: 0.022,
 				c: -0.022,
 				d: 0.999,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -283,9 +259,6 @@ export const stand = {
 				b: 0.1,
 				c: -0.1,
 				d: 0.994,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -361,9 +334,6 @@ export const stand = {
 				b: 0.551,
 				c: -0.551,
 				d: 0.83,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -373,9 +343,6 @@ export const stand = {
 				b: 0.031,
 				c: -0.031,
 				d: 0.999,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -385,9 +352,6 @@ export const stand = {
 				b: 0.118,
 				c: -0.118,
 				d: 0.992,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -463,9 +427,6 @@ export const stand = {
 				b: 0.569,
 				c: -0.569,
 				d: 0.817,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -475,9 +436,6 @@ export const stand = {
 				b: 0.04,
 				c: -0.04,
 				d: 0.999,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -487,9 +445,6 @@ export const stand = {
 				b: 0.135,
 				c: -0.135,
 				d: 0.989,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -573,9 +528,6 @@ export const stand = {
 				b: 0.587,
 				c: -0.587,
 				d: 0.805,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -585,9 +537,6 @@ export const stand = {
 				b: 0.049,
 				c: -0.049,
 				d: 0.998,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -597,9 +546,6 @@ export const stand = {
 				b: 0.149,
 				c: -0.149,
 				d: 0.987,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -683,9 +629,6 @@ export const stand = {
 				b: 0.601,
 				c: -0.601,
 				d: 0.795,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -695,9 +638,6 @@ export const stand = {
 				b: 0.053,
 				c: -0.053,
 				d: 0.998,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -707,9 +647,6 @@ export const stand = {
 				b: 0.161,
 				c: -0.161,
 				d: 0.985,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -793,9 +730,6 @@ export const stand = {
 				b: 0.611,
 				c: -0.611,
 				d: 0.787,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -805,9 +739,6 @@ export const stand = {
 				b: 0.061,
 				c: -0.061,
 				d: 0.997,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -817,9 +748,6 @@ export const stand = {
 				b: 0.174,
 				c: -0.174,
 				d: 0.983,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -903,9 +831,6 @@ export const stand = {
 				b: 0.621,
 				c: -0.621,
 				d: 0.779,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -915,9 +840,6 @@ export const stand = {
 				b: 0.066,
 				c: -0.066,
 				d: 0.997,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -927,9 +849,6 @@ export const stand = {
 				b: 0.182,
 				c: -0.182,
 				d: 0.981,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1013,9 +932,6 @@ export const stand = {
 				b: 0.628,
 				c: -0.628,
 				d: 0.773,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1025,9 +941,6 @@ export const stand = {
 				b: 0.066,
 				c: -0.066,
 				d: 0.997,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1037,9 +950,6 @@ export const stand = {
 				b: 0.187,
 				c: -0.187,
 				d: 0.98,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1125,9 +1035,6 @@ export const stand = {
 				b: 0.632,
 				c: -0.632,
 				d: 0.77,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1137,9 +1044,6 @@ export const stand = {
 				b: 0.07,
 				c: -0.07,
 				d: 0.997,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1149,9 +1053,6 @@ export const stand = {
 				b: 0.191,
 				c: -0.191,
 				d: 0.98,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1237,9 +1138,6 @@ export const stand = {
 				b: 0.635,
 				c: -0.635,
 				d: 0.767,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1249,9 +1147,6 @@ export const stand = {
 				b: 0.071,
 				c: -0.071,
 				d: 0.997,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1261,9 +1156,6 @@ export const stand = {
 				b: 0.195,
 				c: -0.195,
 				d: 0.979,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1353,9 +1245,6 @@ export const stand = {
 				b: 0.638,
 				c: -0.638,
 				d: 0.765,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1365,9 +1254,6 @@ export const stand = {
 				b: 0.074,
 				c: -0.074,
 				d: 0.996,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1377,9 +1263,6 @@ export const stand = {
 				b: 0.196,
 				c: -0.196,
 				d: 0.979,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1471,9 +1354,6 @@ export const stand = {
 				b: 0.64,
 				c: -0.64,
 				d: 0.766,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1483,9 +1363,6 @@ export const stand = {
 				b: 0.075,
 				c: -0.075,
 				d: 0.997,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1495,9 +1372,6 @@ export const stand = {
 				b: 0.2,
 				c: -0.2,
 				d: 0.979,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1589,9 +1463,6 @@ export const stand = {
 				b: 0.642,
 				c: -0.642,
 				d: 0.762,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1601,9 +1472,6 @@ export const stand = {
 				b: 0.075,
 				c: -0.075,
 				d: 0.996,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1613,9 +1481,6 @@ export const stand = {
 				b: 0.203,
 				c: -0.203,
 				d: 0.977,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1707,9 +1572,6 @@ export const stand = {
 				b: 0.645,
 				c: -0.645,
 				d: 0.76,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1719,9 +1581,6 @@ export const stand = {
 				b: 0.075,
 				c: -0.075,
 				d: 0.996,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1731,9 +1590,6 @@ export const stand = {
 				b: 0.204,
 				c: -0.204,
 				d: 0.977,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1825,9 +1681,6 @@ export const stand = {
 				b: 0.646,
 				c: -0.646,
 				d: 0.759,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1837,9 +1690,6 @@ export const stand = {
 				b: 0.079,
 				c: -0.079,
 				d: 0.996,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1849,9 +1699,6 @@ export const stand = {
 				b: 0.208,
 				c: -0.208,
 				d: 0.976,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -1943,9 +1790,6 @@ export const stand = {
 				b: 0.649,
 				c: -0.649,
 				d: 0.757,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -1955,9 +1799,6 @@ export const stand = {
 				b: 0.079,
 				c: -0.079,
 				d: 0.996,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -1967,9 +1808,6 @@ export const stand = {
 				b: 0.212,
 				c: -0.212,
 				d: 0.975,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -2061,9 +1899,6 @@ export const stand = {
 				b: 0.652,
 				c: -0.652,
 				d: 0.754,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -2073,9 +1908,6 @@ export const stand = {
 				b: 0.08,
 				c: -0.08,
 				d: 0.996,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -2085,9 +1917,6 @@ export const stand = {
 				b: 0.216,
 				c: -0.216,
 				d: 0.974,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -2181,9 +2010,6 @@ export const stand = {
 				b: 0.652,
 				c: -0.652,
 				d: 0.754,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -2193,9 +2019,6 @@ export const stand = {
 				b: 0.083,
 				c: -0.083,
 				d: 0.996,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -2205,9 +2028,6 @@ export const stand = {
 				b: 0.217,
 				c: -0.217,
 				d: 0.974,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -2301,9 +2121,6 @@ export const stand = {
 				b: 0.655,
 				c: -0.655,
 				d: 0.751,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -2313,9 +2130,6 @@ export const stand = {
 				b: 0.083,
 				c: -0.083,
 				d: 0.996,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -2325,9 +2139,6 @@ export const stand = {
 				b: 0.221,
 				c: -0.221,
 				d: 0.973,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -2421,9 +2232,6 @@ export const stand = {
 				b: 0.656,
 				c: -0.656,
 				d: 0.751,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -2433,9 +2241,6 @@ export const stand = {
 				b: 0.084,
 				c: -0.084,
 				d: 0.996,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -2445,9 +2250,6 @@ export const stand = {
 				b: 0.225,
 				c: -0.225,
 				d: 0.973,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -2543,9 +2345,6 @@ export const stand = {
 				b: 0.659,
 				c: -0.659,
 				d: 0.748,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -2555,9 +2354,6 @@ export const stand = {
 				b: 0.087,
 				c: -0.087,
 				d: 0.995,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -2567,9 +2363,6 @@ export const stand = {
 				b: 0.229,
 				c: -0.229,
 				d: 0.972,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -2669,9 +2462,6 @@ export const stand = {
 				b: 0.662,
 				c: -0.662,
 				d: 0.746,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -2681,9 +2471,6 @@ export const stand = {
 				b: 0.088,
 				c: -0.088,
 				d: 0.995,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -2693,9 +2480,6 @@ export const stand = {
 				b: 0.23,
 				c: -0.23,
 				d: 0.972,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -2795,9 +2579,6 @@ export const stand = {
 				b: 0.662,
 				c: -0.662,
 				d: 0.745,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -2807,9 +2588,6 @@ export const stand = {
 				b: 0.088,
 				c: -0.088,
 				d: 0.995,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -2819,9 +2597,6 @@ export const stand = {
 				b: 0.234,
 				c: -0.234,
 				d: 0.971,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -2923,9 +2698,6 @@ export const stand = {
 				b: 0.665,
 				c: -0.665,
 				d: 0.743,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -2935,9 +2707,6 @@ export const stand = {
 				b: 0.092,
 				c: -0.092,
 				d: 0.995,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -2947,9 +2716,6 @@ export const stand = {
 				b: 0.234,
 				c: -0.234,
 				d: 0.97,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -3051,9 +2817,6 @@ export const stand = {
 				b: 0.666,
 				c: -0.666,
 				d: 0.743,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -3063,9 +2826,6 @@ export const stand = {
 				b: 0.092,
 				c: -0.092,
 				d: 0.995,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -3075,9 +2835,6 @@ export const stand = {
 				b: 0.238,
 				c: -0.238,
 				d: 0.97,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -3179,9 +2936,6 @@ export const stand = {
 				b: 0.669,
 				c: -0.669,
 				d: 0.74,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -3191,9 +2945,6 @@ export const stand = {
 				b: 0.092,
 				c: -0.092,
 				d: 0.995,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -3203,9 +2954,6 @@ export const stand = {
 				b: 0.242,
 				c: -0.242,
 				d: 0.969,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -3307,9 +3055,6 @@ export const stand = {
 				b: 0.669,
 				c: -0.669,
 				d: 0.74,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -3319,9 +3064,6 @@ export const stand = {
 				b: 0.092,
 				c: -0.092,
 				d: 0.995,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -3331,9 +3073,6 @@ export const stand = {
 				b: 0.242,
 				c: -0.242,
 				d: 0.969,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -3435,9 +3174,6 @@ export const stand = {
 				b: 0.673,
 				c: -0.673,
 				d: 0.739,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -3447,9 +3183,6 @@ export const stand = {
 				b: 0.096,
 				c: -0.096,
 				d: 0.995,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -3459,9 +3192,6 @@ export const stand = {
 				b: 0.247,
 				c: -0.247,
 				d: 0.968,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -3557,9 +3287,6 @@ export const stand = {
 				b: 0.666,
 				c: -0.666,
 				d: 0.743,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -3569,9 +3296,6 @@ export const stand = {
 				b: 0.092,
 				c: -0.092,
 				d: 0.995,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -3581,9 +3305,6 @@ export const stand = {
 				b: 0.246,
 				c: -0.246,
 				d: 0.968,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -3673,9 +3394,6 @@ export const stand = {
 				b: 0.662,
 				c: -0.662,
 				d: 0.746,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -3685,9 +3403,6 @@ export const stand = {
 				b: 0.092,
 				c: -0.092,
 				d: 0.995,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -3697,9 +3412,6 @@ export const stand = {
 				b: 0.246,
 				c: -0.246,
 				d: 0.968,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -3795,9 +3507,6 @@ export const stand = {
 				b: 0.653,
 				c: -0.653,
 				d: 0.754,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -3807,9 +3516,6 @@ export const stand = {
 				b: 0.088,
 				c: -0.088,
 				d: 0.996,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -3819,9 +3525,6 @@ export const stand = {
 				b: 0.246,
 				c: -0.246,
 				d: 0.968,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -3923,9 +3626,6 @@ export const stand = {
 				b: 0.646,
 				c: -0.646,
 				d: 0.76,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -3935,9 +3635,6 @@ export const stand = {
 				b: 0.084,
 				c: -0.084,
 				d: 0.996,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -3947,9 +3644,6 @@ export const stand = {
 				b: 0.247,
 				c: -0.247,
 				d: 0.968,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -4051,9 +3745,6 @@ export const stand = {
 				b: 0.633,
 				c: -0.633,
 				d: 0.771,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -4063,9 +3754,6 @@ export const stand = {
 				b: 0.079,
 				c: -0.079,
 				d: 0.996,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -4075,9 +3763,6 @@ export const stand = {
 				b: 0.247,
 				c: -0.247,
 				d: 0.967,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -4179,9 +3864,6 @@ export const stand = {
 				b: 0.619,
 				c: -0.619,
 				d: 0.782,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -4191,9 +3873,6 @@ export const stand = {
 				b: 0.075,
 				c: -0.075,
 				d: 0.997,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -4203,9 +3882,6 @@ export const stand = {
 				b: 0.247,
 				c: -0.247,
 				d: 0.967,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -4307,9 +3983,6 @@ export const stand = {
 				b: 0.602,
 				c: -0.602,
 				d: 0.796,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -4319,9 +3992,6 @@ export const stand = {
 				b: 0.066,
 				c: -0.066,
 				d: 0.997,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -4331,9 +4001,6 @@ export const stand = {
 				b: 0.25,
 				c: -0.25,
 				d: 0.967,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -4435,9 +4102,6 @@ export const stand = {
 				b: 0.581,
 				c: -0.581,
 				d: 0.811,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -4447,9 +4111,6 @@ export const stand = {
 				b: 0.061,
 				c: -0.061,
 				d: 0.998,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -4459,9 +4120,6 @@ export const stand = {
 				b: 0.251,
 				c: -0.251,
 				d: 0.966,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -4563,9 +4221,6 @@ export const stand = {
 				b: 0.559,
 				c: -0.559,
 				d: 0.826,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -4575,9 +4230,6 @@ export const stand = {
 				b: 0.053,
 				c: -0.053,
 				d: 0.998,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -4587,9 +4239,6 @@ export const stand = {
 				b: 0.251,
 				c: -0.251,
 				d: 0.966,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -4690,9 +4339,6 @@ export const stand = {
 				b: 0.534,
 				c: -0.534,
 				d: 0.843,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -4702,9 +4348,6 @@ export const stand = {
 				b: 0.044,
 				c: -0.044,
 				d: 0.999,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -4714,9 +4357,6 @@ export const stand = {
 				b: 0.251,
 				c: -0.251,
 				d: 0.966,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -4818,9 +4458,6 @@ export const stand = {
 				b: 0.508,
 				c: -0.508,
 				d: 0.858,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -4830,9 +4467,6 @@ export const stand = {
 				b: 0.035,
 				c: -0.035,
 				d: 0.999,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -4842,9 +4476,6 @@ export const stand = {
 				b: 0.254,
 				c: -0.254,
 				d: 0.965,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -4945,9 +4576,6 @@ export const stand = {
 				b: 0.485,
 				c: -0.485,
 				d: 0.872,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -4957,9 +4585,6 @@ export const stand = {
 				b: 0.027,
 				c: -0.027,
 				d: 0.999,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -4969,9 +4594,6 @@ export const stand = {
 				b: 0.255,
 				c: -0.255,
 				d: 0.965,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -5073,9 +4695,6 @@ export const stand = {
 				b: 0.466,
 				c: -0.466,
 				d: 0.882,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -5083,9 +4702,6 @@ export const stand = {
 				ty: -3.05,
 				b: 0.022,
 				c: -0.022,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -5095,9 +4711,6 @@ export const stand = {
 				b: 0.255,
 				c: -0.255,
 				d: 0.965,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -5199,9 +4812,6 @@ export const stand = {
 				b: 0.45,
 				c: -0.45,
 				d: 0.89,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -5209,9 +4819,6 @@ export const stand = {
 				ty: -2.85,
 				b: 0.014,
 				c: -0.014,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -5221,9 +4828,6 @@ export const stand = {
 				b: 0.255,
 				c: -0.255,
 				d: 0.965,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -5325,9 +4929,6 @@ export const stand = {
 				b: 0.434,
 				c: -0.434,
 				d: 0.898,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -5335,9 +4936,6 @@ export const stand = {
 				ty: -2.7,
 				b: 0.01,
 				c: -0.01,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -5347,9 +4945,6 @@ export const stand = {
 				b: 0.255,
 				c: -0.255,
 				d: 0.965,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -5451,9 +5046,6 @@ export const stand = {
 				b: 0.423,
 				c: -0.423,
 				d: 0.903,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -5461,9 +5053,6 @@ export const stand = {
 				ty: -2.6,
 				b: 0.005,
 				c: -0.005,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -5473,9 +5062,6 @@ export const stand = {
 				b: 0.255,
 				c: -0.255,
 				d: 0.965,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -5577,9 +5163,6 @@ export const stand = {
 				b: 0.414,
 				c: -0.414,
 				d: 0.907,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -5587,9 +5170,6 @@ export const stand = {
 				ty: -2.5,
 				b: 0.005,
 				c: -0.005,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -5599,9 +5179,6 @@ export const stand = {
 				b: 0.259,
 				c: -0.259,
 				d: 0.964,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -5703,9 +5280,6 @@ export const stand = {
 				b: 0.407,
 				c: -0.407,
 				d: 0.911,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -5713,9 +5287,6 @@ export const stand = {
 				ty: -2.4,
 				b: 0.001,
 				c: -0.001,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -5725,9 +5296,6 @@ export const stand = {
 				b: 0.259,
 				c: -0.259,
 				d: 0.964,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -5829,17 +5397,11 @@ export const stand = {
 				b: 0.403,
 				c: -0.403,
 				d: 0.913,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 10.05,
 				ty: -2.35,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -5849,9 +5411,6 @@ export const stand = {
 				b: 0.259,
 				c: -0.259,
 				d: 0.964,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -5953,17 +5512,11 @@ export const stand = {
 				b: 0.399,
 				c: -0.399,
 				d: 0.914,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 10.05,
 				ty: -2.35,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -5973,9 +5526,6 @@ export const stand = {
 				b: 0.259,
 				c: -0.259,
 				d: 0.964,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -6075,17 +5625,11 @@ export const stand = {
 				b: 0.398,
 				c: -0.398,
 				d: 0.914,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 10.05,
 				ty: -2.3,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -6095,9 +5639,6 @@ export const stand = {
 				b: 0.259,
 				c: -0.259,
 				d: 0.964,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -6191,17 +5732,11 @@ export const stand = {
 				b: 0.398,
 				c: -0.398,
 				d: 0.916,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 9.15,
 				ty: -2.45,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -6211,9 +5746,6 @@ export const stand = {
 				b: 0.259,
 				c: -0.259,
 				d: 0.965,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -6309,17 +5841,11 @@ export const stand = {
 				b: 0.398,
 				c: -0.398,
 				d: 0.915,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 9.15,
 				ty: -2.45,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -6329,9 +5855,6 @@ export const stand = {
 				b: 0.259,
 				c: -0.259,
 				d: 0.964,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -6429,17 +5952,11 @@ export const stand = {
 				b: 0.399,
 				c: -0.399,
 				d: 0.914,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 9.2,
 				ty: -2.45,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -6449,9 +5966,6 @@ export const stand = {
 				b: 0.255,
 				c: -0.255,
 				d: 0.965,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -6547,17 +6061,11 @@ export const stand = {
 				b: 0.399,
 				c: -0.399,
 				d: 0.914,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 9.3,
 				ty: -2.5,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -6567,9 +6075,6 @@ export const stand = {
 				b: 0.251,
 				c: -0.251,
 				d: 0.966,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -6665,17 +6170,11 @@ export const stand = {
 				b: 0.403,
 				c: -0.403,
 				d: 0.913,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 9.4,
 				ty: -2.5,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -6685,9 +6184,6 @@ export const stand = {
 				b: 0.246,
 				c: -0.246,
 				d: 0.968,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -6783,17 +6279,11 @@ export const stand = {
 				b: 0.406,
 				c: -0.406,
 				d: 0.911,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 9.6,
 				ty: -2.55,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -6803,9 +6293,6 @@ export const stand = {
 				b: 0.234,
 				c: -0.234,
 				d: 0.971,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -6897,17 +6384,11 @@ export const stand = {
 				b: 0.41,
 				c: -0.41,
 				d: 0.909,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 9.8,
 				ty: -2.6,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -6917,9 +6398,6 @@ export const stand = {
 				b: 0.225,
 				c: -0.225,
 				d: 0.973,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -7010,17 +6488,11 @@ export const stand = {
 				b: 0.415,
 				c: -0.415,
 				d: 0.907,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 10.1,
 				ty: -2.65,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -7030,9 +6502,6 @@ export const stand = {
 				b: 0.209,
 				c: -0.209,
 				d: 0.977,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -7118,17 +6587,11 @@ export const stand = {
 				b: 0.422,
 				c: -0.422,
 				d: 0.903,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 10.45,
 				ty: -2.75,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -7138,9 +6601,6 @@ export const stand = {
 				b: 0.191,
 				c: -0.191,
 				d: 0.98,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -7222,17 +6682,11 @@ export const stand = {
 				b: 0.43,
 				c: -0.43,
 				d: 0.9,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 10.9,
 				ty: -2.8,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -7242,9 +6696,6 @@ export const stand = {
 				b: 0.17,
 				c: -0.17,
 				d: 0.984,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -7323,17 +6774,11 @@ export const stand = {
 				b: 0.439,
 				c: -0.439,
 				d: 0.895,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 11.35,
 				ty: -2.95,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -7343,9 +6788,6 @@ export const stand = {
 				b: 0.144,
 				c: -0.144,
 				d: 0.988,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -7417,17 +6859,11 @@ export const stand = {
 				b: 0.45,
 				c: -0.45,
 				d: 0.89,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 11.85,
 				ty: -3.05,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -7437,9 +6873,6 @@ export const stand = {
 				b: 0.118,
 				c: -0.118,
 				d: 0.992,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -7509,17 +6942,11 @@ export const stand = {
 				b: 0.461,
 				c: -0.461,
 				d: 0.884,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 12.4,
 				ty: -3.15,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -7529,9 +6956,6 @@ export const stand = {
 				b: 0.092,
 				c: -0.092,
 				d: 0.995,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -7600,17 +7024,11 @@ export const stand = {
 				b: 0.47,
 				c: -0.47,
 				d: 0.881,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 12.85,
 				ty: -3.25,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -7620,9 +7038,6 @@ export const stand = {
 				b: 0.07,
 				c: -0.07,
 				d: 0.997,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		}

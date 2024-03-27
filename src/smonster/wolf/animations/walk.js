@@ -14,9 +14,6 @@ export const walk = {
 				b: -1.535,
 				c: 1.116,
 				d: 1.624,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -26,9 +23,6 @@ export const walk = {
 				b: 0.592,
 				c: -0.592,
 				d: 2.162,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -38,9 +32,6 @@ export const walk = {
 				b: -0.849,
 				c: 0.849,
 				d: 1.198,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -50,9 +41,6 @@ export const walk = {
 				b: -0.297,
 				c: 0.297,
 				d: 1.811,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -62,9 +50,6 @@ export const walk = {
 				b: -0.193,
 				c: 0.193,
 				d: 1.36,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -72,9 +57,6 @@ export const walk = {
 				ty: 15.55,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -84,9 +66,6 @@ export const walk = {
 				b: -0.046,
 				c: 0.061,
 				d: 1.135,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -94,9 +73,6 @@ export const walk = {
 				ty: -1.8,
 				a: 2.025,
 				d: 2.49,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -106,9 +82,6 @@ export const walk = {
 				b: 0.59,
 				c: 0.59,
 				d: 1.248,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -118,9 +91,6 @@ export const walk = {
 				b: 0.713,
 				c: -0.741,
 				d: 1.43,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -130,9 +100,6 @@ export const walk = {
 				b: -0.05,
 				c: 0.058,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -140,9 +107,6 @@ export const walk = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -152,9 +116,6 @@ export const walk = {
 				b: 0.675,
 				c: -0.675,
 				d: 0.911,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -164,9 +125,6 @@ export const walk = {
 				b: -1.274,
 				c: 1.022,
 				d: 1.348,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -176,9 +134,6 @@ export const walk = {
 				b: 1.038,
 				c: -1.128,
 				d: 1.546,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -186,9 +141,6 @@ export const walk = {
 				ty: 8.8,
 				a: 1.272,
 				d: 1.153,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -200,9 +152,6 @@ export const walk = {
 				b: -1.505,
 				c: 1.095,
 				d: 1.634,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -212,9 +161,6 @@ export const walk = {
 				b: 0.571,
 				c: -0.571,
 				d: 2.164,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -224,9 +170,6 @@ export const walk = {
 				b: -0.789,
 				c: 0.789,
 				d: 1.235,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -236,9 +179,6 @@ export const walk = {
 				b: -0.304,
 				c: 0.304,
 				d: 1.808,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -248,9 +188,6 @@ export const walk = {
 				b: -0.191,
 				c: 0.191,
 				d: 1.359,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -260,9 +197,6 @@ export const walk = {
 				b: -0.024,
 				c: 0.024,
 				d: 1.388,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -272,9 +206,6 @@ export const walk = {
 				b: -0.05,
 				c: 0.065,
 				d: 1.134,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -282,9 +213,6 @@ export const walk = {
 				ty: -2.05,
 				a: 2.025,
 				d: 2.491,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -294,9 +222,6 @@ export const walk = {
 				b: 0.535,
 				c: 0.535,
 				d: 1.271,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -306,9 +231,6 @@ export const walk = {
 				b: 0.711,
 				c: -0.738,
 				d: 1.429,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -318,9 +240,6 @@ export const walk = {
 				b: -0.046,
 				c: 0.056,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -328,9 +247,6 @@ export const walk = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -340,9 +256,6 @@ export const walk = {
 				b: 0.664,
 				c: -0.664,
 				d: 0.918,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -352,9 +265,6 @@ export const walk = {
 				b: -1.269,
 				c: 1.019,
 				d: 1.347,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -364,9 +274,6 @@ export const walk = {
 				b: 1.034,
 				c: -1.126,
 				d: 1.544,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -374,9 +281,6 @@ export const walk = {
 				ty: 8.95,
 				a: 1.272,
 				d: 1.153,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -388,9 +292,6 @@ export const walk = {
 				b: -1.476,
 				c: 1.073,
 				d: 1.647,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -400,9 +301,6 @@ export const walk = {
 				b: 0.552,
 				c: -0.552,
 				d: 2.167,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -412,9 +310,6 @@ export const walk = {
 				b: -0.728,
 				c: 0.728,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -424,9 +319,6 @@ export const walk = {
 				b: -0.312,
 				c: 0.312,
 				d: 1.807,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -436,9 +328,6 @@ export const walk = {
 				b: -0.191,
 				c: 0.191,
 				d: 1.359,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -448,9 +337,6 @@ export const walk = {
 				b: -0.048,
 				c: 0.048,
 				d: 1.386,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -460,9 +346,6 @@ export const walk = {
 				b: -0.053,
 				c: 0.07,
 				d: 1.134,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -470,9 +353,6 @@ export const walk = {
 				ty: -2.3,
 				a: 2.025,
 				d: 2.491,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -482,9 +362,6 @@ export const walk = {
 				b: 0.483,
 				c: 0.483,
 				d: 1.291,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -494,9 +371,6 @@ export const walk = {
 				b: 0.711,
 				c: -0.738,
 				d: 1.429,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -506,9 +380,6 @@ export const walk = {
 				b: -0.046,
 				c: 0.056,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -516,9 +387,6 @@ export const walk = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -528,9 +396,6 @@ export const walk = {
 				b: 0.655,
 				c: -0.655,
 				d: 0.923,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -540,9 +405,6 @@ export const walk = {
 				b: -1.269,
 				c: 1.019,
 				d: 1.347,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -552,9 +414,6 @@ export const walk = {
 				b: 1.034,
 				c: -1.126,
 				d: 1.544,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -562,9 +421,6 @@ export const walk = {
 				ty: 9.1,
 				a: 1.272,
 				d: 1.153,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -576,9 +432,6 @@ export const walk = {
 				b: -1.446,
 				c: 1.051,
 				d: 1.659,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -588,9 +441,6 @@ export const walk = {
 				b: 0.534,
 				c: -0.534,
 				d: 2.17,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -600,9 +450,6 @@ export const walk = {
 				b: -0.666,
 				c: 0.666,
 				d: 1.305,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -612,9 +459,6 @@ export const walk = {
 				b: -0.32,
 				c: 0.32,
 				d: 1.805,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -624,9 +468,6 @@ export const walk = {
 				b: -0.191,
 				c: 0.191,
 				d: 1.359,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -636,9 +477,6 @@ export const walk = {
 				b: -0.073,
 				c: 0.073,
 				d: 1.383,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -648,9 +486,6 @@ export const walk = {
 				b: -0.057,
 				c: 0.075,
 				d: 1.133,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -658,9 +493,6 @@ export const walk = {
 				ty: -2.5,
 				a: 2.025,
 				d: 2.491,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -670,9 +502,6 @@ export const walk = {
 				b: 0.427,
 				c: 0.427,
 				d: 1.311,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -682,9 +511,6 @@ export const walk = {
 				b: 0.711,
 				c: -0.738,
 				d: 1.429,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -694,9 +520,6 @@ export const walk = {
 				b: -0.046,
 				c: 0.056,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -704,9 +527,6 @@ export const walk = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -716,9 +536,6 @@ export const walk = {
 				b: 0.647,
 				c: -0.647,
 				d: 0.929,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -728,9 +545,6 @@ export const walk = {
 				b: -1.269,
 				c: 1.019,
 				d: 1.347,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -740,9 +554,6 @@ export const walk = {
 				b: 1.034,
 				c: -1.126,
 				d: 1.544,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -750,9 +561,6 @@ export const walk = {
 				ty: 9.25,
 				a: 1.272,
 				d: 1.153,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -764,9 +572,6 @@ export const walk = {
 				b: -1.423,
 				c: 1.035,
 				d: 1.671,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -776,9 +581,6 @@ export const walk = {
 				b: 0.523,
 				c: -0.522,
 				d: 2.172,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -788,9 +590,6 @@ export const walk = {
 				b: -0.602,
 				c: 0.602,
 				d: 1.337,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -800,9 +599,6 @@ export const walk = {
 				b: -0.335,
 				c: 0.335,
 				d: 1.803,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -812,9 +608,6 @@ export const walk = {
 				b: -0.193,
 				c: 0.193,
 				d: 1.36,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -824,9 +617,6 @@ export const walk = {
 				b: -0.097,
 				c: 0.097,
 				d: 1.381,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -836,9 +626,6 @@ export const walk = {
 				b: -0.064,
 				c: 0.084,
 				d: 1.133,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -846,9 +633,6 @@ export const walk = {
 				ty: -2.7,
 				a: 2.025,
 				d: 2.49,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -858,9 +642,6 @@ export const walk = {
 				b: 0.375,
 				c: 0.375,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -870,9 +651,6 @@ export const walk = {
 				b: 0.713,
 				c: -0.741,
 				d: 1.43,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -882,9 +660,6 @@ export const walk = {
 				b: -0.05,
 				c: 0.058,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -892,9 +667,6 @@ export const walk = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -904,9 +676,6 @@ export const walk = {
 				b: 0.64,
 				c: -0.64,
 				d: 0.936,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -916,9 +685,6 @@ export const walk = {
 				b: -1.274,
 				c: 1.022,
 				d: 1.348,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -928,9 +694,6 @@ export const walk = {
 				b: 1.038,
 				c: -1.128,
 				d: 1.546,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -938,9 +701,6 @@ export const walk = {
 				ty: 9.4,
 				a: 1.272,
 				d: 1.153,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -952,9 +712,6 @@ export const walk = {
 				b: -1.443,
 				c: 1.036,
 				d: 1.639,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -964,9 +721,6 @@ export const walk = {
 				b: 0.533,
 				c: -0.513,
 				d: 2.089,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -976,9 +730,6 @@ export const walk = {
 				b: -0.734,
 				c: 0.734,
 				d: 1.268,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -988,9 +739,6 @@ export const walk = {
 				b: -0.272,
 				c: 0.26,
 				d: 1.731,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -1000,9 +748,6 @@ export const walk = {
 				b: -0.191,
 				c: 0.191,
 				d: 1.359,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -1012,9 +757,6 @@ export const walk = {
 				b: -0.073,
 				c: 0.073,
 				d: 1.383,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -1024,9 +766,6 @@ export const walk = {
 				b: -0.02,
 				c: 0.026,
 				d: 1.135,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -1034,9 +773,6 @@ export const walk = {
 				ty: -2.2,
 				a: 2.025,
 				d: 2.491,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -1046,9 +782,6 @@ export const walk = {
 				b: 0.427,
 				c: 0.427,
 				d: 1.311,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -1058,9 +791,6 @@ export const walk = {
 				b: 0.762,
 				c: -0.781,
 				d: 1.405,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -1070,9 +800,6 @@ export const walk = {
 				b: -0.046,
 				c: 0.056,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -1080,9 +807,6 @@ export const walk = {
 				ty: 5.7,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -1092,9 +816,6 @@ export const walk = {
 				b: 0.602,
 				c: -0.602,
 				d: 0.959,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1104,9 +825,6 @@ export const walk = {
 				b: -1.269,
 				c: 1.019,
 				d: 1.347,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1116,9 +834,6 @@ export const walk = {
 				b: 1.122,
 				c: -1.205,
 				d: 1.483,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -1126,9 +841,6 @@ export const walk = {
 				ty: 9.1,
 				a: 1.272,
 				d: 1.153,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -1140,9 +852,6 @@ export const walk = {
 				b: -1.463,
 				c: 1.037,
 				d: 1.609,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1152,9 +861,6 @@ export const walk = {
 				b: 0.551,
 				c: -0.51,
 				d: 2.006,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -1164,9 +870,6 @@ export const walk = {
 				b: -0.857,
 				c: 0.857,
 				d: 1.188,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -1176,9 +879,6 @@ export const walk = {
 				b: -0.216,
 				c: 0.197,
 				d: 1.657,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -1188,9 +888,6 @@ export const walk = {
 				b: -0.191,
 				c: 0.191,
 				d: 1.359,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -1200,9 +897,6 @@ export const walk = {
 				b: -0.049,
 				c: 0.049,
 				d: 1.386,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -1212,9 +906,6 @@ export const walk = {
 				b: 0.02,
 				c: -0.026,
 				d: 1.135,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -1222,9 +913,6 @@ export const walk = {
 				ty: -1.7,
 				a: 2.025,
 				d: 2.491,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -1234,9 +922,6 @@ export const walk = {
 				b: 0.484,
 				c: 0.484,
 				d: 1.291,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -1246,9 +931,6 @@ export const walk = {
 				b: 0.812,
 				c: -0.824,
 				d: 1.381,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -1258,9 +940,6 @@ export const walk = {
 				b: -0.046,
 				c: 0.056,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -1268,9 +947,6 @@ export const walk = {
 				ty: 5.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -1280,9 +956,6 @@ export const walk = {
 				b: 0.567,
 				c: -0.567,
 				d: 0.98,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1292,9 +965,6 @@ export const walk = {
 				b: -1.269,
 				c: 1.019,
 				d: 1.347,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1304,9 +974,6 @@ export const walk = {
 				b: 1.207,
 				c: -1.28,
 				d: 1.418,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -1314,9 +981,6 @@ export const walk = {
 				ty: 8.8,
 				a: 1.272,
 				d: 1.153,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -1328,9 +992,6 @@ export const walk = {
 				b: -1.484,
 				c: 1.038,
 				d: 1.58,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1340,9 +1001,6 @@ export const walk = {
 				b: 0.562,
 				c: -0.5,
 				d: 1.925,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -1352,9 +1010,6 @@ export const walk = {
 				b: -0.973,
 				c: 0.973,
 				d: 1.096,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -1364,9 +1019,6 @@ export const walk = {
 				b: -0.154,
 				c: 0.133,
 				d: 1.581,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -1376,9 +1028,6 @@ export const walk = {
 				b: -0.191,
 				c: 0.191,
 				d: 1.359,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -1388,9 +1037,6 @@ export const walk = {
 				b: -0.024,
 				c: 0.024,
 				d: 1.388,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -1400,9 +1046,6 @@ export const walk = {
 				b: 0.064,
 				c: -0.084,
 				d: 1.132,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -1410,9 +1053,6 @@ export const walk = {
 				ty: -1.25,
 				a: 2.025,
 				d: 2.491,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -1422,9 +1062,6 @@ export const walk = {
 				b: 0.535,
 				c: 0.535,
 				d: 1.271,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -1434,9 +1071,6 @@ export const walk = {
 				b: 0.861,
 				c: -0.866,
 				d: 1.354,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -1446,9 +1080,6 @@ export const walk = {
 				b: -0.046,
 				c: 0.056,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -1456,9 +1087,6 @@ export const walk = {
 				ty: 4.7,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -1468,9 +1096,6 @@ export const walk = {
 				b: 0.529,
 				c: -0.529,
 				d: 1.001,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1480,9 +1105,6 @@ export const walk = {
 				b: -1.269,
 				c: 1.019,
 				d: 1.347,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1492,9 +1114,6 @@ export const walk = {
 				b: 1.288,
 				c: -1.348,
 				d: 1.353,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -1502,9 +1121,6 @@ export const walk = {
 				ty: 8.45,
 				a: 1.272,
 				d: 1.153,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -1516,9 +1132,6 @@ export const walk = {
 				b: -1.505,
 				c: 1.039,
 				d: 1.553,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1528,9 +1141,6 @@ export const walk = {
 				b: 0.582,
 				c: -0.496,
 				d: 1.843,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -1540,9 +1150,6 @@ export const walk = {
 				b: -1.079,
 				c: 1.079,
 				d: 0.997,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -1552,9 +1159,6 @@ export const walk = {
 				b: -0.1,
 				c: 0.082,
 				d: 1.502,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -1564,9 +1168,6 @@ export const walk = {
 				b: -0.193,
 				c: 0.193,
 				d: 1.36,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -1574,9 +1175,6 @@ export const walk = {
 				ty: 14.7,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -1586,9 +1184,6 @@ export const walk = {
 				b: 0.107,
 				c: -0.14,
 				d: 1.127,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -1596,9 +1191,6 @@ export const walk = {
 				ty: -0.85,
 				a: 2.025,
 				d: 2.49,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -1608,9 +1200,6 @@ export const walk = {
 				b: 0.59,
 				c: 0.59,
 				d: 1.248,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -1620,9 +1209,6 @@ export const walk = {
 				b: 0.911,
 				c: -0.909,
 				d: 1.328,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -1632,9 +1218,6 @@ export const walk = {
 				b: -0.05,
 				c: 0.058,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -1642,9 +1225,6 @@ export const walk = {
 				ty: 4.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -1654,9 +1234,6 @@ export const walk = {
 				b: 0.493,
 				c: -0.493,
 				d: 1.021,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1666,9 +1243,6 @@ export const walk = {
 				b: -1.274,
 				c: 1.022,
 				d: 1.348,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1678,9 +1252,6 @@ export const walk = {
 				b: 1.365,
 				c: -1.419,
 				d: 1.282,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -1688,9 +1259,6 @@ export const walk = {
 				ty: 8.05,
 				a: 1.272,
 				d: 1.153,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -1702,9 +1270,6 @@ export const walk = {
 				b: -1.514,
 				c: 1.064,
 				d: 1.574,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1714,9 +1279,6 @@ export const walk = {
 				b: 0.581,
 				c: -0.524,
 				d: 1.949,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -1726,9 +1288,6 @@ export const walk = {
 				b: -1.006,
 				c: 1.006,
 				d: 1.066,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -1738,9 +1297,6 @@ export const walk = {
 				b: -0.161,
 				c: 0.142,
 				d: 1.608,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -1750,9 +1306,6 @@ export const walk = {
 				b: -0.191,
 				c: 0.191,
 				d: 1.359,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -1760,9 +1313,6 @@ export const walk = {
 				ty: 15,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -1772,9 +1322,6 @@ export const walk = {
 				b: 0.054,
 				c: -0.07,
 				d: 1.133,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -1782,9 +1329,6 @@ export const walk = {
 				ty: -1.1,
 				a: 2.025,
 				d: 2.491,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -1794,9 +1338,6 @@ export const walk = {
 				b: 0.589,
 				c: 0.589,
 				d: 1.247,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -1806,9 +1347,6 @@ export const walk = {
 				b: 0.846,
 				c: -0.854,
 				d: 1.362,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -1818,9 +1356,6 @@ export const walk = {
 				b: -0.046,
 				c: 0.056,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -1828,9 +1363,6 @@ export const walk = {
 				ty: 4.85,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -1840,9 +1372,6 @@ export const walk = {
 				b: 0.554,
 				c: -0.554,
 				d: 0.987,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -1852,9 +1381,6 @@ export const walk = {
 				b: -1.269,
 				c: 1.019,
 				d: 1.347,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -1864,9 +1390,6 @@ export const walk = {
 				b: 1.261,
 				c: -1.324,
 				d: 1.376,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -1874,9 +1397,6 @@ export const walk = {
 				ty: 8.3,
 				a: 1.272,
 				d: 1.153,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -1888,9 +1408,6 @@ export const walk = {
 				b: -1.525,
 				c: 1.09,
 				d: 1.597,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -1900,9 +1417,6 @@ export const walk = {
 				b: 0.582,
 				c: -0.554,
 				d: 2.056,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -1912,9 +1426,6 @@ export const walk = {
 				b: -0.929,
 				c: 0.929,
 				d: 1.134,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -1924,9 +1435,6 @@ export const walk = {
 				b: -0.226,
 				c: 0.212,
 				d: 1.711,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -1936,9 +1444,6 @@ export const walk = {
 				b: -0.191,
 				c: 0.191,
 				d: 1.359,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -1946,9 +1451,6 @@ export const walk = {
 				ty: 15.25,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -1958,9 +1460,6 @@ export const walk = {
 				b: 0.004,
 				c: -0.005,
 				d: 1.136,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -1968,9 +1467,6 @@ export const walk = {
 				ty: -1.45,
 				a: 2.025,
 				d: 2.491,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -1980,9 +1476,6 @@ export const walk = {
 				b: 0.589,
 				c: 0.589,
 				d: 1.247,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -1992,9 +1485,6 @@ export const walk = {
 				b: 0.777,
 				c: -0.794,
 				d: 1.398,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -2004,9 +1494,6 @@ export const walk = {
 				b: -0.046,
 				c: 0.056,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -2014,9 +1501,6 @@ export const walk = {
 				ty: 5.55,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -2026,9 +1510,6 @@ export const walk = {
 				b: 0.614,
 				c: -0.614,
 				d: 0.951,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -2038,9 +1519,6 @@ export const walk = {
 				b: -1.269,
 				c: 1.019,
 				d: 1.347,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -2050,9 +1528,6 @@ export const walk = {
 				b: 1.15,
 				c: -1.23,
 				d: 1.462,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -2060,9 +1535,6 @@ export const walk = {
 				ty: 8.55,
 				a: 1.272,
 				d: 1.153,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		},
@@ -2074,9 +1546,6 @@ export const walk = {
 				b: -1.535,
 				c: 1.116,
 				d: 1.624,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 15
 			},
 			l_f_lower_leg: {
@@ -2086,9 +1555,6 @@ export const walk = {
 				b: 0.592,
 				c: -0.592,
 				d: 2.162,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 14
 			},
 			l_b_upper_leg: {
@@ -2098,9 +1564,6 @@ export const walk = {
 				b: -0.849,
 				c: 0.849,
 				d: 1.198,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 13
 			},
 			l_b_lower_leg: {
@@ -2110,9 +1573,6 @@ export const walk = {
 				b: -0.297,
 				c: 0.297,
 				d: 1.811,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 12
 			},
 			head: {
@@ -2122,9 +1582,6 @@ export const walk = {
 				b: -0.193,
 				c: 0.193,
 				d: 1.36,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 11
 			},
 			l_f_paw: {
@@ -2132,9 +1589,6 @@ export const walk = {
 				ty: 15.55,
 				a: 1.389,
 				d: 1.389,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 10
 			},
 			l_b_paw: {
@@ -2144,9 +1598,6 @@ export const walk = {
 				b: -0.046,
 				c: 0.061,
 				d: 1.135,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 9
 			},
 			upper_body: {
@@ -2154,9 +1605,6 @@ export const walk = {
 				ty: -1.8,
 				a: 2.025,
 				d: 2.49,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 8
 			},
 			lower_body: {
@@ -2166,9 +1614,6 @@ export const walk = {
 				b: 0.59,
 				c: 0.59,
 				d: 1.248,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 7
 			},
 			r_b_lower_leg: {
@@ -2178,9 +1623,6 @@ export const walk = {
 				b: 0.713,
 				c: -0.741,
 				d: 1.43,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 6
 			},
 			r_b_upper_leg: {
@@ -2190,9 +1632,6 @@ export const walk = {
 				b: -0.05,
 				c: 0.058,
 				d: 1.272,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 5
 			},
 			r_b_paw: {
@@ -2200,9 +1639,6 @@ export const walk = {
 				ty: 6.2,
 				a: 1.137,
 				d: 0.986,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 4
 			},
 			tail: {
@@ -2212,9 +1648,6 @@ export const walk = {
 				b: 0.675,
 				c: -0.675,
 				d: 0.911,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 3
 			},
 			r_f_upper_leg: {
@@ -2224,9 +1657,6 @@ export const walk = {
 				b: -1.274,
 				c: 1.022,
 				d: 1.348,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 2
 			},
 			r_f_lower_leg: {
@@ -2236,9 +1666,6 @@ export const walk = {
 				b: 1.038,
 				c: -1.128,
 				d: 1.546,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 1
 			},
 			r_f_paw: {
@@ -2246,9 +1673,6 @@ export const walk = {
 				ty: 8.8,
 				a: 1.272,
 				d: 1.153,
-				or: -82,
-				og: -97,
-				ob: -82,
 				l: 0
 			}
 		}

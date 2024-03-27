@@ -1,7 +1,7 @@
 import { ref } from '../references.js';
 
-// 658
-export let fx_dash = [
+// sdino 658
+export const fx_dash = [
 	{
 		parts: {
 			fx_dash_1: [
@@ -36,7 +36,7 @@ export let fx_dash = [
 			]
 		},
 		animation: {
-			id: 'fx_dash',
+			id: 'fx_dash_sdino',
 			frames: [
 				{
 					fx_dash_1: {}

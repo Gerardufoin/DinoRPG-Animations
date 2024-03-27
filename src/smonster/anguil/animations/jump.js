@@ -71,17 +71,11 @@ export const jump = {
 				b: 0.477,
 				c: -0.477,
 				d: 0.876,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 13.15,
 				ty: -3.3,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -91,9 +85,6 @@ export const jump = {
 				b: 0.053,
 				c: -0.053,
 				d: 0.998,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -183,9 +174,6 @@ export const jump = {
 				b: 0.524,
 				c: -0.449,
 				d: 0.962,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -193,9 +181,6 @@ export const jump = {
 				ty: -9.3,
 				a: 0.934,
 				d: 1.099,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -205,9 +190,6 @@ export const jump = {
 				b: 0.058,
 				c: -0.048,
 				d: 1.097,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -298,9 +280,6 @@ export const jump = {
 				b: 0.569,
 				c: -0.415,
 				d: 1.046,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -308,9 +287,6 @@ export const jump = {
 				ty: -15.05,
 				a: 0.871,
 				d: 1.194,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -320,9 +296,6 @@ export const jump = {
 				b: 0.063,
 				c: -0.046,
 				d: 1.192,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -412,9 +385,6 @@ export const jump = {
 				b: 0.538,
 				c: -0.44,
 				d: 0.986,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -422,9 +392,6 @@ export const jump = {
 				ty: -11,
 				a: 0.915,
 				d: 1.127,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -434,9 +401,6 @@ export const jump = {
 				b: 0.06,
 				c: -0.049,
 				d: 1.125,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -526,9 +490,6 @@ export const jump = {
 				b: 0.507,
 				c: -0.46,
 				d: 0.93,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
@@ -536,9 +497,6 @@ export const jump = {
 				ty: -7.05,
 				a: 0.958,
 				d: 1.063,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -548,9 +506,6 @@ export const jump = {
 				b: 0.055,
 				c: -0.051,
 				d: 1.061,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		},
@@ -627,17 +582,11 @@ export const jump = {
 				b: 0.477,
 				c: -0.477,
 				d: 0.876,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 2
 			},
 			r_b_arm: {
 				tx: 13.15,
 				ty: -3.3,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 1
 			},
 			r_t_arm: {
@@ -647,9 +596,6 @@ export const jump = {
 				b: 0.053,
 				c: -0.053,
 				d: 0.998,
-				or: -31,
-				og: -36,
-				ob: -26,
 				l: 0
 			}
 		}

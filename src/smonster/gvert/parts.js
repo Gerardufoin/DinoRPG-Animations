@@ -5,31 +5,71 @@ export const parts = {
 	// 159
 	paw: [
 		{
-			ref: ref.gvert.paw
+			ref: ref.gvert.paw,
+			colorOffset: {
+				r: -72,
+				g: -118,
+				b: -235
+			}
 		}
 	],
+	/* l_b_paw
+					or: -72,
+				og: -118,
+				ob: -255,
+	*/
 	// 161
-	leg_1: [
+	front_upper_leg: [
 		{
-			ref: ref.gvert.leg_1
+			ref: ref.gvert.leg_1,
+			colorOffset: {
+				r: -67,
+				g: -31,
+				b: -179
+			}
+		}
+	],
+	lower_leg: [
+		{
+			ref: ref.gvert.leg_1,
+			colorOffset: {
+				r: -72,
+				g: -118,
+				b: -235
+			}
 		}
 	],
 	// 163
 	body: [
 		{
-			ref: ref.gvert.body
+			ref: ref.gvert.body,
+			colorOffset: {
+				r: -67,
+				g: -31,
+				b: -179
+			}
 		}
 	],
 	// 165
 	head: [
 		{
-			ref: ref.gvert.head
+			ref: ref.gvert.head,
+			colorOffset: {
+				r: -67,
+				g: -31,
+				b: -179
+			}
 		}
 	],
 	// 167
-	leg_2: [
+	back_upper_leg: [
 		{
-			ref: ref.gvert.leg_2
+			ref: ref.gvert.leg_2,
+			colorOffset: {
+				r: -67,
+				g: -31,
+				b: -179
+			}
 		}
 	],
 	sleep_bubble: [
