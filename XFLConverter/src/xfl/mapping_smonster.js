@@ -251,6 +251,15 @@ export let mapping_smonster = {
 	'Symbol 518': 'head',
 	'Symbol 522': 'l_eye',
 	'Symbol 522-1': 'r_eye',
+	// Fauve Souris
+	'Symbol 531': 'l_b_wing',
+	'Symbol 531-1': 'r_b_wing',
+	'Symbol 533': 'l_t_wing',
+	'Symbol 533-1': 'r_t_wing',
+	'Symbol 535': 'l_leg',
+	'Symbol 535-1': 'r_leg',
+	'Symbol 537': 'body',
+	'Symbol 539': 'head',
 	// Mandragore
 	'Symbol 1869': 'l_foot',
 	'Symbol 1871': 'l_leg',

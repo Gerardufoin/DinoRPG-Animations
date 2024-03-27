@@ -21,7 +21,7 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] kazka
 -   [x] ronciv
 -   [x] grdien
--   [ ] bat
+-   [x] bat
 -   [ ] ewater
 -   [ ] efire
 -   [ ] eearth

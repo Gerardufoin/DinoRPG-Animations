@@ -630,7 +630,7 @@ export let rocky = {
 		]
 	},
 	animations: {
-		// missing cast, release
+		// missing cast
 		// 458
 		stand: stand,
 		// 460
@@ -643,6 +643,7 @@ export let rocky = {
 		jump: jump,
 		// 464
 		attack: attack,
+		release: attack,
 		// 465
 		land: land,
 		// 466

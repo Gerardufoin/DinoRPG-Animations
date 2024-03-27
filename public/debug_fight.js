@@ -92,7 +92,7 @@ const fightVersion = [
 					gfx: 'rkrgns'
 				}
 			},*/
-			{
+			/*{
 				action: DinoAnim.Action.Add,
 				fighter: {
 					props: [],
@@ -105,18 +105,18 @@ const fightVersion = [
 					gfx: 'grdien',
 					entrance: DinoAnim.EntranceEffect.Ground
 				}
-			},
+			},*/
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Roncivore',
+					name: 'Fauve souris',
 					side: false,
 					scale: 1,
 					fid: 3,
-					gfx: 'ronciv'
+					gfx: 'bat'
 				}
 			}
 			/*{
