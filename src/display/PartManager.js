@@ -216,6 +216,16 @@ export class PartManager {
 				})
 			);
 		}
+		if (part.colorAdjust) {
+			filters.push(
+				PixiHelper.adjustColorFilter(
+					part.colorAdjust.brightness ?? 0,
+					part.colorAdjust.constrast ?? 0,
+					part.colorAdjust.saturation ?? 0,
+					part.colorAdjust.hue ?? 0
+				)
+			);
+		}
 		if (part.glow) {
 			filters.push(
 				new GlowFilter({
@@ -242,7 +252,7 @@ export class PartManager {
 
 	/**
 	 * Get the expected scaling for a single animation.
-	 * @param {{id: string, callbacks: object, frames: Array, anim?: object, offset?: number}} animation The animation to analyse.
+	 * @param {{id: string, callbacks?: object, expectedScaling?: object, frames: Array, anim?: object, offset?: number}} animation The animation to analyse.
 	 * @param {{[id: string]: number} | {}} currentScaling The current scales for the parts.
 	 * @returns {{[id: string]: number}} The expected scaling for each parts.
 	 */
@@ -250,6 +260,12 @@ export class PartManager {
 		const partsScaling = currentScaling ?? {};
 		if (animation.anim) {
 			animation = animation.anim;
+		}
+		// If a scaling is expected, take the expected scaling no matter what.
+		if (animation.expectedScaling) {
+			for (const k in animation.expectedScaling) {
+				partsScaling[k] = animation.expectedScaling[k];
+			}
 		}
 		for (const f of animation.frames) {
 			for (const k in f) {

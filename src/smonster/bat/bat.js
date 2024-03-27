@@ -9,8 +9,6 @@ import { hit } from './animations/hit.js';
 import { stand } from './animations/stand.js';
 import { parts } from './parts.js';
 
-// Symbol 498
-
 // Symbol 546
 export const bat = {
 	name: 'bat',

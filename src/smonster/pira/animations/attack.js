@@ -6,6 +6,10 @@ export const attack = {
 		6: [['hit', 13]],
 		19: [['stop']]
 	},
+	expectedScaling: {
+		mouth_atk_top: 1.8,
+		mouth_atk_bot: 1.8
+	},
 	frames: [
 		{
 			l_fin: {

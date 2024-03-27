@@ -40,6 +40,7 @@ const monsterList = [
 	'ronciv',
 	'grdien',
 	'bat',
+	'ewater',
 	'mandragore',
 	'lucet',
 	'taurus'
@@ -87,4 +88,4 @@ for (const m of monsterList) {
 	document.getElementById('monsters').appendChild(button);
 }
 
-updateMonster('bat');
+updateMonster('ewater');

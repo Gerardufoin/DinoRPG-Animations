@@ -112,11 +112,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Fauve souris',
+					name: "Elémental d'Eau",
 					side: false,
 					scale: 1,
 					fid: 3,
-					gfx: 'bat'
+					gfx: 'ewater'
 				}
 			}
 			/*{

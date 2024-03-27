@@ -1506,15 +1506,37 @@ export class Fighter extends Phys {
 	 * @param {string} asset The asset to spawn.
 	 * @param {number} x The x coordinate of the asset.
 	 * @param {number} y The y coordinate of the asset.
-	 * @param {{randomAlpha?: boolean}} options Optional configuration.
+	 * @param {{randomAlpha?: boolean, offsetX?: number, offsetY?: number}} options Optional configuration.
 	 */
 	fxAttach(asset, x = 0, y = 0, options = undefined) {
 		switch (asset) {
 			case 'smoke':
-				Smoke.spawn(this._scene, this._x + x, this._y + y);
+				Smoke.spawn(this._scene, this._x + x + (options?.offsetX ?? 0), this._y + y + (options?.offsetY ?? 0));
 				break;
 			case 'smoke_small':
-				Smoke.spawnSmall(this._scene, this._x + x, this._y + y);
+				Smoke.spawnSmall(
+					this._scene,
+					this._x + x + (options?.offsetX ?? 0),
+					this._y + y + (options?.offsetY ?? 0)
+				);
+				break;
+			case 'vapeur':
+				Smoke.spawn(
+					this._scene,
+					this._x + x + (options?.offsetX ?? 0),
+					this._y + y + (options?.offsetY ?? 0),
+					undefined,
+					true
+				);
+				break;
+			case 'vapeur_small':
+				Smoke.spawnSmall(
+					this._scene,
+					this._x + Math.random() * x + (options?.offsetX ?? 0),
+					this._y + Math.random() * y + (options?.offsetY ?? 0),
+					0.6 + Math.random() * 0.2,
+					true
+				);
 				break;
 			case 'slash':
 				this._scene.dm.addSprite(new Slash(this._scene, this._x + x, this._y + y), Layers.Scene.FIGHTERS);
