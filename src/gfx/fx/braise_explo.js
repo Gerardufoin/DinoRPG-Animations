@@ -1,7 +1,8 @@
+// @ts-check
 import { ref } from '../references.js';
 
 // GFX 57
-export let fx_braise_explo = {
+export const fx_braise_explo = {
 	parts: {
 		p1: [{ ref: ref.fx.braise.explo_1 }],
 		p2: [{ ref: ref.fx.braise.explo_2 }],

@@ -1,7 +1,8 @@
+// @ts-check
 import { ref } from '../references.js';
 
 // GFX 792
-export let fx_water_canon_end = {
+export const fx_water_canon_end = {
 	parts: {
 		l1: [
 			{

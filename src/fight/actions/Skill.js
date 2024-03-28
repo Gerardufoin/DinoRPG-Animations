@@ -7,6 +7,7 @@ import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { FxAnim } from './skills/fx/FxAnim.js';
+import { FxAttach } from './skills/fx/FxAttach.js';
 import { GrCorruption } from './skills/group/GrCorruption.js';
 import { GrCrepuscule } from './skills/group/GrCrepuscule.js';
 import { GrDisc } from './skills/group/GrDisc.js';
@@ -174,6 +175,8 @@ export class Skill extends State {
 				return new GrJumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);
 			case SkillList.Anim:
 				return new FxAnim(this._scene, () => this.end(), this._fighter, this._details.anim);
+			case SkillList.Attach:
+				return new FxAttach(this._scene, () => this.end(), this._fighter, this._details.fx);
 			case SkillList.Corruption:
 				return new GrCorruption(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.DivineLight:

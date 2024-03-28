@@ -1,10 +1,9 @@
 // @ts-check
-import { Sprite, Matrix, BlurFilter, Filter, Container } from 'pixi.js';
-import { GlowFilter } from '@pixi/filter-glow';
+import { Sprite, Matrix, Filter, Container } from 'pixi.js';
 import { TextureManager } from './TextureManager.js';
-import { offsetShader } from './shaders/ColorOffsetShader.js';
 import { Animation } from './Animation.js';
 import { PixiHelper } from './PixiHelper.js';
+import { ConstantShaderManager } from './ConstantShaderManager.js';
 
 /**
  * Static class used to instantiate a part of a dino.
@@ -194,46 +193,38 @@ export class PartManager {
 		const filters = [];
 
 		if (part.blur) {
-			const blurFilter = new BlurFilter();
-			blurFilter.blurX = part.blur.x ?? 0;
-			blurFilter.blurY = part.blur.y ?? 0;
-			blurFilter.quality = part.blur.quality ?? 1;
-			filters.push(blurFilter);
+			filters.push(ConstantShaderManager.getBlurFilter(part.blur.x, part.blur.y, part.blur.quality));
 		}
 		if (part.colorOffset || part.colorMultiplier) {
 			filters.push(
-				new Filter(undefined, offsetShader, {
-					offset: new Float32Array([
-						part.colorOffset?.r ?? 0,
-						part.colorOffset?.g ?? 0,
-						part.colorOffset?.b ?? 0
-					]),
-					mult: new Float32Array([
-						part.colorMultiplier?.r ?? 1,
-						part.colorMultiplier?.g ?? 1,
-						part.colorMultiplier?.b ?? 1
-					])
-				})
+				ConstantShaderManager.getColorOffsetFilter(
+					part.colorOffset?.r,
+					part.colorOffset?.g,
+					part.colorOffset?.b,
+					part.colorMultiplier?.r,
+					part.colorMultiplier?.g,
+					part.colorMultiplier?.b
+				)
 			);
 		}
 		if (part.colorAdjust) {
 			filters.push(
-				PixiHelper.adjustColorFilter(
-					part.colorAdjust.brightness ?? 0,
-					part.colorAdjust.constrast ?? 0,
-					part.colorAdjust.saturation ?? 0,
-					part.colorAdjust.hue ?? 0
+				ConstantShaderManager.getAdjustColorFilter(
+					part.colorAdjust.brightness,
+					part.colorAdjust.constrast,
+					part.colorAdjust.saturation,
+					part.colorAdjust.hue
 				)
 			);
 		}
 		if (part.glow) {
 			filters.push(
-				new GlowFilter({
-					distance: part.glow.distance ?? 1,
-					color: part.glow.color,
-					quality: part.glow.quality ?? 0.1,
-					outerStrength: part.glow.strength ?? 1
-				})
+				ConstantShaderManager.getGlowFilter(
+					part.glow.distance,
+					part.glow.color,
+					part.glow.quality,
+					part.glow.strength
+				)
 			);
 		}
 		return filters.length ? filters : undefined;

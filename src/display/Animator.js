@@ -81,8 +81,8 @@ export class Animator extends Container {
 			const ticker = Ticker.shared;
 			ticker.add(() => this.update(Ticker.shared.deltaMS));
 		}
-		this.registerCallback('resetChildAnimations', (animation) => {
-			animation.resetChildAnimations();
+		this.registerCallback('resetChildAnimations', (animation, idx) => {
+			animation.resetChildAnimations(idx);
 		});
 		this.registerCallback('stop', (animation) => {
 			animation.stop();

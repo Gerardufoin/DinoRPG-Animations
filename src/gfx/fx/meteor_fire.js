@@ -1,7 +1,8 @@
+// @ts-check
 import { ref } from '../references.js';
 
 // GFX 822
-export let fx_meteor_fire = {
+export const fx_meteor_fire = {
 	parts: {
 		mf1: [{ ref: ref.fx.meteor.fire_1 }],
 		mf2: [{ ref: ref.fx.meteor.fire_2 }],

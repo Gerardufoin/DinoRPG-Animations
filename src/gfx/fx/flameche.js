@@ -1,7 +1,8 @@
+// @ts-check
 import { ref } from '../references.js';
 
 // GFX 836
-export let fx_flameche = {
+export const fx_flameche = {
 	parts: {
 		base: [
 			{

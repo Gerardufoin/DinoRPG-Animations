@@ -678,7 +678,7 @@ export class DAConverter {
 			case SkillList.Anim:
 			case SkillList.Attach:
 				ret.fid = effect.args[0]; // number
-				ret.link = effect.args[1]; // string
+				ret.fx = effect.args[1]; // string
 				break;
 			case SkillList.AttachAnim:
 				ret.fid = effect.args[0]; // number

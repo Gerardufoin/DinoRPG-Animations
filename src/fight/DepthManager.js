@@ -24,7 +24,8 @@ export const Layers = {
 		BODY: 1,
 		STATUS: 2,
 		FRONT: 3,
-		STATUS_ICON: 4
+		STATUS_ICON: 4,
+		FX: 5
 	}
 };
 

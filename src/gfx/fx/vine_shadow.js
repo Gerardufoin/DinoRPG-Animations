@@ -1,7 +1,8 @@
+// @ts-check
 import { ref } from '../references.js';
 
 // GFX 19
-export let fx_vine_shadow = {
+export const fx_vine_shadow = {
 	parts: {
 		s: [{ ref: ref.fx.vine.shadow }]
 	},

@@ -1,7 +1,8 @@
+// @ts-check
 import { ref } from '../references.js';
 
 // GFX 751
-export let fx_tornado = {
+export const fx_tornado = {
 	parts: {
 		t1: [{ ref: ref.fx.air.tornado_1 }],
 		t2: [{ ref: ref.fx.air.tornado_2 }],

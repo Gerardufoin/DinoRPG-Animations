@@ -1,8 +1,9 @@
+// @ts-check
 import { BLEND_MODES } from 'pixi.js';
 import { ref } from '../references.js';
 
 // GFX 660
-export let fx_slash = {
+export const fx_slash = {
 	parts: {
 		s1: [
 			{

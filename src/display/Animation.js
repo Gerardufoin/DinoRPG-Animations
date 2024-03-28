@@ -198,13 +198,20 @@ export class Animation extends Container {
 	}
 
 	/**
-	 * Set all children animations at frame 0.
+	 * Set the given child animation at frame 0.
+	 * If no specific child is given, set all child animations to frame 0.
+	 * @param {number | undefined} idx The index of the child animation to reset. If undefined, affect all children.
 	 */
-	resetChildAnimations() {
-		for (const c of this._childAnimations) {
-			c._playing = true;
-			c.setCurrentIdx(0);
-			c.resetChildAnimations();
+	resetChildAnimations(idx = undefined) {
+		if (idx && idx < this._childAnimations.length) {
+			this._childAnimations[idx]._playing = true;
+			this._childAnimations[idx].setCurrentIdx(0);
+		} else if (idx == undefined) {
+			for (const c of this._childAnimations) {
+				c._playing = true;
+				c.setCurrentIdx(0);
+				c.resetChildAnimations();
+			}
 		}
 	}
 

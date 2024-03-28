@@ -1,7 +1,8 @@
+// @ts-check
 import { ref } from '../references.js';
 
 // GFX 892
-export let fx_explosion = {
+export const fx_explosion = {
 	parts: {
 		e1: [
 			{

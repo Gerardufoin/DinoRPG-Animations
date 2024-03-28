@@ -783,7 +783,7 @@ export class MTConverter {
 			case SkillList.Anim:
 			case SkillList.Attach:
 				ret.args.push(skill.details.fid);
-				ret.args.push(skill.details.link);
+				ret.args.push(skill.details.fx);
 				break;
 			case SkillList.AttachAnim:
 				ret.args.push(skill.details.fid);

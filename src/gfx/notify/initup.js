@@ -1,7 +1,8 @@
+// @ts-check
 import { ref } from '../references.js';
 
 // 607
-export let notif_init_up = {
+export const notif_init_up = {
 	parts: {
 		init_1: [
 			{

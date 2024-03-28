@@ -1,7 +1,8 @@
+// @ts-check
 import { ref } from '../references.js';
 
 // 83
-export let shade = {
+export const shade = {
 	parts: {
 		shade: [
 			{
@@ -20,7 +21,7 @@ export let shade = {
 };
 
 // 87
-export let shade_fire = {
+export const shade_fire = {
 	parts: {
 		sf_1: [
 			{

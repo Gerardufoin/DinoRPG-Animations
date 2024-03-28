@@ -253,7 +253,7 @@ TODO
 | -------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | fid?     | Number                        | The ID of the Fighter using the skill, if any.                                                                                             |
 | targets? | { id: Number, life?: Number } | The targets of the skill and the life gained/losed, if any. If life is undefined, the target dodge the skill with the 'special' animation. |
-| fx?      | String                        | The fx played by the skill. Used by 'Tremor', 'JumpAttack'.                                                                                |
+| fx?      | String                        | The fx played by the skill. Used by 'Tremor', 'JumpAttack', 'Attach'.                                                                      |
 | anim?    | String                        | The animation used by the skill. Used by 'Anim'.                                                                                           |
 
 | Skill                  | Description                                                                                                                                                                                           |
@@ -292,7 +292,7 @@ TODO
 | Cloud (31)             |                                                                                                                                                                                                       |
 | Focus (32)             |                                                                                                                                                                                                       |
 | Default (33)           |                                                                                                                                                                                                       |
-| Attach (34)            |                                                                                                                                                                                                       |
+| Attach (34)            | Attaches the given animation (fx) to the given fighter (fid). Possible animations are fxBubble, fxSurvivor, and fxOndeDocus.                                                                          |
 | AttachAnim (35)        |                                                                                                                                                                                                       |
 | Hypnose (36)           |                                                                                                                                                                                                       |
 | Ray (37)               |                                                                                                                                                                                                       |

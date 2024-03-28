@@ -1,7 +1,8 @@
+// @ts-check
 import { ref } from '../references.js';
 
 // GFX 9
-export let fx_vine = {
+export const fx_vine = {
 	parts: {
 		v: [{ ref: [ref.fx.vine.v_1, ref.fx.vine.v_2, ref.fx.vine.v_3, ref.fx.vine.v_4, ref.fx.vine.v_5] }]
 	},

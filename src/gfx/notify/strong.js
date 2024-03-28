@@ -1,7 +1,8 @@
+// @ts-check
 import { ref } from '../references.js';
 
 // 617
-export let notif_strong = {
+export const notif_strong = {
 	parts: {
 		shoulder: [
 			{

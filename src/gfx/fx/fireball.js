@@ -1,7 +1,8 @@
+// @ts-check
 import { ref } from '../references.js';
 
 // GFX 869
-export let fx_fireball = {
+export const fx_fireball = {
 	parts: {
 		f1: [{ ref: ref.fx.fireball_1 }],
 		f2: [{ ref: ref.fx.fireball_2 }],

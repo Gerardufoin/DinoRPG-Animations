@@ -1,8 +1,9 @@
+// @ts-check
 import { BLEND_MODES } from 'pixi.js';
 import { ref } from '../references.js';
 
 // GFX 939
-export let fx_bolt = {
+export const fx_bolt = {
 	parts: {
 		fx_bolt_1: [
 			{

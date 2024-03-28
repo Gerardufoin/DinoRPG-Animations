@@ -10,6 +10,7 @@ import { MTConverter } from './data/MTConverter.js';
 import { Scene } from './Scene.js';
 import { History } from './History.js';
 import { Timer } from './Timer.js';
+import { PreloadData } from '../display/PreloadData.js';
 
 /**
  * Create a fight scene to render the history of a fight for DinoRPG.
@@ -81,6 +82,8 @@ export class Fight {
 			width: 488,
 			height: 300
 		});
+
+		PreloadData.preload(this._renderer);
 
 		this._scene = new Scene(
 			this._data.bg,

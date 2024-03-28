@@ -75,23 +75,10 @@ const fightVersion = [
 					name: 'Dragon Jr',
 					side: true,
 					scale: 1,
-					fid: 1,
+					fid: 0,
 					gfx: '09T1Yt9wqq4Rx000'
 				}
 			},
-			/*{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Renfort Korgon',
-					side: false,
-					scale: 1,
-					fid: 0,
-					gfx: 'rkrgns'
-				}
-			},*/
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
@@ -101,7 +88,7 @@ const fightVersion = [
 					name: 'Elémental de feu',
 					side: false,
 					scale: 1,
-					fid: 2,
+					fid: 1,
 					gfx: 'efire'
 				}
 			},
@@ -114,33 +101,81 @@ const fightVersion = [
 					name: "Elémental d'Eau",
 					side: false,
 					scale: 1,
-					fid: 3,
+					fid: 2,
 					gfx: 'ewater'
 				}
-			}
+			},
+			{
+				action: DinoAnim.Action.Skill,
+				skill: DinoAnim.SkillList.Attach,
+				details: {
+					fid: 0,
+					fx: 'fxBubble'
+				}
+			},
+			{
+				action: DinoAnim.Action.Wait,
+				time: 2000
+			},
+			{
+				action: DinoAnim.Action.Skill,
+				skill: DinoAnim.SkillList.Attach,
+				details: {
+					fid: 0,
+					fx: 'fxSurvivor'
+				}
+			},
+			{
+				action: DinoAnim.Action.Wait,
+				time: 2000
+			},
+			{
+				action: DinoAnim.Action.Skill,
+				skill: DinoAnim.SkillList.Attach,
+				details: {
+					fid: 0,
+					fx: 'fxOndeFocus'
+				}
+			},
+			{
+				action: DinoAnim.Action.Wait,
+				time: 2000
+			},
+			{
+				action: DinoAnim.Action.Skill,
+				skill: DinoAnim.SkillList.Attach,
+				details: {
+					fid: 0,
+					fx: 'fxSurvivor'
+				}
+			},
+			{
+				action: DinoAnim.Action.Wait,
+				time: 2000
+			},
 			/*{
 				action: DinoAnim.Action.Status,
 				fid: 1,
 				status: DinoAnim.FighterStatus.Fly
 			},*/
-			/*{
+			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Lightning,
+				skill: DinoAnim.SkillList.Meteor,
 				details: {
-					fid: 1,
+					fid: 0,
 					targets: [
-						{ id: 0, life: 10 },
+						{ id: 1, life: 10 },
 						{ id: 2, life: 10 }
 					]
 				}
-			},*/
+			}
 			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Shower,
 				details: {
-					fid: 1,
+					fid: 0,
 					targets: [
-						{ id: 0, life: 10 },
+						{ id: 1, life: 10 },
 						{ id: 2, life: 10 }
 					],
 					type: DinoAnim.SkillType.Water

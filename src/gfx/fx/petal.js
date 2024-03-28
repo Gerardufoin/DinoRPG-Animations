@@ -1,7 +1,8 @@
+// @ts-check
 import { ref } from '../references.js';
 
 // GFX 960
-export let fx_petal = {
+export const fx_petal = {
 	parts: {
 		p1: [
 			{

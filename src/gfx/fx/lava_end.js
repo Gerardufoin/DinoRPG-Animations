@@ -1,7 +1,8 @@
+// @ts-check
 import { ref } from '../references.js';
 
 // GFX 792
-export let fx_lava_end = {
+export const fx_lava_end = {
 	parts: {
 		l1: [
 			{
