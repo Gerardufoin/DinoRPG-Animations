@@ -117,6 +117,9 @@ export class PartManager {
 			if (part.transform) {
 				anim.transform.setFromMatrix(PixiHelper.matrixFromObject(part.transform));
 			}
+			if (part.alpha) {
+				anim.alpha = part.alpha;
+			}
 			anim.filters = PartManager.createPartFilters(part);
 			return anim;
 		}

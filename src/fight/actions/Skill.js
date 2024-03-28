@@ -8,6 +8,7 @@ import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { FxAnim } from './skills/fx/FxAnim.js';
 import { FxAttach } from './skills/fx/FxAttach.js';
+import { FxAura } from './skills/fx/FxAura.js';
 import { GrCorruption } from './skills/group/GrCorruption.js';
 import { GrCrepuscule } from './skills/group/GrCrepuscule.js';
 import { GrDisc } from './skills/group/GrDisc.js';
@@ -34,7 +35,8 @@ import { GrWaterCanon } from './skills/group/GrWaterCanon.js';
  * 	fx?: string,
  * 	anim?: string,
  * 	speed?: number,
- * 	power?: number
+ * 	power?: number,
+ *  color?: number
  * }} SkillDetails
  */
 
@@ -175,6 +177,14 @@ export class Skill extends State {
 				return new GrJumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);
 			case SkillList.Anim:
 				return new FxAnim(this._scene, () => this.end(), this._fighter, this._details.anim);
+			case SkillList.Aura:
+				return new FxAura(
+					this._scene,
+					() => this.end(),
+					this._fighter,
+					this._details.color,
+					this._details.type
+				);
 			case SkillList.Attach:
 				return new FxAttach(this._scene, () => this.end(), this._fighter, this._details.fx);
 			case SkillList.Corruption:

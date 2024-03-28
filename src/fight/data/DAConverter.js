@@ -650,9 +650,11 @@ export class DAConverter {
 			case SkillList.Aura:
 				ret.fid = effect.args[0]; // number
 				ret.color = effect.args[1]; // number
-				ret.id = effect.args[2]; // number
+				if (typeof effect.args[2] === 'number') {
+					ret.type = effect.args[2] % 2;
+				}
 				if (effect.value === '_SFAura2') {
-					ret.type = effect.args[3]; // number
+					ret.type = (effect.args[3] % 3) + 2;
 				}
 				break;
 			case SkillList.Snow:

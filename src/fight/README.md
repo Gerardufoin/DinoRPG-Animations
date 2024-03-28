@@ -255,6 +255,7 @@ TODO
 | targets? | { id: Number, life?: Number } | The targets of the skill and the life gained/losed, if any. If life is undefined, the target dodge the skill with the 'special' animation. |
 | fx?      | String                        | The fx played by the skill. Used by 'Tremor', 'JumpAttack', 'Attach'.                                                                      |
 | anim?    | String                        | The animation used by the skill. Used by 'Anim'.                                                                                           |
+| type?    | Number                        | The type of skill to use. Used for Shower (SkillType) and Aura (AuraType).                                                                 |
 
 | Skill                  | Description                                                                                                                                                                                           |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -286,7 +287,7 @@ TODO
 | Rafale (25)            |                                                                                                                                                                                                       |
 | Deluge (26)            |                                                                                                                                                                                                       |
 | Env7 (27)              |                                                                                                                                                                                                       |
-| Aura (28)              |                                                                                                                                                                                                       |
+| Aura (28)              | The fighter (fid) emits an aura (type) with the given color (color). The type of aura is a value from the AuraType enum (see below).                                                                  |
 | Snow (29)              |                                                                                                                                                                                                       |
 | Swamp (30)             |                                                                                                                                                                                                       |
 | Cloud (31)             |                                                                                                                                                                                                       |
@@ -312,6 +313,14 @@ TODO
 | Water (2)     | Water skill.     |
 | Lightning (3) | Lightning skill. |
 | Air (4)       | Air skill.       |
+
+| AuraType     | Description                                                                                 |
+| ------------ | ------------------------------------------------------------------------------------------- |
+| Spiral (0)   | An aura which curves into multiple spirals. I.E.: Used for the Wrath skill.                 |
+| Straight (1) | An aura which is composed of multiple straight lines. I.E.: Used for the Primal Aura skill. |
+| Burst (2)    | Sparks burst from the fighter and colored light are emitted.                                |
+| Detonate (3) | The fighter detonates.                                                                      |
+| Light (4)    | Colored lights are emitted from the fighter.                                                |
 
 ### Dead (9)
 

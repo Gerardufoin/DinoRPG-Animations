@@ -202,6 +202,17 @@ export const SkillType = {
 };
 
 /**
+ * Types of auras for the Aura skill.
+ */
+export const AuraType = {
+	Spiral: 0,
+	Line: 1,
+	Burst: 2,
+	Detonate: 3,
+	Light: 4
+};
+
+/**
  * Enum stating how the Fighter moves toward its target:
  * - Normal is a normal run.
  * - Over makes the Fighter jump above the target. Removes the flying status.

@@ -754,10 +754,10 @@ export class MTConverter {
 			case SkillList.Aura:
 				ret.args.push(skill.details.fid);
 				ret.args.push(skill.details.color);
-				ret.args.push(skill.details.id);
-				if (skill.details.type !== undefined) {
-					ret.fx = '_SFAura2';
-					ret.args.push(skill.details.type);
+				ret.args.push(skill.details.type < 2 ? skill.details.type : null);
+				if (skill.details.type >= 2) {
+					ret.value = '_SFAura2';
+					ret.args.push(skill.details.type - 2);
 				}
 				break;
 			case SkillList.Snow:

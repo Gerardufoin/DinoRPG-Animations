@@ -10,7 +10,6 @@ import { fx_meteor_fire } from '../gfx/fx/meteor_fire.js';
 import { fx_meteor_trail } from '../gfx/fx/meteor_trail.js';
 import { Animator } from './Animator.js';
 import { fx_braise_explo } from '../gfx/fx/braise_explo.js';
-import { fx_explosion } from '../gfx/fx/explosion.js';
 import { fx_flameche } from '../gfx/fx/flameche.js';
 import { fx_lava_end } from '../gfx/fx/lava_end.js';
 import { fx_petal } from '../gfx/fx/petal.js';
@@ -19,6 +18,7 @@ import { fx_slash } from '../gfx/fx/slash.js';
 import { fx_vine_shadow } from '../gfx/fx/vine_shadow.js';
 import { fx_vine } from '../gfx/fx/vine.js';
 import { fx_water_canon_end } from '../gfx/fx/water_canon_end.js';
+import { fx_detonation } from '../gfx/fx/detonation.js';
 
 /**
  * Class used to preload part of the assets.
@@ -32,7 +32,7 @@ export class PreloadData {
 		fx_bolt,
 		fx_braise_explo,
 		fx_bubble,
-		fx_explosion,
+		fx_detonation,
 		fx_fireball,
 		fx_flameche,
 		fx_lava_end,

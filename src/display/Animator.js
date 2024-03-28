@@ -258,13 +258,14 @@ export class Animator extends Container {
 	 * Use the detail of an animation to fill the animator with the appropriate parts and animation.
 	 * @param {{parts: object, animation: {id: string, callbacks?: object, frames: object[]}}} details The detail of the animation to instantiate.
 	 * @param {number} scale The scale of the animation. Default to 1.
+	 * @param {number[]} customization The customization array if the animation has some partIdx. Empty by default.
 	 * @returns {Animator} The instance of this animator to chain calls.
 	 */
-	loadAnimation(details, scale = 1) {
+	loadAnimation(details, scale = 1, customization = []) {
 		this._body._scale = scale;
 		this._body.setAnimation(details.animation);
 		for (const pName in details.parts) {
-			const element = PartManager.createPart(details.parts[pName], [], [], '', scale);
+			const element = PartManager.createPart(details.parts[pName], customization, [], '', scale);
 			if (element) {
 				this.addPart(pName, element);
 			}

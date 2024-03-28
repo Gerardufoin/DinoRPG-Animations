@@ -152,6 +152,7 @@ export class Fight {
 		if (this._legacyData && !forceDAData) {
 			return encodeURIComponent(new HaxeSerializer(this._legacyData).serialize());
 		}
+		console.log(JSON.stringify(MTConverter.convert(this._data), undefined, '\t'));
 		return encodeURIComponent(new HaxeSerializer(MTConverter.convert(this._data)).serialize());
 	}
 

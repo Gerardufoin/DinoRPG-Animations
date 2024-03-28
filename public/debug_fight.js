@@ -107,10 +107,11 @@ const fightVersion = [
 			},
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Attach,
+				skill: DinoAnim.SkillList.Aura,
 				details: {
 					fid: 0,
-					fx: 'fxBubble'
+					color: 0xff0000,
+					type: 0
 				}
 			},
 			{
@@ -119,10 +120,11 @@ const fightVersion = [
 			},
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Attach,
+				skill: DinoAnim.SkillList.Aura,
 				details: {
 					fid: 0,
-					fx: 'fxSurvivor'
+					color: 0xaaff00,
+					type: 1
 				}
 			},
 			{
@@ -131,10 +133,11 @@ const fightVersion = [
 			},
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Attach,
+				skill: DinoAnim.SkillList.Aura,
 				details: {
 					fid: 0,
-					fx: 'fxOndeFocus'
+					color: 0x00ff00,
+					type: 2
 				}
 			},
 			{
@@ -143,10 +146,24 @@ const fightVersion = [
 			},
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Attach,
+				skill: DinoAnim.SkillList.Aura,
 				details: {
 					fid: 0,
-					fx: 'fxSurvivor'
+					color: 0xff0000,
+					type: 3
+				}
+			},
+			{
+				action: DinoAnim.Action.Wait,
+				time: 2000
+			},
+			{
+				action: DinoAnim.Action.Skill,
+				skill: DinoAnim.SkillList.Aura,
+				details: {
+					fid: 0,
+					color: 0x0000ff,
+					type: 4
 				}
 			},
 			{

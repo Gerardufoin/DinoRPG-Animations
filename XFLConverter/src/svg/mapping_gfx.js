@@ -271,5 +271,6 @@ export let mapping_gfx = {
 	958: 'fx/petal_15',
 	959: 'fx/petal_16',
 	964: 'fx/fire_breath',
+	967: 'fx/aura/spirals',
 	975: 'parts/hole_mask'
 };

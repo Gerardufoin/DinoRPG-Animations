@@ -1,37 +1,15 @@
 // @ts-check
 
-import { Color, Container, Graphics } from 'pixi.js';
+import { Container } from 'pixi.js';
 import { IScene } from '../../IScene.js';
 import { Part } from '../../Part.js';
-import { Timer } from '../../Timer.js';
-import { PixiHelper } from '../../../display/PixiHelper.js';
+import { Animator } from '../../../display/Animator.js';
+import { fx_fire_spark } from '../../../gfx/fx/fire_spark.js';
 
 /**
  * Creates a fire spark in at the given coordinates, flying away at the given angle.
  */
 export class FireSpark extends Part {
-	/**
-	 * Number of frames to complete the whole color change.
-	 * @type {number}
-	 */
-	static COLOR_CHANGE_TIME = 15;
-
-	/**
-	 * Fire spark changing color over time.
-	 * @type {Graphics}
-	 */
-	_spark;
-
-	/**
-	 * Number of tmod frames before the spark start changing color.
-	 * @type {number}
-	 */
-	_delay = 0;
-	/**
-	 * Timer to change the color of the spark from white-yellow-red-black.
-	 */
-	_colorTimer = 0;
-
 	/**
 	 * Creates a new spark of fire, which goes from white to red to black over time.
 	 * @param {IScene} scene The Scene where the Spark is instantiated.
@@ -41,8 +19,8 @@ export class FireSpark extends Part {
 	 */
 	constructor(scene, angle, x, y) {
 		super(new Container(), scene);
-		this._spark = new Graphics().beginFill(0xffffff).drawRect(-1, -1, 2, 2);
-		this._root.addChild(this._spark);
+		this._animator = new Animator(false).loadAnimation(fx_fire_spark);
+		this._root.addChild(this._animator);
 
 		const radius = 3;
 		const speed = 0.5 + Math.random() * 3;
@@ -57,23 +35,6 @@ export class FireSpark extends Part {
 		this._fadeoutTimer = 50 + Math.random() * 10;
 		this._weight = 0.2 + Math.random() * 0.2;
 
-		this._delay = Math.random() * 10;
-	}
-
-	/**
-	 * Update the spark color.
-	 * @param {Timer} timer The Fight's Timer, containing the Elapsed time.
-	 */
-	update(timer) {
-		super.update(timer);
-
-		if (this._delay > 0) {
-			this._delay -= timer.tmod;
-			return;
-		}
-		if (this._colorTimer < FireSpark.COLOR_CHANGE_TIME) {
-			this._colorTimer = Math.min(this._colorTimer + timer.tmod, FireSpark.COLOR_CHANGE_TIME);
-			this._spark.tint = PixiHelper.getFireColorGradient(this._colorTimer / FireSpark.COLOR_CHANGE_TIME);
-		}
+		this._animator.setFrame(Math.floor(Math.random() * 10));
 	}
 }

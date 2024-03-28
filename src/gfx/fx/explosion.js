@@ -6,7 +6,11 @@ export const fx_explosion = {
 	parts: {
 		e1: [
 			{
-				ref: ref.fx.explo_1
+				ref: ref.fx.explo_1,
+				transform: {
+					tx: 3.9,
+					ty: -1.05
+				}
 			}
 		],
 		e2: [
