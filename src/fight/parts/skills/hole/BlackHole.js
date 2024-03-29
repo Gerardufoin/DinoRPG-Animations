@@ -90,7 +90,7 @@ export class BlackHole extends Container {
 		this._holeMask = new Asset(ref.parts.hole_mask, 1, false);
 		this._holeMask.anchor.set(0.5, 1);
 		this._holeMask.scale.set(this._scale * 1.1, this._scale);
-		this._holeMask.y += 25 * this._scale;
+		this._holeMask.y += 27;
 		this.addChild(this._holeMask);
 		this._target.getRootContainer().mask = this._holeMask;
 

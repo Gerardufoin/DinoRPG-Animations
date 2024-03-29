@@ -21,6 +21,7 @@ import { pira } from './pira/pira.js';
 import { rasca } from './rasca/rasca.js';
 import { ronciv } from './ronciv/ronciv.js';
 import { taurus } from './taurus/taurus.js';
+import { vener } from './vener/vener.js';
 import { wolf } from './wolf/wolf.js';
 
 export const monsters = {
@@ -47,6 +48,7 @@ export const monsters = {
 	efire: efire,
 	eearth: eearth,
 	rasca: rasca,
+	vener: vener,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus

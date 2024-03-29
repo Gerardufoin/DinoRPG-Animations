@@ -89,15 +89,10 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'rasca'
+					gfx: 'flam'
 				}
 			},
 			{
-				action: DinoAnim.Action.Finish,
-				left: DinoAnim.EndBehaviour.Stand,
-				right: DinoAnim.EndBehaviour.Run
-			}
-			/*{
 				action: DinoAnim.Action.Add,
 				fighter: {
 					props: [],
@@ -109,24 +104,23 @@ const fightVersion = [
 					fid: 2,
 					gfx: 'ewater'
 				}
-			},*/
+			},
 			/*{
 				action: DinoAnim.Action.Status,
 				fid: 1,
 				status: DinoAnim.FighterStatus.Fly
 			},*/
-			/*{
+			{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Hole,
 				details: {
 					fid: 0,
 					targets: [
 						{ id: 1, life: 10 },
-						{ id: 2, life: 10 },
-						{ id: 3, life: 10 }
+						{ id: 2, life: 10 }
 					]
 				}
-			}*/
+			}
 			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Shower,
