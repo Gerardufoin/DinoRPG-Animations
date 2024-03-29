@@ -24,9 +24,9 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] bat
 -   [x] ewater
 -   [x] efire
--   [ ] eearth
--   [ ] rasca
--   [ ] vener
+-   [x] eearth
+-   [x] rasca
+-   [x] vener
 -   [ ] barche
 -   [ ] cobra
 -   [ ] hippo

@@ -317,7 +317,7 @@ TODO
 | AuraType     | Description                                                                                 |
 | ------------ | ------------------------------------------------------------------------------------------- |
 | Spiral (0)   | An aura which curves into multiple spirals. I.E.: Used for the Wrath skill.                 |
-| Straight (1) | An aura which is composed of multiple straight lines. I.E.: Used for the Primal Aura skill. |
+| Line (1)     | An aura which is composed of multiple straight lines. I.E.: Used for the Primal Aura skill. |
 | Burst (2)    | Sparks burst from the fighter and colored light are emitted.                                |
 | Detonate (3) | The fighter detonates.                                                                      |
 | Light (4)    | Colored lights are emitted from the fighter.                                                |

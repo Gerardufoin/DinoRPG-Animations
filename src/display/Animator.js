@@ -81,18 +81,18 @@ export class Animator extends Container {
 			const ticker = Ticker.shared;
 			ticker.add(() => this.update(Ticker.shared.deltaMS));
 		}
-		this.registerCallback('resetChildAnimations', (animation, idx) => {
-			animation.resetChildAnimations(idx);
+		this.registerCallback('resetChildAnimations', (animation, args) => {
+			animation.resetChildAnimations(args[0]);
 		});
 		this.registerCallback('stop', (animation) => {
 			animation.stop();
 		});
-		this.registerCallback('gotoAndPlay', (animation, idx) => {
-			animation.setCurrentIdx(idx);
+		this.registerCallback('gotoAndPlay', (animation, args) => {
+			animation.setCurrentIdx(args[0]);
 			animation.updateAnimation();
 		});
-		this.registerCallback('playAnim', (_animation, key) => {
-			this.playAnim(key);
+		this.registerCallback('playAnim', (_animation, args) => {
+			this.playAnim(args[0]);
 		});
 	}
 

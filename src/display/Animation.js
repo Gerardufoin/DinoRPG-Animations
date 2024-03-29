@@ -203,10 +203,10 @@ export class Animation extends Container {
 	 * @param {number | undefined} idx The index of the child animation to reset. If undefined, affect all children.
 	 */
 	resetChildAnimations(idx = undefined) {
-		if (idx && idx < this._childAnimations.length) {
+		if (idx !== undefined && idx < this._childAnimations.length) {
 			this._childAnimations[idx]._playing = true;
 			this._childAnimations[idx].setCurrentIdx(0);
-		} else if (idx == undefined) {
+		} else if (idx === undefined) {
 			for (const c of this._childAnimations) {
 				c._playing = true;
 				c.setCurrentIdx(0);
