@@ -222,12 +222,12 @@ export class PartManager {
 		}
 		if (part.glow) {
 			filters.push(
-				ConstantShaderManager.getGlowFilter(
-					part.glow.distance,
-					part.glow.color,
-					part.glow.quality,
-					part.glow.strength
-				)
+				ConstantShaderManager.getGlowFilter({
+					distance: part.glow.distance,
+					color: part.glow.color,
+					quality: part.glow.quality,
+					outerStrength: part.glow.strength
+				})
 			);
 		}
 		return filters.length ? filters : undefined;

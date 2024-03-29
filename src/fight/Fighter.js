@@ -1704,6 +1704,13 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Removes the force of a Fighter, preventing it from pushing or being pushed.
+	 */
+	removeForce() {
+		this._force = null;
+	}
+
+	/**
 	 * True if a Fighter is not dead.
 	 * @type {boolean}
 	 */

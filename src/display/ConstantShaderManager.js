@@ -34,38 +34,28 @@ export class ConstantShaderManager {
 	/**
 	 * Gets or creates a constant glow shader with the given parameters.
 	 * This glow shader must never be modified once instantiated.
-	 * @param {number} distance Distance of the glow. 10 by default.
-	 * @param {number} color Color of the glow. White by default.
-	 * @param {number} quality The quality of the glow (0-1). 0.1 by default.
-	 * @param {number} outerStrengh Strength of the glow going outward. 4 by default.
-	 * @param {number} innerStrengh Strength of the glow going inward. 0 by default.
+	 * @param {Partial<import('@pixi/filter-glow').GlowFilterOptions>} opt Options used to create the glow filter.
 	 * @returns {GlowFilter} The resulting glow filter.
 	 */
-	static getGlowFilter(distance = 10, color = 0xffffff, quality = 0.1, outerStrengh = 4, innerStrengh = 0) {
+	static getGlowFilter(opt) {
 		for (const g of ConstantShaderManager.glowShaderStorage) {
 			if (
-				g.distance === distance &&
-				g.color === color &&
-				g.quality === quality &&
-				g.outerStrengh === outerStrengh &&
-				g.innerStrengh === innerStrengh
+				g.distance === opt.distance &&
+				g.color === opt.color &&
+				g.quality === opt.quality &&
+				g.outerStrengh === opt.outerStrength &&
+				g.innerStrengh === opt.innerStrength
 			) {
 				return g.filter;
 			}
 		}
-		const filter = new GlowFilter({
-			distance: distance,
-			color: color,
-			quality: quality,
-			outerStrength: outerStrengh,
-			innerStrength: innerStrengh
-		});
+		const filter = new GlowFilter(opt);
 		ConstantShaderManager.glowShaderStorage.push({
-			distance: distance,
-			color: color,
-			quality: quality,
-			outerStrengh: outerStrengh,
-			innerStrengh: innerStrengh,
+			distance: opt.distance,
+			color: opt.color,
+			quality: opt.quality,
+			outerStrengh: opt.outerStrength,
+			innerStrengh: opt.innerStrength,
 			filter: filter
 		});
 		return filter;

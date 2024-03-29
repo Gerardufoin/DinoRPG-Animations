@@ -27,7 +27,14 @@ export class AuraLight extends Phys2D {
 		light.addChild(this._animator);
 		light.x = Math.random() * 12;
 		light.scale.set(0.5 + Math.random() * 0.5);
-		light.filters = [ConstantShaderManager.getGlowFilter(6, color, 0.5, 2)];
+		light.filters = [
+			ConstantShaderManager.getGlowFilter({
+				distance: 6,
+				color: color,
+				quality: 0.5,
+				outerStrength: 2
+			})
+		];
 		this._root.addChild(light);
 		this.setAlpha(0.6);
 

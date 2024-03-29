@@ -20,7 +20,13 @@ export class GrLava extends GroupEffect {
 	 * Storing it to prevent WebGL to create it each time.
 	 * @type {GlowFilter}
 	 */
-	static BurnFilter;
+	static BurnFilter = new GlowFilter({
+		quality: 1,
+		color: 0xbb0000,
+		distance: 10,
+		outerStrength: 0,
+		innerStrength: 0
+	});
 
 	/**
 	 * List of all the instantiated lava pillars.
@@ -40,13 +46,6 @@ export class GrLava extends GroupEffect {
 		this._caster.playAnim('cast');
 		this._coefSpeed = 0.03;
 		this.addSkillAura(SkillType.Fire);
-		if (!GrLava.BurnFilter) {
-			GrLava.BurnFilter = new GlowFilter({
-				quality: 1,
-				color: 0xbb0000,
-				distance: 2
-			});
-		}
 	}
 
 	/**

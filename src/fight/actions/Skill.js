@@ -9,6 +9,7 @@ import { State } from '../State.js';
 import { FxAnim } from './skills/fx/FxAnim.js';
 import { FxAttach } from './skills/fx/FxAttach.js';
 import { FxAura } from './skills/fx/FxAura.js';
+import { GrBlackHole } from './skills/group/GrBlackHole.js';
 import { GrCorruption } from './skills/group/GrCorruption.js';
 import { GrCrepuscule } from './skills/group/GrCrepuscule.js';
 import { GrDisc } from './skills/group/GrDisc.js';
@@ -172,6 +173,8 @@ export class Skill extends State {
 				return new GrTornado(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Disc:
 				return new GrDisc(this._scene, () => this.end(), this._fighter, this._targets);
+			case SkillList.Hole:
+				return new GrBlackHole(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Tremor:
 			case SkillList.JumpAttack:
 				return new GrJumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);

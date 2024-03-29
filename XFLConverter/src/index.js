@@ -74,12 +74,12 @@ const parser = new XFLParser();
 //parser.parse('./resources/gfx/LIBRARY/Symbol 660.xml', '_sub', undefined, 2); // slash
 //parser.parse('./resources/gfx/LIBRARY/Symbol 661.xml', '_sub', undefined, 2); // smoke_small
 //parser.parse('./resources/gfx/LIBRARY/Symbol 679.xml', '_sub', undefined, 2); // smoke
-parser.parse('./resources/gfx/LIBRARY/Symbol 859.xml', '_sub', undefined, 2); // fire spark
+//parser.parse('./resources/gfx/LIBRARY/Symbol 859.xml', '_sub', undefined, 2); // fire spark
 //parser.parse('./resources/gfx/LIBRARY/Symbol 893.xml', '_sub', undefined, 2); // detonation
 //parser.parse('./resources/gfx/LIBRARY/Symbol 971.xml', '_sub', undefined, 2); // aura
 
 const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
-//adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
+adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
 //adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');

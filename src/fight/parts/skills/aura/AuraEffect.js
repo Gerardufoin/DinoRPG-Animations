@@ -25,7 +25,14 @@ export class AuraEffect extends Phys2D {
 		this._animator = new Animator(false).loadAnimation(fx_aura, 1, [type]);
 		fx.addChild(this._animator);
 		fx.scale.set((Math.floor(Math.random() * 2) * 2 - 1) * (0.5 + Math.random() * 0.5), 0.5 + Math.random() * 0.5);
-		fx.filters = [ConstantShaderManager.getGlowFilter(2, color, 0.5, 2)];
+		fx.filters = [
+			ConstantShaderManager.getGlowFilter({
+				distance: 2,
+				color: color,
+				quality: 0.5,
+				outerStrength: 2
+			})
+		];
 		this._root.addChild(fx);
 
 		this._y = -10;

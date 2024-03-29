@@ -85,7 +85,7 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Elémental de feu',
+					name: '',
 					side: false,
 					scale: 1,
 					fid: 1,
@@ -98,77 +98,25 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: "Elémental d'Eau",
+					name: '',
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'ewater'
+					gfx: 'flam'
 				}
 			},
 			{
-				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Aura,
-				details: {
-					fid: 0,
-					color: 0xff0000,
-					type: 0
+				action: DinoAnim.Action.Add,
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: '',
+					side: false,
+					scale: 1,
+					fid: 3,
+					gfx: 'coq'
 				}
-			},
-			{
-				action: DinoAnim.Action.Wait,
-				time: 2000
-			},
-			{
-				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Aura,
-				details: {
-					fid: 0,
-					color: 0xaaff00,
-					type: 1
-				}
-			},
-			{
-				action: DinoAnim.Action.Wait,
-				time: 2000
-			},
-			{
-				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Aura,
-				details: {
-					fid: 0,
-					color: 0x00ff00,
-					type: 2
-				}
-			},
-			{
-				action: DinoAnim.Action.Wait,
-				time: 2000
-			},
-			{
-				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Aura,
-				details: {
-					fid: 0,
-					color: 0xff0000,
-					type: 3
-				}
-			},
-			{
-				action: DinoAnim.Action.Wait,
-				time: 2000
-			},
-			{
-				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Aura,
-				details: {
-					fid: 0,
-					color: 0x0000ff,
-					type: 4
-				}
-			},
-			{
-				action: DinoAnim.Action.Wait,
-				time: 2000
 			},
 			/*{
 				action: DinoAnim.Action.Status,
@@ -177,12 +125,13 @@ const fightVersion = [
 			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Meteor,
+				skill: DinoAnim.SkillList.Hole,
 				details: {
 					fid: 0,
 					targets: [
 						{ id: 1, life: 10 },
-						{ id: 2, life: 10 }
+						{ id: 2, life: 10 },
+						{ id: 3, life: 10 }
 					]
 				}
 			}
