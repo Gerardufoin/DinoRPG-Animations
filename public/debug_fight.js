@@ -89,10 +89,15 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'efire'
+					gfx: 'rasca'
 				}
 			},
 			{
+				action: DinoAnim.Action.Finish,
+				left: DinoAnim.EndBehaviour.Stand,
+				right: DinoAnim.EndBehaviour.Run
+			}
+			/*{
 				action: DinoAnim.Action.Add,
 				fighter: {
 					props: [],
@@ -104,34 +109,7 @@ const fightVersion = [
 					fid: 2,
 					gfx: 'ewater'
 				}
-			},
-			{
-				action: DinoAnim.Action.Wait,
-				time: 2000
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: '',
-					side: false,
-					scale: 1,
-					fid: 3,
-					gfx: 'eearth'
-				}
-			},
-			{
-				action: DinoAnim.Action.Wait,
-				time: 1000
-			},
-			{
-				action: DinoAnim.Action.Emote,
-				fids: [1, 2],
-				emote: DinoAnim.EmoteList.Love,
-				behaviour: DinoAnim.EmoteBehaviour.Float
-			}
+			},*/
 			/*{
 				action: DinoAnim.Action.Status,
 				fid: 1,

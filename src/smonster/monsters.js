@@ -18,6 +18,7 @@ import { kmask, korgon, rkrgns } from './korgon/korgon.js';
 import { lucet } from './lucet/lucet.js';
 import { mandragore } from './mandragore/mandragore.js';
 import { pira } from './pira/pira.js';
+import { rasca } from './rasca/rasca.js';
 import { ronciv } from './ronciv/ronciv.js';
 import { taurus } from './taurus/taurus.js';
 import { wolf } from './wolf/wolf.js';
@@ -45,6 +46,7 @@ export const monsters = {
 	ewater: ewater,
 	efire: efire,
 	eearth: eearth,
+	rasca: rasca,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus

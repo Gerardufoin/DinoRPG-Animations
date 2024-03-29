@@ -312,6 +312,16 @@ export let mapping_smonster = {
 	'Symbol 667': 'l_hand',
 	'Symbol 671': 'head',
 	'Symbol 676': 'head_dead',
+	// Rascaphandre
+	'Symbol 681': 'r_eye',
+	'Symbol 683': 'mouth_b',
+	'Symbol 685': 'body',
+	'Symbol 687': 'head',
+	'Symbol 689': 'mouth_f',
+	'Symbol 691': 'l_eye',
+	'Symbol 693': 'fin',
+	'Symbol 695': 'l_foot',
+	'Symbol 695-1': 'r_foot',
 	// Mandragore
 	'Symbol 1869': 'l_foot',
 	'Symbol 1871': 'l_leg',
