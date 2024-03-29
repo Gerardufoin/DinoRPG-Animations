@@ -31,7 +31,7 @@ export const vener = {
 	glow: {
 		distance: 6,
 		color: 0xff9900,
-		quality: 1,
+		quality: 0.5,
 		strength: 1
 	},
 	shadow: {

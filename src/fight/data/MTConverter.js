@@ -125,6 +125,7 @@ export class MTConverter {
 		const ret = {
 			enum: '_History',
 			value: '_HAdd',
+			/** @type {object[]} */
 			args: []
 		};
 		ret.args.push({
@@ -173,6 +174,7 @@ export class MTConverter {
 		const ret = {
 			enum: '_AddFighterEffect',
 			value: '',
+			/** @type {object[]} */
 			args: []
 		};
 		switch (fighter.entrance) {
@@ -222,6 +224,7 @@ export class MTConverter {
 		const ret = {
 			enum: '_History',
 			value: '_HEnergy',
+			/** @type {object[]} */
 			args: [[], []]
 		};
 		for (const f of obj.fighters) {
@@ -240,6 +243,7 @@ export class MTConverter {
 		const ret = {
 			enum: '_History',
 			value: '_HMaxEnergy',
+			/** @type {object[]} */
 			args: [[], []]
 		};
 		for (const f of obj.fighters) {
@@ -291,7 +295,7 @@ export class MTConverter {
 	/**
 	 * Convert a GotoFighter.Effect into a _GotoEffect.
 	 * @param {object} obj DA object containing the data.
-	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
+	 * @returns {{enum: string, value: string, args: Array} | null} The converted enum with its arguments.
 	 */
 	static convertGotoEffect(obj) {
 		if (!obj.effect) return null;
@@ -299,6 +303,7 @@ export class MTConverter {
 		const ret = {
 			enum: '_GotoEffect',
 			value: '_GNormal',
+			/** @type {object[]} */
 			args: []
 		};
 		switch (obj.effect) {
@@ -340,7 +345,7 @@ export class MTConverter {
 
 	/**
 	 * Convert a LifeEffect into a _LifeEffect enum.
-	 * @param {{fx: number, amount?: number, size?: number}} lifeFx LifeEffect enum.
+	 * @param {{fx: number, amount?: number, size?: number} | undefined} lifeFx LifeEffect enum.
 	 * @returns {{enum: string, value: string, args: Array} | null} The corresponding _LifeEffect enum or null if none.
 	 */
 	static convertLifeEffect(lifeFx) {
@@ -365,6 +370,7 @@ export class MTConverter {
 			const ret = {
 				enum: '_LifeEffect',
 				value: mapping[lifeFx.fx],
+				/** @type {object[]} */
 				args: []
 			};
 			switch (lifeFx.fx) {
@@ -382,7 +388,7 @@ export class MTConverter {
 
 	/**
 	 * Convert a DamagesEffect enum into an _Effect enum.
-	 * @param {number} effect DamagesEffect enum.
+	 * @param {number | undefined} effect DamagesEffect enum.
 	 * @returns {{enum: string, value: string, args: Array} | null} The corresponding _Effect enum or null if none.
 	 */
 	static convertDamagesEffect(effect) {
@@ -449,7 +455,7 @@ export class MTConverter {
 	/**
 	 * Convert the action into an _History._HFinish enum.
 	 * @param {object} obj Object containing the action.
-	 * @returns {{enum: string, value: string, args: Array}} The converted enum with its arguments.
+	 * @returns {{enum: string, value: string, args: Array} | undefined} The converted enum with its arguments.
 	 */
 	static convertHFinish(obj) {
 		return undefined;
@@ -566,6 +572,7 @@ export class MTConverter {
 		const ret = {
 			enum: '_Status',
 			value: mapping[status.status],
+			/** @type {object[]} */
 			args: []
 		};
 		switch (status.status) {
@@ -671,6 +678,7 @@ export class MTConverter {
 		const ret = {
 			enum: '_GroupEffect',
 			value: mapping[skill.skill],
+			/** @type {object[]} */
 			args: []
 		};
 		switch (skill.skill) {
@@ -744,6 +752,7 @@ export class MTConverter {
 		const ret = {
 			enum: '_SuperEffect',
 			value: mapping[skill.skill],
+			/** @type {object[]} */
 			args: []
 		};
 		switch (skill.skill) {
@@ -781,6 +790,9 @@ export class MTConverter {
 				ret.args.push(skill.details.color);
 				break;
 			case SkillList.Anim:
+				ret.args.push(skill.details.fid);
+				ret.args.push(skill.details.anim);
+				break;
 			case SkillList.Attach:
 				ret.args.push(skill.details.fid);
 				ret.args.push(skill.details.fx);

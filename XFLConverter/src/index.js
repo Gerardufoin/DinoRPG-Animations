@@ -62,6 +62,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 671.xml', '_sub', undefined, 1); // eearth head
 //parser.parse('./resources/smonster/LIBRARY/Symbol 704.xml', '_p1', undefined, 1); // rasca Rascaphandre
 //parser.parse('./resources/smonster/LIBRARY/Symbol 738.xml', '_p1', undefined, 1); // vener Vénérable
+//parser.parse('./resources/smonster/LIBRARY/Symbol 804.xml', '_p1', undefined, 1); // barche Bébé Archélion
+//parser.parse('./resources/smonster/LIBRARY/Symbol 786.xml', '_sub', undefined, 1); // barche Bébé Archélion
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus

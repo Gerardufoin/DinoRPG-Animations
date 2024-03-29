@@ -82,17 +82,17 @@ const fightVersion = [
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
-					props: [],
+					props: [DinoAnim.FighterProperty.Static],
 					dino: false,
 					life: 100,
 					name: '',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'flam'
+					gfx: 'barche'
 				}
 			},
-			{
+			/*{
 				action: DinoAnim.Action.Add,
 				fighter: {
 					props: [],
@@ -104,13 +104,21 @@ const fightVersion = [
 					fid: 2,
 					gfx: 'ewater'
 				}
-			},
+			},*/
+			{
+				action: DinoAnim.Action.Skill,
+				skill: DinoAnim.SkillList.Anim,
+				details: {
+					fid: 1,
+					anim: 'attack'
+				}
+			}
 			/*{
 				action: DinoAnim.Action.Status,
 				fid: 1,
 				status: DinoAnim.FighterStatus.Fly
 			},*/
-			{
+			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Hole,
 				details: {
@@ -120,7 +128,7 @@ const fightVersion = [
 						{ id: 2, life: 10 }
 					]
 				}
-			}
+			}*/
 			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Shower,

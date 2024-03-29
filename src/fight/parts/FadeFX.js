@@ -16,19 +16,20 @@ export class FadeFX extends Phys2D {
 	 * @param {string} asset The reference to the gfx fx assets. Has to be an index from gfx.fx.
 	 * @param {number} x The initial x coordinate.
 	 * @param {number} y The initial y coordinate.
-	 * @param {number} scale The vertical scale, to choose the direction of the fx.
+	 * @param {number} direction The vertical scale, to choose the direction of the fx.
 	 * @param {number} frames The number of frames needed to fade out.
+	 * @param {number} scale The scale of the fx.
 	 */
-	constructor(scene, asset, x, y, scale, frames) {
+	constructor(scene, asset, x, y, direction, frames, scale) {
 		super(new Container(), scene);
 		if (!ref.fx[asset]) {
 			this.kill();
 			return;
 		}
-		const ast = new Asset(ref.fx[asset]);
+		const ast = new Asset(ref.fx[asset], scale);
 		ast.blendMode = BLEND_MODES.MULTIPLY;
 		this._root.addChild(ast);
-		this._root.scale.x = scale;
+		this._root.scale.x = direction;
 		this._x = x;
 		this._y = y;
 		this._fadeoutTimer = frames;

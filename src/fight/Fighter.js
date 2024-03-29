@@ -1506,9 +1506,9 @@ export class Fighter extends Phys {
 	 * @param {string} asset The asset to spawn.
 	 * @param {number} x The x coordinate of the asset.
 	 * @param {number} y The y coordinate of the asset.
-	 * @param {{randomAlpha?: boolean, offsetX?: number, offsetY?: number}} options Optional configuration.
+	 * @param {{randomAlpha?: boolean, alpha?: number, offsetX?: number, offsetY?: number}} options Optional configuration.
 	 */
-	fxAttach(asset, x = 0, y = 0, options = undefined) {
+	fxAttach(asset, x = 0, y = 0, options = {}) {
 		switch (asset) {
 			case 'smoke':
 				Smoke.spawn(this._scene, this._x + x + (options?.offsetX ?? 0), this._y + y + (options?.offsetY ?? 0));
@@ -1516,24 +1516,25 @@ export class Fighter extends Phys {
 			case 'smoke_small':
 				Smoke.spawnSmall(
 					this._scene,
-					this._x + x + (options?.offsetX ?? 0),
-					this._y + y + (options?.offsetY ?? 0)
+					this._x + x + (options.offsetX ?? 0),
+					this._y + y + (options.offsetY ?? 0),
+					options.alpha
 				);
 				break;
 			case 'vapeur':
 				Smoke.spawn(
 					this._scene,
-					this._x + x + (options?.offsetX ?? 0),
-					this._y + y + (options?.offsetY ?? 0),
-					undefined,
+					this._x + x + (options.offsetX ?? 0),
+					this._y + y + (options.offsetY ?? 0),
+					options.alpha,
 					SmokeType.Steam
 				);
 				break;
 			case 'vapeur_small':
 				Smoke.spawnSmall(
 					this._scene,
-					this._x + Math.random() * x + (options?.offsetX ?? 0),
-					this._y + Math.random() * y + (options?.offsetY ?? 0),
+					this._x + Math.random() * x + (options.offsetX ?? 0),
+					this._y + Math.random() * y + (options.offsetY ?? 0),
 					0.6 + Math.random() * 0.2,
 					SmokeType.Steam
 				);
@@ -1541,18 +1542,18 @@ export class Fighter extends Phys {
 			case 'brule':
 				Smoke.spawn(
 					this._scene,
-					this._x + x + (options?.offsetX ?? 0),
-					this._y + y + (options?.offsetY ?? 0),
-					undefined,
+					this._x + x + (options.offsetX ?? 0),
+					this._y + y + (options.offsetY ?? 0),
+					options.alpha,
 					SmokeType.Burn
 				);
 				break;
 			case 'brule_small':
 				Smoke.spawnSmall(
 					this._scene,
-					this._x + Math.random() * x + (options?.offsetX ?? 0),
-					this._y + Math.random() * y + (options?.offsetY ?? 0),
-					undefined,
+					this._x + Math.random() * x + (options.offsetX ?? 0),
+					this._y + Math.random() * y + (options.offsetY ?? 0),
+					options.alpha,
 					SmokeType.Burn
 				);
 				break;
@@ -1586,8 +1587,9 @@ export class Fighter extends Phys {
 	 * @param {number} x The x position of the asset.
 	 * @param {number} y The y position of the asset.
 	 * @param {number} layer The layer where to attach the fx. Default to PARTS.
+	 * @param {{scale?: number}} options Optional configuration.
 	 */
-	fxAttachScene(asset, x = 0, y = 0, layer = Layers.Scene.PARTS) {
+	fxAttachScene(asset, x = 0, y = 0, layer = Layers.Scene.PARTS, options = {}) {
 		switch (asset) {
 			// TODO find way for the mark to work with both MULTIPLY and ADD to simulate OVERLAY
 			case 'coq_patte_a':
@@ -1598,7 +1600,8 @@ export class Fighter extends Phys {
 						this._root.x - (x + -5.4) * this._sens * this.intSide,
 						this._root.y + y + 15.4,
 						-this._sens * this.intSide,
-						134
+						134,
+						options.scale ?? 1
 					),
 					layer
 				);
@@ -1611,7 +1614,8 @@ export class Fighter extends Phys {
 						this._root.x - (x - 36) * this._sens * this.intSide,
 						this._root.y + y - 5.5,
 						-this._sens * this.intSide,
-						134
+						134,
+						options.scale ?? 1
 					),
 					layer
 				);

@@ -1,6 +1,7 @@
 // @ts-check
 import { bad } from '../sdino/bad.js';
 import { anguil } from './anguil/anguil.js';
+import { barche } from './barche/barche.js';
 import { bat } from './bat/bat.js';
 import { borg } from './borg/borg.js';
 import { coq } from './coq/coq.js';
@@ -49,6 +50,7 @@ export const monsters = {
 	eearth: eearth,
 	rasca: rasca,
 	vener: vener,
+	barche: barche,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus
