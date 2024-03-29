@@ -102,8 +102,12 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'flam'
+					gfx: 'ewater'
 				}
+			},
+			{
+				action: DinoAnim.Action.Wait,
+				time: 2000
 			},
 			{
 				action: DinoAnim.Action.Add,
@@ -115,15 +119,25 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 3,
-					gfx: 'coq'
+					gfx: 'eearth'
 				}
 			},
+			{
+				action: DinoAnim.Action.Wait,
+				time: 1000
+			},
+			{
+				action: DinoAnim.Action.Emote,
+				fids: [1, 2],
+				emote: DinoAnim.EmoteList.Love,
+				behaviour: DinoAnim.EmoteBehaviour.Float
+			}
 			/*{
 				action: DinoAnim.Action.Status,
 				fid: 1,
 				status: DinoAnim.FighterStatus.Fly
 			},*/
-			{
+			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Hole,
 				details: {
@@ -134,7 +148,7 @@ const fightVersion = [
 						{ id: 3, life: 10 }
 					]
 				}
-			}
+			}*/
 			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Shower,

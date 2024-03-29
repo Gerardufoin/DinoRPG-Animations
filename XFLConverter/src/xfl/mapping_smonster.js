@@ -301,6 +301,17 @@ export let mapping_smonster = {
 	'Symbol 628': 'l_t_arm',
 	'Symbol 632': 'l_b_arm',
 	'Symbol 637': 'l_hand',
+	// Earth elemental
+	'Symbol 646': 'r_b_arm',
+	'Symbol 648': 'r_hand',
+	'Symbol 650': 'r_t_arm',
+	'Symbol 652': 'body',
+	'Symbol 660': 'legs',
+	'Symbol 663': 'l_t_arm',
+	'Symbol 665': 'l_b_arm',
+	'Symbol 667': 'l_hand',
+	'Symbol 671': 'head',
+	'Symbol 676': 'head_dead',
 	// Mandragore
 	'Symbol 1869': 'l_foot',
 	'Symbol 1871': 'l_leg',

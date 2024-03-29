@@ -270,7 +270,8 @@ export const NotificationList = {
 export const EmoteList = {
 	Surprise: 0,
 	Question: 1,
-	Angry: 2
+	Angry: 2,
+	Love: 3
 };
 
 /**

@@ -69,11 +69,9 @@ export const grdien = {
 		fx_dust_6: fx_dust
 	},
 	animations: {
-		// release, ill, cast, sleep, fly same as stand
+		// walk, run, release, ill, cast, sleep, fly same as stand
 		// 523
 		stand: stand,
-		walk: { anim: stand, offset: 4 },
-		run: { anim: stand, offset: 9 },
 		//524
 		hit: hit,
 		dodge: { anim: hit, offset: 5 },

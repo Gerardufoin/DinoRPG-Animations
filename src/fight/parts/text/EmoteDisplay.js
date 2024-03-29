@@ -51,6 +51,9 @@ export class EmoteDisplay extends Phys2D {
 			case EmoteList.Question:
 				bubble = new Asset(ref.emotes.question);
 				break;
+			case EmoteList.Love:
+				bubble = new Asset(ref.emotes.love);
+				break;
 		}
 		if (bubble) {
 			bubble.anchor.set(0.5);

@@ -622,6 +622,7 @@ The emote appears and behaves based on the given behaviour.
 | Surprise (0) | A speech bubble with an exclamation mark. |
 | Question (1) | A speech bubble with a question mark.     |
 | Angry (2)    | An angry speech bubble.                   |
+| Love (3)     | A speech bubble with a heart.             |
 
 | EmoteBehaviour | Description                                      |
 | -------------- | ------------------------------------------------ |

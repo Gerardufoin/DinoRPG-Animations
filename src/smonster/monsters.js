@@ -4,6 +4,7 @@ import { anguil } from './anguil/anguil.js';
 import { bat } from './bat/bat.js';
 import { borg } from './borg/borg.js';
 import { coq } from './coq/coq.js';
+import { eearth } from './eearth/eearth.js';
 import { efire } from './efire/efire.js';
 import { ewater } from './ewater/ewater.js';
 import { flam } from './flam/flam.js';
@@ -43,6 +44,7 @@ export const monsters = {
 	bat: bat,
 	ewater: ewater,
 	efire: efire,
+	eearth: eearth,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus
