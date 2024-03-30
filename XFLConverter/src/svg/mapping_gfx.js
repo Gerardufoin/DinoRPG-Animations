@@ -145,6 +145,7 @@ export let mapping_gfx = {
 	619: 'status/lock',
 	621: 'status/shield',
 	622: 'status/stun_notif',
+	642: 'fx/beam_impact',
 	651: 'fx/slash_1',
 	652: 'fx/slash_2',
 	653: 'fx/slash_3',

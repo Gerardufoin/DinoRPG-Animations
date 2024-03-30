@@ -10,7 +10,7 @@ import { Fighter } from '../../../Fighter.js';
 import { Scene } from '../../../Scene.js';
 import { State } from '../../../State.js';
 import { Timer } from '../../../Timer.js';
-import { QuickAnim } from '../../../parts/QuickAnim.js';
+import { QuickAnim2D } from '../../../parts/QuickAnim2D.js';
 import { AuraEffect } from '../../../parts/skills/aura/AuraEffect.js';
 import { AuraFireSpark } from '../../../parts/skills/aura/AuraFireSpark.js';
 import { AuraLight } from '../../../parts/skills/aura/AuraLight.js';
@@ -74,7 +74,8 @@ export class FxAura extends State {
 				{
 					pmax = 72;
 					speed = 3;
-					const detonation = new QuickAnim(
+					const detonation = new QuickAnim2D(
+						this._scene,
 						fx_detonation,
 						this._caster.getRootContainer().x,
 						this._caster.getRootContainer().y - this._caster.height * 0.5

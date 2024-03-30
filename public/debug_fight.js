@@ -92,7 +92,7 @@ const fightVersion = [
 					gfx: 'barche'
 				}
 			},
-			/*{
+			{
 				action: DinoAnim.Action.Add,
 				fighter: {
 					props: [],
@@ -102,17 +102,17 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'ewater'
+					gfx: 'coq'
 				}
-			},*/
-			{
+			}
+			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Anim,
 				details: {
 					fid: 1,
 					anim: 'attack'
 				}
-			}
+			}*/
 			/*{
 				action: DinoAnim.Action.Status,
 				fid: 1,

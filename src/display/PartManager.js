@@ -120,6 +120,9 @@ export class PartManager {
 			if (part.alpha) {
 				anim.alpha = part.alpha;
 			}
+			if (part.masks) {
+				anim.setMasks(part.masks);
+			}
 			anim.filters = PartManager.createPartFilters(part);
 			return anim;
 		}

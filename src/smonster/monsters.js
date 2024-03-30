@@ -50,7 +50,7 @@ export const monsters = {
 	eearth: eearth,
 	rasca: rasca,
 	vener: vener,
-	//barche: barche,
+	barche: barche,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus

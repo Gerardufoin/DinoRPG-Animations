@@ -18,9 +18,10 @@ export class FadeFX extends Phys2D {
 	 * @param {number} y The initial y coordinate.
 	 * @param {number} direction The vertical scale, to choose the direction of the fx.
 	 * @param {number} frames The number of frames needed to fade out.
+	 * @param {number} delay The number of frames to wait before starting to fade out.
 	 * @param {number} scale The scale of the fx.
 	 */
-	constructor(scene, asset, x, y, direction, frames, scale) {
+	constructor(scene, asset, x, y, direction, frames, delay, scale) {
 		super(new Container(), scene);
 		if (!ref.fx[asset]) {
 			this.kill();
@@ -33,6 +34,6 @@ export class FadeFX extends Phys2D {
 		this._x = x;
 		this._y = y;
 		this._fadeoutTimer = frames;
-		this._fadeLimit = frames;
+		this._fadeLimit = frames - delay;
 	}
 }

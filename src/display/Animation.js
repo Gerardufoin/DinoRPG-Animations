@@ -1,5 +1,5 @@
 // @ts-check
-import { BlurFilter, Color, ColorMatrixFilter, Container, Filter, Matrix } from 'pixi.js';
+import { BlurFilter, Color, ColorMatrixFilter, Container, DisplayObject, Filter, Matrix } from 'pixi.js';
 import { offsetShader } from './shaders/ColorOffsetShader.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { PixiHelper } from './PixiHelper.js';
@@ -12,7 +12,7 @@ export class Animation extends Container {
 	 * List of all the parts of the animation.
 	 * Each member of the object is the name of one of the part which are added as the container children.
 	 * This will be used during the animation to move the parts and hide the parts which are not displayed for the current frame.
-	 * @type {object}
+	 * @type {{[name: string]: Animation}}
 	 */
 	_parts = {};
 	/**
@@ -124,6 +124,30 @@ export class Animation extends Container {
 	addPart(partName, part) {
 		this.addAnim(part);
 		this._parts[partName] = part;
+	}
+
+	/**
+	 * Use specific parts as mask for other parts.
+	 * A mask MUST be a sprite, so the part's sprite will have to be fetched (last element in the children hierarchy).
+	 * @param {{[part: string]: string}} masks An object having a part name as key and a part name to use as mask as value.
+	 */
+	setMasks(masks) {
+		for (const pName in masks) {
+			if (this._parts[pName]) {
+				if (this._parts[masks[pName]]) {
+					let mask = /** @type {Container<DisplayObject>} */ (this._parts[masks[pName]]);
+					// Go fetch the sprite (last child of the hierarchy)
+					while (mask.children && mask.children.length > 0) {
+						mask = /** @type {Container<DisplayObject>} */ (mask.getChildAt(0));
+					}
+					this._parts[pName].mask = mask;
+				} else {
+					console.error(`[Animation.setMasks]: Mask '${masks[pName]}' does not exist`);
+				}
+			} else {
+				console.error(`[Animation.setMasks]: Part '${pName}' does not exist`);
+			}
+		}
 	}
 
 	/**

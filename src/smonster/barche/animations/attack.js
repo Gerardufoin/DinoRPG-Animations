@@ -7,7 +7,7 @@ export const attack = {
 		23: [
 			['fxShake', 4, 0.965, 0.8],
 			['fxAttach', 'brule', -180, 20],
-			['fxAttach', 'brule', -50, -50, { alpha: 0.5 }],
+			['fxAttach', 'brule', -50, -50, { alpha: 0.3 }],
 			['fxAttach', 'brulure', -175, 0]
 		],
 		30: [['fxAttach', 'brule', -180, 20]],
@@ -17,7 +17,7 @@ export const attack = {
 		61: [['fxAttach', 'brule', -180, 20]],
 		71: [['fxAttach', 'brule', -180, 20]],
 		78: [['fxAttach', 'brule', -180, 20]],
-		79: [['fxAttach', 'brule', -50, -50, { alpha: 0.5 }]],
+		79: [['fxAttach', 'brule', -50, -50, { alpha: 0.3 }]],
 		93: [['stop']]
 	},
 	frames: [
@@ -2909,15 +2909,6 @@ export const attack = {
 				b: -0.483,
 				c: 0.483,
 				d: 0.444,
-				acb: 0,
-				acc: 0,
-				acs: 70,
-				ach: -24,
-				glx: 12,
-				gly: 12,
-				glc: '#ff9900',
-				glq: 1,
-				gls: 1.3,
 				l: 14
 			},
 			sp_3: {
@@ -3080,15 +3071,6 @@ export const attack = {
 				b: -1.312,
 				c: 1.312,
 				d: 1.206,
-				acb: 0,
-				acc: 0,
-				acs: 70,
-				ach: -24,
-				glx: 66,
-				gly: 66,
-				glc: '#ff9900',
-				glq: 1,
-				gls: 1.8,
 				l: 14
 			},
 			sp_3: {
@@ -3251,15 +3233,6 @@ export const attack = {
 				b: -0.903,
 				c: 0.537,
 				d: 1.146,
-				acb: 0,
-				acc: 0,
-				acs: 70,
-				ach: -24,
-				glx: 66,
-				gly: 66,
-				glc: '#ff9900',
-				glq: 1,
-				gls: 1.8,
 				l: 14
 			},
 			sp_3: {
@@ -3417,15 +3390,6 @@ export const attack = {
 				b: -0.897,
 				c: 0.246,
 				d: 0.593,
-				acb: 0,
-				acc: 0,
-				acs: 70,
-				ach: -24,
-				glx: 51,
-				gly: 51,
-				glc: '#ff9900',
-				glq: 1,
-				gls: 1.3,
 				l: 14
 			},
 			sp_3: {
@@ -12522,11 +12486,6 @@ export const attack = {
 			atk_e_1: {
 				tx: -98.5,
 				ty: -21.55,
-				glx: 11,
-				gly: 11,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 14
 			},
 			sp_3: {
@@ -12677,11 +12636,6 @@ export const attack = {
 			atk_e_2: {
 				tx: -98.5,
 				ty: -21.55,
-				glx: 11,
-				gly: 11,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 14
 			},
 			sp_3: {
@@ -12832,11 +12786,6 @@ export const attack = {
 			atk_e_2: {
 				tx: -101,
 				ty: -20.05,
-				glx: 11,
-				gly: 11,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 14
 			},
 			sp_3: {
@@ -12989,11 +12938,6 @@ export const attack = {
 			atk_e_3: {
 				tx: -101.85,
 				ty: -15.35,
-				glx: 11,
-				gly: 11,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 14
 			},
 			sp_3: {
@@ -13146,11 +13090,6 @@ export const attack = {
 			atk_e_3: {
 				tx: -104.35,
 				ty: -10.85,
-				glx: 11,
-				gly: 11,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 14
 			},
 			sp_3: {
@@ -13303,11 +13242,6 @@ export const attack = {
 			atk_e_4: {
 				tx: -105.6,
 				ty: -6.8,
-				glx: 11,
-				gly: 11,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 14
 			},
 			sp_3: {
@@ -13460,11 +13394,6 @@ export const attack = {
 			atk_e_4: {
 				tx: -108.6,
 				ty: -2.15,
-				glx: 11,
-				gly: 11,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 14
 			},
 			sp_3: {
@@ -13617,11 +13546,6 @@ export const attack = {
 			atk_e_5: {
 				tx: -111.4,
 				ty: 1.6,
-				glx: 5,
-				gly: 5,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 14
 			},
 			sp_3: {
@@ -13774,11 +13698,6 @@ export const attack = {
 			atk_e_5: {
 				tx: -113.55,
 				ty: 9.9,
-				glx: 5,
-				gly: 5,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 14
 			},
 			sp_3: {

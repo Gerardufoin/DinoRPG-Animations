@@ -3,7 +3,7 @@
 export const stand = {
 	id: 'barche_stand',
 	callbacks: {
-		31: [['fxAttach', 'brule', -50, -50, { alpha: 0.5 }]]
+		31: [['fxAttach', 'brule', -50, -50, { alpha: 0.3 }]]
 	},
 	frames: [
 		{

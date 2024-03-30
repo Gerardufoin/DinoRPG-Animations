@@ -35,6 +35,8 @@ import { FadeFX } from './parts/FadeFX.js';
 import { FireSpark } from './parts/life/FireSpark.js';
 import { ShadeType } from './parts/Shade.js';
 import { Slash } from './parts/Slash.js';
+import { QuickAnim } from './parts/QuickAnim.js';
+import { fx_brule } from '../gfx/fx/smoke/brule.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -1540,12 +1542,16 @@ export class Fighter extends Phys {
 				);
 				break;
 			case 'brule':
-				Smoke.spawn(
-					this._scene,
-					this._x + x + (options.offsetX ?? 0),
-					this._y + y + (options.offsetY ?? 0),
-					options.alpha,
-					SmokeType.Burn
+				this._scene.dm.addSprite(
+					new QuickAnim(
+						this._scene,
+						fx_brule,
+						this._x + x + (options.offsetX ?? 0),
+						this._y + y + (options.offsetY ?? 0),
+						-this._sens * this.intSide,
+						options.alpha
+					),
+					Layers.Scene.FIGHTERS
 				);
 				break;
 			case 'brule_small':
@@ -1559,6 +1565,21 @@ export class Fighter extends Phys {
 				break;
 			case 'slash':
 				this._scene.dm.addSprite(new Slash(this._scene, this._x + x, this._y + y), Layers.Scene.FIGHTERS);
+				break;
+			case 'brulure':
+				this._scene.dm.addSprite(
+					new FadeFX(
+						this._scene,
+						'beam_impact',
+						this._root.x - x * this._sens * this.intSide,
+						this._root.y + y,
+						-this._sens * this.intSide,
+						353,
+						187,
+						1
+					),
+					Layers.Scene.SHADE
+				);
 				break;
 			default:
 				console.error(`FxAttach: Unknown asset ${asset}`);
@@ -1601,6 +1622,7 @@ export class Fighter extends Phys {
 						this._root.y + y + 15.4,
 						-this._sens * this.intSide,
 						134,
+						0,
 						options.scale ?? 1
 					),
 					layer
@@ -1615,6 +1637,7 @@ export class Fighter extends Phys {
 						this._root.y + y - 5.5,
 						-this._sens * this.intSide,
 						134,
+						0,
 						options.scale ?? 1
 					),
 					layer

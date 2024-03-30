@@ -8,7 +8,7 @@ import { Layers } from '../../../DepthManager.js';
 import { Fighter } from '../../../Fighter.js';
 import { Scene } from '../../../Scene.js';
 import { State } from '../../../State.js';
-import { QuickAnim } from '../../../parts/QuickAnim.js';
+import { QuickAnim2D } from '../../../parts/QuickAnim2D.js';
 
 /**
  * The given animation is attached to the given Fighter.
@@ -35,7 +35,7 @@ export class FxAttach extends State {
 		// As the state is called from Skill, the fighter is already ready, do not add it to the cast.
 		const anim = FxAttach.ATTACHEMENTS[fx];
 		if (anim) {
-			fighter.dm.addSprite(new QuickAnim(anim, 0, -fighter.height * 0.5), Layers.Fighter.FX);
+			fighter.dm.addSprite(new QuickAnim2D(this._scene, anim, 0, -fighter.height * 0.5), Layers.Fighter.FX);
 		} else {
 			console.error(`[FxAttach]: Unkown fx '${fx}'`);
 		}
