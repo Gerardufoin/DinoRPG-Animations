@@ -1,5 +1,7 @@
 // @ts-check
 
+import { Layers } from '../../../fight/DepthManager.js';
+
 export const land = {
 	id: 'barche_land',
 	callbacks: {
@@ -7,8 +9,8 @@ export const land = {
 			['hit'],
 			['fxShake', 8, 0.8, 0.5],
 			['fxAttach', 'smoke', 0, 20],
-			['fxAttachScene', 'coq_patte_b', -10, 10, 2, { scale: 1.2 }],
-			['fxAttachScene', 'coq_patte_a', 20, 0, 2, { scale: 1.2 }]
+			['fxAttachScene', 'coq_patte_b', -10, 10, Layers.Scene.SHADE, { scale: 1.2 }],
+			['fxAttachScene', 'coq_patte_a', 20, 0, Layers.Scene.SHADE, { scale: 1.2 }]
 		],
 		9: [['stop']]
 	},

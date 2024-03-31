@@ -1,5 +1,5 @@
 // @ts-check
-import { fx_dust_animation } from '../../sdino/fx/dust.js';
+import { fx_dust_frames } from '../../gfx/fx/attach/smoke/dust.js';
 import { ref as ref_sdino } from '../../sdino/references.js';
 import { ref } from '../references.js';
 
@@ -103,7 +103,10 @@ export const parts = {
 					}
 				]
 			},
-			animation: fx_dust_animation
+			animation: {
+				id: 'vener_fx_dust',
+				frames: fx_dust_frames
+			}
 		}
 	]
 };

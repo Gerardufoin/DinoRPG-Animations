@@ -1,9 +1,11 @@
 // @ts-check
 
+import { Layers } from '../../../fight/DepthManager.js';
+
 export const stand = {
 	id: 'barche_stand',
 	callbacks: {
-		31: [['fxAttach', 'brule', -50, -50, { alpha: 0.3 }]]
+		31: [['fxAttachScene', 'brule', -50, -50, Layers.Scene.PARTS, { alpha: 0.5 }]]
 	},
 	frames: [
 		{

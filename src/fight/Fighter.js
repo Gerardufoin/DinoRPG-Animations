@@ -16,7 +16,6 @@ import { Title } from './parts/text/Title.js';
 import { Sprite } from './Sprite.js';
 import { Bolt } from './parts/life/Bolt.js';
 import { Flameche } from './parts/life/Flameche.js';
-import { Smoke, SmokeType } from './parts/smoke/Smoke.js';
 import { Leaf } from './parts/life/Leaf.js';
 import { Wind } from './parts/life/Wind.js';
 import { Drip } from './parts/life/Drip.js';
@@ -31,12 +30,16 @@ import { DepthManager, Layers } from './DepthManager.js';
 import { IScene } from './IScene.js';
 import { WaterOnde } from './parts/scene/WaterOnde.js';
 import { FighterProperty, FighterStatus, GroundType, LifeEffect } from './Enums.js';
-import { FadeFX } from './parts/FadeFX.js';
 import { FireSpark } from './parts/life/FireSpark.js';
 import { ShadeType } from './parts/Shade.js';
-import { Slash } from './parts/Slash.js';
 import { QuickAnim } from './parts/QuickAnim.js';
-import { fx_brule } from '../gfx/fx/smoke/brule.js';
+import { fx_brule, fx_brule_small } from '../gfx/fx/attach/smoke/brule.js';
+import { fx_slash } from '../gfx/fx/attach/slash.js';
+import { fx_coq_patte_a, fx_coq_patte_b } from '../gfx/fx/attach/coq_pattes.js';
+import { QuickAnim2D } from './parts/QuickAnim2D.js';
+import { fx_brulure } from '../gfx/fx/attach/brulure.js';
+import { fx_steam, fx_steam_small } from '../gfx/fx/attach/smoke/steam.js';
+import { fx_smoke, fx_smoke_small } from '../gfx/fx/attach/smoke/dirt.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -477,7 +480,7 @@ export class Fighter extends Phys {
 			this.fxAttachInside(args[0], args[1], args[2], args[3]);
 		});
 		this._animator.registerCallback('fxAttachScene', (_anim, args) => {
-			this.fxAttachScene(args[0], args[1], args[2], args[3]);
+			this.fxAttachScene(args[0], args[1], args[2], args[3], args[4]);
 		});
 
 		// Add poison filter to animator
@@ -1504,85 +1507,62 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Get an attachement animation by name.
+	 * @param {string} animation The animation to get.
+	 * @returns {object | null} The animation or null if it does not exists.
+	 */
+	getFxAnimation(animation) {
+		switch (animation) {
+			case 'smoke':
+				return fx_smoke;
+			case 'smoke_small':
+				return fx_smoke_small;
+			case 'vapeur':
+				return fx_steam;
+			case 'vapeur_small':
+				return fx_steam_small;
+			case 'brule':
+				return fx_brule;
+			case 'brule_small':
+				return fx_brule_small;
+			case 'slash':
+				return fx_slash;
+			case 'coq_patte_a':
+				return fx_coq_patte_a;
+			case 'coq_patte_b':
+				return fx_coq_patte_b;
+			case 'brulure':
+				return fx_brulure;
+		}
+		return null;
+	}
+
+	/**
 	 * Used by callbacks to spawn an FX in the Scene.
 	 * @param {string} asset The asset to spawn.
 	 * @param {number} x The x coordinate of the asset.
 	 * @param {number} y The y coordinate of the asset.
-	 * @param {{randomAlpha?: boolean, alpha?: number, offsetX?: number, offsetY?: number}} options Optional configuration.
+	 * @param {{randomAlpha?: boolean, alpha?: number, offsetX?: number, offsetY?: number, scale?: number, randomPos?: boolean}} options Optional configuration.
 	 */
 	fxAttach(asset, x = 0, y = 0, options = {}) {
-		switch (asset) {
-			case 'smoke':
-				Smoke.spawn(this._scene, this._x + x + (options?.offsetX ?? 0), this._y + y + (options?.offsetY ?? 0));
-				break;
-			case 'smoke_small':
-				Smoke.spawnSmall(
+		const animation = this.getFxAnimation(asset);
+		if (animation) {
+			x = options.randomPos ? Math.random() * x : x;
+			y = options.randomPos ? Math.random() * y : y;
+			this._scene.dm.addSprite(
+				new QuickAnim(
 					this._scene,
-					this._x + x + (options.offsetX ?? 0),
+					animation,
+					this._x - (x + (options.offsetX ?? 0)) * this._sens * this.intSide,
 					this._y + y + (options.offsetY ?? 0),
-					options.alpha
-				);
-				break;
-			case 'vapeur':
-				Smoke.spawn(
-					this._scene,
-					this._x + x + (options.offsetX ?? 0),
-					this._y + y + (options.offsetY ?? 0),
+					-this._sens * this.intSide,
 					options.alpha,
-					SmokeType.Steam
-				);
-				break;
-			case 'vapeur_small':
-				Smoke.spawnSmall(
-					this._scene,
-					this._x + Math.random() * x + (options.offsetX ?? 0),
-					this._y + Math.random() * y + (options.offsetY ?? 0),
-					0.6 + Math.random() * 0.2,
-					SmokeType.Steam
-				);
-				break;
-			case 'brule':
-				this._scene.dm.addSprite(
-					new QuickAnim(
-						this._scene,
-						fx_brule,
-						this._x + x + (options.offsetX ?? 0),
-						this._y + y + (options.offsetY ?? 0),
-						-this._sens * this.intSide,
-						options.alpha
-					),
-					Layers.Scene.FIGHTERS
-				);
-				break;
-			case 'brule_small':
-				Smoke.spawnSmall(
-					this._scene,
-					this._x + Math.random() * x + (options.offsetX ?? 0),
-					this._y + Math.random() * y + (options.offsetY ?? 0),
-					options.alpha,
-					SmokeType.Burn
-				);
-				break;
-			case 'slash':
-				this._scene.dm.addSprite(new Slash(this._scene, this._x + x, this._y + y), Layers.Scene.FIGHTERS);
-				break;
-			case 'brulure':
-				this._scene.dm.addSprite(
-					new FadeFX(
-						this._scene,
-						'beam_impact',
-						this._root.x - x * this._sens * this.intSide,
-						this._root.y + y,
-						-this._sens * this.intSide,
-						353,
-						187,
-						1
-					),
-					Layers.Scene.SHADE
-				);
-				break;
-			default:
-				console.error(`FxAttach: Unknown asset ${asset}`);
+					options.scale
+				),
+				Layers.Scene.FIGHTERS
+			);
+		} else {
+			console.error(`[Fighter.fxAttach]: Unknown animation '${asset}'.`);
 		}
 	}
 
@@ -1608,41 +1588,25 @@ export class Fighter extends Phys {
 	 * @param {number} x The x position of the asset.
 	 * @param {number} y The y position of the asset.
 	 * @param {number} layer The layer where to attach the fx. Default to PARTS.
-	 * @param {{scale?: number}} options Optional configuration.
+	 * @param {{alpha?: number, offsetX?: number, offsetY?: number, scale?: number}} options Optional configuration.
 	 */
 	fxAttachScene(asset, x = 0, y = 0, layer = Layers.Scene.PARTS, options = {}) {
-		switch (asset) {
-			// TODO find way for the mark to work with both MULTIPLY and ADD to simulate OVERLAY
-			case 'coq_patte_a':
-				this._scene.dm.addSprite(
-					new FadeFX(
-						this._scene,
-						asset,
-						this._root.x - (x + -5.4) * this._sens * this.intSide,
-						this._root.y + y + 15.4,
-						-this._sens * this.intSide,
-						134,
-						0,
-						options.scale ?? 1
-					),
-					layer
-				);
-				break;
-			case 'coq_patte_b':
-				this._scene.dm.addSprite(
-					new FadeFX(
-						this._scene,
-						asset,
-						this._root.x - (x - 36) * this._sens * this.intSide,
-						this._root.y + y - 5.5,
-						-this._sens * this.intSide,
-						134,
-						0,
-						options.scale ?? 1
-					),
-					layer
-				);
-				break;
+		const animation = this.getFxAnimation(asset);
+		if (animation) {
+			this._scene.dm.addSprite(
+				new QuickAnim2D(
+					this._scene,
+					animation,
+					this._root.x - (x + (options.offsetX ?? 0)) * this._sens * this.intSide,
+					this._root.y + y + (options.offsetY ?? 0),
+					-this._sens * this.intSide,
+					options.alpha,
+					options.scale
+				),
+				layer
+			);
+		} else {
+			console.error(`[Fighter.fxAttachScene]: Unknown animation '${asset}'.`);
 		}
 	}
 

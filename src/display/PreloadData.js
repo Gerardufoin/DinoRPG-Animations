@@ -14,7 +14,7 @@ import { fx_flameche } from '../gfx/fx/flameche.js';
 import { fx_lava_end } from '../gfx/fx/lava_end.js';
 import { fx_petal } from '../gfx/fx/petal.js';
 import { fx_tornado } from '../gfx/fx/tornado.js';
-import { fx_slash } from '../gfx/fx/slash.js';
+import { fx_slash } from '../gfx/fx/attach/slash.js';
 import { fx_vine_shadow } from '../gfx/fx/vine_shadow.js';
 import { fx_vine } from '../gfx/fx/vine.js';
 import { fx_water_canon_end } from '../gfx/fx/water_canon_end.js';

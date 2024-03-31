@@ -8,7 +8,7 @@ import { land } from './animations/land.js';
 import { attack } from './animations/attack.js';
 import { dead } from './animations/dead.js';
 import { release } from './animations/release.js';
-import { fx_dust } from '../fx/dust.js';
+import { fx_dust } from '../../gfx/fx/attach/smoke/dust.js';
 import { ref } from '../references.js';
 import { parts } from './parts.js';
 

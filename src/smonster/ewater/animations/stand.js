@@ -3,11 +3,11 @@
 export const stand = {
 	id: 'ewater_stand',
 	callbacks: {
-		0: [['fxAttach', 'vapeur_small', 10, 10, { offsetX: -5, offsetY: 5 }]],
-		9: [['fxAttach', 'vapeur_small', 10, 10, { offsetX: -5, offsetY: 5 }]],
-		17: [['fxAttach', 'vapeur_small', 10, 10, { offsetX: -5, offsetY: 5 }]],
-		25: [['fxAttach', 'vapeur_small', 10, 10, { offsetX: -5, offsetY: 5 }]],
-		33: [['fxAttach', 'vapeur_small', 10, 10, { offsetX: -5, offsetY: 5 }]]
+		0: [['fxAttach', 'vapeur_small', 5, 10, { offsetX: -10, offsetY: 5, randomPos: true }]],
+		9: [['fxAttach', 'vapeur_small', 5, 10, { offsetX: -10, offsetY: 5, randomPos: true }]],
+		17: [['fxAttach', 'vapeur_small', 5, 10, { offsetX: -10, offsetY: 5, randomPos: true }]],
+		25: [['fxAttach', 'vapeur_small', 5, 10, { offsetX: -10, offsetY: 5, randomPos: true }]],
+		33: [['fxAttach', 'vapeur_small', 5, 10, { offsetX: -10, offsetY: 5, randomPos: true }]]
 	},
 	frames: [
 		{

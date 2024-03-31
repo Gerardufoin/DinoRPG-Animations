@@ -1,11 +1,11 @@
 // @ts-check
 
-import { fx_dust_animation } from '../../sdino/fx/dust.js';
 import { ref } from '../references.js';
 import { ref as ref_dino } from '../../sdino/references.js';
 import { kazka_back_nerves } from './animations/back_nerves.js';
 import { kazka_eye } from './animations/eye.js';
 import { kazka_float } from './animations/float.js';
+import { fx_dust_frames } from '../../gfx/fx/attach/smoke/dust.js';
 
 export const parts = {
 	// 437
@@ -73,7 +73,10 @@ export const parts = {
 					}
 				]
 			},
-			animation: fx_dust_animation
+			animation: {
+				id: 'kazka_fx_explosion',
+				frames: fx_dust_frames
+			}
 		}
 	]
 };

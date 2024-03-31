@@ -78,6 +78,9 @@ const parser = new XFLParser();
 //parser.parse('./resources/gfx/LIBRARY/Symbol 232.xml', '_sub', undefined, 2); // fxOndeFocus
 //parser.parse('./resources/gfx/LIBRARY/Symbol 836.xml', '_sub', undefined, 2); // fxFlameche
 //parser.parse('./resources/gfx/LIBRARY/Symbol 617.xml', '_sub', undefined, 2); // strong notification
+//parser.parse('./resources/gfx/LIBRARY/Symbol 643.xml', '_sub', undefined, 2); // brulure
+parser.parse('./resources/gfx/LIBRARY/Symbol 647.xml', '_sub', undefined, 2); // partDirt
+//parser.parse('./resources/gfx/LIBRARY/Symbol 664.xml', '_sub', undefined, 2); // coq_patte
 //parser.parse('./resources/gfx/LIBRARY/Symbol 660.xml', '_sub', undefined, 2); // slash
 //parser.parse('./resources/gfx/LIBRARY/Symbol 661.xml', '_sub', undefined, 2); // smoke_small
 //parser.parse('./resources/gfx/LIBRARY/Symbol 679.xml', '_sub', undefined, 2); // smoke
@@ -87,6 +90,6 @@ const parser = new XFLParser();
 
 const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
-adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
+//adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
 //adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');

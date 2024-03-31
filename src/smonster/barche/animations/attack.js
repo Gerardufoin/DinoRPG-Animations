@@ -1,4 +1,5 @@
 // @ts-check
+import { Layers } from '../../../fight/DepthManager.js';
 
 export const attack = {
 	id: 'barche_attack',
@@ -7,8 +8,8 @@ export const attack = {
 		23: [
 			['fxShake', 4, 0.965, 0.8],
 			['fxAttach', 'brule', -180, 20],
-			['fxAttach', 'brule', -50, -50, { alpha: 0.3 }],
-			['fxAttach', 'brulure', -175, 0]
+			['fxAttachScene', 'brule', -50, -50, Layers.Scene.PARTS, { alpha: 0.5 }],
+			['fxAttachScene', 'brulure', -175, 0, Layers.Scene.SHADE]
 		],
 		30: [['fxAttach', 'brule', -180, 20]],
 		37: [['fxAttach', 'brule', -180, 20]],
@@ -17,7 +18,7 @@ export const attack = {
 		61: [['fxAttach', 'brule', -180, 20]],
 		71: [['fxAttach', 'brule', -180, 20]],
 		78: [['fxAttach', 'brule', -180, 20]],
-		79: [['fxAttach', 'brule', -50, -50, { alpha: 0.3 }]],
+		79: [['fxAttach', 'brule', -50, -50, Layers.Scene.PARTS, { alpha: 0.5 }]],
 		93: [['stop']]
 	},
 	frames: [

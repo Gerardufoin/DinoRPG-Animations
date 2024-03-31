@@ -1,13 +1,15 @@
 // @ts-check
 
+import { Layers } from '../../../fight/DepthManager.js';
+
 export const run = {
 	id: 'barche_run',
 	callbacks: {
-		0: [['fxAttachScene', 'coq_patte_b', -10, 0, 2, { scale: 1.2 }]],
+		0: [['fxAttachScene', 'coq_patte_b', -10, 0, Layers.Scene.SHADE, { scale: 1.2 }]],
 		4: [
 			['fxShake', 2, 0.85, 0.5],
 			['fxAttach', 'smoke', -15, 20],
-			['fxAttachScene', 'coq_patte_a', 0, -10, 2, { scale: 1.2 }]
+			['fxAttachScene', 'coq_patte_a', 0, -10, Layers.Scene.SHADE, { scale: 1.2 }]
 		]
 	},
 	frames: [

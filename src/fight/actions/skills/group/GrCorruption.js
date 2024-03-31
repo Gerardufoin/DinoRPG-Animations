@@ -9,7 +9,8 @@ import { Timer } from '../../../Timer.js';
 import { GroupEffect } from '../GroupEffect.js';
 import { SCENE_FULL_WIDTH, SCENE_HEIGHT, SCENE_WIDTH } from '../../../IScene.js';
 import { Layers } from '../../../DepthManager.js';
-import { DarkSmoke } from '../../../parts/smoke/DarkSmoke.js';
+import { QuickAnim } from '../../../parts/QuickAnim.js';
+import { fx_dark_smoke } from '../../../../gfx/fx/attach/smoke/dark.js';
 
 /**
  * Darkness fall upon the scene and clouds of dark dust rise from the ground.
@@ -69,7 +70,15 @@ export class GrCorruption extends GroupEffect {
 				this._darkness.alpha = GrCorruption.DARKNESS_MAX_OPACITY * this._coef;
 				this._spawnTimer += timer.tmod;
 				while (this._spawnTimer > GrCorruption.DARKNESS_CLOUD_FREQUENCY) {
-					DarkSmoke.spawn(this._scene, Math.random() * SCENE_WIDTH, this._scene.getRandomPYPos());
+					this._scene.dm.addSprite(
+						new QuickAnim(
+							this._scene,
+							fx_dark_smoke,
+							Math.random() * SCENE_WIDTH,
+							this._scene.getRandomPYPos()
+						),
+						Layers.Scene.FIGHTERS
+					);
 					this._spawnTimer -= GrCorruption.DARKNESS_CLOUD_FREQUENCY;
 				}
 				if (this._coef == 1) {

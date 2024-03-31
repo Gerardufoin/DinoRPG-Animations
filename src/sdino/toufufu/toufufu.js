@@ -12,7 +12,7 @@ import { sleep } from './animations/sleep.js';
 import { release } from './animations/release.js';
 import { big } from './animations/big.js';
 import { special } from './animations/special.js';
-import { fx_dust } from '../fx/dust.js';
+import { fx_dust } from '../../gfx/fx/attach/smoke/dust.js';
 import { parts } from './parts.js';
 import { ref } from '../references.js';
 

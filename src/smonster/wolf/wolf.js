@@ -1,7 +1,7 @@
 // @ts-check
 
 import { ref as ref_sdino } from '../../sdino/references.js';
-import { fx_dust } from '../../sdino/fx/dust.js';
+import { fx_dust } from '../../gfx/fx/attach/smoke/dust.js';
 import { parts } from './parts.js';
 import { stand } from './animations/stand.js';
 import { walk } from './animations/walk.js';

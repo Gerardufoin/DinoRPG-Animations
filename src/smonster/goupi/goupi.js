@@ -1,6 +1,6 @@
 // @ts-check
 import { BLEND_MODES } from 'pixi.js';
-import { fx_dust } from '../../sdino/fx/dust.js';
+import { fx_dust } from '../../gfx/fx/attach/smoke/dust.js';
 import { ref as ref_sdino } from '../../sdino/references.js';
 import { ref } from '../references.js';
 import { stand } from './animations/stand.js';
