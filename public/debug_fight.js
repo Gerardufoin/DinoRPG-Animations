@@ -82,17 +82,17 @@ const fightVersion = [
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
-					props: [DinoAnim.FighterProperty.Static],
+					props: [],
 					dino: false,
 					life: 100,
 					name: '',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'goupi'
+					gfx: 'barche'
 				}
-			},
-			{
+			}
+			/*{
 				action: DinoAnim.Action.Add,
 				fighter: {
 					props: [DinoAnim.FighterProperty.Static],
@@ -102,10 +102,10 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'barche'
+					gfx: 'coq'
 				}
-			}
-			/*{
+			},
+			{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Anim,
 				details: {

@@ -114,7 +114,11 @@ export const parts = {
 	// 59_s
 	shade: [
 		{
-			ref: ref_sdino.fx.shadow
+			ref: ref_sdino.fx.shadow,
+			blur: {
+				x: 2,
+				y: 2
+			}
 		}
 	]
 };

@@ -691,6 +691,14 @@ export const fx_coq_patte_a = {
 					tx: 5.35,
 					ty: 15.35
 				}
+			},
+			{
+				ref: ref.fx.coq_patte_a_highlight,
+				blend: BLEND_MODES.ADD,
+				transform: {
+					tx: 5.35,
+					ty: 15.35
+				}
 			}
 		]
 	},
@@ -710,6 +718,14 @@ export const fx_coq_patte_b = {
 			{
 				ref: ref.fx.coq_patte_b,
 				blend: BLEND_MODES.MULTIPLY,
+				transform: {
+					tx: -25.9,
+					ty: -5.45
+				}
+			},
+			{
+				ref: ref.fx.coq_patte_b_highlight,
+				blend: BLEND_MODES.ADD,
 				transform: {
 					tx: -25.9,
 					ty: -5.45

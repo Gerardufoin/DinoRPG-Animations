@@ -154,9 +154,6 @@ export const dead = {
 				a: 6.179,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -239,12 +236,12 @@ export const dead = {
 				l: 8
 			},
 			sp_4: {
-				tx: -15.4,
-				ty: -42.8,
-				a: -0.027,
-				b: 0.667,
-				c: 0.667,
-				d: 0.027,
+				tx: -15.994,
+				ty: -43.383,
+				a: -0.007,
+				b: -0.668,
+				c: -0.668,
+				d: 0.007,
 				l: 7
 			},
 			sp_5: {
@@ -293,12 +290,12 @@ export const dead = {
 				l: 2
 			},
 			sp_10: {
-				tx: 7.55,
-				ty: -41.35,
-				a: -0.026,
-				b: 0.667,
-				c: -0.667,
-				d: -0.026,
+				tx: 6.417,
+				ty: -41.867,
+				a: -0.01,
+				b: -0.667,
+				c: 0.667,
+				d: -0.01,
 				l: 1
 			},
 			shade: {
@@ -307,9 +304,6 @@ export const dead = {
 				a: 6.23,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -395,12 +389,12 @@ export const dead = {
 				l: 8
 			},
 			sp_4: {
-				tx: -15.6,
-				ty: -43.05,
-				a: -0.108,
-				b: 0.659,
-				c: 0.659,
-				d: 0.108,
+				tx: -16.539,
+				ty: -44.067,
+				a: -0.013,
+				b: -0.667,
+				c: -0.667,
+				d: 0.013,
 				l: 7
 			},
 			sp_5: {
@@ -449,12 +443,12 @@ export const dead = {
 				l: 2
 			},
 			sp_10: {
-				tx: 7.05,
-				ty: -41.55,
-				a: -0.107,
-				b: 0.659,
-				c: -0.659,
-				d: -0.107,
+				tx: 5.033,
+				ty: -42.433,
+				a: -0.02,
+				b: -0.666,
+				c: 0.666,
+				d: -0.02,
 				l: 1
 			},
 			shade: {
@@ -463,9 +457,6 @@ export const dead = {
 				a: 6.281,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -552,12 +543,12 @@ export const dead = {
 				l: 8
 			},
 			sp_4: {
-				tx: -16,
-				ty: -43.4,
-				a: -0.237,
-				b: 0.623,
-				c: 0.623,
-				d: 0.237,
+				tx: -17.083,
+				ty: -44.75,
+				a: -0.02,
+				b: -0.667,
+				c: -0.667,
+				d: 0.02,
 				l: 7
 			},
 			sp_5: {
@@ -606,12 +597,12 @@ export const dead = {
 				l: 2
 			},
 			sp_10: {
-				tx: 6.2,
-				ty: -41.95,
-				a: -0.234,
-				b: 0.625,
-				c: -0.625,
-				d: -0.234,
+				tx: 3.65,
+				ty: -43,
+				a: -0.03,
+				b: -0.666,
+				c: 0.666,
+				d: -0.03,
 				l: 1
 			},
 			shade: {
@@ -620,9 +611,6 @@ export const dead = {
 				a: 6.332,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -709,12 +697,12 @@ export const dead = {
 				l: 8
 			},
 			sp_4: {
-				tx: -16.4,
-				ty: -43.95,
-				a: -0.398,
-				b: 0.535,
-				c: 0.535,
-				d: 0.398,
+				tx: -17.628,
+				ty: -45.433,
+				a: -0.026,
+				b: -0.667,
+				c: -0.667,
+				d: 0.026,
 				l: 7
 			},
 			sp_5: {
@@ -763,12 +751,12 @@ export const dead = {
 				l: 2
 			},
 			sp_10: {
-				tx: 5.1,
-				ty: -42.4,
-				a: -0.393,
-				b: 0.539,
-				c: -0.539,
-				d: -0.393,
+				tx: 2.267,
+				ty: -43.567,
+				a: -0.04,
+				b: -0.665,
+				c: 0.665,
+				d: -0.04,
 				l: 1
 			},
 			shade: {
@@ -777,9 +765,6 @@ export const dead = {
 				a: 6.383,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -867,12 +852,12 @@ export const dead = {
 				l: 8
 			},
 			sp_4: {
-				tx: -16.95,
-				ty: -44.65,
-				a: -0.557,
-				b: 0.366,
-				c: 0.366,
-				d: 0.557,
+				tx: -18.172,
+				ty: -46.117,
+				a: -0.033,
+				b: -0.666,
+				c: -0.666,
+				d: 0.033,
 				l: 7
 			},
 			sp_5: {
@@ -921,12 +906,12 @@ export const dead = {
 				l: 2
 			},
 			sp_10: {
-				tx: 3.7,
-				ty: -43,
-				a: -0.552,
-				b: 0.374,
-				c: -0.374,
-				d: -0.552,
+				tx: 0.883,
+				ty: -44.133,
+				a: -0.051,
+				b: -0.664,
+				c: 0.664,
+				d: -0.051,
 				l: 1
 			},
 			shade: {
@@ -935,9 +920,6 @@ export const dead = {
 				a: 6.434,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -1025,12 +1007,12 @@ export const dead = {
 				l: 8
 			},
 			sp_4: {
-				tx: -17.65,
-				ty: -45.5,
-				a: -0.659,
-				b: 0.108,
-				c: 0.108,
-				d: 0.659,
+				tx: -18.717,
+				ty: -46.8,
+				a: -0.039,
+				b: -0.666,
+				c: -0.666,
+				d: 0.039,
 				l: 7
 			},
 			sp_5: {
@@ -1079,12 +1061,12 @@ export const dead = {
 				l: 2
 			},
 			sp_10: {
-				tx: 2,
-				ty: -43.7,
-				a: -0.656,
-				b: 0.122,
-				c: -0.122,
-				d: -0.656,
+				tx: -0.5,
+				ty: -44.7,
+				a: -0.061,
+				b: -0.663,
+				c: 0.663,
+				d: -0.061,
 				l: 1
 			},
 			shade: {
@@ -1093,9 +1075,6 @@ export const dead = {
 				a: 6.484,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -1183,12 +1162,12 @@ export const dead = {
 				l: 8
 			},
 			sp_4: {
-				tx: -18.45,
-				ty: -46.45,
-				a: -0.633,
-				b: -0.21,
-				c: -0.21,
-				d: 0.633,
+				tx: -19.261,
+				ty: -47.483,
+				a: -0.046,
+				b: -0.666,
+				c: -0.666,
+				d: 0.046,
 				l: 7
 			},
 			sp_5: {
@@ -1237,12 +1216,12 @@ export const dead = {
 				l: 2
 			},
 			sp_10: {
-				tx: 0.05,
-				ty: -44.5,
-				a: -0.639,
-				b: -0.19,
-				c: 0.19,
-				d: -0.639,
+				tx: -1.883,
+				ty: -45.267,
+				a: -0.071,
+				b: -0.663,
+				c: 0.663,
+				d: -0.071,
 				l: 1
 			},
 			shade: {
@@ -1251,9 +1230,6 @@ export const dead = {
 				a: 6.535,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -1341,12 +1317,12 @@ export const dead = {
 				l: 8
 			},
 			sp_4: {
-				tx: -19.35,
-				ty: -47.55,
-				a: -0.429,
-				b: -0.51,
-				c: -0.51,
-				d: 0.429,
+				tx: -19.806,
+				ty: -48.167,
+				a: -0.052,
+				b: -0.665,
+				c: -0.665,
+				d: 0.052,
 				l: 7
 			},
 			sp_5: {
@@ -1395,12 +1371,12 @@ export const dead = {
 				l: 2
 			},
 			sp_10: {
-				tx: -2.1,
-				ty: -45.45,
-				a: -0.449,
-				b: -0.493,
-				c: 0.493,
-				d: -0.449,
+				tx: -3.267,
+				ty: -45.833,
+				a: -0.081,
+				b: -0.662,
+				c: 0.662,
+				d: -0.081,
 				l: 1
 			},
 			shade: {
@@ -1409,9 +1385,6 @@ export const dead = {
 				a: 6.586,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -1566,9 +1539,6 @@ export const dead = {
 				a: 6.637,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -1730,9 +1700,6 @@ export const dead = {
 				a: 6.688,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -1894,9 +1861,6 @@ export const dead = {
 				a: 6.738,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -2058,9 +2022,6 @@ export const dead = {
 				a: 6.789,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -2222,9 +2183,6 @@ export const dead = {
 				a: 6.84,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -2386,9 +2344,6 @@ export const dead = {
 				a: 6.891,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -2550,9 +2505,6 @@ export const dead = {
 				a: 6.942,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -2714,9 +2666,6 @@ export const dead = {
 				a: 6.992,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -2878,9 +2827,6 @@ export const dead = {
 				a: 7.043,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -3042,9 +2988,6 @@ export const dead = {
 				a: 7.094,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -3206,9 +3149,6 @@ export const dead = {
 				a: 7.145,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -3370,9 +3310,6 @@ export const dead = {
 				a: 7.196,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -3534,9 +3471,6 @@ export const dead = {
 				a: 7.247,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -3698,9 +3632,6 @@ export const dead = {
 				a: 7.297,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -3862,9 +3793,6 @@ export const dead = {
 				a: 7.348,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -4026,9 +3954,6 @@ export const dead = {
 				a: 7.399,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -4190,9 +4115,6 @@ export const dead = {
 				a: 7.45,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -4354,9 +4276,6 @@ export const dead = {
 				a: 7.501,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -4518,9 +4437,6 @@ export const dead = {
 				a: 7.551,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -4682,9 +4598,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -4846,9 +4759,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -5010,9 +4920,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -5174,9 +5081,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -5338,9 +5242,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -5502,9 +5403,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -5666,9 +5564,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -5830,9 +5725,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -5994,9 +5886,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -6158,9 +6047,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -6322,9 +6208,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -6486,9 +6369,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -6650,9 +6530,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -6814,9 +6691,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -6978,9 +6852,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -7142,9 +7013,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -7306,9 +7174,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -7470,9 +7335,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -7634,9 +7496,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -7798,9 +7657,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -7962,9 +7818,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		},
@@ -8126,9 +7979,6 @@ export const dead = {
 				a: 7.602,
 				d: 3.919,
 				alpha: 0.5,
-				blx: 5,
-				bly: 5,
-				blq: 1,
 				l: 0
 			}
 		}

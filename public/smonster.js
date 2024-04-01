@@ -45,7 +45,6 @@ const monsterList = [
 	'eearth',
 	'rasca',
 	'vener',
-	'vener',
 	'barche',
 	'mandragore',
 	'lucet',
