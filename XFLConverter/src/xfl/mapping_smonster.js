@@ -367,6 +367,8 @@ export let mapping_smonster = {
 	'Symbol 797': 'atk_e_6',
 	'Symbol 798': 'atk_e_7',
 	'Symbol 799': 'atk_e_8',
+	// Cobrazero
+	'Symbol 807': 'head',
 	// Mandragore
 	'Symbol 1869': 'l_foot',
 	'Symbol 1871': 'l_leg',

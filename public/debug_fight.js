@@ -48,7 +48,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5], debug: false },
 	{
-		bg: 's_univ',
+		bg: 's_fosslv',
 		top: 120,
 		bottom: 20,
 		ground: 0,
@@ -91,21 +91,21 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'barche'
 				}
-			}
-			/*{
+			},
+			{
 				action: DinoAnim.Action.Add,
 				fighter: {
-					props: [DinoAnim.FighterProperty.Static],
+					props: [],
 					dino: false,
 					life: 100,
 					name: '',
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'coq'
+					gfx: 'cobra'
 				}
-			},
-			{
+			}
+			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Anim,
 				details: {

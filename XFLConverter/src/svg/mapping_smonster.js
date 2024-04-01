@@ -338,6 +338,8 @@ export let mapping_smonster = {
 	797: 'barche/attack_end_6',
 	798: 'barche/attack_end_7',
 	799: 'barche/attack_end_8',
+	805: 'cobra/head_front',
+	806: 'cobra/head_back',
 	1868: 'mandragore/l_foot',
 	1870: 'mandragore/l_leg',
 	1872: 'mandragore/l_pant',

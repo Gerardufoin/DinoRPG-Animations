@@ -3,10 +3,7 @@
 export const land = {
 	id: 'anguil_land',
 	callbacks: {
-		2: [
-			['fxShake', 3, 0.8, 0.5],
-			['fxAttach', 'smoke_small', 0, 5]
-		],
+		2: [['hit'], ['fxShake', 3, 0.8, 0.5], ['fxAttach', 'smoke_small', 0, 5]],
 		7: [['stop']]
 	},
 	frames: [

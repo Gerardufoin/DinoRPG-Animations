@@ -5,6 +5,7 @@ import { PixiHelper } from './PixiHelper.js';
 import { Animation } from './Animation.js';
 import { ImageExtractor } from './ImageExtractor.js';
 import { PartManager } from './PartManager.js';
+import { ConstantShaderManager } from './ConstantShaderManager.js';
 
 /**
  * The Animator class will contain the dino's body and control its animations.
@@ -127,11 +128,23 @@ export class Animator extends Container {
 			bodyMatrix.append(PixiHelper.matrixFromObject(mtrData, this._body.getScale()));
 			if (mtrData.contrast || mtrData.brightness || mtrData.hue || mtrData.saturation) {
 				this._body.filters.push(
-					PixiHelper.adjustColorFilter(
-						mtrData.brightness ?? 0,
-						mtrData.contrast ?? 0,
-						mtrData.saturation ?? 0,
-						mtrData.hue ?? 0
+					ConstantShaderManager.getAdjustColorFilter(
+						mtrData.brightness,
+						mtrData.contrast,
+						mtrData.saturation,
+						mtrData.hue
+					)
+				);
+			}
+			if (mtrData.or || mtrData.og || mtrData.ob || mtrData.mr || mtrData.mg || mtrData.mb) {
+				this._body.filters.push(
+					ConstantShaderManager.getColorOffsetFilter(
+						mtrData.or,
+						mtrData.og,
+						mtrData.ob,
+						mtrData.mr,
+						mtrData.mg,
+						mtrData.mb
 					)
 				);
 			}
