@@ -40,6 +40,7 @@ import { QuickAnim2D } from './parts/QuickAnim2D.js';
 import { fx_brulure } from '../gfx/fx/attach/brulure.js';
 import { fx_steam, fx_steam_small } from '../gfx/fx/attach/smoke/steam.js';
 import { fx_smoke, fx_smoke_small } from '../gfx/fx/attach/smoke/dirt.js';
+import { ConstantShaderManager } from '../display/ConstantShaderManager.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -431,7 +432,8 @@ export class Fighter extends Phys {
 				autoUpdate: false,
 				pflag: true,
 				scale: this._size,
-				shadow: false
+				shadow: false,
+				dark: this.haveProp(FighterProperty.Dark)
 			});
 			this._height = dino.collider.height * this._size;
 			this._width = dino.collider.width * this._size;
@@ -442,7 +444,8 @@ export class Fighter extends Phys {
 				autoUpdate: false,
 				pflag: false,
 				scale: 2,
-				shadow: false
+				shadow: false,
+				dark: this.haveProp(FighterProperty.Dark)
 			});
 		} else {
 			const monster = new smonster({
@@ -450,7 +453,8 @@ export class Fighter extends Phys {
 				autoUpdate: false,
 				pflag: true,
 				scale: this._size,
-				shadow: false
+				shadow: false,
+				dark: this.haveProp(FighterProperty.Dark)
 			});
 			this._height = monster.collider.height * this._size;
 			this._width = monster.collider.width * this._size;
@@ -495,8 +499,6 @@ export class Fighter extends Phys {
 			this._force = null;
 		}
 
-		// if(haveProp(_PDark)) skinDark(); TODO
-
 		// Creates the water onde if the Scene has water as ground.
 		if (this._scene.groundType === GroundType.Water) {
 			this._waterOndeFront = new WaterOnde(0, -5, (this._ray * 2) / 100, this._ray / 100);
@@ -513,7 +515,8 @@ export class Fighter extends Phys {
 				pflag: false,
 				scale: Slot.FIGHTER_PORTRAIT_SCALE,
 				shadow: false,
-				flip: this.side
+				flip: this.side,
+				dark: this.haveProp(FighterProperty.Dark)
 			});
 			portrait.x = 18;
 			portrait.y = 33;

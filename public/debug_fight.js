@@ -69,7 +69,7 @@ const fightVersion = [
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
-					props: [],
+					props: [DinoAnim.FighterProperty.Dark],
 					dino: true,
 					life: 100,
 					name: 'Dragon Jr',
@@ -95,7 +95,7 @@ const fightVersion = [
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
-					props: [],
+					props: [DinoAnim.FighterProperty.Dark],
 					dino: false,
 					life: 100,
 					name: '',
@@ -131,14 +131,11 @@ const fightVersion = [
 			}*/
 			/*{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Shower,
+				skill: DinoAnim.SkillList.Aura,
 				details: {
 					fid: 0,
-					targets: [
-						{ id: 1, life: 10 },
-						{ id: 2, life: 10 }
-					],
-					type: DinoAnim.SkillType.Water
+					color: 0xff0000,
+					type: DinoAnim.AuraType.Detonate
 				}
 			}*/
 			/*{

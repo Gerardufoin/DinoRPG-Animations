@@ -23,9 +23,8 @@ export const barche = {
 			ty: -15.2,
 			a: 0.677,
 			d: 0.677,
-			brightness: -40,
-			contrast: 40,
-			saturation: 50
+			brightness: -28,
+			contrast: 20
 		},
 		// 804
 		{

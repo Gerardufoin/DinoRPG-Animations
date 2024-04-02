@@ -1,7 +1,6 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/Lava.hx
 
-import { ColorMatrixFilter } from 'pixi.js';
 import { Layers } from '../../../DepthManager.js';
 import { SkillType } from '../../../Enums.js';
 import { Fighter } from '../../../Fighter.js';

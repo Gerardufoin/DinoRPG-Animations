@@ -1,6 +1,5 @@
 // @ts-check
 import { Container, Ticker } from 'pixi.js';
-import { GlowFilter } from '@pixi/filter-glow';
 import { PixiHelper } from './PixiHelper.js';
 import { Animation } from './Animation.js';
 import { ImageExtractor } from './ImageExtractor.js';
@@ -158,13 +157,21 @@ export class Animator extends Container {
 	 * @param {object} glowParam Parameters used to configure the glow effet.
 	 */
 	setBodyGlow(glowParam) {
-		var filter = new GlowFilter({
-			distance: glowParam.distance ?? 1,
-			color: glowParam.color,
-			quality: glowParam.quality ?? 0.1,
-			outerStrength: glowParam.strength
-		});
-		this._body.filters.push(filter);
+		this._body.filters.push(
+			ConstantShaderManager.getGlowFilter({
+				distance: glowParam.distance ?? 1,
+				color: glowParam.color,
+				quality: glowParam.quality ?? 0.1,
+				outerStrength: glowParam.strength
+			})
+		);
+	}
+
+	/**
+	 * Darkens the skin of the body.
+	 */
+	darken() {
+		this._body.filters.push(ConstantShaderManager.getAdjustColorFilter(-57, 17, -83));
 	}
 
 	/**

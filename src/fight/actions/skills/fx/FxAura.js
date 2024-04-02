@@ -81,10 +81,10 @@ export class FxAura extends State {
 						this._caster.getRootContainer().y - this._caster.height * 0.5
 					);
 					detonation.getRootContainer().filters = [
-						ConstantShaderManager.getAdjustColorFilter(65),
+						ConstantShaderManager.getAdjustColorFilter(20),
 						ConstantShaderManager.getBlurFilter(1, 1, 1)
 					];
-					detonation.getRootContainer().alpha = 0.3;
+					detonation.getRootContainer().alpha = 0.5;
 					this._scene.dm.addSprite(detonation, Layers.Scene.PARTS);
 				}
 				break;

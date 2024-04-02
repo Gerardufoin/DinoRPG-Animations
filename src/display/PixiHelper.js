@@ -3,6 +3,7 @@
 // https://github.com/motion-twin/WebGamesArchives/blob/main/libs-haxe2/mt/bumdum9/Lib.hx
 import { Color, ColorMatrixFilter, Filter, Matrix } from 'pixi.js';
 import { offsetShader } from './shaders/ColorOffsetShader.js';
+import { ColorMatrix } from './shaders/ColorMatrix.js';
 
 /**
  * Adds a few helpful methods to help with PixiJS manipulations.
@@ -35,16 +36,19 @@ export class PixiHelper {
 	 * @param {number} contrast The change of contrast, between -100 and 100.
 	 * @param {number} saturation The change for the saturation, between -100 and 100.
 	 * @param {number} hue The change of the hue, rotation over 360°.
-	 * @param {ColorMatrixFilter} matrix The matrix to set. If undefined, a new Matrix will be created.
+	 * @param {ColorMatrixFilter} filter The filter whose matrix to set. If undefined, a new filter will be created.
 	 * @returns {ColorMatrixFilter} The resulting ColorMatrixFilter.
 	 */
-	static adjustColorFilter(brightness, contrast, saturation, hue, matrix = undefined) {
-		matrix ??= new ColorMatrixFilter();
-		matrix.brightness((PixiHelper.mm(-100, brightness, 100) + 100) / 100, true);
-		matrix.contrast(PixiHelper.mm(-100, contrast, 100) / 100, true);
-		matrix.saturate(PixiHelper.mm(-100, saturation, 100) / 100, true);
-		matrix.hue(hue, true);
-		return matrix;
+	static adjustColorFilter(brightness, contrast, saturation, hue, filter = undefined) {
+		const matrix = new ColorMatrix();
+		matrix.adjustBrightness(PixiHelper.mm(-100, brightness, 100) / 100);
+		matrix.adjustContrast(PixiHelper.mm(-100, contrast, 100) / 100);
+		matrix.adjustSaturation(PixiHelper.mm(-100, saturation, 100) / 100);
+		matrix.adjustHue(hue);
+		filter ??= new ColorMatrixFilter();
+		// @ts-ignore
+		filter.matrix = matrix.matrix;
+		return filter;
 	}
 
 	/**

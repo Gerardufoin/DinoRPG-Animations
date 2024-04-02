@@ -33,13 +33,16 @@ export class smonster extends Animator {
 
 	/**
 	 * Create the monster passed as parameter.
-	 * @param {{type: string, autoUpdate?: boolean, pflag?: boolean, scale?: number, flip?: boolean, shadow?: boolean}} data Data of the monster to instantiate.
+	 * @param {{type: string, autoUpdate?: boolean, pflag?: boolean, scale?: number, flip?: boolean, shadow?: boolean, dark?: boolean}} data Data of the monster to instantiate.
 	 */
 	constructor(data) {
 		super(data.autoUpdate ?? true);
 		this._castShadow = data.shadow ?? true;
 		this.init(data.type, data.pflag, data.scale);
 		this.flip(data.flip);
+		if (data.dark) {
+			this.darken();
+		}
 	}
 
 	/**

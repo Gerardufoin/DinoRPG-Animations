@@ -2,6 +2,8 @@
 import { dinoz, error } from './sdino/dinoz.js';
 import { Animator } from './display/Animator.js';
 import { PartManager } from './display/PartManager.js';
+import { Container } from 'pixi.js';
+import { ConstantShaderManager } from './display/ConstantShaderManager.js';
 
 /**
  * Conversion of the sdino.swf file of the web game "Dino RPG".
@@ -52,6 +54,9 @@ export class sdino extends Animator {
 		this._castShadow = data.shadow ?? true;
 		this.init(data.data, data.damage, data.pflag, data.scale);
 		this.flip(data.flip);
+		if (data.dark) {
+			this.darken();
+		}
 	}
 
 	/**
