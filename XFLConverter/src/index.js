@@ -65,6 +65,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 804.xml', '_p1', undefined, 1); // barche Bébé Archélion
 //parser.parse('./resources/smonster/LIBRARY/Symbol 786.xml', '_sub', undefined, 1); // barche Bébé Archélion
 //parser.parse('./resources/smonster/LIBRARY/Symbol 818.xml', '_p1', undefined, 1); // cobra Cobrazero
+//parser.parse('./resources/smonster/LIBRARY/Symbol 854.xml', '_p1', undefined, 1); // hippo Dark Hippoclamp
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus

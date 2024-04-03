@@ -4,7 +4,7 @@ export let hit = {
 	id: 'hippoclamp_hit',
 	frames: [
 		{
-			left_eye: {
+			l_eye: {
 				tx: 9.5,
 				ty: -8.8,
 				a: -1.011,
@@ -13,7 +13,7 @@ export let hit = {
 				d: 1.011,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 9.25,
 				ty: 4.7,
 				a: 0.987,
@@ -22,7 +22,7 @@ export let hit = {
 				d: 0.693,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 3.3,
 				ty: 6.75,
 				a: 1.138,
@@ -40,7 +40,7 @@ export let hit = {
 				d: 1.011,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: 9.8,
 				ty: -9.55,
 				a: -1.157,
@@ -76,7 +76,7 @@ export let hit = {
 				d: 0.974,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -5.1,
 				ty: -2.7,
 				a: 0.695,

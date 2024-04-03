@@ -69,7 +69,7 @@ const fightVersion = [
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
-					props: [DinoAnim.FighterProperty.Dark],
+					props: [],
 					dino: true,
 					life: 100,
 					name: 'Dragon Jr',

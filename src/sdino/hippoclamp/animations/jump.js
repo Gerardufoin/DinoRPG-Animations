@@ -7,7 +7,7 @@ export let jump = {
 	},
 	frames: [
 		{
-			left_eye: {
+			l_eye: {
 				tx: -6.7,
 				ty: -4.05,
 				a: 1.273,
@@ -16,14 +16,14 @@ export let jump = {
 				d: 1.01,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 9.45,
 				ty: 5.55,
 				a: 1.107,
 				d: 0.617,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 3.6,
 				ty: 8.4,
 				a: 1.277,
@@ -39,7 +39,7 @@ export let jump = {
 				d: 1.01,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7.45,
 				ty: -4.55,
 				a: 1.197,
@@ -70,7 +70,7 @@ export let jump = {
 				d: 0.956,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -8.65,
 				ty: 6,
 				a: 1.092,
@@ -79,7 +79,7 @@ export let jump = {
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -6.75,
 				ty: -4.9,
 				a: 1.26,
@@ -88,7 +88,7 @@ export let jump = {
 				d: 1.028,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 9.05,
 				ty: 5.4,
 				a: 1.089,
@@ -97,7 +97,7 @@ export let jump = {
 				d: 0.624,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 3.55,
 				ty: 8.35,
 				a: 1.257,
@@ -115,7 +115,7 @@ export let jump = {
 				d: 1.028,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7.55,
 				ty: -5.5,
 				a: 1.186,
@@ -151,7 +151,7 @@ export let jump = {
 				d: 0.961,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -8.45,
 				ty: 6,
 				a: 1.075,
@@ -162,7 +162,7 @@ export let jump = {
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -7.2,
 				ty: -8.25,
 				a: 1.215,
@@ -171,7 +171,7 @@ export let jump = {
 				d: 1.092,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 7.55,
 				ty: 4.95,
 				a: 0.925,
@@ -180,7 +180,7 @@ export let jump = {
 				d: 0.583,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 3.1,
 				ty: 8.2,
 				a: 1.098,
@@ -198,7 +198,7 @@ export let jump = {
 				d: 1.092,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7.95,
 				ty: -8.8,
 				a: 1.148,
@@ -234,7 +234,7 @@ export let jump = {
 				d: 0.977,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -7.65,
 				ty: 6.05,
 				a: 0.925,
@@ -245,7 +245,7 @@ export let jump = {
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -7.6,
 				ty: -11.05,
 				a: 1.175,
@@ -254,7 +254,7 @@ export let jump = {
 				d: 1.149,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 6.15,
 				ty: 4.45,
 				a: 0.664,
@@ -263,7 +263,7 @@ export let jump = {
 				d: 0.456,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.65,
 				ty: 8,
 				a: 0.851,
@@ -281,7 +281,7 @@ export let jump = {
 				d: 1.149,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -8.35,
 				ty: -11.75,
 				a: 1.114,
@@ -317,7 +317,7 @@ export let jump = {
 				d: 0.99,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -7.05,
 				ty: 6.05,
 				a: 0.691,
@@ -328,7 +328,7 @@ export let jump = {
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -7.75,
 				ty: -12,
 				a: 1.164,
@@ -337,7 +337,7 @@ export let jump = {
 				d: 1.164,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 5.9,
 				ty: 4.4,
 				a: 0.586,
@@ -346,7 +346,7 @@ export let jump = {
 				d: 0.412,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.55,
 				ty: 7.9,
 				a: 0.775,
@@ -364,7 +364,7 @@ export let jump = {
 				d: 1.164,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -8.4,
 				ty: -12.6,
 				a: 1.105,
@@ -400,7 +400,7 @@ export let jump = {
 				d: 0.993,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -6.85,
 				ty: 6,
 				a: 0.618,

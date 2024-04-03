@@ -11,14 +11,14 @@ export let land = {
 	},
 	frames: [
 		{
-			left_eye: {
+			l_eye: {
 				tx: -5.35,
 				ty: -11.85,
 				a: 0.895,
 				d: 1.495,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 4.1,
 				ty: 3.95,
 				a: 0.525,
@@ -27,7 +27,7 @@ export let land = {
 				d: 0.616,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 0.9,
 				ty: 5.5,
 				a: 0.787,
@@ -43,7 +43,7 @@ export let land = {
 				d: 1.495,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5.85,
 				ty: -12.45,
 				a: 0.822,
@@ -74,7 +74,7 @@ export let land = {
 				d: 1.279,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -5,
 				ty: 3.7,
 				a: 0.306,
@@ -85,14 +85,14 @@ export let land = {
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -5.6,
 				ty: -10.75,
 				a: 0.957,
 				d: 1.432,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 4.9,
 				ty: 4.05,
 				a: 0.587,
@@ -101,7 +101,7 @@ export let land = {
 				d: 0.653,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 1.45,
 				ty: 5.8,
 				a: 0.832,
@@ -117,7 +117,7 @@ export let land = {
 				d: 1.432,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -6.15,
 				ty: -11.35,
 				a: 0.878,
@@ -148,7 +148,7 @@ export let land = {
 				d: 1.225,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -5.6,
 				ty: 3.8,
 				a: 0.395,
@@ -159,14 +159,14 @@ export let land = {
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -6.5,
 				ty: -7.3,
 				a: 1.155,
 				d: 1.23,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 7.25,
 				ty: 4.55,
 				a: 0.777,
@@ -175,7 +175,7 @@ export let land = {
 				d: 0.733,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 3.1,
 				ty: 6.85,
 				a: 0.969,
@@ -191,7 +191,7 @@ export let land = {
 				d: 1.23,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7,
 				ty: -7.95,
 				a: 1.063,
@@ -222,7 +222,7 @@ export let land = {
 				d: 1.052,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -7.8,
 				ty: 4.05,
 				a: 0.677,
@@ -233,21 +233,21 @@ export let land = {
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -7.8,
 				ty: -1.2,
 				a: 1.511,
 				d: 0.866,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 11.55,
 				ty: 5.45,
 				a: 1.014,
 				d: 0.712,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 6.2,
 				ty: 8.75,
 				a: 1.169,
@@ -261,7 +261,7 @@ export let land = {
 				d: 0.866,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -8.7,
 				ty: -1.55,
 				a: 1.387,
@@ -292,28 +292,28 @@ export let land = {
 				d: 0.741,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -11.65,
 				ty: 4.3,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -7.55,
 				ty: -2.15,
 				a: 1.422,
 				d: 0.934,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 10.65,
 				ty: 5.25,
 				a: 1.014,
 				d: 0.712,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 5.3,
 				ty: 8.55,
 				a: 1.169,
@@ -327,7 +327,7 @@ export let land = {
 				d: 0.934,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -8.35,
 				ty: -2.5,
 				a: 1.306,
@@ -358,28 +358,28 @@ export let land = {
 				d: 0.799,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -10.95,
 				ty: 4.6,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -7.15,
 				ty: -3.4,
 				a: 1.306,
 				d: 1.024,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 9.5,
 				ty: 5,
 				a: 1.014,
 				d: 0.712,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 4.15,
 				ty: 8.3,
 				a: 1.169,
@@ -393,7 +393,7 @@ export let land = {
 				d: 1.024,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7.95,
 				ty: -3.8,
 				a: 1.199,
@@ -424,28 +424,28 @@ export let land = {
 				d: 0.876,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -10,
 				ty: 4.95,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -6.65,
 				ty: -4.9,
 				a: 1.166,
 				d: 1.131,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 8.1,
 				ty: 4.7,
 				a: 1.014,
 				d: 0.712,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.75,
 				ty: 8,
 				a: 1.169,
@@ -459,7 +459,7 @@ export let land = {
 				d: 1.131,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7.45,
 				ty: -5.3,
 				a: 1.069,
@@ -490,28 +490,28 @@ export let land = {
 				d: 0.968,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -8.9,
 				ty: 5.4,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -6.2,
 				ty: -6.55,
 				a: 1.014,
 				d: 1.247,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 6.6,
 				ty: 4.4,
 				a: 1.014,
 				d: 0.712,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 1.25,
 				ty: 7.7,
 				a: 1.169,
@@ -525,7 +525,7 @@ export let land = {
 				d: 1.247,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -6.8,
 				ty: -7.1,
 				a: 0.931,
@@ -556,28 +556,28 @@ export let land = {
 				d: 1.067,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -7.7,
 				ty: 5.85,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -6.4,
 				ty: -6,
 				a: 1.089,
 				d: 1.209,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 7.25,
 				ty: 4.6,
 				a: 1.014,
 				d: 0.712,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 1.9,
 				ty: 7.9,
 				a: 1.169,
@@ -591,7 +591,7 @@ export let land = {
 				d: 1.209,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7.15,
 				ty: -6.5,
 				a: 0.999,
@@ -622,28 +622,28 @@ export let land = {
 				d: 1.034,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -8.15,
 				ty: 5.6,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -6.6,
 				ty: -5.6,
 				a: 1.141,
 				d: 1.183,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 7.7,
 				ty: 4.75,
 				a: 1.014,
 				d: 0.712,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.35,
 				ty: 8.05,
 				a: 1.169,
@@ -657,7 +657,7 @@ export let land = {
 				d: 1.183,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7.3,
 				ty: -6.05,
 				a: 1.046,
@@ -688,28 +688,28 @@ export let land = {
 				d: 1.012,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -8.45,
 				ty: 5.45,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -6.7,
 				ty: -5.4,
 				a: 1.169,
 				d: 1.169,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 7.95,
 				ty: 4.85,
 				a: 1.014,
 				d: 0.712,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.6,
 				ty: 8.15,
 				a: 1.169,
@@ -723,7 +723,7 @@ export let land = {
 				d: 1.169,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7.4,
 				ty: -5.9,
 				a: 1.073,
@@ -750,7 +750,7 @@ export let land = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -8.6,
 				ty: 5.35,
 				l: 0

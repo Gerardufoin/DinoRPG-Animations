@@ -1545,7 +1545,7 @@ export class Fighter extends Phys {
 	 * @param {string} asset The asset to spawn.
 	 * @param {number} x The x coordinate of the asset.
 	 * @param {number} y The y coordinate of the asset.
-	 * @param {{randomAlpha?: boolean, alpha?: number, offsetX?: number, offsetY?: number, scale?: number, randomPos?: boolean}} options Optional configuration.
+	 * @param {{alpha?: number, offsetX?: number, offsetY?: number, scale?: number, randomPos?: boolean, randomAlpha?: boolean}} options Optional configuration.
 	 */
 	fxAttach(asset, x = 0, y = 0, options = {}) {
 		const animation = this.getFxAnimation(asset);
@@ -1559,7 +1559,7 @@ export class Fighter extends Phys {
 					this._x - (x + (options.offsetX ?? 0)) * this._sens * this.intSide,
 					this._y + y + (options.offsetY ?? 0),
 					-this._sens * this.intSide,
-					options.alpha,
+					(options.alpha ?? 1) * (options.randomAlpha ? Math.random() : 1),
 					options.scale
 				),
 				Layers.Scene.FIGHTERS

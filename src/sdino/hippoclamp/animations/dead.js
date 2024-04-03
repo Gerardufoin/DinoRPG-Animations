@@ -7,21 +7,21 @@ export let dead = {
 	},
 	frames: [
 		{
-			left_eye: {
+			l_eye: {
 				tx: -6.7,
 				ty: -5.4,
 				a: 1.169,
 				d: 1.169,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 7.95,
 				ty: 4.85,
 				a: 1.014,
 				d: 0.712,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.6,
 				ty: 8.15,
 				a: 1.169,
@@ -35,7 +35,7 @@ export let dead = {
 				d: 1.169,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7.4,
 				ty: -5.9,
 				a: 1.073,
@@ -62,14 +62,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -8.6,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -7.15,
 				ty: -5.55,
 				a: 1.166,
@@ -78,14 +78,14 @@ export let dead = {
 				d: 1.166,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 7.95,
 				ty: 4.85,
 				a: 1.014,
 				d: 0.712,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.65,
 				ty: 8.15,
 				a: 1.169,
@@ -101,7 +101,7 @@ export let dead = {
 				d: 1.166,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7.7,
 				ty: -6.05,
 				a: 1.103,
@@ -128,14 +128,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -8.6,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -8.55,
 				ty: -6,
 				a: 1.113,
@@ -144,14 +144,14 @@ export let dead = {
 				d: 1.113,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 7.95,
 				ty: 4.85,
 				a: 1.014,
 				d: 0.712,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.65,
 				ty: 8.15,
 				a: 1.169,
@@ -167,7 +167,7 @@ export let dead = {
 				d: 1.113,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -8.95,
 				ty: -6.6,
 				a: 1.162,
@@ -195,14 +195,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -8.6,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -11.1,
 				ty: -6.75,
 				a: 0.869,
@@ -211,14 +211,14 @@ export let dead = {
 				d: 0.869,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 7.95,
 				ty: 4.85,
 				a: 1.014,
 				d: 0.712,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.65,
 				ty: 8.15,
 				a: 1.169,
@@ -234,7 +234,7 @@ export let dead = {
 				d: 0.869,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -11.15,
 				ty: -7.5,
 				a: 1.105,
@@ -262,14 +262,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -8.6,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -14.75,
 				ty: -7.95,
 				a: 0.248,
@@ -278,14 +278,14 @@ export let dead = {
 				d: 0.248,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 7.95,
 				ty: 4.85,
 				a: 1.014,
 				d: 0.712,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.6,
 				ty: 8.15,
 				a: 1.169,
@@ -301,7 +301,7 @@ export let dead = {
 				d: 0.248,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -14.4,
 				ty: -8.75,
 				a: 0.677,
@@ -329,14 +329,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -8.6,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -16.5,
 				ty: -5.85,
 				a: 0.466,
@@ -345,7 +345,7 @@ export let dead = {
 				d: 0.466,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 7.6,
 				ty: 4.8,
 				a: 1.013,
@@ -354,7 +354,7 @@ export let dead = {
 				d: 0.712,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.5,
 				ty: 8.15,
 				a: 1.169,
@@ -370,7 +370,7 @@ export let dead = {
 				d: 0.466,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -16.25,
 				ty: -6.65,
 				a: 0.847,
@@ -398,14 +398,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -8.75,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -18.65,
 				ty: -3.4,
 				a: 0.702,
@@ -414,7 +414,7 @@ export let dead = {
 				d: 0.702,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 7.15,
 				ty: 4.75,
 				a: 1.012,
@@ -423,7 +423,7 @@ export let dead = {
 				d: 0.71,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.35,
 				ty: 8.15,
 				a: 1.169,
@@ -439,7 +439,7 @@ export let dead = {
 				d: 0.702,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -18.55,
 				ty: -4.25,
 				a: 1.01,
@@ -467,14 +467,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -8.9,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -20.95,
 				ty: -0.7,
 				a: 0.915,
@@ -483,7 +483,7 @@ export let dead = {
 				d: 0.915,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 6.65,
 				ty: 4.7,
 				a: 1.008,
@@ -492,7 +492,7 @@ export let dead = {
 				d: 0.708,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.15,
 				ty: 8.15,
 				a: 1.169,
@@ -508,7 +508,7 @@ export let dead = {
 				d: 0.915,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -21.15,
 				ty: -1.55,
 				a: 1.124,
@@ -536,14 +536,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -9.05,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -21.65,
 				ty: 1.8,
 				a: 0.952,
@@ -552,7 +552,7 @@ export let dead = {
 				d: 0.952,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 6.4,
 				ty: 4.7,
 				a: 1.006,
@@ -561,7 +561,7 @@ export let dead = {
 				d: 0.707,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.15,
 				ty: 8.15,
 				a: 1.169,
@@ -577,7 +577,7 @@ export let dead = {
 				d: 0.952,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -21.95,
 				ty: 1,
 				a: 1.139,
@@ -607,14 +607,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -9.05,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -22.35,
 				ty: 4.1,
 				a: 0.987,
@@ -623,7 +623,7 @@ export let dead = {
 				d: 0.987,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 6.25,
 				ty: 4.65,
 				a: 1.004,
@@ -632,7 +632,7 @@ export let dead = {
 				d: 0.705,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.15,
 				ty: 8.15,
 				a: 1.169,
@@ -648,7 +648,7 @@ export let dead = {
 				d: 0.987,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -22.6,
 				ty: 3.35,
 				a: 1.149,
@@ -680,14 +680,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -9.05,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -22.9,
 				ty: 6.3,
 				a: 1.016,
@@ -696,7 +696,7 @@ export let dead = {
 				d: 1.016,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 6.15,
 				ty: 4.65,
 				a: 1.002,
@@ -705,7 +705,7 @@ export let dead = {
 				d: 0.704,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.15,
 				ty: 8.15,
 				a: 1.169,
@@ -721,7 +721,7 @@ export let dead = {
 				d: 1.016,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -23.2,
 				ty: 5.5,
 				a: 1.156,
@@ -753,14 +753,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -9.05,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -24.15,
 				ty: 4.05,
 				a: 0.847,
@@ -769,7 +769,7 @@ export let dead = {
 				d: 0.847,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 4.8,
 				ty: 4.7,
 				a: 1.001,
@@ -778,7 +778,7 @@ export let dead = {
 				d: 0.703,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 0.8,
 				ty: 8.15,
 				a: 1.169,
@@ -794,7 +794,7 @@ export let dead = {
 				d: 0.847,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -24.3,
 				ty: 3.3,
 				a: 1.091,
@@ -826,14 +826,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -10.4,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -25.05,
 				ty: 2.4,
 				a: 0.699,
@@ -842,7 +842,7 @@ export let dead = {
 				d: 0.699,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 3.85,
 				ty: 4.75,
 				a: 1.001,
@@ -851,7 +851,7 @@ export let dead = {
 				d: 0.703,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: -0.15,
 				ty: 8.15,
 				a: 1.169,
@@ -867,7 +867,7 @@ export let dead = {
 				d: 0.699,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -25.15,
 				ty: 1.7,
 				a: 1.007,
@@ -899,14 +899,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -11.35,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -25.55,
 				ty: 1.35,
 				a: 0.598,
@@ -915,7 +915,7 @@ export let dead = {
 				d: 0.598,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 3.3,
 				ty: 4.75,
 				a: 1.001,
@@ -924,7 +924,7 @@ export let dead = {
 				d: 0.703,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: -0.7,
 				ty: 8.15,
 				a: 1.169,
@@ -940,7 +940,7 @@ export let dead = {
 				d: 0.598,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -25.65,
 				ty: 0.75,
 				a: 0.941,
@@ -972,14 +972,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -11.9,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -25.8,
 				ty: 1.1,
 				a: 0.564,
@@ -988,7 +988,7 @@ export let dead = {
 				d: 0.564,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 3.1,
 				ty: 4.7,
 				a: 1.002,
@@ -997,7 +997,7 @@ export let dead = {
 				d: 0.703,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: -0.9,
 				ty: 8.15,
 				a: 1.169,
@@ -1013,7 +1013,7 @@ export let dead = {
 				d: 0.564,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -25.75,
 				ty: 0.45,
 				a: 0.918,
@@ -1045,14 +1045,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -12.1,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -26.25,
 				ty: 2.4,
 				a: 0.699,
@@ -1061,7 +1061,7 @@ export let dead = {
 				d: 0.699,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 2.7,
 				ty: 4.7,
 				a: 1.001,
@@ -1070,7 +1070,7 @@ export let dead = {
 				d: 0.703,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: -1.25,
 				ty: 8.15,
 				a: 1.169,
@@ -1086,7 +1086,7 @@ export let dead = {
 				d: 0.699,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -26.25,
 				ty: 1.8,
 				a: 1.007,
@@ -1118,14 +1118,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -12.45,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -26.6,
 				ty: 3.65,
 				a: 0.818,
@@ -1134,7 +1134,7 @@ export let dead = {
 				d: 0.818,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 2.35,
 				ty: 4.7,
 				a: 1.001,
@@ -1143,7 +1143,7 @@ export let dead = {
 				d: 0.703,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: -1.6,
 				ty: 8.15,
 				a: 1.169,
@@ -1159,7 +1159,7 @@ export let dead = {
 				d: 0.818,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -26.7,
 				ty: 3.05,
 				a: 1.077,
@@ -1191,14 +1191,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -12.8,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -27,
 				ty: 4.95,
 				a: 0.926,
@@ -1207,7 +1207,7 @@ export let dead = {
 				d: 0.926,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 1.95,
 				ty: 4.65,
 				a: 1.001,
@@ -1216,7 +1216,7 @@ export let dead = {
 				d: 0.703,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: -2,
 				ty: 8.15,
 				a: 1.169,
@@ -1232,7 +1232,7 @@ export let dead = {
 				d: 0.926,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -27.15,
 				ty: 4.25,
 				a: 1.127,
@@ -1264,14 +1264,14 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -13.2,
 				ty: 5.35,
 				l: 0
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -27.4,
 				ty: 6.3,
 				a: 1.016,
@@ -1280,7 +1280,7 @@ export let dead = {
 				d: 1.016,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 1.65,
 				ty: 4.65,
 				a: 1.002,
@@ -1289,7 +1289,7 @@ export let dead = {
 				d: 0.704,
 				l: 7
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: -2.35,
 				ty: 8.15,
 				a: 1.169,
@@ -1305,7 +1305,7 @@ export let dead = {
 				d: 1.016,
 				l: 5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -27.7,
 				ty: 5.5,
 				a: 1.156,
@@ -1337,7 +1337,7 @@ export let dead = {
 				ty: 2.9,
 				l: 1
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -13.55,
 				ty: 5.35,
 				l: 0

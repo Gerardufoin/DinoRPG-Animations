@@ -3,8 +3,8 @@
 export let run = {
 	id: 'hippoclamp_run',
 	callbacks: {
-		4: [['fxAttach', 'smoke_small', 0, 5, { alpha: 'random(100)' }]],
-		7: [['fxAttach', 'smoke_small', 0, 5, { alpha: 'random(100)' }]],
+		4: [['fxAttach', 'smoke_small', 0, 5, { randomAlpha: true }]],
+		7: [['fxAttach', 'smoke_small', 0, 5, { randomAlpha: true }]],
 		10: [['gotoAndPlay', 7]]
 	},
 	frames: [
@@ -18,7 +18,7 @@ export let run = {
 				alpha: 0,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -9.15,
 				ty: -2.7,
 				a: 1.169,
@@ -26,7 +26,7 @@ export let run = {
 				d: 1.169,
 				l: 9
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 3.35,
 				ty: 8.15,
 				a: 1.169,
@@ -34,7 +34,7 @@ export let run = {
 				d: 1.026,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 9.9,
 				ty: 4.85,
 				a: 1.014,
@@ -50,7 +50,7 @@ export let run = {
 				d: 1.169,
 				l: 6
 			},
-			right_eye: {
+			r_eye: {
 				tx: -9.7,
 				ty: -3.2,
 				a: 1.242,
@@ -80,7 +80,7 @@ export let run = {
 				c: -0.366,
 				l: 2
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -6.8,
 				ty: 5.35,
 				c: -0.366,
@@ -113,7 +113,7 @@ export let run = {
 				mb: 0.75,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -10,
 				ty: -2.4,
 				a: 1.168,
@@ -122,7 +122,7 @@ export let run = {
 				d: 1.162,
 				l: 9
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 3.4,
 				ty: 8,
 				a: 1.183,
@@ -131,7 +131,7 @@ export let run = {
 				d: 1.019,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 9.9,
 				ty: 4.65,
 				a: 1.045,
@@ -149,7 +149,7 @@ export let run = {
 				d: 1.162,
 				l: 6
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.55,
 				ty: -2.85,
 				a: 1.242,
@@ -183,7 +183,7 @@ export let run = {
 				d: 0.998,
 				l: 2
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -6.95,
 				ty: 5.2,
 				c: -0.342,
@@ -223,7 +223,7 @@ export let run = {
 				mb: 0.5,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -12.5,
 				ty: -1.6,
 				a: 1.162,
@@ -232,7 +232,7 @@ export let run = {
 				d: 1.143,
 				l: 9
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 3.3,
 				ty: 7.5,
 				a: 1.223,
@@ -241,7 +241,7 @@ export let run = {
 				d: 0.986,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 9.75,
 				ty: 4.3,
 				a: 1.142,
@@ -259,7 +259,7 @@ export let run = {
 				d: 1.143,
 				l: 6
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.05,
 				ty: -1.85,
 				a: 1.241,
@@ -293,7 +293,7 @@ export let run = {
 				d: 0.99,
 				l: 2
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -7.55,
 				ty: 5,
 				c: -0.276,
@@ -333,7 +333,7 @@ export let run = {
 				mb: 0.25,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -16.95,
 				ty: -0.15,
 				a: 1.135,
@@ -342,7 +342,7 @@ export let run = {
 				d: 1.109,
 				l: 9
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 3.35,
 				ty: 6.7,
 				a: 1.279,
@@ -351,7 +351,7 @@ export let run = {
 				d: 0.889,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 9.5,
 				ty: 3.65,
 				a: 1.306,
@@ -369,7 +369,7 @@ export let run = {
 				d: 1.109,
 				l: 6
 			},
-			right_eye: {
+			r_eye: {
 				tx: -17.5,
 				ty: -0.1,
 				a: 1.223,
@@ -403,7 +403,7 @@ export let run = {
 				d: 0.966,
 				l: 2
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -8.55,
 				ty: 4.6,
 				c: -0.161,
@@ -443,7 +443,7 @@ export let run = {
 				mb: 0,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -23.1,
 				ty: 2.05,
 				a: 1.062,
@@ -452,7 +452,7 @@ export let run = {
 				d: 1.062,
 				l: 9
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 3.3,
 				ty: 5.55,
 				a: 1.329,
@@ -461,7 +461,7 @@ export let run = {
 				d: 0.682,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 9.3,
 				ty: 2.6,
 				a: 1.54,
@@ -479,7 +479,7 @@ export let run = {
 				d: 1.062,
 				l: 6
 			},
-			right_eye: {
+			r_eye: {
 				tx: -23.6,
 				ty: 1.3,
 				a: 1.164,
@@ -511,7 +511,7 @@ export let run = {
 				d: 0.908,
 				l: 2
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -9.95,
 				ty: 4,
 				l: 1
@@ -549,7 +549,7 @@ export let run = {
 				mb: 0,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -22.5,
 				ty: 1.6,
 				a: 1.081,
@@ -558,7 +558,7 @@ export let run = {
 				d: 1.081,
 				l: 9
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.8,
 				ty: 4.6,
 				a: 1.249,
@@ -567,7 +567,7 @@ export let run = {
 				d: 0.679,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 8.1,
 				ty: 1.6,
 				a: 1.426,
@@ -585,7 +585,7 @@ export let run = {
 				d: 1.081,
 				l: 6
 			},
-			right_eye: {
+			r_eye: {
 				tx: -23.15,
 				ty: 0.75,
 				a: 1.165,
@@ -617,7 +617,7 @@ export let run = {
 				d: 0.917,
 				l: 2
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -10.3,
 				ty: 2.8,
 				a: 0.995,
@@ -659,7 +659,7 @@ export let run = {
 				mb: 0,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -21.9,
 				ty: 1.2,
 				a: 1.102,
@@ -668,7 +668,7 @@ export let run = {
 				d: 1.102,
 				l: 9
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 2.3,
 				ty: 3.5,
 				a: 1.134,
@@ -677,7 +677,7 @@ export let run = {
 				d: 0.662,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 6.6,
 				ty: 0.35,
 				a: 1.209,
@@ -695,7 +695,7 @@ export let run = {
 				d: 1.102,
 				l: 6
 			},
-			right_eye: {
+			r_eye: {
 				tx: -22.55,
 				ty: 0,
 				a: 1.162,
@@ -727,7 +727,7 @@ export let run = {
 				d: 0.929,
 				l: 2
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -10.75,
 				ty: 1.4,
 				a: 0.977,
@@ -769,7 +769,7 @@ export let run = {
 				mb: 0,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -21.1,
 				ty: 0.3,
 				a: 1.126,
@@ -778,7 +778,7 @@ export let run = {
 				d: 1.126,
 				l: 9
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 1.5,
 				ty: 2,
 				a: 0.978,
@@ -787,7 +787,7 @@ export let run = {
 				d: 0.621,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 4.85,
 				ty: -1.25,
 				a: 0.865,
@@ -805,7 +805,7 @@ export let run = {
 				d: 1.126,
 				l: 6
 			},
-			right_eye: {
+			r_eye: {
 				tx: -21.75,
 				ty: -0.35,
 				a: 1.155,
@@ -837,7 +837,7 @@ export let run = {
 				d: 0.943,
 				l: 2
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -11.15,
 				ty: -0.85,
 				a: 0.937,
@@ -879,7 +879,7 @@ export let run = {
 				mb: 0,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -21.1,
 				ty: 0.3,
 				a: 1.126,
@@ -888,7 +888,7 @@ export let run = {
 				d: 1.126,
 				l: 9
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 1.5,
 				ty: 2,
 				a: 0.978,
@@ -897,7 +897,7 @@ export let run = {
 				d: 0.621,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 4.85,
 				ty: -1.25,
 				a: 0.865,
@@ -915,7 +915,7 @@ export let run = {
 				d: 1.126,
 				l: 6
 			},
-			right_eye: {
+			r_eye: {
 				tx: -21.75,
 				ty: -0.35,
 				a: 1.155,
@@ -947,7 +947,7 @@ export let run = {
 				d: 0.943,
 				l: 2
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -11.15,
 				ty: -0.85,
 				a: 0.937,
@@ -989,7 +989,7 @@ export let run = {
 				mb: 0,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -21.1,
 				ty: 0.3,
 				a: 1.126,
@@ -998,7 +998,7 @@ export let run = {
 				d: 1.126,
 				l: 9
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 1.5,
 				ty: 2,
 				a: 0.978,
@@ -1007,7 +1007,7 @@ export let run = {
 				d: 0.621,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 4.85,
 				ty: -1.25,
 				a: 0.865,
@@ -1025,7 +1025,7 @@ export let run = {
 				d: 1.126,
 				l: 6
 			},
-			right_eye: {
+			r_eye: {
 				tx: -21.75,
 				ty: -0.35,
 				a: 1.155,
@@ -1057,7 +1057,7 @@ export let run = {
 				d: 0.943,
 				l: 2
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -11.15,
 				ty: -0.85,
 				a: 0.937,
@@ -1099,7 +1099,7 @@ export let run = {
 				mb: 0,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -21.1,
 				ty: 0.3,
 				a: 1.126,
@@ -1108,7 +1108,7 @@ export let run = {
 				d: 1.126,
 				l: 9
 			},
-			left_front_fin: {
+			l_f_fin: {
 				tx: 1.5,
 				ty: 2,
 				a: 0.978,
@@ -1117,7 +1117,7 @@ export let run = {
 				d: 0.621,
 				l: 8
 			},
-			left_back_fin: {
+			l_b_fin: {
 				tx: 4.85,
 				ty: -1.25,
 				a: 0.865,
@@ -1135,7 +1135,7 @@ export let run = {
 				d: 1.126,
 				l: 6
 			},
-			right_eye: {
+			r_eye: {
 				tx: -21.75,
 				ty: -0.35,
 				a: 1.155,
@@ -1167,7 +1167,7 @@ export let run = {
 				d: 0.943,
 				l: 2
 			},
-			right_front_fin: {
+			r_f_fin: {
 				tx: -11.15,
 				ty: -0.85,
 				a: 0.937,
