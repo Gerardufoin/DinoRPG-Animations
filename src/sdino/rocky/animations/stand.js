@@ -4,7 +4,7 @@ export let stand = {
 	id: 'rocky_stand',
 	frames: [
 		{
-			left_hand: {
+			l_hand: {
 				tx: 14.85,
 				ty: -9.5,
 				a: 0.944,
@@ -31,7 +31,7 @@ export let stand = {
 				ty: -1.7,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.35,
 				ty: -18,
 				l: 0

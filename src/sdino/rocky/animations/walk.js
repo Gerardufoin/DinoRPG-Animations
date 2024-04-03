@@ -7,7 +7,7 @@ export let walk = {
 	},
 	frames: [
 		{
-			left_hand: {
+			l_hand: {
 				tx: 14.85,
 				ty: -9.5,
 				a: 0.944,
@@ -34,14 +34,14 @@ export let walk = {
 				ty: -3.25,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.35,
 				ty: -18,
 				l: 0
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 14.85,
 				ty: -10.45,
 				a: 0.944,
@@ -68,14 +68,14 @@ export let walk = {
 				ty: -4.2,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.35,
 				ty: -18.95,
 				l: 0
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 14.85,
 				ty: -11.4,
 				a: 0.944,
@@ -102,14 +102,14 @@ export let walk = {
 				ty: -5.15,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.35,
 				ty: -19.9,
 				l: 0
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 15.7,
 				ty: -10.45,
 				a: 0.944,
@@ -144,14 +144,14 @@ export let walk = {
 				d: 0.943,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -14.05,
 				ty: -18.95,
 				l: 0
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 16.55,
 				ty: -9.5,
 				a: 0.944,
@@ -186,14 +186,14 @@ export let walk = {
 				d: 0.887,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -14.75,
 				ty: -18,
 				l: 0
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 15.7,
 				ty: -9.5,
 				a: 0.944,
@@ -228,14 +228,14 @@ export let walk = {
 				d: 0.943,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -14.05,
 				ty: -18,
 				l: 0
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 14.85,
 				ty: -9.5,
 				a: 0.944,
@@ -262,14 +262,14 @@ export let walk = {
 				ty: -1.7,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.35,
 				ty: -18,
 				l: 0
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 14.85,
 				ty: -9.5,
 				a: 0.944,
@@ -296,14 +296,14 @@ export let walk = {
 				ty: -2.45,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.35,
 				ty: -18,
 				l: 0
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 14.85,
 				ty: -9.5,
 				a: 0.944,
@@ -330,7 +330,7 @@ export let walk = {
 				ty: -3.25,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.35,
 				ty: -18,
 				l: 0

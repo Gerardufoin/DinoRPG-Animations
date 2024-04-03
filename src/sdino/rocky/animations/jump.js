@@ -7,7 +7,7 @@ export let jump = {
 	},
 	frames: [
 		{
-			left_hand: {
+			l_hand: {
 				tx: 14.85,
 				ty: -9.5,
 				a: 0.944,
@@ -34,14 +34,14 @@ export let jump = {
 				ty: -6.4,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.35,
 				ty: -18,
 				l: 0
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 14.85,
 				ty: -12.1,
 				a: 0.944,
@@ -68,14 +68,14 @@ export let jump = {
 				ty: -11.85,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.35,
 				ty: -20.6,
 				l: 0
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 14.85,
 				ty: -14.7,
 				a: 0.944,
@@ -102,7 +102,7 @@ export let jump = {
 				ty: -17.3,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.35,
 				ty: -23.2,
 				l: 0

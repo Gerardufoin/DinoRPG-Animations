@@ -4,7 +4,7 @@ export let run = {
 	id: 'rocky_run',
 	frames: [
 		{
-			left_hand: {
+			l_hand: {
 				tx: 9.9,
 				ty: -12.8,
 				a: 0.944,
@@ -35,14 +35,14 @@ export let run = {
 				a: 0.779,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -9.55,
 				ty: -18,
 				l: 0
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: -2.05,
 				ty: -9.4,
 				a: 0.944,
@@ -73,14 +73,14 @@ export let run = {
 				a: 0.633,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -5.6,
 				ty: -18,
 				l: 0
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 10.2,
 				ty: -9.5,
 				a: 0.944,
@@ -111,14 +111,14 @@ export let run = {
 				a: 0.844,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -10.25,
 				ty: -18,
 				l: 0
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 13.75,
 				ty: -9.5,
 				a: 0.944,
@@ -145,14 +145,14 @@ export let run = {
 				ty: -1.7,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.35,
 				ty: -18,
 				l: 0
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 17.4,
 				ty: -9.5,
 				a: 0.944,
@@ -179,7 +179,7 @@ export let run = {
 				ty: -4.8,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -12.25,
 				ty: -21.55,
 				a: 0.966,
@@ -190,7 +190,7 @@ export let run = {
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 16.85,
 				ty: -9.5,
 				a: 0.944,
@@ -221,7 +221,7 @@ export let run = {
 				a: 1.109,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -16.9,
 				ty: -23.1,
 				a: 0.993,
@@ -232,7 +232,7 @@ export let run = {
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 16.85,
 				ty: -9.5,
 				a: 0.944,
@@ -263,7 +263,7 @@ export let run = {
 				a: 1.233,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -19.8,
 				ty: -19,
 				a: 0.993,
@@ -274,7 +274,7 @@ export let run = {
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 11.85,
 				ty: -13.65,
 				a: 0.929,
@@ -307,7 +307,7 @@ export let run = {
 				a: 0.9,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -18.15,
 				ty: -17.75,
 				l: 0

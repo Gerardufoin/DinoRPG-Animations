@@ -4,7 +4,7 @@ export let hit = {
 	id: 'rocky_hit',
 	frames: [
 		{
-			left_hand: {
+			l_hand: {
 				tx: 14.95,
 				ty: -10.8,
 				a: 0.944,
@@ -31,7 +31,7 @@ export let hit = {
 				ty: -3,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.25,
 				ty: -19.3,
 				l: 0

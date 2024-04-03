@@ -48,6 +48,7 @@ const monsterList = [
 	'barche',
 	'cobra',
 	'hippo',
+	'rocky',
 	'mandragore',
 	'lucet',
 	'taurus'
@@ -95,4 +96,4 @@ for (const m of monsterList) {
 	document.getElementById('monsters').appendChild(button);
 }
 
-updateMonster('hippo');
+updateMonster('rocky');

@@ -12,7 +12,7 @@ export let land = {
 	},
 	frames: [
 		{
-			left_hand: {
+			l_hand: {
 				tx: 14.85,
 				ty: -9.5,
 				a: 0.944,
@@ -39,7 +39,7 @@ export let land = {
 				ty: -6.4,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.35,
 				ty: -18,
 				l: 1
@@ -55,7 +55,7 @@ export let land = {
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 17.05,
 				ty: -6.8,
 				a: 1.067,
@@ -95,7 +95,7 @@ export let land = {
 				d: 0.927,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -14.5,
 				ty: -15.45,
 				a: 1.13,
@@ -114,7 +114,7 @@ export let land = {
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 19.2,
 				ty: -4.15,
 				a: 1.19,
@@ -154,7 +154,7 @@ export let land = {
 				d: 0.854,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -15.65,
 				ty: -12.95,
 				a: 1.261,
@@ -173,7 +173,7 @@ export let land = {
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 17.75,
 				ty: -6,
 				a: 1.108,
@@ -213,7 +213,7 @@ export let land = {
 				d: 0.903,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -14.9,
 				ty: -14.7,
 				a: 1.174,
@@ -232,7 +232,7 @@ export let land = {
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 16.3,
 				ty: -7.7,
 				a: 1.026,
@@ -271,7 +271,7 @@ export let land = {
 				d: 0.951,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -14.1,
 				ty: -16.35,
 				a: 1.087,
@@ -290,7 +290,7 @@ export let land = {
 			}
 		},
 		{
-			left_hand: {
+			l_hand: {
 				tx: 14.85,
 				ty: -9.5,
 				a: 0.944,
@@ -317,7 +317,7 @@ export let land = {
 				ty: -1.7,
 				l: 1
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.35,
 				ty: -18,
 				l: 0
