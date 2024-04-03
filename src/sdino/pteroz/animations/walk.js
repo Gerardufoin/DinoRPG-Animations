@@ -7,7 +7,7 @@ export let walk = {
 	},
 	frames: [
 		{
-			left_wing: {
+			l_wing: {
 				tx: 8.6,
 				ty: 2.2,
 				a: 0.99,
@@ -16,7 +16,7 @@ export let walk = {
 				d: 0.99,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 0.7,
 				ty: 6.4,
 				a: 0.99,
@@ -30,7 +30,7 @@ export let walk = {
 				ty: -7.75,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.05,
 				ty: 6.1,
 				l: 5
@@ -54,7 +54,7 @@ export let walk = {
 				ty: -7.65,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.4,
 				ty: 3.65,
 				a: 0.843,
@@ -63,7 +63,7 @@ export let walk = {
 				d: 0.872,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -6.3,
 				ty: -3.2,
 				a: -0.493,
@@ -74,7 +74,7 @@ export let walk = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 8.65,
 				ty: 2.4,
 				a: 0.994,
@@ -83,7 +83,7 @@ export let walk = {
 				d: 0.994,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 0.6,
 				ty: 6.25,
 				a: 0.994,
@@ -97,7 +97,7 @@ export let walk = {
 				ty: -7.95,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.15,
 				ty: 6.1,
 				l: 5
@@ -121,7 +121,7 @@ export let walk = {
 				ty: -7.85,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.3,
 				ty: 3.8,
 				a: 0.851,
@@ -130,7 +130,7 @@ export let walk = {
 				d: 0.881,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -6.3,
 				ty: -3,
 				a: -0.509,
@@ -141,7 +141,7 @@ export let walk = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 8.7,
 				ty: 2.55,
 				a: 0.998,
@@ -150,7 +150,7 @@ export let walk = {
 				d: 0.998,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 0.5,
 				ty: 6.1,
 				a: 0.998,
@@ -164,7 +164,7 @@ export let walk = {
 				ty: -8.2,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.25,
 				ty: 6.1,
 				l: 5
@@ -188,7 +188,7 @@ export let walk = {
 				ty: -8.1,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4,
 				ty: 3.95,
 				a: 0.858,
@@ -197,7 +197,7 @@ export let walk = {
 				d: 0.89,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -6.35,
 				ty: -2.75,
 				a: -0.524,
@@ -208,7 +208,7 @@ export let walk = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 8.8,
 				ty: 2.55,
 				a: 0.987,
@@ -217,7 +217,7 @@ export let walk = {
 				d: 0.987,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 1,
 				ty: 6.7,
 				a: 0.987,
@@ -231,7 +231,7 @@ export let walk = {
 				ty: -7,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.25,
 				ty: 6.45,
 				l: 5
@@ -255,7 +255,7 @@ export let walk = {
 				ty: -6.9,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.3,
 				ty: 3.8,
 				a: 0.839,
@@ -264,7 +264,7 @@ export let walk = {
 				d: 0.867,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -6.05,
 				ty: -2.95,
 				a: -0.486,
@@ -275,7 +275,7 @@ export let walk = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 8.95,
 				ty: 2.45,
 				a: 0.969,
@@ -284,7 +284,7 @@ export let walk = {
 				d: 0.969,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 1.5,
 				ty: 7.35,
 				a: 0.969,
@@ -298,7 +298,7 @@ export let walk = {
 				ty: -5.85,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.25,
 				ty: 6.75,
 				l: 5
@@ -322,7 +322,7 @@ export let walk = {
 				ty: -5.75,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.55,
 				ty: 3.85,
 				a: 0.816,
@@ -331,7 +331,7 @@ export let walk = {
 				d: 0.841,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -5.8,
 				ty: -3.15,
 				a: -0.445,
@@ -342,7 +342,7 @@ export let walk = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 8.8,
 				ty: 2.35,
 				a: 0.98,
@@ -351,7 +351,7 @@ export let walk = {
 				d: 0.98,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 1.1,
 				ty: 6.85,
 				a: 0.98,
@@ -365,7 +365,7 @@ export let walk = {
 				ty: -6.8,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.15,
 				ty: 6.45,
 				l: 5
@@ -389,7 +389,7 @@ export let walk = {
 				ty: -6.7,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.45,
 				ty: 3.9,
 				a: 0.83,
@@ -398,7 +398,7 @@ export let walk = {
 				d: 0.857,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -6,
 				ty: -3.15,
 				a: -0.468,
@@ -409,7 +409,7 @@ export let walk = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 8.6,
 				ty: 2.2,
 				a: 0.99,
@@ -418,7 +418,7 @@ export let walk = {
 				d: 0.99,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 0.7,
 				ty: 6.4,
 				a: 0.99,
@@ -432,7 +432,7 @@ export let walk = {
 				ty: -7.75,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.05,
 				ty: 6.1,
 				l: 5
@@ -456,7 +456,7 @@ export let walk = {
 				ty: -7.65,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.4,
 				ty: 3.65,
 				a: 0.843,
@@ -465,7 +465,7 @@ export let walk = {
 				d: 0.872,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -6.3,
 				ty: -3.2,
 				a: -0.493,

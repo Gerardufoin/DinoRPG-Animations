@@ -89,27 +89,40 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'barche'
+					gfx: 'rocky'
 				}
 			},
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
-					props: [DinoAnim.FighterProperty.Dark],
+					props: [DinoAnim.FighterProperty.Static],
 					dino: false,
 					life: 100,
 					name: '',
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'cobra'
+					gfx: 'hippo'
+				}
+			},
+			{
+				action: DinoAnim.Action.Add,
+				fighter: {
+					props: [DinoAnim.FighterProperty.Static],
+					dino: false,
+					life: 100,
+					name: '',
+					side: false,
+					scale: 1,
+					fid: 3,
+					gfx: 'pteroz'
 				}
 			}
 			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Anim,
 				details: {
-					fid: 2,
+					fid: 3,
 					anim: 'run'
 				}
 			}*/

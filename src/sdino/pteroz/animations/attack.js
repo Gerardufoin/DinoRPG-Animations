@@ -7,7 +7,7 @@ export let attack = {
 	},
 	frames: [
 		{
-			left_wing: {
+			l_wing: {
 				tx: 15.25,
 				ty: -7.9,
 				a: -0.41,
@@ -16,7 +16,7 @@ export let attack = {
 				d: -0.274,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 13.35,
 				ty: -13.3,
 				a: -0.74,
@@ -34,7 +34,7 @@ export let attack = {
 				d: 0.989,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 11.9,
 				ty: -8.15,
 				a: 0.992,
@@ -70,7 +70,7 @@ export let attack = {
 				d: 0.989,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.95,
 				ty: -18.3,
 				a: -0.367,
@@ -79,7 +79,7 @@ export let attack = {
 				d: -0.417,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -1.35,
 				ty: -14.1,
 				a: 0.285,
@@ -90,7 +90,7 @@ export let attack = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 17.25,
 				ty: -10.5,
 				a: -0.139,
@@ -99,7 +99,7 @@ export let attack = {
 				d: -0.093,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 14.9,
 				ty: -14.35,
 				a: -0.733,
@@ -117,7 +117,7 @@ export let attack = {
 				d: 0.952,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 11.55,
 				ty: -8.5,
 				a: 0.972,
@@ -153,7 +153,7 @@ export let attack = {
 				d: 0.952,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 3.6,
 				ty: -20.1,
 				a: -0.522,
@@ -162,7 +162,7 @@ export let attack = {
 				d: -0.575,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: 1,
 				ty: -17.9,
 				a: 0.016,
@@ -173,7 +173,7 @@ export let attack = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 19.25,
 				ty: -13,
 				a: 0.138,
@@ -182,7 +182,7 @@ export let attack = {
 				d: 0.092,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 16.45,
 				ty: -15.25,
 				a: -0.729,
@@ -200,7 +200,7 @@ export let attack = {
 				d: 0.887,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 11.15,
 				ty: -8.95,
 				a: 0.942,
@@ -236,7 +236,7 @@ export let attack = {
 				d: 0.887,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 6.1,
 				ty: -21.95,
 				a: -0.657,
@@ -245,7 +245,7 @@ export let attack = {
 				d: -0.711,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: 3.35,
 				ty: -21.65,
 				a: -0.244,
@@ -256,7 +256,7 @@ export let attack = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 21.25,
 				ty: -15.55,
 				a: 0.407,
@@ -265,7 +265,7 @@ export let attack = {
 				d: 0.272,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 17.9,
 				ty: -16.25,
 				a: -0.724,
@@ -283,7 +283,7 @@ export let attack = {
 				d: 0.797,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 10.8,
 				ty: -9.4,
 				a: 0.901,
@@ -319,7 +319,7 @@ export let attack = {
 				d: 0.797,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 8.55,
 				ty: -23.85,
 				a: -0.761,
@@ -328,7 +328,7 @@ export let attack = {
 				d: -0.814,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: 5.7,
 				ty: -25.45,
 				a: -0.421,
@@ -339,7 +339,7 @@ export let attack = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 10.8,
 				ty: -13.45,
 				a: 0.968,
@@ -348,7 +348,7 @@ export let attack = {
 				d: 0.646,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 7.6,
 				ty: -9.9,
 				a: -0.963,
@@ -366,7 +366,7 @@ export let attack = {
 				d: 0.981,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 5.35,
 				ty: -2.45,
 				a: 0.995,
@@ -402,7 +402,7 @@ export let attack = {
 				d: 0.981,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -2.35,
 				ty: -13.35,
 				a: -0.654,
@@ -411,7 +411,7 @@ export let attack = {
 				d: -0.709,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -6.35,
 				ty: -15.95,
 				a: -0.454,
@@ -422,7 +422,7 @@ export let attack = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 0.15,
 				ty: -11.4,
 				a: 0.715,
@@ -431,7 +431,7 @@ export let attack = {
 				d: 0.478,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: -2.45,
 				ty: -3.8,
 				a: -0.954,
@@ -449,7 +449,7 @@ export let attack = {
 				d: 0.959,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0,
 				ty: 4.4,
 				a: 0.958,
@@ -485,7 +485,7 @@ export let attack = {
 				d: 0.959,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -13.2,
 				ty: -2.7,
 				a: -0.52,
@@ -494,7 +494,7 @@ export let attack = {
 				d: -0.573,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -18.55,
 				ty: -6.45,
 				a: -0.442,
@@ -505,7 +505,7 @@ export let attack = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 2.15,
 				ty: -11.45,
 				a: 0.767,
@@ -514,7 +514,7 @@ export let attack = {
 				d: 0.512,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: -0.7,
 				ty: -4.25,
 				a: -0.977,
@@ -532,7 +532,7 @@ export let attack = {
 				d: 0.964,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 1.4,
 				ty: 3.25,
 				a: 0.963,
@@ -568,7 +568,7 @@ export let attack = {
 				d: 0.964,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -12.1,
 				ty: -3.75,
 				a: -0.455,
@@ -577,7 +577,7 @@ export let attack = {
 				d: -0.507,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -17.35,
 				ty: -7.2,
 				a: -0.447,
@@ -588,7 +588,7 @@ export let attack = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 4.2,
 				ty: -11.6,
 				a: 0.813,
@@ -597,7 +597,7 @@ export let attack = {
 				d: 0.543,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 1.05,
 				ty: -4.7,
 				a: -0.99,
@@ -615,7 +615,7 @@ export let attack = {
 				d: 0.968,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.85,
 				ty: 2.15,
 				a: 0.967,
@@ -651,7 +651,7 @@ export let attack = {
 				d: 0.968,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -10.85,
 				ty: -4.7,
 				a: -0.389,
@@ -660,7 +660,7 @@ export let attack = {
 				d: -0.439,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -16.15,
 				ty: -8,
 				a: -0.453,
@@ -671,7 +671,7 @@ export let attack = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 6.25,
 				ty: -11.6,
 				a: 0.854,
@@ -680,7 +680,7 @@ export let attack = {
 				d: 0.57,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 2.8,
 				ty: -5.25,
 				a: -0.989,
@@ -698,7 +698,7 @@ export let attack = {
 				d: 0.972,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 4.2,
 				ty: 0.9,
 				a: 0.971,
@@ -734,7 +734,7 @@ export let attack = {
 				d: 0.972,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -9.8,
 				ty: -5.75,
 				a: -0.322,
@@ -743,7 +743,7 @@ export let attack = {
 				d: -0.371,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -15,
 				ty: -8.75,
 				a: -0.457,
@@ -754,7 +754,7 @@ export let attack = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 8.25,
 				ty: -11.7,
 				a: 0.89,
@@ -763,7 +763,7 @@ export let attack = {
 				d: 0.594,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 4.05,
 				ty: -6.55,
 				a: -0.977,
@@ -781,7 +781,7 @@ export let attack = {
 				d: 0.976,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 5.65,
 				ty: -0.25,
 				a: 0.975,
@@ -817,7 +817,7 @@ export let attack = {
 				d: 0.976,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -8.2,
 				ty: -6.8,
 				a: -0.251,
@@ -826,7 +826,7 @@ export let attack = {
 				d: -0.297,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -13.8,
 				ty: -9.5,
 				a: -0.46,
@@ -837,7 +837,7 @@ export let attack = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 13.3,
 				ty: -8.6,
 				a: 0.985,
@@ -846,7 +846,7 @@ export let attack = {
 				d: 0.658,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 7.1,
 				ty: -7.55,
 				a: -0.664,
@@ -864,7 +864,7 @@ export let attack = {
 				d: 0.993,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 6.75,
 				ty: -3.75,
 				a: 0.993,
@@ -900,7 +900,7 @@ export let attack = {
 				d: 0.993,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.65,
 				ty: -9.75,
 				a: 0.196,
@@ -909,7 +909,7 @@ export let attack = {
 				d: 0.17,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -13.95,
 				ty: -10.6,
 				a: -0.461,
@@ -920,7 +920,7 @@ export let attack = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 18.25,
 				ty: -5.6,
 				a: 0.864,
@@ -929,7 +929,7 @@ export let attack = {
 				d: 0.577,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.4,
 				ty: -7.45,
 				a: -0.066,
@@ -947,7 +947,7 @@ export let attack = {
 				d: 0.999,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.85,
 				ty: -7.25,
 				l: 5
@@ -979,7 +979,7 @@ export let attack = {
 				d: 0.999,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.55,
 				ty: -12.25,
 				a: 0.592,
@@ -988,7 +988,7 @@ export let attack = {
 				d: 0.593,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -14.2,
 				ty: -11.65,
 				a: -0.425,
@@ -999,7 +999,7 @@ export let attack = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: -2,
 				a: 0.497,
@@ -1008,7 +1008,7 @@ export let attack = {
 				d: 0.332,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 6.75,
 				ty: -7.25,
 				a: 0.447,
@@ -1026,7 +1026,7 @@ export let attack = {
 				d: 0.998,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.85,
 				ty: -9.05,
 				l: 5
@@ -1058,7 +1058,7 @@ export let attack = {
 				d: 0.998,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -5.7,
 				ty: -10.8,
 				a: 0.846,
@@ -1067,7 +1067,7 @@ export let attack = {
 				d: 0.877,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -10.05,
 				ty: -7.35,
 				a: -0.198,
@@ -1078,7 +1078,7 @@ export let attack = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 6.7,
 				ty: 1.6,
 				a: -0.005,
@@ -1087,7 +1087,7 @@ export let attack = {
 				d: -0.004,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 4.15,
 				ty: -7.05,
 				a: 0.836,
@@ -1105,7 +1105,7 @@ export let attack = {
 				d: 0.994,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.85,
 				ty: -10.85,
 				l: 5
@@ -1137,7 +1137,7 @@ export let attack = {
 				d: 0.994,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.05,
 				ty: -9.4,
 				a: 0.814,
@@ -1146,7 +1146,7 @@ export let attack = {
 				d: 0.865,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -6.05,
 				ty: -3.05,
 				a: 0.094,
@@ -1157,7 +1157,7 @@ export let attack = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 8.95,
 				ty: -1.3,
 				a: -0.147,
@@ -1166,7 +1166,7 @@ export let attack = {
 				d: -0.098,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 6.35,
 				ty: -8.3,
 				a: 0.018,
@@ -1184,7 +1184,7 @@ export let attack = {
 				d: 0.998,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.85,
 				ty: -7.45,
 				l: 5
@@ -1216,7 +1216,7 @@ export let attack = {
 				d: 0.998,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4,
 				ty: -11,
 				a: 0.63,
@@ -1225,7 +1225,7 @@ export let attack = {
 				d: 0.634,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -6.05,
 				ty: -5.65,
 				a: 0.222,

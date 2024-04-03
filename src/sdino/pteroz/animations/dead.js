@@ -7,7 +7,7 @@ export let dead = {
 	},
 	frames: [
 		{
-			left_wing: {
+			l_wing: {
 				tx: 11.2,
 				ty: -2.9,
 				a: -0.292,
@@ -16,7 +16,7 @@ export let dead = {
 				d: -0.195,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 8.6,
 				ty: -8.05,
 				a: -0.819,
@@ -34,7 +34,7 @@ export let dead = {
 				d: 0.999,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.85,
 				ty: -2.75,
 				l: 5
@@ -66,7 +66,7 @@ export let dead = {
 				d: 0.999,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.3,
 				ty: -11.4,
 				a: -0.264,
@@ -75,7 +75,7 @@ export let dead = {
 				d: -0.311,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -6.05,
 				ty: -6.95,
 				a: 0.336,
@@ -86,7 +86,7 @@ export let dead = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 12.1,
 				ty: -2.15,
 				a: -0.056,
@@ -95,7 +95,7 @@ export let dead = {
 				d: -0.038,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 8.55,
 				ty: -6.15,
 				a: -0.817,
@@ -113,7 +113,7 @@ export let dead = {
 				d: 0.994,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.85,
 				ty: -0.85,
 				l: 5
@@ -145,7 +145,7 @@ export let dead = {
 				d: 0.994,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.3,
 				ty: -9.55,
 				a: -0.263,
@@ -154,7 +154,7 @@ export let dead = {
 				d: -0.309,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -6.85,
 				ty: -5.65,
 				a: 0.221,
@@ -165,7 +165,7 @@ export let dead = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 13.05,
 				ty: -1.35,
 				a: 0.181,
@@ -174,7 +174,7 @@ export let dead = {
 				d: 0.121,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 8.45,
 				ty: -4.25,
 				a: -0.817,
@@ -192,7 +192,7 @@ export let dead = {
 				d: 0.984,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.85,
 				ty: 1.05,
 				l: 5
@@ -224,7 +224,7 @@ export let dead = {
 				d: 0.984,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.3,
 				ty: -7.65,
 				a: -0.263,
@@ -233,7 +233,7 @@ export let dead = {
 				d: -0.309,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -7.6,
 				ty: -4.35,
 				a: 0.089,
@@ -244,7 +244,7 @@ export let dead = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 14.1,
 				ty: -0.6,
 				a: 0.408,
@@ -253,7 +253,7 @@ export let dead = {
 				d: 0.272,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 8.4,
 				ty: -2.4,
 				a: -0.817,
@@ -271,7 +271,7 @@ export let dead = {
 				d: 0.967,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.85,
 				ty: 2.95,
 				l: 5
@@ -303,7 +303,7 @@ export let dead = {
 				d: 0.967,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.25,
 				ty: -5.7,
 				a: -0.263,
@@ -312,7 +312,7 @@ export let dead = {
 				d: -0.309,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -8.4,
 				ty: -3.05,
 				a: -0.047,
@@ -323,7 +323,7 @@ export let dead = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 14.95,
 				ty: 0.15,
 				a: 0.611,
@@ -332,7 +332,7 @@ export let dead = {
 				d: 0.408,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 8.3,
 				ty: -0.5,
 				a: -0.817,
@@ -350,7 +350,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.85,
 				ty: 4.85,
 				l: 5
@@ -382,7 +382,7 @@ export let dead = {
 				d: 0.944,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.25,
 				ty: -3.8,
 				a: -0.263,
@@ -391,7 +391,7 @@ export let dead = {
 				d: -0.309,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -9.1,
 				ty: -1.75,
 				a: -0.18,
@@ -402,7 +402,7 @@ export let dead = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 15.95,
 				ty: 0.95,
 				a: 0.782,
@@ -411,7 +411,7 @@ export let dead = {
 				d: 0.522,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 8.6,
 				ty: 1.45,
 				a: -0.819,
@@ -429,7 +429,7 @@ export let dead = {
 				d: 0.916,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.85,
 				ty: 6.75,
 				l: 5
@@ -461,7 +461,7 @@ export let dead = {
 				d: 0.916,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.3,
 				ty: -1.9,
 				a: -0.264,
@@ -470,7 +470,7 @@ export let dead = {
 				d: -0.311,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -9.95,
 				ty: -0.45,
 				a: -0.301,
@@ -481,7 +481,7 @@ export let dead = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 15.9,
 				ty: 1.15,
 				a: 0.76,
@@ -490,7 +490,7 @@ export let dead = {
 				d: 0.508,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 8.55,
 				ty: 1.3,
 				a: -0.857,
@@ -508,7 +508,7 @@ export let dead = {
 				d: 0.906,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8,
 				ty: 6.75,
 				a: 0.995,
@@ -544,7 +544,7 @@ export let dead = {
 				d: 0.906,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4,
 				ty: -1.85,
 				a: -0.302,
@@ -553,7 +553,7 @@ export let dead = {
 				d: -0.35,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -9.7,
 				ty: -0.4,
 				a: -0.279,
@@ -565,24 +565,22 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 5.178,
-				ty: 4.155,
-				a: 0.573,
-				b: -0.07,
-				c: 0.105,
-				d: -0.216,
+				tx: 5.4,
+				ty: 4.35,
+				a: -2.758,
+				b: 0.813,
+				c: 0.889,
+				d: 0.782,
 				l: 10
 			},
 			fx_dust_2: {
 				tx: -2.9,
-				ty: 7.174,
-				a: 0.565,
-				b: 0.086,
-				c: 0.303,
-				d: -0.16,
+				ty: 7.4,
+				a: -3.192,
+				d: 0.905,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 15.95,
 				ty: 1.35,
 				a: 0.74,
@@ -591,7 +589,7 @@ export let dead = {
 				d: 0.494,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 8.6,
 				ty: 1.05,
 				a: -0.89,
@@ -609,7 +607,7 @@ export let dead = {
 				d: 0.898,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.15,
 				ty: 6.7,
 				a: 0.981,
@@ -645,7 +643,7 @@ export let dead = {
 				d: 0.898,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -3.9,
 				ty: -1.8,
 				a: -0.338,
@@ -654,7 +652,7 @@ export let dead = {
 				d: -0.387,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -9.55,
 				ty: -0.4,
 				a: -0.258,
@@ -666,26 +664,24 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 5.474,
-				ty: 4.624,
-				a: 0.614,
-				b: -0.233,
-				c: -0.326,
-				d: -0.264,
+				tx: 6,
+				ty: 4.9,
+				a: -2.749,
+				b: 1.359,
+				c: 2.106,
+				d: 1.105,
 				alpha: 0.91,
 				l: 10
 			},
 			fx_dust_2: {
 				tx: -3.35,
-				ty: 7.742,
-				a: 0.819,
-				b: 0.06,
-				c: 0.136,
-				d: -0.363,
+				ty: 8.2,
+				a: -4.135,
+				d: 1.832,
 				alpha: 0.871,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 15.9,
 				ty: 1.6,
 				a: 0.719,
@@ -694,7 +690,7 @@ export let dead = {
 				d: 0.48,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 8.6,
 				ty: 0.85,
 				a: -0.92,
@@ -712,7 +708,7 @@ export let dead = {
 				d: 0.889,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.2,
 				ty: 6.75,
 				a: 0.958,
@@ -748,7 +744,7 @@ export let dead = {
 				d: 0.889,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -3.6,
 				ty: -1.75,
 				a: -0.376,
@@ -757,7 +753,7 @@ export let dead = {
 				d: -0.426,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -9.2,
 				ty: -0.4,
 				a: -0.234,
@@ -769,26 +765,24 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 5.759,
-				ty: 5.113,
-				a: 0.354,
-				b: -0.417,
-				c: -0.784,
-				d: -0.164,
+				tx: 6.65,
+				ty: 5.4,
+				a: -2.38,
+				b: 1.915,
+				c: 3.564,
+				d: 1.149,
 				alpha: 0.828,
 				l: 10
 			},
 			fx_dust_2: {
 				tx: -3.8,
-				ty: 8.226,
-				a: 0.993,
-				b: -0.089,
-				c: -0.165,
-				d: -0.534,
+				ty: 8.9,
+				a: -5.013,
+				d: 2.695,
 				alpha: 0.75,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 15.95,
 				ty: 1.85,
 				a: 0.698,
@@ -797,7 +791,7 @@ export let dead = {
 				d: 0.466,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 8.6,
 				ty: 0.65,
 				a: -0.945,
@@ -815,7 +809,7 @@ export let dead = {
 				d: 0.88,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 6.85,
 				a: 0.927,
@@ -851,7 +845,7 @@ export let dead = {
 				d: 0.88,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -3.45,
 				ty: -1.9,
 				a: -0.414,
@@ -860,7 +854,7 @@ export let dead = {
 				d: -0.465,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -9.05,
 				ty: -0.45,
 				a: -0.211,
@@ -872,35 +866,33 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 6.088,
-				ty: 5.572,
-				a: -0.181,
-				b: -0.515,
-				c: -1.054,
-				d: 0.068,
+				tx: 7.35,
+				ty: 5.8,
+				a: -1.686,
+				b: 2.42,
+				c: 5.048,
+				d: 0.912,
 				alpha: 0.746,
 				l: 11
 			},
 			fx_dust_2: {
-				tx: -13.772,
-				ty: 7.146,
-				a: -0.573,
-				b: -0.07,
-				c: 0.105,
-				d: 0.216,
+				tx: -13.55,
+				ty: 6.95,
+				a: 2.758,
+				b: 0.813,
+				c: 0.889,
+				d: -0.782,
 				l: 10
 			},
 			fx_dust_3: {
 				tx: -4.25,
-				ty: 8.677,
-				a: 1.031,
-				b: -0.332,
-				c: -0.554,
-				d: -0.618,
+				ty: 9.55,
+				a: -5.827,
+				d: 3.494,
 				alpha: 0.641,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 15.7,
 				ty: 2.5,
 				a: 0.748,
@@ -909,7 +901,7 @@ export let dead = {
 				d: 0.498,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 8.25,
 				ty: 1.55,
 				a: -0.87,
@@ -927,7 +919,7 @@ export let dead = {
 				d: 0.87,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.55,
 				ty: 6.55,
 				a: 0.926,
@@ -963,7 +955,7 @@ export let dead = {
 				d: 0.87,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -3.8,
 				ty: -1.6,
 				a: -0.348,
@@ -972,7 +964,7 @@ export let dead = {
 				d: -0.397,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -9.4,
 				ty: -0.05,
 				a: -0.227,
@@ -984,36 +976,34 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 6.254,
-				ty: 5.946,
-				a: -0.848,
-				b: -0.447,
-				c: -0.974,
-				d: 0.362,
+				tx: 7.85,
+				ty: 6.05,
+				a: -0.711,
+				b: 2.831,
+				c: 6.386,
+				d: 0.416,
 				alpha: 0.668,
 				l: 11
 			},
 			fx_dust_2: {
-				tx: -14.227,
-				ty: 7.365,
-				a: -0.732,
-				b: 0.126,
-				c: 0.349,
-				d: 0.356,
+				tx: -13.85,
+				ty: 6.95,
+				a: 3.744,
+				b: 0.882,
+				c: 1.508,
+				d: -1.659,
 				alpha: 0.871,
 				l: 10
 			},
 			fx_dust_3: {
 				tx: -4.65,
-				ty: 9.143,
-				a: 0.894,
-				b: -0.626,
-				c: -0.973,
-				d: -0.575,
+				ty: 10.2,
+				a: -6.575,
+				d: 4.229,
 				alpha: 0.539,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 15.25,
 				ty: 3.2,
 				a: 0.792,
@@ -1022,7 +1012,7 @@ export let dead = {
 				d: 0.529,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 7.95,
 				ty: 2.3,
 				a: -0.779,
@@ -1040,7 +1030,7 @@ export let dead = {
 				d: 0.86,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.6,
 				ty: 6.2,
 				a: 0.926,
@@ -1076,7 +1066,7 @@ export let dead = {
 				d: 0.86,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.1,
 				ty: -1.25,
 				a: -0.28,
@@ -1085,7 +1075,7 @@ export let dead = {
 				d: -0.328,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -9.55,
 				ty: 0.35,
 				a: -0.244,
@@ -1097,36 +1087,34 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 6.54,
-				ty: 6.367,
-				a: -1.404,
-				b: -0.2,
-				c: -0.516,
-				d: 0.595,
+				tx: 8.4,
+				ty: 6.3,
+				a: 0.431,
+				b: 3.116,
+				c: 7.441,
+				d: -0.267,
 				alpha: 0.598,
 				l: 11
 			},
 			fx_dust_2: {
-				tx: -14.803,
-				ty: 7.582,
-				a: -0.71,
-				b: 0.395,
-				c: 0.72,
-				d: 0.363,
+				tx: -14.35,
+				ty: 6.95,
+				a: 4.699,
+				b: 0.875,
+				c: 1.813,
+				d: -2.527,
 				alpha: 0.75,
 				l: 10
 			},
 			fx_dust_3: {
 				tx: -5,
-				ty: 9.525,
-				a: 0.581,
-				b: -0.902,
-				c: -1.335,
-				d: -0.392,
+				ty: 10.75,
+				a: -7.258,
+				d: 4.9,
 				alpha: 0.445,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 15,
 				ty: 3.75,
 				a: 0.834,
@@ -1135,7 +1123,7 @@ export let dead = {
 				d: 0.557,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 7.6,
 				ty: 3.1,
 				a: -0.673,
@@ -1153,7 +1141,7 @@ export let dead = {
 				d: 0.85,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.65,
 				ty: 5.85,
 				a: 0.926,
@@ -1189,7 +1177,7 @@ export let dead = {
 				d: 0.85,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.5,
 				ty: -0.95,
 				a: -0.211,
@@ -1198,7 +1186,7 @@ export let dead = {
 				d: -0.256,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -9.95,
 				ty: 0.75,
 				a: -0.26,
@@ -1210,36 +1198,34 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 6.816,
-				ty: 6.724,
-				a: -1.655,
-				b: 0.167,
-				c: 0.209,
-				d: 0.67,
+				tx: 8.85,
+				ty: 6.45,
+				a: 1.695,
+				b: 3.264,
+				c: 8.137,
+				d: -1.096,
 				alpha: 0.527,
 				l: 11
 			},
 			fx_dust_2: {
-				tx: -15.216,
-				ty: 7.739,
-				a: -0.462,
-				b: 0.659,
-				c: 1.09,
-				d: 0.215,
+				tx: -14.75,
+				ty: 6.9,
+				a: 5.597,
+				b: 0.806,
+				c: 1.863,
+				d: -3.357,
 				alpha: 0.641,
 				l: 10
 			},
 			fx_dust_3: {
 				tx: -5.35,
-				ty: 9.873,
-				a: 0.126,
-				b: -1.102,
-				c: -1.575,
-				d: -0.088,
+				ty: 11.25,
+				a: -7.876,
+				d: 5.508,
 				alpha: 0.359,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 14.65,
 				ty: 4.4,
 				a: 0.871,
@@ -1248,7 +1234,7 @@ export let dead = {
 				d: 0.581,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 7.2,
 				ty: 3.9,
 				a: -0.554,
@@ -1266,7 +1252,7 @@ export let dead = {
 				d: 0.839,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.65,
 				ty: 5.45,
 				a: 0.926,
@@ -1302,7 +1288,7 @@ export let dead = {
 				d: 0.839,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -4.95,
 				ty: -0.6,
 				a: -0.137,
@@ -1311,7 +1297,7 @@ export let dead = {
 				d: -0.179,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -10.2,
 				ty: 1.15,
 				a: -0.275,
@@ -1323,36 +1309,34 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 7.14,
-				ty: 7.153,
-				a: -1.498,
-				b: 0.552,
-				c: 0.999,
-				d: 0.54,
+				tx: 9.25,
+				ty: 6.65,
+				a: 3.005,
+				b: 3.273,
+				c: 8.439,
+				d: -2.01,
 				alpha: 0.465,
 				l: 11
 			},
 			fx_dust_2: {
-				tx: -15.573,
-				ty: 7.834,
-				a: -0.015,
-				b: 0.84,
-				c: 1.336,
-				d: -0.07,
+				tx: -15.15,
+				ty: 6.8,
+				a: 6.427,
+				b: 0.682,
+				c: 1.691,
+				d: -4.135,
 				alpha: 0.539,
 				l: 10
 			},
 			fx_dust_3: {
 				tx: -5.65,
-				ty: 10.137,
-				a: -0.413,
-				b: -1.18,
-				c: -1.644,
-				d: 0.296,
+				ty: 11.65,
+				a: -8.429,
+				d: 6.051,
 				alpha: 0.285,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 14.45,
 				ty: 5.05,
 				a: 0.903,
@@ -1361,7 +1345,7 @@ export let dead = {
 				d: 0.603,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 6.95,
 				ty: 4.65,
 				a: -0.427,
@@ -1379,7 +1363,7 @@ export let dead = {
 				d: 0.829,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.7,
 				ty: 5.1,
 				a: 0.926,
@@ -1415,7 +1399,7 @@ export let dead = {
 				d: 0.829,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -5.25,
 				ty: -0.3,
 				a: -0.065,
@@ -1424,7 +1408,7 @@ export let dead = {
 				d: -0.104,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -10.45,
 				ty: 1.65,
 				a: -0.291,
@@ -1436,36 +1420,34 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 7.259,
-				ty: 7.434,
-				a: -0.934,
-				b: 0.841,
-				c: 1.638,
-				d: 0.207,
+				tx: 9.35,
+				ty: 6.7,
+				a: 4.276,
+				b: 3.157,
+				c: 8.362,
+				d: -2.937,
 				alpha: 0.406,
 				l: 11
 			},
 			fx_dust_2: {
-				tx: -16.085,
-				ty: 8.012,
-				a: 0.564,
-				b: 0.871,
-				c: 1.353,
-				d: -0.447,
+				tx: -15.75,
+				ty: 6.8,
+				a: 7.178,
+				b: 0.515,
+				c: 1.341,
+				d: -4.847,
 				alpha: 0.445,
 				l: 10
 			},
 			fx_dust_3: {
 				tx: -5.95,
-				ty: 10.468,
-				a: -0.981,
-				b: -1.097,
-				c: -1.498,
-				d: 0.718,
+				ty: 12.1,
+				a: -8.917,
+				d: 6.53,
 				alpha: 0.219,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 14.05,
 				ty: 5.7,
 				a: 0.93,
@@ -1474,7 +1456,7 @@ export let dead = {
 				d: 0.621,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 6.6,
 				ty: 5.55,
 				a: -0.294,
@@ -1492,7 +1474,7 @@ export let dead = {
 				d: 0.818,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 5.2,
 				a: 0.927,
@@ -1528,7 +1510,7 @@ export let dead = {
 				d: 0.818,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -5.6,
 				ty: 0.05,
 				a: 0.004,
@@ -1537,7 +1519,7 @@ export let dead = {
 				d: -0.029,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -10.7,
 				ty: 2,
 				a: -0.305,
@@ -1549,36 +1531,34 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 7.519,
-				ty: 7.761,
-				a: -0.105,
-				b: 0.938,
-				c: 1.933,
-				d: -0.251,
+				tx: 9.5,
+				ty: 6.8,
+				a: 5.473,
+				b: 2.928,
+				c: 7.925,
+				d: -3.843,
 				alpha: 0.348,
 				l: 11
 			},
 			fx_dust_2: {
-				tx: -16.465,
-				ty: 8.121,
-				a: 1.142,
-				b: 0.725,
-				c: 1.101,
-				d: -0.833,
+				tx: -16.25,
+				ty: 6.75,
+				a: 7.844,
+				b: 0.318,
+				c: 0.859,
+				d: -5.485,
 				alpha: 0.359,
 				l: 10
 			},
 			fx_dust_3: {
 				tx: -6.1,
-				ty: 10.664,
-				a: -1.485,
-				b: -0.854,
-				c: -1.149,
-				d: 1.104,
+				ty: 12.4,
+				a: -9.34,
+				d: 6.946,
 				alpha: 0.16,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 13.7,
 				ty: 6.45,
 				a: 0.952,
@@ -1587,7 +1567,7 @@ export let dead = {
 				d: 0.636,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 6.25,
 				ty: 6.35,
 				a: -0.16,
@@ -1605,7 +1585,7 @@ export let dead = {
 				d: 0.829,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.35,
 				ty: 5.55,
 				a: 0.926,
@@ -1641,7 +1621,7 @@ export let dead = {
 				d: 0.829,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -5.95,
 				ty: 0.35,
 				a: 0.076,
@@ -1650,7 +1630,7 @@ export let dead = {
 				d: 0.044,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -11.05,
 				ty: 2.45,
 				a: -0.319,
@@ -1662,36 +1642,34 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 7.741,
-				ty: 8.066,
-				a: 0.769,
-				b: 0.802,
-				c: 1.799,
-				d: -0.715,
+				tx: 9.55,
+				ty: 6.9,
+				a: 6.523,
+				b: 2.626,
+				c: 7.238,
+				d: -4.663,
 				alpha: 0.297,
 				l: 11
 			},
 			fx_dust_2: {
-				tx: -16.831,
-				ty: 8.261,
-				a: 1.579,
-				b: 0.415,
-				c: 0.609,
-				d: -1.141,
+				tx: -16.75,
+				ty: 6.75,
+				a: 8.419,
+				b: 0.117,
+				c: 0.323,
+				d: -6.044,
 				alpha: 0.285,
 				l: 10
 			},
 			fx_dust_3: {
 				tx: -6.3,
-				ty: 10.876,
-				a: -1.842,
-				b: -0.474,
-				c: -0.63,
-				d: 1.386,
+				ty: 12.7,
+				a: -9.697,
+				d: 7.297,
 				alpha: 0.109,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 13.5,
 				ty: 7.1,
 				a: 0.969,
@@ -1700,7 +1678,7 @@ export let dead = {
 				d: 0.647,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.9,
 				ty: 7.1,
 				a: -0.027,
@@ -1718,7 +1696,7 @@ export let dead = {
 				d: 0.839,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.3,
 				ty: 5.9,
 				a: 0.926,
@@ -1754,7 +1732,7 @@ export let dead = {
 				d: 0.839,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -6.25,
 				ty: 0.75,
 				a: 0.148,
@@ -1763,7 +1741,7 @@ export let dead = {
 				d: 0.12,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -11.25,
 				ty: 2.8,
 				a: -0.334,
@@ -1775,34 +1753,34 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 7.879,
-				ty: 8.303,
-				a: 1.499,
-				b: 0.451,
-				c: 1.263,
-				d: -1.087,
+				tx: 9.45,
+				ty: 6.95,
+				a: 7.457,
+				b: 2.246,
+				c: 6.284,
+				d: -5.41,
 				alpha: 0.25,
 				l: 11
 			},
 			fx_dust_2: {
-				tx: -17.106,
-				ty: 8.332,
-				a: 1.791,
-				b: -0.012,
-				c: -0.035,
-				d: -1.312,
+				tx: -17.15,
+				ty: 6.7,
+				a: 8.91,
+				b: -0.062,
+				c: -0.176,
+				d: -6.526,
 				alpha: 0.219,
 				l: 10
 			},
 			fx_dust_3: {
 				tx: -6.5,
-				ty: 11.104,
-				a: -2.008,
-				d: 1.525,
+				ty: 13,
+				a: -9.99,
+				d: 7.585,
 				alpha: 0.07,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 13.2,
 				ty: 7.65,
 				a: 0.981,
@@ -1811,7 +1789,7 @@ export let dead = {
 				d: 0.655,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.6,
 				ty: 7.95,
 				a: 0.099,
@@ -1829,7 +1807,7 @@ export let dead = {
 				d: 0.85,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.3,
 				ty: 6.3,
 				a: 0.926,
@@ -1865,7 +1843,7 @@ export let dead = {
 				d: 0.85,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -6.65,
 				ty: 1,
 				a: 0.219,
@@ -1874,7 +1852,7 @@ export let dead = {
 				d: 0.194,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -11.55,
 				ty: 3.25,
 				a: -0.347,
@@ -1886,34 +1864,34 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 8.093,
-				ty: 8.61,
-				a: 1.652,
-				b: 0.371,
-				c: 1.051,
-				d: -1.214,
+				tx: 9.4,
+				ty: 7.1,
+				a: 8.219,
+				b: 1.846,
+				c: 5.229,
+				d: -6.038,
 				alpha: 0.207,
 				l: 11
 			},
 			fx_dust_2: {
-				tx: -17.469,
-				ty: 8.433,
-				a: 1.873,
-				b: -0.051,
-				c: -0.146,
-				d: -1.393,
+				tx: -17.65,
+				ty: 6.7,
+				a: 9.319,
+				b: -0.253,
+				c: -0.724,
+				d: -6.931,
 				alpha: 0.16,
 				l: 10
 			},
 			fx_dust_3: {
 				tx: -6.6,
-				ty: 11.198,
-				a: -2.054,
-				d: 1.57,
+				ty: 13.15,
+				a: -10.218,
+				d: 7.809,
 				alpha: 0.039,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 12.85,
 				ty: 8.35,
 				a: 0.987,
@@ -1922,7 +1900,7 @@ export let dead = {
 				d: 0.659,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.35,
 				ty: 8.75,
 				a: 0.22,
@@ -1940,7 +1918,7 @@ export let dead = {
 				d: 0.86,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.25,
 				ty: 6.65,
 				a: 0.926,
@@ -1976,7 +1954,7 @@ export let dead = {
 				d: 0.86,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.05,
 				ty: 1.35,
 				a: 0.288,
@@ -1985,7 +1963,7 @@ export let dead = {
 				d: 0.268,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -11.85,
 				ty: 3.7,
 				a: -0.36,
@@ -1997,36 +1975,34 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 8.282,
-				ty: 8.791,
-				a: 1.945,
-				b: -0.156,
-				c: 0.199,
-				d: -1.339,
+				tx: 9.3,
+				ty: 7.15,
+				a: 8.841,
+				b: 1.423,
+				c: 4.073,
+				d: -6.563,
 				alpha: 0.168,
 				l: 11
 			},
 			fx_dust_2: {
-				tx: -17.636,
-				ty: 8.516,
-				a: 1.752,
-				b: -0.554,
-				c: -0.866,
-				d: -1.352,
+				tx: -17.95,
+				ty: 6.7,
+				a: 9.652,
+				b: -0.433,
+				c: -1.256,
+				d: -7.263,
 				alpha: 0.109,
 				l: 10
 			},
 			fx_dust_3: {
 				tx: -6.7,
-				ty: 11.308,
-				a: -1.972,
-				b: 0.518,
-				c: 0.675,
-				d: 1.514,
+				ty: 13.3,
+				a: -10.381,
+				d: 7.969,
 				alpha: 0.02,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: 9,
 				a: 0.988,
@@ -2035,7 +2011,7 @@ export let dead = {
 				d: 0.66,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.15,
 				ty: 9.5,
 				a: 0.331,
@@ -2053,7 +2029,7 @@ export let dead = {
 				d: 0.87,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.2,
 				ty: 7,
 				a: 0.926,
@@ -2089,7 +2065,7 @@ export let dead = {
 				d: 0.87,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.4,
 				ty: 1.7,
 				a: 0.355,
@@ -2098,7 +2074,7 @@ export let dead = {
 				d: 0.339,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -12.15,
 				ty: 4.1,
 				a: -0.374,
@@ -2110,36 +2086,34 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 8.371,
-				ty: 8.995,
-				a: 1.841,
-				b: -0.698,
-				c: -0.683,
-				d: -1.234,
+				tx: 9.1,
+				ty: 7.25,
+				a: 9.323,
+				b: 1.01,
+				c: 2.916,
+				d: -6.981,
 				alpha: 0.133,
 				l: 11
 			},
 			fx_dust_2: {
-				tx: -17.825,
-				ty: 8.632,
-				a: 1.368,
-				b: -1.018,
-				c: -1.49,
-				d: -1.126,
+				tx: -18.25,
+				ty: 6.75,
+				a: 9.916,
+				b: -0.58,
+				c: -1.698,
+				d: -7.529,
 				alpha: 0.07,
 				l: 10
 			},
 			fx_dust_3: {
 				tx: -6.75,
-				ty: 11.334,
-				a: -1.666,
-				b: 0.992,
-				c: 1.289,
-				d: 1.282,
+				ty: 13.35,
+				a: -10.478,
+				d: 8.064,
 				alpha: 0.004,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: 9,
 				a: 0.988,
@@ -2148,7 +2122,7 @@ export let dead = {
 				d: 0.66,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.15,
 				ty: 9.5,
 				a: 0.331,
@@ -2166,7 +2140,7 @@ export let dead = {
 				d: 0.88,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 6.85,
 				a: 0.927,
@@ -2202,7 +2176,7 @@ export let dead = {
 				d: 0.88,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.75,
 				ty: 2,
 				a: 0.422,
@@ -2211,7 +2185,7 @@ export let dead = {
 				d: 0.411,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -12.35,
 				ty: 4.55,
 				a: -0.385,
@@ -2223,36 +2197,34 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 8.408,
-				ty: 9.127,
-				a: 1.362,
-				b: -1.161,
-				c: -1.433,
-				d: -0.906,
+				tx: 8.85,
+				ty: 7.3,
+				a: 9.687,
+				b: 0.608,
+				c: 1.767,
+				d: -7.306,
 				alpha: 0.102,
 				l: 11
 			},
 			fx_dust_2: {
-				tx: -18.03,
-				ty: 8.582,
-				a: 0.763,
-				b: -1.376,
-				c: -1.928,
-				d: -0.732,
+				tx: -18.55,
+				ty: 6.65,
+				a: 10.113,
+				b: -0.706,
+				c: -2.079,
+				d: -7.729,
 				alpha: 0.039,
 				l: 10
 			},
 			fx_dust_3: {
 				tx: -7,
-				ty: 11.176,
-				a: -1.156,
-				b: 1.36,
-				c: 1.766,
-				d: 0.891,
+				ty: 13.2,
+				a: -10.511,
+				d: 8.096,
 				alpha: 0,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: 9,
 				a: 0.988,
@@ -2261,7 +2233,7 @@ export let dead = {
 				d: 0.66,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.15,
 				ty: 9.5,
 				a: 0.331,
@@ -2279,7 +2251,7 @@ export let dead = {
 				d: 0.88,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 6.85,
 				a: 0.927,
@@ -2315,7 +2287,7 @@ export let dead = {
 				d: 0.88,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.85,
 				ty: 2.45,
 				a: 0.484,
@@ -2324,7 +2296,7 @@ export let dead = {
 				d: 0.477,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -12.65,
 				ty: 4.95,
 				a: -0.397,
@@ -2336,26 +2308,26 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 8.621,
-				ty: 9.337,
-				a: 0.627,
-				b: -1.46,
-				c: -1.905,
-				d: -0.418,
+				tx: 8.8,
+				ty: 7.45,
+				a: 9.948,
+				b: 0.245,
+				c: 0.716,
+				d: -7.548,
 				alpha: 0.074,
 				l: 10
 			},
 			fx_dust_2: {
-				tx: -18.154,
-				ty: 8.667,
-				a: 0.037,
-				b: -1.574,
-				c: -2.115,
-				d: -0.229,
+				tx: -18.75,
+				ty: 6.7,
+				a: 10.248,
+				b: -0.805,
+				c: -2.383,
+				d: -7.867,
 				alpha: 0.02,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: 9,
 				a: 0.988,
@@ -2364,7 +2336,7 @@ export let dead = {
 				d: 0.66,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.15,
 				ty: 9.5,
 				a: 0.331,
@@ -2382,7 +2354,7 @@ export let dead = {
 				d: 0.88,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 6.85,
 				a: 0.927,
@@ -2418,7 +2390,7 @@ export let dead = {
 				d: 0.88,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.85,
 				ty: 2.45,
 				a: 0.484,
@@ -2427,7 +2399,7 @@ export let dead = {
 				d: 0.477,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -12.65,
 				ty: 4.95,
 				a: -0.397,
@@ -2439,26 +2411,26 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 8.701,
-				ty: 9.43,
-				a: -0.202,
-				b: -1.543,
-				c: -2.022,
-				d: 0.137,
+				tx: 8.65,
+				ty: 7.5,
+				a: 10.126,
+				b: -0.069,
+				c: -0.202,
+				d: -7.72,
 				alpha: 0.051,
 				l: 10
 			},
 			fx_dust_2: {
-				tx: -18.213,
-				ty: 8.738,
-				a: -0.675,
-				b: -1.576,
-				c: -2.025,
-				d: 0.299,
+				tx: -18.85,
+				ty: 6.75,
+				a: 10.33,
+				b: -0.86,
+				c: -2.55,
+				d: -7.95,
 				alpha: 0.004,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: 9,
 				a: 0.988,
@@ -2467,7 +2439,7 @@ export let dead = {
 				d: 0.66,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.15,
 				ty: 9.5,
 				a: 0.331,
@@ -2485,7 +2457,7 @@ export let dead = {
 				d: 0.88,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 6.85,
 				a: 0.927,
@@ -2521,7 +2493,7 @@ export let dead = {
 				d: 0.88,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.85,
 				ty: 2.45,
 				a: 0.484,
@@ -2530,7 +2502,7 @@ export let dead = {
 				d: 0.477,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -12.65,
 				ty: 4.95,
 				a: -0.397,
@@ -2542,26 +2514,26 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 8.802,
-				ty: 9.509,
-				a: -1.005,
-				b: -1.414,
-				c: -1.803,
-				d: 0.69,
+				tx: 8.55,
+				ty: 7.55,
+				a: 10.239,
+				b: -0.342,
+				c: -1.009,
+				d: -7.836,
 				alpha: 0.031,
 				l: 10
 			},
 			fx_dust_2: {
-				tx: -17.793,
-				ty: 9.095,
-				a: -1.312,
-				b: -1.398,
-				c: -1.696,
-				d: 0.801,
+				tx: -18.45,
+				ty: 7.1,
+				a: 10.36,
+				b: -0.885,
+				c: -2.628,
+				d: -7.981,
 				alpha: 0,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: 9,
 				a: 0.988,
@@ -2570,7 +2542,7 @@ export let dead = {
 				d: 0.66,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.15,
 				ty: 9.5,
 				a: 0.331,
@@ -2588,7 +2560,7 @@ export let dead = {
 				d: 0.88,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 6.85,
 				a: 0.927,
@@ -2624,7 +2596,7 @@ export let dead = {
 				d: 0.88,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.85,
 				ty: 2.45,
 				a: 0.484,
@@ -2633,7 +2605,7 @@ export let dead = {
 				d: 0.477,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -12.65,
 				ty: 4.95,
 				a: -0.397,
@@ -2645,16 +2617,16 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 8.909,
-				ty: 9.628,
-				a: -1.644,
-				b: -1.096,
-				c: -1.303,
-				d: 1.158,
+				tx: 8.5,
+				ty: 7.65,
+				a: 10.309,
+				b: -0.553,
+				c: -1.637,
+				d: -7.912,
 				alpha: 0.02,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: 9,
 				a: 0.988,
@@ -2663,7 +2635,7 @@ export let dead = {
 				d: 0.66,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.15,
 				ty: 9.5,
 				a: 0.331,
@@ -2681,7 +2653,7 @@ export let dead = {
 				d: 0.88,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 6.85,
 				a: 0.927,
@@ -2717,7 +2689,7 @@ export let dead = {
 				d: 0.88,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.85,
 				ty: 2.45,
 				a: 0.484,
@@ -2726,7 +2698,7 @@ export let dead = {
 				d: 0.477,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -12.65,
 				ty: 4.95,
 				a: -0.397,
@@ -2738,16 +2710,16 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 8.918,
-				ty: 9.69,
-				a: -2.029,
-				b: -0.632,
-				c: -0.617,
-				d: 1.475,
+				tx: 8.4,
+				ty: 7.7,
+				a: 10.35,
+				b: -0.699,
+				c: -2.072,
+				d: -7.96,
 				alpha: 0.008,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: 9,
 				a: 0.988,
@@ -2756,7 +2728,7 @@ export let dead = {
 				d: 0.66,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.15,
 				ty: 9.5,
 				a: 0.331,
@@ -2774,7 +2746,7 @@ export let dead = {
 				d: 0.88,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 6.85,
 				a: 0.927,
@@ -2810,7 +2782,7 @@ export let dead = {
 				d: 0.88,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.85,
 				ty: 2.45,
 				a: 0.484,
@@ -2819,7 +2791,7 @@ export let dead = {
 				d: 0.477,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -12.65,
 				ty: 4.95,
 				a: -0.397,
@@ -2831,16 +2803,16 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 8.939,
-				ty: 9.696,
-				a: -2.131,
-				b: -0.106,
-				c: 0.125,
-				d: 1.607,
+				tx: 8.35,
+				ty: 7.7,
+				a: 10.369,
+				b: -0.794,
+				c: -2.357,
+				d: -7.984,
 				alpha: 0.004,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: 9,
 				a: 0.988,
@@ -2849,7 +2821,7 @@ export let dead = {
 				d: 0.66,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.15,
 				ty: 9.5,
 				a: 0.331,
@@ -2867,7 +2839,7 @@ export let dead = {
 				d: 0.88,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 6.85,
 				a: 0.927,
@@ -2903,7 +2875,7 @@ export let dead = {
 				d: 0.88,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.85,
 				ty: 2.45,
 				a: 0.484,
@@ -2912,7 +2884,7 @@ export let dead = {
 				d: 0.477,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -12.65,
 				ty: 4.95,
 				a: -0.397,
@@ -2924,16 +2896,16 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 8.873,
-				ty: 9.648,
-				a: -1.972,
-				b: 0.43,
-				c: 0.835,
-				d: 1.555,
+				tx: 8.25,
+				ty: 7.65,
+				a: 10.376,
+				b: -0.838,
+				c: -2.49,
+				d: -7.992,
 				alpha: 0,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: 9,
 				a: 0.988,
@@ -2942,7 +2914,7 @@ export let dead = {
 				d: 0.66,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.15,
 				ty: 9.5,
 				a: 0.331,
@@ -2960,7 +2932,7 @@ export let dead = {
 				d: 0.88,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 6.85,
 				a: 0.927,
@@ -2996,7 +2968,7 @@ export let dead = {
 				d: 0.88,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.85,
 				ty: 2.45,
 				a: 0.484,
@@ -3005,7 +2977,7 @@ export let dead = {
 				d: 0.477,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -12.65,
 				ty: 4.95,
 				a: -0.397,
@@ -3017,16 +2989,16 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 8.873,
-				ty: 9.648,
-				a: -1.972,
-				b: 0.43,
-				c: 0.835,
-				d: 1.555,
+				tx: 8.25,
+				ty: 7.65,
+				a: 10.376,
+				b: -0.838,
+				c: -2.49,
+				d: -7.992,
 				alpha: 0,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: 9,
 				a: 0.988,
@@ -3035,7 +3007,7 @@ export let dead = {
 				d: 0.66,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.15,
 				ty: 9.5,
 				a: 0.331,
@@ -3053,7 +3025,7 @@ export let dead = {
 				d: 0.88,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 6.85,
 				a: 0.927,
@@ -3089,7 +3061,7 @@ export let dead = {
 				d: 0.88,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.85,
 				ty: 2.45,
 				a: 0.484,
@@ -3098,7 +3070,7 @@ export let dead = {
 				d: 0.477,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -12.65,
 				ty: 4.95,
 				a: -0.397,
@@ -3110,16 +3082,16 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 8.873,
-				ty: 9.648,
-				a: -1.972,
-				b: 0.43,
-				c: 0.835,
-				d: 1.555,
+				tx: 8.25,
+				ty: 7.65,
+				a: 10.376,
+				b: -0.838,
+				c: -2.49,
+				d: -7.992,
 				alpha: 0,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: 9,
 				a: 0.988,
@@ -3128,7 +3100,7 @@ export let dead = {
 				d: 0.66,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.15,
 				ty: 9.5,
 				a: 0.331,
@@ -3146,7 +3118,7 @@ export let dead = {
 				d: 0.88,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 6.85,
 				a: 0.927,
@@ -3182,7 +3154,7 @@ export let dead = {
 				d: 0.88,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.85,
 				ty: 2.45,
 				a: 0.484,
@@ -3191,7 +3163,7 @@ export let dead = {
 				d: 0.477,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -12.65,
 				ty: 4.95,
 				a: -0.397,
@@ -3203,16 +3175,16 @@ export let dead = {
 		},
 		{
 			fx_dust_1: {
-				tx: 8.873,
-				ty: 9.648,
-				a: -1.972,
-				b: 0.43,
-				c: 0.835,
-				d: 1.555,
+				tx: 8.25,
+				ty: 7.65,
+				a: 10.376,
+				b: -0.838,
+				c: -2.49,
+				d: -7.992,
 				alpha: 0,
 				l: 9
 			},
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: 9,
 				a: 0.988,
@@ -3221,7 +3193,7 @@ export let dead = {
 				d: 0.66,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.15,
 				ty: 9.5,
 				a: 0.331,
@@ -3239,7 +3211,7 @@ export let dead = {
 				d: 0.88,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 6.85,
 				a: 0.927,
@@ -3275,7 +3247,7 @@ export let dead = {
 				d: 0.88,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.85,
 				ty: 2.45,
 				a: 0.484,
@@ -3284,7 +3256,7 @@ export let dead = {
 				d: 0.477,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -12.65,
 				ty: 4.95,
 				a: -0.397,
@@ -3295,7 +3267,7 @@ export let dead = {
 			}
 		},
 		{
-			left_wing: {
+			l_wing: {
 				tx: 12.5,
 				ty: 9,
 				a: 0.988,
@@ -3304,7 +3276,7 @@ export let dead = {
 				d: 0.66,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 5.15,
 				ty: 9.5,
 				a: 0.331,
@@ -3322,7 +3294,7 @@ export let dead = {
 				d: 0.88,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 8.45,
 				ty: 6.85,
 				a: 0.927,
@@ -3358,7 +3330,7 @@ export let dead = {
 				d: 0.88,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -7.85,
 				ty: 2.45,
 				a: 0.484,
@@ -3367,7 +3339,7 @@ export let dead = {
 				d: 0.477,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -12.65,
 				ty: 4.95,
 				a: -0.397,

@@ -11,7 +11,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/sdino/LIBRARY/Symbol 284.xml', '_anim', undefined, 0); // winks
 //parser.parse('./resources/sdino/LIBRARY/Symbol 336.xml', '_p1', undefined, 0); // planaile
 //parser.parse('./resources/sdino/LIBRARY/Symbol 397.xml', '_p1', undefined, 0); // castivore
-parser.parse('./resources/sdino/LIBRARY/Symbol 468.xml', '_p1', undefined, 0); // rocky
+//parser.parse('./resources/sdino/LIBRARY/Symbol 468.xml', '_p1', undefined, 0); // rocky
 //parser.parse('./resources/sdino/LIBRARY/Symbol 517.xml', '_p1', undefined, 0); // pteroz
 //parser.parse('./resources/sdino/LIBRARY/Symbol 547.xml', '_p1', undefined, 0); // nuagoz
 //parser.parse('./resources/sdino/LIBRARY/Symbol 600.xml', '_p1', undefined, 0); // sirain
@@ -67,6 +67,7 @@ parser.parse('./resources/sdino/LIBRARY/Symbol 468.xml', '_p1', undefined, 0); /
 //parser.parse('./resources/smonster/LIBRARY/Symbol 818.xml', '_p1', undefined, 1); // cobra Cobrazero
 //parser.parse('./resources/smonster/LIBRARY/Symbol 854.xml', '_p1', undefined, 1); // hippo Dark Hippoclamp
 //parser.parse('./resources/smonster/LIBRARY/Symbol 881.xml', '_p1', undefined, 1); // rocky Dark Rocky
+//parser.parse('./resources/smonster/LIBRARY/Symbol 920.xml', '_p1', undefined, 1); // pteroz Dark Pteroz
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus
@@ -94,5 +95,5 @@ parser.parse('./resources/sdino/LIBRARY/Symbol 468.xml', '_p1', undefined, 0); /
 const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
 //adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
-//adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
+adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');

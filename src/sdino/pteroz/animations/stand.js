@@ -4,12 +4,12 @@ export let stand = {
 	id: 'pteroz_stand',
 	frames: [
 		{
-			left_wing: {
+			l_wing: {
 				tx: 8.55,
 				ty: 2.8,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 0.15,
 				ty: 5.8,
 				l: 7
@@ -19,7 +19,7 @@ export let stand = {
 				ty: -7.85,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 7.25,
 				ty: 6.1,
 				l: 5
@@ -39,7 +39,7 @@ export let stand = {
 				ty: -7.75,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -3.85,
 				ty: 4.1,
 				a: 0.865,
@@ -48,7 +48,7 @@ export let stand = {
 				d: 0.899,
 				l: 1
 			},
-			right_wing: {
+			r_wing: {
 				tx: -6.45,
 				ty: -2.5,
 				a: -0.542,
