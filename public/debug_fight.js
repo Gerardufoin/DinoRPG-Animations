@@ -111,12 +111,28 @@ const fightVersion = [
 					props: [DinoAnim.FighterProperty.Static],
 					dino: false,
 					life: 100,
-					name: '',
+					name: 'Goupignon',
 					side: false,
 					scale: 1,
 					fid: 3,
 					gfx: 'pteroz'
 				}
+			},
+			{
+				action: DinoAnim.Action.Announce,
+				fid: 0,
+				message: 'TESTING MESSAGE'
+			},
+			{
+				action: DinoAnim.Action.Talk,
+				fid: 0,
+				message: 'Je sais pas ce que ça va donner mais ça promet...!'
+			},
+			{
+				action: DinoAnim.Action.Text,
+				fid: 0,
+				message:
+					"Et voilà un message pour vos mirettes de champions !!! %&/ Trop fort. J'aimerai vraiment du multiligne, coco."
 			}
 			/*{
 				action: DinoAnim.Action.Skill,

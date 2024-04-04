@@ -3,7 +3,7 @@
 
 import { Text } from 'pixi.js';
 import { Phys2D } from '../Phys2D.js';
-import { IScene } from '../../IScene.js';
+import { FONT_SCALE, IScene } from '../../IScene.js';
 
 /**
  * Instantiate a Title text, displaying it at the given coordinates.
@@ -20,16 +20,16 @@ export class Title extends Phys2D {
 	 */
 	constructor(scene, x, y, text) {
 		const txt = new Text(text, {
-			fontFamily: 'Verdana',
-			fontSize: 10,
+			fontFamily: 'drpg-verdana',
+			fontSize: 9 * FONT_SCALE,
 			fontWeight: 'bold',
 			align: 'center',
 			fill: 0xffffff,
 			stroke: 0x000000,
-			strokeThickness: 2
+			strokeThickness: 2 * FONT_SCALE
 		});
-		txt.resolution = 2;
 		txt.anchor.set(0.5);
+		txt.scale.set(1 / FONT_SCALE);
 		super(txt, scene);
 		this._x = x;
 		this._y = y;

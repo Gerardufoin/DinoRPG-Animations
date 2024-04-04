@@ -92,7 +92,7 @@ export class TextBox extends Container {
 		this._stretch = stretch;
 
 		this._text = new Text(message, {
-			fontFamily: 'Verdana',
+			fontFamily: 'drpg-verdana',
 			fontSize: 10,
 			lineHeight: 13,
 			fill: 0xfff3b3,
@@ -106,7 +106,7 @@ export class TextBox extends Container {
 			TextBox.TextGlow = new GlowFilter({
 				color: 0x74361d,
 				distance: 2,
-				outerStrength: 2,
+				outerStrength: 3,
 				quality: 1
 			});
 		}

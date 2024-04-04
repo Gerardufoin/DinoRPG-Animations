@@ -2,6 +2,7 @@
 
 import { GlowFilter } from '@pixi/filter-glow';
 import { Text } from 'pixi.js';
+import { FONT_SCALE } from '../../IScene.js';
 
 /**
  * Instantiate an announce text, displaying it at the given coordinates.
@@ -21,20 +22,21 @@ export class AnnounceText extends Text {
 	 */
 	constructor(x, y, text) {
 		super(text, {
-			fontFamily: 'Impact',
-			fontSize: 20,
+			fontFamily: 'drpg-impact',
+			fontWeight: 'bold',
+			fontSize: 20 * FONT_SCALE,
 			align: 'left',
 			fill: 0xffffff
 		});
-		this.resolution = 2;
 		this.anchor.set(0, 1.1);
+		this.scale.set(1 / FONT_SCALE);
 		this.x = x;
 		this.y = y;
 		if (!AnnounceText.GlowFilter) {
 			AnnounceText.GlowFilter = new GlowFilter({
-				distance: 2,
+				distance: 1,
 				color: 0x000000,
-				outerStrength: 3,
+				outerStrength: 4,
 				quality: 1
 			});
 		}

@@ -15,6 +15,7 @@ export const SCENE_MARGIN = 10;
 export const SCENE_WIDTH = 400;
 export const SCENE_FULL_WIDTH = 488;
 export const SCENE_HEIGHT = 300;
+export const FONT_SCALE = 3;
 
 /**
  * Interface for the Scene, containing the Depth Manager, Tween Manager and margins.

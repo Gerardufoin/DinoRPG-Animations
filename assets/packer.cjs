@@ -16,9 +16,9 @@ function packFolder(folderPath, references) {
 		} else {
 			const content = fs.readFileSync(path.join(folderPath, f.name));
 			const ext = path.extname(f.name).substring(1);
-			const key = path.parse(f.name).name;
-			references[key] = {};
+			let key = path.parse(f.name).name;
 			if (ext === 'svg') {
+				references[key] = {};
 				const svgData = content
 					.toString()
 					.replace(/^ +/gm, '')
@@ -33,7 +33,22 @@ function packFolder(folderPath, references) {
 				if (offset.x !== 0 || offset.y !== 0) {
 					references[key].offset = offset;
 				}
+			} else if (['ttf', 'woff', 'woff2', 'otf'].includes(ext)) {
+				let weight = 'normal';
+				// weight type is the text after the last _, if any.
+				const weightMatch = key.match(/^(.+)_([^_]+)$/);
+				if (weightMatch) {
+					key = weightMatch[1];
+					weight = weightMatch[2];
+				}
+				if (!references[key]) {
+					references[key] = {};
+				}
+				references[key][weight] = {};
+				references[key][weight].data = LZString.compressToBase64(content.toString('base64'));
+				references[key][weight].type = `font/${ext}`;
 			} else {
+				references[key] = {};
 				references[key][ext] = LZString.compressToBase64(content.toString('base64'));
 			}
 		}
@@ -48,7 +63,7 @@ for (const f of fs.readdirSync(__dirname, { withFileTypes: true })) {
 			path.join(__dirname, '../src/', f.name, 'references.js'),
 			'export let ref = ' +
 				JSON.stringify(references, null, '\t')
-					.replace(/"([^"]+)":/g, '$1:')
+					.replace(/"([^-"]+)":/g, '$1:')
 					// eslint-disable-next-line
 					.replace(/"/g, "'")
 					.replace(/(offset: {)\n\t+(x: [^\n]+,)\n\t+(y: [^\n]+)\n\t+}/g, '$1 $2 $3 }')

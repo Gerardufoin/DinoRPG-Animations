@@ -29,9 +29,9 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] vener
 -   [x] barche
 -   [x] cobra
--   [ ] hippo
--   [ ] rocky
--   [ ] pteroz
+-   [x] hippo
+-   [x] rocky
+-   [x] pteroz
 -   [ ] egrllz
 -   [ ] scorp
 -   [ ] brig1

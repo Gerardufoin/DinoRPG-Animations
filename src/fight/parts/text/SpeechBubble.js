@@ -99,7 +99,7 @@ export class SpeechBubble extends Container {
 		width += 1;
 
 		this._text = new Text(message, {
-			fontFamily: 'Verdana',
+			fontFamily: 'drpg-verdana',
 			fontSize: 10,
 			lineHeight: 13,
 			align: 'center',
@@ -142,8 +142,8 @@ export class SpeechBubble extends Container {
 		// Keep the bubble inside the scene.
 		const minX = (this.width + 5) * 0.5 - 20;
 		const minY = this.height - 2;
-		this.x = PixiHelper.mm(minX, x, SCENE_WIDTH - minX);
-		this.y = PixiHelper.mm(minY, y, SCENE_HEIGHT);
+		this.x = PixiHelper.mm(minX, Math.round(x), SCENE_WIDTH - minX);
+		this.y = PixiHelper.mm(minY, Math.round(y), SCENE_HEIGHT);
 		this.setText('');
 	}
 

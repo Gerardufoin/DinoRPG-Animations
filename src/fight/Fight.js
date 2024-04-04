@@ -83,8 +83,6 @@ export class Fight {
 			height: 300
 		});
 
-		PreloadData.preload(this._renderer);
-
 		this._scene = new Scene(
 			this._data.bg,
 			{
@@ -105,10 +103,14 @@ export class Fight {
 		this._timer.start();
 
 		this._history = new History(this, this._scene, this._data.history);
-		// "Fake" loading delay to leave the time for the player to understand what is happening and for some resources to load.
-		setTimeout(() => {
-			this._history.playNext();
-		}, 1000);
+
+		// Preload data and then starts the history.
+		PreloadData.preload(this._renderer).then(() => {
+			// "Fake" loading delay to leave the time for the player to understand what is happening and for some resources to load.
+			setTimeout(() => {
+				this._history.playNext();
+			}, 1000);
+		});
 	}
 
 	/**

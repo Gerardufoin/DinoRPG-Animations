@@ -1,6 +1,8 @@
 // @ts-check
 
 import { Renderer } from 'pixi.js';
+import { decompressFromBase64 } from 'lz-string';
+
 import { fx_bubble } from '../gfx/fx/bubble.js';
 import { fx_bolt } from '../gfx/fx/bolt.js';
 import { fx_onde_focus } from '../gfx/fx/onde_focus.js';
@@ -19,6 +21,7 @@ import { fx_vine_shadow } from '../gfx/fx/vine_shadow.js';
 import { fx_vine } from '../gfx/fx/vine.js';
 import { fx_water_canon_end } from '../gfx/fx/water_canon_end.js';
 import { fx_detonation } from '../gfx/fx/detonation.js';
+import { ref } from '../gfx/references.js';
 
 /**
  * Class used to preload part of the assets.
@@ -51,12 +54,33 @@ export class PreloadData {
 	/**
 	 * Preload a chosen set of assets/animations, creating them and rendering them once.
 	 * @param {Renderer} renderer The Fight's renderer.
+	 * @returns {Promise} A promise triggering once everything is loaded.
 	 */
-	static preload(renderer) {
+	static async preload(renderer) {
 		const animator = new Animator(false);
 		for (const a of PreloadData.ANIMATIONS) {
 			animator.loadAnimation(a);
 			renderer.render(animator);
 		}
+		return new Promise((resolve) => {
+			const promises = [];
+			// Load all the fonts
+			for (const family in ref.fonts) {
+				for (const weight in ref.fonts[family]) {
+					const font = new FontFace(
+						family,
+						`url(data:${ref.fonts[family][weight].type};charset=utf-8;base64,${decompressFromBase64(
+							ref.fonts[family][weight].data
+						)})`,
+						{
+							weight: weight
+						}
+					);
+					document.fonts.add(font);
+					promises.push(font.load());
+				}
+			}
+			Promise.all(promises).then(() => resolve());
+		});
 	}
 }
