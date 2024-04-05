@@ -416,4 +416,5 @@ const fightVersion = [
 
 const fight = new DinoAnim.Fight(fightVersion[version]);
 addFlashPreview(fight.getMTFormat(true));
+console.log(fight.getMTObject());
 document.body.appendChild(fight.getDisplay());

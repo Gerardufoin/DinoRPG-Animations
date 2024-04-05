@@ -154,8 +154,18 @@ export class Fight {
 		if (this._legacyData && !forceDAData) {
 			return encodeURIComponent(new HaxeSerializer(this._legacyData).serialize());
 		}
-		console.log(JSON.stringify(MTConverter.convert(this._data), undefined, '\t'));
 		return encodeURIComponent(new HaxeSerializer(MTConverter.convert(this._data)).serialize());
+	}
+
+	/**
+	 * Get the unserialized fight data under MT format.
+	 * @returns {object} The fight data under MT format as an object.
+	 */
+	getMTObject() {
+		if (this._legacyData) {
+			return this._legacyData;
+		}
+		return MTConverter.convert(this._data);
 	}
 
 	/**
