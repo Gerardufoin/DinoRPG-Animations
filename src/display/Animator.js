@@ -1,10 +1,11 @@
 // @ts-check
-import { Container, Ticker } from 'pixi.js';
+import { Container, Rectangle, Ticker } from 'pixi.js';
 import { PixiHelper } from './PixiHelper.js';
 import { Animation } from './Animation.js';
 import { ImageExtractor } from './ImageExtractor.js';
 import { PartManager } from './PartManager.js';
 import { ConstantShaderManager } from './ConstantShaderManager.js';
+import { SCENE_FULL_WIDTH, SCENE_HEIGHT } from '../fight/IScene.js';
 
 /**
  * The Animator class will contain the dino's body and control its animations.
@@ -165,6 +166,10 @@ export class Animator extends Container {
 				outerStrength: glowParam.strength
 			})
 		);
+		// Because PixiJS filters are fiddly as hell. Set the filter area to the whole screen when glow filter is cut off.
+		if (glowParam.fullScreen) {
+			this.filterArea = new Rectangle(0, 0, SCENE_FULL_WIDTH, SCENE_HEIGHT);
+		}
 	}
 
 	/**

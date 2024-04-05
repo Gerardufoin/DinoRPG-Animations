@@ -4,21 +4,21 @@ export let stand = {
 	id: 'gorilloz_stand',
 	frames: [
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.7,
 				ty: -2.4,
 				a: 1.281,
 				d: 1.281,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.65,
 				l: 6
@@ -42,21 +42,21 @@ export let stand = {
 				ty: -4.95,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.8,
 				a: 1.281,
 				d: 1.225,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -65,21 +65,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.35,
 				a: 1.281,
 				d: 1.281,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.65,
 				l: 6
@@ -104,21 +104,21 @@ export let stand = {
 				d: 1.001,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.8,
 				a: 1.281,
 				d: 1.226,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -127,21 +127,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.4,
 				a: 1.281,
 				d: 1.283,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.7,
 				l: 6
@@ -171,21 +171,21 @@ export let stand = {
 				d: 1.003,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.8,
 				a: 1.281,
 				d: 1.227,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -194,21 +194,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.45,
 				a: 1.281,
 				d: 1.286,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.75,
 				b: -0.001,
@@ -241,21 +241,21 @@ export let stand = {
 				d: 1.007,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.85,
 				a: 1.281,
 				d: 1.229,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -264,21 +264,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.5,
 				a: 1.281,
 				d: 1.292,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.8,
 				b: -0.005,
@@ -311,21 +311,21 @@ export let stand = {
 				d: 1.012,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.85,
 				a: 1.281,
 				d: 1.232,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -334,21 +334,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.55,
 				a: 1.281,
 				d: 1.299,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.9,
 				b: -0.01,
@@ -381,21 +381,21 @@ export let stand = {
 				d: 1.02,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.9,
 				a: 1.281,
 				d: 1.236,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -404,21 +404,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.55,
 				a: 1.281,
 				d: 1.308,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -10.05,
 				b: -0.018,
@@ -451,21 +451,21 @@ export let stand = {
 				d: 1.031,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.95,
 				a: 1.281,
 				d: 1.241,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -474,21 +474,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.65,
 				a: 1.281,
 				d: 1.319,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -10.2,
 				a: 0.999,
@@ -523,21 +523,21 @@ export let stand = {
 				d: 1.043,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6,
 				a: 1.281,
 				d: 1.247,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -546,21 +546,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.8,
 				a: 1.281,
 				d: 1.333,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -10.4,
 				a: 0.999,
@@ -595,21 +595,21 @@ export let stand = {
 				d: 1.059,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.05,
 				a: 1.281,
 				d: 1.255,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -618,21 +618,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.9,
 				a: 1.281,
 				d: 1.348,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -10.65,
 				a: 0.999,
@@ -667,21 +667,21 @@ export let stand = {
 				d: 1.076,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.1,
 				a: 1.281,
 				d: 1.264,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -690,21 +690,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3,
 				a: 1.281,
 				d: 1.364,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -10.85,
 				a: 0.998,
@@ -739,21 +739,21 @@ export let stand = {
 				d: 1.094,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.2,
 				a: 1.281,
 				d: 1.273,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -762,21 +762,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.2,
 				a: 1.281,
 				d: 1.38,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11.1,
 				a: 0.997,
@@ -811,21 +811,21 @@ export let stand = {
 				d: 1.111,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.25,
 				a: 1.281,
 				d: 1.282,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -834,21 +834,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.25,
 				a: 1.281,
 				d: 1.395,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11.3,
 				a: 0.997,
@@ -883,21 +883,21 @@ export let stand = {
 				d: 1.128,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.35,
 				a: 1.281,
 				d: 1.29,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -906,21 +906,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.35,
 				a: 1.281,
 				d: 1.407,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11.5,
 				a: 0.996,
@@ -955,21 +955,21 @@ export let stand = {
 				d: 1.142,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.4,
 				a: 1.281,
 				d: 1.297,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -978,21 +978,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.5,
 				a: 1.281,
 				d: 1.418,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11.65,
 				a: 0.995,
@@ -1027,21 +1027,21 @@ export let stand = {
 				d: 1.153,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.45,
 				a: 1.281,
 				d: 1.303,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -1050,21 +1050,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.55,
 				a: 1.281,
 				d: 1.426,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11.75,
 				a: 0.995,
@@ -1099,21 +1099,21 @@ export let stand = {
 				d: 1.163,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.45,
 				a: 1.281,
 				d: 1.308,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -1122,21 +1122,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.55,
 				a: 1.281,
 				d: 1.432,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11.85,
 				a: 0.994,
@@ -1171,21 +1171,21 @@ export let stand = {
 				d: 1.17,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.5,
 				a: 1.281,
 				d: 1.311,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -1194,21 +1194,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.6,
 				a: 1.281,
 				d: 1.437,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11.9,
 				a: 0.994,
@@ -1243,21 +1243,21 @@ export let stand = {
 				d: 1.175,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.55,
 				a: 1.281,
 				d: 1.314,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -1266,21 +1266,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.65,
 				a: 1.281,
 				d: 1.44,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11.95,
 				a: 0.994,
@@ -1315,21 +1315,21 @@ export let stand = {
 				d: 1.178,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.55,
 				a: 1.281,
 				d: 1.316,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -1338,21 +1338,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.65,
 				a: 1.281,
 				d: 1.442,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -12,
 				a: 0.993,
@@ -1387,21 +1387,21 @@ export let stand = {
 				d: 1.18,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.55,
 				a: 1.281,
 				d: 1.316,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -1410,21 +1410,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.7,
 				ty: -3.7,
 				a: 1.281,
 				d: 1.442,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -12,
 				a: 0.994,
@@ -1459,21 +1459,21 @@ export let stand = {
 				d: 1.181,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.55,
 				a: 1.281,
 				d: 1.317,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -1482,21 +1482,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.7,
 				a: 1.281,
 				d: 1.442,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -12,
 				a: 0.993,
@@ -1531,21 +1531,21 @@ export let stand = {
 				d: 1.18,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.55,
 				a: 1.281,
 				d: 1.316,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -1554,21 +1554,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.7,
 				a: 1.281,
 				d: 1.44,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11.95,
 				a: 0.994,
@@ -1603,21 +1603,21 @@ export let stand = {
 				d: 1.178,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.55,
 				a: 1.281,
 				d: 1.315,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -1626,21 +1626,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.65,
 				a: 1.281,
 				d: 1.437,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11.9,
 				a: 0.994,
@@ -1675,21 +1675,21 @@ export let stand = {
 				d: 1.174,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.55,
 				a: 1.281,
 				d: 1.314,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -1698,21 +1698,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.6,
 				a: 1.281,
 				d: 1.432,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.15,
 				ty: -11.85,
 				a: 0.994,
@@ -1747,21 +1747,21 @@ export let stand = {
 				d: 1.169,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.55,
 				a: 1.281,
 				d: 1.311,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -1770,21 +1770,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.55,
 				a: 1.281,
 				d: 1.425,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11.75,
 				a: 0.995,
@@ -1819,21 +1819,21 @@ export let stand = {
 				d: 1.162,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.55,
 				a: 1.281,
 				d: 1.307,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -1842,21 +1842,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -3.5,
 				a: 1.281,
 				d: 1.417,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11.65,
 				a: 0.995,
@@ -1891,21 +1891,21 @@ export let stand = {
 				d: 1.152,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.45,
 				a: 1.281,
 				d: 1.302,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -1914,21 +1914,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.6,
 				ty: -3.4,
 				a: 1.281,
 				d: 1.406,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11.45,
 				a: 0.996,
@@ -1963,21 +1963,21 @@ export let stand = {
 				d: 1.14,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.4,
 				a: 1.281,
 				d: 1.296,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -1986,21 +1986,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.6,
 				ty: -3.3,
 				a: 1.281,
 				d: 1.393,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11.25,
 				a: 0.997,
@@ -2035,21 +2035,21 @@ export let stand = {
 				d: 1.125,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.35,
 				a: 1.281,
 				d: 1.289,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -2058,21 +2058,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.6,
 				ty: -3.2,
 				a: 1.281,
 				d: 1.378,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.2,
 				ty: -11,
 				a: 0.998,
@@ -2107,21 +2107,21 @@ export let stand = {
 				d: 1.109,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.35,
 				a: 1.281,
 				d: 1.281,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -2130,21 +2130,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.6,
 				ty: -3.05,
 				a: 1.281,
 				d: 1.362,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -10.8,
 				a: 0.998,
@@ -2179,21 +2179,21 @@ export let stand = {
 				d: 1.091,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.2,
 				a: 1.281,
 				d: 1.272,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -2202,21 +2202,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.6,
 				ty: -2.95,
 				a: 1.281,
 				d: 1.346,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -10.6,
 				a: 0.999,
@@ -2251,21 +2251,21 @@ export let stand = {
 				d: 1.073,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.15,
 				a: 1.281,
 				d: 1.263,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -2274,21 +2274,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.55,
 				ty: -2.8,
 				a: 1.281,
 				d: 1.331,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -10.45,
 				a: 0.999,
@@ -2323,21 +2323,21 @@ export let stand = {
 				d: 1.057,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.1,
 				a: 1.281,
 				d: 1.254,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -2346,21 +2346,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.55,
 				ty: -2.7,
 				a: 1.281,
 				d: 1.318,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -10.2,
 				b: -0.022,
@@ -2393,21 +2393,21 @@ export let stand = {
 				d: 1.042,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6.05,
 				a: 1.281,
 				d: 1.247,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -2416,21 +2416,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.55,
 				ty: -2.6,
 				a: 1.281,
 				d: 1.307,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -10.05,
 				b: -0.014,
@@ -2463,21 +2463,21 @@ export let stand = {
 				d: 1.03,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -6,
 				a: 1.281,
 				d: 1.24,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -2486,21 +2486,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.6,
 				ty: -2.55,
 				a: 1.281,
 				d: 1.298,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.9,
 				b: -0.009,
@@ -2533,21 +2533,21 @@ export let stand = {
 				d: 1.02,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.95,
 				a: 1.281,
 				d: 1.235,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -2556,21 +2556,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.6,
 				ty: -2.55,
 				a: 1.281,
 				d: 1.296,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.85,
 				b: -0.005,
@@ -2603,21 +2603,21 @@ export let stand = {
 				d: 1.017,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.95,
 				a: 1.281,
 				d: 1.234,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -2626,21 +2626,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.5,
 				a: 1.281,
 				d: 1.294,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.3,
 				ty: -9.85,
 				b: -0.005,
@@ -2673,21 +2673,21 @@ export let stand = {
 				d: 1.015,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.9,
 				a: 1.281,
 				d: 1.233,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -2696,21 +2696,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.5,
 				a: 1.281,
 				d: 1.292,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.3,
 				ty: -9.8,
 				b: -0.005,
@@ -2743,21 +2743,21 @@ export let stand = {
 				d: 1.012,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.9,
 				a: 1.281,
 				d: 1.232,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -2766,21 +2766,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.5,
 				a: 1.281,
 				d: 1.29,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.3,
 				ty: -9.8,
 				b: -0.005,
@@ -2813,21 +2813,21 @@ export let stand = {
 				d: 1.01,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.9,
 				a: 1.281,
 				d: 1.231,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -2836,21 +2836,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.45,
 				a: 1.281,
 				d: 1.288,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.75,
 				b: -0.001,
@@ -2883,21 +2883,21 @@ export let stand = {
 				d: 1.009,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.85,
 				a: 1.281,
 				d: 1.23,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -2906,21 +2906,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.45,
 				a: 1.281,
 				d: 1.287,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.75,
 				b: -0.001,
@@ -2952,21 +2952,21 @@ export let stand = {
 				d: 1.007,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.85,
 				a: 1.281,
 				d: 1.229,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -2975,21 +2975,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.65,
 				ty: -2.45,
 				a: 1.281,
 				d: 1.286,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.7,
 				b: -0.001,
@@ -3021,21 +3021,21 @@ export let stand = {
 				d: 1.006,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.85,
 				a: 1.281,
 				d: 1.228,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -3044,21 +3044,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.7,
 				ty: -2.45,
 				a: 1.281,
 				d: 1.284,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.7,
 				b: -0.001,
@@ -3090,21 +3090,21 @@ export let stand = {
 				d: 1.004,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.85,
 				a: 1.281,
 				d: 1.228,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -3113,21 +3113,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.7,
 				ty: -2.4,
 				a: 1.281,
 				d: 1.283,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.7,
 				l: 6
@@ -3157,21 +3157,21 @@ export let stand = {
 				d: 1.003,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.85,
 				a: 1.281,
 				d: 1.227,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -3180,21 +3180,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.7,
 				ty: -2.4,
 				a: 1.281,
 				d: 1.282,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.7,
 				l: 6
@@ -3220,21 +3220,21 @@ export let stand = {
 				d: 1.002,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.85,
 				a: 1.281,
 				d: 1.226,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -3243,21 +3243,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.7,
 				ty: -2.4,
 				a: 1.281,
 				d: 1.282,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.65,
 				l: 6
@@ -3283,21 +3283,21 @@ export let stand = {
 				d: 1.001,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.85,
 				a: 1.281,
 				d: 1.226,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -3306,21 +3306,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.7,
 				ty: -2.4,
 				a: 1.281,
 				d: 1.281,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.65,
 				l: 6
@@ -3345,21 +3345,21 @@ export let stand = {
 				d: 1.001,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.85,
 				a: 1.281,
 				d: 1.226,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -3368,21 +3368,21 @@ export let stand = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.7,
 				ty: -2.4,
 				a: 1.281,
 				d: 1.281,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.65,
 				l: 6
@@ -3406,21 +3406,21 @@ export let stand = {
 				ty: -4.95,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.8,
 				a: 1.281,
 				d: 1.225,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,

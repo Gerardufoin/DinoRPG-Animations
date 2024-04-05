@@ -1,5 +1,6 @@
 // @ts-check
 import { bad } from '../sdino/bad.js';
+import { gorilloz } from '../sdino/gorilloz/gorilloz.js';
 import { anguil } from './anguil/anguil.js';
 import { barche } from './barche/barche.js';
 import { bat } from './bat/bat.js';
@@ -8,6 +9,7 @@ import { cobra } from './cobra/cobra.js';
 import { coq } from './coq/coq.js';
 import { eearth } from './eearth/eearth.js';
 import { efire } from './efire/efire.js';
+import { egrllz } from './egrllz/egrllz.js';
 import { ewater } from './ewater/ewater.js';
 import { flam } from './flam/flam.js';
 import { gluon } from './gluon/gluon.js';
@@ -59,6 +61,7 @@ export const monsters = {
 	hippo: hippo,
 	rocky: rocky,
 	pteroz: pteroz,
+	egrllz: egrllz,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus

@@ -7,21 +7,21 @@ export let jump = {
 	},
 	frames: [
 		{
-			left_arm: {
+			l_arm: {
 				tx: 12.7,
 				ty: -2.4,
 				a: 1.281,
 				d: 1.281,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 9.65,
 				ty: 8,
 				a: 1.281,
 				d: 1.281,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 10.25,
 				ty: -9.65,
 				l: 6
@@ -45,21 +45,21 @@ export let jump = {
 				ty: -4.95,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5,
 				ty: -5.8,
 				a: 1.281,
 				d: 1.225,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.9,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.2,
 				ty: 4.1,
 				a: 1.281,
@@ -68,7 +68,7 @@ export let jump = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 15.8,
 				ty: -5.15,
 				a: 1.224,
@@ -77,7 +77,7 @@ export let jump = {
 				d: 1.126,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 14.1,
 				ty: 5,
 				a: 1.264,
@@ -86,7 +86,7 @@ export let jump = {
 				d: 1.705,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 12.45,
 				ty: -13,
 				a: 0.997,
@@ -122,7 +122,7 @@ export let jump = {
 				d: 0.709,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 4.75,
 				ty: -7.55,
 				a: 1.27,
@@ -131,7 +131,7 @@ export let jump = {
 				d: 1.215,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.5,
 				ty: 1.85,
 				a: 1.27,
@@ -140,7 +140,7 @@ export let jump = {
 				d: 1.27,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 15.5,
 				ty: 5,
 				a: 1.23,
@@ -151,7 +151,7 @@ export let jump = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 18.8,
 				ty: -7.8,
 				a: 1.08,
@@ -160,7 +160,7 @@ export let jump = {
 				d: 0.913,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 18.25,
 				ty: 2.2,
 				a: 1.223,
@@ -169,7 +169,7 @@ export let jump = {
 				d: 2.045,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: 14.5,
 				ty: -16.15,
 				a: 0.99,
@@ -196,7 +196,7 @@ export let jump = {
 				d: 1.268,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 3.25,
 				ty: 3.25,
 				a: 1.103,
@@ -214,7 +214,7 @@ export let jump = {
 				d: 0.005,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 4.55,
 				ty: -9.2,
 				a: 1.244,
@@ -223,7 +223,7 @@ export let jump = {
 				d: 1.19,
 				l: 2
 			},
-			left_foot: {
+			l_foot: {
 				tx: -0.8,
 				ty: -0.3,
 				a: 1.244,
@@ -232,7 +232,7 @@ export let jump = {
 				d: 1.244,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 12.1,
 				ty: 5.8,
 				a: 1.103,

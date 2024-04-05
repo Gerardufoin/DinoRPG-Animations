@@ -169,13 +169,13 @@ export let gorilloz = {
 	},
 	parts: {
 		// 669
-		right_foot: parts.hand,
+		r_foot: parts.hand,
 		// 669
-		left_foot: parts.hand,
+		l_foot: parts.hand,
 		// 669
-		right_hand: parts.hand,
+		r_hand: parts.hand,
 		// 674 p8b
-		right_arm: parts.arm,
+		r_arm: parts.arm,
 		// 677
 		body: parts.body,
 		// 690 p7a
@@ -183,15 +183,15 @@ export let gorilloz = {
 		// 693 p3
 		face: parts.face,
 		// 698 p5a
-		left_ear: parts.ear,
+		l_ear: parts.ear,
 		// 669
-		left_hand: parts.hand,
+		l_hand: parts.hand,
 		// 674 p8a
-		left_arm: parts.arm,
+		l_arm: parts.arm,
 		// 160
-		open_left_hand: parts.open_hand,
+		l_o_hand: parts.open_hand,
 		// 160
-		open_right_hand: parts.open_hand,
+		r_o_hand: parts.open_hand,
 		// 146
 		fx_impact_1: [
 			{

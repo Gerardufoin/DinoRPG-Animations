@@ -4,7 +4,7 @@ export let hit = {
 	id: 'gorilloz_hit',
 	frames: [
 		{
-			left_hand: {
+			l_hand: {
 				tx: 13.05,
 				ty: 6.3,
 				a: 1.236,
@@ -13,7 +13,7 @@ export let hit = {
 				d: 1.236,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: 13.7,
 				ty: -14.05,
 				a: -1,
@@ -33,7 +33,7 @@ export let hit = {
 				d: 1.281,
 				l: 5
 			},
-			left_arm: {
+			l_arm: {
 				tx: 19.8,
 				ty: -1.9,
 				a: 1.156,
@@ -47,7 +47,7 @@ export let hit = {
 				ty: -4.95,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 9.55,
 				ty: -6.3,
 				a: 1.151,
@@ -56,7 +56,7 @@ export let hit = {
 				d: 1.101,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 3.35,
 				ty: 1.3,
 				a: 1.135,
@@ -65,7 +65,7 @@ export let hit = {
 				d: 2.069,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 22.6,
 				ty: 4.1,
 				a: 1.281,

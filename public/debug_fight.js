@@ -95,20 +95,22 @@ const fightVersion = [
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
-					props: [DinoAnim.FighterProperty.Static],
+					props: [
+						/*DinoAnim.FighterProperty.Static*/
+					],
 					dino: false,
 					life: 100,
 					name: '',
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'hippo'
+					gfx: 'egrllz'
 				}
 			},
 			{
 				action: DinoAnim.Action.Add,
 				fighter: {
-					props: [DinoAnim.FighterProperty.Static],
+					props: [],
 					dino: false,
 					life: 100,
 					name: 'Goupignon',
@@ -117,22 +119,6 @@ const fightVersion = [
 					fid: 3,
 					gfx: 'pteroz'
 				}
-			},
-			{
-				action: DinoAnim.Action.Announce,
-				fid: 0,
-				message: 'TESTING MESSAGE'
-			},
-			{
-				action: DinoAnim.Action.Talk,
-				fid: 0,
-				message: 'Je sais pas ce que ça va donner mais ça promet...!'
-			},
-			{
-				action: DinoAnim.Action.Text,
-				fid: 0,
-				message:
-					"Et voilà un message pour vos mirettes de champions !!! %&/ Trop fort. J'aimerai vraiment du multiligne, coco."
 			}
 			/*{
 				action: DinoAnim.Action.Skill,

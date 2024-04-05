@@ -4,7 +4,7 @@ export let run = {
 	id: 'gorilloz_run',
 	frames: [
 		{
-			left_arm: {
+			l_arm: {
 				tx: 8.35,
 				ty: -2.75,
 				a: 1.172,
@@ -13,7 +13,7 @@ export let run = {
 				d: 1.172,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 1.7,
 				ty: 6.05,
 				a: 1.089,
@@ -22,7 +22,7 @@ export let run = {
 				d: 1.089,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 6.85,
 				ty: -7,
 				a: 0.99,
@@ -58,21 +58,21 @@ export let run = {
 				d: 0.982,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 7.6,
 				ty: -5.8,
 				a: 1.281,
 				d: 1.225,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 4.5,
 				ty: 4.15,
 				a: 1.281,
 				d: 1.281,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 22.6,
 				ty: 1.8,
 				a: 0.849,
@@ -83,7 +83,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 8.3,
 				ty: -3.4,
 				a: 1.221,
@@ -92,7 +92,7 @@ export let run = {
 				d: 1.208,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 2.85,
 				ty: 5.3,
 				a: 1.167,
@@ -101,7 +101,7 @@ export let run = {
 				d: 1.159,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 6.7,
 				ty: -7.8,
 				a: 0.991,
@@ -137,7 +137,7 @@ export let run = {
 				d: 0.986,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 6.5,
 				ty: -6.45,
 				a: 1.277,
@@ -146,7 +146,7 @@ export let run = {
 				d: 1.222,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 2.65,
 				ty: 3.2,
 				a: 1.277,
@@ -155,7 +155,7 @@ export let run = {
 				d: 1.277,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 21.6,
 				ty: 1.35,
 				a: 0.912,
@@ -166,7 +166,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 7.9,
 				ty: -5.5,
 				a: 1.258,
@@ -175,7 +175,7 @@ export let run = {
 				d: 1.163,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 6.35,
 				ty: 3.2,
 				a: 1.262,
@@ -184,7 +184,7 @@ export let run = {
 				d: 1.173,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 6.3,
 				ty: -10.15,
 				a: 0.994,
@@ -220,7 +220,7 @@ export let run = {
 				d: 0.996,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 3,
 				ty: -8.4,
 				a: 1.227,
@@ -229,7 +229,7 @@ export let run = {
 				d: 1.174,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -2.85,
 				ty: 0.25,
 				a: 1.227,
@@ -238,7 +238,7 @@ export let run = {
 				d: 1.227,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.6,
 				ty: -0.05,
 				a: 1.076,
@@ -249,7 +249,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 7.45,
 				ty: -3,
 				a: 1.106,
@@ -258,7 +258,7 @@ export let run = {
 				d: 0.891,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 10.1,
 				ty: 5.65,
 				a: 1.106,
@@ -267,7 +267,7 @@ export let run = {
 				d: 0.891,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 5.6,
 				ty: -9.9,
 				a: 0.997,
@@ -303,7 +303,7 @@ export let run = {
 				d: 0.997,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 1.9,
 				ty: -7,
 				a: 1.2,
@@ -312,7 +312,7 @@ export let run = {
 				d: 1.249,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -0.5,
 				ty: 2.5,
 				a: 1.2,
@@ -321,7 +321,7 @@ export let run = {
 				d: 1.305,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13.35,
 				ty: 1.8,
 				a: 1.248,
@@ -332,7 +332,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 8.15,
 				ty: -3,
 				a: 1.215,
@@ -341,7 +341,7 @@ export let run = {
 				d: 1.069,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 8.35,
 				ty: 5.75,
 				a: 1.225,
@@ -350,7 +350,7 @@ export let run = {
 				d: 1.083,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.55,
 				ty: -9.65,
 				l: 6
@@ -378,7 +378,7 @@ export let run = {
 				d: 0.966,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 0.7,
 				ty: -5.3,
 				a: 1.074,
@@ -387,7 +387,7 @@ export let run = {
 				d: 1.185,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 1.95,
 				ty: 5,
 				a: 1.074,
@@ -396,7 +396,7 @@ export let run = {
 				d: 1.238,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 6,
 				ty: 4.45,
 				a: 1.226,
@@ -407,7 +407,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 8.75,
 				ty: -2.9,
 				a: 1.264,
@@ -416,7 +416,7 @@ export let run = {
 				d: 1.191,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 6.6,
 				ty: 5.95,
 				a: 1.261,
@@ -424,7 +424,7 @@ export let run = {
 				d: 1.194,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 6.2,
 				ty: -8.75,
 				a: 0.998,
@@ -460,7 +460,7 @@ export let run = {
 				d: 0.993,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 4.05,
 				ty: -5.45,
 				a: 1.156,
@@ -469,7 +469,7 @@ export let run = {
 				d: 1.221,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 3.65,
 				ty: 4.7,
 				a: 1.156,
@@ -478,7 +478,7 @@ export let run = {
 				d: 1.276,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 12.55,
 				ty: 3.6,
 				a: 1.272,
@@ -489,7 +489,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 9.45,
 				ty: -2.8,
 				a: 1.228,
@@ -498,7 +498,7 @@ export let run = {
 				d: 1.213,
 				l: 8
 			},
-			left_hand: {
+			l_hand: {
 				tx: 4.4,
 				ty: 6.05,
 				a: 1.181,
@@ -507,7 +507,7 @@ export let run = {
 				d: 1.169,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: 8.05,
 				ty: -7.75,
 				a: 0.994,
@@ -543,7 +543,7 @@ export let run = {
 				d: 0.997,
 				l: 3
 			},
-			right_arm: {
+			r_arm: {
 				tx: 7.55,
 				ty: -5.65,
 				a: 1.234,
@@ -552,7 +552,7 @@ export let run = {
 				d: 1.233,
 				l: 2
 			},
-			right_hand: {
+			r_hand: {
 				tx: 5.55,
 				ty: 4.35,
 				a: 1.234,
@@ -561,7 +561,7 @@ export let run = {
 				d: 1.288,
 				l: 1
 			},
-			left_foot: {
+			l_foot: {
 				tx: 19.8,
 				ty: 2.5,
 				a: 1.105,

@@ -25,11 +25,12 @@ export const pteroz = {
 		},
 		// 920
 		{
-			tx: -5.4
+			tx: -3
 		},
+
 		// Adjust
 		{
-			ty: -7.7
+			ty: -10.5
 		}
 	],
 	glow: {

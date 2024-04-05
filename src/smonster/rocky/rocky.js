@@ -33,7 +33,7 @@ export const rocky = {
 		},
 		// Adjust
 		{
-			ty: -7.7
+			ty: -14
 		}
 	],
 	glow: {
