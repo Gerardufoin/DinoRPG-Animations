@@ -7,6 +7,26 @@ const color = {
 	b: -82
 };
 
+/**
+ * @type {{distance: number, color: number, quality: number, strength: number}}
+ */
+export const glow_attack_1 = {
+	distance: 8,
+	color: 0xffffff,
+	quality: 0.5,
+	strength: 0.84
+};
+
+/**
+ * @type {{distance: number, color: number, quality: number, strength: number}}
+ */
+export const glow_attack_2 = {
+	distance: 4,
+	color: 0xff0000,
+	quality: 0.5,
+	strength: 0.76
+};
+
 export const parts = {
 	// 84
 	paw: [
@@ -78,24 +98,14 @@ export const parts = {
 	attack_2: [
 		{
 			ref: ref.wolf.attack_2,
-			glow: {
-				distance: 6,
-				color: 0xffff00,
-				quality: 0.5,
-				strength: 1.4
-			}
+			glow: glow_attack_1
 		}
 	],
 	// 105
 	attack_3: [
 		{
 			ref: ref.wolf.attack_3,
-			glow: {
-				distance: 4,
-				color: 0xff0000,
-				quality: 0.5,
-				strength: 0.76
-			}
+			glow: glow_attack_2
 		}
 	],
 	// 107

@@ -1,6 +1,6 @@
 // @ts-check
 
-import { Renderer } from 'pixi.js';
+import { Graphics, Renderer } from 'pixi.js';
 import { decompressFromBase64 } from 'lz-string';
 
 import { fx_bubble } from '../gfx/fx/bubble.js';
@@ -22,6 +22,11 @@ import { fx_vine } from '../gfx/fx/vine.js';
 import { fx_water_canon_end } from '../gfx/fx/water_canon_end.js';
 import { fx_detonation } from '../gfx/fx/detonation.js';
 import { ref } from '../gfx/references.js';
+import { SkillAura } from '../fight/actions/skills/SkillAura.js';
+import { GlowFilter } from '@pixi/filter-glow';
+import { SCENE_HEIGHT, SCENE_WIDTH } from '../fight/IScene.js';
+import { ConstantShaderManager } from './ConstantShaderManager.js';
+import { glow_attack_1, glow_attack_2 } from '../smonster/wolf/parts.js';
 
 /**
  * Class used to preload part of the assets.
@@ -52,19 +57,50 @@ export class PreloadData {
 	];
 
 	/**
+	 * List of glow filters to preload.
+	 * @type {GlowFilter[]}
+	 */
+	static GLOW_FILTERS = [
+		SkillAura.FirstAura,
+		SkillAura.SecondAura,
+		SkillAura.ThirdAura,
+		ConstantShaderManager.getGlowFilter({
+			distance: glow_attack_1.distance,
+			color: glow_attack_1.color,
+			quality: glow_attack_1.quality,
+			outerStrength: glow_attack_1.strength
+		}),
+		ConstantShaderManager.getGlowFilter({
+			distance: glow_attack_2.distance,
+			color: glow_attack_2.color,
+			quality: glow_attack_2.quality,
+			outerStrength: glow_attack_2.strength
+		})
+	];
+
+	/**
 	 * Preload a chosen set of assets/animations, creating them and rendering them once.
 	 * @param {Renderer} renderer The Fight's renderer.
 	 * @returns {Promise} A promise triggering once everything is loaded.
 	 */
 	static async preload(renderer) {
+		// Preload animations
 		const animator = new Animator(false);
 		for (const a of PreloadData.ANIMATIONS) {
 			animator.loadAnimation(a);
 			renderer.render(animator);
 		}
+
+		// Preload glow filters
+		const grph = new Graphics().beginFill(0xffffff).drawRect(SCENE_WIDTH / 2, SCENE_HEIGHT / 2, 50, 50);
+		for (const gl of PreloadData.GLOW_FILTERS) {
+			grph.filters = [gl];
+			renderer.render(grph);
+		}
+
+		// Preload fonts
 		return new Promise((resolve) => {
 			const promises = [];
-			// Load all the fonts
 			for (const family in ref.fonts) {
 				for (const weight in ref.fonts[family]) {
 					const font = new FontFace(

@@ -89,7 +89,7 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'rocky'
+					gfx: 'barche'
 				}
 			},
 			{
@@ -104,22 +104,15 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'egrllz'
+					gfx: 'gvert'
 				}
 			},
 			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Goupignon',
-					side: false,
-					scale: 1,
-					fid: 3,
-					gfx: 'pteroz'
-				}
-			}
+				action: DinoAnim.Action.Damages,
+				fid: 2,
+				tid: 0,
+				damages: 10
+			},
 			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Anim,
@@ -133,9 +126,9 @@ const fightVersion = [
 				fid: 1,
 				status: DinoAnim.FighterStatus.Fly
 			},*/
-			/*{
+			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Hole,
+				skill: DinoAnim.SkillList.Ice,
 				details: {
 					fid: 0,
 					targets: [
@@ -143,7 +136,7 @@ const fightVersion = [
 						{ id: 2, life: 10 }
 					]
 				}
-			}*/
+			}
 			/*{
 				action: DinoAnim.Action.Skill,
 				skill: DinoAnim.SkillList.Aura,

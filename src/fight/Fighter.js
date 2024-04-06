@@ -41,6 +41,8 @@ import { fx_brulure } from '../gfx/fx/attach/brulure.js';
 import { fx_steam, fx_steam_small } from '../gfx/fx/attach/smoke/steam.js';
 import { fx_smoke, fx_smoke_small } from '../gfx/fx/attach/smoke/dirt.js';
 import { ConstantShaderManager } from '../display/ConstantShaderManager.js';
+import { IceBlock } from './parts/skills/ice/IceBlock.js';
+import { IceShard } from './parts/skills/ice/IceShard.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -59,6 +61,11 @@ export class Fighter extends Phys {
 		JumpDown: 2,
 		Run: 3
 	};
+	/**
+	 * The ice block skin filter. Static to share it between each fighters.
+	 * @type {Filter}
+	 */
+	static IceBlockSkin;
 
 	/**
 	 * The depth manager of the Fighter, managing its layers.
@@ -283,15 +290,15 @@ export class Fighter extends Phys {
 		return this._flLand;
 	}
 	/**
-	 * The front part of the water onde, going above the Fighter.
-	 * @type {Sprite}
+	 * Both parts of a water onde, going in front and behind a Fighter.
+	 * @type {{front: Sprite, back: Sprite}}
 	 */
-	_waterOndeFront;
+	_waterOnde;
 	/**
-	 * The back part of the water onde, going behind the Fighter.
-	 * @type {Sprite}
+	 * Both parts of am ice block, going in front and behind a Fighter.
+	 * @type {{front: Container, back: Container}}
 	 */
-	_waterOndeBack;
+	_iceBlock;
 	/**
 	 * While greated than 0, the Fighter will generate drips each frame.
 	 * @type {number}
@@ -501,10 +508,12 @@ export class Fighter extends Phys {
 
 		// Creates the water onde if the Scene has water as ground.
 		if (this._scene.groundType === GroundType.Water) {
-			this._waterOndeFront = new WaterOnde(0, -5, (this._ray * 2) / 100, this._ray / 100);
-			this.dm.addSprite(this._waterOndeFront, Layers.Fighter.FRONT);
-			this._waterOndeBack = new WaterOnde(0, -5, (this._ray * 2) / 100, -this._ray / 100);
-			this.dm.addSprite(this._waterOndeBack, Layers.Fighter.BACK);
+			this._waterOnde = {
+				front: new WaterOnde(0, -5, (this._ray * 2) / 100, this._ray / 100),
+				back: new WaterOnde(0, -5, (this._ray * 2) / 100, -this._ray / 100)
+			};
+			this.dm.addSprite(this._waterOnde.front, Layers.Fighter.FRONT);
+			this.dm.addSprite(this._waterOnde.back, Layers.Fighter.BACK);
 		}
 
 		// If the Fighter is a dino, adds a slot with its portrait.
@@ -995,9 +1004,9 @@ export class Fighter extends Phys {
 	 * @param {boolean} v If true, the ground fx are visible. Otherwise they are not.
 	 */
 	setGroundFx(v) {
-		if (this._waterOndeFront) {
-			this._waterOndeFront.getRootContainer().visible = v;
-			this._waterOndeBack.getRootContainer().visible = v;
+		if (this._waterOnde) {
+			this._waterOnde.front.getRootContainer().visible = v;
+			this._waterOnde.back.getRootContainer().visible = v;
 		}
 	}
 
@@ -1432,6 +1441,61 @@ export class Fighter extends Phys {
 			this.dm.addSprite(
 				new Explosion(this._scene, (Math.random() * 2 - 1) * this.ray, -Math.random() * this._height),
 				Layers.Fighter.FRONT
+			);
+		}
+	}
+
+	/*public function fxMudWall() {
+		mcMudWall = bdm.attach( "mcMudwall", DP_FRONT );
+		mcMudWall._xscale = (side?1:-1) * (ray*4 + 30);
+		mcMudWall._yscale = mcMudWall._xscale;
+		mcMudWall._y = -.5*height;
+		//skin._p0._p1._anim._sub.stop();
+	}
+	
+	public function fxRemoveMudWall() {
+		if( mcMudWall == null ) return;
+		KTween.tween( mcMudWall, TBurnOut ).to( 1, _xscale = 0, _yscale = 0, _alpha = 0 ).onComplete(function(t) mcMudWall.removeMovieClip() );
+	}*/
+
+	/**
+	 * Adds or display the ice block around the Fighter.
+	 */
+	fxAddIceBlock() {
+		if (!this._iceBlock) {
+			const sx = (this.ray * 2 + 30) / 100;
+			const sy = (this.height + 30) / 100;
+			this._iceBlock = {
+				front: new IceBlock(sx, sy, false),
+				back: new IceBlock(sx, sy, true)
+			};
+			this.dm.addContainer(this._iceBlock.front, Layers.Fighter.FRONT);
+			this.dm.addContainer(this._iceBlock.back, Layers.Fighter.BACK);
+		}
+		if (!Fighter.IceBlockSkin) {
+			Fighter.IceBlockSkin = ConstantShaderManager.getColorOffsetFilter(95, 190, 254, 0, 0, 0);
+		}
+		this._iceBlock.front.visible = true;
+		this._iceBlock.back.visible = true;
+		this._skin.filters = [Fighter.IceBlockSkin];
+		this._animator.playing = false;
+	}
+
+	/**
+	 * Hides the ice block around the Fighter.
+	 * @param {number} max Number of ice shard to spawn when the ice block is removed.
+	 */
+	fxRemoveIceBlock(max) {
+		if (this._iceBlock) {
+			this._iceBlock.front.visible = false;
+			this._iceBlock.back.visible = false;
+		}
+		this._skin.filters = [];
+		this._animator.playing = true;
+		for (let i = 0; i < max; ++i) {
+			this._scene.dm.addSprite(
+				new IceShard(this._scene, this._x, this._y, this._z, this.ray, this.height),
+				Layers.Scene.FIGHTERS
 			);
 		}
 	}

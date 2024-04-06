@@ -16,6 +16,7 @@ import { GrDisc } from './skills/group/GrDisc.js';
 import { GrDivineLight } from './skills/group/GrDivineLight.js';
 import { GrFireBreath } from './skills/group/GrFireBreath.js';
 import { GrFireball } from './skills/group/GrFireball.js';
+import { GrIce } from './skills/group/GrIce.js';
 import { GrJumpAttack } from './skills/group/GrJumpAttack.js';
 import { GrLava } from './skills/group/GrLava.js';
 import { GrLevitRay } from './skills/group/GrLevitRay.js';
@@ -175,6 +176,8 @@ export class Skill extends State {
 				return new GrDisc(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Hole:
 				return new GrBlackHole(this._scene, () => this.end(), this._fighter, this._targets);
+			case SkillList.Ice:
+				return new GrIce(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Tremor:
 			case SkillList.JumpAttack:
 				return new GrJumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);

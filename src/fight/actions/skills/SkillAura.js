@@ -13,17 +13,27 @@ export class SkillAura {
 	 * First layer of the aura.
 	 * @type {GlowFilter}
 	 */
-	static FirstAura;
+	static FirstAura = new GlowFilter({
+		quality: 1,
+		color: 0xffffff,
+		distance: 1
+	});
 	/**
 	 * Second layer of the aura.
 	 * @type {GlowFilter}
 	 */
-	static SecondAura;
+	static SecondAura = new GlowFilter({
+		quality: 1,
+		distance: 5
+	});
 	/**
 	 * Third layer of the aura.
 	 * @type {GlowFilter}
 	 */
-	static ThirdAura;
+	static ThirdAura = new GlowFilter({
+		quality: 1,
+		distance: 25
+	});
 
 	/**
 	 * Creates a new SkillAura. Requires the skill type and the targeted container.
@@ -31,21 +41,6 @@ export class SkillAura {
 	 * @param {Container} target The target of the aura.
 	 */
 	constructor(type, target) {
-		if (!SkillAura.FirstAura) {
-			SkillAura.FirstAura = new GlowFilter({
-				quality: 1,
-				color: 0xffffff,
-				distance: 1
-			});
-			SkillAura.SecondAura = new GlowFilter({
-				quality: 1,
-				distance: 5
-			});
-			SkillAura.ThirdAura = new GlowFilter({
-				quality: 1,
-				distance: 25
-			});
-		}
 		target.filters = [SkillAura.FirstAura, SkillAura.SecondAura, SkillAura.ThirdAura];
 		switch (type) {
 			case SkillType.Fire:
