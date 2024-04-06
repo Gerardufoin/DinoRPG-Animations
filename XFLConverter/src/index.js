@@ -89,6 +89,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/gfx/LIBRARY/Symbol 660.xml', '_sub', undefined, 2); // slash
 //parser.parse('./resources/gfx/LIBRARY/Symbol 661.xml', '_sub', undefined, 2); // smoke_small
 //parser.parse('./resources/gfx/LIBRARY/Symbol 679.xml', '_sub', undefined, 2); // smoke
+parser.parse('./resources/gfx/LIBRARY/Symbol 686.xml', '_sub', undefined, 2); // projo blade rotation
+parser.parse('./resources/gfx/LIBRARY/Symbol 687.xml', '_sub', undefined, 2); // projo blades
 //parser.parse('./resources/gfx/LIBRARY/Symbol 859.xml', '_sub', undefined, 2); // fire spark
 //parser.parse('./resources/gfx/LIBRARY/Symbol 893.xml', '_sub', undefined, 2); // detonation
 //parser.parse('./resources/gfx/LIBRARY/Symbol 971.xml', '_sub', undefined, 2); // aura

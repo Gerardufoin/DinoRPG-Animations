@@ -22,14 +22,15 @@ export class MistralFx extends Part {
 	 * Creates a wind particle for the mistral skill.
 	 * @param {IScene} scene The Scene where the particle is instantiated.
 	 * @param {number} side The side of the caster of the skill.
+	 * @param {number} offset The offset for the wind particle. A greated offset will make it move more erratically. 40 by default.
 	 */
-	constructor(scene, side) {
+	constructor(scene, side, offset = 40) {
 		super(new Container(), scene);
 
 		const wind = new Container();
 		wind.addChild(new Asset(ref.fx.light));
 		wind.filters = [Wind.GlowFilter];
-		wind.x = Math.random() * 40;
+		wind.x = Math.random() * offset;
 		wind.scale.set(1 + Math.random() * 0.5);
 		this._root.addChild(wind);
 

@@ -23,6 +23,7 @@ import { GrLevitRay } from './skills/group/GrLevitRay.js';
 import { GrLightning } from './skills/group/GrLightning.js';
 import { GrMeteor } from './skills/group/GrMeteor.js';
 import { GrMistral } from './skills/group/GrMistral.js';
+import { GrProjectile } from './skills/group/GrProjectile.js';
 import { GrShower } from './skills/group/GrShower.js';
 import { GrTornado } from './skills/group/GrTornado.js';
 import { GrVines } from './skills/group/GrVines.js';
@@ -178,6 +179,16 @@ export class Skill extends State {
 				return new GrBlackHole(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Ice:
 				return new GrIce(this._scene, () => this.end(), this._fighter, this._targets);
+			case SkillList.Projectile:
+				return new GrProjectile(
+					this._scene,
+					() => this.end(),
+					this._fighter,
+					this._targets,
+					this._details.fx,
+					this._details.anim,
+					this._details.speed
+				);
 			case SkillList.Tremor:
 			case SkillList.JumpAttack:
 				return new GrJumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);

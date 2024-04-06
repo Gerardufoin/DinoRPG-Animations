@@ -27,6 +27,7 @@ import { GlowFilter } from '@pixi/filter-glow';
 import { SCENE_HEIGHT, SCENE_WIDTH } from '../fight/IScene.js';
 import { ConstantShaderManager } from './ConstantShaderManager.js';
 import { glow_attack_1, glow_attack_2 } from '../smonster/wolf/parts.js';
+import { Acorn } from '../fight/parts/skills/projectile/Acorn.js';
 
 /**
  * Class used to preload part of the assets.
@@ -64,6 +65,7 @@ export class PreloadData {
 		SkillAura.FirstAura,
 		SkillAura.SecondAura,
 		SkillAura.ThirdAura,
+		Acorn.GlowFilter,
 		ConstantShaderManager.getGlowFilter({
 			distance: glow_attack_1.distance,
 			color: glow_attack_1.color,

@@ -122,6 +122,7 @@ export let mapping_gfx = {
 	227: 'fx/bubble/break_5',
 	228: 'fx/bubble/break_6',
 	229: 'fx/bubble/break_7',
+	581: 'fx/projectile/rock_shard',
 	584: 'scene/click',
 	586: 'status/slow',
 	589: 'status/quick',
@@ -156,6 +157,11 @@ export let mapping_gfx = {
 	658: 'fx/slash_8',
 	//662: 'fx/coq_patte_b',
 	//670: 'fx/coq_patte_a', // Edited manually to work with blend MULTIPLY instead of OVERLAY
+	680: 'fx/projectile/sand',
+	//681: 'fx/projectile/acorn', // Edited manually to bake in the adjust shader
+	683: 'fx/projectile/stinger',
+	684: 'fx/projectile/blade',
+	688: 'fx/projectile/rock',
 	696: 'scene/timebar_bg',
 	697: 'scene/timebar',
 	700: 'fx/ice/back',
