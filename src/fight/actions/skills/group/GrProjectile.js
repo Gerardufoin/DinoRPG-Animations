@@ -1,8 +1,7 @@
 // @ts-check
-// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/Ice.hx
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/Projectile.hx
 
 import { Layers } from '../../../DepthManager.js';
-import { SkillType } from '../../../Enums.js';
 import { Fighter } from '../../../Fighter.js';
 import { Scene } from '../../../Scene.js';
 import { Timer } from '../../../Timer.js';
@@ -95,7 +94,7 @@ export class GrProjectile extends GroupEffect {
 				return new Rock(this._scene, x, y, z, this._caster.intSide, target);
 		}
 		console.error(
-			`[GrProjectile]: Unknown fx ${this._fx}. Expected values are 'sand', 'gland', 'aiguillon', 'lame', or 'rocher'.`
+			`[GrProjectile]: Unknown fx '${this._fx}'. Expected values are 'sand', 'gland', 'aiguillon', 'lame', or 'rocher'.`
 		);
 		return new AProjectile(this._scene, x, y, z, this._caster.intSide, target);
 	}

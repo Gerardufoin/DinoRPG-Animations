@@ -60,8 +60,7 @@ export class GrLightning extends GroupEffect {
 				}
 				break;
 			case 1:
-				if (this._frameTimer >= 1) {
-					this._frameTimer -= 1;
+				if (timer.frameElapsed) {
 					for (const t of this._targets) {
 						if (t.life !== null) {
 							t.fighter.dm.addSprite(

@@ -10,6 +10,7 @@ import { FxAnim } from './skills/fx/FxAnim.js';
 import { FxAttach } from './skills/fx/FxAttach.js';
 import { FxAura } from './skills/fx/FxAura.js';
 import { GrBlackHole } from './skills/group/GrBlackHole.js';
+import { GrChainLightning } from './skills/group/GrChainLightning.js';
 import { GrCorruption } from './skills/group/GrCorruption.js';
 import { GrCrepuscule } from './skills/group/GrCrepuscule.js';
 import { GrDisc } from './skills/group/GrDisc.js';
@@ -192,6 +193,8 @@ export class Skill extends State {
 			case SkillList.Tremor:
 			case SkillList.JumpAttack:
 				return new GrJumpAttack(this._scene, () => this.end(), this._fighter, this._targets, this._details.fx);
+			case SkillList.ChainLightning:
+				return new GrChainLightning(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Anim:
 				return new FxAnim(this._scene, () => this.end(), this._fighter, this._details.anim);
 			case SkillList.Aura:

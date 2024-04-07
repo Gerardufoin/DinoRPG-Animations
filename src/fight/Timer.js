@@ -20,6 +20,19 @@ export class Timer extends Ticker {
 	 * @type {number}
 	 */
 	_expectedFPS;
+	/**
+	 * A timer keeping track of the tmod elapsed since the last frame based on the expected frame rate.
+	 * @type {number}
+	 */
+	_frameTimer = 0;
+
+	/**
+	 * Return true when a frame of the expected frame rate has elapsed.
+	 * @type {boolean}
+	 */
+	get frameElapsed() {
+		return this._frameTimer >= 1;
+	}
 
 	/**
 	 * Build upon PixiJS Ticker to include the frame limitation of DinoRPG via tmod.
@@ -28,6 +41,12 @@ export class Timer extends Ticker {
 	constructor(fps) {
 		super();
 		this._expectedFPS = fps;
+		this.add(() => {
+			if (this._frameTimer >= 1) {
+				this._frameTimer -= 1;
+			}
+			this._frameTimer += this.tmod;
+		});
 	}
 
 	/**

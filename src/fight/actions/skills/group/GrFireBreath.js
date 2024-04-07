@@ -49,8 +49,7 @@ export class GrFireBreath extends GroupEffect {
 				}
 				break;
 			case 1:
-				if (this._frameTimer >= 1) {
-					this._frameTimer -= 1;
+				if (timer.frameElapsed) {
 					for (let i = 0; i < 2; ++i) {
 						this._scene.dm.addSprite(
 							new FireBreath(

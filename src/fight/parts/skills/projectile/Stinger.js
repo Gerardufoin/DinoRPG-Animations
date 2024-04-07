@@ -20,11 +20,10 @@ export class Stinger extends AProjectile {
 	 */
 	_side;
 	/**
-	 * The timer for the wind particles.
-	 * Wind particles are spawned in when it reaches 1.
+	 * Last set coefficient.
 	 * @type {number}
 	 */
-	_windTimer = 0;
+	_coef = 0;
 
 	/**
 	 * Creates a projectile of type Stinger.
@@ -49,16 +48,7 @@ export class Stinger extends AProjectile {
 	setCoefficient(coef) {
 		super.setCoefficient(coef);
 
-		if (this._windTimer >= 1) {
-			this._windTimer -= 1;
-			const max = 1 + Math.floor(5 * (1 - coef));
-			for (let i = 0; i < max; ++i) {
-				this._scene.dm.addSprite(
-					new StingerWind(this._scene, this._x, this._y, this._z, this._side),
-					Layers.Scene.FIGHTERS
-				);
-			}
-		}
+		this._coef = coef;
 	}
 
 	/**
@@ -67,6 +57,15 @@ export class Stinger extends AProjectile {
 	 */
 	update(timer) {
 		super.update(timer);
-		this._windTimer += timer.tmod;
+
+		if (timer.frameElapsed) {
+			const max = 1 + Math.floor(5 * (1 - this._coef));
+			for (let i = 0; i < max; ++i) {
+				this._scene.dm.addSprite(
+					new StingerWind(this._scene, this._x, this._y, this._z, this._side),
+					Layers.Scene.FIGHTERS
+				);
+			}
+		}
 	}
 }

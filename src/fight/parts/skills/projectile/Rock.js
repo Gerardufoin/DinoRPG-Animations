@@ -16,13 +16,6 @@ import { Layers } from '../../../DepthManager.js';
  */
 export class Rock extends AProjectile {
 	/**
-	 * Timer for the shard particles.
-	 * When reaching 1, the shards are spawned in.
-	 * @type {number}
-	 */
-	_shardTimer = 0;
-
-	/**
 	 * Creates a projectile of type Rock.
 	 * @param {IScene} scene The Scene where the projectile is instantiated.
 	 * @param {number} x The initial x position.
@@ -48,16 +41,8 @@ export class Rock extends AProjectile {
 	setCoefficient(coef) {
 		super.setCoefficient(coef);
 
-		if (coef < 0.8) {
-			this._shardTimer = 0;
-		} else {
+		if (coef >= 0.8) {
 			this._root.visible = false;
-		}
-		if (this._shardTimer >= 1) {
-			this._shardTimer -= 1;
-			for (let i = 0; i < 5; ++i) {
-				this._scene.dm.addSprite(new RockShard(this._scene, this._x, this._y), Layers.Scene.FIGHTERS);
-			}
 		}
 	}
 
@@ -67,6 +52,12 @@ export class Rock extends AProjectile {
 	 */
 	update(timer) {
 		super.update(timer);
-		this._shardTimer += timer.tmod;
+
+		// If the rock is invisible, we spawn shards each expected frame.
+		if (!this._root.visible && timer.frameElapsed) {
+			for (let i = 0; i < 5; ++i) {
+				this._scene.dm.addSprite(new RockShard(this._scene, this._x, this._y), Layers.Scene.FIGHTERS);
+			}
+		}
 	}
 }

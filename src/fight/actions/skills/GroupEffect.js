@@ -26,11 +26,6 @@ export class GroupEffect extends State {
 	 * @type {number}
 	 */
 	_step = 0;
-	/**
-	 * Timer to respect frame rate.
-	 * @type {number}
-	 */
-	_frameTimer = 0;
 
 	/**
 	 * Figther casting the skill.
@@ -81,11 +76,10 @@ export class GroupEffect extends State {
 	 */
 	update(timer) {
 		super.update(timer);
-		this._frameTimer += timer.tmod;
+
 		if (!this._manualAura && this._aura) {
 			this._aura.update(this._coef);
-			if (this._frameTimer >= 1) {
-				this._frameTimer -= 1;
+			if (timer.frameElapsed) {
 				this.genRayConcentrate();
 			}
 		}
@@ -96,7 +90,6 @@ export class GroupEffect extends State {
 	 */
 	nextStep() {
 		this._step++;
-		this._frameTimer = 0;
 		this._coef = 0;
 		if (!this._manualAura && this._aura) {
 			this.removeSkillAura();

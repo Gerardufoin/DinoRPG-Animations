@@ -53,8 +53,7 @@ export class GrShower extends GroupEffect {
 				}
 				break;
 			case 1:
-				if (this._coef < 0.8 && this._frameTimer >= 1) {
-					this._frameTimer -= 1;
+				if (this._coef < 0.8 && timer.frameElapsed) {
 					for (let i = 0; i < 2; ++i) {
 						switch (this._type) {
 							case SkillType.Fire:

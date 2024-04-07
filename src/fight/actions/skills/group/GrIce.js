@@ -45,8 +45,7 @@ export class GrIce extends GroupEffect {
 				break;
 			// Creates wind in the scene
 			case 1:
-				if (this._coef < 0.8 && this._frameTimer >= 1) {
-					this._frameTimer -= 1;
+				if (this._coef < 0.8 && timer.frameElapsed) {
 					for (let i = 0; i < 3; ++i) {
 						this._scene.dm.addSprite(
 							new MistralFx(this._scene, this._caster.intSide),
