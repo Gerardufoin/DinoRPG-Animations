@@ -695,7 +695,7 @@ export class MTConverter {
 				ret.args = [skill.details.fx];
 				break;
 			case SkillList.Heal:
-				ret.args = [skill.details.type];
+				ret.args = [skill.details.type ?? 0];
 				break;
 			case SkillList.Anim:
 				ret.args = [skill.details.anim];

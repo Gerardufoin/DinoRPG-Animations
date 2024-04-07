@@ -278,7 +278,7 @@ const fightVersion = [
 			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.ChainLightning,
+				skill: DinoAnim.SkillList.Heal,
 				details: {
 					fid: 0,
 					targets: [

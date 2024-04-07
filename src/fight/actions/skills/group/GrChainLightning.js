@@ -1,5 +1,5 @@
 // @ts-check
-// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/Projectile.hx
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/ChainLightning.hx
 
 import { BLEND_MODES, Graphics } from 'pixi.js';
 import { Fighter } from '../../../Fighter.js';
