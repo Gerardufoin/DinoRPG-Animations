@@ -81,7 +81,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/gfx/LIBRARY/Symbol 222.xml', '_sub', undefined, 2); // fxBubble
 //parser.parse('./resources/gfx/LIBRARY/Symbol 231.xml', '_sub', undefined, 2); // fxSurvivor
 //parser.parse('./resources/gfx/LIBRARY/Symbol 232.xml', '_sub', undefined, 2); // fxOndeFocus
-//parser.parse('./resources/gfx/LIBRARY/Symbol 836.xml', '_sub', undefined, 2); // fxFlameche
+//parser.parse('./resources/gfx/LIBRARY/Symbol 311.xml', '_sub', undefined, 2); // _sylphide
 //parser.parse('./resources/gfx/LIBRARY/Symbol 617.xml', '_sub', undefined, 2); // strong notification
 //parser.parse('./resources/gfx/LIBRARY/Symbol 643.xml', '_sub', undefined, 2); // brulure
 //parser.parse('./resources/gfx/LIBRARY/Symbol 647.xml', '_sub', undefined, 2); // partDirt
@@ -89,11 +89,15 @@ const parser = new XFLParser();
 //parser.parse('./resources/gfx/LIBRARY/Symbol 660.xml', '_sub', undefined, 2); // slash
 //parser.parse('./resources/gfx/LIBRARY/Symbol 661.xml', '_sub', undefined, 2); // smoke_small
 //parser.parse('./resources/gfx/LIBRARY/Symbol 679.xml', '_sub', undefined, 2); // smoke
-parser.parse('./resources/gfx/LIBRARY/Symbol 686.xml', '_sub', undefined, 2); // projo blade rotation
-parser.parse('./resources/gfx/LIBRARY/Symbol 687.xml', '_sub', undefined, 2); // projo blades
+//parser.parse('./resources/gfx/LIBRARY/Symbol 686.xml', '_sub', undefined, 2); // projo blade rotation
+//parser.parse('./resources/gfx/LIBRARY/Symbol 687.xml', '_sub', undefined, 2); // projo blades
+//parser.parse('./resources/gfx/LIBRARY/Symbol 836.xml', '_sub', undefined, 2); // fxFlameche
 //parser.parse('./resources/gfx/LIBRARY/Symbol 859.xml', '_sub', undefined, 2); // fire spark
 //parser.parse('./resources/gfx/LIBRARY/Symbol 893.xml', '_sub', undefined, 2); // detonation
+parser.parse('./resources/gfx/LIBRARY/Symbol 910.xml', '_sub', undefined, 2); // clouds
+parser.parse('./resources/gfx/LIBRARY/Symbol 932.xml', '_sub', undefined, 2); // waves
 //parser.parse('./resources/gfx/LIBRARY/Symbol 971.xml', '_sub', undefined, 2); // aura
+//parser.parse('./resources/gfx/LIBRARY/Symbol 974.xml', '_sub', undefined, 2); // fxChargeImpact
 
 const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');

@@ -89,7 +89,7 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'goupi'
+					gfx: 'coq'
 				}
 			},
 			{
@@ -104,163 +104,7 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'goupi'
-				}
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: '',
-					side: false,
-					scale: 1,
-					fid: 3,
-					gfx: 'goupi'
-				}
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: '',
-					side: false,
-					scale: 1,
-					fid: 4,
-					gfx: 'goupi'
-				}
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: '',
-					side: false,
-					scale: 1,
-					fid: 5,
-					gfx: 'goupi'
-				}
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: '',
-					side: false,
-					scale: 1,
-					fid: 6,
-					gfx: 'goupi'
-				}
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: '',
-					side: false,
-					scale: 1,
-					fid: 7,
-					gfx: 'goupi'
-				}
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: '',
-					side: false,
-					scale: 1,
-					fid: 8,
-					gfx: 'goupi'
-				}
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: '',
-					side: false,
-					scale: 1,
-					fid: 9,
-					gfx: 'goupi'
-				}
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: '',
-					side: false,
-					scale: 1,
-					fid: 10,
-					gfx: 'goupi'
-				}
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: '',
-					side: false,
-					scale: 1,
-					fid: 11,
-					gfx: 'goupi'
-				}
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: '',
-					side: false,
-					scale: 1,
-					fid: 12,
-					gfx: 'goupi'
-				}
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: '',
-					side: false,
-					scale: 1,
-					fid: 13,
-					gfx: 'goupi'
-				}
-			},
-			{
-				action: DinoAnim.Action.Add,
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: '',
-					side: false,
-					scale: 1,
-					fid: 14,
-					gfx: 'goupi'
+					gfx: 'barche'
 				}
 			},
 			/*{
@@ -278,25 +122,11 @@ const fightVersion = [
 			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Heal,
+				skill: DinoAnim.SkillList.Cloud,
 				details: {
 					fid: 0,
-					targets: [
-						{ id: 1, life: 10 },
-						{ id: 2, life: 10 },
-						{ id: 3, life: 10 },
-						{ id: 4, life: 10 },
-						{ id: 5, life: 10 },
-						{ id: 6, life: 10 },
-						{ id: 7, life: 10 },
-						{ id: 8, life: 10 },
-						{ id: 9, life: 10 },
-						{ id: 10, life: 10 },
-						{ id: 11, life: 10 },
-						{ id: 12, life: 10 },
-						{ id: 13, life: 10 },
-						{ id: 14, life: 10 }
-					]
+					targets: [{ id: 1, life: 10 }],
+					id: 1
 				}
 			}
 			/*{
