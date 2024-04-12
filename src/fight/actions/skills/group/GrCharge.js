@@ -1,5 +1,5 @@
 // @ts-check
-// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/Ice.hx
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/Charge.hx
 
 import { fx_charge_impact } from '../../../../gfx/fx/charge_impact.js';
 import { Layers } from '../../../DepthManager.js';

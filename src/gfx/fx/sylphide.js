@@ -4,7 +4,7 @@ import { ref } from '../references.js';
 const glow = {
 	distance: 5,
 	color: 0xffff00,
-	strength: 2,
+	strength: 1,
 	quality: 0.5
 };
 

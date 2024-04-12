@@ -228,6 +228,13 @@ export class Fighter extends Phys {
 	get height() {
 		return this._height;
 	}
+	/**
+	 * Get the width of the fighter.
+	 * @type {number}
+	 */
+	get width() {
+		return this._width;
+	}
 
 	/**
 	 * Get the running speed of the fighter.

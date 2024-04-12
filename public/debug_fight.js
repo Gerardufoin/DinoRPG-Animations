@@ -122,7 +122,7 @@ const fightVersion = [
 			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Charge,
+				skill: DinoAnim.SkillList.Sylfide,
 				details: {
 					fid: 0,
 					targets: [

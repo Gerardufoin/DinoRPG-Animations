@@ -28,6 +28,7 @@ import { GrMeteor } from './skills/group/GrMeteor.js';
 import { GrMistral } from './skills/group/GrMistral.js';
 import { GrProjectile } from './skills/group/GrProjectile.js';
 import { GrShower } from './skills/group/GrShower.js';
+import { GrSylfide } from './skills/group/GrSylfide.js';
 import { GrTornado } from './skills/group/GrTornado.js';
 import { GrVines } from './skills/group/GrVines.js';
 import { GrWaterCanon } from './skills/group/GrWaterCanon.js';
@@ -203,6 +204,8 @@ export class Skill extends State {
 				return new GrCharge(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Anim:
 				return new FxAnim(this._scene, () => this.end(), this._fighter, this._details.anim);
+			case SkillList.Sylfide:
+				return new GrSylfide(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Aura:
 				return new FxAura(
 					this._scene,

@@ -25,6 +25,18 @@ export class Entity extends Sprite {
 	 * @type {IScene}
 	 */
 	_scene;
+	/**
+	 * If true, the Entity auto update its position to stay in the scene.
+	 * @type {boolean}
+	 */
+	_autoUpdatePos = true;
+	/**
+	 * If set to false, the Entity stops updating its position in the scene based on its internal coordinates.
+	 * @type {boolean}
+	 */
+	set autoUpdatePosition(v) {
+		this._autoUpdatePos = v;
+	}
 
 	/**
 	 * Create a new Entity.
@@ -52,6 +64,8 @@ export class Entity extends Sprite {
 	 * Update the position of the Entity based on its internal xyz coordinates.
 	 */
 	updatePos() {
+		if (!this._autoUpdatePos) return;
+
 		const sceneY = this._scene.getY(this._y);
 		this._root.x = this._x;
 		if (this._z !== undefined) {
