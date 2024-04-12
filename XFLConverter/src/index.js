@@ -94,8 +94,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/gfx/LIBRARY/Symbol 836.xml', '_sub', undefined, 2); // fxFlameche
 //parser.parse('./resources/gfx/LIBRARY/Symbol 859.xml', '_sub', undefined, 2); // fire spark
 //parser.parse('./resources/gfx/LIBRARY/Symbol 893.xml', '_sub', undefined, 2); // detonation
-parser.parse('./resources/gfx/LIBRARY/Symbol 910.xml', '_sub', undefined, 2); // clouds
-parser.parse('./resources/gfx/LIBRARY/Symbol 932.xml', '_sub', undefined, 2); // waves
+//parser.parse('./resources/gfx/LIBRARY/Symbol 910.xml', '_sub', undefined, 2); // clouds
+//parser.parse('./resources/gfx/LIBRARY/Symbol 932.xml', '_sub', undefined, 2); // waves
 //parser.parse('./resources/gfx/LIBRARY/Symbol 971.xml', '_sub', undefined, 2); // aura
 //parser.parse('./resources/gfx/LIBRARY/Symbol 974.xml', '_sub', undefined, 2); // fxChargeImpact
 

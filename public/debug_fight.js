@@ -122,10 +122,13 @@ const fightVersion = [
 			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Cloud,
+				skill: DinoAnim.SkillList.Charge,
 				details: {
 					fid: 0,
-					targets: [{ id: 1, life: 10 }],
+					targets: [
+						{ id: 1, life: 10 },
+						{ id: 2, life: 10 }
+					],
 					id: 1
 				}
 			}

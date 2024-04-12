@@ -11,12 +11,12 @@ import { Castle } from './Castle.js';
 import { DepthManager, Layers } from './DepthManager.js';
 import { IScene, SCENE_FULL_WIDTH, SCENE_HEIGHT, SCENE_MARGIN, SCENE_WIDTH } from './IScene.js';
 import { LoadingScreen } from './parts/scene/LoadingScreen.js';
-import { Phys } from './Phys.js';
 import { GroundDirt } from './parts/scene/GroundDirt.js';
 import { GroundStone } from './parts/scene/GroundStone.js';
 import { PixiHelper } from '../display/PixiHelper.js';
 import { GroundWater } from './parts/scene/GroundWater.js';
 import { GroundType } from './Enums.js';
+import { Part } from './Part.js';
 
 /**
  * The fight scene containing all the different layers to display.
@@ -276,7 +276,7 @@ export class Scene extends IScene {
 	 * @param {number} vy The initial y velocity of the particle.
 	 * @param {number} vz The initial z velocity of the particle.
 	 * @param {boolean} flJump Is the call related to a jump action? Used for spawning rocks.
-	 * @returns {Phys} The ground part generated.
+	 * @returns {Part} The ground part generated.
 	 */
 	genGroundPart(x, y, vx = 0, vy = 0, vz = 0, flJump = false) {
 		switch (this._groundType) {

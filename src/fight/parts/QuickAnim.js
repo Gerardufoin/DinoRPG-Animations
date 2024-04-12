@@ -24,11 +24,12 @@ export class QuickAnim extends Phys {
 	 * @param {object} animation The animation to instantiate.
 	 * @param {number} x The x coordinate of the animation. 0 by default.
 	 * @param {number} y The y coordinate of the animation. 0 by default.
+	 * @param {number} z The z coordinate of the animation. 0 by default.
 	 * @param {number} side The direction the animation is facing. 1 for normal diration, -1 for mirror. 1 by default.
 	 * @param {number} alpha The alpha of the animation. 1 by default.
 	 * @param {number} scale The scale of the animation. 1 by default.
 	 */
-	constructor(scene, animation, x = 0, y = 0, side = 1, alpha = 1, scale = 1) {
+	constructor(scene, animation, x = 0, y = 0, z = 0, side = 1, alpha = 1, scale = 1) {
 		super(new Container(), scene);
 
 		this._animator = new Animator(false).loadAnimation(animation, scale);
@@ -41,6 +42,7 @@ export class QuickAnim extends Phys {
 
 		this._x = x;
 		this._y = y;
+		this._z = z;
 		this._animator.scale.x = side;
 		this.updatePos();
 	}

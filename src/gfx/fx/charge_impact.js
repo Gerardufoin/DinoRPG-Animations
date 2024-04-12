@@ -1,4 +1,5 @@
 // @ts-check
+import { BLEND_MODES } from 'pixi.js';
 import { ref } from '../references.js';
 
 // GFX 974 fxChargeImpact
@@ -6,22 +7,26 @@ export const fx_charge_impact = {
 	parts: {
 		i1: [
 			{
-				ref: ref.fx.charge_impact
+				ref: ref.fx.charge_impact,
+				blend: BLEND_MODES.ADD
 			}
 		],
 		i2: [
 			{
-				ref: ref.fx.charge_impact
+				ref: ref.fx.charge_impact,
+				blend: BLEND_MODES.ADD
 			}
 		],
 		i3: [
 			{
-				ref: ref.fx.charge_impact
+				ref: ref.fx.charge_impact,
+				blend: BLEND_MODES.ADD
 			}
 		],
 		i4: [
 			{
-				ref: ref.fx.charge_impact
+				ref: ref.fx.charge_impact,
+				blend: BLEND_MODES.ADD
 			}
 		]
 	},

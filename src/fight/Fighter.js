@@ -1622,6 +1622,7 @@ export class Fighter extends Phys {
 					animation,
 					this._x - (x + (options.offsetX ?? 0)) * this._sens * this.intSide,
 					this._y + y + (options.offsetY ?? 0),
+					0,
 					-this._sens * this.intSide,
 					(options.alpha ?? 1) * (options.randomAlpha ? Math.random() : 1),
 					options.scale
