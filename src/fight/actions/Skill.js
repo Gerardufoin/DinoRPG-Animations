@@ -14,6 +14,7 @@ import { GrChainLightning } from './skills/group/GrChainLightning.js';
 import { GrCharge } from './skills/group/GrCharge.js';
 import { GrCorruption } from './skills/group/GrCorruption.js';
 import { GrCrepuscule } from './skills/group/GrCrepuscule.js';
+import { GrDeluge } from './skills/group/GrDeluge.js';
 import { GrDisc } from './skills/group/GrDisc.js';
 import { GrDivineLight } from './skills/group/GrDivineLight.js';
 import { GrFireBreath } from './skills/group/GrFireBreath.js';
@@ -224,6 +225,8 @@ export class Skill extends State {
 					this._details.power,
 					this._details.speed
 				);
+			case SkillList.Deluge:
+				return new GrDeluge(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Attach:
 				return new FxAttach(this._scene, () => this.end(), this._fighter, this._details.fx);
 			case SkillList.Corruption:

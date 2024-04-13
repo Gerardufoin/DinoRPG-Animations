@@ -122,7 +122,7 @@ const fightVersion = [
 			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Rafale,
+				skill: DinoAnim.SkillList.Deluge,
 				details: {
 					fid: 0,
 					targets: [

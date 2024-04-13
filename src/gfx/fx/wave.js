@@ -6,7 +6,8 @@ export const fx_wave = {
 	parts: {
 		w: [
 			{
-				ref: ref.fx.wave.wave
+				ref: ref.fx.wave.wave,
+				alpha: 0.75
 			}
 		],
 		mask: [
@@ -101,7 +102,7 @@ export const fx_wave = {
 		]
 	},
 	masks: {
-		wave: 'mask',
+		w: 'mask',
 		e1: 'mask',
 		e2: 'mask',
 		e3: 'mask',
@@ -123,14 +124,14 @@ export const fx_wave = {
 	animation: {
 		id: 'fx_wave',
 		callbacks: {
-			36: [['stop']]
+			33: [['stop']]
 		},
 		frames: [
 			{
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: -146.4,
 					ty: 36.95,
 					l: 0
@@ -140,7 +141,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: -130.3,
 					ty: 23.8,
 					l: 0
@@ -150,7 +151,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: -115.1,
 					ty: 12.15,
 					l: 0
@@ -160,7 +161,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: -100.5,
 					ty: 1.85,
 					l: 0
@@ -170,7 +171,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: -86.45,
 					ty: -7.2,
 					l: 0
@@ -180,7 +181,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: -73.05,
 					ty: -14.9,
 					l: 0
@@ -190,7 +191,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: -60.4,
 					ty: -21.3,
 					l: 0
@@ -200,7 +201,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: -48.5,
 					ty: -26.4,
 					l: 0
@@ -210,7 +211,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: -37.4,
 					ty: -30.25,
 					l: 0
@@ -220,7 +221,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: -27.3,
 					ty: -32.9,
 					l: 0
@@ -230,7 +231,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: -18.25,
 					ty: -34.45,
 					l: 0
@@ -240,7 +241,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: -10.4,
 					ty: -35.15,
 					l: 0
@@ -250,7 +251,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: -7.1,
 					ty: -31.75,
 					l: 0
@@ -260,7 +261,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: -3.3,
 					ty: -27.85,
 					l: 0
@@ -270,7 +271,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: 1,
 					ty: -23.45,
 					l: 0
@@ -280,7 +281,7 @@ export const fx_wave = {
 				mask: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: 5.7,
 					ty: -18.6,
 					l: 0
@@ -293,7 +294,7 @@ export const fx_wave = {
 				e1: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: 10.95,
 					ty: -13.25,
 					l: 0
@@ -306,7 +307,7 @@ export const fx_wave = {
 				e2: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: 16.6,
 					ty: -7.4,
 					l: 0
@@ -319,7 +320,7 @@ export const fx_wave = {
 				e3: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: 22.8,
 					ty: -1.1,
 					l: 0
@@ -332,7 +333,7 @@ export const fx_wave = {
 				e4: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: 29.4,
 					ty: 5.75,
 					l: 0
@@ -345,7 +346,7 @@ export const fx_wave = {
 				e5: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: 36.5,
 					ty: 13.05,
 					l: 0
@@ -358,7 +359,7 @@ export const fx_wave = {
 				e6: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: 44.1,
 					ty: 20.8,
 					l: 0
@@ -371,7 +372,7 @@ export const fx_wave = {
 				e7: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: 52.15,
 					ty: 29.1,
 					l: 0
@@ -384,7 +385,7 @@ export const fx_wave = {
 				e8: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: 60.7,
 					ty: 37.85,
 					l: 0
@@ -397,7 +398,7 @@ export const fx_wave = {
 				e9: {
 					l: 1
 				},
-				wave: {
+				w: {
 					tx: 69.7,
 					ty: 47.1,
 					l: 0
@@ -466,7 +467,8 @@ export const fx_wave = {
 				e17: {
 					l: 0
 				}
-			}
+			},
+			{}
 		]
 	}
 };

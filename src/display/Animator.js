@@ -285,7 +285,7 @@ export class Animator extends Container {
 
 	/**
 	 * Use the detail of an animation to fill the animator with the appropriate parts and animation.
-	 * @param {{parts: object, animation: {id: string, callbacks?: object, frames: object[]}}} details The detail of the animation to instantiate.
+	 * @param {{parts: object, animation: {id: string, callbacks?: object, frames: object[]}, masks?: object}} details The detail of the animation to instantiate.
 	 * @param {number} scale The scale of the animation. Default to 1.
 	 * @param {number[]} customization The customization array if the animation has some partIdx. Empty by default.
 	 * @returns {Animator} The instance of this animator to chain calls.
@@ -298,6 +298,9 @@ export class Animator extends Container {
 			if (element) {
 				this.addPart(pName, element);
 			}
+		}
+		if (details.masks) {
+			this._body.setMasks(details.masks);
 		}
 		this.setFrame(0);
 		return this;
