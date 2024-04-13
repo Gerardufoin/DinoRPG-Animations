@@ -592,7 +592,7 @@ export class DAConverter {
 				obj.anim = skill.args[0]; // string
 				break;
 			case SkillList.Rafale:
-				obj.fx = skill.args[0]; // string - fx droplets of water
+				//obj.fx = skill.args[0]; // string - only supposed to be partWind in the source, so ignored.
 				obj.power = skill.args[1];
 				obj.speed = skill.args[2];
 				break;

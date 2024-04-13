@@ -122,14 +122,13 @@ const fightVersion = [
 			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Sylfide,
+				skill: DinoAnim.SkillList.Rafale,
 				details: {
 					fid: 0,
 					targets: [
 						{ id: 1, life: 10 },
 						{ id: 2, life: 10 }
-					],
-					id: 1
+					]
 				}
 			}
 			/*{

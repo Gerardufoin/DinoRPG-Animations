@@ -704,7 +704,7 @@ export class MTConverter {
 				ret.args = [skill.details.anim];
 				break;
 			case SkillList.Rafale:
-				ret.args = [skill.details.fx, skill.details.power, skill.details.speed];
+				ret.args = [skill.details.fx ?? 'partWind', skill.details.power ?? 10, skill.details.speed ?? 2.5];
 				break;
 		}
 		return ret;

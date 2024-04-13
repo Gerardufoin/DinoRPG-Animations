@@ -27,6 +27,7 @@ import { GrLightning } from './skills/group/GrLightning.js';
 import { GrMeteor } from './skills/group/GrMeteor.js';
 import { GrMistral } from './skills/group/GrMistral.js';
 import { GrProjectile } from './skills/group/GrProjectile.js';
+import { GrRafale } from './skills/group/GrRafale.js';
 import { GrShower } from './skills/group/GrShower.js';
 import { GrSylfide } from './skills/group/GrSylfide.js';
 import { GrTornado } from './skills/group/GrTornado.js';
@@ -213,6 +214,15 @@ export class Skill extends State {
 					this._fighter,
 					this._details.color,
 					this._details.type
+				);
+			case SkillList.Rafale:
+				return new GrRafale(
+					this._scene,
+					() => this.end(),
+					this._fighter,
+					this._targets,
+					this._details.power,
+					this._details.speed
 				);
 			case SkillList.Attach:
 				return new FxAttach(this._scene, () => this.end(), this._fighter, this._details.fx);
