@@ -670,7 +670,7 @@ export class DAConverter {
 				break;
 			case SkillList.Cloud:
 				ret.fid = effect.args[0]; // number
-				ret.id = effect.args[1]; // number
+				//ret.id = effect.args[1]; // number ignore, always 0 for cloud and 1 for deluge
 				ret.color = effect.args[2]; // number
 				break;
 			case SkillList.Focus:

@@ -6,7 +6,8 @@ export const fx_cloud = {
 	parts: {
 		cloud: [
 			{
-				ref: ref.fx.charge_impact
+				name: 'smc',
+				ref: ref.fx.cloud.cloud
 			}
 		],
 		mask: [
@@ -23,6 +24,9 @@ export const fx_cloud = {
 	},
 	masks: {
 		cloud: 'mask'
+	},
+	expectedScaling: {
+		cloud: 1
 	},
 	animation: {
 		id: 'fx_cloud',

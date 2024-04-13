@@ -9,6 +9,7 @@ import { State } from '../State.js';
 import { FxAnim } from './skills/fx/FxAnim.js';
 import { FxAttach } from './skills/fx/FxAttach.js';
 import { FxAura } from './skills/fx/FxAura.js';
+import { FxCloud } from './skills/fx/FxCloud.js';
 import { GrBlackHole } from './skills/group/GrBlackHole.js';
 import { GrChainLightning } from './skills/group/GrChainLightning.js';
 import { GrCharge } from './skills/group/GrCharge.js';
@@ -208,14 +209,6 @@ export class Skill extends State {
 				return new FxAnim(this._scene, () => this.end(), this._fighter, this._details.anim);
 			case SkillList.Sylfide:
 				return new GrSylfide(this._scene, () => this.end(), this._fighter, this._targets);
-			case SkillList.Aura:
-				return new FxAura(
-					this._scene,
-					() => this.end(),
-					this._fighter,
-					this._details.color,
-					this._details.type
-				);
 			case SkillList.Rafale:
 				return new GrRafale(
 					this._scene,
@@ -227,6 +220,16 @@ export class Skill extends State {
 				);
 			case SkillList.Deluge:
 				return new GrDeluge(this._scene, () => this.end(), this._fighter, this._targets);
+			case SkillList.Aura:
+				return new FxAura(
+					this._scene,
+					() => this.end(),
+					this._fighter,
+					this._details.color,
+					this._details.type
+				);
+			case SkillList.Cloud:
+				return new FxCloud(this._scene, () => this.end(), this._fighter, this._details.color);
 			case SkillList.Attach:
 				return new FxAttach(this._scene, () => this.end(), this._fighter, this._details.fx);
 			case SkillList.Corruption:

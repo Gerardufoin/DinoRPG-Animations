@@ -157,14 +157,8 @@ export class PartManager {
 					part.transform?.b ?? 0,
 					part.transform?.c ?? 0,
 					part.transform?.d ?? 1,
-					((part.transform?.a ?? 1) * -(ref.offset?.x ?? 0) +
-						(part.transform?.c ?? 0) * -(ref.offset?.y ?? 0) +
-						(part.transform?.tx ?? 0)) *
-						scale,
-					((part.transform?.b ?? 0) * -(ref.offset?.x ?? 0) +
-						(part.transform?.d ?? 1) * -(ref.offset?.y ?? 0) +
-						(part.transform?.ty ?? 0)) *
-						scale
+					(part.transform?.tx ?? 0) * scale,
+					(part.transform?.ty ?? 0) * scale
 				)
 			)
 		);
@@ -174,6 +168,8 @@ export class PartManager {
 		let texture = TextureManager.getTextureFromCompressedReference(ref, scale * scaling, resolution);
 		const sprite = Sprite.from(texture);
 		sprite.scale.set(1 / (resolution * scaling));
+		sprite.x -= (ref.offset?.x ?? 0) * scale;
+		sprite.y -= (ref.offset?.y ?? 0) * scale;
 
 		if (part.colorIdx !== undefined) {
 			let pal = palette[part.colorIdx];
@@ -187,6 +183,11 @@ export class PartManager {
 		}
 		sprite.filters = PartManager.createPartFilters(part);
 		localTransform.addChild(sprite);
+
+		if (part.name) {
+			localTransform.name = part.name;
+		}
+
 		return localTransform;
 	}
 

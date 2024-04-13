@@ -782,7 +782,7 @@ export class MTConverter {
 				break;
 			case SkillList.Cloud:
 				ret.args.push(skill.details.fid);
-				ret.args.push(skill.details.id);
+				ret.args.push(0); // cloud is always 0, 1 is for deluge which is another enum
 				ret.args.push(skill.details.color);
 				break;
 			case SkillList.Focus:
