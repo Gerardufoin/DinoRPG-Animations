@@ -87,8 +87,11 @@ export class sdino extends Animator {
 		if (!this._dinoInfos) {
 			return;
 		}
+		// Rare colors
 		if (dParts?.length > 14 && dParts[14] <= 9 && dParts[14] > 0) {
-			this._palette = this._dinoInfos.palette[dParts[14]];
+			// If idx is greater than the palette number, we can it at the last palette.
+			const palIdx = Math.min(dParts[14], this._dinoInfos.palette.length - 1);
+			this._palette = this._dinoInfos.palette[palIdx];
 		}
 		if (!this._palette) {
 			this._palette = this._dinoInfos.palette[0];

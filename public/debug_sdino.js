@@ -90,10 +90,17 @@ function addDinoz(data, showOrigin = false) {
 	addFlashPreview(data, dinozP.getChkCode(), container);
 }
 
-// Moueffe
+// Dragon Jr
 addDinoz('09T1Yt9wqq4Rx000', true);
-addDinoz('0813611605200000', true);
-/*addDinoz('09w7y7qqpdhld000');
+
+// Debug
+addDinoz('33ooVfmT1EWYH2MD', true);
+addDinoz('43MFLTgd72jcTSKT', true);
+addDinoz('73D2pW29UoMTv2Qc', true);
+
+// Moueffe
+/*addDinoz('0813611605200000', true);
+addDinoz('09w7y7qqpdhld000');
 addDinoz('09adQBgO8T065000');
 addDinoz('09vGg4LW1S9fn000');
 addDinoz('0A8uYQDU0FywV000'); // Krapassa
