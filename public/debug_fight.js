@@ -122,7 +122,7 @@ const fightVersion = [
 			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Cloud,
+				skill: DinoAnim.SkillList.MudWall,
 				details: {
 					fid: 0,
 					targets: [

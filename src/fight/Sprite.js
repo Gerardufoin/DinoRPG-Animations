@@ -107,7 +107,7 @@ export class Sprite {
 	getDist(o) {
 		const dx = this._x - o.x;
 		const dy = this._y - o.y;
-		return Math.sqrt(dx * dx + dy * dy);
+		return Math.sqrt(dx ** 2 + dy ** 2);
 	}
 
 	/**

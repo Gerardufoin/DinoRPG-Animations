@@ -43,6 +43,8 @@ import { fx_smoke, fx_smoke_small } from '../gfx/fx/attach/smoke/dirt.js';
 import { ConstantShaderManager } from '../display/ConstantShaderManager.js';
 import { IceBlock } from './parts/skills/ice/IceBlock.js';
 import { IceShard } from './parts/skills/ice/IceShard.js';
+import { MudWall } from './parts/skills/MudWall.js';
+import { TFx, Tween } from '../display/Tween.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -306,6 +308,11 @@ export class Fighter extends Phys {
 	 * @type {{front: Container, back: Container}}
 	 */
 	_iceBlock;
+	/**
+	 * The mud wall in front of the Fighter, if any.
+	 * @type {MudWall}
+	 */
+	_mudWall;
 	/**
 	 * While greated than 0, the Fighter will generate drips each frame.
 	 * @type {number}
@@ -1452,18 +1459,30 @@ export class Fighter extends Phys {
 		}
 	}
 
-	/*public function fxMudWall() {
-		mcMudWall = bdm.attach( "mcMudwall", DP_FRONT );
-		mcMudWall._xscale = (side?1:-1) * (ray*4 + 30);
-		mcMudWall._yscale = mcMudWall._xscale;
-		mcMudWall._y = -.5*height;
-		//skin._p0._p1._anim._sub.stop();
+	/**
+	 * Creates a mud wall in front of the Fighter, if no mud wall already exist.
+	 */
+	fxAddMudWall() {
+		if (!this._mudWall) {
+			this._mudWall = new MudWall(0, -this.height * 0.5, (this.intSide * (this.ray * 4 + 30)) / 100);
+			this.dm.addSprite(this._mudWall, Layers.Fighter.FRONT);
+		}
 	}
-	
-	public function fxRemoveMudWall() {
-		if( mcMudWall == null ) return;
-		KTween.tween( mcMudWall, TBurnOut ).to( 1, _xscale = 0, _yscale = 0, _alpha = 0 ).onComplete(function(t) mcMudWall.removeMovieClip() );
-	}*/
+
+	/**
+	 * Removes the mud wall in front of the Fighter, if any has been instantiated.
+	 */
+	fxRemoveMudWall() {
+		if (this._mudWall) {
+			this._scene.tm.addTween(new Tween(this._mudWall.getRootContainer(), TFx.TBurnOut).to(1, { alpha: 0 }));
+			this._scene.tm.addTween(
+				new Tween(this._mudWall.getRootContainer().scale, TFx.TBurnOut).to(1, { x: 0, y: 0 }).onComplete(() => {
+					this._mudWall.kill();
+					this._mudWall = null;
+				})
+			);
+		}
+	}
 
 	/**
 	 * Adds or display the ice block around the Fighter.
