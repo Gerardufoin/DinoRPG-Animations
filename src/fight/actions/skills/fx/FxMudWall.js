@@ -10,7 +10,7 @@ import { State } from '../../../State.js';
  */
 export class FxMudWall extends State {
 	/**
-	 * The given fighter creates or remove a mudwall.
+	 * The given fighter creates or removes a mudwall.
 	 * @param {Scene} scene The Scene where the effect takes place.
 	 * @param {() => void} endCall The callback at the end of the State.
 	 * @param {Fighter} fighter The target of the attachement.

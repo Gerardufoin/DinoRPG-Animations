@@ -28,6 +28,7 @@ import { SCENE_HEIGHT, SCENE_WIDTH } from '../fight/IScene.js';
 import { ConstantShaderManager } from './ConstantShaderManager.js';
 import { glow_attack_1, glow_attack_2 } from '../smonster/wolf/parts.js';
 import { Acorn } from '../fight/parts/skills/projectile/Acorn.js';
+import { FxFocus } from '../fight/actions/skills/fx/FxFocus.js';
 
 /**
  * Class used to preload part of the assets.
@@ -77,7 +78,8 @@ export class PreloadData {
 			color: glow_attack_2.color,
 			quality: glow_attack_2.quality,
 			outerStrength: glow_attack_2.strength
-		})
+		}),
+		FxFocus.GlowFilter
 	];
 
 	/**

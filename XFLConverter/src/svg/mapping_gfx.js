@@ -300,6 +300,8 @@ export let mapping_gfx = {
 	936: 'fx/bolt_3',
 	937: 'fx/bolt_4',
 	938: 'fx/bolt_5',
+	940: 'fx/focus_1',
+	941: 'fx/focus_2',
 	944: 'fx/petal_1',
 	945: 'fx/petal_2',
 	946: 'fx/petal_3',

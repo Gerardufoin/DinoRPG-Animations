@@ -10,6 +10,7 @@ import { FxAnim } from './skills/fx/FxAnim.js';
 import { FxAttach } from './skills/fx/FxAttach.js';
 import { FxAura } from './skills/fx/FxAura.js';
 import { FxCloud } from './skills/fx/FxCloud.js';
+import { FxFocus } from './skills/fx/FxFocus.js';
 import { FxMudWall } from './skills/fx/FxMudWall.js';
 import { GrBlackHole } from './skills/group/GrBlackHole.js';
 import { GrChainLightning } from './skills/group/GrChainLightning.js';
@@ -232,6 +233,8 @@ export class Skill extends State {
 				);
 			case SkillList.Cloud:
 				return new FxCloud(this._scene, () => this.end(), this._fighter, this._details.color);
+			case SkillList.Focus:
+				return new FxFocus(this._scene, () => this.end(), this._fighter, this._details.color);
 			case SkillList.Attach:
 				return new FxAttach(this._scene, () => this.end(), this._fighter, this._details.fx);
 			case SkillList.MudWall:

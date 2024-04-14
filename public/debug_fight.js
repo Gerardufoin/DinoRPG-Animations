@@ -122,14 +122,14 @@ const fightVersion = [
 			},*/
 			{
 				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.MudWall,
+				skill: DinoAnim.SkillList.Focus,
 				details: {
 					fid: 0,
 					targets: [
 						{ id: 1, life: 10 },
 						{ id: 2, life: 10 }
 					],
-					color: 0x008800
+					color: 0xffff00
 				}
 			}
 			/*{
