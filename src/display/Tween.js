@@ -404,52 +404,52 @@ export class Tween {
 		this._fx = e;
 		switch (e) {
 			case TFx.TLinear:
-				this._ease = (v) => v; // eslint-disable-line
+				this._ease = (v) => v;
 				break;
 			case TFx.TRand:
-				this._ease = (v) => (v === 0 || v === 1 || Math.random() < this._randomEaseProba ? v : this._ke); // eslint-disable-line
+				this._ease = (v) => (v === 0 || v === 1 || Math.random() < this._randomEaseProba ? v : this._ke);
 				break;
 			case TFx.TEase:
-				this._ease = (v) => Tween.bezier(v, 0, 0, 1, 1); // eslint-disable-line
+				this._ease = (v) => Tween.bezier(v, 0, 0, 1, 1);
 				break;
 			case TFx.TEaseIn:
-				this._ease = (v) => Tween.bezier(v, 0, 0, 0.5, 1); // eslint-disable-line
+				this._ease = (v) => Tween.bezier(v, 0, 0, 0.5, 1);
 				break;
 			case TFx.TEaseOut:
-				this._ease = (v) => Tween.bezier(v, 0, 0.5, 1, 1); // eslint-disable-line
+				this._ease = (v) => Tween.bezier(v, 0, 0.5, 1, 1);
 				break;
 			case TFx.TBurn:
-				this._ease = (v) => Tween.bezier(v, 0, 1, 0, 1); // eslint-disable-line
+				this._ease = (v) => Tween.bezier(v, 0, 1, 0, 1);
 				break;
 			case TFx.TBurnIn:
-				this._ease = (v) => Tween.bezier(v, 0, 1, 1, 1); // eslint-disable-line
+				this._ease = (v) => Tween.bezier(v, 0, 1, 1, 1);
 				break;
 			case TFx.TBurnOut:
-				this._ease = (v) => Tween.bezier(v, 0, 0, 0, 1); // eslint-disable-line
+				this._ease = (v) => Tween.bezier(v, 0, 0, 0, 1);
 				break;
 			case TFx.TZigZag:
-				this._ease = (v) => Tween.bezier(v, 0, 2.5, -1.5, 1); // eslint-disable-line
+				this._ease = (v) => Tween.bezier(v, 0, 2.5, -1.5, 1);
 				break;
 			case TFx.TLoop:
-				this._ease = (v) => Tween.bezier(v, 0, 1.33, 1.33, 0); // eslint-disable-line
+				this._ease = (v) => Tween.bezier(v, 0, 1.33, 1.33, 0);
 				break;
 			case TFx.TLoopEaseIn:
-				this._ease = (v) => Tween.bezier(v, 0, 0, 2.25, 0); // eslint-disable-line
+				this._ease = (v) => Tween.bezier(v, 0, 0, 2.25, 0);
 				break;
 			case TFx.TLoopEaseOut:
-				this._ease = (v) => Tween.bezier(v, 0, 2.25, 0, 0); // eslint-disable-line
+				this._ease = (v) => Tween.bezier(v, 0, 2.25, 0, 0);
 				break;
 			case TFx.TShake:
-				this._ease = (v) => Tween.bezier(v, 0.5, 1.22, 1.25, 0); // eslint-disable-line
+				this._ease = (v) => Tween.bezier(v, 0.5, 1.22, 1.25, 0);
 				break;
 			case TFx.TShakeBoth:
-				this._ease = (v) => Tween.bezier(v, 0.5, 1.22, 1.25, 0); // eslint-disable-line
+				this._ease = (v) => Tween.bezier(v, 0.5, 1.22, 1.25, 0);
 				break;
 			case TFx.TJump:
-				this._ease = (v) => Tween.bezier(v, 0, 2, 2.79, 1); // eslint-disable-line
+				this._ease = (v) => Tween.bezier(v, 0, 2, 2.79, 1);
 				break;
 			case TFx.TElasticEnd:
-				this._ease = (v) => Tween.bezier(v, 0, 0.7, 1.5, 1); // eslint-disable-line
+				this._ease = (v) => Tween.bezier(v, 0, 0.7, 1.5, 1);
 				break;
 			case TFx.TCustom:
 				this._ease = this._customEase;

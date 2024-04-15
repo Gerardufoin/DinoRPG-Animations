@@ -11,6 +11,7 @@ import { Scene } from './Scene.js';
 import { History } from './History.js';
 import { Timer } from './Timer.js';
 import { PreloadData } from '../display/PreloadData.js';
+import { Settings } from './settings/Settings.js';
 
 /**
  * Create a fight scene to render the history of a fight for DinoRPG.
@@ -20,6 +21,11 @@ import { PreloadData } from '../display/PreloadData.js';
 export class Fight {
 	static FRAME_RATE = 32;
 
+	/**
+	 * The fight settings, allowing to manage the different fight options.
+	 * @type {Settings}
+	 */
+	_settings;
 	/**
 	 * Timer managing the time elapsed between two frame to make it fit an expected framerate.
 	 * @type {Timer}
@@ -83,6 +89,8 @@ export class Fight {
 			height: 300
 		});
 
+		this._settings = new Settings();
+
 		this._scene = new Scene(
 			this._data.bg,
 			{
@@ -92,10 +100,11 @@ export class Fight {
 			},
 			this._data.ground ?? 0,
 			this._renderer,
+			this._settings,
 			data.debug
 		);
 
-		this._timer = new Timer(Fight.FRAME_RATE);
+		this._timer = new Timer(Fight.FRAME_RATE, this._settings);
 		this._timer.add(() => {
 			this.update();
 			this._renderer.render(this._scene);

@@ -17,6 +17,9 @@ import { PixiHelper } from '../display/PixiHelper.js';
 import { GroundWater } from './parts/scene/GroundWater.js';
 import { GroundType } from './Enums.js';
 import { Part } from './Part.js';
+import { SettingsButton } from './settings/SettingsButton.js';
+import { Settings } from './settings/Settings.js';
+import { SettingsPanel } from './settings/SettingsPanel.js';
 
 /**
  * The fight scene containing all the different layers to display.
@@ -53,27 +56,44 @@ export class Scene extends IScene {
 	 * @param {{top: number, bottom: number, right: number}} margins Set the margins for the walkable area.
 	 * @param {number} ground The type of ground for the Scene.
 	 * @param {Renderer} renderer The renderer which will render the Scene. Used to get the Background colors.
+	 * @param {Settings} settings The Fight's settings.
 	 * @param {boolean} debug If true, the scene starts in debug mode. False by default.
 	 */
-	constructor(background, margins, ground, renderer, debug = false) {
+	constructor(background, margins, ground, renderer, settings, debug = false) {
 		super();
 		this.debugMode = debug;
 		this.margins = margins;
+		this._settings = settings;
 		this._groundType = ground;
 		this._depthManager = new DepthManager(Object.keys(Layers.Scene).length);
 		this.addChild(this._depthManager);
+
+		// BACKGROUND + COLUMNS
 		this.setBackground(background, renderer);
 		this.createColumns();
 		// The zindex of the entities is managed by their computed z position.
 		this.dm.setSortableLayer(Layers.Scene.FIGHTERS);
 
+		// CONTINUE ARROW
 		this._continueArrow = new ContinueArrow(SCENE_WIDTH + 18, SCENE_HEIGHT - 15);
 		this.dm.addContainer(this._continueArrow, Layers.Scene.LOADING);
 		this._continueArrow.visible = false;
 
+		// LOADING SCREEN
 		this._loadingScreen = new LoadingScreen();
 		this.dm.addContainer(this._loadingScreen, Layers.Scene.LOADING);
 		this._slots.map((s) => (s.alpha = 0));
+
+		// SETTINGS
+		const settingsPanel = new SettingsPanel(this._settings);
+		this.dm.addContainer(
+			new SettingsButton(settingsPanel, () => {
+				// Reset y on settings opening to prevent shaking displacement
+				this.y = 0;
+			}),
+			Layers.Scene.SETTINGS
+		);
+		this.dm.addContainer(settingsPanel, Layers.Scene.SETTINGS);
 
 		// DEBUG
 		if (this.debugMode) {
@@ -177,7 +197,7 @@ export class Scene extends IScene {
 		// The x = 0 of the other scenes should be on the border of the left column.
 		colLeft.onLoad(() => {
 			for (const k in Layers.Scene) {
-				if (![Layers.Scene.BG, Layers.Scene.COLUMNS].includes(Layers.Scene[k])) {
+				if (![Layers.Scene.BG, Layers.Scene.COLUMNS, Layers.Scene.SETTINGS].includes(Layers.Scene[k])) {
 					this.dm.offsetLayer(colLeft.width, 0, Layers.Scene[k]);
 				}
 			}

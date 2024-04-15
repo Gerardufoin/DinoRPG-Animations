@@ -17,7 +17,8 @@ export const Layers = {
 		INTER: 7,
 		COLUMNS: 8,
 		LOADING: 9,
-		DEBUG: 10
+		DEBUG: 10,
+		SETTINGS: 11
 	},
 	Fighter: {
 		BACK: 0,
