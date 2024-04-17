@@ -29,10 +29,20 @@ export class SettingsPanel extends Container {
 	 */
 	static PADDING = 15;
 	/**
+	 * Y offset to align the arrows with the text.
+	 * @type {number}
+	 */
+	static ARROW_OFFSET = 1;
+	/**
 	 * Available speed settings.
 	 * @type {number[]}
 	 */
 	static SPEED_SETTINGS = [0.25, 0.5, 1, 2, 3];
+	/**
+	 * Available text size settings.
+	 * @type {number[]}
+	 */
+	static TEXT_SIZE_SETTINGS = [1, 1.25, 1.5];
 
 	/**
 	 * The application's settings.
@@ -50,6 +60,11 @@ export class SettingsPanel extends Container {
 	 * @type {{ [id: string]: Text }}
 	 */
 	_speedButtons = {};
+	/**
+	 * The buttons controlling the text size of the dialogues.
+	 * @type {{ [id: string]: Text }}
+	 */
+	_textSizeButtons = {};
 
 	/**
 	 * Creates the setting panel and registers the Fight's Settings object.
@@ -71,6 +86,7 @@ export class SettingsPanel extends Container {
 		this._background.height = SCENE_HEIGHT;
 		this.addChild(this._background);
 
+		let posY = 0;
 		// Title
 		const title = new Text(this._settings.getLangText('title'), {
 			fontFamily: 'drpg-verdana',
@@ -84,16 +100,20 @@ export class SettingsPanel extends Container {
 		title.anchor.set(0.5, 0);
 		title.scale.set(1 / FONT_SCALE);
 		title.x = SCENE_FULL_WIDTH / 2;
-		title.y = SettingsPanel.PADDING;
+		title.y = posY += SettingsPanel.PADDING;
 		this.addChild(title);
-
-		let posY = 55;
 
 		// Speed options
 		const speedPanel = this.createSpeedPanel();
 		speedPanel.x = SettingsPanel.PADDING + 15;
-		speedPanel.y = posY;
+		speedPanel.y = posY += 40;
 		this.addChild(speedPanel);
+
+		// Text size options
+		const textPanel = this.createTextSizePanel();
+		textPanel.x = SettingsPanel.PADDING + 15;
+		textPanel.y = posY += 45;
+		this.addChild(textPanel);
 
 		// Close button
 		const close = new Button(ref.settings.close);
@@ -108,9 +128,10 @@ export class SettingsPanel extends Container {
 	 * @returns {Container} The created speed settings panel.
 	 */
 	createSpeedPanel() {
-		const speedPanel = new Container();
+		const panel = new Container();
 		const arrow = new Asset(ref.settings.arrow);
-		speedPanel.addChild(arrow);
+		arrow.y += SettingsPanel.ARROW_OFFSET;
+		panel.addChild(arrow);
 		const speedTitle = new Text(this._settings.getLangText('fight_speed'), {
 			fontFamily: 'drpg-verdana',
 			fontSize: 12 * SettingsPanel.S_FONT_SIZE,
@@ -120,17 +141,17 @@ export class SettingsPanel extends Container {
 		});
 		speedTitle.scale.set(1 / SettingsPanel.S_FONT_SIZE);
 		speedTitle.x = 18;
-		speedPanel.addChild(speedTitle);
-		const speedButtons = this.createSpeedButtons();
-		speedButtons.x = 18 + speedTitle.width * SettingsPanel.DEFAULT_TO_VERDANA_SCALE + 20;
-		speedPanel.addChild(speedButtons);
+		panel.addChild(speedTitle);
+		const buttons = this.createSpeedButtons();
+		buttons.x = 18 + speedTitle.width * SettingsPanel.DEFAULT_TO_VERDANA_SCALE + 20;
+		panel.addChild(buttons);
 		const speedDisplaySetting = this.createSpeedDisplaySetting();
 		speedDisplaySetting.x = 18;
 		speedDisplaySetting.y = 18;
-		speedPanel.addChild(speedDisplaySetting);
+		panel.addChild(speedDisplaySetting);
 		// PixiJS does not like accessing width that fast. Set the text to dirty to force it to re-render.
 		speedTitle.dirty = true;
-		return speedPanel;
+		return panel;
 	}
 
 	/**
@@ -221,6 +242,90 @@ export class SettingsPanel extends Container {
 		cont.addChild(toggle);
 		txt.dirty = true;
 		return cont;
+	}
+
+	/**
+	 * Creates the text size settings management panel.
+	 * @returns {Container} The created text size settings panel.
+	 */
+	createTextSizePanel() {
+		const panel = new Container();
+		const arrow = new Asset(ref.settings.arrow);
+		arrow.y += SettingsPanel.ARROW_OFFSET;
+		panel.addChild(arrow);
+		const title = new Text(this._settings.getLangText('text_size'), {
+			fontFamily: 'drpg-verdana',
+			fontSize: 12 * SettingsPanel.S_FONT_SIZE,
+			fill: 0xffffff,
+			stroke: 0x000000,
+			strokeThickness: 2 * SettingsPanel.S_FONT_SIZE
+		});
+		title.scale.set(1 / SettingsPanel.S_FONT_SIZE);
+		title.x = 18;
+		panel.addChild(title);
+		const buttons = this.createTextSizeButtons();
+		buttons.x = 18 + title.width * SettingsPanel.DEFAULT_TO_VERDANA_SCALE + 20;
+		panel.addChild(buttons);
+		// PixiJS does not like accessing width that fast. Set the text to dirty to force it to re-render.
+		title.dirty = true;
+		return panel;
+	}
+
+	/**
+	 * Creates the button controlling the size of the dialogues' text.
+	 * @returns {Container} The container containing the size buttons.
+	 */
+	createTextSizeButtons() {
+		const buttons = new Container();
+		let posX = 0;
+		for (const sp of SettingsPanel.TEXT_SIZE_SETTINGS) {
+			const name = `x${sp}`;
+			const textSizeButton = new Text(name, {
+				fontFamily: 'drpg-verdana',
+				fontSize: 12 * SettingsPanel.S_FONT_SIZE,
+				strokeThickness: 2 * SettingsPanel.S_FONT_SIZE
+			});
+			textSizeButton.scale.set(1 / SettingsPanel.S_FONT_SIZE);
+			textSizeButton.x = posX;
+			textSizeButton.onclick = () => {
+				this.setTextSize(sp);
+			};
+			textSizeButton.ontap = () => {
+				this.setTextSize(sp);
+			};
+			textSizeButton.eventMode = 'static';
+			textSizeButton.cursor = 'pointer';
+
+			this._textSizeButtons[name] = textSizeButton;
+			buttons.addChild(textSizeButton);
+			posX += textSizeButton.width * SettingsPanel.DEFAULT_TO_VERDANA_SCALE + 8;
+		}
+		this.setTextSizeButtonsFocus();
+		return buttons;
+	}
+
+	/**
+	 * Sets which text size button is actually enabled.
+	 */
+	setTextSizeButtonsFocus() {
+		for (const k in this._textSizeButtons) {
+			if (`x${this._settings.textSize}` === k) {
+				this._textSizeButtons[k].style.fill = 0x3d6113;
+				this._textSizeButtons[k].style.stroke = 0x7bc528;
+			} else {
+				this._textSizeButtons[k].style.fill = 0xffffff;
+				this._textSizeButtons[k].style.stroke = 0x000000;
+			}
+		}
+	}
+
+	/**
+	 * Sets the text size in the settings and change the focus of the text size buttons.
+	 * @param {number} size The new size.
+	 */
+	setTextSize(size) {
+		this._settings.textSize = size;
+		this.setTextSizeButtonsFocus();
 	}
 
 	/**

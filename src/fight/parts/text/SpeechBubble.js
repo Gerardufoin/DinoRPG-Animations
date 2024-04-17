@@ -3,7 +3,7 @@ import { Container, Graphics, Rectangle, Text } from 'pixi.js';
 import { Timer } from '../../Timer.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { PixiHelper } from '../../../display/PixiHelper.js';
-import { SCENE_FULL_WIDTH, SCENE_HEIGHT, SCENE_WIDTH } from '../../IScene.js';
+import { IScene, SCENE_FULL_WIDTH, SCENE_HEIGHT, SCENE_WIDTH } from '../../IScene.js';
 
 /**
  * Instantiate a Speech Bubble, displaying it at the given coordinates.
@@ -84,11 +84,12 @@ export class SpeechBubble extends Container {
 
 	/**
 	 * Create a SpeechBubble which will spawn at the given coordinates and will fill with text over time.
+	 * @param {IScene} scene The scene where the text is instantiated.
 	 * @param {number} x The initial X coordinate.
 	 * @param {number} y The initial Y coordinate.
 	 * @param {string} message The text to display.
 	 */
-	constructor(x, y, message) {
+	constructor(scene, x, y, message) {
 		super();
 		this._message = message;
 		let width = 100;
@@ -100,8 +101,8 @@ export class SpeechBubble extends Container {
 
 		this._text = new Text(message, {
 			fontFamily: 'drpg-verdana',
-			fontSize: 10,
-			lineHeight: 13,
+			fontSize: Math.round(10 * scene.settings.textSize),
+			lineHeight: Math.round(13 * scene.settings.textSize),
 			align: 'center',
 			fill: 0x000000,
 			wordWrap: true,

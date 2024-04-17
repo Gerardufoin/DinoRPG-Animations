@@ -4,7 +4,7 @@ import { Timer } from '../../Timer.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { ref } from '../../../gfx/references.js';
 import { TextureManager } from '../../../display/TextureManager.js';
-import { SCENE_WIDTH } from '../../IScene.js';
+import { IScene, SCENE_WIDTH } from '../../IScene.js';
 
 /**
  * Instantiate a Text Box at the top of the screen.
@@ -83,18 +83,19 @@ export class TextBox extends Container {
 
 	/**
 	 * Creates a text box which will spawn at the top of the screen and will fill with text over time.
+	 * @param {IScene} scene The scene where the text is instantiated.
 	 * @param {string} message The text to display.
 	 * @param {boolean} stretch If true, the box stretches to fit the text instead of the text being masked. False by default.
 	 */
-	constructor(message, stretch = false) {
+	constructor(scene, message, stretch = false) {
 		super();
 		this._message = message;
 		this._stretch = stretch;
 
 		this._text = new Text(message, {
 			fontFamily: 'drpg-verdana',
-			fontSize: 10,
-			lineHeight: 13,
+			fontSize: Math.round(10 * scene.settings.textSize),
+			lineHeight: Math.round(13 * scene.settings.textSize),
 			fill: 0xfff3b3,
 			wordWrap: true,
 			wordWrapWidth: 361,

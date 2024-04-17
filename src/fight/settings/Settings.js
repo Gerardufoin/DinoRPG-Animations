@@ -73,6 +73,27 @@ export class Settings {
 	}
 
 	/**
+	 * The size multiplier for the dialogues.
+	 * @type {number}
+	 */
+	_textSize = 1;
+	/**
+	 * Get the size multiplier for the dialogues.
+	 * @type {number}
+	 */
+	get textSize() {
+		return this._textSize;
+	}
+	/**
+	 * Set the size multiplier for the dialogues.
+	 * @type {number}
+	 */
+	set textSize(v) {
+		this._textSize = v;
+		this.saveSettings();
+	}
+
+	/**
 	 * Load the settings from local storage.
 	 */
 	constructor() {
@@ -102,6 +123,7 @@ export class Settings {
 		}
 		this._showSpeedMenu = settings.displaySpeed ?? false;
 		this._speed = settings.speed ?? 1;
+		this._textSize = settings.textSize ?? 1;
 	}
 
 	/**
@@ -110,7 +132,8 @@ export class Settings {
 	saveSettings() {
 		const settings = {
 			speed: this._speed,
-			displaySpeed: this._showSpeedMenu
+			displaySpeed: this._showSpeedMenu,
+			textSize: this._textSize
 		};
 		localStorage.setItem(Settings.SETTING_KEY_NAME, JSON.stringify(settings));
 	}

@@ -53,7 +53,7 @@ export class Text extends State {
 	 * Creates the text box.
 	 */
 	init() {
-		this._textBox = new TextBox(this._message);
+		this._textBox = new TextBox(this._scene, this._message);
 		this._scene.dm.addContainer(this._textBox, Layers.Scene.PARTS);
 		this._scene.setClick(() => {
 			this._textBox.speedUp();

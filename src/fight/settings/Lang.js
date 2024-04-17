@@ -7,12 +7,14 @@ export const lang = {
 	fr: {
 		title: 'OPTIONS',
 		fight_speed: 'Vitesse du combat',
-		fight_display_speed: "Afficher la vitesse à l'écran" // eslint-disable-line
+		fight_display_speed: "Afficher la vitesse à l'écran", // eslint-disable-line
+		text_size: 'Taille des dialogues'
 	},
 	en: {
 		title: 'OPTIONS',
 		fight_speed: 'Fight display speed',
-		fight_display_speed: 'Show speed settings on screen'
+		fight_display_speed: 'Show speed settings on screen',
+		text_size: 'Dialogues size'
 	},
 	de: {},
 	es: {}

@@ -70,6 +70,7 @@ export class Talk extends State {
 	 */
 	init() {
 		this._bubble = new SpeechBubble(
+			this._scene,
 			this._fighter.getRootContainer().x,
 			this._fighter.getRootContainer().y - (this._fighter.height + 10),
 			this._message

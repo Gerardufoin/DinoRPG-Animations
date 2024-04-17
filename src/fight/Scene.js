@@ -365,7 +365,7 @@ export class Scene extends IScene {
 	 * Remove the click callback from the Scene and reset the cursor when hovering.
 	 */
 	removeClick() {
-		this.eventMode = 'none';
+		this.eventMode = 'passive';
 		this.cursor = 'default';
 		this.onclick = undefined;
 		this.ontap = undefined;
