@@ -20,6 +20,7 @@ import { Part } from './Part.js';
 import { SettingsButton } from './settings/SettingsButton.js';
 import { Settings } from './settings/Settings.js';
 import { SettingsPanel } from './settings/SettingsPanel.js';
+import { SpeedPanel } from './settings/SpeedPanel.js';
 
 /**
  * The fight scene containing all the different layers to display.
@@ -85,6 +86,10 @@ export class Scene extends IScene {
 		this._slots.map((s) => (s.alpha = 0));
 
 		// SETTINGS
+		const speedSettings = new SpeedPanel(this._settings);
+		speedSettings.x = 60;
+		speedSettings.y = SCENE_HEIGHT - 30;
+		this.dm.addContainer(speedSettings, Layers.Scene.SETTINGS);
 		const settingsPanel = new SettingsPanel(this._settings);
 		this.dm.addContainer(
 			new SettingsButton(settingsPanel, () => {

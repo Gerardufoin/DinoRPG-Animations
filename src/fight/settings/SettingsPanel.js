@@ -19,15 +19,15 @@ export class SettingsPanel extends Container {
 	 */
 	static S_FONT_SIZE = 2;
 	/**
-	 * Width conversion from the default font to verdana.
-	 * @type {number}
-	 */
-	static DEFAULT_TO_VERDANA_SCALE = 1.25;
-	/**
 	 * Padding of the panel.
 	 * @type {number}
 	 */
 	static PADDING = 15;
+	/**
+	 * Padding between a title and the buttons.
+	 * @type {number}
+	 */
+	static TITLE_PADDING = 15;
 	/**
 	 * Y offset to align the arrows with the text.
 	 * @type {number}
@@ -65,6 +65,19 @@ export class SettingsPanel extends Container {
 	 * @type {{ [id: string]: Text }}
 	 */
 	_textSizeButtons = {};
+
+	/**
+	 * Callbacks to invoke when the setting panel is opened.
+	 * @type {(() => void)[]}
+	 */
+	_onOpenCallbacks = [];
+	/**
+	 * Add the function to the list of callbacks invoked when the panel is opened.
+	 * @type {() => void}
+	 */
+	set onOpen(cb) {
+		this._onOpenCallbacks.push(cb);
+	}
 
 	/**
 	 * Creates the setting panel and registers the Fight's Settings object.
@@ -143,14 +156,16 @@ export class SettingsPanel extends Container {
 		speedTitle.x = 18;
 		panel.addChild(speedTitle);
 		const buttons = this.createSpeedButtons();
-		buttons.x = 18 + speedTitle.width * SettingsPanel.DEFAULT_TO_VERDANA_SCALE + 20;
+		// If width is accessed too early, PixiJS does not load the text font properly. Didn't manage to find a way around it, onLoad does not work.
+		// Dirty trick to refreshe the horizontal position when the panel is opened.
+		this.onOpen = () => {
+			buttons.x = 18 + Math.round(speedTitle.width) + SettingsPanel.TITLE_PADDING;
+		};
 		panel.addChild(buttons);
 		const speedDisplaySetting = this.createSpeedDisplaySetting();
 		speedDisplaySetting.x = 18;
 		speedDisplaySetting.y = 18;
 		panel.addChild(speedDisplaySetting);
-		// PixiJS does not like accessing width that fast. Set the text to dirty to force it to re-render.
-		speedTitle.dirty = true;
 		return panel;
 	}
 
@@ -160,7 +175,6 @@ export class SettingsPanel extends Container {
 	 */
 	createSpeedButtons() {
 		const buttons = new Container();
-		let posX = 0;
 		for (const sp of SettingsPanel.SPEED_SETTINGS) {
 			const name = `x${sp}`;
 			const speedButton = new Text(name, {
@@ -169,7 +183,6 @@ export class SettingsPanel extends Container {
 				strokeThickness: 2 * SettingsPanel.S_FONT_SIZE
 			});
 			speedButton.scale.set(1 / SettingsPanel.S_FONT_SIZE);
-			speedButton.x = posX;
 			speedButton.onclick = () => {
 				this.setSpeed(sp);
 			};
@@ -181,9 +194,17 @@ export class SettingsPanel extends Container {
 
 			this._speedButtons[name] = speedButton;
 			buttons.addChild(speedButton);
-			posX += speedButton.width * SettingsPanel.DEFAULT_TO_VERDANA_SCALE + 8;
 		}
 		this.setSpeedButtonsFocus();
+		// Callback to prevent font loading issue. See comment above.
+		this.onOpen = () => {
+			let posX = 0;
+			for (const sp of SettingsPanel.SPEED_SETTINGS) {
+				const name = `x${sp}`;
+				this._speedButtons[name].x = posX;
+				posX += Math.round(this._speedButtons[name].width) + 8;
+			}
+		};
 		return buttons;
 	}
 
@@ -237,7 +258,10 @@ export class SettingsPanel extends Container {
 				this._settings.showSpeedMenu = false;
 			}
 		);
-		toggle.x = txt.width * SettingsPanel.DEFAULT_TO_VERDANA_SCALE + 10;
+		// Callback to prevent font loading issue. See comment above.
+		this.onOpen = () => {
+			toggle.x = Math.round(txt.width) + SettingsPanel.TITLE_PADDING;
+		};
 		toggle.y = 3;
 		cont.addChild(toggle);
 		txt.dirty = true;
@@ -264,10 +288,11 @@ export class SettingsPanel extends Container {
 		title.x = 18;
 		panel.addChild(title);
 		const buttons = this.createTextSizeButtons();
-		buttons.x = 18 + title.width * SettingsPanel.DEFAULT_TO_VERDANA_SCALE + 20;
+		// Callback to prevent font loading issue. See comment above.
+		this.onOpen = () => {
+			buttons.x = 18 + Math.round(title.width) + SettingsPanel.TITLE_PADDING;
+		};
 		panel.addChild(buttons);
-		// PixiJS does not like accessing width that fast. Set the text to dirty to force it to re-render.
-		title.dirty = true;
 		return panel;
 	}
 
@@ -277,7 +302,6 @@ export class SettingsPanel extends Container {
 	 */
 	createTextSizeButtons() {
 		const buttons = new Container();
-		let posX = 0;
 		for (const sp of SettingsPanel.TEXT_SIZE_SETTINGS) {
 			const name = `x${sp}`;
 			const textSizeButton = new Text(name, {
@@ -286,7 +310,6 @@ export class SettingsPanel extends Container {
 				strokeThickness: 2 * SettingsPanel.S_FONT_SIZE
 			});
 			textSizeButton.scale.set(1 / SettingsPanel.S_FONT_SIZE);
-			textSizeButton.x = posX;
 			textSizeButton.onclick = () => {
 				this.setTextSize(sp);
 			};
@@ -298,9 +321,17 @@ export class SettingsPanel extends Container {
 
 			this._textSizeButtons[name] = textSizeButton;
 			buttons.addChild(textSizeButton);
-			posX += textSizeButton.width * SettingsPanel.DEFAULT_TO_VERDANA_SCALE + 8;
 		}
 		this.setTextSizeButtonsFocus();
+		// Callback to prevent font loading issue. See comment above.
+		this.onOpen = () => {
+			let posX = 0;
+			for (const sp of SettingsPanel.TEXT_SIZE_SETTINGS) {
+				const name = `x${sp}`;
+				this._textSizeButtons[name].x = posX;
+				posX += Math.round(this._textSizeButtons[name].width) + 8;
+			}
+		};
 		return buttons;
 	}
 
@@ -334,6 +365,9 @@ export class SettingsPanel extends Container {
 	open() {
 		this.visible = true;
 		this._settings.paused = true;
+		for (const cb of this._onOpenCallbacks) {
+			cb();
+		}
 	}
 
 	/**
