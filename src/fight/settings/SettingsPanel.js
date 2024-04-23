@@ -8,6 +8,7 @@ import { FONT_SCALE, SCENE_FULL_WIDTH, SCENE_HEIGHT } from '../IScene.js';
 import { Button } from './Button.js';
 import { Asset } from '../../display/Asset.js';
 import { Toggle } from './Toggle.js';
+import { SpeedPanel } from './SpeedPanel.js';
 
 /**
  * The settings panel, which allows the user to change the settings of the application.
@@ -49,6 +50,16 @@ export class SettingsPanel extends Container {
 	 * @type {Settings}
 	 */
 	_settings;
+	/**
+	 * Reference to the display for the speed settings.
+	 * @type {SpeedPanel}
+	 */
+	_speedSettingsDisplay;
+	/**
+	 * Previous paused setting state before opening the menu. Set in the opening of the menu and used when closing the menu.
+	 * @type {boolean}
+	 */
+	_prevPausedSetting = false;
 
 	/**
 	 * The background of the panel.
@@ -82,11 +93,15 @@ export class SettingsPanel extends Container {
 	/**
 	 * Creates the setting panel and registers the Fight's Settings object.
 	 * @param {Settings} settings The current settings of the application.
+	 * @param {SpeedPanel} speedSettings The speed panel settings to update or display based on the settings.
 	 */
-	constructor(settings) {
+	constructor(settings, speedSettings) {
 		super();
 		this._settings = settings;
+		this._speedSettingsDisplay = speedSettings;
 		this.visible = false;
+
+		this._speedSettingsDisplay.visible = this._settings._showSpeedMenu;
 
 		this._background = new NineSlicePlane(
 			TextureManager.getTextureFromCompressedReference(ref.scene.box),
@@ -253,9 +268,11 @@ export class SettingsPanel extends Container {
 			this._settings.showSpeedMenu,
 			() => {
 				this._settings.showSpeedMenu = true;
+				this._speedSettingsDisplay.visible = true;
 			},
 			() => {
 				this._settings.showSpeedMenu = false;
+				this._speedSettingsDisplay.visible = false;
 			}
 		);
 		// Callback to prevent font loading issue. See comment above.
@@ -364,7 +381,10 @@ export class SettingsPanel extends Container {
 	 */
 	open() {
 		this.visible = true;
+		this._prevPausedSetting = this._settings.paused;
 		this._settings.paused = true;
+		// In case the settings were changed via the speed menu.
+		this.setSpeedButtonsFocus();
 		for (const cb of this._onOpenCallbacks) {
 			cb();
 		}
@@ -375,6 +395,8 @@ export class SettingsPanel extends Container {
 	 */
 	close() {
 		this.visible = false;
-		this._settings.paused = false;
+		// If the speed menu is hidden, unpause when closing the menu to prevent being stuck.
+		this._settings.paused = this._settings._showSpeedMenu ? this._prevPausedSetting : false;
+		this._speedSettingsDisplay.updateButtonSelection();
 	}
 }
