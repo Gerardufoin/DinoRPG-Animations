@@ -90,6 +90,9 @@ export class Fight {
 		});
 
 		this._settings = new Settings();
+		this._settings.copyFight = () => {
+			this.copyToClipboard();
+		};
 
 		this._scene = new Scene(
 			this._data.bg,
@@ -152,6 +155,13 @@ export class Fight {
 	 */
 	pause(frames) {
 		this._waitingTime = frames;
+	}
+
+	/**
+	 * Copy the fight to the user clipboard.
+	 */
+	copyToClipboard() {
+		navigator.clipboard.writeText(JSON.stringify(this._data, undefined, '\t'));
 	}
 
 	/**

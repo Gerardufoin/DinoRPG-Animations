@@ -1,10 +1,11 @@
 // @ts-check
 
-import { AlphaFilter, Container, Graphics } from 'pixi.js';
+import { Container, Graphics } from 'pixi.js';
 import { Settings } from './Settings.js';
 import { ref } from '../../gfx/references.js';
 import { Button } from './Button.js';
 import { ConstantShaderManager } from '../../display/ConstantShaderManager.js';
+import { SCENE_WIDTH } from '../IScene.js';
 
 /**
  * Panel allowing to quickly control the speed of the fight without having to access the settings.
@@ -56,14 +57,15 @@ export class SpeedPanel extends Container {
 		super();
 		this._settings = settings;
 
-		this.filters = [new AlphaFilter(0.6)];
-
+		const width = SpeedPanel.PANEL_PADDING * 2 + SpeedPanel.BUTTON_PADDING * 3 + 9 + 12 + 14 + 19;
+		this.x = (SCENE_WIDTH - width) / 2;
+		this.y = 6;
 		const background = new Graphics()
-			.beginFill(0x000000, 0.1)
+			.beginFill(0x000000, 0.2)
 			.drawRoundedRect(
 				-SpeedPanel.PANEL_PADDING,
 				-SpeedPanel.PANEL_PADDING,
-				SpeedPanel.PANEL_PADDING * 2 + SpeedPanel.BUTTON_PADDING * 3 + 9 + 12 + 14 + 19,
+				width,
 				SpeedPanel.PANEL_PADDING * 2 + 14,
 				5
 			);

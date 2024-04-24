@@ -44,6 +44,11 @@ export class SettingsPanel extends Container {
 	 * @type {number[]}
 	 */
 	static TEXT_SIZE_SETTINGS = [1, 1.25, 1.5];
+	/**
+	 * Available auto skip settings.
+	 * @type {number[]}
+	 */
+	static AUTO_SKIP_SETTINGS = [-1, 0, 1, 3];
 
 	/**
 	 * The application's settings.
@@ -76,6 +81,11 @@ export class SettingsPanel extends Container {
 	 * @type {{ [id: string]: Text }}
 	 */
 	_textSizeButtons = {};
+	/**
+	 * The buttons controlling the auto skip setting.
+	 * @type {{ [id: string]: Text }}
+	 */
+	_autoSkipButtons = {};
 
 	/**
 	 * Callbacks to invoke when the setting panel is opened.
@@ -131,17 +141,43 @@ export class SettingsPanel extends Container {
 		title.y = posY += SettingsPanel.PADDING;
 		this.addChild(title);
 
+		const xOffset = SettingsPanel.PADDING + 15;
+
 		// Speed options
 		const speedPanel = this.createSpeedPanel();
-		speedPanel.x = SettingsPanel.PADDING + 15;
+		speedPanel.x = xOffset;
 		speedPanel.y = posY += 40;
 		this.addChild(speedPanel);
 
 		// Text size options
 		const textPanel = this.createTextSizePanel();
-		textPanel.x = SettingsPanel.PADDING + 15;
+		textPanel.x = xOffset;
 		textPanel.y = posY += 45;
 		this.addChild(textPanel);
+
+		// Auto skip options
+		const autoSkipPanel = this.createAutoSkipPanel();
+		autoSkipPanel.x = xOffset;
+		autoSkipPanel.y = posY += 25;
+		this.addChild(autoSkipPanel);
+
+		// Scale dinoz option
+		const scaleDinozPanel = this.createDinoScalingSetting();
+		scaleDinozPanel.x = xOffset;
+		scaleDinozPanel.y = posY += 25;
+		this.addChild(scaleDinozPanel);
+
+		// Debug panel
+		const debugPanel = this.createDebugPanel(xOffset);
+		debugPanel.x = xOffset;
+		debugPanel.y = posY += 30;
+		this.addChild(debugPanel);
+
+		// Fight copy panel
+		const copyFightPanel = this.createCopyFightPanel();
+		copyFightPanel.x = SCENE_FULL_WIDTH / 2;
+		copyFightPanel.y = SCENE_HEIGHT - 30;
+		this.addChild(copyFightPanel);
 
 		// Close button
 		const close = new Button(ref.settings.close);
@@ -207,33 +243,34 @@ export class SettingsPanel extends Container {
 			speedButton.eventMode = 'static';
 			speedButton.cursor = 'pointer';
 
-			this._speedButtons[name] = speedButton;
+			this._speedButtons[sp] = speedButton;
 			buttons.addChild(speedButton);
 		}
-		this.setSpeedButtonsFocus();
+		this.setTextButtonsFocus(this._speedButtons, this._settings._speed);
 		// Callback to prevent font loading issue. See comment above.
 		this.onOpen = () => {
 			let posX = 0;
 			for (const sp of SettingsPanel.SPEED_SETTINGS) {
-				const name = `x${sp}`;
-				this._speedButtons[name].x = posX;
-				posX += Math.round(this._speedButtons[name].width) + 8;
+				this._speedButtons[sp].x = posX;
+				posX += Math.round(this._speedButtons[sp].width) + 8;
 			}
 		};
 		return buttons;
 	}
 
 	/**
-	 * Sets which speed button is actually enabled.
+	 * Sets which text button is actually enabled.
+	 * @param {{[id: string]: Text}} buttons The buttons and value to check.
+	 * @param {number} value The value of the enabled button.
 	 */
-	setSpeedButtonsFocus() {
-		for (const k in this._speedButtons) {
-			if (`x${this._settings.rawSpeed}` === k) {
-				this._speedButtons[k].style.fill = 0x3d6113;
-				this._speedButtons[k].style.stroke = 0x7bc528;
+	setTextButtonsFocus(buttons, value) {
+		for (const k in buttons) {
+			if (value.toString() === k) {
+				buttons[k].style.fill = 0x3d6113;
+				buttons[k].style.stroke = 0x7bc528;
 			} else {
-				this._speedButtons[k].style.fill = 0xffffff;
-				this._speedButtons[k].style.stroke = 0x000000;
+				buttons[k].style.fill = 0xffffff;
+				buttons[k].style.stroke = 0x000000;
 			}
 		}
 	}
@@ -244,7 +281,7 @@ export class SettingsPanel extends Container {
 	 */
 	setSpeed(speed) {
 		this._settings.speed = speed;
-		this.setSpeedButtonsFocus();
+		this.setTextButtonsFocus(this._speedButtons, this._settings._speed);
 	}
 
 	/**
@@ -281,7 +318,6 @@ export class SettingsPanel extends Container {
 		};
 		toggle.y = 3;
 		cont.addChild(toggle);
-		txt.dirty = true;
 		return cont;
 	}
 
@@ -336,35 +372,19 @@ export class SettingsPanel extends Container {
 			textSizeButton.eventMode = 'static';
 			textSizeButton.cursor = 'pointer';
 
-			this._textSizeButtons[name] = textSizeButton;
+			this._textSizeButtons[sp] = textSizeButton;
 			buttons.addChild(textSizeButton);
 		}
-		this.setTextSizeButtonsFocus();
+		this.setTextButtonsFocus(this._textSizeButtons, this._settings._textSize);
 		// Callback to prevent font loading issue. See comment above.
 		this.onOpen = () => {
 			let posX = 0;
 			for (const sp of SettingsPanel.TEXT_SIZE_SETTINGS) {
-				const name = `x${sp}`;
-				this._textSizeButtons[name].x = posX;
-				posX += Math.round(this._textSizeButtons[name].width) + 8;
+				this._textSizeButtons[sp].x = posX;
+				posX += Math.round(this._textSizeButtons[sp].width) + 8;
 			}
 		};
 		return buttons;
-	}
-
-	/**
-	 * Sets which text size button is actually enabled.
-	 */
-	setTextSizeButtonsFocus() {
-		for (const k in this._textSizeButtons) {
-			if (`x${this._settings.textSize}` === k) {
-				this._textSizeButtons[k].style.fill = 0x3d6113;
-				this._textSizeButtons[k].style.stroke = 0x7bc528;
-			} else {
-				this._textSizeButtons[k].style.fill = 0xffffff;
-				this._textSizeButtons[k].style.stroke = 0x000000;
-			}
-		}
 	}
 
 	/**
@@ -373,7 +393,276 @@ export class SettingsPanel extends Container {
 	 */
 	setTextSize(size) {
 		this._settings.textSize = size;
-		this.setTextSizeButtonsFocus();
+		this.setTextButtonsFocus(this._textSizeButtons, this._settings._textSize);
+	}
+
+	/**
+	 * Creates the auto skip settings management panel.
+	 * @returns {Container} The created auto skip settings panel.
+	 */
+	createAutoSkipPanel() {
+		const panel = new Container();
+		const arrow = new Asset(ref.settings.arrow);
+		arrow.y += SettingsPanel.ARROW_OFFSET;
+		panel.addChild(arrow);
+		const title = new Text(this._settings.getLangText('auto_skip'), {
+			fontFamily: 'drpg-verdana',
+			fontSize: 12 * SettingsPanel.S_FONT_SIZE,
+			fill: 0xffffff,
+			stroke: 0x000000,
+			strokeThickness: 2 * SettingsPanel.S_FONT_SIZE
+		});
+		title.scale.set(1 / SettingsPanel.S_FONT_SIZE);
+		title.x = 18;
+		panel.addChild(title);
+		const buttons = this.createAutoSkipButtons();
+		// Callback to prevent font loading issue. See comment above.
+		this.onOpen = () => {
+			buttons.x = 18 + Math.round(title.width) + SettingsPanel.TITLE_PADDING;
+		};
+		panel.addChild(buttons);
+		return panel;
+	}
+
+	/**
+	 * Creates the button controlling the auto skip timing.
+	 * @returns {Container} The container containing the buttons.
+	 */
+	createAutoSkipButtons() {
+		const buttons = new Container();
+		for (const sp of SettingsPanel.AUTO_SKIP_SETTINGS) {
+			const name = sp < 0 ? this._settings.getLangText('auto_skip_disabled') : `${sp}s`;
+			const textButton = new Text(name, {
+				fontFamily: 'drpg-verdana',
+				fontSize: 12 * SettingsPanel.S_FONT_SIZE,
+				strokeThickness: 2 * SettingsPanel.S_FONT_SIZE
+			});
+			textButton.scale.set(1 / SettingsPanel.S_FONT_SIZE);
+			textButton.onclick = () => {
+				this.setAutoSkip(sp);
+			};
+			textButton.ontap = () => {
+				this.setAutoSkip(sp);
+			};
+			textButton.eventMode = 'static';
+			textButton.cursor = 'pointer';
+
+			this._autoSkipButtons[sp] = textButton;
+			buttons.addChild(textButton);
+		}
+		this.setTextButtonsFocus(this._autoSkipButtons, this._settings._autoSkip);
+		// Callback to prevent font loading issue. See comment above.
+		this.onOpen = () => {
+			let posX = 0;
+			for (const sp of SettingsPanel.AUTO_SKIP_SETTINGS) {
+				this._autoSkipButtons[sp].x = posX;
+				posX += Math.round(this._autoSkipButtons[sp].width) + 8;
+			}
+		};
+		return buttons;
+	}
+
+	/**
+	 * Sets the auto skip delay in the settings and change the focus of the text buttons.
+	 * @param {number} delay The new auto skip delay.
+	 */
+	setAutoSkip(delay) {
+		this._settings.autoSkip = delay;
+		this.setTextButtonsFocus(this._autoSkipButtons, this._settings._autoSkip);
+	}
+
+	/**
+	 * Creates the settings allowing to toggle on or off the dino scaling with hp.
+	 * @returns {Container} The display for the setting.
+	 */
+	createDinoScalingSetting() {
+		const cont = new Container();
+		const arrow = new Asset(ref.settings.arrow);
+		arrow.y += SettingsPanel.ARROW_OFFSET;
+		cont.addChild(arrow);
+		const txt = new Text(this._settings.getLangText('scale_size'), {
+			fontFamily: 'drpg-verdana',
+			fontSize: 12 * SettingsPanel.S_FONT_SIZE,
+			fill: 0xffffff,
+			stroke: 0x000000,
+			strokeThickness: 2 * SettingsPanel.S_FONT_SIZE
+		});
+		txt.scale.set(1 / SettingsPanel.S_FONT_SIZE);
+		txt.x = 18;
+		cont.addChild(txt);
+		const toggle = new Toggle(
+			ref.settings.checkbox_on,
+			ref.settings.checkbox_off,
+			this._settings.scaleDinoz,
+			() => {
+				this._settings.scaleDinoz = true;
+			},
+			() => {
+				this._settings.scaleDinoz = false;
+			}
+		);
+		// Callback to prevent font loading issue. See comment above.
+		this.onOpen = () => {
+			toggle.x = 18 + Math.round(txt.width) + SettingsPanel.TITLE_PADDING;
+		};
+		toggle.y = 3;
+		cont.addChild(toggle);
+		return cont;
+	}
+
+	/**
+	 * Creates the panel containing the debug settings.
+	 * @param {number} offset The x offset of the panel.
+	 * @returns {Container} The created debug settings panel.
+	 */
+	createDebugPanel(offset) {
+		const panel = new Container();
+		const title = new Text('DEBUG', {
+			fontFamily: 'drpg-verdana',
+			fontSize: 14 * SettingsPanel.S_FONT_SIZE,
+			fontWeight: 'bold',
+			align: 'center',
+			fill: 0xffffff,
+			stroke: 0x000000,
+			strokeThickness: 3 * SettingsPanel.S_FONT_SIZE
+		});
+		title.anchor.set(0.5, 0);
+		title.scale.set(1 / SettingsPanel.S_FONT_SIZE);
+		title.x = SCENE_FULL_WIDTH / 2 - offset;
+		panel.addChild(title);
+
+		const autoPauseDisplay = this.createAutoPauseSetting();
+		autoPauseDisplay.y = 30;
+		panel.addChild(autoPauseDisplay);
+
+		const hitboxDisplay = this.createHitboxSetting();
+		hitboxDisplay.y = 55;
+		panel.addChild(hitboxDisplay);
+
+		return panel;
+	}
+
+	/**
+	 * Creates the settings allowing to toggle on or off the pause between each action.
+	 * @returns {Container} The display for the setting.
+	 */
+	createAutoPauseSetting() {
+		const cont = new Container();
+		const arrow = new Asset(ref.settings.arrow);
+		arrow.y += SettingsPanel.ARROW_OFFSET;
+		cont.addChild(arrow);
+		const txt = new Text(this._settings.getLangText('auto_pause'), {
+			fontFamily: 'drpg-verdana',
+			fontSize: 12 * SettingsPanel.S_FONT_SIZE,
+			fill: 0xffffff,
+			stroke: 0x000000,
+			strokeThickness: 2 * SettingsPanel.S_FONT_SIZE
+		});
+		txt.scale.set(1 / SettingsPanel.S_FONT_SIZE);
+		txt.x = 18;
+		cont.addChild(txt);
+		const toggle = new Toggle(
+			ref.settings.checkbox_on,
+			ref.settings.checkbox_off,
+			this._settings.autoPause,
+			() => {
+				this._settings.autoPause = true;
+			},
+			() => {
+				this._settings.autoPause = false;
+			}
+		);
+		// Callback to prevent font loading issue. See comment above.
+		this.onOpen = () => {
+			toggle.x = 18 + Math.round(txt.width) + SettingsPanel.TITLE_PADDING;
+		};
+		toggle.y = 3;
+		cont.addChild(toggle);
+		return cont;
+	}
+
+	/**
+	 * Creates the settings allowing to toggle on or off the hitboxes.
+	 * @returns {Container} The display for the setting.
+	 */
+	createHitboxSetting() {
+		const cont = new Container();
+		const arrow = new Asset(ref.settings.arrow);
+		arrow.y += SettingsPanel.ARROW_OFFSET;
+		cont.addChild(arrow);
+		const txt = new Text(this._settings.getLangText('show_hitbox'), {
+			fontFamily: 'drpg-verdana',
+			fontSize: 12 * SettingsPanel.S_FONT_SIZE,
+			fill: 0xffffff,
+			stroke: 0x000000,
+			strokeThickness: 2 * SettingsPanel.S_FONT_SIZE
+		});
+		txt.scale.set(1 / SettingsPanel.S_FONT_SIZE);
+		txt.x = 18;
+		cont.addChild(txt);
+		const toggle = new Toggle(
+			ref.settings.checkbox_on,
+			ref.settings.checkbox_off,
+			this._settings.showHitbox,
+			() => {
+				this._settings.showHitbox = true;
+			},
+			() => {
+				this._settings.showHitbox = false;
+			}
+		);
+		// Callback to prevent font loading issue. See comment above.
+		this.onOpen = () => {
+			toggle.x = 18 + Math.round(txt.width) + SettingsPanel.TITLE_PADDING;
+		};
+		toggle.y = 3;
+		cont.addChild(toggle);
+		return cont;
+	}
+
+	/**
+	 * Creates the button allowing to copy the fight into your clipboard.
+	 * @returns {Container} The panel containing the copy fight button.
+	 */
+	createCopyFightPanel() {
+		const panel = new Container();
+		const doneButton = new Text(this._settings.getLangText('copy_fight_done'), {
+			fontFamily: 'drpg-verdana',
+			fontSize: 12 * SettingsPanel.S_FONT_SIZE,
+			fill: 0xffffff,
+			stroke: 0x000000,
+			strokeThickness: 2 * SettingsPanel.S_FONT_SIZE
+		});
+		doneButton.scale.set(1 / SettingsPanel.S_FONT_SIZE);
+		doneButton.anchor.set(0.5, 0);
+		doneButton.visible = false;
+		panel.addChild(doneButton);
+
+		const copyButton = new Text(this._settings.getLangText('copy_fight'), {
+			fontFamily: 'drpg-verdana',
+			fontSize: 12 * SettingsPanel.S_FONT_SIZE,
+			fill: 0xffffff,
+			stroke: 0x000000,
+			strokeThickness: 2 * SettingsPanel.S_FONT_SIZE
+		});
+		copyButton.scale.set(1 / SettingsPanel.S_FONT_SIZE);
+		copyButton.anchor.set(0.5, 0);
+		const cb = () => {
+			copyButton.visible = false;
+			doneButton.visible = true;
+			this._settings.copyFight();
+			setTimeout(() => {
+				copyButton.visible = true;
+				doneButton.visible = false;
+			}, 1000);
+		};
+		copyButton.onclick = cb;
+		copyButton.ontap = cb;
+		copyButton.eventMode = 'static';
+		copyButton.cursor = 'pointer';
+		panel.addChild(copyButton);
+
+		return panel;
 	}
 
 	/**
@@ -384,7 +673,7 @@ export class SettingsPanel extends Container {
 		this._prevPausedSetting = this._settings.paused;
 		this._settings.paused = true;
 		// In case the settings were changed via the speed menu.
-		this.setSpeedButtonsFocus();
+		this.setTextButtonsFocus(this._speedButtons, this._settings._speed);
 		for (const cb of this._onOpenCallbacks) {
 			cb();
 		}

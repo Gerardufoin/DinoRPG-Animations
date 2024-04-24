@@ -87,9 +87,7 @@ export class Scene extends IScene {
 
 		// SETTINGS
 		const speedSettings = new SpeedPanel(this._settings);
-		speedSettings.x = 50;
-		speedSettings.y = SCENE_HEIGHT - 20;
-		this.dm.addContainer(speedSettings, Layers.Scene.SETTINGS);
+		this.dm.addContainer(speedSettings, Layers.Scene.INTER);
 		const settingsPanel = new SettingsPanel(this._settings, speedSettings);
 		this.dm.addContainer(
 			new SettingsButton(settingsPanel, () => {

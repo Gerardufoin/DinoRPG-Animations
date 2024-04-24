@@ -54,7 +54,7 @@ export class Text extends State {
 	 */
 	init() {
 		this._textBox = new TextBox(this._scene, this._message);
-		this._scene.dm.addContainer(this._textBox, Layers.Scene.PARTS);
+		this._scene.dm.addContainer(this._textBox, Layers.Scene.INTER);
 		this._scene.setClick(() => {
 			this._textBox.speedUp();
 		}, true);
@@ -85,7 +85,7 @@ export class Text extends State {
 			case 2:
 				this._textBox.alpha = 1 - this._coef;
 				if (this._coef == 1) {
-					this._scene.dm.removeContainer(this._textBox, Layers.Scene.PARTS);
+					this._scene.dm.removeContainer(this._textBox, Layers.Scene.INTER);
 					this.end();
 				}
 				break;

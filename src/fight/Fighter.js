@@ -442,7 +442,8 @@ export class Fighter extends Phys {
 		this._props = fInfos.props;
 		this._life = fInfos.life;
 		this._maxLife = fInfos.maxLife ?? fInfos.life;
-		this._size = Math.pow(fInfos.scale ?? 1, 0.65);
+		const scale = !this.isDino || this._scene.settings.scaleDinoz ? fInfos.scale ?? 1 : 1;
+		this._size = Math.pow(scale, 0.65);
 
 		this._depthManager = new DepthManager(Object.keys(Layers.Fighter).length);
 		this.body.addChild(this._depthManager);
