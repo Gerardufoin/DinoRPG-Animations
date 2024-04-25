@@ -25,11 +25,6 @@ export const FONT_SCALE = 3;
  */
 export class IScene extends Container {
 	/**
-	 * If true, displays the debug parameters when instantiating entities.
-	 */
-	debugMode = false;
-
-	/**
 	 * The Fight's settings, allowing to change the different fight's options (speed, text size, ...).
 	 * @type {Settings}
 	 */

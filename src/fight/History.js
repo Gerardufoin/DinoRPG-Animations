@@ -132,9 +132,19 @@ export class History {
 	 * @returns {void}
 	 */
 	playNext() {
+		// Fight end callback
+		if (this._history && this._historyIdx < this._history.length && this._historyIdx + 1 >= this._history.length) {
+			if (this._scene.settings.onFightEnd && typeof this._scene.settings.onFightEnd === 'function') {
+				this._scene.settings.onFightEnd();
+			}
+		}
 		this._historyIdx++;
 		if (this._history && this._historyIdx < this._history.length) {
 			const h = this._history[this._historyIdx];
+			// Step start callback
+			if (this._scene.settings.onStepStart && typeof this._scene.settings.onStepStart === 'function') {
+				this._scene.settings.onStepStart(this._historyIdx, h);
+			}
 			if (this._actions[h.action]) {
 				const newState = this[this._actions[h.action]](h);
 				if (newState) {
@@ -142,8 +152,30 @@ export class History {
 				}
 			} else {
 				console.error(`Action ${h.action} not defined in history mapping.`);
-				this.playNext();
+				this.nextAction(true);
 			}
+		}
+	}
+
+	/**
+	 * Invoke the next action while doing the necessary steps based on the settings.
+	 * @param {boolean} ignore If true, ignore the autopause setting. False by default.
+	 */
+	nextAction(ignore = false) {
+		// Step end callback
+		if (this._scene.settings.onStepEnd && typeof this._scene.settings.onStepEnd === 'function') {
+			this._scene.settings.onStepEnd(this._historyIdx, this._history[this._historyIdx]);
+		}
+		if (!ignore && this._scene.settings.autoPause) {
+			this._scene.setClick(
+				() => {
+					this.playNext();
+				},
+				true,
+				true
+			);
+		} else {
+			this.playNext();
 		}
 	}
 
@@ -178,7 +210,7 @@ export class History {
 		return new AddFighter(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fighter
 		);
@@ -193,7 +225,7 @@ export class History {
 		return new Announce(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fid,
 			action.message
@@ -209,7 +241,7 @@ export class History {
 		return new UseItem(
 			this,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fid,
 			action.name,
@@ -226,7 +258,7 @@ export class History {
 		return new Lost(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fid,
 			action.amount,
@@ -243,7 +275,7 @@ export class History {
 		return new Status(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fid,
 			action.status
@@ -259,7 +291,7 @@ export class History {
 		return new NoStatus(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fid,
 			action.status
@@ -275,7 +307,7 @@ export class History {
 		return new Regen(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fid,
 			action.amount,
@@ -292,7 +324,7 @@ export class History {
 		return new Damages(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fid,
 			action.tid,
@@ -311,7 +343,7 @@ export class History {
 		return new Skill(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.skill,
 			action.details
@@ -327,7 +359,7 @@ export class History {
 		return new Dead(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fid
 		);
@@ -342,7 +374,7 @@ export class History {
 		return new GotoFighter(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fid,
 			action.tid,
@@ -360,7 +392,7 @@ export class History {
 		return new Return(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fid
 		);
@@ -375,7 +407,7 @@ export class History {
 		this._fight.pause(action.time);
 		this._scene.reduceTimeBar(action.time);
 		if (!this._fight.paused) {
-			this.playNext();
+			this.nextAction();
 		}
 	}
 
@@ -388,7 +420,7 @@ export class History {
 		return new Finish(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.left,
 			action.right
@@ -401,7 +433,7 @@ export class History {
 	 */
 	addCastle(action) {
 		this._scene.createCastle(action.castle);
-		this.playNext();
+		this.nextAction();
 	}
 
 	/**
@@ -410,7 +442,7 @@ export class History {
 	 */
 	timeLimit(action) {
 		this._scene.initTimeBar(action.time);
-		this.playNext();
+		this.nextAction();
 	}
 
 	/**
@@ -422,7 +454,7 @@ export class History {
 		return new AttackCastle(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fid,
 			action.damages,
@@ -437,7 +469,7 @@ export class History {
 	 */
 	display(_action) {
 		return new Start(this._scene, () => {
-			this.playNext();
+			this.nextAction(true);
 		});
 	}
 
@@ -450,7 +482,7 @@ export class History {
 		return new Text(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction(true);
 			},
 			action.message
 		);
@@ -465,7 +497,7 @@ export class History {
 		return new Talk(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction(true);
 			},
 			action.fid,
 			action.message
@@ -481,7 +513,7 @@ export class History {
 		return new Escape(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fid
 		);
@@ -496,7 +528,7 @@ export class History {
 		return new MoveTo(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fid,
 			action.x,
@@ -513,7 +545,7 @@ export class History {
 		return new Flip(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fid
 		);
@@ -528,7 +560,7 @@ export class History {
 		return new SpawnToy(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.toy,
 			action.x,
@@ -549,7 +581,7 @@ export class History {
 		return new DestroyToy(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.toy
 		);
@@ -564,7 +596,7 @@ export class History {
 		return new Wait(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.time
 		);
@@ -575,10 +607,8 @@ export class History {
 	 * @param {{action: number, msg: string}} action Action which triggered the call.
 	 */
 	printLog(action) {
-		if (this._scene.debugMode) {
-			console.log(`Fight Log Message: ${action.msg}`);
-		}
-		this.playNext();
+		console.log(`Fight Log Message: ${action.msg}`);
+		this.nextAction(true);
 	}
 
 	/**
@@ -587,7 +617,7 @@ export class History {
 	 */
 	notify(action) {
 		this.registerState(new Notification(this._scene, undefined, action.fids, action.notification));
-		this.playNext();
+		this.nextAction();
 	}
 
 	/**
@@ -603,7 +633,7 @@ export class History {
 				console.error(`Energy Error: Fighter with id ${f.fid} does not exist in the scene.`);
 			}
 		}
-		this.playNext();
+		this.nextAction();
 	}
 
 	/**
@@ -619,7 +649,7 @@ export class History {
 				console.error(`MaxEnergy Error: Fighter with id ${f.fid} does not exist in the scene.`);
 			}
 		}
-		this.playNext();
+		this.nextAction();
 	}
 
 	/**
@@ -631,7 +661,7 @@ export class History {
 		return new Emote(
 			this._scene,
 			() => {
-				this.playNext();
+				this.nextAction();
 			},
 			action.fids,
 			action.emote,
@@ -645,6 +675,6 @@ export class History {
 	 */
 	shake(action) {
 		this._scene.fxShake(action.force, action.frict, action.speed);
-		this.playNext();
+		this.nextAction();
 	}
 }

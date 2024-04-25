@@ -22,7 +22,12 @@ export class Settings {
 	 * The language to use for the settings display.
 	 * @type {string}
 	 */
-	language = 'fr';
+	language = 'en';
+	/**
+	 * Determines if the settings are accessible in game or not.
+	 * @type {boolean}
+	 */
+	display = true;
 	/**
 	 * The display speed of the fight.
 	 * @type {number}
@@ -162,6 +167,18 @@ export class Settings {
 	 */
 	_showHitbox = false;
 	/**
+	 * Callbacks to call when the ShowHitbox setting is changed.
+	 * @type {((v: boolean) => void)[]}
+	 */
+	_showHitboxCallbacks = [];
+	/**
+	 * Register a new callback to invoke when the ShowHitbox setting is changed.
+	 * @param {(v: boolean) => void} cb The callback to register.
+	 */
+	set onShowHitbox(cb) {
+		this._showHitboxCallbacks.push(cb);
+	}
+	/**
 	 * Gets the setting deciding if the hitboxes should be displayed or not.
 	 * @type {boolean}
 	 */
@@ -175,12 +192,17 @@ export class Settings {
 	set showHitbox(v) {
 		this._showHitbox = v;
 		this.saveSettings();
+		this._showHitboxCallbacks.forEach((cb) => cb(v));
 	}
 
 	/**
-	 * Load the settings from local storage.
+	 * Load the settings from local storage if the settings are enabled.
+	 * @param {string} lang The language of the settings.
+	 * @param {boolean} disable If true, the settings are the default one and cannot be loaded or saved. False by default.
 	 */
-	constructor() {
+	constructor(lang, disable = false) {
+		this.display = !disable;
+		this.language = lang;
 		this.loadSettings();
 	}
 
@@ -203,6 +225,8 @@ export class Settings {
 	 * Load the settings from the local storage.
 	 */
 	loadSettings() {
+		if (!this.display) return;
+
 		let settings = {};
 		try {
 			const settingJson = localStorage.getItem(Settings.SETTING_KEY_NAME);
@@ -224,6 +248,8 @@ export class Settings {
 	 * Save the settings in the local storage.
 	 */
 	saveSettings() {
+		if (!this.display) return;
+
 		const settings = {
 			speed: this._speed,
 			displaySpeed: this._showSpeedMenu,
@@ -235,4 +261,58 @@ export class Settings {
 		};
 		localStorage.setItem(Settings.SETTING_KEY_NAME, JSON.stringify(settings));
 	}
+
+	// CALLBACKS
+	/**
+	 * A callback firing every time a new step is started in the fight history.
+	 * Will give the step object as argument.
+	 * @type {(index: number, step: object) => {}}
+	 */
+	onStepStart;
+
+	/**
+	 * A callback firing every time a step ends in the fight history.
+	 * Will give the step object as argument.
+	 * @type {(index: number, step: object) => {}}
+	 */
+	onStepEnd;
+
+	/**
+	 * A callback firing once the fight starts.
+	 * @type {() => {}}
+	 */
+	onFightStart;
+
+	/**
+	 * A callback firing once the fight ends.
+	 * @type {(() => {})}
+	 */
+	onFightEnd;
+
+	/**
+	 * A callback firing every time a fighter or its portrait is clicked.
+	 * Will give the fighter idx as parameter.
+	 * @type {(idx: number) => {}}
+	 */
+	onFighterClick;
+
+	/**
+	 * A callback firing every time the status of a fighter changes.
+	 * Will give the status idx and the list of its status as parameters.
+	 * @type {(idx: number, status: string[]) => {}}
+	 */
+	onStatusChange;
+
+	/**
+	 * A callback firing every time the life of a fighter changes.
+	 * Will give the fighter and its current life as parameters.
+	 * @type {(idx: number, life: number[]) => {}}
+	 */
+	onLifeChange;
+
+	/**
+	 * A callback firing every time a fighter dies.
+	 * @type {(idx: number) => {}}
+	 */
+	onDeath;
 }

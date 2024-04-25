@@ -548,10 +548,7 @@ export class Fighter extends Phys {
 			this._scene.addSlot(this._slot, this.side);
 		}
 
-		// Debug mode, show the colliders and origin.
-		if (this._scene.debugMode) {
-			this.debugShowOrigin();
-		}
+		this.createHitbox();
 	}
 
 	/**
@@ -1835,16 +1832,25 @@ export class Fighter extends Phys {
 	}
 
 	/**
-	 * Adds a red dot at the center of the Fighter.
-	 * Debug purposes only.
+	 * Create the hitbox of the Fighter. The hitbox is hidden unless the ShowHitbox setting is switched on.
 	 */
-	debugShowOrigin() {
-		const origin = new Graphics();
-		origin.beginFill(0xff0000).drawCircle(0, 0, 3).endFill();
-		this.body.addChild(origin);
-		// Collider
-		this.body.addChild(
+	createHitbox() {
+		const hitbox = new Container();
+		hitbox.visible = this._scene.settings.showHitbox;
+		this.body.addChild(hitbox);
+
+		// origin
+		hitbox.addChild(new Graphics().beginFill(0x0000ff).drawCircle(0, 0, 3).endFill());
+		// area
+		hitbox.addChild(new Graphics().lineStyle(2, 0x0000ff).drawCircle(0, 0, this.ray));
+
+		// collider
+		hitbox.addChild(
 			new Graphics().lineStyle(2, 0xff0000).drawRect(-this._width / 2, -this._height, this._width, this._height)
 		);
+
+		this._scene.settings.onShowHitbox = (show) => {
+			hitbox.visible = show;
+		};
 	}
 }

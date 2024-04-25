@@ -58,11 +58,9 @@ export class Scene extends IScene {
 	 * @param {number} ground The type of ground for the Scene.
 	 * @param {Renderer} renderer The renderer which will render the Scene. Used to get the Background colors.
 	 * @param {Settings} settings The Fight's settings.
-	 * @param {boolean} debug If true, the scene starts in debug mode. False by default.
 	 */
-	constructor(background, margins, ground, renderer, settings, debug = false) {
+	constructor(background, margins, ground, renderer, settings) {
 		super();
-		this.debugMode = debug;
 		this.margins = margins;
 		this._settings = settings;
 		this._groundType = ground;
@@ -86,22 +84,22 @@ export class Scene extends IScene {
 		this._slots.map((s) => (s.alpha = 0));
 
 		// SETTINGS
-		const speedSettings = new SpeedPanel(this._settings);
-		this.dm.addContainer(speedSettings, Layers.Scene.INTER);
-		const settingsPanel = new SettingsPanel(this._settings, speedSettings);
-		this.dm.addContainer(
-			new SettingsButton(settingsPanel, () => {
-				// Reset y on settings opening to prevent shaking displacement
-				this.y = 0;
-			}),
-			Layers.Scene.SETTINGS
-		);
-		this.dm.addContainer(settingsPanel, Layers.Scene.SETTINGS);
-
-		// DEBUG
-		if (this.debugMode) {
-			this.debugDrawMargins();
+		if (this._settings.display) {
+			const speedSettings = new SpeedPanel(this._settings);
+			this.dm.addContainer(speedSettings, Layers.Scene.INTER);
+			const settingsPanel = new SettingsPanel(this._settings, speedSettings);
+			this.dm.addContainer(
+				new SettingsButton(settingsPanel, () => {
+					// Reset y on settings opening to prevent shaking displacement
+					this.y = 0;
+				}),
+				Layers.Scene.SETTINGS
+			);
+			this.dm.addContainer(settingsPanel, Layers.Scene.SETTINGS);
 		}
+
+		// MARGINS
+		this.debugDrawMargins();
 	}
 
 	/**
@@ -407,25 +405,34 @@ export class Scene extends IScene {
 
 	/**
 	 * Debug function. Draws the scene's given margins.
+	 * The margins are hidden unless the settings ShowHitbox is switched on.
 	 */
 	debugDrawMargins() {
-		this.debugAddLine({ x: 0, y: this.margins.top }, { x: SCENE_WIDTH, y: this.margins.top });
-		this.debugAddLine(
-			{ x: 0, y: SCENE_HEIGHT - this.margins.bottom },
-			{ x: SCENE_WIDTH, y: SCENE_HEIGHT - this.margins.bottom }
+		const margins = new Container();
+		margins.visible = this._settings.showHitbox;
+		this.dm.addContainer(margins, Layers.Scene.DEBUG);
+
+		margins.addChild(this.debugAddLine({ x: 0, y: this.margins.top }, { x: SCENE_WIDTH, y: this.margins.top }));
+		margins.addChild(
+			this.debugAddLine(
+				{ x: 0, y: SCENE_HEIGHT - this.margins.bottom },
+				{ x: SCENE_WIDTH, y: SCENE_HEIGHT - this.margins.bottom }
+			)
 		);
-		this.debugAddLine({ x: this.width, y: 0 }, { x: this.width, y: SCENE_HEIGHT });
+		margins.addChild(this.debugAddLine({ x: this.width, y: 0 }, { x: this.width, y: SCENE_HEIGHT }));
+
+		this._settings.onShowHitbox = (show) => {
+			margins.visible = show;
+		};
 	}
 
 	/**
-	 * Add a line to the debug layer.
-	 * The line starts from "from" and ends to "to".
+	 * Creates a line starting from "from" and ending to "to".
 	 * @param {{x: number, y: number}} from Coordinates of the start of the line.
 	 * @param {{x: number, y: number}} to Coordinates of the end of the line.
+	 * @returns {Graphics} The resulting line.
 	 */
 	debugAddLine(from, to) {
-		const line = new Graphics();
-		this.dm.addContainer(line, Layers.Scene.DEBUG);
-		line.lineStyle(2, 0xff0000).moveTo(from.x, from.y).lineTo(to.x, to.y);
+		return new Graphics().lineStyle(2, 0xff0000).moveTo(from.x, from.y).lineTo(to.x, to.y);
 	}
 }

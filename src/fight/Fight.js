@@ -73,8 +73,8 @@ export class Fight {
 	_history;
 
 	/**
-	 * Create a fight based on the data parameter.
-	 * @param {{legacy_data?: string, bg?: string, history?: Array, debug?: boolean}} data Object containing the data describing a fight.
+	 * Creates a fight based on the data parameter.
+	 * @param {{legacy_data?: string, bg?: string, history?: Array, lang?: string, settings?: boolean}} data Object containing the data describing a fight.
 	 */
 	constructor(data) {
 		if (data.legacy_data) {
@@ -89,7 +89,7 @@ export class Fight {
 			height: 300
 		});
 
-		this._settings = new Settings();
+		this._settings = new Settings(data.lang ?? 'en', !(data.settings ?? true));
 		this._settings.copyFight = () => {
 			this.copyToClipboard();
 		};
@@ -103,8 +103,7 @@ export class Fight {
 			},
 			this._data.ground ?? 0,
 			this._renderer,
-			this._settings,
-			data.debug
+			this._settings
 		);
 
 		this._timer = new Timer(Fight.FRAME_RATE, this._settings);
@@ -120,13 +119,16 @@ export class Fight {
 		PreloadData.preload(this._renderer).then(() => {
 			// "Fake" loading delay to leave the time for the player to understand what is happening and for some resources to load.
 			setTimeout(() => {
+				if (this._settings.onFightStart && typeof this._settings.onFightStart === 'function') {
+					this._settings.onFightStart();
+				}
 				this._history.playNext();
 			}, 1000);
 		});
 	}
 
 	/**
-	 * Update the States and the Scene.
+	 * Updates the States and the Scene.
 	 * If waiting time is above 0, decrease it and play the next history action once finish.
 	 */
 	update() {
@@ -136,13 +138,13 @@ export class Fight {
 			this._waitingTime -= this._timer.tmod;
 			if (this._waitingTime <= 0) {
 				this._waitingTime = 0;
-				this._history.playNext();
+				this._history.nextAction();
 			}
 		}
 	}
 
 	/**
-	 * Get the fight canvas to add to a webpage.
+	 * Gets the fight canvas to add to a webpage.
 	 * @returns {import("pixi.js").ICanvas} The canvas instance to add to the webpage.
 	 */
 	getDisplay() {
@@ -150,7 +152,7 @@ export class Fight {
 	}
 
 	/**
-	 * Pause the action for the given number of frames.
+	 * Pauses the action for the given number of frames.
 	 * @param {number} frames The number of frames the pause has to last.
 	 */
 	pause(frames) {
@@ -158,14 +160,14 @@ export class Fight {
 	}
 
 	/**
-	 * Copy the fight to the user clipboard.
+	 * Copies the fight to the user clipboard.
 	 */
 	copyToClipboard() {
 		navigator.clipboard.writeText(JSON.stringify(this._data, undefined, '\t'));
 	}
 
 	/**
-	 * Get the fight data under MT format.
+	 * Gets the fight data under MT format.
 	 * @param {boolean} forceDAData Force the process to use the converted data as base, even if legacy data was passed at init.
 	 * @returns {string} The serialized data to feed fight.swf.
 	 */
@@ -177,7 +179,7 @@ export class Fight {
 	}
 
 	/**
-	 * Get the unserialized fight data under MT format.
+	 * Gets the unserialized fight data under MT format.
 	 * @returns {object} The fight data under MT format as an object.
 	 */
 	getMTObject() {
@@ -188,12 +190,81 @@ export class Fight {
 	}
 
 	/**
-	 * Destroy the fight display and clean the memory.
+	 * Destroys the fight display and clean the memory.
 	 * Call if you need to remove the Fight from the webpage without reloading.
 	 * The Fight object is rendered useless after this method is called and will have to be discarded.
 	 */
 	destroy() {
 		this._timer.destroy();
 		this._renderer.destroy();
+	}
+
+	/**
+	 * Registers a callback firing every time a new step is started in the fight history.
+	 * Will give the step index and object as argument.
+	 * @param {((idx: number, step: object) => {})} cb The callback to invoke on a new step.
+	 */
+	set onStepStart(cb) {
+		this._settings.onStepStart = cb;
+	}
+
+	/**
+	 * Registers a callback firing every time a step ends in the fight history.
+	 * Will give the step index and object as argument.
+	 * @param {((idx: number, step: object) => {})} cb The callback to invoke when a step ends.
+	 */
+	set onStepEnd(cb) {
+		this._settings.onStepEnd = cb;
+	}
+
+	/**
+	 * Registers a callback firing once the fight starts.
+	 * @param {(() => {})} cb The callback to invoke when the fight starts.
+	 */
+	set onFightStart(cb) {
+		this._settings.onFightStart = cb;
+	}
+
+	/**
+	 * Registers a callback firing once the fight ends.
+	 * @param {(() => {})} cb The callback to invoke when the fight ends.
+	 */
+	set onFightEnd(cb) {
+		this._settings.onFightEnd = cb;
+	}
+
+	/**
+	 * Registers a callback firing every time a fighter or its portrait is clicked.
+	 * Will give the fighter idx as parameter.
+	 * @param {((idx: number) => {})} cb The callback to invoke when a fighter is clicked.
+	 */
+	set onFighterClick(cb) {
+		this._settings.onFighterClick = cb;
+	}
+
+	/**
+	 * Registers a callback firing every time the status of a fighter changes.
+	 * Will give the status idx and the list of its status as parameters.
+	 * @param {((idx: number, status: string[]) => {})} cb The callback to invoke when there is a change of status on a fighter.
+	 */
+	set onStatusChange(cb) {
+		this._settings.onStatusChange = cb;
+	}
+
+	/**
+	 * Registers a callback firing every time the life of a fighter changes.
+	 * Will give the fighter and its current life as parameters.
+	 * @param {((idx: number, life: number[]) => {})} cb The callback to invoke when the life of a fighter changes.
+	 */
+	set onLifeChange(cb) {
+		this._settings.onLifeChange = cb;
+	}
+
+	/**
+	 * Registers a callback firing every time a fighter dies.
+	 * @param {((idx: number) => {})} cb The callback to invoke when a fighter dies.
+	 */
+	set onDeath(cb) {
+		this._settings.onDeath = cb;
 	}
 }

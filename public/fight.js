@@ -1,6 +1,5 @@
 /* eslint-disable */
 
-let debug = false;
 const addDefaultFighter = {
 	action: DinoAnim.Action.Add,
 	fighter: {
@@ -874,7 +873,7 @@ for (const a of buttons) {
 		if (fightRef) {
 			fightRef.destroy();
 		}
-		fightRef = new DinoAnim.Fight({ ...a.fight, debug: debug });
+		fightRef = new DinoAnim.Fight({ ...a.fight });
 		const elem = document.getElementById('fight-container');
 		elem.innerHTML = '';
 		elem.appendChild(fightRef.getDisplay());
@@ -883,7 +882,3 @@ for (const a of buttons) {
 }
 
 document.getElementById('fight-container').appendChild(fightRef.getDisplay());
-
-function toggleDebug() {
-	debug = !debug;
-}
