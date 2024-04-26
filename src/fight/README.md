@@ -45,6 +45,8 @@ document.body.appendChild(fight.getDisplay());
 | right?     | Number                    | The right margin of the scene. 0 by default.                                                                                                 |
 | ground?    | GroundType                | The type of ground of the scene. Ground type define which particle are emitted on walk and landing. None by default.                         |
 | history    | { action: Action, ... }[] | The list of the actions of the fight. See below for the description of the actions and their parameters.                                     |
+| lang       | String                    | Sets the language of the settings (fr,en,es,it).                                                                                             |
+| settings   | Boolean                   | If false, disable the settings and plays the fight with its default parameters. True by default.                                             |
 
 | GroundType | Description                                                                                                               |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------- |
@@ -52,6 +54,107 @@ document.body.appendChild(fight.getDisplay());
 | Dirt (1)   | Creates clouds of dust of the same color as the background when the fighters are moving.                                  |
 | Water (2)  | Creates ripples around the fighters. When they are walking, creates droplets for water which burst up and then fall down. |
 | Rock (3)   | Creates stone particles of the same color as the background when a fighter lands.                                         |
+
+## Callbacks
+
+The Fight object has multiple endpoints which can be used to gather information about the ongoing fight.
+
+### onFightStart
+
+Invokes the registered callback when the first action of the fight is played.
+
+```javascript
+fight.onFightStart = () => {
+	console.log('Fight is starting.');
+};
+```
+
+### onFightEnd
+
+Invokes the registered callback when the last action of the fight has finished.
+
+```javascript
+fight.onFightEnd = () => {
+	console.log('Fight has ended.');
+};
+```
+
+### onStepStart
+
+Invokes the registerd callback when a new step from the history starts playing.
+The callback receives the index of the step and the step itself with its enum values converted as numbers.
+
+```javascript
+fight.onStepStart = (idx, step) => {
+	console.log(`Step ${idx} has started: ${step}.`);
+};
+```
+
+### onStepStartStr
+
+Works the exact same way as onStepStart, but the step's enum values are converted to strings.
+
+### onStepEnd
+
+Invokes the registerd callback when a step from the history has finished.
+The callback receives the index of the step and the step itself with its enum values converted as numbers.
+
+```javascript
+fight.onStepEnd = (idx, step) => {
+	console.log(`Step ${idx} is finished: ${step}.`);
+};
+```
+
+### onStepStartStr
+
+Works the exact same way as onStepEnd, but the step's enum values are converted to strings.
+
+### onFighterClick
+
+If the callback is registered, every new fighter instantiated and their slot icon will be clickable.
+Every time a fighter or their icon is clicked, the callback is invoked with the fighter id.
+
+Note that the callback has to be registered BEFORE the fighters start being instantiated for the fighter to be interactible.
+
+```javascript
+fight.onFighterClick = (fid) => {
+	console.log(`Fighter id ${fid} has been clicked.`);
+};
+```
+
+### onStatusChange
+
+Invokes the registered callback every time the statuses of a fighter change (gain or loss).
+Gives the fighter's id and the list of the current status applied to the fighter.
+The status are given as string from the FighterStatus enum.
+
+```javascript
+fight.onStatusChange = (fid, status) => {
+	console.log(`Fighter id ${fid} has the following statuses: ${status}.`);
+};
+```
+
+### onLifeChange
+
+Invokes the registered callback every time the life of a fighter changes (gain or loss).
+Gives the fighter's id and its current life.
+
+```javascript
+fight.onLifeChange = (fid, life) => {
+	console.log(`Fighter id ${fid} has currently ${life} HP.`);
+};
+```
+
+### onDeath
+
+Invokes the registered callback every time a fighter dies.
+Gives the fighter's id.
+
+```javascript
+fight.onDeath = (fid) => {
+	console.log(`Fighter id ${fid} died.`);
+};
+```
 
 ## Actions
 

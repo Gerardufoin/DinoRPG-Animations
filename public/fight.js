@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 const addDefaultFighter = {
-	action: DinoAnim.Action.Add,
+	action: 'Add',
 	fighter: {
 		props: [],
 		dino: true,
@@ -13,7 +13,7 @@ const addDefaultFighter = {
 		gfx: '09T1Yt9wqq4Rx000',
 		x: 200,
 		y: 200,
-		entrance: DinoAnim.EntranceEffect.Stand
+		entrance: 'Stand'
 	}
 };
 const buttons = [
@@ -27,22 +27,22 @@ const buttons = [
 			ground: 0,
 			history: [
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'Welcome to this quick visual tutorial on the possible actions which can be given to the Fight display.'
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'The different buttons you can see below the fight area will take you to a different section of the tutorial, depending on what you are looking for.'
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'For a more in depth description of the actions, you can follow the link to the documentation.'
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message: 'Click on the desired button to continue.'
 				}
 			]
@@ -58,17 +58,17 @@ const buttons = [
 			ground: 2,
 			history: [
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message: 'The "Add" action allows you to add a fighter to the scene.'
 				},
 				addDefaultFighter,
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'The details of a fighter are defined via the "fighter" property of the action. This allows to to set the life, maximum life, name, etc...'
 				},
 				{
-					action: DinoAnim.Action.Add,
+					action: 'Add',
 					fighter: {
 						props: [],
 						dino: true,
@@ -82,11 +82,11 @@ const buttons = [
 					}
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message: `You can choose an entrance animation using the "entrance" property. This allows you to decide how the fighter enters the fight.`
 				},
 				{
-					action: DinoAnim.Action.Add,
+					action: 'Add',
 					fighter: {
 						props: [],
 						dino: true,
@@ -96,19 +96,19 @@ const buttons = [
 						side: true,
 						fid: 2,
 						gfx: '59QdaJ5j1dEaK000',
-						entrance: DinoAnim.EntranceEffect.Fall
+						entrance: 'Fall'
 					}
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message: `You can choose if you are instantiating a dinoz or a monster with the "dino" parameter, true for a dinoz, false for a monster. Based on this, the "gfx" parameter decides what kind of dinoz or monster is spawned in.`
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message: `For a dinoz, you must give its description string. For a monster, you must give its name as found on the monster page (link below).`
 				},
 				{
-					action: DinoAnim.Action.Add,
+					action: 'Add',
 					fighter: {
 						props: [],
 						dino: false,
@@ -118,18 +118,18 @@ const buttons = [
 						scale: 1,
 						fid: 3,
 						gfx: 'grdien',
-						entrance: DinoAnim.EntranceEffect.Ground
+						entrance: 'Ground'
 					}
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'Once the fight is over, you can make the fighters leave by calling the "Finish" action. Both side will act depending on the given EndBehaviour.'
 				},
 				{
-					action: DinoAnim.Action.Finish,
-					left: DinoAnim.EndBehaviour.Run,
-					right: DinoAnim.EndBehaviour.Escape
+					action: 'Finish',
+					left: 'Run',
+					right: 'Escape'
 				}
 			]
 		}
@@ -145,32 +145,32 @@ const buttons = [
 			history: [
 				addDefaultFighter,
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						"A fighter can announce something using the Announce action. The fighter's id (fid) and the message have to be specified as parameters."
 				},
 				{
-					action: DinoAnim.Action.Announce,
+					action: 'Announce',
 					fid: 0,
 					message: 'Powerful Attack!!!'
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						"A fighter can also announce the use of an item with the Object action. The fighter's id (fid) has to be specified, alongside the name of the item and its visual reference."
 				},
 				{
-					action: DinoAnim.Action.Object,
+					action: 'Object',
 					fid: 0,
 					name: 'An item!',
 					item: 'piran'
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message: 'The item type is an element from the "/asset/gfx/items" folder.'
 				},
 				{
-					action: DinoAnim.Action.Object,
+					action: 'Object',
 					fid: 0,
 					name: 'MOAR ITEMS!',
 					item: 'regen'
@@ -189,81 +189,81 @@ const buttons = [
 			history: [
 				addDefaultFighter,
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'You can make a fighter gain or lose health naturally using the "Regen" and "Lost" actions.'
 				},
 				{
-					action: DinoAnim.Action.Lost,
+					action: 'Lost',
 					fid: 0,
 					amount: 50,
-					lifeFx: { fx: DinoAnim.LifeEffect.Fire }
+					lifeFx: { fx: 'Fire' }
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'Both action take a fighter id (fid), an amount of health and a LifeEffect as parameters. The LifeEffect decides which particles are going to be added to the fighter.'
 				},
 				{
-					action: DinoAnim.Action.Regen,
+					action: 'Regen',
 					fid: 0,
 					amount: 20,
-					lifeFx: { fx: DinoAnim.LifeEffect.Heal }
+					lifeFx: { fx: 'Heal' }
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'There are multiple LifeEffect to choose from. Some take some special parameters, see the doc for more information.'
 				},
 				{
-					action: DinoAnim.Action.Lost,
+					action: 'Lost',
 					fid: 0,
 					amount: 1,
-					lifeFx: { fx: DinoAnim.LifeEffect.Wood }
+					lifeFx: { fx: 'Wood' }
 				},
 				{
-					action: DinoAnim.Action.Lost,
+					action: 'Lost',
 					fid: 0,
 					amount: 1,
-					lifeFx: { fx: DinoAnim.LifeEffect.Acid }
+					lifeFx: { fx: 'Acid' }
 				},
 				{
-					action: DinoAnim.Action.Lost,
+					action: 'Lost',
 					fid: 0,
 					amount: 1,
-					lifeFx: { fx: DinoAnim.LifeEffect.Explode }
+					lifeFx: { fx: 'Explode' }
 				},
 				{
-					action: DinoAnim.Action.Lost,
+					action: 'Lost',
 					fid: 0,
 					amount: 1,
-					lifeFx: { fx: DinoAnim.LifeEffect.Water }
+					lifeFx: { fx: 'Water' }
 				},
 				{
-					action: DinoAnim.Action.Lost,
+					action: 'Lost',
 					fid: 0,
 					amount: 1,
-					lifeFx: { fx: DinoAnim.LifeEffect.Lightning }
+					lifeFx: { fx: 'Lightning' }
 				},
 				{
-					action: DinoAnim.Action.Lost,
+					action: 'Lost',
 					fid: 0,
 					amount: 1,
-					lifeFx: { fx: DinoAnim.LifeEffect.Air }
+					lifeFx: { fx: 'Air' }
 				},
 				{
-					action: DinoAnim.Action.Lost,
+					action: 'Lost',
 					fid: 0,
 					amount: 200,
-					lifeFx: { fx: DinoAnim.LifeEffect.Skull, size: 2 }
+					lifeFx: { fx: 'Skull', size: 2 }
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'Once a fighter has taken a beating, it can be killed with the "Dead" action. This action only need the fighter\'s id. Quite sad.'
 				},
 				{
-					action: DinoAnim.Action.Dead,
+					action: 'Dead',
 					fid: 0
 				}
 			]
@@ -280,68 +280,68 @@ const buttons = [
 			history: [
 				addDefaultFighter,
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'Status are given to a fighter using the "Status" action. You only need to specify the fighter\'s id and a status from the list FighterStatus.'
 				},
 				{
-					action: DinoAnim.Action.Status,
+					action: 'Status',
 					fid: 0,
-					status: DinoAnim.FighterStatus.Sleep
+					status: 'Sleep'
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message: 'Multiple status can be applied at once.'
 				},
 				{
-					action: DinoAnim.Action.Status,
+					action: 'Status',
 					fid: 0,
-					status: DinoAnim.FighterStatus.Poison
+					status: 'Poison'
 				},
 				{
-					action: DinoAnim.Action.Status,
+					action: 'Status',
 					fid: 0,
-					status: DinoAnim.FighterStatus.Quick
+					status: 'Quick'
 				},
 				{
-					action: DinoAnim.Action.Status,
+					action: 'Status',
 					fid: 0,
-					status: DinoAnim.FighterStatus.Shield
+					status: 'Shield'
 				},
 				{
-					action: DinoAnim.Action.Status,
+					action: 'Status',
 					fid: 0,
-					status: DinoAnim.FighterStatus.Dazzled
+					status: 'Dazzled'
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'Status can be removed by using the action "NoStatus" with the same parameters as "Status".'
 				},
 				{
-					action: DinoAnim.Action.NoStatus,
+					action: 'NoStatus',
 					fid: 0,
-					status: DinoAnim.FighterStatus.Sleep
+					status: 'Sleep'
 				},
 				{
-					action: DinoAnim.Action.NoStatus,
+					action: 'NoStatus',
 					fid: 0,
-					status: DinoAnim.FighterStatus.Poison
+					status: 'Poison'
 				},
 				{
-					action: DinoAnim.Action.NoStatus,
+					action: 'NoStatus',
 					fid: 0,
-					status: DinoAnim.FighterStatus.Quick
+					status: 'Quick'
 				},
 				{
-					action: DinoAnim.Action.NoStatus,
+					action: 'NoStatus',
 					fid: 0,
-					status: DinoAnim.FighterStatus.Shield
+					status: 'Shield'
 				},
 				{
-					action: DinoAnim.Action.NoStatus,
+					action: 'NoStatus',
 					fid: 0,
-					status: DinoAnim.FighterStatus.Dazzled
+					status: 'Dazzled'
 				}
 			]
 		}
@@ -356,7 +356,7 @@ const buttons = [
 			ground: 1,
 			history: [
 				{
-					action: DinoAnim.Action.Add,
+					action: 'Add',
 					fighter: {
 						props: [],
 						dino: true,
@@ -369,7 +369,7 @@ const buttons = [
 					}
 				},
 				{
-					action: DinoAnim.Action.Add,
+					action: 'Add',
 					fighter: {
 						props: [],
 						dino: true,
@@ -383,96 +383,96 @@ const buttons = [
 					}
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'Before a fighter can attack another fighter, it first needs to get in range using the "Goto" action.'
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'"Goto" saves the position of the fighter, allowing it to go back later. You need to specify the fighter (fid) and its target (tid).'
 				},
 				{
-					action: DinoAnim.Action.Goto,
+					action: 'Goto',
 					fid: 0,
 					tid: 1
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'A fighter can attack another fighter using the "Damages" action. You need to specify the attacker (fid), the target (fid) and the amount of damages taken.'
 				},
 				{
-					action: DinoAnim.Action.Damages,
+					action: 'Damages',
 					fid: 0,
 					tid: 1,
 					damages: 10
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'Once an attack has been made, you can ask the fighter to go back to its position with the "Return" action, which only needs the id of the fighter (fid). "Damages" can be called without first using "Goto", but "Return" cannot be called in this case.'
 				},
 				{
-					action: DinoAnim.Action.Return,
+					action: 'Return',
 					fid: 0
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'When attacking, you can specify the type of damages inflicted by specifying a LifeEffect, in the same way than the Regen/Lost actions.'
 				},
 				{
-					action: DinoAnim.Action.Goto,
+					action: 'Goto',
 					fid: 1,
 					tid: 0
 				},
 				{
-					action: DinoAnim.Action.Damages,
+					action: 'Damages',
 					fid: 1,
 					tid: 0,
 					damages: 10,
-					lifeFx: { fx: DinoAnim.LifeEffect.Fire }
+					lifeFx: { fx: 'Fire' }
 				},
 				{
-					action: DinoAnim.Action.Damages,
+					action: 'Damages',
 					fid: 1,
 					tid: 0,
 					damages: 10,
-					lifeFx: { fx: DinoAnim.LifeEffect.Wood }
+					lifeFx: { fx: 'Wood' }
 				},
 				{
-					action: DinoAnim.Action.Damages,
+					action: 'Damages',
 					fid: 1,
 					tid: 0,
 					damages: 10,
-					lifeFx: { fx: DinoAnim.LifeEffect.Water }
+					lifeFx: { fx: 'Water' }
 				},
 				{
-					action: DinoAnim.Action.Return,
+					action: 'Return',
 					fid: 1
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'Both "Goto" and "Damages" can use an "effect" parameter, allowing to change how the fighter approches/attacks the target. Here is one example.'
 				},
 				{
-					action: DinoAnim.Action.Goto,
+					action: 'Goto',
 					fid: 0,
 					tid: 1,
-					effect: DinoAnim.GotoEffect.Over
+					effect: 'Over'
 				},
 				{
-					action: DinoAnim.Action.Damages,
+					action: 'Damages',
 					fid: 0,
 					tid: 1,
 					damages: 10,
-					lifeFx: { fx: DinoAnim.LifeEffect.Lightning },
-					effect: DinoAnim.DamagesEffect.Drop
+					lifeFx: { fx: 'Lightning' },
+					effect: 'Drop'
 				},
 				{
-					action: DinoAnim.Action.Return,
+					action: 'Return',
 					fid: 0
 				}
 			]
@@ -488,7 +488,7 @@ const buttons = [
 			ground: 1,
 			history: [
 				{
-					action: DinoAnim.Action.Add,
+					action: 'Add',
 					fighter: {
 						props: [],
 						dino: true,
@@ -501,7 +501,7 @@ const buttons = [
 					}
 				},
 				{
-					action: DinoAnim.Action.Add,
+					action: 'Add',
 					fighter: {
 						props: [],
 						dino: true,
@@ -515,7 +515,7 @@ const buttons = [
 					}
 				},
 				{
-					action: DinoAnim.Action.Add,
+					action: 'Add',
 					fighter: {
 						props: [],
 						dino: true,
@@ -528,27 +528,27 @@ const buttons = [
 					}
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message: 'The action "Skill" allows to invoke a skill. Skills regroup multiple effects from MT.'
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'Skills are not done yet. You can however call the action if needed. You need to specify a parameter "skill" from the SkillList enum and fill some parameters in the "details" object.'
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'You can specify an "fid" if a fighter is the source of the skill, and a "targets" parameters if the skill affects other dinoz, with the amount of life lost/recovered (depending on the skill).'
 				},
 				{
-					action: DinoAnim.Action.Announce,
+					action: 'Announce',
 					fid: 0,
 					message: 'AOE!'
 				},
 				{
-					action: DinoAnim.Action.Skill,
-					skill: DinoAnim.SkillList.Shower,
+					action: 'Skill',
+					skill: 'Shower',
 					details: {
 						fid: 0,
 						targets: [
@@ -558,13 +558,13 @@ const buttons = [
 					}
 				},
 				{
-					action: DinoAnim.Action.Announce,
+					action: 'Announce',
 					fid: 1,
 					message: 'HEAL!'
 				},
 				{
-					action: DinoAnim.Action.Skill,
-					skill: DinoAnim.SkillList.Heal,
+					action: 'Skill',
+					skill: 'Heal',
 					details: {
 						targets: [
 							{ id: 1, life: 10 },
@@ -573,12 +573,12 @@ const buttons = [
 					}
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'The energy level of the fighters is defined using the "Energy" and "MaxEnergy" actions. "MaxEnergy" should be called at the beginning of the fight.'
 				},
 				{
-					action: DinoAnim.Action.MaxEnergy,
+					action: 'MaxEnergy',
 					fighters: [
 						{ fid: 0, energy: 100 },
 						{ fid: 1, energy: 200 },
@@ -586,7 +586,7 @@ const buttons = [
 					]
 				},
 				{
-					action: DinoAnim.Action.Energy,
+					action: 'Energy',
 					fighters: [
 						{ fid: 0, energy: 50 },
 						{ fid: 1, energy: 75 },
@@ -606,7 +606,7 @@ const buttons = [
 			ground: 1,
 			history: [
 				{
-					action: DinoAnim.Action.AddCastle,
+					action: 'AddCastle',
 					castle: {
 						life: 100,
 						maxLife: 100,
@@ -615,10 +615,10 @@ const buttons = [
 					}
 				},
 				{
-					action: DinoAnim.Action.Display
+					action: 'Display'
 				},
 				{
-					action: DinoAnim.Action.Add,
+					action: 'Add',
 					fighter: {
 						props: [],
 						dino: true,
@@ -631,7 +631,7 @@ const buttons = [
 					}
 				},
 				{
-					action: DinoAnim.Action.Add,
+					action: 'Add',
 					fighter: {
 						props: [],
 						dino: true,
@@ -645,7 +645,7 @@ const buttons = [
 					}
 				},
 				{
-					action: DinoAnim.Action.Add,
+					action: 'Add',
 					fighter: {
 						props: [],
 						dino: true,
@@ -658,78 +658,78 @@ const buttons = [
 					}
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'The "AddCastle" action allows to spawn in a castle. This will automatically reduce the playing field of the fight.'
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'The "AddCastle" action is customizable using the "castle" property. Refer to the documentation for all the possibilities.'
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'The "Display" action allows to remove the loading screen. One is automatically added at the start of a fight if none is given in the history. If there is a Castle in the scene, it is recommended to add the Display action after the "AddCastle".'
 				},
 				{
-					action: DinoAnim.Action.AttackCastle,
+					action: 'AttackCastle',
 					fid: 0,
 					damages: 30
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'Fighters can attack the castle via the "AttackCastle" action. This requires the fighter\'s id (fid) and the damages dealt.'
 				},
 				{
-					action: DinoAnim.Action.AttackCastle,
+					action: 'AttackCastle',
 					fid: 0,
 					damages: 30
 				},
 				{
-					action: DinoAnim.Action.AttackCastle,
+					action: 'AttackCastle',
 					fid: 0,
 					damages: 30
 				},
 				{
-					action: DinoAnim.Action.AttackCastle,
+					action: 'AttackCastle',
 					fid: 0,
 					damages: 30
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'A time bar can be added to the fight using the "TimeLimit" action. This action needs a "time" parameter which will determines the total duration of the bar.'
 				},
 				{
-					action: DinoAnim.Action.TimeLimit,
+					action: 'TimeLimit',
 					time: 10
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'The time bar does not decrease by itself. Instead, it decreases every time the "Pause" action is called. This pauses the fight for a set amount of frames and reduces the timebar by the same amount.'
 				},
 				{
-					action: DinoAnim.Action.Pause,
+					action: 'Pause',
 					time: 5
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'If a delay has to be introduced in the fight without moving the time bar, use the action "Wait" instead. This will pause the fight for the given time in milliseconds.'
 				},
 				{
-					action: DinoAnim.Action.Wait,
+					action: 'Wait',
 					time: 2000
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message: 'Once the time bar is empty, it is removed from the scene.'
 				},
 				{
-					action: DinoAnim.Action.Pause,
+					action: 'Pause',
 					time: 5
 				}
 			]
@@ -746,80 +746,80 @@ const buttons = [
 			history: [
 				addDefaultFighter,
 				{
-					action: DinoAnim.Action.Talk,
+					action: 'Talk',
 					fid: 0,
 					message: 'A fighter can talk using the "Talk" action. This requires its id and a message.'
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message: 'A fighter can be flipped around with the "Flip" action and the fighter\'s id.'
 				},
 				{
-					action: DinoAnim.Action.Flip,
+					action: 'Flip',
 					fid: 0
 				},
 				{
-					action: DinoAnim.Action.Flip,
+					action: 'Flip',
 					fid: 0
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'Notifications can be shown on the fighters using the "Notify" action. Notifications are image popups mostly signaling a permanent effect.'
 				},
 				{
-					action: DinoAnim.Action.Notify,
+					action: 'Notify',
 					fids: [0],
-					notification: DinoAnim.NotificationList.Slow
+					notification: 'Slow'
 				},
 				{
-					action: DinoAnim.Action.Wait,
+					action: 'Wait',
 					time: 1500
 				},
 				{
-					action: DinoAnim.Action.Notify,
+					action: 'Notify',
 					fids: [0],
-					notification: DinoAnim.NotificationList.Snake
+					notification: 'Snake'
 				},
 				{
-					action: DinoAnim.Action.Wait,
+					action: 'Wait',
 					time: 1500
 				},
 				{
-					action: DinoAnim.Action.Notify,
+					action: 'Notify',
 					fids: [0],
-					notification: DinoAnim.NotificationList.Sharingan
+					notification: 'Sharingan'
 				},
 				{
-					action: DinoAnim.Action.Wait,
+					action: 'Wait',
 					time: 1500
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'A fighter can be moved around using the "MoveTo" action, given the id of the fighter and the x/y coordinates. This will save the position for a potential "Return" action.'
 				},
 				{
-					action: DinoAnim.Action.MoveTo,
+					action: 'MoveTo',
 					fid: 0,
 					x: 300,
 					y: 200
 				},
 				{
-					action: DinoAnim.Action.Return,
+					action: 'Return',
 					fid: 0
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'Toys can be spawned in the scene for cinematic purposes with the "SpawnToy" action. Toys are objects spawned at a specific position with a specific velocity.'
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message: 'The list of toys can be found in the "/assets/gfx/toys" folder.'
 				},
 				{
-					action: DinoAnim.Action.SpawnToy,
+					action: 'SpawnToy',
 					toy: 'lantrn',
 					x: 200,
 					y: 200,
@@ -829,14 +829,14 @@ const buttons = [
 					vz: 5
 				},
 				{
-					action: DinoAnim.Action.SpawnToy,
+					action: 'SpawnToy',
 					toy: 'corail',
 					x: 100,
 					y: 100,
 					z: 100
 				},
 				{
-					action: DinoAnim.Action.SpawnToy,
+					action: 'SpawnToy',
 					toy: 'lantrn',
 					x: 250,
 					y: 250,
@@ -844,12 +844,12 @@ const buttons = [
 					vz: -20
 				},
 				{
-					action: DinoAnim.Action.Text,
+					action: 'Text',
 					message:
 						'A toy can be removed using the "DestroyToy" action. This will remove all instances of the given toy.'
 				},
 				{
-					action: DinoAnim.Action.DestroyToy,
+					action: 'DestroyToy',
 					toy: 'lantrn'
 				}
 			]

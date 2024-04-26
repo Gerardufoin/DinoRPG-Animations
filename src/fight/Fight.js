@@ -12,6 +12,7 @@ import { History } from './History.js';
 import { Timer } from './Timer.js';
 import { PreloadData } from '../display/PreloadData.js';
 import { Settings } from './settings/Settings.js';
+import { EnumConverter } from './data/EnumConverter.js';
 
 /**
  * Create a fight scene to render the history of a fight for DinoRPG.
@@ -81,8 +82,9 @@ export class Fight {
 			this._legacyData = new HaxeUnserializer(decodeURIComponent(data.legacy_data)).unserialize();
 			this._data = DAConverter.convert(this._legacyData);
 		} else {
-			this._data = data;
+			this._data = EnumConverter.convertData(data, false);
 		}
+
 		this._renderer = new Renderer({
 			backgroundColor: 0xfce3bb,
 			width: 488,
@@ -119,9 +121,7 @@ export class Fight {
 		PreloadData.preload(this._renderer).then(() => {
 			// "Fake" loading delay to leave the time for the player to understand what is happening and for some resources to load.
 			setTimeout(() => {
-				if (this._settings.onFightStart && typeof this._settings.onFightStart === 'function') {
-					this._settings.onFightStart();
-				}
+				this._settings.onFightStart();
 				this._history.playNext();
 			}, 1000);
 		});
@@ -163,7 +163,7 @@ export class Fight {
 	 * Copies the fight to the user clipboard.
 	 */
 	copyToClipboard() {
-		navigator.clipboard.writeText(JSON.stringify(this._data, undefined, '\t'));
+		navigator.clipboard.writeText(JSON.stringify(EnumConverter.convertData(this._data, true), undefined, '\t'));
 	}
 
 	/**
@@ -201,7 +201,7 @@ export class Fight {
 
 	/**
 	 * Registers a callback firing every time a new step is started in the fight history.
-	 * Will give the step index and object as argument.
+	 * Will give the step index and object as argument. The object enums are sent as numbers.
 	 * @param {((idx: number, step: object) => {})} cb The callback to invoke on a new step.
 	 */
 	set onStepStart(cb) {
@@ -210,11 +210,29 @@ export class Fight {
 
 	/**
 	 * Registers a callback firing every time a step ends in the fight history.
-	 * Will give the step index and object as argument.
+	 * Will give the step index and object as argument. The object enums are sent as numbers.
 	 * @param {((idx: number, step: object) => {})} cb The callback to invoke when a step ends.
 	 */
 	set onStepEnd(cb) {
 		this._settings.onStepEnd = cb;
+	}
+
+	/**
+	 * Registers a callback firing every time a new step is started in the fight history.
+	 * Will give the step index and object as argument. The object enums are sent as strings.
+	 * @param {((idx: number, step: object) => {})} cb The callback to invoke on a new step.
+	 */
+	set onStepStartStr(cb) {
+		this._settings.onStepStartStr = cb;
+	}
+
+	/**
+	 * Registers a callback firing every time a step ends in the fight history.
+	 * Will give the step index and object as argument. The object enums are sent as strings.
+	 * @param {((idx: number, step: object) => {})} cb The callback to invoke when a step ends.
+	 */
+	set onStepEndStr(cb) {
+		this._settings.onStepEndStr = cb;
 	}
 
 	/**
@@ -244,7 +262,7 @@ export class Fight {
 
 	/**
 	 * Registers a callback firing every time the status of a fighter changes.
-	 * Will give the status idx and the list of its status as parameters.
+	 * Will give the fighter idx and the list of its status as parameters.
 	 * @param {((idx: number, status: string[]) => {})} cb The callback to invoke when there is a change of status on a fighter.
 	 */
 	set onStatusChange(cb) {

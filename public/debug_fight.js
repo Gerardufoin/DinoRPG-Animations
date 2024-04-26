@@ -54,7 +54,7 @@ const fightVersion = [
 		ground: 0,
 		history: [
 			/*{
-				action: DinoAnim.Action.AddCastle,
+				action: 'AddCastle',
 				castle: {
 					life: 100,
 					maxLife: 100,
@@ -67,7 +67,7 @@ const fightVersion = [
 				}
 			},*/
 			{
-				action: DinoAnim.Action.Add,
+				action: 'Add',
 				fighter: {
 					props: [],
 					dino: true,
@@ -80,7 +80,7 @@ const fightVersion = [
 				}
 			},
 			{
-				action: DinoAnim.Action.Add,
+				action: 'Add',
 				fighter: {
 					props: [],
 					dino: false,
@@ -93,10 +93,10 @@ const fightVersion = [
 				}
 			},
 			{
-				action: DinoAnim.Action.Add,
+				action: 'Add',
 				fighter: {
 					props: [
-						/*DinoAnim.FighterProperty.Static*/
+						/*'Static'*/
 					],
 					dino: false,
 					life: 100,
@@ -108,21 +108,21 @@ const fightVersion = [
 				}
 			},
 			/*{
-				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Anim,
+				action: 'Skill',
+				skill: 'Anim',
 				details: {
 					fid: 3,
 					anim: 'run'
 				}
 			}*/
 			/*{
-				action: DinoAnim.Action.Status,
+				action: 'Status',
 				fid: 1,
-				status: DinoAnim.FighterStatus.Fly
+				status: 'Fly'
 			},*/
 			{
-				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Focus,
+				action: 'Skill',
+				skill: 'Focus',
 				details: {
 					fid: 0,
 					targets: [
@@ -133,255 +133,255 @@ const fightVersion = [
 				}
 			}
 			/*{
-				action: DinoAnim.Action.Skill,
-				skill: DinoAnim.SkillList.Aura,
+				action: 'Skill',
+				skill: 'Aura',
 				details: {
 					fid: 0,
 					color: 0xff0000,
-					type: DinoAnim.AuraType.Detonate
+					type: 'Detonate'
 				}
 			}*/
 			/*{
-				action: DinoAnim.Action.Damages,
+				action: 'Damages',
 				fid: 0,
 				tid: 1,
 				damages: 10
 			}*/
 			/*{
-				action: DinoAnim.Action.AttackCastle,
+				action: 'AttackCastle',
 				fid: 0,
 				damages: 10
 			},
 			{
-				action: DinoAnim.Action.Damages,
+				action: 'Damages',
 				fid: 1,
 				tid: 0,
 				damages: 10
 			},*/
 			/*{
-				action: DinoAnim.Action.Dead,
+				action: 'Dead',
 				fid: 0
 			}*/
 			/*{
-				action: DinoAnim.Action.AttackCastle,
+				action: 'AttackCastle',
 				fid: 0,
 				damages: 10
 			},
 			{
-				action: DinoAnim.Action.AttackCastle,
+				action: 'AttackCastle',
 				fid: 0,
 				damages: 10
 			},
 			{
-				action: DinoAnim.Action.AttackCastle,
+				action: 'AttackCastle',
 				fid: 0,
 				damages: 10
 			},
 			{
-				action: DinoAnim.Action.AttackCastle,
+				action: 'AttackCastle',
 				fid: 0,
 				damages: 10
 			},
 			{
-				action: DinoAnim.Action.AttackCastle,
+				action: 'AttackCastle',
 				fid: 0,
 				damages: 10
 			},
 			{
-				action: DinoAnim.Action.AttackCastle,
+				action: 'AttackCastle',
 				fid: 0,
 				damages: 10
 			},
 			{
-				action: DinoAnim.Action.AttackCastle,
+				action: 'AttackCastle',
 				fid: 0,
 				damages: 10
 			},
 			{
-				action: DinoAnim.Action.AttackCastle,
+				action: 'AttackCastle',
 				fid: 0,
 				damages: 10
 			},
 			{
-				action: DinoAnim.Action.AttackCastle,
+				action: 'AttackCastle',
 				fid: 0,
 				damages: 10
 			},
 			{
-				action: DinoAnim.Action.AttackCastle,
+				action: 'AttackCastle',
 				fid: 0,
 				damages: 10
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Stun
+				notification: 'Stun'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Shield
+				notification: 'Shield'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.MonoElt
+				notification: 'MonoElt'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Strong
+				notification: 'Strong'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Snake
+				notification: 'Snake'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.InitDown
+				notification: 'InitDown'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.InitUp
+				notification: 'InitUp'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Air
+				notification: 'Air'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Thunder
+				notification: 'Thunder'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Water
+				notification: 'Water'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Wood
+				notification: 'Wood'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Fire
+				notification: 'Fire'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Up
+				notification: 'Up'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Down
+				notification: 'Down'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.NoUse
+				notification: 'NoUse'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Sharingan
+				notification: 'Sharingan'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Silence
+				notification: 'Silence'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Quick
+				notification: 'Quick'
 			},
 			{
-				action: DinoAnim.Action.Pause,
+				action: 'Pause',
 				time: 50
 			},
 			{
-				action: DinoAnim.Action.Notify,
+				action: 'Notify',
 				fids: [0, 1],
-				notification: DinoAnim.NotificationList.Slow
+				notification: 'Slow'
 			}*/
 		]
 	}

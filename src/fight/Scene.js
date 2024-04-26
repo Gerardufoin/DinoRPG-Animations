@@ -349,8 +349,8 @@ export class Scene extends IScene {
 			 * If not unique, call the click callback and then remove the onclick from the container.
 			 */
 			clickCb = () => {
-				callback();
 				this.removeClick();
+				callback();
 			};
 		}
 		this.onclick = clickCb;

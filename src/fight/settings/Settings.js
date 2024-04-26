@@ -264,55 +264,142 @@ export class Settings {
 
 	// CALLBACKS
 	/**
-	 * A callback firing every time a new step is started in the fight history.
-	 * Will give the step object as argument.
-	 * @type {(index: number, step: object) => {}}
+	 * If the given parameter is a function, returns it.
+	 * Otherwise returns a dummy function.
+	 * @param {(...args) => void} cb The callback to check.
+	 * @returns {(...args) => void} The callback or a new dummy function.
 	 */
-	onStepStart;
+	asFunc(cb) {
+		if (cb && typeof cb === 'function') {
+			return cb;
+		}
+		return () => {};
+	}
 
+	_onStepStart;
+	/**
+	 * A callback firing every time a new step is started in the fight history.
+	 * Will give the index and step object as argument. The object has its enums as numbers.
+	 * @type {((index: number, step: object) => void)}
+	 */
+	set onStepStart(cb) {
+		this._onStepStart = cb;
+	}
+	get onStepStart() {
+		return this.asFunc(this._onStepStart);
+	}
+
+	_onStepEnd;
 	/**
 	 * A callback firing every time a step ends in the fight history.
-	 * Will give the step object as argument.
+	 * Will give the index and step object as argument. The object has its enums as numbers.
 	 * @type {(index: number, step: object) => {}}
 	 */
-	onStepEnd;
+	set onStepEnd(cb) {
+		this._onStepEnd = cb;
+	}
+	get onStepEnd() {
+		return this.asFunc(this._onStepEnd);
+	}
 
+	_onStepStartStr;
+	/**
+	 * A callback firing every time a new step is started in the fight history.
+	 * Will give the index and step object as argument. The object has its enums as strings.
+	 * @type {((index: number, step: object) => void)}
+	 */
+	set onStepStartStr(cb) {
+		this._onStepStartStr = cb;
+	}
+	get onStepStartStr() {
+		return this.asFunc(this._onStepStartStr);
+	}
+
+	_onStepEndStr;
+	/**
+	 * A callback firing every time a step ends in the fight history.
+	 * Will give the index and step object as argument. The object has its enum as numbers.
+	 * @type {(index: number, step: object) => {}}
+	 */
+	set onStepEndStr(cb) {
+		this._onStepEndStr = cb;
+	}
+	get onStepEndStr() {
+		return this.asFunc(this._onStepEndStr);
+	}
+
+	_onFightStart;
 	/**
 	 * A callback firing once the fight starts.
 	 * @type {() => {}}
 	 */
-	onFightStart;
+	set onFightStart(cb) {
+		this._onFightStart = cb;
+	}
+	get onFightStart() {
+		return this.asFunc(this._onFightStart);
+	}
 
+	_onFightEnd;
 	/**
 	 * A callback firing once the fight ends.
 	 * @type {(() => {})}
 	 */
-	onFightEnd;
+	set onFightEnd(cb) {
+		this._onFightEnd = cb;
+	}
+	get onFightEnd() {
+		return this.asFunc(this._onFightEnd);
+	}
 
+	_onFighterClick;
 	/**
 	 * A callback firing every time a fighter or its portrait is clicked.
 	 * Will give the fighter idx as parameter.
 	 * @type {(idx: number) => {}}
 	 */
-	onFighterClick;
+	set onFighterClick(cb) {
+		this._onFighterClick = cb;
+	}
+	get onFighterClick() {
+		return this.asFunc(this._onFighterClick);
+	}
 
+	_onStatusChange;
 	/**
 	 * A callback firing every time the status of a fighter changes.
-	 * Will give the status idx and the list of its status as parameters.
+	 * Will give the fighter idx and the list of its status as parameters.
 	 * @type {(idx: number, status: string[]) => {}}
 	 */
-	onStatusChange;
+	set onStatusChange(cb) {
+		this._onStatusChange = cb;
+	}
+	get onStatusChange() {
+		return this.asFunc(this._onStatusChange);
+	}
 
+	_onLifeChange;
 	/**
 	 * A callback firing every time the life of a fighter changes.
 	 * Will give the fighter and its current life as parameters.
 	 * @type {(idx: number, life: number[]) => {}}
 	 */
-	onLifeChange;
+	set onLifeChange(cb) {
+		this._onLifeChange = cb;
+	}
+	get onLifeChange() {
+		return this.asFunc(this._onLifeChange);
+	}
 
+	_onDeath;
 	/**
 	 * A callback firing every time a fighter dies.
 	 * @type {(idx: number) => {}}
 	 */
-	onDeath;
+	set onDeath(cb) {
+		this._onDeath = cb;
+	}
+	get onDeath() {
+		return this.asFunc(this._onDeath);
+	}
 }

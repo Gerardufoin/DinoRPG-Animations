@@ -3,23 +3,6 @@ import { Application, Container, Graphics, Sprite, Texture, Matrix } from 'pixi.
 import { sdino } from './sdino.js';
 import { smonster } from './smonster.js';
 import { Fight } from './fight/Fight.js';
-import {
-	Action,
-	GroundType,
-	FighterProperty,
-	LifeEffect,
-	FighterStatus,
-	EntranceEffect,
-	DamagesEffect,
-	SkillList,
-	GotoEffect,
-	EndBehaviour,
-	NotificationList,
-	EmoteList,
-	EmoteBehaviour,
-	SkillType,
-	AuraType
-} from './fight/Enums.js';
 //import { PixiHelper } from './display/PixiHelper.js';
 
 // Help combining transforms from parented animations
@@ -39,29 +22,4 @@ import {
 );*/
 
 // Ultimately, only the project class should be exposed. Other classes are currently there for testing purposes.
-export {
-	Application,
-	Graphics,
-	Container,
-	Sprite,
-	Texture,
-	Matrix,
-	sdino,
-	smonster,
-	Fight,
-	Action,
-	GroundType,
-	FighterProperty,
-	LifeEffect,
-	FighterStatus,
-	EntranceEffect,
-	DamagesEffect,
-	SkillList,
-	GotoEffect,
-	EndBehaviour,
-	NotificationList,
-	EmoteList,
-	EmoteBehaviour,
-	SkillType,
-	AuraType
-};
+export { Application, Graphics, Container, Sprite, Texture, Matrix, sdino, smonster, Fight };

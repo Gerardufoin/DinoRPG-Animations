@@ -30,6 +30,7 @@ import { Start } from './actions/Start.js';
 import { Skill } from './actions/Skill.js';
 import { Action } from './Enums.js';
 import { Emote } from './actions/Emote.js';
+import { EnumConverter } from './data/EnumConverter.js';
 
 /**
  * Contains the history of the fight and play it action by action.
@@ -134,17 +135,14 @@ export class History {
 	playNext() {
 		// Fight end callback
 		if (this._history && this._historyIdx < this._history.length && this._historyIdx + 1 >= this._history.length) {
-			if (this._scene.settings.onFightEnd && typeof this._scene.settings.onFightEnd === 'function') {
-				this._scene.settings.onFightEnd();
-			}
+			this._scene.settings.onFightEnd();
 		}
 		this._historyIdx++;
 		if (this._history && this._historyIdx < this._history.length) {
 			const h = this._history[this._historyIdx];
 			// Step start callback
-			if (this._scene.settings.onStepStart && typeof this._scene.settings.onStepStart === 'function') {
-				this._scene.settings.onStepStart(this._historyIdx, h);
-			}
+			this._scene.settings.onStepStart(this._historyIdx, h);
+			this._scene.settings.onStepStartStr(this._historyIdx, EnumConverter.convertAction(h, true));
 			if (this._actions[h.action]) {
 				const newState = this[this._actions[h.action]](h);
 				if (newState) {
@@ -163,9 +161,11 @@ export class History {
 	 */
 	nextAction(ignore = false) {
 		// Step end callback
-		if (this._scene.settings.onStepEnd && typeof this._scene.settings.onStepEnd === 'function') {
-			this._scene.settings.onStepEnd(this._historyIdx, this._history[this._historyIdx]);
-		}
+		this._scene.settings.onStepEnd(this._historyIdx, this._history[this._historyIdx]);
+		this._scene.settings.onStepEndStr(
+			this._historyIdx,
+			EnumConverter.convertAction(this._history[this._historyIdx], true)
+		);
 		if (!ignore && this._scene.settings.autoPause) {
 			this._scene.setClick(
 				() => {
