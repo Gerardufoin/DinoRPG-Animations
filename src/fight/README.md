@@ -452,12 +452,12 @@ Moves a fighter in range of another fighter with the given movement type.
 | effect?     | GotoEffect                     | The GotoEffect used to move the fighter. If none is given, default to Normal.                                    |
 | shadeColor? | {col1?: number, col2?: number} | The colors for the shades created when selecting GotoEffect.Special. If undefined, the shade will be pure black. |
 
-| GotoEffect  | Description                                                     |
-| ----------- | --------------------------------------------------------------- |
-| Normal (0)  | Normal run animation.                                           |
-| Special (1) | Not sure yet. Create multiple shades with the given shadeColor. |
-| Over (2)    | Jumps above the target.                                         |
-| Todo (3)    | Debug.                                                          |
+| GotoEffect  | Description                                                                                                                             |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Normal (0)  | Normal run animation.                                                                                                                   |
+| Special (1) | Creates shades as the fighter is moving. The shades will start with shadeColor.col1 and transition to shadeColor.col2 before vanishing. |
+| Over (2)    | Jumps above the target.                                                                                                                 |
+| Todo (3)    | Debug.                                                                                                                                  |
 
 ### Return (11)
 

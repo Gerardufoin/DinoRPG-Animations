@@ -3,7 +3,7 @@
 
 import { Container } from 'pixi.js';
 import { Timer } from './Timer.js';
-import { Shade, ShadeType } from './parts/Shade.js';
+import { Shadow, ShadowType } from './parts/Shadow.js';
 import { Animator } from '../display/Animator.js';
 import { Sprite } from './Sprite.js';
 import { Layers } from './DepthManager.js';
@@ -84,9 +84,9 @@ export class Entity extends Sprite {
 	 * Create a new shadow for the Entity and adds it the the Shade layer of the Scene.
 	 * @param {number} shadeType Which type of shade should be instantiated.
 	 */
-	dropShadow(shadeType = ShadeType.Normal) {
+	dropShadow(shadeType = ShadowType.Normal) {
 		if (this._shade) return;
-		this._shade = new Shade(shadeType);
+		this._shade = new Shadow(shadeType);
 		this._shade.x = -10000;
 		this._shade.alpha = 0.45;
 		this._scene.dm.addContainer(this._shade, Layers.Scene.SHADE);

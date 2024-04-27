@@ -2,26 +2,26 @@
 import { ref } from '../references.js';
 
 // 83
-export const shade = {
+export const shadow = {
 	parts: {
-		shade: [
+		shadow: [
 			{
 				ref: ref.parts.shade
 			}
 		]
 	},
 	animation: {
-		id: 'shade',
+		id: 'shadow',
 		frames: [
 			{
-				shade: {}
+				shadow: {}
 			}
 		]
 	}
 };
 
 // 87
-export const shade_fire = {
+export const shadow_fire = {
 	parts: {
 		sf_1: [
 			{
@@ -102,7 +102,7 @@ export const shade_fire = {
 		]
 	},
 	animation: {
-		id: 'shade_fire',
+		id: 'shadow_fire',
 		frames: [
 			{
 				sf_1: {}

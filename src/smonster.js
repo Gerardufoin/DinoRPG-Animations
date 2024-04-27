@@ -2,7 +2,7 @@
 import { Animator } from './display/Animator.js';
 import { monsters, error } from './smonster/monsters.js';
 import { PartManager } from './display/PartManager.js';
-import { ShadeType } from './fight/parts/Shade.js';
+import { ShadowType } from './fight/parts/Shadow.js';
 
 /**
  * Conversion of the smonstger.swf file of the web game "Dino RPG".
@@ -90,6 +90,6 @@ export class smonster extends Animator {
 	 * @returns {number} A value of the ShadeType enum.
 	 */
 	getShadeType() {
-		return this._monsterInfos.light ? ShadeType.Fire : ShadeType.Normal;
+		return this._monsterInfos.light ? ShadowType.Fire : ShadowType.Normal;
 	}
 }

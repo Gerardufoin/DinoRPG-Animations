@@ -21,9 +21,7 @@
 					"FunctionDeclaration": true,
 					"FunctionExpression": true,
 					"MethodDefinition": true
-				},
-				"checkGetter": false,
-				"checkSetter": false
+				}
 			}
 		],
 		"jsdoc/check-access": 1, // Recommended

@@ -272,7 +272,7 @@ export class Fight {
 	/**
 	 * Registers a callback firing every time the life of a fighter changes.
 	 * Will give the fighter and its current life as parameters.
-	 * @param {((idx: number, life: number[]) => {})} cb The callback to invoke when the life of a fighter changes.
+	 * @param {((idx: number, life: number) => {})} cb The callback to invoke when the life of a fighter changes.
 	 */
 	set onLifeChange(cb) {
 		this._settings.onLifeChange = cb;

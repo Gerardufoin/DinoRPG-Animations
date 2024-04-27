@@ -122,9 +122,8 @@ export class PixiHelper {
 	}
 
 	/**
-	 * Set a percentage of color on a ColorMatrixFilter.
-	 * This is destructive and will override the rgb elements of the matrix.
-	 * @param {ColorMatrixFilter} filter The ColorMatrixFilter whose matrix will be modified.
+	 * Set a percentage of color on a ColorOffsetFilter.
+	 * @param {Filter} filter The ColorOffsetFilter whose properties will be modified.
 	 * @param {number} percent The percent of the given color to apply, between 0 and 100.
 	 * @param {Color | number | string} color The given color.
 	 */
@@ -133,9 +132,13 @@ export class PixiHelper {
 			color = new Color(color);
 		}
 		percent /= 100;
-		filter.matrix[0] = 1 + color.red * percent;
-		filter.matrix[6] = 1 + color.green * percent;
-		filter.matrix[12] = 1 + color.blue * percent;
+		const iPercent = 1 - percent;
+		filter.uniforms.offset = new Float32Array([
+			Math.round(percent * color.red * 255),
+			Math.round(percent * color.green * 255),
+			Math.round(percent * color.blue * 255)
+		]);
+		filter.uniforms.mult = new Float32Array([iPercent, iPercent, iPercent]);
 	}
 
 	/**

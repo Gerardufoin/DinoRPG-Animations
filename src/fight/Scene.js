@@ -61,6 +61,7 @@ export class Scene extends IScene {
 	 */
 	constructor(background, margins, ground, renderer, settings) {
 		super();
+		this._renderer = renderer;
 		this.margins = margins;
 		this._settings = settings;
 		this._groundType = ground;
@@ -68,7 +69,7 @@ export class Scene extends IScene {
 		this.addChild(this._depthManager);
 
 		// BACKGROUND + COLUMNS
-		this.setBackground(background, renderer);
+		this.setBackground(background);
 		this.createColumns();
 		// The zindex of the entities is managed by their computed z position.
 		this.dm.setSortableLayer(Layers.Scene.FIGHTERS);
@@ -168,9 +169,8 @@ export class Scene extends IScene {
 	/**
 	 * Set the scene background.
 	 * @param {string} key The background key to use in gfx.background.
-	 * @param {Renderer} renderer The Renderer of the application, used to get the background colors.
 	 */
-	setBackground(key, renderer) {
+	setBackground(key) {
 		if (key && gfx.background[key]) {
 			const sprite = new Asset(gfx.background[key]);
 			sprite.y = -SCENE_MARGIN;
@@ -179,7 +179,7 @@ export class Scene extends IScene {
 				this._backgroundPixelData = {
 					width: sprite.width,
 					height: sprite.height,
-					pixels: renderer.extract.pixels(sprite)
+					pixels: this._renderer.extract.pixels(sprite)
 				};
 			});
 			this.dm.addContainer(sprite, Layers.Scene.BG);

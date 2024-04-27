@@ -1,10 +1,13 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/GotoFighter.hx
+import { Color } from 'pixi.js';
+import { Layers } from '../DepthManager.js';
 import { FighterStatus, GotoEffect } from '../Enums.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { Timer } from '../Timer.js';
+import { Shade } from '../parts/Shade.js';
 
 /**
  * Move a Fighter toward another Fighter.
@@ -28,12 +31,9 @@ export class GotoFighter extends State {
 	_gotoEffect;
 	/**
 	 * The shade color for GotoFighter.Effect.
-	 * @type {{col1: number, col2: number}}
+	 * @type {{col1: Color, col2: Color}}
 	 */
-	_shadeColor = {
-		col1: 0x000000,
-		col2: 0x000000
-	};
+	_shadeColor;
 
 	/**
 	 * Moves the selected Fighter (fid) toward another Fighter (tid) with the specified movement type.
@@ -56,8 +56,10 @@ export class GotoFighter extends State {
 			return;
 		}
 		this._gotoEffect = effect === null ? GotoEffect.Normal : effect;
-		this._shadeColor.col1 = shadeColor?.col1 ?? this._shadeColor.col1;
-		this._shadeColor.col2 = shadeColor?.col2 ?? this._shadeColor.col2;
+		this._shadeColor = {
+			col1: new Color(shadeColor?.col1 ?? 0x000000),
+			col2: new Color(shadeColor?.col2 ?? 0x000000)
+		};
 		this.addActor(this._fighter);
 		this.addActor(this._target);
 	}
@@ -95,11 +97,16 @@ export class GotoFighter extends State {
 
 		switch (this._gotoEffect) {
 			case GotoEffect.Special:
-				//new part.Shade(a,col,col2); TODO
-				this._coefSpeed += 0.005;
+				if (timer.frameElapsed) {
+					this._scene.dm.addSprite(
+						new Shade(this._scene, this._fighter, this._shadeColor.col1, this._shadeColor.col2),
+						Layers.Scene.SHADE
+					);
+				}
+				this._coefSpeed += 0.005 * timer.tmod;
 				break;
 			case GotoEffect.Over:
-				this._coefSpeed += 0.01;
+				this._coefSpeed += 0.01 * timer.tmod;
 				break;
 		}
 

@@ -44,7 +44,7 @@ const fightData = [
 	'oy6%3A_checky28%3A%252Fuser%252Fcheck%253Fid%253D4bjaiy6%3A_debugy37%3A%252Ftools%252FdebugFight%253Fsk%253D5tJaXEczy8%3A_mbottomi20y7%3A_mrightzy6%3A_equipy68%3Ahttp%253A%252F%252Fdata.dinorpg.com%252Fimg%252Ficons%252Fobj_%253A%253Aid%253A%253A.gify6%3A_sdinoy56%3Ahttp%253A%252F%252Fdata.dinorpg.com%252Fswf%252Fsdino.swf%253Fv%253D33y5%3A_dinoy55%3Ahttp%253A%252F%252Fdata.dinorpg.com%252Fswf%252Fdino.swf%253Fv%253D35y5%3A_dojony5%3A_mtopi110y3%3A_bgy57%3Ahttp%253A%252F%252Fdata.dinorpg.com%252Fimg%252Ffight%252Fcavern2.jpgy7%3A_groundy5%3Awatery8%3A_debriefy28%3Ajavascript%253AnextScene%2528%2529y8%3A_historylwy8%3A_Historyy9%3A_HDisplay%3A1nwR21y5%3A_HAdd%3A2oy6%3A_propsawy9%3A_Propertyy8%3A_PStatic%3A0hR10ty5%3A_lifei130y5%3A_namey4%3ADieuy5%3A_sidety5%3A_sizei130y4%3A_fidi1y4%3A_gfxy16%3A79MZ2Ou1cj0q6000gwy17%3A_AddFighterEffecty6%3A_AFPos%3A3i300i200wR35y8%3A_AFStand%3A0wR21y9%3A_SpawnToy%3A7i20i330i200nnnnwR21R38%3A7i28i270i150nnnnwR21y6%3A_HTalk%3A2i1y89%3ALe%2520voila%2520repartit...%2520Bonne%2520chance%2520jeune%2520dino%252C%2520tu%2520en%2520auras%2520besoin...wR21y11%3A_DestroyToy%3A1i20wR21y6%3A_HFlip%3A1i1wR21y8%3A_HMoveTo%3A3i1i300i150wR21R39%3A2i1y107%3AEnfin%252C%2520bref%252C%2520pour%2520moi%2520la%2520journ%25C3%25A9e%2520est%2520loin%2520d%2527%25C3%25AAtre%2520finie...%2520%252ASoupire%252AwR21y6%3A_HText%3A1y8%3ASuivant.wR21y8%3A_HFinish%3A2wy13%3A_EndBehavioury8%3A_EBStand%3A0wR48R49%3A0hy9%3A_smonstery59%3Ahttp%253A%252F%252Fdata.dinorpg.com%252Fswf%252Fsmonster.swf%253Fv%253D26g'
 ];
 const lifeType = { fx: 9, size: 1, amount: 10 };
-const version = 0;
+const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
@@ -66,7 +66,7 @@ const fightVersion = [
 					invisible: false
 				}
 			},*/
-			{
+			/*{
 				action: 'Add',
 				fighter: {
 					props: [],
@@ -76,7 +76,24 @@ const fightVersion = [
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: '09T1Yt9wqq4Rx000'
+					gfx: '09T1Yt9wqq4Rx000',
+					y: 0,
+					x: 20
+				}
+			},*/
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'wolf',
+					side: true,
+					scale: 1,
+					fid: 0,
+					gfx: 'wolf',
+					y: 150,
+					x: 20
 				}
 			},
 			{
@@ -89,14 +106,16 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'coq'
+					gfx: 'coq',
+					y: 150,
+					x: 380
 				}
 			},
-			{
+			/*{
 				action: 'Add',
 				fighter: {
 					props: [
-						/*'Static'*/
+						
 					],
 					dino: false,
 					life: 100,
@@ -106,7 +125,7 @@ const fightVersion = [
 					fid: 2,
 					gfx: 'barche'
 				}
-			},
+			},*/
 			/*{
 				action: 'Skill',
 				skill: 'Anim',
@@ -120,7 +139,7 @@ const fightVersion = [
 				fid: 1,
 				status: 'Fly'
 			},*/
-			{
+			/*{
 				action: 'Skill',
 				skill: 'Focus',
 				details: {
@@ -131,6 +150,26 @@ const fightVersion = [
 					],
 					color: 0xffff00
 				}
+			}*/
+			{
+				action: 'Goto',
+				fid: 0,
+				tid: 1,
+				effect: 'Special',
+				shadeColor: {
+					col1: 0x0000ff,
+					col2: 0
+				}
+			},
+			{
+				action: 'Damages',
+				fid: 0,
+				tid: 1,
+				damages: 20
+			},
+			{
+				action: 'Return',
+				fid: 0
 			}
 			/*{
 				action: 'Skill',

@@ -31,7 +31,7 @@ import { IScene } from './IScene.js';
 import { WaterOnde } from './parts/scene/WaterOnde.js';
 import { FighterProperty, FighterStatus, GroundType, LifeEffect } from './Enums.js';
 import { FireSpark } from './parts/life/FireSpark.js';
-import { ShadeType } from './parts/Shade.js';
+import { ShadowType } from './parts/Shadow.js';
 import { QuickAnim } from './parts/QuickAnim.js';
 import { fx_brule, fx_brule_small } from '../gfx/fx/attach/smoke/brule.js';
 import { fx_slash } from '../gfx/fx/attach/slash.js';
@@ -120,7 +120,7 @@ export class Fighter extends Phys {
 	 * The type of shadow of the Fighter.
 	 * @type {number}
 	 */
-	_shadeType = ShadeType.Normal;
+	_shadeType = ShadowType.Normal;
 
 	/**
 	 * If true, the Fighter is locked and cannot start a new action.
@@ -832,7 +832,7 @@ export class Fighter extends Phys {
 			this.displayStatus();
 			this._scene.settings.onStatusChange(
 				this.id,
-				this._status.map((s) => EnumConverter.convert(s, FighterStatus, true))
+				this._status.map((s) => EnumConverter.convert(s, FighterStatus, true).toString())
 			);
 		}
 	}
@@ -859,7 +859,7 @@ export class Fighter extends Phys {
 		this.displayStatus();
 		this._scene.settings.onStatusChange(
 			this.id,
-			this._status.map((s) => EnumConverter.convert(s, FighterStatus, true))
+			this._status.map((s) => EnumConverter.convert(s, FighterStatus, true).toString())
 		);
 	}
 

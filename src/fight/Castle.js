@@ -1,6 +1,6 @@
 // @ts-check
 
-import { ColorMatrixFilter, Container } from 'pixi.js';
+import { ColorMatrixFilter, Container, Filter } from 'pixi.js';
 import { Slot } from './Slot.js';
 import { Fighter } from './Fighter.js';
 import { Timer } from './Timer.js';
@@ -75,9 +75,9 @@ export class Castle {
 	_blinkTimer = 0;
 	/**
 	 * The Shake filter color.
-	 * @type {ColorMatrixFilter}
+	 * @type {Filter}
 	 */
-	_blinkFilter = new ColorMatrixFilter();
+	_blinkFilter;
 
 	/**
 	 * The display of the Castle.
@@ -171,6 +171,7 @@ export class Castle {
 			filter.matrix = colors[(infos.color - 1) % colors.length];
 			this._skin.filters.push(filter);
 		}
+		this._blinkFilter = PixiHelper.colorOffsetFilter(0, 0, 0);
 		this._skin.filters.push(this._blinkFilter);
 
 		const portrait = new Asset(ref.castle.wall);

@@ -1,7 +1,7 @@
 // @ts-check
 // Part of https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Scene.hx
 
-import { Container } from 'pixi.js';
+import { Container, Renderer } from 'pixi.js';
 import { Sprite } from './Sprite.js';
 import { DepthManager, Layers } from './DepthManager.js';
 import { TweenManager } from './TweenManager.js';
@@ -35,6 +35,19 @@ export class IScene extends Container {
 	 */
 	get settings() {
 		return this._settings;
+	}
+
+	/**
+	 * The application renderer.
+	 * @type {Renderer}
+	 */
+	_renderer;
+	/**
+	 * Get the PixiJS application renderer.
+	 * @type {Renderer}
+	 */
+	get renderer() {
+		return this._renderer;
 	}
 
 	/**
