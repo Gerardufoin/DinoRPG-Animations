@@ -799,8 +799,42 @@ export class MTConverter {
 				break;
 			case SkillList.AttachAnim:
 				ret.args.push(skill.details.fid);
-				ret.args.push(skill.details.link);
-				ret.args.push(skill.details.frame);
+				switch (skill.details.fx) {
+					case 'fxEnduranceOn':
+						ret.args.push('_enduranceOn');
+						break;
+					case 'fxEnduranceOff':
+						ret.args.push('_enduranceOff');
+						break;
+					case 'fxQigong':
+						ret.args.push('_qigong');
+						break;
+					case 'fxReceptacleFire':
+						ret.args.push('_receptacle');
+						ret.args.push('fire');
+						break;
+					case 'fxReceptacleWood':
+						ret.args.push('_receptacle');
+						ret.args.push('wood');
+						break;
+					case 'fxReceptacleWater':
+						ret.args.push('_receptacle');
+						ret.args.push('water');
+						break;
+					case 'fxReceptacleThunder':
+						ret.args.push('_receptacle');
+						ret.args.push('thunder');
+						break;
+					case 'fxReceptacleAir':
+						ret.args.push('_receptacle');
+						ret.args.push('air');
+						break;
+					default:
+						ret.args.push(skill.details.fx);
+				}
+				if (ret.args.length < 3) {
+					ret.args.push(null);
+				}
 				break;
 			case SkillList.Hypnose:
 				ret.args.push(skill.details.fid);

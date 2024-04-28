@@ -29,6 +29,8 @@ import { ConstantShaderManager } from './ConstantShaderManager.js';
 import { glow_attack_1, glow_attack_2 } from '../smonster/wolf/parts.js';
 import { Acorn } from '../fight/parts/skills/projectile/Acorn.js';
 import { FxFocus } from '../fight/actions/skills/fx/FxFocus.js';
+import { fx_endurance_off } from '../gfx/fx/endurance_off.js';
+import { fx_qigong } from '../gfx/fx/qigong.js';
 
 /**
  * Class used to preload part of the assets.
@@ -55,7 +57,9 @@ export class PreloadData {
 		fx_tornado,
 		fx_vine_shadow,
 		fx_vine,
-		fx_water_canon_end
+		fx_water_canon_end,
+		fx_endurance_off,
+		fx_qigong
 	];
 
 	/**

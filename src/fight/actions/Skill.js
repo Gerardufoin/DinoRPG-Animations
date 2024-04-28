@@ -8,6 +8,7 @@ import { Scene } from '../Scene.js';
 import { State } from '../State.js';
 import { FxAnim } from './skills/fx/FxAnim.js';
 import { FxAttach } from './skills/fx/FxAttach.js';
+import { FxAttachAnim } from './skills/fx/FxAttachAnim.js';
 import { FxAura } from './skills/fx/FxAura.js';
 import { FxCloud } from './skills/fx/FxCloud.js';
 import { FxFocus } from './skills/fx/FxFocus.js';
@@ -237,6 +238,8 @@ export class Skill extends State {
 				return new FxFocus(this._scene, () => this.end(), this._fighter, this._details.color);
 			case SkillList.Attach:
 				return new FxAttach(this._scene, () => this.end(), this._fighter, this._details.fx);
+			case SkillList.AttachAnim:
+				return new FxAttachAnim(this._scene, () => this.end(), this._fighter, this._details.fx);
 			case SkillList.MudWall:
 				return new FxMudWall(this._scene, () => this.end(), this._fighter, this._details.remove);
 			case SkillList.Corruption:

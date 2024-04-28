@@ -77,12 +77,16 @@ const parser = new XFLParser();
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine
 //parser.parse('./resources/gfx/LIBRARY/Symbol 19.xml', '_sub', undefined, 2); // moving vine
+//parser.parse('./resources/gfx/LIBRARY/Symbol 28.xml', '_sub', undefined, 2); // _enduranceOff
 //parser.parse('./resources/gfx/LIBRARY/Symbol 125.xml', '_sub', undefined, 2); // worker
 //parser.parse('./resources/gfx/LIBRARY/Symbol 222.xml', '_sub', undefined, 2); // fxBubble
 //parser.parse('./resources/gfx/LIBRARY/Symbol 231.xml', '_sub', undefined, 2); // fxSurvivor
 //parser.parse('./resources/gfx/LIBRARY/Symbol 232.xml', '_sub', undefined, 2); // fxOndeFocus
 //parser.parse('./resources/gfx/LIBRARY/Symbol 311.xml', '_sub', undefined, 2); // _sylphide
+//parser.parse('./resources/gfx/LIBRARY/Symbol 314.xml', '_sub', undefined, 2); // _qigong
+//parser.parse('./resources/gfx/LIBRARY/Symbol 328.xml', '_sub', undefined, 2); // _receptacle
 //parser.parse('./resources/gfx/LIBRARY/Symbol 617.xml', '_sub', undefined, 2); // strong notification
+//parser.parse('./resources/gfx/LIBRARY/Symbol 626.xml', '_sub', undefined, 2); // _enduranceOn
 //parser.parse('./resources/gfx/LIBRARY/Symbol 643.xml', '_sub', undefined, 2); // brulure
 //parser.parse('./resources/gfx/LIBRARY/Symbol 647.xml', '_sub', undefined, 2); // partDirt
 //parser.parse('./resources/gfx/LIBRARY/Symbol 664.xml', '_sub', undefined, 2); // coq_patte

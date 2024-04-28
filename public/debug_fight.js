@@ -66,7 +66,7 @@ const fightVersion = [
 					invisible: false
 				}
 			},*/
-			/*{
+			{
 				action: 'Add',
 				fighter: {
 					props: [],
@@ -76,24 +76,7 @@ const fightVersion = [
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: '09T1Yt9wqq4Rx000',
-					y: 0,
-					x: 20
-				}
-			},*/
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: '',
-					side: true,
-					scale: 1,
-					fid: 0,
-					gfx: 'gvert',
-					y: 150,
-					x: 20
+					gfx: '09T1Yt9wqq4Rx000'
 				}
 			},
 			{
@@ -106,9 +89,7 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'coq',
-					y: 150,
-					x: 380
+					gfx: 'coq'
 				}
 			},
 			/*{
@@ -139,37 +120,69 @@ const fightVersion = [
 				fid: 1,
 				status: 'Fly'
 			},*/
-			/*{
+			{
 				action: 'Skill',
-				skill: 'Focus',
+				skill: 'AttachAnim',
 				details: {
 					fid: 0,
-					targets: [
-						{ id: 1, life: 10 },
-						{ id: 2, life: 10 }
-					],
-					color: 0xffff00
-				}
-			}*/
-			{
-				action: 'Goto',
-				fid: 0,
-				tid: 1,
-				effect: 'Special',
-				shadeColor: {
-					col1: 0x0000ff,
-					col2: 0
+					fx: 'fxEnduranceOn'
 				}
 			},
 			{
-				action: 'Damages',
-				fid: 0,
-				tid: 1,
-				damages: 20
+				action: 'Skill',
+				skill: 'AttachAnim',
+				details: {
+					fid: 0,
+					fx: 'fxEnduranceOff'
+				}
 			},
 			{
-				action: 'Return',
-				fid: 0
+				action: 'Skill',
+				skill: 'AttachAnim',
+				details: {
+					fid: 0,
+					fx: 'fxQigong'
+				}
+			},
+			{
+				action: 'Skill',
+				skill: 'AttachAnim',
+				details: {
+					fid: 0,
+					fx: 'fxReceptacleFire'
+				}
+			},
+			{
+				action: 'Skill',
+				skill: 'AttachAnim',
+				details: {
+					fid: 0,
+					fx: 'fxReceptacleWood'
+				}
+			},
+			{
+				action: 'Skill',
+				skill: 'AttachAnim',
+				details: {
+					fid: 0,
+					fx: 'fxReceptacleWater'
+				}
+			},
+			{
+				action: 'Skill',
+				skill: 'AttachAnim',
+				details: {
+					fid: 0,
+					fx: 'fxReceptacleThunder'
+				}
+			},
+			{
+				action: 'Skill',
+				skill: 'AttachAnim',
+				details: {
+					fid: 0,
+					fx: 'fxReceptacleAir'
+				}
 			}
 			/*{
 				action: 'Skill',

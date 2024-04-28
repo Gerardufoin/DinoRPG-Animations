@@ -174,7 +174,7 @@ export const SkillList = {
 	Swamp: 30,
 	Cloud: 31,
 	Focus: 32,
-	Default: 33,
+	Default: 33, // Unused, MT code does nothing with this.
 	Attach: 34,
 	AttachAnim: 35,
 	Hypnose: 36,

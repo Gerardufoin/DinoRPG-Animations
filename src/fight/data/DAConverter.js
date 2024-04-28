@@ -684,8 +684,40 @@ export class DAConverter {
 				break;
 			case SkillList.AttachAnim:
 				ret.fid = effect.args[0]; // number
-				ret.link = effect.args[1]; // string
-				ret.frame = effect.args[2]; // string ?
+				switch (effect.args[1]) {
+					case '_enduranceOn':
+						ret.fx = 'fxEnduranceOn';
+						break;
+					case '_enduranceOff':
+						ret.fx = 'fxEnduranceOff';
+						break;
+					case '_qigong':
+						ret.fx = 'fxQigong';
+						break;
+					case '_receptacle':
+						switch (effect.args[2]) {
+							case 0:
+								ret.fx = 'fxReceptacleFire';
+								break;
+							case 1:
+								ret.fx = 'fxReceptacleWood';
+								break;
+							case 2:
+								ret.fx = 'fxReceptacleWater';
+								break;
+							case 3:
+								ret.fx = 'fxReceptacleThunder';
+								break;
+							case 4:
+								ret.fx = 'fxReceptacleAir';
+								break;
+							default:
+								ret.fx = 'fxReceptacleFire';
+						}
+						break;
+					default:
+						ret.fx = effect.args[1];
+				}
 				break;
 			case SkillList.Hypnose:
 				ret.fid = effect.args[0]; // number
