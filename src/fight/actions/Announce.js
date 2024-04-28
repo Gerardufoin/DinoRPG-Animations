@@ -131,10 +131,10 @@ export class Announce extends State {
 		this._bg.slider.x = this._bg.bx;
 		this._bg.slider.y = SCENE_HEIGHT;
 		this._bg.slider.scale.x = this._fighter.intSide;
-		bg.onLoad(() => {
+		bg.onLoad = () => {
 			bg.y -= bg.height;
 			bg.x -= bg.width;
-		});
+		};
 
 		// Portrait
 		const portrait = this._fighter.portrait;

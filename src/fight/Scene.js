@@ -174,14 +174,14 @@ export class Scene extends IScene {
 		if (key && gfx.background[key]) {
 			const sprite = new Asset(gfx.background[key]);
 			sprite.y = -SCENE_MARGIN;
-			sprite.onLoad(() => {
+			sprite.onLoad = () => {
 				sprite.x = SCENE_FULL_WIDTH / 2 - sprite.width / 2;
 				this._backgroundPixelData = {
 					width: sprite.width,
 					height: sprite.height,
 					pixels: this._renderer.extract.pixels(sprite)
 				};
-			});
+			};
 			this.dm.addContainer(sprite, Layers.Scene.BG);
 		}
 	}
@@ -196,7 +196,7 @@ export class Scene extends IScene {
 		const colLeftBottom = new Asset(gfx.scene.column);
 		// Once the left column is loaded, move all the scene beside the background and the columns by the width of the column.
 		// The x = 0 of the other scenes should be on the border of the left column.
-		colLeft.onLoad(() => {
+		colLeft.onLoad = () => {
 			for (const k in Layers.Scene) {
 				if (![Layers.Scene.BG, Layers.Scene.COLUMNS, Layers.Scene.SETTINGS].includes(Layers.Scene[k])) {
 					this.dm.offsetLayer(colLeft.width, 0, Layers.Scene[k]);
@@ -204,7 +204,7 @@ export class Scene extends IScene {
 			}
 			colLeftTop.y = -colLeft.height;
 			colLeftBottom.y = colLeft.height;
-		});
+		};
 		this.dm.addContainer(colLeftContainer, Layers.Scene.COLUMNS);
 		colLeftContainer.addChild(colLeft, colLeftTop, colLeftBottom, this._slots[0]);
 
@@ -212,11 +212,11 @@ export class Scene extends IScene {
 		const colRight = new Asset(gfx.scene.column);
 		const colRightTop = new Asset(gfx.scene.column);
 		const colRightBottom = new Asset(gfx.scene.column);
-		colRight.onLoad(() => {
+		colRight.onLoad = () => {
 			colRightContainer.x = SCENE_FULL_WIDTH - colRight.width;
 			colRightTop.y = -colRight.height;
 			colRightBottom.y = colRight.height;
-		});
+		};
 		this.dm.addContainer(colRightContainer, Layers.Scene.COLUMNS);
 		colRightContainer.addChild(colRight, colRightTop, colRightBottom, this._slots[1]);
 	}

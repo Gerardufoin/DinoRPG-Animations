@@ -87,11 +87,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'wolf',
+					name: '',
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: 'wolf',
+					gfx: 'gvert',
 					y: 150,
 					x: 20
 				}

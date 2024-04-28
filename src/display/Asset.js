@@ -28,7 +28,7 @@ export class Asset extends Sprite {
 	 * Calls the given callback once the texture is loaded.
 	 * @param {() => void} fn The callback function to fire once the texture is loaded or immediately otherwise.
 	 */
-	onLoad(fn) {
+	set onLoad(fn) {
 		if (this.texture.valid) {
 			fn();
 		} else {

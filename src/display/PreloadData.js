@@ -1,6 +1,6 @@
 // @ts-check
 
-import { Graphics, Renderer } from 'pixi.js';
+import { Graphics, RenderTexture, Renderer } from 'pixi.js';
 import { decompressFromBase64 } from 'lz-string';
 
 import { fx_bubble } from '../gfx/fx/bubble.js';
@@ -88,19 +88,25 @@ export class PreloadData {
 	 * @returns {Promise} A promise triggering once everything is loaded.
 	 */
 	static async preload(renderer) {
+		const preloadTexture = RenderTexture.create({
+			width: 100,
+			height: 100
+		});
 		// Preload animations
 		const animator = new Animator(false);
 		for (const a of PreloadData.ANIMATIONS) {
 			animator.loadAnimation(a);
-			renderer.render(animator);
+			renderer.render(animator, { renderTexture: preloadTexture });
 		}
 
 		// Preload glow filters
-		const grph = new Graphics().beginFill(0xffffff).drawRect(SCENE_WIDTH / 2, SCENE_HEIGHT / 2, 50, 50);
+		const grph = new Graphics().beginFill(0xffffff).drawRect(25, 25, 50, 50);
 		for (const gl of PreloadData.GLOW_FILTERS) {
 			grph.filters = [gl];
-			renderer.render(grph);
+			renderer.render(grph, { renderTexture: preloadTexture });
 		}
+
+		preloadTexture.destroy();
 
 		// Preload fonts
 		return new Promise((resolve) => {

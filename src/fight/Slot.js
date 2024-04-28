@@ -267,9 +267,9 @@ export class Slot extends Container {
 	createBarDisplay(reference) {
 		const bar = new Asset(reference);
 		bar.anchor.set(0, 1);
-		bar.onLoad(() => {
+		bar.onLoad = () => {
 			bar.y += bar.height / bar.scale.y;
-		});
+		};
 		return bar;
 	}
 }
