@@ -6,6 +6,7 @@ import { fx_petal } from '../../../gfx/fx/petal.js';
 import { ColorMatrixFilter } from 'pixi.js';
 import { PixiHelper } from '../../../display/PixiHelper.js';
 import { IScene } from '../../IScene.js';
+import { ConstantShaderManager } from '../../../display/ConstantShaderManager.js';
 
 // 961
 /**
@@ -18,12 +19,6 @@ export class Leaf extends Faller {
 	 * @type {GlowFilter}
 	 */
 	static GreenOutlineFilter;
-	/**
-	 * The ColorMatrixFilter adjusting the color.
-	 * Storing it to prevent WebGL to create it each time.
-	 * @type {ColorMatrixFilter}
-	 */
-	static ColorFilter;
 
 	/**
 	 * Instantiate a new leaf at the given coordinates.
@@ -59,10 +54,7 @@ export class Leaf extends Faller {
 				quality: 0.5
 			});
 		}
-		if (!Leaf.ColorFilter) {
-			Leaf.ColorFilter = PixiHelper.adjustColorFilter(0, -10, -45, 49);
-		}
-		this._root.filters = [Leaf.ColorFilter, Leaf.GreenOutlineFilter];
+		this._root.filters = [ConstantShaderManager.getAdjustColorFilter(0, -10, -45, 49), Leaf.GreenOutlineFilter];
 
 		this._fadeLimit = 5;
 

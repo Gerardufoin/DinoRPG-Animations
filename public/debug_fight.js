@@ -122,66 +122,32 @@ const fightVersion = [
 			},*/
 			{
 				action: 'Skill',
-				skill: 'AttachAnim',
+				skill: 'Snow',
 				details: {
 					fid: 0,
-					fx: 'fxEnduranceOn'
+					type: 0,
+					color: 0xff0000,
+					percent: 0
 				}
 			},
 			{
 				action: 'Skill',
-				skill: 'AttachAnim',
+				skill: 'Snow',
 				details: {
 					fid: 0,
-					fx: 'fxEnduranceOff'
+					type: 0,
+					color: 0xffffff,
+					percent: 20
 				}
 			},
 			{
 				action: 'Skill',
-				skill: 'AttachAnim',
+				skill: 'Snow',
 				details: {
 					fid: 0,
-					fx: 'fxQigong'
-				}
-			},
-			{
-				action: 'Skill',
-				skill: 'AttachAnim',
-				details: {
-					fid: 0,
-					fx: 'fxReceptacleFire'
-				}
-			},
-			{
-				action: 'Skill',
-				skill: 'AttachAnim',
-				details: {
-					fid: 0,
-					fx: 'fxReceptacleWood'
-				}
-			},
-			{
-				action: 'Skill',
-				skill: 'AttachAnim',
-				details: {
-					fid: 0,
-					fx: 'fxReceptacleWater'
-				}
-			},
-			{
-				action: 'Skill',
-				skill: 'AttachAnim',
-				details: {
-					fid: 0,
-					fx: 'fxReceptacleThunder'
-				}
-			},
-			{
-				action: 'Skill',
-				skill: 'AttachAnim',
-				details: {
-					fid: 0,
-					fx: 'fxReceptacleAir'
+					type: 1,
+					color: 0xffffff,
+					percent: 100
 				}
 			}
 			/*{

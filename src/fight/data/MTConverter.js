@@ -771,9 +771,9 @@ export class MTConverter {
 				break;
 			case SkillList.Snow:
 				ret.args.push(skill.details.fid);
-				ret.args.push(skill.details.id);
+				ret.args.push(skill.details.type);
 				ret.args.push(skill.details.color);
-				ret.args.push(skill.details.rainbowPercent);
+				ret.args.push(skill.details.percent);
 				break;
 			case SkillList.Swamp:
 			case SkillList.Default:

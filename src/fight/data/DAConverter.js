@@ -659,9 +659,9 @@ export class DAConverter {
 				break;
 			case SkillList.Snow:
 				ret.fid = effect.args[0]; // number
-				ret.id = effect.args[1]; // number
+				ret.type = effect.args[1]; // number
 				ret.color = effect.args[2]; // number
-				ret.rainbowPercent = effect.args[3]; // number
+				ret.percent = effect.args[3]; // number
 				break;
 			case SkillList.Swamp:
 			case SkillList.Default:

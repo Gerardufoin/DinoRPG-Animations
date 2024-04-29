@@ -13,6 +13,7 @@ import { FxAura } from './skills/fx/FxAura.js';
 import { FxCloud } from './skills/fx/FxCloud.js';
 import { FxFocus } from './skills/fx/FxFocus.js';
 import { FxMudWall } from './skills/fx/FxMudWall.js';
+import { FxSnow } from './skills/fx/FxSnow.js';
 import { GrBlackHole } from './skills/group/GrBlackHole.js';
 import { GrChainLightning } from './skills/group/GrChainLightning.js';
 import { GrCharge } from './skills/group/GrCharge.js';
@@ -51,6 +52,7 @@ import { GrWaterCanon } from './skills/group/GrWaterCanon.js';
  * 	power?: number,
  *  color?: number,
  *  remove?: boolean,
+ *  percent?: number
  * }} SkillDetails
  */
 
@@ -231,6 +233,15 @@ export class Skill extends State {
 					this._fighter,
 					this._details.color,
 					this._details.type
+				);
+			case SkillList.Snow:
+				return new FxSnow(
+					this._scene,
+					() => this.end(),
+					this._fighter,
+					this._details.type,
+					this._details.color,
+					this._details.percent
 				);
 			case SkillList.Cloud:
 				return new FxCloud(this._scene, () => this.end(), this._fighter, this._details.color);
