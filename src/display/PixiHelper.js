@@ -126,17 +126,18 @@ export class PixiHelper {
 	 * @param {Filter} filter The ColorOffsetFilter whose properties will be modified.
 	 * @param {number} percent The percent of the given color to apply, between 0 and 100.
 	 * @param {Color | number | string} color The given color.
+	 * @param {number} inc Flat increment to add to the color.
 	 */
-	static setPercentColor(filter, percent, color) {
+	static setPercentColor(filter, percent, color, inc = 0) {
 		if (!(color instanceof Color)) {
 			color = new Color(color);
 		}
 		percent /= 100;
 		const iPercent = 1 - percent;
 		filter.uniforms.offset = new Float32Array([
-			Math.round(percent * color.red * 255),
-			Math.round(percent * color.green * 255),
-			Math.round(percent * color.blue * 255)
+			Math.round(percent * color.red * 255) + inc,
+			Math.round(percent * color.green * 255) + inc,
+			Math.round(percent * color.blue * 255) + inc
 		]);
 		filter.uniforms.mult = new Float32Array([iPercent, iPercent, iPercent]);
 	}

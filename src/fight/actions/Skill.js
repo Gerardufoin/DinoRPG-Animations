@@ -10,6 +10,7 @@ import { FxAnim } from './skills/fx/FxAnim.js';
 import { FxAttach } from './skills/fx/FxAttach.js';
 import { FxAttachAnim } from './skills/fx/FxAttachAnim.js';
 import { FxAura } from './skills/fx/FxAura.js';
+import { FxBlink } from './skills/fx/FxBlink.js';
 import { FxCloud } from './skills/fx/FxCloud.js';
 import { FxFocus } from './skills/fx/FxFocus.js';
 import { FxMudWall } from './skills/fx/FxMudWall.js';
@@ -51,6 +52,7 @@ import { GrWaterCanon } from './skills/group/GrWaterCanon.js';
  * 	speed?: number,
  * 	power?: number,
  *  color?: number,
+ *  alpha?: number,
  *  remove?: boolean,
  *  percent?: number
  * }} SkillDetails
@@ -253,6 +255,14 @@ export class Skill extends State {
 				return new FxAttachAnim(this._scene, () => this.end(), this._fighter, this._details.fx);
 			case SkillList.MudWall:
 				return new FxMudWall(this._scene, () => this.end(), this._fighter, this._details.remove);
+			case SkillList.Blink:
+				return new FxBlink(
+					this._scene,
+					() => this.end(),
+					this._fighter,
+					this._details.color,
+					this._details.alpha
+				);
 			case SkillList.Corruption:
 				return new GrCorruption(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.DivineLight:

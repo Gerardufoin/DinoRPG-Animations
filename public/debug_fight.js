@@ -122,32 +122,11 @@ const fightVersion = [
 			},*/
 			{
 				action: 'Skill',
-				skill: 'Snow',
+				skill: 'Blink',
 				details: {
 					fid: 0,
-					type: 0,
-					color: 0xff0000,
-					percent: 0
-				}
-			},
-			{
-				action: 'Skill',
-				skill: 'Snow',
-				details: {
-					fid: 0,
-					type: 0,
-					color: 0xffffff,
-					percent: 20
-				}
-			},
-			{
-				action: 'Skill',
-				skill: 'Snow',
-				details: {
-					fid: 0,
-					type: 1,
-					color: 0xffffff,
-					percent: 100
+					color: 0xec0000,
+					alpha: 70
 				}
 			}
 			/*{

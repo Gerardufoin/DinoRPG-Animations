@@ -11,7 +11,7 @@ import { Asset } from '../../../../display/Asset.js';
 import { ref } from '../../../../gfx/references.js';
 import { SkillType } from '../../../Enums.js';
 import { ElectrifiedMeteor } from '../../../parts/skills/meteor/ElectricMeteor.js';
-import { offsetShader } from '../../../../display/shaders/ColorOffsetShader.js';
+import { PixiHelper } from '../../../../display/PixiHelper.js';
 
 /**
  * Dawn falls upon the Scene as the caster blast the targets with electrified meteors.
@@ -114,10 +114,7 @@ export class GrCrepuscule extends GroupEffect {
 	 */
 	addNightFilter() {
 		if (!GrCrepuscule.NightFilter) {
-			GrCrepuscule.NightFilter = new Filter(undefined, offsetShader, {
-				offset: new Float32Array([0, 0, 0]),
-				mult: new Float32Array([1, 1, 1])
-			});
+			GrCrepuscule.NightFilter = PixiHelper.colorOffsetFilter(0, 0, 0);
 		}
 
 		const noNightFilter = [
