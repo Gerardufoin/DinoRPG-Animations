@@ -838,11 +838,11 @@ export class MTConverter {
 				break;
 			case SkillList.Hypnose:
 				ret.args.push(skill.details.fid);
-				ret.args.push(skill.details.tid);
+				ret.args.push(skill.details.targets[0]?.id);
 				break;
 			case SkillList.Speed:
 				ret.args.push(skill.details.fid);
-				ret.args.push(skill.details.tids);
+				ret.args.push(skill.details.targets.map((v) => v.id));
 				break;
 			case SkillList.HeadOrTail:
 				ret.args.push(skill.details.fid);

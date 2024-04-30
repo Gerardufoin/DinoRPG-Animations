@@ -27,6 +27,7 @@ import { GrDivineLight } from './skills/group/GrDivineLight.js';
 import { GrFireBreath } from './skills/group/GrFireBreath.js';
 import { GrFireball } from './skills/group/GrFireball.js';
 import { GrHeal } from './skills/group/GrHeal.js';
+import { GrHypnose } from './skills/group/GrHypnose.js';
 import { GrIce } from './skills/group/GrIce.js';
 import { GrJumpAttack } from './skills/group/GrJumpAttack.js';
 import { GrLava } from './skills/group/GrLava.js';
@@ -125,14 +126,14 @@ export class Skill extends State {
 	 * Initialize the skill being used.
 	 */
 	init() {
-		// Target without life are dodging the skill.
+		// Target with life set to null are dodging the skill.
 		if (this._targets) {
 			for (const t of this._targets ?? []) {
-				if (t.life === undefined) {
+				if (t.life === null) {
 					t.fighter.playAnim('special');
 				}
 			}
-			this._targets = this._targets.filter((t) => t.life !== undefined);
+			this._targets = this._targets.filter((t) => t.life !== null);
 		}
 		const state = this.getSkill();
 		if (state) {
@@ -256,6 +257,8 @@ export class Skill extends State {
 				return new FxAttach(this._scene, () => this.end(), this._fighter, this._details.fx);
 			case SkillList.AttachAnim:
 				return new FxAttachAnim(this._scene, () => this.end(), this._fighter, this._details.fx);
+			case SkillList.Hypnose:
+				return new GrHypnose(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.MudWall:
 				return new FxMudWall(this._scene, () => this.end(), this._fighter, this._details.remove);
 			case SkillList.Blink:

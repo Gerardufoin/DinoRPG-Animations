@@ -1,5 +1,5 @@
 // @ts-check
-// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/Anim.hx
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/Swamp.hx
 
 import { AlphaFilter, BlurFilter } from 'pixi.js';
 import { DepthManager, Layers } from '../../../DepthManager.js';

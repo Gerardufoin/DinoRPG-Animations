@@ -721,11 +721,13 @@ export class DAConverter {
 				break;
 			case SkillList.Hypnose:
 				ret.fid = effect.args[0]; // number
-				ret.tid = effect.args[1]; // number
+				ret.targets = [{ id: effect.args[1] }]; // number
 				break;
 			case SkillList.Speed:
 				ret.fid = effect.args[0]; // number
-				ret.tids = effect.args[1]; // number[]
+				ret.targets = (effect.args[1] ?? []).map((v) => {
+					return { id: v };
+				}); // number[]
 				break;
 			case SkillList.HeadOrTail:
 				ret.fid = effect.args[0]; // number

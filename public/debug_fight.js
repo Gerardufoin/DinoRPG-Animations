@@ -92,12 +92,10 @@ const fightVersion = [
 					gfx: 'coq'
 				}
 			},
-			/*{
+			{
 				action: 'Add',
 				fighter: {
-					props: [
-						
-					],
+					props: [],
 					dino: false,
 					life: 100,
 					name: '',
@@ -106,7 +104,7 @@ const fightVersion = [
 					fid: 2,
 					gfx: 'barche'
 				}
-			},*/
+			},
 			/*{
 				action: 'Skill',
 				skill: 'Anim',
@@ -122,9 +120,10 @@ const fightVersion = [
 			},*/
 			{
 				action: 'Skill',
-				skill: 'Swamp',
+				skill: 'Hypnose',
 				details: {
-					fid: 0
+					fid: 0,
+					targets: [{ id: 1 }, { id: 2 }]
 				}
 			}
 			/*{
