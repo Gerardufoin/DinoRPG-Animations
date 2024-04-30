@@ -57,6 +57,10 @@ export class FxAura extends State {
 		this._type = type;
 		this._coefSpeed = 0.05;
 
+		if (!Object.values(AuraType).includes(type)) {
+			console.error(`[FxAura]: Unknown aura type '${type}'`);
+		}
+
 		this.init();
 	}
 

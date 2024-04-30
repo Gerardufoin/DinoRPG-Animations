@@ -122,11 +122,9 @@ const fightVersion = [
 			},*/
 			{
 				action: 'Skill',
-				skill: 'Blink',
+				skill: 'Swamp',
 				details: {
-					fid: 0,
-					color: 0xec0000,
-					alpha: 70
+					fid: 0
 				}
 			}
 			/*{

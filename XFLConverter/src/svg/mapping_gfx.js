@@ -205,6 +205,7 @@ export let mapping_gfx = {
 	//754: 'fx/crepuscule', // Must not have an offset
 	756: 'fx/cloud/cloud_mask',
 	757: 'fx/water/ray',
+	760: 'fx/swamp',
 	763: 'fx/acid_ball',
 	765: 'fx/acid_smoke',
 	//773: 'fx/skull', // Done manually, do not uncomment
