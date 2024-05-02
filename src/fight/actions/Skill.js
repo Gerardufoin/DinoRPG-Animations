@@ -16,6 +16,7 @@ import { FxFocus } from './skills/fx/FxFocus.js';
 import { FxMudWall } from './skills/fx/FxMudWall.js';
 import { FxSnow } from './skills/fx/FxSnow.js';
 import { FxSwamp } from './skills/fx/FxSwamp.js';
+import { FxTwistingRay } from './skills/fx/FxTwistingRay.js';
 import { GrBlackHole } from './skills/group/GrBlackHole.js';
 import { GrChainLightning } from './skills/group/GrChainLightning.js';
 import { GrCharge } from './skills/group/GrCharge.js';
@@ -259,6 +260,8 @@ export class Skill extends State {
 				return new FxAttachAnim(this._scene, () => this.end(), this._fighter, this._details.fx);
 			case SkillList.Hypnose:
 				return new GrHypnose(this._scene, () => this.end(), this._fighter, this._targets);
+			case SkillList.Ray:
+				return new FxTwistingRay(this._scene, () => this.end(), this._fighter);
 			case SkillList.MudWall:
 				return new FxMudWall(this._scene, () => this.end(), this._fighter, this._details.remove);
 			case SkillList.Blink:

@@ -192,6 +192,7 @@ export let mapping_gfx = {
 	712: 'fx/ice/shard_3',
 	713: 'fx/ice/shard_4',
 	717: 'parts/ghost',
+	719: 'parts/ghost_tail',
 	725: 'fx/stone',
 	730: 'fx/water_onde',
 	743: 'fx/air/tornado_1',
@@ -329,5 +330,6 @@ export let mapping_gfx = {
 	964: 'fx/fire_breath',
 	967: 'fx/aura/spirals',
 	972: 'fx/charge_impact',
-	975: 'parts/hole_mask'
+	975: 'parts/hole_mask',
+	987: 'fx/twisting_ray'
 };
