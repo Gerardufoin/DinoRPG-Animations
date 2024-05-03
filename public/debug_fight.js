@@ -120,10 +120,20 @@ const fightVersion = [
 			},*/
 			{
 				action: 'Skill',
-				skill: 'Speed',
+				skill: 'HeadOrTail',
 				details: {
 					fid: 0,
-					targets: [{ id: 1 }, { id: 2 }]
+					fx: 'face',
+					ok: true
+				}
+			},
+			{
+				action: 'Skill',
+				skill: 'HeadOrTail',
+				details: {
+					fid: 0,
+					fx: 'joker',
+					ok: false
 				}
 			}
 			/*{

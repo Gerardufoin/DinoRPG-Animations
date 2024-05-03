@@ -846,12 +846,12 @@ export class MTConverter {
 				break;
 			case SkillList.HeadOrTail:
 				ret.args.push(skill.details.fid);
-				ret.args.push(skill.details.frame);
-				ret.args.push(skill.details.result);
+				ret.args.push(skill.details.fx);
+				ret.args.push(skill.details.ok);
 				break;
 			case SkillList.Leaf:
 				ret.args.push(skill.details.fid);
-				ret.args.push(skill.details.link);
+				ret.args.push(skill.details.fx);
 				break;
 			case SkillList.MudWall:
 				ret.args.push(skill.details.fid);

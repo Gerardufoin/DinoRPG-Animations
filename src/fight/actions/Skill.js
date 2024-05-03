@@ -13,6 +13,7 @@ import { FxAura } from './skills/fx/FxAura.js';
 import { FxBlink } from './skills/fx/FxBlink.js';
 import { FxCloud } from './skills/fx/FxCloud.js';
 import { FxFocus } from './skills/fx/FxFocus.js';
+import { FxHeadOrTail } from './skills/fx/FxHeadOrTail.js';
 import { FxMudWall } from './skills/fx/FxMudWall.js';
 import { FxSnow } from './skills/fx/FxSnow.js';
 import { FxSwamp } from './skills/fx/FxSwamp.js';
@@ -58,7 +59,8 @@ import { GrWaterCanon } from './skills/group/GrWaterCanon.js';
  *  color?: number,
  *  alpha?: number,
  *  remove?: boolean,
- *  percent?: number
+ *  percent?: number,
+ *  ok?: boolean
  * }} SkillDetails
  */
 
@@ -265,6 +267,14 @@ export class Skill extends State {
 				return new FxTwistingRay(this._scene, () => this.end(), this._fighter);
 			case SkillList.Speed:
 				return new GrSpeed(this._scene, () => this.end(), this._fighter, this._targets);
+			case SkillList.HeadOrTail:
+				return new FxHeadOrTail(
+					this._scene,
+					() => this.end(),
+					this._fighter,
+					this._details.fx,
+					this._details.ok
+				);
 			case SkillList.MudWall:
 				return new FxMudWall(this._scene, () => this.end(), this._fighter, this._details.remove);
 			case SkillList.Blink:

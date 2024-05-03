@@ -731,12 +731,12 @@ export class DAConverter {
 				break;
 			case SkillList.HeadOrTail:
 				ret.fid = effect.args[0]; // number
-				ret.frame = effect.args[1]; // number -> (type of card)
-				ret.result = effect.args[2]; // boolean
+				ret.fx = effect.args[1]; // number -> (type of card)
+				ret.ok = effect.args[2]; // boolean
 				break;
 			case SkillList.Leaf:
 				ret.fid = effect.args[0]; // number
-				ret.link = effect.args[1]; // string
+				ret.fx = effect.args[1]; // string
 				break;
 			case SkillList.MudWall:
 				ret.fid = effect.args[0]; // number
