@@ -1,7 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Sprite.hx
 
-import { Container } from 'pixi.js';
+import { Container, Filter } from 'pixi.js';
 import { Timer } from './Timer.js';
 
 /**
@@ -144,5 +144,30 @@ export class Sprite {
 	setPosition(x, y) {
 		this._x = x !== undefined ? x : this._x;
 		this._y = y !== undefined ? y : this._y;
+	}
+
+	/**
+	 * Adds any number of filters to the root container.
+	 * @param {...Filter} filters The filters to add to the root container.
+	 */
+	addFilters(...filters) {
+		if (!this._root.filters) {
+			this._root.filters = filters;
+		} else {
+			this._root.filters = this._root.filters.concat(filters);
+		}
+	}
+
+	/**
+	 * Removes the last n filters from the root container filters.
+	 * @param {number} n The number of filters to remove from the root container, starting from the last one added.
+	 */
+	removeFilters(n) {
+		if (this._root.filters) {
+			this._root.filters.splice(-n);
+			if (this._root.filters.length) {
+				this._root.filters = undefined;
+			}
+		}
 	}
 }

@@ -120,7 +120,7 @@ const fightVersion = [
 			},*/
 			{
 				action: 'Skill',
-				skill: 'Ray',
+				skill: 'Speed',
 				details: {
 					fid: 0,
 					targets: [{ id: 1 }, { id: 2 }]

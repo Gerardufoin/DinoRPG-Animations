@@ -39,6 +39,7 @@ import { GrMistral } from './skills/group/GrMistral.js';
 import { GrProjectile } from './skills/group/GrProjectile.js';
 import { GrRafale } from './skills/group/GrRafale.js';
 import { GrShower } from './skills/group/GrShower.js';
+import { GrSpeed } from './skills/group/GrSpeed.js';
 import { GrSylfide } from './skills/group/GrSylfide.js';
 import { GrTornado } from './skills/group/GrTornado.js';
 import { GrVines } from './skills/group/GrVines.js';
@@ -262,6 +263,8 @@ export class Skill extends State {
 				return new GrHypnose(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Ray:
 				return new FxTwistingRay(this._scene, () => this.end(), this._fighter);
+			case SkillList.Speed:
+				return new GrSpeed(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.MudWall:
 				return new FxMudWall(this._scene, () => this.end(), this._fighter, this._details.remove);
 			case SkillList.Blink:

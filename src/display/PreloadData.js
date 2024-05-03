@@ -31,6 +31,7 @@ import { Acorn } from '../fight/parts/skills/projectile/Acorn.js';
 import { FxFocus } from '../fight/actions/skills/fx/FxFocus.js';
 import { fx_endurance_off } from '../gfx/fx/endurance_off.js';
 import { fx_qigong } from '../gfx/fx/qigong.js';
+import { GrSpeed } from '../fight/actions/skills/group/GrSpeed.js';
 
 /**
  * Class used to preload part of the assets.
@@ -83,7 +84,8 @@ export class PreloadData {
 			quality: glow_attack_2.quality,
 			outerStrength: glow_attack_2.strength
 		}),
-		FxFocus.GlowFilter
+		FxFocus.GlowFilter,
+		GrSpeed.GlowFilter
 	];
 
 	/**
