@@ -77,6 +77,7 @@ const parser = new XFLParser();
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine
 //parser.parse('./resources/gfx/LIBRARY/Symbol 19.xml', '_sub', undefined, 2); // moving vine
+//parser.parse('./resources/gfx/LIBRARY/Symbol 22.xml', '_sub', undefined, 2); // mcRayGenerate
 //parser.parse('./resources/gfx/LIBRARY/Symbol 28.xml', '_sub', undefined, 2); // _enduranceOff
 //parser.parse('./resources/gfx/LIBRARY/Symbol 125.xml', '_sub', undefined, 2); // worker
 //parser.parse('./resources/gfx/LIBRARY/Symbol 222.xml', '_sub', undefined, 2); // fxBubble
@@ -104,6 +105,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/gfx/LIBRARY/Symbol 910.xml', '_sub', undefined, 2); // clouds
 //parser.parse('./resources/gfx/LIBRARY/Symbol 932.xml', '_sub', undefined, 2); // waves
 //parser.parse('./resources/gfx/LIBRARY/Symbol 943.xml', '_sub', undefined, 2); // mcFocus
+//parser.parse('./resources/gfx/LIBRARY/Symbol 962.xml', '_sub', undefined, 2); // mcRayConcentrate
 //parser.parse('./resources/gfx/LIBRARY/Symbol 971.xml', '_sub', undefined, 2); // aura
 //parser.parse('./resources/gfx/LIBRARY/Symbol 974.xml', '_sub', undefined, 2); // fxChargeImpact
 

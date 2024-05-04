@@ -865,7 +865,7 @@ export class MTConverter {
 			case SkillList.Generate:
 				ret.args.push(skill.details.fid);
 				ret.args.push(skill.details.color);
-				ret.args.push(skill.details.strength);
+				ret.args.push(skill.details.power);
 				ret.args.push(skill.details.radius);
 				break;
 		}

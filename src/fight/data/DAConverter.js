@@ -752,7 +752,7 @@ export class DAConverter {
 			case SkillList.Generate:
 				ret.fid = effect.args[0]; // number
 				ret.color = effect.args[1]; // number
-				ret.strength = effect.args[2]; // number
+				ret.power = effect.args[2]; // number
 				ret.radius = effect.args[3]; // number
 				break;
 		}

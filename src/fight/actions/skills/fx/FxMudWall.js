@@ -1,5 +1,5 @@
 // @ts-check
-// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/Attach.hx
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/MudWall.hx
 
 import { Fighter } from '../../../Fighter.js';
 import { Scene } from '../../../Scene.js';

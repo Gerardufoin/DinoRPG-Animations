@@ -1,6 +1,4 @@
 // @ts-check
-// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/JumpAttack.hx
-// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/Tremor.hx
 
 import { Layers } from '../../../DepthManager.js';
 import { Fighter } from '../../../Fighter.js';

@@ -1,5 +1,5 @@
 // @ts-check
-// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/Anim.hx
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/Snow.hx
 
 import { PixiHelper } from '../../../../display/PixiHelper.js';
 import { Layers } from '../../../DepthManager.js';

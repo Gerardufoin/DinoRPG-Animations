@@ -15,18 +15,25 @@ export class Focus extends Sprite {
 	 * @type {Animator}
 	 */
 	_animator;
+	/**
+	 * The final size of the ball.
+	 * @type {number}
+	 */
+	_size = 0;
 
 	/**
 	 * Instantiate the Focus animation at the given coordinates.
 	 * The Focus can then burst on demand and will be automatically destroyed.
 	 * @param {number} x The x coordinate.
 	 * @param {number} y The y coordinate.
+	 * @param {number} size The final size of the ball.
 	 */
-	constructor(x, y) {
+	constructor(x, y, size) {
 		super(new Container());
 
-		this._animator = new Animator(false).loadAnimation(fx_focus, 2);
-		this._animator.scale.set(0.5);
+		this._size = Math.floor(size * 10) * 0.1;
+		this._animator = new Animator(false).loadAnimation(fx_focus, this._size);
+		this._animator.scale.set(1 / this._size);
 		this._root.addChild(this._animator);
 		this._animator.registerCallback('destroy', () => {
 			this.kill();
@@ -49,7 +56,7 @@ export class Focus extends Sprite {
 	 * @param {number} coef The size coefficient between 0 and 1.
 	 */
 	setSize(coef) {
-		this._root.scale.set(coef * 2);
+		this._root.scale.set(coef * this._size);
 	}
 
 	/**

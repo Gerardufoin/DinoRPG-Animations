@@ -61,7 +61,8 @@ import { GrWaterCanon } from './skills/group/GrWaterCanon.js';
  *  alpha?: number,
  *  remove?: boolean,
  *  percent?: number,
- *  ok?: boolean
+ *  ok?: boolean,
+ * 	radius?: number
  * }} SkillDetails
  */
 
@@ -257,7 +258,7 @@ export class Skill extends State {
 			case SkillList.Cloud:
 				return new FxCloud(this._scene, () => this.end(), this._fighter, this._details.color);
 			case SkillList.Focus:
-				return new FxFocus(this._scene, () => this.end(), this._fighter, this._details.color);
+				return new FxFocus(this._scene, () => this.end(), this._fighter, true, this._details.color, 2);
 			case SkillList.Attach:
 				return new FxAttach(this._scene, () => this.end(), this._fighter, this._details.fx);
 			case SkillList.AttachAnim:
@@ -287,6 +288,16 @@ export class Skill extends State {
 					this._fighter,
 					this._details.color,
 					this._details.alpha
+				);
+			case SkillList.Generate:
+				return new FxFocus(
+					this._scene,
+					() => this.end(),
+					this._fighter,
+					false,
+					this._details.color,
+					this._details.power,
+					this._details.radius
 				);
 			case SkillList.Corruption:
 				return new GrCorruption(this._scene, () => this.end(), this._fighter, this._targets);
