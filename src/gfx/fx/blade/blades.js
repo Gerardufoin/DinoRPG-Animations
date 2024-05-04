@@ -25,14 +25,14 @@ export const fx_blades = {
 			}
 		]
 	},
-	expectedScaling: {
-		b1: 3,
-		b2: 3
-	},
 	animation: {
 		id: 'fx_blades',
 		callbacks: {
 			2: [['stop']]
+		},
+		expectedScaling: {
+			b1: 3,
+			b2: 3
 		},
 		frames: [
 			{

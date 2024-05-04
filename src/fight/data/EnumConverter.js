@@ -91,7 +91,7 @@ export class EnumConverter {
 		}
 		EnumConverter.checkDefinition(na, 'skill', SkillList, toStr);
 		if (na.details) {
-			if (na.skill === SkillList.Shower || na.skill === 'Shower') {
+			if ([SkillList.Shower, 'Shower', SkillList.Env, 'Env'].includes(na.skill)) {
 				EnumConverter.checkDefinition(na.details, 'type', SkillType, toStr);
 			}
 			if (na.skill === SkillList.Aura || na.skill === 'Aura') {

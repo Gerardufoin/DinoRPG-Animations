@@ -10,13 +10,13 @@ export const fx_qigong = {
 			}
 		]
 	},
-	expectedScaling: {
-		q: 4
-	},
 	animation: {
 		id: 'fx_qigong',
 		callbacks: {
 			24: [['stop']]
+		},
+		expectedScaling: {
+			q: 4
 		},
 		frames: [
 			{

@@ -12,6 +12,7 @@ import { FxAttachAnim } from './skills/fx/FxAttachAnim.js';
 import { FxAura } from './skills/fx/FxAura.js';
 import { FxBlink } from './skills/fx/FxBlink.js';
 import { FxCloud } from './skills/fx/FxCloud.js';
+import { FxEnvironment } from './skills/fx/FxEnvironment.js';
 import { FxFocus } from './skills/fx/FxFocus.js';
 import { FxHeadOrTail } from './skills/fx/FxHeadOrTail.js';
 import { FxMudWall } from './skills/fx/FxMudWall.js';
@@ -236,6 +237,8 @@ export class Skill extends State {
 				);
 			case SkillList.Deluge:
 				return new GrDeluge(this._scene, () => this.end(), this._fighter, this._targets);
+			case SkillList.Env:
+				return new FxEnvironment(this._scene, () => this.end(), this._details.type, this._details.remove);
 			case SkillList.Aura:
 				return new FxAura(
 					this._scene,

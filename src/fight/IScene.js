@@ -11,6 +11,7 @@ import { Timer } from './Timer.js';
 import { TimeBar } from './parts/scene/TimeBar.js';
 import { GroundType } from './Enums.js';
 import { Settings } from './settings/Settings.js';
+import { Environment } from './parts/skills/environment/Environment.js';
 
 export const SCENE_MARGIN = 10;
 export const SCENE_WIDTH = 400;
@@ -146,6 +147,12 @@ export class IScene extends Container {
 		speed: 0,
 		timer: 0
 	};
+
+	/**
+	 * The current environment of the Scene, if any.
+	 * @type {Environment}
+	 */
+	_environment;
 
 	/**
 	 * Slowly remove the loading screen and display the slots.
@@ -291,5 +298,27 @@ export class IScene extends Container {
 	 */
 	getRandomPYPos() {
 		return Math.random() * this.getPYSize();
+	}
+
+	/**
+	 * If an environment exists, it is disposed of.
+	 */
+	removeEnvironment() {
+		if (this._environment) {
+			this._environment.dispose();
+			this._environment = null;
+		}
+	}
+
+	/**
+	 * Setup a new environment.
+	 * If a previous environment already exists, it is disposed of.
+	 * @param {Environment} env The new environment to setup.
+	 * @param {number} layer The Scene layer where to add the environment.
+	 */
+	setEnvironment(env, layer) {
+		this.removeEnvironment();
+		this._environment = env;
+		this.dm.addSprite(this._environment, layer);
 	}
 }

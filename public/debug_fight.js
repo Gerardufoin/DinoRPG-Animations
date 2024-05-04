@@ -120,20 +120,9 @@ const fightVersion = [
 			},*/
 			{
 				action: 'Skill',
-				skill: 'Focus',
+				skill: 'Env',
 				details: {
-					fid: 0,
-					color: 0xff0000
-				}
-			},
-			{
-				action: 'Skill',
-				skill: 'Generate',
-				details: {
-					fid: 0,
-					color: 0xff0000,
-					power: 2,
-					radius: 1
+					type: 'Fire'
 				}
 			}
 			/*{

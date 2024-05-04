@@ -168,7 +168,7 @@ export const SkillList = {
 	Rafale: 25,
 	Deluge: 26,
 	// _HFx
-	Env7: 27,
+	Env: 27,
 	Aura: 28,
 	Snow: 29,
 	Swamp: 30,

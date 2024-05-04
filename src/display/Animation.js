@@ -1,5 +1,5 @@
 // @ts-check
-import { BlurFilter, Color, ColorMatrixFilter, Container, DisplayObject, Filter, Matrix } from 'pixi.js';
+import { BlurFilter, Color, ColorMatrixFilter, Container, DisplayObject, Filter, Matrix, Sprite } from 'pixi.js';
 import { offsetShader } from './shaders/ColorOffsetShader.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { PixiHelper } from './PixiHelper.js';
@@ -127,6 +127,25 @@ export class Animation extends Container {
 	}
 
 	/**
+	 * Get the Sprite element of a part.
+	 * Only use this if you are certain the part you are getting only has one Sprite.
+	 * @param {string} name The name of the part.
+	 * @returns {Sprite} The Sprite element of the part.
+	 */
+	getPartSprite(name) {
+		if (this._parts[name]) {
+			let part = /** @type {Container<DisplayObject>} */ (this._parts[name]);
+			// Go fetch the sprite (last child of the hierarchy)
+			while (part.children && part.children.length > 0) {
+				part = /** @type {Container<DisplayObject>} */ (part.getChildAt(0));
+			}
+			return /** @type {Sprite} */ (part);
+		}
+		console.error(`[Animation.getPartSprite]: Part '${name}' does not exist`);
+		return undefined;
+	}
+
+	/**
 	 * Use specific parts as mask for other parts.
 	 * A mask MUST be a sprite, so the part's sprite will have to be fetched (last element in the children hierarchy).
 	 * @param {{[part: string]: string}} masks An object having a part name as key and a part name to use as mask as value.
@@ -134,12 +153,8 @@ export class Animation extends Container {
 	setMasks(masks) {
 		for (const pName in masks) {
 			if (this._parts[pName]) {
-				if (this._parts[masks[pName]]) {
-					let mask = /** @type {Container<DisplayObject>} */ (this._parts[masks[pName]]);
-					// Go fetch the sprite (last child of the hierarchy)
-					while (mask.children && mask.children.length > 0) {
-						mask = /** @type {Container<DisplayObject>} */ (mask.getChildAt(0));
-					}
+				const mask = this.getPartSprite(masks[pName]);
+				if (mask) {
 					this._parts[pName].mask = mask;
 				} else {
 					console.error(`[Animation.setMasks]: Mask '${masks[pName]}' does not exist`);

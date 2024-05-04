@@ -597,7 +597,7 @@ export class MTConverter {
 		if (
 			(obj.skill == SkillList.Anim && !obj.details.targets) ||
 			[
-				SkillList.Env7,
+				SkillList.Env,
 				SkillList.Aura,
 				SkillList.Snow,
 				SkillList.Swamp,
@@ -730,7 +730,7 @@ export class MTConverter {
 	 */
 	static convertFXEffect(skill) {
 		const mapping = {
-			[SkillList.Env7]: '_SFEnv7',
+			[SkillList.Env]: '_SFEnv7',
 			[SkillList.Aura]: '_SFAura',
 			[SkillList.Snow]: '_SFSnow',
 			[SkillList.Swamp]: '_SFSwamp',
@@ -756,9 +756,9 @@ export class MTConverter {
 			args: []
 		};
 		switch (skill.skill) {
-			case SkillList.Env7:
-				ret.args.push(skill.details.frame);
-				ret.args.push(skill.details.remove);
+			case SkillList.Env:
+				ret.args.push((skill.details.type ?? 0) + 1);
+				ret.args.push(skill.details.remove ?? false);
 				break;
 			case SkillList.Aura:
 				ret.args.push(skill.details.fid);

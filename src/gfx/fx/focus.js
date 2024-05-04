@@ -24,15 +24,15 @@ export const fx_focus = {
 			}
 		]
 	},
-	expectedScaling: {
-		f2: 2,
-		w: 3
-	},
 	animation: {
 		id: 'fx_focus',
 		callbacks: {
 			2: [['gotoAndPlay', 0]],
 			12: [['destroy']]
+		},
+		expectedScaling: {
+			f2: 2,
+			w: 3
 		},
 		frames: [
 			{

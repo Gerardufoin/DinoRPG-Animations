@@ -209,6 +209,9 @@
 															<xs:attribute name="color" type="xs:string" use="required"/>
 															<xs:attribute name="current" type="xs:boolean" use="optional"/>
 															<xs:attribute name="isSelected" type="xs:boolean" use="optional"/>
+															<xs:attribute name="layerType" type="xs:string" use="optional"/>
+															<xs:attribute name="locked" type="xs:boolean" use="optional"/>
+															<xs:attribute name="parentLayerIndex" type="xs:decimal" use="optional"/>
 														</xs:complexType>
 													</xs:element>
 												</xs:sequence>

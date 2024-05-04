@@ -20,15 +20,15 @@ export const fx_endurance_on = {
 		e2: endurance_part,
 		e3: endurance_part
 	},
-	expectedScaling: {
-		e1: 1.2,
-		e2: 1.7,
-		e3: 2.2
-	},
 	animation: {
 		id: 'fx_endurance_on',
 		callbacks: {
 			22: [['stop']]
+		},
+		expectedScaling: {
+			e1: 1.2,
+			e2: 1.7,
+			e3: 2.2
 		},
 		frames: [
 			{

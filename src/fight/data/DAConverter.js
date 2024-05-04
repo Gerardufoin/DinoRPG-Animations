@@ -619,7 +619,7 @@ export class DAConverter {
 	 */
 	static convertFXSkill(effect) {
 		const mapping = {
-			_SFEnv7: SkillList.Env7,
+			_SFEnv7: SkillList.Env,
 			_SFAura: SkillList.Aura,
 			_SFAura2: SkillList.Aura,
 			_SFSnow: SkillList.Snow,
@@ -643,8 +643,8 @@ export class DAConverter {
 			skill: mapping[effect.value]
 		};
 		switch (ret.skill) {
-			case SkillList.Env7:
-				ret.frame = effect.args[0]; // (number) -> string [cendre, abysse, amazon, stelme, ourano]
+			case SkillList.Env:
+				ret.type = (effect.args[0] ?? 1) - 1; // (number) -> string [cendre, abysse, amazon, stelme, ourano]
 				ret.remove = effect.args[1]; //boolean
 				break;
 			case SkillList.Aura:

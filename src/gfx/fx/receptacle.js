@@ -28,13 +28,13 @@ export const fx_receptacle = {
 			}
 		]
 	},
-	expectedScaling: {
-		r: 1
-	},
 	animation: {
 		id: 'fx_receptacle',
 		callbacks: {
 			26: [['stop']]
+		},
+		expectedScaling: {
+			r: 1
 		},
 		frames: [
 			{
