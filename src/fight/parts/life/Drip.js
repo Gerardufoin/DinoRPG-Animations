@@ -1,7 +1,7 @@
 // @ts-check
 
 import { Graphics } from 'pixi.js';
-import { Faller } from '../Faller.js';
+import { Faller } from '../effects/Faller.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { Timer } from '../../Timer.js';
 import { IScene } from '../../IScene.js';

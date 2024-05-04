@@ -1,7 +1,7 @@
 // @ts-check
 import { GlowFilter } from '@pixi/filter-glow';
 import { Animator } from '../../../display/Animator.js';
-import { Faller } from '../Faller.js';
+import { Faller } from '../effects/Faller.js';
 import { fx_petal } from '../../../gfx/fx/petal.js';
 import { ColorMatrixFilter } from 'pixi.js';
 import { PixiHelper } from '../../../display/PixiHelper.js';

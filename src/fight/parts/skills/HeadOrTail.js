@@ -7,6 +7,7 @@ import { fx_head_or_tail } from '../../../gfx/fx/head_or_tail.js';
 import { Timer } from '../../Timer.js';
 import { PixiHelper } from '../../../display/PixiHelper.js';
 import { IScene } from '../../IScene.js';
+import { Fighter } from '../../Fighter.js';
 
 /**
  * Creates a rotating card which can be stopped on either side.
@@ -21,11 +22,10 @@ export class HeadOrTail extends Phys2D {
 	/**
 	 * Creates a rotating card at the given coordinates.
 	 * @param {IScene} scene The Scene where the card is instantiated.
-	 * @param {number} x The initial x coordinate.
-	 * @param {number} y The initial y coordinate.
+	 * @param {Fighter} caster The Fighter creating the card.
 	 * @param {string} type The type of card to create.
 	 */
-	constructor(scene, x, y, type) {
+	constructor(scene, caster, type) {
 		super(new Container(), scene);
 
 		let id = 0;
@@ -40,8 +40,8 @@ export class HeadOrTail extends Phys2D {
 		this._animator = new Animator(false).loadAnimation(fx_head_or_tail, 1, [id]);
 		this._root.addChild(this._animator);
 
-		this._x = x - 34 / 2;
-		this._y = y - 43;
+		this._x = -8;
+		this._y = -caster.height - 48;
 	}
 
 	/**

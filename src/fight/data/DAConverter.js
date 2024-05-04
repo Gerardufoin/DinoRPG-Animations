@@ -634,7 +634,7 @@ export class DAConverter {
 			_SFRay: SkillList.Ray,
 			_SFSpeed: SkillList.Speed,
 			_SFRandom: SkillList.HeadOrTail,
-			_SFLeaf: SkillList.Leaf,
+			_SFLeaf: SkillList.Resurrect,
 			_SFMudWall: SkillList.MudWall,
 			_SFBlink: SkillList.Blink,
 			_SFGenerate: SkillList.Generate
@@ -734,9 +734,11 @@ export class DAConverter {
 				ret.fx = effect.args[1]; // number -> (type of card)
 				ret.ok = effect.args[2]; // boolean
 				break;
-			case SkillList.Leaf:
+			case SkillList.Resurrect:
 				ret.fid = effect.args[0]; // number
-				ret.fx = effect.args[1]; // string
+				if (effect.args[1] !== '_plume') {
+					console.error(`[DAConverter]: _SFLeaf: Unexpected link '${effect.args[1]}'`);
+				}
 				break;
 			case SkillList.MudWall:
 				ret.fid = effect.args[0]; // number

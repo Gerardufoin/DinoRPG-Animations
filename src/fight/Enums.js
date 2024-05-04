@@ -181,7 +181,7 @@ export const SkillList = {
 	Ray: 37,
 	Speed: 38,
 	HeadOrTail: 39,
-	Leaf: 40,
+	Resurrect: 40,
 	MudWall: 41,
 	Blink: 42,
 	Generate: 43,

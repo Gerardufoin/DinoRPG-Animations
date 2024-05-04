@@ -15,6 +15,7 @@ import { FxCloud } from './skills/fx/FxCloud.js';
 import { FxFocus } from './skills/fx/FxFocus.js';
 import { FxHeadOrTail } from './skills/fx/FxHeadOrTail.js';
 import { FxMudWall } from './skills/fx/FxMudWall.js';
+import { FxResurrect } from './skills/fx/FxResurrect.js';
 import { FxSnow } from './skills/fx/FxSnow.js';
 import { FxSwamp } from './skills/fx/FxSwamp.js';
 import { FxTwistingRay } from './skills/fx/FxTwistingRay.js';
@@ -275,6 +276,8 @@ export class Skill extends State {
 					this._details.fx,
 					this._details.ok
 				);
+			case SkillList.Resurrect:
+				return new FxResurrect(this._scene, () => this.end(), this._fighter);
 			case SkillList.MudWall:
 				return new FxMudWall(this._scene, () => this.end(), this._fighter, this._details.remove);
 			case SkillList.Blink:

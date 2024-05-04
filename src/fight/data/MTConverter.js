@@ -610,7 +610,7 @@ export class MTConverter {
 				SkillList.Ray,
 				SkillList.Speed,
 				SkillList.HeadOrTail,
-				SkillList.Leaf,
+				SkillList.Resurrect,
 				SkillList.MudWall,
 				SkillList.Blink,
 				SkillList.Generate
@@ -744,7 +744,7 @@ export class MTConverter {
 			[SkillList.Ray]: '_SFRay',
 			[SkillList.Speed]: '_SFSpeed',
 			[SkillList.HeadOrTail]: '_SFRandom',
-			[SkillList.Leaf]: '_SFLeaf',
+			[SkillList.Resurrect]: '_SFLeaf',
 			[SkillList.MudWall]: '_SFMudWall',
 			[SkillList.Blink]: '_SFBlink',
 			[SkillList.Generate]: '_SFGenerate'
@@ -849,9 +849,9 @@ export class MTConverter {
 				ret.args.push(skill.details.fx);
 				ret.args.push(skill.details.ok);
 				break;
-			case SkillList.Leaf:
+			case SkillList.Resurrect:
 				ret.args.push(skill.details.fid);
-				ret.args.push(skill.details.fx);
+				ret.args.push('_plume');
 				break;
 			case SkillList.MudWall:
 				ret.args.push(skill.details.fid);

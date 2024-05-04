@@ -3,7 +3,7 @@
 import { Container } from 'pixi.js';
 import { IScene, SCENE_WIDTH } from '../../../IScene.js';
 import { Timer } from '../../../Timer.js';
-import { Faller } from '../../Faller.js';
+import { Faller } from '../../effects/Faller.js';
 
 /**
  * Abstract class allowing to create a rain drop with the desired skin.

@@ -123,6 +123,7 @@ export let mapping_gfx = {
 	227: 'fx/bubble/break_5',
 	228: 'fx/bubble/break_6',
 	229: 'fx/bubble/break_7',
+	300: 'fx/feather',
 	309: 'fx/sylphide_wing',
 	312: 'fx/qigong',
 	315: 'fx/random/face_lose',

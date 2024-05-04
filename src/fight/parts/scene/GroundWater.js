@@ -1,7 +1,7 @@
 //@ts-check
 
 import { BlurFilter, Container, Graphics } from 'pixi.js';
-import { Faller } from '../Faller.js';
+import { Faller } from '../effects/Faller.js';
 import { IScene } from '../../IScene.js';
 import { Asset } from '../../../display/Asset.js';
 import { ref } from '../../../gfx/references.js';

@@ -1,5 +1,5 @@
 // @ts-check
-// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/Anim.hx
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/RandomState.hx
 
 import { Layers } from '../../../DepthManager.js';
 import { Fighter } from '../../../Fighter.js';
@@ -36,13 +36,8 @@ export class FxHeadOrTail extends GroupEffect {
 		this._success = success;
 		this._coefSpeed = 0.025;
 
-		this._card = new HeadOrTail(
-			this._scene,
-			this._caster.getRootContainer().x,
-			this._caster.getRootContainer().y - this._caster.height,
-			type
-		);
-		this._scene.dm.addSprite(this._card, Layers.Scene.PARTS);
+		this._card = new HeadOrTail(this._scene, this._caster, type);
+		this._caster.dm.addSprite(this._card, Layers.Fighter.FRONT);
 	}
 
 	/**
