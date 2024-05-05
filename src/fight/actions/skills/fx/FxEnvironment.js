@@ -6,7 +6,8 @@ import { SkillType } from '../../../Enums.js';
 import { Scene } from '../../../Scene.js';
 import { State } from '../../../State.js';
 import { Timer } from '../../../Timer.js';
-import { FireEnvironment } from '../../../parts/skills/environment/fire/FireEnvironment.js';
+import { FireEnvironment } from '../../../parts/skills/env/fire/FireEnvironment.js';
+import { WaterEnvironment } from '../../../parts/skills/env/water/WaterEnvironment.js';
 
 /**
  * Creates a new environment which will be displayed on the background of the Scene.
@@ -32,6 +33,9 @@ export class FxEnvironment extends State {
 		switch (type) {
 			case SkillType.Fire:
 				this._scene.setEnvironment(new FireEnvironment(this._scene), Layers.Scene.BG_FRONT);
+				break;
+			case SkillType.Water:
+				this._scene.setEnvironment(new WaterEnvironment(this._scene), Layers.Scene.BG);
 				break;
 		}
 	}

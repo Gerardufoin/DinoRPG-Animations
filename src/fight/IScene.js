@@ -11,7 +11,7 @@ import { Timer } from './Timer.js';
 import { TimeBar } from './parts/scene/TimeBar.js';
 import { GroundType } from './Enums.js';
 import { Settings } from './settings/Settings.js';
-import { Environment } from './parts/skills/environment/Environment.js';
+import { Environment } from './parts/skills/env/Environment.js';
 
 export const SCENE_MARGIN = 10;
 export const SCENE_WIDTH = 400;

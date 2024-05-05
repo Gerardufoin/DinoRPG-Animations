@@ -757,8 +757,13 @@ export class MTConverter {
 		};
 		switch (skill.skill) {
 			case SkillList.Env:
-				ret.args.push((skill.details.type ?? 0) + 1);
-				ret.args.push(skill.details.remove ?? false);
+				{
+					let type = skill.details.type ?? 0;
+					// Invert 1 and 2: abyss is 1 and amazon 2, while SkillType.Water is 2 and SkillType.Wood is 1
+					type = type == 1 ? 2 : type == 2 ? 1 : type;
+					ret.args.push(type + 1);
+					ret.args.push(skill.details.remove ?? false);
+				}
 				break;
 			case SkillList.Aura:
 				ret.args.push(skill.details.fid);

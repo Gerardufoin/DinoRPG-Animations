@@ -644,8 +644,13 @@ export class DAConverter {
 		};
 		switch (ret.skill) {
 			case SkillList.Env:
-				ret.type = (effect.args[0] ?? 1) - 1; // (number) -> string [cendre, abysse, amazon, stelme, ourano]
-				ret.remove = effect.args[1]; //boolean
+				{
+					let type = (effect.args[0] ?? 1) - 1;
+					// Invert 1 and 2: abyss is 1 and amazon 2, while SkillType.Water is 2 and SkillType.Wood is 1
+					type = type == 1 ? 2 : type == 2 ? 1 : type;
+					ret.type = type; // (number) -> string [cendre, abysse, amazon, stelme, ourano]
+					ret.remove = effect.args[1]; //boolean
+				}
 				break;
 			case SkillList.Aura:
 				ret.fid = effect.args[0]; // number

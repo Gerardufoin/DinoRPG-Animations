@@ -198,7 +198,11 @@ export class Scene extends IScene {
 		// The x = 0 of the other scenes should be on the border of the left column.
 		colLeft.onLoad = () => {
 			for (const k in Layers.Scene) {
-				if (![Layers.Scene.BG, Layers.Scene.COLUMNS, Layers.Scene.SETTINGS].includes(Layers.Scene[k])) {
+				if (
+					![Layers.Scene.BG, Layers.Scene.BG_FRONT, Layers.Scene.COLUMNS, Layers.Scene.SETTINGS].includes(
+						Layers.Scene[k]
+					)
+				) {
 					this.dm.offsetLayer(colLeft.width, 0, Layers.Scene[k]);
 				}
 			}
