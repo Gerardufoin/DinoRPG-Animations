@@ -79,11 +79,12 @@ const parser = new XFLParser();
 //parser.parse('./resources/gfx/LIBRARY/Symbol 19.xml', '_sub', undefined, 2); // moving vine
 //parser.parse('./resources/gfx/LIBRARY/Symbol 22.xml', '_sub', undefined, 2); // mcRayGenerate
 //parser.parse('./resources/gfx/LIBRARY/Symbol 28.xml', '_sub', undefined, 2); // _enduranceOff
+//parser.parse('./resources/gfx/LIBRARY/Symbol 34.xml', '_sub', undefined, 2); // animcendres
 //parser.parse('./resources/gfx/LIBRARY/Symbol 125.xml', '_sub', undefined, 2); // worker
 //parser.parse('./resources/gfx/LIBRARY/Symbol 222.xml', '_sub', undefined, 2); // fxBubble
 //parser.parse('./resources/gfx/LIBRARY/Symbol 231.xml', '_sub', undefined, 2); // fxSurvivor
 //parser.parse('./resources/gfx/LIBRARY/Symbol 232.xml', '_sub', undefined, 2); // fxOndeFocus
-parser.parse('./resources/gfx/LIBRARY/Symbol 246.xml', '_sub', undefined, 2); // cendre
+//parser.parse('./resources/gfx/LIBRARY/Symbol 246.xml', '_sub', undefined, 2); // cendre
 //parser.parse('./resources/gfx/LIBRARY/Symbol 311.xml', '_sub', undefined, 2); // _sylphide
 //parser.parse('./resources/gfx/LIBRARY/Symbol 314.xml', '_sub', undefined, 2); // _qigong
 //parser.parse('./resources/gfx/LIBRARY/Symbol 321.xml', '_sub', undefined, 2); // _pileouface

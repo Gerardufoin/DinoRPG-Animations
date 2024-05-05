@@ -89,7 +89,7 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'coq'
+					gfx: 'cobra'
 				}
 			},
 			{
@@ -102,7 +102,7 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'barche'
+					gfx: 'gluon'
 				}
 			},
 			/*{
@@ -118,6 +118,10 @@ const fightVersion = [
 				fid: 1,
 				status: 'Fly'
 			},*/
+			{
+				action: 'Wait',
+				time: 2000
+			},
 			{
 				action: 'Skill',
 				skill: 'Env',

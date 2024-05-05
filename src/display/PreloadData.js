@@ -32,6 +32,7 @@ import { FxFocus } from '../fight/actions/skills/fx/FxFocus.js';
 import { fx_endurance_off } from '../gfx/fx/endurance_off.js';
 import { fx_qigong } from '../gfx/fx/qigong.js';
 import { GrSpeed } from '../fight/actions/skills/group/GrSpeed.js';
+import { Environment } from '../fight/parts/skills/environment/Environment.js';
 
 /**
  * Class used to preload part of the assets.
@@ -104,6 +105,10 @@ export class PreloadData {
 			animator.loadAnimation(a);
 			renderer.render(animator, { renderTexture: preloadTexture });
 		}
+
+		// Preload Environment mask filter
+		Environment.createMaskFilter();
+		renderer.render(Environment.MaskAnimator, { renderTexture: preloadTexture });
 
 		// Preload glow filters
 		const grph = new Graphics().beginFill(0xffffff).drawRect(25, 25, 50, 50);

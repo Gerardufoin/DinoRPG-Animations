@@ -286,6 +286,19 @@ export class Animator extends Container {
 	}
 
 	/**
+	 * Sets the animator and animation to playing.
+	 * If idx is defined, sets the frame to idx.
+	 * @param {number} idx The frame to set the animation at.
+	 */
+	play(idx = undefined) {
+		this.playing = true;
+		this._body.play();
+		if (idx !== undefined) {
+			this.setFrame(idx, true);
+		}
+	}
+
+	/**
 	 * Return the length of the current animation playing.
 	 * @returns {number} The number of frames of the current animation.
 	 */

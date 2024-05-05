@@ -6,7 +6,7 @@ import { SkillType } from '../../../Enums.js';
 import { Scene } from '../../../Scene.js';
 import { State } from '../../../State.js';
 import { Timer } from '../../../Timer.js';
-import { FireEnvironment } from '../../../parts/skills/environment/FireEnvironment.js';
+import { FireEnvironment } from '../../../parts/skills/environment/fire/FireEnvironment.js';
 
 /**
  * Creates a new environment which will be displayed on the background of the Scene.
@@ -31,7 +31,7 @@ export class FxEnvironment extends State {
 		}
 		switch (type) {
 			case SkillType.Fire:
-				this._scene.setEnvironment(new FireEnvironment(), Layers.Scene.BG_FRONT);
+				this._scene.setEnvironment(new FireEnvironment(this._scene), Layers.Scene.BG_FRONT);
 				break;
 		}
 	}
