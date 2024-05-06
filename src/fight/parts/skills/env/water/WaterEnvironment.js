@@ -19,7 +19,7 @@ import { Bubbles } from './Bubbles.js';
  */
 export class WaterEnvironment extends Environment {
 	/**
-	 * The backgrou layer.
+	 * The background layer.
 	 * @type {Container}
 	 */
 	_background;
@@ -62,6 +62,8 @@ export class WaterEnvironment extends Environment {
 		// Background
 		this._background = new Container();
 		this._background.addChild(new Asset(ref.fx.env.water.background));
+		this._background.x = -10;
+		this._background.y = -10;
 		this._background.filters = [Environment.MaskFilterSubstract];
 		this._root.addChild(this._background);
 

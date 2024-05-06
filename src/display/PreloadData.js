@@ -33,6 +33,7 @@ import { fx_endurance_off } from '../gfx/fx/endurance_off.js';
 import { fx_qigong } from '../gfx/fx/qigong.js';
 import { GrSpeed } from '../fight/actions/skills/group/GrSpeed.js';
 import { Environment } from '../fight/parts/skills/env/Environment.js';
+import { WoodEnvironment } from '../fight/parts/skills/env/wood/WoodEnvironment.js';
 
 /**
  * Class used to preload part of the assets.
@@ -86,7 +87,8 @@ export class PreloadData {
 			outerStrength: glow_attack_2.strength
 		}),
 		FxFocus.GlowFilter,
-		GrSpeed.GlowFilter
+		GrSpeed.GlowFilter,
+		WoodEnvironment.TreesGlow
 	];
 
 	/**

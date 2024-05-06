@@ -71,11 +71,6 @@ export class Leaf extends Part {
 	 */
 	_defaultWidth = 0;
 	/**
-	 * Offset to the leaf x position at all time.
-	 * @type {number}
-	 */
-	_offsetX = 0;
-	/**
 	 * Default x velocity of the leaf.
 	 * @type {number}
 	 */
@@ -133,7 +128,7 @@ export class Leaf extends Part {
 	 * Will be overriden if the inheriting class wishes to do something else on end.
 	 */
 	onEnd() {
-		this._offsetX = Math.random() * SCENE_WIDTH;
+		this._x = Math.random() * SCENE_WIDTH;
 		this._y = this._scene.getRandomPYPos();
 		this._z = -1.5 * SCENE_HEIGHT;
 		this.init();

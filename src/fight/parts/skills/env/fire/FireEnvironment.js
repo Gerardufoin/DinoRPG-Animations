@@ -148,7 +148,8 @@ export class FireEnvironment extends Environment {
 
 		// Background
 		const bg = new Asset(ref.fx.env.fire.background);
-		bg.y = -38;
+		bg.x = -10;
+		bg.y = -48;
 		this._envMultiply.addChild(bg);
 		this._envMultiply.addChild(new Asset(ref.fx.env.fire.gradient));
 
