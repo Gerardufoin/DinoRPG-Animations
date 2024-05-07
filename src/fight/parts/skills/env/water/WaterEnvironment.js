@@ -45,7 +45,7 @@ export class WaterEnvironment extends Environment {
 	_oceanAnim;
 
 	/**
-	 * Creates an environment for the fire type.
+	 * Creates an environment for the water type.
 	 * @param {IScene} scene The Scene where the environment is spawned in.
 	 */
 	constructor(scene) {

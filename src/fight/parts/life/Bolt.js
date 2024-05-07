@@ -4,6 +4,7 @@ import { Animator } from '../../../display/Animator.js';
 import { fx_bolt } from '../../../gfx/fx/bolt.js';
 import { Phys2D } from '../Phys2D.js';
 import { IScene } from '../../IScene.js';
+import { ConstantShaderManager } from '../../../display/ConstantShaderManager.js';
 
 /**
  * Creates a bolt of lightning at the desired position.
@@ -14,7 +15,7 @@ export class Bolt extends Phys2D {
 	 * Storing it to prevent WebGL to create it each time.
 	 * @type {GlowFilter}
 	 */
-	static GlowFilter = new GlowFilter({
+	static GlowFilter = ConstantShaderManager.getGlowFilter({
 		distance: 10,
 		color: 0xffff00,
 		outerStrength: 2

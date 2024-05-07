@@ -34,6 +34,7 @@ import { fx_qigong } from '../gfx/fx/qigong.js';
 import { GrSpeed } from '../fight/actions/skills/group/GrSpeed.js';
 import { Environment } from '../fight/parts/skills/env/Environment.js';
 import { WoodEnvironment } from '../fight/parts/skills/env/wood/WoodEnvironment.js';
+import { Bolt } from '../fight/parts/life/Bolt.js';
 
 /**
  * Class used to preload part of the assets.
@@ -73,6 +74,7 @@ export class PreloadData {
 		SkillAura.FirstAura,
 		SkillAura.SecondAura,
 		SkillAura.ThirdAura,
+		Bolt.GlowFilter,
 		Acorn.GlowFilter,
 		ConstantShaderManager.getGlowFilter({
 			distance: glow_attack_1.distance,

@@ -53,6 +53,16 @@ export class Environment extends Sprite {
 	 * @type {Filter}
 	 */
 	static FilterSubstract;
+	/**
+	 * The hard light mask filter of the environement.
+	 * @type {SpriteMaskFilter}
+	 */
+	static MaskFilterHardLight;
+	/**
+	 * The hard light filter of the environment, to apply once the mask is removed.
+	 * @type {Filter}
+	 */
+	static FilterHardLight;
 
 	/**
 	 * Additionnal effects for the environment.
@@ -133,6 +143,12 @@ export class Environment extends Sprite {
 			Environment.MaskFilterSubstract.blendMode = BLEND_MODES.SUBTRACT;
 			Environment.FilterSubstract = new Filter();
 			Environment.FilterSubstract.blendMode = BLEND_MODES.SUBTRACT;
+
+			Environment.MaskFilterHardLight = new SpriteMaskFilter();
+			Environment.MaskFilterHardLight.maskSprite = mask;
+			Environment.MaskFilterHardLight.blendMode = BLEND_MODES.HARD_LIGHT;
+			Environment.FilterHardLight = new Filter();
+			Environment.FilterHardLight.blendMode = BLEND_MODES.HARD_LIGHT;
 		}
 	}
 }

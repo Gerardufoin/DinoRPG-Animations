@@ -1,6 +1,6 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/Env.hx
-// Abysse
+// Amazone
 
 import { Environment } from '../Environment.js';
 import { Asset } from '../../../../../display/Asset.js';
@@ -41,7 +41,7 @@ export class WoodEnvironment extends Environment {
 	_trees;
 
 	/**
-	 * Creates an environment for the fire type.
+	 * Creates an environment for the wood type.
 	 * @param {IScene} scene The Scene where the environment is spawned in.
 	 */
 	constructor(scene) {

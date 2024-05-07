@@ -7,6 +7,7 @@ import { Scene } from '../../../Scene.js';
 import { State } from '../../../State.js';
 import { Timer } from '../../../Timer.js';
 import { FireEnvironment } from '../../../parts/skills/env/fire/FireEnvironment.js';
+import { LightningEnvironment } from '../../../parts/skills/env/lightning/LightningEnvironment.js';
 import { WaterEnvironment } from '../../../parts/skills/env/water/WaterEnvironment.js';
 import { WoodEnvironment } from '../../../parts/skills/env/wood/WoodEnvironment.js';
 
@@ -40,6 +41,9 @@ export class FxEnvironment extends State {
 				break;
 			case SkillType.Water:
 				this._scene.setEnvironment(new WaterEnvironment(this._scene), Layers.Scene.BG);
+				break;
+			case SkillType.Lightning:
+				this._scene.setEnvironment(new LightningEnvironment(this._scene), Layers.Scene.BG);
 				break;
 		}
 	}

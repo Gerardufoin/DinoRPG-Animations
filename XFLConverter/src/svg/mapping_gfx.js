@@ -4,6 +4,7 @@
  * Mapping between the extracted symbol from gfx.swf and their name in the project
  */
 export let mapping_gfx = {
+	//1: 'fx/env/lightning/mask', // Edited manually
 	2: 'fx/vine/v_1',
 	3: 'fx/vine/v_2',
 	4: 'fx/vine/v_3',
@@ -144,6 +145,13 @@ export let mapping_gfx = {
 	257: 'fx/env/wood/branches',
 	259: 'fx/env/wood/leaf',
 	261: 'fx/env/wood/leaves',
+	269: 'fx/env/lightning/spark_long_1',
+	270: 'fx/env/lightning/spark_long_2',
+	//272: 'fx/env/lightning/spark_1', // Morphshape
+	//273: 'fx/env/lightning/spark_2',
+	//274: 'fx/env/lightning/spark_3',
+	287: 'fx/env/air/wind',
+	289: 'fx/env/air/gust',
 	300: 'fx/feather',
 	309: 'fx/sylphide_wing',
 	312: 'fx/qigong',

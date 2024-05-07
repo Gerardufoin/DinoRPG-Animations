@@ -126,7 +126,7 @@ const fightVersion = [
 				action: 'Skill',
 				skill: 'Env',
 				details: {
-					type: 'Wood'
+					type: 'Lightning'
 				}
 			}
 			/*{
