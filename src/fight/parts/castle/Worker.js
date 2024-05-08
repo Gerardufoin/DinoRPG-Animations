@@ -38,7 +38,7 @@ export class Worker extends Animator {
 
 		// Create body
 		for (let pName in worker.parts) {
-			let part = PartManager.createPart(worker.parts[pName], [speed - 1], [], '');
+			let part = PartManager.createPart(worker.parts[pName], [speed - 1], []);
 			if (part) {
 				this.addPart(pName, part);
 			}

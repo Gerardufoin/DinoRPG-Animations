@@ -66,4 +66,4 @@ export const monsters = {
 	lucet: lucet,
 	taurus: taurus
 };
-export const error = bad;
+export const error = bad.small;

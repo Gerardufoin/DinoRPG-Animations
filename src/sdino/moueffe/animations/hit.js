@@ -1,6 +1,6 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'moueffe_hit',
 	frames: [
 		{
@@ -13,7 +13,7 @@ export let hit = {
 				d: 1.126,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 7.65,
 				ty: -14.65,
 				a: 0.966,
@@ -22,7 +22,7 @@ export let hit = {
 				d: 0.966,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.7,
 				ty: 5.35,
 				a: 0.991,
@@ -31,7 +31,7 @@ export let hit = {
 				d: 0.991,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 5.8,
 				ty: 14.4,
 				a: 0.918,
@@ -40,7 +40,7 @@ export let hit = {
 				d: 1.516,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: -0.3,
 				ty: -3.6,
 				a: 1.047,
@@ -49,7 +49,7 @@ export let hit = {
 				d: 0.893,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 9.5,
 				ty: -10.2,
 				a: 1.082,
@@ -67,7 +67,7 @@ export let hit = {
 				d: 0.963,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -6.4,
 				ty: -5.05,
 				a: -1.053,
@@ -76,7 +76,7 @@ export let hit = {
 				d: 0.721,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -8.55,
 				ty: -4.1,
 				a: -0.689,
@@ -85,7 +85,7 @@ export let hit = {
 				d: 0.689,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -1.75,
 				ty: -17.85,
 				a: 0.777,
@@ -94,7 +94,7 @@ export let hit = {
 				d: 0.54,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -15.95,
 				ty: -0.3,
 				a: 0.95,
@@ -103,7 +103,7 @@ export let hit = {
 				d: 0.956,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -14.4,
 				ty: -29.2,
 				a: 0.966,
@@ -112,7 +112,7 @@ export let hit = {
 				d: 0.966,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: 7.65,
 				ty: -24.1,
 				a: 0.866,

@@ -65,7 +65,6 @@ export class smonster extends Animator {
 				this._monsterInfos.parts[pName],
 				[],
 				[],
-				`smonster/${this._monsterInfos.name}/`,
 				this._body._scale,
 				scaling * (partsScaling[pName] ?? 1)
 			);
@@ -74,7 +73,7 @@ export class smonster extends Animator {
 			}
 		}
 		if (this._castShadow && this._monsterInfos.shadow) {
-			var shadow = PartManager.getSubPart(this._monsterInfos.shadow, [], [], 'smonster/', this._body._scale);
+			var shadow = PartManager.getSubPart(this._monsterInfos.shadow, [], [], this._body._scale);
 			if (shadow) this.addChildAt(shadow, 0);
 		}
 		if (this._monsterInfos.glow) {

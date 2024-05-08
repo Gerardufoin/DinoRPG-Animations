@@ -24,7 +24,6 @@ import { fx_detonation } from '../gfx/fx/detonation.js';
 import { ref } from '../gfx/references.js';
 import { SkillAura } from '../fight/actions/skills/SkillAura.js';
 import { GlowFilter } from '@pixi/filter-glow';
-import { SCENE_HEIGHT, SCENE_WIDTH } from '../fight/IScene.js';
 import { ConstantShaderManager } from './ConstantShaderManager.js';
 import { glow_attack_1, glow_attack_2 } from '../smonster/wolf/parts.js';
 import { Acorn } from '../fight/parts/skills/projectile/Acorn.js';
@@ -38,7 +37,6 @@ import { Bolt } from '../fight/parts/life/Bolt.js';
 
 /**
  * Class used to preload part of the assets.
- * TODO: To improve with targeted loading.
  */
 export class PreloadData {
 	/**

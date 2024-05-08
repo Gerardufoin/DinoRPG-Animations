@@ -1,10 +1,10 @@
 // @ts-check
 
-export let run = {
+export const run = {
 	id: 'moueffe_run',
 	frames: [
 		{
-			left_arm: {
+			l_arm: {
 				tx: -1.3,
 				ty: -20.9,
 				a: 0.5,
@@ -13,7 +13,7 @@ export let run = {
 				d: 0.5,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: -10.1,
 				ty: -4.25,
 				a: 0.612,
@@ -22,7 +22,7 @@ export let run = {
 				d: 0.612,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: -16.3,
 				ty: 4.45,
 				a: -0.452,
@@ -31,7 +31,7 @@ export let run = {
 				d: -0.804,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 2.75,
 				ty: -6.4,
 				a: -1.152,
@@ -40,7 +40,7 @@ export let run = {
 				d: -0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 3.5,
 				ty: -21.55,
 				a: 0.884,
@@ -67,7 +67,7 @@ export let run = {
 				d: 0.928,
 				l: 6
 			},
-			back_bones: {
+			b_bones: {
 				tx: -9.55,
 				ty: -27.2,
 				a: 0.921,
@@ -76,7 +76,7 @@ export let run = {
 				d: 0.921,
 				l: 5
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: 1.45,
 				ty: -4.65,
 				a: 0.665,
@@ -85,7 +85,7 @@ export let run = {
 				d: -0.455,
 				l: 4
 			},
-			right_leg: {
+			r_leg: {
 				tx: 3.45,
 				ty: -4.75,
 				a: 0.591,
@@ -94,7 +94,7 @@ export let run = {
 				d: -0.591,
 				l: 3
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -7.6,
 				ty: -14.2,
 				a: 0.744,
@@ -103,7 +103,7 @@ export let run = {
 				d: 0.516,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 11.55,
 				ty: -6.7,
 				a: -0.872,
@@ -112,7 +112,7 @@ export let run = {
 				d: -0.9,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -11.6,
 				ty: -23.55,
 				a: 0.5,
@@ -123,7 +123,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: -0.65,
 				ty: -19.65,
 				a: 0.864,
@@ -132,7 +132,7 @@ export let run = {
 				d: 0.864,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: -6.1,
 				ty: 0.4,
 				a: 0.924,
@@ -141,7 +141,7 @@ export let run = {
 				d: 0.924,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: -8.65,
 				ty: 8.7,
 				a: -0.173,
@@ -150,7 +150,7 @@ export let run = {
 				d: -0.07,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 3.4,
 				ty: -3.9,
 				a: -0.806,
@@ -159,7 +159,7 @@ export let run = {
 				d: -0.653,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 4.85,
 				ty: -17.35,
 				a: 1.207,
@@ -186,7 +186,7 @@ export let run = {
 				d: 0.927,
 				l: 6
 			},
-			back_bones: {
+			b_bones: {
 				tx: -8.75,
 				ty: -24,
 				a: 0.921,
@@ -195,7 +195,7 @@ export let run = {
 				d: 0.921,
 				l: 5
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: 0.55,
 				ty: -3.4,
 				a: 0.169,
@@ -204,7 +204,7 @@ export let run = {
 				d: -0.119,
 				l: 4
 			},
-			right_leg: {
+			r_leg: {
 				tx: 3.2,
 				ty: -1.3,
 				a: -0.03,
@@ -213,7 +213,7 @@ export let run = {
 				d: 0.03,
 				l: 3
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.15,
 				ty: -12.55,
 				a: 0.202,
@@ -222,7 +222,7 @@ export let run = {
 				d: 0.14,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 7.15,
 				ty: 0.9,
 				a: -0.179,
@@ -231,7 +231,7 @@ export let run = {
 				d: -0.267,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -11.3,
 				ty: -19,
 				a: 0.838,
@@ -242,12 +242,12 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 2.95,
 				ty: -17.15,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: -2.25,
 				ty: 5.05,
 				a: 0.99,
@@ -256,7 +256,7 @@ export let run = {
 				d: 0.989,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: -0.7,
 				ty: 12.85,
 				a: 0.16,
@@ -265,7 +265,7 @@ export let run = {
 				d: 0.614,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 3.4,
 				ty: -0.95,
 				a: -0.344,
@@ -274,7 +274,7 @@ export let run = {
 				d: -0.279,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 5.95,
 				ty: -13.25,
 				a: 1.207,
@@ -301,7 +301,7 @@ export let run = {
 				d: 0.928,
 				l: 6
 			},
-			back_bones: {
+			b_bones: {
 				tx: -7.95,
 				ty: -20.4,
 				a: 0.921,
@@ -310,7 +310,7 @@ export let run = {
 				d: 0.921,
 				l: 5
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -0.35,
 				ty: -2.1,
 				a: -0.344,
@@ -319,7 +319,7 @@ export let run = {
 				d: 0.236,
 				l: 4
 			},
-			right_leg: {
+			r_leg: {
 				tx: 2.85,
 				ty: 2.15,
 				a: -0.63,
@@ -328,7 +328,7 @@ export let run = {
 				d: 0.627,
 				l: 3
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -0.8,
 				ty: -10.9,
 				a: -0.377,
@@ -337,7 +337,7 @@ export let run = {
 				d: -0.262,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 2.6,
 				ty: 8,
 				a: 0.653,
@@ -346,7 +346,7 @@ export let run = {
 				d: 0.57,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -10.7,
 				ty: -13.1,
 				a: 0.993,
@@ -357,7 +357,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 3.2,
 				ty: -18.5,
 				a: 0.966,
@@ -366,7 +366,7 @@ export let run = {
 				d: 0.966,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: -0.9,
 				ty: 5.5,
 				a: 0.92,
@@ -375,7 +375,7 @@ export let run = {
 				d: 0.92,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 2.5,
 				ty: 12.85,
 				a: 0.49,
@@ -384,7 +384,7 @@ export let run = {
 				d: 1.1,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 4.4,
 				ty: -2.2,
 				a: -0.34,
@@ -393,7 +393,7 @@ export let run = {
 				d: -0.276,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 5.3,
 				ty: -13.75,
 				a: 1.08,
@@ -420,7 +420,7 @@ export let run = {
 				d: 0.927,
 				l: 6
 			},
-			back_bones: {
+			b_bones: {
 				tx: -7.7,
 				ty: -22.1,
 				a: 0.921,
@@ -429,7 +429,7 @@ export let run = {
 				d: 0.921,
 				l: 5
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: 0.05,
 				ty: -3.4,
 				a: -0.344,
@@ -438,7 +438,7 @@ export let run = {
 				d: 0.233,
 				l: 4
 			},
-			right_leg: {
+			r_leg: {
 				tx: 3.25,
 				ty: 0.85,
 				a: -0.629,
@@ -447,7 +447,7 @@ export let run = {
 				d: 0.626,
 				l: 3
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -0.3,
 				ty: -12.15,
 				a: -0.375,
@@ -456,7 +456,7 @@ export let run = {
 				d: -0.261,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 2.75,
 				ty: 7.95,
 				a: 0.652,
@@ -465,7 +465,7 @@ export let run = {
 				d: 0.569,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -11.05,
 				ty: -11.85,
 				a: 0.972,
@@ -476,7 +476,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 3.8,
 				ty: -19.05,
 				a: 0.866,
@@ -485,7 +485,7 @@ export let run = {
 				d: 0.866,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.35,
 				ty: 6.05,
 				a: 0.789,
@@ -494,7 +494,7 @@ export let run = {
 				d: 0.789,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 5.75,
 				ty: 12.85,
 				a: 0.815,
@@ -503,7 +503,7 @@ export let run = {
 				d: 1.424,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 4.15,
 				ty: -4.35,
 				a: -0.344,
@@ -512,7 +512,7 @@ export let run = {
 				d: -0.279,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 4.4,
 				ty: -14.25,
 				a: 0.883,
@@ -539,7 +539,7 @@ export let run = {
 				d: 0.928,
 				l: 6
 			},
-			back_bones: {
+			b_bones: {
 				tx: -7.45,
 				ty: -24,
 				a: 0.921,
@@ -548,7 +548,7 @@ export let run = {
 				d: 0.921,
 				l: 5
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: 0.4,
 				ty: -4.6,
 				a: -0.344,
@@ -557,7 +557,7 @@ export let run = {
 				d: 0.236,
 				l: 4
 			},
-			right_leg: {
+			r_leg: {
 				tx: 3.6,
 				ty: -0.35,
 				a: -0.63,
@@ -566,7 +566,7 @@ export let run = {
 				d: 0.627,
 				l: 3
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -0.05,
 				ty: -13.4,
 				a: -0.377,
@@ -575,7 +575,7 @@ export let run = {
 				d: -0.262,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 3.35,
 				ty: 8,
 				a: 0.653,
@@ -584,7 +584,7 @@ export let run = {
 				d: 0.57,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -9.8,
 				ty: -9.25,
 				a: 0.85,
@@ -595,7 +595,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 3,
 				ty: -19.75,
 				a: 0.342,
@@ -604,7 +604,7 @@ export let run = {
 				d: 0.342,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.5,
 				ty: 3.8,
 				a: 0.529,
@@ -613,7 +613,7 @@ export let run = {
 				d: 0.529,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 10.2,
 				ty: 6.85,
 				a: 0.944,
@@ -622,7 +622,7 @@ export let run = {
 				d: 1.527,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 3.1,
 				ty: -7.1,
 				a: -0.053,
@@ -631,7 +631,7 @@ export let run = {
 				d: -0.043,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 0.8,
 				ty: -14.6,
 				a: -0.05,
@@ -658,7 +658,7 @@ export let run = {
 				d: 0.941,
 				l: 6
 			},
-			back_bones: {
+			b_bones: {
 				tx: -9.75,
 				ty: -25.45,
 				a: 0.921,
@@ -667,7 +667,7 @@ export let run = {
 				d: 0.921,
 				l: 5
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -2.6,
 				ty: -5.55,
 				a: -0.977,
@@ -676,7 +676,7 @@ export let run = {
 				d: 0.668,
 				l: 4
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.6,
 				ty: -1.3,
 				a: -0.766,
@@ -685,7 +685,7 @@ export let run = {
 				d: 0.764,
 				l: 3
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -0.7,
 				ty: -17.9,
 				a: 0.255,
@@ -694,7 +694,7 @@ export let run = {
 				d: 0.177,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: -7.7,
 				ty: 4.5,
 				a: 0.939,
@@ -703,7 +703,7 @@ export let run = {
 				d: 0.897,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -8.25,
 				ty: -9.65,
 				a: 0.407,
@@ -714,7 +714,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: -0.85,
 				ty: -15.85,
 				a: -0.338,
@@ -723,7 +723,7 @@ export let run = {
 				d: -0.338,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 5.35,
 				ty: 0.9,
 				a: 0.207,
@@ -732,7 +732,7 @@ export let run = {
 				d: 0.207,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 14.65,
 				ty: 0.8,
 				a: 0.959,
@@ -741,7 +741,7 @@ export let run = {
 				d: 1.444,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 3.25,
 				ty: -9.5,
 				a: 0.236,
@@ -750,7 +750,7 @@ export let run = {
 				d: 0.191,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: -2.7,
 				ty: -15,
 				a: -0.953,
@@ -777,7 +777,7 @@ export let run = {
 				d: 0.954,
 				l: 6
 			},
-			back_bones: {
+			b_bones: {
 				tx: -12.05,
 				ty: -26.7,
 				a: 0.921,
@@ -786,7 +786,7 @@ export let run = {
 				d: 0.921,
 				l: 5
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.7,
 				ty: -6.45,
 				a: -1.308,
@@ -795,7 +795,7 @@ export let run = {
 				d: 0.895,
 				l: 4
 			},
-			right_leg: {
+			r_leg: {
 				tx: -10.75,
 				ty: -2.25,
 				a: -0.547,
@@ -804,7 +804,7 @@ export let run = {
 				d: 0.547,
 				l: 3
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -1.3,
 				ty: -22.4,
 				a: 0.824,
@@ -813,7 +813,7 @@ export let run = {
 				d: 0.572,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: -19.05,
 				ty: 1,
 				a: 0.935,
@@ -822,7 +822,7 @@ export let run = {
 				d: 0.946,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -1.3,
 				ty: -11.1,
 				a: -0.177,
@@ -833,7 +833,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 3.45,
 				ty: -18.05,
 				a: 0.144,
@@ -842,7 +842,7 @@ export let run = {
 				d: 0.144,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 1.35,
 				ty: 2.15,
 				a: 0.292,
@@ -851,7 +851,7 @@ export let run = {
 				d: 0.292,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 8.6,
 				ty: 3.7,
 				a: 0.964,
@@ -860,7 +860,7 @@ export let run = {
 				d: 1.518,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.6,
 				ty: -7.25,
 				a: -0.053,
@@ -869,7 +869,7 @@ export let run = {
 				d: -0.043,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 0.65,
 				ty: -13.9,
 				a: -0.302,
@@ -896,7 +896,7 @@ export let run = {
 				d: 0.941,
 				l: 6
 			},
-			back_bones: {
+			b_bones: {
 				tx: -10.3,
 				ty: -24.55,
 				a: 0.921,
@@ -905,7 +905,7 @@ export let run = {
 				d: 0.921,
 				l: 5
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -3.7,
 				ty: -5,
 				a: -0.977,
@@ -914,7 +914,7 @@ export let run = {
 				d: 0.668,
 				l: 4
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.35,
 				ty: -0.1,
 				a: -0.766,
@@ -923,7 +923,7 @@ export let run = {
 				d: 0.764,
 				l: 3
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -1.75,
 				ty: -17.35,
 				a: 0.255,
@@ -932,7 +932,7 @@ export let run = {
 				d: 0.177,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.65,
 				ty: 5.05,
 				a: 0.939,
@@ -941,7 +941,7 @@ export let run = {
 				d: 0.897,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -8,
 				ty: -10.2,
 				a: 0.465,
@@ -952,7 +952,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 5.4,
 				ty: -17.65,
 				a: 0.596,
@@ -961,7 +961,7 @@ export let run = {
 				d: 0.596,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: -3.65,
 				ty: 3.95,
 				a: 0.378,
@@ -970,7 +970,7 @@ export let run = {
 				d: 0.378,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 2.6,
 				ty: 6.5,
 				a: 0.922,
@@ -979,7 +979,7 @@ export let run = {
 				d: 1.519,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 0.1,
 				ty: -4.85,
 				a: -0.344,
@@ -988,7 +988,7 @@ export let run = {
 				d: -0.279,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 4.05,
 				ty: -12.95,
 				a: 0.46,
@@ -1015,7 +1015,7 @@ export let run = {
 				d: 0.928,
 				l: 6
 			},
-			back_bones: {
+			b_bones: {
 				tx: -8.75,
 				ty: -22.3,
 				a: 0.921,
@@ -1024,7 +1024,7 @@ export let run = {
 				d: 0.921,
 				l: 5
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -1.7,
 				ty: -3.45,
 				a: -0.344,
@@ -1033,7 +1033,7 @@ export let run = {
 				d: 0.236,
 				l: 4
 			},
-			right_leg: {
+			r_leg: {
 				tx: 0.1,
 				ty: 1.95,
 				a: -0.63,
@@ -1042,7 +1042,7 @@ export let run = {
 				d: 0.627,
 				l: 3
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -2.15,
 				ty: -12.25,
 				a: -0.377,
@@ -1051,7 +1051,7 @@ export let run = {
 				d: -0.262,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: -0.15,
 				ty: 8.9,
 				a: 0.653,
@@ -1060,7 +1060,7 @@ export let run = {
 				d: 0.57,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -9.95,
 				ty: -12.5,
 				a: 0.911,
@@ -1071,7 +1071,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.2,
 				ty: -19.35,
 				a: 0.892,
@@ -1080,7 +1080,7 @@ export let run = {
 				d: 0.892,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.2,
 				ty: 3.85,
 				a: 0.602,
@@ -1089,7 +1089,7 @@ export let run = {
 				d: 0.602,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 0.95,
 				ty: 8.5,
 				a: 0.876,
@@ -1098,7 +1098,7 @@ export let run = {
 				d: 1.483,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.35,
 				ty: -4.15,
 				a: -0.806,
@@ -1107,7 +1107,7 @@ export let run = {
 				d: -0.653,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 5.15,
 				ty: -13.85,
 				a: 0.932,
@@ -1134,7 +1134,7 @@ export let run = {
 				d: 0.927,
 				l: 6
 			},
-			back_bones: {
+			b_bones: {
 				tx: -8,
 				ty: -23.05,
 				a: 0.921,
@@ -1143,7 +1143,7 @@ export let run = {
 				d: 0.921,
 				l: 5
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -0.35,
 				ty: -2.9,
 				a: 0,
@@ -1152,7 +1152,7 @@ export let run = {
 				d: 0,
 				l: 4
 			},
-			right_leg: {
+			r_leg: {
 				tx: 3.5,
 				ty: 1.9,
 				a: -0.629,
@@ -1161,7 +1161,7 @@ export let run = {
 				d: 0.626,
 				l: 3
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -1.65,
 				ty: -12.5,
 				a: -0.375,
@@ -1170,7 +1170,7 @@ export let run = {
 				d: -0.261,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 3.25,
 				ty: 9.5,
 				a: 0.652,
@@ -1179,7 +1179,7 @@ export let run = {
 				d: 0.569,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -11.7,
 				ty: -16.2,
 				a: 0.993,
@@ -1190,12 +1190,12 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 3.25,
 				ty: -18.7,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: -6.85,
 				ty: 3.7,
 				a: 0.789,
@@ -1204,7 +1204,7 @@ export let run = {
 				d: 0.789,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: -0.75,
 				ty: 10.4,
 				a: 0.815,
@@ -1213,7 +1213,7 @@ export let run = {
 				d: 1.424,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.7,
 				ty: -3.4,
 				a: -1.152,
@@ -1222,7 +1222,7 @@ export let run = {
 				d: -0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 6.2,
 				ty: -14.85,
 				a: 1.207,
@@ -1249,7 +1249,7 @@ export let run = {
 				d: 0.928,
 				l: 6
 			},
-			back_bones: {
+			b_bones: {
 				tx: -7.3,
 				ty: -23.7,
 				a: 0.921,
@@ -1258,7 +1258,7 @@ export let run = {
 				d: 0.921,
 				l: 5
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: 1,
 				ty: -2.45,
 				a: 0.344,
@@ -1267,7 +1267,7 @@ export let run = {
 				d: -0.236,
 				l: 4
 			},
-			right_leg: {
+			r_leg: {
 				tx: 6.9,
 				ty: 1.8,
 				a: -0.63,
@@ -1276,7 +1276,7 @@ export let run = {
 				d: 0.627,
 				l: 3
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -1.25,
 				ty: -12.75,
 				a: -0.377,
@@ -1285,7 +1285,7 @@ export let run = {
 				d: -0.262,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 6.65,
 				ty: 10.15,
 				a: 0.653,
@@ -1294,7 +1294,7 @@ export let run = {
 				d: 0.57,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -11.25,
 				ty: -18.8,
 				a: 0.969,
@@ -1305,7 +1305,7 @@ export let run = {
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: -0.55,
 				ty: -20.6,
 				a: 0.864,
@@ -1314,7 +1314,7 @@ export let run = {
 				d: 0.864,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: -8.55,
 				ty: -0.3,
 				a: 0.991,
@@ -1323,7 +1323,7 @@ export let run = {
 				d: 0.991,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: -8.55,
 				ty: 7.35,
 				a: 0.124,
@@ -1332,7 +1332,7 @@ export let run = {
 				d: 0.541,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 2.15,
 				ty: -5.1,
 				a: -1.15,
@@ -1341,7 +1341,7 @@ export let run = {
 				d: -0.931,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 4.9,
 				ty: -18.2,
 				a: 1.207,
@@ -1368,7 +1368,7 @@ export let run = {
 				d: 0.927,
 				l: 6
 			},
-			back_bones: {
+			b_bones: {
 				tx: -9.3,
 				ty: -25.1,
 				a: 0.921,
@@ -1377,7 +1377,7 @@ export let run = {
 				d: 0.921,
 				l: 5
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: 1.25,
 				ty: -3.65,
 				a: 0.505,
@@ -1386,7 +1386,7 @@ export let run = {
 				d: -0.348,
 				l: 4
 			},
-			right_leg: {
+			r_leg: {
 				tx: 5.2,
 				ty: -1.55,
 				a: -0.03,
@@ -1395,7 +1395,7 @@ export let run = {
 				d: 0.03,
 				l: 3
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.4,
 				ty: -13.65,
 				a: 0.202,
@@ -1404,7 +1404,7 @@ export let run = {
 				d: 0.14,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 9.1,
 				ty: 1.6,
 				a: -0.179,
@@ -1413,7 +1413,7 @@ export let run = {
 				d: -0.267,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -11.5,
 				ty: -22.25,
 				a: 0.798,

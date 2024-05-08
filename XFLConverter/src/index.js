@@ -4,6 +4,7 @@ import { SVGAdapter } from './svg/SVGAdapter.js';
 import { mapping_sdino } from './svg/mapping_sdino.js';
 import { mapping_gfx } from './svg/mapping_gfx.js';
 import { mapping_smonster } from './svg/mapping_smonster.js';
+import { mapping_dino } from './xfl/mapping_dino.js';
 
 const parser = new XFLParser();
 //parser.parse('./resources/sdino/LIBRARY/Symbol 163.xml', '_p1', undefined, 0); // moueffe
@@ -30,6 +31,9 @@ const parser = new XFLParser();
 //parser.parse('./resources/sdino/LIBRARY/Symbol 1562.xml', '_p1', undefined, 0); // smog
 //parser.parse('./resources/sdino/LIBRARY/Symbol 1639.xml', '_p1', undefined, 0); // triceragon
 //parser.parse('./resources/sdino/LIBRARY/Symbol 156.xml', '_sub', undefined, 0); // fx_dust
+
+// DINO
+parser.parse('./resources/dino/LIBRARY/Symbol 294.xml', '_sub', undefined, 3); // moueffe
 
 //SMONSTER
 //parser.parse('./resources/smonster/LIBRARY/Symbol 4089.xml', 'smonster', undefined, 1); // smonster
@@ -118,6 +122,7 @@ const parser = new XFLParser();
 
 const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
-adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
+adapter.parse('./results/SVG/dino', mapping_dino, '../assets/dino');
+//adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
 //adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');

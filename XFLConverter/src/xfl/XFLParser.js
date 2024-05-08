@@ -7,10 +7,11 @@ import fs from 'fs';
 import { mapping_sdino } from './mapping_sdino.js';
 import { mapping_smonster } from './mapping_smonster.js';
 import { mapping_gfx } from './mapping_gfx.js';
+import { mapping_dino } from './mapping_dino.js';
 
 const FLAG_NO_RGB = false;
 const ELEM_IGNORE_RGB = ['156'];
-const MAPPING = [mapping_sdino, mapping_smonster, mapping_gfx];
+const MAPPING = [mapping_sdino, mapping_smonster, mapping_gfx, mapping_dino];
 
 /**
  * Parse XFL files and return the raw data ready for conversion.

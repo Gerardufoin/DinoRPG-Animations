@@ -322,7 +322,6 @@ export class Animator extends Container {
 				details.parts[pName],
 				customization,
 				[],
-				'',
 				scale,
 				partsScaling[pName] ?? 1
 			);

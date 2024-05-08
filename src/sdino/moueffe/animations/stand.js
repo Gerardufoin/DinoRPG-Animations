@@ -1,15 +1,15 @@
 // @ts-check
 
-export let stand = {
+export const stand = {
 	id: 'moueffe_stand',
 	frames: [
 		{
-			left_arm: {
+			l_arm: {
 				tx: 5.3,
 				ty: -14.9,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 6,
 				a: 0.972,
@@ -18,7 +18,7 @@ export let stand = {
 				d: 0.972,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.35,
 				a: 0.967,
@@ -27,7 +27,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.1,
 				a: 1.152,
@@ -36,7 +36,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 8.25,
 				ty: -11.05,
 				a: 1.207,
@@ -61,7 +61,7 @@ export let stand = {
 				d: 0.997,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.5,
 				a: -1.285,
@@ -70,7 +70,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.55,
 				ty: 0.1,
 				a: -0.767,
@@ -79,7 +79,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -15.5,
 				a: 1.004,
@@ -88,7 +88,7 @@ export let stand = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.959,
@@ -97,26 +97,26 @@ export let stand = {
 				d: 0.927,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -23.2,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.05,
 				ty: -22.8,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 5.2,
 				ty: -14.95,
 				b: -0.009,
 				c: 0.009,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -125,7 +125,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -134,7 +134,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -143,7 +143,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 8.2,
 				ty: -11,
 				a: 1.21,
@@ -169,7 +169,7 @@ export let stand = {
 				d: 1.007,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -178,7 +178,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -187,7 +187,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -15.5,
 				a: 0.998,
@@ -196,7 +196,7 @@ export let stand = {
 				d: 0.693,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -205,28 +205,28 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.8,
 				ty: -23.35,
 				b: 0.005,
 				c: -0.005,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.1,
 				ty: -22.85,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 5.1,
 				ty: -14.9,
 				b: -0.022,
 				c: 0.022,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -235,7 +235,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -244,7 +244,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -253,7 +253,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 8.15,
 				ty: -11.1,
 				a: 1.214,
@@ -279,7 +279,7 @@ export let stand = {
 				d: 1.017,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -288,7 +288,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -297,7 +297,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.65,
 				ty: -15.5,
 				a: 0.992,
@@ -306,7 +306,7 @@ export let stand = {
 				d: 0.689,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -315,21 +315,21 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.8,
 				ty: -23.55,
 				b: 0.01,
 				c: -0.01,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.15,
 				ty: -22.9,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 5.05,
 				ty: -14.95,
 				a: 0.999,
@@ -338,7 +338,7 @@ export let stand = {
 				d: 0.999,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -347,7 +347,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -356,7 +356,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -365,7 +365,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 8.1,
 				ty: -11.05,
 				a: 1.216,
@@ -391,7 +391,7 @@ export let stand = {
 				d: 1.028,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -400,7 +400,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -409,7 +409,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.65,
 				ty: -15.45,
 				a: 0.988,
@@ -418,7 +418,7 @@ export let stand = {
 				d: 0.686,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -427,21 +427,21 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.85,
 				ty: -23.7,
 				b: 0.018,
 				c: -0.018,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.2,
 				ty: -22.9,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.95,
 				ty: -14.85,
 				a: 0.999,
@@ -450,7 +450,7 @@ export let stand = {
 				d: 0.999,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -459,7 +459,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -468,7 +468,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -477,7 +477,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 8.05,
 				ty: -11.1,
 				a: 1.22,
@@ -503,7 +503,7 @@ export let stand = {
 				d: 1.038,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -512,7 +512,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -521,7 +521,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.55,
 				ty: -15.55,
 				a: 0.984,
@@ -530,7 +530,7 @@ export let stand = {
 				d: 0.683,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -539,21 +539,21 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.9,
 				ty: -23.9,
 				b: 0.023,
 				c: -0.023,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.25,
 				ty: -22.95,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.85,
 				ty: -14.85,
 				a: 0.998,
@@ -562,7 +562,7 @@ export let stand = {
 				d: 0.998,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -571,7 +571,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -580,7 +580,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -589,7 +589,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 8.05,
 				ty: -11.15,
 				a: 1.222,
@@ -615,7 +615,7 @@ export let stand = {
 				d: 1.048,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -624,7 +624,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -633,7 +633,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -15.5,
 				a: 0.978,
@@ -642,7 +642,7 @@ export let stand = {
 				d: 0.679,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -651,7 +651,7 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.95,
 				ty: -24.05,
 				a: 0.999,
@@ -660,14 +660,14 @@ export let stand = {
 				d: 0.999,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.3,
 				ty: -23,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.8,
 				ty: -14.8,
 				a: 0.997,
@@ -676,7 +676,7 @@ export let stand = {
 				d: 0.997,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -685,7 +685,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -694,7 +694,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -703,7 +703,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 7.9,
 				ty: -11.2,
 				a: 1.225,
@@ -729,7 +729,7 @@ export let stand = {
 				d: 1.057,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -738,7 +738,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -747,7 +747,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.55,
 				ty: -15.55,
 				a: 0.974,
@@ -756,7 +756,7 @@ export let stand = {
 				d: 0.676,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -765,7 +765,7 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.95,
 				ty: -24.25,
 				a: 0.999,
@@ -774,14 +774,14 @@ export let stand = {
 				d: 0.999,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.35,
 				ty: -23.05,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.65,
 				ty: -14.85,
 				a: 0.996,
@@ -790,7 +790,7 @@ export let stand = {
 				d: 0.996,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -799,7 +799,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -808,7 +808,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -817,7 +817,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 7.95,
 				ty: -11.25,
 				a: 1.228,
@@ -843,7 +843,7 @@ export let stand = {
 				d: 1.067,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -852,7 +852,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -861,7 +861,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.55,
 				ty: -15.55,
 				a: 0.968,
@@ -870,7 +870,7 @@ export let stand = {
 				d: 0.672,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -879,7 +879,7 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -20,
 				ty: -24.4,
 				a: 0.999,
@@ -888,14 +888,14 @@ export let stand = {
 				d: 0.999,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.35,
 				ty: -23.05,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.6,
 				ty: -14.85,
 				a: 0.996,
@@ -904,7 +904,7 @@ export let stand = {
 				d: 0.996,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -913,7 +913,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -922,7 +922,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -931,7 +931,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 7.9,
 				ty: -11.25,
 				a: 1.23,
@@ -957,7 +957,7 @@ export let stand = {
 				d: 1.077,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -966,7 +966,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -975,7 +975,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -15.55,
 				a: 0.964,
@@ -984,7 +984,7 @@ export let stand = {
 				d: 0.669,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -993,7 +993,7 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -20.05,
 				ty: -24.55,
 				a: 0.999,
@@ -1002,14 +1002,14 @@ export let stand = {
 				d: 0.999,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.4,
 				ty: -23.1,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.55,
 				ty: -14.8,
 				a: 0.994,
@@ -1018,7 +1018,7 @@ export let stand = {
 				d: 0.994,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -1027,7 +1027,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -1036,7 +1036,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -1045,7 +1045,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 7.9,
 				ty: -11.2,
 				a: 1.233,
@@ -1071,7 +1071,7 @@ export let stand = {
 				d: 1.086,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -1080,7 +1080,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -1089,7 +1089,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.55,
 				ty: -15.6,
 				a: 0.957,
@@ -1098,7 +1098,7 @@ export let stand = {
 				d: 0.665,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -1107,7 +1107,7 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.95,
 				ty: -24.75,
 				a: 0.998,
@@ -1116,14 +1116,14 @@ export let stand = {
 				d: 0.998,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.45,
 				ty: -23.15,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.4,
 				ty: -14.8,
 				a: 0.993,
@@ -1132,7 +1132,7 @@ export let stand = {
 				d: 0.993,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -1141,7 +1141,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -1150,7 +1150,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -1159,7 +1159,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 7.8,
 				ty: -11.3,
 				a: 1.235,
@@ -1185,7 +1185,7 @@ export let stand = {
 				d: 1.096,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -1194,7 +1194,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -1203,7 +1203,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.55,
 				ty: -15.55,
 				a: 0.953,
@@ -1212,7 +1212,7 @@ export let stand = {
 				d: 0.662,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -1221,7 +1221,7 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -20.05,
 				ty: -24.9,
 				a: 0.998,
@@ -1230,14 +1230,14 @@ export let stand = {
 				d: 0.998,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.5,
 				ty: -23.2,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.35,
 				ty: -14.7,
 				a: 0.992,
@@ -1246,7 +1246,7 @@ export let stand = {
 				d: 0.992,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -1255,7 +1255,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -1264,7 +1264,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -1273,7 +1273,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 7.75,
 				ty: -11.25,
 				a: 1.237,
@@ -1299,7 +1299,7 @@ export let stand = {
 				d: 1.105,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -1308,7 +1308,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -1317,7 +1317,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.5,
 				ty: -15.6,
 				a: 0.947,
@@ -1326,7 +1326,7 @@ export let stand = {
 				d: 0.658,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -1335,7 +1335,7 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -20.1,
 				ty: -25.1,
 				a: 0.997,
@@ -1344,14 +1344,14 @@ export let stand = {
 				d: 0.997,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.55,
 				ty: -23.25,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.2,
 				ty: -14.8,
 				a: 0.99,
@@ -1360,7 +1360,7 @@ export let stand = {
 				d: 0.99,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -1369,7 +1369,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -1378,7 +1378,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -1387,7 +1387,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 7.7,
 				ty: -11.3,
 				a: 1.239,
@@ -1413,7 +1413,7 @@ export let stand = {
 				d: 1.115,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -1422,7 +1422,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -1431,7 +1431,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.5,
 				ty: -15.65,
 				a: 0.943,
@@ -1440,7 +1440,7 @@ export let stand = {
 				d: 0.655,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -1449,7 +1449,7 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -20.1,
 				ty: -25.2,
 				a: 0.997,
@@ -1458,14 +1458,14 @@ export let stand = {
 				d: 0.997,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.6,
 				ty: -23.25,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.2,
 				ty: -14.7,
 				a: 0.989,
@@ -1474,7 +1474,7 @@ export let stand = {
 				d: 0.989,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -1483,7 +1483,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -1492,7 +1492,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -1501,7 +1501,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 7.6,
 				ty: -11.3,
 				a: 1.24,
@@ -1527,7 +1527,7 @@ export let stand = {
 				d: 1.124,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -1536,7 +1536,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -1545,7 +1545,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.55,
 				ty: -15.65,
 				a: 0.939,
@@ -1554,7 +1554,7 @@ export let stand = {
 				d: 0.652,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -1563,7 +1563,7 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -20.1,
 				ty: -25.4,
 				a: 0.996,
@@ -1572,14 +1572,14 @@ export let stand = {
 				d: 0.996,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.65,
 				ty: -23.3,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.05,
 				ty: -14.75,
 				a: 0.987,
@@ -1588,7 +1588,7 @@ export let stand = {
 				d: 0.987,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 6,
 				a: 0.972,
@@ -1597,7 +1597,7 @@ export let stand = {
 				d: 0.972,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.35,
 				a: 0.967,
@@ -1606,7 +1606,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.1,
 				a: 1.152,
@@ -1615,7 +1615,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 7.6,
 				ty: -11.4,
 				a: 1.242,
@@ -1641,7 +1641,7 @@ export let stand = {
 				d: 1.133,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.5,
 				a: -1.285,
@@ -1650,7 +1650,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.55,
 				ty: 0.1,
 				a: -0.767,
@@ -1659,7 +1659,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.5,
 				ty: -15.6,
 				a: 0.947,
@@ -1668,7 +1668,7 @@ export let stand = {
 				d: 0.658,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.959,
@@ -1677,7 +1677,7 @@ export let stand = {
 				d: 0.927,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -20.1,
 				ty: -25.1,
 				a: 0.997,
@@ -1686,14 +1686,14 @@ export let stand = {
 				d: 0.997,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.7,
 				ty: -23.35,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.15,
 				ty: -14.85,
 				a: 0.989,
@@ -1702,7 +1702,7 @@ export let stand = {
 				d: 0.989,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -1711,7 +1711,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -1720,7 +1720,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -1729,7 +1729,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 7.65,
 				ty: -11.4,
 				a: 1.24,
@@ -1755,7 +1755,7 @@ export let stand = {
 				d: 1.119,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -1764,7 +1764,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -1773,7 +1773,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.55,
 				ty: -15.55,
 				a: 0.953,
@@ -1782,7 +1782,7 @@ export let stand = {
 				d: 0.662,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -1791,7 +1791,7 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -20.05,
 				ty: -24.9,
 				a: 0.998,
@@ -1800,14 +1800,14 @@ export let stand = {
 				d: 0.998,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.65,
 				ty: -23.3,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.3,
 				ty: -14.85,
 				a: 0.992,
@@ -1816,7 +1816,7 @@ export let stand = {
 				d: 0.992,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -1825,7 +1825,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -1834,7 +1834,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -1843,7 +1843,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 7.8,
 				ty: -11.3,
 				a: 1.237,
@@ -1869,7 +1869,7 @@ export let stand = {
 				d: 1.104,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -1878,7 +1878,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -1887,7 +1887,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.55,
 				ty: -15.6,
 				a: 0.957,
@@ -1896,7 +1896,7 @@ export let stand = {
 				d: 0.665,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -1905,7 +1905,7 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.95,
 				ty: -24.75,
 				a: 0.998,
@@ -1914,14 +1914,14 @@ export let stand = {
 				d: 0.998,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.55,
 				ty: -23.25,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.35,
 				ty: -14.9,
 				a: 0.994,
@@ -1930,7 +1930,7 @@ export let stand = {
 				d: 0.994,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -1939,7 +1939,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -1948,7 +1948,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -1957,7 +1957,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 7.8,
 				ty: -11.35,
 				a: 1.234,
@@ -1983,7 +1983,7 @@ export let stand = {
 				d: 1.089,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -1992,7 +1992,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -2001,7 +2001,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.55,
 				ty: -15.55,
 				a: 0.968,
@@ -2010,7 +2010,7 @@ export let stand = {
 				d: 0.672,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -2019,7 +2019,7 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -20,
 				ty: -24.4,
 				a: 0.999,
@@ -2028,14 +2028,14 @@ export let stand = {
 				d: 0.999,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.5,
 				ty: -23.15,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.55,
 				ty: -14.85,
 				a: 0.996,
@@ -2044,7 +2044,7 @@ export let stand = {
 				d: 0.996,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -2053,7 +2053,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -2062,7 +2062,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -2071,7 +2071,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 7.95,
 				ty: -11.3,
 				a: 1.23,
@@ -2097,7 +2097,7 @@ export let stand = {
 				d: 1.075,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -2106,7 +2106,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -2115,7 +2115,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.55,
 				ty: -15.55,
 				a: 0.974,
@@ -2124,7 +2124,7 @@ export let stand = {
 				d: 0.676,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -2133,7 +2133,7 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.95,
 				ty: -24.25,
 				a: 0.999,
@@ -2142,14 +2142,14 @@ export let stand = {
 				d: 0.999,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.4,
 				ty: -23.1,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.7,
 				ty: -14.95,
 				a: 0.997,
@@ -2158,7 +2158,7 @@ export let stand = {
 				d: 0.997,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -2167,7 +2167,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -2176,7 +2176,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -2185,7 +2185,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 7.95,
 				ty: -11.25,
 				a: 1.226,
@@ -2211,7 +2211,7 @@ export let stand = {
 				d: 1.059,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -2220,7 +2220,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -2229,7 +2229,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -15.5,
 				a: 0.978,
@@ -2238,7 +2238,7 @@ export let stand = {
 				d: 0.679,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -2247,7 +2247,7 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.95,
 				ty: -24.05,
 				a: 0.999,
@@ -2256,14 +2256,14 @@ export let stand = {
 				d: 0.999,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.35,
 				ty: -23.05,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.8,
 				ty: -14.95,
 				a: 0.998,
@@ -2272,7 +2272,7 @@ export let stand = {
 				d: 0.998,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -2281,7 +2281,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -2290,7 +2290,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -2299,7 +2299,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 8.05,
 				ty: -11.15,
 				a: 1.222,
@@ -2325,7 +2325,7 @@ export let stand = {
 				d: 1.044,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -2334,7 +2334,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -2343,7 +2343,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.65,
 				ty: -15.45,
 				a: 0.988,
@@ -2352,7 +2352,7 @@ export let stand = {
 				d: 0.686,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -2361,21 +2361,21 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.85,
 				ty: -23.7,
 				b: 0.018,
 				c: -0.018,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.25,
 				ty: -23,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 4.95,
 				ty: -14.95,
 				a: 0.999,
@@ -2384,7 +2384,7 @@ export let stand = {
 				d: 0.999,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -2393,7 +2393,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -2402,7 +2402,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -2411,7 +2411,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 8.15,
 				ty: -11.2,
 				a: 1.217,
@@ -2437,7 +2437,7 @@ export let stand = {
 				d: 1.029,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -2446,7 +2446,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -2455,7 +2455,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.65,
 				ty: -15.5,
 				a: 0.992,
@@ -2464,7 +2464,7 @@ export let stand = {
 				d: 0.689,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -2473,28 +2473,28 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.8,
 				ty: -23.55,
 				b: 0.01,
 				c: -0.01,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.2,
 				ty: -22.9,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 5.1,
 				ty: -15,
 				b: -0.017,
 				c: 0.017,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 5.95,
 				a: 0.971,
@@ -2503,7 +2503,7 @@ export let stand = {
 				d: 0.971,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.4,
 				a: 0.966,
@@ -2512,7 +2512,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.15,
 				a: 1.152,
@@ -2521,7 +2521,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 8.25,
 				ty: -11.15,
 				a: 1.212,
@@ -2547,7 +2547,7 @@ export let stand = {
 				d: 1.013,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.55,
 				a: -1.284,
@@ -2556,7 +2556,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.6,
 				ty: 0.05,
 				a: -0.767,
@@ -2565,7 +2565,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -15.5,
 				a: 0.998,
@@ -2574,7 +2574,7 @@ export let stand = {
 				d: 0.693,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.958,
@@ -2583,26 +2583,26 @@ export let stand = {
 				d: 0.926,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.8,
 				ty: -23.35,
 				b: 0.005,
 				c: -0.005,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.1,
 				ty: -22.85,
 				l: 0
 			}
 		},
 		{
-			left_arm: {
+			l_arm: {
 				tx: 5.3,
 				ty: -14.9,
 				l: 12
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.8,
 				ty: 6,
 				a: 0.972,
@@ -2611,7 +2611,7 @@ export let stand = {
 				d: 0.972,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.05,
 				ty: 14.35,
 				a: 0.967,
@@ -2620,7 +2620,7 @@ export let stand = {
 				d: 1.481,
 				l: 10
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.15,
 				ty: -2.1,
 				a: 1.152,
@@ -2629,7 +2629,7 @@ export let stand = {
 				d: 0.933,
 				l: 9
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 8.25,
 				ty: -11.05,
 				a: 1.207,
@@ -2654,7 +2654,7 @@ export let stand = {
 				d: 0.997,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.5,
 				a: -1.285,
@@ -2663,7 +2663,7 @@ export let stand = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.55,
 				ty: 0.1,
 				a: -0.767,
@@ -2672,7 +2672,7 @@ export let stand = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -15.5,
 				a: 1.004,
@@ -2681,7 +2681,7 @@ export let stand = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -12.9,
 				ty: 6.55,
 				a: 0.959,
@@ -2690,12 +2690,12 @@ export let stand = {
 				d: 0.927,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -23.2,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -2.05,
 				ty: -22.8,
 				l: 0

@@ -1,6 +1,6 @@
 // @ts-check
 
-export let land = {
+export const land = {
 	id: 'moueffe_land',
 	callbacks: {
 		2: [
@@ -20,7 +20,7 @@ export let land = {
 				d: 0.956,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 14.85,
 				ty: -16.85,
 				a: 0.709,
@@ -29,7 +29,7 @@ export let land = {
 				d: 0.709,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: -8.75,
 				ty: 5.6,
 				a: 0.962,
@@ -38,7 +38,7 @@ export let land = {
 				d: 0.962,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: -6.6,
 				ty: 13.25,
 				a: 0.081,
@@ -47,7 +47,7 @@ export let land = {
 				d: 0.425,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 1.3,
 				ty: -1.7,
 				a: -1.147,
@@ -56,7 +56,7 @@ export let land = {
 				d: -0.929,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 9.25,
 				ty: -12.4,
 				a: 1.549,
@@ -74,7 +74,7 @@ export let land = {
 				d: 0.96,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -6.4,
 				ty: 0.7,
 				a: -1.328,
@@ -83,7 +83,7 @@ export let land = {
 				d: 0.909,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.45,
 				ty: 0.55,
 				a: -0.42,
@@ -92,7 +92,7 @@ export let land = {
 				d: 0.42,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -2.1,
 				ty: -15.7,
 				a: 1.213,
@@ -101,7 +101,7 @@ export let land = {
 				d: 0.842,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -1.55,
 				ty: 8.15,
 				a: -0.796,
@@ -110,7 +110,7 @@ export let land = {
 				d: -0.837,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -15.7,
 				ty: -6.75,
 				a: 0.366,
@@ -119,7 +119,7 @@ export let land = {
 				d: 0.366,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -3.25,
 				ty: -23.1,
 				l: 0
@@ -135,7 +135,7 @@ export let land = {
 				d: 0.87,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 8.25,
 				ty: -10.2,
 				a: 0.707,
@@ -144,7 +144,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: -2.2,
 				ty: 7.5,
 				a: 0.963,
@@ -153,7 +153,7 @@ export let land = {
 				d: 0.852,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 1.9,
 				ty: 12.9,
 				a: 0.648,
@@ -162,7 +162,7 @@ export let land = {
 				d: 1.228,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 2.9,
 				ty: -0.55,
 				a: -0.225,
@@ -171,7 +171,7 @@ export let land = {
 				d: -0.275,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 5.95,
 				ty: -6.15,
 				a: 0.868,
@@ -189,7 +189,7 @@ export let land = {
 				d: 0.919,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.85,
 				ty: 0.8,
 				a: -1.318,
@@ -198,7 +198,7 @@ export let land = {
 				d: 0.902,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -6.4,
 				ty: 1.35,
 				a: -0.686,
@@ -207,7 +207,7 @@ export let land = {
 				d: 0.686,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4,
 				ty: -11.05,
 				a: 1.26,
@@ -216,7 +216,7 @@ export let land = {
 				d: 0.765,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -6.3,
 				ty: 8.5,
 				a: 0.216,
@@ -225,7 +225,7 @@ export let land = {
 				d: 0.122,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -20.45,
 				ty: -11.3,
 				a: 0.825,
@@ -234,7 +234,7 @@ export let land = {
 				d: 0.825,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -3.9,
 				ty: -17.5,
 				l: 0
@@ -250,7 +250,7 @@ export let land = {
 				d: 0.771,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 1.55,
 				ty: -3.75,
 				a: 0.707,
@@ -259,7 +259,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 4.65,
 				ty: 9.2,
 				a: 0.965,
@@ -268,7 +268,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 10.95,
 				ty: 14.5,
 				a: 0.952,
@@ -277,7 +277,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -286,7 +286,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 2.7,
 				ty: 0.05,
 				a: 0,
@@ -304,7 +304,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: 0.8,
 				a: -1.285,
@@ -313,7 +313,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.45,
 				ty: 2.05,
 				a: -0.767,
@@ -322,7 +322,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -5.8,
 				ty: -6.4,
 				a: 1.179,
@@ -331,7 +331,7 @@ export let land = {
 				d: 0.636,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -10.85,
 				ty: 8.4,
 				a: 0.963,
@@ -340,12 +340,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -21.25,
 				ty: -14.9,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -4.6,
 				ty: -11.9,
 				l: 0
@@ -361,7 +361,7 @@ export let land = {
 				d: 0.77,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 1.55,
 				ty: -3.8,
 				a: 0.705,
@@ -370,7 +370,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 4.2,
 				ty: 9.05,
 				a: 0.964,
@@ -379,7 +379,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 10.7,
 				ty: 15.05,
 				a: 0.952,
@@ -388,7 +388,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 4.95,
 				ty: 2.6,
 				a: 0.218,
@@ -397,7 +397,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 2.7,
 				ty: -0.75,
 				a: 0,
@@ -415,7 +415,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.5,
 				ty: 0.05,
 				a: -1.284,
@@ -424,7 +424,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -4.85,
 				ty: 2.1,
 				a: -0.767,
@@ -433,7 +433,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -5.3,
 				ty: -6.95,
 				a: 1.128,
@@ -442,7 +442,7 @@ export let land = {
 				d: 0.657,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -10.3,
 				ty: 8.45,
 				a: 0.962,
@@ -451,12 +451,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -20.75,
 				ty: -15.15,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -4.6,
 				ty: -12.75,
 				l: 0
@@ -472,7 +472,7 @@ export let land = {
 				d: 0.77,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 1.55,
 				ty: -3.8,
 				a: 0.705,
@@ -481,7 +481,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.8,
 				ty: 9,
 				a: 0.964,
@@ -490,7 +490,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 10.35,
 				ty: 15.7,
 				a: 0.952,
@@ -499,7 +499,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 4.95,
 				ty: 2.6,
 				a: 0.218,
@@ -508,7 +508,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 2.7,
 				ty: -1.6,
 				a: 0,
@@ -526,7 +526,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.5,
 				ty: -0.75,
 				a: -1.284,
@@ -535,7 +535,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -4.35,
 				ty: 2.1,
 				a: -0.767,
@@ -544,7 +544,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -5,
 				ty: -7.45,
 				a: 1.068,
@@ -553,7 +553,7 @@ export let land = {
 				d: 0.677,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.8,
 				ty: 8.55,
 				a: 0.962,
@@ -562,12 +562,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -20.25,
 				ty: -15.45,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -4.6,
 				ty: -13.55,
 				l: 0
@@ -583,7 +583,7 @@ export let land = {
 				d: 0.771,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 1.55,
 				ty: -4.05,
 				a: 0.707,
@@ -592,7 +592,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -601,7 +601,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -610,7 +610,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -619,7 +619,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 2.7,
 				ty: -2.4,
 				a: 0,
@@ -637,7 +637,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.5,
 				a: -1.285,
@@ -646,7 +646,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -655,7 +655,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -8,
 				a: 1.004,
@@ -664,7 +664,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -673,12 +673,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -15.7,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -4.6,
 				ty: -14.4,
 				l: 0
@@ -694,7 +694,7 @@ export let land = {
 				d: 0.771,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 1.55,
 				ty: -4.05,
 				a: 0.707,
@@ -703,7 +703,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -712,7 +712,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -721,7 +721,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -730,7 +730,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 2.7,
 				ty: -2.4,
 				a: 0,
@@ -748,7 +748,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.5,
 				a: -1.285,
@@ -757,7 +757,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -766,7 +766,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -8,
 				a: 1.004,
@@ -775,7 +775,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -784,12 +784,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -15.7,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -4.6,
 				ty: -14.4,
 				l: 0
@@ -805,7 +805,7 @@ export let land = {
 				d: 0.771,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 1.55,
 				ty: -4.05,
 				a: 0.707,
@@ -814,7 +814,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -823,7 +823,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -832,7 +832,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -841,7 +841,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 2.7,
 				ty: -2.4,
 				a: 0,
@@ -859,7 +859,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.5,
 				a: -1.285,
@@ -868,7 +868,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -877,7 +877,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -8,
 				a: 1.004,
@@ -886,7 +886,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -895,12 +895,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -15.7,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -4.6,
 				ty: -14.4,
 				l: 0
@@ -916,7 +916,7 @@ export let land = {
 				d: 0.771,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 1.55,
 				ty: -4.05,
 				a: 0.707,
@@ -925,7 +925,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -934,7 +934,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -943,7 +943,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -952,7 +952,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 2.7,
 				ty: -2.4,
 				a: 0,
@@ -970,7 +970,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.5,
 				a: -1.285,
@@ -979,7 +979,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -988,7 +988,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -8,
 				a: 1.004,
@@ -997,7 +997,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -1006,12 +1006,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -15.7,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -4.6,
 				ty: -14.4,
 				l: 0
@@ -1027,7 +1027,7 @@ export let land = {
 				d: 0.771,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 1.55,
 				ty: -4.05,
 				a: 0.707,
@@ -1036,7 +1036,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -1045,7 +1045,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -1054,7 +1054,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -1063,7 +1063,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 2.7,
 				ty: -2.4,
 				a: 0,
@@ -1081,7 +1081,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.5,
 				a: -1.285,
@@ -1090,7 +1090,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -1099,7 +1099,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -8,
 				a: 1.004,
@@ -1108,7 +1108,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -1117,12 +1117,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -15.7,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -4.6,
 				ty: -14.4,
 				l: 0
@@ -1138,7 +1138,7 @@ export let land = {
 				d: 0.771,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 1.55,
 				ty: -4.05,
 				a: 0.707,
@@ -1147,7 +1147,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -1156,7 +1156,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -1165,7 +1165,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -1174,7 +1174,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 2.7,
 				ty: -2.4,
 				a: 0,
@@ -1192,7 +1192,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.5,
 				a: -1.285,
@@ -1201,7 +1201,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -1210,7 +1210,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -8,
 				a: 1.004,
@@ -1219,7 +1219,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -1228,12 +1228,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -15.7,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -4.6,
 				ty: -14.4,
 				l: 0
@@ -1249,7 +1249,7 @@ export let land = {
 				d: 0.771,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 1.55,
 				ty: -4.05,
 				a: 0.707,
@@ -1258,7 +1258,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -1267,7 +1267,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -1276,7 +1276,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -1285,7 +1285,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 2.7,
 				ty: -2.4,
 				a: 0,
@@ -1303,7 +1303,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -1.5,
 				a: -1.285,
@@ -1312,7 +1312,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -1321,7 +1321,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -8,
 				a: 1.004,
@@ -1330,7 +1330,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -1339,12 +1339,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -15.7,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -4.6,
 				ty: -14.4,
 				l: 0
@@ -1360,7 +1360,7 @@ export let land = {
 				d: 0.914,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 4.05,
 				ty: -6.9,
 				a: 0.701,
@@ -1369,7 +1369,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.964,
@@ -1378,7 +1378,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.45,
 				a: 0.952,
@@ -1387,7 +1387,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 4.95,
 				ty: 2.6,
 				a: 0.218,
@@ -1396,7 +1396,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 4,
 				ty: -4.8,
 				a: 0.159,
@@ -1414,7 +1414,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -2.2,
 				a: -1.284,
@@ -1423,7 +1423,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.8,
 				ty: 2.05,
 				a: -0.767,
@@ -1432,7 +1432,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.65,
 				ty: -8.65,
 				a: 1.001,
@@ -1441,7 +1441,7 @@ export let land = {
 				d: 0.695,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.35,
 				a: 0.962,
@@ -1450,12 +1450,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -16.35,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -3.95,
 				ty: -16.15,
 				l: 0
@@ -1471,7 +1471,7 @@ export let land = {
 				d: 1.024,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 6.55,
 				ty: -9.85,
 				a: 0.698,
@@ -1480,7 +1480,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -1489,7 +1489,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -1498,7 +1498,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -1507,7 +1507,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 5.25,
 				ty: -7.2,
 				a: 0.323,
@@ -1525,7 +1525,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -2.85,
 				a: -1.285,
@@ -1534,7 +1534,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -1543,7 +1543,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -9.35,
 				a: 1.004,
@@ -1552,7 +1552,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -1561,12 +1561,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -17.05,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -3.35,
 				ty: -17.95,
 				l: 0
@@ -1582,7 +1582,7 @@ export let land = {
 				d: 1.024,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 6.55,
 				ty: -9.85,
 				a: 0.698,
@@ -1591,7 +1591,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -1600,7 +1600,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -1609,7 +1609,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -1618,7 +1618,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 5.25,
 				ty: -7.2,
 				a: 0.323,
@@ -1636,7 +1636,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -2.85,
 				a: -1.285,
@@ -1645,7 +1645,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -1654,7 +1654,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -9.35,
 				a: 1.004,
@@ -1663,7 +1663,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -1672,12 +1672,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -17.05,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -3.35,
 				ty: -17.95,
 				l: 0
@@ -1693,7 +1693,7 @@ export let land = {
 				d: 1.024,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 6.55,
 				ty: -9.85,
 				a: 0.698,
@@ -1702,7 +1702,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -1711,7 +1711,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -1720,7 +1720,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -1729,7 +1729,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 5.25,
 				ty: -7.2,
 				a: 0.323,
@@ -1747,7 +1747,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -2.85,
 				a: -1.285,
@@ -1756,7 +1756,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -1765,7 +1765,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -9.35,
 				a: 1.004,
@@ -1774,7 +1774,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -1783,12 +1783,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -17.05,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -3.35,
 				ty: -17.95,
 				l: 0
@@ -1804,7 +1804,7 @@ export let land = {
 				d: 1.024,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 6.55,
 				ty: -9.85,
 				a: 0.698,
@@ -1813,7 +1813,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -1822,7 +1822,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -1831,7 +1831,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -1840,7 +1840,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 5.25,
 				ty: -7.2,
 				a: 0.323,
@@ -1858,7 +1858,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -2.85,
 				a: -1.285,
@@ -1867,7 +1867,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -1876,7 +1876,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -9.35,
 				a: 1.004,
@@ -1885,7 +1885,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -1894,12 +1894,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -17.05,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -3.35,
 				ty: -17.95,
 				l: 0
@@ -1915,7 +1915,7 @@ export let land = {
 				d: 1.024,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 6.55,
 				ty: -9.85,
 				a: 0.698,
@@ -1924,7 +1924,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -1933,7 +1933,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -1942,7 +1942,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -1951,7 +1951,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 5.25,
 				ty: -7.2,
 				a: 0.323,
@@ -1969,7 +1969,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -2.85,
 				a: -1.285,
@@ -1978,7 +1978,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -1987,7 +1987,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -9.35,
 				a: 1.004,
@@ -1996,7 +1996,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -2005,12 +2005,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -17.05,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -3.35,
 				ty: -17.95,
 				l: 0
@@ -2026,7 +2026,7 @@ export let land = {
 				d: 1.024,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 6.55,
 				ty: -9.85,
 				a: 0.698,
@@ -2035,7 +2035,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -2044,7 +2044,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -2053,7 +2053,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -2062,7 +2062,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 5.25,
 				ty: -7.2,
 				a: 0.323,
@@ -2080,7 +2080,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -2.85,
 				a: -1.285,
@@ -2089,7 +2089,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -2098,7 +2098,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -9.35,
 				a: 1.004,
@@ -2107,7 +2107,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -2116,12 +2116,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -17.05,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -3.35,
 				ty: -17.95,
 				l: 0
@@ -2137,7 +2137,7 @@ export let land = {
 				d: 1.024,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 6.55,
 				ty: -9.85,
 				a: 0.698,
@@ -2146,7 +2146,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -2155,7 +2155,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -2164,7 +2164,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -2173,7 +2173,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 5.25,
 				ty: -7.2,
 				a: 0.323,
@@ -2191,7 +2191,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -2.85,
 				a: -1.285,
@@ -2200,7 +2200,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -2209,7 +2209,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -9.35,
 				a: 1.004,
@@ -2218,7 +2218,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -2227,12 +2227,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -17.05,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -3.35,
 				ty: -17.95,
 				l: 0
@@ -2248,7 +2248,7 @@ export let land = {
 				d: 1.024,
 				l: 12
 			},
-			left_arm: {
+			l_arm: {
 				tx: 6.55,
 				ty: -9.85,
 				a: 0.698,
@@ -2257,7 +2257,7 @@ export let land = {
 				d: 0.707,
 				l: 11
 			},
-			left_leg: {
+			l_leg: {
 				tx: 3.2,
 				ty: 9.2,
 				a: 0.965,
@@ -2266,7 +2266,7 @@ export let land = {
 				d: 0.742,
 				l: 10
 			},
-			left_foot: {
+			l_foot: {
 				tx: 9.5,
 				ty: 14.5,
 				a: 0.952,
@@ -2275,7 +2275,7 @@ export let land = {
 				d: 1.529,
 				l: 9
 			},
-			left_leg_connector: {
+			l_leg_connector: {
 				tx: 5.05,
 				ty: 2.6,
 				a: 0.218,
@@ -2284,7 +2284,7 @@ export let land = {
 				d: 0.539,
 				l: 8
 			},
-			left_arm_connector: {
+			l_arm_connector: {
 				tx: 5.25,
 				ty: -7.2,
 				a: 0.323,
@@ -2302,7 +2302,7 @@ export let land = {
 				d: 0.863,
 				l: 6
 			},
-			right_leg_connector: {
+			r_leg_connector: {
 				tx: -5.45,
 				ty: -2.85,
 				a: -1.285,
@@ -2311,7 +2311,7 @@ export let land = {
 				d: 0.879,
 				l: 5
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.85,
 				ty: 2.05,
 				a: -0.767,
@@ -2320,7 +2320,7 @@ export let land = {
 				d: 0.767,
 				l: 4
 			},
-			right_arm_connector: {
+			r_arm_connector: {
 				tx: -4.6,
 				ty: -9.35,
 				a: 1.004,
@@ -2329,7 +2329,7 @@ export let land = {
 				d: 0.697,
 				l: 3
 			},
-			right_foot: {
+			r_foot: {
 				tx: -9.25,
 				ty: 8.4,
 				a: 0.963,
@@ -2338,12 +2338,12 @@ export let land = {
 				d: 0.933,
 				l: 2
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.75,
 				ty: -17.05,
 				l: 1
 			},
-			back_bones: {
+			b_bones: {
 				tx: -3.35,
 				ty: -17.95,
 				l: 0

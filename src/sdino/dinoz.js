@@ -22,7 +22,7 @@ import { quetzu } from './quetzu/quetzu.js';
 import { smog } from './smog/smog.js';
 import { triceragon } from './triceragon/triceragon.js';
 
-export let dinoz = [
+export const dinoz = [
 	moueffe,
 	pigmou,
 	winks,
@@ -45,4 +45,4 @@ export let dinoz = [
 	smog,
 	triceragon
 ];
-export let error = bad;
+export const error = bad;

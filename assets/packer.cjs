@@ -5,7 +5,8 @@ const LZString = require('lz-string');
 
 // Override default file destination for the given folder name.
 const overrideDestination = {
-	background: 'gfx/backgrounds.js'
+	background: 'gfx/backgrounds.js',
+	dino: 'sdino/references_big.js'
 };
 
 /**

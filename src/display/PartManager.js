@@ -22,15 +22,14 @@ export class PartManager {
 	 * @param {Array} partsList Details of the part of the dino, comprised of multiple sub-parts.
 	 * @param {Array} partsDetail Customization array comprised of multiple integer deciding which sub-part of the dino will be used.
 	 * @param {Array} palette Color palette comprised of 4 arrays (col0-3).
-	 * @param {string} assetPath Path to the assets of the current part.
 	 * @param {number} scale Scale of the dino to instantiate. Needed to instantiate the SVG.
 	 * @param {number} scaling Expected scaling of the part once in an animation.
 	 * @returns {Animation} A part of the dino containing all its sub-parts and possible sub-animations.
 	 */
-	static createPart(partsList, partsDetail, palette, assetPath, scale = 1, scaling = 1) {
+	static createPart(partsList, partsDetail, palette, scale = 1, scaling = 1) {
 		let part = new Animation(scale);
 		for (const element of partsList) {
-			let sprite = PartManager.getSubPart(element, partsDetail, palette, assetPath, scale, scaling);
+			let sprite = PartManager.getSubPart(element, partsDetail, palette, scale, scaling);
 			if (sprite) {
 				part.addAnim(sprite);
 			}
@@ -45,18 +44,17 @@ export class PartManager {
 	 * @param {object} part The sub-part being created.
 	 * @param {Array} partsDetail Customization array of the dino.
 	 * @param {Array} palette Color palette comprised of 4 arrays (col0-3).
-	 * @param {string} assetPath The path to the part assets.
 	 * @param {number} scale The scale of the part, needed to instantiate the SVG.
 	 * @param {number} scaling Expected scaling of the part once in an animation.
 	 * @param {Matrix | undefined} parentTransform Transform of the parent, if any. Will be multiplied with the child transform and applied to the container.
 	 * The object will be modified, send a clone if you don't want your object to change.
 	 * @returns {Animation | null} A PixiJS container representing the sub-part, or null if the sub-part is not valid for this customization.
 	 */
-	static getSubPart(part, partsDetail, palette, assetPath, scale, scaling = 1, parentTransform = undefined) {
+	static getSubPart(part, partsDetail, palette, scale, scaling = 1, parentTransform = undefined) {
 		parentTransform = parentTransform ?? PixiHelper.matrixFromObject({}, scale);
 		if (part.ref) {
 			// If the part has a reference, it is final and the element can be instantiated
-			return PartManager.getElement(part, partsDetail, palette, assetPath, scale, scaling, parentTransform);
+			return PartManager.getElement(part, partsDetail, palette, scale, scaling, parentTransform);
 		} else if (part.partIdx !== undefined && part.frames !== undefined) {
 			// If the part has a partIdx, get the correct sub-part to instantiate
 			let idx = part.frames[partsDetail[part.partIdx] % part.frames.length];
@@ -72,7 +70,6 @@ export class PartManager {
 						part.parts[idx],
 						partsDetail,
 						palette,
-						assetPath,
 						scale,
 						scaling,
 						currentTransform.clone()
@@ -84,7 +81,6 @@ export class PartManager {
 							p,
 							partsDetail,
 							palette,
-							assetPath,
 							scale,
 							scaling,
 							currentTransform.clone()
@@ -106,7 +102,6 @@ export class PartManager {
 					part.parts[pName],
 					partsDetail,
 					palette,
-					assetPath,
 					scale,
 					scaling * (partsScaling[pName] ?? 1)
 				);
@@ -135,13 +130,12 @@ export class PartManager {
 	 * @param {*} part The element being created. Has at least a "ref" property.
 	 * @param {Array} partsDetail Customization array of the dino.
 	 * @param {Array} palette Color palette comprised of 4 arrays (col0-3).
-	 * @param {string} assetPath The path to the part assets.
 	 * @param {number} scale The scale of the part, needed to instantiate the SVG.
 	 * @param {number} scaling Expected scaling of the part once in an animation.
 	 * @param {Matrix | undefined} parentTransform Transform of the parent, if any. Will be multiplied with the child transform and applied to the container.
 	 * @returns {Animation | null} A PixiJS container representing the element.
 	 */
-	static getElement(part, partsDetail, palette, assetPath, scale, scaling, parentTransform = undefined) {
+	static getElement(part, partsDetail, palette, scale, scaling, parentTransform = undefined) {
 		if (!part.ref || (part.special && (partsDetail.length <= 15 || partsDetail[15] <= 0))) {
 			return null;
 		}

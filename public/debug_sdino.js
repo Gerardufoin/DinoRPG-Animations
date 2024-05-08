@@ -28,7 +28,7 @@ let rufflePlayerLimit = 4;
  */
 function addFlashPreview(data, chk, parent) {
 	if (rufflePlayerLimit-- > 0) {
-		const swdId = `swf_sino${flashPreviewIdx++}`;
+		const swdId = `swf_sdino${flashPreviewIdx++}`;
 		const container = document.createElement('div');
 		container.id = swdId;
 		container.className = 'flash_display';
