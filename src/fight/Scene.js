@@ -3,6 +3,7 @@
 
 import { Color, Container, Graphics, Renderer } from 'pixi.js';
 import { ref as gfx } from '../gfx/references.js';
+import { ref as bg } from '../gfx/backgrounds.js';
 import { Asset } from '../display/Asset.js';
 import { Fighter } from './Fighter.js';
 import { Timer } from './Timer.js';
@@ -47,19 +48,20 @@ export class Scene extends IScene {
 
 	/**
 	 * The background pixels data, including the array of RGBA colors, the width and the height.
-	 * @type {{width: number, height: number, pixels: Uint8Array}}
+	 * @type {{width: number, height: number, pixels: Uint8Array, dojo: boolean}}
 	 */
 	_backgroundPixelData;
 
 	/**
 	 * Create a new scene where the fight will happen.
 	 * @param {string} background The key to the background reference picture.
+	 * @param {string} dojo The key to the dojo background reference picture if any.
 	 * @param {{top: number, bottom: number, right: number}} margins Set the margins for the walkable area.
 	 * @param {number} ground The type of ground for the Scene.
 	 * @param {Renderer} renderer The renderer which will render the Scene. Used to get the Background colors.
 	 * @param {Settings} settings The Fight's settings.
 	 */
-	constructor(background, margins, ground, renderer, settings) {
+	constructor(background, dojo, margins, ground, renderer, settings) {
 		super();
 		this._renderer = renderer;
 		this.margins = margins;
@@ -70,6 +72,7 @@ export class Scene extends IScene {
 
 		// BACKGROUND + COLUMNS
 		this.setBackground(background);
+		this.setBackground(dojo, true);
 		this.createColumns();
 		// The zindex of the entities is managed by their computed z position.
 		this.dm.setSortableLayer(Layers.Scene.FIGHTERS);
@@ -168,19 +171,23 @@ export class Scene extends IScene {
 
 	/**
 	 * Set the scene background.
-	 * @param {string} key The background key to use in gfx.background.
+	 * @param {string} key The background key to use in gfx/backgrounds.
+	 * @param {boolean} dojo If the background is a dojo, it has priority for the background pixel data.
 	 */
-	setBackground(key) {
-		if (key && gfx.background[key]) {
-			const sprite = new Asset(gfx.background[key]);
+	setBackground(key, dojo = false) {
+		if (key && bg[key]) {
+			const sprite = new Asset(bg[key]);
 			sprite.y = -SCENE_MARGIN;
 			sprite.onLoad = () => {
 				sprite.x = SCENE_FULL_WIDTH / 2 - sprite.width / 2;
-				this._backgroundPixelData = {
-					width: sprite.width,
-					height: sprite.height,
-					pixels: this._renderer.extract.pixels(sprite)
-				};
+				if (!this._backgroundPixelData?.dojo) {
+					this._backgroundPixelData = {
+						width: sprite.width,
+						height: sprite.height,
+						pixels: this._renderer.extract.pixels(sprite),
+						dojo: dojo
+					};
+				}
 			};
 			this.dm.addContainer(sprite, Layers.Scene.BG);
 		}

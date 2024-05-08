@@ -98,6 +98,7 @@ export class Fight {
 
 		this._scene = new Scene(
 			this._data.bg,
+			this._data.dojo,
 			{
 				top: this._data.top ?? 0,
 				bottom: this._data.bottom ?? 0,

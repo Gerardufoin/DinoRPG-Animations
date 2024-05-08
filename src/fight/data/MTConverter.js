@@ -68,7 +68,7 @@ export class MTConverter {
 			_equip: '/img/icons/::id::.gif',
 			_sdino: '/swf/sdino.swf?v=33',
 			_dino: '/swf/dino.swf?v=35',
-			_dojo: null,
+			_dojo: etData.dojo ? `/img/fight/${etData.dojo}.png` : null,
 			_mtop: etData.top ?? 0,
 			_bg: `/img/fight/${etData.bg}.jpg`,
 			_ground: MTConverter.getGroundType(etData.ground),
@@ -248,7 +248,7 @@ export class MTConverter {
 		};
 		for (const f of obj.fighters) {
 			ret.args[0].push(f.fid);
-			ret.args[1].push(f.maxEnergy);
+			ret.args[1].push(f.energy);
 		}
 		return ret;
 	}

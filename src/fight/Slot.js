@@ -32,6 +32,11 @@ export class Slot extends Container {
 	 */
 	static FIGHTER_PORTRAIT_SCALE = 1;
 	/**
+	 * Maximum amount of energy allowed in slots.
+	 * @type {number}
+	 */
+	static MAX_ENERGY = 200;
+	/**
 	 * The GlowFilter of the border.
 	 * Storing it to prevent WebGL to create it each time.
 	 * @type {GlowFilter}
@@ -149,6 +154,7 @@ export class Slot extends Container {
 	 * @param {number} ratio The new scale of the bar.
 	 */
 	setLife(ratio) {
+		ratio = PixiHelper.mm(0, ratio, 1);
 		this._lifeBar.hit.scale.y = this._lifeBar.bar.scale.y;
 		this._lifeBar.bar.scale.y = ratio;
 	}
@@ -158,8 +164,9 @@ export class Slot extends Container {
 	 * @param {number} energy The maximum amount of energy.
 	 */
 	setMaxEnergy(energy) {
+		energy = PixiHelper.mm(0, energy, Slot.MAX_ENERGY);
 		this._tweenManager.addTween(
-			new Tween(this._energyBar.max.scale, TFx.TEaseOut).to(0.5, { y: 2 - energy / 100 })
+			new Tween(this._energyBar.max.scale, TFx.TEaseOut).to(0.5, { y: (Slot.MAX_ENERGY - energy) / 100 })
 		);
 	}
 
@@ -168,6 +175,7 @@ export class Slot extends Container {
 	 * @param {number} energy The current amount of energy.
 	 */
 	setEnergy(energy) {
+		energy = PixiHelper.mm(0, energy, Slot.MAX_ENERGY);
 		this._energyBar.hit.scale.y = this._energyBar.bar.scale.y;
 		this._tweenManager.addTween(new Tween(this._energyBar.hit.scale, TFx.TEaseOut).to(0.5, { y: energy / 100 }));
 		this._energyBar.bar.scale.y = energy / 100;

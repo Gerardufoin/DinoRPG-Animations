@@ -63,7 +63,8 @@ export class DAConverter {
 	 */
 	static convert(mtData) {
 		const data = {
-			bg: DAConverter.getBackground(mtData),
+			bg: DAConverter.getBackground(mtData._bg),
+			dojo: DAConverter.getBackground(mtData._dojo),
 			top: mtData._mtop ?? 0,
 			bottom: mtData._mbottom ?? 0,
 			right: mtData._mright ?? 0,
@@ -75,13 +76,12 @@ export class DAConverter {
 
 	/**
 	 * Get the background as a string which can be used as a key for gfx.background.
-	 * @param {object} mtData The fight data under its legacy format.
+	 * @param {string} mtBgString The reference to the background from an MT object data.
 	 * @returns {string | undefined} The key to use to get the correct background.
 	 */
-	static getBackground(mtData) {
-		let bgRef = mtData._dojo ? mtData._dojo : mtData._bg;
-		if (bgRef) {
-			const match = bgRef.match(/(\w+)\.\w+$/);
+	static getBackground(mtBgString) {
+		if (mtBgString) {
+			const match = mtBgString.match(/(\w+)\.\w+$/);
 			return match ? match[1] : undefined;
 		}
 		return undefined;
@@ -229,7 +229,7 @@ export class DAConverter {
 		for (let i = 0; i < args[0].length; ++i) {
 			ret.fighters.push({
 				fid: args[0][i],
-				maxEnergy: args[1][i]
+				energy: args[1][i]
 			});
 		}
 		return ret;

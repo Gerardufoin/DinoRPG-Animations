@@ -638,13 +638,13 @@ export class History {
 
 	/**
 	 * Set the maximum energy of the given figthers.
-	 * @param {{action: number, fighters: { fid: number, maxEnergy: number }[]}} action Action which triggered the call.
+	 * @param {{action: number, fighters: { fid: number, energy: number }[]}} action Action which triggered the call.
 	 */
 	maxEnergy(action) {
 		for (const f of action.fighters) {
 			const fighter = this._scene.getFighter(f.fid);
 			if (fighter) {
-				fighter.setMaxEnergy(f.maxEnergy);
+				fighter.setMaxEnergy(f.energy);
 			} else {
 				console.error(`MaxEnergy Error: Fighter with id ${f.fid} does not exist in the scene.`);
 			}

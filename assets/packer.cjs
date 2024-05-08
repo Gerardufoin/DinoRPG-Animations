@@ -3,6 +3,11 @@ const fs = require('fs');
 const path = require('path');
 const LZString = require('lz-string');
 
+// Override default file destination for the given folder name.
+const overrideDestination = {
+	background: 'gfx/backgrounds.js'
+};
+
 /**
  * Pack a folder and its content into the reference object.
  * @param {string} folderPath The path to the folder to pack.
@@ -59,8 +64,11 @@ for (const f of fs.readdirSync(__dirname, { withFileTypes: true })) {
 	if (f.isDirectory()) {
 		const references = {};
 		packFolder(path.join(__dirname, f.name), references);
+		const dest = overrideDestination[f.name]
+			? path.join(__dirname, '../src/', overrideDestination[f.name])
+			: path.join(__dirname, '../src/', f.name, 'references.js');
 		fs.writeFileSync(
-			path.join(__dirname, '../src/', f.name, 'references.js'),
+			dest,
 			'export let ref = ' +
 				JSON.stringify(references, null, '\t')
 					.replace(/"([^-"]+)":/g, '$1:')
