@@ -6,6 +6,7 @@ import { SkillType } from '../../../Enums.js';
 import { Scene } from '../../../Scene.js';
 import { State } from '../../../State.js';
 import { Timer } from '../../../Timer.js';
+import { AirEnvironment } from '../../../parts/skills/env/air/AirEnvironment.js';
 import { FireEnvironment } from '../../../parts/skills/env/fire/FireEnvironment.js';
 import { LightningEnvironment } from '../../../parts/skills/env/lightning/LightningEnvironment.js';
 import { WaterEnvironment } from '../../../parts/skills/env/water/WaterEnvironment.js';
@@ -44,6 +45,9 @@ export class FxEnvironment extends State {
 				break;
 			case SkillType.Lightning:
 				this._scene.setEnvironment(new LightningEnvironment(this._scene), Layers.Scene.BG);
+				break;
+			case SkillType.Air:
+				this._scene.setEnvironment(new AirEnvironment(this._scene), Layers.Scene.BG_FRONT);
 				break;
 		}
 	}
