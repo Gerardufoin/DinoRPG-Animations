@@ -1,6 +1,6 @@
 // @ts-check
 
-export let mapping_smonster = {
+export const mapping_smonster = {
 	'Symbol 4': 'fx_dust_1',
 	'Symbol 4-1': 'fx_dust_2',
 	'Symbol 4-2': 'fx_dust_3',

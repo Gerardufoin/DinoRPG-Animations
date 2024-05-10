@@ -8,7 +8,7 @@ import { land } from '../../sdino/hippoclamp/animations/land.js';
 import { run } from '../../sdino/hippoclamp/animations/run.js';
 import { stand } from '../../sdino/hippoclamp/animations/stand.js';
 import { walk } from '../../sdino/hippoclamp/animations/walk.js';
-import { ref as ref_sdino } from '../../sdino/references.js';
+import { ref as ref_sdino } from '../../sdino/references_small.js';
 import { parts } from './parts.js';
 
 // Symbol 854

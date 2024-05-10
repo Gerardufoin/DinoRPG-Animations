@@ -1,7 +1,7 @@
 // @ts-check
 
 import { ref } from '../references.js';
-import { ref as ref_dino } from '../../sdino/references.js';
+import { ref as ref_dino } from '../../sdino/references_small.js';
 import { kazka_back_nerves } from './animations/back_nerves.js';
 import { kazka_eye } from './animations/eye.js';
 import { kazka_float } from './animations/float.js';

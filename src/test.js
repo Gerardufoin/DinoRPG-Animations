@@ -2,7 +2,7 @@
 
 import { Application, Container, Matrix, Sprite, Texture } from 'pixi.js';
 import { TextureManager } from './display/TextureManager.js';
-import { ref } from './sdino/references.js';
+import { ref } from './sdino/references_small.js';
 import { PixiHelper } from './display/PixiHelper.js';
 import { decompressFromBase64 } from 'lz-string';
 

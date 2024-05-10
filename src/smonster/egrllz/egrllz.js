@@ -9,7 +9,7 @@ import { release } from '../../sdino/gorilloz/animations/release.js';
 import { run } from '../../sdino/gorilloz/animations/run.js';
 import { stand } from '../../sdino/gorilloz/animations/stand.js';
 import { walk } from '../../sdino/gorilloz/animations/walk.js';
-import { ref as ref_sdino } from '../../sdino/references.js';
+import { ref as ref_sdino } from '../../sdino/references_small.js';
 import { parts } from './parts.js';
 
 // Symbol 954

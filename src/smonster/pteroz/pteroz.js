@@ -6,7 +6,7 @@ import { run } from '../../sdino/pteroz/animations/run.js';
 import { attack } from '../../sdino/pteroz/animations/attack.js';
 import { land } from '../../sdino/pteroz/animations/land.js';
 import { dead } from '../../sdino/pteroz/animations/dead.js';
-import { ref as ref_sdino } from '../../sdino/references.js';
+import { ref as ref_sdino } from '../../sdino/references_small.js';
 import { parts } from './parts.js';
 
 // Symbol 920

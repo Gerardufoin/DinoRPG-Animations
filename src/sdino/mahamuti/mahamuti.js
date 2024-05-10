@@ -10,7 +10,7 @@ import { land } from './animations/land.js';
 import { dead } from './animations/dead.js';
 import { release } from './animations/release.js';
 import { parts } from './parts.js';
-import { ref } from '../references.js';
+import { ref } from '../references_small.js';
 
 export let mahamuti = {
 	name: 'mahamuti',

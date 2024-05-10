@@ -3,7 +3,7 @@
 /**
  * Mapping between the extracted symbol from gfx.swf and their name in the project
  */
-export let mapping_gfx = {
+export const mapping_gfx = {
 	//1: 'fx/env/lightning/mask', // Edited manually
 	2: 'fx/vine/v_1',
 	3: 'fx/vine/v_2',

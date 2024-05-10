@@ -11,7 +11,7 @@ import { dead } from './animations/dead.js';
 import { release } from './animations/release.js';
 import { fx_dust } from '../../gfx/fx/attach/smoke/dust.js';
 import { parts } from './parts.js';
-import { ref } from '../references.js';
+import { ref } from '../references_small.js';
 
 export let kabuki = {
 	name: 'kabuki',

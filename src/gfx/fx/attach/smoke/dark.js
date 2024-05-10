@@ -1,5 +1,5 @@
 // @ts-check
-import { ref } from '../../../../sdino/references.js';
+import { ref } from '../../../../sdino/references_small.js';
 import { fx_dirt_blur_filter, fx_dirt_frames, fx_smoke_frames } from './animations.js';
 
 const fx_dark_dirt = {

@@ -4,7 +4,7 @@ import { SVGAdapter } from './svg/SVGAdapter.js';
 import { mapping_sdino } from './svg/mapping_sdino.js';
 import { mapping_gfx } from './svg/mapping_gfx.js';
 import { mapping_smonster } from './svg/mapping_smonster.js';
-import { mapping_dino } from './xfl/mapping_dino.js';
+import { mapping_dino } from './svg/mapping_dino.js';
 
 const parser = new XFLParser();
 //parser.parse('./resources/sdino/LIBRARY/Symbol 163.xml', '_p1', undefined, 0); // moueffe

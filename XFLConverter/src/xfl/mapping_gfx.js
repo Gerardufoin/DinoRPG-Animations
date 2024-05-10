@@ -1,6 +1,6 @@
 // @ts-check
 
-export let mapping_gfx = {
+export const mapping_gfx = {
 	'Symbol 88': 'shade',
 	// Worker
 	'Symbol 91': 'l_hand',

@@ -11,7 +11,7 @@ import { dead } from './animations/dead.js';
 import { sleep } from './animations/sleep.js';
 import { release } from './animations/release.js';
 import { parts } from './parts.js';
-import { ref } from '../references.js';
+import { ref } from '../references_small.js';
 
 export let smog = {
 	name: 'smog',

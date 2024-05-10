@@ -3,7 +3,7 @@
 /**
  * Mapping between the extracted symbol from smonster.swf and their name in the project
  */
-export let mapping_smonster = {
+export const mapping_smonster = {
 	6: 'fx/burst_1',
 	7: 'fx/burst_2',
 	8: 'fx/burst_3',

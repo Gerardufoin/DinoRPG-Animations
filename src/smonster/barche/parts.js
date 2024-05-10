@@ -1,5 +1,5 @@
 // @ts-check
-import { ref as ref_sdino } from '../../sdino/references.js';
+import { ref as ref_sdino } from '../../sdino/references_small.js';
 import { ref } from '../references.js';
 import { barche_mouth } from './animations/mouth.js';
 import { barche_beam_attack, beam_glow } from './animations/beam/attack.js';

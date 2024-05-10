@@ -3,7 +3,7 @@
 /**
  * Mapping between the extracted symbol and their name in the project
  */
-export let mapping_sdino = {
+export const mapping_sdino = {
 	77: 'fx/shadow',
 	78: 'moueffe/back_bones',
 	81: 'moueffe/right_arm',

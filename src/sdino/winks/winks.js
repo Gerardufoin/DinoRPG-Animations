@@ -2,7 +2,7 @@
 
 import { BLEND_MODES } from 'pixi.js';
 import { stand } from './animations/stand.js';
-import { ref } from '../references.js';
+import { ref } from '../references_small.js';
 import { walk } from './animations/walk.js';
 import { run } from './animations/run.js';
 import { hit } from './animations/hit.js';

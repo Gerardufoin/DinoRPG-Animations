@@ -1,4 +1,4 @@
-import { ref } from '../../references.js';
+import { ref } from '../../references_small.js';
 
 // 1208
 export let head_special = [

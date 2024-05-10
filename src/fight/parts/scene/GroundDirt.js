@@ -4,7 +4,7 @@ import { BlurFilter, Color, Container } from 'pixi.js';
 import { Part } from '../../Part.js';
 import { IScene } from '../../IScene.js';
 import { Asset } from '../../../display/Asset.js';
-import { ref } from '../../../sdino/references.js';
+import { ref } from '../../../sdino/references_small.js';
 
 // GFX 645
 /**

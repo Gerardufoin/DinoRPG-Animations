@@ -1,6 +1,6 @@
 // @ts-check
 
-export let mapping_dino = {
+export const mapping_dino = {
 	'Symbol 293_view': 'view',
 	// 294
 	'Symbol 102_p6b': 'r_arm',

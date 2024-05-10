@@ -1,6 +1,6 @@
 // @ts-check
 import { BLEND_MODES } from 'pixi.js';
-import { ref } from '../references.js';
+import { ref } from '../references_small.js';
 import { stand } from './animations/stand.js';
 import { fx_dash } from '../fx/dash.js';
 import { run } from './animations/run.js';

@@ -9,7 +9,7 @@ import { attack } from './animations/attack_larvae.js';
 import { land } from './animations/land_larvae.js';
 import { dead } from './animations/dead_larvae.js';
 import { parts, transforms, palette } from './parts.js';
-import { ref } from '../references.js';
+import { ref } from '../references_small.js';
 
 export let soufflet_larvae = {
 	name: 'soufflet',

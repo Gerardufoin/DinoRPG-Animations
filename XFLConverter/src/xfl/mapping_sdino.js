@@ -1,6 +1,6 @@
 // @ts-check
 
-export let mapping_sdino = {
+export const mapping_sdino = {
 	// 162
 	'Symbol 110_p7': 'body',
 	'Symbol 123_p5': 'head',

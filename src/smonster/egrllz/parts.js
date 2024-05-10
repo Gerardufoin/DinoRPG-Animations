@@ -1,5 +1,5 @@
 // @ts-check
-import { ref as ref_sdino } from '../../sdino/references.js';
+import { ref as ref_sdino } from '../../sdino/references_small.js';
 
 export const parts = {
 	// 924

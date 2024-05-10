@@ -1,5 +1,5 @@
 // @ts-check
-import { Sprite, Matrix, Filter, Container } from 'pixi.js';
+import { Sprite, Matrix, Filter, Container, Color } from 'pixi.js';
 import { TextureManager } from './TextureManager.js';
 import { Animation } from './Animation.js';
 import { PixiHelper } from './PixiHelper.js';
@@ -159,15 +159,28 @@ export class PartManager {
 
 		const resolution = part.resolution ?? TextureManager.DEFAULT_RESOLUTION;
 		scaling *= Math.max(localTransform.scale.x, localTransform.scale.y);
-		let texture = TextureManager.getTextureFromCompressedReference(ref, scale * scaling, resolution);
+		const texture = TextureManager.getTextureFromCompressedReference(ref, scale * scaling, resolution);
 		const sprite = Sprite.from(texture);
 		sprite.scale.set(1 / (resolution * scaling));
 		sprite.x -= (ref.offset?.x ?? 0) * scale;
 		sprite.y -= (ref.offset?.y ?? 0) * scale;
 
 		if (part.colorIdx !== undefined) {
-			let pal = palette[part.colorIdx];
-			sprite.tint = pal[partsDetail[PartManager.pMax + part.colorIdx] % pal.length];
+			const pal = palette[part.colorIdx];
+			const colorHex = pal[partsDetail[PartManager.pMax + part.colorIdx] % pal.length];
+			// Parts with blendmode cannot have filters
+			if (part.blend) {
+				sprite.tint = colorHex;
+			} else {
+				const color = new Color(colorHex);
+				sprite.filters = [
+					ConstantShaderManager.getColorOffsetFilter(
+						color.red * 255 - 255,
+						color.green * 255 - 255,
+						color.blue * 255 - 255
+					)
+				];
+			}
 		}
 		if (part.blend) {
 			sprite.blendMode = part.blend;
@@ -175,7 +188,7 @@ export class PartManager {
 		if (part.alpha) {
 			sprite.alpha = part.alpha;
 		}
-		sprite.filters = PartManager.createPartFilters(part);
+		sprite.filters = PartManager.createPartFilters(part, sprite.filters);
 		localTransform.addChild(sprite);
 
 		if (part.name) {
@@ -188,11 +201,11 @@ export class PartManager {
 	/**
 	 * Creates the filters for a given part based on its properties.
 	 * @param {object} part The part whose filters to create.
-	 * @returns {Filter[] | undefined} The created filters or undefined it there is no filter.
+	 * @param {Filter[] | null} filters The pre-existing filter to fill and return.
+	 * @returns {Filter[] | undefined} The completed filters array or undefined if it is empty.
 	 */
-	static createPartFilters(part) {
-		const filters = [];
-
+	static createPartFilters(part, filters = []) {
+		filters ??= [];
 		if (part.blur) {
 			filters.push(ConstantShaderManager.getBlurFilter(part.blur.x, part.blur.y, part.blur.quality));
 		}

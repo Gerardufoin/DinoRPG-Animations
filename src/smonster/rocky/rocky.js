@@ -1,6 +1,6 @@
 // @ts-check
 import { fx_dust } from '../../gfx/fx/attach/smoke/dust.js';
-import { ref as ref_sdino } from '../../sdino/references.js';
+import { ref as ref_sdino } from '../../sdino/references_small.js';
 import { parts as parts_rocky } from '../../sdino/rocky/parts.js';
 import { stand } from '../../sdino/rocky/animations/stand.js';
 import { walk } from '../../sdino/rocky/animations/walk.js';

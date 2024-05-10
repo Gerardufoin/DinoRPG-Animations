@@ -1,6 +1,6 @@
 // @ts-check
 import { fx_dust_frames } from '../../gfx/fx/attach/smoke/dust.js';
-import { ref as ref_sdino } from '../../sdino/references.js';
+import { ref as ref_sdino } from '../../sdino/references_small.js';
 import { ref } from '../references.js';
 
 export const parts = {

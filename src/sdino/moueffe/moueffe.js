@@ -9,7 +9,8 @@ import { attack } from './animations/attack.js';
 import { dead } from './animations/dead.js';
 import { release } from './animations/release.js';
 import { fx_dust } from '../../gfx/fx/attach/smoke/dust.js';
-import { ref } from '../references.js';
+import { ref } from '../references_small.js';
+import { ref as ref_big } from '../references_big.js';
 import { parts_small } from './parts_small.js';
 import { portrait } from './animations/portrait.js';
 import { parts_big } from './parts_big.js';
@@ -96,6 +97,23 @@ export const moueffe = {
 				ty: -59.7
 			}
 		],
+		glow: {
+			distance: 1,
+			color: 0x660000,
+			quality: 1,
+			strength: 2
+		},
+		shadow: {
+			ref: ref_big.moueffe.shadow,
+			transform: {
+				tx: 3.75,
+				ty: 55.85,
+				a: 0.816,
+				d: 1.02
+			},
+			alpha: 0.289,
+			blur: { x: 10, y: 0 }
+		},
 		parts: {
 			// 102_p6b
 			r_arm: parts_big.right_arm,
@@ -115,6 +133,8 @@ export const moueffe = {
 			hair_side: parts_big.hair_side,
 			// 81_p1
 			b_bones: parts_big.back_bones
+			// 292
+			//view: parts_big.view
 		},
 		animations: {
 			// 294

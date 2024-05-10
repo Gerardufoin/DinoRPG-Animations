@@ -1,6 +1,6 @@
 // @ts-check
 import { BLEND_MODES } from 'pixi.js';
-import { ref } from '../references.js';
+import { ref } from '../references_small.js';
 
 export let parts = {
 	// 173

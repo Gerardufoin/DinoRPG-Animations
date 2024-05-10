@@ -1,5 +1,5 @@
 // @ts-check
-import { ref } from '../references.js';
+import { ref } from '../references_small.js';
 import { head_special } from './animations/head_special.js';
 
 // 1154

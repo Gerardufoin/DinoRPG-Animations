@@ -1,4 +1,4 @@
-import { ref } from '../references.js';
+import { ref } from '../references_small.js';
 
 // sdino 658
 export const fx_dash = [

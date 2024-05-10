@@ -7,7 +7,7 @@ import { attack } from './animations/attack_adult.js';
 import { land } from './animations/land_adult.js';
 import { dead } from './animations/dead_adult.js';
 import { parts, transforms, palette } from './parts.js';
-import { ref } from '../references.js';
+import { ref } from '../references_small.js';
 
 export let soufflet_adult = {
 	name: 'soufflet',

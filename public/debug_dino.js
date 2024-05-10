@@ -2,6 +2,7 @@
 const allDinoz = [];
 let flashPreviewIdx = 0;
 let rufflePlayerLimit = 4;
+const damages = 0;
 
 /**
  * Add a new embed flash player with the data of the dino, for comparison purposes.
@@ -21,7 +22,7 @@ function addFlashPreview(data, chk, parent) {
 		// Parameters from original website
 		var so = new SWFObject('/swf/dino.swf', swdId, 190, 165, 8, '#FCE3BB');
 		so.addParam('AllowScriptAccess', 'always');
-		so.addParam('FlashVars', `data=${data}&amp;chk=${chk}&amp;damages=1&amp;status=congel&amp;flip=1`);
+		so.addParam('FlashVars', `data=${data}&amp;chk=${chk}&amp;damages=${damages}&amp;status=&amp;flip=1`);
 		so.addParam('menu', 'false');
 		so.addParam('scale', 'noscale');
 		so.addParam('wmode', 'transparent');
@@ -39,23 +40,26 @@ function addDinoz(data, showOrigin = false) {
 	const container = document.createElement('div');
 	const app = new DinoAnim.Application({
 		background: '#FCE3BB',
-		width: 130,
-		height: 55
+		width: 190,
+		height: 165
 	});
 	let dinoz = new DinoAnim.dino({
 		data: data,
 		flip: 1,
-		pflag: true
+		pflag: true,
+		damages: damages
 	});
+	const x = 95;
+	const y = 82;
 	app.stage.addChild(dinoz);
-	dinoz.x = 75;
-	dinoz.y = 35;
+	dinoz.x = x;
+	dinoz.y = y;
 	allDinoz.push(dinoz);
 
 	if (showOrigin) {
 		const origin = new DinoAnim.Graphics();
 		origin.beginFill(0xff0000);
-		origin.drawCircle(20, 30, 1);
+		origin.drawCircle(x, y, 1);
 		origin.endFill();
 		app.stage.addChild(origin);
 	}
@@ -66,21 +70,16 @@ function addDinoz(data, showOrigin = false) {
 }
 
 // Dragon Jr
-addDinoz('09T1Yt9wqq4Rx000', true);
-
-// Debug
-addDinoz('33ooVfmT1EWYH2MD', true);
-addDinoz('43MFLTgd72jcTSKT', true);
-addDinoz('73D2pW29UoMTv2Qc', true);
+addDinoz('0915873G01220110', true);
 
 // Moueffe
-/*addDinoz('0813611605200000', true);
+addDinoz('0813611605200000', true);
 addDinoz('09w7y7qqpdhld000');
 addDinoz('09adQBgO8T065000');
 addDinoz('09vGg4LW1S9fn000');
 addDinoz('0A8uYQDU0FywV000'); // Krapassa
 addDinoz('0AcokGzWsf6WP000'); // Shamak
-addDinoz('0An2HcXN9sl3m000'); // Krazablue*/
+addDinoz('0An2HcXN9sl3m000'); // Krazablue
 // Pigmou
 //addDinoz('19hot0hFbItLS000');
 /*addDinoz('199zX1Jn1zGXG000');

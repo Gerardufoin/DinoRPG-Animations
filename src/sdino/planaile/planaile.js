@@ -1,6 +1,6 @@
 // @ts-check
 
-import { ref } from '../references.js';
+import { ref } from '../references_small.js';
 import { stand } from './animations/stand.js';
 import { walk } from './animations/walk.js';
 import { fly } from './animations/fly.js';

@@ -1,5 +1,5 @@
 // @ts-check
-import { ref } from '../references.js';
+import { ref } from '../references_small.js';
 
 // 1302
 const flames = {

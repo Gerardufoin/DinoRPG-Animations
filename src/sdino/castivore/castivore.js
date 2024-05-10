@@ -7,7 +7,7 @@ import { dead } from './animations/dead.js';
 import { jump } from './animations/jump.js';
 import { land } from './animations/land.js';
 import { stand } from './animations/stand.js';
-import { ref } from '../references.js';
+import { ref } from '../references_small.js';
 
 export let castivore = {
 	name: 'castivore',

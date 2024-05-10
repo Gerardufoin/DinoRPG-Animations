@@ -2,6 +2,7 @@
 import { dinoz, error } from './sdino/dinoz.js';
 import { Animator } from './display/Animator.js';
 import { PartManager } from './display/PartManager.js';
+import { PixiHelper } from './display/PixiHelper.js';
 
 /**
  * Abstract class allowing the instantiation of both sdino.swf and dino.swf.
@@ -196,6 +197,11 @@ export class ADino extends Animator {
 		this.setAnimations(this.dinoInfos.animations);
 		this.playAnim('stand');
 		this.playing = pflag;
+		if (this._big) {
+			this.playing = false;
+			this.setFrame(PixiHelper.mm(0, dParts[1], this.getCurrentAnimationLength() - 1));
+			this._body.stop();
+		}
 		return true;
 	}
 
