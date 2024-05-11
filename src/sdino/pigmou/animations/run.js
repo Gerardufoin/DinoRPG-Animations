@@ -1,13 +1,13 @@
 // @ts-check
 
-export let run = {
+export const run = {
 	id: 'pigmou_run',
 	callbacks: {
 		6: [['gotoAndPlay', 1]]
 	},
 	frames: [
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 1.65,
 				ty: 3.8,
 				a: 0.746,
@@ -23,7 +23,7 @@ export let run = {
 				c: 0.877,
 				d: 0.718
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 0.65,
 				ty: 5.6,
 				a: 0.167,
@@ -47,7 +47,7 @@ export let run = {
 				c: -0.5,
 				d: 0.866
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -6.35,
 				ty: 3.6,
 				a: 0.058,
@@ -57,7 +57,7 @@ export let run = {
 			}
 		},
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 2.1,
 				ty: 2.65,
 				a: 1.123,
@@ -73,7 +73,7 @@ export let run = {
 				c: 0.733,
 				d: 0.862
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: -4.05,
 				ty: 3.5,
 				a: 0.775,
@@ -97,7 +97,7 @@ export let run = {
 				c: -0.455,
 				d: 0.889
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -9.75,
 				ty: 0.85,
 				a: 0.86,
@@ -107,7 +107,7 @@ export let run = {
 			}
 		},
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 2.45,
 				ty: 1.4,
 				a: 0.967,
@@ -123,7 +123,7 @@ export let run = {
 				c: 0.566,
 				d: 0.982
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: -8.8,
 				ty: 1.35,
 				a: 1.109,
@@ -147,7 +147,7 @@ export let run = {
 				c: -0.413,
 				d: 0.91
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -13.2,
 				ty: -1.85,
 				a: 1.129,
@@ -157,7 +157,7 @@ export let run = {
 			}
 		},
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 5.3,
 				ty: 3.35,
 				a: 1.057,
@@ -173,7 +173,7 @@ export let run = {
 				c: 0.667,
 				d: 0.915
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: -4.35,
 				ty: 4.35,
 				a: 1.086,
@@ -197,7 +197,7 @@ export let run = {
 				c: -0.209,
 				d: 0.977
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -9.7,
 				ty: 1.5,
 				a: 1.135,
@@ -207,7 +207,7 @@ export let run = {
 			}
 		},
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 8.35,
 				ty: 5.3,
 				a: 1.116,
@@ -223,7 +223,7 @@ export let run = {
 				c: 0.765,
 				d: 0.838
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 0.05,
 				ty: 7.35,
 				a: 1.057,
@@ -243,7 +243,7 @@ export let run = {
 				tx: 9.05,
 				ty: -4.3
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -6.2,
 				ty: 4.8,
 				a: 1.134,
@@ -253,7 +253,7 @@ export let run = {
 			}
 		},
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 5,
 				ty: 4.55,
 				a: 1.075,
@@ -269,7 +269,7 @@ export let run = {
 				c: 0.823,
 				d: 0.778
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 0.4,
 				ty: 6.5,
 				a: 0.704,
@@ -293,7 +293,7 @@ export let run = {
 				c: -0.256,
 				d: 0.966
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -6.25,
 				ty: 4.1,
 				a: 0.796,
@@ -303,7 +303,7 @@ export let run = {
 			}
 		},
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 1.65,
 				ty: 3.8,
 				a: 0.746,
@@ -319,7 +319,7 @@ export let run = {
 				c: 0.877,
 				d: 0.718
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 0.65,
 				ty: 5.6,
 				a: 0.167,
@@ -343,7 +343,7 @@ export let run = {
 				c: -0.5,
 				d: 0.866
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -6.35,
 				ty: 3.6,
 				a: 0.058,

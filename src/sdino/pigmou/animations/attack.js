@@ -1,6 +1,6 @@
 // @ts-check
 
-export let attack = {
+export const attack = {
 	id: 'pigmou_attack',
 	callbacks: {
 		1: [['hit', 4]],
@@ -8,7 +8,7 @@ export let attack = {
 	},
 	frames: [
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 9.2,
 				ty: 5.6,
 				a: 1.116,
@@ -24,7 +24,7 @@ export let attack = {
 				c: 0.334,
 				d: 1.086
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 0.9,
 				ty: 7.65,
 				a: 1.057,
@@ -44,7 +44,7 @@ export let attack = {
 				tx: 9.9,
 				ty: -4
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -5.35,
 				ty: 5.1,
 				a: 1.134,
@@ -60,7 +60,7 @@ export let attack = {
 				a: 0.761,
 				d: 0.761
 			},
-			back_left_leg: {
+			b_l_leg: {
 				tx: -3.4,
 				ty: 2.05,
 				a: 0.746,
@@ -76,7 +76,7 @@ export let attack = {
 				c: 0.877,
 				d: 0.718
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: -4.4,
 				ty: 3.85,
 				a: 0.167,
@@ -100,7 +100,7 @@ export let attack = {
 				c: -0.5,
 				d: 0.866
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -11.4,
 				ty: 1.85,
 				a: 0.058,
@@ -116,7 +116,7 @@ export let attack = {
 				a: 0.761,
 				d: 0.761
 			},
-			back_left_leg: {
+			b_l_leg: {
 				tx: -5.7,
 				ty: 1.2,
 				a: 0.746,
@@ -132,7 +132,7 @@ export let attack = {
 				c: 0.875,
 				d: 0.717
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: -6.6,
 				ty: 3,
 				a: 0.164,
@@ -156,7 +156,7 @@ export let attack = {
 				c: -0.497,
 				d: 0.866
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -13.65,
 				ty: 1,
 				a: 0.055,
@@ -172,7 +172,7 @@ export let attack = {
 				a: 0.761,
 				d: 0.761
 			},
-			back_left_leg: {
+			b_l_leg: {
 				tx: -7.9,
 				ty: 0.35,
 				a: 0.746,
@@ -188,7 +188,7 @@ export let attack = {
 				c: 0.877,
 				d: 0.718
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: -8.9,
 				ty: 2.15,
 				a: 0.167,
@@ -212,7 +212,7 @@ export let attack = {
 				c: -0.5,
 				d: 0.866
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -15.9,
 				ty: 0.15,
 				a: 0.058,
@@ -228,7 +228,7 @@ export let attack = {
 				a: 0.761,
 				d: 0.761
 			},
-			back_left_leg: {
+			b_l_leg: {
 				tx: 0.65,
 				ty: 2.95,
 				a: 1.075,
@@ -244,7 +244,7 @@ export let attack = {
 				c: 0.631,
 				d: 0.941
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: -3.9,
 				ty: 4.9,
 				a: 0.704,
@@ -268,7 +268,7 @@ export let attack = {
 				c: -0.256,
 				d: 0.966
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -10.65,
 				ty: 2.65,
 				a: 0.796,
@@ -284,7 +284,7 @@ export let attack = {
 				a: 0.761,
 				d: 0.761
 			},
-			back_left_leg: {
+			b_l_leg: {
 				tx: 9.2,
 				ty: 5.6,
 				a: 1.116,
@@ -300,7 +300,7 @@ export let attack = {
 				c: 0.334,
 				d: 1.086
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 0.9,
 				ty: 7.65,
 				a: 1.057,
@@ -320,7 +320,7 @@ export let attack = {
 				tx: 9.9,
 				ty: -4
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -5.35,
 				ty: 5.1,
 				a: 1.134,
@@ -330,7 +330,7 @@ export let attack = {
 			}
 		},
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 9.2,
 				ty: 5.6,
 				a: 1.116,
@@ -346,7 +346,7 @@ export let attack = {
 				c: 0.334,
 				d: 1.086
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 0.9,
 				ty: 7.65,
 				a: 1.057,
@@ -366,7 +366,7 @@ export let attack = {
 				tx: 9.9,
 				ty: -4
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -5.35,
 				ty: 5.1,
 				a: 1.134,

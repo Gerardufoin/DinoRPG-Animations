@@ -55,9 +55,40 @@ export class PartManager {
 		if (part.ref) {
 			// If the part has a reference, it is final and the element can be instantiated
 			return PartManager.getElement(part, partsDetail, palette, scale, scaling, parentTransform);
-		} else if (part.partIdx !== undefined && part.frames !== undefined) {
+		} else if (part.animation && part.parts) {
+			// If the part is an animation, set the animation and get its parts for instantiation
+			let anim = new Animation(scale);
+			anim.setAnimation(part.animation);
+			const partsScaling = PartManager.getAnimationScaling(part.animation);
+			for (const pName in part.parts) {
+				const element = PartManager.createPart(
+					part.parts[pName],
+					partsDetail,
+					palette,
+					scale,
+					scaling * (partsScaling[pName] ?? 1)
+				);
+				if (element) {
+					anim.addPart(pName, element);
+				}
+			}
+			if (part.transform) {
+				anim.transform.setFromMatrix(PixiHelper.matrixFromObject(part.transform));
+			}
+			if (part.alpha) {
+				anim.alpha = part.alpha;
+			}
+			if (part.masks) {
+				anim.setMasks(part.masks);
+			}
+			anim.filters = PartManager.createPartFilters(part);
+			return anim;
+		} else if (part.parts) {
+			let idx = 0;
 			// If the part has a partIdx, get the correct sub-part to instantiate
-			let idx = part.frames[partsDetail[part.partIdx] % part.frames.length];
+			if (part.partIdx !== undefined && part.frames !== undefined) {
+				idx = part.frames[partsDetail[part.partIdx] % part.frames.length];
+			}
 			// We add the current part transform to the parentTransform
 			const currentTransform = parentTransform.clone();
 			if (part.transform) {
@@ -92,34 +123,6 @@ export class PartManager {
 					return cont;
 				}
 			}
-		} else if (part.animation && part.parts) {
-			// If the part is an animation, set the animation and get its parts for instantiation
-			let anim = new Animation(scale);
-			anim.setAnimation(part.animation);
-			const partsScaling = PartManager.getAnimationScaling(part.animation);
-			for (const pName in part.parts) {
-				const element = PartManager.createPart(
-					part.parts[pName],
-					partsDetail,
-					palette,
-					scale,
-					scaling * (partsScaling[pName] ?? 1)
-				);
-				if (element) {
-					anim.addPart(pName, element);
-				}
-			}
-			if (part.transform) {
-				anim.transform.setFromMatrix(PixiHelper.matrixFromObject(part.transform));
-			}
-			if (part.alpha) {
-				anim.alpha = part.alpha;
-			}
-			if (part.masks) {
-				anim.setMasks(part.masks);
-			}
-			anim.filters = PartManager.createPartFilters(part);
-			return anim;
 		}
 		return null;
 	}

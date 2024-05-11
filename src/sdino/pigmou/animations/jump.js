@@ -1,13 +1,13 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'pigmou_jump',
 	callbacks: {
 		2: [['stop']]
 	},
 	frames: [
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 9.8,
 				ty: 5.6,
 				a: 1.116,
@@ -23,7 +23,7 @@ export let jump = {
 				c: 0.334,
 				d: 1.086
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 1.3,
 				ty: 7.65,
 				a: 1.057,
@@ -43,7 +43,7 @@ export let jump = {
 				tx: 9.9,
 				ty: -2.3
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -5.85,
 				ty: 4.6,
 				a: 1.134,
@@ -53,7 +53,7 @@ export let jump = {
 			}
 		},
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 9.5,
 				ty: 4.2,
 				a: 1.115,
@@ -69,7 +69,7 @@ export let jump = {
 				c: 0.555,
 				d: 0.989
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 1.85,
 				ty: 6.15,
 				a: 0.911,
@@ -93,7 +93,7 @@ export let jump = {
 				c: -0.383,
 				d: 0.924
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -4.05,
 				ty: 3.5,
 				a: 1.076,
@@ -103,7 +103,7 @@ export let jump = {
 			}
 		},
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 9.2,
 				ty: 2.7,
 				a: 1.116,
@@ -119,7 +119,7 @@ export let jump = {
 				c: 0.754,
 				d: 0.848
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 2.45,
 				ty: 4.65,
 				a: 0.707,
@@ -143,7 +143,7 @@ export let jump = {
 				c: -0.707,
 				d: 0.707
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -2.4,
 				ty: 2.5,
 				a: 0.945,

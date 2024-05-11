@@ -112,8 +112,6 @@ const right_leg_hurt = {
 };
 // 142
 const tail = {
-	partIdx: 5,
-	frames: [0],
 	parts: [
 		[
 			// 139
@@ -186,7 +184,7 @@ const body_muscular = [
 			[
 				// 155
 				{
-					ref: ref.moueffe.hurt_scratch,
+					ref: ref.hurt.scratch,
 					transform: {
 						tx: -18.2,
 						ty: 7.1
@@ -275,7 +273,7 @@ const body_fat = [
 			[
 				// 155
 				{
-					ref: ref.moueffe.hurt_scratch,
+					ref: ref.hurt.scratch,
 					transform: {
 						tx: -18.85,
 						ty: -0.6
@@ -311,7 +309,7 @@ const body_fat = [
 				},
 				// 155
 				{
-					ref: ref.moueffe.hurt_scratch,
+					ref: ref.hurt.scratch,
 					transform: {
 						tx: -1.45,
 						ty: 7.8
@@ -1109,7 +1107,7 @@ export const parts_big = {
 						parts: [
 							// 155
 							{
-								ref: ref.moueffe.hurt_scratch,
+								ref: ref.hurt.scratch,
 								transform: {
 									tx: -4.8,
 									ty: -5.5,
@@ -1173,7 +1171,7 @@ export const parts_big = {
 						parts: [
 							// 155
 							{
-								ref: ref.moueffe.hurt_scratch,
+								ref: ref.hurt.scratch,
 								transform: {
 									tx: -8.65,
 									ty: -16.1,

@@ -9,7 +9,7 @@ import { attack } from './animations/attack.js';
 import { dead } from './animations/dead.js';
 import { release } from './animations/release.js';
 import { fx_dust } from '../../gfx/fx/attach/smoke/dust.js';
-import { ref } from '../references_small.js';
+import { ref as ref_small } from '../references_small.js';
 import { ref as ref_big } from '../references_big.js';
 import { parts_small } from './parts_small.js';
 import { portrait } from './animations/portrait.js';
@@ -253,7 +253,7 @@ export const moueffe = {
 			strength: 0.3
 		},
 		shadow: {
-			ref: ref.fx.shadow,
+			ref: ref_small.fx.shadow,
 			transform: {
 				tx: -0.8,
 				ty: 0,
@@ -297,31 +297,31 @@ export const moueffe = {
 			// 146
 			fx_impact_1: [
 				{
-					ref: ref.fx.impact_1
+					ref: ref_small.fx.impact_1
 				}
 			],
 			// 147
 			fx_impact_2: [
 				{
-					ref: ref.fx.impact_2
+					ref: ref_small.fx.impact_2
 				}
 			],
 			// 148
 			fx_impact_3: [
 				{
-					ref: ref.fx.impact_3
+					ref: ref_small.fx.impact_3
 				}
 			],
 			// 149
 			fx_impact_4: [
 				{
-					ref: ref.fx.impact_4
+					ref: ref_small.fx.impact_4
 				}
 			],
 			// 150
 			fx_impact_5: [
 				{
-					ref: ref.fx.impact_5
+					ref: ref_small.fx.impact_5
 				}
 			],
 			// 154

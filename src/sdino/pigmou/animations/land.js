@@ -1,6 +1,6 @@
 // @ts-check
 
-export let land = {
+export const land = {
 	id: 'pigmou_land',
 	callbacks: {
 		1: [
@@ -11,7 +11,7 @@ export let land = {
 	},
 	frames: [
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 7,
 				ty: 4.95,
 				a: 1.135,
@@ -27,7 +27,7 @@ export let land = {
 				c: 0.624,
 				d: 0.947
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 0.05,
 				ty: 5.9,
 				a: 0.827,
@@ -51,7 +51,7 @@ export let land = {
 				c: -0.801,
 				d: 0.598
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -4.4,
 				ty: 3.05,
 				a: 1.025,
@@ -61,7 +61,7 @@ export let land = {
 			}
 		},
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 10.4,
 				ty: 5.6,
 				a: 1.116,
@@ -77,7 +77,7 @@ export let land = {
 				c: 0.334,
 				d: 1.086
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 2.2,
 				ty: 7.65,
 				a: 1.057,
@@ -97,7 +97,7 @@ export let land = {
 				tx: 9.9,
 				ty: -2.3
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -6.55,
 				ty: 4.6,
 				a: 1.134,
@@ -107,7 +107,7 @@ export let land = {
 			}
 		},
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 9.8,
 				ty: 5.65,
 				a: 1.115,
@@ -123,7 +123,7 @@ export let land = {
 				c: 0.333,
 				d: 1.085
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 1.55,
 				ty: 7.65,
 				a: 1.055,
@@ -143,7 +143,7 @@ export let land = {
 				tx: 9.9,
 				ty: -3.15
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -5.95,
 				ty: 4.85,
 				a: 1.134,
@@ -153,7 +153,7 @@ export let land = {
 			}
 		},
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 9.2,
 				ty: 5.6,
 				a: 1.116,
@@ -169,7 +169,7 @@ export let land = {
 				c: 0.334,
 				d: 1.086
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 0.9,
 				ty: 7.65,
 				a: 1.057,
@@ -189,7 +189,7 @@ export let land = {
 				tx: 9.9,
 				ty: -4
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -5.35,
 				ty: 5.1,
 				a: 1.134,
@@ -199,7 +199,7 @@ export let land = {
 			}
 		},
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 9.2,
 				ty: 5.6,
 				a: 1.116,
@@ -215,7 +215,7 @@ export let land = {
 				c: 0.334,
 				d: 1.086
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 0.9,
 				ty: 7.65,
 				a: 1.057,
@@ -235,7 +235,7 @@ export let land = {
 				tx: 9.9,
 				ty: -4
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -5.35,
 				ty: 5.1,
 				a: 1.134,
@@ -245,7 +245,7 @@ export let land = {
 			}
 		},
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 9.2,
 				ty: 5.6,
 				a: 1.116,
@@ -261,7 +261,7 @@ export let land = {
 				c: 0.334,
 				d: 1.086
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 0.9,
 				ty: 7.65,
 				a: 1.057,
@@ -281,7 +281,7 @@ export let land = {
 				tx: 9.9,
 				ty: -4
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -5.35,
 				ty: 5.1,
 				a: 1.134,

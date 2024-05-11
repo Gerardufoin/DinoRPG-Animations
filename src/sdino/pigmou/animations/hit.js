@@ -1,10 +1,10 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'pigmou_hit',
 	frames: [
 		{
-			back_left_leg: {
+			b_l_leg: {
 				tx: 9.45,
 				ty: 6.7,
 				a: 1.075,
@@ -20,7 +20,7 @@ export let hit = {
 				c: 0.334,
 				d: 1.086
 			},
-			front_left_leg: {
+			f_l_leg: {
 				tx: 1.45,
 				ty: 7.2,
 				a: 1.057,
@@ -44,7 +44,7 @@ export let hit = {
 				c: -0.259,
 				d: 0.966
 			},
-			front_right_leg: {
+			f_r_leg: {
 				tx: -3.3,
 				ty: 4.65,
 				a: 1.134,

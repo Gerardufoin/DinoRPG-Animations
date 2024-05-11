@@ -1,10 +1,11 @@
 /* eslint-disable */
-const values = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const dinoValues = '01';
+const values = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 /**
  * Get dinoz as a still image tag
  */
 function randomDinoPortrait() {
-	let code = '0';
+	let code = dinoValues.charAt(Math.floor(Math.random() * dinoValues.length));
 	code += values.charAt(Math.floor(Math.random() * 11));
 	// 7 next = body part
 	// 4 next = color
@@ -19,10 +20,18 @@ function randomDinoPortrait() {
 	code += '0';
 	new DinoAnim.dino({
 		data: code,
+		damages: Math.random() < 0.1 ? 1 : Math.random() < 0.1 ? 2 : 0,
 		flip: 1
-	}).toImage((div) => {
-		document.body.appendChild(div);
-	});
+	}).toImage(
+		(div) => {
+			document.body.appendChild(div);
+			div.onclick = () => {
+				console.log(code);
+			};
+		},
+		210,
+		165
+	);
 }
 
 for (let i = 0; i < 500; ++i) {

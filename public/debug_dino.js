@@ -70,24 +70,26 @@ function addDinoz(data, showOrigin = false) {
 }
 
 // Dragon Jr
-addDinoz('0915873G01220110', true);
+addDinoz('09T1Yt9wqq4Rx000', true);
 
 // Moueffe
-addDinoz('0813611605200000', true);
+/*addDinoz('0813611605200000', true);
 addDinoz('09w7y7qqpdhld000');
 addDinoz('09adQBgO8T065000');
 addDinoz('09vGg4LW1S9fn000');
 addDinoz('0A8uYQDU0FywV000'); // Krapassa
 addDinoz('0AcokGzWsf6WP000'); // Shamak
-addDinoz('0An2HcXN9sl3m000'); // Krazablue
+addDinoz('0An2HcXN9sl3m000'); // Krazablue*/
 // Pigmou
-//addDinoz('19hot0hFbItLS000');
-/*addDinoz('199zX1Jn1zGXG000');
+addDinoz('19hot0hFbItLS000', true);
+addDinoz('199zX1Jn1zGXG000');
 addDinoz('191okqcRZdgVi000');
 addDinoz('19VSfUdpIPb0a000');
-addDinoz('1AADFvpotbA6y000');*/
+addDinoz('19DHt2Szqam4y000');
+addDinoz('19oNVXoAYgPUI000');
+addDinoz('1AADFvpotbA6y000');
 // Winks
-/*addDinoz('29yp89zwHWlmC000');
+/*addDinoz('29yp89zwHWlmC000', true);
 addDinoz('29VRA00KtkGM1000');
 addDinoz('292lB2TF3D1Cz000');
 addDinoz('29jH6Z7YjJdw5110');
@@ -96,7 +98,7 @@ addDinoz('2ADTmPjGH4lLO000');
 addDinoz('2AIhcx2YC9ksv000');
 addDinoz('2AGVenN21FGJk000');*/
 // Planaile
-//addDinoz('393YRrXntzpn0000');
+//addDinoz('393YRrXntzpn0000', true);
 /*addDinoz('39aT8YQ12Sl3w000');
 addDinoz('39EEr8m1HSfK8000');
 addDinoz('39ANSxwXXTvUr000');
@@ -105,7 +107,7 @@ addDinoz('39SOHSjXu8FZM000');
 addDinoz('39uuvDuEYohCG000');
 addDinoz('3ArpIB2f2t2Ww000');*/
 // Castivore
-//addDinoz('49hwJCDfbel16000');
+//addDinoz('49hwJCDfbel16000', true);
 /*addDinoz('49BsLby0mZF6k000');
 addDinoz('49uvrkF8dPrOS000');
 addDinoz('49SES7eSLrk1C000');
