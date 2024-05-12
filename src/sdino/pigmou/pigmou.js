@@ -115,6 +115,9 @@ export const pigmou = {
 			alpha: 0.289,
 			blur: { x: 10, y: 0 }
 		},
+		accessories: {
+			horn_fires: parts_big.horns_fire
+		},
 		parts: {
 			// 307_p6b
 			l_f_leg: parts_big.left_front_leg,

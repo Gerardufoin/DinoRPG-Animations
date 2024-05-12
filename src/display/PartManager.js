@@ -262,9 +262,10 @@ export class PartManager {
 	 * Get the expected scaling for a single animation.
 	 * @param {{id: string, callbacks?: object, expectedScaling?: object, frames: Array, anim?: object, offset?: number}} animation The animation to analyse.
 	 * @param {{[id: string]: number} | {}} currentScaling The current scales for the parts.
+	 * @param {number} startIdx Which frames to start looking for scalings. 0 by default.
 	 * @returns {{[id: string]: number}} The expected scaling for each parts.
 	 */
-	static getAnimationScaling(animation, currentScaling = undefined) {
+	static getAnimationScaling(animation, currentScaling = undefined, startIdx = 0) {
 		const partsScaling = currentScaling ?? {};
 		if (animation.anim) {
 			animation = animation.anim;
@@ -275,10 +276,14 @@ export class PartManager {
 				partsScaling[k] = animation.expectedScaling[k];
 			}
 		}
-		for (const f of animation.frames) {
-			for (const k in f) {
-				if (partsScaling[k] === undefined) {
-					partsScaling[k] = PartManager.transformToScale(f[k]);
+		if (animation.frames && animation.frames.length > 0) {
+			startIdx = startIdx % animation.frames.length;
+			for (let i = startIdx; i < animation.frames.length; ++i) {
+				const f = animation.frames[i];
+				for (const k in f) {
+					if (partsScaling[k] === undefined) {
+						partsScaling[k] = PartManager.transformToScale(f[k]);
+					}
 				}
 			}
 		}
@@ -288,13 +293,14 @@ export class PartManager {
 	/**
 	 * Get the expected scaling for each part of the dino.
 	 * @param {{[id: string]: {id: string, callbacks: object, frames: Array}}} animations The animation to analyse.
+	 * @param {number} startIdx Which frames of the stand animation to start taking the scalings from. 0 by default.
 	 * @returns {{[id: string]: number} | {}} The expected scaling for each parts.
 	 */
-	static getAnimationsScaling(animations) {
+	static getAnimationsScaling(animations, startIdx = 0) {
 		if (!animations) return {};
 		let partsScaling = {};
 		if (animations.stand) {
-			partsScaling = PartManager.getAnimationScaling(animations.stand, partsScaling);
+			partsScaling = PartManager.getAnimationScaling(animations.stand, partsScaling, startIdx);
 		}
 		for (const p in animations) {
 			if (p != 'stand') {

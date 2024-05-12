@@ -140,7 +140,8 @@ export class ADino extends Animator {
 			this.setBodyTransforms(this.dinoInfos.transforms, dParts);
 		}
 		const scaling = Math.max(this._body.scale.x, this._body.scale.y);
-		const partsScaling = PartManager.getAnimationsScaling(this.dinoInfos.animations);
+		// If this is a big dino, the part scaling change depending on the parameter at idx 1, which is the dino growing or if it is a demon.
+		const partsScaling = PartManager.getAnimationsScaling(this.dinoInfos.animations, this._big ? dParts[1] : 0);
 		for (let pName in this.dinoInfos.parts) {
 			let part = PartManager.createPart(
 				this.dinoInfos.parts[pName],
@@ -157,6 +158,21 @@ export class ADino extends Animator {
 			const shadow = PartManager.getSubPart(this.dinoInfos.shadow, dParts, this._palette, this._body._scale);
 			if (shadow) {
 				this.addChildAt(shadow, 0);
+			}
+		}
+		// Accessories are added at the top layer of the dino and are not affected by the body glow
+		if (this.dinoInfos.accessories) {
+			for (let pName in this.dinoInfos.accessories) {
+				const part = PartManager.createPart(
+					this.dinoInfos.accessories[pName],
+					dParts,
+					this._palette,
+					this._body._scale,
+					scaling * (partsScaling[pName] ?? 1)
+				);
+				if (part) {
+					this.addChild(part);
+				}
 			}
 		}
 		if (this.dinoInfos.glow) {

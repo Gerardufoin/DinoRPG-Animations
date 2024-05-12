@@ -3,6 +3,12 @@
 import { BLEND_MODES } from 'pixi.js';
 import { ref } from '../references_big.js';
 
+export const demon_glow = {
+	distance: 5,
+	color: 0xff0000,
+	strength: 2,
+	quality: 0.5
+};
 const demon_array = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0];
 // 87
 const right_arm = [
@@ -353,12 +359,7 @@ const head_smile = [
 					tx: -7.55,
 					ty: -2.45
 				},
-				glow: {
-					distance: 5,
-					color: 0xff0000,
-					strength: 1,
-					quality: 0.5
-				}
+				glow: demon_glow
 			}
 		]
 	},
@@ -413,12 +414,7 @@ const head_puff = [
 			// 222
 			{
 				ref: ref.moueffe.head_puff_eyes_demon,
-				glow: {
-					distance: 5,
-					color: 0xff0000,
-					strength: 1,
-					quality: 0.5
-				}
+				glow: demon_glow
 			}
 		]
 	},
@@ -1273,12 +1269,7 @@ export const parts_big = {
 										tx: 1.45,
 										ty: 0.45
 									},
-									glow: {
-										distance: 5,
-										color: 0xff0000,
-										strength: 2,
-										quality: 0.5
-									}
+									glow: demon_glow
 								}
 							]
 						]
@@ -1376,12 +1367,7 @@ export const parts_big = {
 									tx: -7.55,
 									ty: -2.45
 								},
-								glow: {
-									distance: 5,
-									color: 0xff0000,
-									strength: 1,
-									quality: 0.5
-								}
+								glow: demon_glow
 							}
 						]
 					},
