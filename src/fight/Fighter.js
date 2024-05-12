@@ -288,6 +288,20 @@ export class Fighter extends Phys {
 		return this._flFly;
 	}
 	/**
+	 * If true, the Fighter will not update the fly status even while having it.
+	 * To use with skill which needs the Fighters to hit the ground, ex. Tornado.
+	 * @type {boolean}
+	 */
+	_pauseFlying = false;
+	/**
+	 * Pause or resume a Fighter flying animation.
+	 * Do not forget to resume it if paused, it will not happend automatically.
+	 * @type {boolean}
+	 */
+	set pauseFlying(v) {
+		this._pauseFlying = v;
+	}
+	/**
 	 * States if the Fighter is currently in the landing process or not.
 	 * @type {boolean}
 	 */
@@ -965,7 +979,7 @@ export class Fighter extends Phys {
 					}
 					break;
 				case FighterStatus.Fly:
-					{
+					if (!this._pauseFlying) {
 						const tz = Math.sin(this._decal * 0.01) * 15 - 60;
 						const dz = tz - this._z;
 						var lim = 3;

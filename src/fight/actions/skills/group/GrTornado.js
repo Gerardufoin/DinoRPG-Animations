@@ -86,6 +86,7 @@ export class GrTornado extends GroupEffect {
 							f.fighter._vy = 0;
 							f.fighter._vz = 0;
 							f.fighter.damages(f.life, 20, { fx: LifeEffect.Air });
+							f.fighter.pauseFlying = false;
 							return false;
 						}
 					}
@@ -115,6 +116,7 @@ export class GrTornado extends GroupEffect {
 		this._scene.dm.addSprite(this._tornado, Layers.Scene.FIGHTERS);
 		for (const t of this._targets) {
 			if (t.life !== null) {
+				t.fighter.pauseFlying = true;
 				this._flyers.push({
 					fighter: t.fighter,
 					angle: t.fighter.getAng(this._tornado.position),
