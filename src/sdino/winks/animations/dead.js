@@ -1,13 +1,13 @@
 // @ts-check
 
-export let dead = {
+export const dead = {
 	id: 'winks_dead',
 	callbacks: {
 		12: [['stop']]
 	},
 	frames: [
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -9.15,
 				ty: -5.4,
 				a: 0.966,
@@ -15,7 +15,7 @@ export let dead = {
 				c: 0.259,
 				d: 0.966
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -8.35,
 				ty: -4.8,
 				a: 0.966,
@@ -23,7 +23,7 @@ export let dead = {
 				c: 0.259,
 				d: 0.966
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -9.65,
 				ty: -5.7,
 				a: 0.966,
@@ -39,7 +39,7 @@ export let dead = {
 				tx: 1.6,
 				ty: -2.4
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -16.35,
 				ty: -14.85,
 				a: 0.993,
@@ -47,7 +47,7 @@ export let dead = {
 				c: -0.114,
 				d: 0.993
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -15.75,
 				ty: -17.05,
 				a: 0.966,
@@ -55,13 +55,13 @@ export let dead = {
 				c: -0.259,
 				d: 0.966
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -17.9,
 				ty: -15.45
 			}
 		},
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -12.1,
 				ty: 1.55,
 				a: 0.853,
@@ -69,7 +69,7 @@ export let dead = {
 				c: 0.519,
 				d: 0.853
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -9.55,
 				ty: 2.75,
 				a: 0.806,
@@ -77,7 +77,7 @@ export let dead = {
 				c: 0.588,
 				d: 0.806
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -11.8,
 				ty: -6.45,
 				a: 0.995,
@@ -93,7 +93,7 @@ export let dead = {
 				tx: -1,
 				ty: -1.1
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -17.5,
 				ty: -13.95,
 				a: 0.971,
@@ -101,7 +101,7 @@ export let dead = {
 				c: -0.234,
 				d: 0.971
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -14.35,
 				ty: -17.9,
 				a: 0.87,
@@ -109,7 +109,7 @@ export let dead = {
 				c: -0.489,
 				d: 0.87
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -18.3,
 				ty: -6.55,
 				a: 0.899,
@@ -119,7 +119,7 @@ export let dead = {
 			}
 		},
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -13.9,
 				ty: 8.8,
 				a: 0.669,
@@ -127,7 +127,7 @@ export let dead = {
 				c: 0.74,
 				d: 0.669
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -8.45,
 				ty: 10.65,
 				a: 0.537,
@@ -135,7 +135,7 @@ export let dead = {
 				c: 0.84,
 				d: 0.537
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -13.5,
 				ty: -6.9,
 				a: 0.996,
@@ -151,7 +151,7 @@ export let dead = {
 				tx: -3.65,
 				ty: 0.25
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -18.4,
 				ty: -13,
 				a: 0.933,
@@ -159,7 +159,7 @@ export let dead = {
 				c: -0.355,
 				d: 0.933
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -12.55,
 				ty: -17.65,
 				a: 0.719,
@@ -167,7 +167,7 @@ export let dead = {
 				c: -0.691,
 				d: 0.719
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -15.5,
 				ty: 3.35,
 				a: 0.616,
@@ -177,7 +177,7 @@ export let dead = {
 			}
 		},
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -14.3,
 				ty: 15.95,
 				a: 0.431,
@@ -185,7 +185,7 @@ export let dead = {
 				c: 0.9,
 				d: 0.431
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -5.05,
 				ty: 18.05,
 				a: 0.195,
@@ -193,7 +193,7 @@ export let dead = {
 				c: 0.978,
 				d: 0.195
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -15,
 				ty: -6.9,
 				a: 0.969,
@@ -209,7 +209,7 @@ export let dead = {
 				tx: -6.25,
 				ty: 1.55
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -19.15,
 				ty: -11.8,
 				a: 0.88,
@@ -217,7 +217,7 @@ export let dead = {
 				c: -0.469,
 				d: 0.88
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -10.7,
 				ty: -16.35,
 				a: 0.523,
@@ -225,7 +225,7 @@ export let dead = {
 				c: -0.849,
 				d: 0.523
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -9.3,
 				ty: 12.65,
 				a: 0.212,
@@ -235,7 +235,7 @@ export let dead = {
 			}
 		},
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -14.65,
 				ty: 22,
 				a: 0.161,
@@ -243,7 +243,7 @@ export let dead = {
 				c: 0.986,
 				d: 0.161
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: 0.05,
 				ty: 24.55,
 				a: -0.17,
@@ -251,7 +251,7 @@ export let dead = {
 				c: 0.983,
 				d: -0.17
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -16.2,
 				ty: -6.6,
 				a: 0.915,
@@ -267,7 +267,7 @@ export let dead = {
 				tx: -8.9,
 				ty: 2.85
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -19.1,
 				ty: -10.6,
 				a: 0.814,
@@ -275,7 +275,7 @@ export let dead = {
 				c: -0.578,
 				d: 0.814
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -8.9,
 				ty: -14.1,
 				a: 0.297,
@@ -283,7 +283,7 @@ export let dead = {
 				c: -0.953,
 				d: 0.297
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -0.8,
 				ty: 20.2,
 				a: -0.234,
@@ -293,7 +293,7 @@ export let dead = {
 			}
 		},
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -15.95,
 				ty: 21.75,
 				a: 0.161,
@@ -301,7 +301,7 @@ export let dead = {
 				c: 0.985,
 				d: 0.161
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -3.15,
 				ty: 23.8,
 				a: -0.092,
@@ -309,7 +309,7 @@ export let dead = {
 				c: 0.993,
 				d: -0.092
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -18.65,
 				ty: -6.7,
 				a: 0.945,
@@ -325,7 +325,7 @@ export let dead = {
 				tx: -10,
 				ty: 2
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -21.8,
 				ty: -11.05,
 				a: 0.864,
@@ -333,7 +333,7 @@ export let dead = {
 				c: -0.495,
 				d: 0.864
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -11.35,
 				ty: -15.15,
 				a: 0.378,
@@ -341,7 +341,7 @@ export let dead = {
 				c: -0.922,
 				d: 0.378
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -3,
 				ty: 19.55,
 				a: -0.166,
@@ -351,7 +351,7 @@ export let dead = {
 			}
 		},
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -17.2,
 				ty: 21.5,
 				a: 0.161,
@@ -359,7 +359,7 @@ export let dead = {
 				c: 0.985,
 				d: 0.161
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -6.25,
 				ty: 23,
 				a: -0.014,
@@ -367,7 +367,7 @@ export let dead = {
 				c: 0.997,
 				d: -0.014
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -21.1,
 				ty: -6.8,
 				a: 0.97,
@@ -383,7 +383,7 @@ export let dead = {
 				tx: -11.05,
 				ty: 1.1
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -24.45,
 				ty: -11.3,
 				a: 0.909,
@@ -391,7 +391,7 @@ export let dead = {
 				c: -0.406,
 				d: 0.909
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -13.85,
 				ty: -16.15,
 				a: 0.457,
@@ -399,7 +399,7 @@ export let dead = {
 				c: -0.885,
 				d: 0.457
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -5.15,
 				ty: 18.8,
 				a: -0.1,
@@ -409,7 +409,7 @@ export let dead = {
 			}
 		},
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -18.45,
 				ty: 21.3,
 				a: 0.161,
@@ -417,7 +417,7 @@ export let dead = {
 				c: 0.985,
 				d: 0.161
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -9.25,
 				ty: 22.1,
 				a: 0.061,
@@ -425,7 +425,7 @@ export let dead = {
 				c: 0.995,
 				d: 0.061
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -23.4,
 				ty: -6.85,
 				a: 0.986,
@@ -441,7 +441,7 @@ export let dead = {
 				tx: -12.15,
 				ty: 0.25
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -27.05,
 				ty: -11.5,
 				a: 0.944,
@@ -449,7 +449,7 @@ export let dead = {
 				c: -0.317,
 				d: 0.944
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -16.35,
 				ty: -17.05,
 				a: 0.532,
@@ -457,7 +457,7 @@ export let dead = {
 				c: -0.841,
 				d: 0.532
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -7.3,
 				ty: 17.95,
 				a: -0.031,
@@ -467,7 +467,7 @@ export let dead = {
 			}
 		},
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -19.05,
 				ty: 20.25,
 				a: 0.161,
@@ -475,7 +475,7 @@ export let dead = {
 				c: 0.985,
 				d: 0.161
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -11.75,
 				ty: 20.95,
 				a: 0.139,
@@ -483,7 +483,7 @@ export let dead = {
 				c: 0.987,
 				d: 0.139
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -25.55,
 				ty: -6.8,
 				a: 0.995,
@@ -499,7 +499,7 @@ export let dead = {
 				tx: -13.25,
 				ty: -0.65
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -29.5,
 				ty: -11.55,
 				a: 0.97,
@@ -507,7 +507,7 @@ export let dead = {
 				c: -0.224,
 				d: 0.97
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -19,
 				ty: -17.45,
 				a: 0.605,
@@ -515,7 +515,7 @@ export let dead = {
 				c: -0.792,
 				d: 0.605
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -8.75,
 				ty: 17.15,
 				a: 0.035,
@@ -525,7 +525,7 @@ export let dead = {
 			}
 		},
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -20.1,
 				ty: 20.4,
 				a: 0.161,
@@ -533,7 +533,7 @@ export let dead = {
 				c: 0.985,
 				d: 0.161
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -10.85,
 				ty: 21.85,
 				a: 0.061,
@@ -541,7 +541,7 @@ export let dead = {
 				c: 0.995,
 				d: 0.061
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -25.45,
 				ty: -6.95,
 				a: 0.986,
@@ -561,7 +561,7 @@ export let dead = {
 				tx: -14.35,
 				ty: 0.25
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -29.15,
 				ty: -11.5,
 				a: 0.944,
@@ -569,7 +569,7 @@ export let dead = {
 				c: -0.317,
 				d: 0.944
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -18.8,
 				ty: -16.65,
 				a: 0.532,
@@ -577,7 +577,7 @@ export let dead = {
 				c: -0.841,
 				d: 0.532
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -9,
 				ty: 17.95,
 				a: -0.031,
@@ -587,7 +587,7 @@ export let dead = {
 			}
 		},
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -21.15,
 				ty: 20.5,
 				a: 0.161,
@@ -595,7 +595,7 @@ export let dead = {
 				c: 0.985,
 				d: 0.161
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -9.95,
 				ty: 22.75,
 				a: -0.014,
@@ -603,7 +603,7 @@ export let dead = {
 				c: 0.997,
 				d: -0.014
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -25.25,
 				ty: -6.9,
 				a: 0.97,
@@ -623,7 +623,7 @@ export let dead = {
 				tx: -15.45,
 				ty: 1.1
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -28.75,
 				ty: -11.35,
 				a: 0.909,
@@ -631,7 +631,7 @@ export let dead = {
 				c: -0.406,
 				d: 0.909
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -18.6,
 				ty: -15.9,
 				a: 0.457,
@@ -639,7 +639,7 @@ export let dead = {
 				c: -0.885,
 				d: 0.457
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -9.15,
 				ty: 18.8,
 				a: -0.1,
@@ -649,7 +649,7 @@ export let dead = {
 			}
 		},
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -22.25,
 				ty: 20.65,
 				a: 0.161,
@@ -657,7 +657,7 @@ export let dead = {
 				c: 0.985,
 				d: 0.161
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -8.9,
 				ty: 23.5,
 				a: -0.092,
@@ -665,7 +665,7 @@ export let dead = {
 				c: 0.993,
 				d: -0.092
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -25.05,
 				ty: -6.85,
 				a: 0.945,
@@ -685,7 +685,7 @@ export let dead = {
 				tx: -16.55,
 				ty: 2
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -28.2,
 				ty: -11.05,
 				a: 0.864,
@@ -693,7 +693,7 @@ export let dead = {
 				c: -0.495,
 				d: 0.864
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -18.45,
 				ty: -14.85,
 				a: 0.378,
@@ -701,7 +701,7 @@ export let dead = {
 				c: -0.922,
 				d: 0.378
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -9.35,
 				ty: 19.4,
 				a: -0.166,
@@ -711,7 +711,7 @@ export let dead = {
 			}
 		},
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -23.4,
 				ty: 22,
 				a: 0.161,
@@ -719,7 +719,7 @@ export let dead = {
 				c: 0.986,
 				d: 0.161
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -8.7,
 				ty: 24.55,
 				a: -0.17,
@@ -727,7 +727,7 @@ export let dead = {
 				c: 0.983,
 				d: -0.17
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -24.95,
 				ty: -6.6,
 				a: 0.915,
@@ -747,7 +747,7 @@ export let dead = {
 				tx: -17.65,
 				ty: 2.85
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -27.85,
 				ty: -10.6,
 				a: 0.814,
@@ -755,7 +755,7 @@ export let dead = {
 				c: -0.578,
 				d: 0.814
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -17.65,
 				ty: -14.1,
 				a: 0.297,
@@ -763,7 +763,7 @@ export let dead = {
 				c: -0.953,
 				d: 0.297
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -9.55,
 				ty: 20.2,
 				a: -0.234,

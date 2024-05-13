@@ -1,10 +1,10 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'winks_hit',
 	frames: [
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -14.25,
 				ty: -7.65,
 				a: 0.927,
@@ -12,7 +12,7 @@ export let hit = {
 				c: 0.371,
 				d: 0.927
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -11.45,
 				ty: -1.9,
 				a: 0.855,
@@ -20,7 +20,7 @@ export let hit = {
 				c: 0.516,
 				d: 0.855
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -4.25,
 				ty: -16.6,
 				a: 0.839,
@@ -40,7 +40,7 @@ export let hit = {
 				c: -0.419,
 				d: 0.907
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -23.3,
 				ty: -17,
 				a: 0.915,
@@ -48,7 +48,7 @@ export let hit = {
 				c: 0.4,
 				d: 0.915
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -7.05,
 				ty: -22.95,
 				a: 0.598,
@@ -56,7 +56,7 @@ export let hit = {
 				c: -0.799,
 				d: 0.598
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -19.65,
 				ty: -19.45
 			}

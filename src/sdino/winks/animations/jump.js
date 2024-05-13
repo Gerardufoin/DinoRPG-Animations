@@ -1,13 +1,13 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'winks_jump',
 	callbacks: {
 		1: [['stop']]
 	},
 	frames: [
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -8.4,
 				ty: -2.1,
 				a: 0.897,
@@ -15,7 +15,7 @@ export let jump = {
 				c: 0.439,
 				d: 0.897
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -5.35,
 				ty: 3.4,
 				a: 0.824,
@@ -23,7 +23,7 @@ export let jump = {
 				c: 0.563,
 				d: 0.824
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -12.6,
 				ty: 0.1,
 				a: 0.832,
@@ -39,7 +39,7 @@ export let jump = {
 				tx: 1.8,
 				ty: -0.85
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -10.5,
 				ty: -16.4,
 				a: 0.846,
@@ -47,7 +47,7 @@ export let jump = {
 				c: -0.53,
 				d: 0.846
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -11.1,
 				ty: -19.75,
 				a: 0.864,
@@ -55,7 +55,7 @@ export let jump = {
 				c: -0.5,
 				d: 0.864
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -13.35,
 				ty: -18.95,
 				a: 0.927,
@@ -65,7 +65,7 @@ export let jump = {
 			}
 		},
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -15.75,
 				ty: -7.6,
 				a: 0.897,
@@ -73,7 +73,7 @@ export let jump = {
 				c: 0.439,
 				d: 0.897
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -13.55,
 				ty: -3,
 				a: 0.824,
@@ -81,7 +81,7 @@ export let jump = {
 				c: 0.563,
 				d: 0.824
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -21.5,
 				ty: -4.75,
 				a: 0.616,
@@ -97,7 +97,7 @@ export let jump = {
 				tx: -3.5,
 				ty: -13.1
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -27.5,
 				ty: -10.8,
 				a: 0.801,
@@ -105,7 +105,7 @@ export let jump = {
 				c: 0.594,
 				d: 0.801
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -21.05,
 				ty: -15.9,
 				a: 0.992,
@@ -113,7 +113,7 @@ export let jump = {
 				c: 0.092,
 				d: 0.992
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -20.75,
 				ty: -14.05,
 				a: 0.975,

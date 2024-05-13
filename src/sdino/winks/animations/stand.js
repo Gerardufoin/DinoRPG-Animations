@@ -1,13 +1,13 @@
 // @ts-check
 
-export let stand = {
+export const stand = {
 	id: 'winks_stand',
 	callbacks: {
 		0: [['stop']]
 	},
 	frames: [
 		{
-			left_leg_2: {
+			l_l_2: {
 				tx: -9.15,
 				ty: -5.4,
 				a: 0.966,
@@ -15,7 +15,7 @@ export let stand = {
 				c: 0.259,
 				d: 0.966
 			},
-			left_leg_3: {
+			l_l_3: {
 				tx: -8.35,
 				ty: -4.8,
 				a: 0.966,
@@ -23,7 +23,7 @@ export let stand = {
 				c: 0.259,
 				d: 0.966
 			},
-			left_leg_1: {
+			l_l_1: {
 				tx: -9.65,
 				ty: -5.7,
 				a: 0.966,
@@ -39,7 +39,7 @@ export let stand = {
 				tx: 1.6,
 				ty: -2.4
 			},
-			right_leg_1: {
+			r_l_1: {
 				tx: -16.35,
 				ty: -14.85,
 				a: 0.993,
@@ -47,7 +47,7 @@ export let stand = {
 				c: -0.114,
 				d: 0.993
 			},
-			right_leg_2: {
+			r_l_2: {
 				tx: -15.75,
 				ty: -17.05,
 				a: 0.966,
@@ -55,7 +55,7 @@ export let stand = {
 				c: -0.259,
 				d: 0.966
 			},
-			right_leg_3: {
+			r_l_3: {
 				tx: -17.9,
 				ty: -15.45
 			}

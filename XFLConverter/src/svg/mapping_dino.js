@@ -208,5 +208,6 @@ export const mapping_dino = {
 	466: 'pigmou/mouth_closed_fangs_demon',
 	469: 'pigmou/mouth_small',
 	471: 'pigmou/mouth_kiss',
-	476: 'pigmou/horn_fire'
+	476: 'pigmou/horn_fire',
+	480: 'winks/shadow'
 };

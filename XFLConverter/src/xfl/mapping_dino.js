@@ -20,5 +20,17 @@ export const mapping_dino = {
 	'Symbol 349_p6a': 'r_f_leg',
 	'Symbol 414_p7': 'head',
 	'Symbol 455_p3': 'eyes',
-	'Symbol 473_p4': 'mouth'
+	'Symbol 473_p4': 'mouth',
+	// 642
+	'Symbol 486_p5f': 'r_l_3',
+	'Symbol 500_p5d': 'r_l_1',
+	'Symbol 508_p5e': 'r_l_2',
+	'Symbol 561_p3': 'body',
+	'Symbol 590_p4': 'eyes',
+	'Symbol 593_special': 'special',
+	'Symbol 605_p6': 'mouth',
+	'Symbol 614_p5a': 'l_l_1',
+	'Symbol 623_p5c': 'l_l_3',
+	'Symbol 639_p5b': 'l_l_2',
+	'Symbol 641_p5g': 'l_pincer'
 };

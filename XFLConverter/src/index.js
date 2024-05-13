@@ -36,6 +36,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/dino/LIBRARY/Symbol 294.xml', '_sub', undefined, 3); // moueffe
 //parser.parse('./resources/dino/LIBRARY/Symbol 474.xml', '_sub', undefined, 3); // pigmou
 //parser.parse('./resources/dino/LIBRARY/Symbol 478.xml', '_sub', undefined, 3); // pigmou horns fire
+//parser.parse('./resources/dino/LIBRARY/Symbol 642.xml', '_sub', undefined, 3); // winks
 
 //SMONSTER
 //parser.parse('./resources/smonster/LIBRARY/Symbol 4089.xml', 'smonster', undefined, 1); // smonster
