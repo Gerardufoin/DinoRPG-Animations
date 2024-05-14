@@ -2,7 +2,7 @@
 const allDinoz = [];
 let flashPreviewIdx = 0;
 let rufflePlayerLimit = 4;
-const damages = 0;
+const damages = 2;
 
 /**
  * Add a new embed flash player with the data of the dino, for comparison purposes.
@@ -81,22 +81,22 @@ addDinoz('0A8uYQDU0FywV000'); // Krapassa
 addDinoz('0AcokGzWsf6WP000'); // Shamak
 addDinoz('0An2HcXN9sl3m000'); // Krazablue*/
 // Pigmou
-addDinoz('19hot0hFbItLS000', true);
+/*addDinoz('19hot0hFbItLS000', true);
 addDinoz('199zX1Jn1zGXG000');
 addDinoz('191okqcRZdgVi000');
 addDinoz('19VSfUdpIPb0a000');
 addDinoz('19DHt2Szqam4y000');
 addDinoz('19oNVXoAYgPUI000');
-addDinoz('1AADFvpotbA6y000');
+addDinoz('1AADFvpotbA6y000');*/
 // Winks
-/*addDinoz('29yp89zwHWlmC000', true);
+addDinoz('29yp89zwHWlmC000', true);
 addDinoz('29VRA00KtkGM1000');
 addDinoz('292lB2TF3D1Cz000');
 addDinoz('29jH6Z7YjJdw5110');
 addDinoz('293DclwhG64Vd000');
 addDinoz('2ADTmPjGH4lLO000');
 addDinoz('2AIhcx2YC9ksv000');
-addDinoz('2AGVenN21FGJk000');*/
+addDinoz('2AGVenN21FGJk000');
 // Planaile
 //addDinoz('393YRrXntzpn0000', true);
 /*addDinoz('39aT8YQ12Sl3w000');

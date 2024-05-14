@@ -105,8 +105,8 @@ export const winks = {
 		shadow: {
 			ref: ref_big.winks.shadow,
 			transform: {
-				tx: -3.3,
-				ty: 34.05,
+				tx: -6.25,
+				ty: 48.5,
 				a: 0.765,
 				d: 1.435,
 				b: 0.027,
@@ -115,7 +115,30 @@ export const winks = {
 			alpha: 0.289,
 			blur: { x: 10, y: 0 }
 		},
-		parts: {},
+		parts: {
+			// 486_p5f
+			r_l_3: parts_big.right_leg_3,
+			// 500_p5d
+			r_l_1: parts_big.right_leg_1,
+			// 508_p5e
+			r_l_2: parts_big.right_leg_2,
+			// 561_p3
+			body: parts_big.body,
+			// 590_p4
+			eyes: parts_big.eyes,
+			// 593_special
+			special: parts_big.special,
+			// 605_p6
+			mouth: parts_big.mouth,
+			// 614_p5a
+			l_l_1: parts_big.left_leg_1,
+			// 623_p5c
+			l_l_3: parts_big.left_leg_3,
+			// 639_p5b
+			l_l_2: parts_big.left_leg_2,
+			// 641_p5g
+			l_pincer: parts_big.left_pincer
+		},
 		animations: {
 			// 642
 			stand: portrait
