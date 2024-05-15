@@ -1,5 +1,5 @@
 /* eslint-disable */
-const dinoValues = '01';
+const dinoValues = '012';
 const values = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 /**
  * Get dinoz as a still image tag

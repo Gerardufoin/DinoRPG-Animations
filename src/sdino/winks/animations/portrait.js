@@ -1344,10 +1344,6 @@ export const portrait = {
 			l_pincer: {
 				tx: 45.75,
 				ty: 9.5,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 10
 			},
 			l_l_2: {
@@ -1357,10 +1353,6 @@ export const portrait = {
 				b: -0.049,
 				c: 0.049,
 				d: 0.936,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 9
 			},
 			l_l_3: {
@@ -1370,10 +1362,6 @@ export const portrait = {
 				b: -0.049,
 				c: 0.049,
 				d: 0.936,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 8
 			},
 			l_l_1: {
@@ -1383,10 +1371,6 @@ export const portrait = {
 				b: -0.049,
 				c: 0.049,
 				d: 0.936,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 7
 			},
 			mouth: {
@@ -1396,10 +1380,6 @@ export const portrait = {
 				b: -0.049,
 				c: 0.049,
 				d: 0.936,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 6
 			},
 			special: {
@@ -1409,10 +1389,6 @@ export const portrait = {
 				b: -0.711,
 				c: 0.59,
 				d: 1.037,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 5
 			},
 			eyes: {
@@ -1422,10 +1398,6 @@ export const portrait = {
 				b: -0.049,
 				c: 0.049,
 				d: 0.936,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 4
 			},
 			body: {
@@ -1435,10 +1407,6 @@ export const portrait = {
 				b: -0.049,
 				c: 0.049,
 				d: 0.936,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 3
 			},
 			r_l_2: {
@@ -1448,10 +1416,6 @@ export const portrait = {
 				b: -0.662,
 				c: 0.662,
 				d: 0.514,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 2
 			},
 			r_l_1: {
@@ -1461,10 +1425,6 @@ export const portrait = {
 				b: -0.049,
 				c: 0.049,
 				d: 0.936,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 1
 			},
 			r_l_3: {
@@ -1474,10 +1434,6 @@ export const portrait = {
 				b: -0.367,
 				c: 0.367,
 				d: 0.758,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 0
 			}
 		},

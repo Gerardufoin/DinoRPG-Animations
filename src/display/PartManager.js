@@ -162,6 +162,8 @@ export class PartManager {
 
 		const resolution = part.resolution ?? TextureManager.DEFAULT_RESOLUTION;
 		scaling *= Math.max(localTransform.scale.x, localTransform.scale.y);
+		// We want the scaling with only one floating decimal to prevent instantiating too many different SVG.
+		scaling = Math.ceil(scaling * 10) * 0.1;
 		const texture = TextureManager.getTextureFromCompressedReference(ref, scale * scaling, resolution);
 		const sprite = Sprite.from(texture);
 		sprite.scale.set(1 / (resolution * scaling));

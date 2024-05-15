@@ -3,8 +3,9 @@
 import { BLEND_MODES } from 'pixi.js';
 import { ref } from '../references_big.js';
 
+// TODO: See if there is a better alternative for the cracks
 // All the cracks have overlay as blend mode, but it does not exist in WebGL so we increase the alpha instead.
-const cracks_alpha = 0.4;
+const cracks_alpha = 0.35;
 
 const body = [
 	// 510
@@ -143,6 +144,62 @@ const body_round = [
 		]
 	}
 ];
+// 569
+const eyes = {
+	partIdx: 1,
+	frames: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2],
+	parts: [
+		[
+			// 562
+			{
+				ref: ref.winks.eyes_back
+			},
+			// 563
+			{
+				ref: ref.winks.eyes_young
+			},
+			// 564
+			{
+				ref: ref.winks.eyes_highlight
+			},
+			// 566
+			{
+				colorIdx: 0,
+				ref: ref.winks.eyes_sockets
+			}
+		],
+		[
+			// 562
+			{
+				ref: ref.winks.eyes_back
+			},
+			// 567
+			{
+				ref: ref.winks.eyes_adult
+			},
+			// 564
+			{
+				ref: ref.winks.eyes_highlight
+			},
+			// 566
+			{
+				colorIdx: 0,
+				ref: ref.winks.eyes_sockets
+			}
+		],
+		[
+			// 568
+			{
+				ref: ref.winks.eyes_demon
+			},
+			// 566
+			{
+				colorIdx: 0,
+				ref: ref.winks.eyes_sockets
+			}
+		]
+	]
+};
 
 export const parts_big = {
 	// 486_p5f
@@ -281,7 +338,7 @@ export const parts_big = {
 					// 496
 					{
 						colorIdx: 0,
-						ref: ref.winks.right_leg_1_pincer,
+						ref: ref.winks.leg_pincer,
 						transform: {
 							tx: 1.35,
 							ty: -1.4,
@@ -292,7 +349,7 @@ export const parts_big = {
 					// 498
 					{
 						colorIdx: 1,
-						ref: ref.winks.right_leg_1_pincer_inside,
+						ref: ref.winks.leg_pincer_inside,
 						transform: {
 							tx: 1.35,
 							ty: -1.4,
@@ -857,17 +914,763 @@ export const parts_big = {
 		}
 	],
 	// 590_p4
-	eyes: [],
+	eyes: [
+		{
+			partIdx: 4,
+			frames: [0, 1, 2, 3],
+			parts: [
+				[
+					// 569
+					{
+						...eyes,
+						transform: {
+							tx: -0.55,
+							ty: 8.35,
+							a: 0.98,
+							d: 0.98,
+							b: 0.195,
+							c: -0.195
+						}
+					},
+					// 570
+					{
+						ref: ref.winks.eyes_sockets_highlight
+					}
+				],
+				[
+					// 578
+					{
+						partIdx: 1,
+						frames: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2],
+						transform: {
+							tx: -7.65,
+							ty: 11.35,
+							a: 0.98,
+							d: 0.98,
+							b: 0.195,
+							c: -0.195
+						},
+						parts: [
+							[
+								// 571
+								{
+									ref: ref.winks.eyes_small_back
+								},
+								// 572
+								{
+									ref: ref.winks.eyes_small_young
+								},
+								// 573
+								{
+									ref: ref.winks.eyes_small_highlight
+								},
+								// 575
+								{
+									colorIdx: 0,
+									ref: ref.winks.eyes_small_sockets
+								}
+							],
+							[
+								// 571
+								{
+									ref: ref.winks.eyes_small_back
+								},
+								// 576
+								{
+									ref: ref.winks.eyes_small_adult
+								},
+								// 573
+								{
+									ref: ref.winks.eyes_small_highlight
+								},
+								// 575
+								{
+									colorIdx: 0,
+									ref: ref.winks.eyes_small_sockets
+								}
+							],
+							[
+								// 577
+								{
+									ref: ref.winks.eyes_small_demon
+								},
+								// 575
+								{
+									colorIdx: 0,
+									ref: ref.winks.eyes_small_sockets
+								}
+							]
+						]
+					},
+					// 579
+					{
+						ref: ref.winks.eyes_small_sockets_highlight
+					}
+				],
+				[
+					// 586
+					{
+						partIdx: 1,
+						frames: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2],
+						transform: {
+							tx: -2.7,
+							ty: 10.4,
+							a: 0.98,
+							d: 0.98,
+							b: 0.195,
+							c: -0.195
+						},
+						parts: [
+							[
+								// 580
+								{
+									ref: ref.winks.eyes_bored_back
+								},
+								// 581
+								{
+									ref: ref.winks.eyes_bored_young
+								},
+								// 583
+								{
+									colorIdx: 0,
+									ref: ref.winks.eyes_bored_sockets,
+									transform: {
+										tx: -2.5,
+										ty: -0.05
+									}
+								}
+							],
+							[
+								// 580
+								{
+									ref: ref.winks.eyes_bored_back
+								},
+								// 584
+								{
+									ref: ref.winks.eyes_bored_adult
+								},
+								// 583
+								{
+									colorIdx: 0,
+									ref: ref.winks.eyes_bored_sockets,
+									transform: {
+										tx: -2.5,
+										ty: -0.05
+									}
+								}
+							],
+							[
+								// 585
+								{
+									ref: ref.winks.eyes_bored_demon
+								},
+								// 583
+								{
+									colorIdx: 0,
+									ref: ref.winks.eyes_bored_sockets,
+									transform: {
+										tx: -2.5,
+										ty: -0.05
+									}
+								}
+							]
+						]
+					},
+					// 587
+					{
+						ref: ref.winks.eyes_bored_sockets_highlight
+					}
+				],
+				[
+					// 569
+					{
+						...eyes,
+						transform: {
+							tx: -0.55,
+							ty: 8.35,
+							a: 0.98,
+							d: 0.98,
+							b: 0.195,
+							c: -0.195
+						}
+					},
+					// 570
+					{
+						ref: ref.winks.eyes_sockets_highlight
+					},
+					// 589
+					{
+						colorIdx: 0,
+						ref: ref.winks.eyes_spikes,
+						transform: {
+							tx: -1,
+							ty: 2.45
+						}
+					}
+				]
+			]
+		}
+	],
 	// 593_special
-	special: [],
+	special: [
+		{
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				// 592
+				{
+					colorIdx: 0,
+					ref: ref.winks.special,
+					transform: {
+						tx: -0.45,
+						ty: 13.8
+					}
+				}
+			]
+		}
+	],
 	// 605_p6
-	mouth: [],
+	mouth: [
+		{
+			partIdx: 6,
+			frames: [0, 1, 2, 3],
+			parts: [
+				[
+					// 595
+					{
+						colorIdx: 0,
+						ref: ref.winks.mouth,
+						transform: {
+							tx: -1.2,
+							ty: 7.15,
+							a: 0.949,
+							d: 0.949,
+							b: 0.311,
+							c: -0.311
+						}
+					}
+				],
+				[
+					// 597
+					{
+						colorIdx: 0,
+						ref: ref.winks.mouth_bumpy,
+						transform: {
+							tx: 0.05,
+							ty: 4.7,
+							a: 0.998,
+							d: 0.998,
+							b: 0.052,
+							c: -0.052
+						}
+					},
+					// 578
+					{
+						ref: ref.winks.mouth_bumpy_highlight
+					}
+				],
+				[
+					// 600
+					{
+						colorIdx: 0,
+						ref: ref.winks.mouth_fat,
+						transform: {
+							tx: -0.1,
+							ty: 8.1,
+							a: 0.977,
+							d: 0.977,
+							b: 0.207,
+							c: -0.207
+						}
+					},
+					// 601
+					{
+						ref: ref.winks.mouth_fat_highlight
+					}
+				],
+				[
+					// 600
+					{
+						colorIdx: 0,
+						ref: ref.winks.mouth_fat,
+						transform: {
+							tx: -0.1,
+							ty: 8.1,
+							a: 0.977,
+							d: 0.977,
+							b: 0.207,
+							c: -0.207
+						}
+					},
+					// 601
+					{
+						ref: ref.winks.mouth_fat_highlight
+					},
+					// 603
+					{
+						colorIdx: 0,
+						ref: ref.winks.mouth_spikes,
+						transform: {
+							tx: -26.15,
+							ty: 12.6
+						}
+					},
+					// 604
+					{
+						ref: ref.winks.mouth_spikes_highlight
+					}
+				]
+			]
+		}
+	],
 	// 614_p5a
-	left_leg_1: [],
+	left_leg_1: [
+		{
+			partIdx: 5,
+			frames: [0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, -1],
+			parts: [
+				[
+					// 607
+					{
+						colorIdx: 0,
+						ref: ref.winks.left_leg_1,
+						transform: {
+							tx: -22.85,
+							ty: 3.5
+						}
+					},
+					// 608
+					{
+						ref: ref.winks.left_leg_1_claws
+					},
+					// 609
+					{
+						ref: ref.winks.left_leg_1_speks
+					}
+				],
+				[
+					// 607
+					{
+						colorIdx: 0,
+						ref: ref.winks.left_leg_1,
+						transform: {
+							tx: -22.85,
+							ty: 3.5
+						}
+					},
+					// 608
+					{
+						ref: ref.winks.left_leg_1_claws
+					},
+					// 610
+					{
+						ref: ref.winks.left_leg_1_highlight
+					}
+				],
+				[
+					// 607
+					{
+						colorIdx: 1,
+						ref: ref.winks.left_leg_1,
+						transform: {
+							tx: -22.85,
+							ty: 3.5
+						}
+					},
+					// 608
+					{
+						ref: ref.winks.left_leg_1_claws
+					},
+					// 610
+					{
+						ref: ref.winks.left_leg_1_highlight
+					}
+				],
+				[
+					// 612
+					{
+						colorIdx: 1,
+						ref: ref.winks.left_leg_1_tube,
+						transform: {
+							tx: -23.1,
+							ty: 2.2
+						}
+					},
+					// 613
+					{
+						ref: ref.winks.left_leg_1_tube_claws
+					}
+				]
+			]
+		}
+	],
 	// 623_p5c
-	left_leg_3: [],
+	left_leg_3: [
+		{
+			partIdx: 5,
+			frames: [0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4],
+			parts: [
+				[
+					// 615
+					{
+						ref: ref.winks.left_leg_3_claws
+					},
+					// 617
+					{
+						colorIdx: 0,
+						ref: ref.winks.left_leg_3,
+						transform: {
+							tx: 13.5,
+							ty: -16.55
+						}
+					},
+					// 618
+					{
+						ref: ref.winks.left_leg_3_speks
+					}
+				],
+				[
+					// 615
+					{
+						ref: ref.winks.left_leg_3_claws
+					},
+					// 617
+					{
+						colorIdx: 0,
+						ref: ref.winks.left_leg_3,
+						transform: {
+							tx: 13.5,
+							ty: -16.55
+						}
+					},
+					// 619
+					{
+						ref: ref.winks.left_leg_3_highlight
+					}
+				],
+				[
+					// 615
+					{
+						ref: ref.winks.left_leg_3_claws
+					},
+					// 617
+					{
+						colorIdx: 1,
+						ref: ref.winks.left_leg_3,
+						transform: {
+							tx: 13.5,
+							ty: -16.55
+						}
+					},
+					// 619
+					{
+						ref: ref.winks.left_leg_3_highlight
+					}
+				],
+				[
+					// 620
+					{
+						ref: ref.winks.left_leg_3_tube_claws,
+						transform: {
+							tx: -0.3,
+							ty: 0.3
+						}
+					},
+					// 622
+					{
+						colorIdx: 1,
+						ref: ref.winks.left_leg_3_tube,
+						transform: {
+							tx: 12.2,
+							ty: -14.8
+						}
+					}
+				],
+				[
+					// 620
+					{
+						ref: ref.winks.left_leg_3_tube_claws
+					},
+					// 622
+					{
+						colorIdx: 1,
+						ref: ref.winks.left_leg_3_tube,
+						transform: {
+							tx: 12.5,
+							ty: -15.1
+						}
+					}
+				]
+			]
+		}
+	],
 	// 639_p5b
-	left_leg_2: [],
+	left_leg_2: [
+		{
+			partIdx: 5,
+			frames: [0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4],
+			parts: [
+				[
+					// 630
+					{
+						transform: {
+							tx: -0.85,
+							ty: -7.55
+						},
+						parts: [
+							[
+								// 625
+								{
+									colorIdx: 0,
+									ref: ref.winks.left_leg_2,
+									transform: {
+										tx: 0.6,
+										ty: 2.9,
+										a: 0.966,
+										d: 0.966,
+										b: -0.259,
+										c: 0.259
+									}
+								},
+								// hurt
+								{
+									partIdx: 2,
+									frames: [-1, 0, 1],
+									parts: [
+										// 627
+										{
+											ref: ref.winks.left_leg_2_hurt_cracks_small,
+											alpha: cracks_alpha,
+											transform: {
+												tx: 4.35,
+												ty: -11.55
+											}
+										},
+										// 629
+										{
+											ref: ref.winks.left_leg_2_hurt_cracks_big,
+											alpha: cracks_alpha,
+											transform: {
+												tx: 1.95,
+												ty: -2.8
+											}
+										}
+									]
+								}
+							]
+						]
+					},
+					// 631
+					{
+						ref: ref.winks.left_leg_2_claws
+					},
+					// 632
+					{
+						ref: ref.winks.left_leg_2_speks
+					}
+				],
+				[
+					// 630
+					{
+						transform: {
+							tx: -0.85,
+							ty: -7.55
+						},
+						parts: [
+							[
+								// 625
+								{
+									colorIdx: 0,
+									ref: ref.winks.left_leg_2,
+									transform: {
+										tx: 0.6,
+										ty: 2.9,
+										a: 0.966,
+										d: 0.966,
+										b: -0.259,
+										c: 0.259
+									}
+								},
+								// hurt
+								{
+									partIdx: 2,
+									frames: [-1, 0, 1],
+									parts: [
+										// 627
+										{
+											ref: ref.winks.left_leg_2_hurt_cracks_small,
+											alpha: cracks_alpha,
+											transform: {
+												tx: 4.35,
+												ty: -11.55
+											}
+										},
+										// 629
+										{
+											ref: ref.winks.left_leg_2_hurt_cracks_big,
+											alpha: cracks_alpha,
+											transform: {
+												tx: 1.95,
+												ty: -2.8
+											}
+										}
+									]
+								}
+							]
+						]
+					},
+					// 631
+					{
+						ref: ref.winks.left_leg_2_claws
+					},
+					// 633
+					{
+						ref: ref.winks.left_leg_2_highlight
+					}
+				],
+				[
+					// 634
+					{
+						transform: {
+							tx: -0.85,
+							ty: -7.55
+						},
+						parts: [
+							[
+								// 625
+								{
+									colorIdx: 1,
+									ref: ref.winks.left_leg_2,
+									transform: {
+										tx: 0.6,
+										ty: 2.9,
+										a: 0.966,
+										d: 0.966,
+										b: -0.259,
+										c: 0.259
+									}
+								},
+								// hurt
+								{
+									partIdx: 2,
+									frames: [-1, 0, 1],
+									parts: [
+										// 627
+										{
+											ref: ref.winks.left_leg_2_hurt_cracks_small,
+											alpha: cracks_alpha,
+											transform: {
+												tx: 4.35,
+												ty: -11.55
+											}
+										},
+										// 629
+										{
+											ref: ref.winks.left_leg_2_hurt_cracks_big,
+											alpha: cracks_alpha,
+											transform: {
+												tx: 1.95,
+												ty: -2.8
+											}
+										}
+									]
+								}
+							]
+						]
+					},
+					// 631
+					{
+						ref: ref.winks.left_leg_2_claws
+					},
+					// 633
+					{
+						ref: ref.winks.left_leg_2_highlight
+					}
+				],
+				[
+					// 635
+					{
+						ref: ref.winks.left_leg_2_tube_claws,
+						transform: {
+							tx: -4.25,
+							ty: 3.05
+						}
+					},
+					// 637
+					{
+						colorIdx: 1,
+						ref: ref.winks.left_leg_2_tube,
+						transform: {
+							tx: -1,
+							ty: -2.05
+						}
+					},
+					// 638
+					{
+						ref: ref.winks.left_leg_2_tube_highlight,
+						transform: {
+							tx: -4.25,
+							ty: 3.05
+						}
+					}
+				],
+				[
+					// 635
+					{
+						ref: ref.winks.left_leg_2_tube_claws
+					},
+					// 637
+					{
+						colorIdx: 1,
+						ref: ref.winks.left_leg_2_tube,
+						transform: {
+							tx: 3.25,
+							ty: -5.1
+						}
+					},
+					// 638
+					{
+						ref: ref.winks.left_leg_2_tube_highlight
+					}
+				]
+			]
+		}
+	],
 	// 641_p5g
-	left_pincer: []
+	left_pincer: [
+		{
+			partIdx: 5,
+			frames: [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0],
+			parts: [
+				[
+					// 496
+					{
+						colorIdx: 0,
+						ref: ref.winks.leg_pincer,
+						transform: {
+							tx: -0.75,
+							ty: 2.55,
+							a: 0.784,
+							d: 0.784
+						}
+					},
+					// 498
+					{
+						colorIdx: 1,
+						ref: ref.winks.leg_pincer_inside,
+						transform: {
+							tx: -0.75,
+							ty: 2.55,
+							a: 0.784,
+							d: 0.784
+						}
+					},
+					// 640
+					{
+						ref: ref.winks.left_leg_1_pincer_highlight
+					}
+				]
+			]
+		}
+	]
 };
