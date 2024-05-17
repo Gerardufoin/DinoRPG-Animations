@@ -1,6 +1,6 @@
 // @ts-check
 
-import { Container } from 'pixi.js';
+import { Container, SpriteMaskFilter } from 'pixi.js';
 import { IScene } from '../../../IScene.js';
 import { Asset } from '../../../../display/Asset.js';
 import { ref } from '../../../../gfx/references.js';
@@ -59,12 +59,11 @@ export class MovingVine extends Part {
 
 		const vineBody = new Container();
 		vineBody.addChild(new Asset(ref.fx.vine[`mv_${Math.floor(Math.random() * 4) + 1}`]));
-		vineBody.filters = [StaticVine.GlowFilter];
 		this._mask = new Asset(ref.fx.vine.mask, 1, false);
 		this._mask.anchor.set(0.5, 1);
 		this._mask.y += 2;
 		vineBody.addChild(this._mask);
-		vineBody.mask = this._mask;
+		vineBody.filters = [StaticVine.GlowFilter, new SpriteMaskFilter(this._mask)];
 		vine.addChild(vineBody);
 
 		vine.scale.y = 0.5 + Math.random() * 0.5;

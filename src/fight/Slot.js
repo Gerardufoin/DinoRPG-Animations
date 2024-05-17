@@ -11,7 +11,7 @@
  * @typedef {{bar: Container, hit: Container, max: Container, bg: Container}} EnergyBar
  */
 
-import { ColorMatrixFilter, Container, Filter } from 'pixi.js';
+import { ColorMatrixFilter, Container, Filter, SpriteMaskFilter } from 'pixi.js';
 import { Asset } from '../display/Asset.js';
 import { ref } from '../gfx/references.js';
 import { PixiHelper } from '../display/PixiHelper.js';
@@ -263,7 +263,7 @@ export class Slot extends Container {
 		const mask = new Asset(ref.scene.slot_mask);
 		masked.addChild(this._portrait);
 		masked.addChild(mask);
-		masked.mask = mask;
+		masked.filters = [new SpriteMaskFilter(mask)];
 		this.addChild(masked);
 	}
 

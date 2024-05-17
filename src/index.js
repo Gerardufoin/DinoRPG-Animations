@@ -1,5 +1,5 @@
 // Sandbox test page
-import { Application, Container, Graphics, Sprite, Texture, Matrix } from 'pixi.js';
+import { Application, Container, Graphics, Texture, Matrix } from 'pixi.js';
 import { dino } from './dino.js';
 import { sdino } from './sdino.js';
 import { smonster } from './smonster.js';
@@ -23,4 +23,4 @@ import { Fight } from './fight/Fight.js';
 );*/
 
 // Ultimately, only the project class should be exposed. Other classes are currently there for testing purposes.
-export { Application, Graphics, Container, Sprite, Texture, Matrix, sdino, smonster, Fight, dino };
+export { Application, Graphics, Container, Texture, Matrix, sdino, smonster, Fight, dino };

@@ -1,5 +1,6 @@
 // @ts-check
-import { Container, Rectangle, Sprite, Ticker } from 'pixi.js';
+import { Container, Rectangle, Ticker } from 'pixi.js';
+import { Sprite } from '@pixi/picture';
 import { PixiHelper } from './PixiHelper.js';
 import { Animation } from './Animation.js';
 import { ImageExtractor } from './ImageExtractor.js';

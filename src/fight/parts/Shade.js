@@ -1,6 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/part/Shade.hx
-import { Color, Container, Filter, Matrix, RenderTexture, Sprite } from 'pixi.js';
+import { Color, Container, Filter, Matrix, RenderTexture } from 'pixi.js';
+import { Sprite } from '@pixi/picture';
 import { Part } from '../Part.js';
 import { IScene } from '../IScene.js';
 import { Timer } from '../Timer.js';

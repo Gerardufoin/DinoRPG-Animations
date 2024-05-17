@@ -1,6 +1,6 @@
 // @ts-check
 
-import { Sprite } from 'pixi.js';
+import { Sprite } from '@pixi/picture';
 import { Asset } from '../../../display/Asset.js';
 import { ref } from '../../../gfx/references.js';
 import { NotificationDisplay } from './NotificationDisplay.js';

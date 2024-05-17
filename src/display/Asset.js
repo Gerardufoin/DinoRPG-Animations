@@ -1,6 +1,6 @@
 // @ts-check
 
-import { Sprite } from 'pixi.js';
+import { Sprite } from '@pixi/picture';
 import { TextureManager } from './TextureManager.js';
 
 /**

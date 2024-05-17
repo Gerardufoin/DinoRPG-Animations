@@ -1,6 +1,6 @@
 // @ts-check
 
-import { Graphics, RenderTexture, Renderer } from 'pixi.js';
+import { Filter, Graphics, RenderTexture, Renderer, SpriteMaskFilter } from 'pixi.js';
 import { decompressFromBase64 } from 'lz-string';
 
 import { fx_bubble } from '../gfx/fx/bubble.js';
@@ -34,6 +34,7 @@ import { GrSpeed } from '../fight/actions/skills/group/GrSpeed.js';
 import { Environment } from '../fight/parts/skills/env/Environment.js';
 import { WoodEnvironment } from '../fight/parts/skills/env/wood/WoodEnvironment.js';
 import { Bolt } from '../fight/parts/life/Bolt.js';
+import { Asset } from './Asset.js';
 
 /**
  * Class used to preload part of the assets.
@@ -65,8 +66,8 @@ export class PreloadData {
 	];
 
 	/**
-	 * List of glow filters to preload.
-	 * @type {GlowFilter[]}
+	 * List of filters to preload.
+	 * @type {Filter[]}
 	 */
 	static GLOW_FILTERS = [
 		SkillAura.FirstAura,
@@ -88,7 +89,8 @@ export class PreloadData {
 		}),
 		FxFocus.GlowFilter,
 		GrSpeed.GlowFilter,
-		WoodEnvironment.TreesGlow
+		WoodEnvironment.TreesGlow,
+		new SpriteMaskFilter(new Asset(ref.fx.vine.mask, 1, false)) // MovingVine
 	];
 
 	/**

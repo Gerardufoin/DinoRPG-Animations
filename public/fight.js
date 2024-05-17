@@ -566,6 +566,7 @@ const buttons = [
 					action: 'Skill',
 					skill: 'Heal',
 					details: {
+						fid: 1,
 						targets: [
 							{ id: 1, life: 10 },
 							{ id: 2, life: 5 }

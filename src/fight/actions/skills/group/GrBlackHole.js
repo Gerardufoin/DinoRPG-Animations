@@ -7,7 +7,6 @@ import { FighterProperty, SkillType } from '../../../Enums.js';
 import { Fighter } from '../../../Fighter.js';
 import { Scene } from '../../../Scene.js';
 import { Timer } from '../../../Timer.js';
-import { BlackHole } from '../../../parts/skills/hole/BlackHole.js';
 import { BlackHoleContainer } from '../../../parts/skills/hole/BlackHoleContainer.js';
 import { GroupEffect } from '../GroupEffect.js';
 

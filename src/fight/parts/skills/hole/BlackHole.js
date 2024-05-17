@@ -1,6 +1,6 @@
 // @ts-check
 
-import { Container } from 'pixi.js';
+import { Container, SpriteMaskFilter } from 'pixi.js';
 import { Fighter } from '../../../Fighter.js';
 import { IScene } from '../../../IScene.js';
 import { Asset } from '../../../../display/Asset.js';
@@ -92,7 +92,7 @@ export class BlackHole extends Container {
 		this._holeMask.scale.set(this._scale * 1.1, this._scale);
 		this._holeMask.y += 27;
 		this.addChild(this._holeMask);
-		this._target.getRootContainer().mask = this._holeMask;
+		this._target.addFilters(new SpriteMaskFilter(this._holeMask));
 
 		this._fallSpeed = this._target.height * coefSpeed;
 		this._target.removeShadow();

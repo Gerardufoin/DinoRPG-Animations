@@ -3,10 +3,6 @@
 import { BLEND_MODES } from 'pixi.js';
 import { ref } from '../references_big.js';
 
-// TODO: See if there is a better alternative for the cracks
-// All the cracks have overlay as blend mode, but it does not exist in WebGL so we increase the alpha instead.
-const cracks_alpha = 0.35;
-
 const body = [
 	// 510
 	{
@@ -34,7 +30,7 @@ const body = [
 				// 513
 				{
 					ref: ref.winks.body_hurt_cracks_small,
-					alpha: cracks_alpha,
+					blend: BLEND_MODES.OVERLAY,
 					transform: {
 						tx: 8.3,
 						ty: -8.05
@@ -55,7 +51,7 @@ const body = [
 				// 515
 				{
 					ref: ref.winks.body_hurt_cracks_big,
-					alpha: cracks_alpha,
+					blend: BLEND_MODES.OVERLAY,
 					transform: {
 						tx: 10.4,
 						ty: -3.55
@@ -103,7 +99,7 @@ const body_round = [
 				// 552
 				{
 					ref: ref.winks.body_round_hurt_cracks_small,
-					alpha: cracks_alpha,
+					blend: BLEND_MODES.OVERLAY,
 					transform: {
 						tx: -2.5,
 						ty: -6.3
@@ -134,7 +130,7 @@ const body_round = [
 				// 554
 				{
 					ref: ref.winks.body_round_hurt_cracks_big,
-					alpha: cracks_alpha,
+					blend: BLEND_MODES.OVERLAY,
 					transform: {
 						tx: -0.45,
 						ty: -6.2
@@ -517,7 +513,7 @@ export const parts_big = {
 											// 521
 											{
 												ref: ref.winks.body_big_fold_hurt_cracks_small,
-												alpha: cracks_alpha,
+												blend: BLEND_MODES.OVERLAY,
 												transform: {
 													tx: 3.05,
 													ty: 0.65
@@ -560,7 +556,7 @@ export const parts_big = {
 											// 523
 											{
 												ref: ref.winks.body_big_fold_hurt_cracks_big,
-												alpha: cracks_alpha,
+												blend: BLEND_MODES.OVERLAY,
 												transform: {
 													tx: 1.8,
 													ty: 0.6
@@ -620,7 +616,7 @@ export const parts_big = {
 											// 528
 											{
 												ref: ref.winks.body_small_fold_hurt_cracks_small,
-												alpha: cracks_alpha,
+												blend: BLEND_MODES.OVERLAY,
 												transform: {
 													tx: -5.15,
 													ty: -4.75
@@ -641,7 +637,7 @@ export const parts_big = {
 											// 530
 											{
 												ref: ref.winks.body_small_fold_hurt_cracks_big,
-												alpha: cracks_alpha,
+												blend: BLEND_MODES.OVERLAY,
 												transform: {
 													tx: -5.35,
 													ty: -2.55
@@ -694,7 +690,7 @@ export const parts_big = {
 										// 536
 										{
 											ref: ref.winks.body_spike_holder_hurt_cracks,
-											alpha: cracks_alpha,
+											blend: BLEND_MODES.OVERLAY,
 											transform: {
 												tx: 10.65,
 												ty: -0.05
@@ -805,7 +801,7 @@ export const parts_big = {
 											// 542
 											{
 												ref: ref.winks.body_spike_hurt_cracks_small,
-												alpha: cracks_alpha,
+												blend: BLEND_MODES.OVERLAY,
 												transform: {
 													tx: -3.35,
 													ty: 2.05
@@ -828,7 +824,7 @@ export const parts_big = {
 											// 544
 											{
 												ref: ref.winks.body_spike_hurt_cracks_big,
-												alpha: cracks_alpha,
+												blend: BLEND_MODES.OVERLAY,
 												transform: {
 													tx: -1.85,
 													ty: 2.05
@@ -1440,7 +1436,7 @@ export const parts_big = {
 										// 627
 										{
 											ref: ref.winks.left_leg_2_hurt_cracks_small,
-											alpha: cracks_alpha,
+											blend: BLEND_MODES.OVERLAY,
 											transform: {
 												tx: 4.35,
 												ty: -11.55
@@ -1449,7 +1445,7 @@ export const parts_big = {
 										// 629
 										{
 											ref: ref.winks.left_leg_2_hurt_cracks_big,
-											alpha: cracks_alpha,
+											blend: BLEND_MODES.OVERLAY,
 											transform: {
 												tx: 1.95,
 												ty: -2.8
@@ -1499,7 +1495,7 @@ export const parts_big = {
 										// 627
 										{
 											ref: ref.winks.left_leg_2_hurt_cracks_small,
-											alpha: cracks_alpha,
+											blend: BLEND_MODES.OVERLAY,
 											transform: {
 												tx: 4.35,
 												ty: -11.55
@@ -1508,7 +1504,7 @@ export const parts_big = {
 										// 629
 										{
 											ref: ref.winks.left_leg_2_hurt_cracks_big,
-											alpha: cracks_alpha,
+											blend: BLEND_MODES.OVERLAY,
 											transform: {
 												tx: 1.95,
 												ty: -2.8
@@ -1558,7 +1554,7 @@ export const parts_big = {
 										// 627
 										{
 											ref: ref.winks.left_leg_2_hurt_cracks_small,
-											alpha: cracks_alpha,
+											blend: BLEND_MODES.OVERLAY,
 											transform: {
 												tx: 4.35,
 												ty: -11.55
@@ -1567,7 +1563,7 @@ export const parts_big = {
 										// 629
 										{
 											ref: ref.winks.left_leg_2_hurt_cracks_big,
-											alpha: cracks_alpha,
+											blend: BLEND_MODES.OVERLAY,
 											transform: {
 												tx: 1.95,
 												ty: -2.8

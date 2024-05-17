@@ -1,5 +1,15 @@
 // @ts-check
-import { BlurFilter, Color, ColorMatrixFilter, Container, DisplayObject, Filter, Matrix, Sprite } from 'pixi.js';
+import {
+	BlurFilter,
+	Color,
+	ColorMatrixFilter,
+	Container,
+	DisplayObject,
+	Filter,
+	Matrix,
+	SpriteMaskFilter
+} from 'pixi.js';
+import { Sprite } from '@pixi/picture';
 import { offsetShader } from './shaders/ColorOffsetShader.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { PixiHelper } from './PixiHelper.js';
@@ -155,7 +165,10 @@ export class Animation extends Container {
 			if (this._parts[pName]) {
 				const mask = this.getPartSprite(masks[pName]);
 				if (mask) {
-					this._parts[pName].mask = mask;
+					if (!this._parts[pName].filters) {
+						this._parts[pName].filters = [];
+					}
+					this._parts[pName].filters.push(new SpriteMaskFilter(mask));
 				} else {
 					console.error(`[Animation.setMasks]: Mask '${masks[pName]}' does not exist`);
 				}

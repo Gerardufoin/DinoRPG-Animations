@@ -1,5 +1,6 @@
 // @ts-check
-import { Sprite, Matrix, Filter, Container, Color } from 'pixi.js';
+import { Matrix, Filter, Container, Color } from 'pixi.js';
+import { Sprite } from '@pixi/picture';
 import { TextureManager } from './TextureManager.js';
 import { Animation } from './Animation.js';
 import { PixiHelper } from './PixiHelper.js';
@@ -165,7 +166,7 @@ export class PartManager {
 		// We want the scaling with only one floating decimal to prevent instantiating too many different SVG.
 		scaling = Math.ceil(scaling * 10) * 0.1;
 		const texture = TextureManager.getTextureFromCompressedReference(ref, scale * scaling, resolution);
-		const sprite = Sprite.from(texture);
+		const sprite = new Sprite(texture);
 		sprite.scale.set(1 / (resolution * scaling));
 		sprite.x -= (ref.offset?.x ?? 0) * scale;
 		sprite.y -= (ref.offset?.y ?? 0) * scale;
