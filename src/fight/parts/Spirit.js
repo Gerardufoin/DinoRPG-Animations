@@ -1,7 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/part/Spirit.hx
 
-import { Container, Graphics, Sprite } from 'pixi.js';
+import { Container, Graphics } from 'pixi.js';
 import { ref as gfx } from '../../gfx/references.js';
 import { Part } from '../Part.js';
 import { Timer } from '../Timer.js';

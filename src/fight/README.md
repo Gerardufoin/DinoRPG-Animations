@@ -241,23 +241,23 @@ This can for example be used for status effect (poison, torch, etc).
 | amount   | Number                                           | Amount of health healed.                  |
 | lifeFx   | {fx: LifeEffect, amount?: number, size?: number} | The life effect played during the damage. |
 
-| LifeEffect     | Description                                                             |
-| -------------- | ----------------------------------------------------------------------- |
-| Normal (0)     | No effect in particular.                                                |
-| Object (1)     | No visual.                                                              |
-| Skull (2)      | Adds skulls particles. Set size to decide the size of the skull fx.     |
-| Acid (3)       | Adds acid particles.                                                    |
-| Poison (4)     | No visual.                                                              |
-| Heal (5)       | Adds healing particles.                                                 |
-| Explode (6)    | Adds explosion particles.                                               |
-| Burn (7)       | Adds burning particles. Set amount to display the amount of fx to show. |
-| Fire (8)       | Adds fire particles.                                                    |
-| Wood (9)       | Adds leaf particles.                                                    |
-| Water (10)     | Adds droplet particles.                                                 |
-| Lightning (11) | Adds lightning particles.                                               |
-| Air (12)       | Adds wind particles.                                                    |
-| Gold (13)      | No visual.                                                              |
-| Todo (14)      | Debug.                                                                  |
+| LifeEffect     | Description                                                                           |
+| -------------- | ------------------------------------------------------------------------------------- |
+| Normal (0)     | No effect in particular.                                                              |
+| Object (1)     | No visual.                                                                            |
+| Skull (2)      | Adds skulls particles. Set size to decide the size of the skull fx. 1 by default.     |
+| Acid (3)       | Adds acid particles.                                                                  |
+| Poison (4)     | No visual.                                                                            |
+| Heal (5)       | Adds healing particles.                                                               |
+| Explode (6)    | Adds explosion particles.                                                             |
+| Burn (7)       | Adds burning particles. Set amount to display the amount of fx to show. 5 by default. |
+| Fire (8)       | Adds fire particles.                                                                  |
+| Wood (9)       | Adds leaf particles.                                                                  |
+| Water (10)     | Adds droplet particles.                                                               |
+| Lightning (11) | Adds lightning particles.                                                             |
+| Air (12)       | Adds wind particles.                                                                  |
+| Gold (13)      | No visual.                                                                            |
+| Todo (14)      | Debug.                                                                                |
 
 ### Status (4)
 
@@ -274,16 +274,16 @@ Adds a status to a fighter.
 | ------------- | ------------------------------------------------------ |
 | Sleep (0)     | The figher fall asleep.                                |
 | Flames (1)    | The fighter is covered in flames.                      |
-| Burn (2)      | The fighter is covered in black flame.                 |
-| Intang (3)    | The fighter gains the Intangible status.               |
-| Fly (4)       | The fighter starts flying.                             |
-| Slow (5)      | The fighter gains the Slow status.                     |
-| Quick (6)     | The fighter gains the Quick status.                    |
-| Stoned (7)    | The fighter gains the Petrified status.                |
+| Intang (2)    | The fighter gains the Intangible status.               |
+| Fly (3)       | The fighter starts flying.                             |
+| Slow (4)      | The fighter gains the Slow status.                     |
+| Quick (5)     | The fighter gains the Quick status.                    |
+| Stoned (6)    | The fighter gains the Petrified status.                |
+| Shield (7)    | The fighter is shielded and glow rainbowy over time.   |
 | Bless (8)     | The fighter gains the Bless status.                    |
 | Poison (9)    | The fighter gains the Poison status.                   |
-| Shield (10)   | The fighter is shielded and glow rainbowy over time.   |
-| Heal (11)     | Light particles are constantly emmited by the fighter. |
+| Heal (10)     | Light particles are constantly emmited by the fighter. |
+| Burn (11)     | The fighter is covered in black flame.                 |
 | MonoElt (12)  | The fighter gains the status icon with a cadenas.      |
 | Dazzled (13)  | The figher gains the Dazzled status.                   |
 | Stun (14)     | The fighter gain the Stun status.                      |

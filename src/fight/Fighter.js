@@ -1579,7 +1579,7 @@ export class Fighter extends Phys {
 			case LifeEffect.Todo:
 				break;
 			case LifeEffect.Burn:
-				this.fxBurn(effect.amount);
+				this.fxBurn(effect.amount ?? 5);
 				break;
 			case LifeEffect.Explode:
 				this.fxExplosion(6);
@@ -1588,7 +1588,7 @@ export class Fighter extends Phys {
 				this.fxHeal(32);
 				break;
 			case LifeEffect.Skull:
-				this.fxSkull(effect.size);
+				this.fxSkull(effect.size ?? 1);
 				break;
 			case LifeEffect.Acid:
 				this.fxAcid(12);
