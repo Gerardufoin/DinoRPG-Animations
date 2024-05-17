@@ -41,9 +41,30 @@ export class PixiHelper {
 	 */
 	static adjustColorFilter(brightness, contrast, saturation, hue, filter = undefined) {
 		const matrix = new ColorMatrix();
-		matrix.adjustBrightness(PixiHelper.mm(-100, brightness, 100) / 100);
-		matrix.adjustContrast(PixiHelper.mm(-100, contrast, 100) / 100);
+		matrix.adjustBrightnessFlash(brightness);
+		matrix.adjustContrastFlash(contrast);
 		matrix.adjustSaturation(PixiHelper.mm(-100, saturation, 100) / 100);
+		matrix.adjustHue(hue);
+		filter ??= new ColorMatrixFilter();
+		// @ts-ignore
+		filter.matrix = matrix.matrix;
+		return filter;
+	}
+
+	/**
+	 * Convert an AdjustColorFilter from Motion Twin into a ColorMatrixFilter for PixiJS.
+	 * @param {number} brightness The change of brightness, between -1 and 1.
+	 * @param {number} contrast The change of contrast, between -1 and 1.
+	 * @param {number} saturation The change for the saturation, between -1 and 1.
+	 * @param {number} hue The change of the hue, rotation over 360°.
+	 * @param {ColorMatrixFilter} filter The filter whose matrix to set. If undefined, a new filter will be created.
+	 * @returns {ColorMatrixFilter} The resulting ColorMatrixFilter.
+	 */
+	static adjustColorFilterMT(brightness, contrast, saturation, hue, filter = undefined) {
+		const matrix = new ColorMatrix();
+		matrix.adjustBrightness(PixiHelper.mm(-1, brightness, 1));
+		matrix.adjustContrast(PixiHelper.mm(-1, contrast, 1));
+		matrix.adjustSaturation(PixiHelper.mm(-1, saturation, 1));
 		matrix.adjustHue(hue);
 		filter ??= new ColorMatrixFilter();
 		// @ts-ignore

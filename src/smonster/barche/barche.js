@@ -23,7 +23,7 @@ export const barche = {
 			ty: -15.2,
 			a: 0.677,
 			d: 0.677,
-			brightness: -28,
+			brightness: -41,
 			contrast: 20
 		},
 		// 804

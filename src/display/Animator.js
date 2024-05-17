@@ -180,7 +180,7 @@ export class Animator extends Container {
 	 * Darkens the skin of the body.
 	 */
 	darken() {
-		this._body.filters.push(ConstantShaderManager.getAdjustColorFilter(-57, 17, -83));
+		this._body.filters.push(ConstantShaderManager.getAdjustColorFilter(-0.57, 0.17, -0.83, 0, false));
 	}
 
 	/**

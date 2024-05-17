@@ -66,7 +66,7 @@ export class WoodEnvironment extends Environment {
 		// Trees
 		this._trees = new Container();
 		const trees = new Animator(false).loadAnimation(env_wood_trees);
-		trees.filters = [WoodEnvironment.TreesGlow, ConstantShaderManager.getAdjustColorFilter(-10, 15, 20, -1)];
+		trees.filters = [WoodEnvironment.TreesGlow, ConstantShaderManager.getAdjustColorFilter(-2, 15, 10, -1)];
 		this._trees.addChild(trees);
 		this._trees.y = 6;
 		this._trees.filters = [Environment.MaskFilter];

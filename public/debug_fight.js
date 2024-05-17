@@ -102,9 +102,9 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'gluon'
+					gfx: 'barche'
 				}
-			},
+			}
 			/*{
 				action: 'Skill',
 				skill: 'Anim',
@@ -118,7 +118,7 @@ const fightVersion = [
 				fid: 1,
 				status: 'Fly'
 			},*/
-			{
+			/*{
 				action: 'Wait',
 				time: 2000
 			},
@@ -126,9 +126,9 @@ const fightVersion = [
 				action: 'Skill',
 				skill: 'Env',
 				details: {
-					type: 'Air'
+					type: 'Lightning'
 				}
-			}
+			}*/
 			/*{
 				action: 'Skill',
 				skill: 'Aura',

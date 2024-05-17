@@ -122,15 +122,18 @@ export class ConstantShaderManager {
 	}
 
 	/**
-	 * Gets or creates a constant adjust color filter with the given parameters.
+	 * Gets or creates a constant AdjustColor filter with the given parameters.
 	 * This adjust color shader must never be modified once instantiated.
-	 * @param {number} brightness The change in brigthness (-100 <> 100). 0 by default.
-	 * @param {number} contrast The change in contrast (-100 <> 100). 0 by default.
-	 * @param {number} saturation The change in saturation (-100 <> 100). 0 by default.
+	 * This uses the AdjustColor from Flash.
+	 * @param {number} brightness The change in brigthness. 0 by default.
+	 * @param {number} contrast The change in contrast. 0 by default.
+	 * @param {number} saturation The change in saturation. 0 by default.
 	 * @param {number} hue The rotation of the hue (360°). 0 by default.
+	 * @param {boolean} flash If true, this uses the AdjustColorFilter version from Flash. In this case, the parameters are between -100 and 100.
+	 * If false, this uses the AdjustColorFilter version from Motion Twin. In this case, the parameters are between -1 and 1.
 	 * @returns {ColorMatrixFilter} The resulting adjust color filter.
 	 */
-	static getAdjustColorFilter(brightness = 0, contrast = 0, saturation = 0, hue = 0) {
+	static getAdjustColorFilter(brightness = 0, contrast = 0, saturation = 0, hue = 0, flash = true) {
 		for (const c of ConstantShaderManager.adjustColorShaderStorage) {
 			if (
 				c.brightness === brightness &&
@@ -141,7 +144,9 @@ export class ConstantShaderManager {
 				return c.filter;
 			}
 		}
-		const filter = PixiHelper.adjustColorFilter(brightness, contrast, saturation, hue);
+		const filter = flash
+			? PixiHelper.adjustColorFilter(brightness, contrast, saturation, hue)
+			: PixiHelper.adjustColorFilterMT(brightness, contrast, saturation, hue);
 		ConstantShaderManager.adjustColorShaderStorage.push({
 			brightness: brightness,
 			contrast: contrast,

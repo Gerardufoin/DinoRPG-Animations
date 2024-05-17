@@ -11,6 +11,16 @@ export class ColorMatrix {
 	static G_LUM = 0.71516;
 	static B_LUM = 0.072169;
 
+	// Flash contrast values for 0-100
+	static FLASH_CONTRAST_VALUES = [
+		0, 0.01, 0.02, 0.04, 0.05, 0.06, 0.07, 0.08, 0.1, 0.11, 0.12, 0.14, 0.15, 0.16, 0.17, 0.18, 0.2, 0.21, 0.22,
+		0.24, 0.25, 0.27, 0.28, 0.3, 0.32, 0.34, 0.36, 0.38, 0.4, 0.42, 0.44, 0.46, 0.48, 0.5, 0.53, 0.56, 0.59, 0.62,
+		0.65, 0.68, 0.71, 0.74, 0.77, 0.8, 0.83, 0.86, 0.89, 0.92, 0.95, 0.98, 1.0, 1.06, 1.12, 1.18, 1.24, 1.3, 1.36,
+		1.42, 1.48, 1.54, 1.6, 1.66, 1.72, 1.78, 1.84, 1.9, 1.96, 2.0, 2.12, 2.25, 2.37, 2.5, 2.62, 2.75, 2.87, 3.0,
+		3.2, 3.4, 3.6, 3.8, 4.0, 4.3, 4.7, 4.9, 5.0, 5.5, 6.0, 6.5, 6.8, 7.0, 7.3, 7.5, 7.8, 8.0, 8.4, 8.7, 9.0, 9.4,
+		9.6, 9.8, 10.0
+	];
+
 	matrix = [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0];
 
 	/**
@@ -91,6 +101,41 @@ export class ColorMatrix {
 		this.concat(mat);
 	}
 
+	// https://en.wikibooks.org/wiki/Beginner%27s_Guide_to_Adobe_Flash/Filters_and_Blend_Modes/Adjusting_Color_Filters
+	// https://github.com/jindrapetrik/jpexs-decompiler/blob/master/libsrc/ffdec_lib/src/com/jpexs/decompiler/flash/xfl/XFLConverter.java#L5436
+	/**
+	 * The contrast adjustement based on Flash.
+	 * @param {number} c The contrast value, between 100 and -100.
+	 */
+	adjustContrastFlash(c) {
+		c = Math.min(Math.max(Math.round(c), -100), 100);
+		const v = (c < 0 ? c / 100 : ColorMatrix.FLASH_CONTRAST_VALUES[c]) + 1;
+		const o = -0.24902 * (v - 1);
+		var mat = [
+			v,
+			0,
+			0,
+			0,
+			o, // r
+			0,
+			v,
+			0,
+			0,
+			o, // g
+			0,
+			0,
+			v,
+			0,
+			o, // b
+			0,
+			0,
+			0,
+			1,
+			0 // a
+		];
+		this.concat(mat);
+	}
+
 	/**
 	 * Changes the brightness of the matrix.
 	 * @param {number} b The change in brightness. This increases/decreases the brigthness, this does not set it.
@@ -129,6 +174,15 @@ export class ColorMatrix {
 			0 // a
 		];
 		this.concat(mat);
+	}
+
+	// https://en.wikibooks.org/wiki/Beginner%27s_Guide_to_Adobe_Flash/Filters_and_Blend_Modes/Adjusting_Color_Filters
+	/**
+	 * The brightness adjustement based on Flash.
+	 * @param {number} b The brightness value, between -100 and 100.
+	 */
+	adjustBrightnessFlash(b) {
+		this.adjustBrightness(Math.min(Math.max(Math.round(b), -100), 100) / 255);
 	}
 
 	/**
