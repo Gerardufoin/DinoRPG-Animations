@@ -2,7 +2,6 @@
 
 import { Rectangle, Renderer } from 'pixi.js';
 import { Animator } from './Animator.js';
-import { TextureManager } from './TextureManager.js';
 
 /**
  * Allow the transformation from an Animator into an image which can then be displayed in an <img> tag.
@@ -42,10 +41,6 @@ export class ImageExtractor {
 				}),
 				busy: false
 			});
-		}
-		if (!TextureManager.haveAllTexturesLoaded()) {
-			TextureManager.registerCallback(ImageExtractor._convert);
-			return;
 		}
 		for (const r of ImageExtractor._renderers) {
 			if (ImageExtractor._queue.length > 0 && !r.busy) {
@@ -182,26 +177,39 @@ export class ImageExtractor {
 	 * @param {*} callback The callback where to send the result.
 	 * @param {number | undefined} width The width of the resulting image.
 	 * @param {number | undefined} height The height of the resulting image.
+	 * @param {number | undefined} x The offset x position based on the center of the image.
+	 * @param {number | undefined} y The offset y position based on the center of the image.
 	 * @param {boolean} html If true, the output will be an img tag. Otherwise output will be the image data.
 	 * @param {string} format Format of the image. 'image/png' by default.
 	 */
-	static convertToImage(entity, callback, width = undefined, height = undefined, html = true, format = 'image/png') {
+	static convertToImage(
+		entity,
+		callback,
+		width = undefined,
+		height = undefined,
+		x = undefined,
+		y = undefined,
+		html = true,
+		format = 'image/png'
+	) {
 		if (!entity) {
 			return;
 		}
 		let rect = undefined;
 		if (width && height) {
-			rect = new Rectangle(entity.x - width / 2, entity.y - height / 2, width, height);
+			rect = new Rectangle(entity.x - width / 2 + (x ?? 0), entity.y - height / 2 + (y ?? 0), width, height);
 		}
-		ImageExtractor._queue.push({
-			entity: entity,
-			callback: callback,
-			animation: false,
-			frame: rect,
-			format: format,
-			html: html
-		});
-		ImageExtractor._convert();
+		entity.onLoad = () => {
+			ImageExtractor._queue.push({
+				entity: entity,
+				callback: callback,
+				animation: false,
+				frame: rect,
+				format: format,
+				html: html
+			});
+			ImageExtractor._convert();
+		};
 	}
 
 	/**
@@ -215,6 +223,8 @@ export class ImageExtractor {
 	 * @param {*} callback The callback where to send the result.
 	 * @param {number | undefined} width The width of the resulting image.
 	 * @param {number | undefined} height The height of the resulting image.
+	 * @param {number | undefined} x The offset x position based on the center of the image.
+	 * @param {number | undefined} y The offset y position based on the center of the image.
 	 * @param {boolean} html If true, the output will be an img tag. Otherwise output will be the image data.
 	 * @param {string} format Format of the image. 'image/png' by default.
 	 */
@@ -223,6 +233,8 @@ export class ImageExtractor {
 		callback,
 		width = undefined,
 		height = undefined,
+		x = undefined,
+		y = undefined,
 		html = true,
 		format = 'image/png'
 	) {
@@ -231,16 +243,18 @@ export class ImageExtractor {
 		}
 		let rect = undefined;
 		if (width && height) {
-			rect = new Rectangle(entity.x - width / 2, entity.y - height / 2, width, height);
+			rect = new Rectangle(entity.x - width / 2 + (x ?? 0), entity.y - height / 2 + (y ?? 0), width, height);
 		}
-		ImageExtractor._queue.push({
-			entity: entity,
-			callback: callback,
-			animation: true,
-			frame: rect,
-			format: format,
-			html: html
-		});
-		ImageExtractor._convert();
+		entity.onLoad = () => {
+			ImageExtractor._queue.push({
+				entity: entity,
+				callback: callback,
+				animation: true,
+				frame: rect,
+				format: format,
+				html: html
+			});
+			ImageExtractor._convert();
+		};
 	}
 }

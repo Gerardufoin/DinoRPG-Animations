@@ -195,7 +195,7 @@ export class PartManager {
 			sprite.alpha = part.alpha;
 		}
 		sprite.filters = PartManager.createPartFilters(part, sprite.filters);
-		localTransform.addChild(sprite);
+		localTransform.addSprite(sprite);
 
 		if (part.name) {
 			localTransform.name = part.name;

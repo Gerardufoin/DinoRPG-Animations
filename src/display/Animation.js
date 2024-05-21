@@ -105,6 +105,38 @@ export class Animation extends Container {
 	_glowFilter;
 
 	/**
+	 * The number of elements the animation object depends on which are currently still loading.
+	 * @type {number}
+	 */
+	_loadingElements = 0;
+	/**
+	 * Returns true if the animation has finished loading. False otherwise.
+	 * @type {boolean}
+	 */
+	get loaded() {
+		return this._loadingElements == 0;
+	}
+	/**
+	 * Registered callbacks to call once the Animation finishes loading.
+	 * Callbacks are removed once called.
+	 * @type {(() => void)[]}
+	 */
+	_loadCallbacks = [];
+	/**
+	 * Adds a callback to be called once the animation has finished loading.
+	 * An animation finishes loading once the texture of all its children have loaded.
+	 * If the animation is already in a loaded state, the callback is immediately triggered.
+	 * @param {() => void} fn The callback to fire once the animation finishes loading.
+	 */
+	set onLoad(fn) {
+		if (this.loaded) {
+			fn();
+		} else {
+			this._loadCallbacks.push(fn);
+		}
+	}
+
+	/**
 	 * Create a new Animation and specify the scale.
 	 * @param {number} scale The Scale of the animation.
 	 */
@@ -114,12 +146,75 @@ export class Animation extends Container {
 	}
 
 	/**
+	 * Overload the addChild method to make sure nothing uses it by accident.
+	 * Adding a child directly will bypass the loading system and has to be avoided.
+	 * @param {...any} children Elements to add.
+	 * @returns {any} The normal addChild return value.
+	 */
+	addChild(...children) {
+		console.warn(
+			'[Animation.addChild] should not be directly called to allow for onLoad to work. Use addSprite/Anim/Part instead.'
+		);
+		return super.addChild(...children);
+	}
+
+	/**
+	 * Executes all the load callbacks and empty the queue.
+	 */
+	executeLoadCallbacks() {
+		for (const cb of this._loadCallbacks) {
+			cb();
+		}
+		this._loadCallbacks = [];
+	}
+
+	/**
+	 * Adds a sprite element to the animation.
+	 * This will add the sprite to the loading queue.
+	 * @param {Sprite} sprite The Sprite to add as a child to the animation.
+	 */
+	addSprite(sprite) {
+		// If the texture is loading, we increase the loading children and setup the callback once the loading is done.
+		if (!sprite.texture.valid) {
+			const cb = () => {
+				sprite.texture.baseTexture.off('loaded', cb);
+				this._loadingElements--;
+				if (this._loadingElements == 0) {
+					this.executeLoadCallbacks();
+				}
+			};
+			this._loadingElements++;
+			sprite.texture.baseTexture.on('loaded', cb);
+		}
+		super.addChild(sprite);
+	}
+
+	/**
+	 * Increase the loading elements of the animation.
+	 * Called in addAnim, can be called if the animation has to wait for another element to load.
+	 * @param {Animation} anim The animation to wait on.
+	 */
+	waitForAnimation(anim) {
+		if (!anim.loaded) {
+			this._loadingElements++;
+			anim.onLoad = () => {
+				this._loadingElements--;
+				if (this._loadingElements === 0) {
+					this.executeLoadCallbacks();
+				}
+			};
+		}
+	}
+
+	/**
 	 * Add a child animation to the object.
 	 * The child animation may or may not have an actual playing animation.
 	 * @param {Animation} anim A PixiJS Container containing multiple sprites and possibly an animation in its children.
 	 */
 	addAnim(anim) {
-		this.addChild(anim);
+		// If the animation is still loading, we increase the children count and setup the callback once the animation is done loading.
+		this.waitForAnimation(anim);
+		super.addChild(anim);
 		if (anim.getAnimationLength() > 0 || anim.hasChildAnimation()) {
 			this._childAnimations.push(anim);
 		}

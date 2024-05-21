@@ -1,32 +1,43 @@
 /* eslint-disable */
-let test_dinoz = [
-	'09T1Yt9wqq4Rx000',
-	'09w7y7qqpdhld000',
-	'0An2HcXN9sl3m000',
-	'19hot0hFbItLS000',
-	'19VSfUdpIPb0a000',
-	'1AADFvpotbA6y000',
-	'79TMjJApT93Mx000',
-	'79vKIt6DlGsCt000',
-	'89KlMhswn7mQ4000',
-	'89xsFY1bzYhjG000',
-	'99gLuBRdyrrk0000',
-	'991wF8kEU0A0u000'
-];
+const dinoValues = '0123456789ABCDEFGHIJK';
+const values = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+
+function randomCode() {
+	let code = dinoValues.charAt(Math.floor(Math.random() * dinoValues.length));
+	code += values.charAt(Math.floor(Math.random() * 11));
+	// 7 next = body part
+	// 4 next = color
+	for (let i = 0; i < 11; ++i) {
+		code += values.charAt(Math.floor(Math.random() * values.length));
+	}
+	// 1 next = palette
+	code += '0';
+	// 1 next = special
+	code += Math.random() < 0.1 ? '1' : '0';
+	// 1 next = nothing
+	code += '0';
+	return code;
+}
 
 /**
  * Get dinoz as a still image tag
  */
 function randomDinoPortrait() {
+	const code = randomCode();
 	new DinoAnim.sdino({
-		data: test_dinoz[Math.floor(Math.random() * test_dinoz.length)],
+		data: code,
 		flip: 1
 	}).toImage(
 		(div) => {
 			document.body.appendChild(div);
+			div.onclick = () => {
+				console.log(code);
+			};
 		},
 		45,
-		45
+		45,
+		0,
+		-10
 	);
 }
 
@@ -34,15 +45,21 @@ function randomDinoPortrait() {
  * Get dinoz as a div containing all animations as child image tags.
  */
 function randomDinoAnimated() {
+	const code = randomCode();
 	new DinoAnim.sdino({
-		data: test_dinoz[Math.floor(Math.random() * test_dinoz.length)],
+		data: code,
 		flip: 1
 	}).toAnimation(
 		(div) => {
 			document.body.appendChild(div);
+			div.onclick = () => {
+				console.log(code);
+			};
 		},
 		45,
-		45
+		45,
+		0,
+		-10
 	);
 }
 
@@ -51,14 +68,16 @@ function randomDinoAnimated() {
  * To use if you want to create your own display of the dinoz.
  */
 new DinoAnim.sdino({
-	data: test_dinoz[Math.floor(Math.random() * test_dinoz.length)],
+	data: randomCode(),
 	flip: 1
 }).toRawImage(
 	(imgData) => {
 		//console.log(imgData);
 	},
 	45,
-	45
+	45,
+	0,
+	-10
 );
 
 /**
@@ -66,21 +85,23 @@ new DinoAnim.sdino({
  * To use to create your own rendering of the extraction.
  */
 new DinoAnim.sdino({
-	data: test_dinoz[Math.floor(Math.random() * test_dinoz.length)],
+	data: randomCode(),
 	flip: 1
 }).toRawAnimation(
 	(arr) => {
 		//console.log(arr);
 	},
 	45,
-	45
+	45,
+	0,
+	-10
 );
 
 for (let i = 0; i < 10; ++i) {
 	randomDinoPortrait();
 }
 
-for (let i = 0; i < 500; ++i) {
+for (let i = 0; i < 100; ++i) {
 	randomDinoAnimated();
 }
 

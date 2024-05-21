@@ -157,6 +157,7 @@ export class ADino extends Animator {
 		if (this._castShadow && this.dinoInfos.shadow) {
 			const shadow = PartManager.getSubPart(this.dinoInfos.shadow, dParts, this._palette, this._body._scale);
 			if (shadow) {
+				this._body.waitForAnimation(shadow);
 				this.addChildAt(shadow, 0);
 			}
 		}
@@ -171,6 +172,7 @@ export class ADino extends Animator {
 					scaling * (partsScaling[pName] ?? 1)
 				);
 				if (part) {
+					this._body.waitForAnimation(part);
 					this.addChild(part);
 				}
 			}

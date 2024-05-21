@@ -71,6 +71,22 @@ export class Animator extends Container {
 	}
 
 	/**
+	 * Check if the animation has finished loading.
+	 * @type {boolean}
+	 */
+	get loaded() {
+		return this._body.loaded;
+	}
+	/**
+	 * Sets a callback to be fired once the animation finished loading.
+	 * If the animation is already loaded, the callback fires immediately.
+	 * @param {() => void} cb The callback to register once the animation is loaded.
+	 */
+	set onLoad(cb) {
+		this._body.onLoad = cb;
+	}
+
+	/**
 	 * Contructor of the Animator.
 	 * Adds the body to the main container, setup the update and add the default 'stop' callback which stop the animation.
 	 * @param {boolean} autoUpdate Set if the Animator must register itself to the PixiJS ticker for its animation to play automatically. True by default.
@@ -343,9 +359,11 @@ export class Animator extends Container {
 	 * @param {any} callback A callback receiving the resulting image as parameter.
 	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
 	 * @param {number | undefined} height The height of the image. Needs width to be defined.
+	 * @param {number | undefined} x The offset x position based on the center of the image.
+	 * @param {number | undefined} y The offset y position based on the center of the image.
 	 */
-	toImage(callback, width = undefined, height = undefined) {
-		ImageExtractor.convertToImage(this, callback, width, height, true);
+	toImage(callback, width = undefined, height = undefined, x = undefined, y = undefined) {
+		ImageExtractor.convertToImage(this, callback, width, height, x, y, true);
 	}
 
 	/**
@@ -354,10 +372,12 @@ export class Animator extends Container {
 	 * @param {any} callback A callback receiving the resulting image as parameter.
 	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
 	 * @param {number | undefined} height The height of the image. Needs width to be defined.
+	 * @param {number | undefined} x The offset x position based on the center of the image.
+	 * @param {number | undefined} y The offset y position based on the center of the image.
 	 * @param {string} format Format of the output. 'image/png' by default.
 	 */
-	toRawImage(callback, width = undefined, height = undefined, format = 'image/png') {
-		ImageExtractor.convertToImage(this, callback, width, height, false, format);
+	toRawImage(callback, width = undefined, height = undefined, x = undefined, y = undefined, format = 'image/png') {
+		ImageExtractor.convertToImage(this, callback, width, height, x, y, false, format);
 	}
 
 	/**
@@ -367,9 +387,11 @@ export class Animator extends Container {
 	 * @param {any} callback A callback receiving the resulting image as parameter.
 	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
 	 * @param {number | undefined} height The height of the image. Needs width to be defined.
+	 * @param {number | undefined} x The offset x position based on the center of the image.
+	 * @param {number | undefined} y The offset y position based on the center of the image.
 	 */
-	toAnimation(callback, width = undefined, height = undefined) {
-		ImageExtractor.convertToAnimation(this, callback, width, height, true);
+	toAnimation(callback, width = undefined, height = undefined, x = undefined, y = undefined) {
+		ImageExtractor.convertToAnimation(this, callback, width, height, x, y, true);
 	}
 
 	/**
@@ -378,9 +400,18 @@ export class Animator extends Container {
 	 * @param {any} callback A callback receiving the resulting image as parameter.
 	 * @param {number | undefined} width The width of the image. Needs both width and height to be taken into account.
 	 * @param {number | undefined} height The height of the image. Needs width to be defined.
+	 * @param {number | undefined} x The offset x position based on the center of the image.
+	 * @param {number | undefined} y The offset y position based on the center of the image.
 	 * @param {string} format Format of the output. 'image/png' by default.
 	 */
-	toRawAnimation(callback, width = undefined, height = undefined, format = 'image/png') {
-		ImageExtractor.convertToAnimation(this, callback, width, height, false, format);
+	toRawAnimation(
+		callback,
+		width = undefined,
+		height = undefined,
+		x = undefined,
+		y = undefined,
+		format = 'image/png'
+	) {
+		ImageExtractor.convertToAnimation(this, callback, width, height, x, y, false, format);
 	}
 }

@@ -86,7 +86,6 @@ export class GrTornado extends GroupEffect {
 							f.fighter._vy = 0;
 							f.fighter._vz = 0;
 							f.fighter.damages(f.life, 20, { fx: LifeEffect.Air });
-							f.fighter.pauseFlying = false;
 							return false;
 						}
 					}
@@ -106,6 +105,16 @@ export class GrTornado extends GroupEffect {
 				}
 				break;
 		}
+	}
+
+	/**
+	 * Re-enable flying on all the targets and end the state.
+	 */
+	end() {
+		for (const t of this._targets) {
+			t.fighter.pauseFlying = false;
+		}
+		super.end();
 	}
 
 	/**

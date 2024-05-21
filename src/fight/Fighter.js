@@ -948,6 +948,7 @@ export class Fighter extends Phys {
 			if (this._z > 0) {
 				this._z = 0;
 				this._flLand = false;
+				this.playAnim('stand');
 				this.setGroundFx(true);
 			}
 		}
