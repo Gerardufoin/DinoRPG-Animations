@@ -632,9 +632,9 @@ export class MTConverter {
 			value: '_HDamagesGroup',
 			args: [
 				obj.details.fid,
-				obj.details.targets.map((t) => {
+				obj.details.targets?.map((t) => {
 					return { _tid: t.id, _life: t.life };
-				}),
+				}) ?? [],
 				MTConverter.convertDamageSkill(obj)
 			]
 		};

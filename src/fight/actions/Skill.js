@@ -33,6 +33,7 @@ import { GrFireball } from './skills/group/GrFireball.js';
 import { GrHeal } from './skills/group/GrHeal.js';
 import { GrHypnose } from './skills/group/GrHypnose.js';
 import { GrIce } from './skills/group/GrIce.js';
+import { GrInvocation } from './skills/group/GrInvocation.js';
 import { GrJumpAttack } from './skills/group/GrJumpAttack.js';
 import { GrLava } from './skills/group/GrLava.js';
 import { GrLevitRay } from './skills/group/GrLevitRay.js';
@@ -114,8 +115,8 @@ export class Skill extends State {
 			this.addActor(this._fighter);
 		}
 
+		this._targets = [];
 		if (details.targets) {
-			this._targets = [];
 			for (const t of details.targets) {
 				const f = this._scene.getFighter(t.id);
 				if (!f) {
@@ -134,35 +135,20 @@ export class Skill extends State {
 	 */
 	init() {
 		// Target with life set to null are dodging the skill.
-		if (this._targets) {
-			for (const t of this._targets ?? []) {
-				if (t.life === null) {
-					t.fighter.playAnim('special');
-				}
+		for (const t of this._targets) {
+			if (t.life === null) {
+				t.fighter.playAnim('special');
 			}
-			this._targets = this._targets.filter((t) => t.life !== null);
 		}
+		this._targets = this._targets.filter((t) => t.life !== null);
+
 		const state = this.getSkill();
 		if (state) {
 			this._newStates.push(state);
 			return;
 		}
 
-		// Temp
-		if (this._fighter) {
-			console.log(`Fighter ${this._fighter.id} uses skill ${Object.keys(SkillList)[this._skill]}`);
-		} else {
-			console.log(`Skill ${Object.keys(SkillList)[this._skill]} invoked.`);
-		}
-		for (const t of this._targets ?? []) {
-			if (t.life) {
-				if (this._skill === SkillList.Heal) {
-					t.fighter.gainLife(t.life);
-				} else {
-					t.fighter.damages(t.life);
-				}
-			}
-		}
+		console.error(`[Skill] Unknown skill '${this._skill}'`);
 		this.end();
 	}
 
@@ -224,6 +210,14 @@ export class Skill extends State {
 				return new GrCharge(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Anim:
 				return new FxAnim(this._scene, () => this.end(), this._fighter, this._details.anim);
+			case SkillList.Invoc:
+				return new GrInvocation(
+					this._scene,
+					() => this.end(),
+					this._fighter,
+					this._targets,
+					this._details.anim
+				);
 			case SkillList.Sylfide:
 				return new GrSylfide(this._scene, () => this.end(), this._fighter, this._targets);
 			case SkillList.Rafale:

@@ -747,8 +747,8 @@ The scene starts shaking temporarily.
 
 #### Properties
 
-| Property | Type   | Description                                                                                                             |
-| -------- | ------ | ----------------------------------------------------------------------------------------------------------------------- |
-| force?   | number | The strength of the shaking. Default to 8.                                                                              |
-| frict?   | number | The friction between 0 and 0.95. Slows the shaking over time. Lower values reduce the shaking faster. Defaults to 0.75. |
-| speed?   | number | The speed of the shaking. Defaults to 1.                                                                                |
+| Property | Type   | Description                                                                                                                                         |
+| -------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| force?   | number | The strength of the shaking. Default to 8.                                                                                                          |
+| frict?   | number | The friction between 0 and 1. Slows the shaking over time. Lower values reduce the shaking faster. Defaults to 0.75. 1 makes the shaking permanent. |
+| speed?   | number | The speed of the shaking. Defaults to 1.                                                                                                            |

@@ -233,14 +233,14 @@ export class IScene extends Container {
 	/**
 	 * Makes the Scene shake.
 	 * @param {number} force The strength of the Scene displacement.
-	 * @param {number} frict The friction of the shaking, reducing the strength over time. Capped between 0 and 0.95.
+	 * @param {number} frict The friction of the shaking, reducing the strength over time. Capped between 0 and 1.
 	 * @param {number} speed The speed of the shaking, impacting how often the shake happens.
 	 */
 	fxShake(force = 8, frict = 0.75, speed = 1) {
 		if (this._loadingScreen.visible) return;
 		this._shake = {
 			force: force,
-			friction: PixiHelper.mm(0, frict, 0.95),
+			friction: PixiHelper.mm(0, frict, 1),
 			speed: speed,
 			timer: 0
 		};
