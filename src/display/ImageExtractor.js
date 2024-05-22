@@ -113,7 +113,6 @@ export class ImageExtractor {
 	 * @returns {Promise<HTMLImageElement>} The new div containing the animation.
 	 */
 	static async _renderToImage(renderer, entity, frame, format) {
-		renderer.render(entity);
 		return renderer.extract.image(entity, format, undefined, frame);
 	}
 
@@ -197,7 +196,12 @@ export class ImageExtractor {
 		}
 		let rect = undefined;
 		if (width && height) {
-			rect = new Rectangle(entity.x - width / 2 + (x ?? 0), entity.y - height / 2 + (y ?? 0), width, height);
+			rect = new Rectangle(
+				Math.round(entity.x - width / 2 + (x ?? 0)),
+				Math.round(entity.y - height / 2 + (y ?? 0)),
+				width,
+				height
+			);
 		}
 		entity.onLoad = () => {
 			ImageExtractor._queue.push({
@@ -243,7 +247,12 @@ export class ImageExtractor {
 		}
 		let rect = undefined;
 		if (width && height) {
-			rect = new Rectangle(entity.x - width / 2 + (x ?? 0), entity.y - height / 2 + (y ?? 0), width, height);
+			rect = new Rectangle(
+				Math.round(entity.x - width / 2 + (x ?? 0)),
+				Math.round(entity.y - height / 2 + (y ?? 0)),
+				width,
+				height
+			);
 		}
 		entity.onLoad = () => {
 			ImageExtractor._queue.push({
