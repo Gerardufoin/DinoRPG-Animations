@@ -40,8 +40,6 @@ export class AirEnvironment extends Environment {
 	constructor(scene) {
 		super();
 
-		this._root.x = scene.dm.getLayer(Layers.Scene.PARTS).x;
-
 		// Background
 		this._background = new Container();
 		this._background.addChild(new Asset(ref.fx.env.air.background));

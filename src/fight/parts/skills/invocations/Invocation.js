@@ -1,5 +1,5 @@
 // @ts-check
-
+// https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/fx/gr/Invoc.hx
 import { Container, Filter } from 'pixi.js';
 import { Part } from '../../../Part.js';
 import { IScene, SCENE_HEIGHT, SCENE_WIDTH } from '../../../IScene.js';
@@ -22,11 +22,6 @@ export class Invocation extends Part {
 	static WhiteFilter = PixiHelper.colorOffsetFilter(0, 0, 0);
 
 	/**
-	 * The z destination for the invocation.
-	 * @type {number}
-	 */
-	_zDest = 0;
-	/**
 	 * The container allowing to add/remove the filters for the skill aura.
 	 * Children have to be added to body instead of root.
 	 * @type {Container}
@@ -46,14 +41,11 @@ export class Invocation extends Part {
 		super(new Container(), scene);
 		this._root.addChild(this._body);
 
-		const y = SCENE_HEIGHT / 2;
 		this._x = SCENE_WIDTH / 2;
-		this._y = this._scene.getGY(y);
+		this._y = this._scene.getGY(SCENE_HEIGHT - 25);
 		this._z = Invocation.DEFAULT_Z_POSITION;
-		this._zDest = (y - this._y) * 2;
 
 		this._ray = 100;
-		this.dropShadow();
 		this.updatePos();
 
 		this._root.filters = [Invocation.WhiteFilter];
@@ -71,7 +63,10 @@ export class Invocation extends Part {
 	 * @param {number} coef The coefficient for the position, between 0 and 1.
 	 */
 	descend(coef) {
-		this._z = Invocation.DEFAULT_Z_POSITION + (this._zDest - Invocation.DEFAULT_Z_POSITION) * coef;
+		if (!this._shade) {
+			this.dropShadow();
+		}
+		this._z = Invocation.DEFAULT_Z_POSITION * (1 - coef);
 	}
 
 	/**
@@ -105,7 +100,7 @@ export class Invocation extends Part {
 	 * @param {number} coef The coefficient value between 0 and 1.
 	 */
 	fade(coef) {
-		PixiHelper.setPercentColor(Invocation.WhiteFilter, 100, 0, Math.floor(255 * coef));
+		PixiHelper.setPercentColor(Invocation.WhiteFilter, 0, 0, Math.floor(255 * coef));
 	}
 
 	/**

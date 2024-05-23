@@ -132,8 +132,6 @@ export class FireEnvironment extends Environment {
 	constructor(scene) {
 		super();
 
-		this._root.x = scene.dm.getLayer(Layers.Scene.PARTS).x;
-
 		// Spawns in the ash particles
 		for (let i = 0; i < 15; ++i) {
 			const ash = new Ashes(scene);

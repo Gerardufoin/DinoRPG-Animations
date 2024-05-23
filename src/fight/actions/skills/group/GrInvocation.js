@@ -7,6 +7,7 @@ import { Fighter } from '../../../Fighter.js';
 import { Scene } from '../../../Scene.js';
 import { Timer } from '../../../Timer.js';
 import { Invocation } from '../../../parts/skills/invocations/Invocation.js';
+import { Vulcan } from '../../../parts/skills/invocations/Vulcan.js';
 import { GroupEffect } from '../GroupEffect.js';
 
 /**
@@ -33,7 +34,7 @@ export class GrInvocation extends GroupEffect {
 
 		switch (anim) {
 			case 'vulcan':
-				this._invoc = new Invocation(this._scene);
+				this._invoc = new Vulcan(this._scene);
 				break;
 			case 'ifrit':
 				break;

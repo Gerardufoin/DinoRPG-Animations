@@ -106,6 +106,10 @@ const fightVersion = [
 				}
 			},
 			{
+				action: 'Wait',
+				time: 2000
+			},
+			{
 				action: 'Skill',
 				skill: 'Invoc',
 				details: {
@@ -126,7 +130,7 @@ const fightVersion = [
 				action: 'Skill',
 				skill: 'Env',
 				details: {
-					type: 'Lightning'
+					type: 'Air'
 				}
 			}*/
 			/*{
