@@ -1,6 +1,6 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Announce.hx
-import { Container } from 'pixi.js';
+import { Container, Graphics } from 'pixi.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
@@ -12,6 +12,7 @@ import { GlowFilter } from '@pixi/filter-glow';
 import { Tween } from '../../display/Tween.js';
 import { Layers } from '../DepthManager.js';
 import { SCENE_HEIGHT, SCENE_WIDTH } from '../IScene.js';
+import { Sprite } from '@pixi/picture';
 
 /**
  * Visual element for the announce, containing the PixiJS Container, the start and end position of the Tween.
@@ -87,7 +88,7 @@ export class Announce extends State {
 	 * @param {number} fid The Fighter's id.
 	 * @param {string} message The announce to make.
 	 */
-	constructor(scene, endCall, fid, message) {
+	constructor(scene, endCall, fid, message = '') {
 		super(scene, endCall);
 		this._message = message;
 		this._fighter = this._scene.getFighter(fid);
@@ -137,8 +138,22 @@ export class Announce extends State {
 		};
 
 		// Portrait
-		const portrait = this._fighter.portrait;
-		if (portrait) {
+		if (this._fighter._portraitTexture) {
+			const portrait = new Sprite(this._fighter._portraitTexture);
+			portrait.anchor.set(1, 1);
+			portrait.scale.y = 0.7;
+			portrait.scale.x = -this._fighter.intSide * 0.7;
+			this._portrait = {
+				slider: portrait,
+				bx: w - this._fighter.intSide * (w + this._fighter._portraitFrame.width * 0.7),
+				tx: w - this._fighter.intSide * w
+			};
+			this._box.addChild(portrait);
+			portrait.x = this._portrait.bx;
+			portrait.y = SCENE_HEIGHT;
+		} else if (this._fighter.portrait) {
+			// TODO: Remove this part and clean the code once all big dinoz are done.
+			const portrait = this._fighter.portrait;
 			this._portrait = {
 				slider: portrait,
 				bx: w - this._fighter.intSide * (w + 100),
@@ -207,7 +222,7 @@ export class Announce extends State {
 				})
 			);
 			if (this._portrait) {
-				this._scene.tm.addTween(new Tween(this._portrait.slider).to(0.25, { x: this._portrait.bx }));
+				this._scene.tm.addTween(new Tween(this._portrait.slider).to(0.2, { x: this._portrait.bx }));
 			}
 			this._scene.tm.addTween(
 				new Tween(this._bg.slider).to(0.2, { x: this._bg.bx }).onComplete((t) => {

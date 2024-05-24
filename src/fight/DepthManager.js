@@ -7,18 +7,19 @@ import { Sprite } from './Sprite.js';
 
 export const Layers = {
 	Scene: {
-		BG: 0,
-		SHADE: 1,
-		CASTLE: 2,
-		FIGHTERS: 3,
-		EFFECTS: 4,
-		PARTS: 5,
-		BG_FRONT: 6,
-		INTER: 7,
-		COLUMNS: 8,
-		LOADING: 9,
-		DEBUG: 10,
-		SETTINGS: 11
+		HIDDEN: 0,
+		BG: 1,
+		SHADE: 2,
+		CASTLE: 3,
+		FIGHTERS: 4,
+		EFFECTS: 5,
+		PARTS: 6,
+		BG_FRONT: 7,
+		INTER: 8,
+		COLUMNS: 9,
+		LOADING: 10,
+		DEBUG: 11,
+		SETTINGS: 12
 	},
 	Fighter: {
 		BACK: 0,

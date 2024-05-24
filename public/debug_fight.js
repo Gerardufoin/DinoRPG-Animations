@@ -83,6 +83,19 @@ const fightVersion = [
 				action: 'Add',
 				fighter: {
 					props: [],
+					dino: true,
+					life: 100,
+					name: 'Dragon Jr',
+					side: false,
+					scale: 1,
+					fid: 4,
+					gfx: '09T1Yt9wqq4Rx000'
+				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
 					dino: false,
 					life: 100,
 					name: '',
@@ -104,6 +117,16 @@ const fightVersion = [
 					fid: 2,
 					gfx: 'barche'
 				}
+			},
+			{
+				action: 'Announce',
+				fid: 0,
+				message: 'Hello!!'
+			},
+			{
+				action: 'Announce',
+				fid: 4,
+				message: 'Hello!!'
 			},
 			{
 				action: 'Wait',

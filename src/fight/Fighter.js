@@ -1,7 +1,7 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/Fighter.hx
 
-import { ColorMatrixFilter, Container, Filter, Graphics } from 'pixi.js';
+import { ColorMatrixFilter, Container, Filter, Graphics, Matrix, Rectangle, RenderTexture } from 'pixi.js';
 import { PixiHelper } from '../display/PixiHelper.js';
 import { Animator } from '../display/Animator.js';
 import { sdino } from '../sdino.js';
@@ -27,7 +27,7 @@ import { StatusDisplay } from './StatusDisplay.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { Light } from './parts/life/Light.js';
 import { DepthManager, Layers } from './DepthManager.js';
-import { IScene } from './IScene.js';
+import { IScene, SCENE_HEIGHT, SCENE_WIDTH } from './IScene.js';
 import { WaterOnde } from './parts/scene/WaterOnde.js';
 import { FighterProperty, FighterStatus, GroundType, LifeEffect } from './Enums.js';
 import { FireSpark } from './parts/life/FireSpark.js';
@@ -46,6 +46,7 @@ import { IceShard } from './parts/skills/ice/IceShard.js';
 import { MudWall } from './parts/skills/MudWall.js';
 import { TFx, Tween } from '../display/Tween.js';
 import { EnumConverter } from './data/EnumConverter.js';
+import { dino } from '../dino.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -438,6 +439,17 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Texture of the dino in its big format.
+	 * @type {RenderTexture}
+	 */
+	_portraitTexture;
+	/**
+	 * The frame of the portrait for the big dino texture.
+	 * @type {Rectangle}
+	 */
+	_portraitFrame;
+
+	/**
 	 * Creates a new Fighter based on the given Fighter's information.
 	 * @param {{props: number[], dino: boolean, life: number, maxLife?: number, name: string, side: boolean, scale: number, fid: number, gfx: string, entrance?: number, anim?: string, x?: number, y?: number}} fInfos The Fighter's informations.
 	 * @param {IScene} scene The Scene where the Fighter is added.
@@ -464,7 +476,7 @@ export class Fighter extends Phys {
 		this.body.addChild(this._depthManager);
 
 		if (this.isDino) {
-			const dino = new sdino({
+			const smallDino = new sdino({
 				data: fInfos.gfx,
 				autoUpdate: false,
 				pflag: true,
@@ -472,9 +484,9 @@ export class Fighter extends Phys {
 				shadow: false,
 				dark: this.haveProp(FighterProperty.Dark)
 			});
-			this._height = dino.collider.height * this._size;
-			this._width = dino.collider.width * this._size;
-			this._animator = dino;
+			this._height = smallDino.collider.height * this._size;
+			this._width = smallDino.collider.width * this._size;
+			this._animator = smallDino;
 
 			this._announcePortrait = new sdino({
 				data: fInfos.gfx,
@@ -484,6 +496,40 @@ export class Fighter extends Phys {
 				shadow: false,
 				dark: this.haveProp(FighterProperty.Dark)
 			});
+
+			// TODO: Remove _announcePortrait and clean code once all big dinoz are done.
+			if (['0', '1', '2'].includes(fInfos.gfx.charAt(0))) {
+				const bigDino = new dino({
+					data: fInfos.gfx,
+					autoUpdate: false,
+					pflag: false,
+					dark: this.haveProp(FighterProperty.Dark)
+				});
+				// If the dino is not added to the Scene and renderer at least once, the filters are bugged when rendered to the render texture.
+				// If this is fixed one day, this step and the hidden layer can be removed.
+				this._scene.dm.addContainer(bigDino, Layers.Scene.HIDDEN);
+				// Generate texture of the big dino to use for announce and slot
+				bigDino.onLoad = () => {
+					this._scene.dm.removeContainer(bigDino, Layers.Scene.HIDDEN);
+					const b = bigDino.getBounds();
+					this._portraitFrame = new Rectangle(
+						Math.round(b.x),
+						Math.round(b.y),
+						Math.round(b.width),
+						Math.round(b.height)
+					);
+					this._portraitTexture = RenderTexture.create({
+						width: this._portraitFrame.width,
+						height: this._portraitFrame.height
+					});
+					const m = new Matrix();
+					m.translate(-this._portraitFrame.x, -this._portraitFrame.y);
+					this._scene.renderer.render(bigDino, {
+						renderTexture: this._portraitTexture,
+						transform: m
+					});
+				};
+			}
 		} else {
 			const monster = new smonster({
 				type: fInfos.gfx,
