@@ -14,9 +14,11 @@ export class sdino extends ADino {
 	 * @type {{width: number, height: number}}
 	 */
 	get collider() {
+		// TODO Remove assignement once all dinoz are migrated to big/small format
+		const obj = this._dinoInfos?.small ?? this._dinoInfos;
 		return {
-			width: 36 * (this._dinoInfos?.width ?? 1),
-			height: 39 * (this._dinoInfos?.height ?? 1)
+			width: 36 * (obj?.width ?? 1),
+			height: 39 * (obj?.height ?? 1)
 		};
 	}
 

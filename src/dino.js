@@ -1,4 +1,5 @@
 // @ts-check
+import { Rectangle } from 'pixi.js';
 import { ADino } from './ADino.js';
 
 /**
@@ -15,5 +16,14 @@ export class dino extends ADino {
 	 */
 	constructor(data) {
 		super(data, true);
+	}
+
+	/**
+	 * Get the bounds of the rectangle for the big dino. This is used to position the texture in the Slots.
+	 * @returns {Rectangle} The bounds of the view sprite or an empty rectangle if no view sprite is found.
+	 */
+	getView() {
+		const view = this._body.getPartSprite('view');
+		return view ? view.getBounds() : new Rectangle();
 	}
 }

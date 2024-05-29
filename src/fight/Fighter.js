@@ -475,6 +475,7 @@ export class Fighter extends Phys {
 		this._depthManager = new DepthManager(Object.keys(Layers.Fighter).length);
 		this.body.addChild(this._depthManager);
 
+		// If the Fighter is a dino, creates the announce portrait and the slot display
 		if (this.isDino) {
 			const smallDino = new sdino({
 				data: fInfos.gfx,
@@ -497,7 +498,25 @@ export class Fighter extends Phys {
 				dark: this.haveProp(FighterProperty.Dark)
 			});
 
-			// TODO: Remove _announcePortrait and clean code once all big dinoz are done.
+			// TODO Refacto setSide position in code once _announcePortrait is gone
+			this.setSide(fInfos.side);
+
+			// If the Fighter is a dino, adds a slot with its portrait.
+			const portrait = new sdino({
+				data: fInfos.gfx,
+				autoUpdate: false,
+				pflag: false,
+				scale: Slot.FIGHTER_PORTRAIT_SCALE,
+				shadow: false,
+				flip: this.side,
+				dark: this.haveProp(FighterProperty.Dark)
+			});
+			portrait.x = 18;
+			portrait.y = 33;
+			this._slot = new Slot(this._life, this._maxLife, this._energy, this._maxEnergy, portrait, this._scene.tm);
+			this._scene.addSlot(this._slot, this.side);
+
+			// TODO: Remove _announcePortrait + slot portrait and clean code once all big dinoz are done.
 			if (['0', '1', '2'].includes(fInfos.gfx.charAt(0))) {
 				const bigDino = new dino({
 					data: fInfos.gfx,
@@ -528,6 +547,8 @@ export class Fighter extends Phys {
 						renderTexture: this._portraitTexture,
 						transform: m
 					});
+
+					this._slot.setPortrait(this._portraitTexture, this._portraitFrame, bigDino.getView(), this.intSide);
 				};
 			}
 		} else {
@@ -543,11 +564,12 @@ export class Fighter extends Phys {
 			this._width = monster.collider.width * this._size;
 			this._animator = monster;
 			this._shadeType = monster.getShadeType();
+			// TODO Move setSide along with the one in the dino setup once the big dinoz are done.
+			this.setSide(fInfos.side);
 		}
 		this._skin.addChild(this._animator);
 		this._skin.filters = [];
 		this.dm.addContainer(this._skin, Layers.Fighter.BODY);
-		this.setSide(fInfos.side);
 
 		this.dm.addContainer(this._statusDisplay, Layers.Fighter.STATUS_ICON);
 
@@ -590,23 +612,6 @@ export class Fighter extends Phys {
 			};
 			this.dm.addSprite(this._waterOnde.front, Layers.Fighter.FRONT);
 			this.dm.addSprite(this._waterOnde.back, Layers.Fighter.BACK);
-		}
-
-		// If the Fighter is a dino, adds a slot with its portrait.
-		if (this._isDino) {
-			const portrait = new sdino({
-				data: fInfos.gfx,
-				autoUpdate: false,
-				pflag: false,
-				scale: Slot.FIGHTER_PORTRAIT_SCALE,
-				shadow: false,
-				flip: this.side,
-				dark: this.haveProp(FighterProperty.Dark)
-			});
-			portrait.x = 18;
-			portrait.y = 33;
-			this._slot = new Slot(this._life, this._maxLife, this._energy, this._maxEnergy, portrait, this._scene.tm);
-			this._scene.addSlot(this._slot, this.side);
 		}
 
 		this.createHitbox();

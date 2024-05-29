@@ -11,7 +11,7 @@
  * @typedef {{bar: Container, hit: Container, max: Container, bg: Container}} EnergyBar
  */
 
-import { ColorMatrixFilter, Container, Filter, SpriteMaskFilter } from 'pixi.js';
+import { ColorMatrixFilter, Container, Filter, Rectangle, SpriteMaskFilter, Texture } from 'pixi.js';
 import { Asset } from '../display/Asset.js';
 import { ref } from '../gfx/references.js';
 import { PixiHelper } from '../display/PixiHelper.js';
@@ -19,6 +19,7 @@ import { Timer } from './Timer.js';
 import { Tween, TFx } from '../display/Tween.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { TweenManager } from './TweenManager.js';
+import { Sprite } from '@pixi/picture';
 
 /**
  * Creates a new Slot.
@@ -265,6 +266,28 @@ export class Slot extends Container {
 		masked.addChild(mask);
 		masked.filters = [new SpriteMaskFilter(mask)];
 		this.addChild(masked);
+	}
+
+	/**
+	 * Set the slot's portrait once the big dino render texture has finish generating.
+	 * @param {Texture} tex The texture of the portrait to set.
+	 * @param {Rectangle} textureBounds The texture of the portrait to set.
+	 * @param {Rectangle} viewBounds The texture of the portrait to set.
+	 * @param {number} side The side of the fighter, 1 for left, -1 for right.
+	 */
+	setPortrait(tex, textureBounds, viewBounds, side) {
+		this._portrait.removeChildren();
+		const portrait = new Sprite(tex);
+		const scale = 36 / (viewBounds.width == 0 ? 36 : viewBounds.width);
+		// Invert the sprite if on left side
+		if (side > 0) {
+			portrait.x = Math.round((viewBounds.x - textureBounds.x + viewBounds.width) * scale);
+		} else {
+			portrait.x = Math.round((textureBounds.x - viewBounds.x) * scale);
+		}
+		portrait.y = Math.round((textureBounds.y - viewBounds.y) * scale);
+		portrait.scale.set(scale * -side, scale);
+		this._portrait.addChild(portrait);
 	}
 
 	/**

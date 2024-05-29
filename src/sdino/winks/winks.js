@@ -137,7 +137,9 @@ export const winks = {
 			// 639_p5b
 			l_l_2: parts_big.left_leg_2,
 			// 641_p5g
-			l_pincer: parts_big.left_pincer
+			l_pincer: parts_big.left_pincer,
+			// 293
+			view: parts_big.view
 		},
 		animations: {
 			// 642
@@ -146,7 +148,7 @@ export const winks = {
 	},
 	small: {
 		width: 0.673,
-		height: 0.45,
+		height: 0.4,
 		transforms: [
 			// 285
 			{

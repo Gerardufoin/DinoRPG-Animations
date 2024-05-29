@@ -1668,5 +1668,12 @@ export const parts_big = {
 				]
 			]
 		}
+	],
+	// 293
+	view: [
+		{
+			ref: ref.view,
+			hidden: true
+		}
 	]
 };

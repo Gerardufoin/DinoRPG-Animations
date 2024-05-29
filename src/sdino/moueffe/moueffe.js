@@ -132,9 +132,9 @@ export const moueffe = {
 			// 291_p5c
 			hair_side: parts_big.hair_side,
 			// 81_p1
-			b_bones: parts_big.back_bones
-			// 292
-			//view: parts_big.view
+			b_bones: parts_big.back_bones,
+			// 293
+			view: parts_big.view
 		},
 		animations: {
 			// 294

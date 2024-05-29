@@ -1550,7 +1550,7 @@ export const parts_big = {
 	view: [
 		{
 			ref: ref.view,
-			alpha: 0
+			hidden: true
 		}
 	]
 };

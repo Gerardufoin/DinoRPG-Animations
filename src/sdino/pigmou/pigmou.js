@@ -134,7 +134,9 @@ export const pigmou = {
 			// 455_p3
 			eyes: parts_big.eyes,
 			// 473_p4
-			mouth: parts_big.mouth
+			mouth: parts_big.mouth,
+			// 293
+			view: parts_big.view
 		},
 		animations: {
 			// 474
