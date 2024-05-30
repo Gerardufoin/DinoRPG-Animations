@@ -1,5 +1,4 @@
 // @ts-check
-
 import { Animator } from '../../../../display/Animator.js';
 import { Asset } from '../../../../display/Asset.js';
 import { invoc_vulcan_head } from '../../../../gfx/invocations/vulcan_head.js';

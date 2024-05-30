@@ -102,6 +102,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/gfx/LIBRARY/Symbol 321.xml', '_sub', undefined, 2); // _pileouface
 //parser.parse('./resources/gfx/LIBRARY/Symbol 328.xml', '_sub', undefined, 2); // _receptacle
 //parser.parse('./resources/gfx/LIBRARY/Symbol 337.xml', '_sub', undefined, 2); // vulcan head
+//parser.parse('./resources/gfx/LIBRARY/Symbol 343.xml', '_sub', undefined, 2); // ifrit tatoo
 //parser.parse('./resources/gfx/LIBRARY/Symbol 617.xml', '_sub', undefined, 2); // strong notification
 //parser.parse('./resources/gfx/LIBRARY/Symbol 626.xml', '_sub', undefined, 2); // _enduranceOn
 //parser.parse('./resources/gfx/LIBRARY/Symbol 643.xml', '_sub', undefined, 2); // brulure

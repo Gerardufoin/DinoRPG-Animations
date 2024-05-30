@@ -6,6 +6,7 @@ import { LifeEffect, SkillType } from '../../../Enums.js';
 import { Fighter } from '../../../Fighter.js';
 import { Scene } from '../../../Scene.js';
 import { Timer } from '../../../Timer.js';
+import { Ifrit } from '../../../parts/skills/invocations/Ifrit.js';
 import { Invocation } from '../../../parts/skills/invocations/Invocation.js';
 import { Vulcan } from '../../../parts/skills/invocations/Vulcan.js';
 import { GroupEffect } from '../GroupEffect.js';
@@ -37,6 +38,7 @@ export class GrInvocation extends GroupEffect {
 				this._invoc = new Vulcan(this._scene);
 				break;
 			case 'ifrit':
+				this._invoc = new Ifrit(this._scene);
 				break;
 			case 'bluewh':
 				break;
