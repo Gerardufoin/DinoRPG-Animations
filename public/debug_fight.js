@@ -114,7 +114,7 @@ const fightVersion = [
 				skill: 'Invoc',
 				details: {
 					fid: 0,
-					anim: 'ifrit'
+					anim: 'bluewh'
 				}
 			}
 			/*{
