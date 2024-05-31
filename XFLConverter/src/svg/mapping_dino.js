@@ -304,5 +304,11 @@ export const mapping_dino = {
 	635: 'winks/left_leg_2_tube_claws',
 	636: 'winks/left_leg_2_tube',
 	638: 'winks/left_leg_2_tube_highlight',
-	640: 'winks/left_leg_1_pincer_highlight'
+	640: 'winks/left_leg_1_pincer_highlight',
+	643: 'planaile/shadow',
+	645: 'planaile/right_wing',
+	647: 'planaile/right_wing_front',
+	649: 'planaile/right_hand',
+	651: 'planaile/right_foot',
+	653: 'planaile/face'
 };

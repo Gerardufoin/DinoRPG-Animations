@@ -1,34 +1,34 @@
 // @ts-check
 
-export let walk = {
+export const walk = {
 	id: 'planaile_walk',
 	frames: [
 		{
-			left_eye: {
+			l_eye: {
 				tx: -2,
 				ty: -3.5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -6.65,
 				ty: -2.8
 			},
-			right_hand: {
+			r_hand: {
 				tx: -10.05,
 				ty: 6.7
 			},
-			left_arm: {
+			l_arm: {
 				tx: -0.1,
 				ty: 3.95
 			},
-			left_hand: {
+			l_hand: {
 				tx: -5.75,
 				ty: 10.7
 			},
-			left_foot: {
+			l_foot: {
 				tx: 7.65,
 				ty: 6.8
 			},
-			left_leg: {
+			l_leg: {
 				tx: 5.8,
 				ty: 3.05
 			},
@@ -44,21 +44,21 @@ export let walk = {
 				tx: -0.75,
 				ty: 0.45
 			},
-			right_arm: {
+			r_arm: {
 				tx: -5.8,
 				ty: 2.95
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -1.75,
 				ty: -3.5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -6.4,
 				ty: -2.8
 			},
-			right_hand: {
+			r_hand: {
 				tx: -10.05,
 				ty: 6.35,
 				a: 0.999,
@@ -66,7 +66,7 @@ export let walk = {
 				c: -0.039,
 				d: 0.999
 			},
-			left_arm: {
+			l_arm: {
 				tx: 0.25,
 				ty: 3.95,
 				a: 0.997,
@@ -74,11 +74,11 @@ export let walk = {
 				c: 0.074,
 				d: 0.997
 			},
-			left_hand: {
+			l_hand: {
 				tx: -5,
 				ty: 10.7
 			},
-			left_foot: {
+			l_foot: {
 				tx: 7.15,
 				ty: 6.8,
 				a: 0.915,
@@ -86,7 +86,7 @@ export let walk = {
 				c: -0.399,
 				d: 0.915
 			},
-			left_leg: {
+			l_leg: {
 				tx: 5.55,
 				ty: 3.05
 			},
@@ -102,7 +102,7 @@ export let walk = {
 				tx: -0.75,
 				ty: 0.45
 			},
-			right_arm: {
+			r_arm: {
 				tx: -5.7,
 				ty: 2.8,
 				a: 0.999,
@@ -112,15 +112,15 @@ export let walk = {
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -1.5,
 				ty: -3.5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -6.15,
 				ty: -2.8
 			},
-			right_hand: {
+			r_hand: {
 				tx: -10.1,
 				ty: 6,
 				a: 0.997,
@@ -128,7 +128,7 @@ export let walk = {
 				c: -0.079,
 				d: 0.997
 			},
-			left_arm: {
+			l_arm: {
 				tx: 0.55,
 				ty: 3.95,
 				a: 0.988,
@@ -136,11 +136,11 @@ export let walk = {
 				c: 0.148,
 				d: 0.988
 			},
-			left_hand: {
+			l_hand: {
 				tx: -4.25,
 				ty: 10.7
 			},
-			left_foot: {
+			l_foot: {
 				tx: 6.65,
 				ty: 6.85,
 				a: 0.679,
@@ -148,7 +148,7 @@ export let walk = {
 				c: -0.732,
 				d: 0.679
 			},
-			left_leg: {
+			l_leg: {
 				tx: 5.3,
 				ty: 3.05
 			},
@@ -164,7 +164,7 @@ export let walk = {
 				tx: -0.75,
 				ty: 0.45
 			},
-			right_arm: {
+			r_arm: {
 				tx: -5.6,
 				ty: 2.6,
 				a: 0.997,
@@ -174,15 +174,15 @@ export let walk = {
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -1.85,
 				ty: -3.25
 			},
-			right_eye: {
+			r_eye: {
 				tx: -6.5,
 				ty: -2.55
 			},
-			right_hand: {
+			r_hand: {
 				tx: -10.1,
 				ty: 5.85,
 				a: 0.998,
@@ -190,7 +190,7 @@ export let walk = {
 				c: -0.052,
 				d: 0.998
 			},
-			left_arm: {
+			l_arm: {
 				tx: 0.55,
 				ty: 4.25,
 				a: 0.989,
@@ -198,7 +198,7 @@ export let walk = {
 				c: 0.197,
 				d: 0.964
 			},
-			left_hand: {
+			l_hand: {
 				tx: -3.8,
 				ty: 10.95,
 				a: 0.996,
@@ -206,7 +206,7 @@ export let walk = {
 				c: 0.079,
 				d: 1.005
 			},
-			left_foot: {
+			l_foot: {
 				tx: 7.2,
 				ty: 6.85,
 				a: 0.852,
@@ -214,7 +214,7 @@ export let walk = {
 				c: -0.519,
 				d: 0.852
 			},
-			left_leg: {
+			l_leg: {
 				tx: 5.6,
 				ty: 3.1,
 				a: 0.996,
@@ -234,7 +234,7 @@ export let walk = {
 				tx: -0.9,
 				ty: 0.55
 			},
-			right_arm: {
+			r_arm: {
 				tx: -5.55,
 				ty: 2.65,
 				a: 0.992,
@@ -244,15 +244,15 @@ export let walk = {
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -2.25,
 				ty: -2.95
 			},
-			right_eye: {
+			r_eye: {
 				tx: -6.9,
 				ty: -2.25
 			},
-			right_hand: {
+			r_hand: {
 				tx: -10.05,
 				ty: 5.8,
 				a: 0.999,
@@ -260,7 +260,7 @@ export let walk = {
 				c: -0.026,
 				d: 0.999
 			},
-			left_arm: {
+			l_arm: {
 				tx: 0.55,
 				ty: 4.6,
 				a: 0.989,
@@ -268,7 +268,7 @@ export let walk = {
 				c: 0.244,
 				d: 0.938
 			},
-			left_hand: {
+			l_hand: {
 				tx: -3.4,
 				ty: 11.15,
 				a: 0.992,
@@ -276,7 +276,7 @@ export let walk = {
 				c: 0.159,
 				d: 1.004
 			},
-			left_foot: {
+			l_foot: {
 				tx: 7.95,
 				ty: 6.85,
 				a: 0.962,
@@ -284,7 +284,7 @@ export let walk = {
 				c: -0.268,
 				d: 0.962
 			},
-			left_leg: {
+			l_leg: {
 				tx: 5.9,
 				ty: 3.2,
 				a: 0.987,
@@ -304,7 +304,7 @@ export let walk = {
 				tx: -1.1,
 				ty: 0.65
 			},
-			right_arm: {
+			r_arm: {
 				tx: -5.4,
 				ty: 2.7,
 				a: 0.986,
@@ -314,19 +314,19 @@ export let walk = {
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -2.6,
 				ty: -2.7
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7.25,
 				ty: -2
 			},
-			right_hand: {
+			r_hand: {
 				tx: -10.05,
 				ty: 5.7
 			},
-			left_arm: {
+			l_arm: {
 				tx: 0.6,
 				ty: 4.9,
 				a: 0.988,
@@ -334,7 +334,7 @@ export let walk = {
 				c: 0.293,
 				d: 0.909
 			},
-			left_hand: {
+			l_hand: {
 				tx: -2.95,
 				ty: 11.4,
 				a: 0.988,
@@ -342,11 +342,11 @@ export let walk = {
 				c: 0.242,
 				d: 0.997
 			},
-			left_foot: {
+			l_foot: {
 				tx: 8.65,
 				ty: 6.8
 			},
-			left_leg: {
+			l_leg: {
 				tx: 6.2,
 				ty: 3.25,
 				a: 0.97,
@@ -366,7 +366,7 @@ export let walk = {
 				tx: -1.25,
 				ty: 0.75
 			},
-			right_arm: {
+			r_arm: {
 				tx: -5.4,
 				ty: 2.75,
 				a: 0.978,
@@ -376,19 +376,19 @@ export let walk = {
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -2.4,
 				ty: -2.95
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7.05,
 				ty: -2.25
 			},
-			right_hand: {
+			r_hand: {
 				tx: -10.05,
 				ty: 6.05
 			},
-			left_arm: {
+			l_arm: {
 				tx: 0.35,
 				ty: 4.5,
 				a: 0.992,
@@ -396,7 +396,7 @@ export let walk = {
 				c: 0.198,
 				d: 0.949
 			},
-			left_hand: {
+			l_hand: {
 				tx: -3.9,
 				ty: 11.15,
 				a: 0.992,
@@ -404,11 +404,11 @@ export let walk = {
 				c: 0.159,
 				d: 1.004
 			},
-			left_foot: {
+			l_foot: {
 				tx: 8.3,
 				ty: 6.8
 			},
-			left_leg: {
+			l_leg: {
 				tx: 6.05,
 				ty: 3.2,
 				a: 0.987,
@@ -428,7 +428,7 @@ export let walk = {
 				tx: -1.1,
 				ty: 0.65
 			},
-			right_arm: {
+			r_arm: {
 				tx: -5.55,
 				ty: 2.8,
 				a: 0.99,
@@ -438,19 +438,19 @@ export let walk = {
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -2.2,
 				ty: -3.25
 			},
-			right_eye: {
+			r_eye: {
 				tx: -6.85,
 				ty: -2.55
 			},
-			right_hand: {
+			r_hand: {
 				tx: -10.05,
 				ty: 6.35
 			},
-			left_arm: {
+			l_arm: {
 				tx: 0.1,
 				ty: 4.3,
 				a: 0.996,
@@ -458,7 +458,7 @@ export let walk = {
 				c: 0.1,
 				d: 0.98
 			},
-			left_hand: {
+			l_hand: {
 				tx: -4.8,
 				ty: 10.95,
 				a: 0.996,
@@ -466,11 +466,11 @@ export let walk = {
 				c: 0.079,
 				d: 1.005
 			},
-			left_foot: {
+			l_foot: {
 				tx: 8,
 				ty: 6.8
 			},
-			left_leg: {
+			l_leg: {
 				tx: 5.95,
 				ty: 3.05,
 				a: 0.996,
@@ -490,7 +490,7 @@ export let walk = {
 				tx: -0.9,
 				ty: 0.55
 			},
-			right_arm: {
+			r_arm: {
 				tx: -5.6,
 				ty: 2.85,
 				a: 0.997,
@@ -500,31 +500,31 @@ export let walk = {
 			}
 		},
 		{
-			left_eye: {
+			l_eye: {
 				tx: -2,
 				ty: -3.5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -6.65,
 				ty: -2.8
 			},
-			right_hand: {
+			r_hand: {
 				tx: -10.05,
 				ty: 6.7
 			},
-			left_arm: {
+			l_arm: {
 				tx: -0.1,
 				ty: 3.95
 			},
-			left_hand: {
+			l_hand: {
 				tx: -5.75,
 				ty: 10.7
 			},
-			left_foot: {
+			l_foot: {
 				tx: 7.65,
 				ty: 6.8
 			},
-			left_leg: {
+			l_leg: {
 				tx: 5.8,
 				ty: 3.05
 			},
@@ -540,7 +540,7 @@ export let walk = {
 				tx: -0.75,
 				ty: 0.45
 			},
-			right_arm: {
+			r_arm: {
 				tx: -5.8,
 				ty: 2.95
 			}

@@ -1,34 +1,34 @@
 // @ts-check
 
-export let stand = {
+export const stand = {
 	id: 'planaile_stand',
 	frames: [
 		{
-			left_eye: {
+			l_eye: {
 				tx: -2,
 				ty: -3.5
 			},
-			right_eye: {
+			r_eye: {
 				tx: -6.65,
 				ty: -2.8
 			},
-			right_hand: {
+			r_hand: {
 				tx: -10.05,
 				ty: 6.7
 			},
-			left_arm: {
+			l_arm: {
 				tx: -0.1,
 				ty: 3.95
 			},
-			left_hand: {
+			l_hand: {
 				tx: -5.75,
 				ty: 10.7
 			},
-			left_foot: {
+			l_foot: {
 				tx: 7.65,
 				ty: 6.8
 			},
-			left_leg: {
+			l_leg: {
 				tx: 5.8,
 				ty: 3.05
 			},
@@ -44,7 +44,7 @@ export let stand = {
 				tx: -0.75,
 				ty: 0.45
 			},
-			right_arm: {
+			r_arm: {
 				tx: -5.8,
 				ty: 2.95
 			}

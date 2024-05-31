@@ -1,36 +1,36 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'planaile_hit',
 	frames: [
 		{
-			left_eye: {
+			l_eye: {
 				tx: -2.5,
 				ty: -5.3
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7.15,
 				ty: -4.6
 			},
-			right_hand: {
+			r_hand: {
 				tx: -8.8,
 				ty: 2.25,
 				a: 0.788,
 				b: 0.326
 			},
-			left_arm: {
+			l_arm: {
 				tx: 0.9,
 				ty: 0.25,
 				a: 0.711,
 				b: 0.349
 			},
-			left_hand: {
+			l_hand: {
 				tx: -3.1,
 				ty: 5.05,
 				a: 0.711,
 				b: 0.349
 			},
-			left_foot: {
+			l_foot: {
 				tx: 3.45,
 				ty: 6.85,
 				a: 0.686,
@@ -38,7 +38,7 @@ export let hit = {
 				c: -0.726,
 				d: 0.686
 			},
-			left_leg: {
+			l_leg: {
 				tx: 4.85,
 				ty: 2.95,
 				a: 0.686,
@@ -58,7 +58,7 @@ export let hit = {
 				tx: -1.25,
 				ty: -1.35
 			},
-			right_arm: {
+			r_arm: {
 				tx: -5.45,
 				ty: -0.15,
 				a: 0.788,

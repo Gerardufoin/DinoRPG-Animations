@@ -2,7 +2,7 @@
 
 export const mapping_dino = {
 	'Symbol 293_view': 'view',
-	// 294
+	// 294 moueffe
 	'Symbol 102_p6b': 'r_arm',
 	'Symbol 120_p3b': 'r_leg',
 	'Symbol 136_p5a': 'hair',
@@ -12,7 +12,7 @@ export const mapping_dino = {
 	'Symbol 286_p6': 'l_arm',
 	'Symbol 291_p5c': 'hair_side',
 	'Symbol 81_p1': 'b_bones',
-	// 474
+	// 474 pigmou
 	'Symbol 307_p6b': 'l_f_leg',
 	'Symbol 323_p5': 'tail',
 	'Symbol 329': 'body',
@@ -21,7 +21,7 @@ export const mapping_dino = {
 	'Symbol 414_p7': 'head',
 	'Symbol 455_p3': 'eyes',
 	'Symbol 473_p4': 'mouth',
-	// 642
+	// 642 winks
 	'Symbol 486_p5f': 'r_l_3',
 	'Symbol 500_p5d': 'r_l_1',
 	'Symbol 508_p5e': 'r_l_2',
@@ -32,5 +32,19 @@ export const mapping_dino = {
 	'Symbol 614_p5a': 'l_l_1',
 	'Symbol 623_p5c': 'l_l_3',
 	'Symbol 639_p5b': 'l_l_2',
-	'Symbol 641_p5g': 'l_pincer'
+	'Symbol 641_p5g': 'l_pincer',
+	// 800 planaile
+	'Symbol 650p7b': 'r_arm',
+	'Symbol 652_p8b': 'r_foot',
+	'Symbol 654_col0': 'face',
+	'Symbol 665_p9': 'body',
+	'Symbol 674_p4b': 'r_ear',
+	'Symbol 711_p4a': 'l_ear',
+	'Symbol 753_p3': 'head',
+	'Symbol 763_p7a': 'l_arm',
+	'Symbol 777_p5': 'eyes',
+	'Symbol 791_p6': 'mouth',
+	'Symbol 795_p8': 'nose',
+	'Symbol 795_p8c': 'nose',
+	'Symbol 799_p8a': 'l_foot'
 };

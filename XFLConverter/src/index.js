@@ -37,6 +37,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/dino/LIBRARY/Symbol 474.xml', '_sub', undefined, 3); // pigmou
 //parser.parse('./resources/dino/LIBRARY/Symbol 478.xml', '_sub', undefined, 3); // pigmou horns fire
 //parser.parse('./resources/dino/LIBRARY/Symbol 642.xml', '_sub', undefined, 3); // winks
+parser.parse('./resources/dino/LIBRARY/Symbol 800.xml', '_sub', undefined, 3); // planail
 
 //SMONSTER
 //parser.parse('./resources/smonster/LIBRARY/Symbol 4089.xml', 'smonster', undefined, 1); // smonster
@@ -128,6 +129,6 @@ const parser = new XFLParser();
 const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
 //adapter.parse('./results/SVG/dino', mapping_dino, '../assets/dino');
-adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
+//adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
 //adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');
