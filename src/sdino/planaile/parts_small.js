@@ -12,15 +12,20 @@ export const parts_small = {
 	],
 	// 294
 	body: [
+		// 291
 		{
-			// 291
-			special: true,
-			colorIdx: 2,
-			ref: ref.planaile.body_special,
-			transform: {
-				tx: -2.0,
-				ty: -14.0
-			}
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				{
+					colorIdx: 2,
+					ref: ref.planaile.body_special,
+					transform: {
+						tx: -2.0,
+						ty: -14.0
+					}
+				}
+			]
 		},
 		{
 			partIdx: 9,
@@ -86,13 +91,18 @@ export const parts_small = {
 		},
 		// 302
 		{
-			special: true,
-			colorIdx: 2,
-			ref: ref.planaile.ears_special,
-			transform: {
-				tx: -9.35,
-				ty: -10.25
-			}
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				{
+					colorIdx: 2,
+					ref: ref.planaile.ears_special,
+					transform: {
+						tx: -9.35,
+						ty: -10.25
+					}
+				}
+			]
 		}
 	],
 	// 308
@@ -137,14 +147,19 @@ export const parts_small = {
 	right_eye: [
 		// 319
 		{
-			special: true,
-			ref: ref.planaile.eye_special,
-			transform: {
-				tx: -2.3,
-				ty: -4.3,
-				a: 0.403,
-				d: 0.907
-			}
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				{
+					ref: ref.planaile.eye_special,
+					transform: {
+						tx: -2.3,
+						ty: -4.3,
+						a: 0.403,
+						d: 0.907
+					}
+				}
+			]
 		},
 		{
 			partIdx: 8,
@@ -196,12 +211,17 @@ export const parts_small = {
 		},
 		// 319
 		{
-			special: true,
-			ref: ref.planaile.eye_special,
-			transform: {
-				tx: -3.5,
-				ty: -2.85
-			}
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				{
+					ref: ref.planaile.eye_special,
+					transform: {
+						tx: -3.5,
+						ty: -2.85
+					}
+				}
+			]
 		}
 	]
 };

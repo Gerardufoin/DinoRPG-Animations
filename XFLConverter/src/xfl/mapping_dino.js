@@ -42,7 +42,7 @@ export const mapping_dino = {
 	'Symbol 711_p4a': 'l_ear',
 	'Symbol 753_p3': 'head',
 	'Symbol 763_p7a': 'l_arm',
-	'Symbol 777_p5': 'eyes',
+	'Symbol 777_p5': 'cheeks',
 	'Symbol 791_p6': 'mouth',
 	'Symbol 795_p8': 'nose',
 	'Symbol 795_p8c': 'nose',

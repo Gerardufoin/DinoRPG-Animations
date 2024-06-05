@@ -120,7 +120,7 @@ export const planaile = {
 			// 763 p7a
 			l_arm: parts_big.left_arm,
 			// 777 p5
-			eyes: parts_big.eyes,
+			cheeks: parts_big.cheeks,
 			// 791 p6
 			mouth: parts_big.mouth,
 			// 795 p8

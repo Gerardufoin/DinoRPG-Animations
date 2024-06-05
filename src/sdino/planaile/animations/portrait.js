@@ -42,7 +42,7 @@ export const portrait = {
 				ach: 0,
 				l: 9
 			},
-			eyes: {
+			cheeks: {
 				tx: -80.2,
 				ty: -11.05,
 				a: 0.855,
@@ -185,7 +185,7 @@ export const portrait = {
 				ach: 0,
 				l: 9
 			},
-			eyes: {
+			cheeks: {
 				tx: -81.65,
 				ty: -11.95,
 				a: 0.871,
@@ -328,7 +328,7 @@ export const portrait = {
 				ach: 0,
 				l: 9
 			},
-			eyes: {
+			cheeks: {
 				tx: -83.1,
 				ty: -12.9,
 				a: 0.887,
@@ -471,7 +471,7 @@ export const portrait = {
 				ach: 0,
 				l: 9
 			},
-			eyes: {
+			cheeks: {
 				tx: -84.55,
 				ty: -13.8,
 				a: 0.903,
@@ -614,7 +614,7 @@ export const portrait = {
 				ach: 0,
 				l: 9
 			},
-			eyes: {
+			cheeks: {
 				tx: -86,
 				ty: -14.7,
 				a: 0.919,
@@ -757,7 +757,7 @@ export const portrait = {
 				ach: 0,
 				l: 9
 			},
-			eyes: {
+			cheeks: {
 				tx: -87.5,
 				ty: -15.65,
 				a: 0.936,
@@ -900,7 +900,7 @@ export const portrait = {
 				ach: 0,
 				l: 9
 			},
-			eyes: {
+			cheeks: {
 				tx: -88.95,
 				ty: -16.55,
 				a: 0.952,
@@ -1043,7 +1043,7 @@ export const portrait = {
 				ach: 0,
 				l: 9
 			},
-			eyes: {
+			cheeks: {
 				tx: -90.4,
 				ty: -17.45,
 				a: 0.968,
@@ -1186,7 +1186,7 @@ export const portrait = {
 				ach: 0,
 				l: 9
 			},
-			eyes: {
+			cheeks: {
 				tx: -91.85,
 				ty: -18.4,
 				a: 0.984,
@@ -1323,7 +1323,7 @@ export const portrait = {
 				ach: 0,
 				l: 9
 			},
-			eyes: {
+			cheeks: {
 				tx: -93.3,
 				ty: -19.3,
 				acb: 0,
@@ -1446,7 +1446,7 @@ export const portrait = {
 				ach: 0,
 				l: 9
 			},
-			eyes: {
+			cheeks: {
 				tx: -103.5,
 				ty: -25.1,
 				a: 1.12,
