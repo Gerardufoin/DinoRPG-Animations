@@ -106,6 +106,11 @@ const fightVersion = [
 				}
 			},
 			{
+				action: 'Announce',
+				message: 'Hello',
+				fid: 0
+			}
+			/*{
 				action: 'Wait',
 				time: 2000
 			},
@@ -116,7 +121,7 @@ const fightVersion = [
 					fid: 0,
 					anim: 'bluewh'
 				}
-			}
+			}*/
 			/*{
 				action: 'Status',
 				fid: 1,

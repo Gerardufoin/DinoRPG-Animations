@@ -37,7 +37,7 @@ export const planaile = {
 				'#F0DC99'
 			],
 			// col1
-			['#FFDDDD', '#FBCCC8', '#FCE1C7', '#F3CEB6', '#EAC49D', '#EAC49D'],
+			['#FFDDDD', '#FBCCC8', '#FCE1C7', '#F3CEB6', '#EAC49D', '#A96234'],
 			// col2
 			['#FFF2DF', '#FFF9AE', '#FFAA1E', '#952F04', '#A2886F', '#FBCD15'],
 			// col3
@@ -92,8 +92,8 @@ export const planaile = {
 		shadow: {
 			ref: ref_big.planaile.shadow,
 			transform: {
-				tx: 20.75,
-				ty: 49.9,
+				tx: -5.95,
+				ty: 48.05,
 				a: 0.71,
 				d: 1.332,
 				b: 0.025,

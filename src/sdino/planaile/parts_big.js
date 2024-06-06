@@ -1,4 +1,5 @@
 // @ts-check
+import { BLEND_MODES } from 'pixi.js';
 import { ref } from '../references_big.js';
 
 // hurt
@@ -70,14 +71,14 @@ const body = {
 	]
 };
 // 687
-const l_ear_special = {
+const left_ear_special = {
 	partIdx: 15,
 	frames: [-1, 0],
 	parts: [
 		[
 			// 686
 			{
-				ref: ref.planaile.l_ear_special,
+				ref: ref.planaile.left_ear_special,
 				transform: {
 					tx: 12.5,
 					ty: 0,
@@ -87,7 +88,7 @@ const l_ear_special = {
 			},
 			// 686
 			{
-				ref: ref.planaile.l_ear_special,
+				ref: ref.planaile.left_ear_special,
 				transform: {
 					ty: 7.45
 				}
@@ -95,6 +96,66 @@ const l_ear_special = {
 		]
 	]
 };
+// 767
+const cheeks = [
+	{
+		colorIdx: 1,
+		ref: ref.planaile.cheeks
+	},
+	// hurt
+	{
+		partIdx: 2,
+		frames: [-1, 0, 1],
+		transform: {
+			tx: 76.4,
+			ty: 3.5
+		},
+		parts: [
+			[
+				// 318
+				{
+					ref: ref.hurt.scratch_small,
+					transform: {
+						tx: 12.2,
+						ty: -1.2,
+						a: 1.816,
+						d: 1.816
+					}
+				}
+			],
+			[
+				// 766
+				{
+					ref: ref.planaile.cheeks_hurt_blood
+				},
+				// 357
+				{
+					ref: ref.hurt.bruise_purple,
+					transform: {
+						tx: 12.5,
+						ty: -3.35,
+						a: 1.577,
+						d: 0.778,
+						b: 0.078,
+						c: 0
+					}
+				},
+				// 359
+				{
+					ref: ref.hurt.scratch_blood,
+					transform: {
+						tx: -21.7,
+						ty: -0.7
+					}
+				}
+			]
+		]
+	},
+	// 768
+	{
+		ref: ref.planaile.cheeks_highlight
+	}
+];
 
 export const parts_big = {
 	// 650 p7b
@@ -222,12 +283,12 @@ export const parts_big = {
 				// 667
 				{
 					colorIdx: 0,
-					ref: ref.planaile.r_ear
+					ref: ref.planaile.right_ear
 				},
 				// 669
 				{
 					colorIdx: 0,
-					ref: ref.planaile.r_ear_long,
+					ref: ref.planaile.right_ear_long,
 					transform: {
 						tx: 5.2,
 						ty: -3.85
@@ -236,7 +297,7 @@ export const parts_big = {
 				// 671
 				{
 					colorIdx: 0,
-					ref: ref.planaile.r_ear_bat,
+					ref: ref.planaile.right_ear_bat,
 					transform: {
 						tx: 3.7,
 						ty: -2.95
@@ -245,7 +306,7 @@ export const parts_big = {
 				// 673
 				{
 					colorIdx: 0,
-					ref: ref.planaile.r_ear_pointy,
+					ref: ref.planaile.right_ear_pointy,
 					transform: {
 						tx: 3.7,
 						ty: -2.95
@@ -272,7 +333,7 @@ export const parts_big = {
 								// 676
 								{
 									colorIdx: 0,
-									ref: ref.planaile.l_ear,
+									ref: ref.planaile.left_ear,
 									transform: {
 										tx: -54.55,
 										ty: -0.15
@@ -281,7 +342,7 @@ export const parts_big = {
 								// 677
 								{
 									colorIdx: 1,
-									ref: ref.planaile.l_ear_hole,
+									ref: ref.planaile.left_ear_hole,
 									transform: {
 										tx: -0.05
 									}
@@ -289,7 +350,7 @@ export const parts_big = {
 								// 679
 								{
 									colorIdx: 1,
-									ref: ref.planaile.l_ear_skin_1,
+									ref: ref.planaile.left_ear_skin_1,
 									transform: {
 										tx: -2.05,
 										ty: -7
@@ -299,7 +360,7 @@ export const parts_big = {
 								// 681
 								{
 									colorIdx: 1,
-									ref: ref.planaile.l_ear_skin_2,
+									ref: ref.planaile.left_ear_skin_2,
 									transform: {
 										tx: -4.9,
 										ty: -4.05
@@ -324,7 +385,7 @@ export const parts_big = {
 										[
 											// 683
 											{
-												ref: ref.planaile.l_ear_hurt_blood
+												ref: ref.planaile.left_ear_hurt_blood
 											},
 											// 359
 											{
@@ -354,7 +415,7 @@ export const parts_big = {
 					},
 					// special
 					{
-						...l_ear_special,
+						...left_ear_special,
 						transform: {
 							tx: 41.3,
 							ty: -6.5
@@ -373,17 +434,17 @@ export const parts_big = {
 								// 689
 								{
 									colorIdx: 0,
-									ref: ref.planaile.l_ear_long
+									ref: ref.planaile.left_ear_long
 								},
 								// 690
 								{
 									colorIdx: 1,
-									ref: ref.planaile.l_ear_long_hole
+									ref: ref.planaile.left_ear_long_hole
 								},
 								// 692
 								{
 									colorIdx: 1,
-									ref: ref.planaile.l_ear_long_skin_1,
+									ref: ref.planaile.left_ear_long_skin_1,
 									transform: {
 										tx: 2.8,
 										ty: -2.75
@@ -393,7 +454,7 @@ export const parts_big = {
 								// 694
 								{
 									colorIdx: 1,
-									ref: ref.planaile.l_ear_long_skin_2,
+									ref: ref.planaile.left_ear_long_skin_2,
 									transform: {
 										tx: 1.45,
 										ty: -8.1
@@ -448,7 +509,7 @@ export const parts_big = {
 					},
 					// special
 					{
-						...l_ear_special,
+						...left_ear_special,
 						transform: {
 							tx: 47.35,
 							ty: -10.75,
@@ -471,7 +532,7 @@ export const parts_big = {
 								// 698
 								{
 									colorIdx: 0,
-									ref: ref.planaile.l_ear_bat,
+									ref: ref.planaile.left_ear_bat,
 									transform: {
 										tx: -0.05
 									}
@@ -479,7 +540,7 @@ export const parts_big = {
 								// 699
 								{
 									colorIdx: 1,
-									ref: ref.planaile.l_ear_bat_hole,
+									ref: ref.planaile.left_ear_bat_hole,
 									transform: {
 										tx: -0.05
 									}
@@ -487,7 +548,7 @@ export const parts_big = {
 								// 701
 								{
 									colorIdx: 1,
-									ref: ref.planaile.l_ear_bat_skin_1,
+									ref: ref.planaile.left_ear_bat_skin_1,
 									transform: {
 										tx: 11.4,
 										ty: -7.2
@@ -497,7 +558,7 @@ export const parts_big = {
 								// 703
 								{
 									colorIdx: 1,
-									ref: ref.planaile.l_ear_bat_skin_2,
+									ref: ref.planaile.left_ear_bat_skin_2,
 									transform: {
 										tx: 1.2,
 										ty: -5.65
@@ -550,7 +611,7 @@ export const parts_big = {
 					},
 					// special
 					{
-						...l_ear_special,
+						...left_ear_special,
 						transform: {
 							tx: 47.35,
 							ty: -10.75,
@@ -573,7 +634,7 @@ export const parts_big = {
 								// 707
 								{
 									colorIdx: 0,
-									ref: ref.planaile.l_ear_pointy,
+									ref: ref.planaile.left_ear_pointy,
 									transform: {
 										tx: -54.55,
 										ty: -0.15
@@ -582,7 +643,7 @@ export const parts_big = {
 								// 709
 								{
 									colorIdx: 1,
-									ref: ref.planaile.l_ear_pointy_inside,
+									ref: ref.planaile.left_ear_pointy_inside,
 									transform: {
 										tx: -0.05
 									}
@@ -605,7 +666,7 @@ export const parts_big = {
 										[
 											// 683
 											{
-												ref: ref.planaile.l_ear_hurt_blood
+												ref: ref.planaile.left_ear_hurt_blood
 											},
 											// 359
 											{
@@ -635,7 +696,7 @@ export const parts_big = {
 					},
 					// special
 					{
-						...l_ear_special,
+						...left_ear_special,
 						transform: {
 							tx: 39.8,
 							ty: -4.8,
@@ -651,6 +712,21 @@ export const parts_big = {
 	],
 	// 753 p3
 	head: [
+		// 714
+		{
+			partIdx: 15,
+			frames: [-1, 0],
+			transform: {
+				tx: 10.8,
+				ty: -36.8
+			},
+			parts: [
+				{
+					colorIdx: 2,
+					ref: ref.planaile.hair
+				}
+			]
+		},
 		{
 			partIdx: 3,
 			frames: [0, 1, 2, 3],
@@ -1386,15 +1462,401 @@ export const parts_big = {
 		}
 	],
 	// 763 p7a
-	left_arm: [],
+	left_arm: [
+		// 755
+		{
+			colorIdx: 0,
+			ref: ref.planaile.left_wing
+		},
+		// 757
+		{
+			colorIdx: 1,
+			ref: ref.planaile.left_wing_front,
+			transform: {
+				tx: 43.3,
+				ty: -10.15
+			}
+		},
+		// 758
+		{
+			ref: ref.planaile.left_hand,
+			transform: {
+				tx: 42.55,
+				ty: 8.35
+			}
+		},
+		// 760
+		{
+			partIdx: 7,
+			frames: [-1, 0],
+			parts: [
+				{
+					colorIdx: 3,
+					ref: ref.planaile.left_wing_spots,
+					transform: {
+						tx: 55.8,
+						ty: 2.8
+					}
+				}
+			]
+		},
+		// hurt
+		{
+			partIdx: 2,
+			frames: [-1, 0, 1],
+			transform: {
+				tx: 42.55,
+				ty: 8.35
+			},
+			parts: [
+				[
+					// 357
+					{
+						ref: ref.hurt.bruise_purple,
+						transform: {
+							tx: 8.55,
+							ty: -1.1,
+							a: 1.075,
+							d: 0.852,
+							b: 0.769,
+							c: -1.08
+						}
+					},
+					// 354
+					{
+						ref: ref.hurt.scratch_blood_small,
+						transform: {
+							tx: 18.7,
+							ty: -7,
+							a: 0.729,
+							d: 0.729,
+							b: -0.682,
+							c: 0.682
+						}
+					}
+				],
+				[
+					// 759
+					{
+						ref: ref.planaile.left_wing_hurt_blood
+					},
+					// 359
+					{
+						ref: ref.hurt.scratch_blood,
+						transform: {
+							tx: 4.75,
+							ty: 0.25,
+							a: 0.482,
+							d: 0.363,
+							b: -1.318,
+							c: 0.993
+						}
+					},
+					// 155
+					{
+						ref: ref.hurt.scratch,
+						transform: {
+							tx: 17.35,
+							ty: -5.7,
+							a: 1.172,
+							d: 1.172,
+							b: -1.137,
+							c: 1.137
+						}
+					}
+				]
+			]
+		}
+	],
 	// 777 p5
-	cheeks: [],
+	cheeks: [
+		{
+			partIdx: 5,
+			frames: [0, 1, 1, 0],
+			parts: [
+				[...cheeks],
+				[
+					// 774
+					{
+						colorIdx: 2,
+						ref: ref.planaile.cheeks_right_hair,
+						transform: {
+							tx: 49.8,
+							ty: -0.4
+						}
+					},
+					...cheeks,
+					// 776
+					{
+						colorIdx: 2,
+						ref: ref.planaile.cheeks_left_hair,
+						transform: {
+							tx: 100.75,
+							ty: 1
+						}
+					}
+				]
+			]
+		},
+		// 772
+		{
+			partIdx: 15,
+			frames: [-1, 0],
+			transform: {
+				tx: 45.3,
+				ty: -22.7
+			},
+			parts: [
+				[
+					// 769
+					{
+						ref: ref.planaile.glasses
+					},
+					// 771
+					{
+						ref: ref.planaile.glasses_highlight,
+						transform: {
+							tx: 5.4,
+							ty: 2.7
+						},
+						blend: BLEND_MODES.OVERLAY
+					},
+					// 771
+					{
+						ref: ref.planaile.glasses_highlight,
+						transform: {
+							tx: 5.4,
+							ty: 2.7
+						},
+						blur: {
+							x: 1,
+							y: 1
+						},
+						blend: BLEND_MODES.ADD
+					}
+				]
+			]
+		}
+	],
 	// 791 p6
-	mouth: [],
+	mouth: [
+		{
+			partIdx: 6,
+			frames: [0, 1, 2, 3, 4, 5, 6],
+			parts: [
+				[
+					// 779
+					{
+						colorIdx: 1,
+						ref: ref.planaile.mouth
+					},
+					// 780
+					{
+						ref: ref.planaile.mouth_highlight,
+						transform: {
+							tx: -10.15,
+							ty: 0.85,
+							a: 0.32,
+							d: 0.64
+						}
+					}
+				],
+				[
+					// 782
+					{
+						colorIdx: 2,
+						ref: ref.planaile.mouth_beard,
+						transform: {
+							tx: -0.5,
+							ty: 6.15,
+							a: 0.759,
+							d: 0.759
+						}
+					},
+					// 779
+					{
+						colorIdx: 1,
+						ref: ref.planaile.mouth
+					},
+					// 780
+					{
+						ref: ref.planaile.mouth_highlight,
+						transform: {
+							tx: -10.15,
+							ty: 0.85,
+							a: 0.32,
+							d: 0.64
+						}
+					}
+				],
+				[
+					// 784
+					{
+						colorIdx: 1,
+						ref: ref.planaile.mouth_big,
+						transform: {
+							tx: -1.9,
+							ty: -4.05
+						}
+					},
+					// 785
+					{
+						ref: ref.planaile.mouth_big_highlight,
+						transform: {
+							tx: -31,
+							ty: -9.25,
+							a: 0.892,
+							d: 1
+						}
+					}
+				],
+				[
+					// 782
+					{
+						colorIdx: 2,
+						ref: ref.planaile.mouth_beard,
+						transform: {
+							tx: -3.2,
+							ty: 4.15
+						}
+					},
+					// 784
+					{
+						colorIdx: 1,
+						ref: ref.planaile.mouth_big,
+						transform: {
+							tx: -1.9,
+							ty: -4.05
+						}
+					},
+					// 785
+					{
+						ref: ref.planaile.mouth_big_highlight,
+						transform: {
+							tx: -31,
+							ty: -9.25,
+							a: 0.892,
+							d: 1
+						}
+					}
+				],
+				[
+					// 786
+					{
+						colorIdx: 1,
+						ref: ref.planaile.mouth_doubt,
+						transform: {
+							tx: 0.05,
+							ty: -4.2
+						}
+					},
+					// 788
+					{
+						ref: ref.planaile.mouth_doubt_highlight
+					}
+				],
+				[
+					// 782
+					{
+						colorIdx: 2,
+						ref: ref.planaile.mouth_beard,
+						transform: {
+							tx: -1.6,
+							ty: 3.95,
+							a: 0.759,
+							d: 0.759
+						}
+					},
+					// 786
+					{
+						colorIdx: 1,
+						ref: ref.planaile.mouth_doubt,
+						transform: {
+							tx: 0.05,
+							ty: -4.2
+						}
+					},
+					// 788
+					{
+						ref: ref.planaile.mouth_doubt_highlight
+					}
+				],
+				[
+					// 790
+					{
+						colorIdx: 1,
+						ref: ref.planaile.mouth_open,
+						transform: {
+							tx: 2,
+							ty: -1.15
+						}
+					}
+				]
+			]
+		}
+	],
 	// 795 p8
-	nose: [],
+	nose: [
+		{
+			partIdx: 8,
+			frames: [
+				0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+			],
+			parts: [
+				[
+					// 793
+					{
+						ref: ref.planaile.nose,
+						transform: {
+							tx: -8.6,
+							ty: 0
+						},
+						colorOffset: {
+							r: -108,
+							g: -148,
+							b: -153
+						}
+					},
+					// 794
+					{
+						ref: ref.planaile.nose_highlight
+					}
+				],
+				[
+					// 793
+					{
+						ref: ref.planaile.nose,
+						transform: {
+							tx: -8.6,
+							ty: 0
+						},
+						colorOffset: {
+							r: -133,
+							g: -87,
+							b: 20
+						}
+					},
+					// 794
+					{
+						ref: ref.planaile.nose_highlight
+					}
+				]
+			]
+		}
+	],
 	// 799 p8a
-	left_foot: [],
+	left_foot: [
+		// 796
+		{
+			ref: ref.planaile.left_foot
+		},
+		// 798
+		{
+			colorIdx: 0,
+			ref: ref.planaile.left_leg
+		}
+	],
 	// 293
 	view: [
 		{

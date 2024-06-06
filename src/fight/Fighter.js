@@ -517,7 +517,7 @@ export class Fighter extends Phys {
 			this._scene.addSlot(this._slot, this.side);
 
 			// TODO: Remove _announcePortrait + slot portrait and clean code once all big dinoz are done.
-			if (['0', '1', '2'].includes(fInfos.gfx.charAt(0))) {
+			if (['0', '1', '2', '3'].includes(fInfos.gfx.charAt(0))) {
 				const bigDino = new dino({
 					data: fInfos.gfx,
 					autoUpdate: false,
@@ -999,7 +999,9 @@ export class Fighter extends Phys {
 			if (this._z > 0) {
 				this._z = 0;
 				this._flLand = false;
-				this.playAnim('stand');
+				if (this._mode !== Fighter.Mode.Dead) {
+					this.playAnim('stand');
+				}
 				this.setGroundFx(true);
 			}
 		}

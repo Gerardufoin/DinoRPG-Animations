@@ -341,8 +341,6 @@ A fighter attacks another fighter and deals a certain amount of damages.
 
 A skill is used. It can either be used by a specific Fighter with specific targets, or be an effect like an invocation.
 
-TODO
-
 #### Properties
 
 | Property | Type         | Description                                             |
