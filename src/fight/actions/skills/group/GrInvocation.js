@@ -9,6 +9,7 @@ import { Timer } from '../../../Timer.js';
 import { BlueWhale } from '../../../parts/skills/invocations/BlueWhale.js';
 import { Ifrit } from '../../../parts/skills/invocations/Ifrit.js';
 import { Invocation } from '../../../parts/skills/invocations/Invocation.js';
+import { Raijin } from '../../../parts/skills/invocations/Raijin.js';
 import { Vulcan } from '../../../parts/skills/invocations/Vulcan.js';
 import { GroupEffect } from '../GroupEffect.js';
 
@@ -45,6 +46,7 @@ export class GrInvocation extends GroupEffect {
 				this._invoc = new BlueWhale(this._scene);
 				break;
 			case 'raijin':
+				this._invoc = new Raijin(this._scene);
 				break;
 			case 'louga':
 				break;
@@ -141,7 +143,6 @@ export class GrInvocation extends GroupEffect {
 				this._invoc.updateAura(this._coef);
 				if (this._coef === 1) {
 					this.nextStep();
-					this._invoc.removeAura();
 					this.damageAll({ fx: LifeEffect.Lightning });
 					this._coefSpeed = 0.1;
 				}

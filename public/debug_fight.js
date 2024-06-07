@@ -76,7 +76,7 @@ const fightVersion = [
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: '09T1Yt9wqq4Rx000'
+					gfx: '39T1Yt9wqq4Rx000'
 				}
 			},
 			{
@@ -106,22 +106,22 @@ const fightVersion = [
 				}
 			},
 			{
-				action: 'Announce',
-				message: 'Hello',
-				fid: 0
-			}
-			/*{
 				action: 'Wait',
 				time: 2000
+			},
+			{
+				action: 'Announce',
+				message: 'Raijin',
+				fid: 0
 			},
 			{
 				action: 'Skill',
 				skill: 'Invoc',
 				details: {
 					fid: 0,
-					anim: 'bluewh'
+					anim: 'raijin'
 				}
-			}*/
+			}
 			/*{
 				action: 'Status',
 				fid: 1,
