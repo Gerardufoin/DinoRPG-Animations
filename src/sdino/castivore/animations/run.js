@@ -1,6 +1,6 @@
 // @ts-check
 
-export let run = {
+export const run = {
 	id: 'castivore_run',
 	callbacks: {
 		6: [['gotoAndPlay', 1]]
@@ -19,7 +19,7 @@ export let run = {
 				c: 0.149,
 				d: 1.016
 			},
-			left_ear: {
+			l_ear: {
 				tx: -3.2,
 				ty: -6.45,
 				a: 1.023,
@@ -51,7 +51,7 @@ export let run = {
 				c: -0.133,
 				d: 1.019
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.25,
 				ty: -4.35,
 				a: 1.095,
@@ -59,7 +59,7 @@ export let run = {
 				c: -0.133,
 				d: 1.019
 			},
-			body_front: {
+			f_body: {
 				tx: -5.5,
 				ty: -5.8,
 				a: 1.164,
@@ -67,7 +67,7 @@ export let run = {
 				c: -0.14,
 				d: 1.071
 			},
-			body_back: {
+			b_body: {
 				tx: 0.9,
 				ty: -5.75,
 				a: 1.001,
@@ -75,7 +75,7 @@ export let run = {
 				c: -0.122,
 				d: 0.936
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.15,
 				ty: -8.7,
 				a: 1.023,
@@ -97,7 +97,7 @@ export let run = {
 				c: 0.197,
 				d: 0.923
 			},
-			left_ear: {
+			l_ear: {
 				tx: -4,
 				ty: -4.8,
 				a: 1.1,
@@ -129,7 +129,7 @@ export let run = {
 				c: -0.103,
 				d: 0.934
 			},
-			body_middle: {
+			m_body: {
 				tx: -14.7,
 				ty: -2.45,
 				a: 1.178,
@@ -137,7 +137,7 @@ export let run = {
 				c: -0.103,
 				d: 0.934
 			},
-			body_front: {
+			f_body: {
 				tx: -6.4,
 				ty: -4.1,
 				a: 1.252,
@@ -145,7 +145,7 @@ export let run = {
 				c: -0.108,
 				d: 0.983
 			},
-			body_back: {
+			b_body: {
 				tx: 0.45,
 				ty: -4.25,
 				a: 1.077,
@@ -153,7 +153,7 @@ export let run = {
 				c: -0.094,
 				d: 0.858
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.3,
 				ty: -6.75,
 				a: 1.1,
@@ -175,7 +175,7 @@ export let run = {
 				c: 0.24,
 				d: 0.828
 			},
-			left_ear: {
+			l_ear: {
 				tx: -4.8,
 				ty: -3.1,
 				a: 1.176,
@@ -207,7 +207,7 @@ export let run = {
 				c: -0.077,
 				d: 0.85
 			},
-			body_middle: {
+			m_body: {
 				tx: -16.15,
 				ty: -0.65,
 				a: 1.259,
@@ -215,7 +215,7 @@ export let run = {
 				c: -0.077,
 				d: 0.85
 			},
-			body_front: {
+			f_body: {
 				tx: -7.25,
 				ty: -2.45,
 				a: 1.338,
@@ -223,7 +223,7 @@ export let run = {
 				c: -0.081,
 				d: 0.893
 			},
-			body_back: {
+			b_body: {
 				tx: -0.05,
 				ty: -2.8,
 				a: 1.151,
@@ -231,7 +231,7 @@ export let run = {
 				c: -0.071,
 				d: 0.78
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.45,
 				ty: -4.75,
 				a: 1.176,
@@ -253,7 +253,7 @@ export let run = {
 				c: 0.226,
 				d: 0.959
 			},
-			left_ear: {
+			l_ear: {
 				tx: -4.5,
 				ty: -5,
 				a: 1.103,
@@ -285,7 +285,7 @@ export let run = {
 				c: -0.077,
 				d: 0.978
 			},
-			body_middle: {
+			m_body: {
 				tx: -15.2,
 				ty: -2.5,
 				a: 1.181,
@@ -293,7 +293,7 @@ export let run = {
 				c: -0.077,
 				d: 0.978
 			},
-			body_front: {
+			f_body: {
 				tx: -6.8,
 				ty: -4.25,
 				a: 1.255,
@@ -301,7 +301,7 @@ export let run = {
 				c: -0.081,
 				d: 1.029
 			},
-			body_back: {
+			b_body: {
 				tx: -0.1,
 				ty: -4.6,
 				a: 1.08,
@@ -309,7 +309,7 @@ export let run = {
 				c: -0.071,
 				d: 0.898
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.85,
 				ty: -7,
 				a: 1.103,
@@ -331,7 +331,7 @@ export let run = {
 				c: 0.201,
 				d: 1.093
 			},
-			left_ear: {
+			l_ear: {
 				tx: -4.2,
 				ty: -7,
 				a: 1.029,
@@ -363,7 +363,7 @@ export let run = {
 				c: -0.076,
 				d: 1.107
 			},
-			body_middle: {
+			m_body: {
 				tx: -14.15,
 				ty: -4.25,
 				a: 1.102,
@@ -371,7 +371,7 @@ export let run = {
 				c: -0.076,
 				d: 1.107
 			},
-			body_front: {
+			f_body: {
 				tx: -6.4,
 				ty: -6.2,
 				a: 1.171,
@@ -379,7 +379,7 @@ export let run = {
 				c: -0.08,
 				d: 1.164
 			},
-			body_back: {
+			b_body: {
 				tx: -0.1,
 				ty: -6.35,
 				a: 1.007,
@@ -387,7 +387,7 @@ export let run = {
 				c: -0.07,
 				d: 1.017
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.25,
 				ty: -9.25,
 				a: 1.029,
@@ -409,7 +409,7 @@ export let run = {
 				c: 0.172,
 				d: 1.054
 			},
-			left_ear: {
+			l_ear: {
 				tx: -3.75,
 				ty: -6.8,
 				a: 1.026,
@@ -441,7 +441,7 @@ export let run = {
 				c: -0.103,
 				d: 1.063
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.75,
 				ty: -4.3,
 				a: 1.099,
@@ -449,7 +449,7 @@ export let run = {
 				c: -0.103,
 				d: 1.063
 			},
-			body_front: {
+			f_body: {
 				tx: -6,
 				ty: -5.95,
 				a: 1.167,
@@ -457,7 +457,7 @@ export let run = {
 				c: -0.109,
 				d: 1.118
 			},
-			body_back: {
+			b_body: {
 				tx: 0.4,
 				ty: -6.05,
 				a: 1.004,
@@ -465,7 +465,7 @@ export let run = {
 				c: -0.095,
 				d: 0.976
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.7,
 				ty: -8.95,
 				a: 1.026,
@@ -487,7 +487,7 @@ export let run = {
 				c: 0.149,
 				d: 1.016
 			},
-			left_ear: {
+			l_ear: {
 				tx: -3.2,
 				ty: -6.45,
 				a: 1.023,
@@ -519,7 +519,7 @@ export let run = {
 				c: -0.133,
 				d: 1.019
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.25,
 				ty: -4.35,
 				a: 1.095,
@@ -527,7 +527,7 @@ export let run = {
 				c: -0.133,
 				d: 1.019
 			},
-			body_front: {
+			f_body: {
 				tx: -5.5,
 				ty: -5.8,
 				a: 1.164,
@@ -535,7 +535,7 @@ export let run = {
 				c: -0.14,
 				d: 1.071
 			},
-			body_back: {
+			b_body: {
 				tx: 0.9,
 				ty: -5.75,
 				a: 1.001,
@@ -543,7 +543,7 @@ export let run = {
 				c: -0.122,
 				d: 0.936
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.15,
 				ty: -8.7,
 				a: 1.023,

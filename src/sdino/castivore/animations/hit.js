@@ -1,6 +1,6 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'castivore_hit',
 	frames: [
 		{
@@ -15,7 +15,7 @@ export let hit = {
 				a: 1.031,
 				d: 1.031
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.85,
 				ty: -6.7,
 				a: 1.031,
@@ -41,25 +41,25 @@ export let hit = {
 				c: -0.073,
 				d: 1.028
 			},
-			body_middle: {
+			m_body: {
 				tx: -11.4,
 				ty: -2.2,
 				a: 1.031,
 				d: 1.031
 			},
-			body_front: {
+			f_body: {
 				tx: -4.75,
 				ty: -4.85,
 				a: 1.084,
 				d: 1.084
 			},
-			body_back: {
+			b_body: {
 				tx: 0.7,
 				ty: -4.85,
 				a: 0.947,
 				d: 0.947
 			},
-			right_ear: {
+			r_ear: {
 				tx: -5.3,
 				ty: -8.1,
 				a: 1.031,

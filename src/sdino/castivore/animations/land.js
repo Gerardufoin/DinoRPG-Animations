@@ -1,6 +1,6 @@
 // @ts-check
 
-export let land = {
+export const land = {
 	id: 'castivore_land',
 	callbacks: {
 		1: [
@@ -22,7 +22,7 @@ export let land = {
 				b: -0.024,
 				d: 0.914
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.45,
 				ty: -3.8,
 				a: 1.088,
@@ -50,28 +50,28 @@ export let land = {
 				b: -0.024,
 				d: 0.914
 			},
-			body_middle: {
+			m_body: {
 				tx: -14.4,
 				ty: 0.5,
 				a: 1.088,
 				b: -0.024,
 				d: 0.914
 			},
-			body_front: {
+			f_body: {
 				tx: -6.35,
 				ty: -2.05,
 				a: 1.144,
 				b: -0.026,
 				d: 0.961
 			},
-			body_back: {
+			b_body: {
 				tx: 0.45,
 				ty: -2.85,
 				a: 0.999,
 				b: -0.022,
 				d: 0.839
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8,
 				ty: -4.85,
 				a: 1.088,
@@ -95,7 +95,7 @@ export let land = {
 				b: -0.02,
 				d: 0.869
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.55,
 				ty: -3.25,
 				a: 1.101,
@@ -123,28 +123,28 @@ export let land = {
 				b: -0.02,
 				d: 0.869
 			},
-			body_middle: {
+			m_body: {
 				tx: -14.6,
 				ty: 0.9,
 				a: 1.101,
 				b: -0.02,
 				d: 0.869
 			},
-			body_front: {
+			f_body: {
 				tx: -6.55,
 				ty: -1.55,
 				a: 1.157,
 				b: -0.021,
 				d: 0.914
 			},
-			body_back: {
+			b_body: {
 				tx: 0.35,
 				ty: -2.35,
 				a: 1.011,
 				b: -0.019,
 				d: 0.798
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.2,
 				ty: -4.25,
 				a: 1.101,
@@ -168,7 +168,7 @@ export let land = {
 				b: -0.023,
 				d: 0.824
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -2.75,
 				a: 1.114,
@@ -196,28 +196,28 @@ export let land = {
 				b: -0.023,
 				d: 0.824
 			},
-			body_middle: {
+			m_body: {
 				tx: -14.95,
 				ty: 1.15,
 				a: 1.114,
 				b: -0.023,
 				d: 0.824
 			},
-			body_front: {
+			f_body: {
 				tx: -6.7,
 				ty: -1.15,
 				a: 1.171,
 				b: -0.024,
 				d: 0.866
 			},
-			body_back: {
+			b_body: {
 				tx: 0.25,
 				ty: -1.9,
 				a: 1.022,
 				b: -0.021,
 				d: 0.756
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.4,
 				ty: -3.75,
 				a: 1.114,
@@ -241,7 +241,7 @@ export let land = {
 				b: -0.01,
 				d: 0.879
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -3.8,
 				a: 1.072,
@@ -269,28 +269,28 @@ export let land = {
 				b: -0.01,
 				d: 0.879
 			},
-			body_middle: {
+			m_body: {
 				tx: -14.35,
 				ty: 0.35,
 				a: 1.072,
 				b: -0.01,
 				d: 0.879
 			},
-			body_front: {
+			f_body: {
 				tx: -6.45,
 				ty: -2,
 				a: 1.128,
 				b: -0.01,
 				d: 0.924
 			},
-			body_back: {
+			b_body: {
 				tx: 0.25,
 				ty: -2.8,
 				a: 0.985,
 				b: -0.009,
 				d: 0.807
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.1,
 				ty: -4.8,
 				a: 1.072,
@@ -309,7 +309,7 @@ export let land = {
 				a: 1.031,
 				d: 0.934
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -4.55,
 				a: 1.031,
@@ -333,25 +333,25 @@ export let land = {
 				a: 1.031,
 				d: 0.934
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.9,
 				ty: -0.45,
 				a: 1.031,
 				d: 0.934
 			},
-			body_front: {
+			f_body: {
 				tx: -6.25,
 				ty: -2.85,
 				a: 1.084,
 				d: 0.982
 			},
-			body_back: {
+			b_body: {
 				tx: 0.2,
 				ty: -3.6,
 				a: 0.947,
 				d: 0.857
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.8,
 				ty: -5.85,
 				a: 1.031,

@@ -1,6 +1,6 @@
 // @ts-check
 
-export let attack = {
+export const attack = {
 	id: 'castivore_attack',
 	callbacks: {
 		2: [['hit']],
@@ -25,7 +25,7 @@ export let attack = {
 				b: 0.064,
 				d: 1.031
 			},
-			left_ear: {
+			l_ear: {
 				tx: 6.85,
 				ty: -7,
 				a: 0.882,
@@ -53,28 +53,28 @@ export let attack = {
 				b: 0.064,
 				d: 1.031
 			},
-			body_middle: {
+			m_body: {
 				tx: -4.45,
 				ty: -3.3,
 				a: 0.882,
 				b: 0.064,
 				d: 1.031
 			},
-			body_front: {
+			f_body: {
 				tx: 2.1,
 				ty: -5.5,
 				a: 0.928,
 				b: 0.067,
 				d: 1.084
 			},
-			body_back: {
+			b_body: {
 				tx: 7.6,
 				ty: -5.9,
 				a: 0.81,
 				b: 0.059,
 				d: 0.947
 			},
-			right_ear: {
+			r_ear: {
 				tx: 0.75,
 				ty: -8.85,
 				a: 0.882,
@@ -100,7 +100,7 @@ export let attack = {
 				b: 0.058,
 				d: 0.981
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.45,
 				ty: -7.35,
 				a: 1.094,
@@ -128,28 +128,28 @@ export let attack = {
 				b: 0.058,
 				d: 0.981
 			},
-			body_middle: {
+			m_body: {
 				tx: -14.45,
 				ty: -3.85,
 				a: 1.094,
 				b: 0.058,
 				d: 0.981
 			},
-			body_front: {
+			f_body: {
 				tx: -6.35,
 				ty: -6,
 				a: 1.15,
 				b: 0.061,
 				d: 1.032
 			},
-			body_back: {
+			b_body: {
 				tx: 0.4,
 				ty: -6.35,
 				a: 1.004,
 				b: 0.053,
 				d: 0.901
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.05,
 				ty: -9.1,
 				a: 1.094,
@@ -175,7 +175,7 @@ export let attack = {
 				b: 0.048,
 				d: 0.931
 			},
-			left_ear: {
+			l_ear: {
 				tx: -7.75,
 				ty: -7.9,
 				a: 1.306,
@@ -203,28 +203,28 @@ export let attack = {
 				b: 0.048,
 				d: 0.931
 			},
-			body_middle: {
+			m_body: {
 				tx: -24.55,
 				ty: -4.4,
 				a: 1.306,
 				b: 0.048,
 				d: 0.931
 			},
-			body_front: {
+			f_body: {
 				tx: -14.85,
 				ty: -6.45,
 				a: 1.373,
 				b: 0.05,
 				d: 0.979
 			},
-			body_back: {
+			b_body: {
 				tx: -6.7,
 				ty: -6.9,
 				a: 1.199,
 				b: 0.044,
 				d: 0.855
 			},
-			right_ear: {
+			r_ear: {
 				tx: -16.85,
 				ty: -9.45,
 				a: 1.306,
@@ -252,7 +252,7 @@ export let attack = {
 				b: 0.021,
 				d: 0.981
 			},
-			left_ear: {
+			l_ear: {
 				tx: -4.2,
 				ty: -6.85,
 				a: 1.169,
@@ -280,28 +280,28 @@ export let attack = {
 				b: 0.021,
 				d: 0.981
 			},
-			body_middle: {
+			m_body: {
 				tx: -19.15,
 				ty: -2.85,
 				a: 1.169,
 				b: 0.021,
 				d: 0.981
 			},
-			body_front: {
+			f_body: {
 				tx: -10.55,
 				ty: -5.2,
 				a: 1.229,
 				b: 0.022,
 				d: 1.032
 			},
-			body_back: {
+			b_body: {
 				tx: -3.25,
 				ty: -5.85,
 				a: 1.073,
 				b: 0.019,
 				d: 0.901
 			},
-			right_ear: {
+			r_ear: {
 				tx: -12.3,
 				ty: -8.35,
 				a: 1.169,
@@ -327,7 +327,7 @@ export let attack = {
 				a: 1.031,
 				d: 1.031
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -5.9,
 				a: 1.031,
@@ -351,25 +351,25 @@ export let attack = {
 				a: 1.031,
 				d: 1.031
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.9,
 				ty: -1.4,
 				a: 1.031,
 				d: 1.031
 			},
-			body_front: {
+			f_body: {
 				tx: -6.25,
 				ty: -4.05,
 				a: 1.084,
 				d: 1.084
 			},
-			body_back: {
+			b_body: {
 				tx: 0.2,
 				ty: -4.85,
 				a: 0.947,
 				d: 0.947
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.8,
 				ty: -7.3,
 				a: 1.031,
@@ -388,7 +388,7 @@ export let attack = {
 				a: 1.031,
 				d: 1.031
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -5.9,
 				a: 1.031,
@@ -412,25 +412,25 @@ export let attack = {
 				a: 1.031,
 				d: 1.031
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.9,
 				ty: -1.4,
 				a: 1.031,
 				d: 1.031
 			},
-			body_front: {
+			f_body: {
 				tx: -6.25,
 				ty: -4.05,
 				a: 1.084,
 				d: 1.084
 			},
-			body_back: {
+			b_body: {
 				tx: 0.2,
 				ty: -4.85,
 				a: 0.947,
 				d: 0.947
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.8,
 				ty: -7.3,
 				a: 1.031,

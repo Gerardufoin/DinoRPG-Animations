@@ -46,5 +46,20 @@ export const mapping_dino = {
 	'Symbol 791_p6': 'mouth',
 	'Symbol 795_p8': 'nose',
 	'Symbol 795_p8c': 'nose',
-	'Symbol 799_p8a': 'l_foot'
+	'Symbol 799_p8a': 'l_foot',
+	// 962 castivore
+	'Symbol 811_p3b': 'r_fur',
+	'Symbol 814_p7b': 'r_ear',
+	'Symbol 816_col0': 'body',
+	'Symbol 832_p3a': 'l_fur',
+	'Symbol 838_p4': 'head',
+	'Symbol 846_p5': 'eyes',
+	'Symbol 863_p8': 'b_fur',
+	'Symbol 864_p3c': 'empty_to_remove',
+	'Symbol 869_p7a': 'l_ear',
+	'Symbol 873_p8b': 'nose',
+	'Symbol 873_p9': 'nose',
+	'Symbol 878_special': 'bow',
+	'Symbol 931_p4b': 'mouth',
+	'Symbol 961_p6': 'hair'
 };

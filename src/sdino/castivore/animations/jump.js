@@ -1,6 +1,6 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'castivore_jump',
 	callbacks: {
 		6: [['stop']]
@@ -17,7 +17,7 @@ export let jump = {
 				a: 1.088,
 				d: 0.914
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.5,
 				ty: -3.9,
 				a: 1.088,
@@ -41,25 +41,25 @@ export let jump = {
 				a: 1.088,
 				d: 0.914
 			},
-			body_middle: {
+			m_body: {
 				tx: -14.45,
 				ty: 0.1,
 				a: 1.088,
 				d: 0.914
 			},
-			body_front: {
+			f_body: {
 				tx: -6.4,
 				ty: -2.3,
 				a: 1.144,
 				d: 0.961
 			},
-			body_back: {
+			b_body: {
 				tx: 0.4,
 				ty: -2.95,
 				a: 0.999,
 				d: 0.839
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.05,
 				ty: -5.15,
 				a: 1.088,
@@ -77,7 +77,7 @@ export let jump = {
 				a: 1.06,
 				d: 1.003
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.55,
 				ty: -6.4,
 				a: 1.06,
@@ -101,25 +101,25 @@ export let jump = {
 				a: 1.06,
 				d: 1.003
 			},
-			body_middle: {
+			m_body: {
 				tx: -14.1,
 				ty: -2,
 				a: 1.06,
 				d: 1.003
 			},
-			body_front: {
+			f_body: {
 				tx: -6.3,
 				ty: -4.55,
 				a: 1.114,
 				d: 1.055
 			},
-			body_back: {
+			b_body: {
 				tx: 0.3,
 				ty: -5.4,
 				a: 0.973,
 				d: 0.921
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.9,
 				ty: -7.75,
 				a: 1.06,
@@ -137,7 +137,7 @@ export let jump = {
 				a: 1.031,
 				d: 1.092
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -8.85,
 				a: 1.031,
@@ -161,25 +161,25 @@ export let jump = {
 				a: 1.031,
 				d: 1.092
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.9,
 				ty: -4.1,
 				a: 1.031,
 				d: 1.092
 			},
-			body_front: {
+			f_body: {
 				tx: -6.25,
 				ty: -6.9,
 				a: 1.084,
 				d: 1.148
 			},
-			body_back: {
+			b_body: {
 				tx: 0.2,
 				ty: -7.75,
 				a: 0.947,
 				d: 1.003
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.8,
 				ty: -10.35,
 				a: 1.031,
@@ -197,7 +197,7 @@ export let jump = {
 				a: 1.031,
 				d: 1.092
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -9.35,
 				a: 1.031,
@@ -221,25 +221,25 @@ export let jump = {
 				a: 1.031,
 				d: 1.092
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.9,
 				ty: -4.6,
 				a: 1.031,
 				d: 1.092
 			},
-			body_front: {
+			f_body: {
 				tx: -6.25,
 				ty: -7.4,
 				a: 1.084,
 				d: 1.148
 			},
-			body_back: {
+			b_body: {
 				tx: 0.2,
 				ty: -8.25,
 				a: 0.947,
 				d: 1.003
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.8,
 				ty: -10.8,
 				a: 1.031,
@@ -257,7 +257,7 @@ export let jump = {
 				a: 1.031,
 				d: 1.092
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -9.85,
 				a: 1.031,
@@ -281,25 +281,25 @@ export let jump = {
 				a: 1.031,
 				d: 1.092
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.9,
 				ty: -5.1,
 				a: 1.031,
 				d: 1.092
 			},
-			body_front: {
+			f_body: {
 				tx: -6.25,
 				ty: -7.9,
 				a: 1.084,
 				d: 1.148
 			},
-			body_back: {
+			b_body: {
 				tx: 0.2,
 				ty: -8.75,
 				a: 0.947,
 				d: 1.003
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.8,
 				ty: -11.35,
 				a: 1.031,
@@ -317,7 +317,7 @@ export let jump = {
 				a: 1.031,
 				d: 1.092
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -9.85,
 				a: 1.031,
@@ -342,28 +342,28 @@ export let jump = {
 				a: 1.031,
 				d: 1.092
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.55,
 				ty: -5.1,
 				a: 1.031,
 				c: 0.061,
 				d: 1.092
 			},
-			body_front: {
+			f_body: {
 				tx: -5.75,
 				ty: -7.75,
 				a: 1.084,
 				c: 0.162,
 				d: 1.148
 			},
-			body_back: {
+			b_body: {
 				tx: 0.35,
 				ty: -9.05,
 				a: 0.947,
 				c: 0.166,
 				d: 1.003
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.8,
 				ty: -11.35,
 				a: 1.031,
@@ -381,7 +381,7 @@ export let jump = {
 				a: 1.031,
 				d: 1.092
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -9.85,
 				a: 1.031,
@@ -406,28 +406,28 @@ export let jump = {
 				a: 1.031,
 				d: 1.092
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.55,
 				ty: -5.1,
 				a: 1.031,
 				c: 0.061,
 				d: 1.092
 			},
-			body_front: {
+			f_body: {
 				tx: -5.75,
 				ty: -7.75,
 				a: 1.084,
 				c: 0.162,
 				d: 1.148
 			},
-			body_back: {
+			b_body: {
 				tx: 0.35,
 				ty: -9.05,
 				a: 0.947,
 				c: 0.166,
 				d: 1.003
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.8,
 				ty: -11.35,
 				a: 1.031,

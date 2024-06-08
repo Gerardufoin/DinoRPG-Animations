@@ -1,6 +1,6 @@
 // @ts-check
 
-export let walk = {
+export const walk = {
 	id: 'castivore_walk',
 	callbacks: {
 		6: [['gotoAndPlay', 1]]
@@ -17,7 +17,7 @@ export let walk = {
 				a: 1.031,
 				d: 1.031
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -5.35,
 				a: 1.031,
@@ -41,25 +41,25 @@ export let walk = {
 				a: 1.031,
 				d: 1.031
 			},
-			body_middle: {
+			m_body: {
 				tx: -14.3,
 				ty: -1.4,
 				a: 1.104,
 				d: 1.031
 			},
-			body_front: {
+			f_body: {
 				tx: -6.8,
 				ty: -4.05,
 				a: 1.173,
 				d: 1.084
 			},
-			body_back: {
+			b_body: {
 				tx: -0.5,
 				ty: -4.85,
 				a: 1.009,
 				d: 0.947
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.8,
 				ty: -6.75,
 				a: 1.031,
@@ -80,7 +80,7 @@ export let walk = {
 				b: 0.005,
 				d: 1.042
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -5.7,
 				a: 1.022,
@@ -108,28 +108,28 @@ export let walk = {
 				b: 0.005,
 				d: 1.042
 			},
-			body_middle: {
+			m_body: {
 				tx: -14.05,
 				ty: -1.6,
 				a: 1.071,
 				b: 0.005,
 				d: 1.042
 			},
-			body_front: {
+			f_body: {
 				tx: -6.5,
 				ty: -4.25,
 				a: 1.134,
 				b: 0.006,
 				d: 1.095
 			},
-			body_back: {
+			b_body: {
 				tx: -0.25,
 				ty: -5,
 				a: 0.98,
 				b: 0.005,
 				d: 0.956
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.8,
 				ty: -7.15,
 				a: 1.022,
@@ -151,7 +151,7 @@ export let walk = {
 				b: 0.013,
 				d: 1.052
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -6.05,
 				a: 1.013,
@@ -179,28 +179,28 @@ export let walk = {
 				b: 0.013,
 				d: 1.052
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.8,
 				ty: -1.9,
 				a: 1.037,
 				b: 0.014,
 				d: 1.052
 			},
-			body_front: {
+			f_body: {
 				tx: -6.35,
 				ty: -4.4,
 				a: 1.095,
 				b: 0.014,
 				d: 1.107
 			},
-			body_back: {
+			b_body: {
 				tx: 0,
 				ty: -5.2,
 				a: 0.951,
 				b: 0.013,
 				d: 0.966
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.65,
 				ty: -7.6,
 				a: 1.013,
@@ -221,7 +221,7 @@ export let walk = {
 				b: 0.02,
 				d: 1.063
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -6.45,
 				a: 1.004,
@@ -249,28 +249,28 @@ export let walk = {
 				b: 0.02,
 				d: 1.063
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.55,
 				ty: -2.05,
 				a: 1.004,
 				b: 0.02,
 				d: 1.063
 			},
-			body_front: {
+			f_body: {
 				tx: -6.1,
 				ty: -4.6,
 				a: 1.055,
 				b: 0.021,
 				d: 1.118
 			},
-			body_back: {
+			b_body: {
 				tx: 0.2,
 				ty: -5.35,
 				a: 0.922,
 				b: 0.019,
 				d: 0.976
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.6,
 				ty: -8,
 				a: 1.004,
@@ -292,7 +292,7 @@ export let walk = {
 				b: 0.013,
 				d: 1.052
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -6.15,
 				a: 1.013,
@@ -320,28 +320,28 @@ export let walk = {
 				b: 0.013,
 				d: 1.052
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.8,
 				ty: -1.8,
 				a: 1.037,
 				b: 0.014,
 				d: 1.052
 			},
-			body_front: {
+			f_body: {
 				tx: -6.35,
 				ty: -4.35,
 				a: 1.095,
 				b: 0.014,
 				d: 1.107
 			},
-			body_back: {
+			b_body: {
 				tx: -0.05,
 				ty: -5.2,
 				a: 0.951,
 				b: 0.013,
 				d: 0.966
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.65,
 				ty: -7.55,
 				a: 1.013,
@@ -363,7 +363,7 @@ export let walk = {
 				b: 0.005,
 				d: 1.042
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -5.7,
 				a: 1.022,
@@ -391,28 +391,28 @@ export let walk = {
 				b: 0.005,
 				d: 1.042
 			},
-			body_middle: {
+			m_body: {
 				tx: -14.05,
 				ty: -1.6,
 				a: 1.071,
 				b: 0.005,
 				d: 1.042
 			},
-			body_front: {
+			f_body: {
 				tx: -6.5,
 				ty: -4.2,
 				a: 1.134,
 				b: 0.006,
 				d: 1.095
 			},
-			body_back: {
+			b_body: {
 				tx: -0.25,
 				ty: -5,
 				a: 0.98,
 				b: 0.005,
 				d: 0.956
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.8,
 				ty: -7.15,
 				a: 1.022,
@@ -431,7 +431,7 @@ export let walk = {
 				a: 1.031,
 				d: 1.031
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -5.35,
 				a: 1.031,
@@ -455,25 +455,25 @@ export let walk = {
 				a: 1.031,
 				d: 1.031
 			},
-			body_middle: {
+			m_body: {
 				tx: -14.3,
 				ty: -1.4,
 				a: 1.104,
 				d: 1.031
 			},
-			body_front: {
+			f_body: {
 				tx: -6.8,
 				ty: -4.05,
 				a: 1.173,
 				d: 1.084
 			},
-			body_back: {
+			b_body: {
 				tx: -0.5,
 				ty: -4.85,
 				a: 1.009,
 				d: 0.947
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.8,
 				ty: -6.75,
 				a: 1.031,

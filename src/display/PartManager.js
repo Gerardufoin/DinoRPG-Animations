@@ -88,7 +88,12 @@ export class PartManager {
 			let idx = 0;
 			// If the part has a partIdx, get the correct sub-part to instantiate
 			if (part.partIdx !== undefined && part.frames !== undefined) {
-				idx = part.frames[partsDetail[part.partIdx] % part.frames.length];
+				// For legacy reason, idx 15 (_special) has to cap at max length and not loop.
+				const framesIdx =
+					part.partIdx === 15
+						? Math.min(partsDetail[part.partIdx], part.frames.length - 1)
+						: partsDetail[part.partIdx] % part.frames.length;
+				idx = part.frames[framesIdx];
 			}
 			// We add the current part transform to the parentTransform
 			const currentTransform = parentTransform.clone();

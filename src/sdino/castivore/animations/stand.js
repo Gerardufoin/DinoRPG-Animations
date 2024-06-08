@@ -1,6 +1,6 @@
 // @ts-check
 
-export let stand = {
+export const stand = {
 	id: 'castivore_stand',
 	frames: [
 		{
@@ -14,7 +14,7 @@ export let stand = {
 				a: 1.031,
 				d: 1.031
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.65,
 				ty: -5.9,
 				a: 1.031,
@@ -38,25 +38,25 @@ export let stand = {
 				a: 1.031,
 				d: 1.031
 			},
-			body_middle: {
+			m_body: {
 				tx: -13.9,
 				ty: -1.4,
 				a: 1.031,
 				d: 1.031
 			},
-			body_front: {
+			f_body: {
 				tx: -6.25,
 				ty: -4.05,
 				a: 1.084,
 				d: 1.084
 			},
-			body_back: {
+			b_body: {
 				tx: 0.2,
 				ty: -4.85,
 				a: 0.947,
 				d: 0.947
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.8,
 				ty: -7.3,
 				a: 1.031,
