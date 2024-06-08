@@ -13,8 +13,11 @@ function addFlashPreview(data, parent) {
 	container.style = 'display:inline-block;vertical-align:top;margin:5px;';
 	(parent ?? document.body).appendChild(container);
 
+	// SWFObject does not handle pathing corretly on github pages. Workaround.
+	const url = window.location.href;
+	const path = url.substring(0, url.lastIndexOf('/') + 1);
 	// Parameters from original website
-	var so = new SWFObject('./swf/fight.swf', swdId, 488, 300, 8, '#fce3bb');
+	var so = new SWFObject(`${path}/swf/fight.swf`, swdId, 488, 300, 8, '#fce3bb');
 	so.addParam('AllowScriptAccess', 'always');
 	so.addParam('FlashVars', `data=${data}`);
 	so.addParam('menu', 'false');
