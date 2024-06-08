@@ -20,7 +20,7 @@ function addFlashPreview(data, chk, parent) {
 		(parent ?? document.body).appendChild(container);
 
 		// Parameters from original website
-		var so = new SWFObject('swf/dino.swf', swdId, 190, 165, 8, '#FCE3BB');
+		var so = new SWFObject('./swf/dino.swf', swdId, 190, 165, 8, '#FCE3BB');
 		so.addParam('AllowScriptAccess', 'always');
 		so.addParam('FlashVars', `data=${data}&amp;chk=${chk}&amp;damages=${damages}&amp;status=&amp;flip=1`);
 		so.addParam('menu', 'false');
