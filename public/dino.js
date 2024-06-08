@@ -8,12 +8,13 @@ const appPortrait = new DinoAnim.Application({
 });
 document.getElementById('dino').appendChild(appPortrait.view);
 
-function updateDinoz(data) {
+function updateDinoz(data, damages) {
 	if (currentPortrait) {
 		appPortrait.stage.removeChild(currentPortrait);
 	}
 	currentPortrait = new DinoAnim.dino({
 		data: data,
+		damages: damages,
 		flip: 1
 	});
 	appPortrait.stage.addChild(currentPortrait);
@@ -23,6 +24,6 @@ function updateDinoz(data) {
 
 document.getElementById('update').addEventListener('click', () => {
 	const code = document.getElementById('dino_code');
-	updateDinoz(code.value);
+	updateDinoz(code.value, document.querySelector('input[name="damages"]:checked').value + 0);
 });
 document.getElementById('update').click();

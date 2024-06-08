@@ -186,6 +186,7 @@ export const mapping_gfx = {
 	369: 'invocations/raijin/belt_5',
 	370: 'invocations/raijin/belt_6',
 	377: 'invocations/raijin/background',
+	383: 'invocations/werewolf/eye',
 	581: 'fx/projectile/rock_shard',
 	584: 'scene/click',
 	586: 'status/slow',

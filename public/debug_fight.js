@@ -76,7 +76,7 @@ const fightVersion = [
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: '39T1Yt9wqq4Rx000'
+					gfx: '49T1Yt9wqq4Rx000'
 				}
 			},
 			{
@@ -111,7 +111,7 @@ const fightVersion = [
 			},
 			{
 				action: 'Announce',
-				message: 'Raijin',
+				message: 'Loup-Garou',
 				fid: 0
 			},
 			{
@@ -119,7 +119,7 @@ const fightVersion = [
 				skill: 'Invoc',
 				details: {
 					fid: 0,
-					anim: 'raijin'
+					anim: 'louga'
 				}
 			}
 			/*{

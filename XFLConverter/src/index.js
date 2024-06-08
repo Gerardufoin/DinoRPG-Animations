@@ -107,6 +107,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/gfx/LIBRARY/Symbol 343.xml', '_sub', undefined, 2); // ifrit tatoo
 //parser.parse('./resources/gfx/LIBRARY/Symbol 359.xml', '_sub', undefined, 2); // raijin drums
 //parser.parse('./resources/gfx/LIBRARY/Symbol 375.xml', '_sub', undefined, 2); // raijin body
+parser.parse('./resources/gfx/LIBRARY/Symbol 385.xml', '_sub', undefined, 2); // werewolf eyes
 //parser.parse('./resources/gfx/LIBRARY/Symbol 617.xml', '_sub', undefined, 2); // strong notification
 //parser.parse('./resources/gfx/LIBRARY/Symbol 626.xml', '_sub', undefined, 2); // _enduranceOn
 //parser.parse('./resources/gfx/LIBRARY/Symbol 643.xml', '_sub', undefined, 2); // brulure
@@ -131,7 +132,7 @@ const parser = new XFLParser();
 
 const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
-adapter.parse('./results/SVG/dino', mapping_dino, '../assets/dino');
-//adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
+//adapter.parse('./results/SVG/dino', mapping_dino, '../assets/dino');
+adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
 //adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');

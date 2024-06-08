@@ -11,6 +11,7 @@ import { Ifrit } from '../../../parts/skills/invocations/Ifrit.js';
 import { Invocation } from '../../../parts/skills/invocations/Invocation.js';
 import { Raijin } from '../../../parts/skills/invocations/Raijin.js';
 import { Vulcan } from '../../../parts/skills/invocations/Vulcan.js';
+import { Werewolf } from '../../../parts/skills/invocations/Werewolf.js';
 import { GroupEffect } from '../GroupEffect.js';
 
 /**
@@ -49,6 +50,7 @@ export class GrInvocation extends GroupEffect {
 				this._invoc = new Raijin(this._scene);
 				break;
 			case 'louga':
+				this._invoc = new Werewolf(this._scene);
 				break;
 			case 'golem':
 				break;
