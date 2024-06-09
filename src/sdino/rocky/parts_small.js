@@ -1,7 +1,7 @@
 // @ts-check
 import { ref } from '../references_small.js';
 
-export const parts = {
+export const parts_small = {
 	// 404
 	right_hand: [
 		{

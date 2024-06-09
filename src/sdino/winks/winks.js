@@ -279,7 +279,7 @@ export const winks = {
 			body: parts_small.body,
 			// 271
 			special: parts_small.special,
-			// 273
+			// 273 (same as 247)
 			l_l_1: parts_small.leg_1,
 			// 274
 			l_l_3: parts_small.left_leg_3,

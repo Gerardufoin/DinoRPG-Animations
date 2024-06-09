@@ -1,6 +1,6 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'rocky_jump',
 	callbacks: {
 		2: [['stop']]

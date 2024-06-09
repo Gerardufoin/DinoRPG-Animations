@@ -105,6 +105,13 @@ export class Animation extends Container {
 	_glowFilter;
 
 	/**
+	 * If defined, the object will be hidden or not depending on if the main container is flipped or not.
+	 * For example, if flippable is 0, it is not impacted by the side. If it is 1, it will only show when there is not flip.
+	 * If it is -1, it will only show when the main container is flipped.
+	 */
+	flippable = 0;
+
+	/**
 	 * The number of elements the animation object depends on which are currently still loading.
 	 * @type {number}
 	 */
@@ -479,6 +486,21 @@ export class Animation extends Container {
 	 */
 	markAsEnded() {
 		this._ended = true;
+	}
+
+	/**
+	 * Check all animation and enable/disable those whose flippable value is not 0 and different from the given flip value.
+	 * @param {number} flip The side of the main container.
+	 */
+	flip(flip) {
+		if (this.flippable) {
+			this.visible = this.flippable == flip;
+		}
+		for (const c of this.children) {
+			if (c instanceof Animation) {
+				c.flip(flip);
+			}
+		}
 	}
 
 	/**

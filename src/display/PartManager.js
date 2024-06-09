@@ -209,6 +209,11 @@ export class PartManager {
 			localTransform.name = part.name;
 		}
 
+		localTransform.flippable = part.flippable ?? 0;
+		if (localTransform.flippable < 0) {
+			localTransform.visible = false;
+		}
+
 		return localTransform;
 	}
 

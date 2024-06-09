@@ -100,13 +100,13 @@ export const parts_small = {
 			]
 		}
 	],
-	// 247
+	// 247 + 246 (merged as they are both p5) --- Same as 273
 	leg_1: [
 		{
 			partIdx: 5,
 			frames: [0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 3],
 			parts: [
-				// 233
+				// 236 (same as 233)
 				{
 					colorIdx: 0,
 					ref: ref.winks.leg,
@@ -119,7 +119,7 @@ export const parts_small = {
 						c: -0.327
 					}
 				},
-				// 233
+				// 243 -> 240 (same as 233)
 				{
 					colorIdx: 1,
 					ref: ref.winks.leg,
@@ -132,7 +132,7 @@ export const parts_small = {
 						c: -0.327
 					}
 				},
-				// 233
+				// 246 -> 245 (same as 233)
 				{
 					colorIdx: 1,
 					ref: ref.winks.leg,
@@ -145,7 +145,7 @@ export const parts_small = {
 						c: 0.106
 					}
 				},
-				// 237
+				// 246 -> 242
 				{
 					colorIdx: 0,
 					ref: ref.winks.pincer,

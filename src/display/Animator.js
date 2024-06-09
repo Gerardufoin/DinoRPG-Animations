@@ -225,6 +225,7 @@ export class Animator extends Container {
 	 */
 	flip(side) {
 		this.scale.x = side ? -1 : 1;
+		this._body.flip(this.scale.x);
 	}
 
 	/**

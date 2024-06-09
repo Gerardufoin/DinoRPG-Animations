@@ -64,7 +64,7 @@ export const mapping_sdino = {
 	216: 'pigmou/back_leg',
 	218: 'pigmou/back_leg_special',
 	233: 'winks/leg',
-	237: 'winks/pincer',
+	241: 'winks/pincer',
 	249: 'winks/body',
 	250: 'winks/body_shine',
 	252: 'winks/body_big_fold',

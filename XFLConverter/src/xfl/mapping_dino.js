@@ -61,5 +61,7 @@ export const mapping_dino = {
 	'Symbol 873_p9': 'nose',
 	'Symbol 878_special': 'bow',
 	'Symbol 931_p4b': 'mouth',
-	'Symbol 961_p6': 'hair'
+	'Symbol 961_p6': 'hair',
+	// 1117 rocky
+	'Symbol 1116_p3': 'body'
 };
