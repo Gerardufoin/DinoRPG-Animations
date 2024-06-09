@@ -70,6 +70,12 @@ export class Invocation extends Part {
 	}
 
 	/**
+	 * Called when the invocation has finished descending.
+	 * To be implemented by children if needed.
+	 */
+	descended() {}
+
+	/**
 	 * Adds an aura around the invocation.
 	 * @param {number} type The type of aura based on SkillType.
 	 */

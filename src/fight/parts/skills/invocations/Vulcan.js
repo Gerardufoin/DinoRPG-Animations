@@ -44,21 +44,16 @@ export class Vulcan extends Invocation {
 
 	/**
 	 * Create Vulcan's lava pillars once the descent is over.
-	 * @param {number} coef The descent coefficient, between 0 and 1.
 	 */
-	descend(coef) {
-		super.descend(coef);
-
-		if (coef === 1 && this._pillars.length === 0) {
-			for (let i = 0; i < 8; ++i) {
-				const lava = new Lava();
-				this._scene.dm.addSprite(lava, Layers.Scene.FIGHTERS);
-				const lroot = lava.getRootContainer();
-				lroot.x = SCENE_WIDTH * Math.random();
-				lroot.y = this._scene.getY(this._y) + 20 * Math.random() - 100 * Math.random();
-				lroot.zIndex = lroot.y;
-				this._pillars.push(lava);
-			}
+	descended() {
+		for (let i = 0; i < 8; ++i) {
+			const lava = new Lava();
+			this._scene.dm.addSprite(lava, Layers.Scene.FIGHTERS);
+			const lroot = lava.getRootContainer();
+			lroot.x = SCENE_WIDTH * Math.random();
+			lroot.y = this._scene.getY(this._y) + 20 * Math.random() - 100 * Math.random();
+			lroot.zIndex = lroot.y;
+			this._pillars.push(lava);
 		}
 	}
 

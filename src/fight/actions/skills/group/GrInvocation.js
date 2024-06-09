@@ -7,6 +7,7 @@ import { Fighter } from '../../../Fighter.js';
 import { Scene } from '../../../Scene.js';
 import { Timer } from '../../../Timer.js';
 import { BlueWhale } from '../../../parts/skills/invocations/BlueWhale.js';
+import { Golem } from '../../../parts/skills/invocations/Golem.js';
 import { Ifrit } from '../../../parts/skills/invocations/Ifrit.js';
 import { Invocation } from '../../../parts/skills/invocations/Invocation.js';
 import { Raijin } from '../../../parts/skills/invocations/Raijin.js';
@@ -53,6 +54,7 @@ export class GrInvocation extends GroupEffect {
 				this._invoc = new Werewolf(this._scene);
 				break;
 			case 'golem':
+				this._invoc = new Golem(this._scene);
 				break;
 			case 'djinn':
 				break;
@@ -137,6 +139,7 @@ export class GrInvocation extends GroupEffect {
 					this.nextStep();
 					this._coefSpeed = 0.035;
 					this._scene.fxShake(4, 0.8, 0.5);
+					this._invoc.descended();
 					this._invoc.addAura(SkillType.Air);
 				}
 				break;

@@ -78,14 +78,9 @@ export class Raijin extends Invocation {
 
 	/**
 	 * Show Raijin aura once the descend is over.
-	 * @param {number} coef The descent coefficient, between 0 and 1.
 	 */
-	descend(coef) {
-		super.descend(coef);
-
-		if (coef === 1 && this._auraTimer === null) {
-			this._auraTimer = 0;
-		}
+	descended() {
+		this._auraTimer = 0;
 	}
 
 	/**
