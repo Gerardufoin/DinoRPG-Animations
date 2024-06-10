@@ -1,6 +1,6 @@
 // @ts-check
 
-export let fly = {
+export const fly = {
 	id: 'pteroz_fly',
 	frames: [
 		{

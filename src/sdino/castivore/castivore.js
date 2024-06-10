@@ -166,7 +166,7 @@ export let castivore = {
 			view: parts_big.view
 		},
 		animations: {
-			// 294
+			// 962
 			stand: portrait
 		}
 	},

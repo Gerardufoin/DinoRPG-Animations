@@ -1,6 +1,6 @@
 // @ts-check
 
-export let run = {
+export const run = {
 	id: 'pteroz_run',
 	frames: [
 		{

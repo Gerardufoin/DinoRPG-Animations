@@ -1,6 +1,6 @@
 // @ts-check
 
-export let walk = {
+export const walk = {
 	id: 'pteroz_walk',
 	callbacks: {
 		6: [['gotoAndPlay', 1]]

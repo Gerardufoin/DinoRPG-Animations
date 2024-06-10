@@ -164,7 +164,12 @@ export const parts_small = {
 	// 358
 	nose: [
 		{
-			ref: ref.castivore.nose
+			ref: ref.castivore.nose,
+			colorOffset: {
+				r: -46,
+				g: -87,
+				B: -82
+			}
 		}
 	],
 	// 367

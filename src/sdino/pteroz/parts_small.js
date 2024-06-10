@@ -1,7 +1,7 @@
 // @ts-check
 import { ref } from '../references_small.js';
 
-export const parts = {
+export const parts_small = {
 	// 473
 	right_wing: [
 		{

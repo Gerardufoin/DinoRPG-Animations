@@ -63,5 +63,13 @@ export const mapping_dino = {
 	'Symbol 931_p4b': 'mouth',
 	'Symbol 961_p6': 'hair',
 	// 1117 rocky
-	'Symbol 1116_p3': 'body'
+	'Symbol 1116_p3': 'body',
+	// 1209 pteroz
+	'Symbol 1120': 'l_leg',
+	'Symbol 1133_p6b': 'r_wing',
+	'Symbol 1135_col0': 'body',
+	'Symbol 1140_p5col0': 'fin',
+	'Symbol 1169_p3': 'beak',
+	'Symbol 1186_p6': 'l_wing',
+	'Symbol 1206_p4': 'eyes'
 };

@@ -111,7 +111,7 @@ export let rocky = {
 			view: parts_big.view
 		},
 		animations: {
-			// 294
+			// 1117
 			stand: portrait
 		}
 	},
