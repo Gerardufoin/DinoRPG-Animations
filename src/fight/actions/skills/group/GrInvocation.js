@@ -7,6 +7,7 @@ import { Fighter } from '../../../Fighter.js';
 import { Scene } from '../../../Scene.js';
 import { Timer } from '../../../Timer.js';
 import { BlueWhale } from '../../../parts/skills/invocations/BlueWhale.js';
+import { Djinn } from '../../../parts/skills/invocations/Djinn.js';
 import { Golem } from '../../../parts/skills/invocations/Golem.js';
 import { Ifrit } from '../../../parts/skills/invocations/Ifrit.js';
 import { Invocation } from '../../../parts/skills/invocations/Invocation.js';
@@ -57,6 +58,7 @@ export class GrInvocation extends GroupEffect {
 				this._invoc = new Golem(this._scene);
 				break;
 			case 'djinn':
+				this._invoc = new Djinn(this._scene);
 				break;
 			case 'fujin':
 				break;
@@ -118,7 +120,7 @@ export class GrInvocation extends GroupEffect {
 			// The summon descends upon the Scene.
 			case 1:
 				this._invoc.descend(this._coef);
-				/*
+				/* TODO
 				for( i in 0...10 ) {
 					var x =  invoc.x;
 					var y =  Scene.getY(invoc.y);
