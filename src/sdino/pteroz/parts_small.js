@@ -128,7 +128,7 @@ export const parts_small = {
 				// 493
 				{
 					colorIdx: 0,
-					ref: ref.pteroz.beak_broken,
+					ref: ref.pteroz.beak_mouth,
 					transform: {
 						tx: -2.75,
 						ty: 1.7

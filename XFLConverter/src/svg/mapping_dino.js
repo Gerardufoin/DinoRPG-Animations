@@ -574,5 +574,16 @@ export const mapping_dino = {
 	1178: 'pteroz/left_wing_hurt_blood',
 	1180: 'pteroz/left_wing_small',
 	1182: 'pteroz/left_wing_small_frame',
-	1184: 'pteroz/left_wing_small_claws'
+	1184: 'pteroz/left_wing_small_claws',
+	1187: 'pteroz/eyes_mask',
+	1189: 'pteroz/eyes',
+	1190: 'pteroz/eyes_eyebrows',
+	1192: 'pteroz/eyes_pupil',
+	1193: 'pteroz/eyes_single',
+	1195: 'pteroz/eyes_small_mask',
+	1197: 'pteroz/eyes_small',
+	1199: 'pteroz/eyes_cyclop_mask',
+	1200: 'pteroz/eyes_cyclop',
+	1201: 'pteroz/eyes_single_eyebrow',
+	1203: 'pteroz/eyes_many_mask'
 };

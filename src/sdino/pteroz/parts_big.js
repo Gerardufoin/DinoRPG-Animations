@@ -606,8 +606,8 @@ export const parts_big = {
 						partIdx: 2,
 						frames: [-1, 0, 1],
 						transform: {
-							tx: -6.75,
-							ty: 7.75
+							tx: 2.95,
+							ty: 4.5
 						},
 						parts: [
 							[
@@ -850,7 +850,271 @@ export const parts_big = {
 		}
 	],
 	// 1206 p4
-	eyes: [],
+	eyes: [
+		{
+			partIdx: 4,
+			frames: [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 3, 3, 4],
+			parts: [
+				[
+					// 1188
+					{
+						ref: ref.pteroz.eyes_mask,
+						transform: {
+							tx: 35.45,
+							ty: -16.55
+						},
+						colorOffset: {
+							r: -108,
+							g: -113,
+							b: -82
+						}
+					},
+					// 1189
+					{
+						ref: ref.pteroz.eyes
+					},
+					// 1190
+					{
+						ref: ref.pteroz.eyes_eyebrows,
+						transform: {
+							tx: 28.85,
+							ty: -32.15
+						},
+						colorOffset: {
+							r: -108,
+							g: -113,
+							b: -82
+						}
+					},
+					// 1192
+					{
+						ref: ref.pteroz.eyes_pupil
+					}
+				],
+				[
+					// 1188
+					{
+						ref: ref.pteroz.eyes_mask,
+						transform: {
+							tx: 35.45,
+							ty: -16.55
+						},
+						colorOffset: {
+							r: -108,
+							g: -113,
+							b: -82
+						}
+					},
+					// 1190
+					{
+						ref: ref.pteroz.eyes_eyebrows,
+						transform: {
+							tx: 28.85,
+							ty: -37.75,
+							a: 0.801,
+							d: 0.801
+						},
+						colorOffset: {
+							r: -108,
+							g: -113,
+							b: -82
+						}
+					},
+					// 1194
+					{
+						ref: ref.pteroz.eyes_single,
+						transform: {
+							tx: 33.75,
+							ty: -22.3,
+							a: 0.819,
+							d: 0.9
+						}
+					},
+					// 1194
+					{
+						ref: ref.pteroz.eyes_single,
+						transform: {
+							tx: 20.85,
+							ty: -22,
+							a: 0.605,
+							d: 0.665
+						}
+					}
+				],
+				[
+					// 1196
+					{
+						ref: ref.pteroz.eyes_small_mask,
+						transform: {
+							tx: 35.45,
+							ty: -16.55
+						},
+						colorOffset: {
+							r: -108,
+							g: -113,
+							b: -82
+						}
+					},
+					// 1197
+					{
+						ref: ref.pteroz.eyes_small
+					}
+				],
+				[
+					// 1199
+					{
+						ref: ref.pteroz.eyes_cyclop_mask,
+						transform: {
+							tx: 35.45,
+							ty: -16.55
+						},
+						colorOffset: {
+							r: -108,
+							g: -113,
+							b: -82
+						}
+					},
+					// 1200
+					{
+						ref: ref.pteroz.eyes_cyclop
+					},
+					// 1202
+					{
+						ref: ref.pteroz.eyes_single_eyebrow,
+						transform: {
+							tx: 14.8,
+							ty: -38.55,
+							a: 0.992,
+							d: 0.992,
+							b: -0.114,
+							c: 0.114
+						},
+						colorOffset: {
+							r: -108,
+							g: -113,
+							b: -82
+						}
+					}
+				],
+				[
+					// 1204
+					{
+						ref: ref.pteroz.eyes_many_mask,
+						transform: {
+							tx: 35.45,
+							ty: -16.55
+						},
+						colorOffset: {
+							r: -108,
+							g: -113,
+							b: -82
+						}
+					},
+					// 1194
+					{
+						ref: ref.pteroz.eyes_single,
+						transform: {
+							tx: 26.05,
+							ty: -28.3,
+							a: 0.82,
+							d: 0.89
+						}
+					},
+					// 1194
+					{
+						ref: ref.pteroz.eyes_single,
+						transform: {
+							tx: 19.2,
+							ty: -21.65,
+							a: 0.538,
+							d: 0.692
+						}
+					},
+					// 1194
+					{
+						ref: ref.pteroz.eyes_single,
+						transform: {
+							tx: 27.3,
+							ty: -24.3,
+							a: 0.819,
+							d: 0.9
+						}
+					},
+					// 1194
+					{
+						ref: ref.pteroz.eyes_single,
+						transform: {
+							tx: 34.95,
+							ty: -30.15,
+							a: 0.82,
+							d: 0.89
+						}
+					},
+					// 1194
+					{
+						ref: ref.pteroz.eyes_single,
+						transform: {
+							tx: 38.8,
+							ty: -21.4,
+							a: 0.922,
+							d: 1
+						}
+					},
+					// 1202
+					{
+						ref: ref.pteroz.eyes_single_eyebrow,
+						transform: {
+							tx: 14.5,
+							ty: -38.15,
+							a: 0.763,
+							d: 0.763,
+							b: -0.249,
+							c: 0.249
+						},
+						colorOffset: {
+							r: -108,
+							g: -113,
+							b: -82
+						}
+					},
+					// 1202
+					{
+						ref: ref.pteroz.eyes_single_eyebrow,
+						transform: {
+							tx: 21.2,
+							ty: -42.35,
+							a: 0.851,
+							d: 0.851,
+							b: -0.097,
+							c: 0.097
+						},
+						colorOffset: {
+							r: -108,
+							g: -113,
+							b: -82
+						}
+					},
+					// 1202
+					{
+						ref: ref.pteroz.eyes_single_eyebrow,
+						transform: {
+							tx: 32.15,
+							ty: -42.5,
+							a: 0.834,
+							d: 0.834,
+							b: 0.189,
+							c: -0.189
+						},
+						colorOffset: {
+							r: -108,
+							g: -113,
+							b: -82
+						}
+					}
+				]
+			]
+		}
+	],
 	// 293
 	view: [
 		{
