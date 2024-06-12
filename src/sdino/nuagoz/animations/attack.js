@@ -1,6 +1,6 @@
 // @ts-check
 
-export let attack = {
+export const attack = {
 	id: 'nuagoz_attack',
 	callbacks: {
 		2: [['hit', 13]],

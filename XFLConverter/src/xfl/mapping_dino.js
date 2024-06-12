@@ -71,5 +71,7 @@ export const mapping_dino = {
 	'Symbol 1140_p5col0': 'fin',
 	'Symbol 1169_p3': 'beak',
 	'Symbol 1186_p6': 'l_wing',
-	'Symbol 1206_p4': 'eyes'
+	'Symbol 1206_p4': 'eyes',
+	// 1276 nuagoz
+	'Symbol 1275_p3': 'body'
 };

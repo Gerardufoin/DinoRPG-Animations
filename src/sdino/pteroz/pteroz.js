@@ -8,13 +8,12 @@ import { land } from './animations/land.js';
 import { dead } from './animations/dead.js';
 import { fly } from './animations/fly.js';
 import { fx_dust } from '../../gfx/fx/attach/smoke/dust.js';
-import { ref as ref_small } from '../references_small.js';
 import { ref as ref_big } from '../references_big.js';
 import { parts_small } from './parts_small.js';
 import { portrait } from './animations/portrait.js';
 import { parts_big } from './parts_big.js';
 
-export let pteroz = {
+export const pteroz = {
 	name: 'pteroz',
 	palette: [
 		[

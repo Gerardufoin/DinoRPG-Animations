@@ -1,6 +1,6 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'nuagoz_jump',
 	callbacks: {
 		3: [['stop']]

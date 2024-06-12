@@ -127,21 +127,21 @@ addDinoz('59MG98iyxUhaA000');
 addDinoz('59WkrzINzZ5p9000');
 addDinoz('59DCTDZxittpQ000');*/
 // Pteroz
-addDinoz('69pCCyHibiPFK000', true);
+/*addDinoz('69pCCyHibiPFK000', true);
 addDinoz('69ShBRsiPCfiw000');
 addDinoz('69spSHxJqAuyc000');
 addDinoz('69SEXtatVVj3j000');
 addDinoz('69CCNfds4I0OC000');
 addDinoz('69LhH8GuujsLD000');
-addDinoz('69uOBQV7rJEEr000');
+addDinoz('69uOBQV7rJEEr000');*/
 // Nuagoz
-/*addDinoz('79MZ2Ou1cj0q6000', true);
+addDinoz('79MZ2Ou1cj0q6000', true);
 addDinoz('79saoiWWdDYpi000');
 addDinoz('79TMjJApT93Mx000');
 addDinoz('796DaTiCSvPu7000');
 addDinoz('79wzoXZb94nxa000');
 addDinoz('79j66kSFEoTJ5000');
-addDinoz('79vKIt6DlGsCt000');*/
+addDinoz('79vKIt6DlGsCt000');
 // Sirain
 /*addDinoz('89KlMhswn7mQ4000', true);
 addDinoz('89xsFY1bzYhjG000');

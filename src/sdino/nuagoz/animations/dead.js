@@ -1,6 +1,6 @@
 // @ts-check
 
-export let dead = {
+export const dead = {
 	id: 'nuagoz_dead',
 	callbacks: {
 		35: [['stop']]

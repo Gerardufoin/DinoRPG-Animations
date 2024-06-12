@@ -10,14 +10,16 @@ import { Fight } from './fight/Fight.js';
 // First transform is the parent, second is the child
 /*console.log(
 	PixiHelper.matrixFromObject({
-		tx: -0.75,
-		ty: 1.45,
-		a: 0.58367919921875,
-		d: 0.8189697265625
+		tx: -26.7,
+		ty: -1.85
 	}).append(
 		PixiHelper.matrixFromObject({
-			tx: 0.6,
-			ty: 3.4
+			tx: 36.05,
+			ty: 53.95,
+			a: 0.751,
+			d: 0.998,
+			b: 0.051,
+			c: -0.031
 		})
 	)
 );*/
