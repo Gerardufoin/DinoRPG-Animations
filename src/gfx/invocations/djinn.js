@@ -1,6 +1,6 @@
 // @ts-check
 import { ref } from '../references.js';
-import { invoc_djinn_breath } from './djinn_breath.js';
+import { invoc_wind } from './wind.js';
 
 // GFX 406
 export const invoc_djinn = {
@@ -25,7 +25,7 @@ export const invoc_djinn = {
 				ref: ref.invocations.djinn.breath_mask
 			}
 		],
-		breath: [invoc_djinn_breath]
+		breath: [invoc_wind]
 	},
 	masks: {
 		breath: 'breath_mask'
@@ -37,7 +37,9 @@ export const invoc_djinn = {
 			52: [['stop']]
 		},
 		expectedScaling: {
-			breath: 1
+			breath: 1,
+			head: 1,
+			body: 1
 		},
 		frames: [
 			{
