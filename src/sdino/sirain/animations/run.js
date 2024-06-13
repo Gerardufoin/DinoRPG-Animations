@@ -1,6 +1,6 @@
 // @ts-check
 
-export let run = {
+export const run = {
 	id: 'sirain_run',
 	frames: [
 		{
@@ -10,7 +10,7 @@ export let run = {
 				a: 1.095,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: -4.4,
 				ty: 7,
 				a: 1.25,
@@ -19,7 +19,7 @@ export let run = {
 				d: 1.057,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 0.85,
 				ty: -4.35,
 				a: 1.217,
@@ -37,7 +37,7 @@ export let run = {
 				d: 1.462,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.85,
 				ty: -6.5,
 				a: 0.679,
@@ -52,7 +52,7 @@ export let run = {
 				a: 0.924,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -1.9,
 				ty: 6.15,
 				a: 1.054,
@@ -74,7 +74,7 @@ export let run = {
 				a: 1.05,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: -3.45,
 				ty: 7.65,
 				a: 1.217,
@@ -83,7 +83,7 @@ export let run = {
 				d: 1.101,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 2.35,
 				ty: -5.2,
 				a: 1.167,
@@ -101,7 +101,7 @@ export let run = {
 				d: 1.464,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -6.6,
 				ty: -7.25,
 				a: 0.651,
@@ -116,7 +116,7 @@ export let run = {
 				a: 0.919,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -2.1,
 				ty: 6,
 				a: 1.008,
@@ -138,7 +138,7 @@ export let run = {
 				ty: -0.35,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: -2.3,
 				ty: 8.4,
 				a: 1.17,
@@ -147,7 +147,7 @@ export let run = {
 				d: 1.128,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4,
 				ty: -6.1,
 				a: 1.111,
@@ -165,7 +165,7 @@ export let run = {
 				d: 1.466,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.95,
 				ty: -8.2,
 				a: 0.62,
@@ -180,7 +180,7 @@ export let run = {
 				a: 0.913,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -2.25,
 				ty: 5.8,
 				a: 0.951,
@@ -203,7 +203,7 @@ export let run = {
 				d: 0.942,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: -0.65,
 				ty: 8,
 				a: 1.249,
@@ -212,7 +212,7 @@ export let run = {
 				d: 1.075,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 2.25,
 				ty: -4.8,
 				a: 1.19,
@@ -230,7 +230,7 @@ export let run = {
 				d: 1.382,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3.3,
 				ty: -6.75,
 				a: 0.664,
@@ -246,7 +246,7 @@ export let run = {
 				d: 0.942,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -4.2,
 				ty: 5.5,
 				a: 0.995,
@@ -271,7 +271,7 @@ export let run = {
 				d: 0.877,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 1.05,
 				ty: 7.6,
 				a: 1.325,
@@ -280,7 +280,7 @@ export let run = {
 				d: 0.981,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 0.35,
 				ty: -3.55,
 				a: 1.28,
@@ -296,7 +296,7 @@ export let run = {
 				d: 1.287,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3.6,
 				ty: -5.4,
 				a: 0.714,
@@ -312,7 +312,7 @@ export let run = {
 				d: 0.877,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -6.4,
 				ty: 5.15,
 				a: 1.039,
@@ -337,7 +337,7 @@ export let run = {
 				d: 0.907,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.95,
 				ty: 7.65,
 				a: 1.286,
@@ -346,7 +346,7 @@ export let run = {
 				d: 1.022,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.05,
 				ty: -4.15,
 				a: 1.238,
@@ -364,7 +364,7 @@ export let run = {
 				d: 1.332,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3.1,
 				ty: -6.2,
 				a: 0.691,
@@ -380,7 +380,7 @@ export let run = {
 				d: 0.907,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -6.1,
 				ty: 5.35,
 				a: 1.023,
@@ -403,7 +403,7 @@ export let run = {
 				ty: -0.35,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.7,
 				ty: 7.9,
 				a: 1.167,
@@ -412,7 +412,7 @@ export let run = {
 				d: 1.137,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 3.3,
 				ty: -6.15,
 				a: 1.111,
@@ -430,7 +430,7 @@ export let run = {
 				d: 1.468,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -1.65,
 				ty: -8.3,
 				a: 0.62,
@@ -445,7 +445,7 @@ export let run = {
 				a: 0.962,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.2,
 				ty: 6.05,
 				a: 0.958,
@@ -467,7 +467,7 @@ export let run = {
 				a: 1.042,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: -1.65,
 				ty: 7.5,
 				a: 1.217,
@@ -476,7 +476,7 @@ export let run = {
 				d: 1.131,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 2.25,
 				ty: -5.3,
 				a: 1.158,
@@ -494,7 +494,7 @@ export let run = {
 				d: 1.466,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -5.3,
 				ty: -7.45,
 				a: 0.646,
@@ -509,7 +509,7 @@ export let run = {
 				a: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.75,
 				ty: 6.1,
 				a: 1.001,

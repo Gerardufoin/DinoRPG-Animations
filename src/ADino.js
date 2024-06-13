@@ -142,6 +142,7 @@ export class ADino extends Animator {
 		const scaling = Math.max(this._body.scale.x, this._body.scale.y);
 		// If this is a big dino, the part scaling change depending on the parameter at idx 1, which is the dino growing or if it is a demon.
 		const partsScaling = PartManager.getAnimationsScaling(this.dinoInfos.animations, this._big ? dParts[1] : 0);
+		// Insert the normal parts of the dino
 		for (let pName in this.dinoInfos.parts) {
 			let part = PartManager.createPart(
 				this.dinoInfos.parts[pName],
@@ -154,18 +155,36 @@ export class ADino extends Animator {
 				this.addPart(pName, part);
 			}
 		}
+		let bottomLayer = 0;
 		if (this._castShadow && this.dinoInfos.shadow) {
 			const shadow = PartManager.getSubPart(this.dinoInfos.shadow, dParts, this._palette, this._body._scale);
 			if (shadow) {
 				this._body.waitForAnimation(shadow);
-				this.addChildAt(shadow, 0);
+				this.addChildAt(shadow, bottomLayer++);
 			}
 		}
-		// Accessories are added at the top layer of the dino and are not affected by the body glow
-		if (this.dinoInfos.accessories) {
-			for (let pName in this.dinoInfos.accessories) {
+		// Parts under are parts which are inserted below the dino and are not affected by the glow filter applied on the dino
+		this.addExtraPart(this.dinoInfos.parts_under, dParts, scaling, partsScaling, bottomLayer);
+		// Parts over are parts which are inserted on top of the dino and are not affected by the glow filter applied on the dino
+		this.addExtraPart(this.dinoInfos.parts_over, dParts, scaling, partsScaling);
+		if (this.dinoInfos.glow) {
+			this.setBodyGlow(this.dinoInfos.glow);
+		}
+	}
+
+	/**
+	 * Add extra parts to the body. Extra parts are not considered as real parts and are not impacted by the body glow.
+	 * @param {object} partList The object containing the parts to insert.
+	 * @param {Array} dParts The customization array given at the class creation.
+	 * @param {number} scaling The scale of the dino.
+	 * @param {object} partsScaling The expected scaling for the parts.
+	 * @param {number} layerIdx At which layer to add the part. If undefined, the parts are added on top.
+	 */
+	addExtraPart(partList, dParts, scaling, partsScaling, layerIdx = undefined) {
+		if (partList) {
+			for (let pName in partList) {
 				const part = PartManager.createPart(
-					this.dinoInfos.accessories[pName],
+					partList[pName],
 					dParts,
 					this._palette,
 					this._body._scale,
@@ -173,12 +192,13 @@ export class ADino extends Animator {
 				);
 				if (part) {
 					this._body.waitForAnimation(part);
-					this.addChild(part);
+					if (layerIdx !== undefined) {
+						this.addChildAt(part, layerIdx++);
+					} else {
+						this.addChild(part);
+					}
 				}
 			}
-		}
-		if (this.dinoInfos.glow) {
-			this.setBodyGlow(this.dinoInfos.glow);
 		}
 	}
 

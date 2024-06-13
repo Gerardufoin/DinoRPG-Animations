@@ -1,6 +1,6 @@
 // @ts-check
 
-export let land = {
+export const land = {
 	id: 'sirain_land',
 	callbacks: {
 		2: [
@@ -18,7 +18,7 @@ export let land = {
 				d: 1.209,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.85,
 				ty: 7.65,
 				a: 0.93,
@@ -26,7 +26,7 @@ export let land = {
 				d: 1.392,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 3.85,
 				ty: -10.25,
 				a: 0.898,
@@ -42,7 +42,7 @@ export let land = {
 				d: 1.775,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.45,
 				ty: -12.85,
 				a: 0.501,
@@ -58,7 +58,7 @@ export let land = {
 				d: 1.209,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.5,
 				ty: 4.45,
 				a: 0.777,
@@ -84,7 +84,7 @@ export let land = {
 				d: 1.135,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 1.3,
 				ty: 8.05,
 				a: 0.984,
@@ -92,7 +92,7 @@ export let land = {
 				d: 1.31,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 3.65,
 				ty: -8.65,
 				a: 0.97,
@@ -110,7 +110,7 @@ export let land = {
 				d: 1.667,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.95,
 				ty: -10.6,
 				a: 0.518,
@@ -126,7 +126,7 @@ export let land = {
 				d: 1.138,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.9,
 				ty: 4.75,
 				a: 0.822,
@@ -152,7 +152,7 @@ export let land = {
 				d: 0.885,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.6,
 				ty: 9.3,
 				a: 1.151,
@@ -160,7 +160,7 @@ export let land = {
 				d: 1.057,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 3.2,
 				ty: -3.75,
 				a: 1.142,
@@ -178,7 +178,7 @@ export let land = {
 				d: 1.299,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -4.85,
 				ty: -3.65,
 				a: 0.562,
@@ -193,7 +193,7 @@ export let land = {
 				d: 0.918,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.3,
 				ty: 5.75,
 				a: 0.963,
@@ -218,7 +218,7 @@ export let land = {
 				d: 0.887,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.6,
 				ty: 9.35,
 				a: 1.151,
@@ -226,7 +226,7 @@ export let land = {
 				d: 1.059,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 3.25,
 				ty: -3.8,
 				a: 1.142,
@@ -244,7 +244,7 @@ export let land = {
 				d: 1.303,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -4.9,
 				ty: -3.85,
 				a: 0.563,
@@ -259,7 +259,7 @@ export let land = {
 				d: 0.919,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.25,
 				ty: 5.7,
 				a: 0.963,
@@ -284,7 +284,7 @@ export let land = {
 				d: 0.89,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.55,
 				ty: 9.35,
 				a: 1.151,
@@ -292,7 +292,7 @@ export let land = {
 				d: 1.061,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 3.2,
 				ty: -3.8,
 				a: 1.143,
@@ -310,7 +310,7 @@ export let land = {
 				d: 1.307,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -4.9,
 				ty: -3.9,
 				a: 0.565,
@@ -325,7 +325,7 @@ export let land = {
 				d: 0.921,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.25,
 				ty: 5.7,
 				a: 0.963,
@@ -350,7 +350,7 @@ export let land = {
 				d: 0.895,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.5,
 				ty: 9.3,
 				a: 1.151,
@@ -358,7 +358,7 @@ export let land = {
 				d: 1.064,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 3.3,
 				ty: -3.95,
 				a: 1.143,
@@ -376,7 +376,7 @@ export let land = {
 				d: 1.314,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -4.8,
 				ty: -3.95,
 				a: 0.567,
@@ -391,7 +391,7 @@ export let land = {
 				d: 0.924,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.25,
 				ty: 5.75,
 				a: 0.963,
@@ -416,7 +416,7 @@ export let land = {
 				d: 0.903,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.4,
 				ty: 9.3,
 				a: 1.15,
@@ -424,7 +424,7 @@ export let land = {
 				d: 1.07,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 3.4,
 				ty: -4.05,
 				a: 1.143,
@@ -442,7 +442,7 @@ export let land = {
 				d: 1.326,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -4.7,
 				ty: -4.3,
 				a: 0.571,
@@ -457,7 +457,7 @@ export let land = {
 				d: 0.929,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.25,
 				ty: 5.8,
 				a: 0.963,
@@ -482,7 +482,7 @@ export let land = {
 				d: 0.915,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.25,
 				ty: 9.25,
 				a: 1.151,
@@ -490,7 +490,7 @@ export let land = {
 				d: 1.078,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 3.5,
 				ty: -4.3,
 				a: 1.144,
@@ -508,7 +508,7 @@ export let land = {
 				d: 1.343,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -4.6,
 				ty: -4.7,
 				a: 0.577,
@@ -523,7 +523,7 @@ export let land = {
 				d: 0.936,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.1,
 				ty: 5.8,
 				a: 0.963,
@@ -548,7 +548,7 @@ export let land = {
 				d: 0.929,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 2.05,
 				ty: 9.15,
 				a: 1.151,
@@ -556,7 +556,7 @@ export let land = {
 				d: 1.088,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 3.7,
 				ty: -4.5,
 				a: 1.143,
@@ -574,7 +574,7 @@ export let land = {
 				d: 1.364,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -4.35,
 				ty: -5.1,
 				a: 0.584,
@@ -589,7 +589,7 @@ export let land = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.05,
 				ty: 5.8,
 				a: 0.963,
@@ -614,7 +614,7 @@ export let land = {
 				d: 0.945,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 1.85,
 				ty: 9.1,
 				a: 1.151,
@@ -622,7 +622,7 @@ export let land = {
 				d: 1.101,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 3.85,
 				ty: -4.8,
 				a: 1.14,
@@ -640,7 +640,7 @@ export let land = {
 				d: 1.387,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -4.15,
 				ty: -5.75,
 				a: 0.592,
@@ -655,7 +655,7 @@ export let land = {
 				d: 0.955,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -4.9,
 				ty: 5.85,
 				a: 0.963,
@@ -680,7 +680,7 @@ export let land = {
 				d: 0.962,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 1.55,
 				ty: 8.9,
 				a: 1.151,
@@ -688,7 +688,7 @@ export let land = {
 				d: 1.115,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.1,
 				ty: -5.2,
 				a: 1.135,
@@ -706,7 +706,7 @@ export let land = {
 				d: 1.413,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3.85,
 				ty: -6.4,
 				a: 0.601,
@@ -721,7 +721,7 @@ export let land = {
 				d: 0.968,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -4.8,
 				ty: 5.9,
 				a: 0.963,
@@ -746,7 +746,7 @@ export let land = {
 				d: 0.981,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 1.25,
 				ty: 8.8,
 				a: 1.151,
@@ -754,7 +754,7 @@ export let land = {
 				d: 1.132,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.25,
 				ty: -5.65,
 				a: 1.126,
@@ -772,7 +772,7 @@ export let land = {
 				d: 1.441,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3.6,
 				ty: -7.25,
 				a: 0.611,
@@ -787,7 +787,7 @@ export let land = {
 				d: 0.983,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -4.65,
 				ty: 6,
 				a: 0.963,
@@ -808,7 +808,7 @@ export let land = {
 				ty: -0.35,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.9,
 				ty: 8.65,
 				a: 1.152,
@@ -816,7 +816,7 @@ export let land = {
 				d: 1.152,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.65,
 				ty: -6.15,
 				a: 1.112,
@@ -832,7 +832,7 @@ export let land = {
 				d: 1.468,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3.15,
 				ty: -8.3,
 				a: 0.62,
@@ -846,7 +846,7 @@ export let land = {
 				ty: 2.55,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -4.45,
 				ty: 6,
 				a: 0.963,

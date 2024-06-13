@@ -73,5 +73,15 @@ export const mapping_dino = {
 	'Symbol 1186_p6': 'l_wing',
 	'Symbol 1206_p4': 'eyes',
 	// 1276 nuagoz
-	'Symbol 1275_p3': 'body'
+	'Symbol 1275_p3': 'body',
+	// 1405 sirain
+	'Symbol 1289_p5b': 'r_ear',
+	'Symbol 1297_p7b': 'r_leg',
+	'Symbol 1312_p8': 'tail',
+	'Symbol 1315_p4b': 'r_eye',
+	'Symbol 1331_p6': 'body',
+	'Symbol 1351_p3': 'head',
+	'Symbol 1363_p7a': 'l_leg',
+	'Symbol 1385_p4a': 'l_eye',
+	'Symbol 1404_p5a': 'l_ear'
 };

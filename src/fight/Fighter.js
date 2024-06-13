@@ -517,7 +517,7 @@ export class Fighter extends Phys {
 			this._scene.addSlot(this._slot, this.side);
 
 			// TODO: Remove _announcePortrait + slot portrait and clean code once all big dinoz are done.
-			if ('01234567'.includes(fInfos.gfx.charAt(0))) {
+			if ('012345678'.includes(fInfos.gfx.charAt(0))) {
 				const bigDino = new dino({
 					data: fInfos.gfx,
 					autoUpdate: false,

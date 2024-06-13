@@ -1,6 +1,6 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'sirain_jump',
 	frames: [
 		{
@@ -13,7 +13,7 @@ export let jump = {
 				d: 0.841,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 1.8,
 				ty: 6.4,
 				a: 0.884,
@@ -22,7 +22,7 @@ export let jump = {
 				d: 0.993,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 6.9,
 				ty: -6.3,
 				a: 0.778,
@@ -40,7 +40,7 @@ export let jump = {
 				d: 1.236,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: 1.5,
 				ty: -12.3,
 				a: 0.601,
@@ -58,7 +58,7 @@ export let jump = {
 				d: 0.903,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.1,
 				ty: 6,
 				a: 0.873,
@@ -87,7 +87,7 @@ export let jump = {
 				d: 0.84,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 1.8,
 				ty: 6.4,
 				a: 0.883,
@@ -96,7 +96,7 @@ export let jump = {
 				d: 0.991,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 6.55,
 				ty: -5.75,
 				a: 0.7,
@@ -114,7 +114,7 @@ export let jump = {
 				d: 1.234,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: 1.6,
 				ty: -11.75,
 				a: 0.577,
@@ -132,7 +132,7 @@ export let jump = {
 				d: 0.902,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.1,
 				ty: 6,
 				a: 0.872,
@@ -161,7 +161,7 @@ export let jump = {
 				d: 0.841,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 1.8,
 				ty: 6.4,
 				a: 0.884,
@@ -170,7 +170,7 @@ export let jump = {
 				d: 0.993,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 5.45,
 				ty: -4.15,
 				a: 0.446,
@@ -188,7 +188,7 @@ export let jump = {
 				d: 1.236,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: 1.8,
 				ty: -10.35,
 				a: 0.472,
@@ -206,7 +206,7 @@ export let jump = {
 				d: 0.903,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.1,
 				ty: 6,
 				a: 0.873,
@@ -235,7 +235,7 @@ export let jump = {
 				d: 0.84,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 1.8,
 				ty: 6.4,
 				a: 0.883,
@@ -244,7 +244,7 @@ export let jump = {
 				d: 0.991,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 6.1,
 				ty: -5.1,
 				a: 0.592,
@@ -262,7 +262,7 @@ export let jump = {
 				d: 1.234,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: 1.75,
 				ty: -11.1,
 				a: 0.535,
@@ -280,7 +280,7 @@ export let jump = {
 				d: 0.902,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.1,
 				ty: 6,
 				a: 0.872,
@@ -309,7 +309,7 @@ export let jump = {
 				d: 0.841,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 1.8,
 				ty: 6.4,
 				a: 0.884,
@@ -318,7 +318,7 @@ export let jump = {
 				d: 0.993,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: 6.9,
 				ty: -6.3,
 				a: 0.778,
@@ -336,7 +336,7 @@ export let jump = {
 				d: 1.236,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: 1.5,
 				ty: -12.3,
 				a: 0.601,
@@ -354,7 +354,7 @@ export let jump = {
 				d: 0.903,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -3.1,
 				ty: 6,
 				a: 0.873,

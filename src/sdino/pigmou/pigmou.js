@@ -115,7 +115,7 @@ export const pigmou = {
 			alpha: 0.289,
 			blur: { x: 10, y: 0 }
 		},
-		accessories: {
+		parts_over: {
 			horn_fires: parts_big.horns_fire
 		},
 		parts: {

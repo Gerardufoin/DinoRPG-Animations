@@ -1,13 +1,13 @@
 // @ts-check
 
-export let dead = {
+export const dead = {
 	id: 'sirain_dead',
 	callbacks: {
 		32: [['stop']]
 	},
 	frames: [
 		{
-			left_ear: {
+			l_ear: {
 				tx: 4.65,
 				ty: -6.15,
 				a: 1.112,
@@ -21,7 +21,7 @@ export let dead = {
 				ty: -0.35,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.9,
 				ty: 8.65,
 				a: 1.152,
@@ -36,7 +36,7 @@ export let dead = {
 				d: 1.468,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3.15,
 				ty: -8.3,
 				a: 0.62,
@@ -50,7 +50,7 @@ export let dead = {
 				ty: 2.55,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -4.45,
 				ty: 6,
 				a: 0.963,
@@ -65,7 +65,7 @@ export let dead = {
 			}
 		},
 		{
-			left_ear: {
+			l_ear: {
 				tx: 4.55,
 				ty: -5.95,
 				a: 1.101,
@@ -83,7 +83,7 @@ export let dead = {
 				d: 0.999,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.9,
 				ty: 8.55,
 				a: 1.149,
@@ -101,7 +101,7 @@ export let dead = {
 				d: 1.467,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3.15,
 				ty: -8.4,
 				a: 0.625,
@@ -118,7 +118,7 @@ export let dead = {
 				c: -0.009,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -4.45,
 				ty: 6,
 				a: 0.962,
@@ -137,7 +137,7 @@ export let dead = {
 			}
 		},
 		{
-			left_ear: {
+			l_ear: {
 				tx: 4.3,
 				ty: -5.6,
 				a: 1.059,
@@ -155,7 +155,7 @@ export let dead = {
 				d: 0.989,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.9,
 				ty: 8.5,
 				a: 1.14,
@@ -173,7 +173,7 @@ export let dead = {
 				d: 1.453,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.85,
 				ty: -8.7,
 				a: 0.635,
@@ -191,7 +191,7 @@ export let dead = {
 				d: 0.999,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -4.4,
 				ty: 6.05,
 				a: 0.96,
@@ -211,7 +211,7 @@ export let dead = {
 			}
 		},
 		{
-			left_ear: {
+			l_ear: {
 				tx: 3.8,
 				ty: -4.75,
 				a: 0.953,
@@ -229,7 +229,7 @@ export let dead = {
 				d: 0.943,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.9,
 				ty: 8.35,
 				a: 1.12,
@@ -247,7 +247,7 @@ export let dead = {
 				d: 1.385,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.45,
 				ty: -9.2,
 				a: 0.634,
@@ -265,7 +265,7 @@ export let dead = {
 				d: 0.996,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -4.35,
 				ty: 6,
 				a: 0.946,
@@ -285,7 +285,7 @@ export let dead = {
 			}
 		},
 		{
-			left_ear: {
+			l_ear: {
 				tx: 3.2,
 				ty: -3.7,
 				a: 0.736,
@@ -303,7 +303,7 @@ export let dead = {
 				d: 0.814,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.9,
 				ty: 8.2,
 				a: 1.085,
@@ -321,7 +321,7 @@ export let dead = {
 				d: 1.196,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -1.9,
 				ty: -9.95,
 				a: 0.59,
@@ -339,7 +339,7 @@ export let dead = {
 				d: 0.986,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -4.3,
 				ty: 6,
 				a: 0.909,
@@ -359,7 +359,7 @@ export let dead = {
 			}
 		},
 		{
-			left_ear: {
+			l_ear: {
 				tx: 2.05,
 				ty: -3.75,
 				a: 0.822,
@@ -377,7 +377,7 @@ export let dead = {
 				d: 0.828,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.7,
 				ty: 8.05,
 				a: 1.046,
@@ -395,7 +395,7 @@ export let dead = {
 				d: 1.215,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3.3,
 				ty: -9.4,
 				a: 0.603,
@@ -413,7 +413,7 @@ export let dead = {
 				d: 0.995,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -4.55,
 				ty: 6.15,
 				a: 0.882,
@@ -433,7 +433,7 @@ export let dead = {
 			}
 		},
 		{
-			left_ear: {
+			l_ear: {
 				tx: 0.65,
 				ty: -3.95,
 				a: 0.917,
@@ -451,7 +451,7 @@ export let dead = {
 				d: 0.844,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.5,
 				ty: 7.9,
 				a: 0.991,
@@ -469,7 +469,7 @@ export let dead = {
 				d: 1.239,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -5,
 				ty: -8.7,
 				a: 0.617,
@@ -487,7 +487,7 @@ export let dead = {
 				d: 0.999,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -4.7,
 				ty: 6.35,
 				a: 0.841,
@@ -507,7 +507,7 @@ export let dead = {
 			}
 		},
 		{
-			left_ear: {
+			l_ear: {
 				tx: -1.05,
 				ty: -4.05,
 				a: 1.012,
@@ -525,7 +525,7 @@ export let dead = {
 				d: 0.863,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.15,
 				ty: 7.6,
 				a: 0.913,
@@ -543,7 +543,7 @@ export let dead = {
 				d: 1.268,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.05,
 				ty: -8.05,
 				a: 0.628,
@@ -561,7 +561,7 @@ export let dead = {
 				d: 0.991,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5,
 				ty: 6.6,
 				a: 0.78,
@@ -581,7 +581,7 @@ export let dead = {
 			}
 		},
 		{
-			left_ear: {
+			l_ear: {
 				tx: -3.15,
 				ty: -4.2,
 				a: 1.093,
@@ -599,7 +599,7 @@ export let dead = {
 				d: 0.884,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -0.25,
 				ty: 7.4,
 				a: 0.802,
@@ -617,7 +617,7 @@ export let dead = {
 				d: 1.298,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.5,
 				ty: -7.15,
 				a: 0.634,
@@ -635,7 +635,7 @@ export let dead = {
 				d: 0.963,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.4,
 				ty: 6.9,
 				a: 0.697,
@@ -655,7 +655,7 @@ export let dead = {
 			}
 		},
 		{
-			left_ear: {
+			l_ear: {
 				tx: -5.6,
 				ty: -4.2,
 				a: 1.139,
@@ -673,7 +673,7 @@ export let dead = {
 				d: 0.907,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -0.7,
 				ty: 7.1,
 				a: 0.658,
@@ -691,7 +691,7 @@ export let dead = {
 				d: 1.331,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -12.4,
 				ty: -6.1,
 				a: 0.631,
@@ -709,7 +709,7 @@ export let dead = {
 				d: 0.909,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.75,
 				ty: 7.25,
 				a: 0.582,
@@ -729,7 +729,7 @@ export let dead = {
 			}
 		},
 		{
-			left_ear: {
+			l_ear: {
 				tx: -6.6,
 				ty: -2.6,
 				a: 1.128,
@@ -747,7 +747,7 @@ export let dead = {
 				d: 0.96,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -1.35,
 				ty: 7.1,
 				a: 0.327,
@@ -765,7 +765,7 @@ export let dead = {
 				d: 1.423,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -15.8,
 				ty: -3.1,
 				a: 0.436,
@@ -783,7 +783,7 @@ export let dead = {
 				d: 0.92,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.7,
 				ty: 7.65,
 				a: 0.224,
@@ -803,7 +803,7 @@ export let dead = {
 			}
 		},
 		{
-			left_ear: {
+			l_ear: {
 				tx: -7.8,
 				ty: -0.75,
 				a: 1.108,
@@ -821,7 +821,7 @@ export let dead = {
 				d: 0.991,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -2.15,
 				ty: 7.05,
 				a: -0.103,
@@ -839,7 +839,7 @@ export let dead = {
 				d: 1.459,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -19.75,
 				ty: 0.45,
 				a: -0.185,
@@ -857,7 +857,7 @@ export let dead = {
 				d: 0.933,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.65,
 				ty: 8.3,
 				a: -0.245,
@@ -895,7 +895,7 @@ export let dead = {
 				d: -0.047,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -9.1,
 				ty: 1.35,
 				a: 1.078,
@@ -913,7 +913,7 @@ export let dead = {
 				d: 0.985,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -3,
 				ty: 7,
 				a: -0.575,
@@ -931,7 +931,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -23.85,
 				ty: 4.35,
 				a: -0.624,
@@ -949,7 +949,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.6,
 				ty: 8.9,
 				a: -0.704,
@@ -989,7 +989,7 @@ export let dead = {
 				alpha: 0.871,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -10.15,
 				ty: 3.6,
 				a: 0.89,
@@ -1007,7 +1007,7 @@ export let dead = {
 				d: 0.984,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -3.75,
 				ty: 7.25,
 				a: -0.573,
@@ -1025,7 +1025,7 @@ export let dead = {
 				d: 1.455,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -23.95,
 				ty: 2.35,
 				a: -0.623,
@@ -1043,7 +1043,7 @@ export let dead = {
 				d: 0.944,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -6.45,
 				ty: 9.05,
 				a: -0.702,
@@ -1083,7 +1083,7 @@ export let dead = {
 				alpha: 0.75,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -10.7,
 				ty: 4.9,
 				a: 0.726,
@@ -1101,7 +1101,7 @@ export let dead = {
 				d: 0.956,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -4.25,
 				ty: 7.35,
 				a: -0.573,
@@ -1119,7 +1119,7 @@ export let dead = {
 				d: 1.443,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -24.1,
 				ty: 1.1,
 				a: -0.604,
@@ -1137,7 +1137,7 @@ export let dead = {
 				d: 0.944,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -6.95,
 				ty: 9.15,
 				a: -0.702,
@@ -1186,7 +1186,7 @@ export let dead = {
 				alpha: 0.641,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -10.2,
 				ty: 5.45,
 				a: 0.664,
@@ -1204,7 +1204,7 @@ export let dead = {
 				d: 0.942,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -4.45,
 				ty: 7.35,
 				a: -0.574,
@@ -1222,7 +1222,7 @@ export let dead = {
 				d: 1.432,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -24.1,
 				ty: 0.7,
 				a: -0.595,
@@ -1240,7 +1240,7 @@ export let dead = {
 				d: 0.944,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.1,
 				ty: 9.2,
 				a: -0.703,
@@ -1290,7 +1290,7 @@ export let dead = {
 				alpha: 0.539,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -10.45,
 				ty: 5.4,
 				a: 0.699,
@@ -1308,7 +1308,7 @@ export let dead = {
 				d: 0.978,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -4.65,
 				ty: 7.45,
 				a: -0.573,
@@ -1326,7 +1326,7 @@ export let dead = {
 				d: 1.452,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -24.6,
 				ty: 1.5,
 				a: -0.613,
@@ -1344,7 +1344,7 @@ export let dead = {
 				d: 0.944,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.3,
 				ty: 9.3,
 				a: -0.702,
@@ -1394,7 +1394,7 @@ export let dead = {
 				alpha: 0.445,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -10.65,
 				ty: 5.4,
 				a: 0.734,
@@ -1412,7 +1412,7 @@ export let dead = {
 				d: 0.991,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -4.85,
 				ty: 7.55,
 				a: -0.573,
@@ -1430,7 +1430,7 @@ export let dead = {
 				d: 1.454,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -25.15,
 				ty: 2.3,
 				a: -0.625,
@@ -1448,7 +1448,7 @@ export let dead = {
 				d: 0.944,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.45,
 				ty: 9.35,
 				a: -0.702,
@@ -1496,7 +1496,7 @@ export let dead = {
 				alpha: 0.359,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -10.9,
 				ty: 5.2,
 				a: 0.768,
@@ -1514,7 +1514,7 @@ export let dead = {
 				d: 0.979,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.05,
 				ty: 7.6,
 				a: -0.573,
@@ -1532,7 +1532,7 @@ export let dead = {
 				d: 1.439,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -25.65,
 				ty: 3.15,
 				a: -0.628,
@@ -1550,7 +1550,7 @@ export let dead = {
 				d: 0.944,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.65,
 				ty: 9.45,
 				a: -0.703,
@@ -1598,7 +1598,7 @@ export let dead = {
 				alpha: 0.285,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -11.85,
 				ty: 5.25,
 				a: 0.802,
@@ -1616,7 +1616,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.25,
 				ty: 7.6,
 				a: -0.575,
@@ -1634,7 +1634,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -26.1,
 				ty: 4.95,
 				a: -0.624,
@@ -1652,7 +1652,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.85,
 				ty: 9.5,
 				a: -0.704,
@@ -1702,7 +1702,7 @@ export let dead = {
 				alpha: 0.219,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -11.85,
 				ty: 5.25,
 				a: 0.802,
@@ -1720,7 +1720,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.25,
 				ty: 7.6,
 				a: -0.575,
@@ -1738,7 +1738,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -26.1,
 				ty: 4.95,
 				a: -0.624,
@@ -1756,7 +1756,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.85,
 				ty: 9.5,
 				a: -0.704,
@@ -1806,7 +1806,7 @@ export let dead = {
 				alpha: 0.16,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -11.85,
 				ty: 5.25,
 				a: 0.802,
@@ -1824,7 +1824,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.25,
 				ty: 7.6,
 				a: -0.575,
@@ -1842,7 +1842,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -26.1,
 				ty: 4.95,
 				a: -0.624,
@@ -1860,7 +1860,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.85,
 				ty: 9.5,
 				a: -0.704,
@@ -1910,7 +1910,7 @@ export let dead = {
 				alpha: 0.109,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -11.85,
 				ty: 5.25,
 				a: 0.802,
@@ -1928,7 +1928,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.25,
 				ty: 7.6,
 				a: -0.575,
@@ -1946,7 +1946,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -26.1,
 				ty: 4.95,
 				a: -0.624,
@@ -1964,7 +1964,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.85,
 				ty: 9.5,
 				a: -0.704,
@@ -2014,7 +2014,7 @@ export let dead = {
 				alpha: 0.07,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -11.85,
 				ty: 5.25,
 				a: 0.802,
@@ -2032,7 +2032,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.25,
 				ty: 7.6,
 				a: -0.575,
@@ -2050,7 +2050,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -26.1,
 				ty: 4.95,
 				a: -0.624,
@@ -2068,7 +2068,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.85,
 				ty: 9.5,
 				a: -0.704,
@@ -2118,7 +2118,7 @@ export let dead = {
 				alpha: 0.039,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -11.85,
 				ty: 5.25,
 				a: 0.802,
@@ -2136,7 +2136,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.25,
 				ty: 7.6,
 				a: -0.575,
@@ -2154,7 +2154,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -26.1,
 				ty: 4.95,
 				a: -0.624,
@@ -2172,7 +2172,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.85,
 				ty: 9.5,
 				a: -0.704,
@@ -2222,7 +2222,7 @@ export let dead = {
 				alpha: 0.02,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -11.85,
 				ty: 5.25,
 				a: 0.802,
@@ -2240,7 +2240,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.25,
 				ty: 7.6,
 				a: -0.575,
@@ -2258,7 +2258,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -26.1,
 				ty: 4.95,
 				a: -0.624,
@@ -2276,7 +2276,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.85,
 				ty: 9.5,
 				a: -0.704,
@@ -2326,7 +2326,7 @@ export let dead = {
 				alpha: 0.004,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -11.85,
 				ty: 5.25,
 				a: 0.802,
@@ -2344,7 +2344,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.25,
 				ty: 7.6,
 				a: -0.575,
@@ -2362,7 +2362,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -26.1,
 				ty: 4.95,
 				a: -0.624,
@@ -2380,7 +2380,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.85,
 				ty: 9.5,
 				a: -0.704,
@@ -2430,7 +2430,7 @@ export let dead = {
 				alpha: 0,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -11.85,
 				ty: 5.25,
 				a: 0.802,
@@ -2448,7 +2448,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.25,
 				ty: 7.6,
 				a: -0.575,
@@ -2466,7 +2466,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -26.1,
 				ty: 4.95,
 				a: -0.624,
@@ -2484,7 +2484,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.85,
 				ty: 9.5,
 				a: -0.704,
@@ -2524,7 +2524,7 @@ export let dead = {
 				alpha: 0.02,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -11.85,
 				ty: 5.25,
 				a: 0.802,
@@ -2542,7 +2542,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.25,
 				ty: 7.6,
 				a: -0.575,
@@ -2560,7 +2560,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -26.1,
 				ty: 4.95,
 				a: -0.624,
@@ -2578,7 +2578,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.85,
 				ty: 9.5,
 				a: -0.704,
@@ -2618,7 +2618,7 @@ export let dead = {
 				alpha: 0.004,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -11.85,
 				ty: 5.25,
 				a: 0.802,
@@ -2636,7 +2636,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.25,
 				ty: 7.6,
 				a: -0.575,
@@ -2654,7 +2654,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -26.1,
 				ty: 4.95,
 				a: -0.624,
@@ -2672,7 +2672,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.85,
 				ty: 9.5,
 				a: -0.704,
@@ -2712,7 +2712,7 @@ export let dead = {
 				alpha: 0,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -11.85,
 				ty: 5.25,
 				a: 0.802,
@@ -2730,7 +2730,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.25,
 				ty: 7.6,
 				a: -0.575,
@@ -2748,7 +2748,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -26.1,
 				ty: 4.95,
 				a: -0.624,
@@ -2766,7 +2766,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.85,
 				ty: 9.5,
 				a: -0.704,
@@ -2796,7 +2796,7 @@ export let dead = {
 				alpha: 0.02,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -11.85,
 				ty: 5.25,
 				a: 0.802,
@@ -2814,7 +2814,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.25,
 				ty: 7.6,
 				a: -0.575,
@@ -2832,7 +2832,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -26.1,
 				ty: 4.95,
 				a: -0.624,
@@ -2850,7 +2850,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.85,
 				ty: 9.5,
 				a: -0.704,
@@ -2870,7 +2870,7 @@ export let dead = {
 			}
 		},
 		{
-			left_ear: {
+			l_ear: {
 				tx: -11.85,
 				ty: 5.25,
 				a: 0.802,
@@ -2888,7 +2888,7 @@ export let dead = {
 				d: 0.944,
 				l: 6
 			},
-			left_leg: {
+			l_leg: {
 				tx: -5.25,
 				ty: 7.6,
 				a: -0.575,
@@ -2906,7 +2906,7 @@ export let dead = {
 				d: 1.406,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: -26.1,
 				ty: 4.95,
 				a: -0.624,
@@ -2924,7 +2924,7 @@ export let dead = {
 				d: 0.945,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -7.85,
 				ty: 9.5,
 				a: -0.704,

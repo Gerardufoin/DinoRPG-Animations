@@ -1,6 +1,6 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'sirain_hit',
 	frames: [
 		{
@@ -10,7 +10,7 @@ export let hit = {
 				a: -1,
 				l: 7
 			},
-			left_leg: {
+			l_leg: {
 				tx: 0.45,
 				ty: 8.65,
 				a: 1.171,
@@ -19,7 +19,7 @@ export let hit = {
 				d: 1.136,
 				l: 6
 			},
-			left_ear: {
+			l_ear: {
 				tx: -4.6,
 				ty: -7.55,
 				a: -1.112,
@@ -35,7 +35,7 @@ export let hit = {
 				d: 1.468,
 				l: 4
 			},
-			right_ear: {
+			r_ear: {
 				tx: 3.2,
 				ty: -9.7,
 				a: -0.62,
@@ -53,7 +53,7 @@ export let hit = {
 				d: 0.649,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: -5.35,
 				ty: 2.85,
 				a: 0.542,
