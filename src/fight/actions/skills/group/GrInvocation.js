@@ -12,6 +12,7 @@ import { Fujin } from '../../../parts/skills/invocations/Fujin.js';
 import { Golem } from '../../../parts/skills/invocations/Golem.js';
 import { Ifrit } from '../../../parts/skills/invocations/Ifrit.js';
 import { Invocation } from '../../../parts/skills/invocations/Invocation.js';
+import { Ondine } from '../../../parts/skills/invocations/Ondine.js';
 import { Raijin } from '../../../parts/skills/invocations/Raijin.js';
 import { Vulcan } from '../../../parts/skills/invocations/Vulcan.js';
 import { Werewolf } from '../../../parts/skills/invocations/Werewolf.js';
@@ -65,6 +66,7 @@ export class GrInvocation extends GroupEffect {
 				this._invoc = new Fujin(this._scene);
 				break;
 			case 'ondine':
+				this._invoc = new Ondine(this._scene);
 				break;
 			case 'boudda':
 				break;
