@@ -104,7 +104,7 @@ export const parts_small = {
 					},
 					// 556
 					{
-						colorIdx: 1,
+						colorIdx: 0,
 						ref: ref.sirain.tail_fin,
 						transform: {
 							tx: 4.9,

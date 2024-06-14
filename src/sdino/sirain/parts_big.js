@@ -90,12 +90,12 @@ export const parts_big = {
 				// 1280
 				{
 					colorIdx: 0,
-					ref: ref.sirain.ear
+					ref: ref.sirain.right_ear
 				},
 				// 1282
 				{
 					colorIdx: 0,
-					ref: ref.sirain.ear_up,
+					ref: ref.sirain.right_ear_up,
 					transform: {
 						tx: -8.1,
 						ty: -6.75
@@ -104,7 +104,7 @@ export const parts_big = {
 				// 1284
 				{
 					colorIdx: 0,
-					ref: ref.sirain.ear_down,
+					ref: ref.sirain.right_ear_down,
 					transform: {
 						tx: -1.5,
 						ty: 2.3
@@ -113,7 +113,7 @@ export const parts_big = {
 				// 1286
 				{
 					colorIdx: 0,
-					ref: ref.sirain.ear_twig,
+					ref: ref.sirain.right_ear_twig,
 					transform: {
 						tx: -1.75,
 						ty: 0.2
@@ -122,7 +122,7 @@ export const parts_big = {
 				// 1288
 				{
 					colorIdx: 0,
-					ref: ref.sirain.ear_bat,
+					ref: ref.sirain.right_ear_bat,
 					transform: {
 						tx: 0.4,
 						ty: 1.25
@@ -621,13 +621,471 @@ export const parts_big = {
 		}
 	],
 	// 1351 p3
-	head: [],
+	// head_glow had a glow filter (dist 5 col 0xccff00) but it does not work with the blend ADD
+	head: [
+		{
+			partIdx: 3,
+			frames: [0, 1, 2, 3, 3],
+			parts: [
+				[
+					// 1333
+					{
+						colorIdx: 0,
+						ref: ref.sirain.head_smile
+					},
+					// 1334
+					{
+						ref: ref.sirain.head_highlight
+					},
+					// 1336
+					{
+						ref: ref.sirain.head_glow,
+						transform: {
+							tx: 8.4,
+							ty: 1.25
+						},
+						alpha: 0.3,
+						blend: BLEND_MODES.ADD
+					}
+				],
+				[
+					// 1333
+					{
+						colorIdx: 0,
+						ref: ref.sirain.head_smile
+					},
+					// 1342
+					{
+						ref: ref.sirain.head_smile_tooth
+					},
+					// 1334
+					{
+						ref: ref.sirain.head_highlight
+					},
+					// 1336
+					{
+						ref: ref.sirain.head_glow,
+						transform: {
+							tx: 8.4,
+							ty: 1.25
+						},
+						alpha: 0.3,
+						blend: BLEND_MODES.ADD
+					}
+				],
+				[
+					// 1344
+					{
+						colorIdx: 0,
+						ref: ref.sirain.head
+					},
+					// 1334
+					{
+						ref: ref.sirain.head_highlight
+					},
+					// 1336
+					{
+						ref: ref.sirain.head_glow,
+						transform: {
+							tx: 8.4,
+							ty: 1.25
+						},
+						alpha: 0.3,
+						blend: BLEND_MODES.ADD
+					}
+				],
+				[
+					// 1345
+					{
+						ref: ref.sirain.head_teeth_fangs
+					},
+					// 1347
+					{
+						colorIdx: 0,
+						ref: ref.sirain.head_teeth
+					},
+					// 1348
+					{
+						ref: ref.sirain.head_teeth_highlight
+					},
+					// 1350
+					{
+						ref: ref.sirain.head_teeth_glow,
+						transform: {
+							tx: 8.4,
+							ty: 1.25
+						},
+						alpha: 0.3,
+						blend: BLEND_MODES.ADD
+					}
+				]
+			]
+		},
+		// 1338 hurt
+		{
+			partIdx: 2,
+			frames: [-1, 0, 1],
+			transform: {
+				tx: -14.7,
+				ty: -2.25
+			},
+			parts: [
+				[
+					// 155
+					{
+						ref: ref.hurt.scratch,
+						transform: {
+							tx: 28.25,
+							ty: 5.3,
+							a: 0.957,
+							d: 1.506,
+							b: 0.369,
+							c: -0.581
+						}
+					},
+					// 318
+					{
+						ref: ref.hurt.scratch_small,
+						transform: {
+							tx: -2.1,
+							ty: 3.1
+						}
+					}
+				],
+				[
+					// 1337
+					{
+						ref: ref.sirain.head_hurt_blood
+					},
+					// 357
+					{
+						ref: ref.hurt.bruise_purple,
+						transform: {
+							tx: -1.5,
+							ty: 3.3,
+							a: 0.728,
+							d: 0.728,
+							b: 0.352,
+							c: -0.352
+						}
+					},
+					// 155
+					{
+						ref: ref.hurt.scratch,
+						transform: {
+							tx: 19,
+							ty: -12,
+							a: 0.018,
+							d: 0.029,
+							b: -1.024,
+							c: 1.613
+						}
+					}
+				]
+			]
+		},
+		// 1341 special
+		{
+			partIdx: 15,
+			frames: [-1, 0],
+			transform: {
+				tx: -13.9,
+				ty: -23.9
+			},
+			parts: [
+				// 1340
+				{
+					colorIdx: 0,
+					ref: ref.sirain.head_special,
+					transform: {
+						tx: -13.3,
+						ty: 24.75,
+						a: 0.657,
+						d: 0.586,
+						b: -0.288,
+						c: 0.285
+					},
+					blend: BLEND_MODES.MULTIPLY
+				}
+			]
+		}
+	],
 	// 1363 p7a
-	left_leg: [],
+	left_leg: [
+		{
+			partIdx: 7,
+			frames: [-1, 0, -1],
+			parts: [
+				[
+					// 1360
+					{
+						colorIdx: 0,
+						ref: ref.sirain.left_leg_fan,
+						transform: {
+							tx: 8.45,
+							ty: -0.05
+						}
+					},
+					// 1362
+					{
+						colorIdx: 1,
+						ref: ref.sirain.left_leg_fan_inside,
+						transform: {
+							tx: 8.45,
+							ty: -0.05
+						}
+					}
+				]
+			]
+		},
+		// 1353
+		{
+			colorIdx: 0,
+			ref: ref.sirain.left_leg
+		},
+		// 1354
+		// leg_glow had a glow filter (dist 5 col 0xccff00) but it does not work with blend ADD
+		{
+			ref: ref.sirain.left_leg_glow,
+			transform: {
+				tx: -3.35,
+				ty: -2.2
+			},
+			alpha: 0.3,
+			blend: BLEND_MODES.ADD
+		},
+		// 1358 special
+		{
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				// 1357
+				{
+					colorIdx: 0,
+					ref: ref.sirain.left_leg_special,
+					transform: {
+						tx: -13.8,
+						ty: -12.8
+					},
+					blend: BLEND_MODES.MULTIPLY
+				}
+			]
+		}
+	],
 	// 1385 p4a
-	left_eye: [],
+	left_eye: [
+		{
+			partIdx: 4,
+			frames: [0, 1, 2, 2, 3, 3],
+			parts: [
+				[
+					// 1364
+					{
+						ref: ref.sirain.left_eye_back
+					},
+					// 1366
+					{
+						colorIdx: 2,
+						ref: ref.sirain.left_eye,
+						transform: {
+							tx: -2.75,
+							ty: 2.6
+						}
+					},
+					// 1367
+					{
+						colorIdx: 0,
+						ref: ref.sirain.left_eye_socket
+					},
+					// 1369
+					{
+						ref: ref.sirain.left_eye_socket_highlight
+					},
+					// 1370
+					{
+						ref: ref.sirain.left_eye_highlight
+					}
+				],
+				[
+					// 1364
+					{
+						ref: ref.sirain.left_eye_back
+					},
+					// 1372
+					{
+						colorIdx: 2,
+						ref: ref.sirain.left_eye_spiral,
+						transform: {
+							tx: -2.75,
+							ty: 2.6
+						}
+					},
+					// 1367
+					{
+						colorIdx: 0,
+						ref: ref.sirain.left_eye_socket
+					},
+					// 1369
+					{
+						ref: ref.sirain.left_eye_socket_highlight
+					}
+				],
+				[
+					// 1373
+					{
+						ref: ref.sirain.left_eye_big_back
+					},
+					// 1375
+					{
+						colorIdx: 2,
+						ref: ref.sirain.left_eye_big,
+						transform: {
+							tx: -2.3,
+							ty: 3.45
+						}
+					},
+					// 1377
+					{
+						colorIdx: 0,
+						ref: ref.sirain.left_eye_big_socket,
+						transform: {
+							tx: -3.05,
+							ty: 1.35
+						}
+					},
+					// 1378
+					{
+						ref: ref.sirain.left_eye_big_highlight
+					}
+				],
+				[
+					// 1379
+					{
+						ref: ref.sirain.left_eye_small_back
+					},
+					// 1381
+					{
+						colorIdx: 2,
+						ref: ref.sirain.left_eye_small,
+						transform: {
+							tx: -2.2,
+							ty: 2.9
+						}
+					},
+					// 1383
+					{
+						colorIdx: 0,
+						ref: ref.sirain.left_eye_small_socket,
+						transform: {
+							tx: -1.4,
+							ty: 2.65
+						}
+					},
+					// 1384
+					{
+						ref: ref.sirain.left_eye_small_highlight
+					}
+				]
+			]
+		}
+	],
 	// 1404 p5a
-	left_ear: [],
+	left_ear: [
+		{
+			partIdx: 5,
+			frames: [0, 1, 2, 3, 4],
+			parts: [
+				[
+					// 1387
+					{
+						colorIdx: 0,
+						ref: ref.sirain.left_ear
+					}
+				],
+				[
+					// 1389
+					{
+						colorIdx: 0,
+						ref: ref.sirain.left_ear_up,
+						transform: {
+							tx: -10.4,
+							ty: -14.85
+						}
+					},
+					// 1390
+					{
+						colorIdx: 1,
+						ref: ref.sirain.left_ear_up_inside,
+						transform: {
+							tx: -10.4,
+							ty: -14.85
+						}
+					},
+					// 1392
+					{
+						colorIdx: 1,
+						ref: ref.sirain.left_ear_up_inside_bottom,
+						transform: {
+							tx: -19.3,
+							ty: -13.4
+						},
+						alpha: 0.45
+					}
+				],
+				[
+					// 1395
+					{
+						colorIdx: 0,
+						ref: ref.sirain.left_ear_down,
+						transform: {
+							tx: -11.85,
+							ty: -1.65
+						}
+					},
+					// 1397
+					{
+						colorIdx: 1,
+						ref: ref.sirain.left_ear_down_inside,
+						transform: {
+							tx: -11.85,
+							ty: -1.65
+						}
+					}
+				],
+				[
+					// 1399
+					{
+						colorIdx: 0,
+						ref: ref.sirain.left_ear_twig,
+						transform: {
+							tx: -21.75,
+							ty: -0.55
+						}
+					}
+				],
+				[
+					// 1401
+					{
+						colorIdx: 0,
+						ref: ref.sirain.left_ear_bat,
+						transform: {
+							tx: -22.05,
+							ty: -3.75
+						}
+					},
+					// 1403
+					{
+						colorIdx: 1,
+						ref: ref.sirain.left_ear_bat_inside,
+						transform: {
+							tx: -22.05,
+							ty: -3.75
+						}
+					}
+				]
+			]
+		}
+	],
 	// 293
 	view: [
 		{
