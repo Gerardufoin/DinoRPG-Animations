@@ -1,6 +1,6 @@
 // @ts-check
 
-export let attack = {
+export const attack = {
 	id: 'hippoclamp_attack',
 	callbacks: {
 		3: [['hit']],

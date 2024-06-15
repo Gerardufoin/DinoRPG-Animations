@@ -1,6 +1,6 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'hippoclamp_jump',
 	callbacks: {
 		4: [['stop']]

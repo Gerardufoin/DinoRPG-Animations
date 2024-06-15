@@ -1,6 +1,6 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'hippoclamp_hit',
 	frames: [
 		{

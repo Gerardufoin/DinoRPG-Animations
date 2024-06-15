@@ -2,7 +2,7 @@
 import { BLEND_MODES } from 'pixi.js';
 import { ref } from '../references_small.js';
 
-export const parts = {
+export const parts_small = {
 	// 607 p6c
 	fin_right: [
 		{
@@ -65,7 +65,7 @@ export const parts = {
 	back: [
 		{
 			partIdx: 7,
-			frames: [0, 1, 1],
+			frames: [0, -1, -1],
 			parts: [
 				[
 					// 613

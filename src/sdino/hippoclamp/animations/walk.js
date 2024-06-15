@@ -1,6 +1,6 @@
 // @ts-check
 
-export let walk = {
+export const walk = {
 	id: 'hippoclamp_walk',
 	frames: [
 		{

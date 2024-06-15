@@ -43,6 +43,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/dino/LIBRARY/Symbol 1209.xml', '_sub', undefined, 3); // pteroz
 //parser.parse('./resources/dino/LIBRARY/Symbol 1276.xml', '_sub', undefined, 3); // nuagoz
 //parser.parse('./resources/dino/LIBRARY/Symbol 1405.xml', '_sub', undefined, 3); // sirain
+//parser.parse('./resources/dino/LIBRARY/Symbol 1567.xml', '_sub', undefined, 3); // hippoclamp
+//parser.parse('./resources/dino/LIBRARY/Symbol 1576.xml', '_sub', undefined, 3); // hippoclamp back fin
 
 //SMONSTER
 //parser.parse('./resources/smonster/LIBRARY/Symbol 4089.xml', 'smonster', undefined, 1); // smonster
@@ -141,7 +143,7 @@ const parser = new XFLParser();
 
 const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
-//adapter.parse('./results/SVG/dino', mapping_dino, '../assets/dino');
-adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
+adapter.parse('./results/SVG/dino', mapping_dino, '../assets/dino');
+//adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
 //adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');

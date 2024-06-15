@@ -1,6 +1,6 @@
 // @ts-check
 
-export let stand = {
+export const stand = {
 	id: 'hippoclamp_stand',
 	frames: [
 		{

@@ -1,6 +1,6 @@
 // @ts-check
 
-export let run = {
+export const run = {
 	id: 'hippoclamp_run',
 	callbacks: {
 		4: [['fxAttach', 'smoke_small', 0, 5, { randomAlpha: true }]],

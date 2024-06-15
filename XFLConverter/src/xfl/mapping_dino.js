@@ -83,5 +83,16 @@ export const mapping_dino = {
 	'Symbol 1351_p3': 'head',
 	'Symbol 1363_p7a': 'l_leg',
 	'Symbol 1385_p4a': 'l_eye',
-	'Symbol 1404_p5a': 'l_ear'
+	'Symbol 1404_p5a': 'l_ear',
+	// 1567 hippoclamp
+	'Symbol 1414_p6b': 'r_f_fin',
+	'Symbol 1425_p7': 'body',
+	'Symbol 1440_p8': 'neck',
+	'Symbol 1446_p4b': 'r_eye',
+	'Symbol 1455_p5b': 'r_ear',
+	'Symbol 1482_p6a': 'l_fins',
+	'Symbol 1488': 'head',
+	'Symbol 1541_p3': 'snout',
+	'Symbol 1556_p4a': 'l_eye',
+	'Symbol 1566_p5a': 'l_ear'
 };

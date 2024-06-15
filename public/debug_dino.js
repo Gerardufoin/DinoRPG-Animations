@@ -135,13 +135,13 @@ addDinoz('69CCNfds4I0OC000');
 addDinoz('69LhH8GuujsLD000');
 addDinoz('69uOBQV7rJEEr000');*/
 // Nuagoz
-addDinoz('79MZ2Ou1cj0q6000', true);
+/*addDinoz('79MZ2Ou1cj0q6000', true);
 addDinoz('79saoiWWdDYpi000');
 addDinoz('79TMjJApT93Mx000');
 addDinoz('796DaTiCSvPu7000');
 addDinoz('79wzoXZb94nxa000');
 addDinoz('79j66kSFEoTJ5000');
-addDinoz('79vKIt6DlGsCt000');
+addDinoz('79vKIt6DlGsCt000');*/
 // Sirain
 /*addDinoz('89KlMhswn7mQ4000', true);
 addDinoz('89xsFY1bzYhjG000');
@@ -151,13 +151,13 @@ addDinoz('89lPun9nNPh7o000');
 addDinoz('89NgwzWWsktiC000');
 addDinoz('89P0ZGkRSwlfm000');*/
 // Hippoclamp
-/*addDinoz('991wF8kEU0A0u000', true);
+addDinoz('991wF8kEU0A0u000', true);
 addDinoz('99X4YC3gRdbiA000');
 addDinoz('99gLuBRdyrrk0000');
 addDinoz('995FFpvfZ4W7E000');
 addDinoz('99Lh9VynQ3nnr000');
 addDinoz('99DUB6MqLdiAm000');
-addDinoz('98jwN04PyJ2Qs000');*/
+addDinoz('98jwN04PyJ2Qs000');
 // Gorilloz
 /*addDinoz('A9ldMErr30hTq000', true);
 addDinoz('A9viVftvErDyE110');
