@@ -119,6 +119,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/gfx/LIBRARY/Symbol 446.xml', '_sub', undefined, 2); // fujin veil
 //parser.parse('./resources/gfx/LIBRARY/Symbol 447.xml', '_sub', undefined, 2); // fujin
 //parser.parse('./resources/gfx/LIBRARY/Symbol 475.xml', '_sub', undefined, 2); // ondine water
+//parser.parse('./resources/gfx/LIBRARY/Symbol 481.xml', '_sub', undefined, 2); // buddha aura
 //parser.parse('./resources/gfx/LIBRARY/Symbol 617.xml', '_sub', undefined, 2); // strong notification
 //parser.parse('./resources/gfx/LIBRARY/Symbol 626.xml', '_sub', undefined, 2); // _enduranceOn
 //parser.parse('./resources/gfx/LIBRARY/Symbol 643.xml', '_sub', undefined, 2); // brulure

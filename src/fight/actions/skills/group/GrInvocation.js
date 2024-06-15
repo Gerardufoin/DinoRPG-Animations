@@ -7,6 +7,7 @@ import { Fighter } from '../../../Fighter.js';
 import { Scene } from '../../../Scene.js';
 import { Timer } from '../../../Timer.js';
 import { BlueWhale } from '../../../parts/skills/invocations/BlueWhale.js';
+import { Buddah } from '../../../parts/skills/invocations/Buddah.js';
 import { Djinn } from '../../../parts/skills/invocations/Djinn.js';
 import { Fujin } from '../../../parts/skills/invocations/Fujin.js';
 import { Golem } from '../../../parts/skills/invocations/Golem.js';
@@ -69,6 +70,7 @@ export class GrInvocation extends GroupEffect {
 				this._invoc = new Ondine(this._scene);
 				break;
 			case 'boudda':
+				this._invoc = new Buddah(this._scene);
 				break;
 			case 'fairy':
 				break;
