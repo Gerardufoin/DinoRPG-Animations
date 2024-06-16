@@ -79,7 +79,7 @@ const fightVersion = [
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: '99T1Yt9wqq4Rx000'
+					gfx: 'A9T1Yt9wqq4Rx000'
 				}
 			},
 			{
@@ -114,7 +114,7 @@ const fightVersion = [
 			},
 			{
 				action: 'Announce',
-				message: 'Bouddah',
+				message: 'Bénédiction des fées',
 				fid: 0
 			},
 			{
@@ -122,7 +122,7 @@ const fightVersion = [
 				skill: 'Invoc',
 				details: {
 					fid: 0,
-					anim: 'boudda'
+					anim: 'fairy'
 				}
 			}
 			/*{

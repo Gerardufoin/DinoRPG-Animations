@@ -86,4 +86,16 @@ export class Part extends Phys {
 			}
 		}
 	}
+
+	/**
+	 * Pause the entity for the given duration.
+	 * @param {number} duration The duration of the pause.
+	 */
+	sleep(duration) {
+		this._sleep = duration;
+		this._root.visible = duration == 0;
+		if (this._animator) {
+			this._animator.playing = duration == 0;
+		}
+	}
 }
