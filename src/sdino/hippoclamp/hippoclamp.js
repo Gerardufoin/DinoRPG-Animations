@@ -14,7 +14,7 @@ import { parts_small } from './parts_small.js';
 import { portrait } from './animations/portrait.js';
 import { parts_big } from './parts_big.js';
 
-export let hippoclamp = {
+export const hippoclamp = {
 	name: 'hippoclamp',
 	palette: [
 		[

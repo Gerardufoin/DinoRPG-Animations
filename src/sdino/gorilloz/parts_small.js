@@ -2,7 +2,7 @@
 
 import { ref } from '../references_small.js';
 
-export let parts = {
+export const parts_small = {
 	// 669
 	hand: [
 		// 668

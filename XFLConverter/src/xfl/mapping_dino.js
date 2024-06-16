@@ -94,5 +94,23 @@ export const mapping_dino = {
 	'Symbol 1488': 'head',
 	'Symbol 1541_p3': 'snout',
 	'Symbol 1556_p4a': 'l_eye',
-	'Symbol 1566_p5a': 'l_ear'
+	'Symbol 1566_p5a': 'l_ear',
+	// 1746 gorilloz
+	'Symbol 1579': 'l_foot',
+	'Symbol 1582': 'hands',
+	'Symbol 1589_p8b': 'r_arm',
+	'Symbol 1592': 'body',
+	'Symbol 1595_p5b': 'r_ear',
+	'Symbol 1598': 'l_leg',
+	'Symbol 1624_p7': 'b_hair',
+	'Symbol 1624_p7a': 'b_hair',
+	'Symbol 1629_p9b': 'r_sideburn',
+	'Symbol 1654_p3': 'mouth',
+	'Symbol 1661_p5a': 'l_ear',
+	'Symbol 1666_p9a': 'l_sideburn',
+	'Symbol 1680_p8a': 'l_arm',
+	'Symbol 1725_p6': 'eyes',
+	'Symbol 1736_p7c': 'f_hair',
+	'Symbol 1743_p4': 'nose',
+	'Symbol 1745_special': 'special'
 };
