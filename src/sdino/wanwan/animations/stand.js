@@ -1,6 +1,6 @@
 // @ts-check
 
-export let stand = {
+export const stand = {
 	id: 'wanwan_stand',
 	frames: [
 		{
@@ -18,7 +18,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5,
 				ty: -0.5,
 				a: -0.32,
@@ -27,14 +27,14 @@ export let stand = {
 				d: 0.864,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.5,
 				ty: 0.5,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.5,
 				ty: -5.2,
 				a: 0.887,
@@ -50,7 +50,7 @@ export let stand = {
 				d: 1.248,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.45,
 				ty: 5.15,
 				a: 0.832,
@@ -59,7 +59,7 @@ export let stand = {
 				d: 0.652,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.05,
 				ty: 6.9,
 				a: 0.995,
@@ -67,7 +67,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -13.35,
 				ty: 1,
 				a: 0.992,
@@ -76,7 +76,7 @@ export let stand = {
 				d: 0.992,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.4,
 				ty: 1.45,
 				a: 0.869,
@@ -85,7 +85,7 @@ export let stand = {
 				d: 0.869,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.55,
 				ty: 3.95,
 				a: 0.995,
@@ -93,7 +93,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.95,
 				a: 0.832,
@@ -102,7 +102,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.85,
 				ty: -5.45,
 				a: 0.622,
@@ -134,7 +134,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5,
 				ty: -0.5,
 				a: -0.32,
@@ -143,14 +143,14 @@ export let stand = {
 				d: 0.863,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.5,
 				ty: 0.5,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.5,
 				ty: -5.2,
 				a: 0.887,
@@ -166,7 +166,7 @@ export let stand = {
 				d: 1.247,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.45,
 				ty: 5.2,
 				a: 0.832,
@@ -175,7 +175,7 @@ export let stand = {
 				d: 0.651,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.05,
 				ty: 6.9,
 				a: 0.995,
@@ -183,7 +183,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -13.4,
 				ty: 1,
 				a: 0.995,
@@ -192,7 +192,7 @@ export let stand = {
 				d: 0.995,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.4,
 				ty: 1.45,
 				a: 0.868,
@@ -201,7 +201,7 @@ export let stand = {
 				d: 0.868,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.55,
 				ty: 3.95,
 				a: 0.995,
@@ -209,7 +209,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.9,
 				a: 0.832,
@@ -218,7 +218,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.85,
 				ty: -5.5,
 				a: 0.621,
@@ -250,7 +250,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5,
 				ty: -0.5,
 				a: -0.32,
@@ -259,14 +259,14 @@ export let stand = {
 				d: 0.863,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.5,
 				ty: 0.5,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.5,
 				ty: -5.2,
 				a: 0.887,
@@ -282,7 +282,7 @@ export let stand = {
 				d: 1.247,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.4,
 				ty: 5.15,
 				a: 0.832,
@@ -291,7 +291,7 @@ export let stand = {
 				d: 0.651,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.05,
 				ty: 6.9,
 				a: 0.995,
@@ -299,7 +299,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -13.55,
 				ty: 0.9,
 				a: 1.004,
@@ -308,7 +308,7 @@ export let stand = {
 				d: 1.004,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.4,
 				ty: 1.45,
 				a: 0.868,
@@ -317,7 +317,7 @@ export let stand = {
 				d: 0.868,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.55,
 				ty: 3.95,
 				a: 0.995,
@@ -325,7 +325,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.9,
 				a: 0.832,
@@ -334,7 +334,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.85,
 				ty: -5.5,
 				a: 0.621,
@@ -366,7 +366,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5.05,
 				ty: -0.55,
 				a: -0.32,
@@ -375,14 +375,14 @@ export let stand = {
 				d: 0.863,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.45,
 				ty: 0.45,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.45,
 				ty: -5.25,
 				a: 0.887,
@@ -398,7 +398,7 @@ export let stand = {
 				d: 1.247,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.35,
 				ty: 5.15,
 				a: 0.832,
@@ -407,7 +407,7 @@ export let stand = {
 				d: 0.651,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.1,
 				ty: 6.9,
 				a: 0.995,
@@ -415,7 +415,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -13.8,
 				ty: 0.75,
 				a: 1.019,
@@ -424,7 +424,7 @@ export let stand = {
 				d: 1.019,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.4,
 				ty: 1.5,
 				a: 0.868,
@@ -433,7 +433,7 @@ export let stand = {
 				d: 0.868,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.6,
 				ty: 3.95,
 				a: 0.995,
@@ -441,7 +441,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.9,
 				a: 0.832,
@@ -450,7 +450,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.9,
 				ty: -5.55,
 				a: 0.621,
@@ -482,7 +482,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5.1,
 				ty: -0.6,
 				a: -0.32,
@@ -491,14 +491,14 @@ export let stand = {
 				d: 0.863,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.4,
 				ty: 0.4,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.4,
 				ty: -5.3,
 				a: 0.887,
@@ -514,7 +514,7 @@ export let stand = {
 				d: 1.247,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.4,
 				ty: 5.15,
 				a: 0.832,
@@ -523,7 +523,7 @@ export let stand = {
 				d: 0.65,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.1,
 				ty: 6.9,
 				a: 0.995,
@@ -531,7 +531,7 @@ export let stand = {
 				d: 0.996,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -14.15,
 				ty: 0.45,
 				a: 1.041,
@@ -540,7 +540,7 @@ export let stand = {
 				d: 1.041,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.4,
 				ty: 1.55,
 				a: 0.868,
@@ -549,7 +549,7 @@ export let stand = {
 				d: 0.868,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.55,
 				ty: 3.95,
 				a: 0.995,
@@ -557,7 +557,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.9,
 				a: 0.832,
@@ -566,7 +566,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.95,
 				ty: -5.6,
 				a: 0.621,
@@ -598,7 +598,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5.15,
 				ty: -0.65,
 				a: -0.32,
@@ -607,14 +607,14 @@ export let stand = {
 				d: 0.863,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.35,
 				ty: 0.35,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.35,
 				ty: -5.35,
 				a: 0.887,
@@ -630,7 +630,7 @@ export let stand = {
 				d: 1.247,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.35,
 				ty: 5.2,
 				a: 0.832,
@@ -639,7 +639,7 @@ export let stand = {
 				d: 0.65,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.15,
 				ty: 6.9,
 				a: 0.995,
@@ -647,7 +647,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -14.45,
 				ty: 0.2,
 				a: 1.063,
@@ -656,7 +656,7 @@ export let stand = {
 				d: 1.063,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.4,
 				ty: 1.6,
 				a: 0.868,
@@ -665,7 +665,7 @@ export let stand = {
 				d: 0.868,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.65,
 				ty: 3.95,
 				a: 0.995,
@@ -673,7 +673,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.9,
 				a: 0.832,
@@ -682,7 +682,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3,
 				ty: -5.65,
 				a: 0.621,
@@ -714,7 +714,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5.2,
 				ty: -0.7,
 				a: -0.32,
@@ -723,14 +723,14 @@ export let stand = {
 				d: 0.863,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.3,
 				ty: 0.3,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.3,
 				ty: -5.4,
 				a: 0.887,
@@ -746,7 +746,7 @@ export let stand = {
 				d: 1.247,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.35,
 				ty: 5.2,
 				a: 0.832,
@@ -755,7 +755,7 @@ export let stand = {
 				d: 0.65,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.2,
 				ty: 6.9,
 				a: 0.995,
@@ -763,7 +763,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -14.7,
 				ty: 0,
 				a: 1.08,
@@ -772,7 +772,7 @@ export let stand = {
 				d: 1.08,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.4,
 				ty: 1.65,
 				a: 0.868,
@@ -781,7 +781,7 @@ export let stand = {
 				d: 0.868,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.7,
 				ty: 3.95,
 				a: 0.995,
@@ -789,7 +789,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.9,
 				a: 0.832,
@@ -798,7 +798,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3.05,
 				ty: -5.7,
 				a: 0.621,
@@ -830,7 +830,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5.2,
 				ty: -0.7,
 				a: -0.32,
@@ -839,14 +839,14 @@ export let stand = {
 				d: 0.863,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.3,
 				ty: 0.3,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.3,
 				ty: -5.4,
 				a: 0.887,
@@ -862,7 +862,7 @@ export let stand = {
 				d: 1.247,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.35,
 				ty: 5.2,
 				a: 0.832,
@@ -871,7 +871,7 @@ export let stand = {
 				d: 0.651,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.2,
 				ty: 6.9,
 				a: 0.995,
@@ -879,7 +879,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -14.9,
 				ty: -0.1,
 				a: 1.089,
@@ -888,7 +888,7 @@ export let stand = {
 				d: 1.089,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.4,
 				ty: 1.65,
 				a: 0.868,
@@ -897,7 +897,7 @@ export let stand = {
 				d: 0.868,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.7,
 				ty: 3.95,
 				a: 0.995,
@@ -905,7 +905,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.9,
 				a: 0.832,
@@ -914,7 +914,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3.05,
 				ty: -5.7,
 				a: 0.621,
@@ -946,7 +946,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5.2,
 				ty: -0.7,
 				a: -0.32,
@@ -955,14 +955,14 @@ export let stand = {
 				d: 0.864,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.3,
 				ty: 0.3,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.3,
 				ty: -5.4,
 				a: 0.887,
@@ -978,7 +978,7 @@ export let stand = {
 				d: 1.248,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.35,
 				ty: 5.15,
 				a: 0.832,
@@ -987,7 +987,7 @@ export let stand = {
 				d: 0.651,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.2,
 				ty: 6.9,
 				a: 0.995,
@@ -995,7 +995,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -14.7,
 				ty: 0,
 				a: 1.08,
@@ -1004,7 +1004,7 @@ export let stand = {
 				d: 1.08,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.4,
 				ty: 1.65,
 				a: 0.869,
@@ -1013,7 +1013,7 @@ export let stand = {
 				d: 0.869,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.7,
 				ty: 3.95,
 				a: 0.995,
@@ -1021,7 +1021,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.95,
 				a: 0.832,
@@ -1030,7 +1030,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3.05,
 				ty: -5.65,
 				a: 0.622,
@@ -1062,7 +1062,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5.2,
 				ty: -0.75,
 				a: -0.32,
@@ -1071,14 +1071,14 @@ export let stand = {
 				d: 0.863,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.3,
 				ty: 0.3,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.3,
 				ty: -5.4,
 				a: 0.887,
@@ -1094,7 +1094,7 @@ export let stand = {
 				d: 1.247,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.35,
 				ty: 5.15,
 				a: 0.832,
@@ -1103,7 +1103,7 @@ export let stand = {
 				d: 0.651,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.2,
 				ty: 6.9,
 				a: 0.995,
@@ -1111,7 +1111,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -14.45,
 				ty: 0.2,
 				a: 1.063,
@@ -1120,7 +1120,7 @@ export let stand = {
 				d: 1.063,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.35,
 				ty: 1.65,
 				a: 0.868,
@@ -1129,7 +1129,7 @@ export let stand = {
 				d: 0.868,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.65,
 				ty: 3.95,
 				a: 0.995,
@@ -1137,7 +1137,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.9,
 				a: 0.832,
@@ -1146,7 +1146,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3.05,
 				ty: -5.7,
 				a: 0.621,
@@ -1178,7 +1178,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5.15,
 				ty: -0.7,
 				a: -0.32,
@@ -1187,14 +1187,14 @@ export let stand = {
 				d: 0.863,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.35,
 				ty: 0.35,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.35,
 				ty: -5.35,
 				a: 0.887,
@@ -1210,7 +1210,7 @@ export let stand = {
 				d: 1.247,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.3,
 				ty: 5.15,
 				a: 0.832,
@@ -1219,7 +1219,7 @@ export let stand = {
 				d: 0.651,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.15,
 				ty: 6.9,
 				a: 0.995,
@@ -1227,7 +1227,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -14.15,
 				ty: 0.45,
 				a: 1.041,
@@ -1236,7 +1236,7 @@ export let stand = {
 				d: 1.041,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.35,
 				ty: 1.6,
 				a: 0.868,
@@ -1245,7 +1245,7 @@ export let stand = {
 				d: 0.868,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.6,
 				ty: 3.95,
 				a: 0.995,
@@ -1253,7 +1253,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.9,
 				a: 0.832,
@@ -1262,7 +1262,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3,
 				ty: -5.65,
 				a: 0.621,
@@ -1294,7 +1294,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5.1,
 				ty: -0.65,
 				a: -0.32,
@@ -1303,14 +1303,14 @@ export let stand = {
 				d: 0.863,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.4,
 				ty: 0.4,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.4,
 				ty: -5.3,
 				a: 0.887,
@@ -1326,7 +1326,7 @@ export let stand = {
 				d: 1.247,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.4,
 				ty: 5.1,
 				a: 0.832,
@@ -1335,7 +1335,7 @@ export let stand = {
 				d: 0.651,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.15,
 				ty: 6.9,
 				a: 0.995,
@@ -1343,7 +1343,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -13.8,
 				ty: 0.75,
 				a: 1.019,
@@ -1352,7 +1352,7 @@ export let stand = {
 				d: 1.019,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.35,
 				ty: 1.55,
 				a: 0.868,
@@ -1361,7 +1361,7 @@ export let stand = {
 				d: 0.868,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.6,
 				ty: 3.95,
 				a: 0.995,
@@ -1369,7 +1369,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.9,
 				a: 0.832,
@@ -1378,7 +1378,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.95,
 				ty: -5.6,
 				a: 0.621,
@@ -1410,7 +1410,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5.05,
 				ty: -0.6,
 				a: -0.32,
@@ -1419,14 +1419,14 @@ export let stand = {
 				d: 0.863,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.45,
 				ty: 0.45,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.45,
 				ty: -5.25,
 				a: 0.887,
@@ -1442,7 +1442,7 @@ export let stand = {
 				d: 1.247,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.4,
 				ty: 5.1,
 				a: 0.832,
@@ -1451,7 +1451,7 @@ export let stand = {
 				d: 0.651,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.1,
 				ty: 6.9,
 				a: 0.995,
@@ -1459,7 +1459,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -13.55,
 				ty: 0.9,
 				a: 1.004,
@@ -1468,7 +1468,7 @@ export let stand = {
 				d: 1.004,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.35,
 				ty: 1.5,
 				a: 0.868,
@@ -1477,7 +1477,7 @@ export let stand = {
 				d: 0.868,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.55,
 				ty: 3.95,
 				a: 0.995,
@@ -1485,7 +1485,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.9,
 				a: 0.832,
@@ -1494,7 +1494,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.9,
 				ty: -5.55,
 				a: 0.621,
@@ -1526,7 +1526,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5.05,
 				ty: -0.6,
 				a: -0.32,
@@ -1535,14 +1535,14 @@ export let stand = {
 				d: 0.863,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.45,
 				ty: 0.45,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.45,
 				ty: -5.25,
 				a: 0.887,
@@ -1558,7 +1558,7 @@ export let stand = {
 				d: 1.247,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.4,
 				ty: 5.1,
 				a: 0.832,
@@ -1567,7 +1567,7 @@ export let stand = {
 				d: 0.652,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.05,
 				ty: 6.9,
 				a: 0.995,
@@ -1575,7 +1575,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -13.4,
 				ty: 1,
 				a: 0.995,
@@ -1584,7 +1584,7 @@ export let stand = {
 				d: 0.995,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.35,
 				ty: 1.5,
 				a: 0.868,
@@ -1593,7 +1593,7 @@ export let stand = {
 				d: 0.868,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.5,
 				ty: 3.95,
 				a: 0.995,
@@ -1601,7 +1601,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.9,
 				a: 0.832,
@@ -1610,7 +1610,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.9,
 				ty: -5.55,
 				a: 0.621,
@@ -1642,7 +1642,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5,
 				ty: -0.55,
 				a: -0.32,
@@ -1651,14 +1651,14 @@ export let stand = {
 				d: 0.863,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.5,
 				ty: 0.5,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.5,
 				ty: -5.2,
 				a: 0.887,
@@ -1674,7 +1674,7 @@ export let stand = {
 				d: 1.247,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.45,
 				ty: 5.15,
 				a: 0.832,
@@ -1683,7 +1683,7 @@ export let stand = {
 				d: 0.651,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.05,
 				ty: 6.9,
 				a: 0.995,
@@ -1691,7 +1691,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -13.35,
 				ty: 1,
 				a: 0.992,
@@ -1700,7 +1700,7 @@ export let stand = {
 				d: 0.992,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.35,
 				ty: 1.45,
 				a: 0.868,
@@ -1709,7 +1709,7 @@ export let stand = {
 				d: 0.868,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.5,
 				ty: 3.95,
 				a: 0.995,
@@ -1717,7 +1717,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.9,
 				a: 0.832,
@@ -1726,7 +1726,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.85,
 				ty: -5.5,
 				a: 0.621,
@@ -1758,7 +1758,7 @@ export let stand = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5,
 				ty: -0.5,
 				a: -0.32,
@@ -1767,14 +1767,14 @@ export let stand = {
 				d: 0.864,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 0.5,
 				ty: 0.5,
 				a: 0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 4.5,
 				ty: -5.2,
 				a: 0.887,
@@ -1790,7 +1790,7 @@ export let stand = {
 				d: 1.248,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.45,
 				ty: 5.15,
 				a: 0.832,
@@ -1799,7 +1799,7 @@ export let stand = {
 				d: 0.652,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.05,
 				ty: 6.9,
 				a: 0.995,
@@ -1807,7 +1807,7 @@ export let stand = {
 				d: 0.995,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -13.35,
 				ty: 1,
 				a: 0.992,
@@ -1816,7 +1816,7 @@ export let stand = {
 				d: 0.992,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.4,
 				ty: 1.45,
 				a: 0.869,
@@ -1825,7 +1825,7 @@ export let stand = {
 				d: 0.869,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.55,
 				ty: 3.95,
 				a: 0.995,
@@ -1833,7 +1833,7 @@ export let stand = {
 				d: 0.995,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 7.15,
 				ty: 2.95,
 				a: 0.832,
@@ -1842,7 +1842,7 @@ export let stand = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -2.85,
 				ty: -5.45,
 				a: 0.622,

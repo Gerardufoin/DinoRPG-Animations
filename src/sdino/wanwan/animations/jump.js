@@ -1,13 +1,13 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'wanwan_jump',
 	callbacks: {
 		3: [['stop']]
 	},
 	frames: [
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: 4.7,
 				ty: 5.2,
 				a: 0.889,
@@ -34,7 +34,7 @@ export let jump = {
 				d: 0.885,
 				l: 11
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5.85,
 				ty: -0.7,
 				a: -0.237,
@@ -43,7 +43,7 @@ export let jump = {
 				d: 0.865,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -1.85,
 				ty: 0.25,
 				a: 0.66,
@@ -52,7 +52,7 @@ export let jump = {
 				d: 0.885,
 				l: 9
 			},
-			left_ear: {
+			l_ear: {
 				tx: 2.65,
 				ty: -5.4,
 				a: 0.885,
@@ -70,7 +70,7 @@ export let jump = {
 				d: 1.238,
 				l: 7
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 8.7,
 				ty: 4.35,
 				a: 0.801,
@@ -79,7 +79,7 @@ export let jump = {
 				d: 0.709,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -13.5,
 				ty: 4.1,
 				a: 0.97,
@@ -88,7 +88,7 @@ export let jump = {
 				d: 0.97,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 7.85,
 				ty: 1,
 				a: 0.979,
@@ -97,7 +97,7 @@ export let jump = {
 				d: 0.979,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: 1.9,
 				ty: 2.5,
 				a: 0.847,
@@ -106,7 +106,7 @@ export let jump = {
 				d: 0.921,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 8.65,
 				ty: 4,
 				a: 0.812,
@@ -115,7 +115,7 @@ export let jump = {
 				d: 0.646,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3.45,
 				ty: -5.5,
 				a: 0.604,
@@ -135,7 +135,7 @@ export let jump = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: 6,
 				ty: 3.15,
 				a: 0.59,
@@ -162,7 +162,7 @@ export let jump = {
 				d: 0.86,
 				l: 11
 			},
-			right_eye: {
+			r_eye: {
 				tx: -3.7,
 				ty: -7.4,
 				a: -0.209,
@@ -171,7 +171,7 @@ export let jump = {
 				d: 0.794,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -0.1,
 				ty: -5.45,
 				a: 0.642,
@@ -180,7 +180,7 @@ export let jump = {
 				d: 0.86,
 				l: 9
 			},
-			left_ear: {
+			l_ear: {
 				tx: 5.85,
 				ty: -9.9,
 				a: 0.86,
@@ -198,7 +198,7 @@ export let jump = {
 				d: 1.274,
 				l: 7
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 11.15,
 				ty: 5.8,
 				a: 0.824,
@@ -207,7 +207,7 @@ export let jump = {
 				d: 0.629,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -12.45,
 				ty: -4.05,
 				a: 0.983,
@@ -216,7 +216,7 @@ export let jump = {
 				d: 0.983,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 9.4,
 				ty: 1.2,
 				a: 0.703,
@@ -225,7 +225,7 @@ export let jump = {
 				d: 0.703,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: 3.35,
 				ty: 1,
 				a: 0.732,
@@ -234,7 +234,7 @@ export let jump = {
 				d: 0.827,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 10.35,
 				ty: 5.35,
 				a: 0.738,
@@ -243,7 +243,7 @@ export let jump = {
 				d: 0.589,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -0.15,
 				ty: -11.65,
 				a: 0.746,
@@ -263,7 +263,7 @@ export let jump = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: 2.2,
 				ty: 1.95,
 				a: 0.989,
@@ -290,7 +290,7 @@ export let jump = {
 				d: 0.872,
 				l: 11
 			},
-			right_eye: {
+			r_eye: {
 				tx: -6.2,
 				ty: -6.15,
 				a: -0.216,
@@ -299,7 +299,7 @@ export let jump = {
 				d: 0.815,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -2.6,
 				ty: -4.25,
 				a: 0.65,
@@ -308,7 +308,7 @@ export let jump = {
 				d: 0.872,
 				l: 9
 			},
-			left_ear: {
+			l_ear: {
 				tx: 3.25,
 				ty: -9.2,
 				a: 0.872,
@@ -326,7 +326,7 @@ export let jump = {
 				d: 1.275,
 				l: 7
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 11,
 				ty: 3.15,
 				a: 0.752,
@@ -335,7 +335,7 @@ export let jump = {
 				d: 0.479,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -13.85,
 				ty: -1.55,
 				a: 0.992,
@@ -344,7 +344,7 @@ export let jump = {
 				d: 0.992,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 8.3,
 				ty: -0.55,
 				a: 0.966,
@@ -353,7 +353,7 @@ export let jump = {
 				d: 0.966,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.2,
 				ty: -0.35,
 				a: 0.954,
@@ -362,7 +362,7 @@ export let jump = {
 				d: 0.916,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 10.35,
 				ty: 2.5,
 				a: 0.445,
@@ -371,7 +371,7 @@ export let jump = {
 				d: 0.357,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -3,
 				ty: -10.6,
 				a: 0.719,
@@ -391,7 +391,7 @@ export let jump = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.95,
 				ty: 0.6,
 				a: 0.46,
@@ -418,7 +418,7 @@ export let jump = {
 				d: 0.881,
 				l: 11
 			},
-			right_eye: {
+			r_eye: {
 				tx: -9,
 				ty: -4.9,
 				a: -0.224,
@@ -427,7 +427,7 @@ export let jump = {
 				d: 0.836,
 				l: 10
 			},
-			left_eye: {
+			l_eye: {
 				tx: -5.1,
 				ty: -3.35,
 				a: 0.658,
@@ -436,7 +436,7 @@ export let jump = {
 				d: 0.881,
 				l: 9
 			},
-			left_ear: {
+			l_ear: {
 				tx: 0.25,
 				ty: -8.5,
 				a: 0.881,
@@ -454,7 +454,7 @@ export let jump = {
 				d: 1.271,
 				l: 7
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 10.9,
 				ty: 0.2,
 				a: 0.575,
@@ -463,7 +463,7 @@ export let jump = {
 				d: 0.251,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -15.65,
 				ty: 0.3,
 				a: 0.984,
@@ -472,7 +472,7 @@ export let jump = {
 				d: 0.984,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 7.1,
 				ty: -2.5,
 				a: 0.918,
@@ -481,7 +481,7 @@ export let jump = {
 				d: 0.918,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -6.15,
 				ty: -1.85,
 				a: 0.199,
@@ -490,7 +490,7 @@ export let jump = {
 				d: 0.059,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 10.55,
 				ty: -0.6,
 				a: -0.016,
@@ -499,7 +499,7 @@ export let jump = {
 				d: -0.009,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: -6.1,
 				ty: -9.45,
 				a: 0.69,

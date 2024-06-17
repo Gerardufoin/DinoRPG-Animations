@@ -1,6 +1,6 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'wanwan_hit',
 	frames: [
 		{
@@ -18,7 +18,7 @@ export let hit = {
 				d: 0.887,
 				l: 12
 			},
-			right_eye: {
+			r_eye: {
 				tx: 13.4,
 				ty: -1.65,
 				a: 0.32,
@@ -27,14 +27,14 @@ export let hit = {
 				d: 0.864,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 7.9,
 				ty: -0.65,
 				a: -0.887,
 				d: 0.887,
 				l: 10
 			},
-			left_ear: {
+			l_ear: {
 				tx: 3.9,
 				ty: -6.35,
 				a: -0.887,
@@ -50,7 +50,7 @@ export let hit = {
 				d: 1.248,
 				l: 8
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 11.55,
 				ty: 5.15,
 				a: 0.805,
@@ -59,7 +59,7 @@ export let hit = {
 				d: 0.713,
 				l: 7
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 5.15,
 				ty: 6.9,
 				a: 0.972,
@@ -68,7 +68,7 @@ export let hit = {
 				d: 0.989,
 				l: 6
 			},
-			upper_body: {
+			u_body: {
 				tx: -9.5,
 				ty: 0.45,
 				a: 0.992,
@@ -77,7 +77,7 @@ export let hit = {
 				d: 0.992,
 				l: 5
 			},
-			lower_body: {
+			l_body: {
 				tx: 10.6,
 				ty: 1.45,
 				a: 0.869,
@@ -86,7 +86,7 @@ export let hit = {
 				d: 0.869,
 				l: 4
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: 0.65,
 				ty: 3.4,
 				a: 0.8,
@@ -95,7 +95,7 @@ export let hit = {
 				d: 0.716,
 				l: 3
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 9.35,
 				ty: 2.95,
 				a: 0.832,
@@ -104,7 +104,7 @@ export let hit = {
 				d: 0.662,
 				l: 2
 			},
-			right_ear: {
+			r_ear: {
 				tx: 11.25,
 				ty: -6.6,
 				a: -0.622,

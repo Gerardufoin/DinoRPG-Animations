@@ -2,7 +2,7 @@
 
 import { ref } from '../references_small.js';
 
-export let parts = {
+export const parts_small = {
 	// 721 p7
 	tail: [
 		{

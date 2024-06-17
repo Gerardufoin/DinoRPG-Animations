@@ -112,5 +112,23 @@ export const mapping_dino = {
 	'Symbol 1725_p6': 'eyes',
 	'Symbol 1736_p7c': 'f_hair',
 	'Symbol 1743_p4': 'nose',
-	'Symbol 1745_special': 'special'
+	'Symbol 1745_special': 'special',
+	// 1897 wanwan
+	'Symbol 1760_p7': 'tail',
+	'Symbol 1767_p8c': 'r_f_leg',
+	'Symbol 1770': 'r_f_paw',
+	'Symbol 1773_p8b': 'l_b_l_leg',
+	'Symbol 1776': 'l_b_paw',
+	'Symbol 1779': 'l_b_u_leg',
+	'Symbol 1783': 'l_body',
+	'Symbol 1786': 'u_body',
+	'Symbol 1795_p8a': 'l_f_leg',
+	'Symbol 1798': 'l_f_paw',
+	'Symbol 1813_p6b': 'r_ear',
+	'Symbol 1818': 'head',
+	'Symbol 1843_p3': 'eyes',
+	'Symbol 1851_p4': 'nose',
+	'Symbol 1872_p6a': 'l_ear',
+	'Symbol 1885_p9': 'hair',
+	'Symbol 1896_p5': 'mouth'
 };
