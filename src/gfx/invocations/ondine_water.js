@@ -1,18 +1,18 @@
 // @ts-check
-import { ref } from '../references.js';
+import { ref } from '../references_invocations.js';
 
 // GFX 475
 export const invoc_ondine_water = {
 	parts: {
 		w1: [
 			{
-				ref: ref.invocations.ondine.water,
+				ref: ref.ondine.water,
 				resolution: 1
 			}
 		],
 		w2: [
 			{
-				ref: ref.invocations.ondine.water,
+				ref: ref.ondine.water,
 				resolution: 1
 			}
 		]

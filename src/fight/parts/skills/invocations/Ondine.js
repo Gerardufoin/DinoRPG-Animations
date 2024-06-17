@@ -4,7 +4,7 @@ import { IScene } from '../../../IScene.js';
 import { Timer } from '../../../Timer.js';
 import { Invocation } from './Invocation.js';
 import { Asset } from '../../../../display/Asset.js';
-import { ref } from '../../../../gfx/references.js';
+import { ref } from '../../../../gfx/references_invocations.js';
 import { invoc_ondine_water } from '../../../../gfx/invocations/ondine_water.js';
 import { invoc_ondine_water_mask } from '../../../../gfx/invocations/ondine_water_mask.js';
 import { SpriteMaskFilter } from 'pixi.js';
@@ -37,7 +37,7 @@ export class Ondine extends Invocation {
 	constructor(scene) {
 		super(scene);
 
-		this._body.addChild(new Asset(ref.invocations.ondine.body));
+		this._body.addChild(new Asset(ref.ondine.body));
 
 		this._waterAnim = new Animator(false).loadAnimation(invoc_ondine_water);
 		this._waterAnim.playing = false;

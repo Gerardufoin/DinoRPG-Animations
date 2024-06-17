@@ -2,7 +2,7 @@
 import { Animator } from '../../../../display/Animator.js';
 import { Asset } from '../../../../display/Asset.js';
 import { ConstantShaderManager } from '../../../../display/ConstantShaderManager.js';
-import { ref } from '../../../../gfx/references.js';
+import { ref } from '../../../../gfx/references_invocations.js';
 import { IScene } from '../../../IScene.js';
 import { Timer } from '../../../Timer.js';
 import { Invocation } from './Invocation.js';
@@ -49,7 +49,7 @@ export class Raijin extends Invocation {
 	constructor(scene) {
 		super(scene);
 
-		const bg = new Asset(ref.invocations.raijin.background);
+		const bg = new Asset(ref.raijin.background);
 		bg.filters = [
 			ConstantShaderManager.getGlowFilter({
 				distance: 5,

@@ -1,11 +1,11 @@
 // @ts-check
 import { BLEND_MODES } from 'pixi.js';
-import { ref } from '../references.js';
+import { ref } from '../references_invocations.js';
 
 // 384
 const eye = [
 	{
-		ref: ref.invocations.werewolf.eye,
+		ref: ref.werewolf.eye,
 		glow: {
 			distance: 5,
 			color: 0xff0000,

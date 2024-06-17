@@ -1,12 +1,12 @@
 // @ts-check
-import { ref } from '../references.js';
+import { ref } from '../references_invocations.js';
 
 // GFX 481
 export const invoc_buddah_halo = {
 	parts: {
 		halo: [
 			{
-				ref: ref.invocations.buddah.halo
+				ref: ref.buddah.halo
 			}
 		]
 	},

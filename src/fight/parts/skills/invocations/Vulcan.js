@@ -2,7 +2,7 @@
 import { Animator } from '../../../../display/Animator.js';
 import { Asset } from '../../../../display/Asset.js';
 import { invoc_vulcan_head } from '../../../../gfx/invocations/vulcan_head.js';
-import { ref } from '../../../../gfx/references.js';
+import { ref } from '../../../../gfx/references_invocations.js';
 import { Layers } from '../../../DepthManager.js';
 import { IScene, SCENE_WIDTH } from '../../../IScene.js';
 import { Timer } from '../../../Timer.js';
@@ -31,7 +31,7 @@ export class Vulcan extends Invocation {
 	constructor(scene) {
 		super(scene);
 
-		this._body.addChild(new Asset(ref.invocations.vulcan.body));
+		this._body.addChild(new Asset(ref.vulcan.body));
 
 		this._head = new Animator(false).loadAnimation(invoc_vulcan_head);
 		this._head.x = 130;

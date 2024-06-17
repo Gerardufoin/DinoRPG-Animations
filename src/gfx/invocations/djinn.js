@@ -1,5 +1,5 @@
 // @ts-check
-import { ref } from '../references.js';
+import { ref } from '../references_invocations.js';
 import { invoc_wind } from './wind.js';
 
 // GFX 406
@@ -8,21 +8,21 @@ export const invoc_djinn = {
 		body: [
 			// 398
 			{
-				ref: ref.invocations.djinn.body,
+				ref: ref.djinn.body,
 				resolution: 1
 			}
 		],
 		head: [
 			// 401
 			{
-				ref: ref.invocations.djinn.head,
+				ref: ref.djinn.head,
 				resolution: 1
 			}
 		],
 		breath_mask: [
 			// 403
 			{
-				ref: ref.invocations.djinn.breath_mask
+				ref: ref.djinn.breath_mask
 			}
 		],
 		breath: [invoc_wind]

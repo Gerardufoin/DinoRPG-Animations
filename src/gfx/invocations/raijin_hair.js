@@ -1,27 +1,27 @@
 // @ts-check
-import { ref } from '../references.js';
+import { ref } from '../references_invocations.js';
 
 // GFX 364
 export const invoc_raijin_hair = {
 	parts: {
 		h1: [
 			{
-				ref: ref.invocations.raijin.hair_1
+				ref: ref.raijin.hair_1
 			}
 		],
 		h2: [
 			{
-				ref: ref.invocations.raijin.hair_2
+				ref: ref.raijin.hair_2
 			}
 		],
 		h3: [
 			{
-				ref: ref.invocations.raijin.hair_3
+				ref: ref.raijin.hair_3
 			}
 		],
 		h4: [
 			{
-				ref: ref.invocations.raijin.hair_4
+				ref: ref.raijin.hair_4
 			}
 		]
 	},

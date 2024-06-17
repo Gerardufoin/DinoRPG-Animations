@@ -7,7 +7,7 @@ import { invoc_wind } from '../../../../gfx/invocations/wind.js';
 import { invoc_fujin_gust } from '../../../../gfx/invocations/fujin_gusts.js';
 import { invoc_fujin_veil } from '../../../../gfx/invocations/fujin_veil.js';
 import { Asset } from '../../../../display/Asset.js';
-import { ref } from '../../../../gfx/references.js';
+import { ref } from '../../../../gfx/references_invocations.js';
 import { invoc_fujin_hair } from '../../../../gfx/invocations/fujin_hair.js';
 
 /**
@@ -63,7 +63,7 @@ export class Fujin extends Invocation {
 		this._veil.playing = false;
 		this._body.addChild(this._veil);
 
-		this._body.addChild(new Asset(ref.invocations.fujin.body));
+		this._body.addChild(new Asset(ref.fujin.body));
 
 		this._hair = new Animator(false).loadAnimation(invoc_fujin_hair);
 		this._hair.x = 217;

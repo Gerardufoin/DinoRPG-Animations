@@ -1,15 +1,15 @@
 // @ts-check
-import { ref } from '../references.js';
+import { ref } from '../references_invocations.js';
 
 // 358
 const drum = [
 	// 355
 	{
-		ref: ref.invocations.raijin.drum
+		ref: ref.raijin.drum
 	},
 	// 357
 	{
-		ref: ref.invocations.raijin.drum_line_small,
+		ref: ref.raijin.drum_line_small,
 		transform: {
 			tx: 20.2,
 			ty: 22.85
@@ -22,7 +22,7 @@ export const invoc_raijin_drums = {
 	parts: {
 		line: [
 			{
-				ref: ref.invocations.raijin.drums_line,
+				ref: ref.raijin.drums_line,
 				glow: {
 					distance: 5,
 					color: 0xfcfbcb,

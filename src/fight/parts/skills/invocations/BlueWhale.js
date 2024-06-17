@@ -1,6 +1,6 @@
 // @ts-check
 import { Asset } from '../../../../display/Asset.js';
-import { ref } from '../../../../gfx/references.js';
+import { ref } from '../../../../gfx/references_invocations.js';
 import { Layers } from '../../../DepthManager.js';
 import { IScene } from '../../../IScene.js';
 import { Bubbles } from '../env/water/Bubbles.js';
@@ -23,7 +23,7 @@ export class BlueWhale extends Invocation {
 	constructor(scene) {
 		super(scene);
 
-		this._body.addChild(new Asset(ref.invocations.blue_whale.body));
+		this._body.addChild(new Asset(ref.blue_whale.body));
 
 		this._body.x = -210;
 		this._body.y = -305;

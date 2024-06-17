@@ -1,5 +1,5 @@
 // @ts-check
-import { ref } from '../references.js';
+import { ref } from '../references_invocations.js';
 import { invoc_raijin_hair } from './raijin_hair.js';
 import { invoc_raijin_belt } from './raijin_belt.js';
 
@@ -29,7 +29,7 @@ export const invoc_raijin_body = {
 			},
 			// 372
 			{
-				ref: ref.invocations.raijin.body,
+				ref: ref.raijin.body,
 				resolution: 1
 			}
 		],

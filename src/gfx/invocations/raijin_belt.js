@@ -1,37 +1,37 @@
 // @ts-check
-import { ref } from '../references.js';
+import { ref } from '../references_invocations.js';
 
 // GFX 371
 export const invoc_raijin_belt = {
 	parts: {
 		b1: [
 			{
-				ref: ref.invocations.raijin.belt_1
+				ref: ref.raijin.belt_1
 			}
 		],
 		b2: [
 			{
-				ref: ref.invocations.raijin.belt_2
+				ref: ref.raijin.belt_2
 			}
 		],
 		b3: [
 			{
-				ref: ref.invocations.raijin.belt_3
+				ref: ref.raijin.belt_3
 			}
 		],
 		b4: [
 			{
-				ref: ref.invocations.raijin.belt_4
+				ref: ref.raijin.belt_4
 			}
 		],
 		b5: [
 			{
-				ref: ref.invocations.raijin.belt_5
+				ref: ref.raijin.belt_5
 			}
 		],
 		b6: [
 			{
-				ref: ref.invocations.raijin.belt_6
+				ref: ref.raijin.belt_6
 			}
 		]
 	},

@@ -4,7 +4,7 @@ import { Animator } from '../../../../display/Animator.js';
 import { Asset } from '../../../../display/Asset.js';
 import { ConstantShaderManager } from '../../../../display/ConstantShaderManager.js';
 import { invoc_ifrit_fire } from '../../../../gfx/invocations/ifrit_fire.js';
-import { ref } from '../../../../gfx/references.js';
+import { ref } from '../../../../gfx/references_invocations.js';
 import { IScene } from '../../../IScene.js';
 import { Timer } from '../../../Timer.js';
 import { Invocation } from './Invocation.js';
@@ -39,14 +39,14 @@ export class Ifrit extends Invocation {
 		this._fire.alpha = 0;
 		this._body.addChild(this._fire);
 
-		this._body.addChild(new Asset(ref.invocations.ifrit.body));
+		this._body.addChild(new Asset(ref.ifrit.body));
 
-		const tatoo = new Asset(ref.invocations.ifrit.tatoo, 1.05);
+		const tatoo = new Asset(ref.ifrit.tatoo, 1.05);
 		tatoo.x += 68;
 		tatoo.y += 76;
 		this._body.addChild(tatoo);
 
-		this._mask = new Asset(ref.invocations.ifrit.tatoo_mask);
+		this._mask = new Asset(ref.ifrit.tatoo_mask);
 		this._mask.anchor.set(0.5, 0.5);
 		this._mask.x = 220;
 		this._body.addChild(this._mask);

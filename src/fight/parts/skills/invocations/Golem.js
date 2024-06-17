@@ -2,7 +2,7 @@
 import { Animator } from '../../../../display/Animator.js';
 import { Asset } from '../../../../display/Asset.js';
 import { ConstantShaderManager } from '../../../../display/ConstantShaderManager.js';
-import { ref } from '../../../../gfx/references.js';
+import { ref } from '../../../../gfx/references_invocations.js';
 import { IScene } from '../../../IScene.js';
 import { Timer } from '../../../Timer.js';
 import { Invocation } from './Invocation.js';
@@ -60,7 +60,7 @@ export class Golem extends Invocation {
 		this._lightning.mask = this._lightningMask;
 		this._body.addChild(this._lightningMask);
 
-		this._body.addChild(new Asset(ref.invocations.golem.body));
+		this._body.addChild(new Asset(ref.golem.body));
 
 		this._body.x = -215;
 		this._body.y = -290;

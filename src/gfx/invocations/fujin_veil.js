@@ -1,12 +1,12 @@
 // @ts-check
-import { ref } from '../references.js';
+import { ref } from '../references_invocations.js';
 
 // GFX 446
 export const invoc_fujin_veil = {
 	parts: {
 		veil: [
 			{
-				ref: ref.invocations.fujin.veil
+				ref: ref.fujin.veil
 			}
 		]
 	},

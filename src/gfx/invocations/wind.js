@@ -1,5 +1,5 @@
 // @ts-check
-import { ref } from '../references.js';
+import { ref } from '../references_invocations.js';
 
 // GFX 405
 export const invoc_wind = {
@@ -7,14 +7,14 @@ export const invoc_wind = {
 		b1: [
 			// 303
 			{
-				ref: ref.invocations.djinn.breath,
+				ref: ref.djinn.breath,
 				resolution: 1
 			}
 		],
 		b2: [
 			// 303
 			{
-				ref: ref.invocations.djinn.breath,
+				ref: ref.djinn.breath,
 				resolution: 1
 			}
 		]

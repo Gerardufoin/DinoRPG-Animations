@@ -1,7 +1,7 @@
 // @ts-check
 import { Animator } from '../../../../display/Animator.js';
 import { Asset } from '../../../../display/Asset.js';
-import { ref } from '../../../../gfx/references.js';
+import { ref } from '../../../../gfx/references_invocations.js';
 import { IScene } from '../../../IScene.js';
 import { Timer } from '../../../Timer.js';
 import { Invocation } from './Invocation.js';
@@ -24,7 +24,7 @@ export class Werewolf extends Invocation {
 	constructor(scene) {
 		super(scene);
 
-		this._body.addChild(new Asset(ref.invocations.werewolf.body));
+		this._body.addChild(new Asset(ref.werewolf.body));
 
 		this._eyes = new Animator(false).loadAnimation(invoc_werewolf_eyes);
 		this._eyes.playing = false;

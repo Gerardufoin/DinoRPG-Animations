@@ -6,6 +6,7 @@ const LZString = require('lz-string');
 // Override default file destination for the given folder name.
 const overrideDestination = {
 	background: 'gfx/backgrounds.js',
+	invocations: 'gfx/references_invocations.js',
 	dino: 'sdino/references_big.js',
 	sdino: 'sdino/references_small.js'
 };
@@ -71,7 +72,7 @@ for (const f of fs.readdirSync(__dirname, { withFileTypes: true })) {
 			: path.join(__dirname, '../src/', f.name, 'references.js');
 		fs.writeFileSync(
 			dest,
-			'export let ref = ' +
+			'export const ref = ' +
 				JSON.stringify(references, null, '\t')
 					.replace(/"([^-"]+)":/g, '$1:')
 					// eslint-disable-next-line

@@ -1,6 +1,6 @@
 // @ts-check
 import { BLEND_MODES } from 'pixi.js';
-import { ref } from '../references.js';
+import { ref } from '../references_invocations.js';
 
 // GFX 337
 export const invoc_vulcan_head = {
@@ -8,7 +8,7 @@ export const invoc_vulcan_head = {
 		head: [
 			// 332
 			{
-				ref: ref.invocations.vulcan.head_shadow,
+				ref: ref.vulcan.head_shadow,
 				transform: {
 					tx: 34.9,
 					ty: 28.8,
@@ -32,11 +32,11 @@ export const invoc_vulcan_head = {
 			},
 			// 333
 			{
-				ref: ref.invocations.vulcan.head
+				ref: ref.vulcan.head
 			},
 			// 335
 			{
-				ref: ref.invocations.vulcan.head_highlight,
+				ref: ref.vulcan.head_highlight,
 				transform: {
 					tx: 2.5,
 					ty: 15.9
