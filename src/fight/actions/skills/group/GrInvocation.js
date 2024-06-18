@@ -18,6 +18,7 @@ import { Ondine } from '../../../parts/skills/invocations/Ondine.js';
 import { Raijin } from '../../../parts/skills/invocations/Raijin.js';
 import { Vulcan } from '../../../parts/skills/invocations/Vulcan.js';
 import { Werewolf } from '../../../parts/skills/invocations/Werewolf.js';
+import { Yggdrasil } from '../../../parts/skills/invocations/Yggdrasil.js';
 import { GroupEffect } from '../GroupEffect.js';
 
 /**
@@ -77,6 +78,7 @@ export class GrInvocation extends GroupEffect {
 				this._invoc = new Fairies(this._scene);
 				break;
 			case 'yggdra':
+				this._invoc = new Yggdrasil(this._scene);
 				break;
 			case 'hades':
 				break;

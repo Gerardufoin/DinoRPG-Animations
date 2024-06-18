@@ -11,12 +11,6 @@ import { Invocation } from './Invocation.js';
  */
 export class Fairies extends Invocation {
 	/**
-	 * List of the fireflies created in the Scene.
-	 * @type {Firefly[]}
-	 */
-	_fireflies = [];
-
-	/**
 	 * Invokes Fairies upon the Scene.
 	 * @param {IScene} scene The scene where Fairies is invoked.
 	 */
@@ -36,16 +30,6 @@ export class Fairies extends Invocation {
 		for (let i = 0; i < 20; ++i) {
 			const f = new Firefly(this._scene);
 			this._scene.dm.addSprite(f, Layers.Scene.FIGHTERS);
-			this._fireflies.push(f);
 		}
-	}
-
-	/**
-	 * Remove the fireflies if they are still here.
-	 */
-	kill() {
-		super.kill();
-		//this._fireflies.map((f) => f.kill());
-		this._fireflies = [];
 	}
 }

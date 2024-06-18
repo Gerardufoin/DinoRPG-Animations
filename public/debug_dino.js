@@ -71,10 +71,7 @@ function addDinoz(data, showOrigin = false) {
 
 	addFlashPreview(data, dinoz.getChkCode(), container);
 }
-addDinoz('B9enDihLVvE3D000');
-addDinoz('B7slIovDMmyWd000');
-addDinoz('BAleFPXaxTma6000');
-addDinoz('BAx5zblke9cgx000');
+
 // Dragon Jr
 addDinoz('09T1Yt9wqq4Rx000', true);
 
@@ -173,7 +170,10 @@ addDinoz('AAF5ECnNvanRc000');*/
 addDinoz('B9s415NH45d7A000', true);
 addDinoz('B9PSsKZ8D4JP6000');
 addDinoz('B9ovGzEZvQT3H210');
-
+addDinoz('B9enDihLVvE3D000');
+addDinoz('B7slIovDMmyWd000');
+addDinoz('BAleFPXaxTma6000');
+addDinoz('BAx5zblke9cgx000');
 // Santaz
 /*addDinoz('C9ZnsZXkwu7bB000', true);
 addDinoz('C7zx3On8Hw1Ji000');
