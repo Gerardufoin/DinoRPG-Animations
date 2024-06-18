@@ -421,15 +421,496 @@ export const parts_big = {
 		}
 	],
 	// 1843 p3
-	eyes: [],
+	eyes: [
+		{
+			partIdx: 3,
+			frames: [0, 0, 1],
+			parts: [
+				// 1829
+				{
+					partIdx: 1,
+					frames: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+					transform: {
+						ty: 0.4
+					},
+					parts: [
+						[
+							// 1819
+							{
+								ref: ref.wanwan.eyes_back
+							},
+							// 1821
+							{
+								colorIdx: 3,
+								ref: ref.wanwan.eyes,
+								transform: {
+									tx: -6.7,
+									ty: 1.15
+								}
+							},
+							// 1822
+							{
+								ref: ref.wanwan.eyes_pupils
+							},
+							// 1823
+							{
+								colorIdx: 1,
+								ref: ref.wanwan.eyes_sockets,
+								transform: {
+									ty: 0.05,
+									b: 0.082,
+									c: 0
+								}
+							}
+						],
+						[
+							// 1825
+							{
+								ref: ref.wanwan.eyes_demon_back
+							},
+							// 1827
+							{
+								colorIdx: 1,
+								ref: ref.wanwan.eyes_demon_sockets,
+								transform: {
+									tx: 0,
+									ty: 0.05,
+									b: 0.082,
+									c: 0
+								}
+							},
+							// 1828
+							{
+								ref: ref.wanwan.eyes_demon_highlight
+							}
+						]
+					]
+				},
+				// 1842
+				{
+					partIdx: 1,
+					frames: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+					transform: {
+						tx: -0.05,
+						ty: -0.8
+					},
+					parts: [
+						[
+							// 1832
+							{
+								ref: ref.wanwan.eyes_small_back
+							},
+							// 1834
+							{
+								colorIdx: 3,
+								ref: ref.wanwan.eyes_small,
+								transform: {
+									tx: -6.65,
+									ty: 2.45,
+									a: 1,
+									d: 0.523,
+									b: -0.022,
+									c: 0.012
+								}
+							},
+							// 1835
+							{
+								ref: ref.wanwan.eyes_small_pupils
+							},
+							// 1837
+							{
+								colorIdx: 1,
+								ref: ref.wanwan.eyes_small_sockets,
+								transform: {
+									tx: 0.05,
+									ty: 1.7,
+									a: 1.001,
+									d: 0.523,
+									b: 0.02,
+									c: 0.012
+								}
+							}
+						],
+						[
+							// 1838
+							{
+								ref: ref.wanwan.eyes_small_demon_back
+							},
+							// 1840
+							{
+								colorIdx: 1,
+								ref: ref.wanwan.eyes_small_demon_sockets,
+								transform: {
+									tx: 0.05,
+									ty: 1.7,
+									a: 1.001,
+									d: 0.523,
+									b: 0.02,
+									c: 0.012
+								}
+							},
+							// 1841
+							{
+								ref: ref.wanwan.eyes_small_demon_highlight
+							}
+						]
+					]
+				}
+			]
+		},
+		// 1831 special
+		{
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				{
+					ref: ref.wanwan.eyes_special,
+					transform: {
+						tx: -29.65,
+						ty: -10.15
+					}
+				}
+			]
+		}
+	],
 	// 1851 p4
-	nose: [],
+	nose: [
+		{
+			partIdx: 4,
+			frames: [0, 0, 1, 2],
+			parts: [
+				[
+					// 1845
+					{
+						colorIdx: 0,
+						ref: ref.wanwan.nose_highlight,
+						transform: {
+							tx: 0.35,
+							ty: 3.35
+						}
+					},
+					// 1847
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.nose
+					}
+				],
+				[
+					// 1845
+					{
+						colorIdx: 0,
+						ref: ref.wanwan.nose_highlight,
+						transform: {
+							tx: -0.45,
+							ty: 4.45,
+							a: 0.713,
+							d: 0.713,
+							b: 0,
+							c: -0.088
+						}
+					},
+					// 1847
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.nose,
+						transform: {
+							tx: -0.4,
+							ty: 2.05,
+							a: 0.713,
+							d: 0.713,
+							b: 0,
+							c: -0.088
+						}
+					}
+				],
+				[
+					// 1848
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.nose_cute,
+						transform: {
+							tx: -0.4,
+							ty: 2.05,
+							a: 0.713,
+							d: 0.713
+						}
+					},
+					// 1850
+					{
+						ref: ref.wanwan.nose_cute_highlight
+					}
+				]
+			]
+		}
+	],
 	// 1872 p6a
-	left_ear: [],
+	left_ear: [
+		{
+			partIdx: 6,
+			frames: [0, 1, 2, 3, 4, 5],
+			parts: [
+				[
+					// 1853
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.left_ear,
+						transform: {
+							tx: 0.6,
+							ty: -1.25
+						}
+					}
+				],
+				[
+					// 1855
+					{
+						colorIdx: 0,
+						ref: ref.wanwan.left_ear_up_inside,
+						transform: {
+							tx: -5.15,
+							ty: -3.9
+						}
+					},
+					// 1857
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.left_ear_up,
+						transform: {
+							tx: 1.7,
+							ty: -2.75
+						}
+					}
+				],
+				[
+					// 1859
+					{
+						colorIdx: 0,
+						ref: ref.wanwan.left_ear_round_inside,
+						transform: {
+							tx: -4.85,
+							ty: -1.05
+						}
+					},
+					// 1861
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.left_ear_round,
+						transform: {
+							tx: -7.25,
+							ty: -3.15,
+							a: 0.839,
+							d: 0.839
+						}
+					}
+				],
+				[
+					// 1863
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.left_ear_pointy,
+						transform: {
+							tx: -5.8,
+							ty: -2.05
+						}
+					}
+				],
+				[
+					// 1865
+					{
+						colorIdx: 0,
+						ref: ref.wanwan.left_ear_sharp_inside,
+						transform: {
+							tx: -6.1,
+							ty: -1.05
+						}
+					},
+					// 1867
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.left_ear_sharp,
+						transform: {
+							tx: -0.7,
+							ty: -3.45
+						}
+					}
+				],
+				[
+					// 1869
+					{
+						colorIdx: 0,
+						ref: ref.wanwan.left_ear_lynx_inside,
+						transform: {
+							tx: -5.15,
+							ty: -4.85
+						}
+					},
+					// 1871
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.left_ear_lynx,
+						transform: {
+							tx: 1.85,
+							ty: -1.25
+						}
+					}
+				]
+			]
+		}
+	],
 	// 1885 p9
-	hair: [],
+	hair: [
+		{
+			partIdx: 9,
+			frames: [0, 1, 2, 3],
+			parts: [
+				[
+					// 1874
+					{
+						colorIdx: 3,
+						ref: ref.wanwan.hair_spots
+					}
+				],
+				[
+					// 1876
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.hair,
+						transform: {
+							tx: 4.1,
+							ty: -13
+						}
+					},
+					// 1874
+					{
+						colorIdx: 3,
+						ref: ref.wanwan.hair_spots,
+						transform: {
+							tx: -1.6,
+							ty: -1.45,
+							a: 0.789,
+							d: 0.789
+						}
+					}
+				],
+				[
+					// 1878
+					{
+						colorIdx: 3,
+						ref: ref.wanwan.hair_side_spots,
+						transform: {
+							tx: -1.6,
+							ty: -1.45,
+							a: 0.789,
+							d: 0.789
+						}
+					},
+					// 1880
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.hair_side,
+						transform: {
+							tx: 4.1,
+							ty: -13
+						}
+					}
+				],
+				[
+					// 1882
+					{
+						colorIdx: 3,
+						ref: ref.wanwan.hair_up_spots,
+						transform: {
+							tx: -1.6,
+							ty: -1.45,
+							a: 0.789,
+							d: 0.789
+						}
+					},
+					// 1884
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.hair_up,
+						transform: {
+							tx: 4.1,
+							ty: -13
+						}
+					}
+				]
+			]
+		}
+	],
 	// 1896 p5
-	mouth: [],
+	mouth: [
+		{
+			partIdx: 5,
+			frames: [0, 1, 2],
+			parts: [
+				[
+					// 1887
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.mouth
+					},
+					// 1891
+					{
+						partIdx: 1,
+						frames: [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2],
+						transform: {
+							tx: -1.7,
+							ty: 1.45
+						},
+						parts: [
+							// 1888
+							{
+								ref: ref.wanwan.mouth_fangs_young
+							},
+							// 1889
+							{
+								ref: ref.wanwan.mouth_fangs_adult
+							},
+							// 1890
+							{
+								ref: ref.wanwan.mouth_fangs_demon
+							}
+						]
+					}
+				],
+				[
+					// 1887
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.mouth,
+						transform: {
+							a: 1.275,
+							d: 1
+						}
+					},
+					// 1892
+					{
+						ref: ref.wanwan.mouth_fangs
+					}
+				],
+				[
+					// 1893
+					{
+						ref: ref.wanwan.mouth_angry_teeth
+					},
+					// 1895
+					{
+						colorIdx: 1,
+						ref: ref.wanwan.mouth_angry,
+						transform: {
+							tx: 2.05,
+							ty: -1.05,
+							a: 0.887,
+							d: 1,
+							b: -0.018,
+							c: 0
+						}
+					}
+				]
+			]
+		}
+	],
 	// 293
 	view: [
 		{
