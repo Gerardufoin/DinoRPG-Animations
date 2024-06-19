@@ -130,5 +130,26 @@ export const mapping_dino = {
 	'Symbol 1851_p4': 'nose',
 	'Symbol 1872_p6a': 'l_ear',
 	'Symbol 1885_p9': 'hair',
-	'Symbol 1896_p5': 'mouth'
+	'Symbol 1896_p5': 'mouth',
+	// 2061 santaz
+	'Symbol 1902': 'l_b_leg',
+	'Symbol 1909_p3b': 'r_eye',
+	'Symbol 1915': 'r_f_leg',
+	'Symbol 1921': 'body',
+	'Symbol 1925': 'l_f_leg',
+	'Symbol 1934_p6': 'back',
+	'Symbol 1941_special': 'special',
+	'Symbol 1967_p8': 'antlers',
+	'Symbol 1967_p8a': 'antlers',
+	'Symbol 1974_p5c': 'r_sideburn',
+	'Symbol 1977_p7b': 'r_ear',
+	'Symbol 1982': 'head',
+	'Symbol 2009_p4': 'nose',
+	'Symbol 2016_p3a': 'l_eye',
+	'Symbol 2025_p5a': 'beard',
+	'Symbol 2028': 'mouth',
+	'Symbol 2035_p5b': 'l_sideburn',
+	'Symbol 2038_p7a': 'l_ear',
+	'Symbol 2057_p9': 'hair',
+	'Symbol 2060_p8c': 'antlers_side'
 };

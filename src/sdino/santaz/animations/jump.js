@@ -1,6 +1,6 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'santaz_jump',
 	frames: [
 		{
@@ -13,7 +13,7 @@ export let jump = {
 				d: 1.195,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -6.75,
 				ty: -4.8,
 				a: 1.059,
@@ -22,7 +22,7 @@ export let jump = {
 				d: 1.059,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -8.45,
 				ty: 0.1,
 				a: 1.059,
@@ -40,7 +40,7 @@ export let jump = {
 				d: 1.237,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -2.3,
 				ty: -0.6,
 				a: 0.993,
@@ -58,7 +58,7 @@ export let jump = {
 				d: 1.237,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -8.1,
 				ty: -5.15,
 				a: 0.659,
@@ -67,7 +67,7 @@ export let jump = {
 				d: 0.917,
 				l: 8
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -4.3,
 				ty: 9.45,
 				a: 1.077,
@@ -76,7 +76,7 @@ export let jump = {
 				d: 1.021,
 				l: 7
 			},
-			right_eye: {
+			r_eye: {
 				tx: -11.65,
 				ty: -1.5,
 				a: -1.059,
@@ -103,7 +103,7 @@ export let jump = {
 				d: 1.059,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 5.95,
 				ty: 6.85,
 				a: 0.495,
@@ -121,7 +121,7 @@ export let jump = {
 				d: 1.237,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -9.45,
 				ty: 7.2,
 				a: 0.711,
@@ -130,7 +130,7 @@ export let jump = {
 				d: 0.667,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -1.2,
 				ty: 5.3,
 				a: 1.208,

@@ -244,7 +244,7 @@ export class PartManager {
 			filters.push(
 				ConstantShaderManager.getAdjustColorFilter(
 					part.colorAdjust.brightness,
-					part.colorAdjust.constrast,
+					part.colorAdjust.contrast,
 					part.colorAdjust.saturation,
 					part.colorAdjust.hue
 				)

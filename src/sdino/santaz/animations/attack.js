@@ -1,6 +1,6 @@
 // @ts-check
 
-export let attack = {
+export const attack = {
 	id: 'santaz_attack',
 	callbacks: {
 		3: [['hit', 6]],
@@ -17,7 +17,7 @@ export let attack = {
 				d: 0.551,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -10.65,
 				ty: 0.45,
 				a: 0.312,
@@ -26,7 +26,7 @@ export let attack = {
 				d: 0.312,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -7.75,
 				ty: 7,
 				a: 0.312,
@@ -44,7 +44,7 @@ export let attack = {
 				d: 0.365,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.15,
 				ty: -1.5,
 				a: 0.293,
@@ -62,7 +62,7 @@ export let attack = {
 				d: 0.365,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -11.6,
 				ty: 4.9,
 				a: -0.101,
@@ -71,7 +71,7 @@ export let attack = {
 				d: -0.14,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -9.25,
 				ty: 9.2,
 				a: -0.312,
@@ -92,7 +92,7 @@ export let attack = {
 				d: 1.066,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -100,7 +100,7 @@ export let attack = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -116,7 +116,7 @@ export let attack = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.95,
 				ty: 8.2,
 				a: 1.383,
@@ -124,7 +124,7 @@ export let attack = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 5.75,
 				a: 1.202,
@@ -144,7 +144,7 @@ export let attack = {
 				d: 0.52,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -12.55,
 				ty: -0.75,
 				a: 0.285,
@@ -153,7 +153,7 @@ export let attack = {
 				d: 0.285,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -9.55,
 				ty: 5.6,
 				a: 0.285,
@@ -171,7 +171,7 @@ export let attack = {
 				d: 0.333,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -8.05,
 				ty: -2.85,
 				a: 0.267,
@@ -189,7 +189,7 @@ export let attack = {
 				d: 0.333,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -13.05,
 				ty: 3.3,
 				a: -0.119,
@@ -198,7 +198,7 @@ export let attack = {
 				d: -0.166,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.9,
 				ty: 7.95,
 				a: -0.285,
@@ -223,7 +223,7 @@ export let attack = {
 				d: 1.066,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.6,
 				ty: 8.4,
 				a: 1.313,
@@ -232,7 +232,7 @@ export let attack = {
 				d: 1.341,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.8,
 				ty: 5.5,
 				a: 1.117,
@@ -248,7 +248,7 @@ export let attack = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.4,
 				ty: 6.65,
 				a: 1.335,
@@ -257,7 +257,7 @@ export let attack = {
 				d: 1.358,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -1.95,
 				ty: 4.25,
 				a: 1.202,
@@ -277,7 +277,7 @@ export let attack = {
 				d: 0.491,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -14.5,
 				ty: -2.05,
 				a: 0.258,
@@ -286,7 +286,7 @@ export let attack = {
 				d: 0.258,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.25,
 				ty: 4.25,
 				a: 0.258,
@@ -304,7 +304,7 @@ export let attack = {
 				d: 0.302,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -9.9,
 				ty: -4.2,
 				a: 0.242,
@@ -322,7 +322,7 @@ export let attack = {
 				d: 0.302,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -14.4,
 				ty: 1.75,
 				a: -0.136,
@@ -331,7 +331,7 @@ export let attack = {
 				d: -0.19,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -12.45,
 				ty: 6.65,
 				a: -0.258,
@@ -356,7 +356,7 @@ export let attack = {
 				d: 1.066,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -2.4,
 				ty: 6.75,
 				a: 1.111,
@@ -365,7 +365,7 @@ export let attack = {
 				d: 1.165,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 1.95,
 				ty: 4.15,
 				a: 0.921,
@@ -381,7 +381,7 @@ export let attack = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.8,
 				ty: 5.2,
 				a: 1.197,
@@ -390,7 +390,7 @@ export let attack = {
 				d: 1.242,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -3.45,
 				ty: 2.8,
 				a: 1.202,
@@ -410,7 +410,7 @@ export let attack = {
 				d: 0.465,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -16.15,
 				ty: -3.25,
 				a: 0.234,
@@ -419,7 +419,7 @@ export let attack = {
 				d: 0.234,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -12.95,
 				ty: 2.9,
 				a: 0.234,
@@ -437,7 +437,7 @@ export let attack = {
 				d: 0.274,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -11.8,
 				ty: -5.55,
 				a: 0.22,
@@ -455,7 +455,7 @@ export let attack = {
 				d: 0.274,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -15.75,
 				ty: 0.2,
 				a: -0.158,
@@ -464,7 +464,7 @@ export let attack = {
 				d: -0.219,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -14.05,
 				ty: 5.35,
 				a: -0.234,
@@ -489,7 +489,7 @@ export let attack = {
 				d: 1.066,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -3.15,
 				ty: 5.05,
 				a: 0.804,
@@ -498,7 +498,7 @@ export let attack = {
 				d: 0.877,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 1.25,
 				ty: 2.6,
 				a: 0.645,
@@ -514,7 +514,7 @@ export let attack = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -6.15,
 				ty: 3.75,
 				a: 0.982,
@@ -523,7 +523,7 @@ export let attack = {
 				d: 1.045,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -5,
 				ty: 1.3,
 				a: 1.202,
@@ -543,7 +543,7 @@ export let attack = {
 				d: 0.475,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -18.4,
 				ty: -1.7,
 				a: 0.244,
@@ -552,7 +552,7 @@ export let attack = {
 				d: 0.244,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -15.35,
 				ty: 4.3,
 				a: 0.244,
@@ -570,7 +570,7 @@ export let attack = {
 				d: 0.285,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -14.15,
 				ty: -4.1,
 				a: 0.229,
@@ -588,7 +588,7 @@ export let attack = {
 				d: 0.285,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -18.3,
 				ty: 1.05,
 				a: -0.149,
@@ -597,7 +597,7 @@ export let attack = {
 				d: -0.207,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -16.45,
 				ty: 6.8,
 				a: -0.244,
@@ -622,7 +622,7 @@ export let attack = {
 				d: 1.066,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -6.45,
 				ty: 7,
 				a: 1.282,
@@ -631,7 +631,7 @@ export let attack = {
 				d: 1.315,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: -2.1,
 				ty: 4.6,
 				a: 1.176,
@@ -647,7 +647,7 @@ export let attack = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -9.55,
 				ty: 5.8,
 				a: 1.345,
@@ -656,7 +656,7 @@ export let attack = {
 				d: 1.365,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -6.7,
 				ty: 3.3,
 				a: 1.202,
@@ -676,7 +676,7 @@ export let attack = {
 				d: 0.49,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -20.75,
 				ty: -0.5,
 				a: 0.257,
@@ -685,7 +685,7 @@ export let attack = {
 				d: 0.257,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -17.7,
 				ty: 5.8,
 				a: 0.257,
@@ -703,7 +703,7 @@ export let attack = {
 				d: 0.301,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -16.4,
 				ty: -2.7,
 				a: 0.242,
@@ -721,7 +721,7 @@ export let attack = {
 				d: 0.301,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -21.05,
 				ty: 1.9,
 				a: -0.141,
@@ -730,7 +730,7 @@ export let attack = {
 				d: -0.196,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -18.9,
 				ty: 8.1,
 				a: -0.257,
@@ -755,7 +755,7 @@ export let attack = {
 				d: 1.066,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -9.85,
 				ty: 9.05,
 				a: 1.352,
@@ -764,7 +764,7 @@ export let attack = {
 				d: 1.334,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: -5.45,
 				ty: 6.6,
 				a: 1.059,
@@ -780,7 +780,7 @@ export let attack = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -12.85,
 				ty: 7.75,
 				a: 1.303,
@@ -789,7 +789,7 @@ export let attack = {
 				d: 1.274,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -8.25,
 				ty: 5.3,
 				a: 1.202,
@@ -809,7 +809,7 @@ export let attack = {
 				d: 0.378,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -20.3,
 				ty: 0.45,
 				a: 0.157,
@@ -818,7 +818,7 @@ export let attack = {
 				d: 0.157,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -16.8,
 				ty: 6.35,
 				a: 0.157,
@@ -836,7 +836,7 @@ export let attack = {
 				d: 0.184,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -16.1,
 				ty: -2.05,
 				a: 0.147,
@@ -854,7 +854,7 @@ export let attack = {
 				d: 0.184,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -20.3,
 				ty: 3.25,
 				a: -0.21,
@@ -863,7 +863,7 @@ export let attack = {
 				d: -0.293,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -17.5,
 				ty: 8.9,
 				a: -0.157,
@@ -888,7 +888,7 @@ export let attack = {
 				d: 1.066,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -8.1,
 				ty: 9.6,
 				a: 1.368,
@@ -897,7 +897,7 @@ export let attack = {
 				d: 1.188,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: -3.1,
 				ty: 7.2,
 				a: 1.184,
@@ -913,7 +913,7 @@ export let attack = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -10.95,
 				ty: 8.8,
 				a: 1.318,
@@ -922,7 +922,7 @@ export let attack = {
 				d: 1.292,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -6.5,
 				ty: 6.45,
 				a: 1.202,
@@ -942,7 +942,7 @@ export let attack = {
 				d: 0.264,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -19.7,
 				ty: 1.65,
 				a: 0.056,
@@ -951,7 +951,7 @@ export let attack = {
 				d: 0.056,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -15.95,
 				ty: 7,
 				a: 0.056,
@@ -969,7 +969,7 @@ export let attack = {
 				d: 0.065,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -15.85,
 				ty: -1.3,
 				a: 0.052,
@@ -987,7 +987,7 @@ export let attack = {
 				d: 0.065,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -19.5,
 				ty: 4.65,
 				a: -0.281,
@@ -996,7 +996,7 @@ export let attack = {
 				d: -0.391,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -16.25,
 				ty: 9.8,
 				a: -0.056,
@@ -1021,7 +1021,7 @@ export let attack = {
 				d: 1.066,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -6.4,
 				ty: 10.2,
 				a: 1.377,
@@ -1030,7 +1030,7 @@ export let attack = {
 				d: 1.03,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: -0.85,
 				ty: 7.75,
 				a: 1.209,
@@ -1046,7 +1046,7 @@ export let attack = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -8.9,
 				ty: 9.85,
 				a: 1.333,
@@ -1055,7 +1055,7 @@ export let attack = {
 				d: 1.31,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -4.8,
 				ty: 7.6,
 				a: 1.202,
@@ -1075,7 +1075,7 @@ export let attack = {
 				d: 0.373,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -16.25,
 				ty: 1.2,
 				a: 0.153,
@@ -1084,7 +1084,7 @@ export let attack = {
 				d: 0.153,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -12.95,
 				ty: 6.9,
 				a: 0.153,
@@ -1102,7 +1102,7 @@ export let attack = {
 				d: 0.178,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -12.25,
 				ty: -1.5,
 				a: 0.143,
@@ -1120,7 +1120,7 @@ export let attack = {
 				d: 0.178,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -16.5,
 				ty: 4.55,
 				a: -0.213,
@@ -1129,7 +1129,7 @@ export let attack = {
 				d: -0.297,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.55,
 				ty: 9.35,
 				a: -0.153,
@@ -1154,7 +1154,7 @@ export let attack = {
 				d: 1.066,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -4.55,
 				ty: 10.2,
 				a: 1.379,
@@ -1163,7 +1163,7 @@ export let attack = {
 				d: 1.148,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 0.65,
 				ty: 7.45,
 				a: 1.209,
@@ -1179,7 +1179,7 @@ export let attack = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -7.5,
 				ty: 9.35,
 				a: 1.359,
@@ -1188,7 +1188,7 @@ export let attack = {
 				d: 1.343,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -3.35,
 				ty: 7.05,
 				a: 1.201,
@@ -1208,7 +1208,7 @@ export let attack = {
 				d: 0.48,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -12.9,
 				ty: 0.55,
 				a: 0.249,
@@ -1217,7 +1217,7 @@ export let attack = {
 				d: 0.249,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -9.85,
 				ty: 6.7,
 				a: 0.249,
@@ -1235,7 +1235,7 @@ export let attack = {
 				d: 0.291,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -8.6,
 				ty: -1.7,
 				a: 0.233,
@@ -1253,7 +1253,7 @@ export let attack = {
 				d: 0.291,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -13.45,
 				ty: 4.5,
 				a: -0.146,
@@ -1262,7 +1262,7 @@ export let attack = {
 				d: -0.204,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.9,
 				ty: 8.95,
 				a: -0.249,
@@ -1287,7 +1287,7 @@ export let attack = {
 				d: 1.066,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -2.7,
 				ty: 10.15,
 				a: 1.381,
@@ -1296,7 +1296,7 @@ export let attack = {
 				d: 1.265,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.1,
 				ty: 7.2,
 				a: 1.209,
@@ -1312,7 +1312,7 @@ export let attack = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -6.2,
 				ty: 8.75,
 				a: 1.376,
@@ -1321,7 +1321,7 @@ export let attack = {
 				d: 1.368,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -1.95,
 				ty: 6.4,
 				a: 1.202,

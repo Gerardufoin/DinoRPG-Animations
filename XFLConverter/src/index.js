@@ -47,6 +47,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/dino/LIBRARY/Symbol 1576.xml', '_sub', undefined, 3); // hippoclamp back fin
 //parser.parse('./resources/dino/LIBRARY/Symbol 1746.xml', '_sub', undefined, 3); // hippoclamp
 //parser.parse('./resources/dino/LIBRARY/Symbol 1897.xml', '_sub', undefined, 3); // wanwan
+//parser.parse('./resources/dino/LIBRARY/Symbol 2061.xml', '_sub', undefined, 3); // santaz
 
 //SMONSTER
 //parser.parse('./resources/smonster/LIBRARY/Symbol 4089.xml', 'smonster', undefined, 1); // smonster

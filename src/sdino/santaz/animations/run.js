@@ -1,6 +1,6 @@
 // @ts-check
 
-export let run = {
+export const run = {
 	id: 'santaz_run',
 	frames: [
 		{
@@ -13,7 +13,7 @@ export let run = {
 				d: 0.744,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -5.2,
 				ty: -0.7,
 				a: 0.493,
@@ -22,7 +22,7 @@ export let run = {
 				d: 0.493,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.55,
 				ty: 6.3,
 				a: 0.493,
@@ -40,7 +40,7 @@ export let run = {
 				d: 0.576,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -0.45,
 				ty: -1.75,
 				a: 0.462,
@@ -58,7 +58,7 @@ export let run = {
 				d: 0.576,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -6.95,
 				ty: 3.5,
 				a: 0.039,
@@ -67,7 +67,7 @@ export let run = {
 				d: 0.054,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -5.45,
 				ty: 8.15,
 				a: -0.493,
@@ -94,7 +94,7 @@ export let run = {
 				d: 1.047,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 2.65,
 				ty: 10.55,
 				a: 1.359,
@@ -103,7 +103,7 @@ export let run = {
 				d: 1.342,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 7.55,
 				ty: 8.4,
 				a: 1.211,
@@ -121,7 +121,7 @@ export let run = {
 				d: 1.224,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1,
 				ty: 7.95,
 				a: 1.359,
@@ -130,7 +130,7 @@ export let run = {
 				d: 1.342,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 3.8,
 				ty: 6.35,
 				a: 1.203,
@@ -150,7 +150,7 @@ export let run = {
 				d: 0.607,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -11.75,
 				ty: -2.25,
 				a: 0.365,
@@ -159,7 +159,7 @@ export let run = {
 				d: 0.365,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -9.1,
 				ty: 4.55,
 				a: 0.365,
@@ -177,7 +177,7 @@ export let run = {
 				d: 0.426,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.95,
 				ty: -3.7,
 				a: 0.342,
@@ -195,7 +195,7 @@ export let run = {
 				d: 0.426,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -12.2,
 				ty: 1.8,
 				a: -0.06,
@@ -204,7 +204,7 @@ export let run = {
 				d: -0.083,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.6,
 				ty: 6.7,
 				a: -0.365,
@@ -231,7 +231,7 @@ export let run = {
 				d: 1.061,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.05,
 				ty: 7.85,
 				a: 1.281,
@@ -240,7 +240,7 @@ export let run = {
 				d: 1.315,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.6,
 				ty: 5.45,
 				a: 1.085,
@@ -258,7 +258,7 @@ export let run = {
 				d: 1.24,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.4,
 				ty: 5.8,
 				a: 1.319,
@@ -267,7 +267,7 @@ export let run = {
 				d: 1.346,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -1.45,
 				ty: 3.85,
 				a: 1.208,
@@ -287,7 +287,7 @@ export let run = {
 				d: 0.465,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -17.85,
 				ty: -3.25,
 				a: 0.234,
@@ -296,7 +296,7 @@ export let run = {
 				d: 0.234,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -14.65,
 				ty: 2.9,
 				a: 0.234,
@@ -314,7 +314,7 @@ export let run = {
 				d: 0.274,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -13.5,
 				ty: -5.55,
 				a: 0.22,
@@ -332,7 +332,7 @@ export let run = {
 				d: 0.274,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -17.45,
 				ty: 0.2,
 				a: -0.158,
@@ -341,7 +341,7 @@ export let run = {
 				d: -0.219,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -15.75,
 				ty: 5.35,
 				a: -0.234,
@@ -366,7 +366,7 @@ export let run = {
 				d: 1.066,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -4.85,
 				ty: 5.05,
 				a: 0.804,
@@ -375,7 +375,7 @@ export let run = {
 				d: 0.877,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: -0.45,
 				ty: 2.6,
 				a: 0.645,
@@ -391,7 +391,7 @@ export let run = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -7.85,
 				ty: 3.75,
 				a: 0.982,
@@ -400,7 +400,7 @@ export let run = {
 				d: 1.045,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -6.7,
 				ty: 1.3,
 				a: 1.202,
@@ -420,7 +420,7 @@ export let run = {
 				d: 0.49,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -20.75,
 				ty: -0.5,
 				a: 0.257,
@@ -429,7 +429,7 @@ export let run = {
 				d: 0.257,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -17.7,
 				ty: 5.8,
 				a: 0.257,
@@ -447,7 +447,7 @@ export let run = {
 				d: 0.301,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -16.4,
 				ty: -2.7,
 				a: 0.242,
@@ -465,7 +465,7 @@ export let run = {
 				d: 0.301,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -21.05,
 				ty: 1.9,
 				a: -0.141,
@@ -474,7 +474,7 @@ export let run = {
 				d: -0.196,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -18.9,
 				ty: 8.1,
 				a: -0.257,
@@ -499,7 +499,7 @@ export let run = {
 				d: 1.066,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -9.85,
 				ty: 9.05,
 				a: 1.352,
@@ -508,7 +508,7 @@ export let run = {
 				d: 1.334,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: -5.45,
 				ty: 6.6,
 				a: 1.059,
@@ -524,7 +524,7 @@ export let run = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -12.85,
 				ty: 7.75,
 				a: 1.303,
@@ -533,7 +533,7 @@ export let run = {
 				d: 1.274,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -8.25,
 				ty: 5.3,
 				a: 1.202,
@@ -553,7 +553,7 @@ export let run = {
 				d: 0.264,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -16.3,
 				ty: 1.65,
 				a: 0.056,
@@ -562,7 +562,7 @@ export let run = {
 				d: 0.056,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -12.55,
 				ty: 7,
 				a: 0.056,
@@ -580,7 +580,7 @@ export let run = {
 				d: 0.065,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -12.45,
 				ty: -1.3,
 				a: 0.052,
@@ -598,7 +598,7 @@ export let run = {
 				d: 0.065,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -16.1,
 				ty: 4.65,
 				a: -0.281,
@@ -607,7 +607,7 @@ export let run = {
 				d: -0.391,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -12.85,
 				ty: 9.8,
 				a: -0.056,
@@ -632,7 +632,7 @@ export let run = {
 				d: 1.066,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -3,
 				ty: 10.2,
 				a: 1.377,
@@ -641,7 +641,7 @@ export let run = {
 				d: 1.03,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.55,
 				ty: 7.75,
 				a: 1.209,
@@ -657,7 +657,7 @@ export let run = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.5,
 				ty: 9.85,
 				a: 1.333,
@@ -666,7 +666,7 @@ export let run = {
 				d: 1.31,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -1.4,
 				ty: 7.6,
 				a: 1.202,
@@ -686,7 +686,7 @@ export let run = {
 				d: 0.515,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -11.75,
 				ty: 0.3,
 				a: 0.28,
@@ -695,7 +695,7 @@ export let run = {
 				d: 0.28,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -9.15,
 				ty: 6.35,
 				a: 0.28,
@@ -713,7 +713,7 @@ export let run = {
 				d: 0.328,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -7.5,
 				ty: -1.75,
 				a: 0.263,
@@ -731,7 +731,7 @@ export let run = {
 				d: 0.328,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -12.4,
 				ty: 3.6,
 				a: -0.12,
@@ -740,7 +740,7 @@ export let run = {
 				d: -0.167,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.15,
 				ty: 8.55,
 				a: -0.28,
@@ -767,7 +767,7 @@ export let run = {
 				d: 1.057,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.4,
 				ty: 10.4,
 				a: 1.363,
@@ -776,7 +776,7 @@ export let run = {
 				d: 1.125,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 4.15,
 				ty: 8.25,
 				a: 1.212,
@@ -794,7 +794,7 @@ export let run = {
 				d: 1.235,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.05,
 				ty: 9.15,
 				a: 1.319,
@@ -803,7 +803,7 @@ export let run = {
 				d: 1.292,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0.2,
 				ty: 7.35,
 				a: 1.207,
@@ -823,7 +823,7 @@ export let run = {
 				d: 0.748,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: -7.25,
 				ty: -1.25,
 				a: 0.496,
@@ -832,7 +832,7 @@ export let run = {
 				d: 0.496,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -5.8,
 				ty: 5.45,
 				a: 0.496,
@@ -850,7 +850,7 @@ export let run = {
 				d: 0.58,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -2.55,
 				ty: -2.35,
 				a: 0.466,
@@ -868,7 +868,7 @@ export let run = {
 				d: 0.58,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: -8.7,
 				ty: 2.45,
 				a: 0.043,
@@ -877,7 +877,7 @@ export let run = {
 				d: 0.059,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -7.35,
 				ty: 7.35,
 				a: -0.496,
@@ -904,7 +904,7 @@ export let run = {
 				d: 1.032,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 0.3,
 				ty: 10.6,
 				a: 1.333,
@@ -913,7 +913,7 @@ export let run = {
 				d: 1.201,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 5.65,
 				ty: 8.85,
 				a: 1.198,
@@ -931,7 +931,7 @@ export let run = {
 				d: 1.206,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -2.75,
 				ty: 8.3,
 				a: 1.304,
@@ -940,7 +940,7 @@ export let run = {
 				d: 1.274,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 1.9,
 				ty: 7.1,
 				a: 1.193,

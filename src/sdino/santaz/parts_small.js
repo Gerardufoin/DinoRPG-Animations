@@ -2,7 +2,7 @@
 
 import { ref } from '../references_small.js';
 
-export let parts = {
+export const parts_small = {
 	// 779
 	leg: [
 		// 776
@@ -92,33 +92,38 @@ export let parts = {
 	],
 	// 794 special
 	special: [
-		// 789
 		{
-			special: true,
-			colorIdx: 2,
-			ref: ref.santaz.special_fluff
-		},
-		// 791
-		{
-			special: true,
-			ref: ref.santaz.special_collar,
-			transform: {
-				tx: 4.4,
-				ty: 9.15,
-				a: 0.192,
-				d: 0.192
-			}
-		},
-		// 793
-		{
-			special: true,
-			ref: ref.santaz.special_bell,
-			transform: {
-				tx: 3.55,
-				ty: 13.55,
-				a: 0.28,
-				d: 0.28
-			}
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				[
+					// 789
+					{
+						colorIdx: 2,
+						ref: ref.santaz.special_fluff
+					},
+					// 791
+					{
+						ref: ref.santaz.special_collar,
+						transform: {
+							tx: 4.4,
+							ty: 9.15,
+							a: 0.192,
+							d: 0.192
+						}
+					},
+					// 793
+					{
+						ref: ref.santaz.special_bell,
+						transform: {
+							tx: 3.55,
+							ty: 13.55,
+							a: 0.28,
+							d: 0.28
+						}
+					}
+				]
+			]
 		}
 	],
 	// 798 p3

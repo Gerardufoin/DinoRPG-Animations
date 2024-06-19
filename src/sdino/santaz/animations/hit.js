@@ -1,6 +1,6 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'santaz_hit',
 	frames: [
 		{
@@ -13,14 +13,14 @@ export let hit = {
 				d: 1.226,
 				l: 14
 			},
-			left_antler: {
+			l_antler: {
 				tx: 4.1,
 				ty: -6.3,
 				a: -1.066,
 				d: 1.066,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: 6.95,
 				ty: -1.2,
 				a: -1.41,
@@ -36,7 +36,7 @@ export let hit = {
 				d: 1.245,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: 0.9,
 				ty: -2.6,
 				a: -1,
@@ -49,7 +49,7 @@ export let hit = {
 				d: 1.245,
 				l: 9
 			},
-			right_antler: {
+			r_antler: {
 				tx: 9.2,
 				ty: -6.45,
 				a: -0.611,
@@ -58,7 +58,7 @@ export let hit = {
 				d: 0.85,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: 12.05,
 				ty: -2.4,
 				a: 0.952,
@@ -83,7 +83,7 @@ export let hit = {
 				d: 1.066,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.4,
 				ty: 9.75,
 				a: 1.254,
@@ -92,7 +92,7 @@ export let hit = {
 				d: 1.216,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 5.4,
 				ty: 8.45,
 				a: 1.147,
@@ -108,7 +108,7 @@ export let hit = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -3.75,
 				ty: 3.4,
 				a: 0.591,
@@ -117,7 +117,7 @@ export let hit = {
 				d: 0.51,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 3.05,
 				ty: 5.45,
 				a: 1.202,
