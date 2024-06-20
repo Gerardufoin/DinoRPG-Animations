@@ -52,7 +52,7 @@ export const parts_big = {
 			parts: [
 				{
 					colorIdx: 1,
-					ref: ref.santaz.right_eye_eyelid,
+					ref: ref.santaz.eyelid,
 					transform: {
 						tx: 0.7,
 						ty: 3.65
@@ -196,7 +196,10 @@ export const parts_big = {
 				// 1933
 				{
 					colorIdx: 2,
-					ref: ref.santaz.back_long
+					ref: ref.santaz.back_long,
+					transform: {
+						ty: -2
+					}
 				},
 				// 1931
 				{
@@ -363,7 +366,7 @@ export const parts_big = {
 					// 1957
 					{
 						colorIdx: 3,
-						ref: ref.santaz.antler_goat,
+						ref: ref.santaz.antlers_goat,
 						transform: {
 							tx: 42.25,
 							ty: -24.55
@@ -371,14 +374,14 @@ export const parts_big = {
 					},
 					// 1958
 					{
-						ref: ref.santaz.antler_goat_highlight
+						ref: ref.santaz.antlers_goat_highlight
 					}
 				],
 				[
 					// 1960
 					{
 						colorIdx: 3,
-						ref: ref.santaz.antler_small,
+						ref: ref.santaz.antlers_small,
 						transform: {
 							tx: 42.25,
 							ty: -24.55
@@ -395,14 +398,14 @@ export const parts_big = {
 					},
 					// 1961
 					{
-						ref: ref.santaz.antler_small_highlight
+						ref: ref.santaz.antlers_small_highlight
 					}
 				],
 				[
 					// 1963
 					{
 						colorIdx: 3,
-						ref: ref.santaz.antler_hook,
+						ref: ref.santaz.antlers_hook,
 						transform: {
 							tx: 42.25,
 							ty: -24.55
@@ -419,14 +422,14 @@ export const parts_big = {
 					},
 					// 1964
 					{
-						ref: ref.santaz.antler_hook_highlight
+						ref: ref.santaz.antlers_hook_highlight
 					}
 				],
 				[
 					// 1966
 					{
 						colorIdx: 3,
-						ref: ref.santaz.antler_spiral,
+						ref: ref.santaz.antlers_spiral,
 						transform: {
 							tx: 42.25,
 							ty: -24.55
@@ -770,19 +773,260 @@ export const parts_big = {
 		}
 	],
 	// 2016 p3a
-	left_eye: [],
+	left_eye: [
+		// 2011
+		{
+			colorIdx: 0,
+			ref: ref.santaz.left_eye_skin,
+			transform: {
+				tx: -4.45,
+				ty: 1.1
+			}
+		},
+		// 2012
+		{
+			ref: ref.santaz.left_eye
+		},
+		// 2014
+		{
+			colorIdx: 1,
+			ref: ref.santaz.left_eye_socket
+		},
+		// 2015
+		{
+			ref: ref.santaz.left_eye_highlight
+		},
+		// 1908
+		{
+			partIdx: 3,
+			frames: [-1, 0],
+			parts: [
+				{
+					colorIdx: 1,
+					ref: ref.santaz.eyelid,
+					transform: {
+						tx: -0.45,
+						ty: 4.55
+					}
+				}
+			]
+		}
+	],
 	// 2025 p5a
-	beard: [],
+	beard: [
+		{
+			partIdx: 5,
+			frames: [0, 1, 2, 3],
+			parts: [
+				// 2018
+				{
+					colorIdx: 1,
+					ref: ref.santaz.beard
+				},
+				// 2020
+				{
+					colorIdx: 1,
+					ref: ref.santaz.beard_small
+				},
+				// 2022
+				{
+					colorIdx: 1,
+					ref: ref.santaz.beard_wide
+				},
+				// 2024
+				{
+					colorIdx: 1,
+					ref: ref.santaz.beard_tuft
+				}
+			]
+		}
+	],
 	// 2028
-	mouth: [],
+	mouth: [
+		{
+			colorIdx: 1,
+			ref: ref.santaz.mouth
+		}
+	],
 	// 2035 p5b
-	left_sideburn: [],
+	left_sideburn: [
+		{
+			partIdx: 5,
+			frames: [0, 1, 2],
+			parts: [
+				// 2030
+				{
+					colorIdx: 1,
+					ref: ref.santaz.left_sideburn,
+					transform: {
+						tx: 35.55,
+						ty: -9.8
+					}
+				},
+				// 2032
+				{
+					colorIdx: 1,
+					ref: ref.santaz.left_sideburn_up,
+					transform: {
+						tx: 35.55,
+						ty: -9.8
+					}
+				},
+				// 2034
+				{
+					colorIdx: 1,
+					ref: ref.santaz.left_sideburn_long,
+					transform: {
+						tx: 35.55,
+						ty: -9.8
+					}
+				}
+			]
+		}
+	],
 	// 2038 p7a
-	left_ear: [],
-	// 2057_p9
-	hair: [],
+	left_ear: [
+		{
+			partIdx: 7,
+			frames: [0, 1],
+			parts: [
+				// 2037
+				{
+					colorIdx: 1,
+					ref: ref.santaz.left_ear,
+					transform: {
+						tx: -0.1
+					}
+				},
+				// 2037
+				{
+					colorIdx: 1,
+					ref: ref.santaz.left_ear,
+					transform: {
+						tx: -2.75,
+						ty: -1.9,
+						a: 0.745,
+						d: 0.745,
+						b: -0.196,
+						c: 0.196
+					}
+				}
+			]
+		}
+	],
+	// 2057 p9
+	hair: [
+		{
+			partIdx: 9,
+			frames: [0, 1, 2, 3, 4, 5],
+			parts: [
+				[
+					// 2039
+					{
+						ref: ref.santaz.hair_shadow
+					},
+					// 2041
+					{
+						colorIdx: 2,
+						ref: ref.santaz.hair,
+						transform: {
+							tx: 22.7,
+							ty: -9.05
+						}
+					}
+				],
+				[
+					// 2042
+					{
+						ref: ref.santaz.hair_lock_shadow
+					},
+					// 2044
+					{
+						colorIdx: 2,
+						ref: ref.santaz.hair_lock,
+						transform: {
+							tx: 22.7,
+							ty: -8.4
+						}
+					}
+				],
+				[
+					// 2045
+					{
+						ref: ref.santaz.hair_split_shadow
+					},
+					// 2046
+					{
+						colorIdx: 2,
+						ref: ref.santaz.hair_split,
+						transform: {
+							tx: 22.7,
+							ty: -8.4
+						}
+					}
+				],
+				[
+					// 2049
+					{
+						colorIdx: 2,
+						ref: ref.santaz.hair_back,
+						transform: {
+							tx: 22.7,
+							ty: -9.05
+						}
+					}
+				],
+				[
+					// 2050
+					{
+						ref: ref.santaz.hair_front_shadow
+					},
+					// 2052
+					{
+						colorIdx: 2,
+						ref: ref.santaz.hair_front,
+						transform: {
+							tx: 19.5,
+							ty: -9.05,
+							a: 1.114,
+							d: 1
+						}
+					}
+				],
+				[
+					// 2056
+					{
+						colorIdx: 2,
+						ref: ref.santaz.hair_spike,
+						transform: {
+							tx: 19.5,
+							ty: -9.05,
+							a: 1.114,
+							d: 1
+						}
+					}
+				]
+			]
+		}
+	],
 	// 2060 p8c
-	antlers_side: [],
+	antlers_side: [
+		{
+			partIdx: 8,
+			frames: [-1, -1, -1, -1, 0, -1, -1, -1],
+			parts: [
+				// 2059
+				{
+					colorIdx: 3,
+					ref: ref.santaz.antlers_side_goat,
+					transform: {
+						tx: 1.8,
+						ty: -30.1
+					}
+				}
+			]
+		}
+	],
 	// 293
 	view: [
 		{
