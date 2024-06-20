@@ -36,7 +36,7 @@ export class Werewolf extends Invocation {
 	}
 
 	/**
-	 * Show Raijin aura once the descend is over.
+	 * Show Werewolf eyes once the descend is over.
 	 */
 	descended() {
 		this._eyes.playing = true;

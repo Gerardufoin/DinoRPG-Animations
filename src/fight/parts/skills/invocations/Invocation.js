@@ -39,7 +39,9 @@ export class Invocation extends Part {
 	 */
 	constructor(scene) {
 		super(new Container(), scene);
-		this._root.addChild(this._body);
+		const whiteContainer = new Container();
+		whiteContainer.addChild(this._body);
+		this._root.addChild(whiteContainer);
 
 		this._x = SCENE_WIDTH / 2;
 		this._y = this._scene.getGY(SCENE_HEIGHT - 25);
@@ -48,7 +50,7 @@ export class Invocation extends Part {
 		this._ray = 100;
 		this.updatePos();
 
-		this._root.filters = [Invocation.WhiteFilter];
+		whiteContainer.filters = [Invocation.WhiteFilter];
 		this.fade(0);
 	}
 

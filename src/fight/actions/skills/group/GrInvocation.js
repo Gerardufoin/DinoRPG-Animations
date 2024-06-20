@@ -12,6 +12,7 @@ import { Djinn } from '../../../parts/skills/invocations/Djinn.js';
 import { Fairies } from '../../../parts/skills/invocations/Fairies.js';
 import { Fujin } from '../../../parts/skills/invocations/Fujin.js';
 import { Golem } from '../../../parts/skills/invocations/Golem.js';
+import { Hades } from '../../../parts/skills/invocations/Hades.js';
 import { Ifrit } from '../../../parts/skills/invocations/Ifrit.js';
 import { Invocation } from '../../../parts/skills/invocations/Invocation.js';
 import { Ondine } from '../../../parts/skills/invocations/Ondine.js';
@@ -81,6 +82,7 @@ export class GrInvocation extends GroupEffect {
 				this._invoc = new Yggdrasil(this._scene);
 				break;
 			case 'hades':
+				this._invoc = new Hades(this._scene);
 				break;
 			case 'salama':
 				break;
