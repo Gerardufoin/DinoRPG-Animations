@@ -1,6 +1,6 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'feross_jump',
 	frames: [
 		{
@@ -13,7 +13,7 @@ export let jump = {
 				d: 0.966,
 				l: 11
 			},
-			left_nostril: {
+			l_nostril: {
 				tx: -7.65,
 				ty: 4.05,
 				a: 0.916,
@@ -31,7 +31,7 @@ export let jump = {
 				d: 0.916,
 				l: 9
 			},
-			left_eye: {
+			l_eye: {
 				tx: -5.95,
 				ty: -1.2,
 				a: 1.011,
@@ -40,7 +40,7 @@ export let jump = {
 				d: 1.011,
 				l: 8
 			},
-			left_ear: {
+			l_ear: {
 				tx: -3.05,
 				ty: -6.3,
 				a: 1.011,
@@ -58,7 +58,7 @@ export let jump = {
 				d: 1.114,
 				l: 6
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.25,
 				ty: 6.5,
 				a: 0.723,
@@ -67,7 +67,7 @@ export let jump = {
 				d: 0.723,
 				l: 5
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.75,
 				ty: 6.35,
 				a: 0.635,
@@ -97,7 +97,7 @@ export let jump = {
 				d: 0.669,
 				l: 1
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.8,
 				ty: -5.3,
 				a: 0.817,

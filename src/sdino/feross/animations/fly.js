@@ -1,10 +1,10 @@
 // @ts-check
 
-export let fly = {
+export const fly = {
 	id: 'feross_fly',
 	frames: [
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -2.95,
 				ty: 4.55,
 				a: 0.966,
@@ -13,7 +13,7 @@ export let fly = {
 				d: 0.966,
 				l: 11
 			},
-			left_nostril: {
+			l_nostril: {
 				tx: -7.65,
 				ty: 4.05,
 				a: 0.916,
@@ -40,7 +40,7 @@ export let fly = {
 				d: 0.941,
 				l: 8
 			},
-			left_eye: {
+			l_eye: {
 				tx: -5.95,
 				ty: -1.2,
 				a: 1.011,
@@ -49,7 +49,7 @@ export let fly = {
 				d: 1.011,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: -3.05,
 				ty: -6.3,
 				a: 1.011,
@@ -67,7 +67,7 @@ export let fly = {
 				d: 1.114,
 				l: 5
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 5.85,
 				ty: 5.15,
 				a: -0.079,
@@ -97,7 +97,7 @@ export let fly = {
 				d: 0.669,
 				l: 1
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.8,
 				ty: -5.3,
 				a: 0.817,

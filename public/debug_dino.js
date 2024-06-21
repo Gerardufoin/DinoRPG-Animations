@@ -175,21 +175,21 @@ addDinoz('B7slIovDMmyWd000');
 addDinoz('BAleFPXaxTma6000');
 addDinoz('BAx5zblke9cgx000');*/
 // Santaz
-addDinoz('C9ZnsZXkwu7bB000', true);
+/*addDinoz('C9ZnsZXkwu7bB000', true);
 addDinoz('C7zx3On8Hw1Ji000');
 addDinoz('C9QcPELfYOd1i110');
 addDinoz('C9X4Kmyof9pjf000');
 addDinoz('C97DH3ppWCHdw000');
 addDinoz('C0XqRr24FdQzB000');
-addDinoz('C3ZnbdXjLMtDV000');
+addDinoz('C3ZnbdXjLMtDV000');*/
 // Feross
-/*addDinoz('D9hNs2GNNh4uK000', true);
+addDinoz('D9hNs2GNNh4uK000', true);
 addDinoz('D9PMnhzFbVAl9220');
 addDinoz('D95lCJKCifGXe110');
 addDinoz('D9PWhklw1HxDB000');
 addDinoz('D92i3ZvNKfXea000');
 addDinoz('D8yFAfhjVIGPk000');
-addDinoz('D06fMERxnBfnZ000');*/
+addDinoz('D06fMERxnBfnZ000');
 // Kabuki
 /*addDinoz('E95H6h925l3Sm000', true);
 addDinoz('E9lgeLcaVbVUm000');

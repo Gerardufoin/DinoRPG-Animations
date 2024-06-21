@@ -151,5 +151,18 @@ export const mapping_dino = {
 	'Symbol 2035_p5b': 'l_sideburn',
 	'Symbol 2038_p7a': 'l_ear',
 	'Symbol 2057_p9': 'hair',
-	'Symbol 2060_p8c': 'antlers_side'
+	'Symbol 2060_p8c': 'antlers_side',
+	// 2204 feross
+	'Symbol 2069_p4d': 'r_f_leg',
+	'Symbol 2072': 'butt',
+	'Symbol 2081_p4c': 'l_b_leg',
+	'Symbol 2099_p7': 'body',
+	'Symbol 2109_p4b': 'l_f_leg',
+	'Symbol 2120_p6b': 'r_ear',
+	'Symbol 2136_p8': 'head',
+	'Symbol 2155_p3': 'l_eye',
+	'Symbol 2166_p6a': 'l_ear',
+	'Symbol 2173_special': 'special',
+	'Symbol 2183_p4': 'nostrils',
+	'Symbol 2203_p5': 'horn'
 };

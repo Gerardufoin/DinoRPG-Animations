@@ -1,6 +1,6 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'feross_hit',
 	frames: [
 		{
@@ -10,7 +10,7 @@ export let hit = {
 				a: -1,
 				l: 11
 			},
-			left_nostril: {
+			l_nostril: {
 				tx: 7.25,
 				ty: 5.6,
 				a: -1,
@@ -22,12 +22,12 @@ export let hit = {
 				a: -1,
 				l: 9
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.7,
 				ty: 9.8,
 				l: 8
 			},
-			left_eye: {
+			l_eye: {
 				tx: 3.65,
 				ty: 1.5,
 				a: -0.844,
@@ -36,7 +36,7 @@ export let hit = {
 				d: 0.111,
 				l: 7
 			},
-			left_ear: {
+			l_ear: {
 				tx: -1.1,
 				ty: -2.05,
 				a: -1.104,
@@ -50,7 +50,7 @@ export let hit = {
 				d: 1.217,
 				l: 5
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 4.95,
 				ty: 8.65,
 				a: 0.779,
@@ -84,7 +84,7 @@ export let hit = {
 				d: 0.669,
 				l: 1
 			},
-			right_ear: {
+			r_ear: {
 				tx: 6.4,
 				ty: -4.2,
 				a: -1.045,

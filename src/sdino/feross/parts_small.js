@@ -1,7 +1,7 @@
 // @ts-check
 import { ref } from '../references_small.js';
 
-export let parts = {
+export let parts_small = {
 	// 858 p6
 	ear: [
 		// 857
