@@ -445,15 +445,380 @@ export const parts_big = {
 		}
 	],
 	// 2155 p3
-	left_eye: [],
+	left_eye: [
+		{
+			partIdx: 3,
+			frames: [0, 1, 2],
+			parts: [
+				[
+					// 2137
+					{
+						ref: ref.feross.left_eye
+					},
+					// 2139
+					{
+						colorIdx: 2,
+						ref: ref.feross.left_eye_pupil,
+						transform: {
+							tx: -31.75,
+							ty: 3.6
+						}
+					},
+					// 2141
+					{
+						colorIdx: 0,
+						ref: ref.feross.left_eye_socket
+					},
+					// 2142
+					{
+						ref: ref.feross.left_eye_highlight
+					}
+				],
+				[
+					// 2143
+					{
+						ref: ref.feross.left_eye_weird
+					},
+					// 2145
+					{
+						colorIdx: 2,
+						ref: ref.feross.left_eye_weird_pupil,
+						transform: {
+							tx: -29.95,
+							ty: 5.3
+						}
+					},
+					// 2147
+					{
+						colorIdx: 0,
+						ref: ref.feross.left_eye_weird_socket
+					},
+					// 2148
+					{
+						ref: ref.feross.left_eye_weird_highlight
+					}
+				],
+				[
+					// 2149
+					{
+						ref: ref.feross.left_eye_big
+					},
+					// 2151
+					{
+						colorIdx: 2,
+						ref: ref.feross.left_eye_big_pupil,
+						transform: {
+							tx: -32.7,
+							ty: 6
+						}
+					},
+					// 2153
+					{
+						colorIdx: 0,
+						ref: ref.feross.left_eye_big_socket
+					},
+					// 2154
+					{
+						ref: ref.feross.left_eye_big_highlight
+					}
+				]
+			]
+		}
+	],
 	// 2166 p6a
-	left_ear: [],
+	left_ear: [
+		{
+			partIdx: 6,
+			frames: [0, 1, 2, 3, 4],
+			transform: {
+				tx: 36.65,
+				ty: -8.6
+			},
+			parts: [
+				// 2157
+				{
+					colorIdx: 0,
+					ref: ref.feross.left_ear
+				},
+				// 2159
+				{
+					colorIdx: 0,
+					ref: ref.feross.left_ear_flame
+				},
+				// 2161
+				{
+					colorIdx: 0,
+					ref: ref.feross.left_ear_square
+				},
+				// 2163
+				{
+					colorIdx: 0,
+					ref: ref.feross.left_ear_spike
+				},
+				// 2165
+				{
+					colorIdx: 0,
+					ref: ref.feross.left_ear_small
+				}
+			]
+		}
+	],
 	// 2173 special
-	special: [],
+	special: [
+		{
+			partIdx: 15,
+			frames: [-1, 0, 1],
+			parts: [
+				[
+					// 2167
+					{
+						ref: ref.feross.special_skull
+					},
+					// 2169
+					{
+						colorIdx: 2,
+						ref: ref.feross.special_skull_feather,
+						transform: {
+							tx: 19.65,
+							ty: -29.65
+						}
+					},
+					// 2170
+					{
+						ref: ref.feross.special_skull_shadows
+					}
+				],
+				// 2172
+				{
+					ref: ref.feross.special_christmas,
+					transform: {
+						tx: 8.75,
+						ty: -21.4
+					}
+				}
+			]
+		}
+	],
 	// 2183 p4
-	nostrils: [],
+	nostrils: [
+		{
+			partIdx: 4,
+			frames: [0, 1, 2, 3],
+			parts: [
+				[
+					// 2175
+					{
+						colorIdx: 0,
+						ref: ref.feross.nostrils
+					},
+					// 2176
+					{
+						ref: ref.feross.nostrils_highlight
+					}
+				],
+				// 2178
+				{
+					colorIdx: 0,
+					ref: ref.feross.nostrils_round
+				},
+				// 2180
+				{
+					colorIdx: 0,
+					ref: ref.feross.nostrils_small
+				},
+				// 2182
+				{
+					colorIdx: 0,
+					ref: ref.feross.nostrils_pointy,
+					transform: {
+						tx: 26.3,
+						ty: -6.55
+					}
+				}
+			]
+		}
+	],
 	// 2203 p5
-	horn: [],
+	horn: [
+		{
+			partIdx: 5,
+			frames: [0, 0, 0, 1, 1, 2, 2, 3, 4],
+			parts: [
+				[
+					// 2185
+					{
+						colorIdx: 0,
+						ref: ref.feross.horn_socket,
+						transform: {
+							tx: 1.55,
+							ty: 3.25
+						}
+					},
+					// 2186 (should be part of 2190...)
+					{
+						ref: ref.feross.horn_adds
+					},
+					// 2190
+					{
+						partIdx: 1,
+						frames: [0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2],
+						transform: {
+							tx: -1.7,
+							ty: -2
+						},
+						parts: [
+							// 2187
+							{
+								ref: ref.feross.horn_young
+							},
+							// 2188
+							{
+								ref: ref.feross.horn_adolescent
+							},
+							// 2189
+							{
+								ref: ref.feross.horn_adult
+							}
+						]
+					}
+				],
+				[
+					// 2192
+					{
+						colorIdx: 0,
+						ref: ref.feross.horn_socket_alt,
+						transform: {
+							tx: 1.7,
+							ty: 5.55
+						}
+					},
+					// 2196
+					{
+						partIdx: 1,
+						frames: [0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2],
+						transform: {
+							tx: -0.55,
+							ty: 2.85
+						},
+						parts: [
+							// 2193
+							{
+								ref: ref.feross.horn_curled_young
+							},
+							// 2194
+							{
+								ref: ref.feross.horn_curled_adolescent
+							},
+							// 2195
+							{
+								ref: ref.feross.horn_curled_adult
+							}
+						]
+					}
+				],
+				[
+					// 2192
+					{
+						colorIdx: 0,
+						ref: ref.feross.horn_socket_alt,
+						transform: {
+							tx: 1.7,
+							ty: 5.55
+						}
+					},
+					// 2192
+					{
+						colorIdx: 0,
+						ref: ref.feross.horn_socket_alt,
+						transform: {
+							tx: 5.55,
+							ty: -8.75,
+							a: 0.642,
+							d: 0.642
+						}
+					},
+					// 2200
+					{
+						partIdx: 1,
+						frames: [0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2],
+						transform: {
+							tx: 4.15,
+							ty: -10.35,
+							a: 0.634,
+							d: 0.634
+						},
+						parts: [
+							// 2197
+							{
+								ref: ref.feross.horn_small_young
+							},
+							// 2198
+							{
+								ref: ref.feross.horn_small_adolescent
+							},
+							// 2199
+							{
+								ref: ref.feross.horn_small_adult
+							}
+						]
+					},
+					// 2200
+					{
+						partIdx: 1,
+						frames: [0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2],
+						transform: {
+							tx: -0.55,
+							ty: 2.85
+						},
+						parts: [
+							// 2197
+							{
+								ref: ref.feross.horn_small_young
+							},
+							// 2198
+							{
+								ref: ref.feross.horn_small_adolescent
+							},
+							// 2199
+							{
+								ref: ref.feross.horn_small_adult
+							}
+						]
+					}
+				],
+				[
+					// 2192
+					{
+						colorIdx: 0,
+						ref: ref.feross.horn_socket_alt,
+						transform: {
+							tx: 1.7,
+							ty: 5.55
+						}
+					},
+					// 2201
+					{
+						ref: ref.feross.horn_t
+					}
+				],
+				[
+					// 2192
+					{
+						colorIdx: 0,
+						ref: ref.feross.horn_socket_alt,
+						transform: {
+							tx: 1.7,
+							ty: 5.55
+						}
+					},
+					// 2202
+					{
+						ref: ref.feross.horn_l
+					}
+				]
+			]
+		}
+	],
 	// 293
 	view: [
 		{
