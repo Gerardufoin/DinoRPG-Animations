@@ -4,15 +4,6 @@ export const jump = {
 	id: 'feross_jump',
 	frames: [
 		{
-			special: {
-				tx: -15.55,
-				ty: -4.8,
-				a: 0.966,
-				b: -0.259,
-				c: 0.259,
-				d: 0.966,
-				l: 11
-			},
 			l_nostril: {
 				tx: -7.65,
 				ty: 4.05,
@@ -20,7 +11,7 @@ export const jump = {
 				b: -0.399,
 				c: 0.399,
 				d: 0.916,
-				l: 10
+				l: 11
 			},
 			horn: {
 				tx: -11.5,
@@ -29,6 +20,15 @@ export const jump = {
 				b: -0.399,
 				c: 0.399,
 				d: 0.916,
+				l: 10
+			},
+			special: {
+				tx: -15.55,
+				ty: -4.8,
+				a: 0.966,
+				b: -0.259,
+				c: 0.259,
+				d: 0.966,
 				l: 9
 			},
 			l_eye: {

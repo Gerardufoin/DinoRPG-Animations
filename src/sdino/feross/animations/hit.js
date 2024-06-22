@@ -4,10 +4,9 @@ export const hit = {
 	id: 'feross_hit',
 	frames: [
 		{
-			special: {
-				tx: 12.45,
-				ty: -4.85,
-				a: -1,
+			l_f_leg: {
+				tx: -0.7,
+				ty: 9.8,
 				l: 11
 			},
 			l_nostril: {
@@ -22,9 +21,10 @@ export const hit = {
 				a: -1,
 				l: 9
 			},
-			l_f_leg: {
-				tx: -0.7,
-				ty: 9.8,
+			special: {
+				tx: 12.45,
+				ty: -4.85,
+				a: -1,
 				l: 8
 			},
 			l_eye: {

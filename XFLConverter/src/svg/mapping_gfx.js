@@ -249,6 +249,10 @@ export const mapping_gfx = {
 	473: '../invocations/ondine/water_mask_21',
 	474: '../invocations/ondine/water_mask_22',*/
 	479: '../invocations/buddah/halo',
+	515: '../invocations/salamander/explosion',
+	516: '../invocations/salamander/explosion_wind_1',
+	517: '../invocations/salamander/explosion_wind_2',
+	518: '../invocations/salamander/explosion_wind_3',
 	581: 'fx/projectile/rock_shard',
 	584: 'scene/click',
 	586: 'status/slow',

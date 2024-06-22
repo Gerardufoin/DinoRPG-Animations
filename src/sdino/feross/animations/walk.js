@@ -4,9 +4,9 @@ export const walk = {
 	id: 'feross_walk',
 	frames: [
 		{
-			special: {
-				tx: -14.75,
-				ty: -1.1,
+			l_f_leg: {
+				tx: -1.8,
+				ty: 9.8,
 				l: 11
 			},
 			l_nostril: {
@@ -19,9 +19,9 @@ export const walk = {
 				ty: 5.25,
 				l: 9
 			},
-			l_f_leg: {
-				tx: -1.8,
-				ty: 9.8,
+			special: {
+				tx: -14.75,
+				ty: -1.1,
 				l: 8
 			},
 			l_eye: {
@@ -82,9 +82,9 @@ export const walk = {
 			}
 		},
 		{
-			special: {
-				tx: -14.75,
-				ty: -1.1,
+			l_f_leg: {
+				tx: -1.65,
+				ty: 9.4,
 				l: 11
 			},
 			l_nostril: {
@@ -97,9 +97,9 @@ export const walk = {
 				ty: 5.15,
 				l: 9
 			},
-			l_f_leg: {
-				tx: -1.65,
-				ty: 9.4,
+			special: {
+				tx: -14.75,
+				ty: -1.1,
 				l: 8
 			},
 			l_eye: {
@@ -160,9 +160,9 @@ export const walk = {
 			}
 		},
 		{
-			special: {
-				tx: -14.75,
-				ty: -1.1,
+			l_f_leg: {
+				tx: -1.5,
+				ty: 9,
 				l: 11
 			},
 			l_nostril: {
@@ -175,9 +175,9 @@ export const walk = {
 				ty: 5.1,
 				l: 9
 			},
-			l_f_leg: {
-				tx: -1.5,
-				ty: 9,
+			special: {
+				tx: -14.75,
+				ty: -1.1,
 				l: 8
 			},
 			l_eye: {
@@ -238,9 +238,9 @@ export const walk = {
 			}
 		},
 		{
-			special: {
-				tx: -14.75,
-				ty: -1.1,
+			l_f_leg: {
+				tx: -1.4,
+				ty: 8.55,
 				l: 11
 			},
 			l_nostril: {
@@ -253,9 +253,9 @@ export const walk = {
 				ty: 5,
 				l: 9
 			},
-			l_f_leg: {
-				tx: -1.4,
-				ty: 8.55,
+			special: {
+				tx: -14.75,
+				ty: -1.1,
 				l: 8
 			},
 			l_eye: {
@@ -316,9 +316,9 @@ export const walk = {
 			}
 		},
 		{
-			special: {
-				tx: -14.75,
-				ty: -1.1,
+			l_f_leg: {
+				tx: -1.25,
+				ty: 8.15,
 				l: 11
 			},
 			l_nostril: {
@@ -331,9 +331,9 @@ export const walk = {
 				ty: 4.9,
 				l: 9
 			},
-			l_f_leg: {
-				tx: -1.25,
-				ty: 8.15,
+			special: {
+				tx: -14.75,
+				ty: -1.1,
 				l: 8
 			},
 			l_eye: {
@@ -394,9 +394,13 @@ export const walk = {
 			}
 		},
 		{
-			special: {
-				tx: -14.75,
-				ty: -1.1,
+			l_f_leg: {
+				tx: -1.8,
+				ty: 8.5,
+				a: 0.999,
+				b: 0.035,
+				c: -0.035,
+				d: 0.999,
 				l: 11
 			},
 			l_nostril: {
@@ -409,13 +413,9 @@ export const walk = {
 				ty: 5,
 				l: 9
 			},
-			l_f_leg: {
-				tx: -1.8,
-				ty: 8.5,
-				a: 0.999,
-				b: 0.035,
-				c: -0.035,
-				d: 0.999,
+			special: {
+				tx: -14.75,
+				ty: -1.1,
 				l: 8
 			},
 			l_eye: {
@@ -476,9 +476,13 @@ export const walk = {
 			}
 		},
 		{
-			special: {
-				tx: -14.75,
-				ty: -1.1,
+			l_f_leg: {
+				tx: -2.35,
+				ty: 8.85,
+				a: 0.997,
+				b: 0.07,
+				c: -0.07,
+				d: 0.997,
 				l: 11
 			},
 			l_nostril: {
@@ -491,13 +495,9 @@ export const walk = {
 				ty: 5.1,
 				l: 9
 			},
-			l_f_leg: {
-				tx: -2.35,
-				ty: 8.85,
-				a: 0.997,
-				b: 0.07,
-				c: -0.07,
-				d: 0.997,
+			special: {
+				tx: -14.75,
+				ty: -1.1,
 				l: 8
 			},
 			l_eye: {
@@ -558,9 +558,13 @@ export const walk = {
 			}
 		},
 		{
-			special: {
-				tx: -14.75,
-				ty: -1.1,
+			l_f_leg: {
+				tx: -2.9,
+				ty: 9.15,
+				a: 0.994,
+				b: 0.105,
+				c: -0.105,
+				d: 0.994,
 				l: 11
 			},
 			l_nostril: {
@@ -573,13 +577,9 @@ export const walk = {
 				ty: 5.15,
 				l: 9
 			},
-			l_f_leg: {
-				tx: -2.9,
-				ty: 9.15,
-				a: 0.994,
-				b: 0.105,
-				c: -0.105,
-				d: 0.994,
+			special: {
+				tx: -14.75,
+				ty: -1.1,
 				l: 8
 			},
 			l_eye: {
@@ -640,9 +640,13 @@ export const walk = {
 			}
 		},
 		{
-			special: {
-				tx: -14.75,
-				ty: -1.1,
+			l_f_leg: {
+				tx: -3.45,
+				ty: 9.55,
+				a: 0.99,
+				b: 0.14,
+				c: -0.14,
+				d: 0.99,
 				l: 11
 			},
 			l_nostril: {
@@ -655,13 +659,9 @@ export const walk = {
 				ty: 5.25,
 				l: 9
 			},
-			l_f_leg: {
-				tx: -3.45,
-				ty: 9.55,
-				a: 0.99,
-				b: 0.14,
-				c: -0.14,
-				d: 0.99,
+			special: {
+				tx: -14.75,
+				ty: -1.1,
 				l: 8
 			},
 			l_eye: {
@@ -722,9 +722,13 @@ export const walk = {
 			}
 		},
 		{
-			special: {
-				tx: -14.75,
-				ty: -1.1,
+			l_f_leg: {
+				tx: -3.05,
+				ty: 9.6,
+				a: 0.994,
+				b: 0.105,
+				c: -0.105,
+				d: 0.994,
 				l: 11
 			},
 			l_nostril: {
@@ -737,13 +741,9 @@ export const walk = {
 				ty: 5.25,
 				l: 9
 			},
-			l_f_leg: {
-				tx: -3.05,
-				ty: 9.6,
-				a: 0.994,
-				b: 0.105,
-				c: -0.105,
-				d: 0.994,
+			special: {
+				tx: -14.75,
+				ty: -1.1,
 				l: 8
 			},
 			l_eye: {
@@ -804,9 +804,13 @@ export const walk = {
 			}
 		},
 		{
-			special: {
-				tx: -14.75,
-				ty: -1.1,
+			l_f_leg: {
+				tx: -2.65,
+				ty: 9.75,
+				a: 0.997,
+				b: 0.07,
+				c: -0.07,
+				d: 0.997,
 				l: 11
 			},
 			l_nostril: {
@@ -819,13 +823,9 @@ export const walk = {
 				ty: 5.25,
 				l: 9
 			},
-			l_f_leg: {
-				tx: -2.65,
-				ty: 9.75,
-				a: 0.997,
-				b: 0.07,
-				c: -0.07,
-				d: 0.997,
+			special: {
+				tx: -14.75,
+				ty: -1.1,
 				l: 8
 			},
 			l_eye: {
@@ -886,9 +886,13 @@ export const walk = {
 			}
 		},
 		{
-			special: {
-				tx: -14.75,
-				ty: -1.1,
+			l_f_leg: {
+				tx: -2.25,
+				ty: 9.75,
+				a: 0.999,
+				b: 0.035,
+				c: -0.035,
+				d: 0.999,
 				l: 11
 			},
 			l_nostril: {
@@ -901,13 +905,9 @@ export const walk = {
 				ty: 5.25,
 				l: 9
 			},
-			l_f_leg: {
-				tx: -2.25,
-				ty: 9.75,
-				a: 0.999,
-				b: 0.035,
-				c: -0.035,
-				d: 0.999,
+			special: {
+				tx: -14.75,
+				ty: -1.1,
 				l: 8
 			},
 			l_eye: {
@@ -968,9 +968,9 @@ export const walk = {
 			}
 		},
 		{
-			special: {
-				tx: -14.75,
-				ty: -1.1,
+			l_f_leg: {
+				tx: -1.8,
+				ty: 9.8,
 				l: 11
 			},
 			l_nostril: {
@@ -983,9 +983,9 @@ export const walk = {
 				ty: 5.25,
 				l: 9
 			},
-			l_f_leg: {
-				tx: -1.8,
-				ty: 9.8,
+			special: {
+				tx: -14.75,
+				ty: -1.1,
 				l: 8
 			},
 			l_eye: {

@@ -17,6 +17,7 @@ import { Ifrit } from '../../../parts/skills/invocations/Ifrit.js';
 import { Invocation } from '../../../parts/skills/invocations/Invocation.js';
 import { Ondine } from '../../../parts/skills/invocations/Ondine.js';
 import { Raijin } from '../../../parts/skills/invocations/Raijin.js';
+import { Salamander } from '../../../parts/skills/invocations/Salamander.js';
 import { Vulcan } from '../../../parts/skills/invocations/Vulcan.js';
 import { Werewolf } from '../../../parts/skills/invocations/Werewolf.js';
 import { Yggdrasil } from '../../../parts/skills/invocations/Yggdrasil.js';
@@ -85,6 +86,7 @@ export class GrInvocation extends GroupEffect {
 				this._invoc = new Hades(this._scene);
 				break;
 			case 'salama':
+				this._invoc = new Salamander(this._scene);
 				break;
 			case 'totem':
 				break;

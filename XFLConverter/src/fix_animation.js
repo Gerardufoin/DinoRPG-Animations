@@ -120,11 +120,28 @@ function reduceBlur(animation) {
 	return animation;
 }
 
+function changeLayers(animation, layers) {
+	for (let i = 0; i < animation.length; ++i) {
+		for (const k in animation[i]) {
+			if (layers[k]) {
+				animation[i][k].l = layers[k];
+			}
+		}
+		animation[i] = Object.keys(animation[i])
+			.sort((a, b) => animation[i][b].l - animation[i][a].l)
+			.reduce((newAnim, key) => {
+				newAnim[key] = animation[i][key];
+				return newAnim;
+			}, {});
+	}
+	return animation;
+}
+
 const animation = [];
 
 //const result = mirrorTo(animation, 12, 'r_f_lower_leg');
 //let result = freezeFrame(freezeFrame(animation, 43, 'sp_10', 43), 43, 'sp_4', 43);
 //let result = linearMovement(linearMovement(animation, 'sp_4', 0, 9), 'sp_10', 0, 9);
-let result = reduceBlur(animation);
+let result = changeLayers(animation, { l_f_leg: 11, l_nostril: 10, horn: 9, special: 8, l_eye: 7 });
 
 fs.writeFileSync('./results/animation_fix.txt', JSON.stringify(result, undefined, '\t'));
