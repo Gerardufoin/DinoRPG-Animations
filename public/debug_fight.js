@@ -79,7 +79,7 @@ const fightVersion = [
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: 'D9T1Yt9wqq4Rx010'
+					gfx: 'E9T1Yt9wqq4Rx010'
 				}
 			},
 			{
@@ -114,7 +114,7 @@ const fightVersion = [
 			},
 			{
 				action: 'Announce',
-				message: 'Salamandre',
+				message: 'Totem ancestral Aéroporté',
 				fid: 0
 			},
 			{
@@ -122,7 +122,7 @@ const fightVersion = [
 				skill: 'Invoc',
 				details: {
 					fid: 0,
-					anim: 'salama'
+					anim: 'totem'
 				}
 			}
 			/*{
