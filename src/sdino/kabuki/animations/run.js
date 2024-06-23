@@ -1,6 +1,6 @@
 // @ts-check
 
-export let run = {
+export const run = {
 	id: 'kabuki_run',
 	frames: [
 		{
@@ -9,7 +9,7 @@ export let run = {
 				ty: -8.45,
 				l: 17
 			},
-			right_shoulder: {
+			r_shoulder: {
 				tx: 0.85,
 				ty: -3.8,
 				a: 0.071,
@@ -18,7 +18,7 @@ export let run = {
 				d: -0.071,
 				l: 16
 			},
-			right_arm: {
+			r_arm: {
 				tx: 1.4,
 				ty: -3.6,
 				a: 0.213,
@@ -27,7 +27,7 @@ export let run = {
 				d: -0.213,
 				l: 15
 			},
-			right_foot: {
+			r_foot: {
 				tx: 6.05,
 				ty: -3.35,
 				a: -0.003,
@@ -36,7 +36,7 @@ export let run = {
 				d: 0.003,
 				l: 14
 			},
-			right_leg_top: {
+			r_t_leg: {
 				tx: -6.35,
 				ty: 3.3,
 				a: -0.508,
@@ -45,7 +45,7 @@ export let run = {
 				d: 0.336,
 				l: 13
 			},
-			right_leg_bottom: {
+			r_b_leg: {
 				tx: -4.25,
 				ty: 2.25,
 				a: -0.545,
@@ -54,7 +54,7 @@ export let run = {
 				d: 0.35,
 				l: 12
 			},
-			right_hand: {
+			r_hand: {
 				tx: -8.5,
 				ty: 4.45,
 				a: 0.184,
@@ -92,7 +92,7 @@ export let run = {
 				d: 0.667,
 				l: 7
 			},
-			left_foot: {
+			l_foot: {
 				tx: 0.15,
 				ty: -1,
 				a: -0.398,
@@ -101,7 +101,7 @@ export let run = {
 				d: 0.542,
 				l: 6
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.3,
 				ty: -1.75,
 				a: -0.068,
@@ -110,7 +110,7 @@ export let run = {
 				d: -0.178,
 				l: 5
 			},
-			left_leg_top: {
+			l_t_leg: {
 				tx: 4.6,
 				ty: 1.35,
 				a: -0.183,
@@ -119,7 +119,7 @@ export let run = {
 				d: -0.011,
 				l: 4
 			},
-			left_leg_bottom: {
+			l_b_leg: {
 				tx: 2.15,
 				ty: 0.55,
 				a: -0.328,
@@ -128,7 +128,7 @@ export let run = {
 				d: 0.07,
 				l: 3
 			},
-			left_hand: {
+			l_hand: {
 				tx: 6.95,
 				ty: 2.5,
 				a: -0.161,
@@ -160,7 +160,7 @@ export let run = {
 				ty: -1.15,
 				l: 17
 			},
-			right_shoulder: {
+			r_shoulder: {
 				tx: 2.05,
 				ty: 2.4,
 				a: 0.26,
@@ -169,7 +169,7 @@ export let run = {
 				d: -0.26,
 				l: 16
 			},
-			right_arm: {
+			r_arm: {
 				tx: 4.05,
 				ty: 2.25,
 				a: 0.433,
@@ -178,7 +178,7 @@ export let run = {
 				d: -0.433,
 				l: 15
 			},
-			right_foot: {
+			r_foot: {
 				tx: 7.95,
 				ty: 1,
 				a: 0.502,
@@ -187,7 +187,7 @@ export let run = {
 				d: -0.502,
 				l: 14
 			},
-			right_leg_top: {
+			r_t_leg: {
 				tx: -0.95,
 				ty: 8.9,
 				a: -0.183,
@@ -196,7 +196,7 @@ export let run = {
 				d: -0.011,
 				l: 13
 			},
-			right_leg_bottom: {
+			r_b_leg: {
 				tx: -2.1,
 				ty: 7.55,
 				a: -0.573,
@@ -205,7 +205,7 @@ export let run = {
 				d: 0.36,
 				l: 12
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.7,
 				ty: 9.8,
 				a: 0.083,
@@ -243,7 +243,7 @@ export let run = {
 				d: 0.667,
 				l: 7
 			},
-			left_foot: {
+			l_foot: {
 				tx: 0.65,
 				ty: 4.8,
 				a: -0.397,
@@ -252,7 +252,7 @@ export let run = {
 				d: 0.542,
 				l: 6
 			},
-			left_arm: {
+			l_arm: {
 				tx: -0.8,
 				ty: 4.1,
 				a: -0.067,
@@ -261,7 +261,7 @@ export let run = {
 				d: -0.176,
 				l: 5
 			},
-			left_leg_top: {
+			l_t_leg: {
 				tx: -0.95,
 				ty: 9.25,
 				a: -0.754,
@@ -270,7 +270,7 @@ export let run = {
 				d: 0.401,
 				l: 4
 			},
-			left_leg_bottom: {
+			l_b_leg: {
 				tx: -0.25,
 				ty: 6.8,
 				a: -0.71,
@@ -279,7 +279,7 @@ export let run = {
 				d: 0.4,
 				l: 3
 			},
-			left_hand: {
+			l_hand: {
 				tx: -1.95,
 				ty: 11.65,
 				a: -0.648,
@@ -311,7 +311,7 @@ export let run = {
 				ty: -4.8,
 				l: 17
 			},
-			right_shoulder: {
+			r_shoulder: {
 				tx: 1.45,
 				ty: -0.8,
 				a: 0.167,
@@ -320,7 +320,7 @@ export let run = {
 				d: -0.167,
 				l: 16
 			},
-			right_arm: {
+			r_arm: {
 				tx: 2.8,
 				ty: -0.7,
 				a: 0.325,
@@ -329,7 +329,7 @@ export let run = {
 				d: -0.325,
 				l: 15
 			},
-			right_foot: {
+			r_foot: {
 				tx: 7,
 				ty: -1.2,
 				a: 0.274,
@@ -338,7 +338,7 @@ export let run = {
 				d: -0.274,
 				l: 14
 			},
-			right_leg_top: {
+			r_t_leg: {
 				tx: -3.65,
 				ty: 6.05,
 				a: -0.745,
@@ -347,7 +347,7 @@ export let run = {
 				d: 0.351,
 				l: 13
 			},
-			right_leg_bottom: {
+			r_b_leg: {
 				tx: -3.15,
 				ty: 4.95,
 				a: -0.559,
@@ -356,7 +356,7 @@ export let run = {
 				d: 0.355,
 				l: 12
 			},
-			right_hand: {
+			r_hand: {
 				tx: -3.8,
 				ty: 6.55,
 				a: 0.083,
@@ -394,7 +394,7 @@ export let run = {
 				d: 0.667,
 				l: 7
 			},
-			left_foot: {
+			l_foot: {
 				tx: 0.4,
 				ty: 1.9,
 				a: -0.396,
@@ -403,7 +403,7 @@ export let run = {
 				d: 0.542,
 				l: 6
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.1,
 				ty: 1.2,
 				a: -0.066,
@@ -412,7 +412,7 @@ export let run = {
 				d: -0.176,
 				l: 5
 			},
-			left_leg_top: {
+			l_t_leg: {
 				tx: 1.8,
 				ty: 5.3,
 				a: -0.646,
@@ -421,7 +421,7 @@ export let run = {
 				d: 0.268,
 				l: 4
 			},
-			left_leg_bottom: {
+			l_b_leg: {
 				tx: 0.9,
 				ty: 3.7,
 				a: -0.716,
@@ -430,7 +430,7 @@ export let run = {
 				d: 0.323,
 				l: 3
 			},
-			left_hand: {
+			l_hand: {
 				tx: 2.5,
 				ty: 7.1,
 				a: -0.558,
@@ -462,7 +462,7 @@ export let run = {
 				ty: -8.45,
 				l: 17
 			},
-			right_shoulder: {
+			r_shoulder: {
 				tx: 0.85,
 				ty: -3.8,
 				a: 0.071,
@@ -471,7 +471,7 @@ export let run = {
 				d: -0.071,
 				l: 16
 			},
-			right_arm: {
+			r_arm: {
 				tx: 1.4,
 				ty: -3.6,
 				a: 0.213,
@@ -480,7 +480,7 @@ export let run = {
 				d: -0.213,
 				l: 15
 			},
-			right_foot: {
+			r_foot: {
 				tx: 6.05,
 				ty: -3.35,
 				a: -0.003,
@@ -489,7 +489,7 @@ export let run = {
 				d: 0.003,
 				l: 14
 			},
-			right_leg_top: {
+			r_t_leg: {
 				tx: -6.35,
 				ty: 3.3,
 				a: -0.508,
@@ -498,7 +498,7 @@ export let run = {
 				d: 0.336,
 				l: 13
 			},
-			right_leg_bottom: {
+			r_b_leg: {
 				tx: -4.25,
 				ty: 2.25,
 				a: -0.545,
@@ -507,7 +507,7 @@ export let run = {
 				d: 0.35,
 				l: 12
 			},
-			right_hand: {
+			r_hand: {
 				tx: -8.5,
 				ty: 4.45,
 				a: 0.184,
@@ -545,7 +545,7 @@ export let run = {
 				d: 0.667,
 				l: 7
 			},
-			left_foot: {
+			l_foot: {
 				tx: 0.15,
 				ty: -1,
 				a: -0.398,
@@ -554,7 +554,7 @@ export let run = {
 				d: 0.542,
 				l: 6
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.3,
 				ty: -1.75,
 				a: -0.068,
@@ -563,7 +563,7 @@ export let run = {
 				d: -0.178,
 				l: 5
 			},
-			left_leg_top: {
+			l_t_leg: {
 				tx: 4.6,
 				ty: 1.35,
 				a: -0.183,
@@ -572,7 +572,7 @@ export let run = {
 				d: -0.011,
 				l: 4
 			},
-			left_leg_bottom: {
+			l_b_leg: {
 				tx: 2.15,
 				ty: 0.55,
 				a: -0.328,
@@ -581,7 +581,7 @@ export let run = {
 				d: 0.07,
 				l: 3
 			},
-			left_hand: {
+			l_hand: {
 				tx: 6.95,
 				ty: 2.5,
 				a: -0.161,

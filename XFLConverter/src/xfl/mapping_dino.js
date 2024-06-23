@@ -164,5 +164,21 @@ export const mapping_dino = {
 	'Symbol 2166_p6a': 'l_ear',
 	'Symbol 2173_special': 'special',
 	'Symbol 2183_p4': 'nostrils',
-	'Symbol 2203_p5': 'horn'
+	'Symbol 2203_p5': 'horn',
+	// 2354 kabuki
+	'Symbol 2215_p6b': 'r_leg',
+	'Symbol 2228_p5': 'r_shoulder',
+	'Symbol 2228_p5b': 'l_shoulder',
+	'Symbol 2241_p9a': 'r_arm',
+	'Symbol 2252_p8': 'hair',
+	'Symbol 2263_p6': 'l_leg',
+	'Symbol 2267': 'body',
+	'Symbol 2271_p2': 'head',
+	'Symbol 2274_p4': 'mouth',
+	'Symbol 2290_p3': 'eyes',
+	'Symbol 2309_p8b': 'l_arm',
+	'Symbol 2311': 'ears',
+	'Symbol 2341_p7': 'f_hair',
+	'Symbol 2348_p8c': 'l_arm_front',
+	'Symbol 2353_special': 'special'
 };

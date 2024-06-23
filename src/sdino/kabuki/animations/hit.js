@@ -1,6 +1,6 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'kabuki_hit',
 	frames: [
 		{
@@ -13,7 +13,7 @@ export let hit = {
 				d: 0.966,
 				l: 17
 			},
-			right_shoulder: {
+			r_shoulder: {
 				tx: 6.8,
 				ty: 2.75,
 				a: -0.366,
@@ -22,7 +22,7 @@ export let hit = {
 				d: 0.366,
 				l: 16
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5.05,
 				ty: 3.9,
 				a: -0.544,
@@ -31,7 +31,7 @@ export let hit = {
 				d: 0.544,
 				l: 15
 			},
-			right_foot: {
+			r_foot: {
 				tx: 1.25,
 				ty: 4.75,
 				a: 0.414,
@@ -40,7 +40,7 @@ export let hit = {
 				d: -0.414,
 				l: 14
 			},
-			right_leg_top: {
+			r_t_leg: {
 				tx: 6.05,
 				ty: 7.4,
 				a: -0.676,
@@ -49,7 +49,7 @@ export let hit = {
 				d: 0.392,
 				l: 13
 			},
-			right_leg_bottom: {
+			r_b_leg: {
 				tx: 6.25,
 				ty: 5.75,
 				a: 0.021,
@@ -58,7 +58,7 @@ export let hit = {
 				d: -0.117,
 				l: 12
 			},
-			right_hand: {
+			r_hand: {
 				tx: 6.25,
 				ty: 9,
 				a: 0.996,
@@ -67,7 +67,7 @@ export let hit = {
 				d: 0.403,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: -1.35,
 				ty: 1.9,
 				a: 0.49,
@@ -112,7 +112,7 @@ export let hit = {
 				d: 0.579,
 				l: 6
 			},
-			left_arm: {
+			l_arm: {
 				tx: 1.75,
 				ty: 2.1,
 				a: -0.321,
@@ -121,7 +121,7 @@ export let hit = {
 				d: 0.321,
 				l: 5
 			},
-			left_leg_top: {
+			l_t_leg: {
 				tx: -1.4,
 				ty: 6.5,
 				a: -0.455,
@@ -130,7 +130,7 @@ export let hit = {
 				d: 0.316,
 				l: 4
 			},
-			left_leg_bottom: {
+			l_b_leg: {
 				tx: 0.8,
 				ty: 5.2,
 				a: -0.321,
@@ -139,7 +139,7 @@ export let hit = {
 				d: 0.259,
 				l: 3
 			},
-			left_hand: {
+			l_hand: {
 				tx: -3.7,
 				ty: 7.65,
 				a: -0.388,

@@ -1,7 +1,7 @@
 // @ts-check
 import { ref } from '../references_small.js';
 
-export let parts = {
+export const parts_small = {
 	// 921
 	shoulder: [
 		// 920 _p5
@@ -149,11 +149,16 @@ export let parts = {
 			ref: ref.kabuki.hair
 		}
 	],
-	// 953 _special
+	// 953 special
 	special: [
 		{
-			special: true,
-			ref: ref.kabuki.special
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				{
+					ref: ref.kabuki.special
+				}
+			]
 		}
 	]
 };
