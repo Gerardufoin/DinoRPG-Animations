@@ -1,10 +1,13 @@
 /* eslint-disable */
 const dinoValues = '0123456789ABCDE';
 const values = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+
+let nbDino = 500;
 /**
  * Get dinoz as a still image tag
  */
 function randomDinoPortrait() {
+	if (nbDino-- <= 0) return;
 	let code = dinoValues.charAt(Math.floor(Math.random() * dinoValues.length));
 	code += values.charAt(Math.floor(Math.random() * 11));
 	// 7 next = body part
@@ -28,12 +31,11 @@ function randomDinoPortrait() {
 			div.onclick = () => {
 				console.log(code);
 			};
+			randomDinoPortrait();
 		},
 		210,
 		165
 	);
 }
 
-for (let i = 0; i < 500; ++i) {
-	randomDinoPortrait();
-}
+randomDinoPortrait();

@@ -1,7 +1,8 @@
 // @ts-check
 
-import { Rectangle, Renderer } from 'pixi.js';
+import { Filter, Rectangle, Renderer } from 'pixi.js';
 import { Animator } from './Animator.js';
+import { exportCorrectionShader } from './shaders/ExportCorrectionShader.js';
 
 /**
  * Allow the transformation from an Animator into an image which can then be displayed in an <img> tag.
@@ -11,6 +12,13 @@ export class ImageExtractor {
 	 * Number of rendering contexts to instantiate.
 	 */
 	static RENDERING_CNTX_COUNT = 3;
+	/**
+	 * Shader to fix an issue with the image export in PixiJS https://github.com/pixijs/pixijs/issues/10035.
+	 * If the dino have a brightness filter applied, artefacts will be created at render.
+	 * Can be removed if it is ever fixed.
+	 * @type {Filter}
+	 */
+	static EXPORT_CLAMP_SHADER = new Filter(undefined, exportCorrectionShader);
 	/**
 	 * Entity queue to extract.
 	 * @type {{entity: Animator, callback: any, animation?: boolean, frame?: Rectangle, format: string, html:boolean}[]}}
@@ -52,12 +60,14 @@ export class ImageExtractor {
 	/**
 	 * Dispatch an element to render to a free renderer. Call _convert once done.
 	 * @param {{instance: Renderer, busy: boolean}} renderer The renderer to use for the process.
-	 * @param {object} element The element to render.
+	 * @param {{entity: Animator, callback: any, animation?: boolean, frame?: Rectangle, format: string, html:boolean}} element The element to render.
 	 */
 	static async dispatch(renderer, element) {
 		if (element && element.entity && element.callback) {
 			element.entity.playing = false;
 			renderer.busy = true;
+			element.entity.filters ??= [];
+			element.entity.filters.push(ImageExtractor.EXPORT_CLAMP_SHADER);
 			if (element.animation) {
 				if (element.html) {
 					element.callback(
