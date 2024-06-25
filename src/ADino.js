@@ -3,6 +3,8 @@ import { dinoz, error } from './sdino/dinoz.js';
 import { Animator } from './display/Animator.js';
 import { PartManager } from './display/PartManager.js';
 import { PixiHelper } from './display/PixiHelper.js';
+import { ConstantShaderManager } from './display/ConstantShaderManager.js';
+import { ColorMatrixFilter, Filter } from 'pixi.js';
 
 /**
  * Abstract class allowing the instantiation of both sdino.swf and dino.swf.
@@ -32,6 +34,12 @@ export class ADino extends Animator {
 	 * @type {string[][]}
 	 */
 	static DEFAULT_PALETTE = [ADino.DEFAULT_COLORS, ADino.DEFAULT_COLORS, ADino.DEFAULT_COLORS, ADino.DEFAULT_COLORS];
+	/**
+	 * The filters for the frozen status.
+	 * Initialized once and then reused as needed.
+	 * @type {Filter[]}
+	 */
+	static CONGEL_FILTERS;
 
 	/**
 	 * Object containing all the information relative to a dino (name, parts, animations, etc).
@@ -86,6 +94,9 @@ export class ADino extends Animator {
 		this.flip(data.flip);
 		if (data.dark) {
 			this.darken();
+		}
+		if (data.congel) {
+			this.congel();
 		}
 	}
 
@@ -160,7 +171,7 @@ export class ADino extends Animator {
 			const shadow = PartManager.getSubPart(this.dinoInfos.shadow, dParts, this._palette, this._body._scale);
 			if (shadow) {
 				this._body.waitForAnimation(shadow);
-				this.addChildAt(shadow, bottomLayer++);
+				this._flipContainer.addChildAt(shadow, bottomLayer++);
 			}
 		}
 		// Parts under are parts which are inserted below the dino and are not affected by the glow filter applied on the dino
@@ -193,9 +204,9 @@ export class ADino extends Animator {
 				if (part) {
 					this._body.waitForAnimation(part);
 					if (layerIdx !== undefined) {
-						this.addChildAt(part, layerIdx++);
+						this._flipContainer.addChildAt(part, layerIdx++);
 					} else {
-						this.addChild(part);
+						this._flipContainer.addChild(part);
 					}
 				}
 			}
@@ -241,6 +252,44 @@ export class ADino extends Animator {
 			this._body.stop();
 		}
 		return true;
+	}
+
+	/**
+	 * Apply the necessary filters to the body of the dino to display them as frozen.
+	 */
+	congel() {
+		if (!ADino.CONGEL_FILTERS) {
+			ADino.CONGEL_FILTERS = [];
+			// Inner white glow
+			ADino.CONGEL_FILTERS.push(
+				ConstantShaderManager.getGlowFilter({
+					distance: 14,
+					color: 0xffffff,
+					quality: 1,
+					outerStrength: 0,
+					innerStrength: 1
+				})
+			);
+			// Outer white glow
+			ADino.CONGEL_FILTERS.push(
+				ConstantShaderManager.getGlowFilter({ distance: 3, color: 0xffffff, quality: 1, outerStrength: 10 })
+			);
+			// Outer border
+			ADino.CONGEL_FILTERS.push(
+				ConstantShaderManager.getGlowFilter({ distance: 1, color: 0x660000, quality: 1, outerStrength: 2 })
+			);
+			// Reduce colors
+			const colFilter = new ColorMatrixFilter();
+			colFilter.matrix = [
+				0.6948261260986328, 0.4100043475627899, 0.05516961216926575, 0, 0, 0.2076261192560196,
+				0.8972043395042419, 0.05516961216926575, 0, 0, 0.2076261192560196, 0.4100043475627899,
+				0.5423696041107178, 0, 0, 0, 0, 0, 1, 0
+			];
+			ADino.CONGEL_FILTERS.push(colFilter);
+			// Increase blue, decrease red
+			ADino.CONGEL_FILTERS.push(ConstantShaderManager.getColorOffsetFilter(-21, 0, 135));
+		}
+		this._body.filters.push(...ADino.CONGEL_FILTERS);
 	}
 
 	/**

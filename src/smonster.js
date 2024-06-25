@@ -74,7 +74,7 @@ export class smonster extends Animator {
 		}
 		if (this._castShadow && this._monsterInfos.shadow) {
 			var shadow = PartManager.getSubPart(this._monsterInfos.shadow, [], [], this._body._scale);
-			if (shadow) this.addChildAt(shadow, 0);
+			if (shadow) this._flipContainer.addChildAt(shadow, 0);
 		}
 		if (this._monsterInfos.glow) {
 			this.setBodyGlow(this._monsterInfos.glow);

@@ -68,6 +68,10 @@ export class ImageExtractor {
 			renderer.busy = true;
 			element.entity.filters ??= [];
 			element.entity.filters.push(ImageExtractor.EXPORT_CLAMP_SHADER);
+			// If a frame is defined, set the filterArea to the given frame (will prevent congel status from being cut off)
+			if (element.frame) {
+				element.entity.filterArea = element.frame;
+			}
 			if (element.animation) {
 				if (element.html) {
 					element.callback(

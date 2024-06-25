@@ -31,6 +31,11 @@ export class Animator extends Container {
 	 */
 	_body = new Animation();
 	/**
+	 * Container containing all the elements added as children for the animation (body, shadows, ...)
+	 * This is needed for the image export. If the negative scale is on the top part, it is not taken into consideration.
+	 */
+	_flipContainer = new Container();
+	/**
 	 * The list of the available animations for the body set.
 	 * @type {object}
 	 */
@@ -93,8 +98,9 @@ export class Animator extends Container {
 	 */
 	constructor(autoUpdate = true) {
 		super();
+		this.addChild(this._flipContainer);
 		this._body.filters = [];
-		this.addChild(this._body);
+		this._flipContainer.addChild(this._body);
 		if (autoUpdate) {
 			const ticker = Ticker.shared;
 			ticker.add(() => this.update(Ticker.shared.deltaMS));
@@ -224,8 +230,8 @@ export class Animator extends Container {
 	 * @param {boolean} side Direction the container has to face. True to face right, false to face left.
 	 */
 	flip(side) {
-		this.scale.x = side ? -1 : 1;
-		this._body.flip(this.scale.x);
+		this._flipContainer.scale.x = side ? -1 : 1;
+		this._body.flip(this._flipContainer.scale.x);
 	}
 
 	/**

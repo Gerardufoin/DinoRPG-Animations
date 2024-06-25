@@ -4,8 +4,9 @@
  * @param {string} data Customization data of the dino to display.
  * @param {number} chk Validation number for the swf file.
  * @param {number} damages The damage state of the dino.
+ * @param {boolean} congel The congel status.
  */
-function addFlashPreview(data, chk, damages) {
+function addFlashPreview(data, chk, damages, congel) {
 	const parent = document.getElementById('dino_flash');
 	parent.innerHTML = '';
 
@@ -22,7 +23,10 @@ function addFlashPreview(data, chk, damages) {
 	// Parameters from original website
 	var so = new SWFObject(`${path}/swf/dino.swf`, swdId, 190, 165, 8, '#FCE3BB');
 	so.addParam('AllowScriptAccess', 'always');
-	so.addParam('FlashVars', `data=${data}&amp;chk=${chk}&amp;damages=${damages}&amp;status=&amp;flip=1`);
+	so.addParam(
+		'FlashVars',
+		`data=${data}&amp;chk=${chk}&amp;damages=${damages}&amp;status=${congel ? 'congel' : ''}&amp;flip=1`
+	);
 	so.addParam('menu', 'false');
 	so.addParam('scale', 'noscale');
 	so.addParam('wmode', 'transparent');
@@ -35,8 +39,9 @@ function addFlashPreview(data, chk, damages) {
  * @param {string} data Customization data of the dino to display.
  * @param {number} chk Validation number for the swf file.
  * @param {number} damages The damage state of the dino.
+ * @param {boolean} congel The congel status.
  */
-function addFlashPreviewSmall(data, chk, damages) {
+function addFlashPreviewSmall(data, chk, damages, congel) {
 	const parent = document.getElementById('sdino_flash');
 	parent.innerHTML = '';
 
@@ -53,7 +58,10 @@ function addFlashPreviewSmall(data, chk, damages) {
 	// Parameters from original website
 	var so = new SWFObject(`${path}/swf/sdino.swf`, swdId, 40, 40, 8, '#FBDAA0');
 	so.addParam('AllowScriptAccess', 'always');
-	so.addParam('FlashVars', `data=${data}&amp;chk=${chk}&amp;damages=${damages}&amp;status=congel&amp;flip=1`);
+	so.addParam(
+		'FlashVars',
+		`data=${data}&amp;chk=${chk}&amp;damages=${damages}&amp;status=${congel ? 'congel' : ''}&amp;flip=1`
+	);
 	so.addParam('menu', 'false');
 	so.addParam('scale', 'noscale');
 	//so.addParam('wmode', 'transparent');
@@ -78,13 +86,14 @@ const appPortraitSmall = new DinoAnim.Application({
 });
 document.getElementById('sdino').appendChild(appPortraitSmall.view);
 
-function updateDinoz(data, damages) {
+function updateDinoz(data, damages, congel) {
 	if (currentPortrait) {
 		appPortrait.stage.removeChild(currentPortrait);
 	}
 	currentPortrait = new DinoAnim.dino({
 		data: data,
 		damages: damages,
+		congel: congel,
 		flip: 1
 	});
 	appPortrait.stage.addChild(currentPortrait);
@@ -97,18 +106,23 @@ function updateDinoz(data, damages) {
 	currentPortraitSmall = new DinoAnim.sdino({
 		data: data,
 		damages: damages,
+		congel: congel,
 		flip: 1
 	});
 	appPortraitSmall.stage.addChild(currentPortraitSmall);
 	currentPortraitSmall.x = 20;
 	currentPortraitSmall.y = 31;
 
-	addFlashPreview(data, currentPortrait.getChkCode(), damages);
-	addFlashPreviewSmall(data, currentPortrait.getChkCode(), damages);
+	addFlashPreview(data, currentPortrait.getChkCode(), damages, congel);
+	addFlashPreviewSmall(data, currentPortrait.getChkCode(), damages, congel);
 }
 
 document.getElementById('update').addEventListener('click', () => {
 	const code = document.getElementById('dino_code');
-	updateDinoz(code.value, document.querySelector('input[name="damages"]:checked').value + 0);
+	updateDinoz(
+		code.value,
+		document.querySelector('input[name="damages"]:checked').value + 0,
+		document.querySelector('input[name="congel"]').checked
+	);
 });
 document.getElementById('update').click();

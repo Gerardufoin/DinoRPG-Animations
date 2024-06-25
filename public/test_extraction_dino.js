@@ -24,6 +24,7 @@ function randomDinoPortrait() {
 	new DinoAnim.dino({
 		data: code,
 		damages: Math.random() < 0.1 ? 1 : Math.random() < 0.1 ? 2 : 0,
+		congel: Math.random() < 0.1,
 		flip: 1
 	}).toImage(
 		(div) => {
