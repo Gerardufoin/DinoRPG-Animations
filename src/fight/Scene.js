@@ -286,7 +286,7 @@ export class Scene extends IScene {
 	getBGPixel(x, y) {
 		if (!this._backgroundPixelData) return new Color();
 		x = PixiHelper.mm(0, x + SCENE_MARGIN, this._backgroundPixelData.width);
-		y = PixiHelper.mm(0, y + SCENE_MARGIN, this._backgroundPixelData.width);
+		y = PixiHelper.mm(0, y + SCENE_MARGIN, this._backgroundPixelData.height - 1);
 
 		const pos = (Math.floor(x) + Math.floor(y) * this._backgroundPixelData.width) * 4;
 		return new Color({

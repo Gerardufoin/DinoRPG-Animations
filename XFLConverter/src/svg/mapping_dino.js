@@ -219,7 +219,8 @@ export const mapping_dino = {
 		'wanwan/shadow',
 		'santaz/shadow',
 		'feross/shadow',
-		'kabuki/shadow'
+		'kabuki/shadow',
+		'mahamuti/shadow'
 	],
 	481: 'winks/right_leg_3',
 	483: 'winks/right_leg_3_claws',

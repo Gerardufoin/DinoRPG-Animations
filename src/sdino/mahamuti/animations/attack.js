@@ -1,6 +1,6 @@
 // @ts-check
 
-export let attack = {
+export const attack = {
 	id: 'mahamuti_attack',
 	callbacks: {
 		6: [['hit']],
@@ -8,7 +8,7 @@ export let attack = {
 	},
 	frames: [
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.65,
 				ty: 10.05,
 				a: 1.377,
@@ -17,7 +17,7 @@ export let attack = {
 				d: 1.37,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -8.1,
 				ty: 6.55,
 				a: 0.872,
@@ -26,7 +26,7 @@ export let attack = {
 				d: 0.872,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -10.5,
 				ty: 8.6,
 				a: 0.872,
@@ -85,7 +85,7 @@ export let attack = {
 				ty: -0.05,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -7.9,
 				ty: 2,
 				a: 0.465,
@@ -94,7 +94,7 @@ export let attack = {
 				d: 0.465,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -3.65,
 				ty: -0.6,
 				a: 0.872,
@@ -112,7 +112,7 @@ export let attack = {
 				d: 1.086,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.35,
 				ty: 0.85,
 				a: -0.507,
@@ -121,7 +121,7 @@ export let attack = {
 				d: 0.507,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.05,
 				ty: 5.45,
 				a: 0.872,
@@ -130,7 +130,7 @@ export let attack = {
 				d: 0.872,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -13.45,
 				ty: 7.4,
 				a: 0.872,
@@ -148,7 +148,7 @@ export let attack = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.05,
 				ty: -1.95,
 				a: -0.785,
@@ -157,7 +157,7 @@ export let attack = {
 				d: 0.872,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.75,
 				ty: 9.7,
 				a: 1.216,
@@ -175,7 +175,7 @@ export let attack = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.7,
 				ty: 9.05,
 				a: 1.377,
@@ -184,7 +184,7 @@ export let attack = {
 				d: 1.37,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.35,
 				ty: 5.75,
 				a: 1.202,
@@ -195,7 +195,7 @@ export let attack = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.2,
 				ty: 10,
 				a: 1.367,
@@ -204,7 +204,7 @@ export let attack = {
 				d: 1.355,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -7.3,
 				ty: 6.6,
 				a: 0.842,
@@ -213,7 +213,7 @@ export let attack = {
 				d: 0.842,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -9.6,
 				ty: 8.8,
 				a: 0.842,
@@ -272,7 +272,7 @@ export let attack = {
 				ty: 0.1,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -7.45,
 				ty: 2.1,
 				a: 0.449,
@@ -281,7 +281,7 @@ export let attack = {
 				d: 0.449,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -3.3,
 				ty: -0.75,
 				a: 0.842,
@@ -299,7 +299,7 @@ export let attack = {
 				d: 1.048,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -9.9,
 				ty: 0.85,
 				a: -0.506,
@@ -308,7 +308,7 @@ export let attack = {
 				d: 0.506,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -10.4,
 				ty: 5.8,
 				a: 0.842,
@@ -317,7 +317,7 @@ export let attack = {
 				d: 0.842,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -12.6,
 				ty: 7.75,
 				a: 0.842,
@@ -335,7 +335,7 @@ export let attack = {
 				d: 1.029,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.8,
 				ty: -1.85,
 				a: -0.78,
@@ -344,7 +344,7 @@ export let attack = {
 				d: 0.842,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 4.25,
 				ty: 9.65,
 				a: 1.215,
@@ -362,7 +362,7 @@ export let attack = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.25,
 				ty: 9.1,
 				a: 1.367,
@@ -371,7 +371,7 @@ export let attack = {
 				d: 1.355,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0.15,
 				ty: 5.75,
 				a: 1.201,
@@ -382,7 +382,7 @@ export let attack = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: 0.3,
 				ty: 10,
 				a: 1.354,
@@ -391,7 +391,7 @@ export let attack = {
 				d: 1.335,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -6.5,
 				ty: 6.75,
 				a: 0.81,
@@ -400,7 +400,7 @@ export let attack = {
 				d: 0.81,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -8.55,
 				ty: 8.9,
 				a: 0.81,
@@ -459,7 +459,7 @@ export let attack = {
 				ty: 0.2,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -6.9,
 				ty: 2.15,
 				a: 0.432,
@@ -468,7 +468,7 @@ export let attack = {
 				d: 0.432,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -2.9,
 				ty: -0.95,
 				a: 0.81,
@@ -486,7 +486,7 @@ export let attack = {
 				d: 1.009,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -9.45,
 				ty: 0.9,
 				a: -0.506,
@@ -495,7 +495,7 @@ export let attack = {
 				d: 0.506,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -9.65,
 				ty: 6.05,
 				a: 0.81,
@@ -504,7 +504,7 @@ export let attack = {
 				d: 0.81,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -11.8,
 				ty: 8.15,
 				a: 0.81,
@@ -522,7 +522,7 @@ export let attack = {
 				d: 1.029,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.5,
 				ty: -1.8,
 				a: -0.771,
@@ -531,7 +531,7 @@ export let attack = {
 				d: 0.81,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 4.6,
 				ty: 9.75,
 				a: 1.209,
@@ -549,7 +549,7 @@ export let attack = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -3.65,
 				ty: 9.15,
 				a: 1.354,
@@ -558,7 +558,7 @@ export let attack = {
 				d: 1.335,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0.55,
 				ty: 5.75,
 				a: 1.202,
@@ -569,7 +569,7 @@ export let attack = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: 0.9,
 				ty: 10.05,
 				a: 1.336,
@@ -578,7 +578,7 @@ export let attack = {
 				d: 1.312,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.75,
 				ty: 6.8,
 				a: 0.776,
@@ -587,7 +587,7 @@ export let attack = {
 				d: 0.776,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -7.75,
 				ty: 9.15,
 				a: 0.776,
@@ -646,7 +646,7 @@ export let attack = {
 				ty: 0.35,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -6.4,
 				ty: 2.25,
 				a: 0.413,
@@ -655,7 +655,7 @@ export let attack = {
 				d: 0.413,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -2.6,
 				ty: -1.15,
 				a: 0.776,
@@ -673,7 +673,7 @@ export let attack = {
 				d: 0.966,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -9,
 				ty: 0.9,
 				a: -0.507,
@@ -682,7 +682,7 @@ export let attack = {
 				d: 0.507,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -8.95,
 				ty: 6.2,
 				a: 0.776,
@@ -691,7 +691,7 @@ export let attack = {
 				d: 0.776,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -10.95,
 				ty: 8.5,
 				a: 0.776,
@@ -709,7 +709,7 @@ export let attack = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.25,
 				ty: -1.7,
 				a: -0.76,
@@ -718,7 +718,7 @@ export let attack = {
 				d: 0.776,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 5.2,
 				ty: 9.75,
 				a: 1.2,
@@ -736,7 +736,7 @@ export let attack = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -3.1,
 				ty: 9.1,
 				a: 1.336,
@@ -745,7 +745,7 @@ export let attack = {
 				d: 1.312,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0.95,
 				ty: 5.75,
 				a: 1.202,
@@ -756,7 +756,7 @@ export let attack = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.55,
 				ty: 10.05,
 				a: 1.377,
@@ -765,7 +765,7 @@ export let attack = {
 				d: 1.37,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -9.6,
 				ty: 5.4,
 				a: 0.929,
@@ -774,7 +774,7 @@ export let attack = {
 				d: 0.929,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -11.95,
 				ty: 6.95,
 				a: 0.929,
@@ -833,7 +833,7 @@ export let attack = {
 				ty: -0.9,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -9.35,
 				ty: 1.1,
 				a: 0.495,
@@ -842,7 +842,7 @@ export let attack = {
 				d: 0.495,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -5.1,
 				ty: -0.85,
 				a: 0.929,
@@ -860,7 +860,7 @@ export let attack = {
 				d: 1.157,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -11.35,
 				ty: -0.55,
 				a: -0.544,
@@ -869,7 +869,7 @@ export let attack = {
 				d: 0.544,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -12.15,
 				ty: 4.1,
 				a: 0.929,
@@ -878,7 +878,7 @@ export let attack = {
 				d: 0.929,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -14.6,
 				ty: 5.55,
 				a: 0.929,
@@ -896,7 +896,7 @@ export let attack = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9,
 				ty: -2.5,
 				a: -0.789,
@@ -905,7 +905,7 @@ export let attack = {
 				d: 0.929,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.8,
 				ty: 9.75,
 				a: 1.216,
@@ -923,7 +923,7 @@ export let attack = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.5,
 				ty: 9.05,
 				a: 1.377,
@@ -932,7 +932,7 @@ export let attack = {
 				d: 1.37,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -1.75,
 				ty: 5.75,
 				a: 1.202,
@@ -943,7 +943,7 @@ export let attack = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -3.9,
 				ty: 10.05,
 				a: 1.377,
@@ -952,7 +952,7 @@ export let attack = {
 				d: 1.385,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.45,
 				ty: 4.05,
 				a: 0.996,
@@ -961,7 +961,7 @@ export let attack = {
 				d: 0.996,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.2,
 				ty: 4.85,
 				a: 0.996,
@@ -1020,7 +1020,7 @@ export let attack = {
 				ty: -2.1,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -12.1,
 				ty: -0.05,
 				a: 0.531,
@@ -1029,7 +1029,7 @@ export let attack = {
 				d: 0.531,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -7.65,
 				ty: -0.5,
 				a: 0.996,
@@ -1047,7 +1047,7 @@ export let attack = {
 				d: 1.24,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.9,
 				ty: -2.05,
 				a: -0.555,
@@ -1056,7 +1056,7 @@ export let attack = {
 				d: 0.555,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.4,
 				ty: 1.85,
 				a: 0.996,
@@ -1065,7 +1065,7 @@ export let attack = {
 				d: 0.996,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.3,
 				ty: 2.65,
 				a: 0.996,
@@ -1083,7 +1083,7 @@ export let attack = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.7,
 				ty: -3.35,
 				a: -0.742,
@@ -1092,7 +1092,7 @@ export let attack = {
 				d: 0.996,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 0.4,
 				ty: 9.7,
 				a: 1.194,
@@ -1110,7 +1110,7 @@ export let attack = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -7.9,
 				ty: 9.05,
 				a: 1.377,
@@ -1119,7 +1119,7 @@ export let attack = {
 				d: 1.385,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -4.45,
 				ty: 5.75,
 				a: 1.202,
@@ -1130,7 +1130,7 @@ export let attack = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -6.3,
 				ty: 10.05,
 				a: 1.336,
@@ -1139,7 +1139,7 @@ export let attack = {
 				d: 1.359,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -17.4,
 				ty: 2.75,
 				a: 0.967,
@@ -1148,7 +1148,7 @@ export let attack = {
 				d: 0.967,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -20.45,
 				ty: 2.6,
 				a: 0.967,
@@ -1207,7 +1207,7 @@ export let attack = {
 				ty: -3.35,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -15.05,
 				ty: -1.2,
 				a: 0.516,
@@ -1216,7 +1216,7 @@ export let attack = {
 				d: 0.516,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -10.1,
 				ty: -0.2,
 				a: 0.967,
@@ -1234,7 +1234,7 @@ export let attack = {
 				d: 1.205,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -16.25,
 				ty: -3.5,
 				a: -0.538,
@@ -1243,7 +1243,7 @@ export let attack = {
 				d: 0.538,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -18.8,
 				ty: -0.15,
 				a: 0.967,
@@ -1252,7 +1252,7 @@ export let attack = {
 				d: 0.967,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -21.85,
 				ty: -0.3,
 				a: 0.967,
@@ -1270,7 +1270,7 @@ export let attack = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -12.45,
 				ty: -4.2,
 				a: -0.626,
@@ -1279,7 +1279,7 @@ export let attack = {
 				d: 0.967,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: -1.9,
 				ty: 9.75,
 				a: 1.137,
@@ -1297,7 +1297,7 @@ export let attack = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -10.4,
 				ty: 9.1,
 				a: 1.336,
@@ -1306,7 +1306,7 @@ export let attack = {
 				d: 1.359,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -7.15,
 				ty: 5.75,
 				a: 1.202,
@@ -1317,7 +1317,7 @@ export let attack = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -6.45,
 				ty: 10.1,
 				a: 1.342,
@@ -1326,7 +1326,7 @@ export let attack = {
 				d: 1.363,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -17.3,
 				ty: 2.9,
 				a: 0.976,
@@ -1335,7 +1335,7 @@ export let attack = {
 				d: 0.976,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -20.35,
 				ty: 2.9,
 				a: 0.976,
@@ -1394,7 +1394,7 @@ export let attack = {
 				ty: -3.15,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -15.05,
 				ty: -1,
 				a: 0.52,
@@ -1403,7 +1403,7 @@ export let attack = {
 				d: 0.52,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -10.2,
 				ty: -0.2,
 				a: 0.976,
@@ -1421,7 +1421,7 @@ export let attack = {
 				d: 1.216,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -16.35,
 				ty: -3.25,
 				a: -0.542,
@@ -1430,7 +1430,7 @@ export let attack = {
 				d: 0.542,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -18.8,
 				ty: 0.1,
 				a: 0.976,
@@ -1439,7 +1439,7 @@ export let attack = {
 				d: 0.976,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -21.85,
 				ty: 0.15,
 				a: 0.976,
@@ -1457,7 +1457,7 @@ export let attack = {
 				d: 1.029,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -12.7,
 				ty: -4.05,
 				a: -0.645,
@@ -1466,7 +1466,7 @@ export let attack = {
 				d: 0.976,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: -2,
 				ty: 9.75,
 				a: 1.144,
@@ -1484,7 +1484,7 @@ export let attack = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -10.5,
 				ty: 9.15,
 				a: 1.342,
@@ -1493,7 +1493,7 @@ export let attack = {
 				d: 1.363,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -7.15,
 				ty: 5.75,
 				a: 1.202,
@@ -1504,7 +1504,7 @@ export let attack = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -6.65,
 				ty: 10.2,
 				a: 1.348,
@@ -1513,7 +1513,7 @@ export let attack = {
 				d: 1.368,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -17.2,
 				ty: 3.15,
 				a: 0.984,
@@ -1522,7 +1522,7 @@ export let attack = {
 				d: 0.984,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -20.15,
 				ty: 3.2,
 				a: 0.984,
@@ -1581,7 +1581,7 @@ export let attack = {
 				ty: -3,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -15.1,
 				ty: -0.85,
 				a: 0.524,
@@ -1590,7 +1590,7 @@ export let attack = {
 				d: 0.524,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -10.35,
 				ty: -0.2,
 				a: 0.984,
@@ -1608,7 +1608,7 @@ export let attack = {
 				d: 1.226,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -16.5,
 				ty: -3.1,
 				a: -0.546,
@@ -1617,7 +1617,7 @@ export let attack = {
 				d: 0.546,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -18.8,
 				ty: 0.5,
 				a: 0.984,
@@ -1626,7 +1626,7 @@ export let attack = {
 				d: 0.984,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -21.85,
 				ty: 0.6,
 				a: 0.984,
@@ -1644,7 +1644,7 @@ export let attack = {
 				d: 1.029,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -12.9,
 				ty: -4,
 				a: -0.663,
@@ -1653,7 +1653,7 @@ export let attack = {
 				d: 0.984,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: -2.15,
 				ty: 9.6,
 				a: 1.153,
@@ -1671,7 +1671,7 @@ export let attack = {
 				d: 1.202,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -10.7,
 				ty: 9.1,
 				a: 1.348,
@@ -1680,7 +1680,7 @@ export let attack = {
 				d: 1.368,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -7.2,
 				ty: 5.75,
 				a: 1.201,
@@ -1691,7 +1691,7 @@ export let attack = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -6.75,
 				ty: 10.1,
 				a: 1.354,
@@ -1700,7 +1700,7 @@ export let attack = {
 				d: 1.372,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -17.25,
 				ty: 3.4,
 				a: 0.99,
@@ -1709,7 +1709,7 @@ export let attack = {
 				d: 0.99,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -20.1,
 				ty: 3.6,
 				a: 0.99,
@@ -1768,7 +1768,7 @@ export let attack = {
 				ty: -2.8,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -15.15,
 				ty: -0.65,
 				a: 0.528,
@@ -1777,7 +1777,7 @@ export let attack = {
 				d: 0.528,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -10.45,
 				ty: -0.25,
 				a: 0.99,
@@ -1795,7 +1795,7 @@ export let attack = {
 				d: 1.233,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -16.6,
 				ty: -2.8,
 				a: -0.55,
@@ -1804,7 +1804,7 @@ export let attack = {
 				d: 0.55,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -18.85,
 				ty: 0.8,
 				a: 0.99,
@@ -1813,7 +1813,7 @@ export let attack = {
 				d: 0.99,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -21.8,
 				ty: 1.05,
 				a: 0.99,
@@ -1831,7 +1831,7 @@ export let attack = {
 				d: 1.029,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -13.1,
 				ty: -3.8,
 				a: -0.681,
@@ -1840,7 +1840,7 @@ export let attack = {
 				d: 0.99,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: -2.25,
 				ty: 9.7,
 				a: 1.16,
@@ -1858,7 +1858,7 @@ export let attack = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -10.8,
 				ty: 9.1,
 				a: 1.354,
@@ -1867,7 +1867,7 @@ export let attack = {
 				d: 1.372,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -7.3,
 				ty: 5.75,
 				a: 1.202,
@@ -1878,7 +1878,7 @@ export let attack = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -4.65,
 				ty: 10.15,
 				a: 1.374,
@@ -1887,7 +1887,7 @@ export let attack = {
 				d: 1.384,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -14.15,
 				ty: 4.45,
 				a: 0.993,
@@ -1896,7 +1896,7 @@ export let attack = {
 				d: 0.993,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.95,
 				ty: 5.15,
 				a: 0.993,
@@ -1955,7 +1955,7 @@ export let attack = {
 				ty: -1.9,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -12.8,
 				ty: 0.2,
 				a: 0.529,
@@ -1964,7 +1964,7 @@ export let attack = {
 				d: 0.529,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -8.25,
 				ty: -0.35,
 				a: 0.993,
@@ -1982,7 +1982,7 @@ export let attack = {
 				d: 1.237,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -14.45,
 				ty: -1.6,
 				a: -0.554,
@@ -1991,7 +1991,7 @@ export let attack = {
 				d: 0.554,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.25,
 				ty: 2.3,
 				a: 0.993,
@@ -2000,7 +2000,7 @@ export let attack = {
 				d: 0.993,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -19,
 				ty: 3.1,
 				a: 0.993,
@@ -2018,7 +2018,7 @@ export let attack = {
 				d: 1.029,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -11.45,
 				ty: -3.2,
 				a: -0.748,
@@ -2027,7 +2027,7 @@ export let attack = {
 				d: 0.993,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: -0.3,
 				ty: 9.75,
 				a: 1.189,
@@ -2045,7 +2045,7 @@ export let attack = {
 				d: 1.202,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -8.75,
 				ty: 9.05,
 				a: 1.374,
@@ -2054,7 +2054,7 @@ export let attack = {
 				d: 1.384,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -5,
 				ty: 5.75,
 				a: 1.201,
@@ -2065,7 +2065,7 @@ export let attack = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -2.7,
 				ty: 10.1,
 				a: 1.382,
@@ -2074,7 +2074,7 @@ export let attack = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -11.2,
 				ty: 5.5,
 				a: 0.953,
@@ -2083,7 +2083,7 @@ export let attack = {
 				d: 0.953,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -13.75,
 				ty: 6.9,
 				a: 0.953,
@@ -2142,7 +2142,7 @@ export let attack = {
 				ty: -0.95,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -10.35,
 				ty: 1.1,
 				a: 0.508,
@@ -2151,7 +2151,7 @@ export let attack = {
 				d: 0.508,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -5.9,
 				ty: -0.55,
 				a: 0.953,
@@ -2169,7 +2169,7 @@ export let attack = {
 				d: 1.186,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -12.45,
 				ty: -0.35,
 				a: -0.539,
@@ -2178,7 +2178,7 @@ export let attack = {
 				d: 0.539,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -13.65,
 				ty: 3.9,
 				a: 0.953,
@@ -2187,7 +2187,7 @@ export let attack = {
 				d: 0.953,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -16.25,
 				ty: 5.25,
 				a: 0.953,
@@ -2205,7 +2205,7 @@ export let attack = {
 				d: 1.029,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.8,
 				ty: -2.55,
 				a: -0.784,
@@ -2214,7 +2214,7 @@ export let attack = {
 				d: 0.953,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 1.7,
 				ty: 9.65,
 				a: 1.208,
@@ -2232,7 +2232,7 @@ export let attack = {
 				d: 1.202,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -6.75,
 				ty: 9.05,
 				a: 1.382,
@@ -2241,7 +2241,7 @@ export let attack = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -2.65,
 				ty: 5.75,
 				a: 1.201,
@@ -2252,7 +2252,7 @@ export let attack = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.65,
 				ty: 10.05,
 				a: 1.377,
@@ -2261,7 +2261,7 @@ export let attack = {
 				d: 1.37,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -8.1,
 				ty: 6.55,
 				a: 0.872,
@@ -2270,7 +2270,7 @@ export let attack = {
 				d: 0.872,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -10.5,
 				ty: 8.6,
 				a: 0.872,
@@ -2329,7 +2329,7 @@ export let attack = {
 				ty: -0.05,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -7.9,
 				ty: 2,
 				a: 0.465,
@@ -2338,7 +2338,7 @@ export let attack = {
 				d: 0.465,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -3.65,
 				ty: -0.6,
 				a: 0.872,
@@ -2356,7 +2356,7 @@ export let attack = {
 				d: 1.086,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.35,
 				ty: 0.85,
 				a: -0.507,
@@ -2365,7 +2365,7 @@ export let attack = {
 				d: 0.507,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.05,
 				ty: 5.45,
 				a: 0.872,
@@ -2374,7 +2374,7 @@ export let attack = {
 				d: 0.872,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -13.45,
 				ty: 7.4,
 				a: 0.872,
@@ -2392,7 +2392,7 @@ export let attack = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.05,
 				ty: -1.95,
 				a: -0.785,
@@ -2401,7 +2401,7 @@ export let attack = {
 				d: 0.872,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.75,
 				ty: 9.7,
 				a: 1.216,
@@ -2419,7 +2419,7 @@ export let attack = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.7,
 				ty: 9.05,
 				a: 1.377,
@@ -2428,7 +2428,7 @@ export let attack = {
 				d: 1.37,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.35,
 				ty: 5.75,
 				a: 1.202,

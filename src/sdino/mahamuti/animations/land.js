@@ -1,6 +1,6 @@
 // @ts-check
 
-export let land = {
+export const land = {
 	id: 'mahamuti_land',
 	callbacks: {
 		0: [
@@ -11,12 +11,12 @@ export let land = {
 	},
 	frames: [
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.45,
 				ty: 6.85,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.5,
 				ty: 9.95,
 				l: 19
@@ -65,14 +65,14 @@ export let land = {
 				ty: 0.8,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.95,
 				ty: 3,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.15,
 				ty: 2.7,
 				l: 11
@@ -84,19 +84,19 @@ export let land = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.2,
 				ty: 1.05,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.15,
 				ty: 4.4,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.15,
 				ty: 5,
 				l: 7
@@ -108,14 +108,14 @@ export let land = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.45,
 				ty: -0.6,
 				a: -0.726,
 				b: -0.313,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 0.95,
 				ty: 10.05,
 				a: 1.383,
@@ -123,7 +123,7 @@ export let land = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 5.35,
 				ty: 7.05,
 				a: 1.21,
@@ -139,7 +139,7 @@ export let land = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -6.75,
 				ty: 8.2,
 				a: 1.383,
@@ -147,7 +147,7 @@ export let land = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 5.75,
 				a: 1.202,
@@ -158,12 +158,12 @@ export let land = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.45,
 				ty: 6.2,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.5,
 				ty: 9.3,
 				l: 19
@@ -212,14 +212,14 @@ export let land = {
 				ty: 0.2,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.95,
 				ty: 2.35,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.15,
 				ty: 2.05,
 				l: 11
@@ -231,19 +231,19 @@ export let land = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.2,
 				ty: 0.4,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.15,
 				ty: 3.75,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.15,
 				ty: 4.35,
 				l: 7
@@ -255,14 +255,14 @@ export let land = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.45,
 				ty: -1.25,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 0.5,
 				ty: 10.05,
 				a: 1.383,
@@ -270,7 +270,7 @@ export let land = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 4.95,
 				ty: 7,
 				a: 1.21,
@@ -286,7 +286,7 @@ export let land = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -6.35,
 				ty: 8.15,
 				a: 1.383,
@@ -294,7 +294,7 @@ export let land = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -305,12 +305,12 @@ export let land = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.45,
 				ty: 5.5,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.5,
 				ty: 8.6,
 				l: 19
@@ -359,14 +359,14 @@ export let land = {
 				ty: -0.45,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.95,
 				ty: 1.65,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.15,
 				ty: 1.35,
 				l: 11
@@ -378,19 +378,19 @@ export let land = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.2,
 				ty: -0.3,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.15,
 				ty: 3.05,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.15,
 				ty: 3.65,
 				l: 7
@@ -402,14 +402,14 @@ export let land = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.45,
 				ty: -1.95,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: 0.05,
 				ty: 10.05,
 				a: 1.383,
@@ -417,7 +417,7 @@ export let land = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 4.5,
 				ty: 7,
 				a: 1.21,
@@ -433,7 +433,7 @@ export let land = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.9,
 				ty: 8.15,
 				a: 1.383,
@@ -441,7 +441,7 @@ export let land = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -452,12 +452,12 @@ export let land = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.45,
 				ty: 4.85,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.5,
 				ty: 7.95,
 				l: 19
@@ -506,14 +506,14 @@ export let land = {
 				ty: -1.05,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.95,
 				ty: 1,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.15,
 				ty: 0.7,
 				l: 11
@@ -525,19 +525,19 @@ export let land = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.2,
 				ty: -0.95,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.15,
 				ty: 2.4,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.15,
 				ty: 3,
 				l: 7
@@ -549,14 +549,14 @@ export let land = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.45,
 				ty: -2.6,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.4,
 				ty: 10.05,
 				a: 1.383,
@@ -564,7 +564,7 @@ export let land = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 4.05,
 				ty: 7,
 				a: 1.21,
@@ -580,7 +580,7 @@ export let land = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.45,
 				ty: 8.15,
 				a: 1.383,
@@ -588,7 +588,7 @@ export let land = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -599,12 +599,12 @@ export let land = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.45,
 				ty: 4.15,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.5,
 				ty: 7.25,
 				l: 19
@@ -653,14 +653,14 @@ export let land = {
 				ty: -1.7,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.95,
 				ty: 0.3,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.15,
 				ty: 0,
 				l: 11
@@ -672,19 +672,19 @@ export let land = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.2,
 				ty: -1.65,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.15,
 				ty: 1.7,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.15,
 				ty: 2.3,
 				l: 7
@@ -696,14 +696,14 @@ export let land = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.45,
 				ty: -3.3,
 				a: -0.726,
 				b: -0.313,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -711,7 +711,7 @@ export let land = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -727,7 +727,7 @@ export let land = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.95,
 				ty: 8.2,
 				a: 1.383,
@@ -735,7 +735,7 @@ export let land = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 5.75,
 				a: 1.202,

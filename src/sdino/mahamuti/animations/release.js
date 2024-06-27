@@ -1,6 +1,6 @@
 // @ts-check
 
-export let release = {
+export const release = {
 	id: 'mahamuti_release',
 	callbacks: {
 		3: [['hit', 39]],
@@ -8,7 +8,7 @@ export let release = {
 	},
 	frames: [
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.45,
 				ty: 10.05,
 				a: 1.383,
@@ -16,7 +16,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.3,
 				ty: 7.6,
 				a: 0.986,
@@ -25,7 +25,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.15,
 				ty: 8.7,
 				a: 0.986,
@@ -86,7 +86,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.5,
 				ty: 3.4,
 				a: 0.852,
@@ -95,7 +95,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.5,
 				ty: 2.35,
 				a: 0.986,
@@ -113,7 +113,7 @@ export let release = {
 				d: 1.229,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.5,
 				ty: 1.75,
 				a: -0.549,
@@ -122,7 +122,7 @@ export let release = {
 				d: 0.549,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.75,
 				ty: 5.5,
 				a: 0.986,
@@ -131,7 +131,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.6,
 				ty: 6.55,
 				a: 0.986,
@@ -149,7 +149,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.3,
 				ty: -0.45,
 				a: -0.765,
@@ -158,7 +158,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3,
 				ty: 9.8,
 				a: 1.21,
@@ -176,7 +176,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.35,
 				ty: 9.1,
 				a: 1.383,
@@ -184,7 +184,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 5.75,
 				a: 1.202,
@@ -195,7 +195,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.15,
 				ty: 9.75,
 				a: 1.383,
@@ -203,7 +203,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13,
 				ty: 7.3,
 				a: 0.986,
@@ -212,7 +212,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.85,
 				ty: 8.45,
 				a: 0.986,
@@ -273,7 +273,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.2,
 				ty: 3.1,
 				a: 0.851,
@@ -282,7 +282,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.2,
 				ty: 2.05,
 				a: 0.986,
@@ -300,7 +300,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.2,
 				ty: 1.45,
 				a: -0.548,
@@ -309,7 +309,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.45,
 				ty: 5.2,
 				a: 0.986,
@@ -318,7 +318,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.25,
 				ty: 6.25,
 				a: 0.986,
@@ -336,7 +336,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10,
 				ty: -0.7,
 				a: -0.764,
@@ -345,7 +345,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.3,
 				ty: 9.55,
 				a: 1.21,
@@ -363,7 +363,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.15,
 				ty: 8.75,
 				a: 1.383,
@@ -371,7 +371,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.15,
 				ty: 5.45,
 				a: 1.202,
@@ -382,7 +382,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.9,
 				ty: 10.35,
 				a: 1.383,
@@ -390,7 +390,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.75,
 				ty: 7.9,
 				a: 0.986,
@@ -399,7 +399,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.6,
 				ty: 9.05,
 				a: 0.986,
@@ -460,7 +460,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.95,
 				ty: 3.7,
 				a: 0.851,
@@ -469,7 +469,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.95,
 				ty: 2.65,
 				a: 0.986,
@@ -487,7 +487,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.95,
 				ty: 2.05,
 				a: -0.548,
@@ -496,7 +496,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.2,
 				ty: 5.8,
 				a: 0.986,
@@ -505,7 +505,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -19,
 				ty: 6.85,
 				a: 0.986,
@@ -523,7 +523,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.75,
 				ty: -0.1,
 				a: -0.764,
@@ -532,7 +532,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.55,
 				ty: 10.15,
 				a: 1.21,
@@ -550,7 +550,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.9,
 				ty: 9.35,
 				a: 1.383,
@@ -558,7 +558,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.9,
 				ty: 6.05,
 				a: 1.202,
@@ -569,7 +569,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1,
 				ty: 10.05,
 				a: 1.383,
@@ -577,7 +577,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -12.85,
 				ty: 7.6,
 				a: 0.986,
@@ -586,7 +586,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.7,
 				ty: 8.75,
 				a: 0.986,
@@ -647,7 +647,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.05,
 				ty: 3.4,
 				a: 0.851,
@@ -656,7 +656,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.05,
 				ty: 2.35,
 				a: 0.986,
@@ -674,7 +674,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.05,
 				ty: 1.75,
 				a: -0.548,
@@ -683,7 +683,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.3,
 				ty: 5.5,
 				a: 0.986,
@@ -692,7 +692,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.1,
 				ty: 6.55,
 				a: 0.986,
@@ -710,7 +710,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.85,
 				ty: -0.4,
 				a: -0.764,
@@ -719,7 +719,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.45,
 				ty: 9.85,
 				a: 1.21,
@@ -737,7 +737,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 9.05,
 				a: 1.383,
@@ -745,7 +745,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0,
 				ty: 5.75,
 				a: 1.202,
@@ -756,7 +756,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -2.05,
 				ty: 10.05,
 				a: 1.383,
@@ -764,7 +764,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.9,
 				ty: 7.6,
 				a: 0.986,
@@ -773,7 +773,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.75,
 				ty: 8.75,
 				a: 0.986,
@@ -834,7 +834,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -12.1,
 				ty: 3.4,
 				a: 0.851,
@@ -843,7 +843,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -7.1,
 				ty: 2.35,
 				a: 0.986,
@@ -861,7 +861,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -14.1,
 				ty: 1.75,
 				a: -0.548,
@@ -870,7 +870,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.35,
 				ty: 5.5,
 				a: 0.986,
@@ -879,7 +879,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -19.15,
 				ty: 6.55,
 				a: 0.986,
@@ -897,7 +897,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.9,
 				ty: -0.4,
 				a: -0.764,
@@ -906,7 +906,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.4,
 				ty: 9.85,
 				a: 1.21,
@@ -924,7 +924,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -6.05,
 				ty: 9.05,
 				a: 1.383,
@@ -932,7 +932,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -1.05,
 				ty: 5.75,
 				a: 1.202,
@@ -943,7 +943,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 9.45,
 				a: 1.383,
@@ -951,7 +951,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -12.7,
 				ty: 7,
 				a: 0.986,
@@ -960,7 +960,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.55,
 				ty: 8.15,
 				a: 0.986,
@@ -1021,7 +1021,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -10.9,
 				ty: 2.8,
 				a: 0.851,
@@ -1030,7 +1030,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -5.9,
 				ty: 1.75,
 				a: 0.986,
@@ -1048,7 +1048,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -12.9,
 				ty: 1.15,
 				a: -0.548,
@@ -1057,7 +1057,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.15,
 				ty: 4.9,
 				a: 0.986,
@@ -1066,7 +1066,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -17.95,
 				ty: 5.95,
 				a: 0.986,
@@ -1084,7 +1084,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.7,
 				ty: -1,
 				a: -0.764,
@@ -1093,7 +1093,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.6,
 				ty: 9.25,
 				a: 1.21,
@@ -1111,7 +1111,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.85,
 				ty: 8.45,
 				a: 1.383,
@@ -1119,7 +1119,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0.15,
 				ty: 5.15,
 				a: 1.202,
@@ -1130,7 +1130,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -2.05,
 				ty: 9.9,
 				a: 1.383,
@@ -1138,7 +1138,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.9,
 				ty: 7.45,
 				a: 0.986,
@@ -1147,7 +1147,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.75,
 				ty: 8.6,
 				a: 0.986,
@@ -1208,7 +1208,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -12.1,
 				ty: 3.25,
 				a: 0.851,
@@ -1217,7 +1217,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -7.1,
 				ty: 2.2,
 				a: 0.986,
@@ -1235,7 +1235,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -14.1,
 				ty: 1.6,
 				a: -0.548,
@@ -1244,7 +1244,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.35,
 				ty: 5.35,
 				a: 0.986,
@@ -1253,7 +1253,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -19.15,
 				ty: 6.4,
 				a: 0.986,
@@ -1271,7 +1271,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.9,
 				ty: -0.55,
 				a: -0.764,
@@ -1280,7 +1280,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.4,
 				ty: 9.7,
 				a: 1.21,
@@ -1298,7 +1298,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -6.05,
 				ty: 8.9,
 				a: 1.383,
@@ -1306,7 +1306,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -1.05,
 				ty: 5.6,
 				a: 1.202,
@@ -1317,7 +1317,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.45,
 				ty: 10.65,
 				a: 1.383,
@@ -1325,7 +1325,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.3,
 				ty: 8.2,
 				a: 0.986,
@@ -1334,7 +1334,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.15,
 				ty: 9.35,
 				a: 0.986,
@@ -1395,7 +1395,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.5,
 				ty: 4,
 				a: 0.851,
@@ -1404,7 +1404,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.5,
 				ty: 2.95,
 				a: 0.986,
@@ -1422,7 +1422,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.5,
 				ty: 2.35,
 				a: -0.548,
@@ -1431,7 +1431,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.75,
 				ty: 6.1,
 				a: 0.986,
@@ -1440,7 +1440,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.55,
 				ty: 7.15,
 				a: 0.986,
@@ -1458,7 +1458,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.3,
 				ty: 0.2,
 				a: -0.764,
@@ -1467,7 +1467,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3,
 				ty: 10.45,
 				a: 1.21,
@@ -1485,7 +1485,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.45,
 				ty: 9.65,
 				a: 1.383,
@@ -1493,7 +1493,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 6.35,
 				a: 1.202,
@@ -1504,7 +1504,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1,
 				ty: 9.75,
 				a: 1.383,
@@ -1512,7 +1512,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -12.85,
 				ty: 7.3,
 				a: 0.986,
@@ -1521,7 +1521,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.7,
 				ty: 8.45,
 				a: 0.986,
@@ -1582,7 +1582,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.05,
 				ty: 3.1,
 				a: 0.851,
@@ -1591,7 +1591,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.05,
 				ty: 2.05,
 				a: 0.986,
@@ -1609,7 +1609,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.05,
 				ty: 1.45,
 				a: -0.548,
@@ -1618,7 +1618,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.3,
 				ty: 5.2,
 				a: 0.986,
@@ -1627,7 +1627,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.1,
 				ty: 6.25,
 				a: 0.986,
@@ -1645,7 +1645,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.85,
 				ty: -0.7,
 				a: -0.764,
@@ -1654,7 +1654,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.45,
 				ty: 9.55,
 				a: 1.21,
@@ -1672,7 +1672,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.75,
 				a: 1.383,
@@ -1680,7 +1680,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0,
 				ty: 5.45,
 				a: 1.202,
@@ -1691,7 +1691,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -2.05,
 				ty: 10.05,
 				a: 1.383,
@@ -1699,7 +1699,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.9,
 				ty: 7.6,
 				a: 0.986,
@@ -1708,7 +1708,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.75,
 				ty: 8.75,
 				a: 0.986,
@@ -1769,7 +1769,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -12.1,
 				ty: 3.4,
 				a: 0.851,
@@ -1778,7 +1778,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -7.1,
 				ty: 2.35,
 				a: 0.986,
@@ -1796,7 +1796,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -14.1,
 				ty: 1.75,
 				a: -0.548,
@@ -1805,7 +1805,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.35,
 				ty: 5.5,
 				a: 0.986,
@@ -1814,7 +1814,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -19.15,
 				ty: 6.55,
 				a: 0.986,
@@ -1832,7 +1832,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.9,
 				ty: -0.4,
 				a: -0.764,
@@ -1841,7 +1841,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.4,
 				ty: 9.85,
 				a: 1.21,
@@ -1859,7 +1859,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -6.05,
 				ty: 9.05,
 				a: 1.383,
@@ -1867,7 +1867,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -1.05,
 				ty: 5.75,
 				a: 1.202,
@@ -1878,7 +1878,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1,
 				ty: 9.9,
 				a: 1.383,
@@ -1886,7 +1886,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -12.85,
 				ty: 7.45,
 				a: 0.986,
@@ -1895,7 +1895,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.7,
 				ty: 8.6,
 				a: 0.986,
@@ -1956,7 +1956,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.05,
 				ty: 3.25,
 				a: 0.851,
@@ -1965,7 +1965,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.05,
 				ty: 2.2,
 				a: 0.986,
@@ -1983,7 +1983,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.05,
 				ty: 1.6,
 				a: -0.548,
@@ -1992,7 +1992,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.3,
 				ty: 5.35,
 				a: 0.986,
@@ -2001,7 +2001,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.1,
 				ty: 6.4,
 				a: 0.986,
@@ -2019,7 +2019,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.85,
 				ty: -0.55,
 				a: -0.764,
@@ -2028,7 +2028,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.45,
 				ty: 9.7,
 				a: 1.21,
@@ -2046,7 +2046,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.9,
 				a: 1.383,
@@ -2054,7 +2054,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0,
 				ty: 5.6,
 				a: 1.202,
@@ -2065,7 +2065,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.9,
 				ty: 10.5,
 				a: 1.383,
@@ -2073,7 +2073,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.75,
 				ty: 8.05,
 				a: 0.986,
@@ -2082,7 +2082,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.6,
 				ty: 9.2,
 				a: 0.986,
@@ -2143,7 +2143,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.95,
 				ty: 3.85,
 				a: 0.851,
@@ -2152,7 +2152,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.95,
 				ty: 2.8,
 				a: 0.986,
@@ -2170,7 +2170,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.95,
 				ty: 2.2,
 				a: -0.548,
@@ -2179,7 +2179,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.2,
 				ty: 5.95,
 				a: 0.986,
@@ -2188,7 +2188,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -19,
 				ty: 7,
 				a: 0.986,
@@ -2206,7 +2206,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.75,
 				ty: 0.05,
 				a: -0.764,
@@ -2215,7 +2215,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.55,
 				ty: 10.3,
 				a: 1.21,
@@ -2233,7 +2233,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.9,
 				ty: 9.5,
 				a: 1.383,
@@ -2241,7 +2241,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.9,
 				ty: 6.2,
 				a: 1.202,
@@ -2252,7 +2252,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.45,
 				ty: 9.6,
 				a: 1.383,
@@ -2260,7 +2260,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.3,
 				ty: 7.15,
 				a: 0.986,
@@ -2269,7 +2269,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.15,
 				ty: 8.3,
 				a: 0.986,
@@ -2330,7 +2330,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.5,
 				ty: 2.95,
 				a: 0.851,
@@ -2339,7 +2339,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.5,
 				ty: 1.9,
 				a: 0.986,
@@ -2357,7 +2357,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.5,
 				ty: 1.3,
 				a: -0.548,
@@ -2366,7 +2366,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.75,
 				ty: 5.05,
 				a: 0.986,
@@ -2375,7 +2375,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.55,
 				ty: 6.1,
 				a: 0.986,
@@ -2393,7 +2393,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.3,
 				ty: -0.85,
 				a: -0.764,
@@ -2402,7 +2402,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3,
 				ty: 9.4,
 				a: 1.21,
@@ -2420,7 +2420,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.45,
 				ty: 8.6,
 				a: 1.383,
@@ -2428,7 +2428,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.3,
 				a: 1.202,
@@ -2439,7 +2439,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -2.2,
 				ty: 10.05,
 				a: 1.383,
@@ -2447,7 +2447,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -14.05,
 				ty: 7.6,
 				a: 0.986,
@@ -2456,7 +2456,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.9,
 				ty: 8.75,
 				a: 0.986,
@@ -2517,7 +2517,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -12.25,
 				ty: 3.4,
 				a: 0.851,
@@ -2526,7 +2526,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -7.25,
 				ty: 2.35,
 				a: 0.986,
@@ -2544,7 +2544,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -14.25,
 				ty: 1.75,
 				a: -0.548,
@@ -2553,7 +2553,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.5,
 				ty: 5.5,
 				a: 0.986,
@@ -2562,7 +2562,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -19.3,
 				ty: 6.55,
 				a: 0.986,
@@ -2580,7 +2580,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -11.05,
 				ty: -0.4,
 				a: -0.764,
@@ -2589,7 +2589,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.25,
 				ty: 9.85,
 				a: 1.21,
@@ -2607,7 +2607,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -6.2,
 				ty: 9.05,
 				a: 1.383,
@@ -2615,7 +2615,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -1.2,
 				ty: 5.75,
 				a: 1.202,
@@ -2626,7 +2626,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -2634,7 +2634,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -12.7,
 				ty: 7.6,
 				a: 0.986,
@@ -2643,7 +2643,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.55,
 				ty: 8.75,
 				a: 0.986,
@@ -2704,7 +2704,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -10.9,
 				ty: 3.4,
 				a: 0.851,
@@ -2713,7 +2713,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -5.9,
 				ty: 2.35,
 				a: 0.986,
@@ -2731,7 +2731,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -12.9,
 				ty: 1.75,
 				a: -0.548,
@@ -2740,7 +2740,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.15,
 				ty: 5.5,
 				a: 0.986,
@@ -2749,7 +2749,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -17.95,
 				ty: 6.55,
 				a: 0.986,
@@ -2767,7 +2767,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.7,
 				ty: -0.4,
 				a: -0.764,
@@ -2776,7 +2776,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.6,
 				ty: 9.85,
 				a: 1.21,
@@ -2794,7 +2794,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.85,
 				ty: 9.05,
 				a: 1.383,
@@ -2802,7 +2802,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0.15,
 				ty: 5.75,
 				a: 1.202,
@@ -2813,7 +2813,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.9,
 				ty: 10.05,
 				a: 1.383,
@@ -2821,7 +2821,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.75,
 				ty: 7.6,
 				a: 0.986,
@@ -2830,7 +2830,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.6,
 				ty: 8.75,
 				a: 0.986,
@@ -2891,7 +2891,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.95,
 				ty: 3.4,
 				a: 0.851,
@@ -2900,7 +2900,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.95,
 				ty: 2.35,
 				a: 0.986,
@@ -2918,7 +2918,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.95,
 				ty: 1.75,
 				a: -0.548,
@@ -2927,7 +2927,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.2,
 				ty: 5.5,
 				a: 0.986,
@@ -2936,7 +2936,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -19,
 				ty: 6.55,
 				a: 0.986,
@@ -2954,7 +2954,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.75,
 				ty: -0.4,
 				a: -0.764,
@@ -2963,7 +2963,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.55,
 				ty: 9.85,
 				a: 1.21,
@@ -2981,7 +2981,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.9,
 				ty: 9.05,
 				a: 1.383,
@@ -2989,7 +2989,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.9,
 				ty: 5.75,
 				a: 1.202,
@@ -3000,7 +3000,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1,
 				ty: 9.6,
 				a: 1.383,
@@ -3008,7 +3008,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -12.85,
 				ty: 7.15,
 				a: 0.986,
@@ -3017,7 +3017,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.7,
 				ty: 8.3,
 				a: 0.986,
@@ -3078,7 +3078,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.05,
 				ty: 2.95,
 				a: 0.851,
@@ -3087,7 +3087,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.05,
 				ty: 1.9,
 				a: 0.986,
@@ -3105,7 +3105,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.05,
 				ty: 1.3,
 				a: -0.548,
@@ -3114,7 +3114,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.3,
 				ty: 5.05,
 				a: 0.986,
@@ -3123,7 +3123,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.1,
 				ty: 6.1,
 				a: 0.986,
@@ -3141,7 +3141,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.85,
 				ty: -0.85,
 				a: -0.764,
@@ -3150,7 +3150,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.45,
 				ty: 9.4,
 				a: 1.21,
@@ -3168,7 +3168,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.6,
 				a: 1.383,
@@ -3176,7 +3176,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0,
 				ty: 5.3,
 				a: 1.202,
@@ -3187,7 +3187,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.75,
 				ty: 10.35,
 				a: 1.383,
@@ -3195,7 +3195,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.6,
 				ty: 7.9,
 				a: 0.986,
@@ -3204,7 +3204,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.45,
 				ty: 9.05,
 				a: 0.986,
@@ -3265,7 +3265,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.8,
 				ty: 3.7,
 				a: 0.851,
@@ -3274,7 +3274,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.8,
 				ty: 2.65,
 				a: 0.986,
@@ -3292,7 +3292,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.8,
 				ty: 2.05,
 				a: -0.548,
@@ -3301,7 +3301,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.05,
 				ty: 5.8,
 				a: 0.986,
@@ -3310,7 +3310,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.85,
 				ty: 6.85,
 				a: 0.986,
@@ -3328,7 +3328,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.6,
 				ty: -0.1,
 				a: -0.764,
@@ -3337,7 +3337,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.7,
 				ty: 10.15,
 				a: 1.21,
@@ -3355,7 +3355,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.75,
 				ty: 9.35,
 				a: 1.383,
@@ -3363,7 +3363,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.75,
 				ty: 6.05,
 				a: 1.202,
@@ -3374,7 +3374,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.75,
 				ty: 10.35,
 				a: 1.383,
@@ -3382,7 +3382,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.6,
 				ty: 7.9,
 				a: 0.986,
@@ -3391,7 +3391,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.45,
 				ty: 9.05,
 				a: 0.986,
@@ -3452,7 +3452,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.8,
 				ty: 3.7,
 				a: 0.851,
@@ -3461,7 +3461,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.8,
 				ty: 2.65,
 				a: 0.986,
@@ -3479,7 +3479,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.8,
 				ty: 2.05,
 				a: -0.548,
@@ -3488,7 +3488,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.05,
 				ty: 5.8,
 				a: 0.986,
@@ -3497,7 +3497,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.85,
 				ty: 6.85,
 				a: 0.986,
@@ -3515,7 +3515,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.6,
 				ty: -0.1,
 				a: -0.764,
@@ -3524,7 +3524,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.7,
 				ty: 10.15,
 				a: 1.21,
@@ -3542,7 +3542,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.75,
 				ty: 9.35,
 				a: 1.383,
@@ -3550,7 +3550,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.75,
 				ty: 6.05,
 				a: 1.202,
@@ -3561,7 +3561,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1,
 				ty: 9.6,
 				a: 1.383,
@@ -3569,7 +3569,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -12.85,
 				ty: 7.15,
 				a: 0.986,
@@ -3578,7 +3578,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.7,
 				ty: 8.3,
 				a: 0.986,
@@ -3639,7 +3639,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.05,
 				ty: 2.95,
 				a: 0.851,
@@ -3648,7 +3648,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.05,
 				ty: 1.9,
 				a: 0.986,
@@ -3666,7 +3666,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.05,
 				ty: 1.3,
 				a: -0.548,
@@ -3675,7 +3675,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.3,
 				ty: 5.05,
 				a: 0.986,
@@ -3684,7 +3684,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.1,
 				ty: 6.1,
 				a: 0.986,
@@ -3702,7 +3702,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.85,
 				ty: -0.85,
 				a: -0.764,
@@ -3711,7 +3711,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.45,
 				ty: 9.4,
 				a: 1.21,
@@ -3729,7 +3729,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.6,
 				a: 1.383,
@@ -3737,7 +3737,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0,
 				ty: 5.3,
 				a: 1.202,
@@ -3748,7 +3748,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.9,
 				ty: 10.05,
 				a: 1.383,
@@ -3756,7 +3756,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.75,
 				ty: 7.6,
 				a: 0.986,
@@ -3765,7 +3765,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.6,
 				ty: 8.75,
 				a: 0.986,
@@ -3826,7 +3826,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.95,
 				ty: 3.4,
 				a: 0.851,
@@ -3835,7 +3835,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.95,
 				ty: 2.35,
 				a: 0.986,
@@ -3853,7 +3853,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.95,
 				ty: 1.75,
 				a: -0.548,
@@ -3862,7 +3862,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.2,
 				ty: 5.5,
 				a: 0.986,
@@ -3871,7 +3871,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -19,
 				ty: 6.55,
 				a: 0.986,
@@ -3889,7 +3889,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.75,
 				ty: -0.4,
 				a: -0.764,
@@ -3898,7 +3898,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.55,
 				ty: 9.85,
 				a: 1.21,
@@ -3916,7 +3916,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.9,
 				ty: 9.05,
 				a: 1.383,
@@ -3924,7 +3924,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.9,
 				ty: 5.75,
 				a: 1.202,
@@ -3935,7 +3935,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -3943,7 +3943,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -12.7,
 				ty: 7.6,
 				a: 0.986,
@@ -3952,7 +3952,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.55,
 				ty: 8.75,
 				a: 0.986,
@@ -4013,7 +4013,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -10.9,
 				ty: 3.4,
 				a: 0.851,
@@ -4022,7 +4022,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -5.9,
 				ty: 2.35,
 				a: 0.986,
@@ -4040,7 +4040,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -12.9,
 				ty: 1.75,
 				a: -0.548,
@@ -4049,7 +4049,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.15,
 				ty: 5.5,
 				a: 0.986,
@@ -4058,7 +4058,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -17.95,
 				ty: 6.55,
 				a: 0.986,
@@ -4076,7 +4076,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.7,
 				ty: -0.4,
 				a: -0.764,
@@ -4085,7 +4085,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.6,
 				ty: 9.85,
 				a: 1.21,
@@ -4103,7 +4103,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.85,
 				ty: 9.05,
 				a: 1.383,
@@ -4111,7 +4111,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0.15,
 				ty: 5.75,
 				a: 1.202,
@@ -4122,7 +4122,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.75,
 				ty: 10.5,
 				a: 1.383,
@@ -4130,7 +4130,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.6,
 				ty: 8.05,
 				a: 0.986,
@@ -4139,7 +4139,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.45,
 				ty: 9.2,
 				a: 0.986,
@@ -4200,7 +4200,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.8,
 				ty: 3.85,
 				a: 0.851,
@@ -4209,7 +4209,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.8,
 				ty: 2.8,
 				a: 0.986,
@@ -4227,7 +4227,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.8,
 				ty: 2.2,
 				a: -0.548,
@@ -4236,7 +4236,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.05,
 				ty: 5.95,
 				a: 0.986,
@@ -4245,7 +4245,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.85,
 				ty: 7,
 				a: 0.986,
@@ -4263,7 +4263,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.6,
 				ty: 0.05,
 				a: -0.764,
@@ -4272,7 +4272,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.7,
 				ty: 10.3,
 				a: 1.21,
@@ -4290,7 +4290,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.75,
 				ty: 9.5,
 				a: 1.383,
@@ -4298,7 +4298,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.75,
 				ty: 6.2,
 				a: 1.202,
@@ -4309,7 +4309,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1,
 				ty: 10.05,
 				a: 1.383,
@@ -4317,7 +4317,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -12.85,
 				ty: 7.6,
 				a: 0.986,
@@ -4326,7 +4326,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.7,
 				ty: 8.75,
 				a: 0.986,
@@ -4387,7 +4387,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.05,
 				ty: 3.4,
 				a: 0.851,
@@ -4396,7 +4396,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.05,
 				ty: 2.35,
 				a: 0.986,
@@ -4414,7 +4414,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.05,
 				ty: 1.75,
 				a: -0.548,
@@ -4423,7 +4423,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.3,
 				ty: 5.5,
 				a: 0.986,
@@ -4432,7 +4432,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.1,
 				ty: 6.55,
 				a: 0.986,
@@ -4450,7 +4450,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.85,
 				ty: -0.4,
 				a: -0.764,
@@ -4459,7 +4459,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.45,
 				ty: 9.85,
 				a: 1.21,
@@ -4477,7 +4477,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 9.05,
 				a: 1.383,
@@ -4485,7 +4485,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0,
 				ty: 5.75,
 				a: 1.202,
@@ -4496,7 +4496,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.9,
 				ty: 10.05,
 				a: 1.383,
@@ -4504,7 +4504,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.75,
 				ty: 7.6,
 				a: 0.986,
@@ -4513,7 +4513,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.6,
 				ty: 8.75,
 				a: 0.986,
@@ -4574,7 +4574,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.95,
 				ty: 3.4,
 				a: 0.851,
@@ -4583,7 +4583,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.95,
 				ty: 2.35,
 				a: 0.986,
@@ -4601,7 +4601,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.95,
 				ty: 1.75,
 				a: -0.548,
@@ -4610,7 +4610,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.2,
 				ty: 5.5,
 				a: 0.986,
@@ -4619,7 +4619,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -19,
 				ty: 6.55,
 				a: 0.986,
@@ -4637,7 +4637,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.75,
 				ty: -0.4,
 				a: -0.764,
@@ -4646,7 +4646,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.55,
 				ty: 9.85,
 				a: 1.21,
@@ -4664,7 +4664,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.9,
 				ty: 9.05,
 				a: 1.383,
@@ -4672,7 +4672,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.9,
 				ty: 5.75,
 				a: 1.202,
@@ -4683,7 +4683,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1,
 				ty: 10.05,
 				a: 1.383,
@@ -4691,7 +4691,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -12.85,
 				ty: 7.6,
 				a: 0.986,
@@ -4700,7 +4700,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.7,
 				ty: 8.75,
 				a: 0.986,
@@ -4761,7 +4761,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.05,
 				ty: 3.4,
 				a: 0.851,
@@ -4770,7 +4770,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.05,
 				ty: 2.35,
 				a: 0.986,
@@ -4788,7 +4788,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.05,
 				ty: 1.75,
 				a: -0.548,
@@ -4797,7 +4797,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.3,
 				ty: 5.5,
 				a: 0.986,
@@ -4806,7 +4806,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.1,
 				ty: 6.55,
 				a: 0.986,
@@ -4824,7 +4824,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.85,
 				ty: -0.4,
 				a: -0.764,
@@ -4833,7 +4833,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.45,
 				ty: 9.85,
 				a: 1.21,
@@ -4851,7 +4851,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 9.05,
 				a: 1.383,
@@ -4859,7 +4859,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0,
 				ty: 5.75,
 				a: 1.202,
@@ -4870,7 +4870,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.9,
 				ty: 10.5,
 				a: 1.383,
@@ -4878,7 +4878,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.75,
 				ty: 8.05,
 				a: 0.986,
@@ -4887,7 +4887,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.6,
 				ty: 9.2,
 				a: 0.986,
@@ -4948,7 +4948,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.95,
 				ty: 3.85,
 				a: 0.851,
@@ -4957,7 +4957,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.95,
 				ty: 2.8,
 				a: 0.986,
@@ -4975,7 +4975,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.95,
 				ty: 2.2,
 				a: -0.548,
@@ -4984,7 +4984,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.2,
 				ty: 5.95,
 				a: 0.986,
@@ -4993,7 +4993,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -19,
 				ty: 7,
 				a: 0.986,
@@ -5011,7 +5011,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.75,
 				ty: 0.05,
 				a: -0.764,
@@ -5020,7 +5020,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.55,
 				ty: 10.3,
 				a: 1.21,
@@ -5038,7 +5038,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.9,
 				ty: 9.5,
 				a: 1.383,
@@ -5046,7 +5046,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.9,
 				ty: 6.2,
 				a: 1.202,
@@ -5057,7 +5057,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.45,
 				ty: 9.6,
 				a: 1.383,
@@ -5065,7 +5065,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.3,
 				ty: 7.15,
 				a: 0.986,
@@ -5074,7 +5074,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.15,
 				ty: 8.3,
 				a: 0.986,
@@ -5135,7 +5135,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.5,
 				ty: 2.95,
 				a: 0.851,
@@ -5144,7 +5144,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.5,
 				ty: 1.9,
 				a: 0.986,
@@ -5162,7 +5162,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.5,
 				ty: 1.3,
 				a: -0.548,
@@ -5171,7 +5171,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.75,
 				ty: 5.05,
 				a: 0.986,
@@ -5180,7 +5180,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.55,
 				ty: 6.1,
 				a: 0.986,
@@ -5198,7 +5198,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.3,
 				ty: -0.85,
 				a: -0.764,
@@ -5207,7 +5207,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3,
 				ty: 9.4,
 				a: 1.21,
@@ -5225,7 +5225,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.45,
 				ty: 8.6,
 				a: 1.383,
@@ -5233,7 +5233,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.3,
 				a: 1.202,
@@ -5244,7 +5244,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.45,
 				ty: 10.5,
 				a: 1.383,
@@ -5252,7 +5252,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.3,
 				ty: 8.05,
 				a: 0.986,
@@ -5261,7 +5261,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.15,
 				ty: 9.2,
 				a: 0.986,
@@ -5322,7 +5322,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.5,
 				ty: 3.85,
 				a: 0.851,
@@ -5331,7 +5331,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.5,
 				ty: 2.8,
 				a: 0.986,
@@ -5349,7 +5349,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.5,
 				ty: 2.2,
 				a: -0.548,
@@ -5358,7 +5358,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.75,
 				ty: 5.95,
 				a: 0.986,
@@ -5367,7 +5367,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.55,
 				ty: 7,
 				a: 0.986,
@@ -5385,7 +5385,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.3,
 				ty: 0.05,
 				a: -0.764,
@@ -5394,7 +5394,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3,
 				ty: 10.3,
 				a: 1.21,
@@ -5412,7 +5412,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.45,
 				ty: 9.5,
 				a: 1.383,
@@ -5420,7 +5420,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 6.2,
 				a: 1.202,
@@ -5431,7 +5431,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1,
 				ty: 10.05,
 				a: 1.383,
@@ -5439,7 +5439,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -12.85,
 				ty: 7.6,
 				a: 0.986,
@@ -5448,7 +5448,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.7,
 				ty: 8.75,
 				a: 0.986,
@@ -5509,7 +5509,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.05,
 				ty: 3.4,
 				a: 0.851,
@@ -5518,7 +5518,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.05,
 				ty: 2.35,
 				a: 0.986,
@@ -5536,7 +5536,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.05,
 				ty: 1.75,
 				a: -0.548,
@@ -5545,7 +5545,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.3,
 				ty: 5.5,
 				a: 0.986,
@@ -5554,7 +5554,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.1,
 				ty: 6.55,
 				a: 0.986,
@@ -5572,7 +5572,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.85,
 				ty: -0.4,
 				a: -0.764,
@@ -5581,7 +5581,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.45,
 				ty: 9.85,
 				a: 1.21,
@@ -5599,7 +5599,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 9.05,
 				a: 1.383,
@@ -5607,7 +5607,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0,
 				ty: 5.75,
 				a: 1.202,
@@ -5618,7 +5618,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.75,
 				ty: 10.35,
 				a: 1.383,
@@ -5626,7 +5626,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.6,
 				ty: 7.9,
 				a: 0.986,
@@ -5635,7 +5635,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.45,
 				ty: 9.05,
 				a: 0.986,
@@ -5696,7 +5696,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.8,
 				ty: 3.7,
 				a: 0.851,
@@ -5705,7 +5705,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.8,
 				ty: 2.65,
 				a: 0.986,
@@ -5723,7 +5723,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.8,
 				ty: 2.05,
 				a: -0.548,
@@ -5732,7 +5732,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.05,
 				ty: 5.8,
 				a: 0.986,
@@ -5741,7 +5741,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.85,
 				ty: 6.85,
 				a: 0.986,
@@ -5759,7 +5759,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.6,
 				ty: -0.1,
 				a: -0.764,
@@ -5768,7 +5768,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.7,
 				ty: 10.15,
 				a: 1.21,
@@ -5786,7 +5786,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.75,
 				ty: 9.35,
 				a: 1.383,
@@ -5794,7 +5794,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.75,
 				ty: 6.05,
 				a: 1.202,
@@ -5805,7 +5805,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1,
 				ty: 9.75,
 				a: 1.383,
@@ -5813,7 +5813,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -12.85,
 				ty: 7.3,
 				a: 0.986,
@@ -5822,7 +5822,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.7,
 				ty: 8.45,
 				a: 0.986,
@@ -5883,7 +5883,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.05,
 				ty: 3.1,
 				a: 0.851,
@@ -5892,7 +5892,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.05,
 				ty: 2.05,
 				a: 0.986,
@@ -5910,7 +5910,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.05,
 				ty: 1.45,
 				a: -0.548,
@@ -5919,7 +5919,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.3,
 				ty: 5.2,
 				a: 0.986,
@@ -5928,7 +5928,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.1,
 				ty: 6.25,
 				a: 0.986,
@@ -5946,7 +5946,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.85,
 				ty: -0.7,
 				a: -0.764,
@@ -5955,7 +5955,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.45,
 				ty: 9.55,
 				a: 1.21,
@@ -5973,7 +5973,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.75,
 				a: 1.383,
@@ -5981,7 +5981,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0,
 				ty: 5.45,
 				a: 1.202,
@@ -5992,7 +5992,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.9,
 				ty: 10.05,
 				a: 1.383,
@@ -6000,7 +6000,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.75,
 				ty: 7.6,
 				a: 0.986,
@@ -6009,7 +6009,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.6,
 				ty: 8.75,
 				a: 0.986,
@@ -6070,7 +6070,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.95,
 				ty: 3.4,
 				a: 0.851,
@@ -6079,7 +6079,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.95,
 				ty: 2.35,
 				a: 0.986,
@@ -6097,7 +6097,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.95,
 				ty: 1.75,
 				a: -0.548,
@@ -6106,7 +6106,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -16.2,
 				ty: 5.5,
 				a: 0.986,
@@ -6115,7 +6115,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -19,
 				ty: 6.55,
 				a: 0.986,
@@ -6133,7 +6133,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.75,
 				ty: -0.4,
 				a: -0.764,
@@ -6142,7 +6142,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.55,
 				ty: 9.85,
 				a: 1.21,
@@ -6160,7 +6160,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.9,
 				ty: 9.05,
 				a: 1.383,
@@ -6168,7 +6168,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.9,
 				ty: 5.75,
 				a: 1.202,
@@ -6179,7 +6179,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1,
 				ty: 10.05,
 				a: 1.383,
@@ -6187,7 +6187,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -12.85,
 				ty: 7.6,
 				a: 0.986,
@@ -6196,7 +6196,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.7,
 				ty: 8.75,
 				a: 0.986,
@@ -6257,7 +6257,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.05,
 				ty: 3.4,
 				a: 0.851,
@@ -6266,7 +6266,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.05,
 				ty: 2.35,
 				a: 0.986,
@@ -6284,7 +6284,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.05,
 				ty: 1.75,
 				a: -0.548,
@@ -6293,7 +6293,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.3,
 				ty: 5.5,
 				a: 0.986,
@@ -6302,7 +6302,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.1,
 				ty: 6.55,
 				a: 0.986,
@@ -6320,7 +6320,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.85,
 				ty: -0.4,
 				a: -0.764,
@@ -6329,7 +6329,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.45,
 				ty: 9.85,
 				a: 1.21,
@@ -6347,7 +6347,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 9.05,
 				a: 1.383,
@@ -6355,7 +6355,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0,
 				ty: 5.75,
 				a: 1.202,
@@ -6366,7 +6366,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.6,
 				ty: 10.05,
 				a: 1.383,
@@ -6374,7 +6374,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.45,
 				ty: 7.6,
 				a: 0.986,
@@ -6383,7 +6383,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.3,
 				ty: 8.75,
 				a: 0.986,
@@ -6444,7 +6444,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.65,
 				ty: 3.4,
 				a: 0.851,
@@ -6453,7 +6453,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.65,
 				ty: 2.35,
 				a: 0.986,
@@ -6471,7 +6471,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.65,
 				ty: 1.75,
 				a: -0.548,
@@ -6480,7 +6480,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.9,
 				ty: 5.5,
 				a: 0.986,
@@ -6489,7 +6489,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.7,
 				ty: 6.55,
 				a: 0.986,
@@ -6507,7 +6507,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.45,
 				ty: -0.4,
 				a: -0.764,
@@ -6516,7 +6516,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.85,
 				ty: 9.85,
 				a: 1.21,
@@ -6534,7 +6534,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.6,
 				ty: 9.05,
 				a: 1.383,
@@ -6542,7 +6542,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.6,
 				ty: 5.75,
 				a: 1.202,
@@ -6553,7 +6553,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.3,
 				ty: 10.05,
 				a: 1.383,
@@ -6561,7 +6561,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.15,
 				ty: 7.6,
 				a: 0.986,
@@ -6570,7 +6570,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16,
 				ty: 8.75,
 				a: 0.986,
@@ -6631,7 +6631,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.35,
 				ty: 3.4,
 				a: 0.851,
@@ -6640,7 +6640,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.35,
 				ty: 2.35,
 				a: 0.986,
@@ -6658,7 +6658,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.35,
 				ty: 1.75,
 				a: -0.548,
@@ -6667,7 +6667,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.6,
 				ty: 5.5,
 				a: 0.986,
@@ -6676,7 +6676,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.4,
 				ty: 6.55,
 				a: 0.986,
@@ -6694,7 +6694,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.15,
 				ty: -0.4,
 				a: -0.764,
@@ -6703,7 +6703,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.15,
 				ty: 9.85,
 				a: 1.21,
@@ -6721,7 +6721,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.3,
 				ty: 9.05,
 				a: 1.383,
@@ -6729,7 +6729,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.3,
 				ty: 5.75,
 				a: 1.202,
@@ -6740,7 +6740,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.45,
 				ty: 10.2,
 				a: 1.383,
@@ -6748,7 +6748,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.3,
 				ty: 7.75,
 				a: 0.986,
@@ -6757,7 +6757,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.15,
 				ty: 8.9,
 				a: 0.986,
@@ -6818,7 +6818,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.5,
 				ty: 3.55,
 				a: 0.851,
@@ -6827,7 +6827,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.5,
 				ty: 2.5,
 				a: 0.986,
@@ -6845,7 +6845,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.5,
 				ty: 1.9,
 				a: -0.548,
@@ -6854,7 +6854,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.75,
 				ty: 5.65,
 				a: 0.986,
@@ -6863,7 +6863,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.55,
 				ty: 6.7,
 				a: 0.986,
@@ -6881,7 +6881,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.3,
 				ty: -0.25,
 				a: -0.764,
@@ -6890,7 +6890,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3,
 				ty: 10,
 				a: 1.21,
@@ -6908,7 +6908,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.45,
 				ty: 9.2,
 				a: 1.383,
@@ -6916,7 +6916,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.9,
 				a: 1.202,
@@ -6927,7 +6927,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.45,
 				ty: 9.9,
 				a: 1.383,
@@ -6935,7 +6935,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.3,
 				ty: 7.45,
 				a: 0.986,
@@ -6944,7 +6944,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.15,
 				ty: 8.6,
 				a: 0.986,
@@ -7005,7 +7005,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.5,
 				ty: 3.25,
 				a: 0.851,
@@ -7014,7 +7014,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.5,
 				ty: 2.2,
 				a: 0.986,
@@ -7032,7 +7032,7 @@ export let release = {
 				d: 1.228,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.5,
 				ty: 1.6,
 				a: -0.548,
@@ -7041,7 +7041,7 @@ export let release = {
 				d: 0.548,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.75,
 				ty: 5.35,
 				a: 0.986,
@@ -7050,7 +7050,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.55,
 				ty: 6.4,
 				a: 0.986,
@@ -7068,7 +7068,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.3,
 				ty: -0.55,
 				a: -0.764,
@@ -7077,7 +7077,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3,
 				ty: 9.7,
 				a: 1.21,
@@ -7095,7 +7095,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.45,
 				ty: 8.9,
 				a: 1.383,
@@ -7103,7 +7103,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.6,
 				a: 1.202,
@@ -7114,7 +7114,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.45,
 				ty: 10.05,
 				a: 1.383,
@@ -7122,7 +7122,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -13.3,
 				ty: 7.6,
 				a: 0.986,
@@ -7131,7 +7131,7 @@ export let release = {
 				d: 0.986,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -16.15,
 				ty: 8.7,
 				a: 0.986,
@@ -7192,7 +7192,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -11.5,
 				ty: 3.4,
 				a: 0.852,
@@ -7201,7 +7201,7 @@ export let release = {
 				d: 0.198,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -6.5,
 				ty: 2.35,
 				a: 0.986,
@@ -7219,7 +7219,7 @@ export let release = {
 				d: 1.229,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -13.5,
 				ty: 1.75,
 				a: -0.549,
@@ -7228,7 +7228,7 @@ export let release = {
 				d: 0.549,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -15.75,
 				ty: 5.5,
 				a: 0.986,
@@ -7237,7 +7237,7 @@ export let release = {
 				d: 0.986,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -18.6,
 				ty: 6.55,
 				a: 0.986,
@@ -7255,7 +7255,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -10.3,
 				ty: -0.45,
 				a: -0.765,
@@ -7264,7 +7264,7 @@ export let release = {
 				d: 0.986,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3,
 				ty: 9.8,
 				a: 1.21,
@@ -7282,7 +7282,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.35,
 				ty: 9.1,
 				a: 1.383,
@@ -7290,7 +7290,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 5.75,
 				a: 1.202,
@@ -7301,7 +7301,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.3,
 				ty: 10.05,
 				a: 1.383,
@@ -7309,7 +7309,7 @@ export let release = {
 				d: 1.386,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -12.35,
 				ty: 7.4,
 				a: 0.976,
@@ -7318,7 +7318,7 @@ export let release = {
 				d: 0.976,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -15.15,
 				ty: 8.65,
 				a: 0.976,
@@ -7379,7 +7379,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -10.8,
 				ty: 3.1,
 				a: 0.778,
@@ -7388,7 +7388,7 @@ export let release = {
 				d: 0.259,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -5.9,
 				ty: 1.85,
 				a: 0.976,
@@ -7406,7 +7406,7 @@ export let release = {
 				d: 1.216,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -12.85,
 				ty: 1.6,
 				a: -0.543,
@@ -7415,7 +7415,7 @@ export let release = {
 				d: 0.543,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -14.85,
 				ty: 5.4,
 				a: 0.976,
@@ -7424,7 +7424,7 @@ export let release = {
 				d: 0.976,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -17.65,
 				ty: 6.6,
 				a: 0.976,
@@ -7442,7 +7442,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.75,
 				ty: -0.7,
 				a: -0.774,
@@ -7451,7 +7451,7 @@ export let release = {
 				d: 0.976,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.1,
 				ty: 9.8,
 				a: 1.21,
@@ -7469,7 +7469,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.35,
 				ty: 9.05,
 				a: 1.383,
@@ -7477,7 +7477,7 @@ export let release = {
 				d: 1.384,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -7488,7 +7488,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.15,
 				ty: 10.1,
 				a: 1.383,
@@ -7496,7 +7496,7 @@ export let release = {
 				d: 1.387,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -11.4,
 				ty: 7.15,
 				a: 0.964,
@@ -7505,7 +7505,7 @@ export let release = {
 				d: 0.964,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.15,
 				ty: 8.55,
 				a: 0.964,
@@ -7566,7 +7566,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -10.15,
 				ty: 2.75,
 				a: 0.705,
@@ -7575,7 +7575,7 @@ export let release = {
 				d: 0.319,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -5.3,
 				ty: 1.3,
 				a: 0.964,
@@ -7593,7 +7593,7 @@ export let release = {
 				d: 1.2,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -12.3,
 				ty: 1.45,
 				a: -0.536,
@@ -7602,7 +7602,7 @@ export let release = {
 				d: 0.536,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -14.15,
 				ty: 5.35,
 				a: 0.964,
@@ -7611,7 +7611,7 @@ export let release = {
 				d: 0.964,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -16.75,
 				ty: 6.6,
 				a: 0.964,
@@ -7629,7 +7629,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.35,
 				ty: -1,
 				a: -0.781,
@@ -7638,7 +7638,7 @@ export let release = {
 				d: 0.964,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.2,
 				ty: 9.85,
 				a: 1.21,
@@ -7656,7 +7656,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.25,
 				ty: 9.05,
 				a: 1.383,
@@ -7664,7 +7664,7 @@ export let release = {
 				d: 1.385,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -7675,14 +7675,14 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.05,
 				ty: 10.1,
 				a: 1.383,
 				d: 1.387,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -10.45,
 				ty: 6.95,
 				a: 0.949,
@@ -7691,7 +7691,7 @@ export let release = {
 				d: 0.949,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -13.2,
 				ty: 8.45,
 				a: 0.949,
@@ -7750,7 +7750,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -9.4,
 				ty: 2.55,
 				a: 0.631,
@@ -7759,7 +7759,7 @@ export let release = {
 				d: 0.377,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -4.75,
 				ty: 0.7,
 				a: 0.949,
@@ -7777,7 +7777,7 @@ export let release = {
 				d: 1.182,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -11.7,
 				ty: 1.3,
 				a: -0.528,
@@ -7786,7 +7786,7 @@ export let release = {
 				d: 0.528,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -13.25,
 				ty: 5.25,
 				a: 0.949,
@@ -7795,7 +7795,7 @@ export let release = {
 				d: 0.949,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -15.85,
 				ty: 6.75,
 				a: 0.949,
@@ -7813,7 +7813,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.8,
 				ty: -1.4,
 				a: -0.786,
@@ -7822,7 +7822,7 @@ export let release = {
 				d: 0.949,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.3,
 				ty: 9.8,
 				a: 1.21,
@@ -7840,7 +7840,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.15,
 				ty: 9.05,
 				a: 1.383,
@@ -7848,7 +7848,7 @@ export let release = {
 				d: 1.385,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -7859,7 +7859,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.9,
 				ty: 10.05,
 				a: 1.383,
@@ -7867,7 +7867,7 @@ export let release = {
 				d: 1.386,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -9.55,
 				ty: 6.7,
 				a: 0.931,
@@ -7876,7 +7876,7 @@ export let release = {
 				d: 0.931,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -12.2,
 				ty: 8.4,
 				a: 0.931,
@@ -7937,7 +7937,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -8.8,
 				ty: 2.25,
 				a: 0.558,
@@ -7946,7 +7946,7 @@ export let release = {
 				d: 0.433,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -4.1,
 				ty: 0.2,
 				a: 0.931,
@@ -7964,7 +7964,7 @@ export let release = {
 				d: 1.16,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -11.05,
 				ty: 1,
 				a: -0.518,
@@ -7973,7 +7973,7 @@ export let release = {
 				d: 0.518,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -12.45,
 				ty: 5.15,
 				a: 0.931,
@@ -7982,7 +7982,7 @@ export let release = {
 				d: 0.931,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -14.9,
 				ty: 6.8,
 				a: 0.931,
@@ -8000,7 +8000,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.4,
 				ty: -1.7,
 				a: -0.789,
@@ -8009,7 +8009,7 @@ export let release = {
 				d: 0.931,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.4,
 				ty: 9.8,
 				a: 1.21,
@@ -8027,7 +8027,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5.15,
 				ty: 9.05,
 				a: 1.383,
@@ -8035,7 +8035,7 @@ export let release = {
 				d: 1.384,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -8046,7 +8046,7 @@ export let release = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -8054,7 +8054,7 @@ export let release = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -8.7,
 				ty: 6.5,
 				a: 0.912,
@@ -8063,7 +8063,7 @@ export let release = {
 				d: 0.912,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -11.2,
 				ty: 8.3,
 				a: 0.912,
@@ -8124,7 +8124,7 @@ export let release = {
 				d: 1.045,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -8.1,
 				ty: 1.95,
 				a: 0.486,
@@ -8133,7 +8133,7 @@ export let release = {
 				d: 0.486,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -3.55,
 				ty: -0.35,
 				a: 0.912,
@@ -8151,7 +8151,7 @@ export let release = {
 				d: 1.136,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.45,
 				ty: 0.9,
 				a: -0.507,
@@ -8160,7 +8160,7 @@ export let release = {
 				d: 0.507,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.6,
 				ty: 5.1,
 				a: 0.912,
@@ -8169,7 +8169,7 @@ export let release = {
 				d: 0.912,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -14.1,
 				ty: 6.85,
 				a: 0.912,
@@ -8187,7 +8187,7 @@ export let release = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.9,
 				ty: -2.05,
 				a: -0.789,
@@ -8196,7 +8196,7 @@ export let release = {
 				d: 0.912,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 9.75,
 				a: 1.21,
@@ -8214,7 +8214,7 @@ export let release = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.95,
 				ty: 9.1,
 				a: 1.383,
@@ -8222,7 +8222,7 @@ export let release = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 5.75,
 				a: 1.202,

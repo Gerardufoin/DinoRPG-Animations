@@ -1,10 +1,10 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'mahamuti_jump',
 	frames: [
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -6.35,
 				ty: 8.25,
 				a: 0.358,
@@ -13,7 +13,7 @@ export let jump = {
 				d: 0.271,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -7.9,
 				ty: 6.5,
 				a: 0.912,
@@ -22,7 +22,7 @@ export let jump = {
 				d: 0.912,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -10.4,
 				ty: 8.3,
 				a: 0.912,
@@ -81,7 +81,7 @@ export let jump = {
 				ty: -0.05,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -7.3,
 				ty: 1.95,
 				a: 0.486,
@@ -90,7 +90,7 @@ export let jump = {
 				d: 0.486,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -2.75,
 				ty: -0.35,
 				a: 0.912,
@@ -108,7 +108,7 @@ export let jump = {
 				d: 1.136,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -9.65,
 				ty: 0.9,
 				a: -0.507,
@@ -117,7 +117,7 @@ export let jump = {
 				d: 0.507,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -10.8,
 				ty: 5.1,
 				a: 0.912,
@@ -126,7 +126,7 @@ export let jump = {
 				d: 0.912,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -13.3,
 				ty: 6.85,
 				a: 0.912,
@@ -144,7 +144,7 @@ export let jump = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.1,
 				ty: -2.05,
 				a: -0.789,
@@ -153,7 +153,7 @@ export let jump = {
 				d: 0.912,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 7.05,
 				ty: 9.75,
 				a: 0.195,
@@ -171,7 +171,7 @@ export let jump = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -6.8,
 				ty: 8.2,
 				a: 0.691,
@@ -180,7 +180,7 @@ export let jump = {
 				d: 0.613,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0.3,
 				ty: 5.75,
 				a: 1.202,

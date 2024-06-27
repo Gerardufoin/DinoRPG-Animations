@@ -1,10 +1,10 @@
 // @ts-check
 
-export let run = {
+export const run = {
 	id: 'mahamuti_run',
 	frames: [
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -12,7 +12,7 @@ export let run = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -8.7,
 				ty: 6.5,
 				a: 0.912,
@@ -21,7 +21,7 @@ export let run = {
 				d: 0.912,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -11.2,
 				ty: 8.3,
 				a: 0.912,
@@ -80,7 +80,7 @@ export let run = {
 				ty: -0.05,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -8.1,
 				ty: 1.95,
 				a: 0.486,
@@ -89,7 +89,7 @@ export let run = {
 				d: 0.486,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -3.55,
 				ty: -0.35,
 				a: 0.912,
@@ -107,7 +107,7 @@ export let run = {
 				d: 1.136,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.45,
 				ty: 0.9,
 				a: -0.507,
@@ -116,7 +116,7 @@ export let run = {
 				d: 0.507,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.6,
 				ty: 5.1,
 				a: 0.912,
@@ -125,7 +125,7 @@ export let run = {
 				d: 0.912,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -14.1,
 				ty: 6.85,
 				a: 0.912,
@@ -143,7 +143,7 @@ export let run = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.9,
 				ty: -2.05,
 				a: -0.789,
@@ -152,7 +152,7 @@ export let run = {
 				d: 0.912,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 9.75,
 				a: 1.21,
@@ -170,7 +170,7 @@ export let run = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.95,
 				ty: 9.1,
 				a: 1.383,
@@ -178,7 +178,7 @@ export let run = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 5.75,
 				a: 1.202,
@@ -189,7 +189,7 @@ export let run = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -2.65,
 				ty: 8.35,
 				a: 1.198,
@@ -198,7 +198,7 @@ export let run = {
 				d: 1.152,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -9.65,
 				ty: 5.55,
 				a: 0.911,
@@ -207,7 +207,7 @@ export let run = {
 				d: 0.911,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -12.1,
 				ty: 7.35,
 				a: 0.911,
@@ -266,7 +266,7 @@ export let run = {
 				ty: -1.05,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -9,
 				ty: 1,
 				a: 0.486,
@@ -275,7 +275,7 @@ export let run = {
 				d: 0.486,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -4.45,
 				ty: -1.25,
 				a: 0.911,
@@ -293,7 +293,7 @@ export let run = {
 				d: 1.135,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -11.35,
 				ty: -0.05,
 				a: -0.507,
@@ -302,7 +302,7 @@ export let run = {
 				d: 0.507,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -12.45,
 				ty: 4.2,
 				a: 0.911,
@@ -311,7 +311,7 @@ export let run = {
 				d: 0.911,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -15,
 				ty: 5.95,
 				a: 0.911,
@@ -329,7 +329,7 @@ export let run = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.8,
 				ty: -2.9,
 				a: -0.789,
@@ -338,7 +338,7 @@ export let run = {
 				d: 0.911,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 4.95,
 				ty: 8.9,
 				a: 0.985,
@@ -356,7 +356,7 @@ export let run = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -6.75,
 				ty: 7.7,
 				a: 1.097,
@@ -365,7 +365,7 @@ export let run = {
 				d: 1.042,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 4.85,
 				a: 1.202,
@@ -376,7 +376,7 @@ export let run = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -4.4,
 				ty: 6.5,
 				a: 0.691,
@@ -385,7 +385,7 @@ export let run = {
 				d: 0.613,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -10.5,
 				ty: 4.7,
 				a: 0.912,
@@ -394,7 +394,7 @@ export let run = {
 				d: 0.912,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -13,
 				ty: 6.5,
 				a: 0.912,
@@ -453,7 +453,7 @@ export let run = {
 				ty: -2.1,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -9.9,
 				ty: 0.15,
 				a: 0.486,
@@ -462,7 +462,7 @@ export let run = {
 				d: 0.486,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -5.35,
 				ty: -2.15,
 				a: 0.912,
@@ -480,7 +480,7 @@ export let run = {
 				d: 1.136,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -12.25,
 				ty: -0.9,
 				a: -0.507,
@@ -489,7 +489,7 @@ export let run = {
 				d: 0.507,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -13.4,
 				ty: 3.3,
 				a: 0.912,
@@ -498,7 +498,7 @@ export let run = {
 				d: 0.912,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -15.9,
 				ty: 5.05,
 				a: 0.912,
@@ -516,7 +516,7 @@ export let run = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -9.7,
 				ty: -3.85,
 				a: -0.789,
@@ -525,7 +525,7 @@ export let run = {
 				d: 0.912,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 6.3,
 				ty: 8,
 				a: 0.499,
@@ -543,7 +543,7 @@ export let run = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -8.55,
 				ty: 6.4,
 				a: 0.358,
@@ -552,7 +552,7 @@ export let run = {
 				d: 0.271,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 3.95,
 				a: 1.202,
@@ -563,7 +563,7 @@ export let run = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -2.55,
 				ty: 9.05,
 				a: 1.336,
@@ -572,7 +572,7 @@ export let run = {
 				d: 1.312,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -8.85,
 				ty: 5.7,
 				a: 0.911,
@@ -581,7 +581,7 @@ export let run = {
 				d: 0.911,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -11.2,
 				ty: 7.7,
 				a: 0.911,
@@ -640,7 +640,7 @@ export let run = {
 				ty: -0.85,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -8.1,
 				ty: 1.35,
 				a: 0.486,
@@ -649,7 +649,7 @@ export let run = {
 				d: 0.486,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -3.55,
 				ty: -0.95,
 				a: 0.911,
@@ -667,7 +667,7 @@ export let run = {
 				d: 1.135,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.4,
 				ty: 0.35,
 				a: -0.507,
@@ -676,7 +676,7 @@ export let run = {
 				d: 0.507,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.5,
 				ty: 4.6,
 				a: 0.911,
@@ -685,7 +685,7 @@ export let run = {
 				d: 0.911,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -14.1,
 				ty: 6.3,
 				a: 0.911,
@@ -703,7 +703,7 @@ export let run = {
 				d: 0.985,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.9,
 				ty: -2.7,
 				a: -0.789,
@@ -712,7 +712,7 @@ export let run = {
 				d: 0.911,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 4.05,
 				ty: 9.65,
 				a: 1.069,
@@ -730,7 +730,7 @@ export let run = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 9.05,
 				a: 1.277,
@@ -739,7 +739,7 @@ export let run = {
 				d: 1.243,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 5.6,
 				a: 1.202,
@@ -750,7 +750,7 @@ export let run = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.8,
 				ty: 11.6,
 				a: 1.198,
@@ -759,7 +759,7 @@ export let run = {
 				d: 1.243,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -6.9,
 				ty: 7.1,
 				a: 0.912,
@@ -768,7 +768,7 @@ export let run = {
 				d: 0.912,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -9.4,
 				ty: 8.9,
 				a: 0.912,
@@ -827,7 +827,7 @@ export let run = {
 				ty: 0.35,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -6.3,
 				ty: 2.55,
 				a: 0.486,
@@ -836,7 +836,7 @@ export let run = {
 				d: 0.486,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -1.75,
 				ty: 0.25,
 				a: 0.912,
@@ -854,7 +854,7 @@ export let run = {
 				d: 1.136,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -8.65,
 				ty: 1.5,
 				a: -0.507,
@@ -863,7 +863,7 @@ export let run = {
 				d: 0.507,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -9.8,
 				ty: 5.7,
 				a: 0.912,
@@ -872,7 +872,7 @@ export let run = {
 				d: 0.912,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -12.3,
 				ty: 7.45,
 				a: 0.912,
@@ -890,7 +890,7 @@ export let run = {
 				d: 0.923,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -6.1,
 				ty: -1.45,
 				a: -0.789,
@@ -899,7 +899,7 @@ export let run = {
 				d: 0.912,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 1.75,
 				ty: 11.25,
 				a: 1.2,
@@ -917,7 +917,7 @@ export let run = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -1.35,
 				ty: 11.55,
 				a: 1.198,
@@ -926,7 +926,7 @@ export let run = {
 				d: 1.243,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 7.25,
 				a: 1.202,
@@ -937,7 +937,7 @@ export let run = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.9,
 				a: 1.334,
@@ -946,7 +946,7 @@ export let run = {
 				d: 1.358,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -7.65,
 				ty: 7.05,
 				a: 0.911,
@@ -955,7 +955,7 @@ export let run = {
 				d: 0.911,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -10.3,
 				ty: 8.6,
 				a: 0.911,
@@ -1014,7 +1014,7 @@ export let run = {
 				ty: 0.15,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -7.2,
 				ty: 2.3,
 				a: 0.486,
@@ -1023,7 +1023,7 @@ export let run = {
 				d: 0.486,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -2.65,
 				ty: -0.1,
 				a: 0.911,
@@ -1041,7 +1041,7 @@ export let run = {
 				d: 1.135,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -9.6,
 				ty: 1.2,
 				a: -0.507,
@@ -1050,7 +1050,7 @@ export let run = {
 				d: 0.507,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -10.7,
 				ty: 5.4,
 				a: 0.911,
@@ -1059,7 +1059,7 @@ export let run = {
 				d: 0.911,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -13.2,
 				ty: 7.15,
 				a: 0.911,
@@ -1077,7 +1077,7 @@ export let run = {
 				d: 0.985,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -6.95,
 				ty: -1.7,
 				a: -0.789,
@@ -1086,7 +1086,7 @@ export let run = {
 				d: 0.911,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.7,
 				ty: 10.5,
 				a: 1.216,
@@ -1104,7 +1104,7 @@ export let run = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -3.15,
 				ty: 10.35,
 				a: 1.334,
@@ -1113,7 +1113,7 @@ export let run = {
 				d: 1.358,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 6.55,
 				a: 1.202,
@@ -1124,7 +1124,7 @@ export let run = {
 			}
 		},
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -1132,7 +1132,7 @@ export let run = {
 				d: 1.383,
 				l: 20
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -8.7,
 				ty: 6.5,
 				a: 0.912,
@@ -1141,7 +1141,7 @@ export let run = {
 				d: 0.912,
 				l: 19
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -11.2,
 				ty: 8.3,
 				a: 0.912,
@@ -1200,7 +1200,7 @@ export let run = {
 				ty: -0.05,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: -8.1,
 				ty: 1.95,
 				a: 0.486,
@@ -1209,7 +1209,7 @@ export let run = {
 				d: 0.486,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: -3.55,
 				ty: -0.35,
 				a: 0.912,
@@ -1227,7 +1227,7 @@ export let run = {
 				d: 1.136,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.45,
 				ty: 0.9,
 				a: -0.507,
@@ -1236,7 +1236,7 @@ export let run = {
 				d: 0.507,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.6,
 				ty: 5.1,
 				a: 0.912,
@@ -1245,7 +1245,7 @@ export let run = {
 				d: 0.912,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: -14.1,
 				ty: 6.85,
 				a: 0.912,
@@ -1263,7 +1263,7 @@ export let run = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: -7.9,
 				ty: -2.05,
 				a: -0.789,
@@ -1272,7 +1272,7 @@ export let run = {
 				d: 0.912,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 9.75,
 				a: 1.21,
@@ -1290,7 +1290,7 @@ export let run = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.95,
 				ty: 9.1,
 				a: 1.383,
@@ -1298,7 +1298,7 @@ export let run = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 5.75,
 				a: 1.202,

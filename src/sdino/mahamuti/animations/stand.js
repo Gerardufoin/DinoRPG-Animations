@@ -1,15 +1,15 @@
 // @ts-check
 
-export let stand = {
+export const stand = {
 	id: 'mahamuti_stand',
 	frames: [
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.45,
 				ty: 4.15,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.5,
 				ty: 7.25,
 				l: 19
@@ -58,14 +58,14 @@ export let stand = {
 				ty: -1.8,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.95,
 				ty: 0.3,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.15,
 				ty: 0,
 				l: 11
@@ -77,19 +77,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.2,
 				ty: -1.65,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.15,
 				ty: 1.7,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.15,
 				ty: 2.3,
 				l: 7
@@ -101,14 +101,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.45,
 				ty: -3.3,
 				a: -0.726,
 				b: -0.313,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -116,7 +116,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -132,7 +132,7 @@ export let stand = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.95,
 				ty: 8.2,
 				a: 1.383,
@@ -140,7 +140,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 5.75,
 				a: 1.202,
@@ -151,12 +151,12 @@ export let stand = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.45,
 				ty: 4.1,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.5,
 				ty: 7.2,
 				l: 19
@@ -205,14 +205,14 @@ export let stand = {
 				ty: -1.85,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.95,
 				ty: 0.25,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.15,
 				ty: -0.05,
 				l: 11
@@ -224,19 +224,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.2,
 				ty: -1.7,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.15,
 				ty: 1.65,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.15,
 				ty: 2.25,
 				l: 7
@@ -248,14 +248,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.45,
 				ty: -3.35,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -263,7 +263,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -279,7 +279,7 @@ export let stand = {
 				d: 1.261,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.15,
 				a: 1.383,
@@ -287,7 +287,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -298,12 +298,12 @@ export let stand = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.45,
 				ty: 4.05,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.5,
 				ty: 7.15,
 				l: 19
@@ -352,14 +352,14 @@ export let stand = {
 				ty: -1.9,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.95,
 				ty: 0.2,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.15,
 				ty: -0.1,
 				l: 11
@@ -371,19 +371,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.2,
 				ty: -1.75,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.15,
 				ty: 1.6,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.15,
 				ty: 2.2,
 				l: 7
@@ -395,14 +395,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.4,
 				ty: -3.35,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -410,7 +410,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -426,7 +426,7 @@ export let stand = {
 				d: 1.276,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.15,
 				a: 1.383,
@@ -434,7 +434,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -445,12 +445,12 @@ export let stand = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.45,
 				ty: 4,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.5,
 				ty: 7.1,
 				l: 19
@@ -499,14 +499,14 @@ export let stand = {
 				ty: -1.95,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.95,
 				ty: 0.15,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.15,
 				ty: -0.15,
 				l: 11
@@ -518,19 +518,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.2,
 				ty: -1.8,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.15,
 				ty: 1.55,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.15,
 				ty: 2.15,
 				l: 7
@@ -542,14 +542,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.4,
 				ty: -3.4,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -557,7 +557,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -573,7 +573,7 @@ export let stand = {
 				d: 1.292,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.15,
 				a: 1.383,
@@ -581,7 +581,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -592,12 +592,12 @@ export let stand = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.4,
 				ty: 4,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.45,
 				ty: 7.1,
 				l: 19
@@ -646,14 +646,14 @@ export let stand = {
 				ty: -2,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.9,
 				ty: 0.15,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.2,
 				ty: -0.15,
 				l: 11
@@ -665,19 +665,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.15,
 				ty: -1.8,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.1,
 				ty: 1.55,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.1,
 				ty: 2.15,
 				l: 7
@@ -689,14 +689,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.4,
 				ty: -3.4,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -704,7 +704,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -720,7 +720,7 @@ export let stand = {
 				d: 1.307,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.15,
 				a: 1.383,
@@ -728,7 +728,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -739,12 +739,12 @@ export let stand = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.4,
 				ty: 3.95,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.45,
 				ty: 7.05,
 				l: 19
@@ -793,14 +793,14 @@ export let stand = {
 				ty: -2.05,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.9,
 				ty: 0.1,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.2,
 				ty: -0.2,
 				l: 11
@@ -812,19 +812,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.15,
 				ty: -1.85,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.1,
 				ty: 1.5,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.1,
 				ty: 2.1,
 				l: 7
@@ -836,14 +836,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.4,
 				ty: -3.45,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -851,7 +851,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -867,7 +867,7 @@ export let stand = {
 				d: 1.322,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.15,
 				a: 1.383,
@@ -875,7 +875,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -886,12 +886,12 @@ export let stand = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.4,
 				ty: 3.9,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.45,
 				ty: 7,
 				l: 19
@@ -940,14 +940,14 @@ export let stand = {
 				ty: -2.1,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.9,
 				ty: 0.05,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.2,
 				ty: -0.25,
 				l: 11
@@ -959,19 +959,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.15,
 				ty: -1.9,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.1,
 				ty: 1.45,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.1,
 				ty: 2.05,
 				l: 7
@@ -983,14 +983,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.35,
 				ty: -3.45,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -998,7 +998,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -1014,7 +1014,7 @@ export let stand = {
 				d: 1.338,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.15,
 				a: 1.383,
@@ -1022,7 +1022,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -1033,12 +1033,12 @@ export let stand = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.4,
 				ty: 3.85,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.45,
 				ty: 6.95,
 				l: 19
@@ -1087,14 +1087,14 @@ export let stand = {
 				ty: -2.15,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.9,
 				ty: 0,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.2,
 				ty: -0.3,
 				l: 11
@@ -1106,19 +1106,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.15,
 				ty: -1.95,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.1,
 				ty: 1.4,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.1,
 				ty: 2,
 				l: 7
@@ -1130,14 +1130,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.35,
 				ty: -3.5,
 				a: -0.726,
 				b: -0.313,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -1145,7 +1145,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -1161,7 +1161,7 @@ export let stand = {
 				d: 1.353,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.95,
 				ty: 8.2,
 				a: 1.383,
@@ -1169,7 +1169,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 5.75,
 				a: 1.202,
@@ -1180,12 +1180,12 @@ export let stand = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.4,
 				ty: 3.9,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.45,
 				ty: 7,
 				l: 19
@@ -1234,14 +1234,14 @@ export let stand = {
 				ty: -2.1,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.9,
 				ty: 0.05,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.2,
 				ty: -0.25,
 				l: 11
@@ -1253,19 +1253,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.15,
 				ty: -1.9,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.1,
 				ty: 1.45,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.1,
 				ty: 2.05,
 				l: 7
@@ -1277,14 +1277,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.35,
 				ty: -3.45,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -1292,7 +1292,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -1308,7 +1308,7 @@ export let stand = {
 				d: 1.338,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.15,
 				a: 1.383,
@@ -1316,7 +1316,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -1327,12 +1327,12 @@ export let stand = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.4,
 				ty: 3.95,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.45,
 				ty: 7.05,
 				l: 19
@@ -1381,14 +1381,14 @@ export let stand = {
 				ty: -2.05,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.9,
 				ty: 0.1,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.2,
 				ty: -0.2,
 				l: 11
@@ -1400,19 +1400,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.15,
 				ty: -1.85,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.1,
 				ty: 1.5,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.1,
 				ty: 2.1,
 				l: 7
@@ -1424,14 +1424,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.4,
 				ty: -3.45,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -1439,7 +1439,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -1455,7 +1455,7 @@ export let stand = {
 				d: 1.322,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.15,
 				a: 1.383,
@@ -1463,7 +1463,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -1474,12 +1474,12 @@ export let stand = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.4,
 				ty: 4,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.45,
 				ty: 7.1,
 				l: 19
@@ -1528,14 +1528,14 @@ export let stand = {
 				ty: -2,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.9,
 				ty: 0.15,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.2,
 				ty: -0.15,
 				l: 11
@@ -1547,19 +1547,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.15,
 				ty: -1.8,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.1,
 				ty: 1.55,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.1,
 				ty: 2.15,
 				l: 7
@@ -1571,14 +1571,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.4,
 				ty: -3.4,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -1586,7 +1586,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -1602,7 +1602,7 @@ export let stand = {
 				d: 1.307,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.15,
 				a: 1.383,
@@ -1610,7 +1610,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -1621,12 +1621,12 @@ export let stand = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.45,
 				ty: 4,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.5,
 				ty: 7.1,
 				l: 19
@@ -1675,14 +1675,14 @@ export let stand = {
 				ty: -1.95,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.95,
 				ty: 0.15,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.15,
 				ty: -0.15,
 				l: 11
@@ -1694,19 +1694,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.2,
 				ty: -1.8,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.15,
 				ty: 1.55,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.15,
 				ty: 2.15,
 				l: 7
@@ -1718,14 +1718,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.4,
 				ty: -3.4,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -1733,7 +1733,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -1749,7 +1749,7 @@ export let stand = {
 				d: 1.292,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.15,
 				a: 1.383,
@@ -1757,7 +1757,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -1768,12 +1768,12 @@ export let stand = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.45,
 				ty: 4.05,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.5,
 				ty: 7.15,
 				l: 19
@@ -1822,14 +1822,14 @@ export let stand = {
 				ty: -1.9,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.95,
 				ty: 0.2,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.15,
 				ty: -0.1,
 				l: 11
@@ -1841,19 +1841,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.2,
 				ty: -1.75,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.15,
 				ty: 1.6,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.15,
 				ty: 2.2,
 				l: 7
@@ -1865,14 +1865,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.4,
 				ty: -3.35,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -1880,7 +1880,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -1896,7 +1896,7 @@ export let stand = {
 				d: 1.276,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.15,
 				a: 1.383,
@@ -1904,7 +1904,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -1915,12 +1915,12 @@ export let stand = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.45,
 				ty: 4.1,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.5,
 				ty: 7.2,
 				l: 19
@@ -1969,14 +1969,14 @@ export let stand = {
 				ty: -1.85,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.95,
 				ty: 0.25,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.15,
 				ty: -0.05,
 				l: 11
@@ -1988,19 +1988,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.2,
 				ty: -1.7,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.15,
 				ty: 1.65,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.15,
 				ty: 2.25,
 				l: 7
@@ -2012,14 +2012,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.45,
 				ty: -3.35,
 				a: -0.725,
 				b: -0.312,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -2027,7 +2027,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -2043,7 +2043,7 @@ export let stand = {
 				d: 1.261,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -5,
 				ty: 8.15,
 				a: 1.383,
@@ -2051,7 +2051,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.45,
 				ty: 5.75,
 				a: 1.202,
@@ -2062,12 +2062,12 @@ export let stand = {
 			}
 		},
 		{
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: -5.45,
 				ty: 4.15,
 				l: 20
 			},
-			left_tusk: {
+			l_tusk: {
 				tx: -7.5,
 				ty: 7.25,
 				l: 19
@@ -2116,14 +2116,14 @@ export let stand = {
 				ty: -1.8,
 				l: 13
 			},
-			left_eye: {
+			l_eye: {
 				tx: -3.95,
 				ty: 0.3,
 				a: 0.533,
 				d: 0.533,
 				l: 12
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.15,
 				ty: 0,
 				l: 11
@@ -2135,19 +2135,19 @@ export let stand = {
 				d: 1.245,
 				l: 10
 			},
-			right_eye: {
+			r_eye: {
 				tx: -10.2,
 				ty: -1.65,
 				a: -0.556,
 				d: 0.556,
 				l: 9
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: -11.15,
 				ty: 1.7,
 				l: 8
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: -14.15,
 				ty: 2.3,
 				l: 7
@@ -2159,14 +2159,14 @@ export let stand = {
 				d: 1.066,
 				l: 6
 			},
-			right_ear: {
+			r_ear: {
 				tx: -8.45,
 				ty: -3.3,
 				a: -0.726,
 				b: -0.313,
 				l: 5
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -0.85,
 				ty: 10.05,
 				a: 1.383,
@@ -2174,7 +2174,7 @@ export let stand = {
 				d: 1.383,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.55,
 				ty: 7.05,
 				a: 1.21,
@@ -2190,7 +2190,7 @@ export let stand = {
 				d: 1.245,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -4.95,
 				ty: 8.2,
 				a: 1.383,
@@ -2198,7 +2198,7 @@ export let stand = {
 				d: 1.383,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 5.75,
 				a: 1.202,

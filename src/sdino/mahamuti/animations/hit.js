@@ -1,10 +1,10 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'mahamuti_hit',
 	frames: [
 		{
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.7,
 				ty: 11,
 				a: 1.198,
@@ -13,7 +13,7 @@ export let hit = {
 				d: 1.153,
 				l: 19
 			},
-			left_tusk_fur: {
+			l_tusk_fur: {
 				tx: 8.85,
 				ty: 3.45,
 				a: -0.995,
@@ -22,7 +22,7 @@ export let hit = {
 				d: 0.995,
 				l: 18
 			},
-			right_tusk: {
+			r_tusk: {
 				tx: 11.85,
 				ty: 4.3,
 				a: -0.995,
@@ -76,7 +76,7 @@ export let hit = {
 				d: 0.995,
 				l: 12
 			},
-			left_eye: {
+			l_eye: {
 				tx: 7.2,
 				ty: -0.65,
 				a: -0.53,
@@ -85,7 +85,7 @@ export let hit = {
 				d: 0.142,
 				l: 11
 			},
-			left_ear: {
+			l_ear: {
 				tx: 1.75,
 				ty: -1.25,
 				a: -0.995,
@@ -103,7 +103,7 @@ export let hit = {
 				d: 1.239,
 				l: 9
 			},
-			right_eye: {
+			r_eye: {
 				tx: 8.65,
 				ty: -2.4,
 				a: 0.553,
@@ -112,7 +112,7 @@ export let hit = {
 				d: 0.553,
 				l: 8
 			},
-			right_tusk_fur: {
+			r_t_fur: {
 				tx: 11.15,
 				ty: 1.15,
 				a: -0.995,
@@ -121,7 +121,7 @@ export let hit = {
 				d: 0.995,
 				l: 7
 			},
-			left_tusk_anim: {
+			l_tusk_anim: {
 				tx: 14.05,
 				ty: 1.95,
 				a: -0.995,
@@ -139,7 +139,7 @@ export let hit = {
 				d: 1.03,
 				l: 5
 			},
-			right_ear: {
+			r_ear: {
 				tx: 5.25,
 				ty: -4.3,
 				a: 0.746,
@@ -148,7 +148,7 @@ export let hit = {
 				d: 0.995,
 				l: 4
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 2.65,
 				ty: 9.75,
 				a: 1.2,
@@ -166,7 +166,7 @@ export let hit = {
 				d: 1.203,
 				l: 2
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -9.45,
 				ty: 5.55,
 				a: 0.251,
@@ -175,7 +175,7 @@ export let hit = {
 				d: 0.271,
 				l: 1
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.5,
 				ty: 5.75,
 				a: 1.202,
