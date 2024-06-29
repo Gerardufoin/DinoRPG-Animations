@@ -522,7 +522,8 @@ export class Fighter extends Phys {
 					data: fInfos.gfx,
 					autoUpdate: false,
 					pflag: false,
-					dark: this.haveProp(FighterProperty.Dark)
+					dark: this.haveProp(FighterProperty.Dark),
+					shadow: false
 				});
 				// If the dino is not added to the Scene and renderer at least once, the filters are bugged when rendered to the render texture.
 				// If this is fixed one day, this step and the hidden layer can be removed.

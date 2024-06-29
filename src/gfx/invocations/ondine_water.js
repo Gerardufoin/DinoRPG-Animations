@@ -6,13 +6,13 @@ export const invoc_ondine_water = {
 	parts: {
 		w1: [
 			{
-				ref: ref.ondine.water,
+				ref: ref.water,
 				resolution: 1
 			}
 		],
 		w2: [
 			{
-				ref: ref.ondine.water,
+				ref: ref.water,
 				resolution: 1
 			}
 		]

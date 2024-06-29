@@ -15,6 +15,7 @@ import { Golem } from '../../../parts/skills/invocations/Golem.js';
 import { Hades } from '../../../parts/skills/invocations/Hades.js';
 import { Ifrit } from '../../../parts/skills/invocations/Ifrit.js';
 import { Invocation } from '../../../parts/skills/invocations/Invocation.js';
+import { Leviathan } from '../../../parts/skills/invocations/Leviathan.js';
 import { Ondine } from '../../../parts/skills/invocations/Ondine.js';
 import { Raijin } from '../../../parts/skills/invocations/Raijin.js';
 import { Salamander } from '../../../parts/skills/invocations/Salamander.js';
@@ -93,6 +94,7 @@ export class GrInvocation extends GroupEffect {
 				this._invoc = new Totem(this._scene);
 				break;
 			case 'leviat':
+				this._invoc = new Leviathan(this._scene);
 				break;
 			case 'goku':
 				break;

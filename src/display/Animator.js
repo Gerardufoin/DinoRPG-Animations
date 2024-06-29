@@ -216,6 +216,15 @@ export class Animator extends Container {
 	}
 
 	/**
+	 * Get a part added to the body using its name.
+	 * @param {string} name The name of the part to get.
+	 * @returns {Animation} The part, or undefined if it was not found.
+	 */
+	getPart(name) {
+		return this._body.getPart(name);
+	}
+
+	/**
 	 * Get the Sprite element of a part.
 	 * Useful if you wish to make a mask out of it.
 	 * @param {string} name The name of the part.

@@ -239,6 +239,15 @@ export class Animation extends Container {
 	}
 
 	/**
+	 * Get a part added to the animation by its name.
+	 * @param {string} name The name of the part to get.
+	 * @returns {Animation} The part, or undefined if it does not exist.
+	 */
+	getPart(name) {
+		return this._parts[name];
+	}
+
+	/**
 	 * Get the Sprite element of a part.
 	 * Only use this if you are certain the part you are getting only has one Sprite.
 	 * @param {string} name The name of the part.
