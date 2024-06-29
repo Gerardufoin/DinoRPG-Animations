@@ -1776,28 +1776,16 @@ export const portrait = {
 			mouth: {
 				tx: -33.75,
 				ty: 3.55,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 16
 			},
 			hair: {
 				tx: -30.25,
 				ty: -18.25,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 15
 			},
 			l_ear: {
 				tx: 7.6,
 				ty: -15.15,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 14
 			},
 			nose: {
@@ -1807,37 +1795,21 @@ export const portrait = {
 				b: 0.01,
 				c: 0.094,
 				d: 1.001,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 13
 			},
 			eyes: {
 				tx: -23,
 				ty: -9.95,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 12
 			},
 			head: {
 				tx: -23.05,
 				ty: -7.15,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 11
 			},
 			r_ear: {
 				tx: -36.15,
 				ty: -26.05,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 10
 			},
 			l_f_paw: {
@@ -1845,10 +1817,6 @@ export const portrait = {
 				ty: 45.35,
 				a: 1.086,
 				d: 1.086,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 9
 			},
 			l_f_leg: {
@@ -1856,10 +1824,6 @@ export const portrait = {
 				ty: 26.45,
 				a: 1.086,
 				d: 1.086,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 8
 			},
 			u_body: {
@@ -1867,10 +1831,6 @@ export const portrait = {
 				ty: 8.15,
 				a: 1.086,
 				d: 1.086,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 7
 			},
 			l_body: {
@@ -1878,10 +1838,6 @@ export const portrait = {
 				ty: 6.7,
 				a: 1.086,
 				d: 1.086,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 6
 			},
 			l_b_u_leg: {
@@ -1889,10 +1845,6 @@ export const portrait = {
 				ty: 18.75,
 				a: 1.086,
 				d: 1.086,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 5
 			},
 			l_b_paw: {
@@ -1900,10 +1852,6 @@ export const portrait = {
 				ty: 37.05,
 				a: 1.086,
 				d: 1.086,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 4
 			},
 			l_b_l_leg: {
@@ -1911,10 +1859,6 @@ export const portrait = {
 				ty: 27.4,
 				a: 1.086,
 				d: 1.086,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 3
 			},
 			r_f_paw: {
@@ -1922,10 +1866,6 @@ export const portrait = {
 				ty: 40,
 				a: 1.086,
 				d: 1.086,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 2
 			},
 			r_f_leg: {
@@ -1933,10 +1873,6 @@ export const portrait = {
 				ty: 27.85,
 				a: 1.086,
 				d: 1.086,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 1
 			},
 			tail: {
@@ -1944,10 +1880,6 @@ export const portrait = {
 				ty: -10.15,
 				a: 1.086,
 				d: 1.086,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 0
 			}
 		},

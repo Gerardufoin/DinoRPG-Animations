@@ -27,6 +27,10 @@ export const portrait = {
 				ty: -19.35,
 				a: -0.846,
 				d: 0.846,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 15
 			},
 			l_tusk_back: {
@@ -34,6 +38,10 @@ export const portrait = {
 				ty: -11.65,
 				a: -0.592,
 				d: 0.628,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 14
 			},
 			trunk: {
@@ -41,6 +49,10 @@ export const portrait = {
 				ty: 2.55,
 				a: -1,
 				d: 1,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 13
 			},
 			l_ear: {
@@ -48,6 +60,10 @@ export const portrait = {
 				ty: -40.7,
 				a: -1,
 				d: 1,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 12
 			},
 			hair: {
@@ -55,6 +71,10 @@ export const portrait = {
 				ty: -66.4,
 				a: -1,
 				d: 1,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 11
 			},
 			eyes: {
@@ -62,6 +82,10 @@ export const portrait = {
 				ty: -40.75,
 				a: -1,
 				d: 1,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 10
 			},
 			head: {
@@ -69,6 +93,10 @@ export const portrait = {
 				ty: -41.05,
 				a: -1,
 				d: 1,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 9
 			},
 			hair_shadow: {
@@ -76,6 +104,10 @@ export const portrait = {
 				ty: -66.4,
 				a: -1,
 				d: 1,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 8
 			},
 			r_ear: {
@@ -83,6 +115,10 @@ export const portrait = {
 				ty: -50.7,
 				a: -1,
 				d: 1,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 7
 			},
 			r_tusk_fur: {
@@ -90,6 +126,10 @@ export const portrait = {
 				ty: -29.3,
 				a: -0.877,
 				d: 0.877,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 6
 			},
 			r_tusk: {
@@ -97,10 +137,6 @@ export const portrait = {
 				ty: -22.05,
 				a: -0.581,
 				d: 0.581,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 5
 			},
 			back: {
@@ -108,6 +144,10 @@ export const portrait = {
 				ty: -22.65,
 				a: -1,
 				d: 1,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 4
 			},
 			f_leg: {
@@ -115,6 +155,10 @@ export const portrait = {
 				ty: 8.3,
 				a: -1,
 				d: 1,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 3
 			},
 			body: {
@@ -122,6 +166,10 @@ export const portrait = {
 				ty: -9.1,
 				a: -1,
 				d: 1,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 2
 			},
 			b_legs: {
@@ -129,6 +177,10 @@ export const portrait = {
 				ty: 7.7,
 				a: -1,
 				d: 1,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 1
 			},
 			hooves: {
@@ -136,6 +188,10 @@ export const portrait = {
 				ty: 19.85,
 				a: -1,
 				d: 1,
+				acb: 10,
+				acc: 5,
+				acs: 0,
+				ach: 0,
 				l: 0
 			}
 		},
@@ -165,6 +221,10 @@ export const portrait = {
 				ty: -20.65,
 				a: -0.883,
 				d: 0.883,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 15
 			},
 			l_tusk_back: {
@@ -172,6 +232,10 @@ export const portrait = {
 				ty: -12.45,
 				a: -0.649,
 				d: 0.689,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 14
 			},
 			trunk: {
@@ -179,6 +243,10 @@ export const portrait = {
 				ty: 1.75,
 				a: -1.019,
 				d: 1.019,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 13
 			},
 			l_ear: {
@@ -186,6 +254,10 @@ export const portrait = {
 				ty: -42.35,
 				a: -1.019,
 				d: 1.019,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 12
 			},
 			hair: {
@@ -193,6 +265,10 @@ export const portrait = {
 				ty: -68.55,
 				a: -1.019,
 				d: 1.019,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 11
 			},
 			eyes: {
@@ -200,6 +276,10 @@ export const portrait = {
 				ty: -42.4,
 				a: -1.019,
 				d: 1.019,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 10
 			},
 			head: {
@@ -207,6 +287,10 @@ export const portrait = {
 				ty: -42.7,
 				a: -1.019,
 				d: 1.019,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 9
 			},
 			hair_shadow: {
@@ -214,6 +298,10 @@ export const portrait = {
 				ty: -68.55,
 				a: -1.019,
 				d: 1.019,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 8
 			},
 			r_ear: {
@@ -221,6 +309,10 @@ export const portrait = {
 				ty: -52.55,
 				a: -1.019,
 				d: 1.019,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 7
 			},
 			r_tusk_fur: {
@@ -228,6 +320,10 @@ export const portrait = {
 				ty: -30.7,
 				a: -0.91,
 				d: 0.91,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 6
 			},
 			r_tusk: {
@@ -235,10 +331,6 @@ export const portrait = {
 				ty: -23.05,
 				a: -0.626,
 				d: 0.647,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 5
 			},
 			back: {
@@ -246,6 +338,10 @@ export const portrait = {
 				ty: -23.85,
 				a: -1.031,
 				d: 1.031,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 4
 			},
 			f_leg: {
@@ -253,6 +349,10 @@ export const portrait = {
 				ty: 8.05,
 				a: -1.031,
 				d: 1.031,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 3
 			},
 			body: {
@@ -260,6 +360,10 @@ export const portrait = {
 				ty: -9.85,
 				a: -1.031,
 				d: 1.031,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 2
 			},
 			b_legs: {
@@ -267,6 +371,10 @@ export const portrait = {
 				ty: 7.45,
 				a: -1.031,
 				d: 1.031,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 1
 			},
 			hooves: {
@@ -274,6 +382,10 @@ export const portrait = {
 				ty: 19.95,
 				a: -1.031,
 				d: 1.031,
+				acb: 9,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 0
 			}
 		},
@@ -303,6 +415,10 @@ export const portrait = {
 				ty: -21.8,
 				a: -0.919,
 				d: 0.919,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 15
 			},
 			l_tusk_back: {
@@ -310,6 +426,10 @@ export const portrait = {
 				ty: -13.25,
 				a: -0.706,
 				d: 0.749,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 14
 			},
 			trunk: {
@@ -317,6 +437,10 @@ export const portrait = {
 				ty: 0.95,
 				a: -1.038,
 				d: 1.038,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 13
 			},
 			l_ear: {
@@ -324,6 +448,10 @@ export const portrait = {
 				ty: -44,
 				a: -1.038,
 				d: 1.038,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 12
 			},
 			hair: {
@@ -331,6 +459,10 @@ export const portrait = {
 				ty: -70.65,
 				a: -1.038,
 				d: 1.038,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 11
 			},
 			eyes: {
@@ -338,6 +470,10 @@ export const portrait = {
 				ty: -44,
 				a: -1.038,
 				d: 1.038,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 10
 			},
 			head: {
@@ -345,6 +481,10 @@ export const portrait = {
 				ty: -44.35,
 				a: -1.038,
 				d: 1.038,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 9
 			},
 			hair_shadow: {
@@ -352,6 +492,10 @@ export const portrait = {
 				ty: -70.65,
 				a: -1.038,
 				d: 1.038,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 8
 			},
 			r_ear: {
@@ -359,6 +503,10 @@ export const portrait = {
 				ty: -54.35,
 				a: -1.038,
 				d: 1.038,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 7
 			},
 			r_tusk_fur: {
@@ -366,6 +514,10 @@ export const portrait = {
 				ty: -32.15,
 				a: -0.943,
 				d: 0.943,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 6
 			},
 			r_tusk: {
@@ -373,10 +525,6 @@ export const portrait = {
 				ty: -24,
 				a: -0.671,
 				d: 0.713,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 5
 			},
 			back: {
@@ -384,6 +532,10 @@ export const portrait = {
 				ty: -25.05,
 				a: -1.061,
 				d: 1.061,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 4
 			},
 			f_leg: {
@@ -391,6 +543,10 @@ export const portrait = {
 				ty: 7.8,
 				a: -1.061,
 				d: 1.061,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 3
 			},
 			body: {
@@ -398,6 +554,10 @@ export const portrait = {
 				ty: -10.65,
 				a: -1.061,
 				d: 1.061,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 2
 			},
 			b_legs: {
@@ -405,6 +565,10 @@ export const portrait = {
 				ty: 7.2,
 				a: -1.061,
 				d: 1.061,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 1
 			},
 			hooves: {
@@ -412,6 +576,10 @@ export const portrait = {
 				ty: 20.1,
 				a: -1.061,
 				d: 1.061,
+				acb: 8,
+				acc: 3,
+				acs: 0,
+				ach: 0,
 				l: 0
 			}
 		},
@@ -441,6 +609,10 @@ export const portrait = {
 				ty: -23.05,
 				a: -0.955,
 				d: 0.955,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 15
 			},
 			l_tusk_back: {
@@ -448,6 +620,10 @@ export const portrait = {
 				ty: -14.05,
 				a: -0.763,
 				d: 0.81,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 14
 			},
 			trunk: {
@@ -455,6 +631,10 @@ export const portrait = {
 				ty: 0.1,
 				a: -1.058,
 				d: 1.058,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 13
 			},
 			l_ear: {
@@ -462,6 +642,10 @@ export const portrait = {
 				ty: -45.65,
 				a: -1.058,
 				d: 1.058,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 12
 			},
 			hair: {
@@ -469,6 +653,10 @@ export const portrait = {
 				ty: -72.8,
 				a: -1.058,
 				d: 1.058,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 11
 			},
 			eyes: {
@@ -476,6 +664,10 @@ export const portrait = {
 				ty: -45.65,
 				a: -1.058,
 				d: 1.058,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 10
 			},
 			head: {
@@ -483,6 +675,10 @@ export const portrait = {
 				ty: -46,
 				a: -1.058,
 				d: 1.058,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 9
 			},
 			hair_shadow: {
@@ -490,6 +686,10 @@ export const portrait = {
 				ty: -72.8,
 				a: -1.058,
 				d: 1.058,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 8
 			},
 			r_ear: {
@@ -497,6 +697,10 @@ export const portrait = {
 				ty: -56.2,
 				a: -1.058,
 				d: 1.058,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 7
 			},
 			r_tusk_fur: {
@@ -504,6 +708,10 @@ export const portrait = {
 				ty: -33.55,
 				a: -0.975,
 				d: 0.975,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 6
 			},
 			r_tusk: {
@@ -511,10 +719,6 @@ export const portrait = {
 				ty: -25,
 				a: -0.716,
 				d: 0.778,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 5
 			},
 			back: {
@@ -522,6 +726,10 @@ export const portrait = {
 				ty: -26.25,
 				a: -1.092,
 				d: 1.092,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 4
 			},
 			f_leg: {
@@ -529,6 +737,10 @@ export const portrait = {
 				ty: 7.6,
 				a: -1.092,
 				d: 1.092,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 3
 			},
 			body: {
@@ -536,6 +748,10 @@ export const portrait = {
 				ty: -11.4,
 				a: -1.092,
 				d: 1.092,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 2
 			},
 			b_legs: {
@@ -543,6 +759,10 @@ export const portrait = {
 				ty: 6.95,
 				a: -1.092,
 				d: 1.092,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 1
 			},
 			hooves: {
@@ -550,6 +770,10 @@ export const portrait = {
 				ty: 20.2,
 				a: -1.092,
 				d: 1.092,
+				acb: 7,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 0
 			}
 		},
@@ -579,6 +803,10 @@ export const portrait = {
 				ty: -24.25,
 				a: -0.991,
 				d: 0.991,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 15
 			},
 			l_tusk_back: {
@@ -586,6 +814,10 @@ export const portrait = {
 				ty: -14.85,
 				a: -0.82,
 				d: 0.87,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 14
 			},
 			trunk: {
@@ -593,6 +825,10 @@ export const portrait = {
 				ty: -0.7,
 				a: -1.077,
 				d: 1.077,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 13
 			},
 			l_ear: {
@@ -600,6 +836,10 @@ export const portrait = {
 				ty: -47.3,
 				a: -1.077,
 				d: 1.077,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 12
 			},
 			hair: {
@@ -607,6 +847,10 @@ export const portrait = {
 				ty: -74.95,
 				a: -1.077,
 				d: 1.077,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 11
 			},
 			eyes: {
@@ -614,6 +858,10 @@ export const portrait = {
 				ty: -47.3,
 				a: -1.077,
 				d: 1.077,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 10
 			},
 			head: {
@@ -621,6 +869,10 @@ export const portrait = {
 				ty: -47.65,
 				a: -1.077,
 				d: 1.077,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 9
 			},
 			hair_shadow: {
@@ -628,6 +880,10 @@ export const portrait = {
 				ty: -74.95,
 				a: -1.077,
 				d: 1.077,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 8
 			},
 			r_ear: {
@@ -635,6 +891,10 @@ export const portrait = {
 				ty: -58.05,
 				a: -1.077,
 				d: 1.077,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 7
 			},
 			r_tusk_fur: {
@@ -642,6 +902,10 @@ export const portrait = {
 				ty: -35,
 				a: -1.008,
 				d: 1.008,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 6
 			},
 			r_tusk: {
@@ -649,10 +913,6 @@ export const portrait = {
 				ty: -25.95,
 				a: -0.762,
 				d: 0.844,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 5
 			},
 			back: {
@@ -660,6 +920,10 @@ export const portrait = {
 				ty: -27.45,
 				a: -1.122,
 				d: 1.122,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 4
 			},
 			f_leg: {
@@ -667,6 +931,10 @@ export const portrait = {
 				ty: 7.35,
 				a: -1.122,
 				d: 1.122,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 3
 			},
 			body: {
@@ -674,6 +942,10 @@ export const portrait = {
 				ty: -12.2,
 				a: -1.122,
 				d: 1.122,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 2
 			},
 			b_legs: {
@@ -681,6 +953,10 @@ export const portrait = {
 				ty: 6.7,
 				a: -1.122,
 				d: 1.122,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 1
 			},
 			hooves: {
@@ -688,6 +964,10 @@ export const portrait = {
 				ty: 20.3,
 				a: -1.122,
 				d: 1.122,
+				acb: 6,
+				acc: 2,
+				acs: 0,
+				ach: 0,
 				l: 0
 			}
 		},
@@ -717,6 +997,10 @@ export const portrait = {
 				ty: -25.5,
 				a: -1.028,
 				d: 1.028,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 15
 			},
 			l_tusk_back: {
@@ -724,6 +1008,10 @@ export const portrait = {
 				ty: -15.6,
 				a: -0.877,
 				d: 0.931,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 14
 			},
 			trunk: {
@@ -731,6 +1019,10 @@ export const portrait = {
 				ty: -1.5,
 				a: -1.096,
 				d: 1.096,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 13
 			},
 			l_ear: {
@@ -738,6 +1030,10 @@ export const portrait = {
 				ty: -48.9,
 				a: -1.096,
 				d: 1.096,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 12
 			},
 			hair: {
@@ -745,6 +1041,10 @@ export const portrait = {
 				ty: -77.05,
 				a: -1.096,
 				d: 1.096,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 11
 			},
 			eyes: {
@@ -752,6 +1052,10 @@ export const portrait = {
 				ty: -48.9,
 				a: -1.096,
 				d: 1.096,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 10
 			},
 			head: {
@@ -759,6 +1063,10 @@ export const portrait = {
 				ty: -49.3,
 				a: -1.096,
 				d: 1.096,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 9
 			},
 			hair_shadow: {
@@ -766,6 +1074,10 @@ export const portrait = {
 				ty: -77.05,
 				a: -1.096,
 				d: 1.096,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 8
 			},
 			r_ear: {
@@ -773,6 +1085,10 @@ export const portrait = {
 				ty: -59.85,
 				a: -1.096,
 				d: 1.096,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 7
 			},
 			r_tusk_fur: {
@@ -780,6 +1096,10 @@ export const portrait = {
 				ty: -36.45,
 				a: -1.041,
 				d: 1.041,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 6
 			},
 			r_tusk: {
@@ -787,10 +1107,6 @@ export const portrait = {
 				ty: -26.9,
 				a: -0.807,
 				d: 0.91,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 5
 			},
 			back: {
@@ -798,6 +1114,10 @@ export const portrait = {
 				ty: -28.7,
 				a: -1.153,
 				d: 1.153,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 4
 			},
 			f_leg: {
@@ -805,6 +1125,10 @@ export const portrait = {
 				ty: 7.1,
 				a: -1.153,
 				d: 1.153,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 3
 			},
 			body: {
@@ -812,6 +1136,10 @@ export const portrait = {
 				ty: -12.95,
 				a: -1.153,
 				d: 1.153,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 2
 			},
 			b_legs: {
@@ -819,6 +1147,10 @@ export const portrait = {
 				ty: 6.4,
 				a: -1.153,
 				d: 1.153,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 1
 			},
 			hooves: {
@@ -826,6 +1158,10 @@ export const portrait = {
 				ty: 20.45,
 				a: -1.153,
 				d: 1.153,
+				acb: 4,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 0
 			}
 		},
@@ -855,6 +1191,10 @@ export const portrait = {
 				ty: -26.7,
 				a: -1.064,
 				d: 1.064,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 15
 			},
 			l_tusk_back: {
@@ -862,6 +1202,10 @@ export const portrait = {
 				ty: -16.4,
 				a: -0.934,
 				d: 0.991,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 14
 			},
 			trunk: {
@@ -869,6 +1213,10 @@ export const portrait = {
 				ty: -2.3,
 				a: -1.115,
 				d: 1.115,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 13
 			},
 			l_ear: {
@@ -876,6 +1224,10 @@ export const portrait = {
 				ty: -50.55,
 				a: -1.115,
 				d: 1.115,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 12
 			},
 			hair: {
@@ -883,6 +1235,10 @@ export const portrait = {
 				ty: -79.2,
 				a: -1.115,
 				d: 1.115,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 11
 			},
 			eyes: {
@@ -890,6 +1246,10 @@ export const portrait = {
 				ty: -50.55,
 				a: -1.115,
 				d: 1.115,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 10
 			},
 			head: {
@@ -897,6 +1257,10 @@ export const portrait = {
 				ty: -50.95,
 				a: -1.115,
 				d: 1.115,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 9
 			},
 			hair_shadow: {
@@ -904,6 +1268,10 @@ export const portrait = {
 				ty: -79.2,
 				a: -1.115,
 				d: 1.115,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 8
 			},
 			r_ear: {
@@ -911,6 +1279,10 @@ export const portrait = {
 				ty: -61.7,
 				a: -1.115,
 				d: 1.115,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 7
 			},
 			r_tusk_fur: {
@@ -918,6 +1290,10 @@ export const portrait = {
 				ty: -37.9,
 				a: -1.074,
 				d: 1.074,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 6
 			},
 			r_tusk: {
@@ -925,10 +1301,6 @@ export const portrait = {
 				ty: -27.95,
 				a: -0.852,
 				d: 0.976,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 5
 			},
 			back: {
@@ -936,6 +1308,10 @@ export const portrait = {
 				ty: -29.9,
 				a: -1.183,
 				d: 1.183,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 4
 			},
 			f_leg: {
@@ -943,6 +1319,10 @@ export const portrait = {
 				ty: 6.85,
 				a: -1.183,
 				d: 1.183,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 3
 			},
 			body: {
@@ -950,6 +1330,10 @@ export const portrait = {
 				ty: -13.75,
 				a: -1.183,
 				d: 1.183,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 2
 			},
 			b_legs: {
@@ -957,6 +1341,10 @@ export const portrait = {
 				ty: 6.15,
 				a: -1.183,
 				d: 1.183,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 1
 			},
 			hooves: {
@@ -964,6 +1352,10 @@ export const portrait = {
 				ty: 20.55,
 				a: -1.183,
 				d: 1.183,
+				acb: 3,
+				acc: 1,
+				acs: 0,
+				ach: 0,
 				l: 0
 			}
 		},
@@ -993,6 +1385,10 @@ export const portrait = {
 				ty: -27.95,
 				a: -1.1,
 				d: 1.1,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 15
 			},
 			l_tusk_back: {
@@ -1000,6 +1396,10 @@ export const portrait = {
 				ty: -17.2,
 				a: -0.991,
 				d: 1.052,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 14
 			},
 			trunk: {
@@ -1007,6 +1407,10 @@ export const portrait = {
 				ty: -3.15,
 				a: -1.134,
 				d: 1.134,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 13
 			},
 			l_ear: {
@@ -1014,6 +1418,10 @@ export const portrait = {
 				ty: -52.2,
 				a: -1.134,
 				d: 1.134,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 12
 			},
 			hair: {
@@ -1021,6 +1429,10 @@ export const portrait = {
 				ty: -81.35,
 				a: -1.134,
 				d: 1.134,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 11
 			},
 			eyes: {
@@ -1028,6 +1440,10 @@ export const portrait = {
 				ty: -52.15,
 				a: -1.134,
 				d: 1.134,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 10
 			},
 			head: {
@@ -1035,6 +1451,10 @@ export const portrait = {
 				ty: -52.6,
 				a: -1.134,
 				d: 1.134,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 9
 			},
 			hair_shadow: {
@@ -1042,6 +1462,10 @@ export const portrait = {
 				ty: -81.35,
 				a: -1.134,
 				d: 1.134,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 8
 			},
 			r_ear: {
@@ -1049,6 +1473,10 @@ export const portrait = {
 				ty: -63.55,
 				a: -1.134,
 				d: 1.134,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 7
 			},
 			r_tusk_fur: {
@@ -1056,6 +1484,10 @@ export const portrait = {
 				ty: -39.3,
 				a: -1.107,
 				d: 1.107,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 6
 			},
 			r_tusk: {
@@ -1063,10 +1495,6 @@ export const portrait = {
 				ty: -28.95,
 				a: -0.897,
 				d: 1.041,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 5
 			},
 			back: {
@@ -1074,6 +1502,10 @@ export const portrait = {
 				ty: -31.1,
 				a: -1.214,
 				d: 1.214,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 4
 			},
 			f_leg: {
@@ -1081,6 +1513,10 @@ export const portrait = {
 				ty: 6.65,
 				a: -1.214,
 				d: 1.214,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 3
 			},
 			body: {
@@ -1088,6 +1524,10 @@ export const portrait = {
 				ty: -14.5,
 				a: -1.214,
 				d: 1.214,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 2
 			},
 			b_legs: {
@@ -1095,6 +1535,10 @@ export const portrait = {
 				ty: 5.9,
 				a: -1.214,
 				d: 1.214,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 1
 			},
 			hooves: {
@@ -1102,6 +1546,10 @@ export const portrait = {
 				ty: 20.65,
 				a: -1.214,
 				d: 1.214,
+				acb: 2,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 0
 			}
 		},
@@ -1131,6 +1579,10 @@ export const portrait = {
 				ty: -29.2,
 				a: -1.136,
 				d: 1.136,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 15
 			},
 			l_tusk_back: {
@@ -1138,6 +1590,10 @@ export const portrait = {
 				ty: -17.95,
 				a: -1.048,
 				d: 1.112,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 14
 			},
 			trunk: {
@@ -1145,6 +1601,10 @@ export const portrait = {
 				ty: -3.95,
 				a: -1.153,
 				d: 1.153,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 13
 			},
 			l_ear: {
@@ -1152,6 +1612,10 @@ export const portrait = {
 				ty: -53.85,
 				a: -1.153,
 				d: 1.153,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 12
 			},
 			hair: {
@@ -1159,6 +1623,10 @@ export const portrait = {
 				ty: -83.45,
 				a: -1.153,
 				d: 1.153,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 11
 			},
 			eyes: {
@@ -1166,6 +1634,10 @@ export const portrait = {
 				ty: -53.8,
 				a: -1.153,
 				d: 1.153,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 10
 			},
 			head: {
@@ -1173,6 +1645,10 @@ export const portrait = {
 				ty: -54.25,
 				a: -1.153,
 				d: 1.153,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 9
 			},
 			hair_shadow: {
@@ -1180,6 +1656,10 @@ export const portrait = {
 				ty: -83.45,
 				a: -1.153,
 				d: 1.153,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 8
 			},
 			r_ear: {
@@ -1187,6 +1667,10 @@ export const portrait = {
 				ty: -65.35,
 				a: -1.153,
 				d: 1.153,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 7
 			},
 			r_tusk_fur: {
@@ -1194,6 +1678,10 @@ export const portrait = {
 				ty: -40.75,
 				a: -1.14,
 				d: 1.14,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 6
 			},
 			r_tusk: {
@@ -1201,10 +1689,6 @@ export const portrait = {
 				ty: -29.9,
 				a: -0.942,
 				d: 1.107,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 5
 			},
 			back: {
@@ -1212,6 +1696,10 @@ export const portrait = {
 				ty: -32.3,
 				a: -1.244,
 				d: 1.244,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 4
 			},
 			f_leg: {
@@ -1219,6 +1707,10 @@ export const portrait = {
 				ty: 6.4,
 				a: -1.244,
 				d: 1.244,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 3
 			},
 			body: {
@@ -1226,6 +1718,10 @@ export const portrait = {
 				ty: -15.3,
 				a: -1.244,
 				d: 1.244,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 2
 			},
 			b_legs: {
@@ -1233,6 +1729,10 @@ export const portrait = {
 				ty: 5.65,
 				a: -1.244,
 				d: 1.244,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 1
 			},
 			hooves: {
@@ -1240,6 +1740,10 @@ export const portrait = {
 				ty: 20.8,
 				a: -1.244,
 				d: 1.244,
+				acb: 1,
+				acc: 0,
+				acs: 0,
+				ach: 0,
 				l: 0
 			}
 		},
@@ -1258,10 +1762,6 @@ export const portrait = {
 				b: -0.017,
 				c: 0,
 				d: 1.14,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 16
 			},
 			l_tusk_fur: {
@@ -1339,10 +1839,6 @@ export const portrait = {
 				ty: -30.9,
 				a: -0.987,
 				d: 1.173,
-				acb: 0,
-				acc: 0,
-				acs: 0,
-				ach: 0,
 				l: 5
 			},
 			back: {
@@ -1394,6 +1890,10 @@ export const portrait = {
 				ty: -31.8,
 				a: -1.14,
 				d: 1.14,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 16
 			},
 			l_tusk_fur: {
@@ -1401,6 +1901,10 @@ export const portrait = {
 				ty: -30.4,
 				a: -1.173,
 				d: 1.173,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 15
 			},
 			l_tusk_back: {
@@ -1408,6 +1912,10 @@ export const portrait = {
 				ty: -18.75,
 				a: -1.106,
 				d: 1.173,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 14
 			},
 			trunk: {
@@ -1415,6 +1923,10 @@ export const portrait = {
 				ty: -4.75,
 				a: -1.173,
 				d: 1.173,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 13
 			},
 			l_ear: {
@@ -1422,6 +1934,10 @@ export const portrait = {
 				ty: -55.5,
 				a: -1.173,
 				d: 1.173,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 12
 			},
 			hair: {
@@ -1429,6 +1945,10 @@ export const portrait = {
 				ty: -85.6,
 				a: -1.173,
 				d: 1.173,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 11
 			},
 			eyes: {
@@ -1436,6 +1956,10 @@ export const portrait = {
 				ty: -55.5,
 				a: -1.173,
 				d: 1.173,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 10
 			},
 			head: {
@@ -1443,6 +1967,10 @@ export const portrait = {
 				ty: -55.9,
 				a: -1.173,
 				d: 1.173,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 9
 			},
 			hair_shadow: {
@@ -1450,6 +1978,10 @@ export const portrait = {
 				ty: -85.6,
 				a: -1.173,
 				d: 1.173,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 8
 			},
 			r_ear: {
@@ -1457,6 +1989,10 @@ export const portrait = {
 				ty: -67.2,
 				a: -1.173,
 				d: 1.173,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 7
 			},
 			r_tusk_fur: {
@@ -1464,6 +2000,10 @@ export const portrait = {
 				ty: -42.1,
 				a: -1.173,
 				d: 1.173,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 6
 			},
 			r_tusk: {
@@ -1482,6 +2022,10 @@ export const portrait = {
 				ty: -33.3,
 				a: -1.275,
 				d: 1.275,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 4
 			},
 			f_leg: {
@@ -1489,6 +2033,10 @@ export const portrait = {
 				ty: 6.15,
 				a: -1.275,
 				d: 1.275,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 3
 			},
 			body: {
@@ -1496,6 +2044,10 @@ export const portrait = {
 				ty: -16.05,
 				a: -1.275,
 				d: 1.275,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 2
 			},
 			b_legs: {
@@ -1503,6 +2055,10 @@ export const portrait = {
 				ty: 5.4,
 				a: -1.275,
 				d: 1.275,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 1
 			},
 			hooves: {
@@ -1510,6 +2066,10 @@ export const portrait = {
 				ty: 20.9,
 				a: -1.275,
 				d: 1.275,
+				acb: -34,
+				acc: 11,
+				acs: 0,
+				ach: 0,
 				l: 0
 			}
 		}
