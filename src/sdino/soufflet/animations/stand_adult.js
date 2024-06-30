@@ -1,15 +1,15 @@
 // @ts-check
 
-export let stand = {
+export const stand = {
 	id: 'soufflet_a_stand',
 	frames: [
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.5,
 				ty: -7.6,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.75,
 				ty: -7.55,
 				l: 6
@@ -28,7 +28,7 @@ export let stand = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.55,
 				ty: -1.7,
 				l: 3
@@ -47,7 +47,7 @@ export let stand = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.55,
 				ty: -3.7,
 				a: 0.811,
@@ -56,12 +56,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.5,
 				ty: -7.7,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.75,
 				ty: -7.65,
 				l: 6
@@ -80,7 +80,7 @@ export let stand = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.55,
 				ty: -1.8,
 				l: 3
@@ -99,7 +99,7 @@ export let stand = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.55,
 				ty: -3.8,
 				a: 0.811,
@@ -108,12 +108,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.45,
 				ty: -7.9,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.7,
 				ty: -7.85,
 				l: 6
@@ -132,7 +132,7 @@ export let stand = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.5,
 				ty: -2,
 				l: 3
@@ -151,7 +151,7 @@ export let stand = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.5,
 				ty: -4,
 				a: 0.811,
@@ -160,12 +160,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.45,
 				ty: -8.2,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.7,
 				ty: -8.15,
 				l: 6
@@ -184,7 +184,7 @@ export let stand = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.5,
 				ty: -2.3,
 				l: 3
@@ -203,7 +203,7 @@ export let stand = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.5,
 				ty: -4.3,
 				a: 0.811,
@@ -212,12 +212,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.4,
 				ty: -8.6,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.65,
 				ty: -8.55,
 				l: 6
@@ -236,7 +236,7 @@ export let stand = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.45,
 				ty: -2.7,
 				l: 3
@@ -255,7 +255,7 @@ export let stand = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.45,
 				ty: -4.7,
 				a: 0.811,
@@ -264,12 +264,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.4,
 				ty: -8.95,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.65,
 				ty: -8.9,
 				l: 6
@@ -288,7 +288,7 @@ export let stand = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.45,
 				ty: -3.05,
 				l: 3
@@ -307,7 +307,7 @@ export let stand = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.45,
 				ty: -5.05,
 				a: 0.811,
@@ -316,12 +316,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.35,
 				ty: -9.35,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.6,
 				ty: -9.3,
 				l: 6
@@ -340,7 +340,7 @@ export let stand = {
 				d: 0.833,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.4,
 				ty: -3.45,
 				l: 3
@@ -359,7 +359,7 @@ export let stand = {
 				d: 0.965,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.4,
 				ty: -5.45,
 				a: 0.811,
@@ -368,12 +368,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.35,
 				ty: -9.65,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.6,
 				ty: -9.6,
 				l: 6
@@ -392,7 +392,7 @@ export let stand = {
 				d: 0.833,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.4,
 				ty: -3.75,
 				l: 3
@@ -411,7 +411,7 @@ export let stand = {
 				d: 0.965,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.4,
 				ty: -5.75,
 				a: 0.811,
@@ -420,12 +420,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.3,
 				ty: -9.9,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.55,
 				ty: -9.85,
 				l: 6
@@ -444,7 +444,7 @@ export let stand = {
 				d: 0.833,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.35,
 				ty: -4,
 				l: 3
@@ -463,7 +463,7 @@ export let stand = {
 				d: 0.965,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.35,
 				ty: -6,
 				a: 0.811,
@@ -472,12 +472,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.3,
 				ty: -10,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.55,
 				ty: -9.95,
 				l: 6
@@ -496,7 +496,7 @@ export let stand = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.35,
 				ty: -4.1,
 				l: 3
@@ -515,7 +515,7 @@ export let stand = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.35,
 				ty: -6.1,
 				a: 0.811,
@@ -524,12 +524,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.3,
 				ty: -9.9,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.55,
 				ty: -9.85,
 				l: 6
@@ -548,7 +548,7 @@ export let stand = {
 				d: 0.833,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.35,
 				ty: -4,
 				l: 3
@@ -567,7 +567,7 @@ export let stand = {
 				d: 0.965,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.35,
 				ty: -6,
 				a: 0.811,
@@ -576,12 +576,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.35,
 				ty: -9.7,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.6,
 				ty: -9.65,
 				l: 6
@@ -600,7 +600,7 @@ export let stand = {
 				d: 0.833,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.4,
 				ty: -3.8,
 				l: 3
@@ -619,7 +619,7 @@ export let stand = {
 				d: 0.965,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.4,
 				ty: -5.8,
 				a: 0.811,
@@ -628,12 +628,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.35,
 				ty: -9.4,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.6,
 				ty: -9.35,
 				l: 6
@@ -652,7 +652,7 @@ export let stand = {
 				d: 0.833,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.4,
 				ty: -3.5,
 				l: 3
@@ -671,7 +671,7 @@ export let stand = {
 				d: 0.965,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.4,
 				ty: -5.5,
 				a: 0.811,
@@ -680,12 +680,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.4,
 				ty: -9.05,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.65,
 				ty: -9,
 				l: 6
@@ -704,7 +704,7 @@ export let stand = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.45,
 				ty: -3.15,
 				l: 3
@@ -723,7 +723,7 @@ export let stand = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.45,
 				ty: -5.15,
 				a: 0.811,
@@ -732,12 +732,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.4,
 				ty: -8.65,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.65,
 				ty: -8.6,
 				l: 6
@@ -756,7 +756,7 @@ export let stand = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.45,
 				ty: -2.75,
 				l: 3
@@ -775,7 +775,7 @@ export let stand = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.45,
 				ty: -4.75,
 				a: 0.811,
@@ -784,12 +784,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.45,
 				ty: -8.3,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.7,
 				ty: -8.25,
 				l: 6
@@ -808,7 +808,7 @@ export let stand = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.5,
 				ty: -2.4,
 				l: 3
@@ -827,7 +827,7 @@ export let stand = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.5,
 				ty: -4.4,
 				a: 0.811,
@@ -836,12 +836,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.45,
 				ty: -7.95,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.7,
 				ty: -7.9,
 				l: 6
@@ -860,7 +860,7 @@ export let stand = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.5,
 				ty: -2.05,
 				l: 3
@@ -879,7 +879,7 @@ export let stand = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.5,
 				ty: -4.05,
 				a: 0.811,
@@ -888,12 +888,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.5,
 				ty: -7.7,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.75,
 				ty: -7.65,
 				l: 6
@@ -912,7 +912,7 @@ export let stand = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.55,
 				ty: -1.8,
 				l: 3
@@ -931,7 +931,7 @@ export let stand = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.55,
 				ty: -3.8,
 				a: 0.811,
@@ -940,12 +940,12 @@ export let stand = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.5,
 				ty: -7.6,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.75,
 				ty: -7.55,
 				l: 6
@@ -964,7 +964,7 @@ export let stand = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.55,
 				ty: -1.7,
 				l: 3
@@ -983,7 +983,7 @@ export let stand = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.55,
 				ty: -3.7,
 				a: 0.811,

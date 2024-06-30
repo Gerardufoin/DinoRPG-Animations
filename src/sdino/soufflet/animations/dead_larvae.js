@@ -1,18 +1,18 @@
 // @ts-check
 
-export let dead = {
+export const dead = {
 	id: 'soufflet_l_dead',
 	callbacks: {
 		10: [['stop']]
 	},
 	frames: [
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.75,
 				ty: 3.2,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10,
 				ty: 3.25,
 				l: 3
@@ -38,14 +38,14 @@ export let dead = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.8,
 				ty: 3.25,
 				a: 1.008,
 				d: 0.992,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.1,
 				ty: 3.3,
 				a: 1.008,
@@ -77,14 +77,14 @@ export let dead = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.9,
 				ty: 3.3,
 				a: 1.032,
 				d: 0.97,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.3,
 				ty: 3.35,
 				a: 1.032,
@@ -116,14 +116,14 @@ export let dead = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.1,
 				ty: 3.45,
 				a: 1.069,
 				d: 0.936,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.65,
 				ty: 3.5,
 				a: 1.069,
@@ -155,14 +155,14 @@ export let dead = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.35,
 				ty: 3.65,
 				a: 1.116,
 				d: 0.892,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -11.1,
 				ty: 3.7,
 				a: 1.116,
@@ -194,14 +194,14 @@ export let dead = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.65,
 				ty: 3.85,
 				a: 1.169,
 				d: 0.843,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -11.6,
 				ty: 3.9,
 				a: 1.169,
@@ -233,14 +233,14 @@ export let dead = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.9,
 				ty: 4.05,
 				a: 1.222,
 				d: 0.794,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -12.1,
 				ty: 4.1,
 				a: 1.222,
@@ -272,14 +272,14 @@ export let dead = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -7.2,
 				ty: 4.25,
 				a: 1.272,
 				d: 0.747,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -12.6,
 				ty: 4.3,
 				a: 1.272,
@@ -311,14 +311,14 @@ export let dead = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -7.4,
 				ty: 4.4,
 				a: 1.313,
 				d: 0.709,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -13,
 				ty: 4.45,
 				a: 1.313,
@@ -350,14 +350,14 @@ export let dead = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -7.55,
 				ty: 4.5,
 				a: 1.341,
 				d: 0.684,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -13.25,
 				ty: 4.55,
 				a: 1.341,
@@ -389,14 +389,14 @@ export let dead = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -7.6,
 				ty: 4.55,
 				a: 1.35,
 				d: 0.675,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -13.35,
 				ty: 4.6,
 				a: 1.35,

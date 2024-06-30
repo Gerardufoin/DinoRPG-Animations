@@ -1,15 +1,15 @@
 // @ts-check
 
-export let walk = {
+export const walk = {
 	id: 'soufflet_l_walk',
 	frames: [
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.75,
 				ty: 3.2,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10,
 				ty: 3.25,
 				l: 3
@@ -35,14 +35,14 @@ export let walk = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.5,
 				ty: 3.3,
 				a: 0.965,
 				d: 0.965,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -9.7,
 				ty: 3.35,
 				a: 0.958,
@@ -74,14 +74,14 @@ export let walk = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.2,
 				ty: 3.4,
 				a: 0.93,
 				d: 0.93,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -9.4,
 				ty: 3.45,
 				a: 0.915,
@@ -113,14 +113,14 @@ export let walk = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -4.95,
 				ty: 3.5,
 				a: 0.896,
 				d: 0.896,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -9.1,
 				ty: 3.55,
 				a: 0.873,
@@ -152,14 +152,14 @@ export let walk = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -4.9,
 				ty: 2.35,
 				a: 1.043,
 				d: 1.043,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -8.9,
 				ty: 2.35,
 				a: 1.008,
@@ -191,14 +191,14 @@ export let walk = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -4.9,
 				ty: 1.1,
 				a: 1.191,
 				d: 1.191,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -8.65,
 				ty: 1.15,
 				a: 1.143,
@@ -230,14 +230,14 @@ export let walk = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -4.9,
 				ty: -0.1,
 				a: 1.338,
 				d: 1.338,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -8.45,
 				ty: -0.05,
 				a: 1.278,
@@ -269,14 +269,14 @@ export let walk = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.4,
 				ty: 0.9,
 				a: 1.254,
 				d: 1.254,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -9.1,
 				ty: 1.05,
 				a: 1.208,
@@ -308,14 +308,14 @@ export let walk = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.9,
 				ty: 2,
 				a: 1.169,
 				d: 1.169,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -9.8,
 				ty: 2.1,
 				a: 1.139,
@@ -347,14 +347,14 @@ export let walk = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.35,
 				ty: 3.1,
 				a: 1.085,
 				d: 1.085,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.4,
 				ty: 3.2,
 				a: 1.069,

@@ -1,7 +1,7 @@
 // @ts-check
 import { ref } from '../references_small.js';
 
-export let transforms = [
+export const transforms = [
 	// 1033
 	{
 		partIdx: 1,
@@ -113,19 +113,6 @@ export let transforms = [
 		tx: 2,
 		ty: -7
 	}
-];
-
-export let palette = [
-	[
-		// col0
-		['#FACBC0', '#FFCC79', '#FFE6AA', '#EAC084', '#FBCFA6', '#ECAB82'],
-		// col1
-		['#FFAA1E', '#DF7E37', '#D1F49B', '#BBDB71', '#9273DB', '#71ECDF', '#FFFF5E', '#FF9191', '#D6FF61'],
-		// col2
-		['#DF7E37', '#B85F1D', '#CC5858', '#97CBFF', '#9273DB', '#CC7695', '#FFFF5E', '#FF9191', '#D6FF61'],
-		// col3
-		['#FFCC79', '#DBB576', '#FFF9AE', '#F0DC99']
-	]
 ];
 
 // 1047 p4
@@ -248,7 +235,7 @@ const left_antennae = {
 	]
 };
 
-export let parts = {
+export const parts_small = {
 	// 1071
 	head: [
 		// 1070

@@ -1,15 +1,15 @@
 // @ts-check
 
-export let run = {
+export const run = {
 	id: 'soufflet_l_run',
 	frames: [
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.75,
 				ty: 3.2,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10,
 				ty: 3.25,
 				l: 3
@@ -35,14 +35,14 @@ export let run = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.35,
 				ty: 3.35,
 				a: 0.948,
 				d: 0.948,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -9.55,
 				ty: 3.4,
 				a: 0.937,
@@ -74,14 +74,14 @@ export let run = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -4.95,
 				ty: 3.5,
 				a: 0.896,
 				d: 0.896,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -9.1,
 				ty: 3.55,
 				a: 0.873,
@@ -113,14 +113,14 @@ export let run = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.95,
 				ty: 3.4,
 				a: 1.043,
 				d: 1.043,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -9.95,
 				ty: 3.4,
 				a: 1.008,
@@ -152,14 +152,14 @@ export let run = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -7.1,
 				ty: 3.2,
 				a: 1.191,
 				d: 1.191,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.85,
 				ty: 3.25,
 				a: 1.143,
@@ -191,14 +191,14 @@ export let run = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -8.15,
 				ty: 3.05,
 				a: 1.338,
 				d: 1.338,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -11.7,
 				ty: 3.1,
 				a: 1.278,
@@ -228,14 +228,14 @@ export let run = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -7.25,
 				ty: 3.05,
 				a: 1.211,
 				d: 1.211,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -11.05,
 				ty: 3.1,
 				a: 1.174,
@@ -265,14 +265,14 @@ export let run = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.35,
 				ty: 3.1,
 				a: 1.085,
 				d: 1.085,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.4,
 				ty: 3.2,
 				a: 1.069,

@@ -8,13 +8,10 @@ import { jump } from './animations/jump_larvae.js';
 import { attack } from './animations/attack_larvae.js';
 import { land } from './animations/land_larvae.js';
 import { dead } from './animations/dead_larvae.js';
-import { parts, transforms, palette } from './parts.js';
+import { parts_small, transforms } from './parts_small.js';
 import { ref } from '../references_small.js';
 
-export let soufflet_larvae = {
-	name: 'soufflet',
-	width: 0.686,
-	height: 0.656,
+export const soufflet_larvae = {
 	transforms: transforms,
 	glow: {
 		distance: 1,
@@ -22,7 +19,6 @@ export let soufflet_larvae = {
 		quality: 1,
 		strength: 0.3
 	},
-	palette: palette,
 	shadow: {
 		ref: ref.fx.shadow,
 		transform: {
@@ -36,15 +32,15 @@ export let soufflet_larvae = {
 	},
 	parts: {
 		// 1071
-		head: parts.head,
+		head: parts_small.head,
 		// 1092
-		butt: parts.butt,
+		butt: parts_small.butt,
 		// 1093
-		eyes: parts.eyes,
+		eyes: parts_small.eyes,
 		// 1094
-		right_antennae: parts.right_antennae,
+		r_antennae: parts_small.right_antennae,
 		// 1095
-		left_antennae: parts.left_antennae
+		l_antennae: parts_small.left_antennae
 	},
 	animations: {
 		// missing cast, release, fly

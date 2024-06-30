@@ -1,15 +1,15 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'soufflet_l_jump',
 	frames: [
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.25,
 				ty: -2.55,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -9.5,
 				ty: -2.5,
 				l: 3

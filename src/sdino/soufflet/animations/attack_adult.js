@@ -1,6 +1,6 @@
 // @ts-check
 
-export let attack = {
+export const attack = {
 	id: 'soufflet_a_attack',
 	callbacks: {
 		5: [['hit']],
@@ -8,12 +8,12 @@ export let attack = {
 	},
 	frames: [
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.5,
 				ty: -7.6,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.75,
 				ty: -7.55,
 				l: 6
@@ -32,7 +32,7 @@ export let attack = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.55,
 				ty: -1.7,
 				l: 3
@@ -51,7 +51,7 @@ export let attack = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.55,
 				ty: -3.7,
 				a: 0.811,
@@ -60,14 +60,14 @@ export let attack = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -18.35,
 				ty: -7.25,
 				a: 1.096,
 				d: 0.945,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -23.05,
 				ty: -7.2,
 				a: 1.096,
@@ -90,7 +90,7 @@ export let attack = {
 				d: 0.788,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -14.8,
 				ty: -1.9,
 				a: 0.976,
@@ -115,7 +115,7 @@ export let attack = {
 				d: 0.912,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -17.7,
 				ty: -3.6,
 				a: 0.792,
@@ -126,14 +126,14 @@ export let attack = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -30.9,
 				ty: -6.85,
 				a: 1.198,
 				d: 0.888,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -36,
 				ty: -6.8,
 				a: 1.198,
@@ -156,7 +156,7 @@ export let attack = {
 				d: 0.74,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -28.8,
 				ty: -2.25,
 				a: 0.847,
@@ -181,7 +181,7 @@ export let attack = {
 				d: 0.857,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -31.45,
 				ty: -3.45,
 				a: 0.687,
@@ -192,14 +192,14 @@ export let attack = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -26.75,
 				ty: -8.9,
 				a: 1.103,
 				d: 0.973,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -31.45,
 				ty: -8.85,
 				a: 1.103,
@@ -222,7 +222,7 @@ export let attack = {
 				d: 0.811,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -24.6,
 				ty: -3.8,
 				a: 0.81,
@@ -247,7 +247,7 @@ export let attack = {
 				d: 0.94,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -27.1,
 				ty: -5.15,
 				a: 0.656,
@@ -258,14 +258,14 @@ export let attack = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -19.35,
 				ty: -12.55,
 				a: 0.934,
 				d: 1.126,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -23.25,
 				ty: -12.5,
 				a: 0.934,
@@ -288,7 +288,7 @@ export let attack = {
 				d: 0.938,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -17,
 				ty: -6.55,
 				a: 0.747,
@@ -313,7 +313,7 @@ export let attack = {
 				d: 1.087,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -19.35,
 				ty: -8.25,
 				a: 0.605,
@@ -324,14 +324,14 @@ export let attack = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -14.75,
 				ty: -14.85,
 				a: 0.828,
 				d: 1.221,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -18.25,
 				ty: -14.8,
 				a: 0.828,
@@ -354,7 +354,7 @@ export let attack = {
 				d: 1.018,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -12.4,
 				ty: -8.3,
 				a: 0.708,
@@ -379,7 +379,7 @@ export let attack = {
 				d: 1.179,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -14.55,
 				ty: -10.15,
 				a: 0.574,
@@ -390,14 +390,14 @@ export let attack = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -12.7,
 				ty: -13.05,
 				a: 0.871,
 				d: 1.166,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -16.4,
 				ty: -12.95,
 				a: 0.871,
@@ -420,7 +420,7 @@ export let attack = {
 				d: 0.971,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -9.65,
 				ty: -6.7,
 				a: 0.821,
@@ -445,7 +445,7 @@ export let attack = {
 				d: 1.125,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -12.1,
 				ty: -8.6,
 				a: 0.666,
@@ -456,14 +456,14 @@ export let attack = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -10.6,
 				ty: -11.25,
 				a: 0.915,
 				d: 1.109,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -14.45,
 				ty: -11.15,
 				a: 0.915,
@@ -486,7 +486,7 @@ export let attack = {
 				d: 0.925,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -6.85,
 				ty: -4.9,
 				a: 0.911,
@@ -511,7 +511,7 @@ export let attack = {
 				d: 1.071,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -9.5,
 				ty: -6.85,
 				a: 0.738,
@@ -522,14 +522,14 @@ export let attack = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -8.6,
 				ty: -9.5,
 				a: 0.955,
 				d: 1.058,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -12.7,
 				ty: -9.45,
 				a: 0.955,
@@ -552,7 +552,7 @@ export let attack = {
 				d: 0.882,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -4.35,
 				ty: -3.4,
 				a: 0.968,
@@ -577,7 +577,7 @@ export let attack = {
 				d: 1.021,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -7.1,
 				ty: -5.35,
 				a: 0.785,
@@ -588,14 +588,14 @@ export let attack = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -7.15,
 				ty: -8.2,
 				a: 0.987,
 				d: 1.017,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -11.35,
 				ty: -8.1,
 				a: 0.987,
@@ -618,7 +618,7 @@ export let attack = {
 				d: 0.848,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -2.35,
 				ty: -2.2,
 				a: 0.994,
@@ -643,7 +643,7 @@ export let attack = {
 				d: 0.982,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -5.35,
 				ty: -4.2,
 				a: 0.806,
@@ -654,12 +654,12 @@ export let attack = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -6.5,
 				ty: -7.6,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.75,
 				ty: -7.55,
 				l: 6
@@ -678,7 +678,7 @@ export let attack = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -1.55,
 				ty: -1.7,
 				l: 3
@@ -697,7 +697,7 @@ export let attack = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -4.55,
 				ty: -3.7,
 				a: 0.811,

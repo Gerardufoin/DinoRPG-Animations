@@ -1,16 +1,16 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'soufflet_a_hit',
 	frames: [
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: 2,
 				ty: -8.9,
 				a: -1,
 				l: 7
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: 6.25,
 				ty: -8.85,
 				a: -1,
@@ -31,7 +31,7 @@ export let hit = {
 				d: 0.834,
 				l: 4
 			},
-			left_arm: {
+			l_arm: {
 				tx: -0.95,
 				ty: -2,
 				a: 0.866,
@@ -54,7 +54,7 @@ export let hit = {
 				d: 0.966,
 				l: 1
 			},
-			right_arm: {
+			r_arm: {
 				tx: -2.55,
 				ty: -5.2,
 				a: 0.702,

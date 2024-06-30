@@ -198,5 +198,15 @@ export const mapping_dino = {
 	'Symbol 2502_p9': 'trunk',
 	'Symbol 2508_p7a': 'l_tusk_back',
 	'Symbol 2511': 'l_tusk_fur',
-	'Symbol 2515_p7c': 'l_tusk_front'
+	'Symbol 2515_p7c': 'l_tusk_front',
+	// 2671 soufflet
+	'Symbol 2577_p3': 'butt',
+	'Symbol 2596_p7b': 'r_arm',
+	'Symbol 2599': 'body',
+	'Symbol 2620_p7a': 'l_arm',
+	'Symbol 2632_p5b': 'r_antennae',
+	'Symbol 2637': 'head',
+	'Symbol 2648_p6b': 'r_eye',
+	'Symbol 2657_p6a': 'l_eye',
+	'Symbol 2670_p5a': 'l_antennae'
 };

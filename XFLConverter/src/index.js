@@ -51,6 +51,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/dino/LIBRARY/Symbol 2204.xml', '_sub', undefined, 3); // feross
 //parser.parse('./resources/dino/LIBRARY/Symbol 2354.xml', '_sub', undefined, 3); // kabuki
 //parser.parse('./resources/dino/LIBRARY/Symbol 2516.xml', '_sub', undefined, 3); // mahamuti
+//parser.parse('./resources/dino/LIBRARY/Symbol 2671.xml', '_sub', undefined, 3); // soufflet
 
 //SMONSTER
 //parser.parse('./resources/smonster/LIBRARY/Symbol 4089.xml', 'smonster', undefined, 1); // smonster
@@ -130,7 +131,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/gfx/LIBRARY/Symbol 536.xml', '_sub', undefined, 2); // totem ship
 //parser.parse('./resources/gfx/LIBRARY/Symbol 540.xml', '_sub', undefined, 2); // totem laser
 //parser.parse('./resources/gfx/LIBRARY/Symbol 541.xml', '_sub', undefined, 2); // totem
-parser.parse('./resources/gfx/LIBRARY/Symbol 545.xml', '_sub', undefined, 2); // leviathan wave
+//parser.parse('./resources/gfx/LIBRARY/Symbol 545.xml', '_sub', undefined, 2); // leviathan wave
 //parser.parse('./resources/gfx/LIBRARY/Symbol 617.xml', '_sub', undefined, 2); // strong notification
 //parser.parse('./resources/gfx/LIBRARY/Symbol 626.xml', '_sub', undefined, 2); // _enduranceOn
 //parser.parse('./resources/gfx/LIBRARY/Symbol 643.xml', '_sub', undefined, 2); // brulure
@@ -155,7 +156,7 @@ parser.parse('./resources/gfx/LIBRARY/Symbol 545.xml', '_sub', undefined, 2); //
 
 const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
-//adapter.parse('./results/SVG/dino', mapping_dino, '../assets/dino');
-adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
+adapter.parse('./results/SVG/dino', mapping_dino, '../assets/dino');
+//adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
 //adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');

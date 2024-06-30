@@ -1,6 +1,6 @@
 // @ts-check
 
-export let land = {
+export const land = {
 	id: 'soufflet_l_land',
 	callbacks: {
 		2: [
@@ -11,12 +11,12 @@ export let land = {
 	},
 	frames: [
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.75,
 				ty: 3.2,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10,
 				ty: 3.25,
 				l: 3
@@ -42,14 +42,14 @@ export let land = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.85,
 				ty: 3.9,
 				a: 1.082,
 				d: 0.837,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.45,
 				ty: 3.95,
 				a: 1.082,
@@ -81,14 +81,14 @@ export let land = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.95,
 				ty: 4.55,
 				a: 1.164,
 				d: 0.675,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.9,
 				ty: 4.6,
 				a: 1.164,
@@ -120,14 +120,14 @@ export let land = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.9,
 				ty: 4.2,
 				a: 1.123,
 				d: 0.756,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.65,
 				ty: 4.25,
 				a: 1.123,
@@ -159,14 +159,14 @@ export let land = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.9,
 				ty: 3.9,
 				a: 1.082,
 				d: 0.837,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.5,
 				ty: 3.95,
 				a: 1.082,
@@ -198,14 +198,14 @@ export let land = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.8,
 				ty: 3.55,
 				a: 1.041,
 				d: 0.919,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10.2,
 				ty: 3.6,
 				a: 1.041,
@@ -237,12 +237,12 @@ export let land = {
 			}
 		},
 		{
-			left_antennae: {
+			l_antennae: {
 				tx: -5.75,
 				ty: 3.2,
 				l: 4
 			},
-			right_antennae: {
+			r_antennae: {
 				tx: -10,
 				ty: 3.25,
 				l: 3

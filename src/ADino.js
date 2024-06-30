@@ -47,18 +47,28 @@ export class ADino extends Animator {
 	 */
 	_dinoInfos;
 	/**
+	 * GFX value of the dino converted into number.
+	 * Used to describe the appearance of the dino.
+	 * @type {number[]}
+	 */
+	_description = [];
+	/**
 	 * Return the appropriate dinoz data depending on the size given at startup.
 	 * @type {object}
 	 */
 	get dinoInfos() {
+		let infos = this._dinoInfos;
 		// TODO: Simplify once all dinoz are converted to big/small format.
 		if (this._big && this._dinoInfos.big) {
-			return this._dinoInfos.big;
+			infos = this._dinoInfos.big;
 		}
 		if (!this._big && this._dinoInfos.small) {
-			return this._dinoInfos.small;
+			infos = this._dinoInfos.small;
 		}
-		return this._dinoInfos;
+		// Used for the Soufflet to differenciate the small format from its larvae form to its adult form.
+		return infos && infos.partIdx !== undefined
+			? infos.parts[infos.frames[this._description[infos.partIdx] % infos.frames.length]]
+			: infos;
 	}
 	/**
 	 * Color palette of the dino.
@@ -121,15 +131,14 @@ export class ADino extends Animator {
 
 	/**
 	 * Select the color palette based on the customization of the dino.
-	 * @param {Array} dParts Array customizing the dino.
 	 * @returns {void}
 	 */
-	initPalette(dParts) {
+	initPalette() {
 		if (this._dinoInfos) {
 			// Rare colors
-			if (dParts?.length > 14 && dParts[14] <= 9 && dParts[14] > 0) {
+			if (this._description.length > 14 && this._description[14] <= 9 && this._description[14] > 0) {
 				// If idx is greater than the palette number, we can it at the last palette.
-				const palIdx = Math.min(dParts[14], this._dinoInfos.palette.length - 1);
+				const palIdx = Math.min(this._description[14], this._dinoInfos.palette.length - 1);
 				this._palette = this._dinoInfos.palette[palIdx];
 			}
 			if (!this._palette) {
@@ -143,21 +152,23 @@ export class ADino extends Animator {
 
 	/**
 	 * Apply the customization to the sdino.
-	 * Will select all the parts and subparts based on the given customization array.
-	 * @param {Array} dParts The customization array given at the class creation.
+	 * Will select all the parts and subparts based on the description array.
 	 */
-	apply(dParts) {
+	apply() {
 		if (this.dinoInfos.transforms) {
-			this.setBodyTransforms(this.dinoInfos.transforms, dParts);
+			this.setBodyTransforms(this.dinoInfos.transforms, this._description);
 		}
 		const scaling = Math.max(this._body.scale.x, this._body.scale.y);
 		// If this is a big dino, the part scaling change depending on the parameter at idx 1, which is the dino growing or if it is a demon.
-		const partsScaling = PartManager.getAnimationsScaling(this.dinoInfos.animations, this._big ? dParts[1] : 0);
+		const partsScaling = PartManager.getAnimationsScaling(
+			this.dinoInfos.animations,
+			this._big ? this._description[1] : 0
+		);
 		// Insert the normal parts of the dino
 		for (let pName in this.dinoInfos.parts) {
 			let part = PartManager.createPart(
 				this.dinoInfos.parts[pName],
-				dParts,
+				this._description,
 				this._palette,
 				this._body._scale,
 				scaling * (partsScaling[pName] ?? 1)
@@ -168,16 +179,21 @@ export class ADino extends Animator {
 		}
 		let bottomLayer = 0;
 		if (this._castShadow && this.dinoInfos.shadow) {
-			const shadow = PartManager.getSubPart(this.dinoInfos.shadow, dParts, this._palette, this._body._scale);
+			const shadow = PartManager.getSubPart(
+				this.dinoInfos.shadow,
+				this._description,
+				this._palette,
+				this._body._scale
+			);
 			if (shadow) {
 				this._body.waitForAnimation(shadow);
 				this._flipContainer.addChildAt(shadow, bottomLayer++);
 			}
 		}
 		// Parts under are parts which are inserted below the dino and are not affected by the glow filter applied on the dino
-		this.addExtraPart(this.dinoInfos.parts_under, dParts, scaling, partsScaling, bottomLayer);
+		this.addExtraPart(this.dinoInfos.parts_under, scaling, partsScaling, bottomLayer);
 		// Parts over are parts which are inserted on top of the dino and are not affected by the glow filter applied on the dino
-		this.addExtraPart(this.dinoInfos.parts_over, dParts, scaling, partsScaling);
+		this.addExtraPart(this.dinoInfos.parts_over, scaling, partsScaling);
 		if (this.dinoInfos.glow) {
 			this.setBodyGlow(this.dinoInfos.glow);
 		}
@@ -186,17 +202,16 @@ export class ADino extends Animator {
 	/**
 	 * Add extra parts to the body. Extra parts are not considered as real parts and are not impacted by the body glow.
 	 * @param {object} partList The object containing the parts to insert.
-	 * @param {Array} dParts The customization array given at the class creation.
 	 * @param {number} scaling The scale of the dino.
 	 * @param {object} partsScaling The expected scaling for the parts.
 	 * @param {number} layerIdx At which layer to add the part. If undefined, the parts are added on top.
 	 */
-	addExtraPart(partList, dParts, scaling, partsScaling, layerIdx = undefined) {
+	addExtraPart(partList, scaling, partsScaling, layerIdx = undefined) {
 		if (partList) {
 			for (let pName in partList) {
 				const part = PartManager.createPart(
 					partList[pName],
-					dParts,
+					this._description,
 					this._palette,
 					this._body._scale,
 					scaling * (partsScaling[pName] ?? 1)
@@ -223,32 +238,28 @@ export class ADino extends Animator {
 	 */
 	init(data, damages, pflag = false, scale = 1) {
 		this._body._scale = scale;
-		let dParts = [];
+		this._description = [];
 		this._code = data;
 		for (let i = 0; i < data?.length ?? 0; ++i) {
 			let part = this.decode62(data.charCodeAt(i));
-			dParts.push(part);
+			this._description.push(part);
 		}
-		const infos = dinoz[dParts[0]];
-		this._dinoInfos =
-			infos && infos.partIdx !== undefined
-				? infos.parts[infos.frames[dParts[infos.partIdx] % infos.frames.length]]
-				: infos;
+		this._dinoInfos = dinoz[this._description[0]];
 		// TODO: Remove the big condition once all dinoz are migrated to big/small version
-		if (!this._dinoInfos || dParts.length < 10 || (this._big && !this._dinoInfos.big)) {
+		if (!this._dinoInfos || this._description.length < 10 || (this._big && !this._dinoInfos.big)) {
 			this._dinoInfos = error;
-			this.apply(dParts);
+			this.apply();
 			return false;
 		}
-		dParts.splice(2, 0, damages ?? 0);
-		this.initPalette(dParts);
-		this.apply(dParts);
+		this._description.splice(2, 0, damages ?? 0);
+		this.initPalette();
+		this.apply();
 		this.setAnimations(this.dinoInfos.animations);
 		this.playAnim('stand');
 		this.playing = pflag;
 		if (this._big) {
 			this.playing = false;
-			this.setFrame(PixiHelper.mm(0, dParts[1], this.getCurrentAnimationLength() - 1));
+			this.setFrame(PixiHelper.mm(0, this._description[1], this.getCurrentAnimationLength() - 1));
 			this._body.stop();
 		}
 		return true;
