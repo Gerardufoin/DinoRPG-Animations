@@ -12,6 +12,8 @@ import { parts_small, transforms } from './parts_small.js';
 import { ref } from '../references_small.js';
 
 export const soufflet_larvae = {
+	width: 0.686,
+	height: 0.656,
 	transforms: transforms,
 	glow: {
 		distance: 1,

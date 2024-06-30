@@ -32,8 +32,6 @@ const big_shadow_adult = {
 
 export const soufflet = {
 	name: 'soufflet',
-	width: 0.686,
-	height: 0.656,
 	palette: [
 		[
 			// col0
