@@ -1,24 +1,24 @@
 // @ts-check
 
-export let sleep = {
+export const sleep = {
 	id: 'toufufu_sleep',
 	frames: [
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 21.95,
 				ty: 18.85,
 				a: -1.084,
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.65,
 				ty: 18.15,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.55,
 				ty: 23.3,
 				a: 1.084,
@@ -32,21 +32,21 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.35,
 				ty: 3.7,
 				a: 1.084,
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 16.85,
 				ty: 12.2,
 				a: 1.084,
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 26.85,
 				ty: 1.05,
 				a: -0.304,
@@ -62,7 +62,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.6,
 				ty: 21.15,
 				a: -0.938,
@@ -71,7 +71,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.5,
 				ty: 16.2,
 				a: -1.084,
@@ -80,28 +80,28 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0,
 				ty: 17.15,
 				a: 0.948,
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.3,
 				ty: 19.05,
 				a: 1.084,
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.65,
 				ty: 18.35,
 				a: 1.084,
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.251,
@@ -117,7 +117,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22,
 				ty: 18.85,
 				a: -1.084,
@@ -125,7 +125,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.7,
 				ty: 18.15,
 				a: -1.084,
@@ -133,7 +133,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.6,
 				ty: 23.3,
 				a: 1.084,
@@ -149,7 +149,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.55,
 				ty: 3.7,
 				a: 1.084,
@@ -157,7 +157,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 16.95,
 				ty: 12.2,
 				a: 1.084,
@@ -165,7 +165,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 26.95,
 				ty: 0.95,
 				a: -0.309,
@@ -182,7 +182,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.7,
 				ty: 21.1,
 				a: -0.932,
@@ -191,7 +191,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.6,
 				ty: 16.15,
 				a: -1.084,
@@ -200,7 +200,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.1,
 				ty: 17.15,
 				a: 0.948,
@@ -208,7 +208,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.4,
 				ty: 19.05,
 				a: 1.084,
@@ -216,7 +216,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.7,
 				ty: 18.35,
 				a: 1.084,
@@ -224,7 +224,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.251,
@@ -241,7 +241,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.1,
 				ty: 18.85,
 				a: -1.084,
@@ -249,7 +249,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.75,
 				ty: 18.15,
 				a: -1.084,
@@ -257,7 +257,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.6,
 				ty: 23.3,
 				a: 1.084,
@@ -273,7 +273,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.7,
 				ty: 3.7,
 				a: 1.084,
@@ -281,7 +281,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.1,
 				ty: 12.2,
 				a: 1.084,
@@ -289,7 +289,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.15,
 				ty: 0.95,
 				a: -0.315,
@@ -306,7 +306,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.8,
 				ty: 20.95,
 				a: -0.925,
@@ -315,7 +315,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.7,
 				ty: 16.15,
 				a: -1.083,
@@ -324,7 +324,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.2,
 				ty: 17.15,
 				a: 0.948,
@@ -332,7 +332,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.5,
 				ty: 19.05,
 				a: 1.084,
@@ -340,7 +340,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.75,
 				ty: 18.3,
 				a: 1.084,
@@ -348,7 +348,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.252,
@@ -365,7 +365,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.15,
 				ty: 18.85,
 				a: -1.084,
@@ -373,7 +373,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.85,
 				ty: 18.15,
 				a: -1.084,
@@ -381,7 +381,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.7,
 				ty: 23.3,
 				a: 1.084,
@@ -397,7 +397,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.9,
 				ty: 3.7,
 				a: 1.084,
@@ -405,7 +405,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.2,
 				ty: 12.2,
 				a: 1.084,
@@ -413,7 +413,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.35,
 				ty: 0.95,
 				a: -0.323,
@@ -430,7 +430,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.85,
 				ty: 20.95,
 				a: -0.919,
@@ -439,7 +439,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.8,
 				ty: 16.15,
 				a: -1.083,
@@ -448,7 +448,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.25,
 				ty: 17.15,
 				a: 0.948,
@@ -456,7 +456,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.55,
 				ty: 19.05,
 				a: 1.084,
@@ -464,7 +464,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.8,
 				ty: 18.3,
 				a: 1.084,
@@ -472,7 +472,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.252,
@@ -489,7 +489,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.2,
 				ty: 18.85,
 				a: -1.084,
@@ -497,7 +497,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.95,
 				ty: 18.15,
 				a: -1.084,
@@ -505,7 +505,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.65,
 				ty: 23.3,
 				a: 1.084,
@@ -521,7 +521,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 22,
 				ty: 3.7,
 				a: 1.084,
@@ -529,7 +529,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.2,
 				ty: 12.2,
 				a: 1.084,
@@ -537,7 +537,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.55,
 				ty: 1,
 				a: -0.329,
@@ -554,7 +554,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6,
 				ty: 20.8,
 				a: -0.915,
@@ -563,7 +563,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.8,
 				ty: 16.15,
 				a: -1.083,
@@ -572,7 +572,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.3,
 				ty: 17.15,
 				a: 0.948,
@@ -580,7 +580,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.6,
 				ty: 19.05,
 				a: 1.084,
@@ -588,7 +588,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.9,
 				ty: 18.3,
 				a: 1.084,
@@ -596,7 +596,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.253,
@@ -613,7 +613,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.25,
 				ty: 18.85,
 				a: -1.084,
@@ -621,7 +621,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22,
 				ty: 18.15,
 				a: -1.084,
@@ -629,7 +629,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.7,
 				ty: 23.3,
 				a: 1.084,
@@ -645,7 +645,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 22.15,
 				ty: 3.7,
 				a: 1.084,
@@ -653,7 +653,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.35,
 				ty: 12.2,
 				a: 1.084,
@@ -661,7 +661,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.6,
 				ty: 1,
 				a: -0.334,
@@ -678,7 +678,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6,
 				ty: 20.75,
 				a: -0.91,
@@ -687,7 +687,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.9,
 				ty: 16.15,
 				a: -1.083,
@@ -696,7 +696,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.4,
 				ty: 17.15,
 				a: 0.948,
@@ -704,7 +704,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.7,
 				ty: 19,
 				a: 1.084,
@@ -712,7 +712,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.95,
 				ty: 18.3,
 				a: 1.084,
@@ -720,7 +720,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.254,
@@ -738,7 +738,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.3,
 				ty: 18.85,
 				a: -1.084,
@@ -746,7 +746,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.05,
 				ty: 18.1,
 				a: -1.084,
@@ -754,7 +754,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.75,
 				ty: 23.3,
 				a: 1.084,
@@ -770,7 +770,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 22.3,
 				ty: 3.7,
 				a: 1.084,
@@ -778,7 +778,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.4,
 				ty: 12.2,
 				a: 1.084,
@@ -786,7 +786,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.75,
 				ty: 1,
 				a: -0.339,
@@ -803,7 +803,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6,
 				ty: 20.7,
 				a: -0.907,
@@ -812,7 +812,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.95,
 				ty: 16.15,
 				a: -1.083,
@@ -821,7 +821,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.45,
 				ty: 17.15,
 				a: 0.948,
@@ -829,7 +829,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.75,
 				ty: 19,
 				a: 1.084,
@@ -837,7 +837,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9,
 				ty: 18.3,
 				a: 1.084,
@@ -845,7 +845,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.254,
@@ -862,7 +862,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.35,
 				ty: 18.85,
 				a: -1.084,
@@ -870,7 +870,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.15,
 				ty: 18.1,
 				a: -1.084,
@@ -878,7 +878,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.8,
 				ty: 23.3,
 				a: 1.084,
@@ -894,7 +894,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 22.45,
 				ty: 3.7,
 				a: 1.084,
@@ -902,7 +902,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.45,
 				ty: 12.2,
 				a: 1.084,
@@ -910,7 +910,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.9,
 				ty: 1,
 				a: -0.344,
@@ -927,7 +927,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6.1,
 				ty: 20.65,
 				a: -0.901,
@@ -936,7 +936,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14,
 				ty: 16.15,
 				a: -1.083,
@@ -945,7 +945,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.5,
 				ty: 17.15,
 				a: 0.948,
@@ -953,7 +953,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.75,
 				ty: 19,
 				a: 1.084,
@@ -961,7 +961,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.1,
 				ty: 18.3,
 				a: 1.084,
@@ -969,7 +969,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.255,
@@ -986,7 +986,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.45,
 				ty: 18.85,
 				a: -1.084,
@@ -994,7 +994,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.2,
 				ty: 18.1,
 				a: -1.084,
@@ -1002,7 +1002,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.8,
 				ty: 23.3,
 				a: 1.084,
@@ -1018,7 +1018,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 22.6,
 				ty: 3.7,
 				a: 1.084,
@@ -1026,7 +1026,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.55,
 				ty: 12.2,
 				a: 1.084,
@@ -1034,7 +1034,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28,
 				ty: 0.95,
 				a: -0.349,
@@ -1051,7 +1051,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6.1,
 				ty: 20.5,
 				a: -0.899,
@@ -1060,7 +1060,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.1,
 				ty: 16.15,
 				a: -1.083,
@@ -1069,7 +1069,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.55,
 				ty: 17.15,
 				a: 0.948,
@@ -1077,7 +1077,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.8,
 				ty: 19,
 				a: 1.084,
@@ -1085,7 +1085,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.1,
 				ty: 18.3,
 				a: 1.084,
@@ -1093,7 +1093,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.255,
@@ -1110,7 +1110,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.4,
 				ty: 18.85,
 				a: -1.084,
@@ -1118,7 +1118,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.25,
 				ty: 18.1,
 				a: -1.084,
@@ -1126,7 +1126,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.75,
 				ty: 23.3,
 				a: 1.084,
@@ -1142,7 +1142,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 22.65,
 				ty: 3.7,
 				a: 1.084,
@@ -1150,7 +1150,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.65,
 				ty: 12.2,
 				a: 1.084,
@@ -1158,7 +1158,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.1,
 				ty: 1,
 				a: -0.353,
@@ -1175,7 +1175,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6.2,
 				ty: 20.5,
 				a: -0.894,
@@ -1184,7 +1184,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.1,
 				ty: 16.2,
 				a: -1.083,
@@ -1193,7 +1193,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.65,
 				ty: 17.15,
 				a: 0.948,
@@ -1201,7 +1201,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.8,
 				ty: 19,
 				a: 1.084,
@@ -1209,7 +1209,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.15,
 				ty: 18.3,
 				a: 1.084,
@@ -1217,7 +1217,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.255,
@@ -1234,7 +1234,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.5,
 				ty: 18.9,
 				a: -1.084,
@@ -1242,7 +1242,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.3,
 				ty: 18.15,
 				a: -1.084,
@@ -1250,7 +1250,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.8,
 				ty: 23.3,
 				a: 1.084,
@@ -1266,7 +1266,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 22.75,
 				ty: 3.7,
 				a: 1.084,
@@ -1274,7 +1274,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.7,
 				ty: 12.2,
 				a: 1.084,
@@ -1282,7 +1282,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.15,
 				ty: 1,
 				a: -0.355,
@@ -1299,7 +1299,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6.25,
 				ty: 20.5,
 				a: -0.892,
@@ -1308,7 +1308,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.15,
 				ty: 16.2,
 				a: -1.083,
@@ -1317,7 +1317,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.6,
 				ty: 17.15,
 				a: 0.948,
@@ -1325,7 +1325,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.85,
 				ty: 19.05,
 				a: 1.084,
@@ -1333,7 +1333,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.2,
 				ty: 18.35,
 				a: 1.084,
@@ -1341,7 +1341,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.256,
@@ -1358,7 +1358,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.5,
 				ty: 18.9,
 				a: -1.084,
@@ -1366,7 +1366,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.3,
 				ty: 18.15,
 				a: -1.084,
@@ -1374,7 +1374,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.8,
 				ty: 23.3,
 				a: 1.084,
@@ -1390,7 +1390,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 22.9,
 				ty: 3.7,
 				a: 1.084,
@@ -1398,7 +1398,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.75,
 				ty: 12.15,
 				a: 1.084,
@@ -1406,7 +1406,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.3,
 				ty: 1,
 				a: -0.359,
@@ -1423,7 +1423,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6.3,
 				ty: 20.45,
 				a: -0.887,
@@ -1432,7 +1432,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.2,
 				ty: 16.2,
 				a: -1.083,
@@ -1441,7 +1441,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.7,
 				ty: 17.2,
 				a: 0.948,
@@ -1449,7 +1449,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.95,
 				ty: 19.05,
 				a: 1.084,
@@ -1457,7 +1457,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.2,
 				ty: 18.35,
 				a: 1.084,
@@ -1465,7 +1465,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.256,
@@ -1482,7 +1482,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.55,
 				ty: 18.85,
 				a: -1.084,
@@ -1490,7 +1490,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.35,
 				ty: 18.15,
 				a: -1.084,
@@ -1498,7 +1498,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.8,
 				ty: 23.3,
 				a: 1.084,
@@ -1514,7 +1514,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 23,
 				ty: 3.7,
 				a: 1.084,
@@ -1522,7 +1522,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.75,
 				ty: 12.2,
 				a: 1.084,
@@ -1530,7 +1530,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.4,
 				ty: 1,
 				a: -0.363,
@@ -1547,7 +1547,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6.35,
 				ty: 20.4,
 				a: -0.886,
@@ -1556,7 +1556,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.2,
 				ty: 16.2,
 				a: -1.083,
@@ -1565,7 +1565,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.7,
 				ty: 17.2,
 				a: 0.948,
@@ -1573,7 +1573,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.9,
 				ty: 19.05,
 				a: 1.084,
@@ -1581,7 +1581,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.25,
 				ty: 18.35,
 				a: 1.084,
@@ -1589,7 +1589,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.256,
@@ -1606,7 +1606,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.55,
 				ty: 18.85,
 				a: -1.084,
@@ -1614,7 +1614,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.4,
 				ty: 18.15,
 				a: -1.084,
@@ -1622,7 +1622,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.8,
 				ty: 23.3,
 				a: 1.084,
@@ -1638,7 +1638,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 23.05,
 				ty: 3.7,
 				a: 1.084,
@@ -1646,7 +1646,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.8,
 				ty: 12.2,
 				a: 1.084,
@@ -1654,7 +1654,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.4,
 				ty: 1,
 				a: -0.364,
@@ -1671,7 +1671,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6.4,
 				ty: 20.4,
 				a: -0.885,
@@ -1680,7 +1680,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.25,
 				ty: 16.2,
 				a: -1.083,
@@ -1689,7 +1689,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.7,
 				ty: 17.2,
 				a: 0.948,
@@ -1697,7 +1697,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.95,
 				ty: 19.05,
 				a: 1.084,
@@ -1705,7 +1705,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.25,
 				ty: 18.35,
 				a: 1.084,
@@ -1713,7 +1713,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.257,
@@ -1730,7 +1730,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.6,
 				ty: 18.85,
 				a: -1.084,
@@ -1738,7 +1738,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.45,
 				ty: 18.15,
 				a: -1.084,
@@ -1746,7 +1746,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.85,
 				ty: 23.3,
 				a: 1.084,
@@ -1762,7 +1762,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 23.05,
 				ty: 3.75,
 				a: 1.084,
@@ -1770,7 +1770,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.85,
 				ty: 12.2,
 				a: 1.084,
@@ -1778,7 +1778,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.5,
 				ty: 0.95,
 				a: -0.365,
@@ -1795,7 +1795,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6.35,
 				ty: 20.35,
 				a: -0.883,
@@ -1804,7 +1804,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.3,
 				ty: 16.2,
 				a: -1.083,
@@ -1813,7 +1813,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.8,
 				ty: 17.15,
 				a: 0.948,
@@ -1821,7 +1821,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 9,
 				ty: 19.05,
 				a: 1.084,
@@ -1829,7 +1829,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.3,
 				ty: 18.35,
 				a: 1.084,
@@ -1837,7 +1837,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.257,
@@ -1854,7 +1854,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.6,
 				ty: 18.85,
 				a: -1.084,
@@ -1862,7 +1862,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.45,
 				ty: 18.15,
 				a: -1.084,
@@ -1870,7 +1870,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.85,
 				ty: 23.3,
 				a: 1.084,
@@ -1886,7 +1886,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 23.1,
 				ty: 3.75,
 				a: 1.084,
@@ -1894,7 +1894,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.9,
 				ty: 12.2,
 				a: 1.084,
@@ -1902,7 +1902,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.6,
 				ty: 1,
 				a: -0.369,
@@ -1919,7 +1919,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6.4,
 				ty: 20.35,
 				a: -0.88,
@@ -1928,7 +1928,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.3,
 				ty: 16.2,
 				a: -1.083,
@@ -1937,7 +1937,7 @@ export let sleep = {
 				d: -1.083,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.8,
 				ty: 17.15,
 				a: 0.948,
@@ -1945,7 +1945,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 9,
 				ty: 19.05,
 				a: 1.084,
@@ -1953,7 +1953,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.3,
 				ty: 18.35,
 				a: 1.084,
@@ -1961,7 +1961,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.257,
@@ -1978,7 +1978,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.65,
 				ty: 18.85,
 				a: -1.084,
@@ -1986,7 +1986,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.45,
 				ty: 18.15,
 				a: -1.084,
@@ -1994,7 +1994,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.9,
 				ty: 23.3,
 				a: 1.084,
@@ -2010,7 +2010,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 23.1,
 				ty: 3.75,
 				a: 1.084,
@@ -2018,7 +2018,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.95,
 				ty: 12.2,
 				a: 1.084,
@@ -2026,7 +2026,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.55,
 				ty: 0.95,
 				a: -0.369,
@@ -2043,7 +2043,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6.4,
 				ty: 20.3,
 				a: -0.879,
@@ -2052,7 +2052,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.35,
 				ty: 16.2,
 				a: -1.083,
@@ -2061,7 +2061,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.85,
 				ty: 17.15,
 				a: 0.948,
@@ -2069,7 +2069,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 9,
 				ty: 19.05,
 				a: 1.084,
@@ -2077,7 +2077,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.3,
 				ty: 18.35,
 				a: 1.084,
@@ -2085,7 +2085,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.257,
@@ -2102,7 +2102,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.65,
 				ty: 18.85,
 				a: -1.084,
@@ -2110,7 +2110,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.45,
 				ty: 18.15,
 				a: -1.084,
@@ -2118,7 +2118,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.9,
 				ty: 23.3,
 				a: 1.084,
@@ -2134,7 +2134,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 23.15,
 				ty: 3.75,
 				a: 1.084,
@@ -2142,7 +2142,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.95,
 				ty: 12.2,
 				a: 1.084,
@@ -2150,7 +2150,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.6,
 				ty: 0.95,
 				a: -0.37,
@@ -2167,7 +2167,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6.4,
 				ty: 20.3,
 				a: -0.878,
@@ -2176,7 +2176,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.35,
 				ty: 16.2,
 				a: -1.083,
@@ -2185,7 +2185,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.85,
 				ty: 17.15,
 				a: 0.948,
@@ -2193,7 +2193,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 9,
 				ty: 19.05,
 				a: 1.084,
@@ -2201,7 +2201,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.3,
 				ty: 18.35,
 				a: 1.084,
@@ -2209,7 +2209,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.257,
@@ -2226,7 +2226,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.6,
 				ty: 18.85,
 				a: -1.084,
@@ -2234,7 +2234,7 @@ export let sleep = {
 				d: 1.083,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.45,
 				ty: 18.15,
 				a: -1.084,
@@ -2242,7 +2242,7 @@ export let sleep = {
 				d: 1.083,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.85,
 				ty: 23.3,
 				a: 1.084,
@@ -2258,7 +2258,7 @@ export let sleep = {
 				d: 1.083,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 23.2,
 				ty: 3.75,
 				a: 1.084,
@@ -2266,7 +2266,7 @@ export let sleep = {
 				d: 1.083,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.95,
 				ty: 12.2,
 				a: 1.084,
@@ -2274,7 +2274,7 @@ export let sleep = {
 				d: 1.083,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.6,
 				ty: 0.95,
 				a: -0.37,
@@ -2291,7 +2291,7 @@ export let sleep = {
 				d: 1.083,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6.4,
 				ty: 20.3,
 				a: -0.878,
@@ -2300,7 +2300,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.35,
 				ty: 16.2,
 				a: -1.083,
@@ -2309,7 +2309,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.8,
 				ty: 17.15,
 				a: 0.948,
@@ -2317,7 +2317,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 9.05,
 				ty: 19.05,
 				a: 1.084,
@@ -2325,7 +2325,7 @@ export let sleep = {
 				d: 1.083,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.35,
 				ty: 18.35,
 				a: 1.084,
@@ -2333,7 +2333,7 @@ export let sleep = {
 				d: 1.083,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.257,
@@ -2350,7 +2350,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.6,
 				ty: 18.85,
 				a: -1.084,
@@ -2358,7 +2358,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.35,
 				ty: 18.15,
 				a: -1.084,
@@ -2366,7 +2366,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.9,
 				ty: 23.3,
 				a: 1.084,
@@ -2382,7 +2382,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 23,
 				ty: 3.7,
 				a: 1.084,
@@ -2390,7 +2390,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.95,
 				ty: 12.2,
 				a: 1.084,
@@ -2398,7 +2398,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.7,
 				ty: 1.05,
 				a: -0.373,
@@ -2415,7 +2415,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6.1,
 				ty: 21.15,
 				a: -0.88,
@@ -2424,7 +2424,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.35,
 				ty: 16.2,
 				a: -1.083,
@@ -2433,7 +2433,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.75,
 				ty: 17.15,
 				a: 0.948,
@@ -2441,7 +2441,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.95,
 				ty: 19.05,
 				a: 1.084,
@@ -2449,7 +2449,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.35,
 				ty: 18.35,
 				a: 1.084,
@@ -2457,7 +2457,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.257,
@@ -2474,7 +2474,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.5,
 				ty: 18.85,
 				a: -1.084,
@@ -2482,7 +2482,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.25,
 				ty: 18.15,
 				a: -1.084,
@@ -2490,7 +2490,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.8,
 				ty: 23.3,
 				a: 1.084,
@@ -2506,7 +2506,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 22.85,
 				ty: 3.7,
 				a: 1.084,
@@ -2514,7 +2514,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.8,
 				ty: 12.2,
 				a: 1.084,
@@ -2522,7 +2522,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.45,
 				ty: 1.1,
 				a: -0.364,
@@ -2539,7 +2539,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 6,
 				ty: 21.25,
 				a: -0.884,
@@ -2548,7 +2548,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.3,
 				ty: 16.2,
 				a: -1.083,
@@ -2557,7 +2557,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.6,
 				ty: 17.2,
 				a: 0.948,
@@ -2565,7 +2565,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.9,
 				ty: 19.05,
 				a: 1.084,
@@ -2573,7 +2573,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.25,
 				ty: 18.35,
 				a: 1.084,
@@ -2581,7 +2581,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.257,
@@ -2598,7 +2598,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.45,
 				ty: 18.9,
 				a: -1.084,
@@ -2606,7 +2606,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.15,
 				ty: 18.15,
 				a: -1.084,
@@ -2614,7 +2614,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.8,
 				ty: 23.3,
 				a: 1.084,
@@ -2630,7 +2630,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 22.65,
 				ty: 3.7,
 				a: 1.084,
@@ -2638,7 +2638,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.7,
 				ty: 12.15,
 				a: 1.084,
@@ -2646,7 +2646,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.3,
 				ty: 1.1,
 				a: -0.359,
@@ -2663,7 +2663,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.95,
 				ty: 21.25,
 				a: -0.891,
@@ -2672,7 +2672,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.15,
 				ty: 16.2,
 				a: -1.083,
@@ -2681,7 +2681,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.6,
 				ty: 17.2,
 				a: 0.948,
@@ -2689,7 +2689,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.9,
 				ty: 19.05,
 				a: 1.084,
@@ -2697,7 +2697,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.2,
 				ty: 18.35,
 				a: 1.084,
@@ -2705,7 +2705,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.257,
@@ -2722,7 +2722,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.35,
 				ty: 18.85,
 				a: -1.084,
@@ -2730,7 +2730,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22.1,
 				ty: 18.1,
 				a: -1.084,
@@ -2738,7 +2738,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.75,
 				ty: 23.3,
 				a: 1.084,
@@ -2754,7 +2754,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 22.45,
 				ty: 3.7,
 				a: 1.084,
@@ -2762,7 +2762,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.65,
 				ty: 12.2,
 				a: 1.084,
@@ -2770,7 +2770,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.2,
 				ty: 1.1,
 				a: -0.353,
@@ -2787,7 +2787,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.95,
 				ty: 21.4,
 				a: -0.894,
@@ -2796,7 +2796,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.15,
 				ty: 16.2,
 				a: -1.083,
@@ -2805,7 +2805,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.5,
 				ty: 17.15,
 				a: 0.948,
@@ -2813,7 +2813,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.75,
 				ty: 19,
 				a: 1.084,
@@ -2821,7 +2821,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.15,
 				ty: 18.3,
 				a: 1.084,
@@ -2829,7 +2829,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.257,
@@ -2846,7 +2846,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.3,
 				ty: 18.85,
 				a: -1.084,
@@ -2854,7 +2854,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 22,
 				ty: 18.1,
 				a: -1.084,
@@ -2862,7 +2862,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.75,
 				ty: 23.3,
 				a: 1.084,
@@ -2878,7 +2878,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 22.3,
 				ty: 3.7,
 				a: 1.084,
@@ -2886,7 +2886,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.5,
 				ty: 12.2,
 				a: 1.084,
@@ -2894,7 +2894,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 28.1,
 				ty: 1.05,
 				a: -0.345,
@@ -2911,7 +2911,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.9,
 				ty: 21.45,
 				a: -0.9,
@@ -2920,7 +2920,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.05,
 				ty: 16.15,
 				a: -1.083,
@@ -2929,7 +2929,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.4,
 				ty: 17.15,
 				a: 0.948,
@@ -2937,7 +2937,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.75,
 				ty: 19,
 				a: 1.084,
@@ -2945,7 +2945,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9.1,
 				ty: 18.3,
 				a: 1.084,
@@ -2953,7 +2953,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.257,
@@ -2970,7 +2970,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.3,
 				ty: 18.85,
 				a: -1.084,
@@ -2978,7 +2978,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.9,
 				ty: 18.1,
 				a: -1.084,
@@ -2986,7 +2986,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.7,
 				ty: 23.3,
 				a: 1.084,
@@ -3002,7 +3002,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 22.15,
 				ty: 3.7,
 				a: 1.084,
@@ -3010,7 +3010,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.45,
 				ty: 12.2,
 				a: 1.084,
@@ -3018,7 +3018,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.9,
 				ty: 1.05,
 				a: -0.34,
@@ -3035,7 +3035,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.75,
 				ty: 21.55,
 				a: -0.903,
@@ -3044,7 +3044,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.05,
 				ty: 16.15,
 				a: -1.083,
@@ -3053,7 +3053,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.3,
 				ty: 17.15,
 				a: 0.948,
@@ -3061,7 +3061,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.7,
 				ty: 19,
 				a: 1.084,
@@ -3069,7 +3069,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9,
 				ty: 18.3,
 				a: 1.084,
@@ -3077,7 +3077,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.257,
@@ -3094,7 +3094,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.2,
 				ty: 18.85,
 				a: -1.084,
@@ -3102,7 +3102,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.85,
 				ty: 18.15,
 				a: -1.084,
@@ -3110,7 +3110,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.7,
 				ty: 23.3,
 				a: 1.084,
@@ -3126,7 +3126,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 22.05,
 				ty: 3.7,
 				a: 1.084,
@@ -3134,7 +3134,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.4,
 				ty: 12.2,
 				a: 1.084,
@@ -3142,7 +3142,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.75,
 				ty: 1.1,
 				a: -0.335,
@@ -3159,7 +3159,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.75,
 				ty: 21.65,
 				a: -0.908,
@@ -3168,7 +3168,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.9,
 				ty: 16.15,
 				a: -1.083,
@@ -3177,7 +3177,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.3,
 				ty: 17.15,
 				a: 0.948,
@@ -3185,7 +3185,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.6,
 				ty: 19,
 				a: 1.084,
@@ -3193,7 +3193,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 9,
 				ty: 18.3,
 				a: 1.084,
@@ -3201,7 +3201,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.256,
@@ -3218,7 +3218,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.15,
 				ty: 18.85,
 				a: -1.084,
@@ -3226,7 +3226,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.8,
 				ty: 18.15,
 				a: -1.084,
@@ -3234,7 +3234,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.7,
 				ty: 23.3,
 				a: 1.084,
@@ -3250,7 +3250,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.95,
 				ty: 3.7,
 				a: 1.084,
@@ -3258,7 +3258,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.35,
 				ty: 12.2,
 				a: 1.084,
@@ -3266,7 +3266,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.65,
 				ty: 1.1,
 				a: -0.33,
@@ -3283,7 +3283,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.75,
 				ty: 21.65,
 				a: -0.911,
@@ -3292,7 +3292,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.9,
 				ty: 16.15,
 				a: -1.083,
@@ -3301,7 +3301,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.25,
 				ty: 17.15,
 				a: 0.948,
@@ -3309,7 +3309,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.55,
 				ty: 19.05,
 				a: 1.084,
@@ -3317,7 +3317,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.95,
 				ty: 18.3,
 				a: 1.084,
@@ -3325,7 +3325,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.256,
@@ -3342,7 +3342,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.15,
 				ty: 18.85,
 				a: -1.084,
@@ -3350,7 +3350,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.75,
 				ty: 18.15,
 				a: -1.084,
@@ -3358,7 +3358,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.65,
 				ty: 23.3,
 				a: 1.084,
@@ -3374,7 +3374,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.8,
 				ty: 3.7,
 				a: 1.084,
@@ -3382,7 +3382,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.25,
 				ty: 12.2,
 				a: 1.084,
@@ -3390,7 +3390,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.55,
 				ty: 1.1,
 				a: -0.328,
@@ -3407,7 +3407,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.65,
 				ty: 21.75,
 				a: -0.916,
@@ -3416,7 +3416,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.85,
 				ty: 16.15,
 				a: -1.083,
@@ -3425,7 +3425,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.2,
 				ty: 17.15,
 				a: 0.948,
@@ -3433,7 +3433,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.6,
 				ty: 19.05,
 				a: 1.084,
@@ -3441,7 +3441,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.9,
 				ty: 18.3,
 				a: 1.084,
@@ -3449,7 +3449,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.256,
@@ -3466,7 +3466,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.1,
 				ty: 18.85,
 				a: -1.084,
@@ -3474,7 +3474,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.7,
 				ty: 18.15,
 				a: -1.084,
@@ -3482,7 +3482,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.65,
 				ty: 23.3,
 				a: 1.084,
@@ -3498,7 +3498,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.75,
 				ty: 3.7,
 				a: 1.084,
@@ -3506,7 +3506,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.2,
 				ty: 12.2,
 				a: 1.084,
@@ -3514,7 +3514,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.5,
 				ty: 1.1,
 				a: -0.324,
@@ -3531,7 +3531,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.65,
 				ty: 21.8,
 				a: -0.918,
@@ -3540,7 +3540,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.8,
 				ty: 16.15,
 				a: -1.083,
@@ -3549,7 +3549,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.1,
 				ty: 17.15,
 				a: 0.948,
@@ -3557,7 +3557,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.5,
 				ty: 19.05,
 				a: 1.084,
@@ -3565,7 +3565,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.85,
 				ty: 18.3,
 				a: 1.084,
@@ -3573,7 +3573,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.255,
@@ -3590,7 +3590,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.05,
 				ty: 18.85,
 				a: -1.084,
@@ -3598,7 +3598,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.7,
 				ty: 18.15,
 				a: -1.084,
@@ -3606,7 +3606,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.65,
 				ty: 23.3,
 				a: 1.084,
@@ -3622,7 +3622,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.6,
 				ty: 3.7,
 				a: 1.084,
@@ -3630,7 +3630,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.15,
 				ty: 12.2,
 				a: 1.084,
@@ -3638,7 +3638,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.3,
 				ty: 1.1,
 				a: -0.319,
@@ -3655,7 +3655,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.65,
 				ty: 21.8,
 				a: -0.923,
@@ -3664,7 +3664,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.8,
 				ty: 16.15,
 				a: -1.083,
@@ -3673,7 +3673,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.1,
 				ty: 17.15,
 				a: 0.948,
@@ -3681,7 +3681,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.45,
 				ty: 19.05,
 				a: 1.084,
@@ -3689,7 +3689,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.85,
 				ty: 18.3,
 				a: 1.084,
@@ -3697,7 +3697,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.255,
@@ -3714,7 +3714,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22.05,
 				ty: 18.85,
 				a: -1.084,
@@ -3722,7 +3722,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.6,
 				ty: 18.15,
 				a: -1.084,
@@ -3730,7 +3730,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.6,
 				ty: 23.3,
 				a: 1.084,
@@ -3746,7 +3746,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.5,
 				ty: 3.7,
 				a: 1.084,
@@ -3754,7 +3754,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.1,
 				ty: 12.2,
 				a: 1.084,
@@ -3762,7 +3762,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.25,
 				ty: 1.1,
 				a: -0.315,
@@ -3779,7 +3779,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.5,
 				ty: 21.8,
 				a: -0.925,
@@ -3788,7 +3788,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.7,
 				ty: 16.15,
 				a: -1.083,
@@ -3797,7 +3797,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.05,
 				ty: 17.15,
 				a: 0.948,
@@ -3805,7 +3805,7 @@ export let sleep = {
 				d: 0.949,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.45,
 				ty: 19.05,
 				a: 1.084,
@@ -3813,7 +3813,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.75,
 				ty: 18.3,
 				a: 1.084,
@@ -3821,7 +3821,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.255,
@@ -3838,7 +3838,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22,
 				ty: 18.85,
 				a: -1.084,
@@ -3846,7 +3846,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.6,
 				ty: 18.15,
 				a: -1.084,
@@ -3854,7 +3854,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.6,
 				ty: 23.3,
 				a: 1.084,
@@ -3870,7 +3870,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.4,
 				ty: 3.7,
 				a: 1.084,
@@ -3878,7 +3878,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.05,
 				ty: 12.2,
 				a: 1.084,
@@ -3886,7 +3886,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.15,
 				ty: 1.05,
 				a: -0.314,
@@ -3903,7 +3903,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.5,
 				ty: 21.85,
 				a: -0.926,
@@ -3912,7 +3912,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.65,
 				ty: 16.15,
 				a: -1.083,
@@ -3921,7 +3921,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0.05,
 				ty: 17.15,
 				a: 0.948,
@@ -3929,7 +3929,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.45,
 				ty: 19.05,
 				a: 1.084,
@@ -3937,7 +3937,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.8,
 				ty: 18.3,
 				a: 1.084,
@@ -3945,7 +3945,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.254,
@@ -3962,7 +3962,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 22,
 				ty: 18.85,
 				a: -1.084,
@@ -3970,7 +3970,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.55,
 				ty: 18.15,
 				a: -1.084,
@@ -3978,7 +3978,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.6,
 				ty: 23.3,
 				a: 1.084,
@@ -3994,7 +3994,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.3,
 				ty: 3.7,
 				a: 1.084,
@@ -4002,7 +4002,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17,
 				ty: 12.2,
 				a: 1.084,
@@ -4010,7 +4010,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.15,
 				ty: 1.05,
 				a: -0.31,
@@ -4027,7 +4027,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.55,
 				ty: 21.95,
 				a: -0.931,
@@ -4036,7 +4036,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.65,
 				ty: 16.15,
 				a: -1.084,
@@ -4045,7 +4045,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0,
 				ty: 17.15,
 				a: 0.948,
@@ -4053,7 +4053,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.4,
 				ty: 19.05,
 				a: 1.084,
@@ -4061,7 +4061,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.7,
 				ty: 18.35,
 				a: 1.084,
@@ -4069,7 +4069,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.254,
@@ -4086,7 +4086,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 21.95,
 				ty: 18.85,
 				a: -1.084,
@@ -4094,7 +4094,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.5,
 				ty: 18.15,
 				a: -1.084,
@@ -4102,7 +4102,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.6,
 				ty: 23.3,
 				a: 1.084,
@@ -4118,7 +4118,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.3,
 				ty: 3.7,
 				a: 1.084,
@@ -4126,7 +4126,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 16.95,
 				ty: 12.2,
 				a: 1.084,
@@ -4134,7 +4134,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.1,
 				ty: 1.1,
 				a: -0.309,
@@ -4151,7 +4151,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.5,
 				ty: 21.9,
 				a: -0.932,
@@ -4160,7 +4160,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.65,
 				ty: 16.15,
 				a: -1.084,
@@ -4169,7 +4169,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: -0.05,
 				ty: 17.15,
 				a: 0.948,
@@ -4177,7 +4177,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.35,
 				ty: 19.05,
 				a: 1.084,
@@ -4185,7 +4185,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.75,
 				ty: 18.35,
 				a: 1.084,
@@ -4193,7 +4193,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.253,
@@ -4210,7 +4210,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 21.95,
 				ty: 18.85,
 				a: -1.084,
@@ -4218,7 +4218,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.5,
 				ty: 18.15,
 				a: -1.084,
@@ -4226,7 +4226,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.5,
 				ty: 23.3,
 				a: 1.084,
@@ -4242,7 +4242,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.25,
 				ty: 3.7,
 				a: 1.084,
@@ -4250,7 +4250,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 16.9,
 				ty: 12.2,
 				a: 1.084,
@@ -4258,7 +4258,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 27.05,
 				ty: 1.1,
 				a: -0.308,
@@ -4275,7 +4275,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.45,
 				ty: 21.95,
 				a: -0.933,
@@ -4284,7 +4284,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.6,
 				ty: 16.15,
 				a: -1.084,
@@ -4293,7 +4293,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: -0.1,
 				ty: 17.15,
 				a: 0.948,
@@ -4301,7 +4301,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.35,
 				ty: 19.05,
 				a: 1.084,
@@ -4309,7 +4309,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.7,
 				ty: 18.35,
 				a: 1.084,
@@ -4317,7 +4317,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.252,
@@ -4334,7 +4334,7 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 21.95,
 				ty: 18.85,
 				a: -1.084,
@@ -4342,7 +4342,7 @@ export let sleep = {
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.5,
 				ty: 18.15,
 				a: -1.084,
@@ -4350,7 +4350,7 @@ export let sleep = {
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.5,
 				ty: 23.3,
 				a: 1.084,
@@ -4366,7 +4366,7 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.2,
 				ty: 3.7,
 				a: 1.084,
@@ -4374,7 +4374,7 @@ export let sleep = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 16.9,
 				ty: 12.2,
 				a: 1.084,
@@ -4382,7 +4382,7 @@ export let sleep = {
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 26.95,
 				ty: 1.1,
 				a: -0.304,
@@ -4399,7 +4399,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.5,
 				ty: 21.95,
 				a: -0.934,
@@ -4408,7 +4408,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.6,
 				ty: 16.15,
 				a: -1.084,
@@ -4417,7 +4417,7 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: -0.1,
 				ty: 17.15,
 				a: 0.948,
@@ -4425,7 +4425,7 @@ export let sleep = {
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.35,
 				ty: 19.05,
 				a: 1.084,
@@ -4433,7 +4433,7 @@ export let sleep = {
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.65,
 				ty: 18.35,
 				a: 1.084,
@@ -4441,7 +4441,7 @@ export let sleep = {
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.252,
@@ -4458,21 +4458,21 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 21.9,
 				ty: 18.85,
 				a: -1.084,
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.45,
 				ty: 18.15,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.55,
 				ty: 23.3,
 				a: 1.084,
@@ -4486,21 +4486,21 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.2,
 				ty: 3.7,
 				a: 1.084,
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 16.85,
 				ty: 12.2,
 				a: 1.084,
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 26.95,
 				ty: 1.1,
 				a: -0.304,
@@ -4516,7 +4516,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.45,
 				ty: 22,
 				a: -0.934,
@@ -4525,7 +4525,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.55,
 				ty: 16.15,
 				a: -1.084,
@@ -4534,28 +4534,28 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: -0.1,
 				ty: 17.15,
 				a: 0.948,
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.3,
 				ty: 19.05,
 				a: 1.084,
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.65,
 				ty: 18.35,
 				a: 1.084,
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.251,
@@ -4571,21 +4571,21 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 21.9,
 				ty: 18.85,
 				a: -1.084,
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.45,
 				ty: 18.15,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.55,
 				ty: 23.3,
 				a: 1.084,
@@ -4599,21 +4599,21 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.15,
 				ty: 3.7,
 				a: 1.084,
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 16.85,
 				ty: 12.2,
 				a: 1.084,
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 26.9,
 				ty: 1.1,
 				a: -0.304,
@@ -4629,7 +4629,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.4,
 				ty: 22,
 				a: -0.935,
@@ -4638,7 +4638,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.55,
 				ty: 16.15,
 				a: -1.084,
@@ -4647,28 +4647,28 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: -0.1,
 				ty: 17.15,
 				a: 0.948,
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.3,
 				ty: 19.05,
 				a: 1.084,
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.65,
 				ty: 18.35,
 				a: 1.084,
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.251,
@@ -4684,21 +4684,21 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 21.9,
 				ty: 18.85,
 				a: -1.084,
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.45,
 				ty: 18.15,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.55,
 				ty: 23.3,
 				a: 1.084,
@@ -4712,21 +4712,21 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.15,
 				ty: 3.7,
 				a: 1.084,
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 16.85,
 				ty: 12.2,
 				a: 1.084,
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 26.9,
 				ty: 1.1,
 				a: -0.304,
@@ -4742,7 +4742,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.4,
 				ty: 22,
 				a: -0.935,
@@ -4751,7 +4751,7 @@ export let sleep = {
 				d: -0.463,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.55,
 				ty: 16.15,
 				a: -1.084,
@@ -4760,28 +4760,28 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: -0.1,
 				ty: 17.15,
 				a: 0.948,
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.3,
 				ty: 19.05,
 				a: 1.084,
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.65,
 				ty: 18.35,
 				a: 1.084,
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.251,
@@ -4797,21 +4797,21 @@ export let sleep = {
 			}
 		},
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 21.95,
 				ty: 18.85,
 				a: -1.084,
 				d: 1.084,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.65,
 				ty: 18.15,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 18.55,
 				ty: 23.3,
 				a: 1.084,
@@ -4825,21 +4825,21 @@ export let sleep = {
 				d: 1.084,
 				l: 11
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 21.35,
 				ty: 3.7,
 				a: 1.084,
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 16.85,
 				ty: 12.2,
 				a: 1.084,
 				d: 1.084,
 				l: 9
 			},
-			left_hand: {
+			l_hand: {
 				tx: 26.85,
 				ty: 1.05,
 				a: -0.304,
@@ -4855,7 +4855,7 @@ export let sleep = {
 				d: 1.084,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 5.6,
 				ty: 21.15,
 				a: -0.938,
@@ -4864,7 +4864,7 @@ export let sleep = {
 				d: -0.464,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.5,
 				ty: 16.2,
 				a: -1.084,
@@ -4873,28 +4873,28 @@ export let sleep = {
 				d: -1.084,
 				l: 5
 			},
-			right_hand: {
+			r_hand: {
 				tx: 0,
 				ty: 17.15,
 				a: 0.948,
 				d: 0.948,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 8.3,
 				ty: 19.05,
 				a: 1.084,
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 8.65,
 				ty: 18.35,
 				a: 1.084,
 				d: 1.084,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 5.15,
 				ty: 23.75,
 				a: 1.251,

@@ -1,10 +1,10 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'toufufu_hit',
 	frames: [
 		{
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 14.05,
 				ty: 20.25,
 				a: -1.082,
@@ -13,7 +13,7 @@ export let hit = {
 				d: 1.082,
 				l: 14
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 13.1,
 				ty: 20.9,
 				a: 1.082,
@@ -22,7 +22,7 @@ export let hit = {
 				d: -1.082,
 				l: 13
 			},
-			left_foot: {
+			l_foot: {
 				tx: 14.8,
 				ty: 26,
 				a: -0.59,
@@ -40,7 +40,7 @@ export let hit = {
 				d: 1.076,
 				l: 11
 			},
-			left_hand: {
+			l_hand: {
 				tx: 30.25,
 				ty: 21.8,
 				a: 0.257,
@@ -49,7 +49,7 @@ export let hit = {
 				d: -0.257,
 				l: 10
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 29.45,
 				ty: 18.6,
 				a: 0.766,
@@ -58,7 +58,7 @@ export let hit = {
 				d: -0.683,
 				l: 9
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 18.55,
 				ty: 10.6,
 				a: 1.084,
@@ -73,7 +73,7 @@ export let hit = {
 				d: 1.084,
 				l: 7
 			},
-			right_hand: {
+			r_hand: {
 				tx: 7.5,
 				ty: -0.85,
 				a: 0.916,
@@ -82,7 +82,7 @@ export let hit = {
 				d: 0.916,
 				l: 6
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 8.1,
 				ty: 2.6,
 				a: 0.883,
@@ -91,7 +91,7 @@ export let hit = {
 				d: 0.567,
 				l: 5
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13,
 				ty: 11.35,
 				a: 0.293,
@@ -100,7 +100,7 @@ export let hit = {
 				d: 0.293,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 11.75,
 				ty: 15.75,
 				a: -0.184,
@@ -109,7 +109,7 @@ export let hit = {
 				d: -0.184,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 10.75,
 				ty: 15.9,
 				a: 1.067,
@@ -118,7 +118,7 @@ export let hit = {
 				d: 1.067,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 6.85,
 				ty: 11.1,
 				a: -0.073,

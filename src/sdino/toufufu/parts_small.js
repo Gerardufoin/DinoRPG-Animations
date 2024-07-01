@@ -76,7 +76,7 @@ const fur = {
 	]
 };
 
-export let parts = {
+export const parts_small = {
 	// 1137
 	right_foot: [
 		// 1136
@@ -145,24 +145,26 @@ export let parts = {
 				ty: -0.5
 			}
 		},
-		// 1168
 		{
-			special: true,
-			colorIdx: 3,
-			ref: ref.toufufu.body_special,
+			partIdx: 15,
+			frames: [-1, 0],
 			transform: {
 				tx: -0.5,
 				ty: -0.2
-			}
-		},
-		// 1169
-		{
-			special: true,
-			ref: ref.toufufu.body_special_sides,
-			transform: {
-				tx: -0.5,
-				ty: -0.2
-			}
+			},
+			parts: [
+				[
+					// 1168
+					{
+						colorIdx: 3,
+						ref: ref.toufufu.body_special
+					},
+					// 1169
+					{
+						ref: ref.toufufu.body_special_sides
+					}
+				]
+			]
 		}
 	],
 	// 1174

@@ -207,21 +207,21 @@ addDinoz('F9ck4MOItJ39n000');
 addDinoz('F9Uhqbn8t9Ta3000');
 addDinoz('F9uQtkcMeyOfI110');*/
 // Soufflet
-addDinoz('G560uYo5nCV2t000', true);
+/*addDinoz('G560uYo5nCV2t000', true);
 addDinoz('G9AsnCVT4hZ07000');
 addDinoz('G9KGSXRsa0XN5000');
 addDinoz('G5TevYkAXIBE4000');
 addDinoz('G9oZE6zNodSCp000');
 addDinoz('G6ZeHfhg0RVFt000');
-addDinoz('G9g5afRzJe3UR000');
+addDinoz('G9g5afRzJe3UR000');*/
 // Toufufu
-/*addDinoz('H9PvKeVlrD4Eb000', true);
+addDinoz('H9PvKeVlrD4Eb000', true);
 addDinoz('H9G93qPXqoqcO010');
 addDinoz('H7ArSwksrdVdH000');
 addDinoz('H9J0mhkvemnkF000');
 addDinoz('H93ogJKVIeU9z000');
 addDinoz('H9b3K84pMdxf4000');
-addDinoz('H9l6f61tJNPRf000');*/
+addDinoz('H9l6f61tJNPRf000');
 // Quetzu
 /*addDinoz('I9MdK4mbU215r000', true);
 addDinoz('I9rw3CdJGDiLy000');

@@ -1,6 +1,6 @@
 // @ts-check
 
-export let special = {
+export const special = {
 	id: 'toufufu_special',
 	frames: [
 		{
@@ -10,7 +10,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			left_hand: {
+			l_hand: {
 				tx: 14.6,
 				ty: 11.9,
 				a: -0.025,
@@ -19,7 +19,7 @@ export let special = {
 				d: -0.025,
 				l: 14
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 11.25,
 				ty: 15,
 				a: 0.26,
@@ -28,7 +28,7 @@ export let special = {
 				d: -0.26,
 				l: 13
 			},
-			right_hand: {
+			r_hand: {
 				tx: 8.4,
 				ty: 12.65,
 				a: 0,
@@ -37,7 +37,7 @@ export let special = {
 				d: 0,
 				l: 12
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 10.4,
 				ty: 13.2,
 				a: 0.039,
@@ -46,14 +46,14 @@ export let special = {
 				d: 0.019,
 				l: 11
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 20.65,
 				ty: 18.4,
 				a: -1.084,
 				d: 1.084,
 				l: 10
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 19.8,
 				ty: 18.25,
 				a: -1.047,
@@ -62,7 +62,7 @@ export let special = {
 				d: 1.047,
 				l: 9
 			},
-			left_foot: {
+			l_foot: {
 				tx: 17.25,
 				ty: 22.85,
 				a: 1.084,
@@ -78,7 +78,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 16.1,
 				ty: 13.45,
 				a: 0.752,
@@ -94,7 +94,7 @@ export let special = {
 				d: 1.084,
 				l: 5
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 12.2,
 				ty: 17.35,
 				a: -1.084,
@@ -103,14 +103,14 @@ export let special = {
 				d: -1.084,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 7,
 				ty: 18.6,
 				a: 1.084,
 				d: 1.084,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 7.35,
 				ty: 17.9,
 				a: 1.047,
@@ -119,7 +119,7 @@ export let special = {
 				d: 1.047,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 3.85,
 				ty: 23.3,
 				a: 1.251,
@@ -141,7 +141,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			left_hand: {
+			l_hand: {
 				tx: 15,
 				ty: 6.95,
 				a: -0.024,
@@ -150,7 +150,7 @@ export let special = {
 				d: -0.024,
 				l: 14
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 12.3,
 				ty: 10.15,
 				a: 0.258,
@@ -159,7 +159,7 @@ export let special = {
 				d: -0.258,
 				l: 13
 			},
-			right_hand: {
+			r_hand: {
 				tx: 9.35,
 				ty: 7.75,
 				a: 0,
@@ -168,7 +168,7 @@ export let special = {
 				d: 0,
 				l: 12
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 11.5,
 				ty: 8.9,
 				a: 0.035,
@@ -177,14 +177,14 @@ export let special = {
 				d: 0.017,
 				l: 11
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 19.6,
 				ty: 16.95,
 				a: -1.084,
 				d: 1.084,
 				l: 10
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 21.4,
 				ty: 18.85,
 				a: -0.671,
@@ -193,7 +193,7 @@ export let special = {
 				d: 0.671,
 				l: 9
 			},
-			left_foot: {
+			l_foot: {
 				tx: 16.85,
 				ty: 21.15,
 				a: 1.038,
@@ -211,7 +211,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 17.8,
 				ty: 8.25,
 				a: 0.684,
@@ -227,7 +227,7 @@ export let special = {
 				d: 1.084,
 				l: 5
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 12.85,
 				ty: 12.25,
 				a: -1.153,
@@ -236,7 +236,7 @@ export let special = {
 				d: -1.084,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 9.5,
 				ty: 12.6,
 				a: 1.072,
@@ -245,7 +245,7 @@ export let special = {
 				d: 1.072,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 10.3,
 				ty: 11.95,
 				a: 0.922,
@@ -254,7 +254,7 @@ export let special = {
 				d: 0.922,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 7.65,
 				ty: 22,
 				a: 0.399,
@@ -276,7 +276,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			left_hand: {
+			l_hand: {
 				tx: 15.25,
 				ty: 4,
 				a: -0.024,
@@ -285,7 +285,7 @@ export let special = {
 				d: -0.024,
 				l: 14
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 12.95,
 				ty: 7.25,
 				a: 0.258,
@@ -294,7 +294,7 @@ export let special = {
 				d: -0.258,
 				l: 13
 			},
-			right_hand: {
+			r_hand: {
 				tx: 9.95,
 				ty: 4.8,
 				a: 0,
@@ -303,7 +303,7 @@ export let special = {
 				d: 0,
 				l: 12
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 12.1,
 				ty: 6.3,
 				a: 0.035,
@@ -312,14 +312,14 @@ export let special = {
 				d: 0.017,
 				l: 11
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 19,
 				ty: 16.1,
 				a: -1.084,
 				d: 1.084,
 				l: 10
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 19.35,
 				ty: 18,
 				a: 0.029,
@@ -328,7 +328,7 @@ export let special = {
 				d: -0.029,
 				l: 9
 			},
-			left_foot: {
+			l_foot: {
 				tx: 16.6,
 				ty: 20.15,
 				a: 0.968,
@@ -346,7 +346,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 18.8,
 				ty: 5.15,
 				a: 0.639,
@@ -362,7 +362,7 @@ export let special = {
 				d: 1.084,
 				l: 5
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 13.25,
 				ty: 9.15,
 				a: -1.194,
@@ -371,7 +371,7 @@ export let special = {
 				d: -1.084,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 11.05,
 				ty: 9,
 				a: 1.054,
@@ -380,7 +380,7 @@ export let special = {
 				d: 1.054,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 12.1,
 				ty: 8.55,
 				a: 0.809,
@@ -389,7 +389,7 @@ export let special = {
 				d: 0.809,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 11.85,
 				ty: 19.05,
 				a: -0.455,
@@ -411,7 +411,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			left_hand: {
+			l_hand: {
 				tx: 16.3,
 				ty: 3.2,
 				a: -0.025,
@@ -420,7 +420,7 @@ export let special = {
 				d: -0.025,
 				l: 14
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 12.95,
 				ty: 6.3,
 				a: 0.26,
@@ -429,7 +429,7 @@ export let special = {
 				d: -0.26,
 				l: 13
 			},
-			right_hand: {
+			r_hand: {
 				tx: 10.1,
 				ty: 3.95,
 				a: 0,
@@ -438,7 +438,7 @@ export let special = {
 				d: 0,
 				l: 12
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 12.1,
 				ty: 4.3,
 				a: 0.039,
@@ -447,14 +447,14 @@ export let special = {
 				d: 0.019,
 				l: 11
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 18.8,
 				ty: 15.8,
 				a: -1.084,
 				d: 1.084,
 				l: 10
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 18.3,
 				ty: 17.1,
 				a: 0.28,
@@ -463,7 +463,7 @@ export let special = {
 				d: -0.28,
 				l: 9
 			},
-			left_foot: {
+			l_foot: {
 				tx: 16.6,
 				ty: 19.85,
 				a: 0.938,
@@ -479,7 +479,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 19.15,
 				ty: 4.05,
 				a: 0.624,
@@ -495,7 +495,7 @@ export let special = {
 				d: 1.084,
 				l: 5
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.8,
 				ty: 7.75,
 				a: -1.207,
@@ -504,7 +504,7 @@ export let special = {
 				d: -1.084,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 11.5,
 				ty: 7.9,
 				a: 1.047,
@@ -513,7 +513,7 @@ export let special = {
 				d: 1.047,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 12.75,
 				ty: 7.25,
 				a: 0.766,
@@ -522,7 +522,7 @@ export let special = {
 				d: 0.766,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 13.2,
 				ty: 18.9,
 				a: -0.715,
@@ -544,7 +544,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			left_hand: {
+			l_hand: {
 				tx: 16.25,
 				ty: 1.75,
 				a: -0.024,
@@ -553,7 +553,7 @@ export let special = {
 				d: -0.024,
 				l: 14
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 12.95,
 				ty: 4.7,
 				a: 0.258,
@@ -562,7 +562,7 @@ export let special = {
 				d: -0.258,
 				l: 13
 			},
-			right_hand: {
+			r_hand: {
 				tx: 10.05,
 				ty: 2.45,
 				a: 0,
@@ -571,7 +571,7 @@ export let special = {
 				d: 0,
 				l: 12
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 12.1,
 				ty: 2.6,
 				a: 0.035,
@@ -580,14 +580,14 @@ export let special = {
 				d: 0.017,
 				l: 11
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 18.75,
 				ty: 14.3,
 				a: -1.084,
 				d: 1.084,
 				l: 10
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 18.7,
 				ty: 16.2,
 				a: 0.277,
@@ -596,7 +596,7 @@ export let special = {
 				d: -0.277,
 				l: 9
 			},
-			left_foot: {
+			l_foot: {
 				tx: 16.9,
 				ty: 18.05,
 				a: 0.66,
@@ -612,7 +612,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 19.2,
 				ty: 2.6,
 				a: 0.624,
@@ -628,7 +628,7 @@ export let special = {
 				d: 1.084,
 				l: 5
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 15.6,
 				ty: 6.05,
 				a: -1.207,
@@ -637,7 +637,7 @@ export let special = {
 				d: -1.084,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 11.5,
 				ty: 6.5,
 				a: 1.047,
@@ -646,7 +646,7 @@ export let special = {
 				d: 1.047,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 12.75,
 				ty: 5.8,
 				a: 0.766,
@@ -655,7 +655,7 @@ export let special = {
 				d: 0.766,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 13,
 				ty: 18.6,
 				a: -0.712,
@@ -677,7 +677,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			left_hand: {
+			l_hand: {
 				tx: 16.3,
 				ty: 1.2,
 				a: -0.025,
@@ -686,7 +686,7 @@ export let special = {
 				d: -0.025,
 				l: 14
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 12.95,
 				ty: 4.3,
 				a: 0.26,
@@ -695,7 +695,7 @@ export let special = {
 				d: -0.26,
 				l: 13
 			},
-			right_hand: {
+			r_hand: {
 				tx: 10.1,
 				ty: 1.95,
 				a: 0,
@@ -704,7 +704,7 @@ export let special = {
 				d: 0,
 				l: 12
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 12.1,
 				ty: 2,
 				a: 0.039,
@@ -713,14 +713,14 @@ export let special = {
 				d: 0.019,
 				l: 11
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 18.8,
 				ty: 13.8,
 				a: -1.084,
 				d: 1.084,
 				l: 10
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 18.3,
 				ty: 15.1,
 				a: 0.28,
@@ -729,7 +729,7 @@ export let special = {
 				d: -0.28,
 				l: 9
 			},
-			left_foot: {
+			l_foot: {
 				tx: 17.2,
 				ty: 17.55,
 				a: 0.542,
@@ -745,7 +745,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 19.15,
 				ty: 2.05,
 				a: 0.624,
@@ -761,7 +761,7 @@ export let special = {
 				d: 1.084,
 				l: 5
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.8,
 				ty: 5.75,
 				a: -1.207,
@@ -770,7 +770,7 @@ export let special = {
 				d: -1.084,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 11.5,
 				ty: 5.9,
 				a: 1.047,
@@ -779,7 +779,7 @@ export let special = {
 				d: 1.047,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 12.75,
 				ty: 5.25,
 				a: 0.766,
@@ -788,7 +788,7 @@ export let special = {
 				d: 0.766,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 13.2,
 				ty: 16.9,
 				a: -0.715,
@@ -810,7 +810,7 @@ export let special = {
 				alpha: 0.602,
 				l: 15
 			},
-			left_hand: {
+			l_hand: {
 				tx: 16.3,
 				ty: 1.2,
 				a: -0.025,
@@ -820,7 +820,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 12.95,
 				ty: 4.3,
 				a: 0.26,
@@ -830,7 +830,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			right_hand: {
+			r_hand: {
 				tx: 10.1,
 				ty: 1.95,
 				a: 0,
@@ -840,7 +840,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 12.1,
 				ty: 2,
 				a: 0.039,
@@ -850,7 +850,7 @@ export let special = {
 				alpha: 0,
 				l: 11
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 18.8,
 				ty: 13.8,
 				a: -1.084,
@@ -858,7 +858,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 18.3,
 				ty: 15.1,
 				a: 0.28,
@@ -868,7 +868,7 @@ export let special = {
 				alpha: 0,
 				l: 9
 			},
-			left_foot: {
+			l_foot: {
 				tx: 17.2,
 				ty: 17.55,
 				a: 0.542,
@@ -886,7 +886,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 19.15,
 				ty: 2.05,
 				a: 0.624,
@@ -904,7 +904,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.8,
 				ty: 5.75,
 				a: -1.207,
@@ -914,7 +914,7 @@ export let special = {
 				alpha: 0,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 11.5,
 				ty: 5.9,
 				a: 1.047,
@@ -924,7 +924,7 @@ export let special = {
 				alpha: 0,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 12.75,
 				ty: 5.25,
 				a: 0.766,
@@ -934,7 +934,7 @@ export let special = {
 				alpha: 0,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 13.2,
 				ty: 16.9,
 				a: -0.715,
@@ -958,7 +958,7 @@ export let special = {
 				alpha: 0.602,
 				l: 15
 			},
-			left_hand: {
+			l_hand: {
 				tx: 16.3,
 				ty: 1.2,
 				a: -0.025,
@@ -968,7 +968,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 12.95,
 				ty: 4.3,
 				a: 0.26,
@@ -978,7 +978,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			right_hand: {
+			r_hand: {
 				tx: 10.1,
 				ty: 1.95,
 				a: 0,
@@ -988,7 +988,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 12.1,
 				ty: 2,
 				a: 0.039,
@@ -998,7 +998,7 @@ export let special = {
 				alpha: 0,
 				l: 11
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 18.8,
 				ty: 13.8,
 				a: -1.084,
@@ -1006,7 +1006,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 18.3,
 				ty: 15.1,
 				a: 0.28,
@@ -1016,7 +1016,7 @@ export let special = {
 				alpha: 0,
 				l: 9
 			},
-			left_foot: {
+			l_foot: {
 				tx: 17.2,
 				ty: 17.55,
 				a: 0.542,
@@ -1034,7 +1034,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 19.15,
 				ty: 2.05,
 				a: 0.624,
@@ -1052,7 +1052,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.8,
 				ty: 5.75,
 				a: -1.207,
@@ -1062,7 +1062,7 @@ export let special = {
 				alpha: 0,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 11.5,
 				ty: 5.9,
 				a: 1.047,
@@ -1072,7 +1072,7 @@ export let special = {
 				alpha: 0,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 12.75,
 				ty: 5.25,
 				a: 0.766,
@@ -1082,7 +1082,7 @@ export let special = {
 				alpha: 0,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 13.2,
 				ty: 16.9,
 				a: -0.715,
@@ -1106,7 +1106,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			left_hand: {
+			l_hand: {
 				tx: 16.3,
 				ty: 1.2,
 				a: -0.025,
@@ -1116,7 +1116,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 12.95,
 				ty: 4.3,
 				a: 0.26,
@@ -1126,7 +1126,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			right_hand: {
+			r_hand: {
 				tx: 10.1,
 				ty: 1.95,
 				a: 0,
@@ -1136,7 +1136,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 12.1,
 				ty: 2,
 				a: 0.039,
@@ -1146,7 +1146,7 @@ export let special = {
 				alpha: 0,
 				l: 11
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 18.8,
 				ty: 13.8,
 				a: -1.084,
@@ -1154,7 +1154,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 18.3,
 				ty: 15.1,
 				a: 0.28,
@@ -1164,7 +1164,7 @@ export let special = {
 				alpha: 0,
 				l: 9
 			},
-			left_foot: {
+			l_foot: {
 				tx: 17.2,
 				ty: 17.55,
 				a: 0.542,
@@ -1182,7 +1182,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 19.15,
 				ty: 2.05,
 				a: 0.624,
@@ -1200,7 +1200,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.8,
 				ty: 5.75,
 				a: -1.207,
@@ -1210,7 +1210,7 @@ export let special = {
 				alpha: 0,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 11.5,
 				ty: 5.9,
 				a: 1.047,
@@ -1220,7 +1220,7 @@ export let special = {
 				alpha: 0,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 12.75,
 				ty: 5.25,
 				a: 0.766,
@@ -1230,7 +1230,7 @@ export let special = {
 				alpha: 0,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 13.2,
 				ty: 16.9,
 				a: -0.715,
@@ -1254,7 +1254,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			left_hand: {
+			l_hand: {
 				tx: 16.3,
 				ty: 1.2,
 				a: -0.025,
@@ -1264,7 +1264,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 12.95,
 				ty: 4.3,
 				a: 0.26,
@@ -1274,7 +1274,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			right_hand: {
+			r_hand: {
 				tx: 10.1,
 				ty: 1.95,
 				a: 0,
@@ -1284,7 +1284,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 12.1,
 				ty: 2,
 				a: 0.039,
@@ -1294,7 +1294,7 @@ export let special = {
 				alpha: 0,
 				l: 11
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 18.8,
 				ty: 13.8,
 				a: -1.084,
@@ -1302,7 +1302,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 18.3,
 				ty: 15.1,
 				a: 0.28,
@@ -1312,7 +1312,7 @@ export let special = {
 				alpha: 0,
 				l: 9
 			},
-			left_foot: {
+			l_foot: {
 				tx: 17.2,
 				ty: 17.55,
 				a: 0.542,
@@ -1330,7 +1330,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 19.15,
 				ty: 2.05,
 				a: 0.624,
@@ -1348,7 +1348,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.8,
 				ty: 5.75,
 				a: -1.207,
@@ -1358,7 +1358,7 @@ export let special = {
 				alpha: 0,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 11.5,
 				ty: 5.9,
 				a: 1.047,
@@ -1368,7 +1368,7 @@ export let special = {
 				alpha: 0,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 12.75,
 				ty: 5.25,
 				a: 0.766,
@@ -1378,7 +1378,7 @@ export let special = {
 				alpha: 0,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 13.2,
 				ty: 16.9,
 				a: -0.715,
@@ -1402,7 +1402,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			left_hand: {
+			l_hand: {
 				tx: 16.3,
 				ty: 1.2,
 				a: -0.025,
@@ -1412,7 +1412,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 12.95,
 				ty: 4.3,
 				a: 0.26,
@@ -1422,7 +1422,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			right_hand: {
+			r_hand: {
 				tx: 10.1,
 				ty: 1.95,
 				a: 0,
@@ -1432,7 +1432,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 12.1,
 				ty: 2,
 				a: 0.039,
@@ -1442,7 +1442,7 @@ export let special = {
 				alpha: 0,
 				l: 11
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 18.8,
 				ty: 13.8,
 				a: -1.084,
@@ -1450,7 +1450,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 18.3,
 				ty: 15.1,
 				a: 0.28,
@@ -1460,7 +1460,7 @@ export let special = {
 				alpha: 0,
 				l: 9
 			},
-			left_foot: {
+			l_foot: {
 				tx: 17.2,
 				ty: 17.55,
 				a: 0.542,
@@ -1478,7 +1478,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 19.15,
 				ty: 2.05,
 				a: 0.624,
@@ -1496,7 +1496,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.8,
 				ty: 5.75,
 				a: -1.207,
@@ -1506,7 +1506,7 @@ export let special = {
 				alpha: 0,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 11.5,
 				ty: 5.9,
 				a: 1.047,
@@ -1516,7 +1516,7 @@ export let special = {
 				alpha: 0,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 12.75,
 				ty: 5.25,
 				a: 0.766,
@@ -1526,7 +1526,7 @@ export let special = {
 				alpha: 0,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 13.2,
 				ty: 16.9,
 				a: -0.715,
@@ -1550,7 +1550,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			left_hand: {
+			l_hand: {
 				tx: 16.3,
 				ty: 1.2,
 				a: -0.025,
@@ -1560,7 +1560,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 12.95,
 				ty: 4.3,
 				a: 0.26,
@@ -1570,7 +1570,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			right_hand: {
+			r_hand: {
 				tx: 10.1,
 				ty: 1.95,
 				a: 0,
@@ -1580,7 +1580,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 12.1,
 				ty: 2,
 				a: 0.039,
@@ -1590,7 +1590,7 @@ export let special = {
 				alpha: 0,
 				l: 11
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 18.8,
 				ty: 13.8,
 				a: -1.084,
@@ -1598,7 +1598,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 18.3,
 				ty: 15.1,
 				a: 0.28,
@@ -1608,7 +1608,7 @@ export let special = {
 				alpha: 0,
 				l: 9
 			},
-			left_foot: {
+			l_foot: {
 				tx: 17.2,
 				ty: 17.55,
 				a: 0.542,
@@ -1626,7 +1626,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 19.15,
 				ty: 2.05,
 				a: 0.624,
@@ -1644,7 +1644,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 14.8,
 				ty: 5.75,
 				a: -1.207,
@@ -1654,7 +1654,7 @@ export let special = {
 				alpha: 0,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 11.5,
 				ty: 5.9,
 				a: 1.047,
@@ -1664,7 +1664,7 @@ export let special = {
 				alpha: 0,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 12.75,
 				ty: 5.25,
 				a: 0.766,
@@ -1674,7 +1674,7 @@ export let special = {
 				alpha: 0,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 13.2,
 				ty: 16.9,
 				a: -0.715,
@@ -1698,7 +1698,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_hand: {
+			l_hand: {
 				tx: 53.55,
 				ty: -2.2,
 				a: -0.025,
@@ -1707,7 +1707,7 @@ export let special = {
 				d: -0.025,
 				l: 16
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 50.2,
 				ty: 0.9,
 				a: 0.26,
@@ -1716,7 +1716,7 @@ export let special = {
 				d: -0.26,
 				l: 15
 			},
-			right_hand: {
+			r_hand: {
 				tx: 47.35,
 				ty: -1.45,
 				a: 0,
@@ -1725,7 +1725,7 @@ export let special = {
 				d: 0,
 				l: 14
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 49.35,
 				ty: -0.9,
 				a: 0.039,
@@ -1734,14 +1734,14 @@ export let special = {
 				d: 0.019,
 				l: 13
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 59.6,
 				ty: 4.3,
 				a: -1.084,
 				d: 1.084,
 				l: 12
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 58.75,
 				ty: 4.15,
 				a: -1.047,
@@ -1750,7 +1750,7 @@ export let special = {
 				d: 1.047,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 56.2,
 				ty: 8.75,
 				a: 1.084,
@@ -1766,7 +1766,7 @@ export let special = {
 				d: 1.084,
 				l: 9
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 55.05,
 				ty: -0.65,
 				a: 0.752,
@@ -1782,7 +1782,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 51.15,
 				ty: 3.25,
 				a: -1.084,
@@ -1791,14 +1791,14 @@ export let special = {
 				d: -1.084,
 				l: 6
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 45.95,
 				ty: 4.5,
 				a: 1.084,
 				d: 1.084,
 				l: 5
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 46.3,
 				ty: 3.8,
 				a: 1.047,
@@ -1807,7 +1807,7 @@ export let special = {
 				d: 1.047,
 				l: 4
 			},
-			right_foot: {
+			r_foot: {
 				tx: 42.8,
 				ty: 9.2,
 				a: 1.251,
@@ -1847,7 +1847,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_hand: {
+			l_hand: {
 				tx: 54.45,
 				ty: -7.15,
 				a: -0.024,
@@ -1856,7 +1856,7 @@ export let special = {
 				d: -0.024,
 				l: 16
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 51.35,
 				ty: -3.95,
 				a: 0.258,
@@ -1865,7 +1865,7 @@ export let special = {
 				d: -0.258,
 				l: 15
 			},
-			right_hand: {
+			r_hand: {
 				tx: 48.3,
 				ty: -6.3,
 				a: 0,
@@ -1874,7 +1874,7 @@ export let special = {
 				d: 0,
 				l: 14
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 49.7,
 				ty: -6.5,
 				a: 0.035,
@@ -1883,14 +1883,14 @@ export let special = {
 				d: 0.017,
 				l: 13
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 58.5,
 				ty: 2.85,
 				a: -1.084,
 				d: 1.084,
 				l: 12
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 60.4,
 				ty: 4.7,
 				a: -0.671,
@@ -1899,7 +1899,7 @@ export let special = {
 				d: 0.671,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 55.85,
 				ty: 7,
 				a: 1.038,
@@ -1917,7 +1917,7 @@ export let special = {
 				d: 1.084,
 				l: 9
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 56.8,
 				ty: -5.75,
 				a: 0.684,
@@ -1933,7 +1933,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 53.2,
 				ty: -2.1,
 				a: -1.153,
@@ -1942,7 +1942,7 @@ export let special = {
 				d: -1.084,
 				l: 6
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 48.5,
 				ty: -1.55,
 				a: 1.072,
@@ -1951,7 +1951,7 @@ export let special = {
 				d: 1.072,
 				l: 5
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 49.2,
 				ty: -2.2,
 				a: 0.922,
@@ -1960,7 +1960,7 @@ export let special = {
 				d: 0.922,
 				l: 4
 			},
-			right_foot: {
+			r_foot: {
 				tx: 47.1,
 				ty: 8.75,
 				a: 0.399,
@@ -2002,7 +2002,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_hand: {
+			l_hand: {
 				tx: 55,
 				ty: -10.05,
 				a: -0.024,
@@ -2011,7 +2011,7 @@ export let special = {
 				d: -0.024,
 				l: 16
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 52,
 				ty: -6.85,
 				a: 0.258,
@@ -2020,7 +2020,7 @@ export let special = {
 				d: -0.258,
 				l: 15
 			},
-			right_hand: {
+			r_hand: {
 				tx: 48.9,
 				ty: -9.2,
 				a: 0,
@@ -2029,7 +2029,7 @@ export let special = {
 				d: 0,
 				l: 14
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 49.95,
 				ty: -9.85,
 				a: 0.035,
@@ -2038,14 +2038,14 @@ export let special = {
 				d: 0.017,
 				l: 13
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 57.85,
 				ty: 2,
 				a: -1.084,
 				d: 1.084,
 				l: 12
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 58.35,
 				ty: 3.8,
 				a: 0.029,
@@ -2054,7 +2054,7 @@ export let special = {
 				d: -0.029,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 55.6,
 				ty: 6.05,
 				a: 0.968,
@@ -2072,7 +2072,7 @@ export let special = {
 				d: 1.084,
 				l: 9
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 57.8,
 				ty: -8.85,
 				a: 0.639,
@@ -2088,7 +2088,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 54.4,
 				ty: -5.3,
 				a: -1.194,
@@ -2097,7 +2097,7 @@ export let special = {
 				d: -1.084,
 				l: 6
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 49.9,
 				ty: -5.15,
 				a: 1.054,
@@ -2106,7 +2106,7 @@ export let special = {
 				d: 1.054,
 				l: 5
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 51.05,
 				ty: -5.55,
 				a: 0.809,
@@ -2115,7 +2115,7 @@ export let special = {
 				d: 0.809,
 				l: 4
 			},
-			right_foot: {
+			r_foot: {
 				tx: 51.6,
 				ty: 6.15,
 				a: -0.455,
@@ -2157,7 +2157,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 55.25,
 				ty: -10.9,
 				a: -0.025,
@@ -2166,7 +2166,7 @@ export let special = {
 				d: -0.025,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 51.9,
 				ty: -7.8,
 				a: 0.26,
@@ -2175,7 +2175,7 @@ export let special = {
 				d: -0.26,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 49.05,
 				ty: -10.15,
 				a: 0,
@@ -2184,7 +2184,7 @@ export let special = {
 				d: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 51.05,
 				ty: -9.8,
 				a: 0.039,
@@ -2193,14 +2193,14 @@ export let special = {
 				d: 0.019,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 57.75,
 				ty: 1.7,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 57.25,
 				ty: 3,
 				a: 0.28,
@@ -2209,7 +2209,7 @@ export let special = {
 				d: -0.28,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 55.55,
 				ty: 5.75,
 				a: 0.938,
@@ -2225,7 +2225,7 @@ export let special = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 58.1,
 				ty: -10.05,
 				a: 0.624,
@@ -2241,7 +2241,7 @@ export let special = {
 				d: 1.084,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 53.75,
 				ty: -6.35,
 				a: -1.207,
@@ -2250,7 +2250,7 @@ export let special = {
 				d: -1.084,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 50.45,
 				ty: -6.2,
 				a: 1.047,
@@ -2259,7 +2259,7 @@ export let special = {
 				d: 1.047,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 51.7,
 				ty: -6.85,
 				a: 0.766,
@@ -2268,7 +2268,7 @@ export let special = {
 				d: 0.766,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 52.15,
 				ty: 4.8,
 				a: -0.715,
@@ -2319,7 +2319,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 55.15,
 				ty: -12.45,
 				a: -0.024,
@@ -2328,7 +2328,7 @@ export let special = {
 				d: -0.024,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 52.1,
 				ty: -9.2,
 				a: 0.258,
@@ -2337,7 +2337,7 @@ export let special = {
 				d: -0.258,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 49,
 				ty: -11.7,
 				a: 0,
@@ -2346,7 +2346,7 @@ export let special = {
 				d: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 51.2,
 				ty: -10.65,
 				a: 0.035,
@@ -2355,14 +2355,14 @@ export let special = {
 				d: 0.017,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 57.75,
 				ty: 0.2,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 57.05,
 				ty: 1.45,
 				a: 0.277,
@@ -2371,7 +2371,7 @@ export let special = {
 				d: -0.277,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 56.15,
 				ty: 4.05,
 				a: 0.66,
@@ -2387,7 +2387,7 @@ export let special = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 58.1,
 				ty: -11.55,
 				a: 0.624,
@@ -2403,7 +2403,7 @@ export let special = {
 				d: 1.084,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 53.8,
 				ty: -7.8,
 				a: -1.207,
@@ -2412,7 +2412,7 @@ export let special = {
 				d: -1.084,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 50.4,
 				ty: -7.65,
 				a: 1.047,
@@ -2421,7 +2421,7 @@ export let special = {
 				d: 1.047,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 51.65,
 				ty: -8.35,
 				a: 0.766,
@@ -2430,7 +2430,7 @@ export let special = {
 				d: 0.766,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 51.5,
 				ty: 3.4,
 				a: -0.712,
@@ -2482,7 +2482,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 55.25,
 				ty: -12.9,
 				a: -0.025,
@@ -2491,7 +2491,7 @@ export let special = {
 				d: -0.025,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 51.9,
 				ty: -9.8,
 				a: 0.26,
@@ -2500,7 +2500,7 @@ export let special = {
 				d: -0.26,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 49.05,
 				ty: -12.15,
 				a: 0,
@@ -2509,7 +2509,7 @@ export let special = {
 				d: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 51.05,
 				ty: -12.1,
 				a: 0.039,
@@ -2518,14 +2518,14 @@ export let special = {
 				d: 0.019,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 57.75,
 				ty: -0.3,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 57.25,
 				ty: 1,
 				a: 0.28,
@@ -2534,7 +2534,7 @@ export let special = {
 				d: -0.28,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 56.15,
 				ty: 3.45,
 				a: 0.542,
@@ -2550,7 +2550,7 @@ export let special = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 58.1,
 				ty: -12.05,
 				a: 0.624,
@@ -2566,7 +2566,7 @@ export let special = {
 				d: 1.084,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 53.75,
 				ty: -8.35,
 				a: -1.207,
@@ -2575,7 +2575,7 @@ export let special = {
 				d: -1.084,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 50.45,
 				ty: -8.2,
 				a: 1.047,
@@ -2584,7 +2584,7 @@ export let special = {
 				d: 1.047,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 51.7,
 				ty: -8.85,
 				a: 0.766,
@@ -2593,7 +2593,7 @@ export let special = {
 				d: 0.766,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 52.15,
 				ty: 2.8,
 				a: -0.715,
@@ -2645,7 +2645,7 @@ export let special = {
 				alpha: 0.602,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 55.25,
 				ty: -12.9,
 				a: -0.025,
@@ -2655,7 +2655,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 51.9,
 				ty: -9.8,
 				a: 0.26,
@@ -2665,7 +2665,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 49.05,
 				ty: -12.15,
 				a: 0,
@@ -2675,7 +2675,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 51.05,
 				ty: -12.1,
 				a: 0.039,
@@ -2685,7 +2685,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 57.75,
 				ty: -0.3,
 				a: -1.084,
@@ -2693,7 +2693,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 57.25,
 				ty: 1,
 				a: 0.28,
@@ -2703,7 +2703,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 56.15,
 				ty: 3.45,
 				a: 0.542,
@@ -2721,7 +2721,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 58.1,
 				ty: -12.05,
 				a: 0.624,
@@ -2739,7 +2739,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 53.75,
 				ty: -8.35,
 				a: -1.207,
@@ -2749,7 +2749,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 50.45,
 				ty: -8.2,
 				a: 1.047,
@@ -2759,7 +2759,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 51.7,
 				ty: -8.85,
 				a: 0.766,
@@ -2769,7 +2769,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 52.15,
 				ty: 2.8,
 				a: -0.715,
@@ -2823,7 +2823,7 @@ export let special = {
 				alpha: 0.602,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 55.25,
 				ty: -12.9,
 				a: -0.025,
@@ -2833,7 +2833,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 51.9,
 				ty: -9.8,
 				a: 0.26,
@@ -2843,7 +2843,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 49.05,
 				ty: -12.15,
 				a: 0,
@@ -2853,7 +2853,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 51.05,
 				ty: -12.1,
 				a: 0.039,
@@ -2863,7 +2863,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 57.75,
 				ty: -0.3,
 				a: -1.084,
@@ -2871,7 +2871,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 57.25,
 				ty: 1,
 				a: 0.28,
@@ -2881,7 +2881,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 56.15,
 				ty: 3.45,
 				a: 0.542,
@@ -2899,7 +2899,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 58.1,
 				ty: -12.05,
 				a: 0.624,
@@ -2917,7 +2917,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 53.75,
 				ty: -8.35,
 				a: -1.207,
@@ -2927,7 +2927,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 50.45,
 				ty: -8.2,
 				a: 1.047,
@@ -2937,7 +2937,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 51.7,
 				ty: -8.85,
 				a: 0.766,
@@ -2947,7 +2947,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 52.15,
 				ty: 2.8,
 				a: -0.715,
@@ -3001,7 +3001,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 55.25,
 				ty: -12.9,
 				a: -0.025,
@@ -3011,7 +3011,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 51.9,
 				ty: -9.8,
 				a: 0.26,
@@ -3021,7 +3021,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 49.05,
 				ty: -12.15,
 				a: 0,
@@ -3031,7 +3031,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 51.05,
 				ty: -12.1,
 				a: 0.039,
@@ -3041,7 +3041,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 57.75,
 				ty: -0.3,
 				a: -1.084,
@@ -3049,7 +3049,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 57.25,
 				ty: 1,
 				a: 0.28,
@@ -3059,7 +3059,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 56.15,
 				ty: 3.45,
 				a: 0.542,
@@ -3077,7 +3077,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 58.1,
 				ty: -12.05,
 				a: 0.624,
@@ -3095,7 +3095,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 53.75,
 				ty: -8.35,
 				a: -1.207,
@@ -3105,7 +3105,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 50.45,
 				ty: -8.2,
 				a: 1.047,
@@ -3115,7 +3115,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 51.7,
 				ty: -8.85,
 				a: 0.766,
@@ -3125,7 +3125,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 52.15,
 				ty: 2.8,
 				a: -0.715,
@@ -3179,7 +3179,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 55.25,
 				ty: -12.9,
 				a: -0.025,
@@ -3189,7 +3189,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 51.9,
 				ty: -9.8,
 				a: 0.26,
@@ -3199,7 +3199,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 49.05,
 				ty: -12.15,
 				a: 0,
@@ -3209,7 +3209,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 51.05,
 				ty: -12.1,
 				a: 0.039,
@@ -3219,7 +3219,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 57.75,
 				ty: -0.3,
 				a: -1.084,
@@ -3227,7 +3227,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 57.25,
 				ty: 1,
 				a: 0.28,
@@ -3237,7 +3237,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 56.15,
 				ty: 3.45,
 				a: 0.542,
@@ -3255,7 +3255,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 58.1,
 				ty: -12.05,
 				a: 0.624,
@@ -3273,7 +3273,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 53.75,
 				ty: -8.35,
 				a: -1.207,
@@ -3283,7 +3283,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 50.45,
 				ty: -8.2,
 				a: 1.047,
@@ -3293,7 +3293,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 51.7,
 				ty: -8.85,
 				a: 0.766,
@@ -3303,7 +3303,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 52.15,
 				ty: 2.8,
 				a: -0.715,
@@ -3357,7 +3357,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 55.25,
 				ty: -12.9,
 				a: -0.025,
@@ -3367,7 +3367,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 51.9,
 				ty: -9.8,
 				a: 0.26,
@@ -3377,7 +3377,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 49.05,
 				ty: -12.15,
 				a: 0,
@@ -3387,7 +3387,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 51.05,
 				ty: -12.1,
 				a: 0.039,
@@ -3397,7 +3397,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 57.75,
 				ty: -0.3,
 				a: -1.084,
@@ -3405,7 +3405,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 57.25,
 				ty: 1,
 				a: 0.28,
@@ -3415,7 +3415,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 56.15,
 				ty: 3.45,
 				a: 0.542,
@@ -3433,7 +3433,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 58.1,
 				ty: -12.05,
 				a: 0.624,
@@ -3451,7 +3451,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 53.75,
 				ty: -8.35,
 				a: -1.207,
@@ -3461,7 +3461,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 50.45,
 				ty: -8.2,
 				a: 1.047,
@@ -3471,7 +3471,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 51.7,
 				ty: -8.85,
 				a: 0.766,
@@ -3481,7 +3481,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 52.15,
 				ty: 2.8,
 				a: -0.715,
@@ -3535,7 +3535,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 55.25,
 				ty: -12.9,
 				a: -0.025,
@@ -3545,7 +3545,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 51.9,
 				ty: -9.8,
 				a: 0.26,
@@ -3555,7 +3555,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 49.05,
 				ty: -12.15,
 				a: 0,
@@ -3565,7 +3565,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 51.05,
 				ty: -12.1,
 				a: 0.039,
@@ -3575,7 +3575,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 57.75,
 				ty: -0.3,
 				a: -1.084,
@@ -3583,7 +3583,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 57.25,
 				ty: 1,
 				a: 0.28,
@@ -3593,7 +3593,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 56.15,
 				ty: 3.45,
 				a: 0.542,
@@ -3611,7 +3611,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 58.1,
 				ty: -12.05,
 				a: 0.624,
@@ -3629,7 +3629,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 53.75,
 				ty: -8.35,
 				a: -1.207,
@@ -3639,7 +3639,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 50.45,
 				ty: -8.2,
 				a: 1.047,
@@ -3649,7 +3649,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 51.7,
 				ty: -8.85,
 				a: 0.766,
@@ -3659,7 +3659,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 52.15,
 				ty: 2.8,
 				a: -0.715,
@@ -3713,7 +3713,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_hand: {
+			l_hand: {
 				tx: -25.75,
 				ty: 41.55,
 				a: -0.025,
@@ -3722,7 +3722,7 @@ export let special = {
 				d: -0.025,
 				l: 16
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -29.1,
 				ty: 44.65,
 				a: 0.26,
@@ -3731,7 +3731,7 @@ export let special = {
 				d: -0.26,
 				l: 15
 			},
-			right_hand: {
+			r_hand: {
 				tx: -31.95,
 				ty: 42.3,
 				a: 0,
@@ -3740,7 +3740,7 @@ export let special = {
 				d: 0,
 				l: 14
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -29.95,
 				ty: 42.85,
 				a: 0.039,
@@ -3749,14 +3749,14 @@ export let special = {
 				d: 0.019,
 				l: 13
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -19.7,
 				ty: 48.05,
 				a: -1.084,
 				d: 1.084,
 				l: 12
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -20.55,
 				ty: 47.9,
 				a: -1.047,
@@ -3765,7 +3765,7 @@ export let special = {
 				d: 1.047,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: -23.1,
 				ty: 52.5,
 				a: 1.084,
@@ -3781,7 +3781,7 @@ export let special = {
 				d: 1.084,
 				l: 9
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -24.25,
 				ty: 43.1,
 				a: 0.752,
@@ -3797,7 +3797,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -28.15,
 				ty: 47,
 				a: -1.084,
@@ -3806,14 +3806,14 @@ export let special = {
 				d: -1.084,
 				l: 6
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -33.35,
 				ty: 48.25,
 				a: 1.084,
 				d: 1.084,
 				l: 5
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -33,
 				ty: 47.55,
 				a: 1.047,
@@ -3822,7 +3822,7 @@ export let special = {
 				d: 1.047,
 				l: 4
 			},
-			right_foot: {
+			r_foot: {
 				tx: -36.5,
 				ty: 52.95,
 				a: 1.251,
@@ -3862,7 +3862,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_hand: {
+			l_hand: {
 				tx: -24.3,
 				ty: 36.6,
 				a: -0.024,
@@ -3871,7 +3871,7 @@ export let special = {
 				d: -0.024,
 				l: 16
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -28,
 				ty: 39.7,
 				a: 0.258,
@@ -3880,7 +3880,7 @@ export let special = {
 				d: -0.258,
 				l: 15
 			},
-			right_hand: {
+			r_hand: {
 				tx: -31,
 				ty: 37.55,
 				a: 0,
@@ -3889,7 +3889,7 @@ export let special = {
 				d: 0,
 				l: 14
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -28.5,
 				ty: 37.9,
 				a: 0.035,
@@ -3898,14 +3898,14 @@ export let special = {
 				d: 0.017,
 				l: 13
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -20.75,
 				ty: 46.6,
 				a: -1.084,
 				d: 1.084,
 				l: 12
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -18.95,
 				ty: 48.7,
 				a: -0.671,
@@ -3914,7 +3914,7 @@ export let special = {
 				d: 0.671,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: -23.55,
 				ty: 50.85,
 				a: 1.038,
@@ -3932,7 +3932,7 @@ export let special = {
 				d: 1.084,
 				l: 9
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -22.6,
 				ty: 37.9,
 				a: 0.684,
@@ -3948,7 +3948,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -26.5,
 				ty: 41.7,
 				a: -1.153,
@@ -3957,7 +3957,7 @@ export let special = {
 				d: -1.084,
 				l: 6
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -31.05,
 				ty: 42.15,
 				a: 1.072,
@@ -3966,7 +3966,7 @@ export let special = {
 				d: 1.072,
 				l: 5
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -30,
 				ty: 41.55,
 				a: 0.922,
@@ -3975,7 +3975,7 @@ export let special = {
 				d: 0.922,
 				l: 4
 			},
-			right_foot: {
+			r_foot: {
 				tx: -32.1,
 				ty: 52.45,
 				a: 0.399,
@@ -4017,7 +4017,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_hand: {
+			l_hand: {
 				tx: -23.45,
 				ty: 33.7,
 				a: -0.024,
@@ -4026,7 +4026,7 @@ export let special = {
 				d: -0.024,
 				l: 16
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -27.3,
 				ty: 36.8,
 				a: 0.258,
@@ -4035,7 +4035,7 @@ export let special = {
 				d: -0.258,
 				l: 15
 			},
-			right_hand: {
+			r_hand: {
 				tx: -30.4,
 				ty: 34.7,
 				a: 0,
@@ -4044,7 +4044,7 @@ export let special = {
 				d: 0,
 				l: 14
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -27.7,
 				ty: 34.95,
 				a: 0.035,
@@ -4053,14 +4053,14 @@ export let special = {
 				d: 0.017,
 				l: 13
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -21.35,
 				ty: 45.75,
 				a: -1.084,
 				d: 1.084,
 				l: 12
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -21.05,
 				ty: 47.9,
 				a: 0.029,
@@ -4069,7 +4069,7 @@ export let special = {
 				d: -0.029,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: -23.75,
 				ty: 49.9,
 				a: 0.968,
@@ -4087,7 +4087,7 @@ export let special = {
 				d: 1.084,
 				l: 9
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -21.5,
 				ty: 34.75,
 				a: 0.639,
@@ -4103,7 +4103,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -25.55,
 				ty: 38.5,
 				a: -1.194,
@@ -4112,7 +4112,7 @@ export let special = {
 				d: -1.084,
 				l: 6
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -29.7,
 				ty: 38.45,
 				a: 1.054,
@@ -4121,7 +4121,7 @@ export let special = {
 				d: 1.054,
 				l: 5
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -28.1,
 				ty: 38.1,
 				a: 0.809,
@@ -4130,7 +4130,7 @@ export let special = {
 				d: 0.809,
 				l: 4
 			},
-			right_foot: {
+			r_foot: {
 				tx: -27.5,
 				ty: 49.85,
 				a: -0.455,
@@ -4172,7 +4172,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -24.05,
 				ty: 32.85,
 				a: -0.025,
@@ -4181,7 +4181,7 @@ export let special = {
 				d: -0.025,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -27.4,
 				ty: 35.95,
 				a: 0.26,
@@ -4190,7 +4190,7 @@ export let special = {
 				d: -0.26,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -30.25,
 				ty: 33.6,
 				a: 0,
@@ -4199,7 +4199,7 @@ export let special = {
 				d: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -28.25,
 				ty: 33.95,
 				a: 0.039,
@@ -4208,14 +4208,14 @@ export let special = {
 				d: 0.019,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -21.55,
 				ty: 45.45,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -22.05,
 				ty: 46.75,
 				a: 0.28,
@@ -4224,7 +4224,7 @@ export let special = {
 				d: -0.28,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -23.75,
 				ty: 49.5,
 				a: 0.938,
@@ -4240,7 +4240,7 @@ export let special = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -21.2,
 				ty: 33.7,
 				a: 0.624,
@@ -4256,7 +4256,7 @@ export let special = {
 				d: 1.084,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -25.55,
 				ty: 37.4,
 				a: -1.207,
@@ -4265,7 +4265,7 @@ export let special = {
 				d: -1.084,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -28.85,
 				ty: 37.55,
 				a: 1.047,
@@ -4274,7 +4274,7 @@ export let special = {
 				d: 1.047,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -27.6,
 				ty: 36.9,
 				a: 0.766,
@@ -4283,7 +4283,7 @@ export let special = {
 				d: 0.766,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -27.15,
 				ty: 48.55,
 				a: -0.715,
@@ -4334,7 +4334,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -24.05,
 				ty: 30.35,
 				a: -0.024,
@@ -4343,7 +4343,7 @@ export let special = {
 				d: -0.024,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -27.4,
 				ty: 34.5,
 				a: 0.258,
@@ -4352,7 +4352,7 @@ export let special = {
 				d: -0.258,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -30.3,
 				ty: 32.05,
 				a: 0,
@@ -4361,7 +4361,7 @@ export let special = {
 				d: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -28.15,
 				ty: 32.25,
 				a: 0.035,
@@ -4370,14 +4370,14 @@ export let special = {
 				d: 0.017,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -21.55,
 				ty: 44,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -22.1,
 				ty: 45,
 				a: 0.277,
@@ -4386,7 +4386,7 @@ export let special = {
 				d: -0.277,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -23.2,
 				ty: 47.7,
 				a: 0.66,
@@ -4402,7 +4402,7 @@ export let special = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -21.25,
 				ty: 32.25,
 				a: 0.624,
@@ -4418,7 +4418,7 @@ export let special = {
 				d: 1.084,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -24.6,
 				ty: 35.85,
 				a: -1.207,
@@ -4427,7 +4427,7 @@ export let special = {
 				d: -1.084,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -28.55,
 				ty: 36.05,
 				a: 1.047,
@@ -4436,7 +4436,7 @@ export let special = {
 				d: 1.047,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -27.6,
 				ty: 35.4,
 				a: 0.766,
@@ -4445,7 +4445,7 @@ export let special = {
 				d: 0.766,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -28,
 				ty: 47.1,
 				a: -0.712,
@@ -4497,7 +4497,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -24.05,
 				ty: 30.85,
 				a: -0.025,
@@ -4506,7 +4506,7 @@ export let special = {
 				d: -0.025,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -27.4,
 				ty: 33.95,
 				a: 0.26,
@@ -4515,7 +4515,7 @@ export let special = {
 				d: -0.26,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -30.25,
 				ty: 31.6,
 				a: 0,
@@ -4524,7 +4524,7 @@ export let special = {
 				d: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -28.25,
 				ty: 31.65,
 				a: 0.039,
@@ -4533,14 +4533,14 @@ export let special = {
 				d: 0.019,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -21.55,
 				ty: 43.45,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -22.05,
 				ty: 44.75,
 				a: 0.28,
@@ -4549,7 +4549,7 @@ export let special = {
 				d: -0.28,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -23.15,
 				ty: 47.2,
 				a: 0.542,
@@ -4565,7 +4565,7 @@ export let special = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -21.2,
 				ty: 31.7,
 				a: 0.624,
@@ -4581,7 +4581,7 @@ export let special = {
 				d: 1.084,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -25.55,
 				ty: 35.4,
 				a: -1.207,
@@ -4590,7 +4590,7 @@ export let special = {
 				d: -1.084,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -28.85,
 				ty: 35.55,
 				a: 1.047,
@@ -4599,7 +4599,7 @@ export let special = {
 				d: 1.047,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -27.6,
 				ty: 34.9,
 				a: 0.766,
@@ -4608,7 +4608,7 @@ export let special = {
 				d: 0.766,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -27.15,
 				ty: 46.55,
 				a: -0.715,
@@ -4659,7 +4659,7 @@ export let special = {
 				ty: 20.55,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -24.05,
 				ty: 30.85,
 				a: -0.025,
@@ -4669,7 +4669,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -27.4,
 				ty: 33.95,
 				a: 0.26,
@@ -4679,7 +4679,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -30.25,
 				ty: 31.6,
 				a: 0,
@@ -4689,7 +4689,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -28.25,
 				ty: 31.65,
 				a: 0.039,
@@ -4699,7 +4699,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -21.55,
 				ty: 43.45,
 				a: -1.084,
@@ -4707,7 +4707,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -22.05,
 				ty: 44.75,
 				a: 0.28,
@@ -4717,7 +4717,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -23.15,
 				ty: 47.2,
 				a: 0.542,
@@ -4735,7 +4735,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -21.2,
 				ty: 31.7,
 				a: 0.624,
@@ -4753,7 +4753,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -25.55,
 				ty: 35.4,
 				a: -1.207,
@@ -4763,7 +4763,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -28.85,
 				ty: 35.55,
 				a: 1.047,
@@ -4773,7 +4773,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -27.6,
 				ty: 34.9,
 				a: 0.766,
@@ -4783,7 +4783,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -27.15,
 				ty: 46.55,
 				a: -0.715,
@@ -4836,7 +4836,7 @@ export let special = {
 				ty: 20.55,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -24.05,
 				ty: 30.85,
 				a: -0.025,
@@ -4846,7 +4846,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -27.4,
 				ty: 33.95,
 				a: 0.26,
@@ -4856,7 +4856,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -30.25,
 				ty: 31.6,
 				a: 0,
@@ -4866,7 +4866,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -28.25,
 				ty: 31.65,
 				a: 0.039,
@@ -4876,7 +4876,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -21.55,
 				ty: 43.45,
 				a: -1.084,
@@ -4884,7 +4884,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -22.05,
 				ty: 44.75,
 				a: 0.28,
@@ -4894,7 +4894,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -23.15,
 				ty: 47.2,
 				a: 0.542,
@@ -4912,7 +4912,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -21.2,
 				ty: 31.7,
 				a: 0.624,
@@ -4930,7 +4930,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -25.55,
 				ty: 35.4,
 				a: -1.207,
@@ -4940,7 +4940,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -28.85,
 				ty: 35.55,
 				a: 1.047,
@@ -4950,7 +4950,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -27.6,
 				ty: 34.9,
 				a: 0.766,
@@ -4960,7 +4960,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -27.15,
 				ty: 46.55,
 				a: -0.715,
@@ -5014,7 +5014,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -24.05,
 				ty: 30.85,
 				a: -0.025,
@@ -5024,7 +5024,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -27.4,
 				ty: 33.95,
 				a: 0.26,
@@ -5034,7 +5034,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -30.25,
 				ty: 31.6,
 				a: 0,
@@ -5044,7 +5044,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -28.25,
 				ty: 31.65,
 				a: 0.039,
@@ -5054,7 +5054,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -21.55,
 				ty: 43.45,
 				a: -1.084,
@@ -5062,7 +5062,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -22.05,
 				ty: 44.75,
 				a: 0.28,
@@ -5072,7 +5072,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -23.15,
 				ty: 47.2,
 				a: 0.542,
@@ -5090,7 +5090,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -21.2,
 				ty: 31.7,
 				a: 0.624,
@@ -5108,7 +5108,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -25.55,
 				ty: 35.4,
 				a: -1.207,
@@ -5118,7 +5118,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -28.85,
 				ty: 35.55,
 				a: 1.047,
@@ -5128,7 +5128,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -27.6,
 				ty: 34.9,
 				a: 0.766,
@@ -5138,7 +5138,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -27.15,
 				ty: 46.55,
 				a: -0.715,
@@ -5192,7 +5192,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -24.05,
 				ty: 30.85,
 				a: -0.025,
@@ -5202,7 +5202,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -27.4,
 				ty: 33.95,
 				a: 0.26,
@@ -5212,7 +5212,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -30.25,
 				ty: 31.6,
 				a: 0,
@@ -5222,7 +5222,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -28.25,
 				ty: 31.65,
 				a: 0.039,
@@ -5232,7 +5232,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -21.55,
 				ty: 43.45,
 				a: -1.084,
@@ -5240,7 +5240,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -22.05,
 				ty: 44.75,
 				a: 0.28,
@@ -5250,7 +5250,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -23.15,
 				ty: 47.2,
 				a: 0.542,
@@ -5268,7 +5268,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -21.2,
 				ty: 31.7,
 				a: 0.624,
@@ -5286,7 +5286,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -25.55,
 				ty: 35.4,
 				a: -1.207,
@@ -5296,7 +5296,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -28.85,
 				ty: 35.55,
 				a: 1.047,
@@ -5306,7 +5306,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -27.6,
 				ty: 34.9,
 				a: 0.766,
@@ -5316,7 +5316,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -27.15,
 				ty: 46.55,
 				a: -0.715,
@@ -5370,7 +5370,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -24.05,
 				ty: 30.85,
 				a: -0.025,
@@ -5380,7 +5380,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -27.4,
 				ty: 33.95,
 				a: 0.26,
@@ -5390,7 +5390,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -30.25,
 				ty: 31.6,
 				a: 0,
@@ -5400,7 +5400,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -28.25,
 				ty: 31.65,
 				a: 0.039,
@@ -5410,7 +5410,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -21.55,
 				ty: 43.45,
 				a: -1.084,
@@ -5418,7 +5418,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -22.05,
 				ty: 44.75,
 				a: 0.28,
@@ -5428,7 +5428,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -23.15,
 				ty: 47.2,
 				a: 0.542,
@@ -5446,7 +5446,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -21.2,
 				ty: 31.7,
 				a: 0.624,
@@ -5464,7 +5464,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -25.55,
 				ty: 35.4,
 				a: -1.207,
@@ -5474,7 +5474,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -28.85,
 				ty: 35.55,
 				a: 1.047,
@@ -5484,7 +5484,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -27.6,
 				ty: 34.9,
 				a: 0.766,
@@ -5494,7 +5494,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -27.15,
 				ty: 46.55,
 				a: -0.715,
@@ -5548,7 +5548,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -24.05,
 				ty: 30.85,
 				a: -0.025,
@@ -5558,7 +5558,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -27.4,
 				ty: 33.95,
 				a: 0.26,
@@ -5568,7 +5568,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -30.25,
 				ty: 31.6,
 				a: 0,
@@ -5578,7 +5578,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -28.25,
 				ty: 31.65,
 				a: 0.039,
@@ -5588,7 +5588,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -21.55,
 				ty: 43.45,
 				a: -1.084,
@@ -5596,7 +5596,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -22.05,
 				ty: 44.75,
 				a: 0.28,
@@ -5606,7 +5606,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -23.15,
 				ty: 47.2,
 				a: 0.542,
@@ -5624,7 +5624,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -21.2,
 				ty: 31.7,
 				a: 0.624,
@@ -5642,7 +5642,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -25.55,
 				ty: 35.4,
 				a: -1.207,
@@ -5652,7 +5652,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -28.85,
 				ty: 35.55,
 				a: 1.047,
@@ -5662,7 +5662,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -27.6,
 				ty: 34.9,
 				a: 0.766,
@@ -5672,7 +5672,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -27.15,
 				ty: 46.55,
 				a: -0.715,
@@ -5726,7 +5726,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -24.05,
 				ty: 30.85,
 				a: -0.025,
@@ -5736,7 +5736,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -27.4,
 				ty: 33.95,
 				a: 0.26,
@@ -5746,7 +5746,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -30.25,
 				ty: 31.6,
 				a: 0,
@@ -5756,7 +5756,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -28.25,
 				ty: 31.65,
 				a: 0.039,
@@ -5766,7 +5766,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -21.55,
 				ty: 43.45,
 				a: -1.084,
@@ -5774,7 +5774,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -22.05,
 				ty: 44.75,
 				a: 0.28,
@@ -5784,7 +5784,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -23.15,
 				ty: 47.2,
 				a: 0.542,
@@ -5802,7 +5802,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -21.2,
 				ty: 31.7,
 				a: 0.624,
@@ -5820,7 +5820,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -25.55,
 				ty: 35.4,
 				a: -1.207,
@@ -5830,7 +5830,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -28.85,
 				ty: 35.55,
 				a: 1.047,
@@ -5840,7 +5840,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -27.6,
 				ty: 34.9,
 				a: 0.766,
@@ -5850,7 +5850,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -27.15,
 				ty: 46.55,
 				a: -0.715,
@@ -5904,7 +5904,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_hand: {
+			l_hand: {
 				tx: 55.95,
 				ty: 40.1,
 				a: -0.025,
@@ -5913,7 +5913,7 @@ export let special = {
 				d: -0.025,
 				l: 16
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 52.6,
 				ty: 43.2,
 				a: 0.26,
@@ -5922,7 +5922,7 @@ export let special = {
 				d: -0.26,
 				l: 15
 			},
-			right_hand: {
+			r_hand: {
 				tx: 49.75,
 				ty: 40.85,
 				a: 0,
@@ -5931,7 +5931,7 @@ export let special = {
 				d: 0,
 				l: 14
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 51.75,
 				ty: 41.4,
 				a: 0.039,
@@ -5940,14 +5940,14 @@ export let special = {
 				d: 0.019,
 				l: 13
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 62,
 				ty: 46.6,
 				a: -1.084,
 				d: 1.084,
 				l: 12
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 61.15,
 				ty: 46.45,
 				a: -1.047,
@@ -5956,7 +5956,7 @@ export let special = {
 				d: 1.047,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 58.6,
 				ty: 51.05,
 				a: 1.084,
@@ -5972,7 +5972,7 @@ export let special = {
 				d: 1.084,
 				l: 9
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 57.45,
 				ty: 41.65,
 				a: 0.752,
@@ -5988,7 +5988,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 53.55,
 				ty: 45.55,
 				a: -1.084,
@@ -5997,14 +5997,14 @@ export let special = {
 				d: -1.084,
 				l: 6
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 48.35,
 				ty: 46.8,
 				a: 1.084,
 				d: 1.084,
 				l: 5
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 48.7,
 				ty: 46.1,
 				a: 1.047,
@@ -6013,7 +6013,7 @@ export let special = {
 				d: 1.047,
 				l: 4
 			},
-			right_foot: {
+			r_foot: {
 				tx: 45.2,
 				ty: 51.5,
 				a: 1.251,
@@ -6053,7 +6053,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_hand: {
+			l_hand: {
 				tx: 56.9,
 				ty: 35.15,
 				a: -0.024,
@@ -6062,7 +6062,7 @@ export let special = {
 				d: -0.024,
 				l: 16
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 53.95,
 				ty: 38.95,
 				a: 0.258,
@@ -6071,7 +6071,7 @@ export let special = {
 				d: -0.258,
 				l: 15
 			},
-			right_hand: {
+			r_hand: {
 				tx: 50.7,
 				ty: 35.95,
 				a: 0,
@@ -6080,7 +6080,7 @@ export let special = {
 				d: 0,
 				l: 14
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 53.2,
 				ty: 36.4,
 				a: 0.035,
@@ -6089,14 +6089,14 @@ export let special = {
 				d: 0.017,
 				l: 13
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 60.95,
 				ty: 45.2,
 				a: -1.084,
 				d: 1.084,
 				l: 12
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 62.45,
 				ty: 46.8,
 				a: -0.671,
@@ -6105,7 +6105,7 @@ export let special = {
 				d: 0.671,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 58.3,
 				ty: 49.35,
 				a: 1.038,
@@ -6123,7 +6123,7 @@ export let special = {
 				d: 1.084,
 				l: 9
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 59.2,
 				ty: 36.5,
 				a: 0.684,
@@ -6139,7 +6139,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 54.95,
 				ty: 40.2,
 				a: -1.153,
@@ -6148,7 +6148,7 @@ export let special = {
 				d: -1.084,
 				l: 6
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 50.75,
 				ty: 40.7,
 				a: 1.072,
@@ -6157,7 +6157,7 @@ export let special = {
 				d: 1.072,
 				l: 5
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 51.75,
 				ty: 40,
 				a: 0.922,
@@ -6166,7 +6166,7 @@ export let special = {
 				d: 0.922,
 				l: 4
 			},
-			right_foot: {
+			r_foot: {
 				tx: 49.1,
 				ty: 50.95,
 				a: 0.399,
@@ -6208,7 +6208,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_hand: {
+			l_hand: {
 				tx: 57.45,
 				ty: 32.25,
 				a: -0.024,
@@ -6217,7 +6217,7 @@ export let special = {
 				d: -0.024,
 				l: 16
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 54.75,
 				ty: 36.4,
 				a: 0.258,
@@ -6226,7 +6226,7 @@ export let special = {
 				d: -0.258,
 				l: 15
 			},
-			right_hand: {
+			r_hand: {
 				tx: 51.25,
 				ty: 33.05,
 				a: 0,
@@ -6235,7 +6235,7 @@ export let special = {
 				d: 0,
 				l: 14
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 54.05,
 				ty: 33.45,
 				a: 0.035,
@@ -6244,14 +6244,14 @@ export let special = {
 				d: 0.017,
 				l: 13
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 60.35,
 				ty: 44.35,
 				a: -1.084,
 				d: 1.084,
 				l: 12
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 60.1,
 				ty: 45.9,
 				a: 0.029,
@@ -6260,7 +6260,7 @@ export let special = {
 				d: -0.029,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: 58.1,
 				ty: 48.4,
 				a: 0.968,
@@ -6278,7 +6278,7 @@ export let special = {
 				d: 1.084,
 				l: 9
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 60.2,
 				ty: 33.35,
 				a: 0.639,
@@ -6294,7 +6294,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 55.85,
 				ty: 36.95,
 				a: -1.194,
@@ -6303,7 +6303,7 @@ export let special = {
 				d: -1.084,
 				l: 6
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 52.25,
 				ty: 37,
 				a: 1.054,
@@ -6312,7 +6312,7 @@ export let special = {
 				d: 1.054,
 				l: 5
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 53.6,
 				ty: 36.55,
 				a: 0.809,
@@ -6321,7 +6321,7 @@ export let special = {
 				d: 0.809,
 				l: 4
 			},
-			right_foot: {
+			r_foot: {
 				tx: 53.35,
 				ty: 48.45,
 				a: -0.455,
@@ -6363,7 +6363,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 57.65,
 				ty: 31.4,
 				a: -0.025,
@@ -6372,7 +6372,7 @@ export let special = {
 				d: -0.025,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 54.3,
 				ty: 34.5,
 				a: 0.26,
@@ -6381,7 +6381,7 @@ export let special = {
 				d: -0.26,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 51.45,
 				ty: 32.15,
 				a: 0,
@@ -6390,7 +6390,7 @@ export let special = {
 				d: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 53.45,
 				ty: 32.5,
 				a: 0.039,
@@ -6399,14 +6399,14 @@ export let special = {
 				d: 0.019,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 60.15,
 				ty: 44,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 59.65,
 				ty: 45.3,
 				a: 0.28,
@@ -6415,7 +6415,7 @@ export let special = {
 				d: -0.28,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 57.95,
 				ty: 48.05,
 				a: 0.938,
@@ -6431,7 +6431,7 @@ export let special = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 60.5,
 				ty: 32.25,
 				a: 0.624,
@@ -6447,7 +6447,7 @@ export let special = {
 				d: 1.084,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 56.15,
 				ty: 35.95,
 				a: -1.207,
@@ -6456,7 +6456,7 @@ export let special = {
 				d: -1.084,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 52.85,
 				ty: 36.1,
 				a: 1.047,
@@ -6465,7 +6465,7 @@ export let special = {
 				d: 1.047,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 54.1,
 				ty: 35.45,
 				a: 0.766,
@@ -6474,7 +6474,7 @@ export let special = {
 				d: 0.766,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 54.55,
 				ty: 47.1,
 				a: -0.715,
@@ -6525,7 +6525,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 56.85,
 				ty: 29.8,
 				a: -0.024,
@@ -6534,7 +6534,7 @@ export let special = {
 				d: -0.024,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 54,
 				ty: 32.35,
 				a: 0.258,
@@ -6543,7 +6543,7 @@ export let special = {
 				d: -0.258,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 51.45,
 				ty: 30.75,
 				a: 0,
@@ -6552,7 +6552,7 @@ export let special = {
 				d: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 52.55,
 				ty: 29.9,
 				a: 0.035,
@@ -6561,14 +6561,14 @@ export let special = {
 				d: 0.017,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 60.15,
 				ty: 42.65,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 60.1,
 				ty: 43.9,
 				a: 0.277,
@@ -6577,7 +6577,7 @@ export let special = {
 				d: -0.277,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 58.45,
 				ty: 46.35,
 				a: 0.66,
@@ -6593,7 +6593,7 @@ export let special = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 60.45,
 				ty: 30.7,
 				a: 0.624,
@@ -6609,7 +6609,7 @@ export let special = {
 				d: 1.084,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 56.25,
 				ty: 34.55,
 				a: -1.207,
@@ -6618,7 +6618,7 @@ export let special = {
 				d: -1.084,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 52.9,
 				ty: 34.85,
 				a: 1.047,
@@ -6627,7 +6627,7 @@ export let special = {
 				d: 1.047,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 54,
 				ty: 34,
 				a: 0.766,
@@ -6636,7 +6636,7 @@ export let special = {
 				d: 0.766,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 53.7,
 				ty: 45.95,
 				a: -0.712,
@@ -6688,7 +6688,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 57.65,
 				ty: 29.4,
 				a: -0.025,
@@ -6697,7 +6697,7 @@ export let special = {
 				d: -0.025,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 54.3,
 				ty: 32.5,
 				a: 0.26,
@@ -6706,7 +6706,7 @@ export let special = {
 				d: -0.26,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 51.45,
 				ty: 30.15,
 				a: 0,
@@ -6715,7 +6715,7 @@ export let special = {
 				d: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 53.45,
 				ty: 30.2,
 				a: 0.039,
@@ -6724,14 +6724,14 @@ export let special = {
 				d: 0.019,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 60.15,
 				ty: 42,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 59.65,
 				ty: 43.3,
 				a: 0.28,
@@ -6740,7 +6740,7 @@ export let special = {
 				d: -0.28,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 58.55,
 				ty: 45.75,
 				a: 0.542,
@@ -6756,7 +6756,7 @@ export let special = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 60.5,
 				ty: 30.25,
 				a: 0.624,
@@ -6772,7 +6772,7 @@ export let special = {
 				d: 1.084,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 56.15,
 				ty: 33.95,
 				a: -1.207,
@@ -6781,7 +6781,7 @@ export let special = {
 				d: -1.084,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 52.85,
 				ty: 34.1,
 				a: 1.047,
@@ -6790,7 +6790,7 @@ export let special = {
 				d: 1.047,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 54.1,
 				ty: 33.45,
 				a: 0.766,
@@ -6799,7 +6799,7 @@ export let special = {
 				d: 0.766,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 54.55,
 				ty: 45.1,
 				a: -0.715,
@@ -6850,7 +6850,7 @@ export let special = {
 				ty: 19.1,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 57.65,
 				ty: 29.4,
 				a: -0.025,
@@ -6860,7 +6860,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 54.3,
 				ty: 32.5,
 				a: 0.26,
@@ -6870,7 +6870,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 51.45,
 				ty: 30.15,
 				a: 0,
@@ -6880,7 +6880,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 53.45,
 				ty: 30.2,
 				a: 0.039,
@@ -6890,7 +6890,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 60.15,
 				ty: 42,
 				a: -1.084,
@@ -6898,7 +6898,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 59.65,
 				ty: 43.3,
 				a: 0.28,
@@ -6908,7 +6908,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 58.55,
 				ty: 45.75,
 				a: 0.542,
@@ -6926,7 +6926,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 60.5,
 				ty: 30.25,
 				a: 0.624,
@@ -6944,7 +6944,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 56.15,
 				ty: 33.95,
 				a: -1.207,
@@ -6954,7 +6954,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 52.85,
 				ty: 34.1,
 				a: 1.047,
@@ -6964,7 +6964,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 54.1,
 				ty: 33.45,
 				a: 0.766,
@@ -6974,7 +6974,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 54.55,
 				ty: 45.1,
 				a: -0.715,
@@ -7027,7 +7027,7 @@ export let special = {
 				ty: 19.1,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 57.65,
 				ty: 29.4,
 				a: -0.025,
@@ -7037,7 +7037,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 54.3,
 				ty: 32.5,
 				a: 0.26,
@@ -7047,7 +7047,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 51.45,
 				ty: 30.15,
 				a: 0,
@@ -7057,7 +7057,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 53.45,
 				ty: 30.2,
 				a: 0.039,
@@ -7067,7 +7067,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 60.15,
 				ty: 42,
 				a: -1.084,
@@ -7075,7 +7075,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 59.65,
 				ty: 43.3,
 				a: 0.28,
@@ -7085,7 +7085,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 58.55,
 				ty: 45.75,
 				a: 0.542,
@@ -7103,7 +7103,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 60.5,
 				ty: 30.25,
 				a: 0.624,
@@ -7121,7 +7121,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 56.15,
 				ty: 33.95,
 				a: -1.207,
@@ -7131,7 +7131,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 52.85,
 				ty: 34.1,
 				a: 1.047,
@@ -7141,7 +7141,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 54.1,
 				ty: 33.45,
 				a: 0.766,
@@ -7151,7 +7151,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 54.55,
 				ty: 45.1,
 				a: -0.715,
@@ -7205,7 +7205,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 57.65,
 				ty: 29.4,
 				a: -0.025,
@@ -7215,7 +7215,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 54.3,
 				ty: 32.5,
 				a: 0.26,
@@ -7225,7 +7225,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 51.45,
 				ty: 30.15,
 				a: 0,
@@ -7235,7 +7235,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 53.45,
 				ty: 30.2,
 				a: 0.039,
@@ -7245,7 +7245,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 60.15,
 				ty: 42,
 				a: -1.084,
@@ -7253,7 +7253,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 59.65,
 				ty: 43.3,
 				a: 0.28,
@@ -7263,7 +7263,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 58.55,
 				ty: 45.75,
 				a: 0.542,
@@ -7281,7 +7281,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 60.5,
 				ty: 30.25,
 				a: 0.624,
@@ -7299,7 +7299,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 56.15,
 				ty: 33.95,
 				a: -1.207,
@@ -7309,7 +7309,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 52.85,
 				ty: 34.1,
 				a: 1.047,
@@ -7319,7 +7319,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 54.1,
 				ty: 33.45,
 				a: 0.766,
@@ -7329,7 +7329,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 54.55,
 				ty: 45.1,
 				a: -0.715,
@@ -7383,7 +7383,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 57.65,
 				ty: 29.4,
 				a: -0.025,
@@ -7393,7 +7393,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 54.3,
 				ty: 32.5,
 				a: 0.26,
@@ -7403,7 +7403,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 51.45,
 				ty: 30.15,
 				a: 0,
@@ -7413,7 +7413,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 53.45,
 				ty: 30.2,
 				a: 0.039,
@@ -7423,7 +7423,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 60.15,
 				ty: 42,
 				a: -1.084,
@@ -7431,7 +7431,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 59.65,
 				ty: 43.3,
 				a: 0.28,
@@ -7441,7 +7441,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 58.55,
 				ty: 45.75,
 				a: 0.542,
@@ -7459,7 +7459,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 60.5,
 				ty: 30.25,
 				a: 0.624,
@@ -7477,7 +7477,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 56.15,
 				ty: 33.95,
 				a: -1.207,
@@ -7487,7 +7487,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 52.85,
 				ty: 34.1,
 				a: 1.047,
@@ -7497,7 +7497,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 54.1,
 				ty: 33.45,
 				a: 0.766,
@@ -7507,7 +7507,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 54.55,
 				ty: 45.1,
 				a: -0.715,
@@ -7561,7 +7561,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 57.65,
 				ty: 29.4,
 				a: -0.025,
@@ -7571,7 +7571,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 54.3,
 				ty: 32.5,
 				a: 0.26,
@@ -7581,7 +7581,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 51.45,
 				ty: 30.15,
 				a: 0,
@@ -7591,7 +7591,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 53.45,
 				ty: 30.2,
 				a: 0.039,
@@ -7601,7 +7601,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 60.15,
 				ty: 42,
 				a: -1.084,
@@ -7609,7 +7609,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 59.65,
 				ty: 43.3,
 				a: 0.28,
@@ -7619,7 +7619,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 58.55,
 				ty: 45.75,
 				a: 0.542,
@@ -7637,7 +7637,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 60.5,
 				ty: 30.25,
 				a: 0.624,
@@ -7655,7 +7655,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 56.15,
 				ty: 33.95,
 				a: -1.207,
@@ -7665,7 +7665,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 52.85,
 				ty: 34.1,
 				a: 1.047,
@@ -7675,7 +7675,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 54.1,
 				ty: 33.45,
 				a: 0.766,
@@ -7685,7 +7685,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 54.55,
 				ty: 45.1,
 				a: -0.715,
@@ -7739,7 +7739,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 57.65,
 				ty: 29.4,
 				a: -0.025,
@@ -7749,7 +7749,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 54.3,
 				ty: 32.5,
 				a: 0.26,
@@ -7759,7 +7759,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 51.45,
 				ty: 30.15,
 				a: 0,
@@ -7769,7 +7769,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 53.45,
 				ty: 30.2,
 				a: 0.039,
@@ -7779,7 +7779,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 60.15,
 				ty: 42,
 				a: -1.084,
@@ -7787,7 +7787,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 59.65,
 				ty: 43.3,
 				a: 0.28,
@@ -7797,7 +7797,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 58.55,
 				ty: 45.75,
 				a: 0.542,
@@ -7815,7 +7815,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 60.5,
 				ty: 30.25,
 				a: 0.624,
@@ -7833,7 +7833,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 56.15,
 				ty: 33.95,
 				a: -1.207,
@@ -7843,7 +7843,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 52.85,
 				ty: 34.1,
 				a: 1.047,
@@ -7853,7 +7853,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 54.1,
 				ty: 33.45,
 				a: 0.766,
@@ -7863,7 +7863,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 54.55,
 				ty: 45.1,
 				a: -0.715,
@@ -7917,7 +7917,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: 57.65,
 				ty: 29.4,
 				a: -0.025,
@@ -7927,7 +7927,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 54.3,
 				ty: 32.5,
 				a: 0.26,
@@ -7937,7 +7937,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: 51.45,
 				ty: 30.15,
 				a: 0,
@@ -7947,7 +7947,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 53.45,
 				ty: 30.2,
 				a: 0.039,
@@ -7957,7 +7957,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 60.15,
 				ty: 42,
 				a: -1.084,
@@ -7965,7 +7965,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 59.65,
 				ty: 43.3,
 				a: 0.28,
@@ -7975,7 +7975,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 58.55,
 				ty: 45.75,
 				a: 0.542,
@@ -7993,7 +7993,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 60.5,
 				ty: 30.25,
 				a: 0.624,
@@ -8011,7 +8011,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 56.15,
 				ty: 33.95,
 				a: -1.207,
@@ -8021,7 +8021,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 52.85,
 				ty: 34.1,
 				a: 1.047,
@@ -8031,7 +8031,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 54.1,
 				ty: 33.45,
 				a: 0.766,
@@ -8041,7 +8041,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: 54.55,
 				ty: 45.1,
 				a: -0.715,
@@ -8095,7 +8095,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_hand: {
+			l_hand: {
 				tx: -19.05,
 				ty: 0.95,
 				a: -0.025,
@@ -8104,7 +8104,7 @@ export let special = {
 				d: -0.025,
 				l: 16
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -22.4,
 				ty: 4.05,
 				a: 0.26,
@@ -8113,7 +8113,7 @@ export let special = {
 				d: -0.26,
 				l: 15
 			},
-			right_hand: {
+			r_hand: {
 				tx: -25.25,
 				ty: 1.7,
 				a: 0,
@@ -8122,7 +8122,7 @@ export let special = {
 				d: 0,
 				l: 14
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -23.25,
 				ty: 2.25,
 				a: 0.039,
@@ -8131,14 +8131,14 @@ export let special = {
 				d: 0.019,
 				l: 13
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -13,
 				ty: 7.45,
 				a: -1.084,
 				d: 1.084,
 				l: 12
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -13.85,
 				ty: 7.3,
 				a: -1.047,
@@ -8147,7 +8147,7 @@ export let special = {
 				d: 1.047,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: -16.4,
 				ty: 11.9,
 				a: 1.084,
@@ -8163,7 +8163,7 @@ export let special = {
 				d: 1.084,
 				l: 9
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -17.55,
 				ty: 2.5,
 				a: 0.752,
@@ -8179,7 +8179,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -21.45,
 				ty: 6.4,
 				a: -1.084,
@@ -8188,14 +8188,14 @@ export let special = {
 				d: -1.084,
 				l: 6
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -26.65,
 				ty: 7.65,
 				a: 1.084,
 				d: 1.084,
 				l: 5
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -26.3,
 				ty: 6.95,
 				a: 1.047,
@@ -8204,7 +8204,7 @@ export let special = {
 				d: 1.047,
 				l: 4
 			},
-			right_foot: {
+			r_foot: {
 				tx: -29.8,
 				ty: 12.35,
 				a: 1.251,
@@ -8244,7 +8244,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_hand: {
+			l_hand: {
 				tx: -18.7,
 				ty: -4.05,
 				a: -0.024,
@@ -8253,7 +8253,7 @@ export let special = {
 				d: -0.024,
 				l: 16
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -21.25,
 				ty: -0.8,
 				a: 0.258,
@@ -8262,7 +8262,7 @@ export let special = {
 				d: -0.258,
 				l: 15
 			},
-			right_hand: {
+			r_hand: {
 				tx: -24.3,
 				ty: -3.2,
 				a: 0,
@@ -8271,7 +8271,7 @@ export let special = {
 				d: 0,
 				l: 14
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -22.25,
 				ty: -2.15,
 				a: 0.035,
@@ -8280,14 +8280,14 @@ export let special = {
 				d: 0.017,
 				l: 13
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -14.05,
 				ty: 6,
 				a: -1.084,
 				d: 1.084,
 				l: 12
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -12.3,
 				ty: 7.6,
 				a: -0.671,
@@ -8296,7 +8296,7 @@ export let special = {
 				d: 0.671,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: -16.85,
 				ty: 10.75,
 				a: 1.038,
@@ -8314,7 +8314,7 @@ export let special = {
 				d: 1.084,
 				l: 9
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -15.95,
 				ty: -2.4,
 				a: 0.684,
@@ -8330,7 +8330,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -19.35,
 				ty: 0.95,
 				a: -1.153,
@@ -8339,7 +8339,7 @@ export let special = {
 				d: -1.084,
 				l: 6
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -24.2,
 				ty: 1.5,
 				a: 1.072,
@@ -8348,7 +8348,7 @@ export let special = {
 				d: 1.072,
 				l: 5
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -23.5,
 				ty: 0.3,
 				a: 0.922,
@@ -8357,7 +8357,7 @@ export let special = {
 				d: 0.922,
 				l: 4
 			},
-			right_foot: {
+			r_foot: {
 				tx: -25.95,
 				ty: 11.8,
 				a: 0.399,
@@ -8399,7 +8399,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_hand: {
+			l_hand: {
 				tx: -18.5,
 				ty: -7,
 				a: -0.024,
@@ -8408,7 +8408,7 @@ export let special = {
 				d: -0.024,
 				l: 16
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -20.55,
 				ty: -3.75,
 				a: 0.258,
@@ -8417,7 +8417,7 @@ export let special = {
 				d: -0.258,
 				l: 15
 			},
-			right_hand: {
+			r_hand: {
 				tx: -23.75,
 				ty: -6.1,
 				a: 0,
@@ -8426,7 +8426,7 @@ export let special = {
 				d: 0,
 				l: 14
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -21.7,
 				ty: -4.75,
 				a: 0.035,
@@ -8435,14 +8435,14 @@ export let special = {
 				d: 0.017,
 				l: 13
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -14.65,
 				ty: 5.15,
 				a: -1.084,
 				d: 1.084,
 				l: 12
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -14.6,
 				ty: 6.85,
 				a: 0.029,
@@ -8451,7 +8451,7 @@ export let special = {
 				d: -0.029,
 				l: 11
 			},
-			left_foot: {
+			l_foot: {
 				tx: -17.05,
 				ty: 10,
 				a: 0.968,
@@ -8469,7 +8469,7 @@ export let special = {
 				d: 1.084,
 				l: 9
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -15,
 				ty: -5.25,
 				a: 0.639,
@@ -8485,7 +8485,7 @@ export let special = {
 				d: 1.084,
 				l: 7
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -18,
 				ty: -2.3,
 				a: -1.194,
@@ -8494,7 +8494,7 @@ export let special = {
 				d: -1.084,
 				l: 6
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -22.75,
 				ty: -2.15,
 				a: 1.054,
@@ -8503,7 +8503,7 @@ export let special = {
 				d: 1.054,
 				l: 5
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -21.75,
 				ty: -3.45,
 				a: 0.809,
@@ -8512,7 +8512,7 @@ export let special = {
 				d: 0.809,
 				l: 4
 			},
-			right_foot: {
+			r_foot: {
 				tx: -21.7,
 				ty: 9.25,
 				a: -0.455,
@@ -8554,7 +8554,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -17.35,
 				ty: -7.75,
 				a: -0.025,
@@ -8563,7 +8563,7 @@ export let special = {
 				d: -0.025,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -20.7,
 				ty: -4.65,
 				a: 0.26,
@@ -8572,7 +8572,7 @@ export let special = {
 				d: -0.26,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -23.55,
 				ty: -7,
 				a: 0,
@@ -8581,7 +8581,7 @@ export let special = {
 				d: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -21.55,
 				ty: -6.65,
 				a: 0.039,
@@ -8590,14 +8590,14 @@ export let special = {
 				d: 0.019,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -14.85,
 				ty: 4.85,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -15.35,
 				ty: 6.15,
 				a: 0.28,
@@ -8606,7 +8606,7 @@ export let special = {
 				d: -0.28,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -17.05,
 				ty: 8.9,
 				a: 0.938,
@@ -8622,7 +8622,7 @@ export let special = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -14.5,
 				ty: -6.9,
 				a: 0.624,
@@ -8638,7 +8638,7 @@ export let special = {
 				d: 1.084,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -18.85,
 				ty: -3.2,
 				a: -1.207,
@@ -8647,7 +8647,7 @@ export let special = {
 				d: -1.084,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -22.15,
 				ty: -3.05,
 				a: 1.047,
@@ -8656,7 +8656,7 @@ export let special = {
 				d: 1.047,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -20.9,
 				ty: -3.7,
 				a: 0.766,
@@ -8665,7 +8665,7 @@ export let special = {
 				d: 0.766,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -20.45,
 				ty: 7.95,
 				a: -0.715,
@@ -8716,7 +8716,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -16.95,
 				ty: -9.2,
 				a: -0.024,
@@ -8725,7 +8725,7 @@ export let special = {
 				d: -0.024,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -20.7,
 				ty: -6.3,
 				a: 0.258,
@@ -8734,7 +8734,7 @@ export let special = {
 				d: -0.258,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -23.55,
 				ty: -8.5,
 				a: 0,
@@ -8743,7 +8743,7 @@ export let special = {
 				d: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -21.55,
 				ty: -8.4,
 				a: 0.035,
@@ -8752,14 +8752,14 @@ export let special = {
 				d: 0.017,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -14.85,
 				ty: 3.4,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -15.1,
 				ty: 4.75,
 				a: 0.277,
@@ -8768,7 +8768,7 @@ export let special = {
 				d: -0.277,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -16.3,
 				ty: 6.7,
 				a: 0.66,
@@ -8784,7 +8784,7 @@ export let special = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -14.5,
 				ty: -8.45,
 				a: 0.624,
@@ -8800,7 +8800,7 @@ export let special = {
 				d: 1.084,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -19.6,
 				ty: -4.55,
 				a: -1.207,
@@ -8809,7 +8809,7 @@ export let special = {
 				d: -1.084,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -22.1,
 				ty: -4.5,
 				a: 1.047,
@@ -8818,7 +8818,7 @@ export let special = {
 				d: 1.047,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -20.85,
 				ty: -5.05,
 				a: 0.766,
@@ -8827,7 +8827,7 @@ export let special = {
 				d: 0.766,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -20.5,
 				ty: 6.55,
 				a: -0.712,
@@ -8879,7 +8879,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -17.35,
 				ty: -9.75,
 				a: -0.025,
@@ -8888,7 +8888,7 @@ export let special = {
 				d: -0.025,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -20.7,
 				ty: -6.65,
 				a: 0.26,
@@ -8897,7 +8897,7 @@ export let special = {
 				d: -0.26,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -23.55,
 				ty: -9,
 				a: 0,
@@ -8906,7 +8906,7 @@ export let special = {
 				d: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -21.55,
 				ty: -8.95,
 				a: 0.039,
@@ -8915,14 +8915,14 @@ export let special = {
 				d: 0.019,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -14.85,
 				ty: 2.85,
 				a: -1.084,
 				d: 1.084,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -15.35,
 				ty: 4.15,
 				a: 0.28,
@@ -8931,7 +8931,7 @@ export let special = {
 				d: -0.28,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -16.45,
 				ty: 6.6,
 				a: 0.542,
@@ -8947,7 +8947,7 @@ export let special = {
 				d: 1.084,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -14.5,
 				ty: -8.9,
 				a: 0.624,
@@ -8963,7 +8963,7 @@ export let special = {
 				d: 1.084,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -18.85,
 				ty: -5.2,
 				a: -1.207,
@@ -8972,7 +8972,7 @@ export let special = {
 				d: -1.084,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -22.15,
 				ty: -5.05,
 				a: 1.047,
@@ -8981,7 +8981,7 @@ export let special = {
 				d: 1.047,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -20.9,
 				ty: -5.7,
 				a: 0.766,
@@ -8990,7 +8990,7 @@ export let special = {
 				d: 0.766,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -20.45,
 				ty: 5.95,
 				a: -0.715,
@@ -9041,7 +9041,7 @@ export let special = {
 				ty: -20.05,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -17.35,
 				ty: -9.75,
 				a: -0.025,
@@ -9051,7 +9051,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -20.7,
 				ty: -6.65,
 				a: 0.26,
@@ -9061,7 +9061,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -23.55,
 				ty: -9,
 				a: 0,
@@ -9071,7 +9071,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -21.55,
 				ty: -8.95,
 				a: 0.039,
@@ -9081,7 +9081,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -14.85,
 				ty: 2.85,
 				a: -1.084,
@@ -9089,7 +9089,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -15.35,
 				ty: 4.15,
 				a: 0.28,
@@ -9099,7 +9099,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -16.45,
 				ty: 6.6,
 				a: 0.542,
@@ -9117,7 +9117,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -14.5,
 				ty: -8.9,
 				a: 0.624,
@@ -9135,7 +9135,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -18.85,
 				ty: -5.2,
 				a: -1.207,
@@ -9145,7 +9145,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -22.15,
 				ty: -5.05,
 				a: 1.047,
@@ -9155,7 +9155,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -20.9,
 				ty: -5.7,
 				a: 0.766,
@@ -9165,7 +9165,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -20.45,
 				ty: 5.95,
 				a: -0.715,
@@ -9218,7 +9218,7 @@ export let special = {
 				ty: -20.05,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -17.35,
 				ty: -9.75,
 				a: -0.025,
@@ -9228,7 +9228,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -20.7,
 				ty: -6.65,
 				a: 0.26,
@@ -9238,7 +9238,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -23.55,
 				ty: -9,
 				a: 0,
@@ -9248,7 +9248,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -21.55,
 				ty: -8.95,
 				a: 0.039,
@@ -9258,7 +9258,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -14.85,
 				ty: 2.85,
 				a: -1.084,
@@ -9266,7 +9266,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -15.35,
 				ty: 4.15,
 				a: 0.28,
@@ -9276,7 +9276,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -16.45,
 				ty: 6.6,
 				a: 0.542,
@@ -9294,7 +9294,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -14.5,
 				ty: -8.9,
 				a: 0.624,
@@ -9312,7 +9312,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -18.85,
 				ty: -5.2,
 				a: -1.207,
@@ -9322,7 +9322,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -22.15,
 				ty: -5.05,
 				a: 1.047,
@@ -9332,7 +9332,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -20.9,
 				ty: -5.7,
 				a: 0.766,
@@ -9342,7 +9342,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -20.45,
 				ty: 5.95,
 				a: -0.715,
@@ -9396,7 +9396,7 @@ export let special = {
 				alpha: 0,
 				l: 18
 			},
-			left_hand: {
+			l_hand: {
 				tx: -17.35,
 				ty: -9.75,
 				a: -0.025,
@@ -9406,7 +9406,7 @@ export let special = {
 				alpha: 0,
 				l: 17
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: -20.7,
 				ty: -6.65,
 				a: 0.26,
@@ -9416,7 +9416,7 @@ export let special = {
 				alpha: 0,
 				l: 16
 			},
-			right_hand: {
+			r_hand: {
 				tx: -23.55,
 				ty: -9,
 				a: 0,
@@ -9426,7 +9426,7 @@ export let special = {
 				alpha: 0,
 				l: 15
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: -21.55,
 				ty: -8.95,
 				a: 0.039,
@@ -9436,7 +9436,7 @@ export let special = {
 				alpha: 0,
 				l: 14
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: -14.85,
 				ty: 2.85,
 				a: -1.084,
@@ -9444,7 +9444,7 @@ export let special = {
 				alpha: 0,
 				l: 13
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: -15.35,
 				ty: 4.15,
 				a: 0.28,
@@ -9454,7 +9454,7 @@ export let special = {
 				alpha: 0,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: -16.45,
 				ty: 6.6,
 				a: 0.542,
@@ -9472,7 +9472,7 @@ export let special = {
 				alpha: 0,
 				l: 10
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: -14.5,
 				ty: -8.9,
 				a: 0.624,
@@ -9490,7 +9490,7 @@ export let special = {
 				alpha: 0,
 				l: 8
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: -18.85,
 				ty: -5.2,
 				a: -1.207,
@@ -9500,7 +9500,7 @@ export let special = {
 				alpha: 0,
 				l: 7
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: -22.15,
 				ty: -5.05,
 				a: 1.047,
@@ -9510,7 +9510,7 @@ export let special = {
 				alpha: 0,
 				l: 6
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: -20.9,
 				ty: -5.7,
 				a: 0.766,
@@ -9520,7 +9520,7 @@ export let special = {
 				alpha: 0,
 				l: 5
 			},
-			right_foot: {
+			r_foot: {
 				tx: -20.45,
 				ty: 5.95,
 				a: -0.715,

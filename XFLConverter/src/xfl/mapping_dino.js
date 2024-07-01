@@ -208,5 +208,18 @@ export const mapping_dino = {
 	'Symbol 2637': 'head',
 	'Symbol 2648_p6b': 'r_eye',
 	'Symbol 2657_p6a': 'l_eye',
-	'Symbol 2670_p5a': 'l_antennae'
+	'Symbol 2670_p5a': 'l_antennae',
+	// 2893 toufufu
+	'Symbol 2684_p7b': 'r_sideburn',
+	'Symbol 2697_p6a': 'r_leg',
+	'Symbol 2702': 'body',
+	'Symbol 2705': 'navel',
+	'Symbol 2716_p6b': 'l_leg',
+	'Symbol 2720_special': 's_outfit',
+	'Symbol 2760_p5b': 'r_arm',
+	'Symbol 2768_p2': 'head',
+	'Symbol 2809_p3': 'eyes',
+	'Symbol 2837_p8': 'mouth',
+	'Symbol 2886_p7a': 'hair',
+	'Symbol 2892_p5': 'l_arm'
 };

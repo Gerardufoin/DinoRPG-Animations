@@ -1,7 +1,7 @@
 import { ref } from '../../references_small.js';
 
 // 1208
-export let head_special = [
+export const head_special = [
 	{
 		parts: {
 			1: [

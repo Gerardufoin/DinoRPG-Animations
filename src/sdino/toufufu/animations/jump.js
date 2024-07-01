@@ -1,6 +1,6 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'toufufu_jump',
 	frames: [
 		{
@@ -13,7 +13,7 @@ export let jump = {
 				d: 1.078,
 				l: 14
 			},
-			left_hand: {
+			l_hand: {
 				tx: 11.65,
 				ty: 12.4,
 				a: 0.671,
@@ -22,7 +22,7 @@ export let jump = {
 				d: 0.671,
 				l: 13
 			},
-			left_lower_arm: {
+			l_l_arm: {
 				tx: 13.4,
 				ty: 9.9,
 				a: 0.938,
@@ -31,7 +31,7 @@ export let jump = {
 				d: -0.938,
 				l: 12
 			},
-			left_upper_arm: {
+			l_u_arm: {
 				tx: 12.6,
 				ty: 3.2,
 				a: 1.074,
@@ -40,7 +40,7 @@ export let jump = {
 				d: 1.074,
 				l: 11
 			},
-			left_lower_leg: {
+			l_l_leg: {
 				tx: 15.2,
 				ty: 17.25,
 				a: -0.99,
@@ -49,7 +49,7 @@ export let jump = {
 				d: 0.99,
 				l: 10
 			},
-			left_upper_leg: {
+			l_u_leg: {
 				tx: 14.9,
 				ty: 18.3,
 				a: 0,
@@ -58,14 +58,14 @@ export let jump = {
 				d: 0,
 				l: 9
 			},
-			left_foot: {
+			l_foot: {
 				tx: 14.8,
 				ty: 22.35,
 				a: 1.084,
 				d: 1.084,
 				l: 8
 			},
-			right_hand: {
+			r_hand: {
 				tx: -2.95,
 				ty: 0.15,
 				a: 0.245,
@@ -74,7 +74,7 @@ export let jump = {
 				d: -0.245,
 				l: 7
 			},
-			right_lower_arm: {
+			r_l_arm: {
 				tx: 2.25,
 				ty: 1,
 				a: -1.135,
@@ -83,7 +83,7 @@ export let jump = {
 				d: 0.767,
 				l: 6
 			},
-			right_upper_arm: {
+			r_u_arm: {
 				tx: 10.05,
 				ty: 8.4,
 				a: -1.05,
@@ -99,7 +99,7 @@ export let jump = {
 				d: 1.084,
 				l: 4
 			},
-			right_lower_leg: {
+			r_l_leg: {
 				tx: 4.65,
 				ty: 9.2,
 				a: 1.047,
@@ -108,7 +108,7 @@ export let jump = {
 				d: 1.047,
 				l: 3
 			},
-			right_upper_leg: {
+			r_u_leg: {
 				tx: 5.7,
 				ty: 7.65,
 				a: 0.938,
@@ -117,7 +117,7 @@ export let jump = {
 				d: 0.938,
 				l: 2
 			},
-			right_foot: {
+			r_foot: {
 				tx: 9.3,
 				ty: 18.8,
 				a: -0.715,
