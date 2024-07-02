@@ -1,6 +1,16 @@
 // @ts-check
 import { ref } from '../references_big.js';
 
+const eyes_highlight = {
+	ref: ref.toufufu.eyes_highlight,
+	glow: {
+		distance: 2,
+		color: 0xffffff,
+		quality: 0.5,
+		strength: 1
+	}
+};
+
 // 2731
 const right_arm_hand = {
 	partIdx: 9,
@@ -751,11 +761,906 @@ export const parts_big = {
 		}
 	],
 	// 2809 p3
-	eyes: [],
+	eyes: [
+		{
+			partIdx: 3,
+			frames: [0, 1, 2, 3, 4, 5],
+			parts: [
+				[
+					// 2770
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.eyes_eyebrows,
+						transform: {
+							tx: -1.15,
+							ty: -0.75
+						}
+					},
+					// 2776 hurt
+					{
+						partIdx: 2,
+						ref: [0, 1, 2],
+						transform: {
+							tx: 0.25,
+							ty: 4.2
+						},
+						parts: [
+							[
+								// 2771
+								{
+									ref: ref.toufufu.eyes
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 13.25,
+										ty: 4.35,
+										a: 0.827,
+										d: 0.564,
+										b: 0.179,
+										c: -0.122
+									}
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 1.75,
+										ty: 4.4,
+										a: 0.512,
+										d: 0.349,
+										b: -0.266,
+										c: 0.182
+									}
+								}
+							],
+							[
+								// 2774
+								{
+									ref: ref.toufufu.eyes_hurt_1
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 1.75,
+										ty: 4.4,
+										a: 0.512,
+										d: 0.349,
+										b: -0.266,
+										c: 0.182
+									}
+								}
+							],
+							// 2775
+							{
+								ref: ref.toufufu.eyes_hurt_2
+							}
+						]
+					}
+				],
+				[
+					// 2778
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.eyes_silly_eyebrows,
+						transform: {
+							tx: -0.95,
+							ty: -6.75
+						}
+					},
+					// 2782 hurt
+					{
+						partIdx: 2,
+						frames: [0, 1, 2],
+						transform: {
+							tx: 0.6,
+							ty: 2.95
+						},
+						parts: [
+							[
+								// 2779
+								{
+									ref: ref.toufufu.eyes_silly
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 12.95,
+										ty: 5,
+										a: 0.827,
+										d: 0.564,
+										b: 0.179,
+										c: -0.122
+									}
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 1.85,
+										ty: 6.2,
+										a: 0.512,
+										d: 0.349,
+										b: -0.266,
+										c: 0.182
+									}
+								}
+							],
+							[
+								// 2780
+								{
+									ref: ref.toufufu.eyes_silly_hurt_1
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 12.95,
+										ty: 5,
+										a: 0.827,
+										d: 0.564,
+										b: 0.179,
+										c: -0.122
+									}
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 1.85,
+										ty: 6.2,
+										a: 0.512,
+										d: 0.349,
+										b: -0.266,
+										c: 0.182
+									}
+								}
+							],
+							[
+								// 2781
+								{
+									ref: ref.toufufu.eyes_silly_hurt_2
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 12.95,
+										ty: 5,
+										a: 0.827,
+										d: 0.564,
+										b: 0.179,
+										c: -0.122
+									}
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 1.85,
+										ty: 6.2,
+										a: 0.512,
+										d: 0.349,
+										b: -0.266,
+										c: 0.182
+									}
+								}
+							]
+						]
+					}
+				],
+				[
+					// 2784
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.eyes_master_eyebrows,
+						transform: {
+							tx: -1.65,
+							ty: -1
+						}
+					},
+					// 2788 hurt
+					{
+						partIdx: 2,
+						frames: [0, 1, 2],
+						transform: {
+							tx: 0.6,
+							ty: 5.75
+						},
+						parts: [
+							[
+								// 2785
+								{
+									ref: ref.toufufu.eyes_master
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 13.55,
+										ty: 3.6,
+										a: 0.827,
+										d: 0.564,
+										b: 0.179,
+										c: -0.122
+									}
+								}
+							],
+							// 2786
+							{
+								ref: ref.toufufu.eyes_master_hurt_1
+							},
+							// 2787
+							{
+								ref: ref.toufufu.eyes_master_hurt_2
+							}
+						]
+					},
+					// 2773
+					{
+						...eyes_highlight,
+						transform: {
+							tx: 2.45,
+							ty: 9.7,
+							a: 0.512,
+							d: 0.349,
+							b: -0.266,
+							c: 0.182
+						}
+					},
+					// 2790
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.eyes_master_eyebrows,
+						transform: {
+							tx: 1.55,
+							ty: 2.7
+						}
+					}
+				],
+				[
+					// 2792
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.eyes_serious_eyebrows,
+						transform: {
+							tx: -2.75,
+							ty: -0.75,
+							a: 1.144,
+							d: 1
+						}
+					},
+					// 2796 hurt
+					{
+						partIdx: 2,
+						frames: [0, 1, 2],
+						transform: {
+							tx: 1.85,
+							ty: 8.2,
+							a: 1.144,
+							d: 1
+						},
+						parts: [
+							[
+								// 2793
+								{
+									ref: ref.toufufu.eyes_serious
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 13.05,
+										ty: 1,
+										a: 0.827,
+										d: 0.564,
+										b: 0.179,
+										c: -0.122
+									}
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 1.95,
+										ty: 2.2,
+										a: 0.512,
+										d: 0.349,
+										b: -0.266,
+										c: 0.182
+									}
+								}
+							],
+							[
+								// 2794
+								{
+									ref: ref.toufufu.eyes_serious_hurt_1
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 1.95,
+										ty: 2.2,
+										a: 0.512,
+										d: 0.349,
+										b: -0.266,
+										c: 0.182
+									}
+								}
+							],
+							// 2795
+							{
+								ref: ref.toufufu.eyes_serious_hurt_2
+							}
+						]
+					}
+				],
+				[
+					// 2800 hurt
+					{
+						partIdx: 2,
+						frames: [0, 1, 2],
+						transform: {
+							tx: 2,
+							ty: 8,
+							a: 1.434,
+							d: 1.282
+						},
+						parts: [
+							[
+								// 2797
+								{
+									ref: ref.toufufu.eyes_bored
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 9.75,
+										ty: 0.5,
+										a: 0.827,
+										d: 0.564,
+										b: 0.179,
+										c: -0.122
+									}
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 1.45,
+										ty: 1.15,
+										a: 0.512,
+										d: 0.349,
+										b: -0.266,
+										c: 0.182
+									}
+								}
+							],
+							[
+								// 2798
+								{
+									ref: ref.toufufu.eyes_bored_hurt_1
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 1.45,
+										ty: 1.15,
+										a: 0.512,
+										d: 0.349,
+										b: -0.266,
+										c: 0.182
+									}
+								}
+							],
+							// 2799
+							{
+								ref: ref.toufufu.eyes_bored_hurt_2
+							}
+						]
+					},
+					// 2802
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.eyes_bored_eyebrows,
+						transform: {
+							tx: 2.95,
+							ty: 0.2,
+							a: 0.919,
+							d: 0.822
+						}
+					}
+				],
+				[
+					// 2804
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.eyes_manga_eyebrows,
+						transform: {
+							tx: -1.65,
+							ty: 1.1,
+							a: 1.132,
+							d: 1
+						}
+					},
+					// 2808 hurt
+					{
+						partIdx: 2,
+						frames: [0, 1, 2],
+						transform: {
+							tx: 1.3,
+							ty: 5.1,
+							a: 1.132,
+							d: 1
+						},
+						parts: [
+							[
+								// 2805
+								{
+									ref: ref.toufufu.eyes_manga
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 12,
+										ty: 4.4,
+										a: 0.827,
+										d: 0.564,
+										b: 0.179,
+										c: -0.122
+									}
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 2.25,
+										ty: 5.05,
+										a: 0.512,
+										d: 0.349,
+										b: -0.266,
+										c: 0.182
+									}
+								}
+							],
+							[
+								// 2806
+								{
+									ref: ref.toufufu.eyes_manga_hurt_1
+								},
+								// 2773
+								{
+									...eyes_highlight,
+									transform: {
+										tx: 2.25,
+										ty: 5.05,
+										a: 0.512,
+										d: 0.349,
+										b: -0.266,
+										c: 0.182
+									}
+								}
+							],
+							// 2807
+							{
+								ref: ref.toufufu.eyes_manga_hurt_2
+							}
+						]
+					}
+				]
+			]
+		}
+	],
 	// 2837 p8
-	mouth: [],
+	mouth: [
+		{
+			partIdx: 8,
+			frames: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+			parts: [
+				[
+					// 2811
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.mouth_whistle,
+						transform: {
+							tx: 5.25,
+							ty: 1
+						}
+					}
+				],
+				[
+					// 2815
+					{
+						transform: {
+							tx: 2.85,
+							ty: -4.8
+						},
+						parts: [
+							[
+								// 2813
+								{
+									colorIdx: 0,
+									ref: ref.toufufu.mouth_caveman,
+									transform: {
+										tx: 1.35,
+										ty: 3.6
+									}
+								},
+								// 2814
+								{
+									ref: ref.toufufu.mouth_caveman_teeth
+								}
+							]
+						]
+					}
+				],
+				[
+					// 2817
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.mouth_smile,
+						transform: {
+							tx: 9.85,
+							ty: 1.9
+						}
+					},
+					// 2818
+					{
+						ref: ref.toufufu.mouth_smile_teeth
+					}
+				],
+				[
+					// 2820
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.mouth_surprised,
+						transform: {
+							tx: 6.25,
+							ty: 1.45
+						}
+					},
+					// 2821
+					{
+						ref: ref.toufufu.mouth_surprised_teeth
+					}
+				],
+				[
+					// 2822
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.mouth_grin,
+						transform: {
+							tx: 9.4,
+							ty: 2.8
+						}
+					},
+					// 2824
+					{
+						ref: ref.toufufu.mouth_grin_tooth
+					}
+				],
+				[
+					// 2826
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.mouth_master,
+						transform: {
+							tx: 11.35,
+							ty: 6.05
+						}
+					},
+					// 2828
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.mouth_master_beard,
+						transform: {
+							tx: 5.5,
+							ty: -10.7
+						}
+					}
+				],
+				[
+					// 2830
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.mouth_old,
+						transform: {
+							tx: 7.75,
+							ty: 2.3
+						}
+					}
+				],
+				[
+					// 2832
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.mouth,
+						transform: {
+							tx: 11.1,
+							ty: 6.65
+						}
+					},
+					// 2834
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.mouth_beard_side,
+						transform: {
+							tx: 4.85,
+							ty: 0.5
+						}
+					}
+				],
+				[
+					// 2832
+					{
+						colorIdx: 0,
+						ref: ref.toufufu.mouth,
+						transform: {
+							tx: 10.75,
+							ty: 5.95
+						}
+					},
+					// 2836
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.mouth_whiskers,
+						transform: {
+							tx: 2.85,
+							ty: 3.1
+						}
+					}
+				]
+			]
+		}
+	],
 	// 2886 p7a
-	hair: [],
+	hair: [
+		{
+			partIdx: 7,
+			frames: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+			parts: [
+				// 2843
+				[
+					// 2839
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.hair
+					},
+					// hurt
+					{
+						partIdx: 2,
+						frames: [-1, 0, 1],
+						parts: [
+							[
+								// 155
+								{
+									ref: ref.hurt.scratch,
+									transform: {
+										tx: 28.1,
+										ty: 18.9,
+										a: 0.958,
+										d: 1.643,
+										b: 0.671,
+										c: -0.949
+									}
+								},
+								// 2841
+								{
+									colorIdx: 0,
+									ref: ref.toufufu.hair_hurt_bump,
+									transform: {
+										tx: 35.4,
+										ty: 9.1
+									}
+								}
+							],
+							[
+								// 2842
+								{
+									ref: ref.toufufu.hair_hurt_blood
+								},
+								// 155
+								{
+									ref: ref.hurt.scratch,
+									transform: {
+										tx: 28.1,
+										ty: 18.9,
+										a: 0.958,
+										d: 1.643,
+										b: 0.671,
+										c: -0.949
+									}
+								},
+								// 2841
+								{
+									colorIdx: 0,
+									ref: ref.toufufu.hair_hurt_bump,
+									transform: {
+										tx: 35.4,
+										ty: 9.1
+									}
+								}
+							]
+						]
+					}
+				],
+				[],
+				// 2852
+				[
+					// 2850
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.hair_master,
+						transform: {
+							tx: 15.25,
+							ty: -13
+						}
+					},
+					// hurt
+					{
+						partIdx: 2,
+						frames: [-1, 0, 1],
+						transform: {
+							tx: 15.25,
+							ty: -13
+						},
+						parts: [
+							[
+								// 155
+								{
+									ref: ref.hurt.scratch,
+									transform: {
+										tx: 30.1,
+										ty: 28.6,
+										a: 0.958,
+										d: 1.643,
+										b: 0.671,
+										c: -0.949
+									}
+								},
+								// 2841
+								{
+									colorIdx: 0,
+									ref: ref.toufufu.hair_hurt_bump,
+									transform: {
+										tx: 2.55,
+										ty: 28.9,
+										a: 0.707,
+										d: 0.707,
+										b: -0.707,
+										c: 0.707
+									}
+								}
+							],
+							[
+								// 2851
+								{
+									ref: ref.toufufu.hair_master_hurt_blood,
+									transform: {
+										tx: -12.25,
+										ty: 7.5
+									}
+								},
+								// 155
+								{
+									ref: ref.hurt.scratch,
+									transform: {
+										tx: 30.1,
+										ty: 28.6,
+										a: 0.958,
+										d: 1.643,
+										b: 0.671,
+										c: -0.949
+									}
+								},
+								// 2841
+								{
+									colorIdx: 0,
+									ref: ref.toufufu.hair_hurt_bump,
+									transform: {
+										tx: 2.55,
+										ty: 28.9,
+										a: 0.707,
+										d: 0.707,
+										b: -0.707,
+										c: 0.707
+									}
+								}
+							]
+						]
+					}
+				],
+				// 2856
+				[
+					// 2855
+					{
+						colorIdx: 1,
+						ref: ref.toufufu.hair_wolverine,
+						transform: {
+							tx: 15.15,
+							ty: 1.85
+						}
+					},
+					// hurt
+					{
+						partIdx: 2,
+						frames: [-1, 0, 1],
+						transform: {
+							tx: 15.15,
+							ty: 1.85
+						},
+						parts: [
+							[
+								// 155
+								{
+									ref: ref.hurt.scratch,
+									transform: {
+										tx: 35,
+										ty: 13.85,
+										a: 0.958,
+										d: 1.643,
+										b: 0.671,
+										c: -0.949
+									}
+								},
+								// 2841
+								{
+									colorIdx: 0,
+									ref: ref.toufufu.hair_hurt_bump,
+									transform: {
+										tx: 15.75,
+										ty: 2.65,
+										a: 0.966,
+										d: 0.966,
+										b: 0.259,
+										c: -0.259
+									}
+								}
+							],
+							[
+								// 2855
+								{
+									ref: ref.toufufu.hair_wolverine_hurt_blood
+								},
+								// 155
+								{
+									ref: ref.hurt.scratch,
+									transform: {
+										tx: 35,
+										ty: 13.85,
+										a: 0.958,
+										d: 1.643,
+										b: 0.671,
+										c: -0.949
+									}
+								},
+								// 2841
+								{
+									colorIdx: 0,
+									ref: ref.toufufu.hair_hurt_bump,
+									transform: {
+										tx: 15.75,
+										ty: 2.65,
+										a: 0.966,
+										d: 0.966,
+										b: 0.259,
+										c: -0.259
+									}
+								}
+							]
+						]
+					}
+				]
+			]
+		}
+	],
 	// 2892 p5
 	left_arm: [],
 	// 293
