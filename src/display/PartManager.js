@@ -177,18 +177,20 @@ export class PartManager {
 		sprite.y -= (ref.offset?.y ?? 0) * scale;
 
 		if (part.colorIdx !== undefined) {
-			const pal = palette[part.colorIdx];
-			const colorHex = pal[partsDetail[PartManager.pMax + part.colorIdx] % pal.length];
+			let pColor = new Color(0xffffff);
+			for (const idx of Array.isArray(part.colorIdx) ? part.colorIdx : [part.colorIdx]) {
+				const pal = palette[idx];
+				pColor.multiply(new Color(pal[partsDetail[PartManager.pMax + idx] % pal.length]));
+			}
 			// Parts with blendmode cannot have filters
 			if (part.blend) {
-				sprite.tint = colorHex;
+				sprite.tint = pColor;
 			} else {
-				const color = new Color(colorHex);
 				sprite.filters = [
 					ConstantShaderManager.getColorOffsetFilter(
-						color.red * 255 - 255,
-						color.green * 255 - 255,
-						color.blue * 255 - 255
+						pColor.red * 255 - 255,
+						pColor.green * 255 - 255,
+						pColor.blue * 255 - 255
 					)
 				];
 			}
