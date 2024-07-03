@@ -12,6 +12,7 @@ import { Buddah } from '../../../parts/skills/invocations/Buddah.js';
 import { Djinn } from '../../../parts/skills/invocations/Djinn.js';
 import { Fairies } from '../../../parts/skills/invocations/Fairies.js';
 import { Fujin } from '../../../parts/skills/invocations/Fujin.js';
+import { Goku } from '../../../parts/skills/invocations/Goku.js';
 import { Golem } from '../../../parts/skills/invocations/Golem.js';
 import { Hades } from '../../../parts/skills/invocations/Hades.js';
 import { Ifrit } from '../../../parts/skills/invocations/Ifrit.js';
@@ -101,6 +102,7 @@ export class GrInvocation extends GroupEffect {
 				this._invoc = new BeehiveQueen(this._scene);
 				break;
 			case 'goku':
+				this._invoc = new Goku(this._scene);
 				break;
 			case 'quetza':
 				break;

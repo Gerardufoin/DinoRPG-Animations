@@ -21,8 +21,6 @@ import { parts_big } from './parts_big.js';
 
 export let toufufu = {
 	name: 'toufufu',
-	width: 0.686,
-	height: 0.656,
 	palette: [
 		[
 			// col0
@@ -103,6 +101,8 @@ export let toufufu = {
 		}
 	},
 	small: {
+		width: 0.686,
+		height: 0.656,
 		transforms: [
 			// 1290
 			{

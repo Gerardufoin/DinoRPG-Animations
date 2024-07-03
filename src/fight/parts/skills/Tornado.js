@@ -1,24 +1,18 @@
 // @ts-check
 
-import { BlurFilter, Container } from 'pixi.js';
+import { Container } from 'pixi.js';
 import { IScene, SCENE_WIDTH } from '../../IScene.js';
 import { Phys } from '../../Phys.js';
 import { Animator } from '../../../display/Animator.js';
 import { fx_tornado } from '../../../gfx/fx/tornado.js';
 import { Timer } from '../../Timer.js';
+import { ConstantShaderManager } from '../../../display/ConstantShaderManager.js';
 
 /**
  * Creates a Tornado in the middle of the screen.
  * The tornado slowly moves left, until "escape" is called, where it moves faster and despawn.
  */
 export class Tornado extends Phys {
-	/**
-	 * The BlurFilter of the tornado.
-	 * Storing it to prevent WebGL to create it each time.
-	 * @type {BlurFilter}
-	 */
-	static BlurFilter;
-
 	/**
 	 * The tornado animator.
 	 * @type {Animator}
@@ -41,12 +35,7 @@ export class Tornado extends Phys {
 		this._animator = new Animator(false).loadAnimation(fx_tornado);
 		this._root.addChild(this._animator);
 
-		if (!Tornado.BlurFilter) {
-			Tornado.BlurFilter = new BlurFilter();
-			Tornado.BlurFilter.blurX = 5;
-			Tornado.BlurFilter.blurY = 0;
-		}
-		this._animator.filters = [Tornado.BlurFilter];
+		this._animator.filters = [ConstantShaderManager.getBlurFilter(5, 0)];
 
 		this._x = SCENE_WIDTH * 0.5 + side * (SCENE_WIDTH * 0.25 - 50);
 		this._y = this._scene.getPYMiddle();
