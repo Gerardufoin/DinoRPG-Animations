@@ -1,10 +1,10 @@
 // @ts-check
 
-export let release = {
+export const release = {
 	id: 'quetzu_release',
 	frames: [
 		{
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 9.15,
 				ty: 5,
 				a: 0.097,
@@ -13,7 +13,7 @@ export let release = {
 				d: 0.052,
 				l: 9
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.1,
 				ty: 3.25,
 				a: 0.229,
@@ -52,7 +52,7 @@ export let release = {
 				d: 0.992,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -0.9,
 				ty: 4.25,
 				a: 0.097,
@@ -61,7 +61,7 @@ export let release = {
 				d: 0.052,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 3.8,
 				ty: 2.85,
 				a: 0.332,
@@ -70,7 +70,7 @@ export let release = {
 				d: 0.287,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 12.5,
 				ty: 1.7,
 				a: 0.92,
@@ -78,7 +78,7 @@ export let release = {
 				d: 0.92,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 7.25,
 				ty: 1.7,
 				a: 0.769,
@@ -89,7 +89,7 @@ export let release = {
 			}
 		},
 		{
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 8.85,
 				ty: 4.7,
 				a: 0.195,
@@ -98,7 +98,7 @@ export let release = {
 				d: 0.156,
 				l: 9
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.5,
 				ty: 3.25,
 				a: 0.158,
@@ -138,7 +138,7 @@ export let release = {
 				d: 0.992,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -1.1,
 				ty: 3.9,
 				a: 0.19,
@@ -147,7 +147,7 @@ export let release = {
 				d: 0.15,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 4.55,
 				ty: 2.8,
 				a: 0.194,
@@ -156,7 +156,7 @@ export let release = {
 				d: 0.155,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 12.6,
 				ty: 1.7,
 				a: 0.92,
@@ -164,7 +164,7 @@ export let release = {
 				d: 0.92,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 7.5,
 				ty: 1.7,
 				a: 0.77,
@@ -175,7 +175,7 @@ export let release = {
 			}
 		},
 		{
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 8.65,
 				ty: 4.4,
 				a: 0.289,
@@ -184,7 +184,7 @@ export let release = {
 				d: 0.259,
 				l: 9
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.9,
 				ty: 3.35,
 				a: 0.085,
@@ -224,7 +224,7 @@ export let release = {
 				d: 0.992,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -1.3,
 				ty: 3.5,
 				a: 0.279,
@@ -233,7 +233,7 @@ export let release = {
 				d: 0.248,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 5.45,
 				ty: 2.7,
 				a: 0.048,
@@ -242,7 +242,7 @@ export let release = {
 				d: 0.02,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 12.8,
 				ty: 1.7,
 				a: 0.92,
@@ -250,7 +250,7 @@ export let release = {
 				d: 0.92,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 7.5,
 				ty: 1.7,
 				a: 0.772,
@@ -261,7 +261,7 @@ export let release = {
 			}
 		},
 		{
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 8.3,
 				ty: 4.2,
 				a: 0.378,
@@ -270,7 +270,7 @@ export let release = {
 				d: 0.359,
 				l: 9
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 15.3,
 				ty: 3.35,
 				a: 0.012,
@@ -310,7 +310,7 @@ export let release = {
 				d: 0.992,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -1.6,
 				ty: 3.2,
 				a: 0.366,
@@ -319,7 +319,7 @@ export let release = {
 				d: 0.346,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 6.15,
 				ty: 2.7,
 				a: -0.094,
@@ -328,7 +328,7 @@ export let release = {
 				d: -0.112,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 12.9,
 				ty: 1.7,
 				a: 0.92,
@@ -336,7 +336,7 @@ export let release = {
 				d: 0.92,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 7.7,
 				ty: 1.65,
 				a: 0.773,
@@ -347,7 +347,7 @@ export let release = {
 			}
 		},
 		{
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 8.1,
 				ty: 4,
 				a: 0.46,
@@ -356,7 +356,7 @@ export let release = {
 				d: 0.457,
 				l: 9
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 15.8,
 				ty: 3.4,
 				a: -0.059,
@@ -396,7 +396,7 @@ export let release = {
 				d: 0.992,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -1.55,
 				ty: 2.75,
 				a: 0.445,
@@ -405,7 +405,7 @@ export let release = {
 				d: 0.439,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 6.75,
 				ty: 3.35,
 				a: -0.239,
@@ -414,7 +414,7 @@ export let release = {
 				d: -0.243,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 13.05,
 				ty: 1.7,
 				a: 0.92,
@@ -422,7 +422,7 @@ export let release = {
 				d: 0.92,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 7.9,
 				ty: 1.65,
 				a: 0.774,
@@ -433,7 +433,7 @@ export let release = {
 			}
 		},
 		{
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 8.15,
 				ty: 4,
 				a: 0.451,
@@ -442,7 +442,7 @@ export let release = {
 				d: 0.448,
 				l: 9
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 15.8,
 				ty: 3.4,
 				a: -0.059,
@@ -482,7 +482,7 @@ export let release = {
 				d: 0.992,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -1.55,
 				ty: 2.75,
 				a: 0.441,
@@ -491,7 +491,7 @@ export let release = {
 				d: 0.434,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 6.7,
 				ty: 3.35,
 				a: -0.235,
@@ -500,7 +500,7 @@ export let release = {
 				d: -0.241,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 13.2,
 				ty: 1.7,
 				a: 0.92,
@@ -508,7 +508,7 @@ export let release = {
 				d: 0.92,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 8.1,
 				ty: 1.7,
 				a: 0.776,
@@ -519,7 +519,7 @@ export let release = {
 			}
 		},
 		{
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 8.3,
 				ty: 3.9,
 				a: 0.428,
@@ -528,7 +528,7 @@ export let release = {
 				d: 0.419,
 				l: 9
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 15.9,
 				ty: 3.45,
 				a: -0.066,
@@ -568,7 +568,7 @@ export let release = {
 				d: 0.992,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -1.45,
 				ty: 2.75,
 				a: 0.433,
@@ -577,7 +577,7 @@ export let release = {
 				d: 0.424,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 6.7,
 				ty: 3.4,
 				a: -0.234,
@@ -586,7 +586,7 @@ export let release = {
 				d: -0.24,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 13.4,
 				ty: 1.75,
 				a: 0.92,
@@ -594,7 +594,7 @@ export let release = {
 				d: 0.92,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 8.2,
 				ty: 1.7,
 				a: 0.777,
@@ -605,7 +605,7 @@ export let release = {
 			}
 		},
 		{
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 8.45,
 				ty: 3.8,
 				a: 0.386,
@@ -614,7 +614,7 @@ export let release = {
 				d: 0.373,
 				l: 9
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 16.05,
 				ty: 3.45,
 				a: -0.074,
@@ -654,7 +654,7 @@ export let release = {
 				d: 0.992,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -1.3,
 				ty: 2.75,
 				a: 0.421,
@@ -663,7 +663,7 @@ export let release = {
 				d: 0.41,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 6.7,
 				ty: 3.5,
 				a: -0.227,
@@ -672,7 +672,7 @@ export let release = {
 				d: -0.237,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 13.5,
 				ty: 1.7,
 				a: 0.92,
@@ -680,7 +680,7 @@ export let release = {
 				d: 0.92,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 8.25,
 				ty: 1.7,
 				a: 0.779,
@@ -691,7 +691,7 @@ export let release = {
 			}
 		},
 		{
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 8.65,
 				ty: 3.6,
 				a: 0.326,
@@ -700,7 +700,7 @@ export let release = {
 				d: 0.309,
 				l: 9
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 16.3,
 				ty: 3.5,
 				a: -0.089,
@@ -740,7 +740,7 @@ export let release = {
 				d: 0.992,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -1.05,
 				ty: 2.75,
 				a: 0.403,
@@ -749,7 +749,7 @@ export let release = {
 				d: 0.387,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 6.65,
 				ty: 3.6,
 				a: -0.219,
@@ -758,7 +758,7 @@ export let release = {
 				d: -0.23,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 13.45,
 				ty: 1.75,
 				a: 0.92,
@@ -766,7 +766,7 @@ export let release = {
 				d: 0.92,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 8.3,
 				ty: 1.7,
 				a: 0.778,
@@ -777,7 +777,7 @@ export let release = {
 			}
 		},
 		{
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 9.1,
 				ty: 3.6,
 				a: 0.246,
@@ -786,7 +786,7 @@ export let release = {
 				d: 0.222,
 				l: 9
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 16,
 				ty: 3.85,
 				a: -0.11,
@@ -826,7 +826,7 @@ export let release = {
 				d: 0.992,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -1.05,
 				ty: 2.9,
 				a: 0.379,
@@ -835,7 +835,7 @@ export let release = {
 				d: 0.359,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 6.65,
 				ty: 3.6,
 				a: -0.21,
@@ -844,7 +844,7 @@ export let release = {
 				d: -0.226,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 13.35,
 				ty: 1.75,
 				a: 0.92,
@@ -852,7 +852,7 @@ export let release = {
 				d: 0.92,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 8.15,
 				ty: 1.65,
 				a: 0.777,
@@ -863,7 +863,7 @@ export let release = {
 			}
 		},
 		{
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 9.15,
 				ty: 4,
 				a: 0.211,
@@ -872,7 +872,7 @@ export let release = {
 				d: 0.182,
 				l: 9
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 15.45,
 				ty: 3.85,
 				a: -0.027,
@@ -912,7 +912,7 @@ export let release = {
 				d: 0.992,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -0.95,
 				ty: 3.25,
 				a: 0.288,
@@ -921,7 +921,7 @@ export let release = {
 				d: 0.258,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 6.15,
 				ty: 3.3,
 				a: -0.067,
@@ -930,7 +930,7 @@ export let release = {
 				d: -0.093,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 13.25,
 				ty: 1.7,
 				a: 0.92,
@@ -938,7 +938,7 @@ export let release = {
 				d: 0.92,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 8,
 				ty: 1.65,
 				a: 0.776,
@@ -949,7 +949,7 @@ export let release = {
 			}
 		},
 		{
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 9.25,
 				ty: 4.3,
 				a: 0.178,
@@ -958,7 +958,7 @@ export let release = {
 				d: 0.145,
 				l: 9
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.9,
 				ty: 3.8,
 				a: 0.051,
@@ -998,7 +998,7 @@ export let release = {
 				d: 0.992,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -0.85,
 				ty: 3.6,
 				a: 0.193,
@@ -1007,7 +1007,7 @@ export let release = {
 				d: 0.158,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 5.6,
 				ty: 3.05,
 				a: 0.071,
@@ -1016,7 +1016,7 @@ export let release = {
 				d: 0.039,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 13,
 				ty: 1.7,
 				a: 0.92,
@@ -1024,7 +1024,7 @@ export let release = {
 				d: 0.92,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 7.9,
 				ty: 1.65,
 				a: 0.774,
@@ -1035,7 +1035,7 @@ export let release = {
 			}
 		},
 		{
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 9.25,
 				ty: 4.7,
 				a: 0.146,
@@ -1044,7 +1044,7 @@ export let release = {
 				d: 0.105,
 				l: 9
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.35,
 				ty: 3.8,
 				a: 0.135,
@@ -1084,7 +1084,7 @@ export let release = {
 				d: 0.992,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -0.65,
 				ty: 4,
 				a: 0.095,
@@ -1093,7 +1093,7 @@ export let release = {
 				d: 0.055,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 5,
 				ty: 2.9,
 				a: 0.21,
@@ -1102,7 +1102,7 @@ export let release = {
 				d: 0.171,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 12.75,
 				ty: 1.7,
 				a: 0.92,
@@ -1110,7 +1110,7 @@ export let release = {
 				d: 0.92,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 7.65,
 				ty: 1.65,
 				a: 0.772,
@@ -1121,7 +1121,7 @@ export let release = {
 			}
 		},
 		{
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 9.1,
 				ty: 4.95,
 				a: 0.112,
@@ -1130,7 +1130,7 @@ export let release = {
 				d: 0.069,
 				l: 9
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.1,
 				ty: 3.25,
 				a: 0.215,
@@ -1169,7 +1169,7 @@ export let release = {
 				d: 0.992,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -0.4,
 				ty: 4.4,
 				a: -0.004,
@@ -1178,7 +1178,7 @@ export let release = {
 				d: -0.048,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 3.75,
 				ty: 2.85,
 				a: 0.347,
@@ -1187,7 +1187,7 @@ export let release = {
 				d: 0.303,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 12.5,
 				ty: 1.7,
 				a: 0.92,
@@ -1195,7 +1195,7 @@ export let release = {
 				d: 0.92,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 7.3,
 				ty: 1.65,
 				a: 0.769,

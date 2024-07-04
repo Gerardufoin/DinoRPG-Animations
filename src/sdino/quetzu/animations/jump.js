@@ -1,6 +1,6 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'quetzu_jump',
 	frames: [
 		{
@@ -13,7 +13,7 @@ export let jump = {
 				d: 1.023,
 				l: 9
 			},
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 5.65,
 				ty: 0.7,
 				a: 0.756,
@@ -22,7 +22,7 @@ export let jump = {
 				d: 0.866,
 				l: 8
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 5.25,
 				ty: -5.35,
 				a: 0.825,
@@ -55,7 +55,7 @@ export let jump = {
 				d: 0.473,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -2.3,
 				ty: 0.55,
 				a: 0.777,
@@ -63,7 +63,7 @@ export let jump = {
 				d: 0.889,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: -2.55,
 				ty: -4.85,
 				a: 0.834,
@@ -71,7 +71,7 @@ export let jump = {
 				d: 0.953,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 8.2,
 				ty: -8.5,
 				a: 0.75,
@@ -80,7 +80,7 @@ export let jump = {
 				d: 0.852,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 4.2,
 				ty: -8.85,
 				a: 0.641,

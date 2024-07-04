@@ -1,6 +1,6 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'quetzu_hit',
 	callbacks: {
 		8: [['stop']]
@@ -16,7 +16,7 @@ export let hit = {
 				d: 0.545,
 				l: 9
 			},
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 18.45,
 				ty: 8.7,
 				a: 0.572,
@@ -25,7 +25,7 @@ export let hit = {
 				d: 0.719,
 				l: 8
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.55,
 				ty: 6.95,
 				a: 0.442,
@@ -58,7 +58,7 @@ export let hit = {
 				d: 0.763,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -1.3,
 				ty: 6.4,
 				a: 0.726,
@@ -67,7 +67,7 @@ export let hit = {
 				d: 0.785,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 6.8,
 				ty: 3.15,
 				a: 0.231,
@@ -76,7 +76,7 @@ export let hit = {
 				d: 0.184,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 12.35,
 				ty: 3.7,
 				a: 0.514,
@@ -85,7 +85,7 @@ export let hit = {
 				d: 0.556,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 7.75,
 				ty: 3.3,
 				a: 0.474,
@@ -105,7 +105,7 @@ export let hit = {
 				d: 0.585,
 				l: 9
 			},
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 18.45,
 				ty: 7.65,
 				a: 0.414,
@@ -114,7 +114,7 @@ export let hit = {
 				d: 0.537,
 				l: 8
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.45,
 				ty: 6.4,
 				a: 0.314,
@@ -147,7 +147,7 @@ export let hit = {
 				d: 0.763,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -0.25,
 				ty: 4.8,
 				a: 0.656,
@@ -156,7 +156,7 @@ export let hit = {
 				d: 0.7,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 7.7,
 				ty: 2.25,
 				a: 0.19,
@@ -165,7 +165,7 @@ export let hit = {
 				d: 0.141,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 12.8,
 				ty: 2.8,
 				a: 0.481,
@@ -174,7 +174,7 @@ export let hit = {
 				d: 0.522,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 8.05,
 				ty: 2.55,
 				a: 0.44,
@@ -194,7 +194,7 @@ export let hit = {
 				d: 0.614,
 				l: 9
 			},
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 18.6,
 				ty: 7,
 				a: 0.284,
@@ -203,7 +203,7 @@ export let hit = {
 				d: 0.389,
 				l: 8
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.4,
 				ty: 5.95,
 				a: 0.218,
@@ -236,7 +236,7 @@ export let hit = {
 				d: 0.763,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: 0.65,
 				ty: 3.8,
 				a: 0.598,
@@ -245,7 +245,7 @@ export let hit = {
 				d: 0.631,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 8.4,
 				ty: 1.55,
 				a: 0.159,
@@ -254,7 +254,7 @@ export let hit = {
 				d: 0.11,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 13.1,
 				ty: 2.15,
 				a: 0.454,
@@ -263,7 +263,7 @@ export let hit = {
 				d: 0.499,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 8.2,
 				ty: 2,
 				a: 0.416,
@@ -283,7 +283,7 @@ export let hit = {
 				d: 0.631,
 				l: 9
 			},
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 18.75,
 				ty: 6.6,
 				a: 0.203,
@@ -292,7 +292,7 @@ export let hit = {
 				d: 0.291,
 				l: 8
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.45,
 				ty: 5.65,
 				a: 0.158,
@@ -325,7 +325,7 @@ export let hit = {
 				d: 0.763,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: 1.1,
 				ty: 3.1,
 				a: 0.559,
@@ -334,7 +334,7 @@ export let hit = {
 				d: 0.587,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 8.7,
 				ty: 1.15,
 				a: 0.14,
@@ -343,7 +343,7 @@ export let hit = {
 				d: 0.094,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 13.25,
 				ty: 1.75,
 				a: 0.439,
@@ -352,7 +352,7 @@ export let hit = {
 				d: 0.485,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 8.3,
 				ty: 1.65,
 				a: 0.401,
@@ -372,7 +372,7 @@ export let hit = {
 				d: 0.639,
 				l: 9
 			},
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 19.1,
 				ty: 6.35,
 				a: 0.176,
@@ -381,7 +381,7 @@ export let hit = {
 				d: 0.261,
 				l: 8
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.4,
 				ty: 5.5,
 				a: 0.139,
@@ -414,7 +414,7 @@ export let hit = {
 				d: 0.763,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: 1.05,
 				ty: 2.7,
 				a: 0.548,
@@ -423,7 +423,7 @@ export let hit = {
 				d: 0.573,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 8.9,
 				ty: 1.05,
 				a: 0.136,
@@ -432,7 +432,7 @@ export let hit = {
 				d: 0.088,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 13.1,
 				ty: 1.5,
 				a: 0.436,
@@ -441,7 +441,7 @@ export let hit = {
 				d: 0.48,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 8.35,
 				ty: 1.65,
 				a: 0.396,
@@ -461,7 +461,7 @@ export let hit = {
 				d: 0.596,
 				l: 9
 			},
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 18.85,
 				ty: 7.45,
 				a: 0.362,
@@ -470,7 +470,7 @@ export let hit = {
 				d: 0.48,
 				l: 8
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.45,
 				ty: 6.2,
 				a: 0.274,
@@ -503,7 +503,7 @@ export let hit = {
 				d: 0.763,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -0.05,
 				ty: 4.35,
 				a: 0.633,
@@ -512,7 +512,7 @@ export let hit = {
 				d: 0.674,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 8.1,
 				ty: 2,
 				a: 0.175,
@@ -521,7 +521,7 @@ export let hit = {
 				d: 0.129,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 12.75,
 				ty: 2.4,
 				a: 0.47,
@@ -530,7 +530,7 @@ export let hit = {
 				d: 0.512,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 8.05,
 				ty: 2.35,
 				a: 0.431,
@@ -550,7 +550,7 @@ export let hit = {
 				d: 0.567,
 				l: 9
 			},
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 18.8,
 				ty: 8.2,
 				a: 0.484,
@@ -559,7 +559,7 @@ export let hit = {
 				d: 0.621,
 				l: 8
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.5,
 				ty: 6.65,
 				a: 0.371,
@@ -592,7 +592,7 @@ export let hit = {
 				d: 0.763,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -0.95,
 				ty: 5.45,
 				a: 0.687,
@@ -601,7 +601,7 @@ export let hit = {
 				d: 0.739,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 7.4,
 				ty: 2.7,
 				a: 0.206,
@@ -610,7 +610,7 @@ export let hit = {
 				d: 0.16,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 12.4,
 				ty: 3.05,
 				a: 0.494,
@@ -619,7 +619,7 @@ export let hit = {
 				d: 0.536,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 7.85,
 				ty: 2.95,
 				a: 0.454,
@@ -639,7 +639,7 @@ export let hit = {
 				d: 0.55,
 				l: 9
 			},
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 18.75,
 				ty: 8.6,
 				a: 0.55,
@@ -648,7 +648,7 @@ export let hit = {
 				d: 0.695,
 				l: 8
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.6,
 				ty: 6.85,
 				a: 0.423,
@@ -681,7 +681,7 @@ export let hit = {
 				d: 0.763,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -1.35,
 				ty: 6.2,
 				a: 0.717,
@@ -690,7 +690,7 @@ export let hit = {
 				d: 0.773,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 7,
 				ty: 3,
 				a: 0.224,
@@ -699,7 +699,7 @@ export let hit = {
 				d: 0.176,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 12.2,
 				ty: 3.45,
 				a: 0.508,
@@ -708,7 +708,7 @@ export let hit = {
 				d: 0.551,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 7.8,
 				ty: 3.25,
 				a: 0.468,
@@ -728,7 +728,7 @@ export let hit = {
 				d: 0.545,
 				l: 9
 			},
-			left_arm_bottom: {
+			l_b_arm: {
 				tx: 18.45,
 				ty: 8.7,
 				a: 0.572,
@@ -737,7 +737,7 @@ export let hit = {
 				d: 0.719,
 				l: 8
 			},
-			left_arm_top: {
+			l_t_arm: {
 				tx: 14.55,
 				ty: 6.95,
 				a: 0.442,
@@ -770,7 +770,7 @@ export let hit = {
 				d: 0.763,
 				l: 4
 			},
-			right_arm_bottom: {
+			r_b_arm: {
 				tx: -1.3,
 				ty: 6.4,
 				a: 0.726,
@@ -779,7 +779,7 @@ export let hit = {
 				d: 0.785,
 				l: 3
 			},
-			right_arm_top: {
+			r_t_arm: {
 				tx: 6.8,
 				ty: 3.15,
 				a: 0.231,
@@ -788,7 +788,7 @@ export let hit = {
 				d: 0.184,
 				l: 2
 			},
-			left_back: {
+			l_back: {
 				tx: 12.35,
 				ty: 3.7,
 				a: 0.514,
@@ -797,7 +797,7 @@ export let hit = {
 				d: 0.556,
 				l: 1
 			},
-			right_back: {
+			r_back: {
 				tx: 7.75,
 				ty: 3.3,
 				a: 0.474,

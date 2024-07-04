@@ -53,6 +53,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/dino/LIBRARY/Symbol 2516.xml', '_sub', undefined, 3); // mahamuti
 //parser.parse('./resources/dino/LIBRARY/Symbol 2671.xml', '_sub', undefined, 3); // soufflet
 //parser.parse('./resources/dino/LIBRARY/Symbol 2893.xml', '_sub', undefined, 3); // toufufu
+//parser.parse('./resources/dino/LIBRARY/Symbol 3193.xml', '_sub', undefined, 3); // toufufu
 
 //SMONSTER
 //parser.parse('./resources/smonster/LIBRARY/Symbol 4089.xml', 'smonster', undefined, 1); // smonster

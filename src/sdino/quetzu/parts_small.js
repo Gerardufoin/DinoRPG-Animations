@@ -103,7 +103,7 @@ const body_special = {
 	]
 };
 
-export let parts = {
+export const parts_small = {
 	// 1304 p5
 	back: [
 		{
