@@ -86,7 +86,7 @@ const right_leg_hurt = {
 	parts: [
 		// 109
 		{
-			ref: ref.moueffe.hurt_bruise_blue,
+			ref: ref.hurt.bruise_blue,
 			transform: {
 				tx: 1.7,
 				ty: -1.2,
@@ -216,7 +216,7 @@ const body_muscular = [
 				},
 				// 110
 				{
-					ref: ref.moueffe.hurt_bruise_blue,
+					ref: ref.hurt.bruise_blue,
 					transform: {
 						tx: -21.9,
 						ty: 2.2,
@@ -305,7 +305,7 @@ const body_fat = [
 				},
 				// 110
 				{
-					ref: ref.moueffe.hurt_bruise_blue,
+					ref: ref.hurt.bruise_blue,
 					transform: {
 						tx: -19.5,
 						ty: -1.75,
@@ -1132,7 +1132,7 @@ export const parts_big = {
 								},
 								// 110
 								{
-									ref: ref.moueffe.hurt_bruise_blue,
+									ref: ref.hurt.bruise_blue,
 									transform: {
 										tx: -17.9,
 										ty: -3.65,
@@ -1196,7 +1196,7 @@ export const parts_big = {
 								},
 								// 110
 								{
-									ref: ref.moueffe.hurt_bruise_blue,
+									ref: ref.hurt.bruise_blue,
 									transform: {
 										tx: -17.9,
 										ty: -4.05,

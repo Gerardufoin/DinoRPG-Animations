@@ -114,21 +114,21 @@ export const quetzu = {
 		},
 		parts: {
 			// 2924 p5a
-			r_back: parts_big.r_back,
+			r_back: parts_big.right_back,
 			// 2924 p5b
-			l_back: parts_big.l_back,
+			l_back: parts_big.left_back,
 			// 2955 p6
 			tail_end: parts_big.tail_end,
 			// 3006 p4b
-			r_arm: parts_big.r_arm,
+			r_arm: parts_big.right_arm,
 			// 3011 p2
 			tail: parts_big.tail,
 			// 3036 p3
 			body: parts_big.body,
 			// 3081 p4a
-			l_arm: parts_big.l_arm,
+			l_arm: parts_big.left_arm,
 			// 3084 special
-			l_sideburn_sp: parts_big.l_sideburn_sp,
+			l_sideburn_sp: parts_big.left_sideburn_sp,
 			// 3192 p7
 			head: parts_big.head,
 			// 293
