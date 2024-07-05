@@ -79,7 +79,7 @@ const fightVersion = [
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: 'H9T1Yt9wqq4Rx010'
+					gfx: 'I9T1Yt9wqq4Rx010'
 				}
 			},
 			{
@@ -114,7 +114,7 @@ const fightVersion = [
 			},
 			{
 				action: 'Announce',
-				message: 'Grand Singe Sacré',
+				message: 'Quetzalcoatl',
 				fid: 0
 			},
 			{
@@ -122,7 +122,7 @@ const fightVersion = [
 				skill: 'Invoc',
 				details: {
 					fid: 0,
-					anim: 'goku'
+					anim: 'quetza'
 				}
 			}
 			/*{

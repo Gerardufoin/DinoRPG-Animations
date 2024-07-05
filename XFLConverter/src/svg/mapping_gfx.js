@@ -270,6 +270,7 @@ export const mapping_gfx = {
 	559: '../invocations/leviathan/wave_foam_5',
 	560: '../invocations/leviathan/wave_foam_6',
 	561: '../invocations/leviathan/wave_foam_7',
+	571: '../invocations/quetzalcoatl/aura',
 	581: 'fx/projectile/rock_shard',
 	584: 'scene/click',
 	586: 'status/slow',
