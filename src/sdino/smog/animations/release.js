@@ -1,6 +1,6 @@
 // @ts-check
 
-export let release = {
+export const release = {
 	id: 'smog_release',
 	callbacks: {
 		5: [['hit']],
@@ -8,7 +8,7 @@ export let release = {
 	},
 	frames: [
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 12.9,
 				ty: 16.45,
 				a: 0.824,
@@ -17,7 +17,7 @@ export let release = {
 				d: 0.824,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 10.45,
 				ty: 18.7,
 				a: 0.822,
@@ -26,7 +26,7 @@ export let release = {
 				d: 0.857,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13,
 				ty: 20,
 				l: 11
@@ -50,7 +50,7 @@ export let release = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 7.2,
 				ty: 16.95,
 				a: 0.961,
@@ -74,7 +74,7 @@ export let release = {
 				ty: 15.2,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5.65,
 				ty: 15.7,
 				a: 0.919,
@@ -83,7 +83,7 @@ export let release = {
 				d: 0.919,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 8.85,
 				ty: 14.2,
 				a: 0.824,
@@ -92,7 +92,7 @@ export let release = {
 				d: 0.824,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 6.4,
 				ty: 16.45,
 				a: 0.822,
@@ -101,14 +101,14 @@ export let release = {
 				d: 0.857,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.95,
 				ty: 17.75,
 				l: 0
 			}
 		},
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 13.2,
 				ty: 16.1,
 				a: 0.823,
@@ -117,7 +117,7 @@ export let release = {
 				d: 0.823,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 10.75,
 				ty: 18.4,
 				a: 0.704,
@@ -126,7 +126,7 @@ export let release = {
 				d: 0.734,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13,
 				ty: 20,
 				l: 11
@@ -156,7 +156,7 @@ export let release = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 7.55,
 				ty: 16.45,
 				a: 0.922,
@@ -192,7 +192,7 @@ export let release = {
 				d: 0.993,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 6.15,
 				ty: 15,
 				a: 0.866,
@@ -201,7 +201,7 @@ export let release = {
 				d: 0.866,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 9.1,
 				ty: 13.8,
 				a: 0.823,
@@ -210,7 +210,7 @@ export let release = {
 				d: 0.823,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 6.75,
 				ty: 16.25,
 				a: 0.692,
@@ -219,14 +219,14 @@ export let release = {
 				d: 0.722,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.95,
 				ty: 17.75,
 				l: 0
 			}
 		},
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 13.35,
 				ty: 15.9,
 				a: 0.822,
@@ -235,7 +235,7 @@ export let release = {
 				d: 0.822,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 10.95,
 				ty: 18.3,
 				a: 0.621,
@@ -244,7 +244,7 @@ export let release = {
 				d: 0.648,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13,
 				ty: 20,
 				l: 11
@@ -274,7 +274,7 @@ export let release = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 7.85,
 				ty: 15.95,
 				a: 0.871,
@@ -310,7 +310,7 @@ export let release = {
 				d: 0.973,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 6.6,
 				ty: 14.35,
 				a: 0.804,
@@ -319,7 +319,7 @@ export let release = {
 				d: 0.804,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 9.25,
 				ty: 13.6,
 				a: 0.822,
@@ -328,7 +328,7 @@ export let release = {
 				d: 0.822,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 7.05,
 				ty: 16.15,
 				a: 0.599,
@@ -337,14 +337,14 @@ export let release = {
 				d: 0.625,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.95,
 				ty: 17.75,
 				l: 0
 			}
 		},
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 13.4,
 				ty: 15.75,
 				a: 0.823,
@@ -353,7 +353,7 @@ export let release = {
 				d: 0.823,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 11,
 				ty: 18.25,
 				a: 0.591,
@@ -362,7 +362,7 @@ export let release = {
 				d: 0.617,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13,
 				ty: 20,
 				l: 11
@@ -392,7 +392,7 @@ export let release = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 8.1,
 				ty: 15.45,
 				a: 0.81,
@@ -428,7 +428,7 @@ export let release = {
 				d: 0.94,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 7.1,
 				ty: 13.75,
 				a: 0.73,
@@ -437,7 +437,7 @@ export let release = {
 				d: 0.73,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 9.35,
 				ty: 13.5,
 				a: 0.823,
@@ -446,7 +446,7 @@ export let release = {
 				d: 0.823,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 7.05,
 				ty: 16.05,
 				a: 0.568,
@@ -455,14 +455,14 @@ export let release = {
 				d: 0.593,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.95,
 				ty: 17.75,
 				l: 0
 			}
 		},
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 9.9,
 				ty: 15.9,
 				a: -0.203,
@@ -471,7 +471,7 @@ export let release = {
 				d: -0.203,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 10.7,
 				ty: 18.6,
 				a: 0.746,
@@ -480,7 +480,7 @@ export let release = {
 				d: 0.778,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13,
 				ty: 20,
 				l: 11
@@ -510,7 +510,7 @@ export let release = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 6.05,
 				ty: 15.85,
 				a: 0.991,
@@ -546,7 +546,7 @@ export let release = {
 				d: 0.943,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5.65,
 				ty: 14.25,
 				a: 0.948,
@@ -555,7 +555,7 @@ export let release = {
 				d: 0.948,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 9.05,
 				ty: 13.95,
 				a: 0.822,
@@ -564,7 +564,7 @@ export let release = {
 				d: 0.822,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 6.55,
 				ty: 16.4,
 				a: 0.74,
@@ -573,14 +573,14 @@ export let release = {
 				d: 0.772,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.95,
 				ty: 17.75,
 				l: 0
 			}
 		},
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 8.75,
 				ty: 15.85,
 				a: -0.562,
@@ -589,7 +589,7 @@ export let release = {
 				d: -0.562,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 10.55,
 				ty: 18.65,
 				a: 0.791,
@@ -598,7 +598,7 @@ export let release = {
 				d: 0.825,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13,
 				ty: 20,
 				l: 11
@@ -628,7 +628,7 @@ export let release = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 3.9,
 				ty: 16.35,
 				a: 0.931,
@@ -664,7 +664,7 @@ export let release = {
 				d: 0.947,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 4.15,
 				ty: 14.85,
 				a: 0.992,
@@ -673,7 +673,7 @@ export let release = {
 				d: 0.992,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 8.95,
 				ty: 14.15,
 				a: 0.823,
@@ -682,7 +682,7 @@ export let release = {
 				d: 0.823,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 6.45,
 				ty: 16.5,
 				a: 0.789,
@@ -691,14 +691,14 @@ export let release = {
 				d: 0.823,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.95,
 				ty: 17.75,
 				l: 0
 			}
 		},
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 8.75,
 				ty: 15.85,
 				a: -0.562,
@@ -707,7 +707,7 @@ export let release = {
 				d: -0.562,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 10.55,
 				ty: 18.65,
 				a: 0.791,
@@ -716,7 +716,7 @@ export let release = {
 				d: 0.825,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13,
 				ty: 20,
 				l: 11
@@ -746,7 +746,7 @@ export let release = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 3.9,
 				ty: 16.35,
 				a: 0.931,
@@ -782,7 +782,7 @@ export let release = {
 				d: 0.947,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 4.15,
 				ty: 14.85,
 				a: 0.992,
@@ -791,7 +791,7 @@ export let release = {
 				d: 0.992,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 8.95,
 				ty: 14.15,
 				a: 0.823,
@@ -800,7 +800,7 @@ export let release = {
 				d: 0.823,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 6.45,
 				ty: 16.5,
 				a: 0.789,
@@ -809,14 +809,14 @@ export let release = {
 				d: 0.823,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.95,
 				ty: 17.75,
 				l: 0
 			}
 		},
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 8.75,
 				ty: 15.85,
 				a: -0.562,
@@ -825,7 +825,7 @@ export let release = {
 				d: -0.562,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 10.55,
 				ty: 18.65,
 				a: 0.791,
@@ -834,7 +834,7 @@ export let release = {
 				d: 0.825,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13,
 				ty: 20,
 				l: 11
@@ -864,7 +864,7 @@ export let release = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 3.9,
 				ty: 16.35,
 				a: 0.931,
@@ -900,7 +900,7 @@ export let release = {
 				d: 0.947,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 4.15,
 				ty: 14.85,
 				a: 0.992,
@@ -909,7 +909,7 @@ export let release = {
 				d: 0.992,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 8.95,
 				ty: 14.15,
 				a: 0.823,
@@ -918,7 +918,7 @@ export let release = {
 				d: 0.823,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 6.45,
 				ty: 16.5,
 				a: 0.789,
@@ -927,14 +927,14 @@ export let release = {
 				d: 0.823,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.95,
 				ty: 17.75,
 				l: 0
 			}
 		},
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 8.75,
 				ty: 15.85,
 				a: -0.562,
@@ -943,7 +943,7 @@ export let release = {
 				d: -0.562,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 10.55,
 				ty: 18.65,
 				a: 0.791,
@@ -952,7 +952,7 @@ export let release = {
 				d: 0.825,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13,
 				ty: 20,
 				l: 11
@@ -982,7 +982,7 @@ export let release = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 3.9,
 				ty: 16.35,
 				a: 0.931,
@@ -1018,7 +1018,7 @@ export let release = {
 				d: 0.947,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 4.15,
 				ty: 14.85,
 				a: 0.992,
@@ -1027,7 +1027,7 @@ export let release = {
 				d: 0.992,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 8.95,
 				ty: 14.15,
 				a: 0.823,
@@ -1036,7 +1036,7 @@ export let release = {
 				d: 0.823,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 6.45,
 				ty: 16.5,
 				a: 0.789,
@@ -1045,7 +1045,7 @@ export let release = {
 				d: 0.823,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.95,
 				ty: 17.75,
 				l: 0

@@ -1,6 +1,6 @@
 // @ts-check
 
-export let land = {
+export const land = {
 	id: 'smog_land',
 	callbacks: {
 		0: [
@@ -11,7 +11,7 @@ export let land = {
 	},
 	frames: [
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 12.35,
 				ty: 14.85,
 				a: 0.272,
@@ -20,7 +20,7 @@ export let land = {
 				d: 0.272,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 11.95,
 				ty: 18,
 				a: 0.603,
@@ -29,7 +29,7 @@ export let land = {
 				d: 0.629,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13.8,
 				ty: 19.7,
 				a: 0.939,
@@ -57,7 +57,7 @@ export let land = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 6.95,
 				ty: 12.95,
 				a: 0.961,
@@ -89,7 +89,7 @@ export let land = {
 				d: 0.764,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5.65,
 				ty: 11.9,
 				a: 0.919,
@@ -98,7 +98,7 @@ export let land = {
 				d: 0.919,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 8.75,
 				ty: 13.5,
 				a: 0.713,
@@ -107,7 +107,7 @@ export let land = {
 				d: 0.713,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 6.95,
 				ty: 15.65,
 				a: 0.564,
@@ -116,7 +116,7 @@ export let land = {
 				d: 0.588,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.45,
 				ty: 17.15,
 				a: 0.919,
@@ -127,7 +127,7 @@ export let land = {
 			}
 		},
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 13.15,
 				ty: 15.55,
 				a: 0.419,
@@ -136,7 +136,7 @@ export let land = {
 				d: 0.419,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 12.2,
 				ty: 18.75,
 				a: 0.734,
@@ -145,7 +145,7 @@ export let land = {
 				d: 0.766,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 14.45,
 				ty: 20.1,
 				a: 0.987,
@@ -173,7 +173,7 @@ export let land = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 7,
 				ty: 14.75,
 				a: 0.961,
@@ -205,7 +205,7 @@ export let land = {
 				d: 0.892,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5.65,
 				ty: 13.65,
 				a: 0.918,
@@ -214,7 +214,7 @@ export let land = {
 				d: 0.918,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 8.85,
 				ty: 14.45,
 				a: 0.925,
@@ -223,7 +223,7 @@ export let land = {
 				d: 0.925,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 6.25,
 				ty: 15.75,
 				a: 0.721,
@@ -232,7 +232,7 @@ export let land = {
 				d: 0.752,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.35,
 				ty: 17.2,
 				a: 0.984,
@@ -243,7 +243,7 @@ export let land = {
 			}
 		},
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 13.65,
 				ty: 15.95,
 				a: 0.505,
@@ -252,7 +252,7 @@ export let land = {
 				d: 0.505,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 12.4,
 				ty: 19.2,
 				a: 0.802,
@@ -261,7 +261,7 @@ export let land = {
 				d: 0.836,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 14.8,
 				ty: 20.35,
 				a: 0.999,
@@ -289,7 +289,7 @@ export let land = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 7.05,
 				ty: 16.6,
 				a: 0.961,
@@ -321,7 +321,7 @@ export let land = {
 				d: 0.972,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5.65,
 				ty: 15.4,
 				a: 0.919,
@@ -330,7 +330,7 @@ export let land = {
 				d: 0.919,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 9,
 				ty: 15,
 				a: 0.987,
@@ -339,7 +339,7 @@ export let land = {
 				d: 0.987,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 5.85,
 				ty: 15.85,
 				a: 0.797,
@@ -348,7 +348,7 @@ export let land = {
 				d: 0.832,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.25,
 				ty: 17.2,
 				a: 0.999,
@@ -359,7 +359,7 @@ export let land = {
 			}
 		},
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 13.8,
 				ty: 16.15,
 				a: 0.535,
@@ -368,7 +368,7 @@ export let land = {
 				d: 0.535,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 12.45,
 				ty: 19.25,
 				a: 0.822,
@@ -377,7 +377,7 @@ export let land = {
 				d: 0.857,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 15,
 				ty: 20.55,
 				l: 11
@@ -401,7 +401,7 @@ export let land = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 7.2,
 				ty: 18.4,
 				a: 0.961,
@@ -425,7 +425,7 @@ export let land = {
 				ty: 16.65,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5.65,
 				ty: 17.15,
 				a: 0.919,
@@ -434,7 +434,7 @@ export let land = {
 				d: 0.919,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 9.05,
 				ty: 15.2,
 				a: 0.997,
@@ -443,7 +443,7 @@ export let land = {
 				d: 0.997,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 5.7,
 				ty: 15.95,
 				a: 0.822,
@@ -452,14 +452,14 @@ export let land = {
 				d: 0.857,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.25,
 				ty: 17.25,
 				l: 0
 			}
 		},
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 13.25,
 				ty: 16.3,
 				a: 0.708,
@@ -468,7 +468,7 @@ export let land = {
 				d: 0.708,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 11.35,
 				ty: 18.95,
 				a: 0.822,
@@ -477,7 +477,7 @@ export let land = {
 				d: 0.857,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13.9,
 				ty: 20.25,
 				l: 11
@@ -501,7 +501,7 @@ export let land = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 7.25,
 				ty: 17.95,
 				a: 0.961,
@@ -525,7 +525,7 @@ export let land = {
 				ty: 16.15,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5.65,
 				ty: 16.65,
 				a: 0.919,
@@ -534,7 +534,7 @@ export let land = {
 				d: 0.919,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 9,
 				ty: 14.65,
 				a: 0.932,
@@ -543,7 +543,7 @@ export let land = {
 				d: 0.932,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 6.1,
 				ty: 16.3,
 				a: 0.822,
@@ -552,14 +552,14 @@ export let land = {
 				d: 0.857,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.65,
 				ty: 17.55,
 				l: 0
 			}
 		},
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 13.05,
 				ty: 16.45,
 				a: 0.796,
@@ -568,7 +568,7 @@ export let land = {
 				d: 0.796,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 10.65,
 				ty: 18.75,
 				a: 0.822,
@@ -577,7 +577,7 @@ export let land = {
 				d: 0.857,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13.2,
 				ty: 20.05,
 				l: 11
@@ -601,7 +601,7 @@ export let land = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 7.25,
 				ty: 17.5,
 				a: 0.961,
@@ -625,7 +625,7 @@ export let land = {
 				ty: 15.7,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5.65,
 				ty: 16.2,
 				a: 0.919,
@@ -634,7 +634,7 @@ export let land = {
 				d: 0.919,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 8.95,
 				ty: 14.25,
 				a: 0.855,
@@ -643,7 +643,7 @@ export let land = {
 				d: 0.855,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 6.3,
 				ty: 16.45,
 				a: 0.822,
@@ -652,14 +652,14 @@ export let land = {
 				d: 0.857,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.85,
 				ty: 17.7,
 				l: 0
 			}
 		},
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 12.9,
 				ty: 16.45,
 				a: 0.824,
@@ -668,7 +668,7 @@ export let land = {
 				d: 0.824,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 10.45,
 				ty: 18.7,
 				a: 0.822,
@@ -677,7 +677,7 @@ export let land = {
 				d: 0.857,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13,
 				ty: 20,
 				l: 11
@@ -701,7 +701,7 @@ export let land = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 7.2,
 				ty: 16.95,
 				a: 0.961,
@@ -725,7 +725,7 @@ export let land = {
 				ty: 15.2,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5.65,
 				ty: 15.7,
 				a: 0.919,
@@ -734,7 +734,7 @@ export let land = {
 				d: 0.919,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 8.85,
 				ty: 14.2,
 				a: 0.824,
@@ -743,7 +743,7 @@ export let land = {
 				d: 0.824,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 6.4,
 				ty: 16.45,
 				a: 0.822,
@@ -752,7 +752,7 @@ export let land = {
 				d: 0.857,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.95,
 				ty: 17.75,
 				l: 0

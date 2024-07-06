@@ -1,10 +1,10 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'smog_hit',
 	frames: [
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 13.75,
 				ty: 15.75,
 				a: 0.824,
@@ -13,7 +13,7 @@ export let hit = {
 				d: 0.824,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 11.1,
 				ty: 18.2,
 				a: 0.666,
@@ -22,7 +22,7 @@ export let hit = {
 				d: 0.695,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 13,
 				ty: 20,
 				l: 11
@@ -47,7 +47,7 @@ export let hit = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 9.4,
 				ty: 14.45,
 				a: 0.485,
@@ -83,7 +83,7 @@ export let hit = {
 				d: 0.866,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 8.25,
 				ty: 13.1,
 				a: 0.119,
@@ -92,7 +92,7 @@ export let hit = {
 				d: 0.119,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 10.75,
 				ty: 14.45,
 				a: 0.997,
@@ -101,7 +101,7 @@ export let hit = {
 				d: 0.997,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 7.55,
 				ty: 15.2,
 				a: 0.465,
@@ -110,7 +110,7 @@ export let hit = {
 				d: 0.485,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 9.1,
 				ty: 17.55,
 				a: 0.866,

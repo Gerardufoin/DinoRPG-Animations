@@ -231,5 +231,20 @@ export const mapping_dino = {
 	'Symbol 3036_p3': 'body',
 	'Symbol 3081_p4a': 'l_arm',
 	'Symbol 3084_special': 'l_sideburn_sp',
-	'Symbol 3192_p7': 'head'
+	'Symbol 3192_p7': 'head',
+	// 3381 smog
+	'Symbol 3200_p9b': 'r_leg',
+	'Symbol 3203': 'r_arm',
+	'Symbol 3210': 'body',
+	'Symbol 3213': 'l_arm',
+	'Symbol 3229_p8': 'tail',
+	'Symbol 3248_p7': 'back',
+	'Symbol 3256_p9a': 'l_leg',
+	'Symbol 3267_p3b': 'r_eye',
+	'Symbol 3307_p4': 'head',
+	'Symbol 3309_col1': 'neck',
+	'Symbol 3346_p5': 'nose',
+	'Symbol 3353_p6': 'mouth',
+	'Symbol 3376_p3a': 'l_eye',
+	'Symbol 3380_special': 'sp_head'
 };

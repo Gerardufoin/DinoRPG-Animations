@@ -18,7 +18,7 @@ const wings = {
 	]
 };
 
-export let parts = {
+export const parts_small = {
 	// 1473 _p8
 	tail: [
 		{

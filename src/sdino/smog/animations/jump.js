@@ -1,10 +1,10 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'smog_jump',
 	frames: [
 		{
-			left_foreleg: {
+			l_foreleg: {
 				tx: 10.5,
 				ty: 13,
 				a: -0.078,
@@ -13,7 +13,7 @@ export let jump = {
 				d: -0.078,
 				l: 13
 			},
-			left_leg: {
+			l_leg: {
 				tx: 11.25,
 				ty: 16.6,
 				a: 0.232,
@@ -22,7 +22,7 @@ export let jump = {
 				d: 0.243,
 				l: 12
 			},
-			left_foot: {
+			l_foot: {
 				tx: 12.3,
 				ty: 18.65,
 				a: 0.707,
@@ -50,7 +50,7 @@ export let jump = {
 				d: 1.06,
 				l: 8
 			},
-			left_arm: {
+			l_arm: {
 				tx: 6.8,
 				ty: 10.2,
 				a: 0.961,
@@ -82,7 +82,7 @@ export let jump = {
 				d: 0.5,
 				l: 4
 			},
-			right_arm: {
+			r_arm: {
 				tx: 5.65,
 				ty: 9.3,
 				a: 0.919,
@@ -91,7 +91,7 @@ export let jump = {
 				d: 0.919,
 				l: 3
 			},
-			right_foreleg: {
+			r_foreleg: {
 				tx: 8.35,
 				ty: 11.35,
 				a: -0.078,
@@ -100,7 +100,7 @@ export let jump = {
 				d: -0.078,
 				l: 2
 			},
-			right_leg: {
+			r_leg: {
 				tx: 8.55,
 				ty: 15.3,
 				a: 0.125,
@@ -109,7 +109,7 @@ export let jump = {
 				d: 0.13,
 				l: 1
 			},
-			right_foot: {
+			r_foot: {
 				tx: 8.75,
 				ty: 17.05,
 				a: 0.615,
