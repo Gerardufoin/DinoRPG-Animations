@@ -79,7 +79,7 @@ const fightVersion = [
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: 'I9T1Yt9wqq4Rx010'
+					gfx: 'J9T1Yt9wqq4Rx010'
 				}
 			},
 			{
@@ -114,7 +114,7 @@ const fightVersion = [
 			},
 			{
 				action: 'Announce',
-				message: 'Quetzalcoatl',
+				message: 'Hercobulus',
 				fid: 0
 			},
 			{
@@ -122,7 +122,7 @@ const fightVersion = [
 				skill: 'Invoc',
 				details: {
 					fid: 0,
-					anim: 'quetza'
+					anim: 'herco'
 				}
 			}
 			/*{

@@ -15,6 +15,7 @@ import { Fujin } from '../../../parts/skills/invocations/Fujin.js';
 import { Goku } from '../../../parts/skills/invocations/Goku.js';
 import { Golem } from '../../../parts/skills/invocations/Golem.js';
 import { Hades } from '../../../parts/skills/invocations/Hades.js';
+import { Hercobulus } from '../../../parts/skills/invocations/Hercobulus.js';
 import { Ifrit } from '../../../parts/skills/invocations/Ifrit.js';
 import { Invocation } from '../../../parts/skills/invocations/Invocation.js';
 import { Leviathan } from '../../../parts/skills/invocations/Leviathan.js';
@@ -109,6 +110,7 @@ export class GrInvocation extends GroupEffect {
 				this._invoc = new Quetzalcoatl(this._scene);
 				break;
 			case 'herco':
+				this._invoc = new Hercobulus(this._scene);
 				break;
 			case 'bigma':
 				break;
