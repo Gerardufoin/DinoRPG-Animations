@@ -265,8 +265,8 @@ export const parts_big = {
 					{
 						ref: ref.triceragon.special_saddle_highlight,
 						transform: {
-							tx: 22.35,
-							ty: 27.25
+							tx: -8.55,
+							ty: -35.45
 						},
 						blend: BLEND_MODES.OVERLAY,
 						alpha: 0.47
