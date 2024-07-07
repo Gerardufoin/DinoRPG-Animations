@@ -114,7 +114,7 @@ const fightVersion = [
 			},
 			{
 				action: 'Announce',
-				message: 'Hercobulus',
+				message: 'Big Mama',
 				fid: 0
 			},
 			{
@@ -122,7 +122,7 @@ const fightVersion = [
 				skill: 'Invoc',
 				details: {
 					fid: 0,
-					anim: 'herco'
+					anim: 'bigma'
 				}
 			}
 			/*{

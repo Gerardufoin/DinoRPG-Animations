@@ -58,12 +58,13 @@ export class Sismic extends Phys2D {
 	 * @param {number} x The x coordinate.
 	 * @param {number} y The y coordinate.
 	 * @param {number} yScale The y scale of the shockwave. Use it to angle it with the ground.
+	 * @param {number} size The size of the shockwave. 1 by default.
 	 */
-	constructor(scene, x, y, yScale) {
+	constructor(scene, x, y, yScale, size = 1) {
 		super(new Container(), scene);
 		for (let i = 0; i < Sismic.WavesInfos.length; ++i) {
 			this._waves.push(new Container());
-			this._waves[i].addChild(new Asset(ref.fx.shockwave));
+			this._waves[i].addChild(new Asset(ref.fx.shockwave, size));
 			this._waves[i].visible = false;
 			this._root.addChild(this._waves[i]);
 		}

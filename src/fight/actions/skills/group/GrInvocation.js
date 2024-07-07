@@ -7,6 +7,7 @@ import { Fighter } from '../../../Fighter.js';
 import { Scene } from '../../../Scene.js';
 import { Timer } from '../../../Timer.js';
 import { BeehiveQueen } from '../../../parts/skills/invocations/BeehiveQueen.js';
+import { BigMama } from '../../../parts/skills/invocations/BigMama.js';
 import { BlueWhale } from '../../../parts/skills/invocations/BlueWhale.js';
 import { Buddah } from '../../../parts/skills/invocations/Buddah.js';
 import { Djinn } from '../../../parts/skills/invocations/Djinn.js';
@@ -113,6 +114,7 @@ export class GrInvocation extends GroupEffect {
 				this._invoc = new Hercobulus(this._scene);
 				break;
 			case 'bigma':
+				this._invoc = new BigMama(this._scene);
 				break;
 			default:
 				console.error(`[GrInvocation] Invocation '${anim} unknown.'`);

@@ -72,22 +72,17 @@ function addDinoz(data, showOrigin = false) {
 	addFlashPreview(data, dinoz.getChkCode(), container);
 }
 
-addDinoz('K9kA0yg7yqhqQ000');
-addDinoz('K9KYPwEP8OroH000');
-addDinoz('K9cEtpgiKiwOI000');
-addDinoz('K9iyL99UFx2Bj000');
-
 // Dragon Jr
 addDinoz('09T1Yt9wqq4Rx000', true);
 
 // Moueffe
-/*addDinoz('0813611605200000', true);
+addDinoz('0813611605200000', true);
 addDinoz('09w7y7qqpdhld000');
 addDinoz('09adQBgO8T065000');
 addDinoz('09vGg4LW1S9fn000');
 addDinoz('0A8uYQDU0FywV000'); // Krapassa
 addDinoz('0AcokGzWsf6WP000'); // Shamak
-addDinoz('0An2HcXN9sl3m000'); // Krazablue*/
+addDinoz('0An2HcXN9sl3m000'); // Krazablue
 // Pigmou
 /*addDinoz('19hot0hFbItLS000', true);
 addDinoz('199zX1Jn1zGXG000');
@@ -244,6 +239,10 @@ addDinoz('J9bs4pEZMwUTj130');
 addDinoz('J9ZWi50KhhgW4200');
 addDinoz('J9aOkvDj21xBA000');*/
 // Triceragon
-addDinoz('K9jZyXBMazmTs000', true);
+/*addDinoz('K9jZyXBMazmTs000', true);
 addDinoz('K91liNj083KJY000');
 addDinoz('K99LpvDPJfNdO010');
+addDinoz('K9kA0yg7yqhqQ000');
+addDinoz('K9KYPwEP8OroH000');
+addDinoz('K9cEtpgiKiwOI000');
+addDinoz('K9iyL99UFx2Bj000');*/
