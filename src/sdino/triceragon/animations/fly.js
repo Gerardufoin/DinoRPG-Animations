@@ -1,10 +1,10 @@
 // @ts-check
 
-export let fly = {
+export const fly = {
 	id: 'triceragon_fly',
 	frames: [
 		{
-			left_horn: {
+			l_horn: {
 				tx: -15.2,
 				ty: 0.35,
 				a: -0.143,
@@ -13,7 +13,7 @@ export let fly = {
 				d: -0.143,
 				l: 13
 			},
-			right_horn: {
+			r_horn: {
 				tx: -17.9,
 				ty: 1.15,
 				a: -0.254,
@@ -31,7 +31,7 @@ export let fly = {
 				d: 1.239,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: -13.85,
 				ty: 3.7,
 				a: 1.035,
@@ -58,7 +58,7 @@ export let fly = {
 				d: 1.21,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -16.85,
 				ty: 3.3,
 				a: -1.035,
@@ -76,7 +76,7 @@ export let fly = {
 				d: 1.061,
 				l: 6
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -5.45,
 				ty: 7.55,
 				a: 1.076,
@@ -85,7 +85,7 @@ export let fly = {
 				d: 1.019,
 				l: 5
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.35,
 				ty: 6.45,
 				a: 0.977,
@@ -103,7 +103,7 @@ export let fly = {
 				d: 1.239,
 				l: 3
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -7.8,
 				ty: 5.7,
 				a: 1.057,
@@ -112,7 +112,7 @@ export let fly = {
 				d: 0.999,
 				l: 2
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -1.9,
 				ty: 3.95,
 				a: 1.208,

@@ -79,7 +79,7 @@ const fightVersion = [
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: 'J9T1Yt9wqq4Rx010'
+					gfx: 'K9T1Yt9wqq4Rx010'
 				}
 			},
 			{

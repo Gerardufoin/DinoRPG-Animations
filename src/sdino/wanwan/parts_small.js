@@ -42,19 +42,24 @@ export const parts_small = {
 				}
 			]
 		},
-		// 714
+		// 714 special
 		{
-			special: true,
-			colorIdx: 1,
-			ref: ref.wanwan.tail_special,
-			transform: {
-				tx: -8.0,
-				ty: -12.3,
-				a: 1.281,
-				d: 1.281,
-				b: -0.191,
-				c: 0.191
-			}
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				{
+					colorIdx: 1,
+					ref: ref.wanwan.tail_special,
+					transform: {
+						tx: -8.0,
+						ty: -12.3,
+						a: 1.281,
+						d: 1.281,
+						b: -0.191,
+						c: 0.191
+					}
+				}
+			]
 		}
 	],
 	// 730 p6
@@ -181,14 +186,19 @@ export const parts_small = {
 				}
 			]
 		},
-		// 752
+		// 752 special
 		{
-			special: true,
-			ref: ref.wanwan.eye_special,
-			transform: {
-				tx: -3.8,
-				ty: -2.7
-			}
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				{
+					ref: ref.wanwan.eye_special,
+					transform: {
+						tx: -3.8,
+						ty: -2.7
+					}
+				}
+			]
 		}
 	],
 	// 762 p9

@@ -246,5 +246,17 @@ export const mapping_dino = {
 	'Symbol 3346_p5': 'nose',
 	'Symbol 3353_p6': 'mouth',
 	'Symbol 3376_p3a': 'l_eye',
-	'Symbol 3380_special': 'sp_head'
+	'Symbol 3380_special': 'sp_head',
+	// 3573 triceragon
+	'Symbol 3397_p8': 'tail',
+	'Symbol 3415': 'body',
+	'Symbol 3434': 'sp_saddle',
+	'Symbol 3437': 'sp_handles',
+	'Symbol 3476_p5': 'frill',
+	'Symbol 3487_p3b': 'r_eye',
+	'Symbol 3504_p6b': 'r_horn',
+	'Symbol 3518_p4': 'mouth',
+	'Symbol 3538_p6a': 'l_horn',
+	'Symbol 3557_p6c': 'm_horn',
+	'Symbol 3572_p3a': 'l_eye'
 };

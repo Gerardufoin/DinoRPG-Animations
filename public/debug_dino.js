@@ -72,6 +72,11 @@ function addDinoz(data, showOrigin = false) {
 	addFlashPreview(data, dinoz.getChkCode(), container);
 }
 
+addDinoz('K9kA0yg7yqhqQ000');
+addDinoz('K9KYPwEP8OroH000');
+addDinoz('K9cEtpgiKiwOI000');
+addDinoz('K9iyL99UFx2Bj000');
+
 // Dragon Jr
 addDinoz('09T1Yt9wqq4Rx000', true);
 
@@ -231,18 +236,14 @@ addDinoz('I9nARxWpqISin000');
 addDinoz('I9va7JcxyW3gZ000');
 addDinoz('I9kry1w0kSCBI000');*/
 // Smog
-addDinoz('J9UcHO7iWWtK7000', true);
+/*addDinoz('J9UcHO7iWWtK7000', true);
 addDinoz('J9TjRKj21pRTb110');
 addDinoz('J9RcpKdaIoaYp020');
 addDinoz('J94Eo4Awkpudv000');
 addDinoz('J9bs4pEZMwUTj130');
 addDinoz('J9ZWi50KhhgW4200');
-addDinoz('J9aOkvDj21xBA000');
+addDinoz('J9aOkvDj21xBA000');*/
 // Triceragon
-/*addDinoz('K9jZyXBMazmTs000', true);
+addDinoz('K9jZyXBMazmTs000', true);
 addDinoz('K91liNj083KJY000');
 addDinoz('K99LpvDPJfNdO010');
-addDinoz('K9kA0yg7yqhqQ000');
-addDinoz('K9KYPwEP8OroH000');
-addDinoz('K9cEtpgiKiwOI000');
-addDinoz('K9iyL99UFx2Bj000');*/

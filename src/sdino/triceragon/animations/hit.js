@@ -1,10 +1,10 @@
 // @ts-check
 
-export let hit = {
+export const hit = {
 	id: 'triceragon_hit',
 	frames: [
 		{
-			left_horn: {
+			l_horn: {
 				tx: 5.4,
 				ty: -0.4,
 				a: -0.754,
@@ -13,7 +13,7 @@ export let hit = {
 				d: 0.754,
 				l: 13
 			},
-			right_horn: {
+			r_horn: {
 				tx: 10,
 				ty: -0.75,
 				a: -0.107,
@@ -31,7 +31,7 @@ export let hit = {
 				d: 1.226,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: 5.3,
 				ty: 2.65,
 				a: -1.265,
@@ -54,7 +54,7 @@ export let hit = {
 				d: 1.245,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: 10.4,
 				ty: 1.45,
 				a: 1.066,
@@ -68,7 +68,7 @@ export let hit = {
 				d: 1.066,
 				l: 6
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -1.35,
 				ty: 10.05,
 				a: 1.359,
@@ -77,7 +77,7 @@ export let hit = {
 				d: 1.342,
 				l: 5
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 3.45,
 				ty: 7.45,
 				a: 1.208,
@@ -93,7 +93,7 @@ export let hit = {
 				d: 1.245,
 				l: 3
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -6,
 				ty: 5.15,
 				a: 0.948,
@@ -102,7 +102,7 @@ export let hit = {
 				d: 0.883,
 				l: 2
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: 0.05,
 				ty: 5.75,
 				a: 1.202,

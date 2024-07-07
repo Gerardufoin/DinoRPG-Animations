@@ -139,15 +139,20 @@ export const parts_small = {
 			colorIdx: 0,
 			ref: ref.sirain.leg
 		},
-		// 564
+		// 564 special
 		{
-			special: true,
-			colorIdx: 0,
-			ref: ref.sirain.leg_special,
-			transform: {
-				tx: -2.85,
-				ty: -2.5
-			}
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				{
+					colorIdx: 0,
+					ref: ref.sirain.leg_special,
+					transform: {
+						tx: -2.85,
+						ty: -2.5
+					}
+				}
+			]
 		}
 	],
 	// 571
@@ -157,15 +162,20 @@ export const parts_small = {
 			colorIdx: 0,
 			ref: ref.sirain.body
 		},
-		// 569
+		// 569 special
 		{
-			special: true,
-			colorIdx: 3,
-			ref: ref.sirain.body_special,
-			transform: {
-				tx: -5.75,
-				ty: -17.05
-			}
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				{
+					colorIdx: 3,
+					ref: ref.sirain.body_special,
+					transform: {
+						tx: -5.75,
+						ty: -17.05
+					}
+				}
+			]
 		}
 	],
 	// 578
@@ -261,16 +271,21 @@ export const parts_small = {
 		{
 			ref: ref.sirain.head_highlight
 		},
-		// 584
+		// 584 special
 		{
-			special: true,
-			colorIdx: 0,
-			blend: BLEND_MODES.MULTIPLY,
-			ref: ref.sirain.head_special,
-			transform: {
-				tx: -2.8,
-				ty: -2.9
-			}
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				{
+					colorIdx: 0,
+					blend: BLEND_MODES.MULTIPLY,
+					ref: ref.sirain.head_special,
+					transform: {
+						tx: -2.8,
+						ty: -2.9
+					}
+				}
+			]
 		}
 	],
 	// 589

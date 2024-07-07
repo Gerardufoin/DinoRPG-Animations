@@ -145,7 +145,7 @@ export class PartManager {
 	 * @returns {Animation | null} A PixiJS container representing the element.
 	 */
 	static getElement(part, partsDetail, palette, scale, scaling, parentTransform = undefined) {
-		if (!part.ref || (part.special && (partsDetail.length <= 15 || partsDetail[15] <= 0))) {
+		if (!part.ref) {
 			return null;
 		}
 

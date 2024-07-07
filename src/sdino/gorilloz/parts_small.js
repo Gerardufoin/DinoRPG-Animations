@@ -172,14 +172,19 @@ export const parts_small = {
 			]
 		},
 		{
-			special: true,
-			ref: ref.gorilloz.special,
-			transform: {
-				tx: -6.9,
-				ty: -4.3,
-				a: 0.169,
-				d: 0.169
-			}
+			partIdx: 15,
+			frames: [-1, 0],
+			parts: [
+				{
+					ref: ref.gorilloz.special,
+					transform: {
+						tx: -6.9,
+						ty: -4.3,
+						a: 0.169,
+						d: 0.169
+					}
+				}
+			]
 		}
 	],
 	// 693 p3

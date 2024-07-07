@@ -55,6 +55,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/dino/LIBRARY/Symbol 2893.xml', '_sub', undefined, 3); // toufufu
 //parser.parse('./resources/dino/LIBRARY/Symbol 3193.xml', '_sub', undefined, 3); // quetzu
 //parser.parse('./resources/dino/LIBRARY/Symbol 3381.xml', '_sub', undefined, 3); // smog
+//parser.parse('./resources/dino/LIBRARY/Symbol 3573.xml', '_sub', undefined, 3); // triceragon
 
 //SMONSTER
 //parser.parse('./resources/smonster/LIBRARY/Symbol 4089.xml', 'smonster', undefined, 1); // smonster

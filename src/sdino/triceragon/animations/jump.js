@@ -1,10 +1,10 @@
 // @ts-check
 
-export let jump = {
+export const jump = {
 	id: 'triceragon_jump',
 	frames: [
 		{
-			left_horn: {
+			l_horn: {
 				tx: -7.75,
 				ty: -1.55,
 				a: 0.872,
@@ -13,7 +13,7 @@ export let jump = {
 				d: 0.872,
 				l: 13
 			},
-			right_horn: {
+			r_horn: {
 				tx: -12.15,
 				ty: -2.65,
 				a: 0.236,
@@ -31,7 +31,7 @@ export let jump = {
 				d: 1.173,
 				l: 11
 			},
-			left_eye: {
+			l_eye: {
 				tx: -8.15,
 				ty: 1.5,
 				a: 1.05,
@@ -58,7 +58,7 @@ export let jump = {
 				d: 1.227,
 				l: 8
 			},
-			right_eye: {
+			r_eye: {
 				tx: -12.95,
 				ty: -0.55,
 				a: -1.05,
@@ -76,7 +76,7 @@ export let jump = {
 				d: 1.063,
 				l: 6
 			},
-			left_front_leg: {
+			l_f_leg: {
 				tx: -4.55,
 				ty: 10,
 				a: 1.143,
@@ -85,7 +85,7 @@ export let jump = {
 				d: 1.093,
 				l: 5
 			},
-			left_back_leg: {
+			l_b_leg: {
 				tx: 6.4,
 				ty: 7.9,
 				a: 0.505,
@@ -103,7 +103,7 @@ export let jump = {
 				d: 1.242,
 				l: 3
 			},
-			right_front_leg: {
+			r_f_leg: {
 				tx: -9.3,
 				ty: 7.55,
 				a: 0.992,
@@ -112,7 +112,7 @@ export let jump = {
 				d: 0.929,
 				l: 2
 			},
-			right_back_leg: {
+			r_b_leg: {
 				tx: -0.8,
 				ty: 5.7,
 				a: 1.208,

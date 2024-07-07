@@ -1,7 +1,7 @@
 // @ts-check
 import { ref } from '../references_small.js';
 
-export let parts = {
+export const parts_small = {
 	// 1569 p8
 	tail: [
 		{
