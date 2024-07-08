@@ -34,7 +34,7 @@ export class Snow extends Phys2D {
 		this._weight = 0.1 + Math.random() * 0.2;
 		this._fadeoutTimer = 10 + Math.random() * 20;
 		this._root.angle = Math.random() * 360;
-		this._fadeType = 0;
+		this._fadeScale = true;
 
 		this._root.filters = [];
 		// Color swap and scale if type 1

@@ -48,6 +48,6 @@ export class AuraLight extends Phys2D {
 		this._root.angle = Math.random() * 360;
 
 		this._fadeoutTimer = 10 + Math.random() * 10;
-		this._fadeType = 0;
+		this._fadeScale = true;
 	}
 }

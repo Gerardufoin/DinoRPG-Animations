@@ -28,6 +28,6 @@ export class Swamp extends Phys2D {
 		this._fadeoutTimer = 50;
 		this._sleep = Math.random() * 20;
 		this.setScale(0.5 + Math.random() * 2);
-		this._fadeType = 0;
+		this._fadeScale = true;
 	}
 }

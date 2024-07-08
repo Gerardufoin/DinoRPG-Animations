@@ -61,6 +61,7 @@ export class Slot extends Container {
 	 * @type {Filter}
 	 */
 	static EnergyBarColorFilter;
+
 	/**
 	 * Life bar and its components.
 	 * @type {LifeBar}
@@ -75,6 +76,11 @@ export class Slot extends Container {
 	 * Masked representation of the portrait.
 	 */
 	_portrait = new Container();
+	/**
+	 * Side of the slot.
+	 * True for left, false for right.
+	 */
+	_side;
 	/**
 	 * Keep track of the shaking direction of the portrait when damages are received.
 	 * @type {number}
@@ -94,18 +100,20 @@ export class Slot extends Container {
 
 	/**
 	 * Creates a new slot displaying the life, energy and portrait of an entity.
+	 * The slot stays hidden until the portrait is set.
 	 * @param {number} life The current life to display.
 	 * @param {number} maxLife The maximum amount of life.
 	 * @param {number | null} energy The current energy to display or null if there is no energy bar.
 	 * @param {number | null} maxEnergy The maximum amount of energy.
-	 * @param {Container} portrait Visual of the entity to display in the Slot.
+	 * @param {boolean} side The side of the slot. True for left, false for right.
 	 * @param {TweenManager} tm The Tween Manager of the Scene.
 	 */
-	constructor(life, maxLife, energy, maxEnergy, portrait, tm) {
+	constructor(life, maxLife, energy, maxEnergy, side, tm) {
 		super();
 		this._tweenManager = tm;
+		this._side = side;
 
-		this.createDisplay(portrait);
+		this.createDisplay();
 
 		if (!Slot.BorderGlowFilter) {
 			Slot.BorderGlowFilter = new GlowFilter({
@@ -125,6 +133,9 @@ export class Slot extends Container {
 		} else {
 			this.hideEnergyBar();
 		}
+
+		// Hides the slot until the portrait is set later on.
+		this.visible = false;
 	}
 
 	/**
@@ -208,10 +219,9 @@ export class Slot extends Container {
 	}
 
 	/**
-	 * Create the slot background and its bars.
-	 * @param {Container} portrait Visual of the entity linked to the slot.
+	 * Creates the slot background and its bars.
 	 */
-	createDisplay(portrait) {
+	createDisplay() {
 		this.addChild(new Asset(ref.scene.slot_bg));
 
 		this._lifeBar = {
@@ -259,7 +269,6 @@ export class Slot extends Container {
 		this._energyBar.bar.y += 33.95;
 		this.addChild(this._energyBar.bar);
 
-		this._portrait.addChild(portrait);
 		const masked = new Container();
 		const mask = new Asset(ref.scene.slot_mask);
 		masked.addChild(this._portrait);
@@ -269,25 +278,27 @@ export class Slot extends Container {
 	}
 
 	/**
-	 * Set the slot's portrait once the big dino render texture has finish generating.
+	 * Sets the slot's portrait once the big dino render texture has finish generating and makes the slot visible.
 	 * @param {Texture} tex The texture of the portrait to set.
 	 * @param {Rectangle} textureBounds The texture of the portrait to set.
 	 * @param {Rectangle} viewBounds The texture of the portrait to set.
-	 * @param {number} side The side of the fighter, 1 for left, -1 for right.
 	 */
-	setPortrait(tex, textureBounds, viewBounds, side) {
+	setPortrait(tex, textureBounds, viewBounds) {
 		this._portrait.removeChildren();
 		const portrait = new Sprite(tex);
 		const scale = 36 / (viewBounds.width == 0 ? 36 : viewBounds.width);
 		// Invert the sprite if on left side
-		if (side > 0) {
+		if (this._side) {
 			portrait.x = Math.round((viewBounds.x - textureBounds.x + viewBounds.width) * scale);
 		} else {
 			portrait.x = Math.round((textureBounds.x - viewBounds.x) * scale);
 		}
 		portrait.y = Math.round((textureBounds.y - viewBounds.y) * scale);
-		portrait.scale.set(scale * -side, scale);
+		portrait.scale.set(scale * (this._side ? -1 : 1), scale);
 		this._portrait.addChild(portrait);
+
+		// Reveal the slot.
+		this.visible = true;
 	}
 
 	/**

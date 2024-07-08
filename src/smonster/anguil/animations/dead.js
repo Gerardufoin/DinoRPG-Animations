@@ -2112,7 +2112,7 @@ export const dead = {
 				d: 0.995,
 				l: 10
 			},
-			head: {
+			head_dead: {
 				tx: -53.9,
 				ty: 21.5,
 				a: 0.995,
@@ -2121,7 +2121,7 @@ export const dead = {
 				d: 0.995,
 				l: 9
 			},
-			mouth: {
+			mouth_dead: {
 				tx: -52.95,
 				ty: 32.25,
 				a: 0.994,
@@ -2238,7 +2238,7 @@ export const dead = {
 				d: 0.992,
 				l: 10
 			},
-			head: {
+			head_dead: {
 				tx: -66.25,
 				ty: 36.55,
 				a: 0.992,
@@ -2247,7 +2247,7 @@ export const dead = {
 				d: 0.992,
 				l: 9
 			},
-			mouth: {
+			mouth_dead: {
 				tx: -67.3,
 				ty: 46.8,
 				a: 0.96,
@@ -2364,7 +2364,7 @@ export const dead = {
 				d: 0.994,
 				l: 10
 			},
-			head: {
+			head_dead: {
 				tx: -67.05,
 				ty: 36.25,
 				a: 0.994,
@@ -2373,7 +2373,7 @@ export const dead = {
 				d: 0.994,
 				l: 9
 			},
-			mouth: {
+			mouth_dead: {
 				tx: -67.8,
 				ty: 46.55,
 				a: 0.967,
@@ -2490,7 +2490,7 @@ export const dead = {
 				d: 0.995,
 				l: 10
 			},
-			head: {
+			head_dead: {
 				tx: -67.85,
 				ty: 35.85,
 				a: 0.995,
@@ -2499,7 +2499,7 @@ export const dead = {
 				d: 0.995,
 				l: 9
 			},
-			mouth: {
+			mouth_dead: {
 				tx: -68.2,
 				ty: 46.2,
 				a: 0.974,
@@ -2616,7 +2616,7 @@ export const dead = {
 				d: 0.996,
 				l: 10
 			},
-			head: {
+			head_dead: {
 				tx: -68.65,
 				ty: 35.55,
 				a: 0.996,
@@ -2625,7 +2625,7 @@ export const dead = {
 				d: 0.996,
 				l: 9
 			},
-			mouth: {
+			mouth_dead: {
 				tx: -68.8,
 				ty: 45.85,
 				a: 0.979,
@@ -2742,7 +2742,7 @@ export const dead = {
 				d: 0.996,
 				l: 10
 			},
-			head: {
+			head_dead: {
 				tx: -69.25,
 				ty: 35.8,
 				a: 0.996,
@@ -2751,7 +2751,7 @@ export const dead = {
 				d: 0.996,
 				l: 9
 			},
-			mouth: {
+			mouth_dead: {
 				tx: -69.75,
 				ty: 45.8,
 				a: 0.975,
@@ -2868,7 +2868,7 @@ export const dead = {
 				d: 0.995,
 				l: 10
 			},
-			head: {
+			head_dead: {
 				tx: -69.85,
 				ty: 36.05,
 				a: 0.995,
@@ -2877,7 +2877,7 @@ export const dead = {
 				d: 0.995,
 				l: 9
 			},
-			mouth: {
+			mouth_dead: {
 				tx: -70.6,
 				ty: 45.9,
 				a: 0.97,
@@ -2994,7 +2994,7 @@ export const dead = {
 				d: 0.994,
 				l: 10
 			},
-			head: {
+			head_dead: {
 				tx: -70.45,
 				ty: 36.35,
 				a: 0.994,
@@ -3003,7 +3003,7 @@ export const dead = {
 				d: 0.994,
 				l: 9
 			},
-			mouth: {
+			mouth_dead: {
 				tx: -71.5,
 				ty: 45.9,
 				a: 0.965,
@@ -3120,7 +3120,7 @@ export const dead = {
 				d: 0.992,
 				l: 10
 			},
-			head: {
+			head_dead: {
 				tx: -71.05,
 				ty: 36.55,
 				a: 0.992,
@@ -3129,7 +3129,7 @@ export const dead = {
 				d: 0.992,
 				l: 9
 			},
-			mouth: {
+			mouth_dead: {
 				tx: -72.1,
 				ty: 46.8,
 				a: 0.96,

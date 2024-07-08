@@ -73,10 +73,10 @@ export class Phys2D extends Entity {
 	 */
 	_fadeLimit = 10;
 	/**
-	 * Type of fadeout used.
-	 * @type {number}
+	 * Decides if the Part fades out through its alpha or through its scale.
+	 * @type {boolean}
 	 */
-	_fadeType;
+	_fadeScale = false;
 
 	/**
 	 * If the Phys2D is linked to an animator.
@@ -136,30 +136,14 @@ export class Phys2D extends Entity {
 			this._vr *= Math.pow(this._rFriction, timer.tmod);
 		}
 
-		// TODO: Clean the fadeout types if the others are not used.
 		if (this._fadeoutTimer > 0) {
 			this._fadeoutTimer -= timer.tmod;
 			if (this._fadeoutTimer < this._fadeLimit) {
 				var c = this._fadeoutTimer / this._fadeLimit;
-				switch (this._fadeType) {
-					case -1:
-					case 2:
-					case 4:
-						break;
-					case 0:
-						this._root.scale.set(c * this._scale);
-						break;
-					case 1:
-						this._root.visible = Math.round(this._fadeoutTimer) % 4 > 1;
-						break;
-					case 3:
-						this._root.scale.y = c * this._scale;
-						break;
-					case 5:
-						this._root.scale.x = c * this._scale;
-						break;
-					default:
-						this._root.alpha = c * this._alpha;
+				if (this._fadeScale) {
+					this._root.scale.set(c * this._scale);
+				} else {
+					this._root.alpha = c * this._alpha;
 				}
 			}
 			if (this._fadeoutTimer <= 0) {

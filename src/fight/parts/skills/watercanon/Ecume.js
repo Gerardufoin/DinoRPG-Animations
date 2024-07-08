@@ -27,7 +27,7 @@ export class Ecume extends Phys2D {
 		this._vy = -Math.random() * 3;
 		this._weight = 0.1 + Math.random() * 0.2;
 		this._fadeoutTimer = 10 + Math.random() * 10;
-		this._fadeType = 0;
+		this._fadeScale = true;
 		this._root.angle = Math.random() * 360;
 		this._vr = (Math.random() * 2 - 1) * 5;
 		this._rFriction = 0.98;

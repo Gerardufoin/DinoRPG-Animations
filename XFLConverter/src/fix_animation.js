@@ -142,6 +142,6 @@ const animation = [];
 //const result = mirrorTo(animation, 12, 'r_f_lower_leg');
 //let result = freezeFrame(freezeFrame(animation, 43, 'sp_10', 43), 43, 'sp_4', 43);
 //let result = linearMovement(linearMovement(animation, 'sp_4', 0, 9), 'sp_10', 0, 9);
-let result = changeLayers(animation, { l_f_leg: 11, l_nostril: 10, horn: 9, special: 8, l_eye: 7 });
+let result = changeLayers(animation, { frill: 10, l_eye: 11 });
 
 fs.writeFileSync('./results/animation_fix.txt', JSON.stringify(result, undefined, '\t'));

@@ -1,6 +1,6 @@
 // @ts-check
 // https://github.com/motion-twin/WebGamesArchives/blob/main/DinoRPG/gfx/fight/src/ac/Announce.hx
-import { Container, Graphics } from 'pixi.js';
+import { Container } from 'pixi.js';
 import { Fighter } from '../Fighter.js';
 import { Scene } from '../Scene.js';
 import { State } from '../State.js';
@@ -27,17 +27,7 @@ export class Announce extends State {
 	 * Scale of the portrait. Only applicable to dino and not sdino.
 	 * @type {number}
 	 */
-	static PORTRAIT_SCALE = 1; //0.7 for dino.swf;
-	/**
-	 * Width of the Fighter's portrait.
-	 * @type {number}
-	 */
-	static PORTRAIT_WIDTH = 35; //160 for dino.swf
-	/**
-	 * Height of the Fighter's portrait.
-	 * @type {number}
-	 */
-	static PORTRAIT_HEIGHT = 0; //150 for dino.swf
+	static PORTRAIT_SCALE = 0.7;
 	/**
 	 * The GlowFilter of the Fighter.
 	 * Storing it to prevent WebGL to create it each time.
@@ -138,30 +128,19 @@ export class Announce extends State {
 		};
 
 		// Portrait
-		if (this._fighter._portraitTexture) {
-			const portrait = new Sprite(this._fighter._portraitTexture);
+		if (this._fighter.announcePortrait) {
+			const portrait = new Sprite(this._fighter.announcePortrait);
 			portrait.anchor.set(1, 1);
-			portrait.scale.y = 0.7;
-			portrait.scale.x = -this._fighter.intSide * 0.7;
+			portrait.scale.y = Announce.PORTRAIT_SCALE;
+			portrait.scale.x = -this._fighter.intSide * Announce.PORTRAIT_SCALE;
 			this._portrait = {
 				slider: portrait,
-				bx: w - this._fighter.intSide * (w + this._fighter._portraitFrame.width * 0.7),
+				bx: w - this._fighter.intSide * (w + this._fighter._portraitFrame.width * Announce.PORTRAIT_SCALE),
 				tx: w - this._fighter.intSide * w
 			};
 			this._box.addChild(portrait);
 			portrait.x = this._portrait.bx;
 			portrait.y = SCENE_HEIGHT;
-		} else if (this._fighter.portrait) {
-			// TODO: Remove this part and clean the code once all big dinoz are done.
-			const portrait = this._fighter.portrait;
-			this._portrait = {
-				slider: portrait,
-				bx: w - this._fighter.intSide * (w + 100),
-				tx: w - this._fighter.intSide * (w - Announce.PORTRAIT_WIDTH * Announce.PORTRAIT_SCALE)
-			};
-			this._box.addChild(portrait);
-			portrait.x = this._portrait.bx;
-			portrait.y = SCENE_HEIGHT - (10 + Announce.PORTRAIT_HEIGHT * Announce.PORTRAIT_SCALE);
 		}
 
 		// Text

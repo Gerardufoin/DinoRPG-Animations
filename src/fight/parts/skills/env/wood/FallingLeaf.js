@@ -17,7 +17,7 @@ export class FallingLeaf extends Leaf {
 	 * @param {IScene} scene The Scene where the leaf is instantiated.
 	 */
 	constructor(scene) {
-		super(new Container(), scene, 10 + Math.floor(Math.random() * 30));
+		super(new Container(), scene);
 
 		this._root.addChild(new Asset(ref.fx.env.wood.falling_leaf));
 

@@ -119,7 +119,10 @@ export class AddFighter extends State {
 	 * @param {Timer} timer The fight Timer containing the current time elasped.
 	 */
 	update(timer) {
+		// Wait for the Fighter to load.
+		if (!this._fighter.loaded) return;
 		super.update(timer);
+
 		switch (this._fInfos.entrance) {
 			case EntranceEffect.Stand:
 			case EntranceEffect.Anim:

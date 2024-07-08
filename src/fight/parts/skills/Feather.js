@@ -19,7 +19,7 @@ export class Feather extends Leaf {
 	 * @param {number} y The initial y coordinate.
 	 */
 	constructor(scene, x, y) {
-		super(new Container(), scene, 10 + Math.floor(Math.random() * 30));
+		super(new Container(), scene);
 
 		this._root.addChild(new Asset(ref.fx.feather));
 

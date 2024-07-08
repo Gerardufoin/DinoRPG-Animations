@@ -1,5 +1,5 @@
 /* eslint-disable */
-const dinoValues = '0123456789ABCDEFGHIJ';
+const dinoValues = '0123456789ABCDEFGHIJK';
 const values = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
 let nbDino = 500;

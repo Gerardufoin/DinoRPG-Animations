@@ -57,14 +57,7 @@ export class ADino extends Animator {
 	 * @type {object}
 	 */
 	get dinoInfos() {
-		let infos = this._dinoInfos;
-		// TODO: Simplify once all dinoz are converted to big/small format.
-		if (this._big && this._dinoInfos.big) {
-			infos = this._dinoInfos.big;
-		}
-		if (!this._big && this._dinoInfos.small) {
-			infos = this._dinoInfos.small;
-		}
+		let infos = this._big ? this._dinoInfos.big : this._dinoInfos.small;
 		// Used for the Soufflet to differenciate the small format from its larvae form to its adult form.
 		return infos && infos.partIdx !== undefined
 			? infos.parts[infos.frames[this._description[infos.partIdx] % infos.frames.length]]
@@ -245,8 +238,7 @@ export class ADino extends Animator {
 			this._description.push(part);
 		}
 		this._dinoInfos = dinoz[this._description[0]];
-		// TODO: Remove the big condition once all dinoz are migrated to big/small version
-		if (!this._dinoInfos || this._description.length < 10 || (this._big && !this._dinoInfos.big)) {
+		if (!this._dinoInfos || this._description.length < 10) {
 			this._dinoInfos = error;
 			this.apply();
 			return false;

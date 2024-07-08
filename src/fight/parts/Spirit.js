@@ -97,6 +97,7 @@ export class Spirit extends Part {
 		];
 	}
 
+	// TODO Discard MT code and recode the whole thing to respect framerate.
 	/**
 	 * Update the Spirit animation until its disappearance.
 	 * @param {Timer} timer Fight's timer, containing the elapsed time.

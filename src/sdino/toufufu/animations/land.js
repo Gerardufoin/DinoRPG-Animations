@@ -6,7 +6,8 @@ export const land = {
 		0: [
 			['hit', 22],
 			['fxAttach', 'smoke_small', 0, 5]
-		]
+		],
+		24: [['stop']]
 	},
 	frames: [
 		{

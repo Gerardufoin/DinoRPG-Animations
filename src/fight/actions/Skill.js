@@ -157,7 +157,6 @@ export class Skill extends State {
 	 * @returns {State} The State corresponding to the skill.
 	 */
 	getSkill() {
-		// TODO
 		switch (this._skill) {
 			case SkillList.Fireball:
 				return new GrFireball(this._scene, () => this.end(), this._fighter, this._targets);

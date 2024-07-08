@@ -44,7 +44,7 @@ export class Score extends Phys2D {
 		this._limitY = y - 25;
 
 		this._fadeoutTimer = 40;
-		this._fadeType = 0;
+		this._fadeScale = true;
 
 		if (hurt) {
 			this._vy = -8;

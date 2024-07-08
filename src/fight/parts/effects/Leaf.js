@@ -55,11 +55,6 @@ export class Leaf extends Part {
 	 */
 	_direction = 1;
 	/**
-	 * The distance of the leaf back and forth.
-	 * @type {number}
-	 */
-	_width = 0;
-	/**
 	 * The speed of the leaf movement.
 	 * @type {number}
 	 */
@@ -90,12 +85,9 @@ export class Leaf extends Part {
 	 * Creates a leaf entity which moves back and forth over the given width while falling.
 	 * @param {Container} container The visual representation of the entity.
 	 * @param {IScene} scene The Scene where the entity is instantiated.
-	 * @param {number} width The distance of the leaf movements.
 	 */
-	constructor(container, scene, width) {
+	constructor(container, scene) {
 		super(container, scene);
-
-		this._defaultWidth = width;
 		this.init();
 	}
 
@@ -114,7 +106,6 @@ export class Leaf extends Part {
 		this._direction = 1;
 		this._isFalling = true;
 
-		this._width = this._defaultWidth; // TODO: If nothing changes this value, remove the default.
 		this._vx = this._defaultVx;
 		this._vy = this._defaultVy;
 		this._vz = this._defaultVz + 2;

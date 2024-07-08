@@ -10,6 +10,7 @@ import { Timer } from '../../../Timer.js';
 import { Animator } from '../../../../display/Animator.js';
 import { fx_vine_shadow } from '../../../../gfx/fx/vine_shadow.js';
 
+// TODO Correct the vine part sticking out of ground when it shouldn't once the animation is done.
 // GFX 19
 /**
  * Creates a moving vine.

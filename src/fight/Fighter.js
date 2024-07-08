@@ -27,7 +27,7 @@ import { StatusDisplay } from './StatusDisplay.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { Light } from './parts/life/Light.js';
 import { DepthManager, Layers } from './DepthManager.js';
-import { IScene, SCENE_HEIGHT, SCENE_WIDTH } from './IScene.js';
+import { IScene } from './IScene.js';
 import { WaterOnde } from './parts/scene/WaterOnde.js';
 import { FighterProperty, FighterStatus, GroundType, LifeEffect } from './Enums.js';
 import { FireSpark } from './parts/life/FireSpark.js';
@@ -82,6 +82,24 @@ export class Fighter extends Phys {
 	 */
 	get dm() {
 		return this._depthManager;
+	}
+
+	/**
+	 * False while the fighter's Animator is loading, true once it has finished.
+	 * @type {boolean}
+	 */
+	_fighterLoaded = false;
+	/**
+	 * False while the fighter's portrait is loading, true once it has finished.
+	 * @type {boolean}
+	 */
+	_portraitLoaded = false;
+	/**
+	 * True if all the graphical elements of the Fighter have finished loading, false otherwise.
+	 * @type {boolean}
+	 */
+	get loaded() {
+		return this._fighterLoaded && this._portraitLoaded;
 	}
 
 	/**
@@ -426,19 +444,6 @@ export class Fighter extends Phys {
 	}
 
 	/**
-	 * The visual representation of the Fighter when making an announce.
-	 * @type {Animator}
-	 */
-	_announcePortrait;
-	/**
-	 * Get the visual representation of the Fighter for an announce.
-	 * @type {Container}
-	 */
-	get portrait() {
-		return this._announcePortrait;
-	}
-
-	/**
 	 * Texture of the dino in its big format.
 	 * @type {RenderTexture}
 	 */
@@ -448,6 +453,13 @@ export class Fighter extends Phys {
 	 * @type {Rectangle}
 	 */
 	_portraitFrame;
+	/**
+	 * Get the display of the Fighter when making an Announce, if any.
+	 * @type {RenderTexture}
+	 */
+	get announcePortrait() {
+		return this._portraitTexture;
+	}
 
 	/**
 	 * Creates a new Fighter based on the given Fighter's information.
@@ -489,69 +501,55 @@ export class Fighter extends Phys {
 			this._width = smallDino.collider.width * this._size;
 			this._animator = smallDino;
 
-			this._announcePortrait = new sdino({
+			// Prepares the slot to receive the texture later on.
+			this._slot = new Slot(
+				this._life,
+				this._maxLife,
+				this._energy,
+				this._maxEnergy,
+				fInfos.side,
+				this._scene.tm
+			);
+			this._scene.addSlot(this._slot, fInfos.side);
+
+			// Creates the big version of the dino for the slot and the announces.
+			const bigDino = new dino({
 				data: fInfos.gfx,
 				autoUpdate: false,
 				pflag: false,
-				scale: 2,
-				shadow: false,
-				dark: this.haveProp(FighterProperty.Dark)
+				dark: this.haveProp(FighterProperty.Dark),
+				shadow: false
 			});
-
-			// TODO Refacto setSide position in code once _announcePortrait is gone
-			this.setSide(fInfos.side);
-
-			// If the Fighter is a dino, adds a slot with its portrait.
-			const portrait = new sdino({
-				data: fInfos.gfx,
-				autoUpdate: false,
-				pflag: false,
-				scale: Slot.FIGHTER_PORTRAIT_SCALE,
-				shadow: false,
-				flip: this.side,
-				dark: this.haveProp(FighterProperty.Dark)
-			});
-			portrait.x = 18;
-			portrait.y = 33;
-			this._slot = new Slot(this._life, this._maxLife, this._energy, this._maxEnergy, portrait, this._scene.tm);
-			this._scene.addSlot(this._slot, this.side);
-
-			// TODO: Remove _announcePortrait + slot portrait and clean code once all big dinoz are done.
-			if ('0123456789ABCDEFGHIJK'.includes(fInfos.gfx.charAt(0))) {
-				const bigDino = new dino({
-					data: fInfos.gfx,
-					autoUpdate: false,
-					pflag: false,
-					dark: this.haveProp(FighterProperty.Dark),
-					shadow: false
+			// If the dino is not added to the Scene and renderer at least once, the filters are bugged when rendered to the render texture.
+			// If this is fixed one day, this step and the hidden layer can be removed.
+			this._scene.dm.addContainer(bigDino, Layers.Scene.HIDDEN);
+			// Generate texture of the big dino to use for announce and slot
+			bigDino.onLoad = () => {
+				this._scene.dm.removeContainer(bigDino, Layers.Scene.HIDDEN);
+				const b = bigDino.getBounds();
+				// Get the bounds of the big dino
+				this._portraitFrame = new Rectangle(
+					Math.round(b.x),
+					Math.round(b.y),
+					Math.round(b.width),
+					Math.round(b.height)
+				);
+				this._portraitTexture = RenderTexture.create({
+					width: this._portraitFrame.width,
+					height: this._portraitFrame.height
 				});
-				// If the dino is not added to the Scene and renderer at least once, the filters are bugged when rendered to the render texture.
-				// If this is fixed one day, this step and the hidden layer can be removed.
-				this._scene.dm.addContainer(bigDino, Layers.Scene.HIDDEN);
-				// Generate texture of the big dino to use for announce and slot
-				bigDino.onLoad = () => {
-					this._scene.dm.removeContainer(bigDino, Layers.Scene.HIDDEN);
-					const b = bigDino.getBounds();
-					this._portraitFrame = new Rectangle(
-						Math.round(b.x),
-						Math.round(b.y),
-						Math.round(b.width),
-						Math.round(b.height)
-					);
-					this._portraitTexture = RenderTexture.create({
-						width: this._portraitFrame.width,
-						height: this._portraitFrame.height
-					});
-					const m = new Matrix();
-					m.translate(-this._portraitFrame.x, -this._portraitFrame.y);
-					this._scene.renderer.render(bigDino, {
-						renderTexture: this._portraitTexture,
-						transform: m
-					});
+				const m = new Matrix();
+				m.translate(-this._portraitFrame.x, -this._portraitFrame.y);
+				// Render the big dino as an image
+				this._scene.renderer.render(bigDino, {
+					renderTexture: this._portraitTexture,
+					transform: m
+				});
 
-					this._slot.setPortrait(this._portraitTexture, this._portraitFrame, bigDino.getView(), this.intSide);
-				};
-			}
+				this._slot.setPortrait(this._portraitTexture, this._portraitFrame, bigDino.getView());
+
+				this._portraitLoaded = true;
+			};
 		} else {
 			const monster = new smonster({
 				type: fInfos.gfx,
@@ -565,12 +563,16 @@ export class Fighter extends Phys {
 			this._width = monster.collider.width * this._size;
 			this._animator = monster;
 			this._shadeType = monster.getShadeType();
-			// TODO Move setSide along with the one in the dino setup once the big dinoz are done.
-			this.setSide(fInfos.side);
+			// No portrait for monsters
+			this._portraitLoaded = true;
 		}
+		this._animator.onLoad = () => {
+			this._fighterLoaded = true;
+		};
 		this._skin.addChild(this._animator);
 		this._skin.filters = [];
 		this.dm.addContainer(this._skin, Layers.Fighter.BODY);
+		this.setSide(fInfos.side);
 
 		this.dm.addContainer(this._statusDisplay, Layers.Fighter.STATUS_ICON);
 
@@ -705,16 +707,6 @@ export class Fighter extends Phys {
 			if (d < this._walkSpeed * 2 || this._walkPath.to <= 0) {
 				this.stopWalk();
 			}
-			// TODO Play animation in reverse if Fighter is moving backward.
-			/*if(this._vx * this._intSide < 0 ) {
-					var m:flash.MovieClip = skin._p0._p1._anim._sub;
-					m.stop();
-					m.onEnterFrame = function() {
-						if( m._currentframe <= 1 )
-							m.gotoAndStop(m._totalframes - 1);
-						m.prevFrame();
-					}
-				}*/
 		}
 	}
 
@@ -752,9 +744,6 @@ export class Fighter extends Phys {
 	setSide(side) {
 		this._side = side;
 		this._animator.flip(side);
-		if (this._announcePortrait) {
-			this._announcePortrait.flip(side);
-		}
 	}
 
 	/**

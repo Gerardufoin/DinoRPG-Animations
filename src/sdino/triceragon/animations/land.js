@@ -2,6 +2,9 @@
 
 export const land = {
 	id: 'triceragon_land',
+	callbacks: {
+		9: [['stop']]
+	},
 	frames: [
 		{
 			l_horn: {
@@ -22,6 +25,13 @@ export const land = {
 				d: 0.149,
 				l: 12
 			},
+			l_eye: {
+				tx: -7.65,
+				ty: 4.55,
+				a: 1.066,
+				d: 1.066,
+				l: 11
+			},
 			frill: {
 				tx: -7.25,
 				ty: 0.05,
@@ -29,13 +39,6 @@ export const land = {
 				b: 0.201,
 				c: -0.201,
 				d: 1.226,
-				l: 11
-			},
-			l_eye: {
-				tx: -7.65,
-				ty: 4.55,
-				a: 1.066,
-				d: 1.066,
 				l: 10
 			},
 			nose: {
@@ -132,6 +135,13 @@ export const land = {
 				d: 0.148,
 				l: 12
 			},
+			l_eye: {
+				tx: -7.65,
+				ty: 5.5,
+				a: 1.066,
+				d: 1.066,
+				l: 11
+			},
 			frill: {
 				tx: -7.25,
 				ty: 0.95,
@@ -139,13 +149,6 @@ export const land = {
 				b: 0.2,
 				c: -0.2,
 				d: 1.226,
-				l: 11
-			},
-			l_eye: {
-				tx: -7.65,
-				ty: 5.5,
-				a: 1.066,
-				d: 1.066,
 				l: 10
 			},
 			nose: {
@@ -246,6 +249,13 @@ export const land = {
 				d: 0.148,
 				l: 12
 			},
+			l_eye: {
+				tx: -7.65,
+				ty: 6.5,
+				a: 1.066,
+				d: 1.066,
+				l: 11
+			},
 			frill: {
 				tx: -7.25,
 				ty: 1.95,
@@ -253,13 +263,6 @@ export const land = {
 				b: 0.2,
 				c: -0.2,
 				d: 1.226,
-				l: 11
-			},
-			l_eye: {
-				tx: -7.65,
-				ty: 6.5,
-				a: 1.066,
-				d: 1.066,
 				l: 10
 			},
 			nose: {
@@ -360,6 +363,13 @@ export const land = {
 				d: 0.148,
 				l: 12
 			},
+			l_eye: {
+				tx: -7.65,
+				ty: 7.45,
+				a: 1.066,
+				d: 1.066,
+				l: 11
+			},
 			frill: {
 				tx: -7.25,
 				ty: 2.9,
@@ -367,13 +377,6 @@ export const land = {
 				b: 0.2,
 				c: -0.2,
 				d: 1.226,
-				l: 11
-			},
-			l_eye: {
-				tx: -7.65,
-				ty: 7.45,
-				a: 1.066,
-				d: 1.066,
 				l: 10
 			},
 			nose: {
@@ -474,6 +477,13 @@ export const land = {
 				d: 0.149,
 				l: 12
 			},
+			l_eye: {
+				tx: -7.65,
+				ty: 8.4,
+				a: 1.066,
+				d: 1.066,
+				l: 11
+			},
 			frill: {
 				tx: -7.25,
 				ty: 3.9,
@@ -481,13 +491,6 @@ export const land = {
 				b: 0.201,
 				c: -0.201,
 				d: 1.226,
-				l: 11
-			},
-			l_eye: {
-				tx: -7.65,
-				ty: 8.4,
-				a: 1.066,
-				d: 1.066,
 				l: 10
 			},
 			nose: {
@@ -588,6 +591,13 @@ export const land = {
 				d: 0.148,
 				l: 12
 			},
+			l_eye: {
+				tx: -7.65,
+				ty: 7.95,
+				a: 1.066,
+				d: 1.066,
+				l: 11
+			},
 			frill: {
 				tx: -7.3,
 				ty: 3.4,
@@ -595,13 +605,6 @@ export const land = {
 				b: 0.2,
 				c: -0.2,
 				d: 1.226,
-				l: 11
-			},
-			l_eye: {
-				tx: -7.65,
-				ty: 7.95,
-				a: 1.066,
-				d: 1.066,
 				l: 10
 			},
 			nose: {
@@ -702,6 +705,13 @@ export const land = {
 				d: 0.148,
 				l: 12
 			},
+			l_eye: {
+				tx: -7.65,
+				ty: 7.5,
+				a: 1.066,
+				d: 1.066,
+				l: 11
+			},
 			frill: {
 				tx: -7.3,
 				ty: 2.95,
@@ -709,13 +719,6 @@ export const land = {
 				b: 0.2,
 				c: -0.2,
 				d: 1.226,
-				l: 11
-			},
-			l_eye: {
-				tx: -7.65,
-				ty: 7.5,
-				a: 1.066,
-				d: 1.066,
 				l: 10
 			},
 			nose: {
@@ -816,6 +819,13 @@ export const land = {
 				d: 0.148,
 				l: 12
 			},
+			l_eye: {
+				tx: -7.65,
+				ty: 7.1,
+				a: 1.066,
+				d: 1.066,
+				l: 11
+			},
 			frill: {
 				tx: -7.3,
 				ty: 2.55,
@@ -823,13 +833,6 @@ export const land = {
 				b: 0.2,
 				c: -0.2,
 				d: 1.226,
-				l: 11
-			},
-			l_eye: {
-				tx: -7.65,
-				ty: 7.1,
-				a: 1.066,
-				d: 1.066,
 				l: 10
 			},
 			nose: {
@@ -930,6 +933,13 @@ export const land = {
 				d: 0.148,
 				l: 12
 			},
+			l_eye: {
+				tx: -7.65,
+				ty: 6.65,
+				a: 1.066,
+				d: 1.066,
+				l: 11
+			},
 			frill: {
 				tx: -7.3,
 				ty: 2.1,
@@ -937,13 +947,6 @@ export const land = {
 				b: 0.2,
 				c: -0.2,
 				d: 1.226,
-				l: 11
-			},
-			l_eye: {
-				tx: -7.65,
-				ty: 6.65,
-				a: 1.066,
-				d: 1.066,
 				l: 10
 			},
 			nose: {
@@ -1044,6 +1047,13 @@ export const land = {
 				d: 0.149,
 				l: 12
 			},
+			l_eye: {
+				tx: -7.65,
+				ty: 6.2,
+				a: 1.066,
+				d: 1.066,
+				l: 11
+			},
 			frill: {
 				tx: -7.25,
 				ty: 1.7,
@@ -1051,13 +1061,6 @@ export const land = {
 				b: 0.201,
 				c: -0.201,
 				d: 1.226,
-				l: 11
-			},
-			l_eye: {
-				tx: -7.65,
-				ty: 6.2,
-				a: 1.066,
-				d: 1.066,
 				l: 10
 			},
 			nose: {

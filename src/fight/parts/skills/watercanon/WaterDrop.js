@@ -30,7 +30,7 @@ export class WaterDrop extends Phys2D {
 		this._vx = -Math.random() * (3 + Math.random() * 5);
 
 		this._fadeoutTimer = 10 + Math.random() * 20;
-		this._fadeType = 0;
+		this._fadeScale = true;
 		this.setScale(0.5 + Math.random());
 
 		this._root.angle = Math.random() * 360;
