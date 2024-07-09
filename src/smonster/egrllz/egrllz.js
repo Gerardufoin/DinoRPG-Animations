@@ -1,15 +1,15 @@
 // @ts-check
 import { fx_dust } from '../../gfx/fx/attach/smoke/dust.js';
-import { attack } from '../../sdino/gorilloz/animations/attack.js';
-import { dead } from '../../sdino/gorilloz/animations/dead.js';
-import { hit } from '../../sdino/gorilloz/animations/hit.js';
-import { jump } from '../../sdino/gorilloz/animations/jump.js';
-import { land } from '../../sdino/gorilloz/animations/land.js';
-import { release } from '../../sdino/gorilloz/animations/release.js';
-import { run } from '../../sdino/gorilloz/animations/run.js';
-import { stand } from '../../sdino/gorilloz/animations/stand.js';
-import { walk } from '../../sdino/gorilloz/animations/walk.js';
-import { ref as ref_sdino } from '../../sdino/references_small.js';
+import { attack } from '../../dino/gorilloz/animations/attack.js';
+import { dead } from '../../dino/gorilloz/animations/dead.js';
+import { hit } from '../../dino/gorilloz/animations/hit.js';
+import { jump } from '../../dino/gorilloz/animations/jump.js';
+import { land } from '../../dino/gorilloz/animations/land.js';
+import { release } from '../../dino/gorilloz/animations/release.js';
+import { run } from '../../dino/gorilloz/animations/run.js';
+import { stand } from '../../dino/gorilloz/animations/stand.js';
+import { walk } from '../../dino/gorilloz/animations/walk.js';
+import { ref as ref_sdino } from '../../dino/references_small.js';
 import { parts } from './parts.js';
 
 // Symbol 954

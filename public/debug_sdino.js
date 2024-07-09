@@ -59,7 +59,7 @@ function addDinoz(data, showOrigin = false) {
 	const container = document.createElement('div');
 	const app = new DinoAnim.Application({
 		background: '#FBDAA0',
-		width: 130,
+		width: 140,
 		height: 55
 	});
 	let dinozP = new DinoAnim.sdino({
@@ -67,8 +67,8 @@ function addDinoz(data, showOrigin = false) {
 		flip: 1
 	});
 	app.stage.addChild(dinozP);
-	dinozP.x = 20;
-	dinozP.y = 30;
+	dinozP.x = 25;
+	dinozP.y = 40;
 
 	let dinoz = new DinoAnim.sdino({
 		data: data,
@@ -76,8 +76,8 @@ function addDinoz(data, showOrigin = false) {
 		pflag: true
 	});
 	app.stage.addChild(dinoz);
-	dinoz.x = 75;
-	dinoz.y = 35;
+	dinoz.x = 80;
+	dinoz.y = 40;
 	allDinoz.push(dinoz);
 
 	if (showOrigin) {
@@ -96,19 +96,13 @@ function addDinoz(data, showOrigin = false) {
 // Dragon Jr
 addDinoz('09T1Yt9wqq4Rx000', true);
 
-// Debug
-addDinoz('33ooVfmT1EWYH2MD', true);
-addDinoz('43MFLTgd72jcTSKT', true);
-addDinoz('73D2pW29UoMTv2Qc', true);
-
 // Moueffe
-/*addDinoz('0813611605200000', true);
 addDinoz('09w7y7qqpdhld000');
 addDinoz('09adQBgO8T065000');
 addDinoz('09vGg4LW1S9fn000');
 addDinoz('0A8uYQDU0FywV000'); // Krapassa
 addDinoz('0AcokGzWsf6WP000'); // Shamak
-addDinoz('0An2HcXN9sl3m000'); // Krazablue*/
+addDinoz('0An2HcXN9sl3m000'); // Krazablue
 // Pigmou
 //addDinoz('19hot0hFbItLS000');
 /*addDinoz('199zX1Jn1zGXG000');

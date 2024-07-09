@@ -1,5 +1,5 @@
 // @ts-check
-import { dinoz, error } from './sdino/dinoz.js';
+import { dinoz, error } from './dino/dinoz.js';
 import { Animator } from './display/Animator.js';
 import { PartManager } from './display/PartManager.js';
 import { PixiHelper } from './display/PixiHelper.js';

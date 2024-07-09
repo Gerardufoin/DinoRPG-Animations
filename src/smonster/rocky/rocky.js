@@ -1,14 +1,14 @@
 // @ts-check
 import { fx_dust } from '../../gfx/fx/attach/smoke/dust.js';
-import { ref as ref_sdino } from '../../sdino/references_small.js';
-import { parts_small as parts_rocky } from '../../sdino/rocky/parts_small.js';
-import { stand } from '../../sdino/rocky/animations/stand.js';
-import { walk } from '../../sdino/rocky/animations/walk.js';
-import { run } from '../../sdino/rocky/animations/run.js';
-import { hit } from '../../sdino/rocky/animations/hit.js';
-import { jump } from '../../sdino/rocky/animations/jump.js';
-import { land } from '../../sdino/rocky/animations/land.js';
-import { dead } from '../../sdino/rocky/animations/dead.js';
+import { ref as ref_sdino } from '../../dino/references_small.js';
+import { parts_small as parts_rocky } from '../../dino/rocky/parts_small.js';
+import { stand } from '../../dino/rocky/animations/stand.js';
+import { walk } from '../../dino/rocky/animations/walk.js';
+import { run } from '../../dino/rocky/animations/run.js';
+import { hit } from '../../dino/rocky/animations/hit.js';
+import { jump } from '../../dino/rocky/animations/jump.js';
+import { land } from '../../dino/rocky/animations/land.js';
+import { dead } from '../../dino/rocky/animations/dead.js';
 import { parts } from './parts.js';
 import { attack } from './animations/attack.js';
 

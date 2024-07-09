@@ -1,14 +1,14 @@
 // @ts-check
-import { fx_dash } from '../../sdino/fx/dash.js';
-import { attack } from '../../sdino/hippoclamp/animations/attack.js';
-import { dead } from '../../sdino/hippoclamp/animations/dead.js';
-import { hit } from '../../sdino/hippoclamp/animations/hit.js';
-import { jump } from '../../sdino/hippoclamp/animations/jump.js';
-import { land } from '../../sdino/hippoclamp/animations/land.js';
-import { run } from '../../sdino/hippoclamp/animations/run.js';
-import { stand } from '../../sdino/hippoclamp/animations/stand.js';
-import { walk } from '../../sdino/hippoclamp/animations/walk.js';
-import { ref as ref_sdino } from '../../sdino/references_small.js';
+import { fx_dash } from '../../dino/fx/dash.js';
+import { attack } from '../../dino/hippoclamp/animations/attack.js';
+import { dead } from '../../dino/hippoclamp/animations/dead.js';
+import { hit } from '../../dino/hippoclamp/animations/hit.js';
+import { jump } from '../../dino/hippoclamp/animations/jump.js';
+import { land } from '../../dino/hippoclamp/animations/land.js';
+import { run } from '../../dino/hippoclamp/animations/run.js';
+import { stand } from '../../dino/hippoclamp/animations/stand.js';
+import { walk } from '../../dino/hippoclamp/animations/walk.js';
+import { ref as ref_sdino } from '../../dino/references_small.js';
 import { parts } from './parts.js';
 
 // Symbol 854

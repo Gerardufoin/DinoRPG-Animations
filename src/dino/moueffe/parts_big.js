@@ -600,7 +600,7 @@ const left_arm_marks = {
 		{
 			colorIdx: 2,
 			ref: ref.moueffe.left_arm_mark_lines,
-			blend: BLEND_MODES.HARD_LIGHT,
+			blend: BLEND_MODES.SOFT_LIGHT,
 			transform: {
 				tx: -1.25,
 				ty: -0.5
@@ -610,7 +610,7 @@ const left_arm_marks = {
 		{
 			colorIdx: 2,
 			ref: ref.moueffe.left_arm_mark_circle,
-			blend: BLEND_MODES.HARD_LIGHT,
+			blend: BLEND_MODES.SOFT_LIGHT,
 			transform: {
 				tx: 0.55,
 				ty: 0.05
@@ -620,7 +620,7 @@ const left_arm_marks = {
 		{
 			colorIdx: 2,
 			ref: ref.moueffe.left_arm_mark_sigil,
-			blend: BLEND_MODES.HARD_LIGHT,
+			blend: BLEND_MODES.SOFT_LIGHT,
 			transform: {
 				tx: 0.75,
 				ty: 2.3
@@ -630,13 +630,13 @@ const left_arm_marks = {
 		{
 			colorIdx: 2,
 			ref: ref.moueffe.left_arm_mark_star,
-			blend: BLEND_MODES.HARD_LIGHT
+			blend: BLEND_MODES.SOFT_LIGHT
 		},
 		// 270
 		{
 			colorIdx: 2,
 			ref: ref.moueffe.left_arm_mark_anchor,
-			blend: BLEND_MODES.HARD_LIGHT
+			blend: BLEND_MODES.SOFT_LIGHT
 		}
 	]
 };
@@ -1415,7 +1415,7 @@ export const parts_big = {
 				{
 					colorIdx: 2,
 					ref: ref.moueffe.head_mark_lines,
-					blend: BLEND_MODES.HARD_LIGHT,
+					blend: BLEND_MODES.SOFT_LIGHT,
 					transform: {
 						tx: -19.35,
 						ty: 7.35
@@ -1425,7 +1425,7 @@ export const parts_big = {
 				{
 					colorIdx: 2,
 					ref: ref.moueffe.head_mark_circle,
-					blend: BLEND_MODES.HARD_LIGHT,
+					blend: BLEND_MODES.SOFT_LIGHT,
 					transform: {
 						tx: 0.7,
 						ty: 0.4
@@ -1435,7 +1435,7 @@ export const parts_big = {
 				{
 					colorIdx: 2,
 					ref: ref.moueffe.head_mark_spiral,
-					blend: BLEND_MODES.HARD_LIGHT,
+					blend: BLEND_MODES.SOFT_LIGHT,
 					transform: {
 						tx: -0.3,
 						ty: 1.15

@@ -1,7 +1,7 @@
 // @ts-check
 import { BLEND_MODES } from 'pixi.js';
 import { fx_dust } from '../../gfx/fx/attach/smoke/dust.js';
-import { ref as ref_sdino } from '../../sdino/references_small.js';
+import { ref as ref_sdino } from '../../dino/references_small.js';
 import { ref } from '../references.js';
 import { stand } from './animations/stand.js';
 import { walk } from './animations/walk.js';

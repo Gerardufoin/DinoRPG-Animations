@@ -351,7 +351,7 @@ export const parts_small = {
 						// 136
 						{
 							colorIdx: 2,
-							blend: BLEND_MODES.HARD_LIGHT,
+							blend: BLEND_MODES.SOFT_LIGHT,
 							ref: ref.moueffe.left_arm_sigil,
 							transform: {
 								tx: 5.75,

@@ -1,12 +1,12 @@
 // @ts-check
 import { fx_dust } from '../../gfx/fx/attach/smoke/dust.js';
-import { stand } from '../../sdino/pteroz/animations/stand.js';
-import { walk } from '../../sdino/pteroz/animations/walk.js';
-import { run } from '../../sdino/pteroz/animations/run.js';
-import { attack } from '../../sdino/pteroz/animations/attack.js';
-import { land } from '../../sdino/pteroz/animations/land.js';
-import { dead } from '../../sdino/pteroz/animations/dead.js';
-import { ref as ref_sdino } from '../../sdino/references_small.js';
+import { stand } from '../../dino/pteroz/animations/stand.js';
+import { walk } from '../../dino/pteroz/animations/walk.js';
+import { run } from '../../dino/pteroz/animations/run.js';
+import { attack } from '../../dino/pteroz/animations/attack.js';
+import { land } from '../../dino/pteroz/animations/land.js';
+import { dead } from '../../dino/pteroz/animations/dead.js';
+import { ref as ref_sdino } from '../../dino/references_small.js';
 import { parts } from './parts.js';
 
 // Symbol 920

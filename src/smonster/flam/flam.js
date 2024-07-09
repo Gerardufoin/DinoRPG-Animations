@@ -1,6 +1,6 @@
 // @ts-check
 
-import { ref as ref_sdino } from '../../sdino/references_small.js';
+import { ref as ref_sdino } from '../../dino/references_small.js';
 import { ref } from '../references.js';
 import { attack } from './animations/attack.js';
 import { dead } from './animations/dead.js';

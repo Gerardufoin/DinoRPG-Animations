@@ -1,6 +1,6 @@
 // @ts-check
-import { bad } from '../sdino/bad.js';
-import { gorilloz } from '../sdino/gorilloz/gorilloz.js';
+import { bad } from '../dino/bad.js';
+import { gorilloz } from '../dino/gorilloz/gorilloz.js';
 import { anguil } from './anguil/anguil.js';
 import { barche } from './barche/barche.js';
 import { bat } from './bat/bat.js';

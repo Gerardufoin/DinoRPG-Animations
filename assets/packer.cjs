@@ -7,8 +7,8 @@ const LZString = require('lz-string');
 const overrideDestination = {
 	background: 'gfx/backgrounds.js',
 	invocations: 'gfx/references_invocations.js',
-	dino: 'sdino/references_big.js',
-	sdino: 'sdino/references_small.js'
+	dino: 'dino/references_big.js',
+	sdino: 'dino/references_small.js'
 };
 
 /**

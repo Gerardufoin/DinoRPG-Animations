@@ -1,4 +1,4 @@
-import { ref } from '../../../../sdino/references_small.js';
+import { ref } from '../../../../dino/references_small.js';
 
 // sdino 156 smonster 4
 export const fx_dust_frames = [

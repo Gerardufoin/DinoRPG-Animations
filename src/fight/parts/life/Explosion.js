@@ -4,7 +4,7 @@ import { Phys2D } from '../Phys2D.js';
 import { fx_explosion } from '../../../gfx/fx/explosion.js';
 import { BlurFilter, Container } from 'pixi.js';
 import { Asset } from '../../../display/Asset.js';
-import { ref } from '../../../sdino/references_small.js';
+import { ref } from '../../../dino/references_small.js';
 import { IScene } from '../../IScene.js';
 
 /**

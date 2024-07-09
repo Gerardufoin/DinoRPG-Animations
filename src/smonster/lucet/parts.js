@@ -1,5 +1,5 @@
 // @ts-check
-import { fx_slash } from '../../sdino/fx/slash.js';
+import { fx_slash } from '../../dino/fx/slash.js';
 import { ref } from '../references.js';
 
 export const parts = {
