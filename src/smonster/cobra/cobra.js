@@ -61,6 +61,7 @@ export const cobra = {
 				}
 			}
 		],
+		// Empty pieces of the anguilloz to allow sharing animations
 		l_t_arm: [],
 		r_t_arm: [],
 		l_b_arm: [],

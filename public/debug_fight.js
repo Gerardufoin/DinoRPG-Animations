@@ -51,10 +51,10 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 's_fosslv',
+		bg: 'desert0',
 		top: 120,
 		bottom: 20,
-		ground: 'None',
+		ground: 'dirt',
 		history: [
 			/*{
 				action: 'AddCastle',
@@ -79,7 +79,7 @@ const fightVersion = [
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: 'K9T1Yt9wqq4Rx010'
+					gfx: '09T1Yt9wqq4Rx000'
 				}
 			},
 			{
@@ -88,14 +88,14 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: '',
+					name: 'Scorpwink',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'cobra'
+					gfx: 'scorp'
 				}
-			},
-			{
+			}
+			/*{
 				action: 'Add',
 				fighter: {
 					props: [],
@@ -107,8 +107,8 @@ const fightVersion = [
 					fid: 2,
 					gfx: 'barche'
 				}
-			},
-			{
+			},*/
+			/*{
 				action: 'Wait',
 				time: 2000
 			},
@@ -124,7 +124,7 @@ const fightVersion = [
 					fid: 0,
 					anim: 'bigma'
 				}
-			}
+			}*/
 			/*{
 				action: 'Status',
 				fid: 1,

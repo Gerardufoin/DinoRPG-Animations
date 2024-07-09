@@ -51,6 +51,7 @@ const monsterList = [
 	'rocky',
 	'pteroz',
 	'egrllz',
+	'scorp',
 	'mandragore',
 	'lucet',
 	'taurus'

@@ -27,6 +27,7 @@ import { pteroz } from './pteroz/pteroz.js';
 import { rasca } from './rasca/rasca.js';
 import { rocky } from './rocky/rocky.js';
 import { ronciv } from './ronciv/ronciv.js';
+import { scorp } from './scorp/scorp.js';
 import { taurus } from './taurus/taurus.js';
 import { vener } from './vener/vener.js';
 import { wolf } from './wolf/wolf.js';
@@ -64,6 +65,7 @@ export const monsters = {
 	egrllz: egrllz,
 	mandragore: mandragore,
 	lucet: lucet,
-	taurus: taurus
+	taurus: taurus,
+	scorp: scorp
 };
 export const error = bad.small;

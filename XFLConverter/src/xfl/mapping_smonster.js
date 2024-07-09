@@ -442,5 +442,17 @@ export const mapping_smonster = {
 	'Symbol 2905': 't_4',
 	'Symbol 2907_col0': 't_1',
 	'Symbol 2907_col0-1': 't_2',
-	'Symbol 2907_col0-2': 't_3'
+	'Symbol 2907_col0-2': 't_3',
+	// Scorpwinks
+	'Symbol 956': 'tail_4',
+	'Symbol 956-1': 'tail_3',
+	'Symbol 956-2': 'tail_1',
+	'Symbol 956-3': 'tail_2',
+	'Symbol 958': 'r_f_leg',
+	'Symbol 958-1': 'r_b_leg',
+	'Symbol 960': 'body',
+	'Symbol 963': 'head',
+	'Symbol 965': 'l_f_leg',
+	'Symbol 965-1': 'l_b_leg',
+	'Symbol 967': 'stinger'
 };
