@@ -1,10 +1,12 @@
 // @ts-check
 import { bad } from '../dino/bad.js';
-import { gorilloz } from '../dino/gorilloz/gorilloz.js';
 import { anguil } from './anguil/anguil.js';
 import { barche } from './barche/barche.js';
 import { bat } from './bat/bat.js';
 import { borg } from './borg/borg.js';
+import { brig1 } from './brig1/brig1.js';
+import { brig2 } from './brig2/brig2.js';
+import { brig3 } from './brig3/brig3.js';
 import { cobra } from './cobra/cobra.js';
 import { coq } from './coq/coq.js';
 import { eearth } from './eearth/eearth.js';
@@ -23,6 +25,7 @@ import { kmask, korgon, rkrgns } from './korgon/korgon.js';
 import { lucet } from './lucet/lucet.js';
 import { mandragore } from './mandragore/mandragore.js';
 import { pira } from './pira/pira.js';
+import { piraos } from './piraos/piraos.js';
 import { pteroz } from './pteroz/pteroz.js';
 import { rasca } from './rasca/rasca.js';
 import { rocky } from './rocky/rocky.js';
@@ -63,9 +66,13 @@ export const monsters = {
 	rocky: rocky,
 	pteroz: pteroz,
 	egrllz: egrllz,
+	scorp: scorp,
+	brig1: brig1,
+	brig2: brig2,
+	brig3: brig3,
+	piraos: piraos,
 	mandragore: mandragore,
 	lucet: lucet,
-	taurus: taurus,
-	scorp: scorp
+	taurus: taurus
 };
 export const error = bad.small;

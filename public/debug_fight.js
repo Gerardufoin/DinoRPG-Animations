@@ -94,20 +94,59 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'scorp'
 				}
-			}
-			/*{
+			},
+			{
 				action: 'Add',
 				fighter: {
 					props: [],
 					dino: false,
 					life: 100,
-					name: '',
+					name: 'Brigand Zaxa',
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'barche'
+					gfx: 'brig1'
 				}
-			},*/
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Brigand Emmema',
+					side: false,
+					scale: 1,
+					fid: 2,
+					gfx: 'brig2'
+				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Brigand Mattmût',
+					side: false,
+					scale: 1,
+					fid: 2,
+					gfx: 'brig3'
+				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Pirhan-os',
+					side: false,
+					scale: 1,
+					fid: 2,
+					gfx: 'piraos'
+				}
+			}
 			/*{
 				action: 'Wait',
 				time: 2000

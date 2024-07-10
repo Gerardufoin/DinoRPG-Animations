@@ -96,6 +96,10 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 920.xml', '_p1', undefined, 1); // pteroz Dark Pteroz
 //parser.parse('./resources/smonster/LIBRARY/Symbol 954.xml', '_p1', undefined, 1); // egrllz Esprit Gorilloz
 //parser.parse('./resources/smonster/LIBRARY/Symbol 977.xml', '_p1', undefined, 1); // scorp Scorpwink
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1004.xml', '_p1', undefined, 1); // brig1 Brigand Zaxa
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1038.xml', '_p1', undefined, 1); // brig2 Brigand Emmema
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1071.xml', '_p1', undefined, 1); // brig3 Brigand Mattmût
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1095.xml', '_p1', undefined, 1); // piraos Pirhan-os
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus
@@ -163,5 +167,5 @@ const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
 //adapter.parse('./results/SVG/dino', mapping_dino, '../assets/dino');
 //adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
-adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
+//adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');
