@@ -305,6 +305,7 @@ export const mapping_gfx = {
 	634: 'fx/mudwall/wall_8',
 	635: 'fx/mudwall/wall_9',
 	636: 'fx/mudwall/wall_10',
+	638: 'fx/hole',
 	642: 'fx/beam_impact',
 	651: 'fx/slash_1',
 	652: 'fx/slash_2',

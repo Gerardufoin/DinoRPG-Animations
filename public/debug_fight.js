@@ -88,65 +88,13 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Scorpwink',
+					name: 'Longbrik',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'scorp'
+					gfx: 'worm'
 				}
 			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Brigand Zaxa',
-					side: false,
-					scale: 1,
-					fid: 2,
-					gfx: 'brig1'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Brigand Emmema',
-					side: false,
-					scale: 1,
-					fid: 2,
-					gfx: 'brig2'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Brigand Mattmût',
-					side: false,
-					scale: 1,
-					fid: 2,
-					gfx: 'brig3'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Pirhan-os',
-					side: false,
-					scale: 1,
-					fid: 2,
-					gfx: 'piraos'
-				}
-			}
 			/*{
 				action: 'Wait',
 				time: 2000
@@ -189,12 +137,16 @@ const fightVersion = [
 					type: 'Detonate'
 				}
 			}*/
-			/*{
+			{
 				action: 'Damages',
-				fid: 0,
-				tid: 1,
+				fid: 1,
+				tid: 0,
 				damages: 10
-			}*/
+			},
+			{
+				action: 'Return',
+				fid: 1
+			}
 			/*{
 				action: 'AttackCastle',
 				fid: 0,

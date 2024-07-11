@@ -513,5 +513,16 @@ export const mapping_smonster = {
 	'Symbol 1083': 'r_eye',
 	'Symbol 1085': 'l_fin',
 	'Symbol 1085-1': 'r_fin',
-	'Symbol 1090': 'inside'
+	'Symbol 1090': 'inside',
+	// Longbrik
+	'Symbol 1098': 'body_3',
+	'Symbol 1098-1': 'body_2',
+	'Symbol 1098-2': 'body_1',
+	'Symbol 1100': 'head_back',
+	'Symbol 1102': 'mouth',
+	'Symbol 1104': 'head_bottom',
+	'Symbol 1106': 'head_top',
+	'Symbol 1108': 'hl_body_1',
+	'Symbol 1110': 'hl_body_2',
+	'Symbol 1112': 'hl_head'
 };

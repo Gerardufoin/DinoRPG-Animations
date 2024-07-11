@@ -36,6 +36,7 @@ import { QuickAnim } from './parts/QuickAnim.js';
 import { fx_brule, fx_brule_small } from '../gfx/fx/attach/smoke/brule.js';
 import { fx_slash } from '../gfx/fx/attach/slash.js';
 import { fx_coq_patte_a, fx_coq_patte_b } from '../gfx/fx/attach/coq_pattes.js';
+import { fx_hole } from '../gfx/fx/attach/hole.js';
 import { QuickAnim2D } from './parts/QuickAnim2D.js';
 import { fx_brulure } from '../gfx/fx/attach/brulure.js';
 import { fx_steam, fx_steam_small } from '../gfx/fx/attach/smoke/steam.js';
@@ -1709,6 +1710,8 @@ export class Fighter extends Phys {
 				return fx_coq_patte_a;
 			case 'coq_patte_b':
 				return fx_coq_patte_b;
+			case 'hole':
+				return fx_hole;
 			case 'brulure':
 				return fx_brulure;
 		}

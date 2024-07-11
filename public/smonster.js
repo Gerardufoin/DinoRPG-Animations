@@ -56,6 +56,7 @@ const monsterList = [
 	'brig2',
 	'brig3',
 	'piraos',
+	'worm',
 	'mandragore',
 	'lucet',
 	'taurus'

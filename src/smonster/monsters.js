@@ -34,6 +34,7 @@ import { scorp } from './scorp/scorp.js';
 import { taurus } from './taurus/taurus.js';
 import { vener } from './vener/vener.js';
 import { wolf } from './wolf/wolf.js';
+import { worm } from './worm/worm.js';
 
 export const monsters = {
 	goupi: goupi,
@@ -71,6 +72,7 @@ export const monsters = {
 	brig2: brig2,
 	brig3: brig3,
 	piraos: piraos,
+	worm: worm,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus
