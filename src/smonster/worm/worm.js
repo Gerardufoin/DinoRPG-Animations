@@ -21,7 +21,7 @@ export const worm = {
 			tx: -2.15,
 			ty: -11.5,
 			contrast: 12,
-			saturation: 7
+			saturation: 18
 		},
 		// Adjust
 		{
@@ -58,7 +58,9 @@ export const worm = {
 		// 1110
 		hl_body_2: parts.hl_body_2,
 		// 1112
-		hl_head: parts.hl_head
+		hl_head: parts.hl_head,
+		// 1096
+		ground: parts.ground
 	},
 	animations: {
 		// release, ill, cast, walk, sleep same as stand

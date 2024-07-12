@@ -137,11 +137,45 @@ function changeLayers(animation, layers) {
 	return animation;
 }
 
+// Change a part layer to the chosen one. All the other part are moved up accordingly
+function changeLayer(animation, name, layer) {
+	for (const a of animation) {
+		if (a[name]) {
+			const ref = a[name].l;
+			for (const k of Object.keys(a)) {
+				if (a[k].l !== undefined) {
+					if (ref > layer && a[k].l < ref && a[k].l >= layer) {
+						a[k].l++;
+					} else if (ref < layer && a[k].l > ref && a[k].l <= layer) {
+						a[k].l--;
+					}
+				}
+			}
+			a[name].l = layer;
+		}
+	}
+	return animation;
+}
+
+function addPart(animation, name, part) {
+	for (const a of animation) {
+		let l = -1;
+		for (const k of Object.keys(a)) {
+			l = Math.max(l, a[k].l ?? 0);
+		}
+		const p = JSON.parse(JSON.stringify(part));
+		p.l = l + 1;
+		a[name] = p;
+	}
+	return animation;
+}
+
 const animation = [];
 
 //const result = mirrorTo(animation, 12, 'r_f_lower_leg');
 //let result = freezeFrame(freezeFrame(animation, 43, 'sp_10', 43), 43, 'sp_4', 43);
 //let result = linearMovement(linearMovement(animation, 'sp_4', 0, 9), 'sp_10', 0, 9);
-let result = changeLayers(animation, { frill: 10, l_eye: 11 });
+//let result = changeLayers(animation, { frill: 10, l_eye: 11 });
+let result = changeLayer(animation, 'ground', 0);
 
 fs.writeFileSync('./results/animation_fix.txt', JSON.stringify(result, undefined, '\t'));

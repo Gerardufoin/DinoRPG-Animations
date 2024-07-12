@@ -21,7 +21,7 @@ export const attack = {
 				b: -0.994,
 				c: -0.994,
 				d: -0.056,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11,
@@ -30,7 +30,7 @@ export const attack = {
 				b: -0.441,
 				c: -0.441,
 				d: 0.895,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 12.05,
@@ -39,7 +39,7 @@ export const attack = {
 				b: -0.633,
 				c: -0.633,
 				d: 0.767,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: 3,
@@ -48,7 +48,7 @@ export const attack = {
 				b: 0.709,
 				c: 0.528,
 				d: 0.597,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -5.8,
@@ -57,7 +57,7 @@ export const attack = {
 				b: -0.171,
 				c: -0.171,
 				d: 0.969,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -1.5,
@@ -66,7 +66,7 @@ export const attack = {
 				b: -0.867,
 				c: -0.867,
 				d: 0.487,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: 3.85,
@@ -75,7 +75,7 @@ export const attack = {
 				b: -0.135,
 				c: -0.135,
 				d: 0.982,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -2.25,
@@ -84,7 +84,7 @@ export const attack = {
 				b: 0.394,
 				c: 0.352,
 				d: 0.809,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: 3.65,
@@ -93,7 +93,7 @@ export const attack = {
 				b: -0.085,
 				c: -0.085,
 				d: 0.992,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.65,
@@ -102,6 +102,9 @@ export const attack = {
 				b: -0.121,
 				c: -0.121,
 				d: 0.991,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -116,7 +119,7 @@ export const attack = {
 				blx: 0,
 				bly: 2.25,
 				blq: 1,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 10.9,
@@ -128,7 +131,7 @@ export const attack = {
 				blx: 0,
 				bly: 2.25,
 				blq: 1,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 12.1,
@@ -140,7 +143,7 @@ export const attack = {
 				blx: 0,
 				bly: 2.25,
 				blq: 1,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: 4.25,
@@ -152,7 +155,7 @@ export const attack = {
 				blx: 0,
 				bly: 2.25,
 				blq: 1,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -7,
@@ -164,7 +167,7 @@ export const attack = {
 				blx: 0,
 				bly: 2.25,
 				blq: 1,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -1.5,
@@ -176,7 +179,7 @@ export const attack = {
 				blx: 0,
 				bly: 2.25,
 				blq: 1,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: 3.8,
@@ -188,7 +191,7 @@ export const attack = {
 				blx: 0,
 				bly: 2.25,
 				blq: 1,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -2.3,
@@ -200,7 +203,7 @@ export const attack = {
 				blx: 0,
 				bly: 2.25,
 				blq: 1,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: 3.65,
@@ -212,7 +215,7 @@ export const attack = {
 				blx: 0,
 				bly: 2.25,
 				blq: 1,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -221,6 +224,9 @@ export const attack = {
 				b: -0.118,
 				c: -0.118,
 				d: 0.991,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -235,7 +241,7 @@ export const attack = {
 				blx: 0,
 				bly: 4.5,
 				blq: 1,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 10.85,
@@ -247,7 +253,7 @@ export const attack = {
 				blx: 0,
 				bly: 4.5,
 				blq: 1,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 12.1,
@@ -259,7 +265,7 @@ export const attack = {
 				blx: 0,
 				bly: 4.5,
 				blq: 1,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: 5.5,
@@ -271,7 +277,7 @@ export const attack = {
 				blx: 0,
 				bly: 4.5,
 				blq: 1,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -8.15,
@@ -283,7 +289,7 @@ export const attack = {
 				blx: 0,
 				bly: 4.5,
 				blq: 1,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -1.5,
@@ -295,7 +301,7 @@ export const attack = {
 				blx: 0,
 				bly: 4.5,
 				blq: 1,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: 3.8,
@@ -307,7 +313,7 @@ export const attack = {
 				blx: 0,
 				bly: 4.5,
 				blq: 1,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -2.3,
@@ -319,7 +325,7 @@ export const attack = {
 				blx: 0,
 				bly: 4.5,
 				blq: 1,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: 3.65,
@@ -331,7 +337,7 @@ export const attack = {
 				blx: 0,
 				bly: 4.5,
 				blq: 1,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -340,6 +346,9 @@ export const attack = {
 				b: -0.118,
 				c: -0.118,
 				d: 0.991,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -354,7 +363,7 @@ export const attack = {
 				blx: 0,
 				bly: 6.75,
 				blq: 1,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 10.8,
@@ -366,7 +375,7 @@ export const attack = {
 				blx: 0,
 				bly: 6.75,
 				blq: 1,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 12.1,
@@ -378,7 +387,7 @@ export const attack = {
 				blx: 0,
 				bly: 6.75,
 				blq: 1,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: 6.8,
@@ -390,7 +399,7 @@ export const attack = {
 				blx: 0,
 				bly: 6.75,
 				blq: 1,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -9.4,
@@ -402,7 +411,7 @@ export const attack = {
 				blx: 0,
 				bly: 6.75,
 				blq: 1,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -1.5,
@@ -414,7 +423,7 @@ export const attack = {
 				blx: 0,
 				bly: 6.75,
 				blq: 1,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: 3.8,
@@ -426,7 +435,7 @@ export const attack = {
 				blx: 0,
 				bly: 6.75,
 				blq: 1,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -2.3,
@@ -438,7 +447,7 @@ export const attack = {
 				blx: 0,
 				bly: 6.75,
 				blq: 1,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: 3.65,
@@ -450,7 +459,7 @@ export const attack = {
 				blx: 0,
 				bly: 6.75,
 				blq: 1,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -459,6 +468,9 @@ export const attack = {
 				b: -0.118,
 				c: -0.118,
 				d: 0.991,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -473,7 +485,7 @@ export const attack = {
 				blx: 0,
 				bly: 9,
 				blq: 1,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11,
@@ -485,7 +497,7 @@ export const attack = {
 				blx: 0,
 				bly: 9,
 				blq: 1,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 12.05,
@@ -497,7 +509,7 @@ export const attack = {
 				blx: 0,
 				bly: 9,
 				blq: 1,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: 8,
@@ -509,7 +521,7 @@ export const attack = {
 				blx: 0,
 				bly: 9,
 				blq: 1,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -10.6,
@@ -521,7 +533,7 @@ export const attack = {
 				blx: 0,
 				bly: 9,
 				blq: 1,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -1.5,
@@ -533,7 +545,7 @@ export const attack = {
 				blx: 0,
 				bly: 9,
 				blq: 1,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: 3.85,
@@ -545,7 +557,7 @@ export const attack = {
 				blx: 0,
 				bly: 9,
 				blq: 1,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -2.25,
@@ -557,7 +569,7 @@ export const attack = {
 				blx: 0,
 				bly: 9,
 				blq: 1,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: 3.65,
@@ -569,7 +581,7 @@ export const attack = {
 				blx: 0,
 				bly: 9,
 				blq: 1,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.65,
@@ -578,6 +590,9 @@ export const attack = {
 				b: -0.121,
 				c: -0.121,
 				d: 0.991,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -589,7 +604,7 @@ export const attack = {
 				b: -1.098,
 				c: -0.899,
 				d: -0.062,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 9.7,
@@ -598,7 +613,7 @@ export const attack = {
 				b: -0.487,
 				c: -0.398,
 				d: 0.989,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 10.65,
@@ -607,7 +622,7 @@ export const attack = {
 				b: -0.699,
 				c: -0.572,
 				d: 0.847,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: 6.95,
@@ -616,7 +631,7 @@ export const attack = {
 				b: -0.34,
 				c: -0.207,
 				d: 0.844,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -9.85,
@@ -625,7 +640,7 @@ export const attack = {
 				b: 1.041,
 				c: 0.852,
 				d: 0.314,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -1.6,
@@ -634,7 +649,7 @@ export const attack = {
 				b: -0.958,
 				c: -0.784,
 				d: 0.539,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: 3.2,
@@ -643,7 +658,7 @@ export const attack = {
 				b: -0.149,
 				c: -0.122,
 				d: 1.085,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -2.3,
@@ -652,7 +667,7 @@ export const attack = {
 				b: 0.436,
 				c: 0.318,
 				d: 0.894,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: 3.05,
@@ -661,7 +676,7 @@ export const attack = {
 				b: -0.094,
 				c: -0.077,
 				d: 1.096,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.15,
@@ -670,6 +685,9 @@ export const attack = {
 				b: -0.134,
 				c: -0.11,
 				d: 1.095,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -681,7 +699,7 @@ export const attack = {
 				b: -1.035,
 				c: -0.883,
 				d: 0.246,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 9.9,
@@ -690,7 +708,7 @@ export const attack = {
 				b: -0.437,
 				c: -0.353,
 				d: 0.993,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 8.65,
@@ -699,7 +717,7 @@ export const attack = {
 				b: -0.552,
 				c: -0.426,
 				d: 0.923,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: 1,
@@ -708,7 +726,7 @@ export const attack = {
 				b: 0.005,
 				c: 0.085,
 				d: 0.883,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -12.5,
@@ -717,7 +735,7 @@ export const attack = {
 				b: 1.049,
 				c: 0.899,
 				d: 0.2,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -6.55,
@@ -726,7 +744,7 @@ export const attack = {
 				b: -0.804,
 				c: -0.645,
 				d: 0.707,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -0.25,
@@ -735,7 +753,7 @@ export const attack = {
 				b: 0.076,
 				c: 0.137,
 				d: 1.066,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -7.8,
@@ -744,7 +762,7 @@ export const attack = {
 				b: 0.619,
 				c: 0.528,
 				d: 0.773,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: 2.25,
@@ -753,7 +771,7 @@ export const attack = {
 				b: -0.02,
 				c: 0.005,
 				d: 1.082,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.25,
@@ -762,6 +780,9 @@ export const attack = {
 				b: -0.129,
 				c: -0.109,
 				d: 1.078,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -773,7 +794,7 @@ export const attack = {
 				b: -0.859,
 				c: -0.76,
 				d: 0.539,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 10.15,
@@ -782,7 +803,7 @@ export const attack = {
 				b: -0.384,
 				c: -0.314,
 				d: 0.994,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 6.7,
@@ -791,7 +812,7 @@ export const attack = {
 				b: -0.386,
 				c: -0.271,
 				d: 0.976,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -4.95,
@@ -800,7 +821,7 @@ export const attack = {
 				b: 0.357,
 				c: 0.38,
 				d: 0.821,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -15.25,
@@ -809,7 +830,7 @@ export const attack = {
 				b: 1.044,
 				c: 0.931,
 				d: 0.078,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -11.55,
@@ -818,7 +839,7 @@ export const attack = {
 				b: -0.601,
 				c: -0.469,
 				d: 0.844,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -3.75,
@@ -827,7 +848,7 @@ export const attack = {
 				b: 0.304,
 				c: 0.384,
 				d: 0.986,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -13.3,
@@ -836,7 +857,7 @@ export const attack = {
 				b: 0.773,
 				c: 0.7,
 				d: 0.606,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: 1.55,
@@ -845,7 +866,7 @@ export const attack = {
 				b: 0.054,
 				c: 0.088,
 				d: 1.061,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.3,
@@ -854,6 +875,9 @@ export const attack = {
 				b: -0.127,
 				c: -0.112,
 				d: 1.06,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -865,7 +889,7 @@ export const attack = {
 				b: -0.59,
 				c: -0.544,
 				d: 0.776,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 10.35,
@@ -874,7 +898,7 @@ export const attack = {
 				b: -0.329,
 				c: -0.272,
 				d: 0.995,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 4.75,
@@ -883,7 +907,7 @@ export const attack = {
 				b: -0.203,
 				c: -0.11,
 				d: 1.003,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -10.9,
@@ -892,7 +916,7 @@ export const attack = {
 				b: 0.678,
 				c: 0.643,
 				d: 0.662,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -18.05,
@@ -901,7 +925,7 @@ export const attack = {
 				b: 1.025,
 				c: 0.947,
 				d: -0.042,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -16.55,
@@ -910,7 +934,7 @@ export const attack = {
 				b: -0.36,
 				c: -0.265,
 				d: 0.936,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -7.3,
@@ -919,7 +943,7 @@ export const attack = {
 				b: 0.523,
 				c: 0.599,
 				d: 0.852,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -18.8,
@@ -928,7 +952,7 @@ export const attack = {
 				b: 0.89,
 				c: 0.822,
 				d: 0.402,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: 0.75,
@@ -937,7 +961,7 @@ export const attack = {
 				b: 0.133,
 				c: 0.165,
 				d: 1.034,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.4,
@@ -946,6 +970,9 @@ export const attack = {
 				b: -0.125,
 				c: -0.115,
 				d: 1.043,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -957,7 +984,7 @@ export const attack = {
 				b: -0.263,
 				c: -0.254,
 				d: 0.93,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 10.65,
@@ -966,7 +993,7 @@ export const attack = {
 				b: -0.271,
 				c: -0.23,
 				d: 0.994,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 2.7,
@@ -975,7 +1002,7 @@ export const attack = {
 				b: -0.013,
 				c: 0.049,
 				d: 1.004,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -16.9,
@@ -984,7 +1011,7 @@ export const attack = {
 				b: 0.919,
 				c: 0.844,
 				d: 0.418,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -20.8,
@@ -993,7 +1020,7 @@ export const attack = {
 				b: 0.992,
 				c: 0.946,
 				d: -0.172,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -21.45,
@@ -1002,7 +1029,7 @@ export const attack = {
 				b: -0.102,
 				c: -0.043,
 				d: 0.981,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -10.8,
@@ -1011,7 +1038,7 @@ export const attack = {
 				b: 0.713,
 				c: 0.775,
 				d: 0.671,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -24.25,
@@ -1020,7 +1047,7 @@ export const attack = {
 				b: 0.959,
 				c: 0.888,
 				d: 0.177,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: 0,
@@ -1029,7 +1056,7 @@ export const attack = {
 				b: 0.214,
 				c: 0.241,
 				d: 1.002,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.5,
@@ -1038,6 +1065,9 @@ export const attack = {
 				b: -0.123,
 				c: -0.117,
 				d: 1.025,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -1049,7 +1079,7 @@ export const attack = {
 				b: 0.076,
 				c: 0.073,
 				d: 0.978,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 10.85,
@@ -1058,7 +1088,7 @@ export const attack = {
 				b: -0.211,
 				c: -0.189,
 				d: 0.991,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.8,
@@ -1067,7 +1097,7 @@ export const attack = {
 				b: 0.177,
 				c: 0.209,
 				d: 0.978,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -22.85,
@@ -1076,7 +1106,7 @@ export const attack = {
 				b: 1.051,
 				c: 0.953,
 				d: 0.118,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -23.4,
@@ -1085,7 +1115,7 @@ export const attack = {
 				b: 0.947,
 				c: 0.927,
 				d: -0.298,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -26.5,
@@ -1094,7 +1124,7 @@ export const attack = {
 				b: 0.158,
 				c: 0.181,
 				d: 0.972,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -14.25,
@@ -1103,7 +1133,7 @@ export const attack = {
 				b: 0.866,
 				c: 0.898,
 				d: 0.459,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -29.7,
@@ -1112,7 +1142,7 @@ export const attack = {
 				b: 0.977,
 				c: 0.894,
 				d: -0.051,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -0.85,
@@ -1121,7 +1151,7 @@ export const attack = {
 				b: 0.296,
 				c: 0.31,
 				d: 0.964,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.55,
@@ -1130,6 +1160,9 @@ export const attack = {
 				b: -0.121,
 				c: -0.119,
 				d: 1.008,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -1141,7 +1174,7 @@ export const attack = {
 				b: 0.404,
 				c: 0.404,
 				d: 0.912,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11,
@@ -1150,7 +1183,7 @@ export const attack = {
 				b: -0.15,
 				c: -0.15,
 				d: 0.987,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -1.25,
@@ -1159,7 +1192,7 @@ export const attack = {
 				b: 0.363,
 				c: 0.363,
 				d: 0.928,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.8,
@@ -1168,7 +1201,7 @@ export const attack = {
 				b: 1.052,
 				c: 0.957,
 				d: -0.207,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -26.1,
@@ -1177,7 +1210,7 @@ export const attack = {
 				b: 0.891,
 				c: 0.891,
 				d: -0.428,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.4,
@@ -1186,7 +1219,7 @@ export const attack = {
 				b: 0.404,
 				c: 0.404,
 				d: 0.912,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.7,
@@ -1195,7 +1228,7 @@ export const attack = {
 				b: 0.967,
 				c: 0.967,
 				d: 0.228,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -35.15,
@@ -1204,7 +1237,7 @@ export const attack = {
 				b: 0.942,
 				c: 0.841,
 				d: -0.274,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.6,
@@ -1213,7 +1246,7 @@ export const attack = {
 				b: 0.38,
 				c: 0.38,
 				d: 0.922,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.65,
@@ -1222,6 +1255,9 @@ export const attack = {
 				b: -0.121,
 				c: -0.121,
 				d: 0.991,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		}

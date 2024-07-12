@@ -54,7 +54,7 @@ const fightVersion = [
 		bg: 'desert0',
 		top: 120,
 		bottom: 20,
-		ground: 'dirt',
+		ground: 'none',
 		history: [
 			/*{
 				action: 'AddCastle',
@@ -85,7 +85,7 @@ const fightVersion = [
 			{
 				action: 'Add',
 				fighter: {
-					props: [],
+					props: ['Static'],
 					dino: false,
 					life: 100,
 					name: 'Longbrik',
@@ -94,7 +94,15 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'worm'
 				}
-			},
+			}
+			/*{
+				action: 'Skill',
+				skill: 'Anim',
+				details: {
+					fid: 1,
+					anim: 'land'
+				}
+			}*/
 			/*{
 				action: 'Wait',
 				time: 2000
@@ -137,7 +145,7 @@ const fightVersion = [
 					type: 'Detonate'
 				}
 			}*/
-			{
+			/*{
 				action: 'Damages',
 				fid: 1,
 				tid: 0,
@@ -146,7 +154,7 @@ const fightVersion = [
 			{
 				action: 'Return',
 				fid: 1
-			}
+			}*/
 			/*{
 				action: 'AttackCastle',
 				fid: 0,

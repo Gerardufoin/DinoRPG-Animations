@@ -686,15 +686,7 @@ export const fx_coq_patte_a = {
 		p: [
 			{
 				ref: ref.fx.coq_patte_a,
-				blend: BLEND_MODES.MULTIPLY,
-				transform: {
-					tx: 5.35,
-					ty: 15.35
-				}
-			},
-			{
-				ref: ref.fx.coq_patte_a_highlight,
-				blend: BLEND_MODES.ADD,
+				blend: BLEND_MODES.OVERLAY,
 				transform: {
 					tx: 5.35,
 					ty: 15.35
@@ -717,15 +709,7 @@ export const fx_coq_patte_b = {
 		p: [
 			{
 				ref: ref.fx.coq_patte_b,
-				blend: BLEND_MODES.MULTIPLY,
-				transform: {
-					tx: -25.9,
-					ty: -5.45
-				}
-			},
-			{
-				ref: ref.fx.coq_patte_b_highlight,
-				blend: BLEND_MODES.ADD,
+				blend: BLEND_MODES.OVERLAY,
 				transform: {
 					tx: -25.9,
 					ty: -5.45

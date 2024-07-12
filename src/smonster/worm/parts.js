@@ -2,6 +2,12 @@
 import { ref } from '../references.js';
 
 export const parts = {
+	// 1096
+	ground: [
+		{
+			ref: ref.worm.ground
+		}
+	],
 	// 1098
 	body: [
 		{
@@ -48,12 +54,6 @@ export const parts = {
 	hl_head: [
 		{
 			ref: ref.worm.head_highlight
-		}
-	],
-	// 1116
-	ground: [
-		{
-			ref: ref.worm.ground
 		}
 	]
 };

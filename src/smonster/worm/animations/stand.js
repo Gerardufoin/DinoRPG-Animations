@@ -11,7 +11,7 @@ export const stand = {
 				b: 0.404,
 				c: 0.404,
 				d: 0.912,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11,
@@ -20,7 +20,7 @@ export const stand = {
 				b: -0.15,
 				c: -0.15,
 				d: 0.987,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -1.25,
@@ -29,7 +29,7 @@ export const stand = {
 				b: 0.363,
 				c: 0.363,
 				d: 0.928,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.8,
@@ -38,7 +38,7 @@ export const stand = {
 				b: 1.052,
 				c: 0.957,
 				d: -0.207,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -26.1,
@@ -47,7 +47,7 @@ export const stand = {
 				b: 0.891,
 				c: 0.891,
 				d: -0.428,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.4,
@@ -56,7 +56,7 @@ export const stand = {
 				b: 0.404,
 				c: 0.404,
 				d: 0.912,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.7,
@@ -65,7 +65,7 @@ export const stand = {
 				b: 0.967,
 				c: 0.967,
 				d: 0.228,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -35.15,
@@ -74,7 +74,7 @@ export const stand = {
 				b: 0.942,
 				c: 0.841,
 				d: -0.274,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.6,
@@ -83,7 +83,7 @@ export const stand = {
 				b: 0.38,
 				c: 0.38,
 				d: 0.922,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.65,
@@ -92,6 +92,9 @@ export const stand = {
 				b: -0.121,
 				c: -0.121,
 				d: 0.991,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -103,7 +106,7 @@ export const stand = {
 				b: 0.398,
 				c: 0.398,
 				d: 0.913,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 10.95,
@@ -112,7 +115,7 @@ export const stand = {
 				b: -0.139,
 				c: -0.139,
 				d: 0.988,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -1,
@@ -121,7 +124,7 @@ export const stand = {
 				b: 0.35,
 				c: 0.35,
 				d: 0.932,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.6,
@@ -130,7 +133,7 @@ export const stand = {
 				b: 1.055,
 				c: 0.959,
 				d: -0.192,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.95,
@@ -139,7 +142,7 @@ export const stand = {
 				b: 0.887,
 				c: 0.887,
 				d: -0.433,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.15,
@@ -148,7 +151,7 @@ export const stand = {
 				b: 0.398,
 				c: 0.398,
 				d: 0.913,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.55,
@@ -157,7 +160,7 @@ export const stand = {
 				b: 0.981,
 				c: 0.976,
 				d: 0.235,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -35,
@@ -166,7 +169,7 @@ export const stand = {
 				b: 0.944,
 				c: 0.834,
 				d: -0.264,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.5,
@@ -175,7 +178,7 @@ export const stand = {
 				b: 0.367,
 				c: 0.37,
 				d: 0.924,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -184,6 +187,9 @@ export const stand = {
 				b: -0.117,
 				c: -0.117,
 				d: 0.985,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -195,7 +201,7 @@ export const stand = {
 				b: 0.393,
 				c: 0.393,
 				d: 0.914,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.1,
@@ -204,7 +210,7 @@ export const stand = {
 				b: -0.127,
 				c: -0.127,
 				d: 0.99,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -0.8,
@@ -213,7 +219,7 @@ export const stand = {
 				b: 0.337,
 				c: 0.337,
 				d: 0.936,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.4,
@@ -222,7 +228,7 @@ export const stand = {
 				b: 1.057,
 				c: 0.961,
 				d: -0.183,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.85,
@@ -231,7 +237,7 @@ export const stand = {
 				b: 0.884,
 				c: 0.884,
 				d: -0.438,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.05,
@@ -240,7 +246,7 @@ export const stand = {
 				b: 0.393,
 				c: 0.393,
 				d: 0.914,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.3,
@@ -249,7 +255,7 @@ export const stand = {
 				b: 0.996,
 				c: 0.985,
 				d: 0.242,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -34.85,
@@ -258,7 +264,7 @@ export const stand = {
 				b: 0.945,
 				c: 0.827,
 				d: -0.258,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.45,
@@ -267,7 +273,7 @@ export const stand = {
 				b: 0.356,
 				c: 0.362,
 				d: 0.927,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -276,6 +282,9 @@ export const stand = {
 				b: -0.117,
 				c: -0.117,
 				d: 0.978,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -287,7 +296,7 @@ export const stand = {
 				b: 0.386,
 				c: 0.386,
 				d: 0.917,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.1,
@@ -296,7 +305,7 @@ export const stand = {
 				b: -0.118,
 				c: -0.118,
 				d: 0.991,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -0.55,
@@ -305,7 +314,7 @@ export const stand = {
 				b: 0.325,
 				c: 0.325,
 				d: 0.941,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.2,
@@ -314,7 +323,7 @@ export const stand = {
 				b: 1.059,
 				c: 0.963,
 				d: -0.17,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.65,
@@ -323,7 +332,7 @@ export const stand = {
 				b: 0.88,
 				c: 0.88,
 				d: -0.445,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -30.8,
@@ -332,7 +341,7 @@ export const stand = {
 				b: 0.386,
 				c: 0.386,
 				d: 0.917,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.1,
@@ -341,7 +350,7 @@ export const stand = {
 				b: 1.011,
 				c: 0.994,
 				d: 0.249,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -34.7,
@@ -350,7 +359,7 @@ export const stand = {
 				b: 0.946,
 				c: 0.82,
 				d: -0.251,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.3,
@@ -359,7 +368,7 @@ export const stand = {
 				b: 0.345,
 				c: 0.354,
 				d: 0.93,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -368,6 +377,9 @@ export const stand = {
 				b: -0.116,
 				c: -0.116,
 				d: 0.972,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -379,7 +391,7 @@ export const stand = {
 				b: 0.382,
 				c: 0.382,
 				d: 0.919,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.1,
@@ -388,7 +400,7 @@ export const stand = {
 				b: -0.109,
 				c: -0.109,
 				d: 0.992,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -0.3,
@@ -397,7 +409,7 @@ export const stand = {
 				b: 0.313,
 				c: 0.313,
 				d: 0.945,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.95,
@@ -406,7 +418,7 @@ export const stand = {
 				b: 1.061,
 				c: 0.965,
 				d: -0.157,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.5,
@@ -415,7 +427,7 @@ export const stand = {
 				b: 0.876,
 				c: 0.876,
 				d: -0.452,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -30.7,
@@ -424,7 +436,7 @@ export const stand = {
 				b: 0.382,
 				c: 0.382,
 				d: 0.919,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -16.9,
@@ -433,7 +445,7 @@ export const stand = {
 				b: 1.025,
 				c: 1.004,
 				d: 0.256,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -34.55,
@@ -442,7 +454,7 @@ export const stand = {
 				b: 0.947,
 				c: 0.812,
 				d: -0.245,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.3,
@@ -451,7 +463,7 @@ export const stand = {
 				b: 0.334,
 				c: 0.346,
 				d: 0.933,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.55,
@@ -460,6 +472,9 @@ export const stand = {
 				b: -0.115,
 				c: -0.115,
 				d: 0.966,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -471,7 +486,7 @@ export const stand = {
 				b: 0.377,
 				c: 0.377,
 				d: 0.92,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.15,
@@ -480,7 +495,7 @@ export const stand = {
 				b: -0.097,
 				c: -0.097,
 				d: 0.994,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -0.1,
@@ -489,7 +504,7 @@ export const stand = {
 				b: 0.3,
 				c: 0.3,
 				d: 0.948,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.8,
@@ -498,7 +513,7 @@ export const stand = {
 				b: 1.064,
 				c: 0.967,
 				d: -0.145,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.35,
@@ -507,7 +522,7 @@ export const stand = {
 				b: 0.874,
 				c: 0.874,
 				d: -0.456,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -30.45,
@@ -516,7 +531,7 @@ export const stand = {
 				b: 0.377,
 				c: 0.377,
 				d: 0.92,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -16.7,
@@ -525,7 +540,7 @@ export const stand = {
 				b: 1.039,
 				c: 1.012,
 				d: 0.267,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -34.3,
@@ -534,7 +549,7 @@ export const stand = {
 				b: 0.948,
 				c: 0.805,
 				d: -0.239,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.25,
@@ -543,7 +558,7 @@ export const stand = {
 				b: 0.327,
 				c: 0.341,
 				d: 0.935,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -552,6 +567,9 @@ export const stand = {
 				b: -0.114,
 				c: -0.114,
 				d: 0.959,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -563,7 +581,7 @@ export const stand = {
 				b: 0.373,
 				c: 0.373,
 				d: 0.922,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.25,
@@ -572,7 +590,7 @@ export const stand = {
 				b: -0.088,
 				c: -0.088,
 				d: 0.995,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.15,
@@ -581,7 +599,7 @@ export const stand = {
 				b: 0.288,
 				c: 0.288,
 				d: 0.952,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.65,
@@ -590,7 +608,7 @@ export const stand = {
 				b: 1.065,
 				c: 0.969,
 				d: -0.132,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.2,
@@ -599,7 +617,7 @@ export const stand = {
 				b: 0.87,
 				c: 0.87,
 				d: -0.464,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -30.3,
@@ -608,7 +626,7 @@ export const stand = {
 				b: 0.373,
 				c: 0.373,
 				d: 0.922,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -16.5,
@@ -617,7 +635,7 @@ export const stand = {
 				b: 1.053,
 				c: 1.021,
 				d: 0.274,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -34.2,
@@ -626,7 +644,7 @@ export const stand = {
 				b: 0.95,
 				c: 0.798,
 				d: -0.23,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.15,
@@ -635,7 +653,7 @@ export const stand = {
 				b: 0.316,
 				c: 0.333,
 				d: 0.938,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.55,
@@ -644,6 +662,9 @@ export const stand = {
 				b: -0.113,
 				c: -0.113,
 				d: 0.953,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -655,7 +676,7 @@ export const stand = {
 				b: 0.366,
 				c: 0.366,
 				d: 0.925,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.15,
@@ -664,7 +685,7 @@ export const stand = {
 				b: -0.079,
 				c: -0.079,
 				d: 0.995,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.3,
@@ -673,7 +694,7 @@ export const stand = {
 				b: 0.275,
 				c: 0.275,
 				d: 0.956,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.5,
@@ -682,7 +703,7 @@ export const stand = {
 				b: 1.067,
 				c: 0.97,
 				d: -0.12,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.1,
@@ -691,7 +712,7 @@ export const stand = {
 				b: 0.867,
 				c: 0.867,
 				d: -0.468,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -30.15,
@@ -700,7 +721,7 @@ export const stand = {
 				b: 0.366,
 				c: 0.366,
 				d: 0.925,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -16.3,
@@ -709,7 +730,7 @@ export const stand = {
 				b: 1.068,
 				c: 1.03,
 				d: 0.282,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -33.95,
@@ -718,7 +739,7 @@ export const stand = {
 				b: 0.951,
 				c: 0.791,
 				d: -0.224,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.05,
@@ -727,7 +748,7 @@ export const stand = {
 				b: 0.306,
 				c: 0.324,
 				d: 0.94,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.55,
@@ -736,6 +757,9 @@ export const stand = {
 				b: -0.112,
 				c: -0.112,
 				d: 0.946,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -747,7 +771,7 @@ export const stand = {
 				b: 0.363,
 				c: 0.363,
 				d: 0.927,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.2,
@@ -756,7 +780,7 @@ export const stand = {
 				b: -0.07,
 				c: -0.07,
 				d: 0.996,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.6,
@@ -765,7 +789,7 @@ export const stand = {
 				b: 0.265,
 				c: 0.265,
 				d: 0.959,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.25,
@@ -774,7 +798,7 @@ export const stand = {
 				b: 1.069,
 				c: 0.972,
 				d: -0.108,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -24.9,
@@ -783,7 +807,7 @@ export const stand = {
 				b: 0.863,
 				c: 0.863,
 				d: -0.477,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -29.9,
@@ -792,7 +816,7 @@ export const stand = {
 				b: 0.363,
 				c: 0.363,
 				d: 0.927,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -16.1,
@@ -801,7 +825,7 @@ export const stand = {
 				b: 1.082,
 				c: 1.039,
 				d: 0.292,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -33.8,
@@ -810,7 +834,7 @@ export const stand = {
 				b: 0.953,
 				c: 0.784,
 				d: -0.219,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1,
@@ -819,7 +843,7 @@ export const stand = {
 				b: 0.296,
 				c: 0.317,
 				d: 0.944,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -828,6 +852,9 @@ export const stand = {
 				b: -0.112,
 				c: -0.112,
 				d: 0.94,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -839,7 +866,7 @@ export const stand = {
 				b: 0.358,
 				c: 0.358,
 				d: 0.928,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.1,
@@ -848,7 +875,7 @@ export const stand = {
 				b: -0.066,
 				c: -0.066,
 				d: 0.996,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.65,
@@ -857,7 +884,7 @@ export const stand = {
 				b: 0.263,
 				c: 0.263,
 				d: 0.959,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.2,
@@ -866,7 +893,7 @@ export const stand = {
 				b: 1.069,
 				c: 0.973,
 				d: -0.099,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -24.85,
@@ -875,7 +902,7 @@ export const stand = {
 				b: 0.863,
 				c: 0.863,
 				d: -0.475,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -29.85,
@@ -884,7 +911,7 @@ export const stand = {
 				b: 0.358,
 				c: 0.358,
 				d: 0.928,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -16,
@@ -893,7 +920,7 @@ export const stand = {
 				b: 1.068,
 				c: 1.026,
 				d: 0.29,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -33.75,
@@ -902,7 +929,7 @@ export const stand = {
 				b: 0.954,
 				c: 0.793,
 				d: -0.217,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1,
@@ -911,7 +938,7 @@ export const stand = {
 				b: 0.3,
 				c: 0.315,
 				d: 0.953,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -920,6 +947,9 @@ export const stand = {
 				b: -0.112,
 				c: -0.112,
 				d: 0.94,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -931,7 +961,7 @@ export const stand = {
 				b: 0.357,
 				c: 0.357,
 				d: 0.928,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.1,
@@ -940,7 +970,7 @@ export const stand = {
 				b: -0.066,
 				c: -0.066,
 				d: 0.996,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.65,
@@ -949,7 +979,7 @@ export const stand = {
 				b: 0.263,
 				c: 0.263,
 				d: 0.959,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.25,
@@ -958,7 +988,7 @@ export const stand = {
 				b: 1.07,
 				c: 0.973,
 				d: -0.094,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -24.8,
@@ -967,7 +997,7 @@ export const stand = {
 				b: 0.863,
 				c: 0.863,
 				d: -0.475,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -29.85,
@@ -976,7 +1006,7 @@ export const stand = {
 				b: 0.357,
 				c: 0.357,
 				d: 0.928,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -16,
@@ -985,7 +1015,7 @@ export const stand = {
 				b: 1.054,
 				c: 1.012,
 				d: 0.291,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -33.75,
@@ -994,7 +1024,7 @@ export const stand = {
 				b: 0.954,
 				c: 0.802,
 				d: -0.219,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -0.95,
@@ -1003,7 +1033,7 @@ export const stand = {
 				b: 0.307,
 				c: 0.318,
 				d: 0.963,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -1012,6 +1042,9 @@ export const stand = {
 				b: -0.112,
 				c: -0.112,
 				d: 0.94,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -1023,7 +1056,7 @@ export const stand = {
 				b: 0.353,
 				c: 0.353,
 				d: 0.929,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.1,
@@ -1032,7 +1065,7 @@ export const stand = {
 				b: -0.066,
 				c: -0.066,
 				d: 0.996,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.65,
@@ -1041,7 +1074,7 @@ export const stand = {
 				b: 0.263,
 				c: 0.263,
 				d: 0.959,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.15,
@@ -1050,7 +1083,7 @@ export const stand = {
 				b: 1.071,
 				c: 0.974,
 				d: -0.086,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -24.8,
@@ -1059,7 +1092,7 @@ export const stand = {
 				b: 0.861,
 				c: 0.861,
 				d: -0.478,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -29.8,
@@ -1068,7 +1101,7 @@ export const stand = {
 				b: 0.353,
 				c: 0.353,
 				d: 0.929,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -15.9,
@@ -1077,7 +1110,7 @@ export const stand = {
 				b: 1.041,
 				c: 1,
 				d: 0.288,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -33.7,
@@ -1086,7 +1119,7 @@ export const stand = {
 				b: 0.955,
 				c: 0.811,
 				d: -0.218,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -0.95,
@@ -1095,7 +1128,7 @@ export const stand = {
 				b: 0.31,
 				c: 0.317,
 				d: 0.973,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -1104,6 +1137,9 @@ export const stand = {
 				b: -0.112,
 				c: -0.112,
 				d: 0.94,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -1115,7 +1151,7 @@ export const stand = {
 				b: 0.349,
 				c: 0.349,
 				d: 0.931,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.1,
@@ -1124,7 +1160,7 @@ export const stand = {
 				b: -0.066,
 				c: -0.066,
 				d: 0.996,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.65,
@@ -1133,7 +1169,7 @@ export const stand = {
 				b: 0.263,
 				c: 0.263,
 				d: 0.959,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.2,
@@ -1142,7 +1178,7 @@ export const stand = {
 				b: 1.071,
 				c: 0.974,
 				d: -0.081,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -24.75,
@@ -1151,7 +1187,7 @@ export const stand = {
 				b: 0.861,
 				c: 0.861,
 				d: -0.478,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -29.75,
@@ -1160,7 +1196,7 @@ export const stand = {
 				b: 0.349,
 				c: 0.349,
 				d: 0.931,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -16,
@@ -1169,7 +1205,7 @@ export const stand = {
 				b: 1.027,
 				c: 0.986,
 				d: 0.288,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -33.7,
@@ -1178,7 +1214,7 @@ export const stand = {
 				b: 0.956,
 				c: 0.821,
 				d: -0.217,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -0.95,
@@ -1187,7 +1223,7 @@ export const stand = {
 				b: 0.314,
 				c: 0.316,
 				d: 0.983,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -1196,6 +1232,9 @@ export const stand = {
 				b: -0.112,
 				c: -0.112,
 				d: 0.94,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -1207,7 +1246,7 @@ export const stand = {
 				b: 0.349,
 				c: 0.349,
 				d: 0.931,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.1,
@@ -1216,7 +1255,7 @@ export const stand = {
 				b: -0.066,
 				c: -0.066,
 				d: 0.996,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.65,
@@ -1225,7 +1264,7 @@ export const stand = {
 				b: 0.263,
 				c: 0.263,
 				d: 0.959,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.1,
@@ -1234,7 +1273,7 @@ export const stand = {
 				b: 1.072,
 				c: 0.975,
 				d: -0.073,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -24.8,
@@ -1243,7 +1282,7 @@ export const stand = {
 				b: 0.861,
 				c: 0.861,
 				d: -0.478,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -29.75,
@@ -1252,7 +1291,7 @@ export const stand = {
 				b: 0.349,
 				c: 0.349,
 				d: 0.931,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -15.9,
@@ -1261,7 +1300,7 @@ export const stand = {
 				b: 1.013,
 				c: 0.973,
 				d: 0.288,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -33.6,
@@ -1270,7 +1309,7 @@ export const stand = {
 				b: 0.956,
 				c: 0.83,
 				d: -0.219,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -0.9,
@@ -1279,7 +1318,7 @@ export const stand = {
 				b: 0.321,
 				c: 0.318,
 				d: 0.993,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -1288,6 +1327,9 @@ export const stand = {
 				b: -0.112,
 				c: -0.112,
 				d: 0.94,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -1299,7 +1341,7 @@ export const stand = {
 				b: 0.345,
 				c: 0.345,
 				d: 0.932,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.1,
@@ -1308,7 +1350,7 @@ export const stand = {
 				b: -0.066,
 				c: -0.066,
 				d: 0.996,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.65,
@@ -1317,7 +1359,7 @@ export const stand = {
 				b: 0.263,
 				c: 0.263,
 				d: 0.959,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.05,
@@ -1326,7 +1368,7 @@ export const stand = {
 				b: 1.072,
 				c: 0.975,
 				d: -0.068,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -24.75,
@@ -1335,7 +1377,7 @@ export const stand = {
 				b: 0.861,
 				c: 0.861,
 				d: -0.479,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -29.65,
@@ -1344,7 +1386,7 @@ export const stand = {
 				b: 0.345,
 				c: 0.345,
 				d: 0.932,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -15.8,
@@ -1353,7 +1395,7 @@ export const stand = {
 				b: 1,
 				c: 0.96,
 				d: 0.285,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -33.6,
@@ -1362,7 +1404,7 @@ export const stand = {
 				b: 0.957,
 				c: 0.84,
 				d: -0.218,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -0.9,
@@ -1371,7 +1413,7 @@ export const stand = {
 				b: 0.324,
 				c: 0.317,
 				d: 1.003,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -1380,6 +1422,9 @@ export const stand = {
 				b: -0.112,
 				c: -0.112,
 				d: 0.94,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -1391,7 +1436,7 @@ export const stand = {
 				b: 0.341,
 				c: 0.341,
 				d: 0.934,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.1,
@@ -1400,7 +1445,7 @@ export const stand = {
 				b: -0.066,
 				c: -0.066,
 				d: 0.996,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.65,
@@ -1409,7 +1454,7 @@ export const stand = {
 				b: 0.263,
 				c: 0.263,
 				d: 0.959,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27,
@@ -1418,7 +1463,7 @@ export const stand = {
 				b: 1.073,
 				c: 0.976,
 				d: -0.06,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -24.7,
@@ -1427,7 +1472,7 @@ export const stand = {
 				b: 0.861,
 				c: 0.861,
 				d: -0.479,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -29.65,
@@ -1436,7 +1481,7 @@ export const stand = {
 				b: 0.341,
 				c: 0.341,
 				d: 0.934,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -15.8,
@@ -1445,7 +1490,7 @@ export const stand = {
 				b: 0.986,
 				c: 0.947,
 				d: 0.286,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -33.6,
@@ -1454,7 +1499,7 @@ export const stand = {
 				b: 0.958,
 				c: 0.849,
 				d: -0.217,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -0.9,
@@ -1463,7 +1508,7 @@ export const stand = {
 				b: 0.328,
 				c: 0.316,
 				d: 1.014,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -1472,6 +1517,9 @@ export const stand = {
 				b: -0.112,
 				c: -0.112,
 				d: 0.94,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -1483,7 +1531,7 @@ export const stand = {
 				b: 0.342,
 				c: 0.342,
 				d: 0.935,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.2,
@@ -1492,7 +1540,7 @@ export const stand = {
 				b: -0.07,
 				c: -0.07,
 				d: 0.996,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.6,
@@ -1501,7 +1549,7 @@ export const stand = {
 				b: 0.265,
 				c: 0.265,
 				d: 0.959,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -26.9,
@@ -1510,7 +1558,7 @@ export const stand = {
 				b: 1.073,
 				c: 0.976,
 				d: -0.056,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -24.7,
@@ -1519,7 +1567,7 @@ export const stand = {
 				b: 0.861,
 				c: 0.861,
 				d: -0.481,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -29.6,
@@ -1528,7 +1576,7 @@ export const stand = {
 				b: 0.342,
 				c: 0.342,
 				d: 0.935,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -15.75,
@@ -1537,7 +1585,7 @@ export const stand = {
 				b: 0.972,
 				c: 0.934,
 				d: 0.286,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -33.55,
@@ -1546,7 +1594,7 @@ export const stand = {
 				b: 0.959,
 				c: 0.859,
 				d: -0.219,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -0.85,
@@ -1555,7 +1603,7 @@ export const stand = {
 				b: 0.335,
 				c: 0.319,
 				d: 1.024,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -1564,6 +1612,9 @@ export const stand = {
 				b: -0.112,
 				c: -0.112,
 				d: 0.94,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -1575,7 +1626,7 @@ export const stand = {
 				b: 0.345,
 				c: 0.345,
 				d: 0.932,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11,
@@ -1584,7 +1635,7 @@ export const stand = {
 				b: -0.075,
 				c: -0.075,
 				d: 0.996,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.45,
@@ -1593,7 +1644,7 @@ export const stand = {
 				b: 0.271,
 				c: 0.271,
 				d: 0.957,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.15,
@@ -1602,7 +1653,7 @@ export const stand = {
 				b: 1.072,
 				c: 0.975,
 				d: -0.073,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -24.85,
@@ -1611,7 +1662,7 @@ export const stand = {
 				b: 0.863,
 				c: 0.863,
 				d: -0.475,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -29.8,
@@ -1620,7 +1671,7 @@ export const stand = {
 				b: 0.345,
 				c: 0.345,
 				d: 0.932,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -15.95,
@@ -1629,7 +1680,7 @@ export const stand = {
 				b: 0.981,
 				c: 0.945,
 				d: 0.28,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -33.7,
@@ -1638,7 +1689,7 @@ export const stand = {
 				b: 0.957,
 				c: 0.851,
 				d: -0.221,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -0.95,
@@ -1647,7 +1698,7 @@ export const stand = {
 				b: 0.335,
 				c: 0.323,
 				d: 1.008,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.55,
@@ -1656,6 +1707,9 @@ export const stand = {
 				b: -0.114,
 				c: -0.112,
 				d: 0.944,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -1667,7 +1721,7 @@ export const stand = {
 				b: 0.353,
 				c: 0.353,
 				d: 0.929,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 10.85,
@@ -1676,7 +1730,7 @@ export const stand = {
 				b: -0.083,
 				c: -0.083,
 				d: 0.995,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.3,
@@ -1685,7 +1739,7 @@ export const stand = {
 				b: 0.279,
 				c: 0.279,
 				d: 0.954,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.3,
@@ -1694,7 +1748,7 @@ export const stand = {
 				b: 1.07,
 				c: 0.973,
 				d: -0.09,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25,
@@ -1703,7 +1757,7 @@ export const stand = {
 				b: 0.865,
 				c: 0.865,
 				d: -0.471,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -29.9,
@@ -1712,7 +1766,7 @@ export const stand = {
 				b: 0.353,
 				c: 0.353,
 				d: 0.929,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -16.2,
@@ -1721,7 +1775,7 @@ export const stand = {
 				b: 0.99,
 				c: 0.957,
 				d: 0.275,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -33.95,
@@ -1730,7 +1784,7 @@ export const stand = {
 				b: 0.955,
 				c: 0.843,
 				d: -0.227,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -0.95,
@@ -1739,7 +1793,7 @@ export const stand = {
 				b: 0.336,
 				c: 0.328,
 				d: 0.993,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -1748,6 +1802,9 @@ export const stand = {
 				b: -0.117,
 				c: -0.113,
 				d: 0.949,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -1759,7 +1816,7 @@ export const stand = {
 				b: 0.361,
 				c: 0.361,
 				d: 0.926,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 10.7,
@@ -1768,7 +1825,7 @@ export const stand = {
 				b: -0.088,
 				c: -0.088,
 				d: 0.994,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0.15,
@@ -1777,7 +1834,7 @@ export const stand = {
 				b: 0.287,
 				c: 0.287,
 				d: 0.952,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.45,
@@ -1786,7 +1843,7 @@ export const stand = {
 				b: 1.069,
 				c: 0.972,
 				d: -0.107,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.15,
@@ -1795,7 +1852,7 @@ export const stand = {
 				b: 0.869,
 				c: 0.869,
 				d: -0.464,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -30.1,
@@ -1804,7 +1861,7 @@ export const stand = {
 				b: 0.361,
 				c: 0.361,
 				d: 0.926,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -16.35,
@@ -1813,7 +1870,7 @@ export const stand = {
 				b: 0.999,
 				c: 0.969,
 				d: 0.27,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -34.05,
@@ -1822,7 +1879,7 @@ export const stand = {
 				b: 0.952,
 				c: 0.835,
 				d: -0.232,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.05,
@@ -1831,7 +1888,7 @@ export const stand = {
 				b: 0.336,
 				c: 0.333,
 				d: 0.978,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.55,
@@ -1840,6 +1897,9 @@ export const stand = {
 				b: -0.12,
 				c: -0.113,
 				d: 0.953,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -1851,7 +1911,7 @@ export const stand = {
 				b: 0.366,
 				c: 0.366,
 				d: 0.924,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 10.55,
@@ -1860,7 +1920,7 @@ export const stand = {
 				b: -0.096,
 				c: -0.096,
 				d: 0.993,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 0,
@@ -1869,7 +1929,7 @@ export const stand = {
 				b: 0.296,
 				c: 0.296,
 				d: 0.949,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.65,
@@ -1878,7 +1938,7 @@ export const stand = {
 				b: 1.066,
 				c: 0.97,
 				d: -0.124,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.25,
@@ -1887,7 +1947,7 @@ export const stand = {
 				b: 0.871,
 				c: 0.871,
 				d: -0.46,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -30.3,
@@ -1896,7 +1956,7 @@ export const stand = {
 				b: 0.366,
 				c: 0.366,
 				d: 0.924,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -16.45,
@@ -1905,7 +1965,7 @@ export const stand = {
 				b: 1.008,
 				c: 0.98,
 				d: 0.264,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -34.25,
@@ -1914,7 +1974,7 @@ export const stand = {
 				b: 0.951,
 				c: 0.828,
 				d: -0.234,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.15,
@@ -1923,7 +1983,7 @@ export const stand = {
 				b: 0.336,
 				c: 0.337,
 				d: 0.963,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.5,
@@ -1932,6 +1992,9 @@ export const stand = {
 				b: -0.123,
 				c: -0.114,
 				d: 0.957,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -1943,7 +2006,7 @@ export const stand = {
 				b: 0.373,
 				c: 0.373,
 				d: 0.921,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 10.4,
@@ -1952,7 +2015,7 @@ export const stand = {
 				b: -0.101,
 				c: -0.101,
 				d: 0.993,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -0.15,
@@ -1961,7 +2024,7 @@ export const stand = {
 				b: 0.304,
 				c: 0.304,
 				d: 0.947,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.8,
@@ -1970,7 +2033,7 @@ export const stand = {
 				b: 1.064,
 				c: 0.967,
 				d: -0.14,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.4,
@@ -1979,7 +2042,7 @@ export const stand = {
 				b: 0.873,
 				c: 0.873,
 				d: -0.456,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -30.5,
@@ -1988,7 +2051,7 @@ export const stand = {
 				b: 0.373,
 				c: 0.373,
 				d: 0.921,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -16.7,
@@ -1997,7 +2060,7 @@ export const stand = {
 				b: 1.016,
 				c: 0.991,
 				d: 0.261,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -34.45,
@@ -2006,7 +2069,7 @@ export const stand = {
 				b: 0.949,
 				c: 0.82,
 				d: -0.24,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.25,
@@ -2015,7 +2078,7 @@ export const stand = {
 				b: 0.335,
 				c: 0.341,
 				d: 0.948,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.55,
@@ -2024,6 +2087,9 @@ export const stand = {
 				b: -0.125,
 				c: -0.114,
 				d: 0.961,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -2035,7 +2101,7 @@ export const stand = {
 				b: 0.382,
 				c: 0.382,
 				d: 0.919,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.1,
@@ -2044,7 +2110,7 @@ export const stand = {
 				b: -0.109,
 				c: -0.109,
 				d: 0.992,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -0.3,
@@ -2053,7 +2119,7 @@ export const stand = {
 				b: 0.313,
 				c: 0.313,
 				d: 0.945,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -27.95,
@@ -2062,7 +2128,7 @@ export const stand = {
 				b: 1.062,
 				c: 0.965,
 				d: -0.157,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.5,
@@ -2071,7 +2137,7 @@ export const stand = {
 				b: 0.876,
 				c: 0.876,
 				d: -0.452,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -30.7,
@@ -2080,7 +2146,7 @@ export const stand = {
 				b: 0.382,
 				c: 0.382,
 				d: 0.919,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -16.9,
@@ -2089,7 +2155,7 @@ export const stand = {
 				b: 1.025,
 				c: 1.004,
 				d: 0.256,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -34.55,
@@ -2098,7 +2164,7 @@ export const stand = {
 				b: 0.947,
 				c: 0.812,
 				d: -0.245,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.3,
@@ -2107,7 +2173,7 @@ export const stand = {
 				b: 0.334,
 				c: 0.346,
 				d: 0.933,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.55,
@@ -2116,6 +2182,9 @@ export const stand = {
 				b: -0.129,
 				c: -0.115,
 				d: 0.966,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -2127,7 +2196,7 @@ export const stand = {
 				b: 0.382,
 				c: 0.382,
 				d: 0.918,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.2,
@@ -2136,7 +2205,7 @@ export const stand = {
 				b: -0.113,
 				c: -0.113,
 				d: 0.991,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -0.4,
@@ -2145,7 +2214,7 @@ export const stand = {
 				b: 0.317,
 				c: 0.317,
 				d: 0.942,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.1,
@@ -2154,7 +2223,7 @@ export const stand = {
 				b: 1.06,
 				c: 0.964,
 				d: -0.162,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.6,
@@ -2163,7 +2232,7 @@ export const stand = {
 				b: 0.877,
 				c: 0.877,
 				d: -0.448,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -30.8,
@@ -2172,7 +2241,7 @@ export const stand = {
 				b: 0.382,
 				c: 0.382,
 				d: 0.918,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -16.95,
@@ -2181,7 +2250,7 @@ export const stand = {
 				b: 1.016,
 				c: 0.998,
 				d: 0.25,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -34.55,
@@ -2190,7 +2259,7 @@ export const stand = {
 				b: 0.946,
 				c: 0.816,
 				d: -0.247,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.35,
@@ -2199,7 +2268,7 @@ export const stand = {
 				b: 0.339,
 				c: 0.349,
 				d: 0.931,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.55,
@@ -2208,6 +2277,9 @@ export const stand = {
 				b: -0.127,
 				c: -0.115,
 				d: 0.969,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -2219,7 +2291,7 @@ export const stand = {
 				b: 0.385,
 				c: 0.385,
 				d: 0.916,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.35,
@@ -2228,7 +2300,7 @@ export const stand = {
 				b: -0.118,
 				c: -0.118,
 				d: 0.991,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -0.5,
@@ -2237,7 +2309,7 @@ export const stand = {
 				b: 0.325,
 				c: 0.325,
 				d: 0.94,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.25,
@@ -2246,7 +2318,7 @@ export const stand = {
 				b: 1.059,
 				c: 0.963,
 				d: -0.17,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.65,
@@ -2255,7 +2327,7 @@ export const stand = {
 				b: 0.879,
 				c: 0.879,
 				d: -0.444,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -30.9,
@@ -2264,7 +2336,7 @@ export const stand = {
 				b: 0.385,
 				c: 0.385,
 				d: 0.916,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.05,
@@ -2273,7 +2345,7 @@ export const stand = {
 				b: 1.008,
 				c: 0.993,
 				d: 0.244,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -34.7,
@@ -2282,7 +2354,7 @@ export const stand = {
 				b: 0.945,
 				c: 0.82,
 				d: -0.251,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.4,
@@ -2291,7 +2363,7 @@ export const stand = {
 				b: 0.345,
 				c: 0.353,
 				d: 0.929,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -2300,6 +2372,9 @@ export const stand = {
 				b: -0.125,
 				c: -0.115,
 				d: 0.973,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -2311,7 +2386,7 @@ export const stand = {
 				b: 0.389,
 				c: 0.389,
 				d: 0.915,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.45,
@@ -2320,7 +2395,7 @@ export const stand = {
 				b: -0.126,
 				c: -0.126,
 				d: 0.99,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -0.7,
@@ -2329,7 +2404,7 @@ export const stand = {
 				b: 0.332,
 				c: 0.332,
 				d: 0.937,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.4,
@@ -2338,7 +2413,7 @@ export const stand = {
 				b: 1.057,
 				c: 0.961,
 				d: -0.178,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.75,
@@ -2347,7 +2422,7 @@ export const stand = {
 				b: 0.881,
 				c: 0.881,
 				d: -0.44,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.05,
@@ -2356,7 +2431,7 @@ export const stand = {
 				b: 0.389,
 				c: 0.389,
 				d: 0.915,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.2,
@@ -2365,7 +2440,7 @@ export const stand = {
 				b: 1,
 				c: 0.987,
 				d: 0.242,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -34.8,
@@ -2374,7 +2449,7 @@ export const stand = {
 				b: 0.944,
 				c: 0.824,
 				d: -0.256,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.45,
@@ -2383,7 +2458,7 @@ export const stand = {
 				b: 0.351,
 				c: 0.358,
 				d: 0.928,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -2392,6 +2467,9 @@ export const stand = {
 				b: -0.124,
 				c: -0.116,
 				d: 0.976,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -2403,7 +2481,7 @@ export const stand = {
 				b: 0.39,
 				c: 0.39,
 				d: 0.915,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.6,
@@ -2412,7 +2490,7 @@ export const stand = {
 				b: -0.131,
 				c: -0.131,
 				d: 0.989,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -0.85,
@@ -2421,7 +2499,7 @@ export const stand = {
 				b: 0.337,
 				c: 0.337,
 				d: 0.935,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.55,
@@ -2430,7 +2508,7 @@ export const stand = {
 				b: 1.056,
 				c: 0.96,
 				d: -0.183,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.85,
@@ -2439,7 +2517,7 @@ export const stand = {
 				b: 0.883,
 				c: 0.883,
 				d: -0.437,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.15,
@@ -2448,7 +2526,7 @@ export const stand = {
 				b: 0.39,
 				c: 0.39,
 				d: 0.915,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.35,
@@ -2457,7 +2535,7 @@ export const stand = {
 				b: 0.992,
 				c: 0.982,
 				d: 0.237,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -34.9,
@@ -2466,7 +2544,7 @@ export const stand = {
 				b: 0.944,
 				c: 0.828,
 				d: -0.258,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.5,
@@ -2475,7 +2553,7 @@ export const stand = {
 				b: 0.357,
 				c: 0.362,
 				d: 0.926,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.6,
@@ -2484,6 +2562,9 @@ export const stand = {
 				b: -0.122,
 				c: -0.116,
 				d: 0.98,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -2495,7 +2576,7 @@ export const stand = {
 				b: 0.394,
 				c: 0.394,
 				d: 0.913,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.65,
@@ -2504,7 +2585,7 @@ export const stand = {
 				b: -0.135,
 				c: -0.135,
 				d: 0.988,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -0.95,
@@ -2513,7 +2594,7 @@ export const stand = {
 				b: 0.345,
 				c: 0.345,
 				d: 0.933,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.6,
@@ -2522,7 +2603,7 @@ export const stand = {
 				b: 1.054,
 				c: 0.959,
 				d: -0.191,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.9,
@@ -2531,7 +2612,7 @@ export const stand = {
 				b: 0.885,
 				c: 0.885,
 				d: -0.433,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.15,
@@ -2540,7 +2621,7 @@ export const stand = {
 				b: 0.394,
 				c: 0.394,
 				d: 0.913,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.35,
@@ -2549,7 +2630,7 @@ export const stand = {
 				b: 0.983,
 				c: 0.977,
 				d: 0.231,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -34.95,
@@ -2558,7 +2639,7 @@ export const stand = {
 				b: 0.943,
 				c: 0.832,
 				d: -0.263,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.55,
@@ -2567,7 +2648,7 @@ export const stand = {
 				b: 0.365,
 				c: 0.369,
 				d: 0.923,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.65,
@@ -2576,6 +2657,9 @@ export const stand = {
 				b: -0.121,
 				c: -0.117,
 				d: 0.984,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -2587,7 +2671,7 @@ export const stand = {
 				b: 0.398,
 				c: 0.398,
 				d: 0.912,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.05,
@@ -2596,7 +2680,7 @@ export const stand = {
 				b: -0.144,
 				c: -0.144,
 				d: 0.988,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -1.1,
@@ -2605,7 +2689,7 @@ export const stand = {
 				b: 0.354,
 				c: 0.354,
 				d: 0.931,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.75,
@@ -2614,7 +2698,7 @@ export const stand = {
 				b: 1.053,
 				c: 0.958,
 				d: -0.2,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -26,
@@ -2623,7 +2707,7 @@ export const stand = {
 				b: 0.888,
 				c: 0.888,
 				d: -0.43,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.3,
@@ -2632,7 +2716,7 @@ export const stand = {
 				b: 0.398,
 				c: 0.398,
 				d: 0.912,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.55,
@@ -2641,7 +2725,7 @@ export const stand = {
 				b: 0.975,
 				c: 0.972,
 				d: 0.23,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -35.05,
@@ -2650,7 +2734,7 @@ export const stand = {
 				b: 0.942,
 				c: 0.837,
 				d: -0.269,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.55,
@@ -2659,7 +2743,7 @@ export const stand = {
 				b: 0.372,
 				c: 0.374,
 				d: 0.923,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.65,
@@ -2668,6 +2752,9 @@ export const stand = {
 				b: -0.12,
 				c: -0.118,
 				d: 0.987,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -2679,7 +2766,7 @@ export const stand = {
 				b: 0.398,
 				c: 0.398,
 				d: 0.912,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.05,
@@ -2688,7 +2775,7 @@ export const stand = {
 				b: -0.144,
 				c: -0.144,
 				d: 0.987,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -1.15,
@@ -2697,7 +2784,7 @@ export const stand = {
 				b: 0.353,
 				c: 0.353,
 				d: 0.93,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.75,
@@ -2706,7 +2793,7 @@ export const stand = {
 				b: 1.053,
 				c: 0.957,
 				d: -0.2,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -25.95,
@@ -2715,7 +2802,7 @@ export const stand = {
 				b: 0.888,
 				c: 0.888,
 				d: -0.429,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.35,
@@ -2724,7 +2811,7 @@ export const stand = {
 				b: 0.398,
 				c: 0.398,
 				d: 0.912,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.5,
@@ -2733,7 +2820,7 @@ export const stand = {
 				b: 0.973,
 				c: 0.971,
 				d: 0.229,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -35.05,
@@ -2742,7 +2829,7 @@ export const stand = {
 				b: 0.942,
 				c: 0.837,
 				d: -0.268,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.5,
@@ -2751,7 +2838,7 @@ export const stand = {
 				b: 0.372,
 				c: 0.373,
 				d: 0.922,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.65,
@@ -2760,6 +2847,9 @@ export const stand = {
 				b: -0.119,
 				c: -0.117,
 				d: 0.988,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -2771,7 +2861,7 @@ export const stand = {
 				b: 0.398,
 				c: 0.398,
 				d: 0.912,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.05,
@@ -2780,7 +2870,7 @@ export const stand = {
 				b: -0.144,
 				c: -0.144,
 				d: 0.987,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -1.2,
@@ -2789,7 +2879,7 @@ export const stand = {
 				b: 0.354,
 				c: 0.354,
 				d: 0.93,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.7,
@@ -2798,7 +2888,7 @@ export const stand = {
 				b: 1.053,
 				c: 0.957,
 				d: -0.2,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -26.05,
@@ -2807,7 +2897,7 @@ export const stand = {
 				b: 0.888,
 				c: 0.888,
 				d: -0.429,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.35,
@@ -2816,7 +2906,7 @@ export const stand = {
 				b: 0.398,
 				c: 0.398,
 				d: 0.912,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.55,
@@ -2825,7 +2915,7 @@ export const stand = {
 				b: 0.972,
 				c: 0.97,
 				d: 0.229,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -35.15,
@@ -2834,7 +2924,7 @@ export const stand = {
 				b: 0.942,
 				c: 0.837,
 				d: -0.269,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.5,
@@ -2843,7 +2933,7 @@ export const stand = {
 				b: 0.372,
 				c: 0.374,
 				d: 0.922,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.65,
@@ -2852,6 +2942,9 @@ export const stand = {
 				b: -0.119,
 				c: -0.117,
 				d: 0.988,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -2863,7 +2956,7 @@ export const stand = {
 				b: 0.398,
 				c: 0.398,
 				d: 0.912,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11.05,
@@ -2872,7 +2965,7 @@ export const stand = {
 				b: -0.144,
 				c: -0.144,
 				d: 0.987,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -1.25,
@@ -2881,7 +2974,7 @@ export const stand = {
 				b: 0.357,
 				c: 0.357,
 				d: 0.929,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.75,
@@ -2890,7 +2983,7 @@ export const stand = {
 				b: 1.053,
 				c: 0.957,
 				d: -0.2,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -26,
@@ -2899,7 +2992,7 @@ export const stand = {
 				b: 0.889,
 				c: 0.889,
 				d: -0.426,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.4,
@@ -2908,7 +3001,7 @@ export const stand = {
 				b: 0.398,
 				c: 0.398,
 				d: 0.912,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.6,
@@ -2917,7 +3010,7 @@ export const stand = {
 				b: 0.971,
 				c: 0.969,
 				d: 0.229,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -35.05,
@@ -2926,7 +3019,7 @@ export const stand = {
 				b: 0.942,
 				c: 0.838,
 				d: -0.269,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.5,
@@ -2935,7 +3028,7 @@ export const stand = {
 				b: 0.373,
 				c: 0.374,
 				d: 0.922,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.65,
@@ -2944,6 +3037,9 @@ export const stand = {
 				b: -0.119,
 				c: -0.118,
 				d: 0.989,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -2955,7 +3051,7 @@ export const stand = {
 				b: 0.401,
 				c: 0.401,
 				d: 0.911,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11,
@@ -2964,7 +3060,7 @@ export const stand = {
 				b: -0.144,
 				c: -0.144,
 				d: 0.987,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -1.25,
@@ -2973,7 +3069,7 @@ export const stand = {
 				b: 0.358,
 				c: 0.358,
 				d: 0.929,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.85,
@@ -2982,7 +3078,7 @@ export const stand = {
 				b: 1.052,
 				c: 0.957,
 				d: -0.204,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -26.05,
@@ -2991,7 +3087,7 @@ export const stand = {
 				b: 0.89,
 				c: 0.89,
 				d: -0.426,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.35,
@@ -3000,7 +3096,7 @@ export const stand = {
 				b: 0.401,
 				c: 0.401,
 				d: 0.911,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.65,
@@ -3009,7 +3105,7 @@ export const stand = {
 				b: 0.97,
 				c: 0.969,
 				d: 0.228,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -35.1,
@@ -3018,7 +3114,7 @@ export const stand = {
 				b: 0.942,
 				c: 0.839,
 				d: -0.27,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.5,
@@ -3027,7 +3123,7 @@ export const stand = {
 				b: 0.374,
 				c: 0.374,
 				d: 0.922,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.65,
@@ -3036,6 +3132,9 @@ export const stand = {
 				b: -0.119,
 				c: -0.118,
 				d: 0.989,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -3047,7 +3146,7 @@ export const stand = {
 				b: 0.402,
 				c: 0.402,
 				d: 0.911,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11,
@@ -3056,7 +3155,7 @@ export const stand = {
 				b: -0.148,
 				c: -0.148,
 				d: 0.987,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -1.25,
@@ -3065,7 +3164,7 @@ export const stand = {
 				b: 0.358,
 				c: 0.358,
 				d: 0.929,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.8,
@@ -3074,7 +3173,7 @@ export const stand = {
 				b: 1.052,
 				c: 0.957,
 				d: -0.204,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -26.05,
@@ -3083,7 +3182,7 @@ export const stand = {
 				b: 0.89,
 				c: 0.89,
 				d: -0.426,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.35,
@@ -3092,7 +3191,7 @@ export const stand = {
 				b: 0.402,
 				c: 0.402,
 				d: 0.911,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.65,
@@ -3101,7 +3200,7 @@ export const stand = {
 				b: 0.969,
 				c: 0.968,
 				d: 0.228,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -35.1,
@@ -3110,7 +3209,7 @@ export const stand = {
 				b: 0.942,
 				c: 0.84,
 				d: -0.27,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.55,
@@ -3119,7 +3218,7 @@ export const stand = {
 				b: 0.377,
 				c: 0.378,
 				d: 0.921,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.65,
@@ -3128,6 +3227,9 @@ export const stand = {
 				b: -0.119,
 				c: -0.118,
 				d: 0.99,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -3139,7 +3241,7 @@ export const stand = {
 				b: 0.402,
 				c: 0.402,
 				d: 0.911,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11,
@@ -3148,7 +3250,7 @@ export const stand = {
 				b: -0.148,
 				c: -0.148,
 				d: 0.987,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -1.25,
@@ -3157,7 +3259,7 @@ export const stand = {
 				b: 0.361,
 				c: 0.361,
 				d: 0.928,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.8,
@@ -3166,7 +3268,7 @@ export const stand = {
 				b: 1.052,
 				c: 0.957,
 				d: -0.204,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -26.1,
@@ -3175,7 +3277,7 @@ export const stand = {
 				b: 0.89,
 				c: 0.89,
 				d: -0.426,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.35,
@@ -3184,7 +3286,7 @@ export const stand = {
 				b: 0.402,
 				c: 0.402,
 				d: 0.911,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.7,
@@ -3193,7 +3295,7 @@ export const stand = {
 				b: 0.968,
 				c: 0.967,
 				d: 0.228,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -35.1,
@@ -3202,7 +3304,7 @@ export const stand = {
 				b: 0.941,
 				c: 0.84,
 				d: -0.273,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.55,
@@ -3211,7 +3313,7 @@ export const stand = {
 				b: 0.378,
 				c: 0.378,
 				d: 0.921,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.65,
@@ -3220,6 +3322,9 @@ export const stand = {
 				b: -0.118,
 				c: -0.118,
 				d: 0.991,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		},
@@ -3231,7 +3336,7 @@ export const stand = {
 				b: 0.404,
 				c: 0.404,
 				d: 0.912,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 11,
@@ -3240,7 +3345,7 @@ export const stand = {
 				b: -0.15,
 				c: -0.15,
 				d: 0.987,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: -1.25,
@@ -3249,7 +3354,7 @@ export const stand = {
 				b: 0.363,
 				c: 0.363,
 				d: 0.928,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -28.8,
@@ -3258,7 +3363,7 @@ export const stand = {
 				b: 1.052,
 				c: 0.957,
 				d: -0.207,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -26.1,
@@ -3267,7 +3372,7 @@ export const stand = {
 				b: 0.891,
 				c: 0.891,
 				d: -0.428,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -31.4,
@@ -3276,7 +3381,7 @@ export const stand = {
 				b: 0.404,
 				c: 0.404,
 				d: 0.912,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -17.7,
@@ -3285,7 +3390,7 @@ export const stand = {
 				b: 0.967,
 				c: 0.967,
 				d: 0.228,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -35.15,
@@ -3294,7 +3399,7 @@ export const stand = {
 				b: 0.942,
 				c: 0.841,
 				d: -0.274,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: -1.6,
@@ -3303,7 +3408,7 @@ export const stand = {
 				b: 0.38,
 				c: 0.38,
 				d: 0.922,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 2.65,
@@ -3312,6 +3417,9 @@ export const stand = {
 				b: -0.121,
 				c: -0.121,
 				d: 0.991,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		}

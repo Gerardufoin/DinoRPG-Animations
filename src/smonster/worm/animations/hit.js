@@ -11,7 +11,7 @@ export const hit = {
 				b: 0.217,
 				c: 0.217,
 				d: 0.972,
-				l: 9
+				l: 10
 			},
 			hl_body_2: {
 				tx: 17.95,
@@ -20,7 +20,7 @@ export const hit = {
 				b: -0.341,
 				c: -0.341,
 				d: 0.938,
-				l: 8
+				l: 9
 			},
 			hl_body_1: {
 				tx: 10.3,
@@ -29,7 +29,7 @@ export const hit = {
 				b: 0.174,
 				c: 0.174,
 				d: 0.981,
-				l: 7
+				l: 8
 			},
 			head_top: {
 				tx: -16.95,
@@ -38,7 +38,7 @@ export const hit = {
 				b: 1.035,
 				c: 0.942,
 				d: 0.264,
-				l: 6
+				l: 7
 			},
 			head_bottom: {
 				tx: -14.85,
@@ -47,7 +47,7 @@ export const hit = {
 				b: 0.845,
 				c: 0.845,
 				d: -0.51,
-				l: 5
+				l: 6
 			},
 			mouth: {
 				tx: -19.65,
@@ -56,7 +56,7 @@ export const hit = {
 				b: 0.217,
 				c: 0.217,
 				d: 0.972,
-				l: 4
+				l: 5
 			},
 			body_3: {
 				tx: -5.4,
@@ -65,7 +65,7 @@ export const hit = {
 				b: 0.903,
 				c: 0.903,
 				d: 0.413,
-				l: 3
+				l: 4
 			},
 			head_back: {
 				tx: -23.75,
@@ -74,7 +74,7 @@ export const hit = {
 				b: 0.983,
 				c: 0.836,
 				d: -0.099,
-				l: 2
+				l: 3
 			},
 			body_2: {
 				tx: 8.4,
@@ -83,7 +83,7 @@ export const hit = {
 				b: 0.192,
 				c: 0.192,
 				d: 0.978,
-				l: 1
+				l: 2
 			},
 			body_1: {
 				tx: 5.8,
@@ -92,6 +92,9 @@ export const hit = {
 				b: -0.341,
 				c: -0.341,
 				d: 0.938,
+				l: 1
+			},
+			ground: {
 				l: 0
 			}
 		}
