@@ -524,5 +524,16 @@ export const mapping_smonster = {
 	'Symbol 1106': 'head_top',
 	'Symbol 1108': 'hl_body_1',
 	'Symbol 1110': 'hl_body_2',
-	'Symbol 1112': 'hl_head'
+	'Symbol 1112': 'hl_head',
+	// Chtiver
+	'Symbol 1256': 'body_3',
+	'Symbol 1256-1': 'body_2',
+	'Symbol 1256-2': 'body_1',
+	'Symbol 1258': 'head_back',
+	'Symbol 1259': 'mouth',
+	'Symbol 1261': 'head_bottom',
+	'Symbol 1263': 'head_top',
+	'Symbol 1264': 'hl_body_1',
+	'Symbol 1265': 'hl_body_2',
+	'Symbol 1266': 'hl_head'
 };

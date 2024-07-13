@@ -4,23 +4,32 @@ import { hit } from './animations/hit.js';
 import { attack } from './animations/attack.js';
 import { dead } from './animations/dead.js';
 import { land } from './animations/land.js';
-import { run } from './animations/run.js';
 import { stand } from './animations/stand.js';
 import { parts } from './parts.js';
 
-// Symbol 1121
-export const worm = {
-	name: 'worm',
+// Symbol 1274
+export const worm2 = {
+	name: 'worm2',
 	// Symbol 82
-	width: 1.433,
-	height: 1.43,
+	width: 1.365,
+	height: 1.363,
 	transforms: [
 		// 4089
 		{
-			tx: -2.15,
-			ty: -11.5,
+			tx: 0,
+			ty: 0.75,
+			a: 0.792,
+			d: 0.792,
 			contrast: 12,
 			saturation: 18
+		},
+		// 1274
+		{
+			tx: -3.15,
+			ty: -12.6,
+			contrast: 1,
+			saturation: -42,
+			hue: 9
 		},
 		// Adjust
 		{
@@ -36,57 +45,57 @@ export const worm = {
 	shadow: {
 		ref: ref_sdino.fx.shadow,
 		transform: {
-			tx: -8.9,
-			a: 2.145,
-			d: 0.797
+			tx: -1.2,
+			a: 1.278,
+			d: 1.156
 		},
 		alpha: 0.5,
 		blur: { x: 1, y: 1 }
 	},
 	parts: {
-		// 1098
+		// 1256
 		body_3: parts.body,
-		// 1098-1
+		// 1256-1
 		body_2: parts.body,
-		// 1098-2
+		// 1256-2
 		body_1: parts.body,
-		// 1100
+		// 1258
 		head_back: parts.head_back,
-		// 1102
+		// 1259
 		mouth: parts.mouth,
-		// 1104
+		// 1261
 		head_bottom: parts.head_bottom,
-		// 1106
+		// 1263
 		head_top: parts.head_top,
-		// 1108
+		// 1264
 		hl_body_1: parts.hl_body_1,
-		// 1110
+		// 1265
 		hl_body_2: parts.hl_body_2,
-		// 1112
+		// 1266
 		hl_head: parts.hl_head,
 		// 1096
 		ground: parts.ground
 	},
 	animations: {
-		// release, ill, cast, walk, sleep same as stand
-		// 1113
+		// release, ill, cast, walk, run same as stand
+		// 1267
 		stand: stand,
-		// 1114
-		run: run,
-		// 1115
+		// 1268 (same as 1269)
 		hit: hit,
 		jump: hit,
 		jumpDown: hit,
 		fall: hit,
-		dodge: hit,
 		fly: hit,
-		// 1117
+		dodge: hit,
+		// 1270
 		attack: attack,
 		big: attack,
 		counter: attack,
-		// 1118
+		shoot: attack,
+		// 1271
 		land: land,
-		// 1119
-		dead: dead
+		// 1272
+		dead: dead,
+		sleep: dead
 	}
 };

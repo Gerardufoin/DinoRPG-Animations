@@ -101,6 +101,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1071.xml', '_p1', undefined, 1); // brig3 Brigand Mattmût
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1095.xml', '_p1', undefined, 1); // piraos Pirhan-os
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1121.xml', '_p1', undefined, 1); // worm Longbrik
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1274.xml', '_p1', undefined, 1); // worm2 Chtiver
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus
@@ -168,6 +169,6 @@ const parser = new XFLParser();
 const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
 //adapter.parse('./results/SVG/dino', mapping_dino, '../assets/dino');
-adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
-//adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
+//adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
+adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');

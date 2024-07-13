@@ -92,15 +92,30 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'worm'
+					gfx: 'worm',
+					entrance: 'Ground'
+				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: ['Static'],
+					dino: false,
+					life: 100,
+					name: 'Chtiver',
+					side: false,
+					scale: 1,
+					fid: 2,
+					gfx: 'worm2',
+					entrance: 'Ground'
 				}
 			}
 			/*{
 				action: 'Skill',
 				skill: 'Anim',
 				details: {
-					fid: 1,
-					anim: 'land'
+					fid: 2,
+					anim: 'dead'
 				}
 			}*/
 			/*{

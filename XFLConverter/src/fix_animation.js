@@ -176,6 +176,6 @@ const animation = [];
 //let result = freezeFrame(freezeFrame(animation, 43, 'sp_10', 43), 43, 'sp_4', 43);
 //let result = linearMovement(linearMovement(animation, 'sp_4', 0, 9), 'sp_10', 0, 9);
 //let result = changeLayers(animation, { frill: 10, l_eye: 11 });
-let result = changeLayer(animation, 'ground', 0);
+let result = changeLayer(addPart(animation, 'ground', {}), 'ground', 0);
 
 fs.writeFileSync('./results/animation_fix.txt', JSON.stringify(result, undefined, '\t'));

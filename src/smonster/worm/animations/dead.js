@@ -787,7 +787,7 @@ export const dead = {
 				acb: 0,
 				acc: 1,
 				acs: -22,
-				ach: 0,
+				ach: -5,
 				l: 10
 			},
 			hl_body_2: {
@@ -800,7 +800,7 @@ export const dead = {
 				acb: 0,
 				acc: 1,
 				acs: -22,
-				ach: 0,
+				ach: -5,
 				l: 9
 			},
 			hl_body_1: {
@@ -813,7 +813,7 @@ export const dead = {
 				acb: 0,
 				acc: 1,
 				acs: -22,
-				ach: 0,
+				ach: -5,
 				l: 8
 			},
 			head_top: {
@@ -826,7 +826,7 @@ export const dead = {
 				acb: 0,
 				acc: 1,
 				acs: -22,
-				ach: 0,
+				ach: -5,
 				l: 7
 			},
 			head_bottom: {
@@ -839,7 +839,7 @@ export const dead = {
 				acb: 0,
 				acc: 1,
 				acs: -22,
-				ach: 0,
+				ach: -5,
 				l: 6
 			},
 			mouth: {
@@ -852,7 +852,7 @@ export const dead = {
 				acb: 0,
 				acc: 1,
 				acs: -22,
-				ach: 0,
+				ach: -5,
 				l: 5
 			},
 			body_3: {
@@ -865,7 +865,7 @@ export const dead = {
 				acb: 0,
 				acc: 1,
 				acs: -22,
-				ach: 0,
+				ach: -5,
 				l: 4
 			},
 			head_back: {
@@ -878,7 +878,7 @@ export const dead = {
 				acb: 0,
 				acc: 1,
 				acs: -22,
-				ach: 0,
+				ach: -5,
 				l: 3
 			},
 			body_2: {
@@ -891,7 +891,7 @@ export const dead = {
 				acb: 0,
 				acc: 1,
 				acs: -22,
-				ach: 0,
+				ach: -5,
 				l: 2
 			},
 			body_1: {
@@ -904,7 +904,7 @@ export const dead = {
 				acb: 0,
 				acc: 1,
 				acs: -22,
-				ach: 0,
+				ach: -5,
 				l: 1
 			},
 			ground: {
@@ -1867,7 +1867,7 @@ export const dead = {
 				acb: 0,
 				acc: 0,
 				acs: -51,
-				ach: 0,
+				ach: -5,
 				l: 10
 			},
 			hl_body_2: {
@@ -1880,7 +1880,7 @@ export const dead = {
 				acb: 0,
 				acc: 0,
 				acs: -51,
-				ach: 0,
+				ach: -5,
 				l: 9
 			},
 			hl_body_1: {
@@ -1893,7 +1893,7 @@ export const dead = {
 				acb: 0,
 				acc: 0,
 				acs: -51,
-				ach: 0,
+				ach: -5,
 				l: 8
 			},
 			head_top: {
@@ -1906,7 +1906,7 @@ export const dead = {
 				acb: 0,
 				acc: 0,
 				acs: -51,
-				ach: 0,
+				ach: -5,
 				l: 7
 			},
 			head_bottom: {
@@ -1919,7 +1919,7 @@ export const dead = {
 				acb: 0,
 				acc: 0,
 				acs: -51,
-				ach: 0,
+				ach: -5,
 				l: 6
 			},
 			mouth: {
@@ -1932,7 +1932,7 @@ export const dead = {
 				acb: 0,
 				acc: 0,
 				acs: -51,
-				ach: 0,
+				ach: -5,
 				l: 5
 			},
 			body_3: {
@@ -1945,7 +1945,7 @@ export const dead = {
 				acb: 0,
 				acc: 0,
 				acs: -51,
-				ach: 0,
+				ach: -5,
 				l: 4
 			},
 			head_back: {
@@ -1958,7 +1958,7 @@ export const dead = {
 				acb: 0,
 				acc: 0,
 				acs: -51,
-				ach: 0,
+				ach: -5,
 				l: 3
 			},
 			body_2: {
@@ -1971,7 +1971,7 @@ export const dead = {
 				acb: 0,
 				acc: 0,
 				acs: -51,
-				ach: 0,
+				ach: -5,
 				l: 2
 			},
 			body_1: {
@@ -1984,7 +1984,7 @@ export const dead = {
 				acb: 0,
 				acc: 0,
 				acs: -51,
-				ach: 0,
+				ach: -5,
 				l: 1
 			},
 			ground: {
