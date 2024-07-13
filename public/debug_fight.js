@@ -85,29 +85,14 @@ const fightVersion = [
 			{
 				action: 'Add',
 				fighter: {
-					props: ['Static'],
+					props: [],
 					dino: false,
 					life: 100,
-					name: 'Longbrik',
+					name: '[TW]Capitaine',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'worm',
-					entrance: 'Ground'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: ['Static'],
-					dino: false,
-					life: 100,
-					name: 'Chtiver',
-					side: false,
-					scale: 1,
-					fid: 2,
-					gfx: 'worm2',
-					entrance: 'Ground'
+					gfx: 'wteamc'
 				}
 			}
 			/*{

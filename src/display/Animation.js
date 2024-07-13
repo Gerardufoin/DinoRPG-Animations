@@ -369,10 +369,12 @@ export class Animation extends Container {
 		if (idx !== undefined && idx < this._childAnimations.length) {
 			this._childAnimations[idx]._playing = true;
 			this._childAnimations[idx].setCurrentIdx(0);
+			this._childAnimations[idx].updateAnimation();
 		} else if (idx === undefined) {
 			for (const c of this._childAnimations) {
 				c._playing = true;
 				c.setCurrentIdx(0);
+				c.updateAnimation();
 				c.resetChildAnimations();
 			}
 		}

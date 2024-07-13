@@ -36,6 +36,7 @@ import { vener } from './vener/vener.js';
 import { wolf } from './wolf/wolf.js';
 import { worm } from './worm/worm.js';
 import { worm2 } from './worm2/worm2.js';
+import { wteamc } from './wteamc/wteamc.js';
 
 export const monsters = {
 	goupi: goupi,
@@ -74,6 +75,7 @@ export const monsters = {
 	brig3: brig3,
 	piraos: piraos,
 	worm: worm,
+	wteamc: wteamc,
 	worm2: worm2,
 	mandragore: mandragore,
 	lucet: lucet,
