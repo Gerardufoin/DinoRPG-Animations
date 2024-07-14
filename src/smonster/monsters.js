@@ -8,6 +8,7 @@ import { borg } from './borg/borg.js';
 import { brig1 } from './brig1/brig1.js';
 import { brig2 } from './brig2/brig2.js';
 import { brig3 } from './brig3/brig3.js';
+import { cactus } from './cactus/cactus.js';
 import { cobra } from './cobra/cobra.js';
 import { coq } from './coq/coq.js';
 import { eearth } from './eearth/eearth.js';
@@ -81,6 +82,7 @@ export const monsters = {
 	towgrd: towgrd,
 	bamboo: bamboo,
 	worm2: worm2,
+	cactus: cactus,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus

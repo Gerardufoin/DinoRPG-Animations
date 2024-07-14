@@ -62,6 +62,7 @@ const monsterList = [
 	'towgrd',
 	'bamboo',
 	'worm2',
+	'cactus',
 	'mandragore',
 	'lucet',
 	'taurus'

@@ -43,7 +43,7 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] towgrd
 -   [x] bamboo
 -   [x] worm2
--   [ ] cactus
+-   [x] cactus
 -   [ ] yakuzi
 -   [ ] igor
 -   [ ] gropi

@@ -94,6 +94,19 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'bamboo'
 				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Kaktuz',
+					side: false,
+					scale: 1,
+					fid: 2,
+					gfx: 'cactus'
+				}
 			}
 			/*{
 				action: 'Skill',
