@@ -53,12 +53,12 @@ export const guard = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_hand: {
 				tx: -41.6,
@@ -122,12 +122,12 @@ export const guard = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_hand: {
 				tx: -41.6,
@@ -191,12 +191,12 @@ export const guard = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_hand: {
 				tx: -41.6,
@@ -260,12 +260,12 @@ export const guard = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_hand: {
 				tx: -41.6,
@@ -329,12 +329,12 @@ export const guard = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_hand: {
 				tx: -41.6,
@@ -398,12 +398,12 @@ export const guard = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_hand: {
 				tx: -41.6,
@@ -467,12 +467,12 @@ export const guard = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_hand: {
 				tx: -41.6,
@@ -536,12 +536,12 @@ export const guard = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_hand: {
 				tx: -41.6,
@@ -605,12 +605,12 @@ export const guard = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_hand: {
 				tx: -41.6,
@@ -674,12 +674,12 @@ export const guard = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_hand: {
 				tx: -41.6,
@@ -743,12 +743,12 @@ export const guard = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_hand: {
 				tx: -41.6,
@@ -812,12 +812,12 @@ export const guard = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_hand: {
 				tx: -41.6,
@@ -881,12 +881,12 @@ export const guard = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_hand: {
 				tx: -41.6,
@@ -950,12 +950,12 @@ export const guard = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_hand: {
 				tx: -41.6,

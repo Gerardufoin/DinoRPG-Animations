@@ -502,6 +502,16 @@ export const mapping_smonster = {
 	'Symbol 1208': 'l_eye',
 	'Symbol 1208-1': 'r_eye',
 	'Symbol 1214': 'head',
+	// Pousse de bambooz
+	'Symbol 1225': 'b_hair',
+	'Symbol 1228': 'f_hair',
+	'Symbol 1231': 'u_body',
+	'Symbol 1233': 'r_eye',
+	'Symbol 1237': 'l_body',
+	'Symbol 1239': 'l_eye',
+	'Symbol 1242': 'root',
+	'Symbol 1248': 'atk_smear_1',
+	'Symbol 1249': 'atk_smear_2',
 	// Chtiver
 	'Symbol 1256': 'body_3',
 	'Symbol 1256-1': 'body_2',

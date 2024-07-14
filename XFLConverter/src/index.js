@@ -105,6 +105,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1175.xml', '_sub', undefined, 1); // wteamc Captain stand
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1181.xml', '_sub', undefined, 1); // wteamc Captain down
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1222.xml', '_p1', undefined, 1); // towgrd Gardien de la Tour
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1254.xml', '_p1', undefined, 1); // bamboo Pousse de Bambooz
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1274.xml', '_p1', undefined, 1); // worm2 Chtiver
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette

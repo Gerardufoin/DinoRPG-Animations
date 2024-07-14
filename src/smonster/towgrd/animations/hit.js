@@ -46,12 +46,12 @@ export const hit = {
 			legs: {
 				tx: 27.85,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 7.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -15.75,

@@ -46,12 +46,12 @@ export const stand = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -22.25,
@@ -112,12 +112,12 @@ export const stand = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -22.25,
@@ -184,13 +184,13 @@ export const stand = {
 				ty: 24.75,
 				a: 0.999,
 				d: 0.999,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
 				d: 1.001,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -22.2,
@@ -261,14 +261,14 @@ export const stand = {
 				ty: 24.7,
 				a: 0.997,
 				d: 0.997,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.05,
 				ty: 1.3,
 				c: 0.001,
 				d: 1.003,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -22.15,
@@ -339,7 +339,7 @@ export const stand = {
 				ty: 24.65,
 				a: 0.995,
 				d: 0.995,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.05,
@@ -347,7 +347,7 @@ export const stand = {
 				a: 1.001,
 				c: 0.005,
 				d: 1.006,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -22.1,
@@ -418,7 +418,7 @@ export const stand = {
 				ty: 24.55,
 				a: 0.991,
 				d: 0.991,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2,
@@ -426,7 +426,7 @@ export const stand = {
 				a: 1.001,
 				c: 0.009,
 				d: 1.01,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -22,
@@ -501,7 +501,7 @@ export const stand = {
 				ty: 24.45,
 				a: 0.987,
 				d: 0.987,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.95,
@@ -509,7 +509,7 @@ export const stand = {
 				a: 1.002,
 				c: 0.014,
 				d: 1.015,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -21.85,
@@ -584,7 +584,7 @@ export const stand = {
 				ty: 24.25,
 				a: 0.982,
 				d: 0.982,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.85,
@@ -592,7 +592,7 @@ export const stand = {
 				a: 1.002,
 				c: 0.022,
 				d: 1.021,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -21.7,
@@ -667,7 +667,7 @@ export const stand = {
 				ty: 24.1,
 				a: 0.975,
 				d: 0.975,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.75,
@@ -675,7 +675,7 @@ export const stand = {
 				a: 1.003,
 				c: 0.028,
 				d: 1.028,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -21.45,
@@ -750,7 +750,7 @@ export const stand = {
 				ty: 23.85,
 				a: 0.968,
 				d: 0.968,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.65,
@@ -758,7 +758,7 @@ export const stand = {
 				a: 1.004,
 				c: 0.037,
 				d: 1.036,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -21.25,
@@ -833,7 +833,7 @@ export const stand = {
 				ty: 23.65,
 				a: 0.96,
 				d: 0.96,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.55,
@@ -841,7 +841,7 @@ export const stand = {
 				a: 1.005,
 				c: 0.05,
 				d: 1.045,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -21,
@@ -916,7 +916,7 @@ export const stand = {
 				ty: 23.4,
 				a: 0.952,
 				d: 0.952,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.45,
@@ -924,7 +924,7 @@ export const stand = {
 				a: 1.006,
 				c: 0.061,
 				d: 1.055,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -20.7,
@@ -999,7 +999,7 @@ export const stand = {
 				ty: 23.2,
 				a: 0.944,
 				d: 0.944,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.3,
@@ -1007,7 +1007,7 @@ export const stand = {
 				a: 1.008,
 				c: 0.074,
 				d: 1.064,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -20.45,
@@ -1082,7 +1082,7 @@ export const stand = {
 				ty: 22.95,
 				a: 0.937,
 				d: 0.937,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.2,
@@ -1090,7 +1090,7 @@ export const stand = {
 				a: 1.009,
 				c: 0.085,
 				d: 1.073,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -20.2,
@@ -1165,7 +1165,7 @@ export const stand = {
 				ty: 22.8,
 				a: 0.931,
 				d: 0.931,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.1,
@@ -1173,7 +1173,7 @@ export const stand = {
 				a: 1.01,
 				c: 0.095,
 				d: 1.082,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -20,
@@ -1248,7 +1248,7 @@ export const stand = {
 				ty: 22.65,
 				a: 0.926,
 				d: 0.926,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1,
@@ -1256,7 +1256,7 @@ export const stand = {
 				a: 1.011,
 				c: 0.106,
 				d: 1.089,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -19.8,
@@ -1331,7 +1331,7 @@ export const stand = {
 				ty: 22.55,
 				a: 0.922,
 				d: 0.922,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 0.95,
@@ -1339,7 +1339,7 @@ export const stand = {
 				a: 1.012,
 				c: 0.115,
 				d: 1.095,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -19.65,
@@ -1414,7 +1414,7 @@ export const stand = {
 				ty: 22.45,
 				a: 0.919,
 				d: 0.919,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 0.85,
@@ -1422,7 +1422,7 @@ export const stand = {
 				a: 1.012,
 				c: 0.121,
 				d: 1.1,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -19.5,
@@ -1497,7 +1497,7 @@ export const stand = {
 				ty: 22.4,
 				a: 0.917,
 				d: 0.917,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 0.8,
@@ -1505,7 +1505,7 @@ export const stand = {
 				a: 1.013,
 				c: 0.127,
 				d: 1.104,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -19.4,
@@ -1579,7 +1579,7 @@ export const stand = {
 				ty: 22.35,
 				a: 0.915,
 				d: 0.915,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 0.75,
@@ -1587,7 +1587,7 @@ export const stand = {
 				a: 1.013,
 				c: 0.132,
 				d: 1.107,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -19.35,
@@ -1661,7 +1661,7 @@ export const stand = {
 				ty: 22.3,
 				a: 0.915,
 				d: 0.915,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 0.75,
@@ -1669,7 +1669,7 @@ export const stand = {
 				a: 1.013,
 				c: 0.136,
 				d: 1.109,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -19.3,
@@ -1744,7 +1744,7 @@ export const stand = {
 				ty: 22.3,
 				a: 0.914,
 				d: 0.914,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 0.7,
@@ -1752,7 +1752,7 @@ export const stand = {
 				a: 1.014,
 				c: 0.137,
 				d: 1.111,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -19.25,
@@ -1827,7 +1827,7 @@ export const stand = {
 				ty: 22.45,
 				a: 0.92,
 				d: 0.92,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 0.7,
@@ -1835,7 +1835,7 @@ export const stand = {
 				a: 1.014,
 				c: 0.138,
 				d: 1.112,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -19.25,
@@ -1910,7 +1910,7 @@ export const stand = {
 				ty: 22.65,
 				a: 0.926,
 				d: 0.926,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 0.7,
@@ -1918,7 +1918,7 @@ export const stand = {
 				a: 1.014,
 				c: 0.141,
 				d: 1.112,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -19.45,
@@ -1993,7 +1993,7 @@ export const stand = {
 				ty: 22.75,
 				a: 0.931,
 				d: 0.931,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 0.8,
@@ -2001,7 +2001,7 @@ export const stand = {
 				a: 1.013,
 				c: 0.127,
 				d: 1.104,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -19.7,
@@ -2076,7 +2076,7 @@ export const stand = {
 				ty: 22.95,
 				a: 0.937,
 				d: 0.937,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 0.9,
@@ -2084,7 +2084,7 @@ export const stand = {
 				a: 1.012,
 				c: 0.116,
 				d: 1.096,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -19.9,
@@ -2159,7 +2159,7 @@ export const stand = {
 				ty: 23.15,
 				a: 0.943,
 				d: 0.943,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1,
@@ -2167,7 +2167,7 @@ export const stand = {
 				a: 1.011,
 				c: 0.105,
 				d: 1.087,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -20.1,
@@ -2242,7 +2242,7 @@ export const stand = {
 				ty: 23.3,
 				a: 0.949,
 				d: 0.949,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.15,
@@ -2250,7 +2250,7 @@ export const stand = {
 				a: 1.01,
 				c: 0.095,
 				d: 1.079,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -20.3,
@@ -2325,7 +2325,7 @@ export const stand = {
 				ty: 23.45,
 				a: 0.954,
 				d: 0.954,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.25,
@@ -2333,7 +2333,7 @@ export const stand = {
 				a: 1.008,
 				c: 0.081,
 				d: 1.071,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -20.55,
@@ -2408,7 +2408,7 @@ export const stand = {
 				ty: 23.65,
 				a: 0.96,
 				d: 0.96,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.35,
@@ -2416,7 +2416,7 @@ export const stand = {
 				a: 1.007,
 				c: 0.07,
 				d: 1.062,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -20.75,
@@ -2491,7 +2491,7 @@ export const stand = {
 				ty: 23.8,
 				a: 0.966,
 				d: 0.966,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.45,
@@ -2499,7 +2499,7 @@ export const stand = {
 				a: 1.006,
 				c: 0.06,
 				d: 1.054,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -20.95,
@@ -2574,7 +2574,7 @@ export const stand = {
 				ty: 23.95,
 				a: 0.971,
 				d: 0.971,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.55,
@@ -2582,7 +2582,7 @@ export const stand = {
 				a: 1.005,
 				c: 0.05,
 				d: 1.045,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -21.2,
@@ -2657,7 +2657,7 @@ export const stand = {
 				ty: 24.15,
 				a: 0.977,
 				d: 0.977,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.65,
@@ -2665,7 +2665,7 @@ export const stand = {
 				a: 1.004,
 				c: 0.037,
 				d: 1.036,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -21.4,
@@ -2740,7 +2740,7 @@ export const stand = {
 				ty: 24.25,
 				a: 0.983,
 				d: 0.983,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.8,
@@ -2748,7 +2748,7 @@ export const stand = {
 				a: 1.003,
 				c: 0.028,
 				d: 1.027,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -21.6,
@@ -2823,7 +2823,7 @@ export const stand = {
 				ty: 24.45,
 				a: 0.989,
 				d: 0.989,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 1.9,
@@ -2831,7 +2831,7 @@ export const stand = {
 				a: 1.002,
 				c: 0.018,
 				d: 1.018,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -21.8,
@@ -2902,7 +2902,7 @@ export const stand = {
 				ty: 24.65,
 				a: 0.994,
 				d: 0.994,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2,
@@ -2910,7 +2910,7 @@ export const stand = {
 				a: 1.001,
 				c: 0.009,
 				d: 1.009,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -22.05,
@@ -2975,12 +2975,12 @@ export const stand = {
 			legs: {
 				tx: 25.6,
 				ty: 24.8,
-				l: 4
+				l: 3
 			},
 			body: {
 				tx: 2.1,
 				ty: 1.35,
-				l: 3
+				l: 4
 			},
 			r_t_arm: {
 				tx: -22.25,

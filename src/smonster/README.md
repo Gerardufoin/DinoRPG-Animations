@@ -32,17 +32,17 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] hippo
 -   [x] rocky
 -   [x] pteroz
--   [ ] egrllz
--   [ ] scorp
--   [ ] brig1
--   [ ] brig2
--   [ ] brig3
--   [ ] piraos
--   [ ] worm
--   [ ] wteamc
--   [ ] towgrd
--   [ ] bamboo
--   [ ] worm2
+-   [x] egrllz
+-   [x] scorp
+-   [x] brig1
+-   [x] brig2
+-   [x] brig3
+-   [x] piraos
+-   [x] worm
+-   [x] wteamc
+-   [x] towgrd
+-   [x] bamboo
+-   [x] worm2
 -   [ ] cactus
 -   [ ] yakuzi
 -   [ ] igor

@@ -1,6 +1,7 @@
 // @ts-check
 import { bad } from '../dino/bad.js';
 import { anguil } from './anguil/anguil.js';
+import { bamboo } from './bamboo/bamboo.js';
 import { barche } from './barche/barche.js';
 import { bat } from './bat/bat.js';
 import { borg } from './borg/borg.js';
@@ -78,6 +79,7 @@ export const monsters = {
 	worm: worm,
 	wteamc: wteamc,
 	towgrd: towgrd,
+	bamboo: bamboo,
 	worm2: worm2,
 	mandragore: mandragore,
 	lucet: lucet,

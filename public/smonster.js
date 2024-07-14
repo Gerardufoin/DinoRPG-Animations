@@ -60,6 +60,7 @@ const monsterList = [
 	'worm',
 	'wteamc',
 	'towgrd',
+	'bamboo',
 	'worm2',
 	'mandragore',
 	'lucet',

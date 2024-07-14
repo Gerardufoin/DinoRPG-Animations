@@ -85,14 +85,14 @@ const fightVersion = [
 			{
 				action: 'Add',
 				fighter: {
-					props: ['Static'],
+					props: [],
 					dino: false,
 					life: 100,
-					name: 'Guardien de la tour',
+					name: 'Pousse de Bambooz',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'towgrd'
+					gfx: 'bamboo'
 				}
 			}
 			/*{
