@@ -18,7 +18,8 @@ const actions = [
 	'big',
 	'special',
 	'counter',
-	'dodge'
+	'dodge',
+	'guard'
 ];
 const monsterList = [
 	'goupi',
@@ -58,6 +59,7 @@ const monsterList = [
 	'piraos',
 	'worm',
 	'wteamc',
+	'towgrd',
 	'worm2',
 	'mandragore',
 	'lucet',

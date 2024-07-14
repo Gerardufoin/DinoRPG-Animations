@@ -32,6 +32,7 @@ import { rocky } from './rocky/rocky.js';
 import { ronciv } from './ronciv/ronciv.js';
 import { scorp } from './scorp/scorp.js';
 import { taurus } from './taurus/taurus.js';
+import { towgrd } from './towgrd/towgrd.js';
 import { vener } from './vener/vener.js';
 import { wolf } from './wolf/wolf.js';
 import { worm } from './worm/worm.js';
@@ -76,6 +77,7 @@ export const monsters = {
 	piraos: piraos,
 	worm: worm,
 	wteamc: wteamc,
+	towgrd: towgrd,
 	worm2: worm2,
 	mandragore: mandragore,
 	lucet: lucet,

@@ -85,22 +85,22 @@ const fightVersion = [
 			{
 				action: 'Add',
 				fighter: {
-					props: [],
+					props: ['Static'],
 					dino: false,
 					life: 100,
-					name: '[TW]Capitaine',
+					name: 'Guardien de la tour',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'wteamc'
+					gfx: 'towgrd'
 				}
 			}
 			/*{
 				action: 'Skill',
 				skill: 'Anim',
 				details: {
-					fid: 2,
-					anim: 'dead'
+					fid: 1,
+					anim: 'guard'
 				}
 			}*/
 			/*{
