@@ -40,6 +40,7 @@ import { wolf } from './wolf/wolf.js';
 import { worm } from './worm/worm.js';
 import { worm2 } from './worm2/worm2.js';
 import { wteamc } from './wteamc/wteamc.js';
+import { yakuzi } from './yakuzi/yakuzi.js';
 
 export const monsters = {
 	goupi: goupi,
@@ -83,6 +84,7 @@ export const monsters = {
 	bamboo: bamboo,
 	worm2: worm2,
 	cactus: cactus,
+	yakuzi: yakuzi,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus

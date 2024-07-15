@@ -51,7 +51,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 'desert0',
+		bg: 's_port',
 		top: 120,
 		bottom: 20,
 		ground: 'none',
@@ -88,24 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Pousse de Bambooz',
+					name: 'Yakuzi',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'bamboo'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Kaktuz',
-					side: false,
-					scale: 1,
-					fid: 2,
-					gfx: 'cactus'
+					gfx: 'yakuzi'
 				}
 			}
 			/*{
