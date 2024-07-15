@@ -64,6 +64,7 @@ const monsterList = [
 	'worm2',
 	'cactus',
 	'yakuzi',
+	'igor',
 	'mandragore',
 	'lucet',
 	'taurus'
@@ -111,4 +112,4 @@ for (const m of monsterList) {
 	document.getElementById('monsters').appendChild(button);
 }
 
-updateMonster('egrllz');
+updateMonster('goupi');

@@ -554,6 +554,9 @@ export const mapping_smonster = {
 	'Symbol 1334': 'shoulders',
 	'Symbol 1336': 'head',
 	'Symbol 1338': 'hair',
+	// Pr.Igor
+	'Symbol 1351': 'wind',
+	'Symbol 1361_sub': 'igor',
 	// Mandragore
 	'Symbol 1869': 'l_foot',
 	'Symbol 1871': 'l_leg',

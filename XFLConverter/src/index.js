@@ -109,6 +109,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1274.xml', '_p1', undefined, 1); // worm2 Chtiver
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1314.xml', '_p1', undefined, 1); // cactus Kaktuz
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1348.xml', '_p1', undefined, 1); // yakuzi Yakuzi
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1366.xml', '_p1', undefined, 1); // igor Pr.Igor
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1351.xml', '_sub', undefined, 1); // igor shock
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus

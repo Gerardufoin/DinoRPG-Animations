@@ -94,6 +94,19 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'yakuzi'
 				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Pr.Igor',
+					side: false,
+					scale: 1,
+					fid: 2,
+					gfx: 'igor'
+				}
 			}
 			/*{
 				action: 'Skill',
