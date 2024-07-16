@@ -175,7 +175,8 @@ const animation = [];
 //const result = mirrorTo(animation, 12, 'r_f_lower_leg');
 //let result = freezeFrame(freezeFrame(animation, 43, 'sp_10', 43), 43, 'sp_4', 43);
 //let result = linearMovement(linearMovement(animation, 'sp_4', 0, 9), 'sp_10', 0, 9);
-let result = changeLayer(animation, 'legs', 3);
+//let result = changeLayer(animation, 'legs', 3);
 //let result = linearMovement(followKey(animation, 'ww_head', 'ww_l_eye'), 'ww_u_body', 7, 11);
+let result = reduceBlur(animation);
 
 fs.writeFileSync('./results/animation_fix.txt', JSON.stringify(result, undefined, '\t'));

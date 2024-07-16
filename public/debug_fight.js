@@ -51,7 +51,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 's_port',
+		bg: 's_dnv',
 		top: 120,
 		bottom: 20,
 		ground: 'none',
@@ -88,34 +88,34 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Yakuzi',
+					name: 'Gropignon',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'yakuzi'
+					gfx: 'gropi'
 				}
 			},
 			{
 				action: 'Add',
 				fighter: {
-					props: [],
+					props: ['Static'],
 					dino: false,
 					life: 100,
-					name: 'Pr.Igor',
+					name: 'Gropignon',
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'igor'
+					gfx: 'gropi'
 				}
-			}
-			/*{
+			},
+			{
 				action: 'Skill',
 				skill: 'Anim',
 				details: {
-					fid: 1,
-					anim: 'guard'
+					fid: 2,
+					anim: 'sleep'
 				}
-			}*/
+			}
 			/*{
 				action: 'Wait',
 				time: 2000

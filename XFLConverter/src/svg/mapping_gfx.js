@@ -317,6 +317,10 @@ export const mapping_gfx = {
 	658: 'fx/slash_8',
 	662: 'fx/coq_patte_b',
 	670: 'fx/coq_patte_a',
+	673: 'fx/grop_stain_1',
+	674: 'fx/grop_stain_2',
+	675: 'fx/grop_stain_3',
+	676: 'fx/grop_stain_4',
 	680: 'fx/projectile/sand',
 	//681: 'fx/projectile/acorn', // Edited manually to bake in the adjust shader
 	683: 'fx/projectile/stinger',

@@ -65,6 +65,7 @@ const monsterList = [
 	'cactus',
 	'yakuzi',
 	'igor',
+	'gropi',
 	'mandragore',
 	'lucet',
 	'taurus'

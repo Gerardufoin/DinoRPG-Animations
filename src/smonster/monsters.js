@@ -20,6 +20,7 @@ import { gluon } from './gluon/gluon.js';
 import { goblin } from './goblin/goblin.js';
 import { goupi, goupi2, goupi3 } from './goupi/goupi.js';
 import { grdien } from './grdien/grdien.js';
+import { gropi } from './gropi/gropi.js';
 import { gvert } from './gvert/gvert.js';
 import { hippo } from './hippo/hippo.js';
 import { igor } from './igor/igor.js';
@@ -87,6 +88,7 @@ export const monsters = {
 	cactus: cactus,
 	yakuzi: yakuzi,
 	igor: igor,
+	gropi: gropi,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus

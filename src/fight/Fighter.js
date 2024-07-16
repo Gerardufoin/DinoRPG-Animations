@@ -48,6 +48,7 @@ import { MudWall } from './parts/skills/MudWall.js';
 import { TFx, Tween } from '../display/Tween.js';
 import { EnumConverter } from './data/EnumConverter.js';
 import { dino } from '../dino.js';
+import { fx_grop_stain } from '../gfx/fx/attach/grop_stain.js';
 
 /**
  * A DinoRPG fighter. Can be either a dino or a monster.
@@ -1712,6 +1713,8 @@ export class Fighter extends Phys {
 				return fx_coq_patte_b;
 			case 'hole':
 				return fx_hole;
+			case 'grop_tache':
+				return fx_grop_stain;
 			case 'brulure':
 				return fx_brulure;
 		}

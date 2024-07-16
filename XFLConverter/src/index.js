@@ -111,6 +111,9 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1348.xml', '_p1', undefined, 1); // yakuzi Yakuzi
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1366.xml', '_p1', undefined, 1); // igor Pr.Igor
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1351.xml', '_sub', undefined, 1); // igor shock
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1454.xml', '_p1', undefined, 1); // gropi Gropignon
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1379.xml', '_sub', undefined, 1); // gropi right_eye
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1385.xml', '_sub', undefined, 1); // gropi left_eye
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus
@@ -160,6 +163,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/gfx/LIBRARY/Symbol 664.xml', '_sub', undefined, 2); // coq_patte
 //parser.parse('./resources/gfx/LIBRARY/Symbol 660.xml', '_sub', undefined, 2); // slash
 //parser.parse('./resources/gfx/LIBRARY/Symbol 661.xml', '_sub', undefined, 2); // smoke_small
+//parser.parse('./resources/gfx/LIBRARY/Symbol 678.xml', '_sub', undefined, 2); // grop_tache
 //parser.parse('./resources/gfx/LIBRARY/Symbol 679.xml', '_sub', undefined, 2); // smoke
 //parser.parse('./resources/gfx/LIBRARY/Symbol 686.xml', '_sub', undefined, 2); // projo blade rotation
 //parser.parse('./resources/gfx/LIBRARY/Symbol 687.xml', '_sub', undefined, 2); // projo blades
