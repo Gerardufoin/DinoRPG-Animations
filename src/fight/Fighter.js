@@ -597,11 +597,9 @@ export class Fighter extends Phys {
 			this.fxAttachScene(args[0], args[1], args[2], args[3], args[4]);
 		});
 
-		// Add poison filter to animator
 		if (!this._animator.filters) {
 			this._animator.filters = [];
 		}
-		this._animator.filters.push(this._poisonColorFilter);
 
 		// If the Fighter is static, we freeze it (prevent it from walking) and remove its force (prevent it from pushing).
 		if (this.haveProp(FighterProperty.Static)) {
@@ -906,8 +904,6 @@ export class Fighter extends Phys {
 					case FighterStatus.Fly:
 						this._flLand = true;
 						break;
-					case FighterStatus.Poison:
-						this._poisonColorFilter.matrix[6] = 1;
 				}
 				return false;
 			}
@@ -1006,6 +1002,7 @@ export class Fighter extends Phys {
 			this._statusSpawnTimer = 0;
 		}
 		this.body.filters = [];
+		this._animator.filters = [];
 		for (const s of this._status) {
 			switch (s) {
 				case FighterStatus.Flames:
@@ -1033,9 +1030,7 @@ export class Fighter extends Phys {
 					}
 					break;
 				case FighterStatus.Stoned:
-					{
-						this.body.filters.push(Fighter.StatusFilters[FighterStatus.Stoned]);
-					}
+					this._animator.filters.push(Fighter.StatusFilters[FighterStatus.Stoned]);
 					break;
 				case FighterStatus.Shield:
 					{
@@ -1070,10 +1065,9 @@ export class Fighter extends Phys {
 					}
 					break;
 				case FighterStatus.Poison:
-					{
-						// Index 6 of the ColorMatrixFilter impacts the green.
-						this._poisonColorFilter.matrix[6] = (1 + Math.cos(this._decal * 0.01)) * 0.5 + 1;
-					}
+					this._animator.filters.push(this._poisonColorFilter);
+					// Index 6 of the ColorMatrixFilter impacts the green.
+					this._poisonColorFilter.matrix[6] = (1 + Math.cos(this._decal * 0.01)) * 0.5 + 1;
 					break;
 				case FighterStatus.Heal:
 					if (spawn) {
