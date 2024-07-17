@@ -101,11 +101,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Gropignon',
+					name: 'Mouktiz',
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'gropi'
+					gfx: 'mosqui'
 				}
 			}
 			/*{
