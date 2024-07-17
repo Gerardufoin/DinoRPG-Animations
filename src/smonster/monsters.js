@@ -28,6 +28,7 @@ import { kazka } from './kazka/kazka.js';
 import { kmask, korgon, rkrgns } from './korgon/korgon.js';
 import { lucet } from './lucet/lucet.js';
 import { mandragore } from './mandragore/mandragore.js';
+import { mantoo } from './mantoo/mantoo.js';
 import { pira } from './pira/pira.js';
 import { piraos } from './piraos/piraos.js';
 import { pteroz } from './pteroz/pteroz.js';
@@ -89,6 +90,7 @@ export const monsters = {
 	yakuzi: yakuzi,
 	igor: igor,
 	gropi: gropi,
+	mantoo: mantoo,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus

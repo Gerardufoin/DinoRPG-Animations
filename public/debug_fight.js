@@ -51,7 +51,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 's_dnv',
+		bg: 'm_outpost_vegetox',
 		top: 120,
 		bottom: 20,
 		ground: 'none',
@@ -88,17 +88,17 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Gropignon',
+					name: 'Mantooze',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'gropi'
+					gfx: 'mantoo'
 				}
 			},
 			{
 				action: 'Add',
 				fighter: {
-					props: ['Static'],
+					props: [],
 					dino: false,
 					life: 100,
 					name: 'Gropignon',
@@ -106,14 +106,6 @@ const fightVersion = [
 					scale: 1,
 					fid: 2,
 					gfx: 'gropi'
-				}
-			},
-			{
-				action: 'Skill',
-				skill: 'Anim',
-				details: {
-					fid: 2,
-					anim: 'sleep'
 				}
 			}
 			/*{
