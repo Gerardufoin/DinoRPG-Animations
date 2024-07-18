@@ -117,6 +117,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1491.xml', '_p1', undefined, 1); // mantoo Mantooze
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1510.xml', '_p1', undefined, 1); // mosqui Mouktiz
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1494.xml', '_sub', undefined, 1); // mosqui legs
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1525.xml', '_p1', undefined, 1); // mugard Garde Végétox
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus

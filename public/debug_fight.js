@@ -88,11 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Mantooze',
+					name: 'Garde Vegetox',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'mantoo'
+					gfx: 'mugard'
 				}
 			},
 			{
@@ -101,11 +101,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Mouktiz',
+					name: 'Antraxov',
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'mosqui'
+					gfx: 'muking'
 				}
 			}
 			/*{

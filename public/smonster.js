@@ -68,6 +68,8 @@ const monsterList = [
 	'gropi',
 	'mantoo',
 	'mosqui',
+	'muking',
+	'mugard',
 	'mandragore',
 	'lucet',
 	'taurus'

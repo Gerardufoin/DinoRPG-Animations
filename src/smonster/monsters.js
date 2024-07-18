@@ -30,6 +30,8 @@ import { lucet } from './lucet/lucet.js';
 import { mandragore } from './mandragore/mandragore.js';
 import { mantoo } from './mantoo/mantoo.js';
 import { mosqui } from './mosqui/mosqui.js';
+import { mugard } from './mugard/mugard.js';
+import { muking } from './muking/muking.js';
 import { pira } from './pira/pira.js';
 import { piraos } from './piraos/piraos.js';
 import { pteroz } from './pteroz/pteroz.js';
@@ -93,6 +95,8 @@ export const monsters = {
 	gropi: gropi,
 	mantoo: mantoo,
 	mosqui: mosqui,
+	muking: muking,
+	mugard: mugard,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus

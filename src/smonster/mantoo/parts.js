@@ -42,7 +42,7 @@ export const parts = {
 	leaves: [
 		// 37
 		{
-			ref: ref.mantoo.leaf,
+			ref: ref.vegetox.leaf,
 			transform: {
 				tx: 1.2,
 				ty: -0.4,
@@ -59,7 +59,7 @@ export const parts = {
 		},
 		// 37
 		{
-			ref: ref.mantoo.leaf,
+			ref: ref.vegetox.leaf,
 			transform: {
 				tx: -0.6,
 				ty: 1.1,
@@ -133,7 +133,7 @@ export const parts = {
 	// 50
 	head: [
 		{
-			ref: ref.mantoo.head
+			ref: ref.vegetox.head
 		}
 	]
 };
