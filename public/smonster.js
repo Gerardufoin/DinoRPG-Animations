@@ -70,6 +70,7 @@ const monsterList = [
 	'mosqui',
 	'muking',
 	'mugard',
+	'singmu',
 	'mandragore',
 	'lucet',
 	'taurus'

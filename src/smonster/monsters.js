@@ -39,6 +39,7 @@ import { rasca } from './rasca/rasca.js';
 import { rocky } from './rocky/rocky.js';
 import { ronciv } from './ronciv/ronciv.js';
 import { scorp } from './scorp/scorp.js';
+import { singmu } from './singmu/singmu.js';
 import { taurus } from './taurus/taurus.js';
 import { towgrd } from './towgrd/towgrd.js';
 import { vener } from './vener/vener.js';
@@ -97,6 +98,7 @@ export const monsters = {
 	mosqui: mosqui,
 	muking: muking,
 	mugard: mugard,
+	singmu: singmu,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus
