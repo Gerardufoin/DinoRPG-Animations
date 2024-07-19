@@ -71,6 +71,7 @@ const monsterList = [
 	'muking',
 	'mugard',
 	'singmu',
+	'frutox',
 	'mandragore',
 	'lucet',
 	'taurus'

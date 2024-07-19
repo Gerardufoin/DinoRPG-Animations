@@ -101,11 +101,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Antraxov',
+					name: 'Garde Frutox',
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'muking'
+					gfx: 'frutox'
 				}
 			}
 			/*{
