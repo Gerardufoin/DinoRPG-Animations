@@ -88,11 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Demyom',
+					name: 'Frukoptère',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'singmu'
+					gfx: 'ffrutx'
 				}
 			},
 			{

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" height="28.7px" width="15.9px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.0, 0.0, 0.0, 1.0, 0.85, 13.15)">
+    <use data-characterId="1692" height="13.75" transform="matrix(1.0, 0.0, 0.0, 1.0, -0.85, 1.8)" width="14.2" xlink:href="#morphshape0"/>
+    <use data-characterId="1693" height="11.85" transform="matrix(1.0, 0.0, 0.0, 1.0, 1.35, 2.95)" width="10.45" xlink:href="#morphshape1"/>
+  </g>
+  <defs>
+    <g id="morphshape0" transform="matrix(1.0, 0.0, 0.0, 1.0, 0.85, -1.8)">
+      <path d="M2.3 12.8 Q12.4 13.15 7.95 4.95" fill="none" stroke="#956215" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.0"/>
+    </g>
+    <g id="morphshape1" transform="matrix(1.0, 0.0, 0.0, 1.0, -1.35, -2.95)">
+      <path d="M3.05 13.15 Q11.85 12.85 7.75 4.65" fill="none" stroke="#e9cd63" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.0"/>
+    </g>
+  </defs>
+</svg>

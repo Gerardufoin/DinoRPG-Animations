@@ -120,6 +120,11 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1525.xml', '_p1', undefined, 1); // mugard Garde Végétox
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1562.xml', '_p1', undefined, 1); // singmu Demyom
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1621.xml', '_p1', undefined, 1); // frutox Garde Frutox
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1699.xml', '_p1', undefined, 1); // ffrutx Frukoptère
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1632.xml', '_sub', undefined, 1); // ffrutx leaves
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1644.xml', '_sub', undefined, 1); // ffrutx body_stand
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1656.xml', '_sub', undefined, 1); // ffrutx body_run
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1696.xml', '_sub', undefined, 1); // ffrutx body_dead
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus

@@ -16,6 +16,7 @@ import { efire } from './efire/efire.js';
 import { egrllz } from './egrllz/egrllz.js';
 import { ewater } from './ewater/ewater.js';
 import { flam } from './flam/flam.js';
+import { ffrutx } from './ffrutx/ffrutx.js';
 import { frutox } from './frutox/frutox.js';
 import { gluon } from './gluon/gluon.js';
 import { goblin } from './goblin/goblin.js';
@@ -101,6 +102,7 @@ export const monsters = {
 	mugard: mugard,
 	singmu: singmu,
 	frutox: frutox,
+	ffrutx: ffrutx,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus

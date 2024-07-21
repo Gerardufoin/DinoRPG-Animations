@@ -2,7 +2,12 @@
 	// Change this to match your project
 	"include": ["src/**/*"],
 	// Unfortunately references.js containing large files are too massive for visual studio code, split backgrounds and invocations out of it and ignore it.
-	"exclude": ["src/gfx/backgrounds.js", "src/gfx/references_invocations.js", "src/gfx/references.js"],
+	"exclude": [
+		"src/gfx/backgrounds.js",
+		"src/gfx/references_invocations.js",
+		"src/gfx/references.js",
+		"src/dino/references_big.js"
+	],
 	"compilerOptions": {
 		// Tells TypeScript to read JS files, as
 		// normally they are ignored as source files
