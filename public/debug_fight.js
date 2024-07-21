@@ -88,10 +88,23 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Frukoptère',
+					name: 'Garde Frutox',
 					side: false,
 					scale: 1,
 					fid: 1,
+					gfx: 'frutox'
+				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Frukoptère',
+					side: false,
+					scale: 1,
+					fid: 2,
 					gfx: 'ffrutx'
 				}
 			},
@@ -101,11 +114,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Garde Frutox',
+					name: 'Grotox',
 					side: false,
 					scale: 1,
-					fid: 2,
-					gfx: 'frutox'
+					fid: 3,
+					gfx: 'frking'
 				}
 			}
 			/*{

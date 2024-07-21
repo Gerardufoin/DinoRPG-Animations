@@ -73,6 +73,7 @@ const monsterList = [
 	'singmu',
 	'frutox',
 	'ffrutx',
+	'frking',
 	'mandragore',
 	'lucet',
 	'taurus'

@@ -171,6 +171,14 @@ function addPart(animation, name, part) {
 }
 
 import { PixiHelper } from '../../src/display/PixiHelper.js';
+
+// Assign a key to an object, except if it is the default value
+function assignKey(obj, key, value, deflt) {
+	if (value !== deflt) {
+		obj[key] = value;
+	}
+}
+
 // Use the given object of a second animation to displace the tx/ty properties of all the objects of the first animation.
 // Probably only used for the animations of this little *%#&*@ of a ffrutx
 function displaceAnimation(animation, dispAnim, key) {
@@ -180,13 +188,43 @@ function displaceAnimation(animation, dispAnim, key) {
 				const matrix = PixiHelper.matrixFromObject(dispAnim[i][key]).append(
 					PixiHelper.matrixFromObject(animation[i][k])
 				);
-				animation[i][k].tx = round(matrix.tx ?? 0);
-				animation[i][k].ty = round(matrix.ty ?? 0);
-				animation[i][k].a = round(matrix.a ?? 1);
-				animation[i][k].b = round(matrix.b ?? 0);
-				animation[i][k].c = round(matrix.c ?? 0);
-				animation[i][k].d = round(matrix.d ?? 1);
+				assignKey(animation[i][k], 'tx', round(matrix.tx ?? 0), 0);
+				assignKey(animation[i][k], 'ty', round(matrix.ty ?? 0), 0);
+				assignKey(animation[i][k], 'a', round(matrix.a ?? 1), 1);
+				assignKey(animation[i][k], 'b', round(matrix.b ?? 0), 0);
+				assignKey(animation[i][k], 'c', round(matrix.c ?? 0), 0);
+				assignKey(animation[i][k], 'd', round(matrix.d ?? 1), 1);
 			}
+		}
+	}
+	return animation;
+}
+
+// Replace an element of the animation by a group of elements.
+// Will merge the transform of both elements, using the former element as parent.
+function replaceSymbol(animation, obj, key) {
+	for (let i = 0; i < animation.length; ++i) {
+		if (animation[i][key]) {
+			const newFrame = {};
+			for (const k of Object.keys(obj)) {
+				const matrix = PixiHelper.matrixFromObject(animation[i][key]).append(
+					PixiHelper.matrixFromObject(obj[k])
+				);
+				const newElem = JSON.parse(JSON.stringify(obj[k]));
+				assignKey(newElem, 'tx', round(matrix.tx ?? 0), 0);
+				assignKey(newElem, 'ty', round(matrix.ty ?? 0), 0);
+				assignKey(newElem, 'a', round(matrix.a ?? 1), 1);
+				assignKey(newElem, 'b', round(matrix.b ?? 0), 0);
+				assignKey(newElem, 'c', round(matrix.c ?? 0), 0);
+				assignKey(newElem, 'd', round(matrix.d ?? 1), 1);
+				newFrame[k] = newElem;
+			}
+			for (const k of Object.keys(animation[i])) {
+				if (k !== key) {
+					newFrame[k] = animation[i][k];
+				}
+			}
+			animation[i] = newFrame;
 		}
 	}
 	return animation;
@@ -199,6 +237,6 @@ const animation = [];
 //let result = linearMovement(linearMovement(animation, 'sp_4', 0, 9), 'sp_10', 0, 9);
 //let result = changeLayer(animation, 'legs', 3);
 //let result = linearMovement(followKey(animation, 'ww_head', 'ww_l_eye'), 'ww_u_body', 7, 11);
-let result = linearMovement(animation, 'r_eye', 14, 30);
+//let result = linearMovement(animation, 'r_eye', 14, 30);
 
 fs.writeFileSync('./results/animation_fix.txt', JSON.stringify(result, undefined, '\t'));
