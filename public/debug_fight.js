@@ -51,7 +51,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 'm_outpost_frutox',
+		bg: 'swp_clear',
 		top: 120,
 		bottom: 20,
 		ground: 'none',
@@ -88,37 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Garde Frutox',
+					name: 'Rapacarapace',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'frutox'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Frukoptère',
-					side: false,
-					scale: 1,
-					fid: 2,
-					gfx: 'ffrutx'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Grotox',
-					side: false,
-					scale: 1,
-					fid: 3,
-					gfx: 'frking'
+					gfx: 'rapaca'
 				}
 			}
 			/*{

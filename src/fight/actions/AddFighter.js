@@ -9,6 +9,7 @@ import { Timer } from '../Timer.js';
 import { Asset } from '../../display/Asset.js';
 import { Layers } from '../DepthManager.js';
 import { EntranceEffect } from '../Enums.js';
+import { SCENE_FULL_WIDTH } from '../IScene.js';
 
 /**
  * Action adding a new Fighter to the scene.
@@ -41,6 +42,8 @@ export class AddFighter extends State {
 		super(scene, endCall);
 		this._fInfos = fighter;
 		this._fighter = new Fighter(this._fInfos, this._scene);
+		// Move the fighter out of bound to wait for instantiation
+		this._fighter._x = SCENE_FULL_WIDTH * 2;
 		this._scene.dm.addSprite(this._fighter, Layers.Scene.FIGHTERS);
 
 		this._coefSpeed = 0.03;

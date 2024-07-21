@@ -74,6 +74,7 @@ const monsterList = [
 	'frutox',
 	'ffrutx',
 	'frking',
+	'rapaca',
 	'mandragore',
 	'lucet',
 	'taurus'

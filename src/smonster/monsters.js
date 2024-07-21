@@ -38,6 +38,7 @@ import { muking } from './muking/muking.js';
 import { pira } from './pira/pira.js';
 import { piraos } from './piraos/piraos.js';
 import { pteroz } from './pteroz/pteroz.js';
+import { rapaca } from './rapaca/rapaca.js';
 import { rasca } from './rasca/rasca.js';
 import { rocky } from './rocky/rocky.js';
 import { ronciv } from './ronciv/ronciv.js';
@@ -105,6 +106,7 @@ export const monsters = {
 	frutox: frutox,
 	ffrutx: ffrutx,
 	frking: frking,
+	rapaca: rapaca,
 	mandragore: mandragore,
 	lucet: lucet,
 	taurus: taurus
