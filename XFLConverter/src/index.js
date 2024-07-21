@@ -129,6 +129,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1746.xml', '_sub', undefined, 1); // frking body_dead
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1785.xml', '_p1', undefined, 1); // rapaca Rapacarapace
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1771.xml', '_sub', undefined, 1); // rapaca head_anim
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1867.xml', '_p1', undefined, 1); // morg Morg
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1838.xml', '_sub', undefined, 1); // morg smoke
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus

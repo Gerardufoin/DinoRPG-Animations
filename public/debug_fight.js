@@ -51,7 +51,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 'swp_clear',
+		bg: 's_vener',
 		top: 120,
 		bottom: 20,
 		ground: 'none',
@@ -88,11 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Rapacarapace',
+					name: 'Morg',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'rapaca'
+					gfx: 'morg'
 				}
 			}
 			/*{

@@ -53,10 +53,10 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] mugard
 -   [x] singmu
 -   [x] frutox
--   [ ] ffrutx
--   [ ] frking
--   [ ] rapaca
--   [ ] morg
+-   [x] ffrutx
+-   [x] frking
+-   [x] rapaca
+-   [x] morg
 -   [x] mandragore
 -   [ ] cyclo
 -   [ ] cyclo2

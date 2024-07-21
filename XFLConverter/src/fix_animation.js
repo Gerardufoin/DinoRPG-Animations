@@ -79,6 +79,14 @@ function followKey(anim, target, key, start = 1, end = undefined) {
 	return anim;
 }
 
+// If the object does not have the requested key, return 0 or 1 depending on the key.
+function valueOrDefault(obj, k) {
+	if (obj[k] !== undefined) {
+		return obj[k];
+	}
+	return ['a', 'd'].includes(k) ? 1 : 0;
+}
+
 // Creates a linear movement between two indexes.
 function linearMovement(anim, elem, start, end) {
 	const keys = [];
@@ -100,7 +108,10 @@ function linearMovement(anim, elem, start, end) {
 			return undefined;
 		}
 		for (const k of keys) {
-			anim[idx][elem][k] = round(anim[start][elem][k] + ((anim[end][elem][k] - anim[start][elem][k]) / diff) * i);
+			anim[idx][elem][k] = round(
+				valueOrDefault(anim[start][elem], k) +
+					((valueOrDefault(anim[end][elem], k) - valueOrDefault(anim[start][elem], k)) / diff) * i
+			);
 		}
 	}
 	return anim;
@@ -230,6 +241,30 @@ function replaceSymbol(animation, obj, key) {
 	return animation;
 }
 
+// Merge two animation together by injecting an element of the second animation into an element of the first animation.
+// Only keep the position and layer value of the parent element.
+function mixAnimation(animation, keyA, mixAnim, keyB) {
+	let mIdx = 0;
+	for (let i = 0; i < animation.length; ++i) {
+		if (animation[i][keyA]) {
+			const matrix = PixiHelper.matrixFromObject(animation[i][keyA]).append(
+				PixiHelper.matrixFromObject(mixAnim[mIdx][keyB])
+			);
+			const newElem = JSON.parse(JSON.stringify(mixAnim[mIdx][keyB]));
+			assignKey(newElem, 'tx', round(matrix.tx ?? 0), 0);
+			assignKey(newElem, 'ty', round(matrix.ty ?? 0), 0);
+			assignKey(newElem, 'a', round(matrix.a ?? 1), 1);
+			assignKey(newElem, 'b', round(matrix.b ?? 0), 0);
+			assignKey(newElem, 'c', round(matrix.c ?? 0), 0);
+			assignKey(newElem, 'd', round(matrix.d ?? 1), 1);
+			newElem.l = animation[i][keyA].l;
+			animation[i][keyA] = newElem;
+			mIdx = (mIdx + 1) % mixAnim.length;
+		}
+	}
+	return animation;
+}
+
 const animation = [];
 
 //const result = mirrorTo(animation, 12, 'r_f_lower_leg');
@@ -237,6 +272,20 @@ const animation = [];
 //let result = linearMovement(linearMovement(animation, 'sp_4', 0, 9), 'sp_10', 0, 9);
 //let result = changeLayer(animation, 'legs', 3);
 //let result = linearMovement(followKey(animation, 'ww_head', 'ww_l_eye'), 'ww_u_body', 7, 11);
-//let result = linearMovement(animation, 'r_eye', 14, 30);
+/*let result = animation;
+for (const k of [
+	'head',
+	'body',
+	'body_armor',
+	'shoulder_armor',
+	'weapon',
+	'l_t_arm',
+	'l_hand',
+	'l_t_leg',
+	'l_foot',
+	'r_b_leg'
+]) {
+	result = linearMovement(result, k, 49, 77);
+}*/
 
 fs.writeFileSync('./results/animation_fix.txt', JSON.stringify(result, undefined, '\t'));
