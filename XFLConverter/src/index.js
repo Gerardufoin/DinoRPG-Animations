@@ -132,6 +132,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1867.xml', '_p1', undefined, 1); // morg Morg
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1838.xml', '_sub', undefined, 1); // morg smoke
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1921.xml', '_p1', undefined, 1); // Mandragore
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1979.xml', '_p1', undefined, 1); // cyclo Soldat
+//parser.parse('./resources/smonster/LIBRARY/Symbol 1959.xml', '_sub', undefined, 1); // cyclo bump
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2908.xml', '_sub', undefined, 1); // Taurus tail

@@ -271,21 +271,20 @@ const animation = [];
 //let result = freezeFrame(freezeFrame(animation, 43, 'sp_10', 43), 43, 'sp_4', 43);
 //let result = linearMovement(linearMovement(animation, 'sp_4', 0, 9), 'sp_10', 0, 9);
 //let result = changeLayer(animation, 'legs', 3);
-//let result = linearMovement(followKey(animation, 'ww_head', 'ww_l_eye'), 'ww_u_body', 7, 11);
+//let result = followKey(animation, 'l_foot', 'l_leg');
+let result = animation;
+for (const k of ['r_shoulder', 'l_shoulder', 'r_arm_down']) {
+	result = linearMovement(result, k, 28, 57);
+}
 /*let result = animation;
 for (const k of [
-	'head',
-	'body',
-	'body_armor',
-	'shoulder_armor',
-	'weapon',
-	'l_t_arm',
-	'l_hand',
-	'l_t_leg',
-	'l_foot',
-	'r_b_leg'
+	{ p: 'body', s: 17, e: 45 },
+	{ p: 'l_shoulder', s: 19, e: 45 },
+	{ p: 'r_leg', s: 21, e: 45 },
+	{ p: 'l_leg', s: 21, e: 45 },
+	{ p: 'r_arm', s: 22, e: 45 }
 ]) {
-	result = linearMovement(result, k, 49, 77);
+	result = linearMovement(result, k.p, k.s, k.e);
 }*/
 
 fs.writeFileSync('./results/animation_fix.txt', JSON.stringify(result, undefined, '\t'));

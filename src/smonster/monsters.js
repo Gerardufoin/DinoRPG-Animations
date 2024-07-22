@@ -11,6 +11,7 @@ import { brig3 } from './brig3/brig3.js';
 import { cactus } from './cactus/cactus.js';
 import { cobra } from './cobra/cobra.js';
 import { coq } from './coq/coq.js';
+import { cyclo } from './cyclo/cyclo.js';
 import { eearth } from './eearth/eearth.js';
 import { efire } from './efire/efire.js';
 import { egrllz } from './egrllz/egrllz.js';
@@ -110,6 +111,7 @@ export const monsters = {
 	rapaca: rapaca,
 	morg: morg,
 	mandragore: mandragore,
+	cyclo: cyclo,
 	lucet: lucet,
 	taurus: taurus
 };
