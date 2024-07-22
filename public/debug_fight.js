@@ -94,6 +94,19 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'cyclo'
 				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Capitaine',
+					side: false,
+					scale: 1,
+					fid: 1,
+					gfx: 'cyclo2'
+				}
 			}
 			/*{
 				action: 'Wait',
