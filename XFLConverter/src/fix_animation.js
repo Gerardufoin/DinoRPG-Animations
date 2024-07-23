@@ -272,19 +272,17 @@ const animation = [];
 //let result = linearMovement(linearMovement(animation, 'sp_4', 0, 9), 'sp_10', 0, 9);
 //let result = changeLayer(animation, 'legs', 3);
 //let result = followKey(animation, 'l_foot', 'l_leg');
-let result = animation;
+/*let result = animation;
 for (const k of ['r_shoulder', 'l_shoulder', 'r_arm_down']) {
 	result = linearMovement(result, k, 28, 57);
-}
-/*let result = animation;
+}*/
+let result = animation;
 for (const k of [
-	{ p: 'body', s: 17, e: 45 },
-	{ p: 'l_shoulder', s: 19, e: 45 },
-	{ p: 'r_leg', s: 21, e: 45 },
-	{ p: 'l_leg', s: 21, e: 45 },
-	{ p: 'r_arm', s: 22, e: 45 }
+	{ p: 'l_body', s: 38, e: 79 },
+	{ p: 'r_body', s: 38, e: 79 },
+	{ p: 'head_sleep', s: 38, e: 79 }
 ]) {
 	result = linearMovement(result, k.p, k.s, k.e);
-}*/
+}
 
 fs.writeFileSync('./results/animation_fix.txt', JSON.stringify(result, undefined, '\t'));

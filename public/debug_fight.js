@@ -51,7 +51,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 's_vener',
+		bg: 'i_lacroc',
 		top: 120,
 		bottom: 20,
 		ground: 'none',
@@ -88,11 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Soldat',
+					name: 'Gromster',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'cyclo'
+					gfx: 'groms'
 				}
 			},
 			{
@@ -101,11 +101,24 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Capitaine',
+					name: 'Gromster rose',
 					side: false,
 					scale: 1,
-					fid: 1,
-					gfx: 'cyclo2'
+					fid: 2,
+					gfx: 'grom2'
+				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Gromster des neiges',
+					side: false,
+					scale: 1,
+					fid: 3,
+					gfx: 'grom3'
 				}
 			}
 			/*{
