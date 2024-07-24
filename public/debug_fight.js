@@ -88,37 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Gromster',
+					name: 'Dorogon',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'groms'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Gromster rose',
-					side: false,
-					scale: 1,
-					fid: 2,
-					gfx: 'grom2'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Gromster des neiges',
-					side: false,
-					scale: 1,
-					fid: 3,
-					gfx: 'grom3'
+					gfx: 'doro'
 				}
 			}
 			/*{
