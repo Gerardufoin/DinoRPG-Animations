@@ -25,7 +25,7 @@ export const dead = {
 			head: {
 				tx: 2.5,
 				ty: 0,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 32.6,
@@ -33,19 +33,19 @@ export const dead = {
 				a: 0.718,
 				c: 0.11,
 				d: 0.718,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 45.75,
 				ty: 63.25,
 				a: 0.726,
 				d: 0.726,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 8.85,
 				ty: 10.25,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 13.15,
@@ -149,7 +149,7 @@ export const dead = {
 				b: 0.238,
 				c: -0.238,
 				d: 0.97,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 30.1,
@@ -157,7 +157,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.152,
 				d: 0.781,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 43.75,
@@ -165,7 +165,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.042,
 				d: 0.79,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 12.35,
@@ -174,7 +174,7 @@ export const dead = {
 				b: 0.187,
 				c: -0.13,
 				d: 1.019,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 9.95,
@@ -297,7 +297,7 @@ export const dead = {
 				b: 0.375,
 				c: -0.375,
 				d: 0.926,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 28.45,
@@ -305,7 +305,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.181,
 				d: 0.817,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 42.45,
@@ -313,7 +313,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.069,
 				d: 0.827,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 14.95,
@@ -322,7 +322,7 @@ export const dead = {
 				b: 0.297,
 				c: -0.213,
 				d: 1.021,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 7.95,
@@ -445,7 +445,7 @@ export const dead = {
 				b: 0.422,
 				c: -0.422,
 				d: 0.906,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 27.85,
@@ -453,7 +453,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.191,
 				d: 0.83,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 42.2,
@@ -461,7 +461,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.082,
 				d: 0.839,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 15.7,
@@ -470,7 +470,7 @@ export const dead = {
 				b: 0.333,
 				c: -0.241,
 				d: 1.021,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 7.25,
@@ -593,7 +593,7 @@ export const dead = {
 				b: 0.423,
 				c: -0.423,
 				d: 0.905,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 27.9,
@@ -601,7 +601,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.189,
 				d: 0.829,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 42.25,
@@ -609,7 +609,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.081,
 				d: 0.839,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 15.75,
@@ -618,7 +618,7 @@ export const dead = {
 				b: 0.33,
 				c: -0.241,
 				d: 1.02,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 7.3,
@@ -741,7 +741,7 @@ export const dead = {
 				b: 0.431,
 				c: -0.431,
 				d: 0.901,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 27.85,
@@ -749,7 +749,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.191,
 				d: 0.827,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 42.25,
@@ -757,7 +757,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.081,
 				d: 0.837,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 15.55,
@@ -766,7 +766,7 @@ export const dead = {
 				b: 0.33,
 				c: -0.237,
 				d: 1.021,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 7.2,
@@ -889,7 +889,7 @@ export const dead = {
 				b: 0.447,
 				c: -0.447,
 				d: 0.893,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 27.85,
@@ -897,7 +897,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.191,
 				d: 0.825,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 42.25,
@@ -905,7 +905,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.081,
 				d: 0.835,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 15.45,
@@ -914,7 +914,7 @@ export const dead = {
 				b: 0.327,
 				c: -0.236,
 				d: 1.021,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 7.2,
@@ -1037,7 +1037,7 @@ export const dead = {
 				b: 0.466,
 				c: -0.466,
 				d: 0.883,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 27.9,
@@ -1045,7 +1045,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.19,
 				d: 0.822,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 42.2,
@@ -1053,7 +1053,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.081,
 				d: 0.831,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 15.25,
@@ -1062,7 +1062,7 @@ export const dead = {
 				b: 0.326,
 				c: -0.232,
 				d: 1.022,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 7.05,
@@ -1184,7 +1184,7 @@ export const dead = {
 				b: 0.489,
 				c: -0.489,
 				d: 0.871,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 27.9,
@@ -1192,7 +1192,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.19,
 				d: 0.818,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 42.2,
@@ -1200,7 +1200,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.08,
 				d: 0.827,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 14.95,
@@ -1209,7 +1209,7 @@ export const dead = {
 				b: 0.322,
 				c: -0.228,
 				d: 1.023,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 6.9,
@@ -1332,7 +1332,7 @@ export const dead = {
 				b: 0.519,
 				c: -0.519,
 				d: 0.853,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 27.85,
@@ -1340,7 +1340,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.191,
 				d: 0.812,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 42.1,
@@ -1348,7 +1348,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.08,
 				d: 0.822,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 14.65,
@@ -1357,7 +1357,7 @@ export const dead = {
 				b: 0.317,
 				c: -0.223,
 				d: 1.025,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 6.75,
@@ -1480,7 +1480,7 @@ export const dead = {
 				b: 0.553,
 				c: -0.553,
 				d: 0.832,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 27.9,
@@ -1488,7 +1488,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.19,
 				d: 0.806,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 42.1,
@@ -1496,7 +1496,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.079,
 				d: 0.816,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 14.25,
@@ -1505,7 +1505,7 @@ export const dead = {
 				b: 0.31,
 				c: -0.218,
 				d: 1.026,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 6.6,
@@ -1628,7 +1628,7 @@ export const dead = {
 				b: 0.592,
 				c: -0.592,
 				d: 0.804,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 27.95,
@@ -1636,7 +1636,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.189,
 				d: 0.799,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 42,
@@ -1644,7 +1644,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.082,
 				d: 0.808,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 13.75,
@@ -1653,7 +1653,7 @@ export const dead = {
 				b: 0.305,
 				c: -0.21,
 				d: 1.027,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 6.35,
@@ -1776,7 +1776,7 @@ export const dead = {
 				b: 0.633,
 				c: -0.633,
 				d: 0.772,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 27.85,
@@ -1784,7 +1784,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.19,
 				d: 0.791,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 41.9,
@@ -1792,7 +1792,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.081,
 				d: 0.8,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 13.15,
@@ -1801,7 +1801,7 @@ export const dead = {
 				b: 0.297,
 				c: -0.201,
 				d: 1.029,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 6.15,
@@ -1924,7 +1924,7 @@ export const dead = {
 				b: 0.676,
 				c: -0.676,
 				d: 0.734,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 27.8,
@@ -1932,7 +1932,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.191,
 				d: 0.781,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 41.9,
@@ -1940,7 +1940,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.08,
 				d: 0.791,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 12.6,
@@ -1949,7 +1949,7 @@ export const dead = {
 				b: 0.289,
 				c: -0.192,
 				d: 1.031,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 5.8,
@@ -2072,7 +2072,7 @@ export const dead = {
 				b: 0.723,
 				c: -0.723,
 				d: 0.688,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 27.85,
@@ -2080,7 +2080,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.19,
 				d: 0.772,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 41.8,
@@ -2088,7 +2088,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.079,
 				d: 0.781,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 12,
@@ -2097,7 +2097,7 @@ export const dead = {
 				b: 0.28,
 				c: -0.183,
 				d: 1.033,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 5.55,
@@ -2219,7 +2219,7 @@ export const dead = {
 				b: 0.772,
 				c: -0.772,
 				d: 0.633,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 27.85,
@@ -2227,7 +2227,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.19,
 				d: 0.76,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 41.65,
@@ -2235,7 +2235,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.081,
 				d: 0.769,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 11.25,
@@ -2244,7 +2244,7 @@ export const dead = {
 				b: 0.268,
 				c: -0.17,
 				d: 1.035,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 5.2,
@@ -2366,7 +2366,7 @@ export const dead = {
 				b: 0.819,
 				c: -0.819,
 				d: 0.574,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 27.85,
@@ -2374,7 +2374,7 @@ export const dead = {
 				a: 0.718,
 				c: 0.191,
 				d: 0.749,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 42.2,
@@ -2382,7 +2382,7 @@ export const dead = {
 				a: 0.726,
 				c: 0.082,
 				d: 0.757,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: 12.1,
@@ -2391,7 +2391,7 @@ export const dead = {
 				b: 0.259,
 				c: -0.161,
 				d: 1.037,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 5.85,
@@ -2511,7 +2511,7 @@ export const dead = {
 				b: -0.5,
 				c: 0.5,
 				d: 0.866,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 47.1,
@@ -2520,7 +2520,7 @@ export const dead = {
 				b: -0.548,
 				c: 0.696,
 				d: 0.333,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 63.15,
@@ -2529,7 +2529,7 @@ export const dead = {
 				b: -0.555,
 				c: 0.632,
 				d: 0.423,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: -5,
@@ -2538,7 +2538,7 @@ export const dead = {
 				b: -0.863,
 				c: 0.956,
 				d: 0.428,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 19.95,
@@ -2663,7 +2663,7 @@ export const dead = {
 				b: -0.965,
 				c: 0.965,
 				d: 0.259,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 51.4,
@@ -2672,7 +2672,7 @@ export const dead = {
 				b: -0.673,
 				c: 0.768,
 				d: 0.074,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 71.2,
@@ -2681,7 +2681,7 @@ export const dead = {
 				b: -0.674,
 				c: 0.672,
 				d: -0.355,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: -3.15,
@@ -2690,7 +2690,7 @@ export const dead = {
 				b: -0.888,
 				c: 0.977,
 				d: 0.376,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 24.4,
@@ -2815,7 +2815,7 @@ export const dead = {
 				b: -0.866,
 				c: 0.866,
 				d: -0.5,
-				l: 11
+				l: 10
 			},
 			l_leg: {
 				tx: 59.05,
@@ -2824,7 +2824,7 @@ export const dead = {
 				b: -0.718,
 				c: 0.749,
 				d: -0.191,
-				l: 10
+				l: 9
 			},
 			l_foot: {
 				tx: 90.7,
@@ -2833,7 +2833,7 @@ export const dead = {
 				b: -0.083,
 				c: 0.005,
 				d: -0.762,
-				l: 9
+				l: 8
 			},
 			f_armor: {
 				tx: -1.4,
@@ -2842,7 +2842,7 @@ export const dead = {
 				b: -0.911,
 				c: 0.997,
 				d: 0.327,
-				l: 8
+				l: 11
 			},
 			body: {
 				tx: 30.15,

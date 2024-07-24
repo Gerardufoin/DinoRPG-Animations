@@ -22,12 +22,12 @@ export const stand = {
 			l_t_arm: {
 				tx: 42.6,
 				ty: 13.3,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.95,
 				ty: 10.25,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.7,
@@ -148,14 +148,14 @@ export const stand = {
 				ty: 12.7,
 				b: 0.009,
 				c: -0.009,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.9,
 				ty: 9.95,
 				b: -0.005,
 				c: 0.005,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.7,
@@ -285,14 +285,14 @@ export const stand = {
 				ty: 12.2,
 				b: 0.019,
 				c: -0.019,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.95,
 				ty: 9.7,
 				b: -0.009,
 				c: 0.009,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.55,
@@ -424,14 +424,14 @@ export const stand = {
 				b: 0.031,
 				c: -0.031,
 				d: 0.999,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.9,
 				ty: 9.45,
 				b: -0.014,
 				c: 0.014,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.55,
@@ -563,14 +563,14 @@ export const stand = {
 				b: 0.04,
 				c: -0.04,
 				d: 0.999,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.8,
 				ty: 9.25,
 				b: -0.022,
 				c: 0.022,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.5,
@@ -702,14 +702,14 @@ export const stand = {
 				b: 0.049,
 				c: -0.049,
 				d: 0.999,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.75,
 				ty: 9.05,
 				b: -0.027,
 				c: 0.027,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.5,
@@ -841,7 +841,7 @@ export const stand = {
 				b: 0.057,
 				c: -0.057,
 				d: 0.998,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.7,
@@ -850,7 +850,7 @@ export const stand = {
 				b: -0.031,
 				c: 0.031,
 				d: 0.999,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.4,
@@ -982,7 +982,7 @@ export const stand = {
 				b: 0.066,
 				c: -0.066,
 				d: 0.998,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.7,
@@ -991,7 +991,7 @@ export const stand = {
 				b: -0.035,
 				c: 0.035,
 				d: 0.999,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.35,
@@ -1123,7 +1123,7 @@ export const stand = {
 				b: 0.074,
 				c: -0.074,
 				d: 0.997,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.7,
@@ -1132,7 +1132,7 @@ export const stand = {
 				b: -0.04,
 				c: 0.04,
 				d: 0.999,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.35,
@@ -1264,7 +1264,7 @@ export const stand = {
 				b: 0.079,
 				c: -0.079,
 				d: 0.997,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.7,
@@ -1273,7 +1273,7 @@ export const stand = {
 				b: -0.044,
 				c: 0.044,
 				d: 0.999,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.35,
@@ -1405,7 +1405,7 @@ export const stand = {
 				b: 0.088,
 				c: -0.088,
 				d: 0.996,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.7,
@@ -1414,7 +1414,7 @@ export const stand = {
 				b: -0.048,
 				c: 0.048,
 				d: 0.999,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.25,
@@ -1546,7 +1546,7 @@ export const stand = {
 				b: 0.093,
 				c: -0.093,
 				d: 0.995,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.7,
@@ -1555,7 +1555,7 @@ export const stand = {
 				b: -0.049,
 				c: 0.049,
 				d: 0.999,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.2,
@@ -1687,7 +1687,7 @@ export const stand = {
 				b: 0.101,
 				c: -0.101,
 				d: 0.995,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.7,
@@ -1696,7 +1696,7 @@ export const stand = {
 				b: -0.053,
 				c: 0.053,
 				d: 0.998,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.25,
@@ -1828,7 +1828,7 @@ export const stand = {
 				b: 0.105,
 				c: -0.105,
 				d: 0.994,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.6,
@@ -1837,7 +1837,7 @@ export const stand = {
 				b: -0.057,
 				c: 0.057,
 				d: 0.998,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.2,
@@ -1969,7 +1969,7 @@ export const stand = {
 				b: 0.11,
 				c: -0.11,
 				d: 0.994,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.65,
@@ -1978,7 +1978,7 @@ export const stand = {
 				b: -0.058,
 				c: 0.058,
 				d: 0.998,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.2,
@@ -2110,7 +2110,7 @@ export const stand = {
 				b: 0.114,
 				c: -0.114,
 				d: 0.993,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.65,
@@ -2119,7 +2119,7 @@ export const stand = {
 				b: -0.062,
 				c: 0.062,
 				d: 0.998,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.25,
@@ -2251,7 +2251,7 @@ export const stand = {
 				b: 0.118,
 				c: -0.118,
 				d: 0.993,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.55,
@@ -2260,7 +2260,7 @@ export const stand = {
 				b: -0.065,
 				c: 0.065,
 				d: 0.998,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.2,
@@ -2392,7 +2392,7 @@ export const stand = {
 				b: 0.122,
 				c: -0.122,
 				d: 0.992,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.6,
@@ -2401,7 +2401,7 @@ export const stand = {
 				b: -0.066,
 				c: 0.066,
 				d: 0.998,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.15,
@@ -2533,7 +2533,7 @@ export const stand = {
 				b: 0.126,
 				c: -0.126,
 				d: 0.992,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.6,
@@ -2542,7 +2542,7 @@ export const stand = {
 				b: -0.066,
 				c: 0.066,
 				d: 0.998,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.2,
@@ -2674,7 +2674,7 @@ export const stand = {
 				b: 0.127,
 				c: -0.127,
 				d: 0.991,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.55,
@@ -2683,7 +2683,7 @@ export const stand = {
 				b: -0.07,
 				c: 0.07,
 				d: 0.997,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.1,
@@ -2815,7 +2815,7 @@ export const stand = {
 				b: 0.131,
 				c: -0.131,
 				d: 0.991,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.6,
@@ -2824,7 +2824,7 @@ export const stand = {
 				b: -0.07,
 				c: 0.07,
 				d: 0.997,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.2,
@@ -2956,7 +2956,7 @@ export const stand = {
 				b: 0.131,
 				c: -0.131,
 				d: 0.991,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.6,
@@ -2965,7 +2965,7 @@ export const stand = {
 				b: -0.07,
 				c: 0.07,
 				d: 0.997,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.15,
@@ -3097,7 +3097,7 @@ export const stand = {
 				b: 0.131,
 				c: -0.131,
 				d: 0.991,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.6,
@@ -3106,7 +3106,7 @@ export const stand = {
 				b: -0.071,
 				c: 0.071,
 				d: 0.997,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.15,
@@ -3238,7 +3238,7 @@ export const stand = {
 				b: 0.135,
 				c: -0.135,
 				d: 0.99,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.6,
@@ -3247,7 +3247,7 @@ export const stand = {
 				b: -0.071,
 				c: 0.071,
 				d: 0.997,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.1,
@@ -3377,7 +3377,7 @@ export const stand = {
 				b: 0.135,
 				c: -0.135,
 				d: 0.991,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.613,
@@ -3386,7 +3386,7 @@ export const stand = {
 				b: -0.068,
 				c: 0.068,
 				d: 0.997,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.1,
@@ -3518,7 +3518,7 @@ export const stand = {
 				b: 0.123,
 				c: -0.123,
 				d: 0.992,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.627,
@@ -3527,7 +3527,7 @@ export const stand = {
 				b: -0.066,
 				c: 0.066,
 				d: 0.997,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.1,
@@ -3659,7 +3659,7 @@ export const stand = {
 				b: 0.114,
 				c: -0.114,
 				d: 0.993,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.64,
@@ -3668,7 +3668,7 @@ export const stand = {
 				b: -0.063,
 				c: 0.063,
 				d: 0.997,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.25,
@@ -3800,7 +3800,7 @@ export const stand = {
 				b: 0.105,
 				c: -0.105,
 				d: 0.994,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.654,
@@ -3809,7 +3809,7 @@ export const stand = {
 				b: -0.06,
 				c: 0.06,
 				d: 0.997,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.3,
@@ -3941,7 +3941,7 @@ export const stand = {
 				b: 0.093,
 				c: -0.093,
 				d: 0.995,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.667,
@@ -3950,7 +3950,7 @@ export const stand = {
 				b: -0.057,
 				c: 0.057,
 				d: 0.998,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.25,
@@ -4082,7 +4082,7 @@ export const stand = {
 				b: 0.084,
 				c: -0.084,
 				d: 0.996,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.681,
@@ -4091,7 +4091,7 @@ export const stand = {
 				b: -0.055,
 				c: 0.055,
 				d: 0.998,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.3,
@@ -4223,7 +4223,7 @@ export const stand = {
 				b: 0.075,
 				c: -0.075,
 				d: 0.997,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.694,
@@ -4232,7 +4232,7 @@ export const stand = {
 				b: -0.052,
 				c: 0.052,
 				d: 0.998,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.4,
@@ -4364,7 +4364,7 @@ export const stand = {
 				b: 0.07,
 				c: -0.07,
 				d: 0.997,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.708,
@@ -4373,7 +4373,7 @@ export const stand = {
 				b: -0.049,
 				c: 0.049,
 				d: 0.998,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.35,
@@ -4505,7 +4505,7 @@ export const stand = {
 				b: 0.061,
 				c: -0.061,
 				d: 0.998,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.721,
@@ -4514,7 +4514,7 @@ export const stand = {
 				b: -0.046,
 				c: 0.046,
 				d: 0.998,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.4,
@@ -4646,14 +4646,14 @@ export const stand = {
 				b: 0.053,
 				c: -0.053,
 				d: 0.998,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.735,
 				ty: 8.312,
 				b: -0.044,
 				c: 0.044,
-				l: 10,
+				l: 11,
 				a: 0.998,
 				d: 0.998
 			},
@@ -4787,14 +4787,14 @@ export const stand = {
 				b: 0.048,
 				c: -0.048,
 				d: 0.999,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.748,
 				ty: 8.433,
 				b: -0.041,
 				c: 0.041,
-				l: 10,
+				l: 11,
 				a: 0.998,
 				d: 0.998
 			},
@@ -4928,14 +4928,14 @@ export const stand = {
 				b: 0.04,
 				c: -0.04,
 				d: 0.999,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.762,
 				ty: 8.554,
 				b: -0.038,
 				c: 0.038,
-				l: 10,
+				l: 11,
 				a: 0.998,
 				d: 0.998
 			},
@@ -5069,14 +5069,14 @@ export const stand = {
 				b: 0.035,
 				c: -0.035,
 				d: 0.999,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.775,
 				ty: 8.675,
 				b: -0.035,
 				c: 0.036,
-				l: 10,
+				l: 11,
 				a: 0.999,
 				d: 0.999
 			},
@@ -5210,14 +5210,14 @@ export const stand = {
 				b: 0.031,
 				c: -0.031,
 				d: 0.999,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.788,
 				ty: 8.796,
 				b: -0.033,
 				c: 0.033,
-				l: 10,
+				l: 11,
 				a: 0.999,
 				d: 0.999
 			},
@@ -5349,14 +5349,14 @@ export const stand = {
 				ty: 12.05,
 				b: 0.026,
 				c: -0.026,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.802,
 				ty: 8.917,
 				b: -0.03,
 				c: 0.03,
-				l: 10,
+				l: 11,
 				a: 0.999,
 				d: 0.999
 			},
@@ -5488,14 +5488,14 @@ export const stand = {
 				ty: 12.25,
 				b: 0.019,
 				c: -0.019,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.815,
 				ty: 9.038,
 				b: -0.027,
 				c: 0.027,
-				l: 10,
+				l: 11,
 				a: 0.999,
 				d: 0.999
 			},
@@ -5627,14 +5627,14 @@ export const stand = {
 				ty: 12.45,
 				b: 0.017,
 				c: -0.017,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.829,
 				ty: 9.16,
 				b: -0.025,
 				c: 0.025,
-				l: 10,
+				l: 11,
 				a: 0.999,
 				d: 0.999
 			},
@@ -5766,14 +5766,14 @@ export const stand = {
 				ty: 12.65,
 				b: 0.013,
 				c: -0.013,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.842,
 				ty: 9.281,
 				b: -0.022,
 				c: 0.022,
-				l: 10,
+				l: 11,
 				a: 0.999,
 				d: 0.999
 			},
@@ -5905,14 +5905,14 @@ export const stand = {
 				ty: 12.8,
 				b: 0.009,
 				c: -0.009,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.856,
 				ty: 9.402,
 				b: -0.019,
 				c: 0.019,
-				l: 10,
+				l: 11,
 				a: 0.999,
 				d: 0.999
 			},
@@ -6044,14 +6044,14 @@ export const stand = {
 				ty: 12.9,
 				b: 0.005,
 				c: -0.005,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.869,
 				ty: 9.523,
 				b: -0.016,
 				c: 0.016,
-				l: 10,
+				l: 11,
 				a: 0.999,
 				d: 0.999
 			},
@@ -6183,14 +6183,14 @@ export const stand = {
 				ty: 13.1,
 				b: 0.005,
 				c: -0.005,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.883,
 				ty: 9.644,
 				b: -0.014,
 				c: 0.014,
-				l: 10,
+				l: 11,
 				a: 0.999,
 				d: 0.999
 			},
@@ -6320,12 +6320,12 @@ export const stand = {
 				ty: 13.15,
 				b: 0.001,
 				c: -0.001,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.896,
 				ty: 9.765,
-				l: 10,
+				l: 11,
 				a: 1,
 				b: -0.011,
 				c: 0.011,
@@ -6455,12 +6455,12 @@ export const stand = {
 			l_t_arm: {
 				tx: 42.85,
 				ty: 13.25,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.91,
 				ty: 9.887,
-				l: 10,
+				l: 11,
 				a: 1,
 				b: -0.008,
 				c: 0.008,
@@ -6587,12 +6587,12 @@ export const stand = {
 			l_t_arm: {
 				tx: 42.85,
 				ty: 13.3,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.923,
 				ty: 10.008,
-				l: 10,
+				l: 11,
 				a: 1,
 				b: -0.005,
 				c: 0.005,
@@ -6717,12 +6717,12 @@ export const stand = {
 			l_t_arm: {
 				tx: 42.85,
 				ty: 13.35,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.937,
 				ty: 10.129,
-				l: 10,
+				l: 11,
 				a: 1,
 				b: -0.003,
 				c: 0.003,
@@ -6839,12 +6839,12 @@ export const stand = {
 			l_t_arm: {
 				tx: 42.6,
 				ty: 13.3,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.95,
 				ty: 10.25,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.7,

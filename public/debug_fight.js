@@ -94,6 +94,19 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'doro'
 				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Chef Dorogon',
+					side: false,
+					scale: 1,
+					fid: 2,
+					gfx: 'dorou'
+				}
 			}
 			/*{
 				action: 'Wait',

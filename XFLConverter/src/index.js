@@ -136,7 +136,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 1959.xml', '_sub', undefined, 1); // cyclo bump
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2019.xml', '_p1', undefined, 1); // cyclo2 Capitaine
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2058.xml', '_p1', undefined, 1); // groms Gromster
-parser.parse('./resources/smonster/LIBRARY/Symbol 2119.xml', '_p1', undefined, 1); // doro Dorogon
+//parser.parse('./resources/smonster/LIBRARY/Symbol 2119.xml', '_p1', undefined, 1); // doro Dorogon
+//parser.parse('./resources/smonster/LIBRARY/Symbol 2155.xml', '_p1', undefined, 1); // dorou Chef Dorogon
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2908.xml', '_sub', undefined, 1); // Taurus tail

@@ -87,6 +87,7 @@ const monsterList = [
 	'grom2',
 	'grom3',
 	'doro',
+	'dorou',
 	'lucet',
 	'taurus'
 ];

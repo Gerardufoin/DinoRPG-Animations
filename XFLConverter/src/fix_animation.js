@@ -149,20 +149,20 @@ function changeLayers(animation, layers) {
 }
 
 // Change a part layer to the chosen one. All the other part are moved up accordingly
-function changeLayer(animation, name, layer) {
-	for (const a of animation) {
-		if (a[name]) {
-			const ref = a[name].l;
-			for (const k of Object.keys(a)) {
-				if (a[k].l !== undefined) {
-					if (ref > layer && a[k].l < ref && a[k].l >= layer) {
-						a[k].l++;
-					} else if (ref < layer && a[k].l > ref && a[k].l <= layer) {
-						a[k].l--;
+function changeLayer(animation, name, layer, start = undefined, end = undefined) {
+	for (let i = 0; i < animation.length; ++i) {
+		if (animation[i][name] && (start === undefined || i >= start) && (end === undefined || i <= end)) {
+			const ref = animation[i][name].l;
+			for (const k of Object.keys(animation[i])) {
+				if (animation[i][k].l !== undefined) {
+					if (ref > layer && animation[i][k].l < ref && animation[i][k].l >= layer) {
+						animation[i][k].l++;
+					} else if (ref < layer && animation[i][k].l > ref && animation[i][k].l <= layer) {
+						animation[i][k].l--;
 					}
 				}
 			}
-			a[name].l = layer;
+			animation[i][name].l = layer;
 		}
 	}
 	return animation;
@@ -270,7 +270,7 @@ const animation = [];
 //const result = mirrorTo(animation, 12, 'r_f_lower_leg');
 //let result = freezeFrame(freezeFrame(animation, 43, 'sp_10', 43), 43, 'sp_4', 43);
 //let result = linearMovement(linearMovement(animation, 'sp_4', 0, 9), 'sp_10', 0, 9);
-//let result = changeLayer(animation, 'legs', 3);
+let result = changeLayer(animation, 'f_armor', 11, 0, 19);
 //let result = followKey(followKey(animation, 'tail', 'body'), 'f_armor', 'b_armor');
 /*let result = animation;
 for (const k of ['l_arm_down', 'tail_up']) {

@@ -22,12 +22,12 @@ export const walk = {
 			l_t_arm: {
 				tx: 43.15,
 				ty: 13,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.95,
 				ty: 10.25,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.8,
@@ -155,14 +155,14 @@ export const walk = {
 				b: 0.214,
 				c: -0.209,
 				d: 0.98,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 7.85,
 				ty: 9.1,
 				b: 0.018,
 				c: -0.018,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.75,
@@ -302,7 +302,7 @@ export const walk = {
 				b: 0.422,
 				c: -0.41,
 				d: 0.916,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 8.85,
@@ -311,7 +311,7 @@ export const walk = {
 				b: 0.036,
 				c: -0.036,
 				d: 0.999,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.8,
@@ -451,7 +451,7 @@ export const walk = {
 				b: 0.611,
 				c: -0.596,
 				d: 0.81,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 9.9,
@@ -460,7 +460,7 @@ export const walk = {
 				b: 0.057,
 				c: -0.057,
 				d: 0.998,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.95,
@@ -600,7 +600,7 @@ export const walk = {
 				b: 0.772,
 				c: -0.755,
 				d: 0.67,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 10.2,
@@ -609,7 +609,7 @@ export const walk = {
 				b: 0.077,
 				c: -0.077,
 				d: 0.997,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 31.5,
@@ -748,7 +748,7 @@ export const walk = {
 				b: 0.754,
 				c: -0.74,
 				d: 0.681,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 9.35,
@@ -757,7 +757,7 @@ export const walk = {
 				b: 0.061,
 				c: -0.061,
 				d: 0.998,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.9,
@@ -896,7 +896,7 @@ export const walk = {
 				b: 0.737,
 				c: -0.724,
 				d: 0.696,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 8.55,
@@ -905,7 +905,7 @@ export const walk = {
 				b: 0.044,
 				c: -0.044,
 				d: 0.999,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.2,
@@ -1044,7 +1044,7 @@ export const walk = {
 				b: 0.717,
 				c: -0.71,
 				d: 0.707,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 7.85,
@@ -1053,7 +1053,7 @@ export const walk = {
 				b: 0.031,
 				c: -0.031,
 				d: 0.999,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 29.6,
@@ -1189,14 +1189,14 @@ export const walk = {
 				b: 0.7,
 				c: -0.696,
 				d: 0.718,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 7,
 				ty: 9.75,
 				b: 0.014,
 				c: -0.014,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 28.85,
@@ -1330,12 +1330,12 @@ export const walk = {
 				b: 0.682,
 				c: -0.682,
 				d: 0.732,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.95,
 				ty: 10.25,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 28.05,
@@ -1452,7 +1452,7 @@ export const walk = {
 				b: 0.653,
 				c: -0.653,
 				d: 0.756,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.75,
@@ -1461,7 +1461,7 @@ export const walk = {
 				b: -0.031,
 				c: 0.031,
 				d: 0.987,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 28.55,
@@ -1599,7 +1599,7 @@ export const walk = {
 				b: 0.623,
 				c: -0.623,
 				d: 0.781,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.6,
@@ -1608,7 +1608,7 @@ export const walk = {
 				b: -0.052,
 				c: 0.052,
 				d: 0.977,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 29,
@@ -1746,7 +1746,7 @@ export const walk = {
 				b: 0.594,
 				c: -0.593,
 				d: 0.805,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.5,
@@ -1755,7 +1755,7 @@ export const walk = {
 				b: -0.065,
 				c: 0.065,
 				d: 0.971,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 29.15,
@@ -1893,7 +1893,7 @@ export const walk = {
 				b: 0.564,
 				c: -0.563,
 				d: 0.829,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.35,
@@ -1902,7 +1902,7 @@ export const walk = {
 				b: -0.072,
 				c: 0.072,
 				d: 0.969,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 29.3,
@@ -2040,7 +2040,7 @@ export const walk = {
 				b: 0.263,
 				c: -0.26,
 				d: 0.966,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.55,
@@ -2049,7 +2049,7 @@ export const walk = {
 				b: -0.047,
 				c: 0.047,
 				d: 0.98,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 29.85,
@@ -2188,7 +2188,7 @@ export const walk = {
 				b: 0.066,
 				c: -0.066,
 				d: 0.998,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.7,
@@ -2197,7 +2197,7 @@ export const walk = {
 				b: -0.022,
 				c: 0.022,
 				d: 0.99,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.35,
@@ -2320,12 +2320,12 @@ export const walk = {
 			l_t_arm: {
 				tx: 43.15,
 				ty: 13,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.95,
 				ty: 10.25,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.8,

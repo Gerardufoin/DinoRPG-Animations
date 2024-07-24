@@ -22,12 +22,12 @@ export const run = {
 			l_t_arm: {
 				tx: 43.15,
 				ty: 13,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.95,
 				ty: 10.25,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.8,
@@ -157,7 +157,7 @@ export const run = {
 				b: 0.434,
 				c: -0.405,
 				d: 0.927,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 8.45,
@@ -166,7 +166,7 @@ export const run = {
 				b: 0.053,
 				c: -0.046,
 				d: 1.039,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.25,
@@ -305,7 +305,7 @@ export const run = {
 				b: 0.799,
 				c: -0.755,
 				d: 0.693,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 10.15,
@@ -314,7 +314,7 @@ export const run = {
 				b: 0.107,
 				c: -0.101,
 				d: 1.075,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.8,
@@ -453,7 +453,7 @@ export const run = {
 				b: 0.741,
 				c: -0.717,
 				d: 0.713,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 8.45,
@@ -462,7 +462,7 @@ export const run = {
 				b: 0.053,
 				c: -0.046,
 				d: 1.039,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 29.05,
@@ -598,12 +598,12 @@ export const run = {
 				b: 0.682,
 				c: -0.682,
 				d: 0.732,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.95,
 				ty: 10.25,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 28.05,
@@ -720,7 +720,7 @@ export const run = {
 				b: 0.633,
 				c: -0.624,
 				d: 0.796,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.65,
@@ -729,7 +729,7 @@ export const run = {
 				b: -0.056,
 				c: 0.053,
 				d: 1.004,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 28.9,
@@ -867,7 +867,7 @@ export const run = {
 				b: 0.584,
 				c: -0.563,
 				d: 0.859,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.35,
@@ -876,7 +876,7 @@ export const run = {
 				b: -0.074,
 				c: 0.072,
 				d: 1.004,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 29.3,
@@ -1014,7 +1014,7 @@ export const run = {
 				b: 0.153,
 				c: -0.145,
 				d: 0.996,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.55,
@@ -1023,7 +1023,7 @@ export const run = {
 				b: -0.035,
 				c: 0.035,
 				d: 1.003,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.05,
@@ -1146,12 +1146,12 @@ export const run = {
 			l_t_arm: {
 				tx: 43.15,
 				ty: 13,
-				l: 11
+				l: 10
 			},
 			f_armor: {
 				tx: 6.95,
 				ty: 10.25,
-				l: 10
+				l: 11
 			},
 			l_leg: {
 				tx: 30.8,
