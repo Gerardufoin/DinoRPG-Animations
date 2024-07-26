@@ -88,11 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Dorogon',
+					name: 'Lapouf',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'doro'
+					gfx: 'lapouf'
 				}
 			},
 			{

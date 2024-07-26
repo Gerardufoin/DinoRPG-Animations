@@ -34,6 +34,7 @@ import { hippo } from './hippo/hippo.js';
 import { igor } from './igor/igor.js';
 import { kazka } from './kazka/kazka.js';
 import { kmask, korgon, rkrgns } from './korgon/korgon.js';
+import { lapouf } from './lapouf/lapouf.js';
 import { lucet } from './lucet/lucet.js';
 import { mandragore } from './mandragore/mandragore.js';
 import { mantoo } from './mantoo/mantoo.js';
@@ -123,6 +124,7 @@ export const monsters = {
 	doro: doro,
 	dorou: dorou,
 	lucet: lucet,
+	lapouf: lapouf,
 	taurus: taurus
 };
 export const error = bad.small;

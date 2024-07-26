@@ -89,6 +89,7 @@ const monsterList = [
 	'doro',
 	'dorou',
 	'lucet',
+	'lapouf',
 	'taurus'
 ];
 let currentAnim = undefined;
