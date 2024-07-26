@@ -101,11 +101,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Chef Dorogon',
+					name: 'Ecurenne',
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'dorou'
+					gfx: 'ecu'
 				}
 			}
 			/*{
