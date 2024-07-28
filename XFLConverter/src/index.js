@@ -141,6 +141,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2203.xml', '_p1', undefined, 1); // lucet Lucette
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2233.xml', '_p1', undefined, 1); // lapouf Lapouf
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2265.xml', '_p1', undefined, 1); // ecu Ecurenne
+//parser.parse('./resources/smonster/LIBRARY/Symbol 2381.xml', '_p1', undefined, 1); // piglou Piglounou
+//parser.parse('./resources/smonster/LIBRARY/Symbol 2309.xml', '_sub', undefined, 1); // piglou attack_mouth
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2908.xml', '_sub', undefined, 1); // Taurus tail
 

@@ -50,7 +50,6 @@ export class AddFighter extends State {
 		this._endTimer = 5;
 		this._scene.addFighter(this._fighter);
 		this.addActor(this._fighter);
-		this.checkCasting();
 	}
 
 	/**

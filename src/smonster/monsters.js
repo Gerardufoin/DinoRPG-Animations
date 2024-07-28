@@ -43,6 +43,7 @@ import { mosqui } from './mosqui/mosqui.js';
 import { morg } from './morg/morg.js';
 import { mugard } from './mugard/mugard.js';
 import { muking } from './muking/muking.js';
+import { piglou } from './piglou/piglou.js';
 import { pira } from './pira/pira.js';
 import { piraos } from './piraos/piraos.js';
 import { pteroz } from './pteroz/pteroz.js';
@@ -127,6 +128,7 @@ export const monsters = {
 	lucet: lucet,
 	lapouf: lapouf,
 	ecu: ecu,
+	piglou: piglou,
 	taurus: taurus
 };
 export const error = bad.small;

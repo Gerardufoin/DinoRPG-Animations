@@ -88,24 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Lapouf',
+					name: 'Piglounou',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'lapouf'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Ecurenne',
-					side: false,
-					scale: 1,
-					fid: 2,
-					gfx: 'ecu'
+					gfx: 'piglou'
 				}
 			}
 			/*{

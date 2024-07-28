@@ -295,13 +295,13 @@ for (const k of ['l_wing']) {
 	result = linearMovement(result, k, 38, 79);
 }*/
 let result = animation;
-for (const k of ['tail_end', 'r_horn']) {
-	result = similarMovement(result, k, 31, 62);
+for (const k of ['l_arm', 'r_arm', 'face_sleep']) {
+	result = similarMovement(result, k, 29, 64);
 }
 /*let result = animation;
 for (const k of [
-	{ p: 'l_foot', s: 11, e: 18 }
-	//{ p: 'l_foot', s: 18, e: 25 }
+	{ p: 'face', s: 11, e: 26 },
+	{ p: 'mouth', s: 11, e: 26 }
 ]) {
 	result = linearMovement(result, k.p, k.s, k.e);
 }*/

@@ -367,14 +367,19 @@ export class Animation extends Container {
 	 */
 	resetChildAnimations(idx = undefined) {
 		if (idx !== undefined && idx < this._childAnimations.length) {
-			this._childAnimations[idx]._playing = true;
-			this._childAnimations[idx].setCurrentIdx(0);
-			this._childAnimations[idx].updateAnimation();
+			if (this._childAnimations[idx]._animation) {
+				this._childAnimations[idx]._playing = true;
+				this._childAnimations[idx].setCurrentIdx(0);
+				this._childAnimations[idx].updateAnimation();
+			}
+			this._childAnimations[idx].resetChildAnimations();
 		} else if (idx === undefined) {
 			for (const c of this._childAnimations) {
-				c._playing = true;
-				c.setCurrentIdx(0);
-				c.updateAnimation();
+				if (c._animation) {
+					c._playing = true;
+					c.setCurrentIdx(0);
+					c.updateAnimation();
+				}
 				c.resetChildAnimations();
 			}
 		}
