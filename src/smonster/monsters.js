@@ -20,6 +20,7 @@ import { eearth } from './eearth/eearth.js';
 import { efire } from './efire/efire.js';
 import { egrllz } from './egrllz/egrllz.js';
 import { ewater } from './ewater/ewater.js';
+import { febrez } from './febrez/febrez.js';
 import { flam } from './flam/flam.js';
 import { ffrutx } from './ffrutx/ffrutx.js';
 import { frking } from './frking/frking.js';
@@ -129,6 +130,7 @@ export const monsters = {
 	lapouf: lapouf,
 	ecu: ecu,
 	piglou: piglou,
+	febrez: febrez,
 	taurus: taurus
 };
 export const error = bad.small;

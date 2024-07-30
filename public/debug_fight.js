@@ -88,11 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Piglounou',
+					name: 'Febrez',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'piglou'
+					gfx: 'febrez'
 				}
 			}
 			/*{

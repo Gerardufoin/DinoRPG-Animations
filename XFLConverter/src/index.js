@@ -143,6 +143,11 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2265.xml', '_p1', undefined, 1); // ecu Ecurenne
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2381.xml', '_p1', undefined, 1); // piglou Piglounou
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2309.xml', '_sub', undefined, 1); // piglou attack_mouth
+//parser.parse('./resources/smonster/LIBRARY/Symbol 2479.xml', '_p1', undefined, 1); // febrez Febrez
+//parser.parse('./resources/smonster/LIBRARY/Symbol 2388.xml', '_sub', undefined, 1); // febrez wings
+//parser.parse('./resources/smonster/LIBRARY/Symbol 2409.xml', '_sub', undefined, 1); // febrez legs
+//parser.parse('./resources/smonster/LIBRARY/Symbol 2463.xml', '_sub', undefined, 1); // febrez talk
+//parser.parse('./resources/smonster/LIBRARY/Symbol 2476.xml', '_sub', undefined, 1); // febrez sleep
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2908.xml', '_sub', undefined, 1); // Taurus tail
 
