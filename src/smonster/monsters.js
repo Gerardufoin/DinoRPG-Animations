@@ -38,6 +38,7 @@ import { kazka } from './kazka/kazka.js';
 import { kmask, korgon, rkrgns } from './korgon/korgon.js';
 import { lapouf } from './lapouf/lapouf.js';
 import { lucet } from './lucet/lucet.js';
+import { marca } from './marca/marca.js';
 import { mandragore } from './mandragore/mandragore.js';
 import { mantoo } from './mantoo/mantoo.js';
 import { mosqui } from './mosqui/mosqui.js';
@@ -131,6 +132,7 @@ export const monsters = {
 	ecu: ecu,
 	piglou: piglou,
 	febrez: febrez,
+	marca: marca,
 	taurus: taurus
 };
 export const error = bad.small;

@@ -93,6 +93,7 @@ const monsterList = [
 	'ecu',
 	'piglou',
 	'febrez',
+	'marca',
 	'taurus'
 ];
 let currentAnim = undefined;
