@@ -12,7 +12,56 @@ const circle_glow = {
 	strength: 1
 };
 
+const burst_filters = {
+	colorOffset: {
+		r: 240,
+		g: 181,
+		b: 181
+	},
+	colorMultiplier: {
+		r: 0,
+		g: 0,
+		b: 0
+	},
+	glow: {
+		distance: 5,
+		color: 0xf0b5b5,
+		quality: 0.5,
+		strength: 1
+	}
+};
+
 export const parts = {
+	dead_burst_1: [
+		{
+			ref: ref.piglou.attack_burst_1,
+			...burst_filters
+		}
+	],
+	dead_burst_2: [
+		{
+			ref: ref.piglou.attack_burst_2,
+			...burst_filters
+		}
+	],
+	dead_burst_3: [
+		{
+			ref: ref.piglou.attack_burst_3,
+			...burst_filters
+		}
+	],
+	dead_burst_4: [
+		{
+			ref: ref.piglou.attack_burst_4,
+			...burst_filters
+		}
+	],
+	dead_burst_5: [
+		{
+			ref: ref.piglou.attack_burst_5,
+			...burst_filters
+		}
+	],
 	// 1838
 	smoke: [
 		{

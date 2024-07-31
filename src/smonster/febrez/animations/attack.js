@@ -6,6 +6,10 @@ export const attack = {
 		69: [['hit', 20]],
 		89: [['stop']]
 	},
+	expectedScaling: {
+		atk_circle_1: 2.5,
+		atk_circle_2: 2.5
+	},
 	frames: [
 		{
 			r_b_arm: {

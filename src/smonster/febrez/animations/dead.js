@@ -7206,22 +7206,11 @@ export const dead = {
 			}
 		},
 		{
-			atk_burst_1: {
+			dead_burst_1: {
 				tx: 35.55,
 				ty: 7.8,
 				a: 0.218,
 				d: 0.218,
-				or: 240,
-				og: 181,
-				ob: 181,
-				mr: 0,
-				mg: 0,
-				mb: 0,
-				glx: 5,
-				gly: 5,
-				glc: '#f0b5b5',
-				glq: 1,
-				gls: 1,
 				l: 8
 			},
 			r_b_arm: {
@@ -7287,22 +7276,11 @@ export const dead = {
 			}
 		},
 		{
-			atk_burst_1: {
+			dead_burst_2: {
 				tx: 35.55,
 				ty: 7.8,
 				a: 0.218,
 				d: 0.218,
-				or: 240,
-				og: 181,
-				ob: 181,
-				mr: 0,
-				mg: 0,
-				mb: 0,
-				glx: 5,
-				gly: 5,
-				glc: '#f0b5b5',
-				glq: 1,
-				gls: 1,
 				l: 8
 			},
 			r_b_arm: {
@@ -7374,22 +7352,11 @@ export const dead = {
 			}
 		},
 		{
-			atk_burst_1: {
+			dead_burst_3: {
 				tx: 35.55,
 				ty: 7.8,
 				a: 0.218,
 				d: 0.218,
-				or: 240,
-				og: 181,
-				ob: 181,
-				mr: 0,
-				mg: 0,
-				mb: 0,
-				glx: 5,
-				gly: 5,
-				glc: '#f0b5b5',
-				glq: 1,
-				gls: 1,
 				l: 8
 			},
 			r_b_arm: {
@@ -7461,22 +7428,11 @@ export const dead = {
 			}
 		},
 		{
-			atk_burst_1: {
+			dead_burst_4: {
 				tx: 35.55,
 				ty: 7.8,
 				a: 0.218,
 				d: 0.218,
-				or: 240,
-				og: 181,
-				ob: 181,
-				mr: 0,
-				mg: 0,
-				mb: 0,
-				glx: 5,
-				gly: 5,
-				glc: '#f0b5b5',
-				glq: 1,
-				gls: 1,
 				l: 8
 			},
 			r_b_arm: {
@@ -7556,22 +7512,11 @@ export const dead = {
 			}
 		},
 		{
-			atk_burst_1: {
+			dead_burst_5: {
 				tx: 35.55,
 				ty: 7.8,
 				a: 0.218,
 				d: 0.218,
-				or: 240,
-				og: 181,
-				ob: 181,
-				mr: 0,
-				mg: 0,
-				mb: 0,
-				glx: 5,
-				gly: 5,
-				glc: '#f0b5b5',
-				glq: 1,
-				gls: 1,
 				l: 20
 			},
 			smoke_1: {
@@ -7767,24 +7712,6 @@ export const dead = {
 			}
 		},
 		{
-			atk_burst_1: {
-				tx: 35.55,
-				ty: 7.8,
-				a: 0.218,
-				d: 0.218,
-				or: 240,
-				og: 181,
-				ob: 181,
-				mr: 0,
-				mg: 0,
-				mb: 0,
-				glx: 5,
-				gly: 5,
-				glc: '#f0b5b5',
-				glq: 1,
-				gls: 1,
-				l: 20
-			},
 			smoke_1: {
 				tx: 40.745,
 				ty: -7.68,

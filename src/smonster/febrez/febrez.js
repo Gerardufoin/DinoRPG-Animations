@@ -35,6 +35,11 @@ export const febrez = {
 		blur: { x: 1, y: 1 }
 	},
 	parts: {
+		dead_burst_1: parts.dead_burst_1,
+		dead_burst_2: parts.dead_burst_2,
+		dead_burst_3: parts.dead_burst_3,
+		dead_burst_4: parts.dead_burst_4,
+		dead_burst_5: parts.dead_burst_5,
 		// 1838
 		smoke_1: parts.smoke,
 		// 1838-1
