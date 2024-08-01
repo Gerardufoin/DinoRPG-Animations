@@ -21,6 +21,16 @@ export const glow_attack_1 = {
  * @type {{distance: number, color: number, quality: number, strength: number}}
  */
 export const glow_attack_2 = {
+	distance: 7,
+	color: 0xffff00,
+	quality: 0.5,
+	strength: 1.4
+};
+
+/**
+ * @type {{distance: number, color: number, quality: number, strength: number}}
+ */
+export const glow_attack_3 = {
 	distance: 4,
 	color: 0xff0000,
 	quality: 0.5,
@@ -86,26 +96,21 @@ export const parts = {
 	attack_1: [
 		{
 			ref: ref.wolf.attack_1,
-			glow: {
-				distance: 8,
-				color: 0xffffff,
-				quality: 0.5,
-				strength: 0.84
-			}
+			glow: glow_attack_1
 		}
 	],
 	// 103
 	attack_2: [
 		{
 			ref: ref.wolf.attack_2,
-			glow: glow_attack_1
+			glow: glow_attack_2
 		}
 	],
 	// 105
 	attack_3: [
 		{
 			ref: ref.wolf.attack_3,
-			glow: glow_attack_2
+			glow: glow_attack_3
 		}
 	],
 	// 107

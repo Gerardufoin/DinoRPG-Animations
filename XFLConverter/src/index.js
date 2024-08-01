@@ -150,6 +150,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2476.xml', '_sub', undefined, 1); // febrez sleep
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2543.xml', '_p1', undefined, 1); // marca Marcanglier
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2489.xml', '_sub', undefined, 1); // marca hair
+//parser.parse('./resources/smonster/LIBRARY/Symbol 2583.xml', '_p1', undefined, 1); // dorolu Doroloup
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2908.xml', '_sub', undefined, 1); // Taurus tail
 

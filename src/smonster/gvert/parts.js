@@ -1,6 +1,6 @@
 // @ts-check
 import { ref } from '../references.js';
-import { glow_attack_1, glow_attack_2 } from '../wolf/parts.js';
+import { glow_attack_1, glow_attack_2, glow_attack_3 } from '../wolf/parts.js';
 
 export const parts = {
 	// 159
@@ -77,26 +77,21 @@ export const parts = {
 	attack_1: [
 		{
 			ref: ref.wolf.attack_1,
-			glow: {
-				distance: 8,
-				color: 0xffffff,
-				quality: 0.5,
-				strength: 0.84
-			}
+			glow: glow_attack_1
 		}
 	],
 	// 103
 	attack_2: [
 		{
 			ref: ref.wolf.attack_2,
-			glow: glow_attack_1
+			glow: glow_attack_2
 		}
 	],
 	// 105
 	attack_3: [
 		{
 			ref: ref.wolf.attack_3,
-			glow: glow_attack_2
+			glow: glow_attack_3
 		}
 	],
 	// 107

@@ -25,7 +25,7 @@ import { ref } from '../gfx/references.js';
 import { SkillAura } from '../fight/actions/skills/SkillAura.js';
 import { GlowFilter } from '@pixi/filter-glow';
 import { ConstantShaderManager } from './ConstantShaderManager.js';
-import { glow_attack_1, glow_attack_2 } from '../smonster/wolf/parts.js';
+import { glow_attack_1, glow_attack_2, glow_attack_3 } from '../smonster/wolf/parts.js';
 import { Acorn } from '../fight/parts/skills/projectile/Acorn.js';
 import { FxFocus } from '../fight/actions/skills/fx/FxFocus.js';
 import { fx_endurance_off } from '../gfx/fx/endurance_off.js';
@@ -86,6 +86,12 @@ export class PreloadData {
 			color: glow_attack_2.color,
 			quality: glow_attack_2.quality,
 			outerStrength: glow_attack_2.strength
+		}),
+		ConstantShaderManager.getGlowFilter({
+			distance: glow_attack_3.distance,
+			color: glow_attack_3.color,
+			quality: glow_attack_3.quality,
+			outerStrength: glow_attack_3.strength
 		}),
 		FxFocus.GlowFilter,
 		GrSpeed.GlowFilter,

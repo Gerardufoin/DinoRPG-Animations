@@ -94,6 +94,7 @@ const monsterList = [
 	'piglou',
 	'febrez',
 	'marca',
+	'dorolu',
 	'taurus'
 ];
 let currentAnim = undefined;

@@ -88,11 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Marcanglier',
+					name: 'Doroloup',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'marca'
+					gfx: 'dorolu'
 				}
 			}
 			/*{

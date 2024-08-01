@@ -14,6 +14,7 @@ import { coq } from './coq/coq.js';
 import { cyclo } from './cyclo/cyclo.js';
 import { cyclo2 } from './cyclo2/cyclo2.js';
 import { doro } from './doro/doro.js';
+import { dorolu } from './dorolu/dorolu.js';
 import { dorou } from './dorou/dorou.js';
 import { ecu } from './ecu/ecu.js';
 import { eearth } from './eearth/eearth.js';
@@ -133,6 +134,7 @@ export const monsters = {
 	piglou: piglou,
 	febrez: febrez,
 	marca: marca,
+	dorolu: dorolu,
 	taurus: taurus
 };
 export const error = bad.small;
