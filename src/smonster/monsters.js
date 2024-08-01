@@ -26,6 +26,7 @@ import { flam } from './flam/flam.js';
 import { ffrutx } from './ffrutx/ffrutx.js';
 import { frking } from './frking/frking.js';
 import { frutox } from './frutox/frutox.js';
+import { fuego } from './fuego/fuego.js';
 import { gluon } from './gluon/gluon.js';
 import { goblin } from './goblin/goblin.js';
 import { goupi, goupi2, goupi3 } from './goupi/goupi.js';
@@ -135,6 +136,7 @@ export const monsters = {
 	febrez: febrez,
 	marca: marca,
 	dorolu: dorolu,
+	fuego: fuego,
 	taurus: taurus
 };
 export const error = bad.small;

@@ -58,21 +58,21 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] rapaca
 -   [x] morg
 -   [x] mandragore
--   [ ] cyclo
--   [ ] cyclo2
--   [ ] groms
--   [ ] grom2
--   [ ] grom3
--   [ ] doro
--   [ ] dorou
+-   [x] cyclo
+-   [x] cyclo2
+-   [x] groms
+-   [x] grom2
+-   [x] grom3
+-   [x] doro
+-   [x] dorou
 -   [x] lucet
--   [ ] lapouf
--   [ ] ecu
--   [ ] piglou
--   [ ] febrez
--   [ ] marca
--   [ ] dorolu
--   [ ] fuego
+-   [x] lapouf
+-   [x] ecu
+-   [x] piglou
+-   [x] febrez
+-   [x] marca
+-   [x] dorolu
+-   [x] fuego
 -   [ ] grizor
 -   [ ] morg2
 -   [ ] grizo2
