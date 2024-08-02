@@ -31,6 +31,7 @@ import { gluon } from './gluon/gluon.js';
 import { goblin } from './goblin/goblin.js';
 import { goupi, goupi2, goupi3 } from './goupi/goupi.js';
 import { grdien } from './grdien/grdien.js';
+import { grizor } from './grizor/grizor.js';
 import { groms, grom2, grom3 } from './groms/groms.js';
 import { gropi } from './gropi/gropi.js';
 import { gvert } from './gvert/gvert.js';
@@ -137,6 +138,7 @@ export const monsters = {
 	marca: marca,
 	dorolu: dorolu,
 	fuego: fuego,
+	grizor: grizor,
 	taurus: taurus
 };
 export const error = bad.small;

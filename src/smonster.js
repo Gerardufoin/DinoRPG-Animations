@@ -79,6 +79,9 @@ export class smonster extends Animator {
 		if (this._monsterInfos.glow) {
 			this.setBodyGlow(this._monsterInfos.glow);
 		}
+		if (this._monsterInfos.fullscreenFilters) {
+			this.setFiltersFullscreen();
+		}
 		if (this._monsterInfos.masks) {
 			this._body.setMasks(this._monsterInfos.masks);
 		}

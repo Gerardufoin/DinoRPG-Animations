@@ -23,7 +23,8 @@ const actions = [
 	'up',
 	'upwalk',
 	'down',
-	'downwalk'
+	'downwalk',
+	'superattack'
 ];
 const monsterList = [
 	'goupi',
@@ -96,6 +97,7 @@ const monsterList = [
 	'marca',
 	'dorolu',
 	'fuego',
+	'grizor',
 	'taurus'
 ];
 let currentAnim = undefined;

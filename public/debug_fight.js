@@ -51,7 +51,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 'i_lacroc',
+		bg: 'i_palais',
 		top: 120,
 		bottom: 20,
 		ground: 'none',
@@ -85,14 +85,16 @@ const fightVersion = [
 			{
 				action: 'Add',
 				fighter: {
-					props: [],
+					props: ['Static'],
 					dino: false,
 					life: 100,
-					name: 'Don Fuego',
+					name: 'Grizorg',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'fuego'
+					gfx: 'grizor',
+					x: 300,
+					y: 150
 				}
 			}
 			/*{

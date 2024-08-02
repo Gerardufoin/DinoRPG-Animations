@@ -152,6 +152,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2489.xml', '_sub', undefined, 1); // marca hair
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2583.xml', '_p1', undefined, 1); // dorolu Doroloup
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2618.xml', '_p1', undefined, 1); // fuego Don Fuego
+//parser.parse('./resources/smonster/LIBRARY/Symbol 2655.xml', '_p1', undefined, 1); // grizor Grizor
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2908.xml', '_sub', undefined, 1); // Taurus tail
 
