@@ -89,7 +89,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 704.xml', '_p1', undefined, 1); // rasca Rascaphandre
 //parser.parse('./resources/smonster/LIBRARY/Symbol 738.xml', '_p1', undefined, 1); // vener Vénérable
 //parser.parse('./resources/smonster/LIBRARY/Symbol 804.xml', '_p1', undefined, 1); // barche Bébé Archélion
-//parser.parse('./resources/smonster/LIBRARY/Symbol 786.xml', '_sub', undefined, 1); // barche Bébé Archélion
+//parser.parse('./resources/smonster/LIBRARY/Symbol 786.xml', '_sub', undefined, 1); // barche beam
 //parser.parse('./resources/smonster/LIBRARY/Symbol 818.xml', '_p1', undefined, 1); // cobra Cobrazero
 //parser.parse('./resources/smonster/LIBRARY/Symbol 854.xml', '_p1', undefined, 1); // hippo Dark Hippoclamp
 //parser.parse('./resources/smonster/LIBRARY/Symbol 881.xml', '_p1', undefined, 1); // rocky Dark Rocky
@@ -153,6 +153,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2583.xml', '_p1', undefined, 1); // dorolu Doroloup
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2618.xml', '_p1', undefined, 1); // fuego Don Fuego
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2655.xml', '_p1', undefined, 1); // grizor Grizor
+//parser.parse('./resources/smonster/LIBRARY/Symbol 2725.xml', '_p1', undefined, 1); // morg2 Morg transmuté
+//parser.parse('./resources/smonster/LIBRARY/Symbol 2697.xml', '_sub', undefined, 1); // morg2 beam
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2908.xml', '_sub', undefined, 1); // Taurus tail
 

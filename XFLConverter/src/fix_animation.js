@@ -120,7 +120,6 @@ function linearMovement(anim, elem, start, end) {
 // Move the tx/ty of a piece to the start+1 position to immitate the start position
 // Then force the following frames to follow the same movement, keeping the easing (in theory)
 function similarMovement(anim, elem, start, end) {
-	const keys = [];
 	let nextTxDiff = 0;
 	let nextTyDiff = 0;
 	for (let i = 1; start + i < end; ++i) {
@@ -129,6 +128,22 @@ function similarMovement(anim, elem, start, end) {
 		const tmpTyDiff = (anim[idx + 1][elem].ty ?? 0) - (anim[idx][elem].ty ?? 0);
 		anim[idx][elem].tx = round((anim[idx - 1][elem].tx ?? 0) + nextTxDiff);
 		anim[idx][elem].ty = round((anim[idx - 1][elem].ty ?? 0) + nextTyDiff);
+		nextTxDiff = tmpTxDiff;
+		nextTyDiff = tmpTyDiff;
+	}
+	return anim;
+}
+
+// Same thing as similar movement, but start from the end with frame-1
+function reverseSimilarMovement(anim, elem, start, end) {
+	let nextTxDiff = 0;
+	let nextTyDiff = 0;
+	for (let i = 1; end - i > start; ++i) {
+		const idx = end - i;
+		const tmpTxDiff = (anim[idx - 1][elem].tx ?? 0) - (anim[idx][elem].tx ?? 0);
+		const tmpTyDiff = (anim[idx - 1][elem].ty ?? 0) - (anim[idx][elem].ty ?? 0);
+		anim[idx][elem].tx = round((anim[idx + 1][elem].tx ?? 0) + nextTxDiff);
+		anim[idx][elem].ty = round((anim[idx + 1][elem].ty ?? 0) + nextTyDiff);
 		nextTxDiff = tmpTxDiff;
 		nextTyDiff = tmpTyDiff;
 	}
@@ -283,27 +298,47 @@ function mixAnimation(animation, keyA, mixAnim, keyB) {
 	return animation;
 }
 
+// Offset the given animation by the given transform
+function offsetAnimation(animation, transform) {
+	for (const anim of animation) {
+		for (const k of Object.keys(anim)) {
+			const matrix = PixiHelper.matrixFromObject(transform).append(PixiHelper.matrixFromObject(anim[k]));
+			assignKey(anim[k], 'tx', round(matrix.tx ?? 0), 0);
+			assignKey(anim[k], 'ty', round(matrix.ty ?? 0), 0);
+			assignKey(anim[k], 'a', round(matrix.a ?? 1), 1);
+			assignKey(anim[k], 'b', round(matrix.b ?? 0), 0);
+			assignKey(anim[k], 'c', round(matrix.c ?? 0), 0);
+			assignKey(anim[k], 'd', round(matrix.d ?? 1), 1);
+		}
+	}
+	return animation;
+}
+
 const animation = [];
 
 //const result = mirrorTo(animation, 12, 'r_f_lower_leg');
 //let result = freezeFrame(freezeFrame(animation, 43, 'sp_10', 43), 43, 'sp_4', 43);
 //let result = linearMovement(linearMovement(animation, 'sp_4', 0, 9), 'sp_10', 0, 9);
-//let result = changeLayer(animation, 'f_armor', 11, 0, 19);
+let result = changeLayer(changeLayer(animation, 'mr_l_f_foot', 9), 'mr_l_f_b_leg', 10);
 //let result = followKey(followKey(animation, 'r_arm', 'l_arm'), 'r_wing', 'l_wing');
 /*let result = animation;
 for (const k of ['l_wing']) {
 	result = linearMovement(result, k, 38, 79);
 }*/
-let result = animation;
-for (const k of ['l_arm', 'r_arm', 'face_sleep']) {
-	result = similarMovement(result, k, 29, 64);
+/*let result = animation;*/
+for (const k of ['mr_l_body', 'mr_u_body', 'mr_jaw', 'mr_head']) {
+	result = reverseSimilarMovement(result, k, 130, 146);
 }
 /*let result = animation;
 for (const k of [
-	{ p: 'face', s: 11, e: 26 },
-	{ p: 'mouth', s: 11, e: 26 }
+	{ p: 'head_dead', s: 90, e: 111 },
+	{ p: 'head_dead', s: 111, e: 133 }
 ]) {
 	result = linearMovement(result, k.p, k.s, k.e);
 }*/
+/*let result = offsetAnimation(animation, {
+	tx: -4.25,
+	ty: 0.7
+});*/
 
 fs.writeFileSync('./results/animation_fix.txt', JSON.stringify(result, undefined, '\t'));

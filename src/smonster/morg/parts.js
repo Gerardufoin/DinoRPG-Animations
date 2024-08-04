@@ -319,5 +319,18 @@ export const parts = {
 		{
 			ref: ref.morg.head_sleep
 		}
+	],
+	// Below is used in morg2
+	// 2706
+	cut_tail: [
+		{
+			ref: ref.morg.cut_tail
+		}
+	],
+	// 2717
+	head_dead: [
+		{
+			ref: ref.morg.head_dead
+		}
 	]
 };

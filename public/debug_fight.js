@@ -88,20 +88,29 @@ const fightVersion = [
 					props: ['Static'],
 					dino: false,
 					life: 100,
-					name: 'Grizorg',
+					name: 'Morg transmuté',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'grizor',
-					x: 300,
-					y: 150
+					gfx: 'morg2',
+					x: 280,
+					y: 125,
+					entrance: 'Anim',
+					anim: 'land'
+				}
+			},
+			{
+				action: 'Display'
+			},
+			{
+				action: 'Skill',
+				skill: 'Anim',
+				details: {
+					fid: 1,
+					anim: 'morph'
 				}
 			}
 			/*{
-				action: 'Wait',
-				time: 2000
-			},
-			{
 				action: 'Announce',
 				message: 'Big Mama',
 				fid: 0

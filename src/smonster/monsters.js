@@ -46,6 +46,7 @@ import { mandragore } from './mandragore/mandragore.js';
 import { mantoo } from './mantoo/mantoo.js';
 import { mosqui } from './mosqui/mosqui.js';
 import { morg } from './morg/morg.js';
+import { morg2 } from './morg2/morg2.js';
 import { mugard } from './mugard/mugard.js';
 import { muking } from './muking/muking.js';
 import { piglou } from './piglou/piglou.js';
@@ -139,6 +140,7 @@ export const monsters = {
 	dorolu: dorolu,
 	fuego: fuego,
 	grizor: grizor,
+	morg2: morg2,
 	taurus: taurus
 };
 export const error = bad.small;
