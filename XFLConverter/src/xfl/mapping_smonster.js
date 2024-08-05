@@ -1305,8 +1305,8 @@ export const mapping_smonster = {
 	// Morg 2
 	'Symbol 1797-1': 'r_t_leg_morph',
 	'Symbol 1819-1': 'r_hand', // Right hand in morg form is another left hand asset
-	'Symbol 2657': 'mr_l_b_leg',
-	'Symbol 2657-1': 'mr_r_b_leg',
+	//'Symbol 2657': 'mr_l_b_leg', // Also used for girzo2, uncomment if extracting morg2
+	//'Symbol 2657-1': 'mr_r_b_leg',
 	'Symbol 2660': 'mr_l_f_foot',
 	'Symbol 2660-1': 'mr_r_f_foot',
 	'Symbol 2662': 'mr_l_f_b_leg',
@@ -1336,6 +1336,20 @@ export const mapping_smonster = {
 	'Symbol 2717': 'head_dead',
 	'Symbol 2720': 'morph_fx_2',
 	'Symbol 2722': 'morph_fx_3',
+	// Girozg Transmuté
+	'Symbol 2657': 'l_leg',
+	'Symbol 2657-1': 'r_leg',
+	'Symbol 2727': 'l_hair',
+	'Symbol 2729': 'u_hair',
+	'Symbol 2731': 'tail',
+	'Symbol 2733': 'body',
+	'Symbol 2735': 'arms',
+	'Symbol 2737': 'b_hair',
+	'Symbol 2739': 'head',
+	'Symbol 2741': 'beard',
+	'Symbol 2744': 'atk_mask',
+	'Symbol 2745': 'atk_e_6',
+	'Symbol 2746': 'atk_e_7',
 	// Taurus
 	'Symbol 2883': 'r_back_spike',
 	'Symbol 2885': 'mane',

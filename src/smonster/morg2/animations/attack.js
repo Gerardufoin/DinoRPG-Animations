@@ -1072,15 +1072,6 @@ export const attack = {
 				b: -0.116,
 				c: 0.116,
 				d: 0.106,
-				acb: 0,
-				acc: 0,
-				acs: 70,
-				ach: -24,
-				glx: 12,
-				gly: 12,
-				glc: '#ff9900',
-				glq: 1,
-				gls: 1.3,
 				l: 10
 			},
 			mr_l_f_t_leg: {
@@ -1195,15 +1186,6 @@ export const attack = {
 				b: -0.193,
 				c: 0.21,
 				d: 0.193,
-				acb: 0,
-				acc: 0,
-				acs: 70,
-				ach: -24,
-				glx: 12,
-				gly: 12,
-				glc: '#ff9900',
-				glq: 1,
-				gls: 1.3,
 				l: 10
 			},
 			mr_l_f_t_leg: {
@@ -1318,15 +1300,6 @@ export const attack = {
 				b: -0.563,
 				c: 0.531,
 				d: 0.519,
-				acb: 0,
-				acc: 0,
-				acs: 70,
-				ach: -24,
-				glx: 12,
-				gly: 12,
-				glc: '#ff9900',
-				glq: 1,
-				gls: 1.3,
 				l: 10
 			},
 			mr_l_f_t_leg: {
@@ -1440,15 +1413,6 @@ export const attack = {
 				b: -0.004,
 				c: 0.001,
 				d: 0.43,
-				acb: 0,
-				acc: 0,
-				acs: 70,
-				ach: -24,
-				glx: 12,
-				gly: 12,
-				glc: '#ff9900',
-				glq: 1,
-				gls: 1.3,
 				l: 10
 			},
 			mr_l_f_t_leg: {
@@ -7047,11 +7011,6 @@ export const attack = {
 				ty: 85.25,
 				a: 0.384,
 				d: 0.384,
-				glx: 11,
-				gly: 11,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 10
 			},
 			mr_l_f_t_leg: {
@@ -7165,11 +7124,6 @@ export const attack = {
 				ty: 85.25,
 				a: 0.384,
 				d: 0.384,
-				glx: 11,
-				gly: 11,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 10
 			},
 			mr_l_f_t_leg: {
@@ -7283,11 +7237,6 @@ export const attack = {
 				ty: 85.85,
 				a: 0.384,
 				d: 0.384,
-				glx: 11,
-				gly: 11,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 10
 			},
 			mr_l_f_t_leg: {
@@ -7402,11 +7351,6 @@ export const attack = {
 				ty: 87.65,
 				a: 0.384,
 				d: 0.384,
-				glx: 11,
-				gly: 11,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 10
 			},
 			mr_l_f_t_leg: {
@@ -7521,11 +7465,6 @@ export const attack = {
 				ty: 89.35,
 				a: 0.384,
 				d: 0.384,
-				glx: 11,
-				gly: 11,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 10
 			},
 			mr_l_f_t_leg: {
@@ -7640,11 +7579,6 @@ export const attack = {
 				ty: 90.95,
 				a: 0.384,
 				d: 0.384,
-				glx: 11,
-				gly: 11,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 10
 			},
 			mr_l_f_t_leg: {
@@ -7759,11 +7693,6 @@ export const attack = {
 				ty: 92.7,
 				a: 0.384,
 				d: 0.384,
-				glx: 11,
-				gly: 11,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 10
 			},
 			mr_l_f_t_leg: {
@@ -7876,11 +7805,6 @@ export const attack = {
 				ty: 94.15,
 				a: 0.384,
 				d: 0.384,
-				glx: 5,
-				gly: 5,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 10
 			},
 			mr_l_f_t_leg: {
@@ -7995,11 +7919,6 @@ export const attack = {
 				ty: 97.35,
 				a: 0.384,
 				d: 0.384,
-				glx: 5,
-				gly: 5,
-				glc: '#ff6600',
-				glq: 1,
-				gls: 1.4,
 				l: 10
 			},
 			mr_l_f_t_leg: {

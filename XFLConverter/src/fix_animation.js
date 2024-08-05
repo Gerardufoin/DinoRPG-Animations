@@ -319,15 +319,15 @@ const animation = [];
 //const result = mirrorTo(animation, 12, 'r_f_lower_leg');
 //let result = freezeFrame(freezeFrame(animation, 43, 'sp_10', 43), 43, 'sp_4', 43);
 //let result = linearMovement(linearMovement(animation, 'sp_4', 0, 9), 'sp_10', 0, 9);
-let result = changeLayer(changeLayer(animation, 'mr_l_f_foot', 9), 'mr_l_f_b_leg', 10);
+//let result = changeLayer(changeLayer(animation, 'mr_l_f_foot', 9), 'mr_l_f_b_leg', 10);
 //let result = followKey(followKey(animation, 'r_arm', 'l_arm'), 'r_wing', 'l_wing');
 /*let result = animation;
 for (const k of ['l_wing']) {
 	result = linearMovement(result, k, 38, 79);
 }*/
-/*let result = animation;*/
-for (const k of ['mr_l_body', 'mr_u_body', 'mr_jaw', 'mr_head']) {
-	result = reverseSimilarMovement(result, k, 130, 146);
+let result = animation;
+for (const k of ['head', 'l_hair', 'u_hair', 'beard']) {
+	result = reverseSimilarMovement(result, k, 8, 19);
 }
 /*let result = animation;
 for (const k of [
