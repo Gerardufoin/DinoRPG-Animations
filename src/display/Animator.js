@@ -114,10 +114,12 @@ export class Animator extends Container {
 		this.registerCallback('gotoAndPlay', (animation, args) => {
 			animation.setCurrentIdx(args[0]);
 			animation.updateAnimation();
+			animation.executeCallbacks(this._callbacks);
 		});
 		this.registerCallback('gotoAndPlayRandom', (animation, args) => {
 			animation.setCurrentIdx(Math.floor(Math.random() * args[0]));
 			animation.updateAnimation();
+			animation.executeCallbacks(this._callbacks);
 		});
 		this.registerCallback('playAnim', (_animation, args) => {
 			this.playAnim(args[0]);

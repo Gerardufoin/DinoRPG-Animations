@@ -33,6 +33,7 @@ import { goupi, goupi2, goupi3 } from './goupi/goupi.js';
 import { grdien } from './grdien/grdien.js';
 import { grizor } from './grizor/grizor.js';
 import { grizo2 } from './grizo2/grizo2.js';
+import { grizo3 } from './grizo3/grizo3.js';
 import { groms, grom2, grom3 } from './groms/groms.js';
 import { gropi } from './gropi/gropi.js';
 import { gvert } from './gvert/gvert.js';
@@ -143,6 +144,7 @@ export const monsters = {
 	grizor: grizor,
 	morg2: morg2,
 	grizo2: grizo2,
+	grizo3: grizo3,
 	taurus: taurus
 };
 export const error = bad.small;

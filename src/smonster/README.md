@@ -73,10 +73,10 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] marca
 -   [x] dorolu
 -   [x] fuego
--   [ ] grizor
--   [ ] morg2
--   [ ] grizo2
--   [ ] grizo3
+-   [x] grizor
+-   [x] morg2
+-   [x] grizo2
+-   [x] grizo3
 -   [ ] garouz
 -   [ ] amanpe
 -   [ ] upgrd

@@ -94,7 +94,8 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'grizo2',
 					x: 330,
-					y: 180
+					y: 180,
+					entrance: 'Stand'
 				}
 			}
 			/*{

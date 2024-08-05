@@ -101,6 +101,7 @@ const monsterList = [
 	'grizor',
 	'morg2',
 	'grizo2',
+	'grizo3',
 	'taurus'
 ];
 let currentAnim = undefined;
@@ -108,7 +109,7 @@ let currentAnim = undefined;
 const appAnimation = new DinoAnim.Application({
 	background: '#E7B577',
 	width: 500,
-	height: 300
+	height: 400
 });
 document.getElementById('smonster').appendChild(appAnimation.view);
 
@@ -125,7 +126,7 @@ function updateMonster(type) {
 	});
 	appAnimation.stage.addChild(currentAnim);
 	currentAnim.x = 250;
-	currentAnim.y = 250;
+	currentAnim.y = 350;
 }
 
 for (const a of actions) {

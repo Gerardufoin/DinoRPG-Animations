@@ -1336,7 +1336,7 @@ export const mapping_smonster = {
 	'Symbol 2717': 'head_dead',
 	'Symbol 2720': 'morph_fx_2',
 	'Symbol 2722': 'morph_fx_3',
-	// Girozg Transmuté
+	// Grizorg Transmuté
 	'Symbol 2657': 'l_leg',
 	'Symbol 2657-1': 'r_leg',
 	'Symbol 2727': 'l_hair',
@@ -1350,6 +1350,20 @@ export const mapping_smonster = {
 	'Symbol 2744': 'atk_mask',
 	'Symbol 2745': 'atk_e_6',
 	'Symbol 2746': 'atk_e_7',
+	// Grizorg ultime
+	'Symbol 2752': 'r_hand',
+	'Symbol 2754': 'l_b_arm',
+	'Symbol 2754-1': 'r_b_arm',
+	'Symbol 2756': 'l_t_arm',
+	'Symbol 2756-1': 'r_t_arm',
+	'Symbol 2758': 'l_shoulder',
+	'Symbol 2758-1': 'r_shoulder',
+	'Symbol 2760': 'body',
+	'Symbol 2762': 'l_hand',
+	'Symbol 2764': 'head',
+	'Symbol 2767': 'atk_mask',
+	'Symbol 2771': 'aura_1',
+	'Symbol 2771-1': 'aura_2',
 	// Taurus
 	'Symbol 2883': 'r_back_spike',
 	'Symbol 2885': 'mane',
