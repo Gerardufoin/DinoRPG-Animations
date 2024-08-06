@@ -27,6 +27,7 @@ import { ffrutx } from './ffrutx/ffrutx.js';
 import { frking } from './frking/frking.js';
 import { frutox } from './frutox/frutox.js';
 import { fuego } from './fuego/fuego.js';
+import { garouz } from './garouz/garouz.js';
 import { gluon } from './gluon/gluon.js';
 import { goblin } from './goblin/goblin.js';
 import { goupi, goupi2, goupi3 } from './goupi/goupi.js';
@@ -145,6 +146,7 @@ export const monsters = {
 	morg2: morg2,
 	grizo2: grizo2,
 	grizo3: grizo3,
+	garouz: garouz,
 	taurus: taurus
 };
 export const error = bad.small;

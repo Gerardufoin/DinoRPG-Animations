@@ -102,6 +102,7 @@ const monsterList = [
 	'morg2',
 	'grizo2',
 	'grizo3',
+	'garouz',
 	'taurus'
 ];
 let currentAnim = undefined;

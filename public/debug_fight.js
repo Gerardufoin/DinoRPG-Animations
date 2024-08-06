@@ -51,7 +51,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 'i_palais',
+		bg: 's_dkSwamp',
 		top: 120,
 		bottom: 20,
 		ground: 'none',
@@ -88,14 +88,11 @@ const fightVersion = [
 					props: ['Static'],
 					dino: false,
 					life: 100,
-					name: 'Grizorg transmuté',
+					name: 'Garouzore',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'grizo2',
-					x: 330,
-					y: 180,
-					entrance: 'Stand'
+					gfx: 'garouz'
 				}
 			}
 			/*{
