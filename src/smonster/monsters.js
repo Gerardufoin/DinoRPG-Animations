@@ -1,6 +1,7 @@
 // @ts-check
 import { amanpe } from './amanpe/amanpe.js';
 import { bad } from '../dino/bad.js';
+import { bao } from './bao/bao.js';
 import { anguil } from './anguil/anguil.js';
 import { bamboo } from './bamboo/bamboo.js';
 import { barche } from './barche/barche.js';
@@ -151,6 +152,7 @@ export const monsters = {
 	garouz: garouz,
 	amanpe: amanpe,
 	upgrd: upgrd,
-	taurus: taurus
+	taurus: taurus,
+	bao: bao
 };
 export const error = bad.small;

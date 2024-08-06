@@ -51,7 +51,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 's_dkSwamp',
+		bg: 's_baobob',
 		top: 120,
 		bottom: 20,
 		ground: 'none',
@@ -88,43 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Garouzore',
+					name: 'Baobob',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'garouz',
-					x: 250,
-					y: 300
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Amanpenne',
-					side: false,
-					scale: 1,
-					fid: 2,
-					gfx: 'amanpe',
-					x: 250,
-					y: 100
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Guardien Supérieur',
-					side: false,
-					scale: 1,
-					fid: 3,
-					gfx: 'upgrd',
-					x: 350,
-					y: 200
+					gfx: 'bao'
 				}
 			}
 			/*{

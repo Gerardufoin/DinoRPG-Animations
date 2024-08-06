@@ -1121,5 +1121,24 @@ export const mapping_smonster = {
 	//2929: 'taurus/arm_tatoo', manual edition for blending in pixijs
 	2932: 'taurus/l_arm_spike',
 	2934: 'taurus/sideburn',
-	2945: 'taurus/hand'
+	2945: 'taurus/hand',
+	2951: 'bao/ear',
+	2953: 'bao/butt',
+	2955: 'bao/leg',
+	2957: 'bao/body',
+	//2959: 'bao/body_marks', // Modified manually to work with blend_modes add
+	2962: 'bao/chair',
+	2964: 'bao/bao',
+	2966: 'bao/right_leash',
+	2968: 'bao/head',
+	2970: 'bao/horn',
+	2972: 'bao/nostril',
+	2974: 'bao/eye_skin',
+	2975: 'bao/eye_socket',
+	2977: 'bao/eye',
+	2980: 'bao/left_leash',
+	2985: 'bao/bao_hit',
+	2992: 'bao/bao_right_arm_release_1',
+	2994: 'bao/bao_body_release',
+	2996: 'bao/bao_right_arm_release_2'
 };
