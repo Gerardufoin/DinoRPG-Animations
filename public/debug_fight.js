@@ -85,7 +85,7 @@ const fightVersion = [
 			{
 				action: 'Add',
 				fighter: {
-					props: ['Static'],
+					props: [],
 					dino: false,
 					life: 100,
 					name: 'Garouzore',
@@ -93,6 +93,19 @@ const fightVersion = [
 					scale: 1,
 					fid: 1,
 					gfx: 'garouz'
+				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Amanpenne',
+					side: false,
+					scale: 1,
+					fid: 2,
+					gfx: 'amanpe'
 				}
 			}
 			/*{

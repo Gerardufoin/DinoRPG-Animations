@@ -1,4 +1,5 @@
 // @ts-check
+import { amanpe } from './amanpe/amanpe.js';
 import { bad } from '../dino/bad.js';
 import { anguil } from './anguil/anguil.js';
 import { bamboo } from './bamboo/bamboo.js';
@@ -147,6 +148,7 @@ export const monsters = {
 	grizo2: grizo2,
 	grizo3: grizo3,
 	garouz: garouz,
+	amanpe: amanpe,
 	taurus: taurus
 };
 export const error = bad.small;
