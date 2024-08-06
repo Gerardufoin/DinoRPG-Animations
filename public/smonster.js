@@ -106,7 +106,8 @@ const monsterList = [
 	'amanpe',
 	'upgrd',
 	'taurus',
-	'bao'
+	'bao',
+	'sofia'
 ];
 let currentAnim = undefined;
 

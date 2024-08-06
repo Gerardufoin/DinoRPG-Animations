@@ -164,6 +164,9 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2908.xml', '_sub', undefined, 1); // Taurus tail
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3000.xml', '_p1', undefined, 1); // bao Baobob
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3050.xml', '_p1', undefined, 1); // sofia Sofia
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3021.xml', '_sub', undefined, 1); // sofia deco
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3034.xml', '_sub', undefined, 1); // sofia head
 
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine

@@ -64,6 +64,7 @@ import { rocky } from './rocky/rocky.js';
 import { ronciv } from './ronciv/ronciv.js';
 import { scorp } from './scorp/scorp.js';
 import { singmu } from './singmu/singmu.js';
+import { sofia } from './sofia/sofia.js';
 import { taurus } from './taurus/taurus.js';
 import { towgrd } from './towgrd/towgrd.js';
 import { upgrd } from './upgrd/upgrd.js';
@@ -153,6 +154,7 @@ export const monsters = {
 	amanpe: amanpe,
 	upgrd: upgrd,
 	taurus: taurus,
-	bao: bao
+	bao: bao,
+	sofia: sofia
 };
 export const error = bad.small;

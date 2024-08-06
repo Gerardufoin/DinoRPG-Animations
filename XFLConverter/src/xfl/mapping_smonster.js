@@ -1453,5 +1453,27 @@ export const mapping_smonster = {
 	'Symbol 2986': 'bao_hit',
 	'Symbol 2993': 'bao_r_arm_release_1',
 	'Symbol 2995': 'bao_body_release',
-	'Symbol 2997': 'bao_r_arm_release_2'
+	'Symbol 2997': 'bao_r_arm_release_2',
+	// Sofia
+	'Symbol 3002': 'r_scarf',
+	'Symbol 3004': 'r_t_arm',
+	'Symbol 3006': 'r_hand',
+	'Symbol 3008': 'r_b_arm',
+	'Symbol 3010': 'legs',
+	'Symbol 3012': 'r_t_scarf',
+	'Symbol 3014': 'body',
+	'Symbol 3016': 'l_scarf',
+	'Symbol 3021deco': 'deco',
+	'Symbol 3023': 'l_hand',
+	'Symbol 3025': 'l_arm',
+	'Symbol 3034headMove': 'head',
+	'Symbol 3034headHit': 'head',
+	'Symbol 3034head': 'head',
+	'Symbol 3038': 'atk_r_b_arm',
+	'Symbol 3040': 'atk_r_hand',
+	'Symbol 3045': 'atk_fx_1',
+	'Symbol 3045-1': 'atk_fx_2',
+	'Symbol 3045-2': 'atk_fx_3',
+	'Symbol 3045-3': 'atk_fx_4',
+	'Symbol 3047': 'atk_ball'
 };

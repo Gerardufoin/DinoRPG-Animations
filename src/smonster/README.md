@@ -77,12 +77,12 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] morg2
 -   [x] grizo2
 -   [x] grizo3
--   [ ] garouz
--   [ ] amanpe
--   [ ] upgrd
+-   [x] garouz
+-   [x] amanpe
+-   [x] upgrd
 -   [x] taurus
--   [ ] bao
--   [ ] sofia
+-   [x] bao
+-   [x] sofia
 -   [ ] chima
 -   [ ] groule
 -   [ ] behemu

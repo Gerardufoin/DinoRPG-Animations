@@ -94,6 +94,19 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'bao'
 				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: ['Static'],
+					dino: false,
+					life: 100,
+					name: 'Sofia',
+					side: false,
+					scale: 1,
+					fid: 2,
+					gfx: 'sofia'
+				}
 			}
 			/*{
 				action: 'Display'
