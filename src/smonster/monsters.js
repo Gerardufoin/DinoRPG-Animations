@@ -65,6 +65,7 @@ import { scorp } from './scorp/scorp.js';
 import { singmu } from './singmu/singmu.js';
 import { taurus } from './taurus/taurus.js';
 import { towgrd } from './towgrd/towgrd.js';
+import { upgrd } from './upgrd/upgrd.js';
 import { vener } from './vener/vener.js';
 import { wolf } from './wolf/wolf.js';
 import { worm } from './worm/worm.js';
@@ -149,6 +150,7 @@ export const monsters = {
 	grizo3: grizo3,
 	garouz: garouz,
 	amanpe: amanpe,
+	upgrd: upgrd,
 	taurus: taurus
 };
 export const error = bad.small;

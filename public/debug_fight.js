@@ -92,7 +92,9 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'garouz'
+					gfx: 'garouz',
+					x: 250,
+					y: 300
 				}
 			},
 			{
@@ -105,7 +107,24 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 2,
-					gfx: 'amanpe'
+					gfx: 'amanpe',
+					x: 250,
+					y: 100
+				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Guardien Supérieur',
+					side: false,
+					scale: 1,
+					fid: 3,
+					gfx: 'upgrd',
+					x: 350,
+					y: 200
 				}
 			}
 			/*{

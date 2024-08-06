@@ -160,6 +160,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2808.xml', '_p1', undefined, 1); // garouz Garouzore
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2840.xml', '_p1', undefined, 1); // amampe Amenpenne
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2824.xml', '_sub', undefined, 1); // amampe head
+//parser.parse('./resources/smonster/LIBRARY/Symbol 2881.xml', '_p1', undefined, 1); // upgrd Gardien supérieur
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2950.xml', '_p1', undefined, 1); // taurus Taurus
 //parser.parse('./resources/smonster/LIBRARY/Symbol 2908.xml', '_sub', undefined, 1); // Taurus tail
 
