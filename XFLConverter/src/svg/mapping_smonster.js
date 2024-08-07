@@ -1163,5 +1163,21 @@ export const mapping_smonster = {
 	3042: 'sofia/attack_fx_2',
 	3043: 'sofia/attack_fx_3',
 	3044: 'sofia/attack_fx_4',
-	3046: 'sofia/attack_ball'
+	3046: 'sofia/attack_ball',
+	3051: 'chima/bottom_arm',
+	3053: 'chima/top_arm',
+	3055: 'chima/foot',
+	3057: 'chima/body',
+	3059: 'chima/head',
+	3060: 'chima/eye_open',
+	3062: 'chima/eye_closed',
+	3064: 'chima/eye_half_open',
+	3066: 'chima/eye_hit',
+	3068: 'chima/head_left_fur',
+	3070: 'chima/mouth',
+	3072: 'chima/mouth_back',
+	3073: 'chima/tongue',
+	3075: 'chima/fang',
+	3077: 'chima/mouth_fur',
+	3085: 'chima/attack_smear'
 };

@@ -1475,5 +1475,20 @@ export const mapping_smonster = {
 	'Symbol 3045-1': 'atk_fx_2',
 	'Symbol 3045-2': 'atk_fx_3',
 	'Symbol 3045-3': 'atk_fx_4',
-	'Symbol 3047': 'atk_ball'
+	'Symbol 3047': 'atk_ball',
+	// Chimachouille
+	'Symbol 3052': 'l_b_arm',
+	'Symbol 3052-1': 'r_b_arm',
+	'Symbol 3054': 'l_t_arm',
+	'Symbol 3054-1': 'r_t_arm',
+	'Symbol 3056': 'l_foot',
+	'Symbol 3056-1': 'r_foot',
+	'Symbol 3058': 'body',
+	'Symbol 3069': 'head',
+	'Symbol 3069head': 'head',
+	'Symbol 3071': 'mouth',
+	'Symbol 3079bouche': 'tongue',
+	'Symbol 3079': 'tongue',
+	'Symbol 3085': 'atk_smear_1',
+	'Symbol 3086': 'atk_smear_2'
 };

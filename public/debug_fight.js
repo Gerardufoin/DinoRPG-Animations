@@ -51,7 +51,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 's_baobob',
+		bg: 'c_reacteur',
 		top: 120,
 		bottom: 20,
 		ground: 'none',
@@ -88,24 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Baobob',
+					name: 'Chimachouille',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'bao'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: ['Static'],
-					dino: false,
-					life: 100,
-					name: 'Sofia',
-					side: false,
-					scale: 1,
-					fid: 2,
-					gfx: 'sofia'
+					gfx: 'chima'
 				}
 			}
 			/*{

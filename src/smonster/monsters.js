@@ -11,6 +11,7 @@ import { brig1 } from './brig1/brig1.js';
 import { brig2 } from './brig2/brig2.js';
 import { brig3 } from './brig3/brig3.js';
 import { cactus } from './cactus/cactus.js';
+import { chima } from './chima/chima.js';
 import { cobra } from './cobra/cobra.js';
 import { coq } from './coq/coq.js';
 import { cyclo } from './cyclo/cyclo.js';
@@ -155,6 +156,7 @@ export const monsters = {
 	upgrd: upgrd,
 	taurus: taurus,
 	bao: bao,
-	sofia: sofia
+	sofia: sofia,
+	chima: chima
 };
 export const error = bad.small;

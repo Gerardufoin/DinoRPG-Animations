@@ -167,6 +167,9 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3050.xml', '_p1', undefined, 1); // sofia Sofia
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3021.xml', '_sub', undefined, 1); // sofia deco
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3034.xml', '_sub', undefined, 1); // sofia head
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3092.xml', '_p1', undefined, 1); // chima Chimachouille
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3067.xml', '_sub', undefined, 1); // chima eye
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3079.xml', '_sub', undefined, 1); // chima tongue
 
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine
