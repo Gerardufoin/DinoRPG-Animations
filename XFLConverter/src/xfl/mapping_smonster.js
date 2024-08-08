@@ -1518,5 +1518,16 @@ export const mapping_smonster = {
 	'Symbol 3159-3': 'atk_4',
 	'Symbol 3159-4': 'atk_5',
 	'Symbol 3159-5': 'atk_6',
-	'Symbol 3159-6': 'atk_7'
+	'Symbol 3159-6': 'atk_7',
+	// Behemotin
+	'Symbol 3165': 'l_f_b_leg',
+	'Symbol 3165-1': 'r_f_b_leg',
+	'Symbol 3167': 'tail',
+	'Symbol 3171': 'l_f_t_leg',
+	'Symbol 3171-1': 'r_f_t_leg',
+	'Symbol 3173': 'body',
+	'Symbol 3175': 'l_b_leg',
+	'Symbol 3175-1': 'r_b_leg',
+	'Symbol 3178': 'head',
+	'Symbol 3178head': 'head_hit'
 };

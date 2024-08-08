@@ -51,7 +51,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 'c_reacteur',
+		bg: 's_desertEnt',
 		top: 120,
 		bottom: 20,
 		ground: 'none',
@@ -88,11 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Groulem',
+					name: 'Behemotin',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'groule'
+					gfx: 'behemu'
 				}
 			}
 			/*{

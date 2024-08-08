@@ -1211,5 +1211,13 @@ export const mapping_smonster = {
 	3155: 'groule/spark_2',
 	3156: 'groule/spark_3',
 	3157: 'groule/spark_4',
-	3158: 'groule/spark_5'
+	3158: 'groule/spark_5',
+	3164: 'behemu/front_bottom_leg',
+	3166: 'behemu/tail',
+	3168: 'behemu/front_top_leg',
+	3169: 'behemu/front_leg_fur',
+	3172: 'behemu/body',
+	3174: 'behemu/back_leg',
+	3176: 'behemu/head',
+	3177: 'behemu/head_hit'
 };

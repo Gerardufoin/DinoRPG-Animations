@@ -180,6 +180,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3139.xml', '_sub', undefined, 1); // groule stone_6
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3144.xml', '_sub', undefined, 1); // groule stone_7
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3151.xml', '_sub', undefined, 1); // groule head
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3187.xml', '_p1', undefined, 1); // behemu Behemotin
 
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine
