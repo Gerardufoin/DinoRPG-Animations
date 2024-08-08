@@ -3,24 +3,24 @@
 export const attack = {
 	id: 'piglou_attack',
 	callbacks: {
-		12: [['resetChildAnimations', 0]], // Reset GRRR
+		12: [['resetChildAnimations', 'atk_grr']],
 		14: [
-			['resetChildAnimations', 1],
+			['resetChildAnimations', 'atk_burst_1'],
 			['hit', 30]
-		], // Reset burst 1
+		],
 		20: [
-			['resetChildAnimations', 1],
-			['resetChildAnimations', 2]
-		], // Reset burst 1/2
+			['resetChildAnimations', 'atk_burst_1'],
+			['resetChildAnimations', 'atk_burst_2']
+		],
 		26: [
-			['resetChildAnimations', 1],
-			['resetChildAnimations', 2],
-			['resetChildAnimations', 3]
-		], // Reset burst 1-3
+			['resetChildAnimations', 'atk_burst_1'],
+			['resetChildAnimations', 'atk_burst_2'],
+			['resetChildAnimations', 'atk_burst_3']
+		],
 		32: [
-			['resetChildAnimations', 1],
-			['resetChildAnimations', 2]
-		], // Reset burst 1/2
+			['resetChildAnimations', 'atk_burst_1'],
+			['resetChildAnimations', 'atk_burst_2']
+		],
 		45: [['stop']]
 	},
 	frames: [

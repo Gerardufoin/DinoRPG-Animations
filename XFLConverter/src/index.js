@@ -170,6 +170,16 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3092.xml', '_p1', undefined, 1); // chima Chimachouille
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3067.xml', '_sub', undefined, 1); // chima eye
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3079.xml', '_sub', undefined, 1); // chima tongue
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3163.xml', '_p1', undefined, 1); // groule Groulem
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3099.xml', '_sub', undefined, 1); // groule orb
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3113.xml', '_sub', undefined, 1); // groule stone_1
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3118.xml', '_sub', undefined, 1); // groule stone_2
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3124.xml', '_sub', undefined, 1); // groule stone_3
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3129.xml', '_sub', undefined, 1); // groule stone_4
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3134.xml', '_sub', undefined, 1); // groule stone_5
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3139.xml', '_sub', undefined, 1); // groule stone_6
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3144.xml', '_sub', undefined, 1); // groule stone_7
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3151.xml', '_sub', undefined, 1); // groule head
 
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine

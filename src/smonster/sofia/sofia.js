@@ -36,7 +36,6 @@ export const sofia = {
 		blur: { x: 1, y: 1 }
 	},
 	parts: {
-		// Animations needs to stay there so reset children works as expected
 		head: parts.head,
 		head_bump: parts.head_bump,
 		deco: parts.deco,

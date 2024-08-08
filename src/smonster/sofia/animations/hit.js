@@ -3,8 +3,8 @@
 export const hit = {
 	id: 'sofia_hit',
 	callbacks: {
-		0: [['resetChildAnimations', 3]],
-		19: [['stop'], ['resetChildAnimations', 2]]
+		0: [['resetChildAnimations', 'deco_hit']],
+		19: [['stop'], ['resetChildAnimations', 'deco']]
 	},
 	frames: [
 		{

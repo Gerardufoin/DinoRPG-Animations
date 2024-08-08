@@ -78,9 +78,9 @@ export const fx_detonation = {
 	animation: {
 		id: 'fx_detonation',
 		callbacks: {
-			2: [['resetChildAnimations', 0]],
-			3: [['resetChildAnimations', 1]],
-			4: [['resetChildAnimations', 2]],
+			2: [['resetChildAnimations', 'smk1']],
+			3: [['resetChildAnimations', 'smk2']],
+			4: [['resetChildAnimations', 'smk3']],
 			13: [['destroy']]
 		},
 		frames: [

@@ -40,6 +40,7 @@ import { grizo2 } from './grizo2/grizo2.js';
 import { grizo3 } from './grizo3/grizo3.js';
 import { groms, grom2, grom3 } from './groms/groms.js';
 import { gropi } from './gropi/gropi.js';
+import { groule } from './groule/groule.js';
 import { gvert } from './gvert/gvert.js';
 import { hippo } from './hippo/hippo.js';
 import { igor } from './igor/igor.js';
@@ -157,6 +158,7 @@ export const monsters = {
 	taurus: taurus,
 	bao: bao,
 	sofia: sofia,
-	chima: chima
+	chima: chima,
+	groule: groule
 };
 export const error = bad.small;

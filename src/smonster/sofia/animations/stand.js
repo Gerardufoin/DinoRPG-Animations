@@ -3,9 +3,9 @@
 export const stand = {
 	id: 'sofia_stand',
 	callbacks: {
-		0: [['resetChildAnimations', 0]],
-		75: [['resetChildAnimations', 1]],
-		101: [['resetChildAnimations', 0]]
+		0: [['resetChildAnimations', 'head']],
+		75: [['resetChildAnimations', 'head_bump']],
+		101: [['resetChildAnimations', 'head']]
 	},
 	frames: [
 		{

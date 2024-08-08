@@ -104,14 +104,14 @@ export const fx_survivor = {
 		id: 'fx_bubble_break',
 		callbacks: {
 			1: [
-				['resetChildAnimations', 1],
-				['resetChildAnimations', 2],
-				['resetChildAnimations', 3]
+				['resetChildAnimations', 'brk2'],
+				['resetChildAnimations', 'brk3'],
+				['resetChildAnimations', 'brk4']
 			],
 			2: [
-				['resetChildAnimations', 4],
-				['resetChildAnimations', 5],
-				['resetChildAnimations', 6]
+				['resetChildAnimations', 'brk5'],
+				['resetChildAnimations', 'brk6'],
+				['resetChildAnimations', 'brk7']
 			],
 			13: [['destroy']]
 		},

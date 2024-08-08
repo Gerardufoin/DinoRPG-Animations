@@ -3,11 +3,11 @@
 export const attack = {
 	id: 'sofia_attack',
 	callbacks: {
-		24: [['resetChildAnimations', 1]],
+		24: [['resetChildAnimations', 'head_bump']],
 		29: [['hit', 30]],
-		34: [['resetChildAnimations', 3]],
-		50: [['resetChildAnimations', 0]],
-		53: [['resetChildAnimations', 2]],
+		34: [['resetChildAnimations', 'deco_hit']],
+		50: [['resetChildAnimations', 'head']],
+		53: [['resetChildAnimations', 'deco']],
 		59: [['stop']]
 	},
 	frames: [

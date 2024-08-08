@@ -37,15 +37,6 @@ export const piglou = {
 		blur: { x: 1, y: 1 }
 	},
 	parts: {
-		// Attack animations go first to facilitate resetChildAnimations (0-3)
-		// 2324
-		atk_grr: parts.attack_grr,
-		// 2331
-		atk_burst_1: parts.attack_burst,
-		// 2331-1
-		atk_burst_2: parts.attack_burst,
-		// 2331-2
-		atk_burst_3: parts.attack_burst,
 		// 2267
 		r_horn: parts.right_horn,
 		// 2269
@@ -98,8 +89,16 @@ export const piglou = {
 		atk_mouth: parts.attack_mouth,
 		// 2310
 		atk_voice_1: parts.attack_voice_1,
+		// 2324
+		atk_grr: parts.attack_grr,
 		// 2325
 		atk_voice_2: parts.attack_voice_2,
+		// 2331
+		atk_burst_1: parts.attack_burst,
+		// 2331-1
+		atk_burst_2: parts.attack_burst,
+		// 2331-2
+		atk_burst_3: parts.attack_burst,
 		// 2332
 		atk_voice_3: parts.attack_voice_3,
 		// 2333

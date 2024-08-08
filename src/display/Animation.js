@@ -361,19 +361,23 @@ export class Animation extends Container {
 	}
 
 	/**
-	 * Set the given child animation at frame 0.
-	 * If no specific child is given, set all child animations to frame 0.
-	 * @param {number | undefined} idx The index of the child animation to reset. If undefined, affect all children.
+	 * Set the child animation of the given part at frame 0.
+	 * If no specific part is given, set all child animations to frame 0.
+	 * @param {string | undefined} part The part whose child animations to reset. If undefined, affect all children.
 	 */
-	resetChildAnimations(idx = undefined) {
-		if (idx !== undefined && idx < this._childAnimations.length) {
-			if (this._childAnimations[idx]._animation) {
-				this._childAnimations[idx]._playing = true;
-				this._childAnimations[idx].setCurrentIdx(0);
-				this._childAnimations[idx].updateAnimation();
+	resetChildAnimations(part = undefined) {
+		if (part !== undefined) {
+			if (!this._parts[part]) {
+				console.error(`[ResetChildAnimations]: Unknown part ${part} in animation ${this._animation?.id}`);
+				return;
 			}
-			this._childAnimations[idx].resetChildAnimations();
-		} else if (idx === undefined) {
+			if (this._parts[part]._animation) {
+				this._parts[part]._playing = true;
+				this._parts[part].setCurrentIdx(0);
+				this._parts[part].updateAnimation();
+			}
+			this._parts[part].resetChildAnimations();
+		} else {
 			for (const c of this._childAnimations) {
 				if (c._animation) {
 					c._playing = true;
