@@ -51,7 +51,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 's_desertEnt',
+		bg: 'c_trone',
 		top: 120,
 		bottom: 20,
 		ground: 'none',
@@ -85,14 +85,17 @@ const fightVersion = [
 			{
 				action: 'Add',
 				fighter: {
-					props: [],
+					props: ['Static'],
 					dino: false,
 					life: 100,
-					name: 'Behemotin',
+					name: 'Serpether',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'behemu'
+					gfx: 'serpe',
+					x: 320,
+					y: 230,
+					entrance: 'Stand'
 				}
 			}
 			/*{

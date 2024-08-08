@@ -66,6 +66,7 @@ import { rasca } from './rasca/rasca.js';
 import { rocky } from './rocky/rocky.js';
 import { ronciv } from './ronciv/ronciv.js';
 import { scorp } from './scorp/scorp.js';
+import { serpe } from './serpe/serpe.js';
 import { singmu } from './singmu/singmu.js';
 import { sofia } from './sofia/sofia.js';
 import { taurus } from './taurus/taurus.js';
@@ -161,6 +162,7 @@ export const monsters = {
 	sofia: sofia,
 	chima: chima,
 	groule: groule,
-	behemu: behemu
+	behemu: behemu,
+	serpe: serpe
 };
 export const error = bad.small;

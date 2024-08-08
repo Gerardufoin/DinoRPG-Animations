@@ -181,6 +181,10 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3144.xml', '_sub', undefined, 1); // groule stone_7
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3151.xml', '_sub', undefined, 1); // groule head
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3187.xml', '_p1', undefined, 1); // behemu Behemotin
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3254.xml', '_p1', undefined, 1); // serpe Serpether
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3198.xml', '_sub', undefined, 1); // serpe puddle
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3216.xml', '_sub', undefined, 1); // serpe eye
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3217.xml', '_sub', undefined, 1); // serpe head
 
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine
