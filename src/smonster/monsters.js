@@ -15,6 +15,7 @@ import { cactus } from './cactus/cactus.js';
 import { chima } from './chima/chima.js';
 import { cobra } from './cobra/cobra.js';
 import { coq } from './coq/coq.js';
+import { cranit } from './cranit/cranit.js';
 import { cyclo } from './cyclo/cyclo.js';
 import { cyclo2 } from './cyclo2/cyclo2.js';
 import { doro } from './doro/doro.js';
@@ -165,6 +166,7 @@ export const monsters = {
 	groule: groule,
 	behemu: behemu,
 	serpe: serpe,
-	roking: roking
+	roking: roking,
+	cranit: cranit
 };
 export const error = bad.small;

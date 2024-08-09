@@ -94,6 +94,19 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'roking'
 				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Cranite',
+					side: false,
+					scale: 1,
+					fid: 2,
+					gfx: 'cranit'
+				}
 			}
 			/*{
 				action: 'Display'

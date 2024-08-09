@@ -83,12 +83,12 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] taurus
 -   [x] bao
 -   [x] sofia
--   [ ] chima
--   [ ] groule
--   [ ] behemu
--   [ ] serpe
--   [ ] roking
--   [ ] cranit
+-   [x] chima
+-   [x] groule
+-   [x] behemu
+-   [x] serpe
+-   [x] roking
+-   [x] cranit
 -   [ ] crokoc
 -   [ ] arcadu
 -   [ ] rodeur
