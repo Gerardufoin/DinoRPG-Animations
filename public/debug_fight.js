@@ -51,7 +51,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 'c_trone',
+		bg: 'c_usine',
 		top: 120,
 		bottom: 20,
 		ground: 'none',
@@ -85,17 +85,14 @@ const fightVersion = [
 			{
 				action: 'Add',
 				fighter: {
-					props: ['Static'],
+					props: [],
 					dino: false,
 					life: 100,
-					name: 'Serpether',
+					name: 'Roking',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'serpe',
-					x: 320,
-					y: 230,
-					entrance: 'Stand'
+					gfx: 'roking'
 				}
 			}
 			/*{

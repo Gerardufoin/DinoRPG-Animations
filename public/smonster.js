@@ -111,7 +111,8 @@ const monsterList = [
 	'chima',
 	'groule',
 	'behemu',
-	'serpe'
+	'serpe',
+	'roking'
 ];
 let currentAnim = undefined;
 

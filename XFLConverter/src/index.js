@@ -185,6 +185,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3198.xml', '_sub', undefined, 1); // serpe puddle
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3216.xml', '_sub', undefined, 1); // serpe eye
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3217.xml', '_sub', undefined, 1); // serpe head
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3306.xml', '_p1', undefined, 1); // roking Roking
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3267.xml', '_sub', undefined, 1); // roking head
 
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine
