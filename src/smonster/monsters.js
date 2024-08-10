@@ -1,5 +1,6 @@
 // @ts-check
 import { amanpe } from './amanpe/amanpe.js';
+import { arcadu } from './arcadu/arcadu.js';
 import { bad } from '../dino/bad.js';
 import { bao } from './bao/bao.js';
 import { anguil } from './anguil/anguil.js';
@@ -169,6 +170,7 @@ export const monsters = {
 	serpe: serpe,
 	roking: roking,
 	cranit: cranit,
-	crokoc: crokoc
+	crokoc: crokoc,
+	arcadu: arcadu
 };
 export const error = bad.small;

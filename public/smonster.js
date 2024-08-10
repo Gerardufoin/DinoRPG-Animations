@@ -114,7 +114,8 @@ const monsterList = [
 	'serpe',
 	'roking',
 	'cranit',
-	'crokoc'
+	'crokoc',
+	'arcadu'
 ];
 let currentAnim = undefined;
 

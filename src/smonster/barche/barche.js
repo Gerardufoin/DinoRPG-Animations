@@ -19,20 +19,12 @@ export const barche = {
 	transforms: [
 		// 4089
 		{
-			tx: 17.95,
-			ty: -15.2,
+			tx: 30,
+			ty: -20,
 			a: 0.677,
 			d: 0.677,
 			brightness: -41,
 			contrast: 20
-		},
-		// 804
-		{
-			tx: -7
-		},
-		// Adjust
-		{
-			ty: -7.7
 		}
 	],
 	glow: {

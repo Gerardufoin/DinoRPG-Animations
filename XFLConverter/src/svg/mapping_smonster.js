@@ -1368,5 +1368,8 @@ export const mapping_smonster = {
 	3416: 'crokoc/attack_trail_18',
 	3417: 'crokoc/attack_trail_19',
 	3418: 'crokoc/attack_trail_20',
-	3419: 'crokoc/attack_trail_21'
+	3419: 'crokoc/attack_trail_21',
+	3425: 'arcadu/right_back_leg',
+	3428: 'arcadu/body',
+	3434: 'arcadu/left_back_leg'
 };
