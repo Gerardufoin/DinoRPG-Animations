@@ -188,6 +188,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3306.xml', '_p1', undefined, 1); // roking Roking
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3267.xml', '_sub', undefined, 1); // roking head
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3362.xml', '_p1', undefined, 1); // cranit Cranite
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3424.xml', '_p1', undefined, 1); // crokoc Crokocroc
 
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine

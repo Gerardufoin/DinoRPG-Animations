@@ -442,16 +442,22 @@ export class Animation extends Container {
 	 */
 	setCurrentIdx(idx) {
 		let length = this.getAnimationLength() - this._offsetIdx;
-		if (idx >= length - 1) {
+		if (idx >= length - 1 || idx < 0) {
 			this._ended = true;
 			if (this._nextOffsetIdx !== undefined) {
 				this.setOffsetIdx(this._nextOffsetIdx);
 				this._nextOffsetIdx = undefined;
-				idx -= length - 1;
+				if (idx > 0) {
+					idx -= length - 1;
+				}
 				length = this.getAnimationLength() - this._offsetIdx;
 			}
 		}
-		this._currentIdx = length > 0 ? idx % length : 0;
+		// If idx is negative, increase by length until positive again (to be at the last valid value from the end of animation)
+		while (idx < 0 && length > 1) {
+			idx += length - 1;
+		}
+		this._currentIdx = length > 0 && idx >= 0 ? idx % length : 0;
 	}
 
 	/**

@@ -88,24 +88,12 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Roking',
+					name: 'Crokocroc',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'roking'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Cranite',
-					side: false,
-					scale: 1,
-					fid: 2,
-					gfx: 'cranit'
+					gfx: 'crokoc',
+					entrance: 'Run'
 				}
 			}
 			/*{

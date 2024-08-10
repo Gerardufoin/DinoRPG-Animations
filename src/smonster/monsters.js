@@ -16,6 +16,7 @@ import { chima } from './chima/chima.js';
 import { cobra } from './cobra/cobra.js';
 import { coq } from './coq/coq.js';
 import { cranit } from './cranit/cranit.js';
+import { crokoc } from './crokoc/crokoc.js';
 import { cyclo } from './cyclo/cyclo.js';
 import { cyclo2 } from './cyclo2/cyclo2.js';
 import { doro } from './doro/doro.js';
@@ -167,6 +168,7 @@ export const monsters = {
 	behemu: behemu,
 	serpe: serpe,
 	roking: roking,
-	cranit: cranit
+	cranit: cranit,
+	crokoc: crokoc
 };
 export const error = bad.small;

@@ -293,16 +293,17 @@ export class Animator extends Container {
 	 * Updates the timer of the animator if an animation is playing.
 	 * If the timer reaches the tick rate, switch to the next frame.
 	 * @param {number} deltaTime Elapsed time since last frame in ms.
+	 * @param {boolean} reverse If true, the animation goes backward. False by default.
 	 * @returns {void}
 	 */
-	update(deltaTime) {
+	update(deltaTime, reverse = false) {
 		if (!this.playing || this._body.getAnimationLength() == 0) {
 			return;
 		}
 		this._time += deltaTime;
 		if (this._time >= this._tickRate) {
 			while (this._time >= this._tickRate) {
-				this._body.increaseCurrentIdx(1);
+				this._body.increaseCurrentIdx(reverse ? -1 : 1);
 				this._body.updateAnimation();
 				this._body.executeCallbacks(this._callbacks);
 				this._time -= this._tickRate;

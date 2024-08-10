@@ -427,6 +427,19 @@ export class Fighter extends Phys {
 	 * @type {number}
 	 */
 	_lockTimer = 0;
+	/**
+	 * Return true if the Fighter's animator should be playing backward.
+	 * This happens when the Fighter is not frozen/static, and is walking backward.
+	 * @type {boolean}
+	 */
+	get isBackward() {
+		return (
+			!this.isFrozen &&
+			!this.haveProp(FighterProperty.Static) &&
+			this._walkPath != null &&
+			this._vx * this.intSide < 0
+		);
+	}
 
 	/**
 	 * Force of the Fighter against other Fighters.
@@ -644,7 +657,6 @@ export class Fighter extends Phys {
 	 */
 	update(timer) {
 		super.update(timer);
-		this._animator.update(timer.deltaTimeMS);
 		this.dm.update(timer);
 		if (this._lockTimer > 0) {
 			this._lockTimer -= timer.tmod;
@@ -667,6 +679,8 @@ export class Fighter extends Phys {
 				this.updateDodge();
 				break;
 		}
+		// Animator updated after updateWait, to make the Fighter walk backward if needed
+		this._animator.update(timer.deltaTimeMS, this.isBackward);
 		this.updateFx(timer);
 		this.updateStatus(timer);
 		if (this._slot) {
