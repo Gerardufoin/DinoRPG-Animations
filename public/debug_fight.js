@@ -51,7 +51,7 @@ const version = 1;
 const fightVersion = [
 	{ legacy_data: fightData[5] },
 	{
-		bg: 's_pentes',
+		bg: 'c_labo',
 		top: 120,
 		bottom: 20,
 		ground: 'none',
@@ -88,11 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Rodeur étrange',
+					name: 'Belius',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'rodeur'
+					gfx: 'belius'
 				}
 			}
 			/*{

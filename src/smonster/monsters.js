@@ -8,6 +8,7 @@ import { bamboo } from './bamboo/bamboo.js';
 import { barche } from './barche/barche.js';
 import { bat } from './bat/bat.js';
 import { behemu } from './behemu/behemu.js';
+import { belius } from './belius/belius.js';
 import { borg } from './borg/borg.js';
 import { brig1 } from './brig1/brig1.js';
 import { brig2 } from './brig2/brig2.js';
@@ -173,6 +174,7 @@ export const monsters = {
 	cranit: cranit,
 	crokoc: crokoc,
 	arcadu: arcadu,
-	rodeur: rodeur
+	rodeur: rodeur,
+	belius: belius
 };
 export const error = bad.small;

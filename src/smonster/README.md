@@ -89,10 +89,10 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] serpe
 -   [x] roking
 -   [x] cranit
--   [ ] crokoc
--   [ ] arcadu
--   [ ] rodeur
--   [ ] belius
+-   [x] crokoc
+-   [x] arcadu
+-   [x] rodeur
+-   [x] belius
 -   [ ] mimic
 -   [ ] feufol
 -   [ ] becplu

@@ -327,7 +327,7 @@ for (const k of ['l_wing']) {
 }*/
 let result = animation;
 for (const k of ['head', 'l_hair', 'u_hair', 'beard']) {
-	result = reverseSimilarMovement(result, k, 8, 19);
+	result = similarMovement(result, k, 8, 19);
 }
 /*let result = animation;
 for (const k of [
