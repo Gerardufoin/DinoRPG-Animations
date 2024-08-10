@@ -115,7 +115,8 @@ const monsterList = [
 	'roking',
 	'cranit',
 	'crokoc',
-	'arcadu'
+	'arcadu',
+	'rodeur'
 ];
 let currentAnim = undefined;
 

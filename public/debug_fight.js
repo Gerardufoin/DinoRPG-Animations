@@ -88,12 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Archelion adulte nain',
+					name: 'Rodeur étrange',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'arcadu',
-					entrance: 'Run'
+					gfx: 'rodeur'
 				}
 			}
 			/*{

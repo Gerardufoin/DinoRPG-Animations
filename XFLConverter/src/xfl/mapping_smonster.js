@@ -1715,5 +1715,27 @@ export const mapping_smonster = {
 	'Symbol 3476': 'atk_e_2',
 	'Symbol 3477': 'atk_e_3',
 	'Symbol 3478': 'atk_e_4',
-	'Symbol 3479': 'atk_e_5'
+	'Symbol 3479': 'atk_e_5',
+	// Rodeur
+	'Symbol 3487': 'r_hand',
+	'Symbol 3490': 'l_foot',
+	'Symbol 3493': 'l_b_arm',
+	'Symbol 3493-1': 'l_t_arm',
+	'Symbol 3493-2': 'r_b_arm',
+	'Symbol 3493-3': 'r_t_arm',
+	'Symbol 3493-4': 'l_t_leg',
+	'Symbol 3493-5': 'r_t_leg',
+	'Symbol 3493-6': 'r_b_leg',
+	'Symbol 3493-7': 'l_b_leg',
+	'Symbol 3496': 'r_foot',
+	'Symbol 3499': 'pants',
+	'Symbol 3502': 'body',
+	'Symbol 3504': 'head',
+	'Symbol 3506': 'l_hand',
+	'Symbol 3512': 'atk_smear_1',
+	'Symbol 3513': 'atk_body_smear',
+	'Symbol 3514': 'atk_smear_2',
+	'Symbol 3515': 'atk_smear_3',
+	'Symbol 3516': 'atk_smear_4',
+	'Symbol 3517': 'atk_smear_5'
 };

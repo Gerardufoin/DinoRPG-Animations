@@ -67,6 +67,7 @@ import { pteroz } from './pteroz/pteroz.js';
 import { rapaca } from './rapaca/rapaca.js';
 import { rasca } from './rasca/rasca.js';
 import { rocky } from './rocky/rocky.js';
+import { rodeur } from './rodeur/rodeur.js';
 import { roking } from './roking/roking.js';
 import { ronciv } from './ronciv/ronciv.js';
 import { scorp } from './scorp/scorp.js';
@@ -171,6 +172,7 @@ export const monsters = {
 	roking: roking,
 	cranit: cranit,
 	crokoc: crokoc,
-	arcadu: arcadu
+	arcadu: arcadu,
+	rodeur: rodeur
 };
 export const error = bad.small;

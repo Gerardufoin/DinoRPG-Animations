@@ -1371,5 +1371,18 @@ export const mapping_smonster = {
 	3419: 'crokoc/attack_trail_21',
 	3425: 'arcadu/right_back_leg',
 	3428: 'arcadu/body',
-	3434: 'arcadu/left_back_leg'
+	3434: 'arcadu/left_back_leg',
+	3488: 'rodeur/left_foot',
+	3491: 'rodeur/segment',
+	3494: 'rodeur/right_foot',
+	3497: 'rodeur/pants',
+	3500: 'rodeur/body',
+	3503: 'rodeur/head',
+	3505: 'rodeur/axe',
+	3512: 'rodeur/attack_smear_1',
+	3513: 'rodeur/attack_body_smear',
+	3514: 'rodeur/attack_smear_2',
+	3515: 'rodeur/attack_smear_3',
+	3516: 'rodeur/attack_smear_4',
+	3517: 'rodeur/attack_smear_5'
 };
