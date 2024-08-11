@@ -1,5 +1,4 @@
 // @ts-check
-
 import { Layers } from '../../../fight/DepthManager.js';
 
 export const walk = {

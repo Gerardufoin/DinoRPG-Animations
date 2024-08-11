@@ -192,6 +192,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3484.xml', '_p1', undefined, 1); // arcadu Archelion adulte nain
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3522.xml', '_p1', undefined, 1); // rodeur Rodeur
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3582.xml', '_p1', undefined, 1); // belius Belius
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3655.xml', '_p1', undefined, 1); // mimic Mimic
 
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine

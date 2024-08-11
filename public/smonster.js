@@ -117,7 +117,8 @@ const monsterList = [
 	'crokoc',
 	'arcadu',
 	'rodeur',
-	'belius'
+	'belius',
+	'mimic'
 ];
 let currentAnim = undefined;
 

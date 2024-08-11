@@ -88,11 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Belius',
+					name: 'Mimic',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'belius'
+					gfx: 'mimic'
 				}
 			}
 			/*{

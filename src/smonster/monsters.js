@@ -56,6 +56,7 @@ import { lucet } from './lucet/lucet.js';
 import { marca } from './marca/marca.js';
 import { mandragore } from './mandragore/mandragore.js';
 import { mantoo } from './mantoo/mantoo.js';
+import { mimic } from './mimic/mimic.js';
 import { mosqui } from './mosqui/mosqui.js';
 import { morg } from './morg/morg.js';
 import { morg2 } from './morg2/morg2.js';
@@ -175,6 +176,7 @@ export const monsters = {
 	crokoc: crokoc,
 	arcadu: arcadu,
 	rodeur: rodeur,
-	belius: belius
+	belius: belius,
+	mimic: mimic
 };
 export const error = bad.small;
