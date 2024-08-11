@@ -30,6 +30,7 @@ import { efire } from './efire/efire.js';
 import { egrllz } from './egrllz/egrllz.js';
 import { ewater } from './ewater/ewater.js';
 import { febrez } from './febrez/febrez.js';
+import { feufol } from './feufol/feufol.js';
 import { flam } from './flam/flam.js';
 import { ffrutx } from './ffrutx/ffrutx.js';
 import { frking } from './frking/frking.js';
@@ -177,6 +178,7 @@ export const monsters = {
 	arcadu: arcadu,
 	rodeur: rodeur,
 	belius: belius,
-	mimic: mimic
+	mimic: mimic,
+	feufol: feufol
 };
 export const error = bad.small;

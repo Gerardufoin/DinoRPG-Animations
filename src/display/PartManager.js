@@ -74,7 +74,7 @@ export class PartManager {
 				}
 			}
 			if (part.transform) {
-				anim.transform.setFromMatrix(PixiHelper.matrixFromObject(part.transform));
+				anim.transform.setFromMatrix(PixiHelper.matrixFromObject(part.transform, scale));
 			}
 			if (part.alpha) {
 				anim.alpha = part.alpha;
@@ -253,14 +253,17 @@ export class PartManager {
 			);
 		}
 		if (part.glow) {
-			filters.push(
-				ConstantShaderManager.getGlowFilter({
-					distance: part.glow.distance,
-					color: part.glow.color,
-					quality: part.glow.quality,
-					outerStrength: part.glow.strength
-				})
-			);
+			for (const g of Array.isArray(part.glow) ? part.glow : [part.glow]) {
+				filters.push(
+					ConstantShaderManager.getGlowFilter({
+						distance: g.distance,
+						color: g.color,
+						quality: g.quality,
+						innerStrength: g.innerStrength ?? 0,
+						outerStrength: g.strength ?? 0
+					})
+				);
+			}
 		}
 		return filters.length ? filters : undefined;
 	}

@@ -94,16 +94,26 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'mimic'
 				}
-			}
-			/*{
-				action: 'Display'
 			},
 			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Feu-Folle',
+					side: false,
+					scale: 1,
+					fid: 2,
+					gfx: 'feufol'
+				}
+			}
+			/*{
 				action: 'Skill',
 				skill: 'Anim',
 				details: {
-					fid: 1,
-					anim: 'morph'
+					fid: 2,
+					anim: 'hit'
 				}
 			}*/
 			/*{

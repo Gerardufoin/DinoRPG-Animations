@@ -1827,5 +1827,13 @@ export const mapping_smonster = {
 	'Symbol 3646': 'open_fx_1',
 	'Symbol 3647': 'open_fx_2',
 	'Symbol 3650': 'cover_dead',
-	'Symbol 3651': 'inside_dead'
+	'Symbol 3651': 'inside_dead',
+	// Feu-Folle
+	'Symbol 3668': 'aura',
+	'Symbol 3672': 'eye',
+	'Symbol 3673': 'body',
+	'Symbol 3679': 'body_fly',
+	'Symbol 3691': 'hit_fx',
+	'Symbol 3706': 'atk_fx',
+	'Symbol 3709': 'head_dead'
 };

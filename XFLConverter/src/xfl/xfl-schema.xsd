@@ -171,6 +171,7 @@
 																																	<xs:complexType>
 																																		<xs:attribute name="blurX" type="xs:decimal" use="optional"/>
 																																		<xs:attribute name="blurY" type="xs:decimal" use="optional"/>
+																																		<xs:attribute name="inner" type="xs:boolean" use="optional"/>
 																																		<xs:attribute name="quality" type="xs:decimal" use="optional"/>
 																																		<xs:attribute name="strength" type="xs:decimal" use="optional"/>
 																																		<xs:attribute name="color" type="xs:string" use="optional"/>
