@@ -37,6 +37,7 @@ import { ffrutx } from './ffrutx/ffrutx.js';
 import { frking } from './frking/frking.js';
 import { frutox } from './frutox/frutox.js';
 import { fuego } from './fuego/fuego.js';
+import { fullgd } from './fullgd/fullgd.js';
 import { garouz } from './garouz/garouz.js';
 import { gluon } from './gluon/gluon.js';
 import { goblin } from './goblin/goblin.js';
@@ -183,6 +184,7 @@ export const monsters = {
 	mimic: mimic,
 	feufol: feufol,
 	becplu: becplu,
-	updwn: updwn
+	updwn: updwn,
+	fullgd: fullgd
 };
 export const error = bad.small;

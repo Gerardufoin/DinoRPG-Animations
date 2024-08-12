@@ -121,7 +121,8 @@ const monsterList = [
 	'mimic',
 	'feufol',
 	'becplu',
-	'updwn'
+	'updwn',
+	'fullgd'
 ];
 let currentAnim = undefined;
 

@@ -8,6 +8,9 @@ export const mapping_smonster = {
 	'Symbol 4-4': 'fx_dust_5',
 	'Symbol 4-5': 'fx_dust_6',
 	'Symbol 4-6': 'fx_dust_7',
+	'Symbol 4-7': 'fx_dust_8',
+	'Symbol 4-8': 'fx_dust_9',
+	'Symbol 4-9': 'fx_dust_10',
 	'Symbol 6': 'fx_burst_1',
 	'Symbol 6-1': 'fx_burst_1a',
 	'Symbol 7': 'fx_burst_2',
@@ -1400,7 +1403,7 @@ export const mapping_smonster = {
 	'Symbol 2844': 'r_b_arm',
 	'Symbol 2846': 'r_hand',
 	'Symbol 2848': 'r_t_arm',
-	'Symbol 2854': 'body',
+	'Symbol 2854': 'u_body',
 	'Symbol 2856': 'l_t_arm',
 	'Symbol 2858': 'l_b_arm',
 	'Symbol 2860': 'l_hand',
@@ -1855,8 +1858,11 @@ export const mapping_smonster = {
 	'Symbol 3744-1': 'r_t_leg',
 	'Symbol 3747': 'r_b_leg',
 	'Symbol 3749': 'r_foot',
-	'Symbol 3755': 'body',
+	'Symbol 3755': 'l_body',
 	'Symbol 3758': 'l_b_leg',
 	'Symbol 3760': 'l_foot',
-	'Symbol 3768': 'shield'
+	'Symbol 3768': 'shield',
+	// Alchimiste d'acier
+	'Symbol 3779': 'atk_smear',
+	'Symbol 3784': 'shield'
 };

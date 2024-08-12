@@ -93,11 +93,11 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] arcadu
 -   [x] rodeur
 -   [x] belius
--   [ ] mimic
--   [ ] feufol
--   [ ] becplu
--   [ ] updwn
--   [ ] fullgd
+-   [x] mimic
+-   [x] feufol
+-   [x] becplu
+-   [x] updwn
+-   [x] fullgd
 -   [ ] rhubar
 -   [ ] stroa
 -   [ ] scorpu
