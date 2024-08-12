@@ -88,11 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Becplu',
+					name: 'Guardien inférieur',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'becplu'
+					gfx: 'updwn'
 				}
 			}
 			/*{

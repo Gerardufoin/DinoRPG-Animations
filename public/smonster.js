@@ -120,7 +120,8 @@ const monsterList = [
 	'belius',
 	'mimic',
 	'feufol',
-	'becplu'
+	'becplu',
+	'updwn'
 ];
 let currentAnim = undefined;
 

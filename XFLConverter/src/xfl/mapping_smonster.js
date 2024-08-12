@@ -7,6 +7,7 @@ export const mapping_smonster = {
 	'Symbol 4-3': 'fx_dust_4',
 	'Symbol 4-4': 'fx_dust_5',
 	'Symbol 4-5': 'fx_dust_6',
+	'Symbol 4-6': 'fx_dust_7',
 	'Symbol 6': 'fx_burst_1',
 	'Symbol 6-1': 'fx_burst_1a',
 	'Symbol 7': 'fx_burst_2',
@@ -1847,5 +1848,15 @@ export const mapping_smonster = {
 	'Symbol 3725': 'body',
 	'Symbol 3727': 'head',
 	'Symbol 3733': 'atk_smear_1',
-	'Symbol 3734': 'atk_smear_2'
+	'Symbol 3734': 'atk_smear_2',
+	// Guardien inférieur
+	'Symbol 3742': 'r_foot_back',
+	'Symbol 3744': 'l_t_leg',
+	'Symbol 3744-1': 'r_t_leg',
+	'Symbol 3747': 'r_b_leg',
+	'Symbol 3749': 'r_foot',
+	'Symbol 3755': 'body',
+	'Symbol 3758': 'l_b_leg',
+	'Symbol 3760': 'l_foot',
+	'Symbol 3768': 'shield'
 };

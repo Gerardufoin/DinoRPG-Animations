@@ -1491,5 +1491,13 @@ export const mapping_smonster = {
 	3724: 'becplu/body',
 	3726: 'becplu/head',
 	3733: 'becplu/attack_smear_1',
-	3734: 'becplu/attack_smear_2'
+	3734: 'becplu/attack_smear_2',
+	3741: 'updwn/right_foot_back',
+	3743: 'updwn/top_leg',
+	3745: 'updwn/right_bottom_leg',
+	3748: 'updwn/right_foot',
+	3751: 'updwn/body',
+	3753: 'updwn/body_decoration',
+	3756: 'updwn/left_bottom_leg',
+	3759: 'updwn/left_foot'
 };

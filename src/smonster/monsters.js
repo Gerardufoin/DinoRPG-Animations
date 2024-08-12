@@ -80,6 +80,7 @@ import { singmu } from './singmu/singmu.js';
 import { sofia } from './sofia/sofia.js';
 import { taurus } from './taurus/taurus.js';
 import { towgrd } from './towgrd/towgrd.js';
+import { updwn } from './updwn/updwn.js';
 import { upgrd } from './upgrd/upgrd.js';
 import { vener } from './vener/vener.js';
 import { wolf } from './wolf/wolf.js';
@@ -181,6 +182,7 @@ export const monsters = {
 	belius: belius,
 	mimic: mimic,
 	feufol: feufol,
-	becplu: becplu
+	becplu: becplu,
+	updwn: updwn
 };
 export const error = bad.small;

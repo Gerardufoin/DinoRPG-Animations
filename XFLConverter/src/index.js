@@ -195,7 +195,8 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3655.xml', '_p1', undefined, 1); // mimic Mimic
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3713.xml', '_p1', undefined, 1); // feufol Feu-Folle
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3679.xml', '_sub', undefined, 1); // feufol fly
-//parser.parse('./resources/smonster/LIBRARY/Symbol 3740.xml', '_p1', undefined, 1); // becplu fly
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3740.xml', '_p1', undefined, 1); // becplu
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3774.xml', '_p1', undefined, 1); // updwn Gardien inférieur
 
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine
