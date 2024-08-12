@@ -7,6 +7,7 @@ import { anguil } from './anguil/anguil.js';
 import { bamboo } from './bamboo/bamboo.js';
 import { barche } from './barche/barche.js';
 import { bat } from './bat/bat.js';
+import { becplu } from './becplu/becplu.js';
 import { behemu } from './behemu/behemu.js';
 import { belius } from './belius/belius.js';
 import { borg } from './borg/borg.js';
@@ -179,6 +180,7 @@ export const monsters = {
 	rodeur: rodeur,
 	belius: belius,
 	mimic: mimic,
-	feufol: feufol
+	feufol: feufol,
+	becplu: becplu
 };
 export const error = bad.small;

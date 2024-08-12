@@ -1482,5 +1482,14 @@ export const mapping_smonster = {
 	3703: 'feufol/attack_fx_11',
 	3704: 'feufol/attack_fx_12',
 	3705: 'feufol/attack_fx_13',
-	3708: 'feufol/head_dead'
+	3708: 'feufol/head_dead',
+	3714: 'becplu/right_foot',
+	3716: 'becplu/left_foot',
+	3718: 'becplu/bottom_leg',
+	3720: 'becplu/top_leg',
+	3722: 'becplu/tail',
+	3724: 'becplu/body',
+	3726: 'becplu/head',
+	3733: 'becplu/attack_smear_1',
+	3734: 'becplu/attack_smear_2'
 };

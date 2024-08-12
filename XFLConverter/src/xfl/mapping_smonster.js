@@ -1835,5 +1835,17 @@ export const mapping_smonster = {
 	'Symbol 3679': 'body_fly',
 	'Symbol 3691': 'hit_fx',
 	'Symbol 3706': 'atk_fx',
-	'Symbol 3709': 'head_dead'
+	'Symbol 3709': 'head_dead',
+	// Becplu
+	'Symbol 3715': 'r_foot',
+	'Symbol 3717': 'l_foot',
+	'Symbol 3719': 'r_b_leg',
+	'Symbol 3719-1': 'l_b_leg',
+	'Symbol 3721': 'l_t_leg',
+	'Symbol 3721-1': 'r_t_leg',
+	'Symbol 3723': 'tail',
+	'Symbol 3725': 'body',
+	'Symbol 3727': 'head',
+	'Symbol 3733': 'atk_smear_1',
+	'Symbol 3734': 'atk_smear_2'
 };

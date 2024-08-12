@@ -88,24 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Mimic',
+					name: 'Becplu',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'mimic'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Feu-Folle',
-					side: false,
-					scale: 1,
-					fid: 2,
-					gfx: 'feufol'
+					gfx: 'becplu'
 				}
 			}
 			/*{
