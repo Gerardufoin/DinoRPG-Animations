@@ -88,11 +88,24 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Scorpus',
+					name: 'Sangsue Sombre',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'scorpu'
+					gfx: 'sangsa'
+				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Sangsue bio-métallique',
+					side: false,
+					scale: 1,
+					fid: 1,
+					gfx: 'saboss'
 				}
 			}
 			/*{

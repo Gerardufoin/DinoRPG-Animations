@@ -1959,5 +1959,31 @@ export const mapping_smonster = {
 	'Symbol 3993_p3a': 'l_foot',
 	'Symbol 3995_p6a': 'l_hand',
 	'Symbol 3997': 'l_shoulder',
-	'Symbol 3997-1': 'r_shoulder'
+	'Symbol 3997-1': 'r_shoulder',
+	// Sangsue Sombre
+	'Symbol 4011': 'tail',
+	'Symbol 4013': 'l_body',
+	'Symbol 4015': 'm_body',
+	'Symbol 4016': 'u_body',
+	'Symbol 4018': 'head',
+	'Symbol 4020': 'tooth',
+	// Sangsue bio-métallique
+	'Symbol 4031': 'tail',
+	'Symbol 4033': 'pump_1',
+	'Symbol 4033-1': 'pump_2',
+	'Symbol 4033-2': 'pump_3',
+	'Symbol 4033-3': 'pump_4',
+	'Symbol 4033-4': 'pump_5',
+	'Symbol 4033-5': 'pump_6',
+	'Symbol 4035': 'ball_1',
+	'Symbol 4035-1': 'ball_2',
+	'Symbol 4035-2': 'ball_3',
+	'Symbol 4035-3': 'ball_4',
+	'Symbol 4035-4': 'ball_5',
+	'Symbol 4035-5': 'ball_6',
+	'Symbol 4036': 'l_body',
+	'Symbol 4037': 'm_body',
+	'Symbol 4039': 'tooth',
+	'Symbol 4040': 'u_body',
+	'Symbol 4042': 'head'
 };

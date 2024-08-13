@@ -1616,5 +1616,15 @@ export const mapping_smonster = {
 	3989: 'scorpu/head',
 	3992: 'scorpu/left_foot',
 	3994: 'scorpu/left_hand',
-	3996: 'scorpu/shoulder'
+	3996: 'scorpu/shoulder',
+	4010: 'sangsa/tail',
+	4012: 'sangsa/lower_body',
+	4014: 'sangsa/upper_body',
+	4017: 'sangsa/head',
+	4019: 'sangsa/tooth',
+	4030: 'saboss/segment',
+	4032: 'saboss/pump',
+	4034: 'saboss/ball',
+	4038: 'saboss/tooth',
+	4041: 'saboss/head'
 };
