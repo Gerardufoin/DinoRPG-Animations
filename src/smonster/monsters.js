@@ -77,6 +77,7 @@ import { rodeur } from './rodeur/rodeur.js';
 import { roking } from './roking/roking.js';
 import { ronciv } from './ronciv/ronciv.js';
 import { saboss } from './saboss/saboss.js';
+import { sangs2 } from './sangs2/sangs2.js';
 import { sangsa } from './sangsa/sangsa.js';
 import { scorp } from './scorp/scorp.js';
 import { scorpu } from './scorpu/scorpu.js';
@@ -195,6 +196,7 @@ export const monsters = {
 	stroa: stroa,
 	scorpu: scorpu,
 	sangsa: sangsa,
-	saboss: saboss
+	saboss: saboss,
+	sangs2: sangs2
 };
 export const error = bad.small;

@@ -1626,5 +1626,18 @@ export const mapping_smonster = {
 	4032: 'saboss/pump',
 	4034: 'saboss/ball',
 	4038: 'saboss/tooth',
-	4041: 'saboss/head'
+	4041: 'saboss/head',
+	4052: 'sangs2/tail',
+	4054: 'sangs2/lower_body',
+	4056: 'sangs2/upper_body',
+	4058: 'sangs2/head',
+	4072: 'sangs2/head_attack',
+	4074: 'sangs2/attack_1',
+	4075: 'sangs2/attack_2',
+	4076: 'sangs2/attack_3',
+	4077: 'sangs2/attack_4',
+	4078: 'sangs2/attack_5',
+	4079: 'sangs2/attack_6',
+	4080: 'sangs2/attack_7',
+	4084: 'sangs2/upper_body_dead'
 };

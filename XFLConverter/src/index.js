@@ -210,6 +210,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 4009.xml', '_p1', undefined, 1); // scorpu Scorpus
 //parser.parse('./resources/smonster/LIBRARY/Symbol 4029.xml', '_p1', undefined, 1); // sangsa Sangsue Sombre
 //parser.parse('./resources/smonster/LIBRARY/Symbol 4051.xml', '_p1', undefined, 1); // saboss Sangsue bio-métallique
+//parser.parse('./resources/smonster/LIBRARY/Symbol 4088.xml', '_p1', undefined, 1); // sangs2 Sangsue Tentaculaire
 
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine

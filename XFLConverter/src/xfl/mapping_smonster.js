@@ -1985,5 +1985,24 @@ export const mapping_smonster = {
 	'Symbol 4037': 'm_body',
 	'Symbol 4039': 'tooth',
 	'Symbol 4040': 'u_body',
-	'Symbol 4042': 'head'
+	'Symbol 4042': 'head',
+	// Sangsue Tentaculaire
+	'Symbol 4053': 'tail',
+	'Symbol 4055': 'l_body',
+	'Symbol 4057': 'u_body',
+	'Symbol 4059': 'head',
+	'Symbol 4061': 'tail',
+	'Symbol 4063': 'l_body',
+	'Symbol 4065': 'u_body',
+	'Symbol 4067': 'head',
+	'Symbol 4073': 'head_attack',
+	'Symbol 4074': 'atk_1',
+	'Symbol 4075': 'atk_2',
+	'Symbol 4076': 'atk_3',
+	'Symbol 4077': 'atk_4',
+	'Symbol 4078': 'atk_5',
+	'Symbol 4079': 'atk_6',
+	'Symbol 4080': 'atk_7',
+	'Symbol 4082': 'l_body',
+	'Symbol 4085': 'u_body_dead'
 };

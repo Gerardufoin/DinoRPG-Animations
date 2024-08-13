@@ -1,7 +1,7 @@
 # Monsters
 
 The following is the list of all the monsters in Dino-RPG.
-Checked monsters are the ones recreated in the project as of yet.
+All monsters have been recreated in the project, and can be instantiated by setting the "gfx" value for the "Add" action to one of the following id.
 
 -   [x] goupi
 -   [x] goupi2
@@ -98,9 +98,9 @@ Checked monsters are the ones recreated in the project as of yet.
 -   [x] becplu
 -   [x] updwn
 -   [x] fullgd
--   [ ] rhubar
--   [ ] stroa
--   [ ] scorpu
--   [ ] sangsa
--   [ ] saboss
--   [ ] sangs2
+-   [x] rhubar
+-   [x] stroa
+-   [x] scorpu
+-   [x] sangsa
+-   [x] saboss
+-   [x] sangs2

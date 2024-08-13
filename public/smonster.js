@@ -127,7 +127,8 @@ const monsterList = [
 	'stroa',
 	'scorpu',
 	'sangsa',
-	'saboss'
+	'saboss',
+	'sangs2'
 ];
 let currentAnim = undefined;
 

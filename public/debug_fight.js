@@ -88,24 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Sangsue Sombre',
+					name: 'Sangsue Tentaculaire',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'sangsa'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Sangsue bio-métallique',
-					side: false,
-					scale: 1,
-					fid: 1,
-					gfx: 'saboss'
+					gfx: 'sangs2'
 				}
 			}
 			/*{
