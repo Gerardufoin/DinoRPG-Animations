@@ -207,6 +207,7 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3890.xml', '_sub', undefined, 1); // stroa tentacle
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3919.xml', '_sub', undefined, 1); // stroa body_pasta
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3926.xml', '_sub', undefined, 1); // stroa body
+//parser.parse('./resources/smonster/LIBRARY/Symbol 4009.xml', '_p1', undefined, 1); // scorpu Scorpus
 
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine

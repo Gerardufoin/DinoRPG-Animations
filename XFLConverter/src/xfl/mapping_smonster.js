@@ -1946,5 +1946,18 @@ export const mapping_smonster = {
 	'Symbol 3967': 'r_eye_sleep',
 	'Symbol 3969': 'l_eye_sleep',
 	'Symbol 3971': 'body_sleep',
-	'Symbol 3973': 'sleep_bubble'
+	'Symbol 3973': 'sleep_bubble',
+	// Scorpus
+	'Symbol 3978_p6b': 'r_hand',
+	'Symbol 3980': 'l_arm',
+	'Symbol 3980-1': 'r_leg',
+	'Symbol 3980-2': 'r_arm',
+	'Symbol 3982_p3b': 'r_foot',
+	'Symbol 3988_p7': 'body',
+	'Symbol 3990_p5': 'head',
+	'Symbol 3991': 'l_leg',
+	'Symbol 3993_p3a': 'l_foot',
+	'Symbol 3995_p6a': 'l_hand',
+	'Symbol 3997': 'l_shoulder',
+	'Symbol 3997-1': 'r_shoulder'
 };

@@ -12,14 +12,6 @@ export const hit = {
 				ty: 6.4,
 				a: 0.94,
 				d: 1.048,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {

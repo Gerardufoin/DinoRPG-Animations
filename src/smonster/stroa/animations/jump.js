@@ -16,14 +16,6 @@ export const jump = {
 			body: {
 				tx: -23.85,
 				ty: 2,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 11
 			},
 			pasta_1: {
@@ -125,14 +117,6 @@ export const jump = {
 				ty: 2,
 				a: 0.99,
 				d: 1.019,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 11
 			},
 			pasta_1: {
@@ -236,14 +220,6 @@ export const jump = {
 				ty: 2,
 				a: 0.96,
 				d: 1.075,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 11
 			},
 			pasta_1: {
@@ -347,14 +323,6 @@ export const jump = {
 				ty: 2,
 				a: 0.911,
 				d: 1.168,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 11
 			},
 			pasta_1: {
@@ -458,14 +426,6 @@ export const jump = {
 				ty: 2,
 				a: 0.841,
 				d: 1.298,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 11
 			},
 			pasta_1: {
@@ -569,14 +529,6 @@ export const jump = {
 				ty: 2,
 				a: 0.873,
 				d: 1.239,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 11
 			},
 			pasta_1: {
@@ -680,14 +632,6 @@ export const jump = {
 				ty: 2.05,
 				a: 0.905,
 				d: 1.179,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 11
 			},
 			pasta_1: {
@@ -791,14 +735,6 @@ export const jump = {
 				ty: 2.05,
 				a: 0.936,
 				d: 1.119,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 11
 			},
 			pasta_1: {
@@ -902,14 +838,6 @@ export const jump = {
 				ty: 2,
 				a: 0.968,
 				d: 1.06,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 11
 			},
 			pasta_1: {
@@ -1011,14 +939,6 @@ export const jump = {
 			body: {
 				tx: -23.85,
 				ty: 2,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 11
 			},
 			pasta_1: {

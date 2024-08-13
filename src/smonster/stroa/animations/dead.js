@@ -13,14 +13,6 @@ export const dead = {
 			body: {
 				tx: -23.85,
 				ty: 9.2,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -55,14 +47,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.996,
 				d: 0.996,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -101,14 +85,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.985,
 				d: 0.985,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -147,14 +123,6 @@ export const dead = {
 				ty: 124.7,
 				a: 0.205,
 				d: 0.205,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 6
 			},
 			body: {
@@ -162,14 +130,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.966,
 				d: 0.965,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -208,14 +168,6 @@ export const dead = {
 				ty: 124.7,
 				a: 0.272,
 				d: 0.272,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 6
 			},
 			body: {
@@ -223,14 +175,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.94,
 				d: 0.939,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -269,14 +213,6 @@ export const dead = {
 				ty: 124.7,
 				a: 0.338,
 				d: 0.338,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 6
 			},
 			body: {
@@ -284,14 +220,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.906,
 				d: 0.904,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -330,14 +258,6 @@ export const dead = {
 				ty: 124.7,
 				a: 0.404,
 				d: 0.404,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 6
 			},
 			body: {
@@ -345,14 +265,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.865,
 				d: 0.862,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -391,14 +303,6 @@ export const dead = {
 				ty: 124.7,
 				a: 0.47,
 				d: 0.47,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 6
 			},
 			body: {
@@ -406,14 +310,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.816,
 				d: 0.812,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -452,14 +348,6 @@ export const dead = {
 				ty: 124.7,
 				a: 0.536,
 				d: 0.536,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 6
 			},
 			body: {
@@ -467,14 +355,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.759,
 				d: 0.754,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -513,14 +393,6 @@ export const dead = {
 				ty: 124.65,
 				a: 0.603,
 				d: 0.603,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 6
 			},
 			body: {
@@ -528,14 +400,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.71,
 				d: 0.705,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -578,14 +442,6 @@ export const dead = {
 				ty: 124.65,
 				a: 0.669,
 				d: 0.669,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 6
 			},
 			body: {
@@ -593,14 +449,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.661,
 				d: 0.657,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -645,14 +493,6 @@ export const dead = {
 				ty: 124.65,
 				a: 0.735,
 				d: 0.735,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 6
 			},
 			body: {
@@ -660,14 +500,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.612,
 				d: 0.608,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -712,14 +544,6 @@ export const dead = {
 				ty: 124.65,
 				a: 0.801,
 				d: 0.801,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 6
 			},
 			body: {
@@ -727,14 +551,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.563,
 				d: 0.559,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -779,14 +595,6 @@ export const dead = {
 				ty: 124.7,
 				a: 0.868,
 				d: 0.868,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 6
 			},
 			body: {
@@ -794,14 +602,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.514,
 				d: 0.511,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -851,14 +651,6 @@ export const dead = {
 				ty: 124.7,
 				a: 0.934,
 				d: 0.934,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 6
 			},
 			body: {
@@ -866,14 +658,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.465,
 				d: 0.462,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -921,14 +705,6 @@ export const dead = {
 			body_dead: {
 				tx: -23.85,
 				ty: 124.7,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 6
 			},
 			body: {
@@ -936,14 +712,6 @@ export const dead = {
 				ty: 9.2,
 				a: 0.416,
 				d: 0.413,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			tentacles_1: {
@@ -993,14 +761,6 @@ export const dead = {
 				ty: 124.75,
 				a: 1.02,
 				d: 1.02,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			body: {
@@ -1008,14 +768,6 @@ export const dead = {
 				ty: 31.05,
 				a: 0.416,
 				d: 0.413,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			tentacles_1: {
@@ -1060,14 +812,6 @@ export const dead = {
 				ty: 124.75,
 				a: 1.04,
 				d: 1.04,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			body: {
@@ -1075,14 +819,6 @@ export const dead = {
 				ty: 52.85,
 				a: 0.416,
 				d: 0.413,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			tentacles_1: {
@@ -1127,14 +863,6 @@ export const dead = {
 				ty: 124.8,
 				a: 1.06,
 				d: 1.06,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			body: {
@@ -1142,14 +870,6 @@ export const dead = {
 				ty: 74.7,
 				a: 0.416,
 				d: 0.413,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			tentacles_1: {
@@ -1194,14 +914,6 @@ export const dead = {
 				ty: 124.8,
 				a: 1.08,
 				d: 1.08,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 5
 			},
 			body: {
@@ -1209,14 +921,6 @@ export const dead = {
 				ty: 96.5,
 				a: 0.416,
 				d: 0.413,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			tentacles_1: {
@@ -1261,14 +965,6 @@ export const dead = {
 				ty: 124.75,
 				a: 1.112,
 				d: 1.112,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 2
 			},
 			l_eye: {
@@ -1299,14 +995,6 @@ export const dead = {
 				ty: 124.75,
 				a: 1.145,
 				d: 1.145,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 2
 			},
 			l_eye: {
@@ -1337,14 +1025,6 @@ export const dead = {
 				ty: 124.7,
 				a: 1.177,
 				d: 1.177,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 2
 			},
 			l_eye: {
@@ -1380,14 +1060,6 @@ export const dead = {
 				ty: 124.7,
 				a: 1.177,
 				d: 1.177,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 0
 			}
 		},
@@ -1407,14 +1079,6 @@ export const dead = {
 				ty: 124.7,
 				a: 1.177,
 				d: 1.177,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 0
 			}
 		},
@@ -1434,14 +1098,6 @@ export const dead = {
 				ty: 124.7,
 				a: 1.177,
 				d: 1.177,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 0
 			}
 		},
@@ -1461,14 +1117,6 @@ export const dead = {
 				ty: 124.7,
 				a: 1.177,
 				d: 1.177,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 0
 			}
 		},
@@ -1488,14 +1136,6 @@ export const dead = {
 				ty: 124.7,
 				a: 1.177,
 				d: 1.177,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 0
 			}
 		},
@@ -1515,14 +1155,6 @@ export const dead = {
 				ty: 124.7,
 				a: 1.177,
 				d: 1.177,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 0
 			}
 		},
@@ -1537,14 +1169,6 @@ export const dead = {
 				ty: 124.7,
 				a: 1.177,
 				d: 1.177,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 0
 			}
 		},
@@ -1559,14 +1183,6 @@ export const dead = {
 				ty: 124.7,
 				a: 1.177,
 				d: 1.177,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 0
 			}
 		}

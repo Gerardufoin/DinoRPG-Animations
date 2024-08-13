@@ -11,14 +11,6 @@ export const attack = {
 			body: {
 				tx: -23.85,
 				ty: 9.2,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -100,14 +92,6 @@ export const attack = {
 			body: {
 				tx: -21,
 				ty: 7.05,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -197,14 +181,6 @@ export const attack = {
 			body: {
 				tx: -18.1,
 				ty: 4.9,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -298,14 +274,6 @@ export const attack = {
 			body: {
 				tx: -15.25,
 				ty: 2.8,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -399,14 +367,6 @@ export const attack = {
 			body: {
 				tx: -12.4,
 				ty: 0.65,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -500,14 +460,6 @@ export const attack = {
 			body: {
 				tx: -9.5,
 				ty: -1.5,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -610,14 +562,6 @@ export const attack = {
 			body: {
 				tx: -6.65,
 				ty: -3.65,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -720,14 +664,6 @@ export const attack = {
 			body: {
 				tx: -3.8,
 				ty: -5.8,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -830,14 +766,6 @@ export const attack = {
 			body: {
 				tx: -0.95,
 				ty: -7.9,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -940,14 +868,6 @@ export const attack = {
 			body: {
 				tx: 1.95,
 				ty: -10.05,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1113,14 +1033,6 @@ export const attack = {
 			body: {
 				tx: 4.8,
 				ty: -12.2,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1293,14 +1205,6 @@ export const attack = {
 				b: -0.049,
 				c: 0.049,
 				d: 0.998,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1479,14 +1383,6 @@ export const attack = {
 				b: -0.101,
 				c: 0.101,
 				d: 0.994,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1656,14 +1552,6 @@ export const attack = {
 				b: -0.152,
 				c: 0.152,
 				d: 0.987,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1833,14 +1721,6 @@ export const attack = {
 				b: -0.204,
 				c: 0.204,
 				d: 0.978,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2010,14 +1890,6 @@ export const attack = {
 				b: -0.213,
 				c: 0.213,
 				d: 0.976,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2187,14 +2059,6 @@ export const attack = {
 				b: -0.225,
 				c: 0.225,
 				d: 0.973,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2364,14 +2228,6 @@ export const attack = {
 				b: -0.234,
 				c: 0.234,
 				d: 0.971,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2541,14 +2397,6 @@ export const attack = {
 				b: -0.246,
 				c: 0.246,
 				d: 0.969,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2718,14 +2566,6 @@ export const attack = {
 				b: -0.122,
 				c: 0.122,
 				d: 0.992,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2891,14 +2731,6 @@ export const attack = {
 			body: {
 				tx: -2.35,
 				ty: -6.85,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -3060,14 +2892,6 @@ export const attack = {
 			body: {
 				tx: -7.7,
 				ty: -2.85,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -3227,14 +3051,6 @@ export const attack = {
 			body: {
 				tx: -13.1,
 				ty: 1.2,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -3396,14 +3212,6 @@ export const attack = {
 			body: {
 				tx: -18.45,
 				ty: 5.2,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -3497,14 +3305,6 @@ export const attack = {
 			body: {
 				tx: -23.85,
 				ty: 9.2,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {

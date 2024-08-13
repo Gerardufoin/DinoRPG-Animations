@@ -12,14 +12,6 @@ export const land = {
 				ty: 16.9,
 				a: 1.045,
 				d: 0.977,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -111,14 +103,6 @@ export const land = {
 				ty: 36.9,
 				a: 1.045,
 				d: 0.977,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -210,14 +194,6 @@ export const land = {
 				ty: 56.9,
 				a: 1.045,
 				d: 0.977,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -309,14 +285,6 @@ export const land = {
 				ty: 72.65,
 				a: 1.225,
 				d: 0.884,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -408,14 +376,6 @@ export const land = {
 				ty: 88.4,
 				a: 1.406,
 				d: 0.792,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -507,14 +467,6 @@ export const land = {
 				ty: 86.6,
 				a: 1.395,
 				d: 0.798,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -610,14 +562,6 @@ export const land = {
 				ty: 81.4,
 				a: 1.362,
 				d: 0.818,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -713,14 +657,6 @@ export const land = {
 				ty: 72.7,
 				a: 1.306,
 				d: 0.85,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -816,14 +752,6 @@ export const land = {
 				ty: 60.5,
 				a: 1.229,
 				d: 0.896,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -919,14 +847,6 @@ export const land = {
 				ty: 44.8,
 				a: 1.129,
 				d: 0.954,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1022,14 +942,6 @@ export const land = {
 				ty: 25.55,
 				a: 1.008,
 				d: 1.025,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1125,14 +1037,6 @@ export const land = {
 				ty: 2.9,
 				a: 0.864,
 				d: 1.109,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1228,14 +1132,6 @@ export const land = {
 				ty: -2.4,
 				a: 0.913,
 				d: 1.07,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1331,14 +1227,6 @@ export const land = {
 				ty: -6.5,
 				a: 0.951,
 				d: 1.039,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1434,14 +1322,6 @@ export const land = {
 				ty: -9.5,
 				a: 0.978,
 				d: 1.017,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1535,14 +1415,6 @@ export const land = {
 				ty: -11.2,
 				a: 0.995,
 				d: 1.004,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1632,14 +1504,6 @@ export const land = {
 			body: {
 				tx: -23.85,
 				ty: -11.8,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {

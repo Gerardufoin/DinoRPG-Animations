@@ -124,7 +124,8 @@ const monsterList = [
 	'updwn',
 	'fullgd',
 	'rhubar',
-	'stroa'
+	'stroa',
+	'scorpu'
 ];
 let currentAnim = undefined;
 

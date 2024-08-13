@@ -6,6 +6,20 @@ import { stroa_pasta } from './animations/pasta.js';
 import { stroa_right_eye } from './animations/right_eye.js';
 import { stroa_tentacle } from './animations/tentacle.js';
 
+// This filter is not applied, but left here just in case with the Flash values.
+// It is supposed to do a drop shadow toward the inside of the shape, didn't find an alternative with PixiJS.
+const body_filters = {
+	dropShadow: {
+		angle: 264,
+		blur: 5,
+		color: 0x330000,
+		distance: 19,
+		inner: true,
+		quality: 1,
+		strength: 0.2
+	}
+};
+
 export const parts = {
 	// 3872
 	back: [
@@ -107,7 +121,12 @@ export const parts = {
 	// 3914
 	pasta: [stroa_pasta],
 	// 3926
-	body: [stroa_body],
+	body: [
+		{
+			...stroa_body,
+			...body_filters
+		}
+	],
 	// 3930
 	attack_sauce_1: [
 		{
@@ -189,7 +208,8 @@ export const parts = {
 	// 3946
 	body_dead: [
 		{
-			ref: ref.stroa.body_dead
+			ref: ref.stroa.body_dead,
+			...body_filters
 		}
 	],
 	// 3947
@@ -335,7 +355,8 @@ export const parts = {
 	// 3971
 	body_sleep: [
 		{
-			ref: ref.stroa.body_sleep
+			ref: ref.stroa.body_sleep,
+			...body_filters
 		}
 	],
 	// 3973

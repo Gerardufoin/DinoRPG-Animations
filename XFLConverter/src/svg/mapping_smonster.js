@@ -1608,5 +1608,13 @@ export const mapping_smonster = {
 	3966: 'stroa/right_eye_sleep',
 	3968: 'stroa/left_eye_sleep',
 	3970: 'stroa/body_sleep',
-	3972: 'stroa/sleep_bubble'
+	3972: 'stroa/sleep_bubble',
+	3977: 'scorpu/right_hand',
+	3979: 'scorpu/segment',
+	3981: 'scorpu/right_foot',
+	3987: 'scorpu/body',
+	3989: 'scorpu/head',
+	3992: 'scorpu/left_foot',
+	3994: 'scorpu/left_hand',
+	3996: 'scorpu/shoulder'
 };

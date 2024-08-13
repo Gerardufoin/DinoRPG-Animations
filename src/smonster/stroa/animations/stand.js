@@ -10,14 +10,6 @@ export const stand = {
 			body: {
 				tx: -23.85,
 				ty: 9.2,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -101,14 +93,6 @@ export const stand = {
 				ty: 9.1,
 				a: 0.998,
 				d: 1.001,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -198,14 +182,6 @@ export const stand = {
 				ty: 8.9,
 				a: 0.993,
 				d: 1.005,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -297,14 +273,6 @@ export const stand = {
 				ty: 8.5,
 				a: 0.985,
 				d: 1.012,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -398,14 +366,6 @@ export const stand = {
 				ty: 7.95,
 				a: 0.973,
 				d: 1.022,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -499,14 +459,6 @@ export const stand = {
 				ty: 7.25,
 				a: 0.958,
 				d: 1.034,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -602,14 +554,6 @@ export const stand = {
 				ty: 6.4,
 				a: 0.94,
 				d: 1.048,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -705,14 +649,6 @@ export const stand = {
 				ty: 5.4,
 				a: 0.918,
 				d: 1.066,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -808,14 +744,6 @@ export const stand = {
 				ty: 4.2,
 				a: 0.893,
 				d: 1.086,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -911,14 +839,6 @@ export const stand = {
 				ty: 2.9,
 				a: 0.864,
 				d: 1.109,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1014,14 +934,6 @@ export const stand = {
 				ty: 0.1,
 				a: 0.89,
 				d: 1.088,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1117,14 +1029,6 @@ export const stand = {
 				ty: -2.4,
 				a: 0.913,
 				d: 1.07,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1220,14 +1124,6 @@ export const stand = {
 				ty: -4.65,
 				a: 0.933,
 				d: 1.053,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1323,14 +1219,6 @@ export const stand = {
 				ty: -6.5,
 				a: 0.951,
 				d: 1.039,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1426,14 +1314,6 @@ export const stand = {
 				ty: -8.1,
 				a: 0.966,
 				d: 1.027,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1527,14 +1407,6 @@ export const stand = {
 				ty: -9.5,
 				a: 0.978,
 				d: 1.017,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1628,14 +1500,6 @@ export const stand = {
 				ty: -10.5,
 				a: 0.988,
 				d: 1.01,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1727,14 +1591,6 @@ export const stand = {
 				ty: -11.2,
 				a: 0.995,
 				d: 1.004,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1826,14 +1682,6 @@ export const stand = {
 				ty: -11.65,
 				a: 0.999,
 				d: 1.001,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -1921,14 +1769,6 @@ export const stand = {
 			body: {
 				tx: -23.85,
 				ty: -11.8,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2012,14 +1852,6 @@ export const stand = {
 				ty: -11.7,
 				a: 0.999,
 				d: 1.001,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2111,14 +1943,6 @@ export const stand = {
 				ty: -11.45,
 				a: 0.994,
 				d: 1.005,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2210,14 +2034,6 @@ export const stand = {
 				ty: -10.95,
 				a: 0.987,
 				d: 1.012,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2309,14 +2125,6 @@ export const stand = {
 				ty: -10.3,
 				a: 0.978,
 				d: 1.021,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2410,14 +2218,6 @@ export const stand = {
 				ty: -9.5,
 				a: 0.965,
 				d: 1.032,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2513,14 +2313,6 @@ export const stand = {
 				ty: -8.45,
 				a: 0.95,
 				d: 1.047,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2616,14 +2408,6 @@ export const stand = {
 				ty: -7.25,
 				a: 0.931,
 				d: 1.064,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2719,14 +2503,6 @@ export const stand = {
 				ty: -5.9,
 				a: 0.911,
 				d: 1.083,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2822,14 +2598,6 @@ export const stand = {
 				ty: -4.3,
 				a: 0.887,
 				d: 1.105,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -2925,14 +2693,6 @@ export const stand = {
 				ty: -2.55,
 				a: 0.86,
 				d: 1.13,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -3028,14 +2788,6 @@ export const stand = {
 				ty: -0.5,
 				a: 0.884,
 				d: 1.107,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -3129,14 +2881,6 @@ export const stand = {
 				ty: 1.35,
 				a: 0.906,
 				d: 1.087,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -3230,14 +2974,6 @@ export const stand = {
 				ty: 3,
 				a: 0.926,
 				d: 1.069,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -3329,14 +3065,6 @@ export const stand = {
 				ty: 4.5,
 				a: 0.943,
 				d: 1.053,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -3428,14 +3156,6 @@ export const stand = {
 				ty: 5.7,
 				a: 0.958,
 				d: 1.039,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -3527,14 +3247,6 @@ export const stand = {
 				ty: 6.75,
 				a: 0.971,
 				d: 1.027,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -3626,14 +3338,6 @@ export const stand = {
 				ty: 7.65,
 				a: 0.982,
 				d: 1.017,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -3725,14 +3429,6 @@ export const stand = {
 				ty: 8.35,
 				a: 0.99,
 				d: 1.01,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -3824,14 +3520,6 @@ export const stand = {
 				ty: 8.8,
 				a: 0.995,
 				d: 1.004,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -3921,14 +3609,6 @@ export const stand = {
 				ty: 9.1,
 				a: 0.999,
 				d: 1.001,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {
@@ -4014,14 +3694,6 @@ export const stand = {
 			body: {
 				tx: -23.85,
 				ty: 9.2,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 10
 			},
 			pasta_1: {

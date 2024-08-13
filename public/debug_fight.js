@@ -88,11 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Monstre en spaghettis volant',
+					name: 'Scorpus',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'stroa'
+					gfx: 'scorpu'
 				}
 			}
 			/*{

@@ -9,9 +9,6 @@ import { dead } from './animations/dead.js';
 import { sleep } from './animations/sleep.js';
 import { parts } from './parts.js';
 
-// stroa animation have inner drop shadow filters.
-// Did not find an alternative for pixijs, so they are in the animation but not implemented.
-// (Those are the values ds* for the body part)
 // Symbol 3976
 export const stroa = {
 	name: 'stroa',

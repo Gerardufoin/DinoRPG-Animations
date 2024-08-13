@@ -19,14 +19,6 @@ export const sleep = {
 			body_sleep: {
 				tx: -23.85,
 				ty: 9.2,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -65,14 +57,6 @@ export const sleep = {
 				ty: 9.2,
 				a: 1.001,
 				d: 1.001,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -112,14 +96,6 @@ export const sleep = {
 				ty: 9.15,
 				a: 1.003,
 				d: 1.005,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -159,14 +135,6 @@ export const sleep = {
 				ty: 9.1,
 				a: 1.007,
 				d: 1.011,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -206,14 +174,6 @@ export const sleep = {
 				ty: 9.05,
 				a: 1.013,
 				d: 1.019,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -253,14 +213,6 @@ export const sleep = {
 				ty: 9,
 				a: 1.019,
 				d: 1.028,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -300,14 +252,6 @@ export const sleep = {
 				ty: 8.9,
 				a: 1.026,
 				d: 1.039,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -347,14 +291,6 @@ export const sleep = {
 				ty: 8.85,
 				a: 1.034,
 				d: 1.051,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -394,14 +330,6 @@ export const sleep = {
 				ty: 8.75,
 				a: 1.043,
 				d: 1.063,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -441,14 +369,6 @@ export const sleep = {
 				ty: 8.65,
 				a: 1.051,
 				d: 1.076,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -488,14 +408,6 @@ export const sleep = {
 				ty: 8.55,
 				a: 1.06,
 				d: 1.089,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -535,14 +447,6 @@ export const sleep = {
 				ty: 8.45,
 				a: 1.069,
 				d: 1.102,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -582,14 +486,6 @@ export const sleep = {
 				ty: 8.4,
 				a: 1.077,
 				d: 1.114,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -629,14 +525,6 @@ export const sleep = {
 				ty: 8.3,
 				a: 1.084,
 				d: 1.125,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -676,14 +564,6 @@ export const sleep = {
 				ty: 8.25,
 				a: 1.091,
 				d: 1.135,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -723,14 +603,6 @@ export const sleep = {
 				ty: 8.15,
 				a: 1.097,
 				d: 1.143,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -770,14 +642,6 @@ export const sleep = {
 				ty: 8.1,
 				a: 1.102,
 				d: 1.15,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -817,14 +681,6 @@ export const sleep = {
 				ty: 8.1,
 				a: 1.105,
 				d: 1.156,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -864,14 +720,6 @@ export const sleep = {
 				ty: 8.05,
 				a: 1.107,
 				d: 1.159,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -911,14 +759,6 @@ export const sleep = {
 				ty: 8.05,
 				a: 1.108,
 				d: 1.16,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -958,14 +798,6 @@ export const sleep = {
 				ty: 8.05,
 				a: 1.109,
 				d: 1.162,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1005,14 +837,6 @@ export const sleep = {
 				ty: 8,
 				a: 1.11,
 				d: 1.163,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1052,14 +876,6 @@ export const sleep = {
 				ty: 8.05,
 				a: 1.111,
 				d: 1.165,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1099,14 +915,6 @@ export const sleep = {
 				ty: 8,
 				a: 1.112,
 				d: 1.166,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1146,14 +954,6 @@ export const sleep = {
 				ty: 8,
 				a: 1.113,
 				d: 1.167,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1193,14 +993,6 @@ export const sleep = {
 				ty: 8,
 				a: 1.113,
 				d: 1.168,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1240,14 +1032,6 @@ export const sleep = {
 				ty: 7.95,
 				a: 1.114,
 				d: 1.169,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1287,14 +1071,6 @@ export const sleep = {
 				ty: 7.95,
 				a: 1.114,
 				d: 1.17,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1334,14 +1110,6 @@ export const sleep = {
 				ty: 7.95,
 				a: 1.115,
 				d: 1.17,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1381,14 +1149,6 @@ export const sleep = {
 				ty: 7.95,
 				a: 1.115,
 				d: 1.171,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1428,14 +1188,6 @@ export const sleep = {
 				ty: 7.95,
 				a: 1.115,
 				d: 1.171,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1475,14 +1227,6 @@ export const sleep = {
 				ty: 8,
 				a: 1.116,
 				d: 1.171,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1522,14 +1266,6 @@ export const sleep = {
 				ty: 7.95,
 				a: 1.116,
 				d: 1.171,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1569,14 +1305,6 @@ export const sleep = {
 				ty: 8,
 				a: 1.113,
 				d: 1.168,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1616,14 +1344,6 @@ export const sleep = {
 				ty: 8.05,
 				a: 1.108,
 				d: 1.16,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1663,14 +1383,6 @@ export const sleep = {
 				ty: 8.1,
 				a: 1.1,
 				d: 1.148,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1710,14 +1422,6 @@ export const sleep = {
 				ty: 8.2,
 				a: 1.09,
 				d: 1.133,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1757,14 +1461,6 @@ export const sleep = {
 				ty: 8.35,
 				a: 1.08,
 				d: 1.118,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1804,14 +1500,6 @@ export const sleep = {
 				ty: 8.45,
 				a: 1.069,
 				d: 1.102,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1851,14 +1539,6 @@ export const sleep = {
 				ty: 8.55,
 				a: 1.059,
 				d: 1.087,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1898,14 +1578,6 @@ export const sleep = {
 				ty: 8.65,
 				a: 1.05,
 				d: 1.074,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1945,14 +1617,6 @@ export const sleep = {
 				ty: 8.8,
 				a: 1.043,
 				d: 1.063,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -1992,14 +1656,6 @@ export const sleep = {
 				ty: 8.85,
 				a: 1.038,
 				d: 1.056,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2039,14 +1695,6 @@ export const sleep = {
 				ty: 8.8,
 				a: 1.036,
 				d: 1.053,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2086,14 +1734,6 @@ export const sleep = {
 				ty: 8.85,
 				a: 1.033,
 				d: 1.049,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2133,14 +1773,6 @@ export const sleep = {
 				ty: 8.85,
 				a: 1.03,
 				d: 1.044,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2180,14 +1812,6 @@ export const sleep = {
 				ty: 8.9,
 				a: 1.027,
 				d: 1.04,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2227,14 +1851,6 @@ export const sleep = {
 				ty: 8.95,
 				a: 1.024,
 				d: 1.036,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2274,14 +1890,6 @@ export const sleep = {
 				ty: 8.95,
 				a: 1.021,
 				d: 1.032,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2321,14 +1929,6 @@ export const sleep = {
 				ty: 9,
 				a: 1.019,
 				d: 1.028,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2368,14 +1968,6 @@ export const sleep = {
 				ty: 9,
 				a: 1.016,
 				d: 1.024,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2415,14 +2007,6 @@ export const sleep = {
 				ty: 9.1,
 				a: 1.014,
 				d: 1.021,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2462,14 +2046,6 @@ export const sleep = {
 				ty: 9.05,
 				a: 1.012,
 				d: 1.018,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2509,14 +2085,6 @@ export const sleep = {
 				ty: 9.15,
 				a: 1.01,
 				d: 1.015,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2556,14 +2124,6 @@ export const sleep = {
 				ty: 9.1,
 				a: 1.008,
 				d: 1.012,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2603,14 +2163,6 @@ export const sleep = {
 				ty: 9.15,
 				a: 1.007,
 				d: 1.01,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2650,14 +2202,6 @@ export const sleep = {
 				ty: 9.15,
 				a: 1.005,
 				d: 1.008,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2697,14 +2241,6 @@ export const sleep = {
 				ty: 9.15,
 				a: 1.004,
 				d: 1.006,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2744,14 +2280,6 @@ export const sleep = {
 				ty: 9.15,
 				a: 1.003,
 				d: 1.004,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2791,14 +2319,6 @@ export const sleep = {
 				ty: 9.25,
 				a: 1.002,
 				d: 1.003,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2838,14 +2358,6 @@ export const sleep = {
 				ty: 9.2,
 				a: 1.001,
 				d: 1.001,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2884,14 +2396,6 @@ export const sleep = {
 				tx: -23.8,
 				ty: 9.2,
 				d: 1.001,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2929,14 +2433,6 @@ export const sleep = {
 			body_sleep: {
 				tx: -23.8,
 				ty: 9.2,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
@@ -2974,14 +2470,6 @@ export const sleep = {
 			body_sleep: {
 				tx: -23.85,
 				ty: 9.2,
-				dsa: 264,
-				dsx: 5,
-				dsy: 5,
-				dsc: '#330000',
-				dsd: 19,
-				dsi: 'true',
-				dsq: 1,
-				dss: 0.2,
 				l: 4
 			},
 			l_eye_sleep: {
