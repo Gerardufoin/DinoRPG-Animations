@@ -197,7 +197,10 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3679.xml', '_sub', undefined, 1); // feufol fly
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3740.xml', '_p1', undefined, 1); // becplu
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3774.xml', '_p1', undefined, 1); // updwn Gardien inférieur
-parser.parse('./resources/smonster/LIBRARY/Symbol 3790.xml', '_p1', undefined, 1); // fullgd Alchimiste d'acier
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3790.xml', '_p1', undefined, 1); // fullgd Alchimiste d'acier
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3870.xml', '_p1', undefined, 1); // rhubar Esprit de Rhubarbapapa
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3825.xml', '_sub', undefined, 1); // rhubar head
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3861.xml', '_sub', undefined, 1); // rhubar head_dead
 
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine
@@ -263,5 +266,5 @@ const adapter = new SVGAdapter();
 //adapter.parse('./results/SVG/sdino', mapping_sdino, '../assets/sdino');
 //adapter.parse('./results/SVG/dino', mapping_dino, '../assets/dino');
 //adapter.parse('./results/SVG/gfx', mapping_gfx, '../assets/gfx');
-//adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
+adapter.parse('./results/SVG/smonster', mapping_smonster, '../assets/smonster');
 //adapter.findTintFromTo('#FAF8F8', '#7F6921');

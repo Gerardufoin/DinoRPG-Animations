@@ -88,46 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Gardien supérieur',
+					name: 'Esprit de Rhubarbapapa',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'upgrd',
-					entrance: 'Run',
-					x: 250,
-					y: 125
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Gardien inférieur',
-					side: false,
-					scale: 1,
-					fid: 1,
-					gfx: 'updwn',
-					entrance: 'Run',
-					x: 250,
-					y: 275
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: "Alchimiste d'acier",
-					side: false,
-					scale: 1,
-					fid: 3,
-					gfx: 'fullgd',
-					entrance: 'Run',
-					x: 350,
-					y: 200
+					gfx: 'rhubar'
 				}
 			}
 			/*{

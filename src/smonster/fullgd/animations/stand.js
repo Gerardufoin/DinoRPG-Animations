@@ -2,9 +2,6 @@
 
 export const stand = {
 	id: 'fullgd_stand',
-	/*expectedScaling: {
-		l_t_leg: 1
-	},*/
 	frames: [
 		{
 			l_eye: {

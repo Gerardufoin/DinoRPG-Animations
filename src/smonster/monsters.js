@@ -71,6 +71,7 @@ import { piraos } from './piraos/piraos.js';
 import { pteroz } from './pteroz/pteroz.js';
 import { rapaca } from './rapaca/rapaca.js';
 import { rasca } from './rasca/rasca.js';
+import { rhubar } from './rhubar/rhubar.js';
 import { rocky } from './rocky/rocky.js';
 import { rodeur } from './rodeur/rodeur.js';
 import { roking } from './roking/roking.js';
@@ -185,6 +186,7 @@ export const monsters = {
 	feufol: feufol,
 	becplu: becplu,
 	updwn: updwn,
-	fullgd: fullgd
+	fullgd: fullgd,
+	rhubar: rhubar
 };
 export const error = bad.small;

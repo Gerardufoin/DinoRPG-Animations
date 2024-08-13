@@ -1864,5 +1864,31 @@ export const mapping_smonster = {
 	'Symbol 3768': 'shield',
 	// Alchimiste d'acier
 	'Symbol 3779': 'atk_smear',
-	'Symbol 3784': 'shield'
+	'Symbol 3784': 'shield',
+	// Esprit de Rhubarbapapa
+	'Symbol 3792': 'r_t_arm',
+	'Symbol 3794': 'r_b_arm',
+	'Symbol 3796': 'back',
+	'Symbol 3825pnj': 'head',
+	'Symbol 3827': 'l_body',
+	'Symbol 3829': 'm_body',
+	'Symbol 3834': 'u_body',
+	'Symbol 3837': 'l_b_arm',
+	'Symbol 3839': 'l_t_arm',
+	'Symbol 3844': 'hit_fx_1',
+	'Symbol 3845': 'hit_fx_2',
+	'Symbol 3846': 'hit_fx_3',
+	'Symbol 3847': 'hit_fx_4',
+	'Symbol 3848': 'hit_fx_5',
+	'Symbol 3858': 'atk_smear',
+	'Symbol 3861pnj': 'head_dead',
+	'Symbol 3867': 'shield',
+	'Symbol 3806': 'r_eye',
+	'Symbol 3808': 'v4',
+	'Symbol 3810': 'v1',
+	'Symbol 3810-1': 'v2',
+	'Symbol 3810-2': 'v3',
+	'Symbol 3818': 'skull',
+	'Symbol 3820': 'shard',
+	'Symbol 3824': 'l_eye'
 };
