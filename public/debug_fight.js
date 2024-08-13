@@ -88,11 +88,11 @@ const fightVersion = [
 					props: [],
 					dino: false,
 					life: 100,
-					name: 'Esprit de Rhubarbapapa',
+					name: 'Monstre en spaghettis volant',
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'rhubar'
+					gfx: 'stroa'
 				}
 			}
 			/*{

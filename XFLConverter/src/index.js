@@ -201,6 +201,12 @@ const parser = new XFLParser();
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3870.xml', '_p1', undefined, 1); // rhubar Esprit de Rhubarbapapa
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3825.xml', '_sub', undefined, 1); // rhubar head
 //parser.parse('./resources/smonster/LIBRARY/Symbol 3861.xml', '_sub', undefined, 1); // rhubar head_dead
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3976.xml', '_p1', undefined, 1); // stroa Monstre en spaghettis volant
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3880.xml', '_sub', undefined, 1); // stroa right_eye
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3886.xml', '_sub', undefined, 1); // stroa left_eye
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3890.xml', '_sub', undefined, 1); // stroa tentacle
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3919.xml', '_sub', undefined, 1); // stroa body_pasta
+//parser.parse('./resources/smonster/LIBRARY/Symbol 3926.xml', '_sub', undefined, 1); // stroa body
 
 //GFX
 //parser.parse('./resources/gfx/LIBRARY/Symbol 9.xml', '_sub', undefined, 2); // vine

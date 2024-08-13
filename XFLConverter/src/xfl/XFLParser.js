@@ -476,6 +476,14 @@ export let ${m} = {
 			glc: m1.glc ?? m2.glc,
 			glq: this.multiplyColors(m2.glq, m1.glq),
 			gls: this.multiplyColors(m2.gls, m1.gls),
+			dsa: this.multiplyColors(m2.dsa, m1.dsa),
+			dsx: this.multiplyColors(m2.dsx, m1.dsx),
+			dsy: this.multiplyColors(m2.dsy, m1.dsy),
+			dsc: m1.dsc ?? m2.dsc,
+			dsd: this.multiplyColors(m2.dsd, m1.dsd),
+			dsi: m1.dsi ?? m2.dsi,
+			dsq: this.multiplyColors(m2.dsq, m1.dsq),
+			dss: this.multiplyColors(m2.dss, m1.dss),
 			l: m1.l ?? m2.l
 		};
 		matrix.a = matrix.a === 1 ? undefined : matrix.a;
@@ -550,6 +558,14 @@ export let ${m} = {
 						glc: symbolInstance.filters?.GlowFilter?.color,
 						glq: this.parseFloat(symbolInstance.filters?.GlowFilter?.quality),
 						gls: this.parseFloat(symbolInstance.filters?.GlowFilter?.strength),
+						dsa: this.parseFloat(symbolInstance.filters?.DropShadowFilter?.angle),
+						dsx: this.parseFloat(symbolInstance.filters?.DropShadowFilter?.blurX),
+						dsy: this.parseFloat(symbolInstance.filters?.DropShadowFilter?.blurY),
+						dsc: symbolInstance.filters?.DropShadowFilter?.color,
+						dsd: this.parseFloat(symbolInstance.filters?.DropShadowFilter?.distance),
+						dsi: symbolInstance.filters?.DropShadowFilter?.inner,
+						dsq: this.parseFloat(symbolInstance.filters?.DropShadowFilter?.quality),
+						dss: this.parseFloat(symbolInstance.filters?.DropShadowFilter?.strength),
 						l: layer
 					};
 					frameData.tx = frameData.tx === 0 ? undefined : frameData.tx;

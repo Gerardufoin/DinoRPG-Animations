@@ -80,6 +80,7 @@ import { scorp } from './scorp/scorp.js';
 import { serpe } from './serpe/serpe.js';
 import { singmu } from './singmu/singmu.js';
 import { sofia } from './sofia/sofia.js';
+import { stroa } from './stroa/stroa.js';
 import { taurus } from './taurus/taurus.js';
 import { towgrd } from './towgrd/towgrd.js';
 import { updwn } from './updwn/updwn.js';
@@ -187,6 +188,7 @@ export const monsters = {
 	becplu: becplu,
 	updwn: updwn,
 	fullgd: fullgd,
-	rhubar: rhubar
+	rhubar: rhubar,
+	stroa: stroa
 };
 export const error = bad.small;
