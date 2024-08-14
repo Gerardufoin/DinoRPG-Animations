@@ -596,9 +596,6 @@ export class Fighter extends Phys {
 		this._animator.registerCallback('fxAttach', (_anim, args) => {
 			this.fxAttach(args[0], args[1], args[2], args[3]);
 		});
-		this._animator.registerCallback('fxAttachInside', (_anim, args) => {
-			this.fxAttachInside(args[0], args[1], args[2], args[3]);
-		});
 		this._animator.registerCallback('fxAttachScene', (_anim, args) => {
 			this.fxAttachScene(args[0], args[1], args[2], args[3], args[4]);
 		});
@@ -1754,22 +1751,6 @@ export class Fighter extends Phys {
 		} else {
 			console.error(`[Fighter.fxAttach]: Unknown animation '${asset}'.`);
 		}
-	}
-
-	/**
-	 * Used by callbacks to attach an fx to the fighter (not seen yet).
-	 * @param {string} asset The asset to attach.
-	 * @param {number} x The x position of the asset.
-	 * @param {number} y The y position of the asset.
-	 * @param {boolean} flBack Is the asset attached to the BACK layer or the FRONT layer.
-	 */
-	fxAttachInside(asset, x = 0, y = 0, flBack = false) {
-		const dp = flBack ? Layers.Fighter.BACK : Layers.Fighter.FRONT;
-		//switch (asset) {}
-		// TODO
-		/*var mc = bdm.attach(link,dp);
-			mc._x = x;
-			mc._y = y;*/
 	}
 
 	/**

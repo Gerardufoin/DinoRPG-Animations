@@ -10,7 +10,6 @@ import { Timer } from '../../../Timer.js';
 import { Animator } from '../../../../display/Animator.js';
 import { fx_vine_shadow } from '../../../../gfx/fx/vine_shadow.js';
 
-// TODO Correct the vine part sticking out of ground when it shouldn't once the animation is done.
 // GFX 19
 /**
  * Creates a moving vine.
@@ -62,7 +61,6 @@ export class MovingVine extends Part {
 		vineBody.addChild(new Asset(ref.fx.vine[`mv_${Math.floor(Math.random() * 4) + 1}`]));
 		this._mask = new Asset(ref.fx.vine.mask, 1, false);
 		this._mask.anchor.set(0.5, 1);
-		this._mask.y += 2;
 		vineBody.addChild(this._mask);
 		vineBody.filters = [StaticVine.GlowFilter, new SpriteMaskFilter(this._mask)];
 		vine.addChild(vineBody);
@@ -91,6 +89,8 @@ export class MovingVine extends Part {
 			this._animTimer = Math.min(this._animTimer + timer.tmod, MovingVine.MASK_DURATION);
 			const coef = this._animTimer / MovingVine.MASK_DURATION;
 			this._mask.angle = 180 + 360 * coef;
+			// In the last 10%, we lower the mask to prevent the vines from showing once done.
+			this._mask.y = Math.max(coef - 0.9, 0) * 50;
 		}
 	}
 }

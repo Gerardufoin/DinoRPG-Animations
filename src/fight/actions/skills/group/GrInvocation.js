@@ -148,22 +148,23 @@ export class GrInvocation extends GroupEffect {
 			// The summon descends upon the Scene.
 			case 1:
 				this._invoc.descend(this._coef);
-				/* TODO
-				for( i in 0...10 ) {
-					var x =  invoc.x;
-					var y =  Scene.getY(invoc.y);
-					var p = Scene.me.genGroundPart(x, y);
-					var s = (10 + coef * 10);
-					var s2 = (2 + coef * 5);
-					p.vx = (Math.random() * 2 - 1) * s;
-					p.vz = (Math.random() * 2 - 1) * s;
-					p.z  = -Math.random() * (20 + coef * 80) ;
-					p.vr = (Math.random() * 2 - 1) * s2;
-					p.timer += Math.random() * 5;
-					p.friction = 0.97;
-					p.setScale(p.scale * 1.5);
+				if (timer.frameElapsed) {
+					for (let i = 0; i < 10; ++i) {
+						const p = this._scene.genGroundPart(
+							this._invoc.position.x,
+							this._scene.getY(this._invoc.position.y)
+						);
+						if (p) {
+							p._vx = (Math.random() * 2 - 1) * (10 + this._coef * 10);
+							p._vz = (Math.random() * 2 - 1) * (10 + this._coef * 10);
+							p._z = -Math.random() * (20 + this._coef * 80);
+							p._vr = (Math.random() * 2 - 1) * (2 + this._coef * 5);
+							p._fadeoutTimer += p._fadeoutTimer > 0 ? Math.random() * 5 : 0;
+							p._friction = 0.97;
+							p.setScale(p._scale * 1.5);
+						}
+					}
 				}
-				*/
 				if (this._coef === 1) {
 					this._manualAura = false;
 					this.nextStep();

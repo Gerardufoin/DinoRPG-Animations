@@ -254,7 +254,7 @@ export class IScene extends Container {
 	 * @param {number} vx The initial x velocity of the particle.
 	 * @param {number} vy The initial y velocity of the particle.
 	 * @param {number} vz The initial z velocity of the particle.
-	 * @param {boolean} flJump Dunno yet. Related to jumping.
+	 * @param {boolean} flJump Is the call related to a jump action? Used for spawning rocks.
 	 */
 	genGroundPart(x, y, vx = 0, vy = 0, vz = 0, flJump = false) {}
 

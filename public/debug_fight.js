@@ -54,7 +54,7 @@ const fightVersion = [
 		bg: 'c_labo',
 		top: 120,
 		bottom: 20,
-		ground: 'none',
+		ground: 'None',
 		history: [
 			/*{
 				action: 'AddCastle',
@@ -79,7 +79,9 @@ const fightVersion = [
 					side: true,
 					scale: 1,
 					fid: 0,
-					gfx: '09T1Yt9wqq4Rx000'
+					gfx: '09T1Yt9wqq4Rx000',
+					x: 50,
+					y: 300
 				}
 			},
 			{
@@ -94,13 +96,65 @@ const fightVersion = [
 					fid: 1,
 					gfx: 'sangs2'
 				}
-			}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Sangsue Tentaculaire',
+					side: false,
+					scale: 1,
+					fid: 1,
+					gfx: 'sangs2'
+				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Sangsue Tentaculaire',
+					side: false,
+					scale: 1,
+					fid: 1,
+					gfx: 'sangs2'
+				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Sangsue Tentaculaire',
+					side: false,
+					scale: 1,
+					fid: 1,
+					gfx: 'sangs2'
+				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
+					dino: false,
+					life: 100,
+					name: 'Sangsue Tentaculaire',
+					side: false,
+					scale: 1,
+					fid: 1,
+					gfx: 'sangs2'
+				}
+			},
 			/*{
 				action: 'Skill',
-				skill: 'Anim',
+				skill: 'Vigne',
 				details: {
-					fid: 2,
-					anim: 'hit'
+					fid: 0,
+					targets: [{ id: 1 }]
 				}
 			}*/
 			/*{
@@ -113,7 +167,7 @@ const fightVersion = [
 				skill: 'Invoc',
 				details: {
 					fid: 0,
-					anim: 'bigma'
+					anim: 'fujin'
 				}
 			}*/
 			/*{
@@ -162,231 +216,10 @@ const fightVersion = [
 				tid: 0,
 				damages: 10
 			},*/
-			/*{
+			{
 				action: 'Dead',
 				fid: 0
-			}*/
-			/*{
-				action: 'AttackCastle',
-				fid: 0,
-				damages: 10
-			},
-			{
-				action: 'AttackCastle',
-				fid: 0,
-				damages: 10
-			},
-			{
-				action: 'AttackCastle',
-				fid: 0,
-				damages: 10
-			},
-			{
-				action: 'AttackCastle',
-				fid: 0,
-				damages: 10
-			},
-			{
-				action: 'AttackCastle',
-				fid: 0,
-				damages: 10
-			},
-			{
-				action: 'AttackCastle',
-				fid: 0,
-				damages: 10
-			},
-			{
-				action: 'AttackCastle',
-				fid: 0,
-				damages: 10
-			},
-			{
-				action: 'AttackCastle',
-				fid: 0,
-				damages: 10
-			},
-			{
-				action: 'AttackCastle',
-				fid: 0,
-				damages: 10
-			},
-			{
-				action: 'AttackCastle',
-				fid: 0,
-				damages: 10
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Stun'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Shield'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'MonoElt'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Strong'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Snake'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'InitDown'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'InitUp'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Air'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Thunder'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Water'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Wood'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Fire'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Up'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Down'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'NoUse'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Sharingan'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Silence'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Quick'
-			},
-			{
-				action: 'Pause',
-				time: 50
-			},
-			{
-				action: 'Notify',
-				fids: [0, 1],
-				notification: 'Slow'
-			}*/
+			}
 		]
 	}
 ];

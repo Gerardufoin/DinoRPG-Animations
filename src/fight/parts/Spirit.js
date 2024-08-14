@@ -28,7 +28,28 @@ export class Spirit extends Part {
 	 * Fadeout timer for the Spirit's tail.
 	 * @type {number}
 	 */
-	static TAIL_FADEOUT_FRAMES = 13;
+	static TAIL_FADEOUT_FRAMES = 10;
+	/**
+	 * How often a new tail is instantiated (1 would be 1 each tmod).
+	 * @type {number}
+	 */
+	static TAIL_FREQUENCY = 0.75;
+	/**
+	 * Vertical speed of the Spirit.
+	 * @type {number}
+	 */
+	static SPEED_Y = 1.5;
+	/**
+	 * Horizontal speed of the Spirit.
+	 * @type {number}
+	 */
+	static SPEED_X = 0.2;
+	/**
+	 * The width of the horizontal back and forth of the spirit.
+	 * @type {number}
+	 */
+	static MOVEMENT_WIDTH = 12;
+
 	/**
 	 * The head part of the Spirit.
 	 * @type {Container}
@@ -45,37 +66,17 @@ export class Spirit extends Part {
 	 * @type {{part: Container, timer: number}[]}
 	 */
 	_tailparts = [];
-	/**
-	 * Current angle of the Spirit.
-	 * @type {number}
-	 */
-	_angle = -1.57;
-	/**
-	 * Current speed of the Spirit. Increases over time.
-	 * @type {number}
-	 */
-	_speed = 1.5;
-	/**
-	 * Increment for the angle rotation.
-	 * @type {number}
-	 */
-	_dec = 0;
-	/**
-	 * Speed at which _dec is changing. Faster over time.
-	 * @type {number}
-	 */
-	_speedDec = 23;
-	/**
-	 * Dunno. Help changing the angle over time, but still a mystery.
-	 * @type {number}
-	 */
-	_ec = 0.1;
 
 	/**
-	 * Store a few tmod to use the lowest for update.
-	 * @type {number[]}
+	 * Timer for the spirit ascension.
+	 * @type {number}
 	 */
-	_tmodHistory = [];
+	_timer = 0;
+	/**
+	 * Time to spawn tails at predefined intervals.
+	 * @type {number}
+	 */
+	_tailTimer = 0;
 
 	/**
 	 * Instantiate a new head for the Spirit and add it to the Fighter layer of the Scene.
@@ -97,47 +98,63 @@ export class Spirit extends Part {
 		];
 	}
 
-	// TODO Discard MT code and recode the whole thing to respect framerate.
+	/**
+	 * Get the x/y position of a spirit part based on the given timer, as well as its orientation (angle).
+	 * The position follow a sinusoidal wave toward the top of the screen.
+	 * @param {number} timer The time elapsed for the required position.
+	 * @returns {{x: number, y: number, a: number}} The x/y position and the angle based on the given time.
+	 */
+	getPosition(timer) {
+		const xRad = timer * (Spirit.SPEED_X + timer * 0.0015);
+		const sinX = Math.sin(xRad);
+		const cosX = Math.cos(xRad);
+		// sharp sinusoidal wave oscillating between -1 and 1 so the head's angle move consistently.
+		const ss = 1 - 2 * Math.abs((((xRad + Math.PI / 2) / Math.PI) % 2) - 1);
+		return {
+			x: sinX * Spirit.MOVEMENT_WIDTH,
+			y: -timer * (Spirit.SPEED_Y + timer * 0.05),
+			a: (1 - Math.abs(ss)) * 45 * Math.sign(cosX)
+		};
+	}
+
+	static i = 0;
 	/**
 	 * Update the Spirit animation until its disappearance.
 	 * @param {Timer} timer Fight's timer, containing the elapsed time.
 	 */
 	update(timer) {
 		super.update(timer);
-		// MT code does not take well to lag of any kind. Spirit will start to break apart when the framerate changes.
-		// This forces the update to run at the lowest tmod obtained in the first 20 frames, so the Spirit updates at a constant rate no matter the drops in framerate.
-		// This should ideally be recoded from scratch...
-		if (this._tmodHistory.length < 20) {
-			this._tmodHistory.push(timer.tmod);
+
+		this._timer += timer.tmod;
+		const p = this.getPosition(this._timer);
+		this._head.y = p.y;
+		this._head.x = p.x;
+		this._head.angle = p.a;
+
+		while (this._tailTimer + Spirit.TAIL_FREQUENCY <= this._timer) {
+			this._tailTimer += Spirit.TAIL_FREQUENCY;
+			const pt = this.getPosition(this._tailTimer);
+
+			const tailSprite = new Graphics()
+				.beginFill(0xffffff)
+				.drawRect(-Spirit.TAIL_WIDTH / 2, -Spirit.TAIL_HEIGHT / 2, Spirit.TAIL_WIDTH, Spirit.TAIL_HEIGHT);
+			tailSprite.scale.x = 0.07;
+			const tailPart = new Container();
+			tailPart.addChild(tailSprite);
+			this._tail.addChild(tailPart);
+			tailPart.x = pt.x;
+			tailPart.y = pt.y;
+			tailPart.angle = pt.a + 90;
+
+			// Tails fadeout over time and are then removed from the scene once their timer reaches 0.
+			this._tailparts.push({
+				timer: Spirit.TAIL_FADEOUT_FRAMES - (this._timer - this._tailTimer),
+				part: tailPart
+			});
 		}
-		const tmod = Math.min(...this._tmodHistory);
-
-		this._dec = (this._dec + this._speedDec * tmod) % 628;
-		this._angle += Math.cos(this._dec * 0.01) * this._ec * tmod;
-
-		const dist = this._speed * tmod;
-		const dx = Math.cos(this._angle) * dist;
-		const dy = Math.sin(this._angle) * dist;
-
-		this._head.x += dx;
-		this._head.y += dy;
-
-		const tailSprite = new Graphics()
-			.beginFill(0xffffff)
-			.drawRect(-Spirit.TAIL_WIDTH / 2, -Spirit.TAIL_HEIGHT / 2, Spirit.TAIL_WIDTH, Spirit.TAIL_HEIGHT);
-		tailSprite.scale.x = this._speed / 100;
-		const tailPart = new Container();
-		tailPart.addChild(tailSprite);
-		this._tail.addChild(tailPart);
-		tailPart.x = this._head.x;
-		tailPart.y = this._head.y;
-		tailPart.angle = this._angle / 0.0174 + 180;
-		this._head.angle = tailPart.angle - 90;
-
-		// Tails fadeout over time and are then removed from the scene once their timer reaches 0.
-		this._tailparts.push({ timer: Spirit.TAIL_FADEOUT_FRAMES, part: tailPart });
+		// Updates tails and remove them once done.
 		this._tailParts = this._tailparts.filter((t) => {
-			t.timer -= tmod;
+			t.timer -= timer.tmod;
 			if (t.timer <= 0) {
 				this._tail.removeChild(t.part);
 				return false;
@@ -145,9 +162,5 @@ export class Spirit extends Part {
 			t.part.scale.y = t.timer / Spirit.TAIL_FADEOUT_FRAMES;
 			return true;
 		});
-
-		this._speedDec += 0.3 * tmod;
-		this._ec += 0.002 * tmod;
-		this._speed += 0.1 * tmod;
 	}
 }
