@@ -50,7 +50,7 @@ export class Finish extends State {
 			this.addActor(f);
 		});
 		if (!this._casting.length) {
-			this.kill();
+			this.end();
 		}
 	}
 
