@@ -255,13 +255,16 @@ export class PartManager {
 		if (part.glow) {
 			for (const g of Array.isArray(part.glow) ? part.glow : [part.glow]) {
 				filters.push(
-					ConstantShaderManager.getGlowFilter({
-						distance: g.distance,
-						color: g.color,
-						quality: g.quality,
-						innerStrength: g.innerStrength ?? 0,
-						outerStrength: g.strength ?? 0
-					})
+					ConstantShaderManager.getGlowFilter(
+						{
+							distance: g.distance,
+							color: g.color,
+							quality: g.quality,
+							innerStrength: g.innerStrength ?? 0,
+							outerStrength: g.strength ?? 0
+						},
+						g.padding
+					)
 				);
 			}
 		}

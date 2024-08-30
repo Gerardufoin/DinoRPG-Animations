@@ -130,7 +130,6 @@ export class SpeechBubble extends Container {
 		this.addChild(this._bubble);
 		this.addChild(this._text);
 		this.addChild(corner);
-		this.filterArea = new Rectangle(0, 0, SCENE_FULL_WIDTH, SCENE_HEIGHT);
 		if (!SpeechBubble.BorderGlow) {
 			SpeechBubble.BorderGlow = new GlowFilter({
 				color: 0x000000,
@@ -138,6 +137,7 @@ export class SpeechBubble extends Container {
 				outerStrength: 2,
 				quality: 1
 			});
+			SpeechBubble.BorderGlow.padding = 10;
 		}
 		this.filters = [SpeechBubble.BorderGlow];
 		// Keep the bubble inside the scene.

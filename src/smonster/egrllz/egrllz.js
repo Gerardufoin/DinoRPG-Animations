@@ -42,9 +42,9 @@ export const egrllz = {
 		distance: 19,
 		color: 0xccffcc,
 		quality: 0.5,
-		strength: 2
+		strength: 2,
+		padding: 10
 	},
-	fullscreenFilters: true,
 	shadow: {
 		ref: ref_sdino.fx.shadow,
 		transform: {

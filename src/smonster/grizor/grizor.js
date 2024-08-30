@@ -22,7 +22,12 @@ export const grizor = {
 			saturation: -3
 		}
 	],
-	fullscreenFilters: true,
+	glow: {
+		distance: 1,
+		color: 0x660000,
+		strength: 0.1,
+		padding: 10
+	},
 	parts: {
 		// 2620
 		l_b_arm: parts.left_bottom_arm,

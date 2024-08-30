@@ -188,21 +188,16 @@ export class Animator extends Container {
 	 */
 	setBodyGlow(glowParam) {
 		this._body.filters.push(
-			ConstantShaderManager.getGlowFilter({
-				distance: glowParam.distance ?? 1,
-				color: glowParam.color,
-				quality: glowParam.quality ?? 0.1,
-				outerStrength: glowParam.strength
-			})
+			ConstantShaderManager.getGlowFilter(
+				{
+					distance: glowParam.distance ?? 1,
+					color: glowParam.color,
+					quality: glowParam.quality ?? 0.1,
+					outerStrength: glowParam.strength
+				},
+				glowParam.padding
+			)
 		);
-	}
-
-	/**
-	 * Because PixiJS filters are fiddly as hell. Set the filter area to the whole screen when glow filters are cut off.
-	 */
-	setFiltersFullscreen() {
-		this.filterArea = new Rectangle(0, 0, SCENE_FULL_WIDTH, SCENE_HEIGHT);
-		this._body.filterArea = new Rectangle(0, 0, SCENE_FULL_WIDTH, SCENE_HEIGHT);
 	}
 
 	/**

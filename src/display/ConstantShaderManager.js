@@ -12,7 +12,7 @@ import { PixiHelper } from './PixiHelper.js';
 export class ConstantShaderManager {
 	/**
 	 * The storage for the glow shaders.
-	 * @type {{distance: number, color: number, outerStrengh: number, innerStrengh: number, quality: number, filter: GlowFilter}[]}
+	 * @type {{distance: number, color: number, outerStrengh: number, innerStrengh: number, quality: number, filter: GlowFilter, padding: number}[]}
 	 */
 	static glowShaderStorage = [];
 	/**
@@ -35,27 +35,33 @@ export class ConstantShaderManager {
 	 * Gets or creates a constant glow shader with the given parameters.
 	 * This glow shader must never be modified once instantiated.
 	 * @param {Partial<import('@pixi/filter-glow').GlowFilterOptions>} opt Options used to create the glow filter.
+	 * @param {number} padding The padding for the glow filter if it is cut off.
 	 * @returns {GlowFilter} The resulting glow filter.
 	 */
-	static getGlowFilter(opt) {
+	static getGlowFilter(opt, padding = undefined) {
 		for (const g of ConstantShaderManager.glowShaderStorage) {
 			if (
 				g.distance === opt.distance &&
 				g.color === opt.color &&
 				g.quality === opt.quality &&
 				g.outerStrengh === opt.outerStrength &&
-				g.innerStrengh === opt.innerStrength
+				g.innerStrengh === opt.innerStrength &&
+				g.padding === padding
 			) {
 				return g.filter;
 			}
 		}
 		const filter = new GlowFilter(opt);
+		if (padding) {
+			filter.padding = padding;
+		}
 		ConstantShaderManager.glowShaderStorage.push({
 			distance: opt.distance,
 			color: opt.color,
 			quality: opt.quality,
 			outerStrengh: opt.outerStrength,
 			innerStrengh: opt.innerStrength,
+			padding: padding,
 			filter: filter
 		});
 		return filter;

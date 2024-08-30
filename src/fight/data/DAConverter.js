@@ -174,6 +174,7 @@ export class DAConverter {
 			obj.y = effect.args[1];
 			effect = effect.args[2];
 		}
+		if (!effect) return obj;
 		switch (effect.value) {
 			case '_AFStand':
 				obj.entrance = EntranceEffect.Stand;
