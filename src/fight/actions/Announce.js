@@ -13,6 +13,7 @@ import { Tween } from '../../display/Tween.js';
 import { Layers } from '../DepthManager.js';
 import { SCENE_HEIGHT, SCENE_WIDTH } from '../IScene.js';
 import { Sprite } from '@pixi/picture';
+import { PixiHelper } from '../../display/PixiHelper.js';
 
 /**
  * Visual element for the announce, containing the PixiJS Container, the start and end position of the Tween.
@@ -70,6 +71,11 @@ export class Announce extends State {
 	 * @type {number}
 	 */
 	_glowTimer = 0;
+	/**
+	 * Time before the text start showing on screen.
+	 * @type {number}
+	 */
+	_textDelay = 8;
 
 	/**
 	 * Get the Fighter doing the announce.
@@ -88,7 +94,8 @@ export class Announce extends State {
 			return;
 		}
 		this.addActor(this._fighter);
-		this._coefSpeed = 0.035;
+		// Change the speed depending on the message length, so longer messages stay for longer on screen.
+		this._coefSpeed = 0.035 - 0.007 * PixiHelper.mm(1, message.length / 15, 3);
 
 		this._scene.dm.addContainer(this._box, Layers.Scene.INTER);
 
@@ -179,7 +186,8 @@ export class Announce extends State {
 			this._portrait.slider.x += (this._portrait.tx - this._portrait.slider.x) * 0.3 * timer.tmod;
 		}
 		this._bg.slider.x += (this._bg.tx - this._bg.slider.x) * 0.5 * timer.tmod;
-		if (this._coef > 0.3) {
+		this._textDelay -= timer.tmod;
+		if (this._textDelay <= 0) {
 			this._text.slider.x += (this._text.tx - this._text.slider.x) * 0.4 * timer.tmod;
 		}
 		// Make Fighter glow
