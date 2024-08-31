@@ -197,7 +197,15 @@ export class Fight {
 	 */
 	destroy() {
 		this._timer.destroy();
-		this._renderer.destroy();
+		// Destroy the renderer and scene on the next frame to avoid destroying them in the middle of a render loop.
+		setTimeout(() => {
+			this._renderer.destroy();
+			this._scene.destroy({
+				children: true,
+				texture: true,
+				baseTexture: true
+			});
+		}, 0);
 	}
 
 	/**

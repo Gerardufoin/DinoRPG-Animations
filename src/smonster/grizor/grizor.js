@@ -22,6 +22,7 @@ export const grizor = {
 			saturation: -3
 		}
 	],
+	// Trick to increase padding and avoid attacks glow being cut off
 	glow: {
 		distance: 1,
 		color: 0x660000,

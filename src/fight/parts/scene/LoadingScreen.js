@@ -1,6 +1,6 @@
 // @ts-check
 
-import { BLEND_MODES, Container } from 'pixi.js';
+import { BLEND_MODES, Container, Graphics } from 'pixi.js';
 import { Timer } from '../../Timer.js';
 import { Asset } from '../../../display/Asset.js';
 import { ref } from '../../../gfx/references.js';
@@ -27,6 +27,8 @@ export class LoadingScreen extends Container {
 	 */
 	constructor() {
 		super();
+		// Add Graphic opaque background to hide the elements behind the loading screen while the assets loads.
+		this.addChild(new Graphics().beginFill(0xfce3bb).drawRect(0, 0, 400, 300));
 		this.addChild(new Asset(ref.scene.loading_bg));
 		const circle = new Asset(ref.scene.loading);
 		circle.x = circle.y = 0;

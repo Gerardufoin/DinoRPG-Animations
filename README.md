@@ -1,25 +1,25 @@
-# DinoRPG-Animations
+# DinoRPG: Animations
 
-Convert the DinoRPG game SWF files into javacript using PixiJS.
+This project is a recreation of the [Dino-RPG](http://www.dinorpg.com/) game Flash files into Javacript using [PixiJS](https://pixijs.com/).
 
-The ultimate aim of the project is the recreation in Javascript of the fight.swf file of the online game [DinoRPG](http://www.dinorpg.com/).
+The compiled script combines the Flash files fight.swf, gfx.swf, sdino.swf, dino.swf, and smonsters.swf.
 
-To reach this step, the following SWF files will have to be converted first:
+You can see the final product used on my other repository hosting the legacy version of the Paradino Cinema: [Dino-RPG: Legacy Paradino](https://github.com/Gerardufoin/DinoRPG-Legacy-Paradino).
 
--   sdino.swf: Small animated version of the dinos.
--   dino.swf: Big version of the dinos, needed for portraits and skill casting.
--   smonsters.swf: Small animated version of the monsters
--   gfx.swf: Attacks and effects
+The documentation for the fight format can be found in the fight's [README](https://github.com/Gerardufoin/DinoRPG-Animations/tree/main/src/fight)
 
-Each steps of the project should ideally be able to be instantiated as standalone if needed.
+The following pages allow to test the result for the different parts of the project:
 
-## Current status
+-   [sdino.swf](https://gerardufoin.github.io/DinoRPG-Animations/public/sdino.html): The small animated version of the Dinoz.
+-   [dino.swf](https://gerardufoin.github.io/DinoRPG-Animations/public/dino.html): The big static portrait of the Dinoz.
+-   [smonsters.swf](https://gerardufoin.github.io/DinoRPG-Animations/public/smonster.html): All the monsters which can be fought in the game.
+-   [fight.swf](https://gerardufoin.github.io/DinoRPG-Animations/public/fight.html): A few example of the final product with all parts combined.
 
-The project is underway, with the conversion of the sdino.swf file mostly done.
+A comparison of the Dinoz' display with their Flash equivalent can be found [here](https://gerardufoin.github.io/DinoRPG-Animations/public/compare.html), but do note that you will need a plugin like [Ruffle](https://ruffle.rs/) to be able to run the Flash files.
 
-You can see a (messy) test version for sdino.swf if you have a dino code to test [here](https://gerardufoin.github.io/DinoRPG-Animations/public/sdino.html).
+## Eternal-Twin
 
-The next step is to start fight.swf and then start adding monsters and attacks over time.
+If you are interested in the original game, you can found a recreation of it using this project over at Eternal-Twin: [Eternal Dino-RPG](https://dinorpg.eternaltwin.org/).
 
 ## License
 
