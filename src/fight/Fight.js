@@ -74,6 +74,12 @@ export class Fight {
 	_history;
 
 	/**
+	 * Reference to the load timeout, to be destroyed if the Fight is immediately destroyed.
+	 * @type {any}
+	 */
+	_loadTimeout;
+
+	/**
 	 * Creates a fight based on the data parameter.
 	 * @param {{legacy_data?: string, bg?: string, history?: Array, lang?: string, settings?: boolean}} data Object containing the data describing a fight.
 	 */
@@ -121,7 +127,8 @@ export class Fight {
 		// Preload data and then starts the history.
 		PreloadData.preload(this._renderer).then(() => {
 			// "Fake" loading delay to leave the time for the player to understand what is happening and for some resources to load.
-			setTimeout(() => {
+			this._loadTimeout = setTimeout(() => {
+				this._loadTimeout = undefined;
 				this._settings.onFightStart();
 				this._history.playNext();
 			}, 1000);
@@ -196,16 +203,21 @@ export class Fight {
 	 * The Fight object is rendered useless after this method is called and will have to be discarded.
 	 */
 	destroy() {
-		this._timer.destroy();
-		// Destroy the renderer and scene on the next frame to avoid destroying them in the middle of a render loop.
-		setTimeout(() => {
+		// Destroy the timer and renderer after the timer finishes its last rendering.
+		this._timer.add(() => {
+			if (this._loadTimeout) {
+				clearTimeout(this._loadTimeout);
+				this._loadTimeout = undefined;
+			}
+			this._timer.destroy();
 			this._renderer.destroy();
 			this._scene.destroy({
 				children: true,
-				texture: true,
-				baseTexture: true
+				// Textures cannot be destroyed in case another instance is running or an instance is started before the current one is fully destroyed.
+				texture: false,
+				baseTexture: false
 			});
-		}, 0);
+		});
 	}
 
 	/**
