@@ -1178,7 +1178,7 @@ export class Fighter extends Phys {
 	 * @param {number} stunDuration The stun duration following the damage. 50 by default.
 	 * @param {{fx: number, amount?: number, size?: number} | null} lifeFx The LifeEffect effect to play while receiving the damages, or null if none.
 	 */
-	damages(damages, stunDuration = 50, lifeFx = null) {
+	damages(damages = 0, stunDuration = 50, lifeFx = null) {
 		this.playAnim('hit');
 		this._life = Math.max(0, this._life - damages);
 		this._scene.settings.onLifeChange(this.id, this._life);
@@ -1202,7 +1202,7 @@ export class Fighter extends Phys {
 	 * @param {number} amount The amount of health to regenerate.
 	 * @param {{fx: number, amount?: number, size?: number} | null} lifeFx The LifeEffect to play. Null by default.
 	 */
-	gainLife(amount, lifeFx = null) {
+	gainLife(amount = 0, lifeFx = null) {
 		this._life += amount;
 		this._scene.settings.onLifeChange(this.id, this._life);
 		if (this._slot) {

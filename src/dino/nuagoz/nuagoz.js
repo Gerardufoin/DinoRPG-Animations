@@ -364,6 +364,7 @@ export const nuagoz = {
 		},
 		animations: {
 			// missing cast, release
+			// ill and sleep were set to 'dead' but was strange visually. Changed for stand.
 			// 536
 			stand: stand,
 			// 539
@@ -380,10 +381,6 @@ export const nuagoz = {
 			land: land,
 			// 545
 			dead: dead,
-			// 545 idx 5
-			sleep: { offset: 5, anim: dead },
-			// 545 idx 10
-			ill: { offset: 10, anim: dead },
 			// 539
 			fly: fly
 		}
