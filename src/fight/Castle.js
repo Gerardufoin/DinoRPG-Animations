@@ -177,7 +177,7 @@ export class Castle {
 		const portrait = new Asset(ref.castle.wall);
 		portrait.x = -25;
 		portrait.scale.set(0.4);
-		this._slot = new Slot(this._life, this._maxLife, null, null, portrait, this._scene.tm);
+		this._slot = new Slot(this._life, this._maxLife, 100, 100, false, this._scene.tm, portrait);
 		this._scene.addSlot(this._slot, false);
 		// Call incLife to set the Castle skin.
 		this.incLife(0);

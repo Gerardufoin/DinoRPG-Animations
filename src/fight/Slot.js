@@ -107,8 +107,9 @@ export class Slot extends Container {
 	 * @param {number | null} maxEnergy The maximum amount of energy.
 	 * @param {boolean} side The side of the slot. True for left, false for right.
 	 * @param {TweenManager} tm The Tween Manager of the Scene.
+	 * @param {Asset} portrait The portrait of the slot. If undefined, the slot will be hidden until a portrait is set using setPortrait.
 	 */
-	constructor(life, maxLife, energy, maxEnergy, side, tm) {
+	constructor(life, maxLife, energy, maxEnergy, side, tm, portrait = undefined) {
 		super();
 		this._tweenManager = tm;
 		this._side = side;
@@ -134,8 +135,12 @@ export class Slot extends Container {
 			this.hideEnergyBar();
 		}
 
-		// Hides the slot until the portrait is set later on.
-		this.visible = false;
+		if (portrait) {
+			this._portrait.addChild(portrait);
+		} else {
+			// Hides the slot until the portrait is set later on.
+			this.visible = false;
+		}
 	}
 
 	/**

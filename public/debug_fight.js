@@ -56,7 +56,7 @@ const fightVersion = [
 		bottom: 20,
 		ground: 'None',
 		history: [
-			/*{
+			{
 				action: 'AddCastle',
 				castle: {
 					life: 100,
@@ -68,7 +68,7 @@ const fightVersion = [
 					color: 0,
 					invisible: false
 				}
-			},*/
+			},
 			{
 				action: 'Add',
 				fighter: {
@@ -82,58 +82,6 @@ const fightVersion = [
 					gfx: '09T1Yt9wqq4Rx000',
 					x: 50,
 					y: 300
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Sangsue Tentaculaire',
-					side: false,
-					scale: 1,
-					fid: 1,
-					gfx: 'sangs2'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Sangsue Tentaculaire',
-					side: false,
-					scale: 1,
-					fid: 1,
-					gfx: 'sangs2'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Sangsue Tentaculaire',
-					side: false,
-					scale: 1,
-					fid: 1,
-					gfx: 'sangs2'
-				}
-			},
-			{
-				action: 'Add',
-				fighter: {
-					props: [],
-					dino: false,
-					life: 100,
-					name: 'Sangsue Tentaculaire',
-					side: false,
-					scale: 1,
-					fid: 1,
-					gfx: 'sangs2'
 				}
 			},
 			{
@@ -205,7 +153,7 @@ const fightVersion = [
 				action: 'Return',
 				fid: 1
 			}*/
-			/*{
+			{
 				action: 'AttackCastle',
 				fid: 0,
 				damages: 10
@@ -215,7 +163,7 @@ const fightVersion = [
 				fid: 1,
 				tid: 0,
 				damages: 10
-			},*/
+			},
 			{
 				action: 'Dead',
 				fid: 0
