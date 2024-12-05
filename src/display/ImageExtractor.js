@@ -3,6 +3,7 @@
 import { Filter, Rectangle, Renderer } from 'pixi.js';
 import { Animator } from './Animator.js';
 import { exportCorrectionShader } from './shaders/ExportCorrectionShader.js';
+import { ConstantShaderManager } from './ConstantShaderManager.js';
 
 /**
  * Allow the transformation from an Animator into an image which can then be displayed in an <img> tag.
@@ -26,7 +27,7 @@ export class ImageExtractor {
 	static _queue = [];
 	/**
 	 * Rendering contexts.
-	 * @type {{instance: Renderer, busy: boolean}[]}
+	 * @type {{instance: Renderer, busy: boolean, need_refresh: boolean}[]}
 	 */
 	static _renderers = [];
 
@@ -41,14 +42,19 @@ export class ImageExtractor {
 	static async _convert() {
 		if (ImageExtractor._queue.length == 0) return;
 		while (ImageExtractor._renderers.length < ImageExtractor.RENDERING_CNTX_COUNT) {
-			ImageExtractor._renderers.push({
+			const render = {
 				instance: new Renderer({
 					backgroundAlpha: 0,
 					width: 100,
 					height: 100
 				}),
-				busy: false
-			});
+				busy: false,
+				need_refresh: true
+			};
+			ConstantShaderManager.onNewGlowFilter = () => {
+				render.need_refresh = true;
+			};
+			ImageExtractor._renderers.push(render);
 		}
 		for (const r of ImageExtractor._renderers) {
 			if (ImageExtractor._queue.length > 0 && !r.busy) {
@@ -59,58 +65,80 @@ export class ImageExtractor {
 
 	/**
 	 * Dispatch an element to render to a free renderer. Call _convert once done.
-	 * @param {{instance: Renderer, busy: boolean}} renderer The renderer to use for the process.
+	 * @param {{instance: Renderer, busy: boolean, need_refresh: boolean}} renderer The renderer to use for the process.
 	 * @param {{entity: Animator, callback: any, animation?: boolean, frame?: Rectangle, format: string, html:boolean}} element The element to render.
 	 */
 	static async dispatch(renderer, element) {
 		if (element && element.entity && element.callback) {
 			element.entity.playing = false;
 			renderer.busy = true;
-			element.entity.filters ??= [];
-			element.entity.filters.push(ImageExtractor.EXPORT_CLAMP_SHADER);
-			// If a frame is defined, set the filterArea to the given frame (will prevent congel status from being cut off)
-			if (element.frame) {
-				element.entity.filterArea = element.frame;
-			}
-			if (element.animation) {
-				if (element.html) {
-					element.callback(
-						await ImageExtractor._renderToAnimation(
-							renderer.instance,
-							element.entity,
-							element.frame,
-							element.format
-						)
+			if (renderer.need_refresh) {
+				renderer.need_refresh = false;
+				// If a new glow filter has been added, we do a dummy rendering and put back the element on the queue.
+				if (element.animation) {
+					await ImageExtractor._renderAnimationAsRawImages(
+						renderer.instance,
+						element.entity,
+						element.frame,
+						element.format
 					);
 				} else {
-					element.callback(
-						await ImageExtractor._renderAnimationAsRawImages(
-							renderer.instance,
-							element.entity,
-							element.frame,
-							element.format
-						)
+					await ImageExtractor._renderAsRawImage(
+						renderer.instance,
+						element.entity,
+						element.frame,
+						element.format
 					);
 				}
+				this._queue.unshift(element);
 			} else {
-				if (element.html) {
-					element.callback(
-						await ImageExtractor._renderToImage(
-							renderer.instance,
-							element.entity,
-							element.frame,
-							element.format
-						)
-					);
+				// Normal rendering
+				element.entity.filters ??= [];
+				element.entity.filters.push(ImageExtractor.EXPORT_CLAMP_SHADER);
+				// If a frame is defined, set the filterArea to the given frame (will prevent congel status from being cut off)
+				if (element.frame) {
+					element.entity.filterArea = element.frame;
+				}
+				if (element.animation) {
+					if (element.html) {
+						element.callback(
+							await ImageExtractor._renderToAnimation(
+								renderer.instance,
+								element.entity,
+								element.frame,
+								element.format
+							)
+						);
+					} else {
+						element.callback(
+							await ImageExtractor._renderAnimationAsRawImages(
+								renderer.instance,
+								element.entity,
+								element.frame,
+								element.format
+							)
+						);
+					}
 				} else {
-					element.callback(
-						await ImageExtractor._renderAsRawImage(
-							renderer.instance,
-							element.entity,
-							element.frame,
-							element.format
-						)
-					);
+					if (element.html) {
+						element.callback(
+							await ImageExtractor._renderToImage(
+								renderer.instance,
+								element.entity,
+								element.frame,
+								element.format
+							)
+						);
+					} else {
+						element.callback(
+							await ImageExtractor._renderAsRawImage(
+								renderer.instance,
+								element.entity,
+								element.frame,
+								element.format
+							)
+						);
+					}
 				}
 			}
 			renderer.busy = false;

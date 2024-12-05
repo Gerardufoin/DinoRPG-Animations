@@ -32,6 +32,19 @@ export class ConstantShaderManager {
 	static adjustColorShaderStorage = [];
 
 	/**
+	 * Callbacks to call when a new glow filter is created.
+	 * @type {((gf: GlowFilter) => void)[]}
+	 */
+	static _newGlowCallbacks = [];
+	/**
+	 * Register a new callback to invoke when a new glow filter is created.
+	 * @param {(gf: GlowFilter) => void} cb The callback to register.
+	 */
+	static set onNewGlowFilter(cb) {
+		ConstantShaderManager._newGlowCallbacks.push(cb);
+	}
+
+	/**
 	 * Gets or creates a constant glow shader with the given parameters.
 	 * This glow shader must never be modified once instantiated.
 	 * @param {Partial<import('@pixi/filter-glow').GlowFilterOptions>} opt Options used to create the glow filter.
@@ -64,6 +77,7 @@ export class ConstantShaderManager {
 			padding: padding,
 			filter: filter
 		});
+		ConstantShaderManager._newGlowCallbacks.forEach((cb) => cb(filter));
 		return filter;
 	}
 
