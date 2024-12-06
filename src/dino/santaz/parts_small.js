@@ -286,11 +286,19 @@ export const parts_small = {
 							ty: 0.25,
 							a: 0.586,
 							d: 1.0
-						}
+						},
+						resolution: 1.5
 					},
 					// 827
 					{
-						ref: ref.santaz.nose_flat_highlight
+						ref: ref.santaz.nose_flat_highlight,
+						transform: {
+							tx: -0.4,
+							ty: -0.8,
+							a: 0.003,
+							d: 0.002
+						},
+						resolution: 0.1
 					}
 				],
 				[
