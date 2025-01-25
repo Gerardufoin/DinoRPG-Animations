@@ -27,7 +27,7 @@ export const grizor = {
 		distance: 1,
 		color: 0x660000,
 		strength: 0.1,
-		padding: 10
+		padding: 20
 	},
 	parts: {
 		// 2620

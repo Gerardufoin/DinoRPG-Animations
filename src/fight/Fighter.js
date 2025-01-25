@@ -269,6 +269,12 @@ export class Fighter extends Phys {
 	}
 
 	/**
+	 * Padding value for the status shaders, in order to prevent the glow effect inherent to some fighters from being cut off.
+	 * Take for example the glow for the Gorilloz Spirit.
+	 * @type {number}
+	 */
+	static STATUS_GLOW_PADDING = 25;
+	/**
 	 * Current status of the Fighter as a list of FighterStatus.
 	 * @type {number[]}
 	 */
@@ -482,6 +488,8 @@ export class Fighter extends Phys {
 		if (!Fighter.StatusFilters) {
 			Fighter.GenerateStatusFilters();
 		}
+		// Status filters needs padding to correctly display the glow of some entities (i.e. Gorilloz Spirit)
+		this._poisonColorFilter.padding = Fighter.STATUS_GLOW_PADDING;
 
 		this.id = fInfos.fid;
 		this._isDino = fInfos.dino;
@@ -1049,6 +1057,7 @@ export class Fighter extends Phys {
 								outerStrength: 4,
 								quality: 0.5
 							});
+							this._shieldGlowFilter.padding = Fighter.STATUS_GLOW_PADDING;
 						}
 						const rcol = PixiHelper.getRainbow(this._decal / 628);
 						const c = PixiHelper.mergeCol(rcol, 0xffff00, 0.2);
@@ -1065,6 +1074,7 @@ export class Fighter extends Phys {
 								outerStrength: 2,
 								quality: 0.4
 							});
+							this._blessGlowFilter.padding = Fighter.STATUS_GLOW_PADDING;
 						}
 						const c = Math.sin(this._decal * 0.01);
 						this._blessGlowFilter.outerStrength = 2 + 4 * c;
@@ -1894,20 +1904,25 @@ export class Fighter extends Phys {
 		const g = 0.1;
 		const b = 0.7;
 		stoneMatrix.matrix = [r, g, b, 0, 0, r, g, b, 0, 0, r, g, b, 0, 0, 0, 0, 0, 1, 0];
+		stoneMatrix.padding = Fighter.STATUS_GLOW_PADDING;
 		Fighter.StatusFilters[FighterStatus.Stoned] = stoneMatrix;
 
 		// Static part of the blessed glow filter.
-		Fighter.StatusFilters[FighterStatus.Bless] = new GlowFilter({
-			color: 0xffffff,
-			outerStrength: 4,
-			distance: 2,
-			quality: 0.3
-		});
+		Fighter.StatusFilters[FighterStatus.Bless] = ConstantShaderManager.getGlowFilter(
+			{
+				color: 0xffffff,
+				outerStrength: 4,
+				distance: 2,
+				quality: 0.3
+			},
+			Fighter.STATUS_GLOW_PADDING
+		);
 
 		// Stun shader
 		const stunMatrix = new ColorMatrixFilter();
 		const v = 0.7;
 		stunMatrix.matrix = [v, v, v, 0, 0, v, v, v, 0, 0, v, v, v, 0, 0, 0, 0, 0, 1, 0];
+		stunMatrix.padding = Fighter.STATUS_GLOW_PADDING;
 		Fighter.StatusFilters[FighterStatus.Stun] = stunMatrix;
 	}
 

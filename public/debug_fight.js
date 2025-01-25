@@ -94,8 +94,13 @@ const fightVersion = [
 					side: false,
 					scale: 1,
 					fid: 1,
-					gfx: 'sangs2'
+					gfx: 'egrllz'
 				}
+			},
+			{
+				action: 'Status',
+				fid: 1,
+				status: 'Poison'
 			},
 			/*{
 				action: 'Skill',

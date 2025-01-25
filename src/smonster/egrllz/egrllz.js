@@ -43,7 +43,7 @@ export const egrllz = {
 		color: 0xccffcc,
 		quality: 0.5,
 		strength: 2,
-		padding: 10
+		padding: 20
 	},
 	shadow: {
 		ref: ref_sdino.fx.shadow,
