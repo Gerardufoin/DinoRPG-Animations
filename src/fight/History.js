@@ -438,10 +438,10 @@ export class History {
 
 	/**
 	 * Adds the time bar to the Scene.
-	 * @param {{action: number, time: number}} action Action which triggered the call.
+	 * @param {{action: number, time: number, center: boolean}} action Action which triggered the call.
 	 */
 	timeLimit(action) {
-		this._scene.initTimeBar(action.time);
+		this._scene.initTimeBar(action.time, action.center);
 		this.nextAction();
 	}
 

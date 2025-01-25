@@ -37,6 +37,11 @@ export class IScene extends Container {
 	get settings() {
 		return this._settings;
 	}
+	/**
+	 * The panel controlling the speed settings.
+	 * @type {Container}
+	 */
+	_speedPanel;
 
 	/**
 	 * The application renderer.
@@ -172,12 +177,16 @@ export class IScene extends Container {
 	/**
 	 * Initialize the time bar with the expected duration in frames.
 	 * @param {number} duration The duration of the time bar in frames.
+	 * @param {boolean} center If true, center the TimeBar on the screen. False by default.
 	 */
-	initTimeBar(duration) {
+	initTimeBar(duration, center = false) {
 		if (!this._timeBar) {
 			this._timeBar = new TimeBar(duration);
-			this._timeBar.x = 8;
+			this._timeBar.x = center ? (SCENE_WIDTH - 296) / 2 : 8;
 			this._timeBar.y = 4;
+			if (this._speedPanel) {
+				this._speedPanel.y = 20;
+			}
 			this.dm.addContainer(this._timeBar, Layers.Scene.INTER);
 		}
 	}

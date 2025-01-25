@@ -56,7 +56,7 @@ const fightVersion = [
 		bottom: 20,
 		ground: 'None',
 		history: [
-			{
+			/*{
 				action: 'AddCastle',
 				castle: {
 					life: 100,
@@ -68,7 +68,7 @@ const fightVersion = [
 					color: 0,
 					invisible: false
 				}
-			},
+			},*/
 			{
 				action: 'Add',
 				fighter: {
@@ -101,6 +101,11 @@ const fightVersion = [
 				action: 'Status',
 				fid: 1,
 				status: 'Poison'
+			},
+			{
+				action: 'TimeLimit',
+				time: 1000,
+				center: true
 			},
 			/*{
 				action: 'Skill',
@@ -158,11 +163,11 @@ const fightVersion = [
 				action: 'Return',
 				fid: 1
 			}*/
-			{
+			/*{
 				action: 'AttackCastle',
 				fid: 0,
 				damages: 10
-			},
+			},*/
 			{
 				action: 'Damages',
 				fid: 1,

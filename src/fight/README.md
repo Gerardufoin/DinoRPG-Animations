@@ -530,9 +530,10 @@ The time decreases every time Pause is called.
 
 #### Properties
 
-| Property | Type   | Description                                   |
-| -------- | ------ | --------------------------------------------- |
-| time     | Number | The total duration of the timebar, in frames. |
+| Property | Type    | Description                                                        |
+| -------- | ------- | ------------------------------------------------------------------ |
+| time     | Number  | The total duration of the timebar, in frames.                      |
+| center?  | Boolean | If true, the time bar is centered on the screen. False by default. |
 
 ### AttackCastle (16)
 

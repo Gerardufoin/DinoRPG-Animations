@@ -89,9 +89,9 @@ export class Scene extends IScene {
 
 		// SETTINGS
 		if (this._settings.display) {
-			const speedSettings = new SpeedPanel(this._settings);
-			this.dm.addContainer(speedSettings, Layers.Scene.INTER);
-			const settingsPanel = new SettingsPanel(this._settings, speedSettings);
+			this._speedPanel = new SpeedPanel(this._settings);
+			this.dm.addContainer(this._speedPanel, Layers.Scene.INTER);
+			const settingsPanel = new SettingsPanel(this._settings, this._speedPanel);
 			this.dm.addContainer(
 				new SettingsButton(settingsPanel, () => {
 					// Reset y on settings opening to prevent shaking displacement
