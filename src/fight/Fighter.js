@@ -957,19 +957,19 @@ export class Fighter extends Phys {
 			this._force = 10;
 		}
 
+		let statusAnimation;
 		for (const s of this._status) {
 			switch (s) {
 				case FighterStatus.Sleep:
-					this._defaultAnim = 'sleep';
-					this.playAnim('sleep', false);
+					// Fly has priority over sleep.
+					statusAnimation ??= 'sleep';
 					this._flFreeze = true;
 					break;
 				case FighterStatus.Intang:
 					this.body.alpha = 0.5;
 					break;
 				case FighterStatus.Fly:
-					this._defaultAnim = 'jump';
-					this.playAnim('jump', false);
+					statusAnimation = 'jump';
 					this._flFly = true;
 					this.setGroundFx(false);
 					break;
@@ -989,6 +989,10 @@ export class Fighter extends Phys {
 					}
 					break;
 			}
+		}
+		if (statusAnimation) {
+			this._defaultAnim = statusAnimation;
+			this.playAnim(statusAnimation, false);
 		}
 		this._statusDisplay.showIcons(this._status);
 	}
