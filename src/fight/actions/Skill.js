@@ -140,7 +140,6 @@ export class Skill extends State {
 				t.fighter.playAnim('special');
 			}
 		}
-		this._targets = this._targets.filter((t) => t.life !== null);
 
 		const state = this.getSkill();
 		if (state) {

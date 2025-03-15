@@ -2,6 +2,9 @@
 
 export const special = {
 	id: 'toufufu_special',
+	callbacks: {
+		58: [['playAnim', 'stand']]
+	},
 	frames: [
 		{
 			fx_dodge: {
