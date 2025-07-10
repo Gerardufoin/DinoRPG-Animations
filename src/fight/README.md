@@ -447,13 +447,13 @@ Moves a fighter in range of another fighter with the given movement type.
 
 #### Properties
 
-| Property    | Type                           | Description                                                                                                      |
-| ----------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| fid         | Number                         | The ID of the moving fighter.                                                                                    |
-| tid         | Number                         | The ID of the targeted fighter.                                                                                  |
-| effect?     | GotoEffect                     | The GotoEffect used to move the fighter. If none is given, default to Normal.                                    |
-| shadeColor? | {col1?: number, col2?: number} | The colors for the shades created when selecting GotoEffect.Special. If undefined, the shade will be pure black. |
-| saveStartPosition? | Boolean | Save the starting position of the fighter for a future return. True by default. |
+| Property           | Type                           | Description                                                                                                      |
+| ------------------ | ------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| fid                | Number                         | The ID of the moving fighter.                                                                                    |
+| tid                | Number                         | The ID of the targeted fighter.                                                                                  |
+| effect?            | GotoEffect                     | The GotoEffect used to move the fighter. If none is given, default to Normal.                                    |
+| shadeColor?        | {col1?: number, col2?: number} | The colors for the shades created when selecting GotoEffect.Special. If undefined, the shade will be pure black. |
+| saveStartPosition? | Boolean                        | Save the starting position of the fighter for a future return. True by default.                                  |
 
 | GotoEffect  | Description                                                                                                                             |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------- |

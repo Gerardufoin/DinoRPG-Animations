@@ -34,6 +34,12 @@ export class GotoFighter extends State {
 	 * @type {{col1: Color, col2: Color}}
 	 */
 	_shadeColor;
+	/**
+	 * Determine if the position of the dino should be saved for an eventual Return command.
+	 * True by default.
+	 * @type {boolean}
+	 */
+	_saveStartPosition;
 
 	/**
 	 * Moves the selected Fighter (fid) toward another Fighter (tid) with the specified movement type.
@@ -45,7 +51,7 @@ export class GotoFighter extends State {
 	 * @param {number} tid The id of the targetted Fighter.
 	 * @param {number | null} effect The GotoFighter.Effect managing the movement type.
 	 * @param {{col1?: number, col2?: number} | null} shadeColor The color of the shade created for the Special effect.
-	 * @param {boolean} [saveStartPosition=true] If false, don't save the starting position of the Fighter.
+	 * @param {boolean} saveStartPosition If false, don't save the starting position of the Fighter. True by default.
 	 */
 	constructor(scene, endCall, fid, tid, effect = null, shadeColor = null, saveStartPosition = true) {
 		super(scene, endCall);
