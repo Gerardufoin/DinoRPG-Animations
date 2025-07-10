@@ -88,12 +88,27 @@ const fightVersion = [
 				action: 'Add',
 				fighter: {
 					props: [],
+					dino: true,
+					life: 100,
+					name: 'Dragon Jr 2',
+					side: true,
+					scale: 1,
+					fid: 1,
+					gfx: '39T1Yt9wqq4Rx000',
+					x: 70,
+					y: 300
+				}
+			},
+			{
+				action: 'Add',
+				fighter: {
+					props: [],
 					dino: false,
 					life: 100,
 					name: 'Sangsue Tentaculaire',
 					side: false,
 					scale: 1,
-					fid: 1,
+					fid: 2,
 					gfx: 'egrllz'
 				}
 			},
@@ -107,14 +122,51 @@ const fightVersion = [
 				time: 1000,
 				center: true
 			},
-			/*{
+			{
+				action: 'Goto',
+				fid: 0,
+				tid: 2
+			},
+			{
+				action: 'Return',
+				fid: 0,
+			},
+			{
 				action: 'Skill',
-				skill: 'Vigne',
+				skill: 'Hypnose',
 				details: {
-					fid: 0,
+					fid: 2,
 					targets: [{ id: 1 }]
 				}
-			}*/
+			},
+			{
+				action: 'Goto',
+				fid: 1,
+				tid: 0
+			},
+			{
+				action: 'Return',
+				fid: 1,
+			},
+			{
+				action: 'Flip',
+				fid: 1,
+			},
+			{
+				action: 'Goto',
+				fid: 1,
+				tid: 0,
+				saveStartPosition: false,
+			},
+			{
+				action: 'Goto',
+				fid: 1,
+				tid: 2,
+			},
+			{
+				action: 'Return',
+				fid: 1,
+			},
 			/*{
 				action: 'Announce',
 				message: 'Big Mama',
@@ -168,16 +220,16 @@ const fightVersion = [
 				fid: 0,
 				damages: 10
 			},*/
-			{
+			/* {
 				action: 'Damages',
 				fid: 1,
 				tid: 0,
 				damages: 10
-			},
-			{
-				action: 'Dead',
-				fid: 0
-			}
+			}, */
+			// {
+			// 	action: 'Dead',
+			// 	fid: 0
+			// }
 		]
 	}
 ];

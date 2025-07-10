@@ -367,7 +367,7 @@ export class History {
 
 	/**
 	 * A Fighter moves toward another Fighter with the desired movement effect.
-	 * @param {{action: number, fid: number, tid: number, effect: number, shadeColor?: {col1?: number, col2?: number}}} action Action which triggered the call.
+	 * @param {{action: number, fid: number, tid: number, effect: number, shadeColor?: {col1?: number, col2?: number}, saveStartPosition: boolean}} action Action which triggered the call.
 	 * @returns {State} The GoToFither State.
 	 */
 	goToFighter(action) {
@@ -379,7 +379,8 @@ export class History {
 			action.fid,
 			action.tid,
 			action.effect,
-			action.shadeColor
+			action.shadeColor,
+			action.saveStartPosition
 		);
 	}
 
