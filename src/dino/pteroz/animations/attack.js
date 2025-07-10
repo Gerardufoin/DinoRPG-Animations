@@ -3,7 +3,8 @@
 export const attack = {
 	id: 'pteroz_attack',
 	callbacks: {
-		5: [['hit', 9]]
+		5: [['hit', 9]],
+		14: [['playAnim', 'fly']]
 	},
 	frames: [
 		{
