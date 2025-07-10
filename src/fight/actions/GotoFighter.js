@@ -45,8 +45,9 @@ export class GotoFighter extends State {
 	 * @param {number} tid The id of the targetted Fighter.
 	 * @param {number | null} effect The GotoFighter.Effect managing the movement type.
 	 * @param {{col1?: number, col2?: number} | null} shadeColor The color of the shade created for the Special effect.
+	 * @param {boolean} [saveStartPosition=true] If false, don't save the starting position of the Fighter.
 	 */
-	constructor(scene, endCall, fid, tid, effect = null, shadeColor = null) {
+	constructor(scene, endCall, fid, tid, effect = null, shadeColor = null, saveStartPosition = true) {
 		super(scene, endCall);
 		this._fighter = this._scene.getFighter(fid);
 		this._target = this._scene.getFighter(tid);
@@ -62,13 +63,17 @@ export class GotoFighter extends State {
 		};
 		this.addActor(this._fighter);
 		this.addActor(this._target);
+		this._saveStartPosition = saveStartPosition;
 	}
 
 	/**
 	 * Save the coordinates of the Fighter and setup the destination.
 	 */
 	init() {
-		this._fighter.saveCurrentCoords();
+		// Save current position if saveNewPosition is false (default behavior)
+		if (this._saveStartPosition) {
+			this._fighter.saveCurrentCoords();
+		}
 
 		let p = null;
 		switch (this._gotoEffect) {
