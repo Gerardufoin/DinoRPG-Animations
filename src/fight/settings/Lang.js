@@ -30,6 +30,17 @@ export const lang = {
 		copy_fight: 'Copy the fight into your clipboard',
 		copy_fight_done: 'Copied!'
 	},
-	de: {},
+	de: {
+		title: 'OPTIONEN',
+		fight_speed: 'Kampfgeschwindigkeit',
+		fight_display_speed: 'Zeige die Geschwindigkeitsoptionen im Bildschirm',
+		text_size: 'Dialoggröße',
+		auto_skip: 'Automatisches Überspringen der Dialoge',
+		auto_skip_disabled: 'Deaktiviert',
+		scale_size: 'Skaliere die Dinoz anhand ihrer LP (benötigt Neuladen)',
+		auto_pause: 'Pausiere den Kampf nach jeder Aktion',
+		show_hitbox: 'Zeige die Hitboxen',
+		copy_fight: 'Kopiere diesen Kampf in deine Zwischenablage',
+		copy_fight_done: 'Kopiert!'},
 	es: {}
 };
