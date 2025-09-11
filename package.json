@@ -1,5 +1,5 @@
 {
-	"name": "dinorpg_animations",
+	"name": "@eternaltwin/dinorpg_animations",
 	"version": "1.0.0",
 	"description": "Recreate DinoRPG multiple flash players using PixiJS",
 	"type": "module",
@@ -13,7 +13,17 @@
 		"pack": "node ./assets/packer.cjs"
 	},
 	"author": "Gerardufoin",
-	"license": "ISC",
+	"main": "src/index.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com:Gerardufoin/DinoRPG-Animations.git"
+	},
+	"licenses": [
+		{
+		"type": "AGPL-3.0-or-later",
+		"url": "https://spdx.org/licenses/AGPL-3.0-or-later.html"
+		}
+	],
 	"devDependencies": {
 		"eslint": "^8.49.0",
 		"eslint-config-prettier": "^9.0.0",
