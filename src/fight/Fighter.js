@@ -1639,6 +1639,7 @@ export class Fighter extends Phys {
 			case LifeEffect.Poison:
 			case LifeEffect.Gold:
 			case LifeEffect.Todo:
+			case LifeEffect.Object:
 				break;
 			case LifeEffect.Burn:
 				this.fxBurn(effect.amount ?? 5);
