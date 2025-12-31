@@ -26,11 +26,12 @@ export class Score extends Phys2D {
 	 * @param {number} value The value to display.
 	 * @param {boolean} hurt If true, the Score will be red, otherwise it will be green.
 	 * @param {number} fill The color of the Score to print. White (0xffffff) by default.
+	 * @param {number} scale The scaling factor for the font size. 2 by default.
 	 */
-	constructor(scene, x, y, value, hurt = true, fill = 0xffffff) {
+	constructor(scene, x, y, value, hurt = true, fill = 0xffffff, scale = 2) {
 		const txt = new Text(value, {
 			fontFamily: 'drpg-arial',
-			fontSize: Math.floor(14 * (1 + (Math.abs(value) / 100) * 2)),
+			fontSize: Math.floor(14 * (1 + (Math.abs(value) / 100) * scale)),
 			fontWeight: 'bold',
 			align: 'center',
 			fill,

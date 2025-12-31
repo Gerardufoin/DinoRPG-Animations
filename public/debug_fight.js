@@ -216,7 +216,8 @@ const fightVersion = [
 				fid: 1,
 				tid: 0,
 				damages: 10,
-				textColor: 0xffff00
+				textColor: 0xffff00,
+				textScaleFactor: 3
 			},
 			{
 				action: 'Return',
