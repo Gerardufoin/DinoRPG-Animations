@@ -122,7 +122,7 @@ const fightVersion = [
 				time: 1000,
 				center: true
 			},
-			{
+			/* {
 				action: 'Goto',
 				fid: 0,
 				tid: 2
@@ -166,7 +166,7 @@ const fightVersion = [
 			{
 				action: 'Return',
 				fid: 1,
-			},
+			}, */
 			/*{
 				action: 'Announce',
 				message: 'Big Mama',
@@ -205,16 +205,23 @@ const fightVersion = [
 					type: 'Detonate'
 				}
 			}*/
-			/*{
+			{
 				action: 'Damages',
 				fid: 1,
 				tid: 0,
 				damages: 10
 			},
 			{
+				action: 'Damages',
+				fid: 1,
+				tid: 0,
+				damages: 10,
+				textColor: 0xffff00
+			},
+			{
 				action: 'Return',
 				fid: 1
-			}*/
+			}
 			/*{
 				action: 'AttackCastle',
 				fid: 0,
