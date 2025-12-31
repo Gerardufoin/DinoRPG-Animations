@@ -324,6 +324,8 @@ A fighter attacks another fighter and deals a certain amount of damages.
 | damages  | Number \| Null                                   | The amount of damages dealt. If Null, the attack is dodged. If 0, the attack is guarded. |
 | lifeFx?  | {fx: LifeEffect, amount?: number, size?: number} | The life effect played on the fighter during the attack. See LifeEffect above.           |
 | effect?  | DamagesEffect                                    | The type of action the fighter will take before attacking.                               |
+| textColor?  | number                                        | Set the fill in color of the damage text. White (0xffffff) by default.                            |
+| textScaleFactor?  | number                                  | Set the scale factor the damage text. 2 by default.                               |
 
 | DamagesEffect    | Description                                                                                             |
 | ---------------- | ------------------------------------------------------------------------------------------------------- |
