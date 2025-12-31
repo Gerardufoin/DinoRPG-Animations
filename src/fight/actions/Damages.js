@@ -35,7 +35,7 @@ export class Damages extends State {
 	_damages;
 	/**
 	 * Type of effect to apply to the attack, based on LifeEffect.
-	 * @type {{fx: number, amount?: number, size?: number}}
+	 * @type {{fx: number, amount?: number, size?: number} | null}
 	 */
 	_lifeFx;
 	/**
@@ -43,6 +43,11 @@ export class Damages extends State {
 	 * @type {number}
 	 */
 	_effect;
+	/**
+	 * The color to fill the damage text with.
+	 * @type {number | null}
+	 */
+	_textColor;
 	/**
 	 * The current step of the attacker approach.
 	 * @type {number | null}
@@ -56,10 +61,11 @@ export class Damages extends State {
 	 * @param {number} fid The Fighter's id of the attacker.
 	 * @param {number} tid The Fighter's id of the target.
 	 * @param {number | null} damages The damages inflicted on the target.
-	 * @param {{fx: number, amount?: number, size?: number}} lifeFx The LifeEffect to apply on the target.
+	 * @param {{fx: number, amount?: number, size?: number} | null} lifeFx The LifeEffect to apply on the target.
 	 * @param {number} effect The DamagesEffect used to approach the target.
+	 * @param {number | null} textColor The color to fill the damage text with.
 	 */
-	constructor(scene, endCall, fid, tid, damages, lifeFx, effect = DamagesEffect.Normal) {
+	constructor(scene, endCall, fid, tid, damages, lifeFx = null, effect = DamagesEffect.Normal, textColor = null) {
 		super(scene, endCall);
 
 		this._attacker = this._scene.getFighter(fid);
@@ -73,6 +79,7 @@ export class Damages extends State {
 		this._damages = damages;
 		this._lifeFx = lifeFx;
 		this._effect = effect;
+		this._textColor = textColor;
 		this.addActor(this._attacker);
 		this.addActor(this._target);
 	}
@@ -189,7 +196,7 @@ export class Damages extends State {
 	 */
 	hit(lock = 5, tlock = undefined) {
 		if (this._damages !== null) {
-			this._target.hit(this._attacker, this._damages, this._lifeFx);
+			this._target.hit(this._attacker, this._damages, this._lifeFx, this._textColor);
 		}
 		this._attacker.setLockTimer(lock);
 		this._target.setLockTimer(tlock !== undefined ? tlock : lock);

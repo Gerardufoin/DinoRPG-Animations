@@ -25,14 +25,15 @@ export class Score extends Phys2D {
 	 * @param {number} y The initial Y coordinate.
 	 * @param {number} value The value to display.
 	 * @param {boolean} hurt If true, the Score will be red, otherwise it will be green.
+	 * @param {number} fill The color of the Score to print. White (0xffffff) by default.
 	 */
-	constructor(scene, x, y, value, hurt = true) {
+	constructor(scene, x, y, value, hurt = true, fill = 0xffffff) {
 		const txt = new Text(value, {
 			fontFamily: 'drpg-arial',
 			fontSize: Math.floor(14 * (1 + (Math.abs(value) / 100) * 2)),
 			fontWeight: 'bold',
 			align: 'center',
-			fill: 0xffffff,
+			fill,
 			stroke: hurt ? 0xaa0000 : 0x00aa00,
 			strokeThickness: 2
 		});
