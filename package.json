@@ -1,6 +1,6 @@
 {
 	"name": "@eternaltwin/dinorpg_animations",
-	"version": "1.0.1",
+	"version": "1.0.3",
 	"description": "Recreate DinoRPG multiple flash players using PixiJS",
 	"type": "module",
 	"exports": {
@@ -23,8 +23,8 @@
 	},
 	"licenses": [
 		{
-		"type": "AGPL-3.0-or-later",
-		"url": "https://spdx.org/licenses/AGPL-3.0-or-later.html"
+			"type": "AGPL-3.0-or-later",
+			"url": "https://spdx.org/licenses/AGPL-3.0-or-later.html"
 		}
 	],
 	"devDependencies": {

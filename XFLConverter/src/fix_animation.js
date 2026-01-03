@@ -61,20 +61,23 @@ function removeKey(anim, key) {
 	return anim;
 }
 
-function followProperty(t, t_prev, obj_cur, obj_prev, prop) {
+function followProperty(t, t_prev, obj_cur, obj_prev, prop, deflt = 0, damp = 1) {
 	if (obj_cur[prop] == undefined && obj_prev[prop] == undefined) return;
-	t[prop] = Math.round(((t_prev[prop] ?? 0) + (obj_cur[prop] ?? 0) - (obj_prev[prop] ?? 0)) * 1000) / 1000;
+	let val = Math.round(((t_prev[prop] ?? deflt) + ((obj_cur[prop] ?? deflt) - (obj_prev[prop] ?? deflt)) / damp) * 1000) / 1000;
+	if (t[prop] !== undefined || val !== deflt) {
+		t[prop] = val;
+	}
 }
 
 // Make an animation part follow the movement of another part.
-function followKey(anim, target, key, start = 1, end = undefined) {
+function followKey(anim, target, key, start = 1, end = undefined, rot_damp = 1) {
 	for (let i = start; i <= (end ?? anim.length - 1); ++i) {
 		followProperty(anim[i][target], anim[i - 1][target], anim[i][key], anim[i - 1][key], 'tx');
 		followProperty(anim[i][target], anim[i - 1][target], anim[i][key], anim[i - 1][key], 'ty');
-		followProperty(anim[i][target], anim[i - 1][target], anim[i][key], anim[i - 1][key], 'a');
-		followProperty(anim[i][target], anim[i - 1][target], anim[i][key], anim[i - 1][key], 'b');
-		followProperty(anim[i][target], anim[i - 1][target], anim[i][key], anim[i - 1][key], 'c');
-		followProperty(anim[i][target], anim[i - 1][target], anim[i][key], anim[i - 1][key], 'd');
+		followProperty(anim[i][target], anim[i - 1][target], anim[i][key], anim[i - 1][key], 'a', 1, rot_damp);
+		followProperty(anim[i][target], anim[i - 1][target], anim[i][key], anim[i - 1][key], 'b', 0, rot_damp);
+		followProperty(anim[i][target], anim[i - 1][target], anim[i][key], anim[i - 1][key], 'c', 0, rot_damp);
+		followProperty(anim[i][target], anim[i - 1][target], anim[i][key], anim[i - 1][key], 'd', 1, rot_damp);
 	}
 	return anim;
 }
