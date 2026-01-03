@@ -99,7 +99,9 @@ export const stand = {
 			special: {
 				tx: -14.8,
 				ty: -0.95,
-				l: 9
+				l: 9,
+				b: -0.001,
+				c: 0.001
 			},
 			l_eye: {
 				tx: -6.25,
@@ -189,7 +191,9 @@ export const stand = {
 			special: {
 				tx: -14.8,
 				ty: -0.95,
-				l: 9
+				l: 9,
+				b: -0.002,
+				c: 0.002
 			},
 			l_eye: {
 				tx: -6.25,
@@ -281,7 +285,9 @@ export const stand = {
 			special: {
 				tx: -14.8,
 				ty: -0.95,
-				l: 9
+				l: 9,
+				b: -0.003,
+				c: 0.003
 			},
 			l_eye: {
 				tx: -6.25,
@@ -371,9 +377,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.75,
+				ty: -1,
+				l: 9,
+				b: -0.005,
+				c: 0.005
 			},
 			l_eye: {
 				tx: -6.25,
@@ -465,9 +473,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.75,
+				ty: -1,
+				l: 9,
+				b: -0.006,
+				c: 0.006
 			},
 			l_eye: {
 				tx: -6.2,
@@ -559,9 +569,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.75,
+				ty: -1,
+				l: 9,
+				b: -0.007,
+				c: 0.007
 			},
 			l_eye: {
 				tx: -6.2,
@@ -653,9 +665,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.75,
+				ty: -1,
+				l: 9,
+				b: -0.009,
+				c: 0.009
 			},
 			l_eye: {
 				tx: -6.2,
@@ -747,9 +761,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.75,
+				ty: -1,
+				l: 9,
+				b: -0.01,
+				c: 0.01
 			},
 			l_eye: {
 				tx: -6.2,
@@ -841,9 +857,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
+				tx: -14.75,
 				ty: -0.95,
-				l: 9
+				l: 9,
+				b: -0.011,
+				c: 0.011
 			},
 			l_eye: {
 				tx: -6.2,
@@ -935,9 +953,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.7,
+				ty: -1,
+				l: 9,
+				b: -0.013,
+				c: 0.013
 			},
 			l_eye: {
 				tx: -6.2,
@@ -1029,9 +1049,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.7,
+				ty: -1,
+				l: 9,
+				b: -0.014,
+				c: 0.014
 			},
 			l_eye: {
 				tx: -6.2,
@@ -1123,9 +1145,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.7,
+				ty: -1,
+				l: 9,
+				b: -0.015,
+				c: 0.015
 			},
 			l_eye: {
 				tx: -6.2,
@@ -1217,9 +1241,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.7,
+				ty: -1,
+				l: 9,
+				b: -0.017,
+				c: 0.017
 			},
 			l_eye: {
 				tx: -6.2,
@@ -1311,9 +1337,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.7,
+				ty: -1,
+				l: 9,
+				b: -0.018,
+				c: 0.018
 			},
 			l_eye: {
 				tx: -6.2,
@@ -1405,9 +1433,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.7,
+				ty: -1,
+				l: 9,
+				b: -0.019,
+				c: 0.019
 			},
 			l_eye: {
 				tx: -6.1,
@@ -1499,9 +1529,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.65,
+				ty: -1.1,
+				l: 9,
+				b: -0.021,
+				c: 0.021
 			},
 			l_eye: {
 				tx: -6.15,
@@ -1593,9 +1625,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.65,
+				ty: -1.05,
+				l: 9,
+				b: -0.022,
+				c: 0.022
 			},
 			l_eye: {
 				tx: -6.15,
@@ -1687,9 +1721,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.65,
+				ty: -1.05,
+				l: 9,
+				b: -0.023,
+				c: 0.023
 			},
 			l_eye: {
 				tx: -6.15,
@@ -1781,9 +1817,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.65,
+				ty: -1.1,
+				l: 9,
+				b: -0.025,
+				c: 0.025
 			},
 			l_eye: {
 				tx: -6.15,
@@ -1873,9 +1911,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.6,
+				ty: -1.1,
+				l: 9,
+				b: -0.023,
+				c: 0.023
 			},
 			l_eye: {
 				tx: -6.1,
@@ -1967,9 +2007,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.6,
+				ty: -1.1,
+				l: 9,
+				b: -0.021,
+				c: 0.021
 			},
 			l_eye: {
 				tx: -6.15,
@@ -2061,9 +2103,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.7,
+				ty: -1.05,
+				l: 9,
+				b: -0.019,
+				c: 0.019
 			},
 			l_eye: {
 				tx: -6.15,
@@ -2155,9 +2199,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.65,
+				ty: -1.05,
+				l: 9,
+				b: -0.018,
+				c: 0.018
 			},
 			l_eye: {
 				tx: -6.15,
@@ -2249,9 +2295,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.6,
+				ty: -1.05,
+				l: 9,
+				b: -0.016,
+				c: 0.016
 			},
 			l_eye: {
 				tx: -6.15,
@@ -2343,9 +2391,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.65,
+				ty: -1.05,
+				l: 9,
+				b: -0.014,
+				c: 0.014
 			},
 			l_eye: {
 				tx: -6.15,
@@ -2437,9 +2487,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
+				tx: -14.65,
 				ty: -0.95,
-				l: 9
+				l: 9,
+				b: -0.012,
+				c: 0.012
 			},
 			l_eye: {
 				tx: -6.15,
@@ -2531,9 +2583,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
+				tx: -14.7,
 				ty: -0.95,
-				l: 9
+				l: 9,
+				b: -0.01,
+				c: 0.01
 			},
 			l_eye: {
 				tx: -6.15,
@@ -2625,9 +2679,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
+				tx: -14.75,
 				ty: -0.95,
-				l: 9
+				l: 9,
+				b: -0.009,
+				c: 0.009
 			},
 			l_eye: {
 				tx: -6.15,
@@ -2719,9 +2775,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
+				tx: -14.7,
 				ty: -0.95,
-				l: 9
+				l: 9,
+				b: -0.007,
+				c: 0.007
 			},
 			l_eye: {
 				tx: -6.2,
@@ -2811,9 +2869,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
+				tx: -14.65,
 				ty: -0.95,
-				l: 9
+				l: 9,
+				b: -0.005,
+				c: 0.005
 			},
 			l_eye: {
 				tx: -6.25,
@@ -2901,9 +2961,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
-				ty: -0.95,
-				l: 9
+				tx: -14.7,
+				ty: -0.9,
+				l: 9,
+				b: -0.003,
+				c: 0.003
 			},
 			l_eye: {
 				tx: -6.15,
@@ -2991,9 +3053,11 @@ export const stand = {
 				l: 10
 			},
 			special: {
-				tx: -14.8,
+				tx: -14.7,
 				ty: -0.95,
-				l: 9
+				l: 9,
+				b: -0.001,
+				c: 0.001
 			},
 			l_eye: {
 				tx: -6.15,

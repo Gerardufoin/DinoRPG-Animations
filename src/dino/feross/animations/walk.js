@@ -99,7 +99,7 @@ export const walk = {
 			},
 			special: {
 				tx: -14.75,
-				ty: -1.1,
+				ty: -1.2,
 				l: 8
 			},
 			l_eye: {
@@ -177,7 +177,7 @@ export const walk = {
 			},
 			special: {
 				tx: -14.75,
-				ty: -1.1,
+				ty: -1.25,
 				l: 8
 			},
 			l_eye: {
@@ -255,7 +255,7 @@ export const walk = {
 			},
 			special: {
 				tx: -14.75,
-				ty: -1.1,
+				ty: -1.35,
 				l: 8
 			},
 			l_eye: {
@@ -333,7 +333,7 @@ export const walk = {
 			},
 			special: {
 				tx: -14.75,
-				ty: -1.1,
+				ty: -1.45,
 				l: 8
 			},
 			l_eye: {
@@ -414,8 +414,8 @@ export const walk = {
 				l: 9
 			},
 			special: {
-				tx: -14.75,
-				ty: -1.1,
+				tx: -14.7,
+				ty: -1.35,
 				l: 8
 			},
 			l_eye: {
@@ -496,8 +496,8 @@ export const walk = {
 				l: 9
 			},
 			special: {
-				tx: -14.75,
-				ty: -1.1,
+				tx: -14.6,
+				ty: -1.25,
 				l: 8
 			},
 			l_eye: {
@@ -578,8 +578,8 @@ export const walk = {
 				l: 9
 			},
 			special: {
-				tx: -14.75,
-				ty: -1.1,
+				tx: -14.55,
+				ty: -1.2,
 				l: 8
 			},
 			l_eye: {
@@ -660,7 +660,7 @@ export const walk = {
 				l: 9
 			},
 			special: {
-				tx: -14.75,
+				tx: -14.5,
 				ty: -1.1,
 				l: 8
 			},
@@ -742,7 +742,7 @@ export const walk = {
 				l: 9
 			},
 			special: {
-				tx: -14.75,
+				tx: -14.55,
 				ty: -1.1,
 				l: 8
 			},
@@ -824,7 +824,7 @@ export const walk = {
 				l: 9
 			},
 			special: {
-				tx: -14.75,
+				tx: -14.6,
 				ty: -1.1,
 				l: 8
 			},
@@ -906,7 +906,7 @@ export const walk = {
 				l: 9
 			},
 			special: {
-				tx: -14.75,
+				tx: -14.7,
 				ty: -1.1,
 				l: 8
 			},
