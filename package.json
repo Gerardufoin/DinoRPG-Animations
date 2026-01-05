@@ -1,6 +1,6 @@
 {
 	"name": "@eternaltwin/dinorpg_animations",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Recreate DinoRPG multiple flash players using PixiJS",
 	"type": "module",
 	"exports": {
