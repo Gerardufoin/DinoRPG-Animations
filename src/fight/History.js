@@ -317,7 +317,7 @@ export class History {
 
 	/**
 	 * A Fighter attacks another Fighter.
-	 * @param {{action: number, fid: number, tid: number, damages: number | null, lifeFx?: {fx: number, amount?: number, size?: number}, effect?: number}} action Action which triggered the call.
+	 * @param {{action: number, fid: number, tid: number, damages: number | null, lifeFx?: {fx: number, amount?: number, size?: number}, effect?: number, textColor?: number, textScaleFactor?: number}} action Action which triggered the call.
 	 * @returns {State} The Damages State.
 	 */
 	damages(action) {
@@ -330,7 +330,9 @@ export class History {
 			action.tid,
 			action.damages,
 			action.lifeFx,
-			action.effect
+			action.effect,
+			action.textColor,
+			action.textScaleFactor
 		);
 	}
 
