@@ -1170,9 +1170,11 @@ export class Fighter extends Phys {
 	 * @param {Fighter} attacker The Fighter attacking this one.
 	 * @param {number} damages The damages inflicted. If 0, the guard animation is played.
 	 * @param {{fx: number, amount?: number, size?: number}} lifeFx The life gain/loss effect to play, based on LifeEffect.
+	 * @param {number | null} color The color of the Score to print.
+	 * @param {number | null} size The size of the damages to print.
 	 * @returns {void}
 	 */
-	hit(attacker, damages, lifeFx) {
+	hit(attacker, damages, lifeFx, color, size) {
 		if (damages == 0) {
 			this.playAnim('guard');
 			return;
@@ -1183,7 +1185,7 @@ export class Fighter extends Phys {
 			this._vx = Math.cos(angle) * sp;
 			this._vy = Math.sin(angle) * sp;
 		}
-		this.damages(damages, 6, lifeFx);
+		this.damages(damages, 6, lifeFx, color, size);
 	}
 
 	/**
@@ -1191,8 +1193,10 @@ export class Fighter extends Phys {
 	 * @param {number} damages The amount of damages taken.
 	 * @param {number} stunDuration The stun duration following the damage. 50 by default.
 	 * @param {{fx: number, amount?: number, size?: number} | null} lifeFx The LifeEffect effect to play while receiving the damages, or null if none.
+	 * @param {number | null} color The color of the damages to print.
+	 * @param {number | null} size The size of the damages to print.
 	 */
-	damages(damages = 0, stunDuration = 50, lifeFx = null) {
+	damages(damages = 0, stunDuration = 50, lifeFx = null, color, size) {
 		this.playAnim('hit');
 		this._life = Math.max(0, this._life - damages);
 		this._scene.settings.onLifeChange(this.id, this._life);
@@ -1201,7 +1205,7 @@ export class Fighter extends Phys {
 			this._slot.fxDamage();
 		}
 
-		this.showDamages(damages);
+		this.showDamages(damages, true, color, size);
 		this._lockTimer = stunDuration;
 		this.setShake(30);
 
@@ -1233,15 +1237,19 @@ export class Fighter extends Phys {
 	 * Display the damage received above the Fighter by spawning a new Score object.
 	 * @param {number} damages The number to display.
 	 * @param {boolean} hurt If true, the number is red, otherwise it is green. True by default.
+	 * @param {number} fill The color of the Score to print. White (0xffffff) by default.
+	 * @param {number} scale The scaling factor for the font size. 2 by default.
 	 */
-	showDamages(damages, hurt = true) {
+	showDamages(damages, hurt = true, fill = 0xffffff, scale = 2) {
 		if (damages <= 0) return;
 		const dmg = new Score(
 			this._scene,
 			this._x,
 			this._scene.getY(this._y) + (this._z - this._height) * 0.5,
 			damages,
-			hurt
+			hurt,
+			fill ?? 0xffffff,
+			scale ?? 2
 		);
 		this._scene.dm.addSprite(dmg, Layers.Scene.INTER);
 	}

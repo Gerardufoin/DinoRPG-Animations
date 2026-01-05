@@ -17,6 +17,10 @@ The following pages allow to test the result for the different parts of the proj
 
 A comparison of the Dinoz' display with their Flash equivalent can be found [here](https://gerardufoin.github.io/DinoRPG-Animations/public/compare.html), but do note that you will need a plugin like [Ruffle](https://ruffle.rs/) to be able to run the Flash files.
 
+## Development
+
+To run the project locally, run `npm start`.
+
 ## Eternal-Twin
 
 If you are interested in the original game, you can found a recreation of it using this project over at Eternal-Twin: [Eternal Dino-RPG](https://dinorpg.eternaltwin.org/).
