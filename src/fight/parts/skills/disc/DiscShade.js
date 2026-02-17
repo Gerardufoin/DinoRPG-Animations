@@ -25,5 +25,7 @@ export class DiscShade extends Phys2D {
 		this._x = x;
 		this._y = y;
 		this._fadeoutTimer = this._fadeLimit = 7;
+
+		this.updatePos();
 	}
 }
