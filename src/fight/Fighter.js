@@ -1193,10 +1193,10 @@ export class Fighter extends Phys {
 	 * @param {number} damages The amount of damages taken.
 	 * @param {number} stunDuration The stun duration following the damage. 50 by default.
 	 * @param {{fx: number, amount?: number, size?: number} | null} lifeFx The LifeEffect effect to play while receiving the damages, or null if none.
-	 * @param {number | null} color The color of the damages to print.
-	 * @param {number | null} size The size of the damages to print.
+	 * @param {number | undefined} color The color of the damages to print.
+	 * @param {number | undefined} size The size of the damages to print.
 	 */
-	damages(damages = 0, stunDuration = 50, lifeFx = null, color, size) {
+	damages(damages = 0, stunDuration = 50, lifeFx = null, color = undefined, size = undefined) {
 		this.playAnim('hit');
 		this._life = Math.max(0, this._life - damages);
 		this._scene.settings.onLifeChange(this.id, this._life);
