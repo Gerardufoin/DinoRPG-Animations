@@ -317,15 +317,15 @@ A fighter attacks another fighter and deals a certain amount of damages.
 
 #### Properties
 
-| Property | Type                                             | Description                                                                              |
-| -------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| fid      | Number                                           | The ID of the attacking fighter.                                                         |
-| tid      | Number                                           | The ID of the targeted fighter.                                                          |
-| damages  | Number \| Null                                   | The amount of damages dealt. If Null, the attack is dodged. If 0, the attack is guarded. |
-| lifeFx?  | {fx: LifeEffect, amount?: number, size?: number} | The life effect played on the fighter during the attack. See LifeEffect above.           |
-| effect?  | DamagesEffect                                    | The type of action the fighter will take before attacking.                               |
-| textColor?  | number                                        | Set the fill in color of the damage text. White (0xffffff) by default.                            |
-| textScaleFactor?  | number                                  | Set the scale factor the damage text. 2 by default.                               |
+| Property         | Type                                             | Description                                                                              |
+| ---------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| fid              | Number                                           | The ID of the attacking fighter.                                                         |
+| tid              | Number                                           | The ID of the targeted fighter.                                                          |
+| damages          | Number \| Null                                   | The amount of damages dealt. If Null, the attack is dodged. If 0, the attack is guarded. |
+| lifeFx?          | {fx: LifeEffect, amount?: number, size?: number} | The life effect played on the fighter during the attack. See LifeEffect above.           |
+| effect?          | DamagesEffect                                    | The type of action the fighter will take before attacking.                               |
+| textColor?       | number                                           | Set the fill in color of the damage text. White (0xffffff) by default.                   |
+| textScaleFactor? | number                                           | Set the scale factor the damage text. 2 by default.                                      |
 
 | DamagesEffect    | Description                                                                                             |
 | ---------------- | ------------------------------------------------------------------------------------------------------- |
@@ -333,7 +333,7 @@ A fighter attacks another fighter and deals a certain amount of damages.
 | Back (1)         | The attacker jumps behind the target and hits it.                                                       |
 | Counter (2)      | If the attacks is the result of a counter. No visual.                                                   |
 | Drop (3)         | The attacker drops on the target.                                                                       |
-| Eject (4)        | Not sure but sounds amazing.                                                                            |
+| Eject (4)        | Attack while playing the 'big' animation. Toufufu only.                                                 |
 | FlyCancel (5)    | No visual.                                                                                              |
 | IntangCancel (6) | No visual.                                                                                              |
 | IntangBreak (7)  | No visual.                                                                                              |
