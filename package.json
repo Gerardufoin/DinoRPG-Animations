@@ -10,7 +10,7 @@
 		},
 		"./package.json": "./package.json",
 		"./public/*": "./public/*",
-  		"./assets/*": "./assets/*"
+		"./assets/*": "./assets/*"
 	},
 	"scripts": {
 		"build": "webpack",
@@ -42,10 +42,11 @@
 		"webpack-dev-server": "^4.15.1"
 	},
 	"dependencies": {
+		"@pixi/canvas-renderer": "^7.4.3",
 		"@pixi/filter-drop-shadow": "^5.2.0",
 		"@pixi/filter-glow": "^5.2.1",
 		"@pixi/picture": "^4.0.1",
 		"lz-string": "^1.5.0",
-		"pixi.js": "^7.3.0"
+		"pixi.js": "^7.4.3"
 	}
 }
