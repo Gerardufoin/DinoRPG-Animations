@@ -1,6 +1,6 @@
 {
 	"name": "@eternaltwin/dinorpg_animations",
-	"version": "1.0.6",
+	"version": "1.0.8",
 	"description": "Recreate DinoRPG multiple flash players using PixiJS",
 	"type": "module",
 	"exports": {
@@ -42,10 +42,6 @@
 		"webpack-dev-server": "^4.15.1"
 	},
 	"dependencies": {
-		"@pixi/canvas-display": "^7.4.3",
-		"@pixi/canvas-graphics": "^7.4.3",
-		"@pixi/canvas-renderer": "^7.4.3",
-		"@pixi/canvas-sprite": "^7.4.3",
 		"@pixi/filter-drop-shadow": "^5.2.0",
 		"@pixi/filter-glow": "^5.2.1",
 		"@pixi/picture": "^4.0.1",
