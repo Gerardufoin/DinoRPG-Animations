@@ -477,7 +477,7 @@ export class Fighter extends Phys {
 
 	/**
 	 * Creates a new Fighter based on the given Fighter's information.
-	 * @param {{props: number[], dino: boolean, life: number, maxLife?: number, name: string, side: boolean, scale: number, fid: number, gfx: string, entrance?: number, anim?: string, x?: number, y?: number}} fInfos The Fighter's informations.
+	 * @param {{props: number[], dino: boolean, life: number, maxLife?: number, name: string, side: boolean, scale: number, fid: number, gfx: string, entrance?: number, anim?: string, x?: number, y?: number, hideEnergy?: boolean}} fInfos The Fighter's informations.
 	 * @param {IScene} scene The Scene where the Fighter is added.
 	 */
 	constructor(fInfos, scene) {
@@ -524,9 +524,10 @@ export class Fighter extends Phys {
 				this._energy,
 				this._maxEnergy,
 				fInfos.side,
-				this._scene.tm
+				this._scene.tm,
+				fInfos.hideEnergy
 			);
-			this._scene.addSlot(this._slot, fInfos.side);
+			this._scene.addSlot(this._slot, fInfos.side, !fInfos.hideEnergy);
 
 			// Creates the big version of the dino for the slot and the announces.
 			const bigDino = new dino({

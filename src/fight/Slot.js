@@ -8,7 +8,7 @@
 
 /**
  * Visual elements for the energy display.
- * @typedef {{bar: Container, hit: Container, max: Container, bg: Container}} EnergyBar
+ * @typedef {{bar: Container, hit: Container, max: Container, bgBar: Container, bg: Container, border: Container}} EnergyBar
  */
 
 import { ColorMatrixFilter, Container, Filter, Rectangle, SpriteMaskFilter, Texture } from 'pixi.js';
@@ -107,9 +107,10 @@ export class Slot extends Container {
 	 * @param {number | null} maxEnergy The maximum amount of energy.
 	 * @param {boolean} side The side of the slot. True for left, false for right.
 	 * @param {TweenManager} tm The Tween Manager of the Scene.
+	 * @param {boolean} hideEnergy Hide the energy bar if true. False by default.
 	 * @param {Asset} portrait The portrait of the slot. If undefined, the slot will be hidden until a portrait is set using setPortrait.
 	 */
-	constructor(life, maxLife, energy, maxEnergy, side, tm, portrait = undefined) {
+	constructor(life, maxLife, energy, maxEnergy, side, tm, hideEnergy = false, portrait = undefined) {
 		super();
 		this._tweenManager = tm;
 		this._side = side;
@@ -128,7 +129,7 @@ export class Slot extends Container {
 		this.setLife(life / maxLife);
 		this._lifeBar.hit.scale.y = this._lifeBar.bar.scale.y;
 
-		if (energy !== null) {
+		if (energy !== null && !hideEnergy) {
 			this.setMaxEnergy(maxEnergy);
 			this.setEnergy(energy);
 		} else {
@@ -205,7 +206,9 @@ export class Slot extends Container {
 		this._energyBar.bar.visible = false;
 		this._energyBar.max.visible = false;
 		this._energyBar.hit.visible = false;
+		this._energyBar.bgBar.visible = false;
 		this._energyBar.bg.visible = false;
+		this._energyBar.border.visible = false;
 	}
 
 	/**
@@ -228,6 +231,8 @@ export class Slot extends Container {
 	 */
 	createDisplay() {
 		this.addChild(new Asset(ref.scene.slot_bg));
+		const energyBg = new Asset(ref.scene.slot_energy_bg);
+		this.addChild(energyBg);
 
 		this._lifeBar = {
 			bar: this.createBarDisplay(ref.scene.slot_bar),
@@ -250,17 +255,19 @@ export class Slot extends Container {
 			bar: this.createBarDisplay(ref.scene.slot_energy),
 			hit: this.createBarDisplay(ref.scene.slot_hit),
 			max: new Asset(ref.scene.slot_max_energy),
-			bg: new Asset(ref.scene.slot_bar)
+			bgBar: new Asset(ref.scene.slot_bar),
+			bg: energyBg,
+			border: new Asset(ref.scene.slot_energy_border)
 		};
-		this._energyBar.bg.x += 47.4;
-		this._energyBar.bg.y += 34;
+		this._energyBar.bgBar.x += 47.4;
+		this._energyBar.bgBar.y += 34;
 		if (!Slot.EnergyBarColorFilter) {
 			Slot.EnergyBarColorFilter = PixiHelper.colorOffsetFilter(10, 53, 78, 0.03, 0.03, 0.03);
 		}
-		this._energyBar.bg.filters = [Slot.EnergyBarColorFilter];
-		this.addChild(this._energyBar.bg);
+		this._energyBar.bgBar.filters = [Slot.EnergyBarColorFilter];
+		this.addChild(this._energyBar.bgBar);
 
-		this.addChild(new Asset(ref.scene.slot_energy_border));
+		this.addChild(this._energyBar.border);
 
 		this._energyBar.max.x += 44.9;
 		this._energyBar.max.y += 2;

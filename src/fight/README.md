@@ -170,21 +170,22 @@ Adds a fighter to the scene.
 
 ##### FighterDetails
 
-| Property  | Type              | Description                                                                                                          |
-| --------- | ----------------- | -------------------------------------------------------------------------------------------------------------------- |
-| props     | FighterProperty[] | A list of the fighter properties. See below for the possible values.                                                 |
-| dino      | Boolean           | True if the fighter a dino, false if it is a monster.                                                                |
-| life      | Number            | Life of the fighter.                                                                                                 |
-| maxLife?  | Number            | Maximum life of the fighter. Default to "life" if not given.                                                         |
-| name      | String            | Name of the fighter which will be displayed on entry.                                                                |
-| side      | Boolean           | Side of the fighter. True for left side, false for right side.                                                       |
-| scale?    | Number            | Scale of the fighter. 1 by default.                                                                                  |
-| fid       | Number            | ID of the fighter. Used for the subsequent actions.                                                                  |
-| gfx       | String            | Visual description of the fighter. See SDino and SMonster for more information.                                      |
-| entrance? | EntranceEffect    | The way the fighter enters the Scene. See table below for values. If undefined, the fighter does a simple drop down. |
-| anim?     | String            | Desired animation for the "Anim" entrance effect.                                                                    |
-| x?        | Number            | X position of the fighter. Randomly generated if empty.                                                              |
-| y?        | Number            | Y position of the fighter. Randomly generated if empty.                                                              |
+| Property    | Type              | Description                                                                                                          |
+| ----------- | ----------------- | -------------------------------------------------------------------------------------------------------------------- |
+| props       | FighterProperty[] | A list of the fighter properties. See below for the possible values.                                                 |
+| dino        | Boolean           | True if the fighter a dino, false if it is a monster.                                                                |
+| life        | Number            | Life of the fighter.                                                                                                 |
+| maxLife?    | Number            | Maximum life of the fighter. Default to "life" if not given.                                                         |
+| name        | String            | Name of the fighter which will be displayed on entry.                                                                |
+| side        | Boolean           | Side of the fighter. True for left side, false for right side.                                                       |
+| scale?      | Number            | Scale of the fighter. 1 by default.                                                                                  |
+| fid         | Number            | ID of the fighter. Used for the subsequent actions.                                                                  |
+| gfx         | String            | Visual description of the fighter. See SDino and SMonster for more information.                                      |
+| entrance?   | EntranceEffect    | The way the fighter enters the Scene. See table below for values. If undefined, the fighter does a simple drop down. |
+| anim?       | String            | Desired animation for the "Anim" entrance effect.                                                                    |
+| x?          | Number            | X position of the fighter. Randomly generated if empty.                                                              |
+| y?          | Number            | Y position of the fighter. Randomly generated if empty.                                                              |
+| hideEnergy? | Boolean           | If true, hide the energy bar of the fighter. False by default.                                                       |
 
 | FighterProperty | Description                                              |
 | --------------- | -------------------------------------------------------- |
@@ -515,16 +516,17 @@ Adds a castle to the scene, with the given customization.
 
 ##### CastleDetails
 
-| Property  | Type    | Description                                                               |
-| --------- | ------- | ------------------------------------------------------------------------- |
-| life      | Number  | Current life of the castle.                                               |
-| maxLife   | Number  | Maximum life of the castle.                                               |
-| enclos    | Boolean | If true, adds a pen inside the castle.                                    |
-| ground    | Number  | Adds pounds in frond of the castle. 1-3 changes the color.                |
-| repair    | Number  | Adds a repairman inside the castle. 1-3 changes the helmet and the speed. |
-| armor     | Number  | The armor of the castle (1-3). Third one is not implemented by MT.        |
-| color     | Number  | Changes the color of the castle (1-2).                                    |
-| invisible | Boolean | If true, the castle is half transparent.                                  |
+| Property    | Type    | Description                                                               |
+| ----------- | ------- | ------------------------------------------------------------------------- |
+| life        | Number  | Current life of the castle.                                               |
+| maxLife     | Number  | Maximum life of the castle.                                               |
+| enclos      | Boolean | If true, adds a pen inside the castle.                                    |
+| ground      | Number  | Adds pounds in frond of the castle. 1-3 changes the color.                |
+| repair      | Number  | Adds a repairman inside the castle. 1-3 changes the helmet and the speed. |
+| armor       | Number  | The armor of the castle (1-3). Third one is not implemented by MT.        |
+| color       | Number  | Changes the color of the castle (1-2).                                    |
+| invisible   | Boolean | If true, the castle is half transparent.                                  |
+| hideEnergy? | Boolean | If true, hide the energy bar of the castle. False by default.             |
 
 ### TimeLimit (15)
 
