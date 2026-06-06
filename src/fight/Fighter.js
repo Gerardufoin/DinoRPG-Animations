@@ -666,7 +666,9 @@ export class Fighter extends Phys {
 				if (this._focus == null && this._lockTimer <= 0) {
 					this.updateWait(timer);
 				}
-				this.checkBounds(timer);
+				if (!this._tweenMove) {
+					this.checkBounds(timer);
+				}
 				break;
 			case Fighter.Mode.Anim:
 				if (this._animator.hasAnimEnded) {
