@@ -23,7 +23,7 @@ To run the project locally, run `npm start`.
 
 ## Eternal-Twin
 
-If you are interested in the original game, you can found a recreation of it using this project over at Eternal-Twin: [Eternal Dino-RPG](https://dinorpg.eternaltwin.org/).
+If you are interested in the original game, you can found a recreation of it using this project over at Eternal-Twin: [DinoRPG](https://dinorpg.eternaltwin.org/).
 
 ## License
 
