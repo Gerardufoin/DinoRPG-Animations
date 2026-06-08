@@ -23,7 +23,8 @@ import { Smoke } from './parts/castle/Smoke.js';
  * 		armor: number,
  * 		repair: number,
  * 		color: number,
- * 		invisible: boolean
+ * 		invisible: boolean,
+ * 		hideEnergy?: boolean
  * 	}} CastleDetails
  */
 
@@ -177,8 +178,8 @@ export class Castle {
 		const portrait = new Asset(ref.castle.wall);
 		portrait.x = -25;
 		portrait.scale.set(0.4);
-		this._slot = new Slot(this._life, this._maxLife, 100, 100, false, this._scene.tm, portrait);
-		this._scene.addSlot(this._slot, false);
+		this._slot = new Slot(this._life, this._maxLife, 100, 100, false, this._scene.tm, infos.hideEnergy, portrait);
+		this._scene.addSlot(this._slot, false, !infos.hideEnergy);
 		// Call incLife to set the Castle skin.
 		this.incLife(0);
 	}

@@ -231,10 +231,11 @@ export class IScene extends Container {
 	 * Add a created Slot to the display.
 	 * @param {Container} slot The slot to add to a column.
 	 * @param {boolean} side The side on which to add the slot.
+	 * @param {boolean} hasEnergy If the slot has to account for the energy bar.
 	 */
-	addSlot(slot, side) {
+	addSlot(slot, side, hasEnergy = true) {
 		const idx = side ? 0 : 1;
-		slot.x = side ? 3 : -10;
+		slot.x = side ? 3 : hasEnergy ? -10 : -2;
 		slot.y = 3 + 40 * this._slots[idx].children.length;
 		this._slots[idx].addChild(slot);
 	}
