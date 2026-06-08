@@ -497,7 +497,7 @@ export class Fighter extends Phys {
 		this._props = fInfos.props;
 		this._life = fInfos.life;
 		this._maxLife = fInfos.maxLife ?? fInfos.life;
-		const scale = !this.isDino || this._scene.settings.scaleDinoz ? fInfos.scale ?? 1 : 1;
+		const scale = !this.isDino || this._scene.settings.scaleDinoz ? (fInfos.scale ?? 1) : 1;
 		this._size = Math.pow(scale, 0.65);
 
 		this._depthManager = new DepthManager(Object.keys(Layers.Fighter).length);
@@ -666,9 +666,7 @@ export class Fighter extends Phys {
 				if (this._focus == null && this._lockTimer <= 0) {
 					this.updateWait(timer);
 				}
-				if (!this._tweenMove) {
-					this.checkBounds(timer);
-				}
+				this.checkBounds(timer);
 				break;
 			case Fighter.Mode.Anim:
 				if (this._animator.hasAnimEnded) {
@@ -864,7 +862,8 @@ export class Fighter extends Phys {
 	 * @param {Timer} timer Fight timer containing the elapsed time.
 	 */
 	checkBounds(timer) {
-		if (this.haveProp(FighterProperty.Static)) return;
+		// Do not run the check if the fighter is static or is moving to a specific coordinate (to avoid rubberbanding)
+		if (this._tweenMove || this.haveProp(FighterProperty.Static)) return;
 		const m = 4;
 		const wmod = 10;
 		if (this._x < m + this._ray || this._x > this._scene.width - (this._ray + m + this._scene.margins.right)) {
