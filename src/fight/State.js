@@ -124,6 +124,11 @@ export class State {
 	 * @param {Fighter} f The new Fighter to add to the state.
 	 */
 	addActor(f) {
+		if (!f.alive) {
+			console.warn(
+				`State.addActor: Fighter id ${f.id} is dead but has been added to a casting. Dead fighters cannot be focused, this will potentially freeze the display.`
+			);
+		}
 		this._casting.push(f);
 		this._castingWait = true;
 	}
