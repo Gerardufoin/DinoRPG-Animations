@@ -112,7 +112,7 @@ const fightVersion = [
 					gfx: 'egrllz'
 				}
 			},
-			{
+			/*{
 				action: 'Status',
 				fid: 1,
 				status: 'Poison'
@@ -121,7 +121,7 @@ const fightVersion = [
 				action: 'TimeLimit',
 				time: 1000,
 				center: true
-			},
+			},*/
 			/* {
 				action: 'Goto',
 				fid: 0,
@@ -130,16 +130,24 @@ const fightVersion = [
 			{
 				action: 'Return',
 				fid: 0,
-			},
+			},*/
 			{
 				action: 'Skill',
-				skill: 'Hypnose',
+				skill: 'Speed',
 				details: {
 					fid: 2,
-					targets: [{ id: 1 }]
+					targets: [{ id: 1 }, { id: 2 }]
 				}
 			},
 			{
+				action: 'Skill',
+				skill: 'Speed',
+				details: {
+					fid: 1,
+					targets: [{ id: 1 }, { id: 0 }]
+				}
+			}
+			/*{
 				action: 'Goto',
 				fid: 1,
 				tid: 0
@@ -205,7 +213,7 @@ const fightVersion = [
 					type: 'Detonate'
 				}
 			}*/
-			{
+			/*{
 				action: 'Damages',
 				fid: 1,
 				tid: 0,
@@ -222,7 +230,7 @@ const fightVersion = [
 			{
 				action: 'Return',
 				fid: 1
-			}
+			}*/
 			/*{
 				action: 'AttackCastle',
 				fid: 0,

@@ -17,17 +17,24 @@ export class SpeedLine extends Phys {
 	 * @type {number}
 	 */
 	_coef;
+	/**
+	 * The direction of the lines. 1 for left to right, -1 for right to left.
+	 * @type {number}
+	 */
+	_direction;
 
 	/**
 	 * Creates a speed line, which can be scaled and moved through the scene based on a given speed.
 	 * @param {IScene} scene The Scene where the speed line is instantiated.
+	 * @param {number} direction The direction of the speed line. 1 for left to right, -1 for right to left.
 	 */
-	constructor(scene) {
+	constructor(scene, direction = 1) {
 		super(new Container(), scene);
 
 		this._root.addChild(new Asset(ref.parts.ghost_tail));
 		this._root.filters = [GrSpeed.GlowFilter];
 
+		this._direction = Math.sign(direction);
 		this._x = Math.random() * SCENE_WIDTH;
 		this._y = this._scene.getRandomPYPos();
 		this._z = -20;
@@ -42,14 +49,23 @@ export class SpeedLine extends Phys {
 	 * @param {boolean} grow If true, scales up the line with the speed.
 	 */
 	move(speed, tmod, grow) {
-		this._x += speed * this._coef * tmod;
-		if (this._x > SCENE_WIDTH) {
-			this._x = -this._root.scale.x * 100;
+		this._x += speed * this._direction * this._coef * tmod;
+		// If the line exit the screen, we move it on the other side and randomize its position.
+		if (
+			(this._x > SCENE_WIDTH && this._direction > 0) ||
+			(this._x < -this._root.scale.x * 100 && this._direction < 0)
+		) {
+			this._x = this._direction > 0 ? -this._root.scale.x * 100 : SCENE_WIDTH;
 			this._y = this._scene.getRandomPYPos();
 		}
 		this._root.scale.y = PixiHelper.mm(0, (speed / 100) * this._coef, 1);
 		if (grow) {
+			const prevScale = this._root.scale.x;
 			this._root.scale.x = (speed / 100) * this._coef * 8;
+			// If the lines are going from right to left, we have to simulate a growth from right to left as well.
+			if (this._direction < 0) {
+				this._x -= this._root.scale.x - prevScale;
+			}
 		}
 	}
 }

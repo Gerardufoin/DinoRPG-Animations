@@ -62,7 +62,7 @@ export class GrSpeed extends GroupEffect {
 			t.fighter.addFilters(GrSpeed.GlowFilter, GrSpeed.ColorFilter);
 		}
 		for (let i = 0; i < 20; ++i) {
-			const sl = new SpeedLine(this._scene);
+			const sl = new SpeedLine(this._scene, this._caster.intSide);
 			this._scene.dm.addSprite(sl, Layers.Scene.FIGHTERS);
 			this._lines.push(sl);
 		}
