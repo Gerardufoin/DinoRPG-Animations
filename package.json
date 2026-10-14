@@ -20,6 +20,11 @@
 	},
 	"author": "Gerardufoin",
 	"main": "src/index.js",
+	"files": [
+		"src",
+		"public",
+		"assets"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/eternaltwin/DinoRPG-Animations.git"
